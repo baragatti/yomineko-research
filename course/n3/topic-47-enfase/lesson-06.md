@@ -7,7 +7,7 @@
 - Distinguir 人気 / 人間 e o par 抜く / 抜ける
 - Empregar palavras como にっこり e 日常 com ênfase no dia a dia
 
-**Introduz:** gramática [—] · vocabulário [日, にっこり, 人気, 人間, 値, 入場, 布, 抜く, 抜ける, 握る, 日中, 日光, 日常, 日曜, 日本, 根, 願い, 願う] · kanji [—] · kana [—]
+**Introduz:** gramática [—] · vocabulário [日, にっこり, 人気, 人間, 値, 入場, 布, 抜く, 抜ける, 握る, 日中, 日光, 日常, 日曜, 根, 願い, 願う] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

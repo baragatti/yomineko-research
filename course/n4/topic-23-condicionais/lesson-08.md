@@ -8,7 +8,7 @@
 - Expressar faixas de valor com 以上 ('X ou mais') e 以下 ('X ou menos')
 - Indicar quantidade indefinida ('alguns/vários') com なん + contador + か
 
-**Introduz:** gramática [gp-123, gp-135, gp-91, gp-92, gp-93, gp-98] · vocabulário [県下] · kanji [的] · kana [—]
+**Introduz:** gramática [gp-123, gp-135, gp-91, gp-92, gp-93, gp-98] · vocabulário [以上, 県下] · kanji [以 始 的 飯] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-217034`, `sent:gen-1fc62e559711`, `sent:tatoeba-191216`, `sent:tatoeba-217592`
 
@@ -115,5 +115,15 @@ Já que vimos 以下, repare no mesmo kanji 下 ("abaixo") em 県下 (けんか)
 ### 7. (recognition) Qual destes kanji é o sufixo que se lê テキ e transforma um substantivo em adjetivo, como o nosso '-ico'?
 - **Resposta:** `{"choices": ["的", "白", "百", "国"], "correct": "的"}`
 - 的 tem 白 ('branco') do lado esquerdo: era o alvo branco de tiro, e daí vêm os sentidos de 'alvo, mira'. Colado no fim de um substantivo, ele vira o sufixo テキ e forma adjetivos.
+
+
+### 8. (production) Escreva só o kanji lido イ que marca o ponto de referência ('a partir de') no começo dos compostos.
+- **Resposta:** `{"text": "以", "accept": ["以"]}`
+- É 以, cinco traços. Ele é sempre a primeira metade da palavra: o que vem depois é que diz para que lado se conta.
+
+
+### 9. (production) Escreva em japonês 'arroz cozido, refeição', palavra que se lê ごはん.
+- **Resposta:** `{"text": "ご飯", "accept": ["ご飯", "ごはん"]}`
+- ご飯 é o arroz cozido e, por extensão, a própria refeição. O 飯 lê-se はん logo depois do prefixo de cortesia ご.
 
 

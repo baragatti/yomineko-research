@@ -7,7 +7,7 @@
 - Ligar o demonstrativo a um substantivo (この + nome)
 - Distinguir este sistema do こ-そ-あ-ど de lugar e dos pronomes これ/それ/あれ
 
-**Introduz:** gramática [gp-14, gp-15, gp-16] · vocabulário [クラス, 傘, 兄弟, 学校, 学生, 家庭, 家族, 教室, 靴, 靴下, 鞄] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-14, gp-15, gp-16] · vocabulário [クラス, 傘, 兄弟, 其の, 学校, 学生, 家庭, 家族, 教室, 新聞, 木, 此の, 靴, 靴下, 鞄] · kanji [新 木] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-74036`, `sent:tatoeba-80099`
 
@@ -84,5 +84,10 @@ Pratique também com estas palavras do dia a dia. Repare que algumas são bem pr
 ### 5. (production) Aponte para a sala de aula em que você está agora e diga 'esta sala de aula' (use 教室, kana きょうしつ).
 - **Resposta:** `{"text": "この教室", "accept": ["この教室", "このきょうしつ"]}`
 - Algo perto de quem fala (a sala onde você está) usa この. この + 教室 = 'esta sala de aula'.
+
+
+### 6. (recognition) Qual destas palavras significa 'jornal'?
+- **Resposta:** `{"choices": ["新聞", "本", "話", "名前"], "correct": "新聞"}`
+- 新聞 (しんぶん) junta 新 (novo) e 聞 (ouvir): o que se ouve de novo, ou seja, a notícia. Aqui 新 usa a leitura on シン.
 
 

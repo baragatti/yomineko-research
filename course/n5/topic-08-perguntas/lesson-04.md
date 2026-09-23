@@ -7,7 +7,7 @@
 - Perguntar o motivo de algo com どうして, なぜ e なんで
 - Escolher o registro certo de por quê: neutro, formal/escrito ou coloquial
 
-**Introduz:** gramática [doushite, gp-29, gp-30, gp-31] · vocabulário [体, 咖哩, 声, 果物, 牛乳, 牛肉, 珈琲, 紅茶, 薬, 警官, 風邪] · kanji [—] · kana [—]
+**Introduz:** gramática [doushite, gp-29] · vocabulário [体, 咖哩, 声, 本, 果物, 牛乳, 牛肉, 珈琲, 紅茶, 薬, 読む, 誰, 警官, 風邪] · kanji [本 読] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-0fdafb9f86e8`, `sent:tatoeba-778976`, `sent:tatoeba-778974`, `sent:tatoeba-778977`
 

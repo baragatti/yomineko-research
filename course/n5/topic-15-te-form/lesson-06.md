@@ -7,7 +7,7 @@
 - Ligar ações com 〜ないで no sentido de 'sem fazer' / 'em vez de'
 - Pedir educadamente que NÃO se faça algo com 〜ないでください
 
-**Introduz:** gramática [cha-ikenai-ja-ikenai, naide, naide-kudasai] · vocabulário [半, 半分, 左, 張る, 晩, 晩御飯, 東, 番] · kanji [半] · kana [—]
+**Introduz:** gramática [cha-ikenai-ja-ikenai, naide-kudasai] · vocabulário [半, 半分, 左, 張る, 晩, 晩御飯, 東, 番] · kanji [半] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-125387`, `sent:tatoeba-144418`, `sent:gen-f1c08a8693dc`
 

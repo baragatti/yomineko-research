@@ -7,7 +7,7 @@
 - Reconhecer o segundo sentido de らしい: 'típico de / a cara de' algo (春らしい)
 - Fazer uma pergunta pensativa a si mesmo com のだろうか ('será que...? / fico me perguntando')
 
-**Introduz:** gramática [gp-110, rashii] · vocabulário [世, 亜細亜, 割合, 寺, 普通, 田舎] · kanji [春 秋] · kana [—]
+**Introduz:** gramática [gp-110, rashii] · vocabulário [世, 亜細亜, 割合, 寺, 普通, 田舎] · kanji [秋] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-189533`, `sent:gen-e9700d108b4a`, `sent:tatoeba-8504285`, `sent:tatoeba-189629`
 

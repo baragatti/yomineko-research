@@ -7,7 +7,7 @@
 - Pedir permissão de forma educada para que você mesmo faça uma ação
 - Distinguir 'deixe-me fazer' (eu ajo) de 'faça alguém fazer' (o causativo simples)
 
-**Introduz:** gramática [sasete-kudasai] · vocabulário [アクセサリー, コンサート, コンピュータ, スーツケース, スーパー, 失敗, 工場, 工業, 新聞社, 水泳, 研究室, 紹介, 経験] · kanji [牛 茶 飯 鳥] · kana [—]
+**Introduz:** gramática [sasete-kudasai] · vocabulário [アクセサリー, コンサート, コンピュータ, スーツケース, スーパー, 失敗, 工場, 工業, 新聞社, 水泳, 研究室, 紹介, 経験] · kanji [牛 鳥] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-3957479`, `sent:tatoeba-2045915`, `sent:tatoeba-195599`, `sent:tatoeba-164807`
 
@@ -126,10 +126,5 @@ Quatro kanji do dia a dia, todos ligados a comida e animais:
 ### 9. (cloze) Complete com o kanji que falta: 小___ (ことり) é 'passarinho'.
 - **Resposta:** `{"text": "鳥", "full": "小鳥"}`
 - 小 ('pequeno') mais 鳥 ('pássaro') dá 小鳥 (ことり). Sozinho, 鳥 lê-se とり e vale para qualquer ave.
-
-
-### 10. (production) Escreva em japonês 'arroz cozido, refeição', palavra que se lê ごはん.
-- **Resposta:** `{"text": "ご飯", "accept": ["ご飯", "ごはん"]}`
-- ご飯 é o arroz cozido e, por extensão, a própria refeição. O 飯 lê-se はん logo depois do prefixo de cortesia ご.
 
 

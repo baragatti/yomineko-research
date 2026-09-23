@@ -8,7 +8,7 @@
 - Reconhecer os usos idiomáticos de する: ter/usar uma característica e custar (preço)
 - Ler e escrever o kanji 時 (tempo, hora)
 
-**Introduz:** gramática [gp-19] · vocabulário [お茶, がる, コピー, 作文, 困る, 意味, 授業, 死ぬ, 知る, 終わる, 結婚, 背広, 被る, 質問] · kanji [時] · kana [—]
+**Introduz:** gramática [gp-19] · vocabulário [お茶, がる, コピー, 作文, 困る, 意味, 授業, 死ぬ, 毎晩, 知る, 終わる, 結婚, 背広, 被る, 質問, 電話] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-81225`
 

@@ -7,7 +7,7 @@
 - Usar なさる como honorífico de する para elevar as ações do interlocutor
 - Aplicar o sonkeigo ao falar de clientes, chefes e pessoas mais velhas
 
-**Introduz:** gramática [irassharu, nasaru] · vocabulário [上がる, 娘, 安全, 看護師, 花見, 見物, 警察, 集まる] · kanji [—] · kana [—]
+**Introduz:** gramática [irassharu, nasaru] · vocabulário [娘, 安全, 看護師, 花見, 見物, 警察, 集まる] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-9120405`, `sent:tatoeba-4865678`, `sent:tatoeba-187583`, `sent:tatoeba-85325`
 

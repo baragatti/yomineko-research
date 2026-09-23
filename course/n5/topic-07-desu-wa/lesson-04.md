@@ -7,7 +7,7 @@
 - Falar da família usando の (a mãe de alguém, o irmão de fulano)
 - Somar informação com a partícula も ('também')
 
-**Introduz:** gramática [mo, no] · vocabulário [お兄さん, お姉さん, お母さん, お父さん, 兄, 叔父, 大きな, 妹, 姉, 弟] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-31, mo, no] · vocabulário [お兄さん, お姉さん, お母さん, お父さん, 兄, 叔父, 大きな, 妹, 姉, 弟, 有る, 聞く] · kanji [人 聞] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-1596597`, `sent:tatoeba-85538`, `sent:tatoeba-1057336`, `sent:tatoeba-4789`
 

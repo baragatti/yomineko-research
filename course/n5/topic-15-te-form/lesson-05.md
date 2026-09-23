@@ -7,7 +7,7 @@
 - Dizer que algo é dispensável com 〜なくてもいい
 - Proibir uma ação com 〜てはいけない e a versão polida 〜てはいけません
 
-**Introduz:** gramática [gp-139, naku-temo-ii, te-wa-ikenai, temo-ii-desu] · vocabulário [はい, 伯, 入る, 引く, 弾く, 暇, 杯, 灰皿] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-139, naku-temo-ii, te-wa-ikenai] · vocabulário [はい, 伯, 入る, 引く, 弾く, 暇, 杯, 灰皿] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-4147428`, `sent:tatoeba-2242416`, `sent:tatoeba-13158601`, `sent:tatoeba-10962356`
 

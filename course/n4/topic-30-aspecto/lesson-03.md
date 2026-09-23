@@ -8,7 +8,7 @@
 - Usar 〜てしまう no sentido de algo indesejado, acidental ou lamentável
 - Reconhecer e usar a contração coloquial 〜ちゃう／〜じゃう no lugar de 〜てしまう／〜でしまう
 
-**Introduz:** gramática [gp-151, owaru, te-shimau-chau] · vocabulário [プレゼント, 具合, 卒業, 妻, 彼女, 負ける] · kanji [夜 悪] · kana [—]
+**Introduz:** gramática [gp-151, owaru, te-shimau-chau] · vocabulário [プレゼント, 具合, 卒業, 妻, 負ける] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-228649`, `sent:tatoeba-150664`, `sent:tatoeba-234345`, `sent:tatoeba-9191453`
 

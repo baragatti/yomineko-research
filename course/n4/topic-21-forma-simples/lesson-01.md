@@ -7,7 +7,7 @@
 - Usar かしら, a variante de tom mais feminino, com o mesmo sentido de かな
 - Fazer perguntas de sim/não em tom casual e afetuoso com かい (típica da fala masculina)
 
-**Introduz:** gramática [ka-shira, kai, kana] · vocabulário [ステレオ, テキスト, 会, 僕, 別, 大学生, 失礼, 床屋, 心配, 意見, 気, 漫画] · kanji [員 方 者] · kana [—]
+**Introduz:** gramática [ka-shira, kai, kana] · vocabulário [ステレオ, テキスト, 会, 僕, 別, 大学生, 失礼, 床屋, 心配, 意見, 気, 漫画] · kanji [員 方 明 終 者] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-f626c3374153`, `sent:gen-a57fa0b2f6c3`, `sent:tatoeba-80460`, `sent:tatoeba-194168`
 
@@ -120,5 +120,15 @@ Junte tudo:僕の漫画どこかな("onde será que está o meu mangá?"),心配
 ### 11. (production) Escreva o kanji que significa pessoa, aquele que (leitura もの).
 - **Resposta:** `{"text": "者", "accept": ["者", "もの"]}`
 - 者 lê-se もの sozinho e しゃ dentro de compostos. É o kanji que transforma uma atividade em quem a exerce.
+
+
+### 12. (recognition) Qual destes kanji junta 日 (sol) e 月 (lua) e significa 'claro, brilhante'?
+- **Resposta:** `{"choices": ["明", "時", "間", "開"], "correct": "明"}`
+- 明 é literalmente 日 (sol) ao lado de 月 (lua): as duas fontes de luz, daí 'claro, brilhante'. Ele aparece em 明るい e, com o sentido de 'seguinte', em 明日. 時 e 間 também carregam 日, e 開 é parecido com 間, mas só 明 tem sol e lua lado a lado.
+
+
+### 13. (production) Esta lição encadeia ações no tempo. Escreva 'amanhã' em japonês, com kanji.
+- **Resposta:** `{"text": "明日", "accept": ["明日", "あした"]}`
+- 明日 é 明 (seguinte) + 日 (dia): o dia que vem depois. No dia a dia lê-se あした.
 
 

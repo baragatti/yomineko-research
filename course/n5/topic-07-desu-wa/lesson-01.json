@@ -29,6 +29,10 @@
     },
     {
       "type": "grammar",
+      "ref": "gram:ka"
+    },
+    {
+      "type": "grammar",
       "ref": "gram:wa-topic-marker"
     },
     {
@@ -58,6 +62,14 @@
     {
       "type": "vocab",
       "ref": "vocab:1344930"
+    },
+    {
+      "type": "vocab",
+      "ref": "vocab:1219960"
+    },
+    {
+      "type": "vocab",
+      "ref": "vocab:1219980"
     },
     {
       "type": "vocab",
@@ -98,6 +110,15 @@
       {
         "deck": "deck:grammar-n5",
         "item": "gram:da-desu",
+        "card_types": [
+          "recognition",
+          "cloze",
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:grammar-n5",
+        "item": "gram:ka",
         "card_types": [
           "recognition",
           "cloze",
@@ -248,6 +269,46 @@
           "accept": [
             "おんな",
             "女"
+          ],
+          "sense_index": 0,
+          "verified": "sampled",
+          "verified_by": "research/reports/w27_sample_report.md"
+        }
+      },
+      {
+        "deck": "deck:vocab-n5",
+        "item": "vocab:1219960",
+        "card_types": [
+          "recognition",
+          "production"
+        ],
+        "production_key": {
+          "prompt": {
+            "pt-BR": "quantos"
+          },
+          "accept": [
+            "いくつ",
+            "幾つ"
+          ],
+          "sense_index": 0,
+          "verified": "sampled",
+          "verified_by": "research/reports/w27_sample_report.md"
+        }
+      },
+      {
+        "deck": "deck:vocab-n5",
+        "item": "vocab:1219980",
+        "card_types": [
+          "recognition",
+          "production"
+        ],
+        "production_key": {
+          "prompt": {
+            "pt-BR": "quanto custa, que quantidade"
+          },
+          "accept": [
+            "いくら",
+            "幾ら"
           ],
           "sense_index": 0,
           "verified": "sampled",
@@ -516,6 +577,8 @@
       "vocab:1159980",
       "vocab:1203650",
       "vocab:1344930",
+      "vocab:1219960",
+      "vocab:1219980",
       "vocab:1157070",
       "vocab:1193180",
       "vocab:1419990",
@@ -528,6 +591,7 @@
     "kanji": [],
     "grammar": [
       "gram:da-desu",
+      "gram:ka",
       "gram:wa-topic-marker"
     ],
     "conjugation-form": [],

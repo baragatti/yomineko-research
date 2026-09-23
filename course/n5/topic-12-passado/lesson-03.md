@@ -8,7 +8,7 @@
 - Escolher entre ね e よ conforme você pressupõe concordância ou passa informação nova
 - Reconhecer e ler o kanji 今 (agora)
 
-**Introduz:** gramática [ne, yo] · vocabulário [テスト, テレビ, テーブル, テープ, 手紙, 時計, 机, 茶碗] · kanji [今] · kana [—]
+**Introduz:** gramática [i-adjectives, ne, yo] · vocabulário [テーブル, テープ, 大きい, 手紙, 時計, 茶碗, 話す, 迚も] · kanji [今] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-13063899`, `sent:tatoeba-8608115`, `sent:tatoeba-11532911`, `sent:tatoeba-200577`
 
@@ -106,5 +106,10 @@ Mnemônico de forma: imagine um telhadinho (o tampo ⼈ por cima) cobrindo um pe
 ### 7. (production) Escreva em japonês, com kanji, a palavra que significa 'hoje' e se lê きょう.
 - **Resposta:** `{"text": "今日", "accept": ["今日", "きょう"]}`
 - 今日 junta 今 ('agora') e 日 ('dia'): o dia de agora. O telhadinho em cima de 今 abriga o instante presente, e a leitura きょう é especial, então decore a palavra inteira.
+
+
+### 8. (recognition) Qual destas palavras é um adjetivo-い de verdade (e não só termina no som い)?
+- **Resposta:** `{"choices": ["きれい", "おおきい", "しずか"], "correct": "おおきい"}`
+- おおきい (大きい, 'grande') termina em い de verdade: é adjetivo-い. Cuidado com きれい: ela tem o som 'i' no fim, mas é adjetivo-な disfarçado. しずか é claramente adjetivo-な.
 
 

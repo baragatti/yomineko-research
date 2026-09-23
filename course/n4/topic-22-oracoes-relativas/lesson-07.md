@@ -7,7 +7,7 @@
 - Expressar finalidade com 〜ように ('de modo que / para que') após verbo potencial ou negativo
 - Distribuir algo por todos os itens de um grupo com o prefixo 各 ('cada / cada um dos')
 
-**Introduz:** gramática [gp-90, you-ni-you-na] · vocabulário [—] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-90, you-ni-you-na] · vocabulário [為さる, 為る, 用] · kanji [意 止 注 風] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-78536`, `sent:tatoeba-83950`, `sent:gen-344b2dbc4a13`, `sent:gen-71eeebb22ba7`
 
@@ -83,4 +83,14 @@ Repare como os dois recursos descrevem por ângulos diferentes:ように compara
 - **Resposta:** `{"text": "各駅で電車が止まる。", "accept": ["各駅で電車が止まる", "各駅で電車が止まります", "かくえきで電車が止まる", "各駅で電車がとまる"]}`
 - 各 gruda em 駅 formando 各駅 ('cada estação'); で marca o local da ação, 電車が o sujeito e 止まる ('parar') fecha a frase. Lembre que 各 é prefixo: nada de partícula entre 各 e 駅.
 - frases: `sent:gen-344b2dbc4a13`
+
+### 6. (production) Escreva em japonês a palavra que significa 'opinião, ponto de vista', juntando o kanji de 'intenção' com 見 ('ver').
+- **Resposta:** `{"text": "意見", "accept": ["意見", "いけん"]}`
+- 意見 (いけん) é o que alguém acha: 意 é a intenção, o que se pensa, e 見 é o ver, o modo de enxergar a coisa.
+
+
+### 7. (recognition) Qual destas palavras significa 'cuidado, atenção'?
+- **Resposta:** `{"choices": ["注意", "用意", "意味", "元気"], "correct": "注意"}`
+- 注意 (ちゅうい) é atenção ou cuidado. Compare com 用意 (ようい), preparativo, e 意味 (いみ), significado: as três compartilham 意, e o que muda o sentido é o outro kanji.
+
 

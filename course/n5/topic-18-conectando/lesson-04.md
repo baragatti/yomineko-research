@@ -8,7 +8,7 @@
 - Usar でしょう？／だろう？ com entonação de 'né?' para buscar a concordância de quem ouve
 - Entender que essas formas modulam o TOM da frase, sem mudar o fato
 
-**Introduz:** gramática [darou, deshou, gp-17, ndesu] · vocabulário [ラジオ, ラジカセ, レコード, 接見, 本島, 来月] · kanji [—] · kana [—]
+**Introduz:** gramática [darou, gp-17, ndesu, tte] · vocabulário [ラジオ, ラジカセ, レコード, 接見, 本島, 来月] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-d354f1465606`, `sent:tatoeba-144227`, `sent:tatoeba-5347`, `sent:tatoeba-80132`
 

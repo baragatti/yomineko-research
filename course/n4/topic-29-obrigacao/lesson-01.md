@@ -8,7 +8,7 @@
 - Usar が para marcar aquilo de que se precisa e です/だ para fechar a frase
 - Perguntar 'do que você precisa?' com 何が必要ですか
 
-**Introduz:** gramática [ga-hitsuyou] · vocabulário [サンダル, 下着, 引き出し, 押入れ, 通り, 随分, 電灯, 音] · kanji [市 銀] · kana [—]
+**Introduz:** gramática [ga-hitsuyou] · vocabulário [サンダル, 下着, 引き出し, 押入れ, 通り, 随分, 電灯] · kanji [銀] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-1272425`, `sent:tatoeba-1046077`, `sent:tatoeba-187898`, `sent:tatoeba-1006944`
 

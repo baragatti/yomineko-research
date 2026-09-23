@@ -7,7 +7,7 @@
 - Marcar o destino ou o alvo de um movimento com に
 - Reconhecer vocabulário de partes do dia (朝, 今朝, 午前, 午後, 今晩)
 
-**Introduz:** gramática [ni] · vocabulário [今日, 今晩, 今朝, 午前, 午後, 明日, 昨日, 朝, 直ぐに, 頃] · kanji [分 前 後] · kana [—]
+**Introduz:** gramática [ni] · vocabulário [今日, 今晩, 今朝, 午前, 午後, 大人, 昨日, 直ぐに, 頃] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-9e1f6fa2353f`, `sent:gen-b61f5e94a2f1`
 

@@ -7,7 +7,7 @@
 - Acrescentar um item com ほかに(も) ('além disso') e excetuar com ほか(に)は ('fora isso')
 - Suavizar pedidos, perguntas e recusas com 〜んだけど・〜んですが ('é que...')
 
-**Introduz:** gramática [gp-113, gp-116, gp-133] · vocabulário [サンドイッチ, パート, 家, 小説, 式, 畳, 親] · kanji [田] · kana [—]
+**Introduz:** gramática [gp-113, gp-116, gp-133] · vocabulário [サンドイッチ, パート, 家, 小説, 式, 畳, 親] · kanji [悪 田 答] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-2eb864ff10da`, `sent:tatoeba-191501`, `sent:tatoeba-8575501`, `sent:tatoeba-9524565`
 

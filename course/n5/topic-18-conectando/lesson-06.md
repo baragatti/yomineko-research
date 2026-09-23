@@ -8,7 +8,7 @@
 - Situar uma ação no tempo com a cláusula ～とき ("quando...")
 - Usar vocabulário de viagem, família e rotina com essas estruturas
 
-**Introduz:** gramática [ta-koto-ga-aru, toki, tsumori] · vocabulário [両親, 分かる, 忘れる, 料理, 旅行, 来年, 来週, 練習] · kanji [父] · kana [—]
+**Introduz:** gramática [ta-koto-ga-aru, toki, tsumori] · vocabulário [両親, 忘れる, 旅行, 来年, 来週, 練習] · kanji [父] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-137646`, `sent:tatoeba-3460693`
 

@@ -7,7 +7,7 @@
 - Montar a moldura 〜の中で[A]が一番〜 ('dentre X, A é o número um')
 - Escolher dentro de um grupo com as interrogativas どれ (qual) e どんな (que tipo de)
 
-**Introduz:** gramática [gp-46, ichiban, no-naka-de-a-ga-ichiban] · vocabulário [中, 何, どんな, 何れ, 何故, 名前, 時々, 等, 習う, 賑やか, 近く] · kanji [山 話] · kana [—]
+**Introduz:** gramática [gp-46, ichiban, no-naka-de-a-ga-ichiban] · vocabulário [中, 何, 時々, 等, 習う, 賑やか, 近く] · kanji [山] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-f7cec4b420ec`, `sent:gen-c94b958f1ed1`, `sent:tatoeba-223501`, `sent:tatoeba-203016`
 
@@ -93,27 +93,22 @@ Dois kanji de traçado simples e muito usados aparecem aqui.
 - 中（なか）quer dizer 'dentro/interior'. A sequência 〜の中で delimita o grupo comparado ('dentre os esportes'). Em seguida vem o vencedor com が e o superlativo com 一番.
 - frases: `sent:gen-c94b958f1ed1`
 
-### 4. (recognition) Você quer perguntar 'QUAL (destes três) você mais gosta?'. Qual interrogativa usar?
-- **Resposta:** `{"choices": ["どれ", "どんな", "なぜ"], "correct": "どれ"}`
-- どれ (何れ) é 'qual' quando há três ou mais opções à vista. どんな seria 'que tipo de' (a categoria, não o item) e なぜ é 'por quê'.
-
-
-### 5. (sentence_build) Monte 'Dentre os esportes, o futebol é o mais popular.' com as peças: [一番人気です] [サッカー] [スポーツ] [が] [の中で]
+### 4. (sentence_build) Monte 'Dentre os esportes, o futebol é o mais popular.' com as peças: [一番人気です] [サッカー] [スポーツ] [が] [の中で]
 - **Resposta:** `{"order": ["スポーツ", "の中で", "サッカー", "が", "一番人気です"], "text": "スポーツの中でサッカーが一番人気です。"}`
 - Molde X の中で A が 一番 ___: スポーツ (esportes) + の中で (dentre) + サッカー (futebol) + が (vencedor) + 一番人気です (é o mais popular).
 - frases: `sent:gen-c94b958f1ed1`
 
-### 6. (production) Diga em japonês 'Dentre as frutas, eu gosto mais de maçã.' usando くだもの (frutas), 中, りんご (maçã) e 一番.
+### 5. (production) Diga em japonês 'Dentre as frutas, eu gosto mais de maçã.' usando くだもの (frutas), 中, りんご (maçã) e 一番.
 - **Resposta:** `{"text": "くだものの中でりんごが一番好きです。", "accept": ["くだものの中でりんごが一番好きです", "くだものの中でりんごが一番好きです。", "くだもののなかでりんごがいちばんすきです", "くだものの中でりんごがいちばんすきです"]}`
 - くだもの + の中で (dentre as frutas) + りんご + が (o item destacado) + 一番好きです (o que mais gosto). Lembre: o vencedor leva が, não は.
 - frases: `sent:gen-f7cec4b420ec`
 
-### 7. (recognition) Qual destes kanji significa "montanha"?
+### 6. (recognition) Qual destes kanji significa "montanha"?
 - **Resposta:** `{"choices": ["山", "出", "三", "上"], "correct": "山"}`
 - 山 desenha três picos lado a lado. Repare que 出 (sair) é feito de dois 山 empilhados, e por isso os dois se confundem; 三 divide com 山 a leitura chinesa サン; 上 é em cima.
 
 
-### 8. (recognition) Qual destes kanji significa "conversar, falar"?
+### 7. (recognition) Qual destes kanji significa "conversar, falar"?
 - **Resposta:** `{"choices": ["話", "見", "来", "行"], "correct": "話"}`
 - 話 traz o radical da palavra à esquerda e o desenho da língua à direita: quem fala usa a língua. 見 é ver, 来 é vir e 行 é ir. Todos são ações do dia a dia, mas nenhum deles é falar.
 

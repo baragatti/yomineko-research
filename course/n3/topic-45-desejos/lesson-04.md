@@ -7,7 +7,7 @@
 - Lamentar uma escolha passada com 〜ばよかった ('eu devia ter...') e seu negativo なければよかった
 - Reconhecer que aqui よかった carrega lamento, não alívio
 
-**Introduz:** gramática [n3-ba-noni, n3-ba-yokatta] · vocabulário [—] · kanji [候 客 師 敗 横 深 満 登 科 積 路 達] · kana [—]
+**Introduz:** gramática [n3-ba-noni, n3-ba-yokatta] · vocabulário [日本] · kanji [候 客 師 敗 横 深 満 登 科 積 路 達] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-4812`, `sent:tatoeba-3179585`
 

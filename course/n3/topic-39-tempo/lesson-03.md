@@ -9,7 +9,7 @@
 - Não confundir os vários usos de ところ
 - Reconhecer 14 palavras novas e 6 kanji
 
-**Introduz:** gramática [n3-ta-tokoro, n3-ta-totan, n3-te-hajimete] · vocabulário [依頼, 医療, 印刷, 印象, 岩, 悪戯, 抱く, 痛み, 祝い, 祝う, 稲, 至る, 衣服, 違反] · kanji [初 受 数 続 記] · kana [—]
+**Introduz:** gramática [n3-ta-tokoro, n3-ta-totan, n3-te-hajimete] · vocabulário [依頼, 医療, 印刷, 印象, 岩, 悪戯, 抱く, 痛み, 祝い, 祝う, 稲, 至る, 衣服, 途端, 違反] · kanji [初 受 数 続 記] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-187075`, `sent:tatoeba-188870`
 

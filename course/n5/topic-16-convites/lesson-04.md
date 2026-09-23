@@ -9,7 +9,7 @@
 - Ampliar o vocabulário com adjetivos descritivos comuns
 - Ler os kanji 電 e 聞 em palavras do dia a dia
 
-**Introduz:** gramática [gp-50] · vocabulário [下手, 不味い, 他, 便利, 古い, 太い, 広い, 細い] · kanji [聞 電] · kana [—]
+**Introduz:** gramática [gp-50, hou-ga-ii] · vocabulário [もっと, 不味い, 他, 便利, 古い, 太い, 広い, 細い] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-216787`, `sent:tatoeba-3366998`
 

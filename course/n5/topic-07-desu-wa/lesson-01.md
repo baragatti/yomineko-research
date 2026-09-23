@@ -7,7 +7,7 @@
 - Usar a partícula は para marcar o tópico (sobre o que a frase fala)
 - Diferenciar a cópula educada です da casual だ
 
-**Introduz:** gramática [da-desu, wa-topic-marker] · vocabulário [お巡りさん, お金, 会社, 円, 医者, 外国人, 女, 椅子, 歌, 男, 絵, 英語, 貴方, 鍵, 音楽] · kanji [—] · kana [—]
+**Introduz:** gramática [da-desu, ka, wa-topic-marker] · vocabulário [お巡りさん, お金, 会社, 円, 医者, 外国人, 女, 幾つ, 幾ら, 椅子, 歌, 男, 絵, 英語, 貴方, 鍵, 音楽] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-5332`, `sent:tatoeba-5078`
 

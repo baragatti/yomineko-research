@@ -8,7 +8,7 @@
 - Expressar alívio ou satisfação com 〜てよかった ('ainda bem que...')
 - Usar vocabulário de pessoas e situações sociais para contextualizar experiências
 
-**Introduz:** gramática [koto-ga-aru, ni-ki-ga-tsuku, te-yokatta] · vocabulário [あんな, ちゃん, 亜米利加, 女性, 彼ら, 教会, 歴史, 火事, 男性, 部長] · kanji [病 起] · kana [—]
+**Introduz:** gramática [koto-ga-aru, ni-ki-ga-tsuku, te-yokatta] · vocabulário [あんな, ちゃん, 亜米利加, 女性, 彼ら, 教会, 歴史, 男性, 部長] · kanji [病] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-1897537`, `sent:tatoeba-11726883`, `sent:gen-9bc0cee86eab`, `sent:tatoeba-183290`
 
@@ -111,10 +111,5 @@ E estas palavras dão o tom ou o tema à experiência:
 ### 8. (recognition) No verbo 起きる (おきる), o que o kanji 起 significa?
 - **Resposta:** `{"choices": ["levantar-se", "esperar", "girar", "estudar"], "correct": "levantar-se"}`
 - 起 é 'levantar-se': o radical de correr à esquerda dá a ideia do corpo que se põe de pé. O mesmo kanji também serve para um fato que 'se levanta', ou seja, que acontece.
-
-
-### 9. (production) Escreva em japonês, com kanji e okurigana, o verbo 'levantar-se, acordar'.
-- **Resposta:** `{"text": "起きる", "accept": ["起きる", "おきる"]}`
-- É 起きる, quem acorda é você mesmo. Com outro okurigana o sentido vira transitivo: 起こす (おこす) é acordar outra pessoa.
 
 

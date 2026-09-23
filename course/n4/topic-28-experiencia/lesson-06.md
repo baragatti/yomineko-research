@@ -9,7 +9,7 @@
 - Aproximar quantidades com だいたい (mais ou menos) e medir grau com そんなに (tão/tanto assim)
 - Suavizar e contrastar a negação de adjetivos-い com 〜くはない
 
-**Introduz:** gramática [gp-69, gp-81, gp-88, gp-95, gp-96, sonna-ni] · vocabulário [—] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-69, gp-81, gp-88, gp-95, gp-96, sonna-ni] · vocabulário [大体] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-159348`, `sent:tatoeba-81647`, `sent:tatoeba-203977`, `sent:tatoeba-3506554`
 

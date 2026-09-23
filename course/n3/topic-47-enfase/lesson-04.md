@@ -7,7 +7,7 @@
 - Usar a variante ことはめったにない depois de uma oração nominalizada com こと
 - Lembrar que, ao contrário de 'raramente' em português, o verbo japonês precisa ficar no negativo
 
-**Introduz:** gramática [n3-metta-ni-nai, n3-metta-ni-nai-2] · vocabulário [これ等, 今回, 今後, 好み, 好む, 小屋, 小麦, 殺す, 混雑, 転ぶ] · kanji [抜 船 覚 許 途] · kana [—]
+**Introduz:** gramática [n3-metta-ni-nai] · vocabulário [これ等, 今回, 今後, 好み, 好む, 小屋, 小麦, 殺す, 混雑, 転ぶ] · kanji [抜 船 覚 許 途] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-8663699`, `sent:tatoeba-95287`
 

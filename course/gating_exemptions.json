@@ -2,11 +2,6 @@
   "why": "Item references a lesson BODY renders before the course unlocks them. validate_lesson_gating.py check B fails on any such reference unless it is listed here with the reason the gap is held rather than hidden; an entry that matches nothing is also a failure, so this list cannot rot. W11a closed four of the eight by unlocking the record its lesson already teaches. W11c closed a fifth by re-pointing the chip its lesson actually describes (様 @ les:n4-passiva-02, whose record the course unlocks a topic earlier). What remains is one forward reference and two homograph placements the owner deferred, which are also in course/coverage_exemptions.json.",
   "item_refs": [
     {
-      "lesson": "les:n4-dar-receber-02",
-      "ref": "vocab:1228690",
-      "reason": "Forward reference by two lessons: 急行 (きゅうこう) is used in the body here but unlocked by les:n4-dar-receber-04. Fix is a content edit — move the unlock earlier or reword the example — not a change to the gate."
-    },
-    {
       "lesson": "les:n5-comparacoes-04",
       "ref": "vocab:2084840",
       "reason": "Homograph sibling of vocab:1468060 (年); the course unlocks とし and this body lists ねん. W11a held the placement because the better home is les:n5-numeros-tempo-05 and that needs new prose — see course/coverage_exemptions.json."

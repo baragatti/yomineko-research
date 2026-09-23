@@ -8,7 +8,7 @@
 - Reconhecer e usar vocabulário de transporte e lugares (地下鉄, 電車, 図書館, デパート, etc.)
 - Escrever e reconhecer os kanji 東 (leste) e 入 (entrar)
 
-**Introduz:** gramática [gp-32] · vocabulário [デパート, トイレ, ドア, 出口, 図書館, 地下鉄, 地図, 戸, 所, 電気, 電話, 電車] · kanji [入 東] · kana [—]
+**Introduz:** gramática [gp-32] · vocabulário [日, デパート, トイレ, ドア, 出口, 図書館, 地下鉄, 地図, 嫌, 所] · kanji [東 雨] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-83696`, `sent:tatoeba-78700`
 

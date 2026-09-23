@@ -8,7 +8,7 @@
 - Não confundir esse な final com o な que liga adjetivos-な a substantivos
 - Ler e escrever o kanji 学 (estudo)
 
-**Introduz:** gramática [na] · vocabulário [何方, 何の, 何処, 何方, 出来る, 勤める, 友達, 手, 父, 疲れる] · kanji [学] · kana [—]
+**Introduz:** gramática [na] · vocabulário [何方, 何方, 出来る, 勤める, 手, 父, 疲れる] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-77191`, `sent:tatoeba-11500016`, `sent:tatoeba-11571318`, `sent:tatoeba-173403`
 

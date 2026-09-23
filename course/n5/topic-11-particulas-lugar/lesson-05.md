@@ -7,7 +7,7 @@
 - Montar 〜へ行く ('ir para / em direção a') com verbos de deslocamento
 - Entender que へ e に são quase intercambiáveis para destino (へ realça o rumo, に o ponto de chegada)
 
-**Introduz:** gramática [gp-18, gp-27, ni-e] · vocabulário [一日, 一昨年, 今年, 今月, 今週, 先月, 先週, 再来年, 去年, 秋] · kanji [月] · kana [—]
+**Introduz:** gramática [gp-18, gp-27, ni-e] · vocabulário [一日, 一昨年, 今年, 今月, 今週, 休み, 先月, 先週, 再来年, 去年, 秋] · kanji [休 月] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-182700`
 

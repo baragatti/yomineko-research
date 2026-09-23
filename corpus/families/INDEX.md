@@ -43,18 +43,18 @@ _Generated 2026-09-23. `label`/`description`/`governing_rule` = locale-objects (
 | grp:gram-n4-suposicao | topic_set | Gramática: Aparência e suposição | 27 |
 | grp:gram-n4-transitividade | topic_set | Gramática: Transitivos × intransitivos | 2 |
 | grp:gram-n4-volitivo | topic_set | Gramática: Volitivo e intenção | 15 |
-| grp:gram-n5-adjetivos | topic_set | Gramática: Adjetivos い e な | 18 |
+| grp:gram-n5-adjetivos | topic_set | Gramática: Adjetivos い e な | 19 |
 | grp:gram-n5-comparacoes | topic_set | Gramática: Comparações, desejos e preferências | 12 |
-| grp:gram-n5-conectando | topic_set | Gramática: Conectando ideias e opiniões | 21 |
-| grp:gram-n5-convites | topic_set | Gramática: Convites, sugestões e habilidade | 5 |
-| grp:gram-n5-desu-wa | topic_set | Gramática: Frases básicas: o tópico は e o copula です | 11 |
+| grp:gram-n5-conectando | topic_set | Gramática: Conectando ideias e opiniões | 19 |
+| grp:gram-n5-convites | topic_set | Gramática: Convites, sugestões e habilidade | 6 |
+| grp:gram-n5-desu-wa | topic_set | Gramática: Frases básicas: o tópico は e o copula です | 13 |
 | grp:gram-n5-numeros-tempo | topic_set | Gramática: Números, horas e datas | 2 |
-| grp:gram-n5-particulas-lugar | topic_set | Gramática: Lugar, tempo e direção: で/に/へ/と | 18 |
-| grp:gram-n5-passado | topic_set | Gramática: Passado polido e nuances | 6 |
-| grp:gram-n5-perguntas | topic_set | Gramática: Perguntas e demonstrativos | 18 |
+| grp:gram-n5-particulas-lugar | topic_set | Gramática: Lugar, tempo e direção: で/に/へ/と | 17 |
+| grp:gram-n5-passado | topic_set | Gramática: Passado polido e nuances | 7 |
+| grp:gram-n5-perguntas | topic_set | Gramática: Perguntas e demonstrativos | 16 |
 | grp:gram-n5-rotina | topic_set | Gramática: Rotina, frequência e advérbios | 10 |
-| grp:gram-n5-te-form | topic_set | Gramática: A forma て e seus usos | 21 |
-| grp:gram-n5-verbos | topic_set | Gramática: Verbos: dicionário + ます; partículas を e が | 8 |
+| grp:gram-n5-te-form | topic_set | Gramática: A forma て e seus usos | 19 |
+| grp:gram-n5-verbos | topic_set | Gramática: Verbos: dicionário + ます; partículas を e が | 10 |
 | grp:word-4e00 | word_family | Família de palavras com 一 | 26 |
 | grp:word-4e01 | word_family | Família de palavras com 丁 | 2 |
 | grp:word-4e03 | word_family | Família de palavras com 七 | 2 |
@@ -301,21 +301,21 @@ _Generated 2026-09-23. `label`/`description`/`governing_rule` = locale-objects (
 | grp:word-60aa | word_family | Família de palavras com 悪 | 4 |
 | grp:theme-n4-keigo | topic_residual | Vocabulário do tópico: Keigo básico | 8 |
 | grp:word-60b2 | word_family | Família de palavras com 悲 | 3 |
-| grp:theme-n4-obrigacao | topic_residual | Vocabulário do tópico: Obrigação e permissão | 7 |
+| grp:theme-n4-obrigacao | topic_residual | Vocabulário do tópico: Obrigação e permissão | 6 |
 | grp:word-610f | word_family | Família de palavras com 意 | 6 |
-| grp:theme-n4-oracoes-relativas | topic_residual | Vocabulário do tópico: Orações relativas | 8 |
+| grp:theme-n4-oracoes-relativas | topic_residual | Vocabulário do tópico: Orações relativas | 9 |
 | grp:word-611b | word_family | Família de palavras com 愛 | 3 |
 | grp:theme-n4-passiva | topic_residual | Vocabulário do tópico: Voz passiva | 7 |
 | grp:word-611f | word_family | Família de palavras com 感 | 7 |
 | grp:theme-n4-potencial | topic_residual | Vocabulário do tópico: Potencial | 13 |
 | grp:word-614b | word_family | Família de palavras com 態 | 2 |
-| grp:theme-n4-suposicao | topic_residual | Vocabulário do tópico: Aparência e suposição | 6 |
+| grp:theme-n4-suposicao | topic_residual | Vocabulário do tópico: Aparência e suposição | 5 |
 | grp:word-6210 | word_family | Família de palavras com 成 | 7 |
 | grp:theme-n4-transitividade | topic_residual | Vocabulário do tópico: Transitivos × intransitivos | 13 |
 | grp:word-6211 | word_family | Família de palavras com 我 | 3 |
-| grp:theme-n4-volitivo | topic_residual | Vocabulário do tópico: Volitivo e intenção | 7 |
+| grp:theme-n4-volitivo | topic_residual | Vocabulário do tópico: Volitivo e intenção | 8 |
 | grp:word-6216 | word_family | Família de palavras com 或 | 2 |
-| grp:theme-n5-comparacoes | topic_residual | Vocabulário do tópico: Comparações, desejos e preferências | 11 |
+| grp:theme-n5-comparacoes | topic_residual | Vocabulário do tópico: Comparações, desejos e preferências | 10 |
 | grp:word-6226 | word_family | Família de palavras com 戦 | 3 |
 | grp:theme-n5-conectando | topic_residual | Vocabulário do tópico: Conectando ideias e opiniões | 15 |
 | grp:word-623b | word_family | Família de palavras com 戻 | 2 |
@@ -325,17 +325,17 @@ _Generated 2026-09-23. `label`/`description`/`governing_rule` = locale-objects (
 | grp:word-624b | word_family | Família de palavras com 手 | 9 |
 | grp:theme-n5-numeros-tempo | topic_residual | Vocabulário do tópico: Números, horas e datas | 18 |
 | grp:word-6253 | word_family | Família de palavras com 打 | 2 |
-| grp:theme-n5-particulas-lugar | topic_residual | Vocabulário do tópico: Lugar, tempo e direção: で/に/へ/と | 6 |
+| grp:theme-n5-particulas-lugar | topic_residual | Vocabulário do tópico: Lugar, tempo e direção: で/に/へ/と | 9 |
 | grp:word-6279 | word_family | Família de palavras com 批 | 2 |
-| grp:theme-n5-passado | topic_residual | Vocabulário do tópico: Passado polido e nuances | 15 |
+| grp:theme-n5-passado | topic_residual | Vocabulário do tópico: Passado polido e nuances | 12 |
 | grp:word-627f | word_family | Família de palavras com 承 | 2 |
-| grp:theme-n5-perguntas | topic_residual | Vocabulário do tópico: Perguntas e demonstrativos | 24 |
+| grp:theme-n5-perguntas | topic_residual | Vocabulário do tópico: Perguntas e demonstrativos | 26 |
 | grp:word-6280 | word_family | Família de palavras com 技 | 2 |
-| grp:theme-n5-rotina | topic_residual | Vocabulário do tópico: Rotina, frequência e advérbios | 13 |
+| grp:theme-n5-rotina | topic_residual | Vocabulário do tópico: Rotina, frequência e advérbios | 12 |
 | grp:word-6295 | word_family | Família de palavras com 投 | 2 |
-| grp:theme-n5-te-form | topic_residual | Vocabulário do tópico: A forma て e seus usos | 19 |
+| grp:theme-n5-te-form | topic_residual | Vocabulário do tópico: A forma て e seus usos | 18 |
 | grp:word-6298 | word_family | Família de palavras com 折 | 2 |
-| grp:theme-n5-verbos | topic_residual | Vocabulário do tópico: Verbos: dicionário + ます; partículas を e が | 3 |
+| grp:theme-n5-verbos | topic_residual | Vocabulário do tópico: Verbos: dicionário + ます; partículas を e が | 4 |
 | grp:word-629c | word_family | Família de palavras com 抜 | 2 |
 | grp:theme-pre-n5-saudacoes | topic_residual | Vocabulário do tópico: Saudações e sobrevivência | 12 |
 | grp:word-62b1 | word_family | Família de palavras com 抱 | 2 |
@@ -497,15 +497,15 @@ _Generated 2026-09-23. `label`/`description`/`governing_rule` = locale-objects (
 | grp:word-795e | word_family | Família de palavras com 神 | 3 |
 | grp:word-7981 | word_family | Família de palavras com 禁 | 2 |
 | grp:word-79d1 | word_family | Família de palavras com 科 | 2 |
-| grp:kanji-topic-n3-causa | topic_set | Kanji do tópico: Causa, razão e consequência | 26 |
+| grp:kanji-topic-n3-causa | topic_set | Kanji do tópico: Causa, razão e consequência | 29 |
 | grp:word-79fb | word_family | Família de palavras com 移 | 3 |
-| grp:kanji-topic-n3-concessao | topic_set | Kanji do tópico: Concessão e contraste | 27 |
+| grp:kanji-topic-n3-concessao | topic_set | Kanji do tópico: Concessão e contraste | 26 |
 | grp:word-7a0b | word_family | Família de palavras com 程 | 2 |
-| grp:kanji-topic-n3-conectores | topic_set | Kanji do tópico: Conectores e organização do discurso | 15 |
+| grp:kanji-topic-n3-conectores | topic_set | Kanji do tópico: Conectores e organização do discurso | 17 |
 | grp:word-7a2e | word_family | Família de palavras com 種 | 2 |
-| grp:kanji-topic-n3-conjectura | topic_set | Kanji do tópico: Conjectura, aparência e probabilidade | 28 |
+| grp:kanji-topic-n3-conjectura | topic_set | Kanji do tópico: Conjectura, aparência e probabilidade | 27 |
 | grp:word-7a4d | word_family | Família de palavras com 積 | 3 |
-| grp:kanji-topic-n3-desejos | topic_set | Kanji do tópico: Desejos, hipóteses e arrependimento | 27 |
+| grp:kanji-topic-n3-desejos | topic_set | Kanji do tópico: Desejos, hipóteses e arrependimento | 28 |
 | grp:word-7a7a | word_family | Família de palavras com 空 | 6 |
 | grp:kanji-topic-n3-deveres | topic_set | Kanji do tópico: Conselho, obrigação e permissão | 23 |
 | grp:word-7acb | word_family | Família de palavras com 立 | 4 |
@@ -513,71 +513,73 @@ _Generated 2026-09-23. `label`/`description`/`governing_rule` = locale-objects (
 | grp:word-7af6 | word_family | Família de palavras com 競 | 2 |
 | grp:kanji-topic-n3-estado | topic_set | Kanji do tópico: Estado, modo e ação inacabada | 27 |
 | grp:word-7b11 | word_family | Família de palavras com 笑 | 3 |
-| grp:kanji-topic-n3-estrutura | topic_set | Kanji do tópico: Nominalização, explicação e voz passiva | 16 |
+| grp:kanji-topic-n3-estrutura | topic_set | Kanji do tópico: Nominalização, explicação e voz passiva | 15 |
 | grp:word-7b49 | word_family | Família de palavras com 等 | 2 |
 | grp:kanji-topic-n3-intencao | topic_set | Kanji do tópico: Intenção, propósito e decisão | 26 |
 | grp:word-7b4b | word_family | Família de palavras com 筋 | 2 |
-| grp:kanji-topic-n3-limites | topic_set | Kanji do tópico: Limite, escassez e grau | 28 |
+| grp:kanji-topic-n3-limites | topic_set | Kanji do tópico: Limite, escassez e grau | 26 |
 | grp:word-7b54 | word_family | Família de palavras com 答 | 3 |
-| grp:kanji-topic-n3-perspectiva | topic_set | Kanji do tópico: Perspectiva, escopo e comparação | 27 |
+| grp:kanji-topic-n3-perspectiva | topic_set | Kanji do tópico: Perspectiva, escopo e comparação | 28 |
 | grp:word-7ba1 | word_family | Família de palavras com 管 | 2 |
-| grp:kanji-topic-n3-relato | topic_set | Kanji do tópico: Relato, citação e definição | 26 |
+| grp:kanji-topic-n3-relato | topic_set | Kanji do tópico: Relato, citação e definição | 24 |
 | grp:word-7bc0 | word_family | Família de palavras com 節 | 2 |
 | grp:kanji-topic-n3-tempo | topic_set | Kanji do tópico: Tempo, simultaneidade e sequência | 24 |
 | grp:word-7c73 | word_family | Família de palavras com 米 | 2 |
-| grp:kanji-topic-n4-aspecto | topic_set | Kanji do tópico: Tentar, preparar, completar | 10 |
+| grp:kanji-topic-n4-aspecto | topic_set | Kanji do tópico: Tentar, preparar, completar | 5 |
 | grp:word-7cbe | word_family | Família de palavras com 精 | 2 |
-| grp:kanji-topic-n4-causativa | topic_set | Kanji do tópico: Causativa e causativa-passiva | 12 |
+| grp:kanji-topic-n4-causativa | topic_set | Kanji do tópico: Causativa e causativa-passiva | 8 |
 | grp:word-7d04 | word_family | Família de palavras com 約 | 2 |
-| grp:kanji-topic-n4-condicionais | topic_set | Kanji do tópico: Condicionais (たら/ば/と/なら) | 13 |
+| grp:kanji-topic-n4-condicionais | topic_set | Kanji do tópico: Condicionais (たら/ば/と/なら) | 23 |
 | grp:word-7d20 | word_family | Família de palavras com 素 | 2 |
-| grp:kanji-topic-n4-dar-receber | topic_set | Kanji do tópico: Dar e receber | 11 |
+| grp:kanji-topic-n4-conectores | topic_set | Kanji do tópico: Conectores avançados | 3 |
 | grp:word-7d30 | word_family | Família de palavras com 細 | 2 |
-| grp:kanji-topic-n4-experiencia | topic_set | Kanji do tópico: Experiência e mudança | 12 |
+| grp:kanji-topic-n4-dar-receber | topic_set | Kanji do tópico: Dar e receber | 9 |
 | grp:word-7d42 | word_family | Família de palavras com 終 | 3 |
-| grp:kanji-topic-n4-forma-simples | topic_set | Kanji do tópico: Forma simples e registro casual | 10 |
+| grp:kanji-topic-n4-experiencia | topic_set | Kanji do tópico: Experiência e mudança | 13 |
 | grp:word-7d44 | word_family | Família de palavras com 組 | 4 |
-| grp:kanji-topic-n4-kanji-exame | topic_set | Kanji do tópico: Kanji do exame N4: reforço | 36 |
+| grp:kanji-topic-n4-forma-simples | topic_set | Kanji do tópico: Forma simples e registro casual | 24 |
 | grp:word-7d4c | word_family | Família de palavras com 経 | 5 |
-| grp:kanji-topic-n4-keigo | topic_set | Kanji do tópico: Keigo básico | 1 |
+| grp:kanji-topic-n4-kanji-exame | topic_set | Kanji do tópico: Kanji do exame N4: reforço | 26 |
 | grp:word-7d50 | word_family | Família de palavras com 結 | 6 |
-| grp:kanji-topic-n4-obrigacao | topic_set | Kanji do tópico: Obrigação e permissão | 14 |
+| grp:kanji-topic-n4-obrigacao | topic_set | Kanji do tópico: Obrigação e permissão | 9 |
 | grp:word-7d75 | word_family | Família de palavras com 絵 | 2 |
-| grp:kanji-topic-n4-oracoes-relativas | topic_set | Kanji do tópico: Orações relativas | 9 |
+| grp:kanji-topic-n4-oracoes-relativas | topic_set | Kanji do tópico: Orações relativas | 21 |
 | grp:word-7d76 | word_family | Família de palavras com 絶 | 2 |
-| grp:kanji-topic-n4-passiva | topic_set | Kanji do tópico: Voz passiva | 11 |
+| grp:kanji-topic-n4-passiva | topic_set | Kanji do tópico: Voz passiva | 7 |
 | grp:word-7d9a | word_family | Família de palavras com 続 | 3 |
-| grp:kanji-topic-n4-potencial | topic_set | Kanji do tópico: Potencial | 11 |
+| grp:kanji-topic-n4-potencial | topic_set | Kanji do tópico: Potencial | 15 |
 | grp:word-7dbf | word_family | Família de palavras com 綿 | 2 |
-| grp:kanji-topic-n4-suposicao | topic_set | Kanji do tópico: Aparência e suposição | 12 |
+| grp:kanji-topic-n4-suposicao | topic_set | Kanji do tópico: Aparência e suposição | 5 |
 | grp:word-7f8e | word_family | Família de palavras com 美 | 4 |
-| grp:kanji-topic-n4-transitividade | topic_set | Kanji do tópico: Transitivos × intransitivos | 13 |
+| grp:kanji-topic-n4-transitividade | topic_set | Kanji do tópico: Transitivos × intransitivos | 7 |
 | grp:word-7fd2 | word_family | Família de palavras com 習 | 2 |
 | grp:kanji-topic-n4-volitivo | topic_set | Kanji do tópico: Volitivo e intenção | 12 |
 | grp:word-8001 | word_family | Família de palavras com 老 | 2 |
-| grp:kanji-topic-n5-adjetivos | topic_set | Kanji do tópico: Adjetivos い e な | 8 |
+| grp:kanji-topic-n5-adjetivos | topic_set | Kanji do tópico: Adjetivos い e な | 6 |
 | grp:word-8003 | word_family | Família de palavras com 考 | 3 |
-| grp:kanji-topic-n5-comparacoes | topic_set | Kanji do tópico: Comparações, desejos e preferências | 8 |
+| grp:kanji-topic-n5-comparacoes | topic_set | Kanji do tópico: Comparações, desejos e preferências | 6 |
 | grp:word-805e | word_family | Família de palavras com 聞 | 2 |
-| grp:kanji-topic-n5-conectando | topic_set | Kanji do tópico: Conectando ideias e opiniões | 8 |
+| grp:kanji-topic-n5-conectando | topic_set | Kanji do tópico: Conectando ideias e opiniões | 5 |
 | grp:word-8077 | word_family | Família de palavras com 職 | 2 |
-| grp:kanji-topic-n5-convites | topic_set | Kanji do tópico: Convites, sugestões e habilidade | 8 |
+| grp:kanji-topic-n5-convites | topic_set | Kanji do tópico: Convites, sugestões e habilidade | 2 |
 | grp:word-80b2 | word_family | Família de palavras com 育 | 2 |
-| grp:kanji-topic-n5-kanji-exame | topic_set | Kanji do tópico: Kanji do exame N5: reforço | 23 |
+| grp:kanji-topic-n5-desu-wa | topic_set | Kanji do tópico: Frases básicas: o tópico は e o copula です | 8 |
 | grp:word-80cc | word_family | Família de palavras com 背 | 4 |
-| grp:kanji-topic-n5-numeros-tempo | topic_set | Kanji do tópico: Números, horas e datas | 8 |
+| grp:kanji-topic-n5-kanji-exame | topic_set | Kanji do tópico: Kanji do exame N5: reforço | 21 |
 | grp:word-80fd | word_family | Família de palavras com 能 | 2 |
-| grp:kanji-topic-n5-particulas-lugar | topic_set | Kanji do tópico: Lugar, tempo e direção: で/に/へ/と | 8 |
+| grp:kanji-topic-n5-numeros-tempo | topic_set | Kanji do tópico: Números, horas e datas | 13 |
 | grp:word-81ea | word_family | Família de palavras com 自 | 9 |
-| grp:kanji-topic-n5-passado | topic_set | Kanji do tópico: Passado polido e nuances | 8 |
+| grp:kanji-topic-n5-particulas-lugar | topic_set | Kanji do tópico: Lugar, tempo e direção: で/に/へ/と | 6 |
 | grp:word-826f | word_family | Família de palavras com 良 | 2 |
-| grp:kanji-topic-n5-rotina | topic_set | Kanji do tópico: Rotina, frequência e advérbios | 8 |
+| grp:kanji-topic-n5-passado | topic_set | Kanji do tópico: Passado polido e nuances | 5 |
 | grp:word-8272 | word_family | Família de palavras com 色 | 2 |
-| grp:kanji-topic-n5-te-form | topic_set | Kanji do tópico: A forma て e seus usos | 8 |
+| grp:kanji-topic-n5-perguntas | topic_set | Kanji do tópico: Perguntas e demonstrativos | 17 |
 | grp:word-829d | word_family | Família de palavras com 芝 | 2 |
-| grp:kanji-topic-n5-verbos | topic_set | Kanji do tópico: Verbos: dicionário + ます; partículas を e が | 8 |
+| grp:kanji-topic-n5-rotina | topic_set | Kanji do tópico: Rotina, frequência e advérbios | 3 |
 | grp:word-82b1 | word_family | Família de palavras com 花 | 3 |
+| grp:kanji-topic-n5-te-form | topic_set | Kanji do tópico: A forma て e seus usos | 4 |
 | grp:word-82db | word_family | Família de palavras com 苛 | 2 |
+| grp:kanji-topic-n5-verbos | topic_set | Kanji do tópico: Verbos: dicionário + ます; partículas を e が | 7 |
 | grp:word-82e5 | word_family | Família de palavras com 若 | 3 |
 | grp:word-82e6 | word_family | Família de palavras com 苦 | 6 |
 | grp:word-8336 | word_family | Família de palavras com 茶 | 3 |
@@ -712,4 +714,4 @@ _Generated 2026-09-23. `label`/`description`/`governing_rule` = locale-objects (
 | grp:word-9ec4 | word_family | Família de palavras com 黄 | 2 |
 | grp:word-9ed2 | word_family | Família de palavras com 黒 | 3 |
 
-**Deprecated:** 52 family address(es) retired and dropped from the table above; `../families_deprecated.json` maps each one to where the answer moved to.
+**Deprecated:** 53 family address(es) retired and dropped from the table above; `../families_deprecated.json` maps each one to where the answer moved to.

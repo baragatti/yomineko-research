@@ -5,7 +5,7 @@
 **Objetivos:**
 - Reconhecer os kanji 乗、低、便、働、光、区、合、声 e localizar suas leituras
 
-**Introduz:** gramática [—] · vocabulário [—] · kanji [乗 低 便 働 光 区 合 声] · kana [—]
+**Introduz:** gramática [—] · vocabulário [—] · kanji [乗 低 便 働 光 区 声] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

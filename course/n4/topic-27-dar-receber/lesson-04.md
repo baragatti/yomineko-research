@@ -8,7 +8,7 @@
 - Entender por que a negativa deixa o pedido mais cortês
 - Ler 空 e 港 e reconhecê-los em 空気, 空港 e 港
 
-**Introduz:** gramática [gp-108, gp-109] · vocabulário [チェック, ワープロ, 交通, 冷房, 反対, 味, 急行, 港, 空気, 空港] · kanji [港] · kana [—]
+**Introduz:** gramática [gp-108, gp-109] · vocabulário [チェック, ワープロ, 交通, 冷房, 反対, 味, 港, 空気, 空港] · kanji [港 貸] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-78721`, `sent:tatoeba-8579832`, `sent:tatoeba-3367992`, `sent:tatoeba-9974818`
 

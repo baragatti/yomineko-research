@@ -8,7 +8,7 @@
 - Intensificar com 大好き (adorar) e suavizar com あまり好きじゃない (não gosto muito)
 - Reconhecer 好き e きらい como adjetivos-な, não como verbos
 
-**Introduz:** gramática [gp-21, gp-22] · vocabulário [一, 上手, 余り, 大好き, 好き, 嫌, 嫌い] · kanji [八 六 円 子] · kana [—]
+**Introduz:** gramática [gp-21, gp-22] · vocabulário [上手, 大好き, 嫌い] · kanji [八 子] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-4852`
 
@@ -121,22 +121,17 @@ O molde do gosto é sempre o mesmo: troque a coisa e a partícula が faz o rest
 - 六 é o número seis, lido ろく quando aparece sozinho. Ele é 八 com um traço e um pinguinho por cima, e é aí que mora a diferença.
 
 
-### 10. (production) Escreva em kanji o número seis.
-- **Resposta:** `{"text": "六", "accept": ["六", "ろく"]}`
-- O seis é 六 e sozinho se lê ろく. Na contagem de unidades ele muda para 六つ (むっつ), com a leitura nativa.
-
-
-### 11. (production) Escreva em japonês, com kanji, a moeda do Japão: o iene.
+### 10. (production) Escreva em japonês, com kanji, a moeda do Japão: o iene.
 - **Resposta:** `{"text": "円", "accept": ["円", "えん"]}`
 - O iene é 円, lido えん, e é sempre esse kanji que fecha um preço. O desenho ajuda: uma moldura fechada com a ideia de 'redondo' dentro.
 
 
-### 12. (recognition) Qual é o significado do kanji 子, lido こ?
+### 11. (recognition) Qual é o significado do kanji 子, lido こ?
 - **Resposta:** `{"choices": ["criança", "pessoa", "grande", "estudo"], "correct": "criança"}`
 - 子 é 'criança, filho'. São três traços, e é ele que fecha as palavras de menino e de menina, sempre com a leitura nativa こ.
 
 
-### 13. (production) Escreva só o kanji que significa 'criança, filho'.
+### 12. (production) Escreva só o kanji que significa 'criança, filho'.
 - **Resposta:** `{"text": "子", "accept": ["子", "こ"]}`
 - É 子, três traços, o desenho de um bebê de braços abertos. Na leitura sino-japonesa ele vira し e fecha muitas palavras que já nem falam de criança.
 

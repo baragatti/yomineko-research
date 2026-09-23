@@ -8,7 +8,7 @@
 - Montar as quatro variações de ordem mais comuns (は…より…です, より…ほうが, のほうが…より, より…のほうが)
 - Usar adjetivos-い (高い, 小さい, 近い, 遠い, 長い, 強い, 冷たい) para descrever a comparação
 
-**Introduz:** gramática [gp-140, gp-47, wa-yori-desu, yori-hou-ga] · vocabulário [冷たい, 多分, 大変, 強い, 楽しい, 次, 沢山, 温い, 茶色, 詰らない, 近い, 遠い, 長い, 隣, 高い] · kanji [小] · kana [—]
+**Introduz:** gramática [gp-140, gp-47, wa-yori-desu, yori-hou-ga] · vocabulário [バス, 報, 多分, 大変, 強い, 早い, 楽しい, 次, 温い, 茶色, 詰らない, 近い, 長い, 隣] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-dc17b084b7de`, `sent:gen-ead8371d038a`, `sent:gen-326ea97de1a1`
 
@@ -112,10 +112,5 @@ O kanji 小 significa pequeno, reduzido. Suas leituras principais são ちい (e
 ### 7. (recognition) Em 小さい ("pequeno"), como se lê a parte escrita com kanji?
 - **Resposta:** `{"choices": ["ちい", "おお", "たか", "なが"], "correct": "ちい"}`
 - 小さい se lê ちいさい: o kanji carrega ちい e a terminação さい fica em hiragana. As outras opções são as leituras nativas de 大 (おお), 高 (たか) e 長 (なが), os adjetivos de tamanho com que 小さい costuma ser comparado.
-
-
-### 8. (production) Escreva em japonês o adjetivo "pequeno" (ちいさい), usando o kanji.
-- **Resposta:** `{"text": "小さい", "accept": ["小さい", "ちいさい"]}`
-- 小さい: o kanji 小 guarda a raiz ちい e a terminação さい vai em hiragana. Guarde o par: 小さな, com な, faz o mesmo trabalho quando vem antes de um substantivo.
 
 

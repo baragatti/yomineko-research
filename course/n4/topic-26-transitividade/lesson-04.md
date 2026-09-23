@@ -8,7 +8,7 @@
 - Usar 通う para dizer 'ir e voltar' ou 'circular entre' lugares
 - Ler e escrever os kanji 朝, 運, 台, 広, 住 no contexto de viagem
 
-**Introduz:** gramática [—] · vocabulário [下宿, 乗り物, 小鳥, 旅館, 案内, 森, 海岸, 通う, 運転] · kanji [住 台 広 朝 運] · kana [—]
+**Introduz:** gramática [—] · vocabulário [下宿, 乗り物, 小鳥, 旅館, 案内, 森, 海岸, 通う, 運転] · kanji [住 台 広] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 
@@ -107,12 +107,7 @@ Cinco kanji ligados a viagem, tempo e moradia:
 - 広い (ひろい) fala de área, de espaço que se estende. 大きい é grande em tamanho, 高い é alto ou caro e 古い é velho.
 
 
-### 8. (recognition) Qual destas palavras significa 'toda manhã'?
-- **Resposta:** `{"choices": ["毎朝", "毎日", "今朝", "毎週"], "correct": "毎朝"}`
-- 毎朝 (まいあさ) é 毎 (cada) mais 朝 (manhã). 今朝 (けさ) é apenas a manhã de hoje, 毎日 é todo dia e 毎週 é toda semana.
-
-
-### 9. (production) Diga 'faço exercício toda manhã', na forma educada.
+### 8. (production) Diga 'faço exercício toda manhã', na forma educada.
 - **Resposta:** `{"text": "毎朝運動します", "accept": ["毎朝運動します", "まいあさうんどうします"]}`
 - 毎朝 abre a frase marcando a frequência e 運動する vira 運動します no educado. O kanji 運 usa aqui a leitura on ウン.
 

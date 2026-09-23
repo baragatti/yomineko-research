@@ -7,7 +7,7 @@
 - Abrir uma sequência de passos ou uma fala com まず ("primeiro", "antes de tudo")
 - Perceber que esses conectores ficam no começo da frase e não exigem nenhuma mudança de conjugação
 
-**Introduz:** gramática [gp-134, gp-66] · vocabulário [ピアノ, 二階建て, 急, 指, 格好, 棚, 為る, 琴, 番組, 糸] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-134, gp-66] · vocabulário [ピアノ, 二階建て, 指, 格好, 棚, 琴, 番組, 糸] · kanji [洗] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-375933b32579`, `sent:gen-c3c08b4ac390`, `sent:gen-b01569f986d3`, `sent:gen-76452db37bcf`
 
@@ -90,4 +90,14 @@ Não confunda それで com から/ので. から/ので ligam causa e efeito de
 - **Resposta:** `{"text": "きのうは雨だった。それで家にいた。", "accept": ["きのうは雨だった。それで家にいた。", "きのうは雨だった　それで家にいた", "きのうは雨だったそれで家にいた", "昨日は雨だった。それで家にいた。", "きのうはあめだった。それでいえにいた。"]}`
 - Causa primeiro (きのうは雨だった = ontem choveu), depois それで, depois a consequência (家にいた = fiquei em casa). それで abre a segunda frase sem exigir nenhuma mudança de conjugação.
 - frases: `sent:gen-c3c08b4ac390`
+
+### 6. (production) Escreva em japonês o verbo "lavar", com o kanji 洗 e a leitura あらう.
+- **Resposta:** `{"text": "洗う", "accept": ["洗う", "あらう"]}`
+- 洗う usa 洗 para o sentido e a terminação em hiragana para a flexão. A leitura kun completa é あらう.
+
+
+### 7. (recognition) Qual kanji significa "lavar"?
+- **Resposta:** `{"choices": ["洗", "港", "洋", "海"], "correct": "洗"}`
+- 洗 também traz a água à esquerda: lavar. O verbo é 洗う, com a leitura kun あらう.
+
 

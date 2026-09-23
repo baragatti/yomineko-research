@@ -36,6 +36,18 @@
       "ref": "gram:gp-4"
     },
     {
+      "type": "kanji",
+      "ref": "kanji:何"
+    },
+    {
+      "type": "kanji",
+      "ref": "kanji:分"
+    },
+    {
+      "type": "kanji",
+      "ref": "kanji:来"
+    },
+    {
       "type": "vocab",
       "ref": "vocab:1002100"
     },
@@ -53,7 +65,19 @@
     },
     {
       "type": "vocab",
+      "ref": "vocab:1577140"
+    },
+    {
+      "type": "vocab",
       "ref": "vocab:1582820"
+    },
+    {
+      "type": "vocab",
+      "ref": "vocab:1006970"
+    },
+    {
+      "type": "vocab",
+      "ref": "vocab:1606560"
     },
     {
       "type": "vocab",
@@ -78,6 +102,10 @@
     {
       "type": "vocab",
       "ref": "vocab:1483185"
+    },
+    {
+      "type": "vocab",
+      "ref": "vocab:1547720"
     },
     {
       "type": "vocab",
@@ -128,6 +156,33 @@
           "recognition",
           "cloze",
           "production"
+        ]
+      },
+      {
+        "deck": "deck:kanji-n5",
+        "item": "kanji:何",
+        "card_types": [
+          "recognition",
+          "production",
+          "handwriting"
+        ]
+      },
+      {
+        "deck": "deck:kanji-n5",
+        "item": "kanji:分",
+        "card_types": [
+          "recognition",
+          "production",
+          "handwriting"
+        ]
+      },
+      {
+        "deck": "deck:kanji-n5",
+        "item": "kanji:来",
+        "card_types": [
+          "recognition",
+          "production",
+          "handwriting"
         ]
       },
       {
@@ -212,6 +267,28 @@
       },
       {
         "deck": "deck:vocab-n5",
+        "item": "vocab:1577140",
+        "card_types": [
+          "recognition",
+          "production"
+        ],
+        "production_key": {
+          "prompt": {
+            "pt-BR": "onde, em que lugar (pronome interrogativo)"
+          },
+          "accept": [
+            "いずこ",
+            "どこ",
+            "何処",
+            "何所"
+          ],
+          "sense_index": 0,
+          "verified": "sampled",
+          "verified_by": "research/reports/w27_sample_report.md"
+        }
+      },
+      {
+        "deck": "deck:vocab-n5",
         "item": "vocab:1582820",
         "card_types": [
           "recognition",
@@ -228,6 +305,49 @@
             "はいりぐち",
             "入り口",
             "入口"
+          ],
+          "sense_index": 0,
+          "verified": "sampled",
+          "verified_by": "research/reports/w27_sample_report.md"
+        }
+      },
+      {
+        "deck": "deck:vocab-n5",
+        "item": "vocab:1006970",
+        "card_types": [
+          "recognition",
+          "production"
+        ],
+        "production_key": {
+          "prompt": {
+            "pt-BR": "isso, esse (o que está perto de quem escuta)"
+          },
+          "accept": [
+            "それ",
+            "其れ"
+          ],
+          "sense_index": 0,
+          "verified": "sampled",
+          "verified_by": "research/reports/w27_sample_report.md"
+        }
+      },
+      {
+        "deck": "deck:vocab-n5",
+        "item": "vocab:1606560",
+        "card_types": [
+          "recognition",
+          "production"
+        ],
+        "production_key": {
+          "prompt": {
+            "pt-BR": "entender, compreender"
+          },
+          "accept": [
+            "わかる",
+            "分かる",
+            "分る",
+            "判る",
+            "解る"
           ],
           "sense_index": 0,
           "verified": "sampled",
@@ -353,6 +473,26 @@
             "あちら",
             "あっち",
             "彼方"
+          ],
+          "sense_index": 0,
+          "verified": "sampled",
+          "verified_by": "research/reports/w27_sample_report.md"
+        }
+      },
+      {
+        "deck": "deck:vocab-n5",
+        "item": "vocab:1547720",
+        "card_types": [
+          "recognition",
+          "production"
+        ],
+        "production_key": {
+          "prompt": {
+            "pt-BR": "vir, chegar (verbo irregular)"
+          },
+          "accept": [
+            "くる",
+            "来る"
           ],
           "sense_index": 0,
           "verified": "sampled",
@@ -555,6 +695,8 @@
       "vocab:1159980",
       "vocab:1203650",
       "vocab:1344930",
+      "vocab:1219960",
+      "vocab:1219980",
       "vocab:1157070",
       "vocab:1193180",
       "vocab:1419990",
@@ -567,22 +709,31 @@
       "vocab:2220600",
       "vocab:1017760",
       "vocab:1030630",
+      "vocab:1577140",
       "vocab:1582820",
+      "vocab:1006970",
+      "vocab:1606560",
       "vocab:1191730",
       "vocab:1485770",
       "vocab:1000580",
       "vocab:1000420",
       "vocab:1000320",
       "vocab:1483185",
+      "vocab:1547720",
       "vocab:1421700",
       "vocab:1201190",
       "vocab:1258330",
       "vocab:1357600",
       "vocab:1203090"
     ],
-    "kanji": [],
+    "kanji": [
+      "kanji:何",
+      "kanji:分",
+      "kanji:来"
+    ],
     "grammar": [
       "gram:da-desu",
+      "gram:ka",
       "gram:wa-topic-marker",
       "gram:gp-2",
       "gram:gp-3",

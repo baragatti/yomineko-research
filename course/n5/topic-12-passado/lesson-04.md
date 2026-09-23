@@ -7,7 +7,7 @@
 - Encaixar なあ depois de だ／だった e de adjetivos
 - Diferenciar なあ (introspectivo) de ね (busca concordância)
 
-**Introduz:** gramática [naa] · vocabulário [でも, どうぞ, 丁度, 動, 動物, 天気, 度, 迚も, 飛ぶ, 鳥, 鶏肉] · kanji [金 高] · kana [—]
+**Introduz:** gramática [naa] · vocabulário [でも, どうぞ, 丁度, 冷たい, 動物, 度, 飛ぶ, 鳥, 鶏肉] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-3488338`, `sent:tatoeba-229334`, `sent:tatoeba-77673`, `sent:tatoeba-203366`
 
@@ -107,10 +107,5 @@ Dá para juntar tudo: 高かったなあ = "nossa, como foi caro...". O なあ t
 ### 6. (recognition) Na palavra お金 (dinheiro), como se lê o kanji 金?
 - **Resposta:** `{"choices": ["かね", "かみ", "くに", "とし"], "correct": "かね"}`
 - Em お金 vale a leitura nativa かね; o prefixo de cortesia vem só na frente. A leitura sino-japonesa キン é a dos compostos: é ela que abre きんようび, sexta-feira.
-
-
-### 7. (production) Escreva em japonês, com kanji, a palavra que significa 'dinheiro' e se lê おかね.
-- **Resposta:** `{"text": "お金", "accept": ["お金", "おかね"]}`
-- お金 é o jeito cotidiano e educado de dizer dinheiro. O kanji 金 carrega ouro, metal e dinheiro; sozinho ele também se lê かね.
 
 

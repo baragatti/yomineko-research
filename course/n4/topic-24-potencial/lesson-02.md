@@ -8,7 +8,7 @@
 - Escolher entre 〜ことができる (formal/geral) e a forma potencial 〜れる・られる conforme o registro
 - Ler o kanji 世 e 界 dentro de 世界 e relacionar 文 a 文法
 
-**Introduz:** gramática [koto-ga-dekiru] · vocabulário [世界, 事務所, 住所, 倍, 場合, 客, 小学校, 戦争, 文法, 昔, 準備, 線, 美術館, 連絡, 飛行場] · kanji [世 家 教 文 界] · kana [—]
+**Introduz:** gramática [koto-ga-dekiru] · vocabulário [世界, 事務所, 住所, 倍, 客, 小学校, 戦争, 文法, 昔, 準備, 線, 美術館, 連絡, 飛行場] · kanji [世 教 文 界 英 走] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-155347`, `sent:tatoeba-158699`, `sent:tatoeba-155872`, `sent:tatoeba-8795030`
 
@@ -158,5 +158,15 @@ Não confunda 世界 ("mundo", せかい) com 線 ("linha", せん): começam co
 ### 14. (production) Escreva em japonês, com kanji, a palavra "redação", o texto que se escreve na aula.
 - **Resposta:** `{"text": "作文", "accept": ["作文", "さくぶん"]}`
 - 作文 se lê さくぶん e junta 作 com 文. É a palavra usada para a redação escolar.
+
+
+### 15. (production) Escreva em japonês 'inglês (o idioma)', palavra que se lê えいご.
+- **Resposta:** `{"text": "英語", "accept": ["英語", "えいご"]}`
+- 英語 é 英 ('Inglaterra') mais 語 ('língua'). O mesmo 語 fecha o nome de qualquer idioma em japonês.
+
+
+### 16. (production) Escreva em japonês, com kanji, o verbo "correr" na forma de dicionário.
+- **Resposta:** `{"text": "走る", "accept": ["走る", "はしる"]}`
+- 走る se lê はしる. O kanji 走 desenha uma pessoa em movimento sobre o chão; る é a terminação.
 
 

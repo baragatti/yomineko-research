@@ -7,7 +7,7 @@
 - Reaproveitar a partícula を para marcar o que se pede
 - Reconhecer e usar ゼロ (zero) e せん (mil) em pedidos e preços
 
-**Introduz:** gramática [o-kudasai] · vocabulário [会う, 千, ０] · kanji [—] · kana [—]
+**Introduz:** gramática [o-kudasai] · vocabulário [会う, 水, ０] · kanji [水] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-143718`
 
@@ -86,5 +86,10 @@ Detalhe importante: com 会う a pessoa que você encontra costuma vir marcada p
 ### 5. (production) Diga em japonês 'Me dê chá, por favor.' usando お茶 (chá), a partícula de objeto e ください.
 - **Resposta:** `{"text": "お茶をください。", "accept": ["お茶をください", "おちゃをください", "お茶をください。", "おちゃをください。"]}`
 - お茶 (chá) + を (marca o que se pede) + ください (por favor). É o molde [coisa] を ください aplicado a um pedido de restaurante.
+
+
+### 6. (recognition) Qual destes kanji significa 'água' e se lê みず?
+- **Resposta:** `{"choices": ["水", "川", "山", "月"], "correct": "水"}`
+- 水 (みず) é 'água'. Os outros três são kanji de natureza que você já viu: 川 é o rio, 山 é a montanha e 月 é a lua.
 
 

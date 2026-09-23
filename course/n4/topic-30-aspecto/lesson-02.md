@@ -7,7 +7,7 @@
 - Expressar 'ir fazendo' e mudança que avança rumo ao futuro com 〜ていく
 - Narrar uma ação ou estado em andamento no passado com 〜ていた (passado contínuo)
 
-**Introduz:** gramática [te-iku, te-ita, tsuzukeru] · vocabulário [それ程, 以上, 儘, 滑る, 間, 騒ぐ] · kanji [歌] · kana [—]
+**Introduz:** gramática [te-iku, te-ita, tsuzukeru] · vocabulário [それ程, 儘, 滑る, 騒ぐ] · kanji [歩] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-12462035`, `sent:tatoeba-7298759`, `sent:tatoeba-12642529`, `sent:gen-fd3b6a8cb10e`
 
@@ -101,8 +101,13 @@ O 週 de 週末 (fim de semana) carrega aquele radical de caminho ⻌: a ideia j
 - 歌 é ao mesmo tempo a canção e o ato de cantá-la: sozinho, lido うた, é o substantivo; com o okurigana う, vira o verbo.
 
 
-### 7. (production) Escreva em japonês o verbo "cantar" (leitura うたう).
-- **Resposta:** `{"text": "歌う", "accept": ["歌う", "うたう"]}`
-- A leitura うた fica dentro do kanji e o う aparece como okurigana. Sem esse う a palavra seria o substantivo 歌, a canção.
+### 7. (recognition) Qual destes kanji significa "andar, caminhar"?
+- **Resposta:** `{"choices": ["歩", "走", "止", "足"], "correct": "歩"}`
+- 歩 é andar. Ele guarda o 止 na parte de cima, o pé que pousa a cada passo. 走 é correr e 足 é o pé.
+
+
+### 8. (production) Escreva em japonês, com kanji, o verbo "andar, caminhar" na forma de dicionário.
+- **Resposta:** `{"text": "歩く", "accept": ["歩く", "あるく"]}`
+- 歩く se lê あるく. Só o 歩 é kanji; く é a terminação do verbo.
 
 

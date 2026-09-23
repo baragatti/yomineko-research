@@ -7,7 +7,7 @@
 - Encadear uma consequência factual com その結果
 - Distinguir finalidade (そのために) de mero resultado (その結果)
 
-**Introduz:** gramática [n3-ni-yotte, n3-sono-kekka, n3-sono-tame-ni] · vocabulário [お前, お昼, オフィス, 下ろす, 主に, 凡そ, 及ぼす, 帯, 御目出度う, 思い出, 思わず, 泳ぎ, 溺れる, 鬼] · kanji [係 増 変 情 感 投 示] · kana [—]
+**Introduz:** gramática [n3-ni-yotte, n3-sono-kekka, n3-sono-tame-ni] · vocabulário [お前, お昼, オフィス, 下ろす, 主に, 凡そ, 及ぼす, 帯, 御目出度う, 思い出, 思わず, 泳ぎ, 溺れる, 結果, 鬼] · kanji [係 増 変 情 感 投 果 示] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-201846`, `sent:tatoeba-211124`
 

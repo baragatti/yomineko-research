@@ -5,7 +5,7 @@
 **Objetivos:**
 - Reconhecer os kanji 門、頭、顔、首 e localizar suas leituras
 
-**Introduz:** gramática [—] · vocabulário [献花] · kanji [門 頭 顔 首] · kana [—]
+**Introduz:** gramática [—] · vocabulário [献花] · kanji [門 顔 首] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 
@@ -37,17 +37,12 @@ Estes kanji fazem parte do conjunto esperado no exame deste nível. Alguns você
 - 門 é o desenho de duas folhas de porta, uma de cada lado. Os kanji que moram dentro dessa moldura são parentes dele: 間 (o espaço entre), 開 (abrir) e 問 (perguntar, bater à porta).
 
 
-### 2. (recognition) Qual destes kanji quer dizer 'cabeça' e se lê あたま quando aparece sozinho?
-- **Resposta:** `{"choices": ["頭", "顔", "題", "首"], "correct": "頭"}`
-- 頭 e 顔 terminam com o mesmo radical à direita, o que marca quase tudo o que tem a ver com a cabeça; 題 também o carrega. Sozinho, 頭 é あたま, a cabeça do dia a dia.
-
-
-### 3. (recognition) Qual destes kanji significa 'rosto' e se lê かお quando aparece sozinho?
+### 2. (recognition) Qual destes kanji significa 'rosto' e se lê かお quando aparece sozinho?
 - **Resposta:** `{"choices": ["顔", "親", "頭", "首"], "correct": "顔"}`
 - 顔 é o mais cheio dos quatro e traz à direita o mesmo radical de cabeça que 頭. O que os separa é a metade esquerda. Sozinho ele é かお, a cara de alguém.
 
 
-### 4. (recognition) Qual destes kanji significa 'pescoço' e se lê くび quando aparece sozinho?
+### 3. (recognition) Qual destes kanji significa 'pescoço' e se lê くび quando aparece sozinho?
 - **Resposta:** `{"choices": ["首", "自", "道", "頭"], "correct": "首"}`
 - 首 guarda 自 dentro dele e é ele mesmo que aparece dentro de 道 ('caminho'). Sozinho é くび, o pescoço; nos compostos, com a leitura シュ, passa a significar 'chefe'.
 

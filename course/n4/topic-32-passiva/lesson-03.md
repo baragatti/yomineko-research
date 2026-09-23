@@ -9,7 +9,7 @@
 - Combinar esses advérbios com vocabulário do dia a dia (遅れる, 続く, 約束, 世話)
 - Reconhecer os kanji 駅 (estação) e 旅 (viagem)
 
-**Introduz:** gramática [amari-nai, gp-74, zenzen-nai] · vocabulário [この間, 世話, 久しぶり, 安心, 払う, 構う, 約束, 続く, 近所, 遅れる] · kanji [旅] · kana [—]
+**Introduz:** gramática [amari-nai, gp-74, zenzen-nai] · vocabulário [この間, 世話, 久しぶり, 全然, 安心, 構う, 約束, 続く, 近所, 遅れる] · kanji [旅] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-171507`, `sent:tatoeba-213986`, `sent:tatoeba-9478237`, `sent:tatoeba-2140068`
 

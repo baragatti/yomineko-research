@@ -7,7 +7,7 @@
 - Distinguir os advérbios 突然, 途端 e とにかく
 - Empregar とも e 共に ao falar de companhia e parceria
 
-**Introduz:** gramática [—] · vocabulário [トップ, トラック, トランプ, ドライブ, ドラマ, 兎に角, 共に, 友, 土地, 土曜, 届く, 年寄り, 突然, 虎, 途端, 閉じる, 飛ばす, 飛び出す] · kanji [—] · kana [—]
+**Introduz:** gramática [—] · vocabulário [トップ, トラック, トランプ, ドライブ, ドラマ, 兎に角, 共に, 友, 土地, 土曜, 届く, 年寄り, 突然, 虎, 閉じる, 飛ばす, 飛び出す] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

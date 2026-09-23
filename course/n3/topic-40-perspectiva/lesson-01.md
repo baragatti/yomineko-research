@@ -8,7 +8,7 @@
 - Escolher に関して quando o contexto pede um tom mais formal e escrito
 - Distinguir tema (について / に関して) de localização física e de ponto de vista
 
-**Introduz:** gramática [n3-ni-kanshite, n3-ni-oite, n3-ni-tsuite] · vocabulário [ウイスキー, 兎, 動かす, 受け取る, 唸る, 嗽, 失う, 奪う, 宇宙, 引用, 引退, 撃つ, 牛, 疑う, 移す, 訴える, 馬] · kanji [予 交 共 原 得 活 済 解 資] · kana [—]
+**Introduz:** gramática [n3-ni-kanshite, n3-ni-oite, n3-ni-tsuite] · vocabulário [ウイスキー, 兎, 動かす, 受け取る, 唸る, 嗽, 失う, 奪う, 宇宙, 引用, 引退, 撃つ, 牛, 疑う, 移す, 訴える, 関する, 馬] · kanji [予 交 共 原 得 活 済 解 資] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-220401`, `sent:tatoeba-77936`
 

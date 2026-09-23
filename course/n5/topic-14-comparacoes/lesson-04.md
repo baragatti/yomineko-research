@@ -7,7 +7,7 @@
 - Marcar o desejado com が, e não com を, evitando o erro mais comum de quem fala português
 - Perguntar o que alguém quer com 〜がほしいですか e responder ao desejo do outro
 
-**Introduz:** gramática [ga-hoshii] · vocabulário [七つ, 二, 夏, 夏休み, 庭, 日, 日曜日, 猫, 西] · kanji [七 北 午 百] · kana [—]
+**Introduz:** gramática [ga-hoshii] · vocabulário [七つ, 二, 夏, 夏休み, 庭, 日曜日, 欲しい, 西] · kanji [七 北 午 百] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-149136`, `sent:tatoeba-13126478`, `sent:tatoeba-1484951`, `sent:tatoeba-1213043`
 

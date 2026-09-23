@@ -7,7 +7,7 @@
 - Usar a família demonstrativa こ- ligada ao falante: これ (isto), この (este +), こちら (por aqui), こんな (assim/deste tipo)
 - Escolher entre これ (pronome, sozinho) e この (vem antes de um substantivo)
 
-**Introduz:** gramática [—] · vocabulário [こんな, ストーブ, スポーツ, 此の, 此れ, 此方, 自動車, 自転車, 駅] · kanji [—] · kana [—]
+**Introduz:** gramática [—] · vocabulário [こんな, ストーブ, スポーツ, 此れ, 此方, 自動車, 自転車, 駅] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

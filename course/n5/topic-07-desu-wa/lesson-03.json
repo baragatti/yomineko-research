@@ -24,11 +24,20 @@
   "needs": [
     {
       "type": "lesson",
+      "ref": "les:n5-desu-wa-01",
+      "note": "Apresenta o ponto de gramática か, que aparece nesta lição."
+    },
+    {
+      "type": "lesson",
       "ref": "les:n5-desu-wa-02",
-      "note": "Apresenta a palavra 彼 (あれ) e o ponto de gramática あれ, que aparecem nesta lição."
+      "note": "Apresenta o kanji 何, a palavra 彼 (あれ) e o ponto de gramática あれ, que aparecem nesta lição."
     }
   ],
   "unlocks": [
+    {
+      "type": "grammar",
+      "ref": "gram:gp-30"
+    },
     {
       "type": "grammar",
       "ref": "gram:gp-33"
@@ -38,8 +47,8 @@
       "ref": "gram:janai-dewa-nai"
     },
     {
-      "type": "grammar",
-      "ref": "gram:ka"
+      "type": "kanji",
+      "ref": "kanji:時"
     },
     {
       "type": "vocab",
@@ -56,6 +65,10 @@
     {
       "type": "vocab",
       "ref": "vocab:1580340"
+    },
+    {
+      "type": "vocab",
+      "ref": "vocab:1577120"
     },
     {
       "type": "vocab",
@@ -76,6 +89,14 @@
     {
       "type": "vocab",
       "ref": "vocab:1586330"
+    },
+    {
+      "type": "vocab",
+      "ref": "vocab:1529520"
+    },
+    {
+      "type": "vocab",
+      "ref": "vocab:1502390"
     },
     {
       "type": "vocab",
@@ -111,6 +132,15 @@
     "introduces_cards": [
       {
         "deck": "deck:grammar-n5",
+        "item": "gram:gp-30",
+        "card_types": [
+          "recognition",
+          "cloze",
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:grammar-n5",
         "item": "gram:gp-33",
         "card_types": [
           "recognition",
@@ -128,12 +158,12 @@
         ]
       },
       {
-        "deck": "deck:grammar-n5",
-        "item": "gram:ka",
+        "deck": "deck:kanji-n5",
+        "item": "kanji:時",
         "card_types": [
           "recognition",
-          "cloze",
-          "production"
+          "production",
+          "handwriting"
         ]
       },
       {
@@ -212,6 +242,26 @@
             "じょうい",
             "上着",
             "上衣"
+          ],
+          "sense_index": 0,
+          "verified": "sampled",
+          "verified_by": "research/reports/w27_sample_report.md"
+        }
+      },
+      {
+        "deck": "deck:vocab-n5",
+        "item": "vocab:1577120",
+        "card_types": [
+          "recognition",
+          "production"
+        ],
+        "production_key": {
+          "prompt": {
+            "pt-BR": "por que (なぜ, o advérbio neutro, o mais usado na escrita)"
+          },
+          "accept": [
+            "なぜ",
+            "何故"
           ],
           "sense_index": 0,
           "verified": "sampled",
@@ -314,6 +364,48 @@
             "あさごはん",
             "朝ごはん",
             "朝ご飯"
+          ],
+          "sense_index": 0,
+          "verified": "sampled",
+          "verified_by": "research/reports/w27_sample_report.md"
+        }
+      },
+      {
+        "deck": "deck:vocab-n5",
+        "item": "vocab:1529520",
+        "card_types": [
+          "recognition",
+          "production"
+        ],
+        "production_key": {
+          "prompt": {
+            "pt-BR": "não haver, não existir (adjetivo い da negação)"
+          },
+          "accept": [
+            "ない",
+            "無い"
+          ],
+          "sense_index": 0,
+          "verified": "sampled",
+          "verified_by": "research/reports/w27_sample_report.md"
+        }
+      },
+      {
+        "deck": "deck:vocab-n5",
+        "item": "vocab:1502390",
+        "card_types": [
+          "recognition",
+          "production"
+        ],
+        "production_key": {
+          "prompt": {
+            "pt-BR": "coisa, objeto concreto"
+          },
+          "accept": [
+            "もの",
+            "もん",
+            "モノ",
+            "物"
           ],
           "sense_index": 0,
           "verified": "sampled",
@@ -559,6 +651,8 @@
       "vocab:1159980",
       "vocab:1203650",
       "vocab:1344930",
+      "vocab:1219960",
+      "vocab:1219980",
       "vocab:1157070",
       "vocab:1193180",
       "vocab:1419990",
@@ -571,13 +665,17 @@
       "vocab:2220600",
       "vocab:1017760",
       "vocab:1030630",
+      "vocab:1577140",
       "vocab:1582820",
+      "vocab:1006970",
+      "vocab:1606560",
       "vocab:1191730",
       "vocab:1485770",
       "vocab:1000580",
       "vocab:1000420",
       "vocab:1000320",
       "vocab:1483185",
+      "vocab:1547720",
       "vocab:1421700",
       "vocab:1201190",
       "vocab:1258330",
@@ -587,11 +685,14 @@
       "vocab:1002610",
       "vocab:1001710",
       "vocab:1580340",
+      "vocab:1577120",
       "vocab:1188760",
       "vocab:1457730",
       "vocab:1173720",
       "vocab:1173750",
       "vocab:1586330",
+      "vocab:1529520",
+      "vocab:1502390",
       "vocab:1404630",
       "vocab:1178590",
       "vocab:1171900",
@@ -600,16 +701,22 @@
       "vocab:1153520",
       "vocab:1268570"
     ],
-    "kanji": [],
+    "kanji": [
+      "kanji:何",
+      "kanji:分",
+      "kanji:来",
+      "kanji:時"
+    ],
     "grammar": [
       "gram:da-desu",
+      "gram:ka",
       "gram:wa-topic-marker",
       "gram:gp-2",
       "gram:gp-3",
       "gram:gp-4",
+      "gram:gp-30",
       "gram:gp-33",
-      "gram:janai-dewa-nai",
-      "gram:ka"
+      "gram:janai-dewa-nai"
     ],
     "conjugation-form": [],
     "phrase": []

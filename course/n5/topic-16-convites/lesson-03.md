@@ -7,7 +7,7 @@
 - Usar 〜ましょうか para se oferecer a fazer algo pelo outro ("quer que eu...?")
 - Usar 〜ましょうか para sugerir algo consultando a opinião da pessoa ("vamos...?")
 
-**Introduz:** gramática [mashouka] · vocabulário [ペン, ボールペン, 勉強, 封筒, 文章, 本, 本棚, 頁] · kanji [校 語] · kana [—]
+**Introduz:** gramática [mashouka] · vocabulário [ボールペン, 勉強, 封筒, 文章, 本棚, 頁] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-193955`, `sent:tatoeba-743825`
 
@@ -89,10 +89,5 @@ Juntando tudo:日本語を勉強しましょうか= "Vamos estudar japonês?" / 
 ### 6. (recognition) O kanji 校 aparece em 学校 (がっこう). Que ideia ele carrega?
 - **Resposta:** `{"choices": ["escola", "estudo, aprender", "alto, caro", "língua, palavra"], "correct": "escola"}`
 - 校 é o kanji de escola e quase nunca aparece sozinho: ele fecha os nomes de escola. Em 学校 ele vem depois de 学 (estudo) e traz a leitura sino-japonesa コウ; a consoante dobrada de がっこう vem do 学 da frente, que de がく passa a がっ.
-
-
-### 7. (production) Escreva em japonês, com kanji, a palavra 'escola' (leitura: がっこう).
-- **Resposta:** `{"text": "学校", "accept": ["学校", "がっこう"]}`
-- 学校 junta 学 (estudo) e 校 (escola). Vale guardar os dois juntos: 校 é a parte que reaparece em todo nome de escola.
 
 

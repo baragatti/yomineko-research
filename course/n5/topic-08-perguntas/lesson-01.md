@@ -7,7 +7,7 @@
 - Perguntar o lugar de algo com どこ
 - Localizar coisas e pessoas com a partícula に + o pronome de lugar
 
-**Introduz:** gramática [gp-10, gp-11, gp-39, gp-9] · vocabulário [側, 交差点, 交番, 公園, 北, 国, 川, 方, 此処, 玄関, 角, 銀行] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-10, gp-11, gp-39, gp-9] · vocabulário [居る, 人, 側, 九, 交差点, 交番, 公園, 其処, 北, 千, 国, 川, 方, 此処, 玄関, 見る, 角, 遠い, 銀行] · kanji [千 見] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-5055`, `sent:tatoeba-141432`, `sent:tatoeba-5933519`, `sent:tatoeba-5319`
 
@@ -106,5 +106,10 @@ Note que ここ também se escreve com kanji, 此処, mas no dia a dia aparece q
 ### 6. (production) Pergunte em japonês "Onde fica o parque?" usando 公園 (parque) e o molde X は どこ ですか.
 - **Resposta:** `{"text": "公園はどこですか。", "accept": ["公園はどこですか", "公園はどこですか？", "こうえんはどこですか", "公園はどこですか。"]}`
 - 公園 (parque) + は (tópico) + どこ (onde) + ですか (pergunta). É o molde de ouro para localizar qualquer lugar.
+
+
+### 7. (recognition) Qual destes kanji vale mil?
+- **Resposta:** `{"choices": ["千", "百", "十", "九"], "correct": "千"}`
+- 千 (せん) é mil. 百 é cem, 十 é dez e 九 é nove. O desenho de 千 é o de 十 com um traço curto por cima, como se o dez ganhasse mais uma casa.
 
 

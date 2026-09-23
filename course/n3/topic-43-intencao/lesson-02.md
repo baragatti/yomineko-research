@@ -7,7 +7,7 @@
 - Expressar uma regra pessoal autoimposta com 〜ことにしている ('faço questão de')
 - Descrever uma norma ou combinação externa com 〜ことになっている ('é regra que', 'ficou combinado')
 
-**Introduz:** gramática [n3-koto-ni-natte-iru, n3-koto-ni-shite-iru, n3-tsumori-deshita] · vocabulário [企業, 勘定, 帰宅, 感心, 感謝, 歓迎, 火曜, 環境, 監督, 管理, 議会, 議員, 関する, 関連] · kanji [例 宅 席 番 規 配] · kana [—]
+**Introduz:** gramática [n3-koto-ni-natte-iru, n3-koto-ni-shite-iru, n3-tsumori-deshita] · vocabulário [企業, 勘定, 学ぶ, 帰宅, 感心, 感謝, 歓迎, 火曜, 環境, 監督, 管理, 議会, 議員, 関連] · kanji [例 宅 席 番 規 配] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-1119969`, `sent:tatoeba-152735`
 

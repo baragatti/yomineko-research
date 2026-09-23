@@ -7,7 +7,7 @@
 - Pedir orientação e instruções com 〜たらいいですか ('o que / onde / como devo fazer?')
 - Combinar uma palavra interrogativa (何・どこ・どう) com 〜たらいいですか para fazer perguntas práticas
 
-**Introduz:** gramática [gp-146, tara-dou, tara-ii-desu-ka] · vocabulário [受ける, 成るべく, 気分, 無理, 用事, 間違える, 頑張る] · kanji [度 用] · kana [—]
+**Introduz:** gramática [gp-146, tara-dou] · vocabulário [受ける, 成るべく, 気分, 無理, 用事, 間違える, 頑張る] · kanji [帰 度 用] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-194237`, `sent:tatoeba-9966058`, `sent:tatoeba-187548`, `sent:tatoeba-200926`
 
@@ -76,47 +76,37 @@ Juntando tudo numa conversa: você pergunta 何をしたらいいですか ("o q
 - 〜たらどうですか = "que tal...? / por que não...?", uma sugestão para o interlocutor. Já 〜たらいいですか serve para PEDIR conselho sobre o que VOCÊ deve fazer.
 - frases: `sent:tatoeba-194237`
 
-### 2. (recognition) Você está perdido e quer perguntar O QUE deve fazer. Qual fórmula usar?
-- **Resposta:** `{"choices": ["何をしたらいいですか", "何をしたらどうですか", "何をしてよかった"], "correct": "何をしたらいいですか"}`
-- Para pedir orientação, use [pergunta] + verbo たら + いいですか: 何をしたらいいですか = "o que eu devo fazer?". A versão com どうですか seria uma sugestão, não um pedido.
-- frases: `sent:tatoeba-187548`
-
-### 3. (cloze) Complete a SUGESTÃO educada: もう帰っ＿どうですか。 (Que tal você já ir para casa?)
+### 2. (cloze) Complete a SUGESTÃO educada: もう帰っ＿どうですか。 (Que tal você já ir para casa?)
 - **Resposta:** `{"text": "たら", "full": "もう帰ったらどうですか。"}`
 - O condicional 〜たら liga o verbo (帰る → 帰ったら, "se/quando voltar") à sugestão どうですか. Junto: "que tal já ir para casa?".
 - frases: `sent:tatoeba-194237`
 
-### 4. (particle_choice) Complete o pedido de orientação: どこ＿座ったらいいですか。 (Onde eu devo me sentar?)
+### 3. (particle_choice) Complete o pedido de orientação: どこ＿座ったらいいですか。 (Onde eu devo me sentar?)
 - **Resposta:** `{"choices": ["に", "を", "は"], "correct": "に"}`
 - 座る ("sentar") pede o lugar marcado por に: どこに座ったらいいですか = "em que lugar devo me sentar?". に marca o ponto onde a ação se fixa.
 - frases: `sent:tatoeba-200926`
 
-### 5. (sentence_build) Monte a sugestão "Que tal você descansar um pouco?" com as peças: [少し] [休んだら] [どうですか]
+### 4. (sentence_build) Monte a sugestão "Que tal você descansar um pouco?" com as peças: [少し] [休んだら] [どうですか]
 - **Resposta:** `{"order": ["少し", "休んだら", "どうですか"], "text": "少し休んだらどうですか。"}`
 - 少し (um pouco) + 休んだら (se/quando descansar, de 休む) + どうですか (que tal?). É 〜たらどうですか em ação: uma sugestão gentil.
 
 
-### 6. (production) Pergunte em japonês "O que eu devo comer?" usando 何 (o quê), o verbo 食べる na forma たら e いいですか.
-- **Resposta:** `{"text": "何を食べたらいいですか。", "accept": ["何を食べたらいいですか", "何を食べたらいいですか？", "なにをたべたらいいですか", "何をたべたらいいですか", "何食べたらいいですか"]}`
-- 何 (o quê) + を + 食べたら (se comer, de 食べる) + いいですか = "o que eu devo comer?". É o esqueleto [pergunta] + verbo たら + いいですか para pedir conselho.
-- frases: `sent:tatoeba-187548`
-
-### 7. (recognition) Em 今度 ('desta vez') e em もう一度 ('mais uma vez'), como se lê o kanji 度?
+### 5. (recognition) Em 今度 ('desta vez') e em もう一度 ('mais uma vez'), como se lê o kanji 度?
 - **Resposta:** `{"choices": ["ど", "かい", "だい", "じ"], "correct": "ど"}`
 - Nos dois compostos 度 entra com a leitura sino-japonesa ど: 今度 (こんど) e もう一度 (もういちど). O sentido é 'vez, ocasião'.
 
 
-### 8. (production) Escreva em japonês 'desta vez' (a ocasião que vem agora), com kanji.
+### 6. (production) Escreva em japonês 'desta vez' (a ocasião que vem agora), com kanji.
 - **Resposta:** `{"text": "今度", "accept": ["今度", "こんど"]}`
 - 今度 (こんど) junta 今 ('agora') e 度 ('vez'): a vez que vem agora. Serve tanto para 'desta vez' quanto para 'da próxima vez', e quem decide é o contexto.
 
 
-### 9. (recognition) 用事 significa 'compromisso, afazer'. Como se lê o kanji 用 nessa palavra?
+### 7. (recognition) 用事 significa 'compromisso, afazer'. Como se lê o kanji 用 nessa palavra?
 - **Resposta:** `{"choices": ["よう", "どう", "こう", "じゅう"], "correct": "よう"}`
 - 用 lê-se よう nesse composto: 用事 (ようじ). As outras são leituras de kanji já ensinados: どう de 道, こう de 行 e じゅう de 十.
 
 
-### 10. (production) Escreva em japonês, com kanji, a palavra 'afazer, compromisso', aquilo que você precisa resolver.
+### 8. (production) Escreva em japonês, com kanji, a palavra 'afazer, compromisso', aquilo que você precisa resolver.
 - **Resposta:** `{"text": "用事", "accept": ["用事", "ようじ"]}`
 - 用事 (ようじ) é o compromisso concreto: 用 ('tarefa') mais 事 ('coisa, assunto').
 

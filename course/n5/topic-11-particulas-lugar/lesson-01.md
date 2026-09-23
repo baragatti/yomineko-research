@@ -8,7 +8,7 @@
 - Escolher entre あります e います pela natureza do que existe (coisa x ser vivo)
 - Marcar com が a coisa/o ser que existe (e não com を)
 
-**Introduz:** gramática [ga-arimasu, ga-imasu] · vocabulário [其れ, 卵, 台, 台所, 大使館, 大学, 建物, 煙草, 盾, 食べ物] · kanji [上] · kana [—]
+**Introduz:** gramática [gp-13] · vocabulário [下, 上, 卵, 台, 台所, 大使館, 大学, 建物, 煙草, 猫, 盾, 食べ物] · kanji [上 下] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-150639`, `sent:tatoeba-80128`, `sent:tatoeba-229125`, `sent:tatoeba-6828196`
 
@@ -105,4 +105,9 @@ Mnemônico de forma: imagine uma linha do chão (一) e algo brotando para cima 
 - **Resposta:** `{"text": "台所に食べ物があります。", "accept": ["台所に食べ物があります", "台所に食べ物があります。", "だいどころにたべものがあります", "台所にたべものがあります"]}`
 - 台所 (cozinha) + に (lugar) + 食べ物 (comida) + が + あります. Comida é coisa sem vida, então あります. Molde: lugar に coisa が あります.
 
+
+### 7. (recognition) Na frase 人がいる ('Há pessoas.'), por que o verbo é いる e não ある?
+- **Resposta:** `{"choices": ["Porque 人 (pessoa) é um ser vivo", "Porque いる é mais educado que ある", "Porque a frase está no plural"], "correct": "Porque 人 (pessoa) é um ser vivo"}`
+- O japonês escolhe o verbo de existência pela natureza do sujeito: いる para seres vivos (gente, bicho) e ある para coisas. Como 人 é pessoa, usa-se いる.
+- frases: `sent:tatoeba-6828199`
 

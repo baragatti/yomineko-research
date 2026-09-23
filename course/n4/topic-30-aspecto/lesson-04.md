@@ -9,7 +9,7 @@
 - Reconhecer e empregar vocabulário de preparação, ferramentas e qualidades (道具, 説明, 硬い, 髪, スーツ, 指輪)
 - Ler e escrever os kanji 注 e 字 em contexto
 
-**Introduz:** gramática [gp-65, te-miru, te-oku] · vocabulário [スーツ, 指輪, 硬い, 説明, 道具, 髪] · kanji [字 注] · kana [—]
+**Introduz:** gramática [gp-65, te-miru, te-oku] · vocabulário [スーツ, 指輪, 硬い, 考える, 説明, 道具, 髪] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-1503523`, `sent:tatoeba-173469`, `sent:gen-72606cd984a7`, `sent:gen-509ae5ead73c`
 
@@ -104,12 +104,7 @@ Na segunda frase,間違えた("errei") +名前("nome") +書きなおす: errou, 
 - 字がきたないから書きなおす = "como a letra está feia, vou reescrever". 書き (radical) + なおす = refazer porque não ficou bom. きたない (汚い) = "sujo/feio"; から/ので = "porque". O kanji 字 = letra/caractere.
 
 
-### 7. (recognition) Qual destas palavras significa 'cuidado, atenção'?
-- **Resposta:** `{"choices": ["注意", "用意", "意味", "元気"], "correct": "注意"}`
-- 注意 (ちゅうい) é atenção ou cuidado. Compare com 用意 (ようい), preparativo, e 意味 (いみ), significado: as três compartilham 意, e o que muda o sentido é o outro kanji.
-
-
-### 8. (production) Diga 'preste atenção aos carros', na forma educada com てください.
+### 7. (production) Diga 'preste atenção aos carros', na forma educada com てください.
 - **Resposta:** `{"text": "車に注意してください", "accept": ["車に注意してください", "くるまにちゅういしてください"]}`
 - 注意する pede に para marcar aquilo a que se presta atenção. Nessa palavra o kanji 注 usa a leitura on チュウ.
 

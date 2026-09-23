@@ -8,7 +8,7 @@
 - Aplicar o padrão a quantidades e números (千円しかない = 'só tenho mil ienes')
 - Reconhecer e usar advérbios de quantidade como 殆ど e 大抵
 
-**Introduz:** gramática [gp-100, gp-118] · vocabulário [到頭, 壊す, 大抵, 必ず, 折る, 拾う, 止む, 殆ど, 沸く, 焼く, 盗む, 踏む] · kanji [地] · kana [—]
+**Introduz:** gramática [gp-100, gp-118] · vocabulário [到頭, 壊す, 大抵, 必ず, 折る, 拾う, 止む, 殆ど, 沸く, 焼く, 盗む, 踏む] · kanji [地 待] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-4849`, `sent:tatoeba-172845`, `sent:tatoeba-2464847`, `sent:tatoeba-179727`
 
@@ -106,5 +106,10 @@ Juntando tudo: 新しい傘は千円しかしなかった = "o guarda-chuva novo
 ### 7. (production) Escreva o kanji que significa 'solo, terra, região', o de ちず (mapa) e ちかてつ (metrô).
 - **Resposta:** `{"text": "地", "accept": ["地"]}`
 - 地 é a terra como lugar e região. Ele leva o radical 土 (terra) do lado esquerdo, e é daí que vem a confusão: 土 sozinho é o solo, o chão.
+
+
+### 8. (recognition) Qual destes kanji significa "esperar"?
+- **Resposta:** `{"choices": ["待", "持", "特", "時"], "correct": "待"}`
+- 待 é esperar. Ele anda com um bando parecidíssimo: 持 é segurar, 特 é especial e 時 é hora. Todos repetem o mesmo bloco à direita; o que muda é a peça da esquerda.
 
 

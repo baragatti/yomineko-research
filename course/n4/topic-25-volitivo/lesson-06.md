@@ -7,7 +7,7 @@
 - Usar 〜なさい para dar ordens firmes mas gentis, no registro de quem tem autoridade
 - Escolher entre 命令形, 〜なさい e ～てください conforme o registro e a relação entre as pessoas
 
-**Introduz:** gramática [gp-127, nasai] · vocabulário [漬ける, 赤ん坊] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-127, nasai] · vocabulário [漬ける, 赤ん坊] · kanji [勉] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-187788`, `sent:tatoeba-83322`, `sent:tatoeba-78287`, `sent:tatoeba-79943`
 
@@ -97,5 +97,10 @@ Duas palavras desta lição mostram bem onde as ordens aparecem:
 ### 5. (production) Um chef manda o aprendiz deixar os legumes (野菜・やさい) de molho na água (水・みず). Escreva a ordem usando 漬ける (つける) na forma 〜なさい. Você pode escrever em kana.
 - **Resposta:** `{"text": "野菜を水に漬けなさい。", "accept": ["野菜を水に漬けなさい", "野菜を水に漬けなさい。", "やさいをみずにつけなさい", "やさいをみずにつけなさい。"]}`
 - 漬ける é grupo 2: base ます = 漬け, mais なさい = 漬けなさい. A coisa que se mergulha leva を (野菜を) e o lugar onde se mergulha leva に (水に). Tom de autoridade gentil, perfeito para um chef instruindo o aprendiz.
+
+
+### 6. (production) Escreva em japonês 'estudo', べんきょう, com os dois kanji.
+- **Resposta:** `{"text": "勉強", "accept": ["勉強", "べんきょう"]}`
+- 勉 é 'empenho' e traz 力 (força) embaixo; ao lado de 強 (forte) forma 勉強, o estudo como esforço. É a palavra que vira verbo com する.
 
 

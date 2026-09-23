@@ -8,7 +8,7 @@
 - Usar a forma volitiva para expressar a própria intenção informal ('vou fazer')
 - Reconhecer que 〜よう/〜おう é a versão casual de 〜ましょう e quando NÃO usá-la
 
-**Introduz:** gramática [gp-147, ikou-kei-volitional-form, you-da] · vocabulário [場所, 増える, 始める, 届ける, 心, 暮れる, 残る, 知らせる, 立てる, 答え, 辞典, 選ぶ] · kanji [元 別 知 考] · kana [—]
+**Introduz:** gramática [gp-147, ikou-kei-volitional-form, you-da] · vocabulário [場所, 増える, 始める, 届ける, 心, 暮れる, 残る, 知らせる, 立てる, 答え, 辞典, 選ぶ] · kanji [元 別 早 映 画 考] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-58ab4a01fc12`, `sent:tatoeba-3488682`, `sent:gen-50ecb45e92d3`, `sent:tatoeba-4443243`
 
@@ -132,13 +132,18 @@ E alguns substantivos úteis do tópico:
 - 元気 junta 元 ("origem, fonte") a 気 ("ânimo"): a energia ainda na origem, ou seja, estar bem. A leitura de 元 aqui é ゲン.
 
 
-### 9. (production) Escreva em japonês o verbo "saber, conhecer" (しる), usando o kanji.
-- **Resposta:** `{"text": "知る", "accept": ["知る", "しる"]}`
-- 知る tem o kanji 知 com a leitura nativa し e a terminação る em hiragana. O par 知らせる (しらせる) é o mesmo kanji no sentido de "fazer saber", isto é, avisar.
-
-
-### 10. (production) Escreva em japonês "outro, à parte" (べつ), com o kanji.
+### 9. (production) Escreva em japonês "outro, à parte" (べつ), com o kanji.
 - **Resposta:** `{"text": "別", "accept": ["別", "べつ"]}`
 - 別 (べつ) marca o que fica separado do resto. A leitura ベツ é a chinesa; o radical de faca à direita ajuda a lembrar de algo cortado ao meio.
+
+
+### 10. (production) Escreva em japonês 'filme', palavra que se lê えいが.
+- **Resposta:** `{"text": "映画", "accept": ["映画", "えいが"]}`
+- 映画 é 映 ('projetar') mais 画 ('imagem'): a imagem projetada. Guarde a leitura えいが inteira, porque as duas metades usam a leitura chinesa.
+
+
+### 11. (recognition) Qual destes kanji significa 'imagem, desenho' (leitura ガ)?
+- **Resposta:** `{"choices": ["画", "田", "界", "用"], "correct": "画"}`
+- 画 é 'imagem, desenho' e se lê ガ nesse sentido. 田 e 界 guardam mesmo o bloco 田, e 用 só se parece com ele, então repare no contorno: só 画 fica emoldurado em cima e embaixo.
 
 

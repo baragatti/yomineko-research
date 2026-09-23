@@ -7,7 +7,7 @@
 - Ligar duas orações com 〜なくて (causa ou estado negativo)
 - Dizer que algo NÃO precisa ser feito com 〜なくてもいい / 〜なくていい
 
-**Introduz:** gramática [gp-62] · vocabulário [ハンバーグ, レジ, 以外, 十分, 吃驚, 市, 斯う, 裏, 講堂] · kanji [写 映 英] · kana [—]
+**Introduz:** gramática [gp-62] · vocabulário [ハンバーグ, レジ, 入院, 十分, 吃驚, 市, 斯う, 裏, 講堂] · kanji [写] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-174749`, `sent:tatoeba-182548`, `sent:tatoeba-183273`, `sent:tatoeba-122086`
 
@@ -128,18 +128,8 @@ Estes três aparecem em palavras do dia a dia ligadas a imagem e idioma.
 - Em 映画 o 映 lê-se えい e o 画 lê-se が. うつ é a leitura nativa do próprio 映 e しゃ é a de 写, dois vizinhos que vivem trocando de lugar na cabeça de quem estuda.
 
 
-### 9. (production) Escreva em japonês 'filme', palavra que se lê えいが.
-- **Resposta:** `{"text": "映画", "accept": ["映画", "えいが"]}`
-- 映画 é 映 ('projetar') mais 画 ('imagem'): a imagem projetada. Guarde a leitura えいが inteira, porque as duas metades usam a leitura chinesa.
-
-
-### 10. (recognition) Qual é o significado do kanji 英?
+### 9. (recognition) Qual é o significado do kanji 英?
 - **Resposta:** `{"choices": ["Inglaterra", "imagem", "copiar", "verdadeiro"], "correct": "Inglaterra"}`
 - 英 é a forma abreviada de Inglaterra em japonês. Por isso 英語 (えいご) é 'a língua inglesa': 英 mais 語, 'língua'.
-
-
-### 11. (production) Escreva em japonês 'inglês (o idioma)', palavra que se lê えいご.
-- **Resposta:** `{"text": "英語", "accept": ["英語", "えいご"]}`
-- 英語 é 英 ('Inglaterra') mais 語 ('língua'). O mesmo 語 fecha o nome de qualquer idioma em japonês.
 
 

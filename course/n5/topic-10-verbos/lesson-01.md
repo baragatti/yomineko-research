@@ -8,7 +8,7 @@
 - Usar vocabulário de ações da rotina diária em frases polidas
 - Reconhecer o kanji 見 (ver) dentro do verbo 見る
 
-**Introduz:** gramática [gp-6, gp-8] · vocabulário [上げる, 入れる, 掛ける, 教える, 浴びる, 消える, 生まれる, 着る, 答える, 締める, 見る, 覚える, 起きる, 閉める, 開ける, 降りる] · kanji [出 見] · kana [—]
+**Introduz:** gramática [ga, ga-arimasu, ga-imasu, gp-6, gp-8] · vocabulário [時, テレビ, 上げる, 六, 掛ける, 教える, 朝, 毎日, 浴びる, 消える, 生まれる, 着る, 答える, 締める, 覚える, 起きる, 閉める, 開ける, 降りる] · kanji [六] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-e8f19f968193`, `sent:gen-97a9a63e32d1`, `sent:tatoeba-150175`, `sent:tatoeba-11795596`
 
@@ -108,8 +108,8 @@ O verbo 見る traz o seu primeiro kanji de ação.
 - 開ける é verbo る: tira o る, põe ます → 開けます. A janela (まど) é o objeto, então leva を, e o verbo vai para o fim: まどを開けます. Sem artigo: não se diz 'uma janela'.
 
 
-### 6. (recognition) Entre os kanji que você já conhece, qual significa "sair, aparecer"?
-- **Resposta:** `{"choices": ["出", "見", "日", "大"], "correct": "出"}`
-- 出 é sair, vir para fora: imagine um broto empurrando a terra e aparecendo na superfície. 見 é o outro kanji novo desta lição e significa ver; 日 é sol ou dia e 大 é grande.
+### 6. (production) Escreva em kanji o número seis.
+- **Resposta:** `{"text": "六", "accept": ["六", "ろく"]}`
+- O seis é 六 e sozinho se lê ろく. Na contagem de unidades ele muda para 六つ (むっつ), com a leitura nativa.
 
 

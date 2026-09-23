@@ -7,7 +7,7 @@
 - Usar それでも para apresentar um resultado contrário ao esperado: 'mesmo assim', 'ainda assim'
 - Montar o padrão de tema com contraste は～が…は para opor duas coisas dentro do mesmo assunto
 
-**Introduz:** gramática [gp-61, sore-demo, wa-ga-wa] · vocabulário [—] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-61, sore-demo, wa-ga-wa] · vocabulário [—] · kanji [暑] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-10914924`, `sent:tatoeba-10937074`, `sent:gen-c34f235af730`, `sent:gen-1bdd56046df9`
 
@@ -84,4 +84,9 @@ Cuidado para não somar quando a ideia é opor. Se as duas metades vão no mesmo
 - **Resposta:** `{"text": "日本語は話せるが英語は話せない", "accept": ["日本語は話せるが英語は話せない", "にほんごは話せるが英語は話せない", "日本語は話せるが、英語は話せない", "にほんごははなせるがえいごははなせない"]}`
 - 日本語は話せる (japonês, consigo falar) + が (mas) + 英語は話せない (inglês, não consigo falar). O は em 英語は destaca o inglês como o caso oposto: 'japonês sim, inglês não'.
 - frases: `sent:gen-1bdd56046df9`
+
+### 6. (recognition) Qual destes adjetivos descreve um dia quente?
+- **Resposta:** `{"choices": ["暑い", "寒い", "暗い", "明るい"], "correct": "暑い"}`
+- 暑い (あつい) é o calor do clima ou do ambiente. Note o 日 (sol) no alto do kanji, que também aparece em 暗い e em 明るい.
+
 

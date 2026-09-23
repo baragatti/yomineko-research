@@ -9,7 +9,7 @@
 - Combinar までに + 〜ないと para dizer 'tenho que fazer X até certo momento'
 - Reconhecer os kanji 早 (cedo) e 味 (sabor)
 
-**Introduz:** gramática [gp-117, made-ni] · vocabulário [先ず, 大体, 屹度, 是非, 暫く, 特に, 遠く] · kanji [味 早] · kana [—]
+**Introduz:** gramática [gp-117, made-ni] · vocabulário [先ず, 屹度, 暫く, 特に, 遠く] · kanji [味] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-dd6d7f3ff4d2`, `sent:gen-722c83579913`, `sent:tatoeba-147666`, `sent:tatoeba-150563`
 

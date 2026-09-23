@@ -7,7 +7,7 @@
 - Escolher ごろ para um ponto no tempo e ころ para um período mais amplo
 - Falar do passado recente com さっき
 
-**Introduz:** gramática [gp-68, koro-goro] · vocabulário [予習, 先, 医学, 正月, 発音, 規則] · kanji [発] · kana [—]
+**Introduz:** gramática [gp-68, koro-goro] · vocabulário [予習, 先, 医学, 正月, 発音, 規則] · kanji [朝 発 起] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-148071`, `sent:tatoeba-235061`, `sent:gen-86b281bbdbef`, `sent:gen-e00af1726629`
 
@@ -104,5 +104,15 @@ Frases-modelo para guardar: 予習はたいてい夜する ("costumo fazer a pre
 ### 6. (recognition) Nos painéis de horário de trem, um kanji marca a hora da partida. Qual é ele?
 - **Resposta:** `{"choices": ["発", "出", "来", "立"], "correct": "発"}`
 - 発 é partir, sair em viagem, e é o que aparece nos painéis de partida. 出 também é sair, mas de um lugar qualquer; 来 é vir e 立 é ficar de pé.
+
+
+### 7. (recognition) Qual destas palavras significa 'toda manhã'?
+- **Resposta:** `{"choices": ["毎朝", "毎日", "今朝", "毎週"], "correct": "毎朝"}`
+- 毎朝 (まいあさ) é 毎 (cada) mais 朝 (manhã). 今朝 (けさ) é apenas a manhã de hoje, 毎日 é todo dia e 毎週 é toda semana.
+
+
+### 8. (production) Escreva em japonês, com kanji e okurigana, o verbo 'levantar-se, acordar'.
+- **Resposta:** `{"text": "起きる", "accept": ["起きる", "おきる"]}`
+- É 起きる, quem acorda é você mesmo. Com outro okurigana o sentido vira transitivo: 起こす (おこす) é acordar outra pessoa.
 
 

@@ -7,7 +7,7 @@
 - Escolher o verbo certo de um par segundo haja ou não um agente agindo sobre o objeto
 - Reconhecer pares clássicos como 開く/開ける e 消える/消す e a partícula que cada lado pede
 
-**Introduz:** gramática [gp-64, tadoushi-jidoushi] · vocabulário [乾く, 塗る, 思い出す, 探す, 楽しむ, 育てる, 踊る, 連れる, 進む] · kanji [始 無 私 終] · kana [—]
+**Introduz:** gramática [gp-64, tadoushi-jidoushi] · vocabulário [乾く, 塗る, 思い出す, 探す, 楽しむ, 育てる, 踊る, 連れる, 進む] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-5c7d35fc5548`, `sent:gen-eeb95dda0812`, `sent:gen-867d5c2e8dc3`, `sent:gen-f490f11e55b3`
 
@@ -110,10 +110,5 @@ Por fim, 無 significa "nada / nenhum / inexistência" (leituras な.い, on ム
 ### 8. (production) Escreva em japonês o verbo 'terminar, acabar' que faz par com 始まる, na forma de dicionário.
 - **Resposta:** `{"text": "終わる", "accept": ["終わる", "おわる"]}`
 - 終わる é 'acabar' visto de dentro: a coisa termina sozinha. O kanji 終 traz o sentido de fim, e わる é o okurigana que fecha o verbo.
-
-
-### 9. (production) Escreva em japonês o verbo transitivo 'perder, extraviar' que faz par com 無くなる, na forma de dicionário.
-- **Resposta:** `{"text": "無くす", "accept": ["無くす", "なくす"]}`
-- 無くす é transitivo: alguém perde alguma coisa, marcada por を. Já 無くなる é intransitivo, e nele a coisa some sem culpado. O 無 é a mesma ausência nos dois.
 
 

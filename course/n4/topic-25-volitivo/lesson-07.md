@@ -9,7 +9,7 @@
 - Comparar com 〜のように / 〜のような ("como", "feito")
 - Reconhecer 許り (ばかり) com os sentidos "só/apenas" e "acabar de"
 
-**Introduz:** gramática [gp-71, gp-83, zehi] · vocabulário [許り] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-71, gp-83, zehi] · vocabulário [是非, 許り] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-1301211`, `sent:tatoeba-8993674`, `sent:gen-e4c675e9ca2d`, `sent:gen-c1a790a4c31e`
 

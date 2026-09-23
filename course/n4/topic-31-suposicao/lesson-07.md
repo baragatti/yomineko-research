@@ -8,7 +8,7 @@
 - Transformar 〜たい (desejo próprio) em 〜たがる para expressar a vontade de terceiros
 - Reconhecer o sufixo 〜がり como substantivo de traço de personalidade (ex. 寒がり, 怖がり)
 
-**Introduz:** gramática [gari, garu-gatteiru, gp-75, tagaru] · vocabulário [そんなに, 下さる, 手伝う, 見つける] · kanji [—] · kana [—]
+**Introduz:** gramática [gari, garu-gatteiru, gp-75, tagaru] · vocabulário [手伝う] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-8900817`, `sent:tatoeba-148753`, `sent:gen-a0d367f9d037`, `sent:tatoeba-127148`
 

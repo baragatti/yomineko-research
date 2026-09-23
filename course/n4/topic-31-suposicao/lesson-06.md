@@ -8,7 +8,7 @@
 - Indicar estilo, jeito ou aparência parecida com o sufixo 〜風 (no estilo de / à moda de)
 - Reconhecer e ler o kanji 風 (vento / estilo)
 
-**Introduz:** gramática [ga-suru, gp-131, gp-132] · vocabulário [忘れ物, 慣れる, 昼休み, 暖房, 留守] · kanji [風] · kana [—]
+**Introduz:** gramática [ga-suru, gp-131, gp-132] · vocabulário [忘れ物, 慣れる, 昼休み, 暖房, 留守] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-11588172`, `sent:gen-3c81102a6182`, `sent:gen-f2f39d1b820e`, `sent:tatoeba-11483540`
 

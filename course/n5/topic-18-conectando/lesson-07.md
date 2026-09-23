@@ -7,7 +7,7 @@
 - Nominalizar o modo de fazer algo com 方（かた）, como em 読み方 ('a maneira de ler')
 - Reconhecer o kanji 読 (ler) dentro de 読む e 読み方, e 火 (fogo) em 火曜日
 
-**Introduz:** gramática [gp-41, kata] · vocabulário [キロ, 六, 四つ, 読む, 零, ４日, ８日] · kanji [火 読] · kana [—]
+**Introduz:** gramática [gp-41, kata] · vocabulário [キロ, 四つ, 零, ４日, ８日] · kanji [火] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

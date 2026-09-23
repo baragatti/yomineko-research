@@ -7,7 +7,7 @@
 - Abrir uma frase dedicada a explicar o motivo com なぜなら ... から
 - Escolher entre から (subjetivo) e ので (neutro, suave) conforme a situação
 
-**Introduz:** gramática [n3-desu-kara, n3-nazenara] · vocabulário [与える, 医師, 嵐, 息, 悪魔, 扱う, 汗, 油, 生き物, 生憎, 穴, 空き, 胃, 集まり, 預ける] · kanji [実 決 関] · kana [—]
+**Introduz:** gramática [n3-desu-kara, n3-nazenara] · vocabulário [与える, 医師, 嵐, 息, 悪魔, 扱う, 汗, 油, 生き物, 生憎, 穴, 空き, 胃, 集まり, 預ける] · kanji [実 彼 決 関] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-111483`, `sent:tatoeba-236769`
 
@@ -114,5 +114,10 @@ O kanji 首 significa "pescoço, cabeça". É um pictograma de uma cabeça com c
 ### 9. (production) Escreva o kanji que significa relação, o de estar ligado a alguma coisa.
 - **Resposta:** `{"text": "関", "accept": ["関", "かん"]}`
 - 関 é o portão 門 com uma tranca dentro: a barreira que liga e separa dois lados. Em palavras compostas lê-se かん.
+
+
+### 10. (production) Escreva em japonês o pronome 'ela', com kanji.
+- **Resposta:** `{"text": "彼女", "accept": ["彼女", "かのじょ"]}`
+- 彼女 (かのじょ) é 'ela'; 彼 (かれ) sozinho é 'ele'. O mesmo 彼 está em 彼ら ('eles').
 
 

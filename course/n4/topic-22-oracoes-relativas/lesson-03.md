@@ -7,7 +7,7 @@
 - Usar 間に (あいだに) para situar uma ação pontual em algum momento de um intervalo
 - Escolher entre 間 e 間に conforme a ação principal dure o tempo todo ou aconteça uma vez só
 
-**Introduz:** gramática [aida, aida-ni] · vocabulário [アルバイト, 台風, 地震, 塵, 壊れる, 布団, 揺れる, 泥棒, 瓦斯, 硝子, 贈り物, 赤ちゃん] · kanji [動 開] · kana [—]
+**Introduz:** gramática [aida, aida-ni] · vocabulário [間, アルバイト, 台風, 地震, 塵, 壊れる, 布団, 揺れる, 泥棒, 火事, 瓦斯, 硝子, 贈り物, 赤ちゃん] · kanji [動 夏 夜 字 漢 開 題] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-aab58020a36f`, `sent:tatoeba-79723`, `sent:gen-c5f31a4dfcad`
 
@@ -102,5 +102,15 @@ Dois kanji de movimento e abertura aparecem nas frases de exemplo deste tópico.
 ### 9. (production) Escreva em japonês, com kanji, o verbo que significa "abrir (algo)" e se lê あける.
 - **Resposta:** `{"text": "開ける", "accept": ["開ける", "あける"]}`
 - 開ける é o verbo transitivo: alguém abre alguma coisa. O par intransitivo é 開く (あく), quando a coisa abre sozinha. É o mesmo kanji, muda só a okurigana.
+
+
+### 10. (production) Escreva em japonês 'férias de verão', juntando o kanji do verão à palavra de descanso, 休み.
+- **Resposta:** `{"text": "夏休み", "accept": ["夏休み", "なつやすみ"]}`
+- 夏休み é 夏 (verão) + 休み (descanso), e as duas partes ficam na leitura nativa: なつ + やすみ. O mesmo molde vale para as férias de outras estações.
+
+
+### 11. (recognition) Qual destas palavras significa 'problema, questão'?
+- **Resposta:** `{"choices": ["問題", "意見", "時間", "電話"], "correct": "問題"}`
+- 問題 (もんだい) é 問 (perguntar) mais 題 (tema): a questão que se coloca. A leitura on de 題 é ダイ e aparece em praticamente todas as palavras com esse kanji.
 
 

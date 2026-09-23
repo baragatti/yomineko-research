@@ -7,7 +7,7 @@
 - Usar a ação nominalizada como sujeito ou objeto de outra frase
 - Situar algo dentro de um conjunto com の中で／のなかで ('entre', 'dentre', 'no meio de')
 
-**Introduz:** gramática [gp-97, koto, no-naka-de] · vocabulário [止める, 今度, 厳しい, 大事, 建てる, 彼, 必要, 悲しい, 機会, 浅い, 深い, 点, 落ちる, 起こす, 通る, 過ぎる] · kanji [力 通] · kana [—]
+**Introduz:** gramática [gp-97, koto, no-naka-de] · vocabulário [止める, 事, 今度, 厳しい, 大事, 建てる, 彼, 彼女, 必要, 悲しい, 機会, 浅い, 深い, 点, 落ちる, 見つける, 起こす, 通る, 過ぎる] · kanji [力 好 物 通] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-9059903a891d`, `sent:gen-82ddc26749ff`, `sent:tatoeba-155677`, `sent:tatoeba-154919`
 
@@ -121,5 +121,20 @@ E adjetivos de medida como 深い ("fundo") e 浅い ("raso") ajudam a completar
 ### 9. (production) Escreva em japonês, com kanji e okurigana, o verbo 'passar (por), atravessar'.
 - **Resposta:** `{"text": "通る", "accept": ["通る", "とおる"]}`
 - É 通る: o kanji carrega o sentido e る fecha o verbo. Trocando o okurigana muda o verbo: 通う (かよう) é 'frequentar, ir e voltar toda vez'.
+
+
+### 10. (recognition) Qual destas palavras significa 'gostar de'?
+- **Resposta:** `{"choices": ["好き", "上手", "元気", "楽しい"], "correct": "好き"}`
+- 好き (すき) é gostar de algo. O kanji 好 junta 女 (mulher) e 子 (criança), uma cena de afeto que ajuda a lembrar do sentido.
+
+
+### 11. (recognition) Qual destes kanji significa "coisa, objeto" no sentido concreto, de algo que se pega?
+- **Resposta:** `{"choices": ["物", "者", "事", "持"], "correct": "物"}`
+- 物 é a coisa concreta. 事 é a coisa abstrata, o assunto, e esse par é o mais importante de separar. 者 também se lê もの, mas significa pessoa; 持 é segurar.
+
+
+### 12. (production) Escreva em japonês, com kanji, a palavra que significa "comida, alimento" e se lê たべもの.
+- **Resposta:** `{"text": "食べ物", "accept": ["食べ物", "たべもの"]}`
+- 食べ物 é a coisa (物) que se come. O mesmo molde dá 飲み物 (bebida) e 買い物 (compras): verbo na base mais 物.
 
 

@@ -24,18 +24,8 @@
   "needs": [
     {
       "type": "lesson",
-      "ref": "les:n5-desu-wa-04",
-      "note": "Apresenta as palavras 兄 (あに) e 大きな (おおきな), que aparecem nesta lição."
-    },
-    {
-      "type": "lesson",
-      "ref": "les:n5-perguntas-02",
-      "note": "Apresenta as palavras 学校 (がっこう) e 鞄 (かばん), que aparecem nesta lição."
-    },
-    {
-      "type": "lesson",
       "ref": "les:n5-perguntas-03",
-      "note": "Apresenta a palavra カメラ, que aparece nesta lição."
+      "note": "Apresenta as palavras カメラ e 位 (くらい), que aparecem nesta lição."
     }
   ],
   "unlocks": [
@@ -48,8 +38,36 @@
       "ref": "gram:douyatte"
     },
     {
+      "type": "kanji",
+      "ref": "kanji:天"
+    },
+    {
+      "type": "kanji",
+      "ref": "kanji:学"
+    },
+    {
+      "type": "kanji",
+      "ref": "kanji:校"
+    },
+    {
+      "type": "kanji",
+      "ref": "kanji:気"
+    },
+    {
       "type": "vocab",
-      "ref": "vocab:1154340"
+      "ref": "vocab:1009330"
+    },
+    {
+      "type": "vocab",
+      "ref": "vocab:1079760"
+    },
+    {
+      "type": "vocab",
+      "ref": "vocab:1451160"
+    },
+    {
+      "type": "vocab",
+      "ref": "vocab:1438690"
     },
     {
       "type": "vocab",
@@ -58,10 +76,6 @@
     {
       "type": "vocab",
       "ref": "vocab:1255430"
-    },
-    {
-      "type": "vocab",
-      "ref": "vocab:1534520"
     },
     {
       "type": "vocab",
@@ -82,6 +96,10 @@
     {
       "type": "vocab",
       "ref": "vocab:1042650"
+    },
+    {
+      "type": "vocab",
+      "ref": "vocab:1012980"
     },
     {
       "type": "vocab",
@@ -110,20 +128,113 @@
         ]
       },
       {
+        "deck": "deck:kanji-n5",
+        "item": "kanji:天",
+        "card_types": [
+          "recognition",
+          "production",
+          "handwriting"
+        ]
+      },
+      {
+        "deck": "deck:kanji-n5",
+        "item": "kanji:学",
+        "card_types": [
+          "recognition",
+          "production",
+          "handwriting"
+        ]
+      },
+      {
+        "deck": "deck:kanji-n5",
+        "item": "kanji:校",
+        "card_types": [
+          "recognition",
+          "production",
+          "handwriting"
+        ]
+      },
+      {
+        "deck": "deck:kanji-n5",
+        "item": "kanji:気",
+        "card_types": [
+          "recognition",
+          "production",
+          "handwriting"
+        ]
+      },
+      {
         "deck": "deck:vocab-n5",
-        "item": "vocab:1154340",
+        "item": "vocab:1009330",
         "card_types": [
           "recognition",
           "production"
         ],
         "production_key": {
           "prompt": {
-            "pt-BR": "cerca de, mais ou menos (vem depois de uma quantidade)"
+            "pt-BR": "que tipo de"
           },
           "accept": [
-            "くらい",
-            "ぐらい",
-            "位"
+            "どんな"
+          ],
+          "sense_index": 0,
+          "verified": "sampled",
+          "verified_by": "research/reports/w27_sample_report.md"
+        }
+      },
+      {
+        "deck": "deck:vocab-n5",
+        "item": "vocab:1079760",
+        "card_types": [
+          "recognition",
+          "production"
+        ],
+        "production_key": {
+          "prompt": {
+            "pt-BR": "prova, teste (a palavra vinda do inglês, do dia a dia escolar)"
+          },
+          "accept": [
+            "テスト"
+          ],
+          "sense_index": 0,
+          "verified": "sampled",
+          "verified_by": "research/reports/w27_sample_report.md"
+        }
+      },
+      {
+        "deck": "deck:vocab-n5",
+        "item": "vocab:1451160",
+        "card_types": [
+          "recognition",
+          "production"
+        ],
+        "production_key": {
+          "prompt": {
+            "pt-BR": "movimento (substantivo de um kanji só, どう)"
+          },
+          "accept": [
+            "どう",
+            "動"
+          ],
+          "sense_index": 0,
+          "verified": "sampled",
+          "verified_by": "research/reports/w27_sample_report.md"
+        }
+      },
+      {
+        "deck": "deck:vocab-n5",
+        "item": "vocab:1438690",
+        "card_types": [
+          "recognition",
+          "production"
+        ],
+        "production_key": {
+          "prompt": {
+            "pt-BR": "tempo, clima (se está sol ou chuva)"
+          },
+          "accept": [
+            "てんき",
+            "天気"
           ],
           "sense_index": 0,
           "verified": "sampled",
@@ -165,27 +276,6 @@
           "accept": [
             "つき",
             "月"
-          ],
-          "sense_index": 0,
-          "verified": "sampled",
-          "verified_by": "research/reports/w27_sample_report.md"
-        }
-      },
-      {
-        "deck": "deck:vocab-n5",
-        "item": "vocab:1534520",
-        "card_types": [
-          "recognition",
-          "production"
-        ],
-        "production_key": {
-          "prompt": {
-            "pt-BR": "árvore"
-          },
-          "accept": [
-            "き",
-            "木",
-            "樹"
           ],
           "sense_index": 0,
           "verified": "sampled",
@@ -287,6 +377,26 @@
           "accept": [
             "キロメートル",
             "粁"
+          ],
+          "sense_index": 0,
+          "verified": "sampled",
+          "verified_by": "research/reports/w27_sample_report.md"
+        }
+      },
+      {
+        "deck": "deck:vocab-n5",
+        "item": "vocab:1012980",
+        "card_types": [
+          "recognition",
+          "production"
+        ],
+        "production_key": {
+          "prompt": {
+            "pt-BR": "fazer, o jeito informal e coloquial de dizer isso"
+          },
+          "accept": [
+            "やる",
+            "遣る"
           ],
           "sense_index": 0,
           "verified": "sampled",
@@ -407,6 +517,8 @@
       "vocab:1159980",
       "vocab:1203650",
       "vocab:1344930",
+      "vocab:1219960",
+      "vocab:1219980",
       "vocab:1157070",
       "vocab:1193180",
       "vocab:1419990",
@@ -419,13 +531,17 @@
       "vocab:2220600",
       "vocab:1017760",
       "vocab:1030630",
+      "vocab:1577140",
       "vocab:1582820",
+      "vocab:1006970",
+      "vocab:1606560",
       "vocab:1191730",
       "vocab:1485770",
       "vocab:1000580",
       "vocab:1000420",
       "vocab:1000320",
       "vocab:1483185",
+      "vocab:1547720",
       "vocab:1421700",
       "vocab:1201190",
       "vocab:1258330",
@@ -435,11 +551,14 @@
       "vocab:1002610",
       "vocab:1001710",
       "vocab:1580340",
+      "vocab:1577120",
       "vocab:1188760",
       "vocab:1457730",
       "vocab:1173720",
       "vocab:1173750",
       "vocab:1586330",
+      "vocab:1529520",
+      "vocab:1502390",
       "vocab:1404630",
       "vocab:1178590",
       "vocab:1171900",
@@ -457,74 +576,128 @@
       "vocab:1524590",
       "vocab:1307630",
       "vocab:1581930",
+      "vocab:1296400",
+      "vocab:1591110",
       "vocab:1002330",
       "vocab:1002320",
+      "vocab:1465610",
       "vocab:1179330",
+      "vocab:1296970",
+      "vocab:1577980",
+      "vocab:1580640",
       "vocab:1581310",
+      "vocab:1578150",
       "vocab:1592970",
       "vocab:1272500",
       "vocab:1273270",
+      "vocab:1006670",
       "vocab:1520670",
+      "vocab:1388740",
       "vocab:1592250",
       "vocab:1390020",
       "vocab:1516925",
       "vocab:1288810",
       "vocab:1263400",
+      "vocab:1259290",
       "vocab:1206110",
+      "vocab:1177800",
       "vocab:1243490",
       "vocab:1044070",
       "vocab:1301940",
       "vocab:1249960",
+      "vocab:1006830",
       "vocab:1206730",
       "vocab:1206900",
       "vocab:1192280",
       "vocab:1192150",
       "vocab:1237150",
+      "vocab:1362360",
+      "vocab:1534520",
+      "vocab:1582920",
       "vocab:1246700",
       "vocab:1246740",
       "vocab:1208910",
+      "vocab:1009290",
+      "vocab:1154340",
       "vocab:1037670",
       "vocab:1038350",
       "vocab:1039220",
       "vocab:1042820",
       "vocab:2842174",
+      "vocab:1355120",
+      "vocab:1920240",
+      "vocab:1387990",
       "vocab:1385070",
       "vocab:1385170",
+      "vocab:1277450",
       "vocab:1311530",
       "vocab:1194870",
       "vocab:1323080",
+      "vocab:1443530",
       "vocab:1409140",
       "vocab:1039140",
       "vocab:1380440",
+      "vocab:1522150",
       "vocab:1193060",
       "vocab:1231590",
       "vocab:1231580",
       "vocab:1049180",
       "vocab:1280770",
       "vocab:1538160",
+      "vocab:1456360",
+      "vocab:1416830",
       "vocab:1252330",
       "vocab:1583720",
-      "vocab:1154340",
+      "vocab:1009330",
+      "vocab:1079760",
+      "vocab:1451160",
+      "vocab:1438690",
       "vocab:1592340",
       "vocab:1255430",
-      "vocab:1534520",
       "vocab:1213170",
       "vocab:1511600",
       "vocab:1046810",
       "vocab:1042620",
       "vocab:1042650",
+      "vocab:1012980",
       "vocab:1499720"
     ],
-    "kanji": [],
+    "kanji": [
+      "kanji:何",
+      "kanji:分",
+      "kanji:来",
+      "kanji:時",
+      "kanji:人",
+      "kanji:聞",
+      "kanji:入",
+      "kanji:金",
+      "kanji:千",
+      "kanji:見",
+      "kanji:新",
+      "kanji:木",
+      "kanji:中",
+      "kanji:先",
+      "kanji:生",
+      "kanji:車",
+      "kanji:電",
+      "kanji:本",
+      "kanji:読",
+      "kanji:天",
+      "kanji:学",
+      "kanji:校",
+      "kanji:気"
+    ],
     "grammar": [
       "gram:da-desu",
+      "gram:ka",
       "gram:wa-topic-marker",
       "gram:gp-2",
       "gram:gp-3",
       "gram:gp-4",
+      "gram:gp-30",
       "gram:gp-33",
       "gram:janai-dewa-nai",
-      "gram:ka",
+      "gram:gp-31",
       "gram:mo",
       "gram:no",
       "gram:o-go",
@@ -539,8 +712,6 @@
       "gram:gp-40",
       "gram:doushite",
       "gram:gp-29",
-      "gram:gp-30",
-      "gram:gp-31",
       "gram:donna",
       "gram:douyatte"
     ],
@@ -653,8 +824,64 @@
         "pt-BR": "どんな + substantivo (映画, filme) + ですか forma a pergunta sobre a característica do filme."
       },
       "sentence_refs": []
+    },
+    {
+      "id": "ex:n5-rotina-04-7",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Qual destes kanji significa \"céu, firmamento\"?"
+      },
+      "answer": {
+        "choices": [
+          "天",
+          "大",
+          "白",
+          "気"
+        ],
+        "correct": "天"
+      },
+      "explanation": {
+        "pt-BR": "天 é 大 (uma pessoa de braços abertos) com um traço por cima: o céu acima da cabeça. Ele abre 天気 (tempo, clima), que se lê てんき. 気 é o segundo kanji dessa mesma palavra, 大 é grande e 白 é branco."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n5-rotina-04-8",
+      "type": "production",
+      "prompt": {
+        "pt-BR": "Escreva em japonês, com kanji, a palavra que significa \"tempo (clima)\" e se lê てんき."
+      },
+      "answer": {
+        "text": "天気",
+        "accept": [
+          "天気",
+          "てんき"
+        ]
+      },
+      "explanation": {
+        "pt-BR": "天気 junta 天 (céu) e 気 (ar, energia): o estado do ar lá em cima. É a palavra que os japoneses usam o tempo todo para puxar conversa sobre o dia."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n5-convites-03-7",
+      "type": "production",
+      "prompt": {
+        "pt-BR": "Escreva em japonês, com kanji, a palavra 'escola' (leitura: がっこう)."
+      },
+      "answer": {
+        "text": "学校",
+        "accept": [
+          "学校",
+          "がっこう"
+        ]
+      },
+      "explanation": {
+        "pt-BR": "学校 junta 学 (estudo) e 校 (escola). Vale guardar os dois juntos: 校 é a parte que reaparece em todo nome de escola."
+      },
+      "sentence_refs": []
     }
   ],
-  "body": "<heading level=\"2\"><text>Que tipo? E de que forma?</text></heading>\n\n<p><text>Você já sabe perguntar </text><emphasis>o quê</emphasis><text>, </text><emphasis>quem</emphasis><text> e </text><emphasis>onde</emphasis><text>. Nesta lição entram duas perguntas que vão além: </text><grammar ref=\"gram:donna\"/><text>, que pergunta o </text><text weight=\"bold\">tipo ou a característica</text><text> de algo, e </text><grammar ref=\"gram:douyatte\"/><text>, que pergunta o </text><text weight=\"bold\">método ou o meio</text><text> de uma ação.</text></p>\n\n<heading level=\"3\"><text>どんな + substantivo: que tipo de…?</text></heading>\n<p><text>A </text><grammar ref=\"gram:donna\"/><text> nunca vem sozinha: ela gruda num substantivo logo em seguida, como em </text><jp reading=\"どんなひと\">どんな人</jp><text> (que tipo de pessoa). Ela não pergunta </text><emphasis>qual</emphasis><text> item específico, e sim a natureza dele, ou seja, a qualidade, a aparência ou o caráter daquilo.</text></p>\n<sentence ref=\"sent:tatoeba-199569\" show=\"furigana\" mode=\"featured\"/>\n<p><text>Aqui </text><jp reading=\"テスト\">テスト</jp><text> (prova) é o substantivo, e </text><jp>どんな</jp><text> pergunta como ela é: difícil, longa, oral? A resposta descreve uma característica, não escolhe entre opções dadas.</text></p>\n<sentence ref=\"sent:tatoeba-199382\" show=\"furigana\" mode=\"card\"/>\n<p><text>Com </text><jp reading=\"てんき\">天気</jp><text> (tempo, clima), </text><jp reading=\"どんなてんきですか\">どんな天気ですか</jp><text> pede uma descrição do tempo. A resposta usaria palavras como </text><vocab ref=\"vocab:1499720\"/><text> (vento), </text><vocab ref=\"vocab:1592340\"/><text> (nublado) ou </text><jp reading=\"はれ\">晴れ</jp><text> (sol). Repare que </text><jp reading=\"てんき\">天気</jp><text> ainda não foi ensinado: por enquanto, leia como </text><emphasis>tenki</emphasis><text> e guarde o sentido.</text></p>\n\n<note type=\"l1-pitfall\"><p><text>Em português dizemos </text><emphasis>como</emphasis><text> está o tempo, e isso engana: aqui o </text><emphasis>como</emphasis><text> é </text><jp>どんな</jp><text> (que tipo), não </text><jp>どうやって</jp><text> (de que forma). Use </text><jp>どんな</jp><text> sempre que estiver descrevendo uma característica, mesmo quando o português usar a palavra </text><emphasis>como</emphasis><text>.</text></p></note>\n\n<heading level=\"3\"><text>どうやって: de que forma, por qual meio?</text></heading>\n<p><text>A </text><grammar ref=\"gram:douyatte\"/><text> pergunta o </text><text weight=\"bold\">processo</text><text>, os passos ou o meio de transporte de uma ação: como, de que jeito, por qual via. Pense nela quando a resposta for uma sequência de passos ou um meio concreto, e não uma qualidade.</text></p>\n<sentence ref=\"sent:tatoeba-9611533\" show=\"furigana\" mode=\"featured\"/>\n<p><text>Em </text><jp>どうやってやるの</jp><text>, o verbo </text><jp reading=\"やる\">やる</jp><text> (fazer) está no fim e </text><jp>の</jp><text> dá um tom de conversa. A pergunta é sobre o </text><emphasis>jeito</emphasis><text> de fazer, os passos. Compare: </text><jp reading=\"どうやってがっこうにきたの\">どうやって学校に来たの</jp><text> pergunta o meio (a pé? de </text><jp reading=\"くるま\">車</jp><text>?), enquanto </text><jp reading=\"どうしてがっこうにきたの\">どうして学校に来たの</jp><text> perguntaria o </text><emphasis>motivo</emphasis><text>.</text></p>\n\n<note type=\"l1-advantage\"><p><text>O par </text><jp>どうやって</jp><text> (de que forma) versus </text><jp>どうして</jp><text> (por quê) tem um espelho exato em português: </text><emphasis>como</emphasis><text> você fez? versus </text><emphasis>por que</emphasis><text> você fez? Quem fala português já separa naturalmente meio de motivo; é só colar cada um na palavra japonesa certa.</text></p></note>\n\n<note type=\"tip\"><p><text>Regra prática: se a resposta esperada for um </text><text weight=\"bold\">adjetivo ou descrição</text><text> (bonito, difícil, nublado), pergunte com </text><jp>どんな</jp><text>. Se for um </text><text weight=\"bold\">passo ou meio</text><text> (de ônibus, apertando o botão), pergunte com </text><jp>どうやって</jp><text>.</text></p></note>\n\n<heading level=\"3\"><text>Vocabulário novo</text></heading>\n<p><text>Estas palavras entram nesta lição. O chip de cada uma já mostra a leitura em kana; o kanji aparece só para você ir reconhecendo aos poucos.</text></p>\n<list ordered=\"false\">\n <item><vocab ref=\"vocab:1499720\"/><text>: vento, brisa.</text></item>\n <item><vocab ref=\"vocab:1255430\"/><text>: a Lua.</text></item>\n <item><vocab ref=\"vocab:1534520\"/><text>: árvore.</text></item>\n <item><vocab ref=\"vocab:1592340\"/><text>: tempo nublado.</text></item>\n <item><vocab ref=\"vocab:1511600\"/><text>: o silabário katakana (usado para estrangeirismos).</text></item>\n <item><vocab ref=\"vocab:1213170\"/><text>: kanji, os caracteres de origem chinesa.</text></item>\n <item><vocab ref=\"vocab:1154340\"/><text>: aproximadamente, mais ou menos.</text></item>\n</list>\n<note type=\"culture\"><p><text>Três palavras desta lista são curiosidades antigas. São kanji que comprimiam uma unidade métrica inteira num caractere só:</text></p>\n<list ordered=\"false\">\n <item><vocab ref=\"vocab:1042620\"/><text>: quilograma (lê-se </text><jp reading=\"キログラム\">キログラム</jp><text>).</text></item>\n <item><vocab ref=\"vocab:1042650\"/><text>: quilômetro (lê-se </text><jp reading=\"キロメートル\">キロメートル</jp><text>).</text></item>\n <item><vocab ref=\"vocab:1046810\"/><text>: grama (lê-se </text><jp reading=\"グラム\">グラム</jp><text>).</text></item>\n</list>\n<p><text>Hoje quase ninguém os escreve assim; você verá essas unidades em katakana. Guarde-os apenas como reconhecimento, não para escrever.</text></p></note>\n\n<heading level=\"3\"><text>Hora de praticar</text></heading>\n<exercise ref=\"ex:n5-perguntas-05-1\"/>\n<exercise ref=\"ex:n5-perguntas-05-2\"/>\n<exercise ref=\"ex:n5-perguntas-05-3\"/>\n<exercise ref=\"ex:n5-perguntas-05-4\"/>\n<exercise ref=\"ex:n5-perguntas-05-5\"/>\n\n\n<heading level=\"3\"><text>Mais exemplos</text></heading>\n<sentence ref=\"sent:tatoeba-201153\" show=\"furigana\" mode=\"card\"/><heading level=\"3\"><text>Leitura</text></heading><reading ref=\"read:n5-perguntas-05-01\"/><checklist>\n <check item-ref=\"gram:donna\"><text>Sei perguntar o tipo de algo com どんな + substantivo.</text></check>\n <check item-ref=\"gram:douyatte\"><text>Sei perguntar o método ou o meio de uma ação com どうやって.</text></check>\n <check><text>Distingo どんな (que tipo) de どうやって (de que forma) e de どうして (por quê).</text></check>\n</checklist>",
+  "body": "<heading level=\"2\"><text>Que tipo? E de que forma?</text></heading>\n\n<p><text>Você já sabe perguntar </text><emphasis>o quê</emphasis><text>, </text><emphasis>quem</emphasis><text> e </text><emphasis>onde</emphasis><text>. Nesta lição entram duas perguntas que vão além: </text><grammar ref=\"gram:donna\"/><text>, que pergunta o </text><text weight=\"bold\">tipo ou a característica</text><text> de algo, e </text><grammar ref=\"gram:douyatte\"/><text>, que pergunta o </text><text weight=\"bold\">método ou o meio</text><text> de uma ação.</text></p>\n\n<heading level=\"3\"><text>どんな + substantivo: que tipo de…?</text></heading>\n<p><text>A </text><grammar ref=\"gram:donna\"/><text> nunca vem sozinha: ela gruda num substantivo logo em seguida, como em </text><jp reading=\"どんなひと\">どんな人</jp><text> (que tipo de pessoa). Ela não pergunta </text><emphasis>qual</emphasis><text> item específico, e sim a natureza dele, ou seja, a qualidade, a aparência ou o caráter daquilo.</text></p>\n<sentence ref=\"sent:tatoeba-199569\" show=\"furigana\" mode=\"featured\"/>\n<p><text>Aqui </text><jp reading=\"テスト\">テスト</jp><text> (prova) é o substantivo, e </text><jp>どんな</jp><text> pergunta como ela é: difícil, longa, oral? A resposta descreve uma característica, não escolhe entre opções dadas.</text></p>\n<sentence ref=\"sent:tatoeba-199382\" show=\"furigana\" mode=\"card\"/>\n<p><text>Com </text><jp reading=\"てんき\">天気</jp><text> (tempo, clima), </text><jp reading=\"どんなてんきですか\">どんな天気ですか</jp><text> pede uma descrição do tempo. A resposta usaria palavras como </text><vocab ref=\"vocab:1499720\"/><text> (vento), </text><vocab ref=\"vocab:1592340\"/><text> (nublado) ou </text><jp reading=\"はれ\">晴れ</jp><text> (sol). Repare que </text><jp reading=\"てんき\">天気</jp><text> ainda não foi ensinado: por enquanto, leia como </text><emphasis>tenki</emphasis><text> e guarde o sentido.</text></p>\n\n<note type=\"l1-pitfall\"><p><text>Em português dizemos </text><emphasis>como</emphasis><text> está o tempo, e isso engana: aqui o </text><emphasis>como</emphasis><text> é </text><jp>どんな</jp><text> (que tipo), não </text><jp>どうやって</jp><text> (de que forma). Use </text><jp>どんな</jp><text> sempre que estiver descrevendo uma característica, mesmo quando o português usar a palavra </text><emphasis>como</emphasis><text>.</text></p></note>\n\n<heading level=\"3\"><text>どうやって: de que forma, por qual meio?</text></heading>\n<p><text>A </text><grammar ref=\"gram:douyatte\"/><text> pergunta o </text><text weight=\"bold\">processo</text><text>, os passos ou o meio de transporte de uma ação: como, de que jeito, por qual via. Pense nela quando a resposta for uma sequência de passos ou um meio concreto, e não uma qualidade.</text></p>\n<sentence ref=\"sent:tatoeba-9611533\" show=\"furigana\" mode=\"featured\"/>\n<p><text>Em </text><jp>どうやってやるの</jp><text>, o verbo </text><jp reading=\"やる\">やる</jp><text> (fazer) está no fim e </text><jp>の</jp><text> dá um tom de conversa. A pergunta é sobre o </text><emphasis>jeito</emphasis><text> de fazer, os passos. Compare: </text><jp reading=\"どうやってがっこうにきたの\">どうやって学校に来たの</jp><text> pergunta o meio (a pé? de </text><jp reading=\"くるま\">車</jp><text>?), enquanto </text><jp reading=\"どうしてがっこうにきたの\">どうして学校に来たの</jp><text> perguntaria o </text><emphasis>motivo</emphasis><text>.</text></p>\n\n<note type=\"l1-advantage\"><p><text>O par </text><jp>どうやって</jp><text> (de que forma) versus </text><jp>どうして</jp><text> (por quê) tem um espelho exato em português: </text><emphasis>como</emphasis><text> você fez? versus </text><emphasis>por que</emphasis><text> você fez? Quem fala português já separa naturalmente meio de motivo; é só colar cada um na palavra japonesa certa.</text></p></note>\n\n<note type=\"tip\"><p><text>Regra prática: se a resposta esperada for um </text><text weight=\"bold\">adjetivo ou descrição</text><text> (bonito, difícil, nublado), pergunte com </text><jp>どんな</jp><text>. Se for um </text><text weight=\"bold\">passo ou meio</text><text> (de ônibus, apertando o botão), pergunte com </text><jp>どうやって</jp><text>.</text></p></note>\n\n<heading level=\"3\"><text>Vocabulário novo</text></heading>\n<p><text>Estas palavras entram nesta lição. O chip de cada uma já mostra a leitura em kana; o kanji aparece só para você ir reconhecendo aos poucos.</text></p>\n<list ordered=\"false\">\n <item><vocab ref=\"vocab:1499720\"/><text>: vento, brisa.</text></item>\n <item><vocab ref=\"vocab:1255430\"/><text>: a Lua.</text></item>\n <item><vocab ref=\"vocab:1534520\"/><text>: árvore.</text></item>\n <item><vocab ref=\"vocab:1592340\"/><text>: tempo nublado.</text></item>\n <item><vocab ref=\"vocab:1511600\"/><text>: o silabário katakana (usado para estrangeirismos).</text></item>\n <item><vocab ref=\"vocab:1213170\"/><text>: kanji, os caracteres de origem chinesa.</text></item>\n <item><vocab ref=\"vocab:1154340\"/><text>: aproximadamente, mais ou menos.</text></item>\n</list>\n<note type=\"culture\"><p><text>Três palavras desta lista são curiosidades antigas. São kanji que comprimiam uma unidade métrica inteira num caractere só:</text></p>\n<list ordered=\"false\">\n <item><vocab ref=\"vocab:1042620\"/><text>: quilograma (lê-se </text><jp reading=\"キログラム\">キログラム</jp><text>).</text></item>\n <item><vocab ref=\"vocab:1042650\"/><text>: quilômetro (lê-se </text><jp reading=\"キロメートル\">キロメートル</jp><text>).</text></item>\n <item><vocab ref=\"vocab:1046810\"/><text>: grama (lê-se </text><jp reading=\"グラム\">グラム</jp><text>).</text></item>\n</list>\n<p><text>Hoje quase ninguém os escreve assim; você verá essas unidades em katakana. Guarde-os apenas como reconhecimento, não para escrever.</text></p></note>\n\n<heading level=\"3\"><text>Hora de praticar</text></heading>\n<exercise ref=\"ex:n5-perguntas-05-1\"/>\n<exercise ref=\"ex:n5-perguntas-05-2\"/>\n<exercise ref=\"ex:n5-perguntas-05-3\"/>\n<exercise ref=\"ex:n5-perguntas-05-4\"/>\n<exercise ref=\"ex:n5-perguntas-05-5\"/>\n<exercise ref=\"ex:n5-rotina-04-7\"/>\n<exercise ref=\"ex:n5-rotina-04-8\"/>\n<exercise ref=\"ex:n5-convites-03-7\"/>\n\n\n<heading level=\"3\"><text>Mais exemplos</text></heading>\n<sentence ref=\"sent:tatoeba-201153\" show=\"furigana\" mode=\"card\"/><heading level=\"3\"><text>Leitura</text></heading><reading ref=\"read:n5-perguntas-05-01\"/><checklist>\n <check item-ref=\"gram:donna\"><text>Sei perguntar o tipo de algo com どんな + substantivo.</text></check>\n <check item-ref=\"gram:douyatte\"><text>Sei perguntar o método ou o meio de uma ação com どうやって.</text></check>\n <check><text>Distingo どんな (que tipo) de どうやって (de que forma) e de どうして (por quê).</text></check>\n</checklist>",
   "needs_review": true
 }

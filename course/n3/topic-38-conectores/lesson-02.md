@@ -7,7 +7,7 @@
 - Reformular ou resumir o que foi dito com つまり ('ou seja')
 - Trocar de assunto educadamente com ところで ('a propósito')
 
-**Introduz:** gramática [n3-dakedo, n3-tokorode, n3-tsumari] · vocabulário [勢い, 合わせる, 当たる, 当てる, 彼方此方, 或る, 新た, 現れ, 現れる, 略, 表す, 誤り, 諦める, 跡, 辺り, 飽きる] · kanji [当 現 表] · kana [—]
+**Introduz:** gramática [n3-dakedo, n3-tokorode, n3-tsumari] · vocabulário [勢い, 合わせる, 当たる, 当てる, 彼方此方, 或る, 新た, 現れ, 現れる, 略, 表す, 詰まり, 誤り, 諦める, 跡, 辺り, 飽きる] · kanji [当 現 表] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-3366905`, `sent:tatoeba-11027663`
 

@@ -7,7 +7,7 @@
 - Transformar adjetivos em substantivos de grau com o sufixo さ (高い → 高さ)
 - Excluir um item e apontar para o resto com 以外 (いがい, 'exceto / além de')
 
-**Introduz:** gramática [gp-94, sa, yori] · vocabulário [お宅, 区, 売り場, 屋上, 比べる, 表, 郊外] · kanji [場 業] · kana [—]
+**Introduz:** gramática [gp-94, sa, yori] · vocabulário [お宅, 上がる, 以外, 区, 売り場, 屋上, 思う, 比べる, 表, 郊外, 驚く] · kanji [場 思 業 私] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-105626`, `sent:tatoeba-76098`, `sent:gen-2cb2ddc513fb`, `sent:gen-5b0f0ae6501d`
 

@@ -7,7 +7,7 @@
 - Intensificar cores, formas e posições com o prefixo 真（ま／まっ／まん）
 - Reconhecer e usar o vocabulário de movimento, sorte e ações úteis da lição
 
-**Introduz:** gramática [gp-86, gp-99] · vocabulário [すっと, 伺う, 矢張り, 積もり, 若し, 非常に] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-86, gp-99] · vocabulário [すっと, 伺う, 払う, 矢張り, 積もり, 若し, 足りる, 非常に] · kanji [代 真 青] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-6ffac971eaff`, `sent:gen-6de90943b937`, `sent:gen-bdce9a74350a`, `sent:gen-1ec34274aae8`
 
@@ -90,5 +90,20 @@ Para usar bem esses moldes em frases reais, junte algumas palavras de movimento,
 ### 5. (production) Em japonês casual, diga 'O dinheiro da passagem de ônibus não dá (não é suficiente)'. Use o sufixo de custo 〜代.
 - **Resposta:** `{"text": "バス代が足りない", "accept": ["バス代が足りない", "バスだいがたりない", "バス代がたりない"]}`
 - バス ('ônibus') + 代 ('custo') = バス代, o dinheiro da passagem. 足りない (たりない) significa 'não é suficiente'. が marca o sujeito que falta. A frase inteira fica バス代が足りない.
+
+
+### 6. (recognition) Qual destes kanji significa verdadeiro, real, e se lê しん?
+- **Resposta:** `{"choices": ["真", "新", "心", "目"], "correct": "真"}`
+- 真 é verdadeiro, real. 新 (novo) e 心 (coração) também se leem しん; 目 (olho) é justamente o elemento que aparece dentro de 真.
+
+
+### 7. (production) Escreva o kanji que significa verdadeiro, real (leitura しん).
+- **Resposta:** `{"text": "真", "accept": ["真", "しん"]}`
+- 真 tem 目 (olho) no meio: o que se vê de verdade. Lê-se しん em compostos e ま quando reforça outra palavra.
+
+
+### 8. (recognition) Qual destes kanji é o da cor azul, a mesma que o japonês usa para o verde do sinal de trânsito?
+- **Resposta:** `{"choices": ["青", "赤", "黒", "色"], "correct": "青"}`
+- 青 é o azul, e em japonês ele cobre também o verde do sinal de trânsito. Os vizinhos de cor são 赤 (vermelho) e 黒 (preto).
 
 

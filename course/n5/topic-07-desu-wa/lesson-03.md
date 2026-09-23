@@ -7,7 +7,7 @@
 - Negar identidade com じゃない (casual) e ではありません (polido)
 - Reconhecer que não há artigos e que a partícula vem depois da palavra
 
-**Introduz:** gramática [gp-33, janai-dewa-nai, ka] · vocabulário [お弁当, お腹, お菓子, 上着, 何時, 内, 映画, 映画館, 朝ごはん, 足, 鉛筆, 雨, 頭, 顔, 飴, ５日] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-30, gp-33, janai-dewa-nai] · vocabulário [お弁当, お腹, お菓子, 上着, 何故, 何時, 内, 映画, 映画館, 朝ごはん, 無い, 物, 足, 鉛筆, 雨, 頭, 顔, 飴, ５日] · kanji [時] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-778977`, `sent:tatoeba-536769`, `sent:tatoeba-229628`, `sent:tatoeba-5059`
 

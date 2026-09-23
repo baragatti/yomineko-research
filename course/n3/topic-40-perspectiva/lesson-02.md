@@ -8,7 +8,7 @@
 - Separar によれば (fonte) de によって (agente ou meio)
 - Usar に対して para dirigir uma atitude a um alvo ou para contrastar dois elementos
 
-**Introduz:** gramática [n3-ni-taishite, n3-ni-totte, n3-ni-yoreba] · vocabulário [エネルギー, 営業, 噂, 売れる, 延期, 影響, 描く, 栄養, 梅, 永久, 永遠, 生まれ, 笑顔, 衛星, 裏切る, 餌] · kanji [判 勝 参 反 向 告 認 際 面] · kana [—]
+**Introduz:** gramática [n3-ni-taishite, n3-ni-totte, n3-ni-yoreba] · vocabulário [エネルギー, 営業, 噂, 売れる, 延期, 影響, 描く, 栄養, 梅, 永久, 永遠, 生まれ, 笑顔, 衛星, 裏切る, 餌] · kanji [判 勝 参 反 向 告 認 際 雪 面] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-164771`, `sent:tatoeba-125083`
 
@@ -150,5 +150,15 @@ Encadeie fonte e perspectiva:噂によれば彼は引退するそうだ (segundo
 ### 12. (production) Escreva em japonês a palavra que significa 'cena, situação', juntando 場 ('lugar') com o kanji novo 面.
 - **Resposta:** `{"text": "場面", "accept": ["場面", "ばめん"]}`
 - 場面 (ばめん) é a cena: o lugar visto pela sua superfície, por aquilo que aparece. Aqui 面 lê-se メン.
+
+
+### 13. (recognition) Qual kanji significa "neve"?
+- **Resposta:** `{"choices": ["雪", "雨", "風", "冬"], "correct": "雪"}`
+- 雪 tem 雨 (chuva) em cima: é a água que cai congelada. Sozinho se lê ゆき, e no 冬 (inverno) ele aparece bastante.
+
+
+### 14. (production) Escreva em japonês "neve", com o kanji 雪 e a leitura ゆき.
+- **Resposta:** `{"text": "雪", "accept": ["雪", "ゆき"]}`
+- 雪 sozinho é ゆき. A leitura on セツ aparece em palavras compostas.
 
 

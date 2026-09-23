@@ -7,7 +7,7 @@
 - Expressar coerção: ser obrigado/forçado a fazer algo contra a própria vontade
 - Expressar reações involuntárias: algo/alguém 'me deixa' irritado, surpreso, impressionado
 
-**Introduz:** gramática [saserareru] · vocabulário [けれど, 両方, 代わり, 仰る, 優しい, 眠い, 砂, 程, 背中, 船, 虫, 首, 髭] · kanji [冬 昼 犬] · kana [—]
+**Introduz:** gramática [saserareru] · vocabulário [けれど, 両方, 代わり, 仰る, 優しい, 眠い, 砂, 背中, 船, 虫, 首, 髭] · kanji [冬 昼] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-118746`, `sent:tatoeba-119009`, `sent:tatoeba-230979`, `sent:tatoeba-117383`
 
@@ -111,12 +111,7 @@ Quatro caracteres concretos para fixar agora.
 - 昼ご飯 (ひるごはん) é o almoço: 昼 ('meio-dia') mais a palavra de refeição. O mesmo 昼 aparece em 昼休み, a pausa do almoço.
 
 
-### 8. (production) Escreva em japonês a palavra 'cachorro', com kanji.
-- **Resposta:** `{"text": "犬", "accept": ["犬", "いぬ"]}`
-- 犬 (いぬ) é o cachorro. É o traço solto no canto superior direito que separa 犬 de 大 ('grande').
-
-
-### 9. (production) Escreva em japonês a palavra 'inverno', com kanji.
+### 8. (production) Escreva em japonês a palavra 'inverno', com kanji.
 - **Resposta:** `{"text": "冬", "accept": ["冬", "ふゆ"]}`
 - 冬 (ふゆ) é o inverno. Os dois pinguinhos embaixo são o radical do gelo, e é essa peça que dá a pista do sentido.
 

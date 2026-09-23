@@ -7,7 +7,7 @@
 - Expressar arrependimento sobre o passado com 〜ばよかった ('eu deveria ter...')
 - Reconhecer o tom emocional de 〜ばよかったのに ('você devia ter...') ao reclamar gentilmente
 
-**Introduz:** gramática [gp-120, gp-138] · vocabulário [丁寧, 嘘, 恥ずかしい, 申し上げる] · kanji [不 意] · kana [—]
+**Introduz:** gramática [gp-120, gp-138] · vocabulário [丁寧, 嘘, 恥ずかしい, 申し上げる] · kanji [不 茶] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-193408`, `sent:tatoeba-2718657`, `sent:tatoeba-3179644`, `sent:tatoeba-80898`
 
@@ -96,10 +96,5 @@ O par 不 + 意 forma 不意 ("de repente, inesperado"); "sem que a mente espera
 ### 7. (recognition) Na palavra 意見 ('opinião'), como se lê o kanji 意?
 - **Resposta:** `{"choices": ["い", "き", "じ", "しゃ"], "correct": "い"}`
 - 意 tem uma única leitura viva nos compostos, a sino-japonesa イ, e ela vale tanto quando 意 abre a palavra quanto quando fecha. き é 気, じ é 時 e しゃ é 者: outros kanji, outros sons.
-
-
-### 8. (production) Escreva em japonês a palavra que significa 'opinião, ponto de vista', juntando o kanji de 'intenção' com 見 ('ver').
-- **Resposta:** `{"text": "意見", "accept": ["意見", "いけん"]}`
-- 意見 (いけん) é o que alguém acha: 意 é a intenção, o que se pensa, e 見 é o ver, o modo de enxergar a coisa.
 
 

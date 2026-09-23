@@ -7,7 +7,7 @@
 - Ligar adjetivos-i com て e substantivos/adjetivos-na com で
 - Reconhecer a forma て conectiva em frases reais
 
-**Introduz:** gramática [gp-26, te-de] · vocabulário [働く, 初めて, 始まる, 始め, 歯, 話, 話す] · kanji [先] · kana [—]
+**Introduz:** gramática [te-de] · vocabulário [働く, 初めて, 始まる, 始め, 歯, 話] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-167591`, `sent:tatoeba-74924`, `sent:tatoeba-85522`
 
@@ -89,10 +89,5 @@ Em かかってこい, o かかって é uma forma て colada a 来い: a mesma 
 ### 6. (recognition) Em 先生 (せんせい, 'professor'), qual é a leitura do kanji 先?
 - **Resposta:** `{"choices": ["せん", "さき", "まえ", "ぜん"], "correct": "せん"}`
 - Em compostos como 先生 e 先月, 先 usa a leitura chinesa せん. Sozinho o mesmo kanji lê-se さき. As opções まえ e ぜん são leituras de 前, que também fala de 'antes', e é por isso que confundem tanto.
-
-
-### 7. (production) Escreva em japonês 'professor', palavra que se lê せんせい.
-- **Resposta:** `{"text": "先生", "accept": ["先生", "せんせい"]}`
-- 先生 é 先 ('antes, à frente') mais 生 ('vida, nascer'): literalmente quem nasceu antes, e daí 'professor'.
 
 

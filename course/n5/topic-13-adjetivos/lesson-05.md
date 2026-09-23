@@ -7,7 +7,7 @@
 - Expressar mudança de estado com なる: ～になる (substantivo / adjetivo-な) e ～くなる (adjetivo-い)
 - Escolher a partícula certa antes de なる (に vs. a forma ～く)
 
-**Introduz:** gramática [gp-141, gp-142, gp-45, naru] · vocabulário [一緒, 上, 下, 今, 先, 外国, 大人, 大勢, 後, 後ろ, 明後日, 時] · kanji [下 外 来 気] · kana [—]
+**Introduz:** gramática [deshou, gp-141, gp-142, gp-45, naru] · vocabulário [一緒, 今, 外国, 大勢, 後ろ, 明後日] · kanji [外] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-78454`
 

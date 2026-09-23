@@ -8,7 +8,7 @@
 - Saber que じゃなかった NÃO serve para verbos nem para adjetivos-い
 - Reconhecer os kanji 四 (quatro) e 九 (nove)
 
-**Introduz:** gramática [gp-34] · vocabulário [作る, 使う, 出かける, 出る, 取る, 土曜日, 年, 撮る, 止まる, 点ける, 着く, 違う, １日, １０日] · kanji [九 四] · kana [—]
+**Introduz:** gramática [gp-34] · vocabulário [作る, 使う, 出る, 取る, 土曜日, 撮る, 止まる, 点ける, 着く, 違う, １日, １０日] · kanji [九 四] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-10515932`, `sent:tatoeba-3246983`
 

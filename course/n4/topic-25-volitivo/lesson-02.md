@@ -7,7 +7,7 @@
 - Formar a versão negativa colocando a negação ANTES de と思う (ない…と思う)
 - Fazer e entender perguntas de opinião com ...と思う？ ('o que você acha?')
 
-**Introduz:** gramática [to-omou] · vocabulário [事故, 勿論, 原因, 可笑しい, 変, 泣く, 確か, 驚く] · kanji [物] · kana [—]
+**Introduz:** gramática [to-omou] · vocabulário [事故, 勿論, 原因, 可笑しい, 変, 泣く, 確か] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-189627`, `sent:tatoeba-199355`, `sent:tatoeba-4877`, `sent:tatoeba-187786`
 
@@ -93,15 +93,5 @@ Não confunda 考 ("ponderar", com a perna comprida embaixo) com 老 ("velho"): 
 ### 5. (production) Diga em japonês 'Acho que é bom.' usando o adjetivo いい ('bom') + a estrutura de opinião.
 - **Resposta:** `{"text": "いいと思う。", "accept": ["いいと思う", "いいと思うよ", "いいとおもう", "いいとおもうよ"]}`
 - いい ('é bom', forma casual) + と思う = 'acho que é bom'. Adjetivos-i entram na forma de dicionário, sem です/だ antes do と.
-
-
-### 6. (recognition) Qual destes kanji significa "coisa, objeto" no sentido concreto, de algo que se pega?
-- **Resposta:** `{"choices": ["物", "者", "事", "持"], "correct": "物"}`
-- 物 é a coisa concreta. 事 é a coisa abstrata, o assunto, e esse par é o mais importante de separar. 者 também se lê もの, mas significa pessoa; 持 é segurar.
-
-
-### 7. (production) Escreva em japonês, com kanji, a palavra que significa "comida, alimento" e se lê たべもの.
-- **Resposta:** `{"text": "食べ物", "accept": ["食べ物", "たべもの"]}`
-- 食べ物 é a coisa (物) que se come. O mesmo molde dá 飲み物 (bebida) e 買い物 (compras): verbo na base mais 物.
 
 

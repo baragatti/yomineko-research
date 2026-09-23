@@ -257,7 +257,7 @@ def main() -> int:
                        "claim about the TABLE (one verifier at authoring time, then a 100-row Fable "
                        "sample), not about the row."),
         "generated_by": "scripts/build_card_key_table.py",
-        "apply": "scripts/apply_card_production_keys.py (rebuild manifest step 118)",
+        "apply": "scripts/apply_card_production_keys.py (rebuild manifest step 119)",
         "counts": counts,
         "accept_removed_by_tag": dict(sorted(by_tag.items())),
         "accept_removed_not_a_form": removed_not_a_form,

@@ -1537,7 +1537,58 @@ def handle_particle_template_fixes_second(rows, sents, gram, table):
     return out
 
 
+def handle_forward_refs(rows, sents, gram, table):
+    """W21b. A moved unlock must live in its NEW home in the shipped course, and nowhere earlier-taught.
+
+    Four claims per row: the new home (`to`) unlocks the item and the old home (`from`) no longer
+    does; the SRS card is declared by the new home (the card follows the unlock - a card left behind
+    would enrol the item in a lesson that no longer teaches it); every exercise that travelled is in
+    the new home, rendered by exactly one `<exercise ref>` node there, and gone from the old home.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        I, M, T = r["item"], r["from"], r["to"]
+        addr = f"{table} row {i}: {I} {M} -> {T}"
+        lm, lt = LESSONS.get(M), LESSONS.get(T)
+        if lm is None or lt is None:
+            out.append(("fail", C_NO_RECORD, addr, f"no lesson {M if lm is None else T} in the export"))
+            continue
+        um = {u.get("ref") for u in lm.get("unlocks") or []}
+        ut = {u.get("ref") for u in lt.get("unlocks") or []}
+        if I not in ut:
+            out.append(("fail", C_NOT_APPLIED if I in um else C_NO_RECORD, addr,
+                        "the new home does not unlock the item" + (" - the old home still does"
+                                                                   if I in um else "")))
+            continue
+        if I in um:
+            out.append(("fail", C_VALUE_MISMATCH, addr, "both homes unlock the item"))
+            continue
+        cards_t = [c for c in (lt.get("srs") or {}).get("introduces_cards") or [] if c.get("item") == I]
+        cards_m = [c for c in (lm.get("srs") or {}).get("introduces_cards") or [] if c.get("item") == I]
+        if len(cards_t) != 1 or cards_m:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"cards: {len(cards_t)} in the new home, {len(cards_m)} in the old one"))
+            continue
+        bad = ""
+        for eid in r.get("exercises_moved") or []:
+            node = f'<exercise ref="{eid}"/>'
+            if not any(e.get("id") == eid for e in lt.get("exercises") or []) \
+                    or (lt.get("body") or "").count(node) != 1:
+                bad = f"{eid} is not in the new home exactly once, rendered"
+                break
+            if any(e.get("id") == eid for e in lm.get("exercises") or []) or node in (lm.get("body") or ""):
+                bad = f"{eid} is still in the old home"
+                break
+        if bad:
+            out.append(("fail", C_NOT_APPLIED, addr, bad))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
+    # W21b: the 280 forward-reference moves (unlock + card + travelling exercises).
+    "w21b_forward_refs.json": handle_forward_refs,
     "orthographic_relinks.json": handle_orthographic_relinks,
     # W13 apply: the N3 half of the same campaign, same rows, same handler. It is a SECOND
     # table rather than more rows in the first because the replay order needs them apart -

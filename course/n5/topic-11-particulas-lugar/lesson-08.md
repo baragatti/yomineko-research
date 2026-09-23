@@ -7,7 +7,7 @@
 - Listar só EXEMPLOS com や ('A, B, entre outros')
 - Delimitar com だけ ('apenas/só') e com まで ('até' um ponto no tempo ou no espaço)
 
-**Introduz:** gramática [dake, made, to, ya] · vocabulário [丈, 幾つ, 幾ら] · kanji [—] · kana [—]
+**Introduz:** gramática [dake, made, to, ya] · vocabulário [ペン, 丈, 机] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-2293f3cce26e`, `sent:tatoeba-187788`, `sent:tatoeba-139686`
 

@@ -8,7 +8,7 @@
 - Estender o padrão para 来る (vir) e 帰る (voltar)
 - Nomear os dias da semana em japonês (月曜日, 火曜日, 水曜日, 金曜日)
 
-**Introduz:** gramática [gp-28, ni-iku] · vocabulário [一昨日, 小さな, 少し, 月曜日, 段々, 水曜日, 火曜日, 誕生日, 金曜日] · kanji [五] · kana [—]
+**Introduz:** gramática [gp-28, ni-iku] · vocabulário [一昨日, 小さな, 少し, 昼, 月曜日, 段々, 水曜日, 火曜日, 良い, 誕生日, 金曜日] · kanji [五] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-59bccb81087b`, `sent:tatoeba-125175`
 

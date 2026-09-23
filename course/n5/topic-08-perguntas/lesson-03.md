@@ -7,7 +7,7 @@
 - Perguntar 'qual + nome?' com どの grudado a um substantivo
 - Distinguir どれ (sozinho) de どの (com nome) dentro da família これ/それ/あれ/どれ e この/その/あの/どの
 
-**Introduz:** gramática [gp-38, gp-40] · vocabulário [カップ, カメラ, カレンダー, ギター, コート, 切手, 切符, 紙, 花瓶, 車] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-38, gp-40] · vocabulário [何れ, 位, カップ, カメラ, カレンダー, ギター, コート, 乗る, 何の, 先生, 切手, 切符, 好き, 紙, 花瓶, 車, 電車] · kanji [中 先 生 車 電] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-4e9dec6558f5`, `sent:gen-40220286d0b2`, `sent:gen-2f1c4475a858`, `sent:tatoeba-5675047`
 
@@ -89,5 +89,15 @@ Numa loja de bilhetes: どの切符ですか = "qual passagem é?". E sem dizer 
 ### 5. (production) Aponte para uma fileira de selos (切手, きって) e pergunte 'qual selo?' dizendo o nome. Use どの.
 - **Resposta:** `{"text": "どの切手", "accept": ["どの切手", "どのきって", "どの切手ですか", "どのきってですか"]}`
 - Com o nome 切手 (selo) presente, usa-se どの + nome: どの切手 = 'qual selo?'. Dá para completar com ですか para virar pergunta inteira.
+
+
+### 6. (production) Escreva em japonês 'professor', palavra que se lê せんせい.
+- **Resposta:** `{"text": "先生", "accept": ["先生", "せんせい"]}`
+- 先生 é 先 ('antes, à frente') mais 生 ('vida, nascer'): literalmente quem nasceu antes, e daí 'professor'.
+
+
+### 7. (recognition) Você quer perguntar 'QUAL (destes três) você mais gosta?'. Qual interrogativa usar?
+- **Resposta:** `{"choices": ["どれ", "どんな", "なぜ"], "correct": "どれ"}`
+- どれ (何れ) é 'qual' quando há três ou mais opções à vista. どんな seria 'que tipo de' (a categoria, não o item) e なぜ é 'por quê'.
 
 

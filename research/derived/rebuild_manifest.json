@@ -2,8 +2,8 @@
  "generated_for": "W01 — DB rebuildability (research/reports/APP_PLAN.md)",
  "what_this_is": "Every script that has ever written db/corpus.sqlite, in the order a rebuild must run them. scripts/rebuild_index.py executes this list against a fresh DB; scripts/validate/validate_index_rebuildable.py exports the result and diffs it against the committed corpus/ and course/ trees. Order is the order the steps must run, which is NOT always the order they landed: first_commit records when each one first appeared so the history stays auditable. A step with enabled=false cannot run today; note says why.",
  "db_is_not_the_source_of_truth": "corpus/ and course/ JSON are canonical (CLAUDE.md). This manifest exists so the git-ignored index behind them is reconstructible, not so it becomes authoritative.",
- "step_count": 131,
- "enabled_count": 95,
+ "step_count": 133,
+ "enabled_count": 97,
  "steps": [
   {
    "n": 1,
@@ -1769,6 +1769,24 @@
    "n": 112,
    "phase": "repair",
    "quick_family": null,
+   "script": "scripts/apply_forward_refs.py",
+   "args": [
+    "--placement-only"
+   ],
+   "enabled": true,
+   "first_commit": null,
+   "first_commit_date": "2026-09-23",
+   "writes": [
+    "vocab",
+    "kanji",
+    "grammar_point"
+   ],
+   "note": "W21b, early half. The authoring sources already carry the 276 moved unlocks when a rebuild loads them, but introducing_topic_id still names each item's OLD topic, and the vocab resolver's introducing_topic tier and the capability builder's topic bucket read it. The re-placement (246 records on the live index; only where the stored topic is the old home's) therefore runs here, before the first resolver of the chain (step 113); the full apply stays at step 130. The 15 moved AMBIGUOUS headwords do not depend on it: their new home carries the published slug."
+  },
+  {
+   "n": 113,
+   "phase": "repair",
+   "quick_family": null,
    "script": "scripts/apply_lesson_ref_addresses.py",
    "args": [],
    "enabled": true,
@@ -1778,10 +1796,10 @@
     "lesson_unlocks",
     "localized_text"
    ],
-   "note": "W11c. Applies research/derived/repairs/lesson_ref_addresses.json: 31 lesson refs that named a row of this very database, plus the two `vocab:側` refs the resolver could only separate through vocab.introducing_topic_id, rewritten to the record's published slug in BOTH layers -- lesson_unlocks and the lesson body here, and research/derived/lessons/<slug>.json, which is what a rebuild replays. On a replay the source half is already converted, so this is a no-op re-proof; the identity is re-derived from the vocab registry before anything is written, so a renumbered index refuses instead of re-pointing a chip. Runs before 113 because apply_homograph_rulings.py asserts one of these refs (les:n5-passado-05 unlocks both siblings of 何方 and its `ref_written` is the slug form). It also fixes the reason a full replay could not finish: with `vocab:側` unresolved, both lessons that unlock it resolved to one record and familylib.unlock_topic_map() aborted at step 119."
+   "note": "W11c. Applies research/derived/repairs/lesson_ref_addresses.json: 31 lesson refs that named a row of this very database, plus the two `vocab:側` refs the resolver could only separate through vocab.introducing_topic_id, rewritten to the record's published slug in BOTH layers -- lesson_unlocks and the lesson body here, and research/derived/lessons/<slug>.json, which is what a rebuild replays. On a replay the source half is already converted, so this is a no-op re-proof; the identity is re-derived from the vocab registry before anything is written, so a renumbered index refuses instead of re-pointing a chip. Runs before 113 because apply_homograph_rulings.py asserts one of these refs (les:n5-passado-05 unlocks both siblings of 何方 and its `ref_written` is the slug form). It also fixes the reason a full replay could not finish: with `vocab:側` unresolved, both lessons that unlock it resolved to one record and familylib.unlock_topic_map() aborted at step 120."
   },
   {
-   "n": 113,
+   "n": 114,
    "phase": "repair",
    "quick_family": null,
    "script": "scripts/apply_homograph_rulings.py",
@@ -1797,7 +1815,7 @@
    "note": "W11a / owner decision A6. Applies research/derived/repairs/homograph_rulings.json: five records that a lesson already teaches in its own body but that no lesson unlocked (held in course/coverage_exemptions.json) become real unlocks in BOTH layers -- lesson_unlocks here and research/derived/lessons/<slug>.json, which is what a rebuild replays -- and lesson.cumulative_known_set is recomputed with the ingest's own routine because build_readings.py and mine_n3_targets.py read that column. One lesson (les:n5-passado-05) also gets a one-sentence prose re-cut so どなた carries its own chip; it is the only lesson that must unlock both siblings of one headword, so its new unlock is a row-id ref. The fourteen disambiguation rulings in the same table write NOTHING: seven are derived at export time by vocab_identity.py's `reading` tier and seven are read from the table by its `ruling` tier, and this script re-runs the live resolver over the live bodies and refuses to commit anything if a row does not reproduce -- including a check that every row marked `reading` still resolves with the ruling table switched OFF, so the table can never cover for a rule that stopped working. Runs after 111 (migrate_vocab_repoint) because it asserts published slugs. It also edits course/coverage_exemptions.json and course/gating_exemptions.json, which no exporter regenerates, so on a rebuild those parts are a no-op re-proof. Idempotent."
   },
   {
-   "n": 114,
+   "n": 115,
    "phase": "repair",
    "quick_family": "sentences",
    "script": "scripts/apply_orthographic_relinks.py",
@@ -1812,7 +1830,7 @@
    "note": "W12 orthographic relink. Applies research/derived/repairs/orthographic_relinks.json: 663 bank tokens and token runs that name a taught n5/n4 vocabulary record under the >=3 sentence floor under another spelling (一+つ = 一つ/ひとつ, お+茶 = お茶/おちゃ, ほど = 程, だけ = 丈). Sets token.vocab_id on the run's first FREE token and inserts sentence_vocab with link_rule='ortho', the way persist_dissection.py writes both. Addressed by sentence slug + token position + the span's surfaces, so a replay that re-dissects differently REFUSES instead of relinking a different word. Runs after 113 because the rows are matched against the post-ruling registry, and before the family builders, which read neither table. It must NEVER call recompute_all_levels(): re-deriving sentence.level from the enlarged sentence_vocab is a separate reviewed decision (build_sentence_vocab.py says the same thing at length)."
   },
   {
-   "n": 115,
+   "n": 116,
    "phase": "repair",
    "quick_family": null,
    "script": "scripts/apply_lesson_needs.py",
@@ -1828,7 +1846,7 @@
    "note": "W21 needs[] apply. Applies research/derived/repairs/lesson_needs.json: 747 prerequisite edges into BOTH layers -- lesson_needs here (migration 013 gave it the `note` column the schema always specified) and research/derived/lessons/<slug>.json, which is what a rebuild replays. 696 rows are scripts/derive_needs.py's transitive reduction on the current tree; 40 chain the pre-N5 kana strand and 11 the deep review/kanji-exame roots, by the two rules in scripts/build_needs_table.py. Runs AFTER the lesson loader and the unlock ledger (the edges are lesson->lesson and the loader would wipe them) and BEFORE the family builders, which read lesson_unlocks and not this table. validate_lesson_gating check C4 re-derives and fails on any drift. W15: runs with --replace. `needs` is 100% derived and check C4 re-derives it on the tree being validated, so a disagreement is a stale table, never hand-authored work; and in a replay the authoring sources already carry the previous run's needs, which the applier refused to overwrite."
   },
   {
-   "n": 116,
+   "n": 117,
    "phase": "repair",
    "quick_family": null,
    "script": "scripts/apply_reading_passages.py",
@@ -1842,7 +1860,7 @@
    "note": "W15 real passages. Applies research/derived/repairs/reading_passages.json: 282 authored, verified, known-set-gated Layer-C passages replace the concatenation build_readings.py assembled at step 41 (and repaired at steps 92/100, which is why this runs after both -- each of those matches the selection-era text exactly and would skip loudly if it ran on the authored text). 4 boxes are HELD in the table with the unlock their gating lesson is missing (W21b). Re-derives tokens from the new jp, writes the uses snapshot, the sentence segmentation, Layer-C provenance and the comprehension pointer. Needs migrations 014/015. Idempotent; a box that matches neither the row's old nor its new jp is skipped loudly and nothing is written."
   },
   {
-   "n": 117,
+   "n": 118,
    "phase": "repair",
    "quick_family": null,
    "script": "scripts/apply_practice_exercises.py",
@@ -1857,7 +1875,7 @@
    "note": "W20 kanji practice apply. Applies research/derived/repairs/practice_kanji_exercises.json: 899 authored, verified exercises into the 178 lessons that unlock the 581 kanji no exercise ever asked about, plus the <exercise ref> node each one needs to be rendered, and drops the five practice exemptions the campaign makes stale. Runs after the reading passages because both rewrite lesson bodies and this one appends to the practice block the reading boxes never touch; before the family builders, which read the unlock ledger."
   },
   {
-   "n": 118,
+   "n": 119,
    "phase": "repair",
    "quick_family": null,
    "script": "scripts/apply_card_production_keys.py",
@@ -1871,7 +1889,7 @@
    "note": "W27 production answer keys. Applies research/derived/repairs/card_production_keys.json: the pt-BR prompt and the accepted Japanese answers for all 2,951 vocabulary production cards, into card_production_key (migration 016), which export_course.py joins onto the derived srs.introduces_cards[] entry. 2,938 rows are the W27 campaign's, resolved through corpus/vocab_redirects.json; 13 are the authoring residue the Fable sample asked for. Runs after the practice apply because it addresses cards by (lesson, item) and the item is dereferenced with export_course._deref, so every earlier step that re-points a ref must already have run; before the family builders, which read the unlock ledger. Touches no lesson body, no unlock and no exercise."
   },
   {
-   "n": 119,
+   "n": 120,
    "phase": "repair",
    "quick_family": "grammar",
    "script": "scripts/apply_grammar_register_repairs.py",
@@ -1885,7 +1903,7 @@
    "note": "W31 (A8). The 8 grammar points whose `register` claimed a politeness their own forms do not impose (no-ga-suki, hazu-da, けっこう...). Tracked table research/derived/repairs/grammar_register.json. Runs BEFORE the sentence register because scripts/derive_sentence_register_v2.py reads corpus/grammar/*.json. Joins the --quick grammar family: it writes grammar_point and nothing else, so the per-commit rebuild replays it and a regression in it is caught in two seconds instead of only by the full run."
   },
   {
-   "n": 120,
+   "n": 121,
    "phase": "repair",
    "quick_family": null,
    "script": "scripts/apply_sentence_register.py",
@@ -1899,7 +1917,7 @@
    "note": "W31 (A8 / owner decision D7). sentence.register + sentence.register_rule on all 5,889 bank sentences, from research/derived/repairs/sentence_register.json; the 4,223 W13 rows in the same table defer until their sentences exist. Migration 017 declares the two columns."
   },
   {
-   "n": 121,
+   "n": 122,
    "phase": "repair",
    "quick_family": "sentences",
    "script": "scripts/ingest/ingest_mined_stages.py",
@@ -1931,7 +1949,7 @@
    "note": "W13 apply. Ingests the 4,197 verified mined Tatoeba rows + 26 generated ones with the W13b Layer-B in research/derived/mined_layerb_n3/batch-01..29.json (token glosses, particle explanations, structure paragraph) - the bank goes 5,889 -> 10,112. Runs AFTER apply_sentence_register.py because these sentences do not exist at that step: the ingest reads the SAME table (research/derived/repairs/sentence_register.json) by slug for register + register_rule and REFUSES a row that has none, rather than defaulting a value. Each Layer-B batch is one transaction (persist(commit=False)); a batch whose I1-I3 invariants fail rolls back whole and the run stops, and re-running resumes because a banked slug is skipped. Also writes the sentence_grammar edge for every `gram:` target (128 over 63 points, exact key match only) - the edge validate_sentence_coverage.py counts the grammar floor from. Idempotent."
   },
   {
-   "n": 122,
+   "n": 123,
    "phase": "repair",
    "quick_family": "sentences",
    "script": "scripts/apply_orthographic_relinks.py",
@@ -1946,10 +1964,10 @@
     "token",
     "sentence_vocab"
    ],
-   "note": "W12's deferred N3 half, applied by W13 because it must run AFTER the mined sentences are banked (the derivation reads current coverage to pick the records that are short). Applies research/derived/repairs/orthographic_relinks_n3.json: 466 links over 47 taught N3 vocabulary records under the >=3 sentence floor, 29 of them lifted over it. Same rules and same guards as step 114 plus a fifth - a single particle/auxiliary token is claimed only when the kana form it matches is two kana or more, which keeps だけ/くらい/ばかり/ほど and refuses the bare one-kana で (vocab:2028980). The table's held[] carries 10 further derived rows this campaign does NOT apply, each with the lesson<->sentence pair whose i+1 budget it would break (validate_lesson_gating check D stays at its frozen 148); they are W14's to re-decide."
+   "note": "W12's deferred N3 half, applied by W13 because it must run AFTER the mined sentences are banked (the derivation reads current coverage to pick the records that are short). Applies research/derived/repairs/orthographic_relinks_n3.json: 466 links over 47 taught N3 vocabulary records under the >=3 sentence floor, 29 of them lifted over it. Same rules and same guards as step 115 plus a fifth - a single particle/auxiliary token is claimed only when the kana form it matches is two kana or more, which keeps だけ/くらい/ばかり/ほど and refuses the bare one-kana で (vocab:2028980). The table's held[] carries 10 further derived rows this campaign does NOT apply, each with the lesson<->sentence pair whose i+1 budget it would break (validate_lesson_gating check D stays at its frozen 148); they are W14's to re-decide."
   },
   {
-   "n": 123,
+   "n": 124,
    "phase": "repair",
    "quick_family": "sentences",
    "script": "scripts/apply_sentence_text_repairs.py",
@@ -1966,7 +1984,7 @@
    "note": "W13 apply. Three of the 4,223 mined rows shipped a de-accented pt-BR translation (Ele e alto / o irmao; Nao existem demonios; a questao) that audit_hygiene_all_locales.py fails on. Diacritics only - no word, order or register changed - and each row's own translation_literal already spelt the word correctly, so the defect is one string's, not the record's. Applies research/derived/repairs/w13_text_repairs.json through the existing repair applier, which W13 taught to accept the `translation` field alongside structure_explanation and translation_literal. Must run AFTER step for the ingest: these sentences do not exist before it."
   },
   {
-   "n": 124,
+   "n": 125,
    "phase": "repair",
    "quick_family": "sentences",
    "script": "scripts/ingest/ingest_mined_stages.py",
@@ -1995,10 +2013,10 @@
     "sentence_kanji",
     "sentence_grammar"
    ],
-   "note": "W13 finish: the SECOND run of step 121's ingest, for the 97 late uncovered-target rows (research/derived/n3_mined/generated_uncovered_final.json: 35 real Tatoeba rows, ai_generated 0, and 62 generated ones, ai_generated 1 with gen-<sha1(jp)[:12]> slugs; needs_review 1 on all) with the Layer-B of research/derived/mined_layerb_n3/batch-30.json - the bank goes 10,112 -> 10,209. Same script, same guards: register + register_rule are READ from research/derived/repairs/sentence_register.json by slug (derived by derive_sentence_register_v2.py --w13-source on that file before the ingest, then regenerated --skip-w13; a row with no entry is refused), batch-30 is one transaction, and the 4 `gram:` targets become sentence_grammar edges by exact key. A separate step rather than a third --source on step 121 because it is how the live index got here: 121 -> 122 -> 123 ran before these rows existed. The N3 relink (122) does not reach them; step 127 applies their relinks from a table of their own (U1: 48 derived, 19 applied, 29 held). Idempotent."
+   "note": "W13 finish: the SECOND run of step 122's ingest, for the 97 late uncovered-target rows (research/derived/n3_mined/generated_uncovered_final.json: 35 real Tatoeba rows, ai_generated 0, and 62 generated ones, ai_generated 1 with gen-<sha1(jp)[:12]> slugs; needs_review 1 on all) with the Layer-B of research/derived/mined_layerb_n3/batch-30.json - the bank goes 10,112 -> 10,209. Same script, same guards: register + register_rule are READ from research/derived/repairs/sentence_register.json by slug (derived by derive_sentence_register_v2.py --w13-source on that file before the ingest, then regenerated --skip-w13; a row with no entry is refused), batch-30 is one transaction, and the 4 `gram:` targets become sentence_grammar edges by exact key. A separate step rather than a third --source on step 122 because it is how the live index got here: 121 -> 122 -> 123 ran before these rows existed. The N3 relink (122) does not reach them; step 128 applies their relinks from a table of their own (U1: 48 derived, 19 applied, 29 held). Idempotent."
   },
   {
-   "n": 125,
+   "n": 126,
    "phase": "repair",
    "quick_family": "sentences",
    "script": "scripts/apply_particle_template_fixes.py",
@@ -2009,10 +2027,10 @@
    "writes": [
     "localized_text"
    ],
-   "note": "W13 finish. Applies research/derived/repairs/particle_template_fixes.json: the 201 mechanical re-chunks of templated particle explanations found by the W13b template audit (the v1 template quoted an adverb / adverbial noun / 連用形 copula / conjunction inside the noun phrase: 「を marca 直に腹…」 -> 「を marca 腹…」), in BOTH layers - localized_text (particle, explanation, pt-BR) here and the Layer-B source research/derived/mined_layerb_n3/batch-NN.json that steps 121/124 ingest. Because the source is repaired, a replay ingests the fixed text and this step finds all 201 rows already applied; it is listed because it is the script that wrote the live index. Only the `replace` rows: the 50 `withdraw` rows and the 24 verified-label overrides stay in research/derived/pending/. Must run after BOTH ingests (3 rows are batch-30's). Exact match on (slug, token position, old text); idempotent."
+   "note": "W13 finish. Applies research/derived/repairs/particle_template_fixes.json: the 201 mechanical re-chunks of templated particle explanations found by the W13b template audit (the v1 template quoted an adverb / adverbial noun / 連用形 copula / conjunction inside the noun phrase: 「を marca 直に腹…」 -> 「を marca 腹…」), in BOTH layers - localized_text (particle, explanation, pt-BR) here and the Layer-B source research/derived/mined_layerb_n3/batch-NN.json that steps 123/124 ingest. Because the source is repaired, a replay ingests the fixed text and this step finds all 201 rows already applied; it is listed because it is the script that wrote the live index. Only the `replace` rows: the 50 `withdraw` rows and the 24 verified-label overrides stay in research/derived/pending/. Must run after BOTH ingests (3 rows are batch-30's). Exact match on (slug, token position, old text); idempotent."
   },
   {
-   "n": 126,
+   "n": 127,
    "phase": "repair",
    "quick_family": "sentences",
    "script": "scripts/apply_particle_template_fixes.py",
@@ -2029,7 +2047,7 @@
    "note": "U1. The second table of the W13b template audit, research/derived/repairs/particle_template_fixes_second.json (74 rows, each through an independent verifier; owner sign-off on the 24 label overrides 2026-09-23): the 50 withdrawn connector templates on て inside a fixed compound postposition (として, を通して, から〜にかけて ...), re-authored with a new explanation AND a new function label, and 24 label corrections of verified rows (new label only). Both layers - localized_text (particle, explanation|function, pt-BR) here and the Layer-B source research/derived/mined_layerb_n3/batch-NN.json (with explanation_status / function_status set from the verifier), so a replay ingests the fixed text and this step finds all 74 already applied. Must run after BOTH ingests (1 row is batch-30's). Exact match on (slug, token position, surface, old value of every changed field); idempotent."
   },
   {
-   "n": 127,
+   "n": 128,
    "phase": "repair",
    "quick_family": "sentences",
    "script": "scripts/apply_orthographic_relinks.py",
@@ -2046,10 +2064,10 @@
     "token",
     "sentence_vocab"
    ],
-   "note": "U1. Step 122's N3 relink over the 97 late sentences of step 124: research/derived/repairs/orthographic_relinks_n3_late.json, the 48 rows a full `--derive --scope n3` produces today that orthographic_relinks_n3.json does not carry (all 48 on the late sentences; the 439 applied rows and 37 holds of that table reproduce unchanged). Same rules, same five guards. A separate table and step because step 122 runs before these sentences exist. 19 rows apply; 29 are in held[]: each names an N3 record on a sentence whose stored level (computed once at ingest) is n4/n5, and would file one more sentence below a component level past integrity_audit's shrink-only ceiling (27 sentences, 688 -> 715 vs 703). validate_lesson_gating check D is unchanged either way (148, the frozen ceiling). Idempotent."
+   "note": "U1. Step 123's N3 relink over the 97 late sentences of step 125: research/derived/repairs/orthographic_relinks_n3_late.json, the 48 rows a full `--derive --scope n3` produces today that orthographic_relinks_n3.json does not carry (all 48 on the late sentences; the 439 applied rows and 37 holds of that table reproduce unchanged). Same rules, same five guards. A separate table and step because step 123 runs before these sentences exist. 19 rows apply; 29 are in held[]: each names an N3 record on a sentence whose stored level (computed once at ingest) is n4/n5, and would file one more sentence below a component level past integrity_audit's shrink-only ceiling (27 sentences, 688 -> 715 vs 703). validate_lesson_gating check D is unchanged either way (148, the frozen ceiling). Idempotent."
   },
   {
-   "n": 128,
+   "n": 129,
    "phase": "repair",
    "quick_family": null,
    "script": "scripts/apply_lesson_furigana.py",
@@ -2063,7 +2081,29 @@
    "note": "W21 furigana apply. Applies research/derived/repairs/lesson_furigana.json: the `reading` attribute on 611 of the 875 lesson-body <jp> spans that carried kanji and no reading (PENDING A7), in BOTH layers -- the pt-BR body in localized_text here and research/derived/lessons/<slug>.json. 315 spans are settled by the lesson's own vocabulary record, 296 by SudachiPy verified against the vocab and kanji registries and the whole-word aligner; the 264 the registries cannot settle are carried in the same table as residue and are NOT written. Adds an attribute only: the rendered text of every lesson is byte-identical afterwards. validate_lesson_bodies ratchets the residue."
   },
   {
-   "n": 129,
+   "n": 130,
+   "phase": "repair",
+   "quick_family": null,
+   "script": "scripts/apply_forward_refs.py",
+   "args": [],
+   "enabled": true,
+   "first_commit": null,
+   "first_commit_date": "2026-09-23",
+   "writes": [
+    "lesson_unlocks",
+    "lesson_introduces",
+    "vocab",
+    "kanji",
+    "grammar_point",
+    "card_production_key",
+    "exercise",
+    "localized_text",
+    "lesson"
+   ],
+   "note": "W21b forward references. Applies research/derived/repairs/w21b_forward_refs.json (derived by scripts/derive_forward_refs.py): 276 items whose unlock moves to the first same-level lesson that uses them, in BOTH layers - lesson_unlocks / lesson_introduces / exercise / the lesson body here and research/derived/lessons/<slug>.json. The SRS card follows the unlock (derived at export); the authored production key (card_production_key) is moved and its tracked table re-homed, as are the W20 rows of the 81 exercises that travel. On a replay the sources already carry every move and step 112 (--placement-only) has already re-placed introducing_topic_id (246 records), so this step verifies and recomputes cumulative_known_set only. Runs after the practice (118) and card key (119) applies because it moves rows they write; families stay last."
+  },
+  {
+   "n": 131,
    "phase": "families",
    "quick_family": null,
    "script": "scripts/ingest/build_families.py",
@@ -2078,7 +2118,7 @@
    "note": "W11b: RECOMPUTES the class families (six conjugation/adjective classes + counters) over the levels course_module declares taught, instead of the old `if COUNT(*) FROM family > 0: skip` guard that made it a permanent no-op after its first run. Owner decision D14 also retires the 51 materialized kanji_component families here (family.deprecated_by = 'kanji.components'): they were a cache of the store kanji.components is exported from, 0 of 51 still matched it, and design/schema_v2.md answers the component query from that store directly. MOVED from step 37 in the pre-W11b numbering to after the lesson chain: the family layer is now derived from lesson_unlocks, which replay_all.py (load_lessons) does not populate until step 37 and which steps 90, 110, 111, 112 and 113 then correct. Built at 37 it would have derived every topic-bound family from an empty ledger."
   },
   {
-   "n": 130,
+   "n": 132,
    "phase": "families",
    "quick_family": null,
    "script": "scripts/ingest/build_families_full.py",
@@ -2093,7 +2133,7 @@
    "note": "W11b: RECOMPUTES the topic-bound families from the LIVE unlock ledger (lesson_unlocks) instead of the frozen grammar_point.introducing_topic_id snapshot that put 272 of 364 grammar memberships in the wrong family, and drops the hardcoded `level IN ('n5','n4')` in favour of course_module.level. Renames the two types that lied about themselves: function_set -> topic_set and semantic_field -> topic_residual (the slugs, which are published addresses, do not change). Must run after the lesson chain and after the three identity migrations, for the same reason as the step before it."
   },
   {
-   "n": 131,
+   "n": 133,
    "phase": "families",
    "quick_family": null,
    "script": "scripts/ingest/fix_contrasts.py",

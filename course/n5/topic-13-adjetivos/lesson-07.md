@@ -7,7 +7,7 @@
 - Dizer que se gosta de FAZER algo com 〜のが好きです
 - Dizer que se é bom (じょうず) ou ruim (へた) em uma atividade com 〜のが上手/下手です
 
-**Introduz:** gramática [gp-23, gp-54, no-ga-jouzu, no-ga-suki] · vocabulário [—] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-23, gp-54, no-ga-jouzu, no-ga-suki] · vocabulário [料理] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-10883885`, `sent:tatoeba-1128926`, `sent:gen-74bce4b40079`
 

@@ -7,7 +7,7 @@
 - Empregar vocabulário sobre corpo, saúde e estadia em frases
 - Ler os kanji 祖 e 煙 em palavras compostas
 
-**Introduz:** gramática [—] · vocabulário [他, 代金, 体温, 体育, 大, 大した, 大会, 大使, 大気, 大臣, 存在, 対, 対象, 尊重, 滞在, 田, 退屈, 題] · kanji [煙 祖] · kana [—]
+**Introduz:** gramática [—] · vocabulário [他, 代金, 体温, 体育, 大, 大した, 大会, 大使, 大気, 大臣, 存在, 対, 対する, 対象, 尊重, 滞在, 田, 退屈, 題] · kanji [煙 祖] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

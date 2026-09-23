@@ -8,7 +8,7 @@
 - Distinguir 〜にくい (dificuldade pela natureza da coisa) de 〜づらい (desconforto de quem realiza a ação)
 - Reconhecer o kanji 答 (resposta) e aplicá-lo em 答える / 答えにくい
 
-**Introduz:** gramática [nikui, yasui, zurai] · vocabulário [危険, 専門, 放送, ＦＡＸ] · kanji [答] · kana [—]
+**Introduz:** gramática [nikui, yasui, zurai] · vocabulário [字, 危険, 専門, 放送, ＦＡＸ] · kanji [説] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-8950340`, `sent:tatoeba-12047477`, `sent:tatoeba-9458223`, `sent:tatoeba-12281023`
 
@@ -94,4 +94,9 @@ Juntando tudo: この放送は分かりやすい = esse programa é fácil de en
 - **Resposta:** `{"text": "説明しづらい。", "accept": ["説明しづらい", "説明しづらい。", "せつめいしづらい", "説明しにくい", "説明しにくい。"]}`
 -  De 説明する tira-se a raiz 説明し e adiciona-se づらい: 説明しづらい (é penoso de explicar). 説明しにくい também é aceitável e muito comum; a diferença é só de ênfase (esforço da ação vs. desconforto de quem fala).
 - frases: `sent:tatoeba-12281023`
+
+### 6. (production) Escreva em kanji a palavra explicação (せつめい).
+- **Resposta:** `{"text": "説明", "accept": ["説明", "せつめい"]}`
+- 説明 (せつめい) deixa claro (明) aquilo que se expõe (説). O mesmo 説 aparece em 小説 (しょうせつ, romance).
+
 

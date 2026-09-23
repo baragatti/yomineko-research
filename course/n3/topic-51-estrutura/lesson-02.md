@@ -7,7 +7,7 @@
 - Usar 〜ことができる para dizer 'conseguir/poder fazer algo'
 - Escolher entre こと e の conforme a ação seja abstrata ou concreta e imediata
 
-**Introduz:** gramática [n3-koto] · vocabulário [上等, 上達, 人生, 信じる, 冗談, 処理, 少々, 徐々に, 情報, 承認, 新鮮, 状態, 生じる, 症状, 真剣, 証明, 進学, 食欲] · kanji [忙 才 泳 疲 眠] · kana [—]
+**Introduz:** gramática [n3-koto] · vocabulário [上等, 上達, 人生, 信じる, 冗談, 処理, 少々, 徐々に, 情報, 承認, 新鮮, 状態, 生じる, 症状, 真剣, 証明, 進学, 食欲] · kanji [忙 才 疲 眠] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-77944`
 

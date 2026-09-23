@@ -7,7 +7,7 @@
 - Convidar de forma educada com 〜ませんか ('não quer...?'), deixando o outro livre para aceitar ou recusar
 - Montar convites combinando 一緒に + verbo + 〜ませんか
 
-**Introduz:** gramática [issho-ni, masen-ka] · vocabulário [フォーク, プール, ホテル, 前, 昼, 昼ご飯, 豚肉, 部屋] · kanji [西 食] · kana [—]
+**Introduz:** gramática [issho-ni, masen-ka] · vocabulário [フォーク, プール, ホテル, 休む, 前, 昼ご飯, 豚肉, 部屋] · kanji [西] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-774809`, `sent:gen-24bb23e4256e`, `sent:tatoeba-190532`, `sent:tatoeba-190548`
 

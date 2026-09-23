@@ -9,7 +9,7 @@
 - Usar 〜てくる para indicar movimento ou mudança que vem em direção ao falante, incluindo 'ir e voltar'
 - Reconhecer e ler os kanji 帰 (retorno ao lar) e 音 (som)
 
-**Introduz:** gramática [dasu, hajimeru, te-kuru] · vocabulário [伝える, 其れで, 尋ねる, 帰り, 返事, 送る] · kanji [帰 音] · kana [—]
+**Introduz:** gramática [dasu, hajimeru, te-kuru] · vocabulário [伝える, 其れで, 尋ねる, 帰り, 返事, 送る] · kanji [赤] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-945909`, `sent:gen-1f6fd836c289`, `sent:tatoeba-8736595`, `sent:tatoeba-228677`
 

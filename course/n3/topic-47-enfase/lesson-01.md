@@ -7,7 +7,7 @@
 - Reconhecer os dois usos de さえ: 'até mesmo X' e o padrão さえ...ば ('basta que X')
 - Responder com こちらこそ ao devolver uma gentileza
 
-**Introduz:** gramática [n3-koso, n3-sae] · vocabulário [交換, 交際, 光景, 公平, 合計, 幸福, 広告, 強盗, 後者, 攻撃, 構成, 航空, 行動, 貢献, 高速] · kanji [亡 冷 婦 寄 未 舞 適] · kana [—]
+**Introduz:** gramática [n3-koso, n3-metta-ni-nai-2, n3-sae] · vocabulário [交換, 交際, 光景, 公平, 合計, 幸福, 広告, 強盗, 後者, 攻撃, 構成, 航空, 行動, 貢献, 高速] · kanji [亡 冷 婦 寄 未 舞 適] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-10573391`, `sent:tatoeba-194622`
 

@@ -7,7 +7,7 @@
 - Reconhecer 分 (minuto) como unidade de tempo e ２日 (dia 2 do mês) na contagem de datas
 - Usar os primeiros contadores e numerais 二つ (dois), 二人 (duas pessoas) e 枚 (objetos finos e planos)
 
-**Introduz:** gramática [—] · vocabulário [二つ, 二人, 分, 枚, 毎年, 毎日, 毎晩, 毎月, 毎朝, 毎週, ２日] · kanji [—] · kana [—]
+**Introduz:** gramática [—] · vocabulário [二つ, 二人, 分, 枚, 毎年, 毎月, 毎朝, 毎週, ２日] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

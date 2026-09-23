@@ -7,7 +7,7 @@
 - Dominar a conjugação irregular de いい/良い, cuja raiz vira よ- (passado 良かった, negativo よくない)
 - Reconhecer que いい (fala) e 良い/よい (escrita) são a mesma palavra
 
-**Introduz:** gramática [gp-5] · vocabulário [厚い, 可愛い, 寒い, 新しい, 暑い, 暖かい, 涼しい, 熱い, 甘い, 美味しい, 良い, 薄い, 軽い, 辛い, 重い, 面白い] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-5, temo-ii-desu] · vocabulário [厚い, 可愛い, 新しい, 暑い, 暖かい, 本当, 涼しい, 熱い, 甘い, 薄い, 軽い, 辛い, 重い, 面白い] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-81558`, `sent:tatoeba-77848`, `sent:tatoeba-77189`, `sent:tatoeba-5126`
 

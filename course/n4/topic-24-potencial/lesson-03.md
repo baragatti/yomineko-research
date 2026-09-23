@@ -8,7 +8,7 @@
 - Distinguir a percepção espontânea (聞こえる/見える) da ação intencional (聞く/見る)
 - Marcar com が aquilo que se ouve ou se vê
 
-**Introduz:** gramática [gp-84, gp-85] · vocabulário [パパ, 坂, 壁, 夫, 星, 林, 素晴らしい, 美しい, 葡萄, 雲] · kanji [野] · kana [—]
+**Introduz:** gramática [gp-84, gp-85] · vocabulário [パパ, 坂, 壁, 夫, 星, 林, 素晴らしい, 美しい, 葡萄, 見える, 雲] · kanji [野 音] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-188299`, `sent:tatoeba-9979575`, `sent:tatoeba-8572172`, `sent:tatoeba-2552450`
 

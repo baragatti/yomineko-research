@@ -9,7 +9,7 @@
 - Diferenciar まで (duração até um ponto) de までに (prazo)
 - Reconhecer e ler 14 palavras novas e 7 kanji ligados a tempo e estado
 
-**Introduz:** gramática [n3-made, n3-saichuu-ni, n3-uchi-ni] · vocabulário [一瞬, 今に, 今にも, 以前, 命, 居眠り, 居間, 意志, 意思, 意識, 板, 泉, 異常, 維持] · kanji [制 務 性 成 治 法 要] · kana [—]
+**Introduz:** gramática [n3-made, n3-saichuu-ni, n3-uchi-ni] · vocabulário [一瞬, 今に, 今にも, 以前, 命, 居眠り, 居間, 意志, 意思, 意識, 最中, 板, 泉, 異常, 維持] · kanji [制 務 性 成 治 法 要] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-9032501`, `sent:tatoeba-226507`
 

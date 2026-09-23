@@ -8,7 +8,7 @@
 - Usar って para citar uma fala e para introduzir um tópico de forma coloquial
 - Reconhecer os kanji 右 (direita) e 左 (esquerda)
 
-**Introduz:** gramática [gp-51, hou-ga-ii, tte] · vocabulário [スリッパ, 呼ぶ, 洋服, 渡す, 渡る, 良く, Ｙシャツ] · kanji [右 左] · kana [—]
+**Introduz:** gramática [gp-51] · vocabulário [スリッパ, 呼ぶ, 洋服, 渡す, 渡る, 良く, Ｙシャツ] · kanji [右 左] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-214854`, `sent:tatoeba-4888`, `sent:tatoeba-216787`, `sent:tatoeba-1484928`
 

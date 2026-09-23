@@ -7,7 +7,7 @@
 - Empregar a forma potencial para dizer que se é capaz de fazer algo, marcando o objeto com が
 - Distinguir o sentido potencial do sentido passivo em 〜られる pelo contexto
 
-**Introduz:** gramática [gp-115, rareru] · vocabulário [事, 仕舞う, 光る, 寝坊, 捨てる, 柔道, 決して, 決める, 漸と, 為さる, 痩せる, 行う, 試合, 調べる, 足りる] · kanji [心 思 正] · kana [—]
+**Introduz:** gramática [gp-115, rareru] · vocabulário [仕舞う, 光る, 寝坊, 捨てる, 柔道, 決して, 決める, 漸と, 程, 行う, 試合, 調べる] · kanji [借 心 正 海] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-b5467a55ded1`, `sent:gen-f5d1890aeb80`, `sent:tatoeba-195054`, `sent:tatoeba-123138`
 
@@ -121,5 +121,25 @@ Três kanji do campo da mente e do juízo, úteis para falar de capacidade.
 ### 10. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["思う", "achar, pensar"], ["正月", "Ano-Novo"], ["時間", "tempo, hora"]]}`
 - 思う é o verbo de opinião; 正月 é o Ano-Novo, com 正 lido ショウ; 時間 entra aqui como termo já conhecido, para dar contraste.
+
+
+### 11. (recognition) Qual destes kanji significa 'pegar emprestado'?
+- **Resposta:** `{"choices": ["借", "貸", "使", "買"], "correct": "借"}`
+- 借 é o lado de quem recebe: 'pegar emprestado, alugar de alguém'. 貸 é o lado oposto, emprestar a alguém, e o par 借りる／貸す anda sempre junto. 使 (usar) e 買 (comprar) ficam perto no sentido, mas não envolvem devolução.
+
+
+### 12. (production) Escreva 'pegar emprestado' na forma de dicionário, com kanji.
+- **Resposta:** `{"text": "借りる", "accept": ["借りる", "かりる"]}`
+- Em 借りる o kanji guarda a raiz か e o resto da palavra fica como okurigana. É o verbo de quem recebe; quem entrega usa 貸す.
+
+
+### 13. (recognition) Qual destes kanji significa 'mar'?
+- **Resposta:** `{"choices": ["海", "水", "母", "毎"], "correct": "海"}`
+- 海 tem o radical de água à esquerda e 毎 à direita. Sozinho lê-se うみ; em compostos, カイ. 水 é 'água' em geral, e 毎 e 母 são as peças que formam o lado direito do próprio 海.
+
+
+### 14. (production) Escreva 'mar' em japonês, com kanji.
+- **Resposta:** `{"text": "海", "accept": ["海", "うみ"]}`
+- 海 sozinho já é a palavra うみ, 'mar'. Não leva okurigana.
 
 

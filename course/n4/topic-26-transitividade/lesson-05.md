@@ -7,7 +7,7 @@
 - Dizer 'deve ser / é de se esperar' com はず para expressar certeza baseada em lógica
 - Reconhecer os kanji 計 (plano/medir) e 特 (especial) em palavras de agenda e julgamento
 
-**Introduz:** gramática [—] · vocabulário [すっかり, 予定, 以内, 形, 技術, 法律, 用, 用意, 筈] · kanji [特 計] · kana [—]
+**Introduz:** gramática [—] · vocabulário [すっかり, 以内, 形, 技術, 法律, 用意, 筈] · kanji [特 計] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 
@@ -60,47 +60,42 @@ Três substantivos que aparecem muito em textos do dia a dia e em notícias:
 ---
 
 ## Exercícios
-### 1. (recognition) Qual palavra significa 'planos, agenda, cronograma'?
-- **Resposta:** `{"choices": ["よてい", "ようい", "いない"], "correct": "よてい"}`
-- 予定 (よてい) = planos / agenda / cronograma, o que você tem marcado. ようい (用意) é 'preparação' e いない (以内) é 'dentro de'.
-
-
-### 2. (recognition) O que はず expressa numa frase como 彼は来るはずです?
+### 1. (recognition) O que はず expressa numa frase como 彼は来るはずです?
 - **Resposta:** `{"choices": ["uma certeza baseada em lógica ('deve vir')", "uma ordem ('venha!')", "uma dúvida total ('será que vem?')"], "correct": "uma certeza baseada em lógica ('deve vir')"}`
 - はず indica convicção apoiada em razões: 'é de se esperar que', 'deve ser'. Não é nem ordem nem chute aleatório, e sim uma conclusão lógica.
 
 
-### 3. (cloze) Complete com a palavra para 'no máximo / dentro de': 一週間＿に返してください。 (Devolva dentro de uma semana.)
+### 2. (cloze) Complete com a palavra para 'no máximo / dentro de': 一週間＿に返してください。 (Devolva dentro de uma semana.)
 - **Resposta:** `{"text": "以内", "full": "一週間以内に返してください。"}`
 - 以内 (いない) marca um limite: 'dentro de'. 一週間以内 = 'em até uma semana'. Funciona como uma cerca de tempo, e tudo que cabe dentro dela conta.
 
 
-### 4. (sentence_build) Monte 'Os preparativos devem estar prontos.' com as peças: [はず] [用意] [できている] [は] [です]
+### 3. (sentence_build) Monte 'Os preparativos devem estar prontos.' com as peças: [はず] [用意] [できている] [は] [です]
 - **Resposta:** `{"order": ["用意", "は", "できている", "はず", "です"], "text": "用意はできているはずです。"}`
 - 用意 (preparativos) + は (tópico) + できている (estão prontos) + はず (deve ser) + です. はず vem depois do verbo na forma normal e antes de です.
 
 
-### 5. (production) Diga em japonês 'Esqueci completamente.' usando すっかり e o passado de 忘れる (esquecer).
+### 4. (production) Diga em japonês 'Esqueci completamente.' usando すっかり e o passado de 忘れる (esquecer).
 - **Resposta:** `{"text": "すっかり忘れました。", "accept": ["すっかり忘れました", "すっかりわすれました", "すっかり忘れた", "すっかりわすれた"]}`
 - すっかり (completamente) vai antes do verbo: すっかり + 忘れました (esqueci). O advérbio reforça que a ação se completou por inteiro, sem sobrar nada.
 
 
-### 6. (recognition) Qual é o significado do kanji 特?
+### 5. (recognition) Qual é o significado do kanji 特?
 - **Resposta:** `{"choices": ["especial", "coisa", "solo", "lugar"], "correct": "especial"}`
 - 特 quer dizer especial, particular. Ele não tem leitura kun: só a on トク, então aparece sempre dentro de palavras compostas.
 
 
-### 7. (production) Escreva o kanji que significa "especial, particular", de leitura トク.
+### 6. (production) Escreva o kanji que significa "especial, particular", de leitura トク.
 - **Resposta:** `{"text": "特", "accept": ["特", "トク", "とく"]}`
 - 特 tem dez traços e uma leitura só, トク. Como não existe leitura kun, ele nunca aparece sozinho como palavra.
 
 
-### 8. (recognition) Qual é o significado do kanji 計?
+### 7. (recognition) Qual é o significado do kanji 計?
 - **Resposta:** `{"choices": ["calcular", "dizer", "língua", "ler"], "correct": "calcular"}`
 - 計 junta 言 (dizer) com 十 (dez): contar em voz alta. Ele significa medir, calcular, e é o 計 de 時計 (relógio).
 
 
-### 9. (production) Escreva em japonês "relógio", com os kanji 時 e 計 e a leitura とけい.
+### 8. (production) Escreva em japonês "relógio", com os kanji 時 e 計 e a leitura とけい.
 - **Resposta:** `{"text": "時計", "accept": ["時計", "とけい"]}`
 - 時計 é o aparelho que mede (計) o tempo (時). A leitura とけい vem pronta: não se monta somando as leituras dos dois kanji.
 

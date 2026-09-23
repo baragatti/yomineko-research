@@ -8,7 +8,7 @@
 - Distinguir そんな (antes de substantivo) de そんなに (antes de verbo/adjetivo, "tanto assim")
 - Reconhecer e ler o kanji 京 ("capital", きょう)
 
-**Introduz:** gramática [gp-73, gp-89] · vocabulário [阿弗利加] · kanji [京] · kana [—]
+**Introduz:** gramática [gp-73, gp-89] · vocabulário [そんなに, 阿弗利加] · kanji [京] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-3488178`, `sent:tatoeba-2171509`, `sent:tatoeba-4855`, `sent:tatoeba-164675`
 

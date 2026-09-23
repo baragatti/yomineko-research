@@ -8,7 +8,7 @@
 - Situar algo dentro de um grupo com 〜は〜の一つだ ('é um dos')
 - Encadear consequências com o conector すると ('e então')
 
-**Introduz:** gramática [gp-101, ka-dou-ka, nowa-da] · vocabulário [すると] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-101, ka-dou-ka, nowa-da] · vocabulário [すると] · kanji [歌] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-217663`, `sent:tatoeba-531188`, `sent:tatoeba-80358`, `sent:gen-96054e83dfbe`
 
@@ -82,5 +82,10 @@ O conector すると("então", "e então", "em seguida") liga uma ação a uma c
 ### 5. (production) Diga em japonês 'Não sei se ele vem (ou não).' usando 彼 (ele), 来る (vir) e a estrutura de dúvida embutida + 分からない.
 - **Resposta:** `{"text": "彼が来るかどうか分からない。", "accept": ["彼が来るかどうか分からない", "彼が来るかどうかわからない", "かれが来るかどうか分からない", "かれがくるかどうかわからない", "彼が来るかどうか分かりません"]}`
 - 彼が来る ('ele vem') recebe かどうか ('se... ou não') e vira o objeto de 分からない ('não sei'): 'não sei SE ele vem ou não'. O か liga direto na forma simples 来る, sem だ.
+
+
+### 6. (production) Escreva em japonês o verbo "cantar" (leitura うたう).
+- **Resposta:** `{"text": "歌う", "accept": ["歌う", "うたう"]}`
+- A leitura うた fica dentro do kanji e o う aparece como okurigana. Sem esse う a palavra seria o substantivo 歌, a canção.
 
 

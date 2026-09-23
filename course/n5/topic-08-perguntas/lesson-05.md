@@ -7,7 +7,7 @@
 - Perguntar o método ou o meio de uma ação com どうやって
 - Distinguir どんな (que tipo) de どうやって (de que forma) e de どうして (por quê)
 
-**Introduz:** gramática [donna, douyatte] · vocabulário [位, 曇り, 月, 木, 漢字, 片仮名, 瓦, 瓩, 粁, 風] · kanji [—] · kana [—]
+**Introduz:** gramática [donna, douyatte] · vocabulário [どんな, テスト, 動, 天気, 曇り, 月, 漢字, 片仮名, 瓦, 瓩, 粁, 遣る, 風] · kanji [天 学 校 気] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-199569`, `sent:tatoeba-199382`, `sent:tatoeba-9611533`, `sent:tatoeba-201153`
 
@@ -91,5 +91,20 @@ Hoje quase ninguém os escreve assim; você verá essas unidades em katakana. Gu
 ### 5. (production) Pergunte QUE TIPO de filme (映画 / えいが) é, usando どんな.
 - **Resposta:** `{"text": "どんな映画ですか。", "accept": ["どんな映画ですか", "どんなえいがですか", "どんな映画ですか？", "どんなえいがですか？"]}`
 - どんな + substantivo (映画, filme) + ですか forma a pergunta sobre a característica do filme.
+
+
+### 6. (recognition) Qual destes kanji significa "céu, firmamento"?
+- **Resposta:** `{"choices": ["天", "大", "白", "気"], "correct": "天"}`
+- 天 é 大 (uma pessoa de braços abertos) com um traço por cima: o céu acima da cabeça. Ele abre 天気 (tempo, clima), que se lê てんき. 気 é o segundo kanji dessa mesma palavra, 大 é grande e 白 é branco.
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra que significa "tempo (clima)" e se lê てんき.
+- **Resposta:** `{"text": "天気", "accept": ["天気", "てんき"]}`
+- 天気 junta 天 (céu) e 気 (ar, energia): o estado do ar lá em cima. É a palavra que os japoneses usam o tempo todo para puxar conversa sobre o dia.
+
+
+### 8. (production) Escreva em japonês, com kanji, a palavra 'escola' (leitura: がっこう).
+- **Resposta:** `{"text": "学校", "accept": ["学校", "がっこう"]}`
+- 学校 junta 学 (estudo) e 校 (escola). Vale guardar os dois juntos: 校 é a parte que reaparece em todo nome de escola.
 
 

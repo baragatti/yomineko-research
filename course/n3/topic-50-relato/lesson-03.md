@@ -7,7 +7,7 @@
 - Repassar um boato de forma casual com ～んだって ('ouvi dizer que') e reconhecer んだって? como pergunta
 - Distinguir らしい de ようだ/みたいだ (impressão própria) e de そうだ de boato (mero repasse)
 
-**Introduz:** gramática [n3-n-datte, n3-rashii] · vocabulário [ジュース, 上京, 主婦, 住宅, 修理, 収穫, 宿泊, 州, 手術, 正午, 渋滞, 週, 銃, 霜, 順] · kanji [寝 晴 盗 酒] · kana [—]
+**Introduz:** gramática [n3-n-datte, n3-rashii] · vocabulário [ジュース, 上京, 主婦, 住宅, 修理, 収穫, 宿泊, 州, 手術, 正午, 渋滞, 週, 銃, 霜, 順] · kanji [寝 盗 酒] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-100541`, `sent:tatoeba-9240812`
 
@@ -128,17 +128,12 @@ Repare que 晴 e 暗 compartilham o radical do sol (日) à esquerda, mas levam 
 - 寝る (ねる) dormir, 晴れ (はれ) tempo bom, 盗む (ぬすむ) roubar e 酒 (さけ) bebida alcoólica. São os quatro kanji novos desta lição em palavras do dia a dia.
 
 
-### 7. (recognition) Qual destes verbos significa 'abrir o tempo, clarear'?
-- **Resposta:** `{"choices": ["晴れる", "降る", "止まる", "冷える"], "correct": "晴れる"}`
-- 晴れる (はれる) é o céu abrir. 降る é cair chuva ou neve, 止まる é parar e 冷える é esfriar.
-
-
-### 8. (production) Diga 'ontem dormi cedo', na forma curta.
+### 7. (production) Diga 'ontem dormi cedo', na forma curta.
 - **Resposta:** `{"text": "昨日は早く寝た", "accept": ["昨日は早く寝た", "きのうははやくねた", "昨日ははやくねた"]}`
 - 寝た é o passado curto de 寝る (ねる). 早く é a forma adverbial de 早い, e 昨日は abre a frase marcando quando aconteceu.
 
 
-### 9. (production) Diga 'meu pai não bebe bebida alcoólica', na forma educada.
+### 8. (production) Diga 'meu pai não bebe bebida alcoólica', na forma educada.
 - **Resposta:** `{"text": "父は酒を飲みません", "accept": ["父は酒を飲みません", "ちちはさけをのみません", "父はさけを飲みません"]}`
 - 酒 (さけ) cobre o saquê e a bebida alcoólica em geral. 飲みません é a negativa educada de 飲む, e o que se bebe vem marcado por を.
 

@@ -7,7 +7,7 @@
 - Transformar uma frase inteira em bloco substantivo com ということ para resumir ou reformular
 - Reconhecer ということ como ponte entre uma fala/fato e o verbo que vem depois (知っている, 分かる, です)
 
-**Introduz:** gramática [to-iu, to-iu-koto] · vocabulário [レポート, 中学校, 些とも, 人口, 学部, 居らっしゃる, 盛ん, 致す, 複雑, 課長] · kanji [代 問 理] · kana [—]
+**Introduz:** gramática [to-iu, to-iu-koto] · vocabulário [レポート, 中学校, 些とも, 人口, 学部, 居らっしゃる, 盛ん, 致す, 複雑, 課長] · kanji [問 知] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-80590`, `sent:tatoeba-161813`, `sent:tatoeba-205771`, `sent:tatoeba-146864`
 
@@ -101,8 +101,8 @@ Estas palavras combinam bem com a família という, porque você costuma citar
 - 代 é o kanji de "substituir, geração" e se lê ダイ. Ele traz o radical de pessoa à esquerda, como 休 e 会; cuidado com 大, que também se lê ダイ mas significa "grande".
 
 
-### 7. (recognition) Qual destes kanji significa "razão, lógica, princípio" e se lê リ?
-- **Resposta:** `{"choices": ["理", "事", "気", "力"], "correct": "理"}`
-- 理 é "razão, lógica" e se lê リ: é a segunda metade de りょうり ("prato, culinária"). 事 ("coisa"), 気 ("ânimo") e 力 ("força") também são abstratos, mas nenhum carrega a ideia de princípio que 理 traz.
+### 7. (production) Escreva em japonês o verbo "saber, conhecer" (しる), usando o kanji.
+- **Resposta:** `{"text": "知る", "accept": ["知る", "しる"]}`
+- 知る tem o kanji 知 com a leitura nativa し e a terminação る em hiragana. O par 知らせる (しらせる) é o mesmo kanji no sentido de "fazer saber", isto é, avisar.
 
 

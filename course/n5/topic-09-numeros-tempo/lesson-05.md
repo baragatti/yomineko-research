@@ -7,7 +7,7 @@
 - Dizer datas do mês, como ９日 (dia 9), usando o kanji 日
 - Marcar 'e passados / depois' nas horas com 過ぎ e encadear a conversa com じゃあ
 
-**Introduz:** gramática [—] · vocabulário [じゃあ, ヶ月, 時間, 週間, 過ぎ, ９日] · kanji [年 日] · kana [—]
+**Introduz:** gramática [—] · vocabulário [じゃあ, ヶ月, 時間, 週間, 過ぎ, ９日] · kanji [日] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-190227`
 

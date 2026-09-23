@@ -7,7 +7,7 @@
 - Empregar お/ご para soar mais educado
 - Usar as palavras polidas お祖父さん, お祖母さん e 奥さん ao falar da família dos outros
 
-**Introduz:** gramática [o-go] · vocabulário [お祖母さん, お祖父さん, 奥さん] · kanji [—] · kana [—]
+**Introduz:** gramática [o-go] · vocabulário [お祖母さん, お祖父さん, 入れる, 奥さん, 財布] · kanji [入 金] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-08415ea48aef`
 
@@ -78,5 +78,10 @@ Tanto おじいさん quanto おばあさん têm uma vogal longa de duas moras:
 ### 5. (production) Escreva em kana a forma polida de 'avô' (a que você usa para o avô de outra pessoa).
 - **Resposta:** `{"text": "おじいさん", "accept": ["おじいさん", "お祖父さん", "おじいさん。"]}`
 - お祖父さん (おじいさん) une o お honorífico, 祖父 (avô) e o sufixo さん. Lembre da vogal longa: o-ji-i-san.
+
+
+### 6. (production) Escreva em japonês, com kanji, a palavra que significa 'dinheiro' e se lê おかね.
+- **Resposta:** `{"text": "お金", "accept": ["お金", "おかね"]}`
+- お金 é o jeito cotidiano e educado de dizer dinheiro. O kanji 金 carrega ouro, metal e dinheiro; sozinho ele também se lê かね.
 
 

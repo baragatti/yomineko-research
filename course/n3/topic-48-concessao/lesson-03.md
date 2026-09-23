@@ -7,7 +7,7 @@
 - Suavizar e ajustar expectativas com 〜といっても ('ainda que se diga..., na verdade')
 - Ligar duas frases com ところが para marcar um resultado inesperado e surpreendente
 
-**Introduz:** gramática [n3-to-ittemo, n3-to-iu-yori, n3-tokoro-ga] · vocabulário [さっぱり, ざっと, 作品, 作家, 作曲, 参考, 最中, 最低, 最終, 最高, 覚ます, 覚める, 騒ぎ] · kanji [喜 曲 浮 精 絶 遅] · kana [—]
+**Introduz:** gramática [n3-to-ittemo, n3-to-iu-yori, n3-tokoro-ga] · vocabulário [さっぱり, ざっと, 作品, 作家, 作曲, 参考, 最低, 最終, 最高, 覚ます, 覚める, 騒ぎ] · kanji [曲 浮 精 絶 遅] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-108845`, `sent:tatoeba-141760`
 
@@ -115,12 +115,7 @@ O kanji 浮 ('flutuar, boiar') tem água (氵) à esquerda: algo que boia na ág
 - 作曲 é fazer a melodia; 精神 é o espírito no sentido de mente; 絶対 é o que não admite corte nem exceção; 遅い descreve o que vai devagar ou chega tarde.
 
 
-### 8. (production) Escreva em japonês, na forma de dicionário, o verbo alegrar-se, ficar feliz.
-- **Resposta:** `{"text": "喜ぶ", "accept": ["喜ぶ", "よろこぶ"]}`
-- 喜ぶ (よろこぶ) é a alegria de quem recebe alguma coisa boa. Trocando o okurigana por び você tem o substantivo 喜び, a alegria.
-
-
-### 9. (production) Escreva o kanji que significa flutuar, boiar, vir à tona.
+### 8. (production) Escreva o kanji que significa flutuar, boiar, vir à tona.
 - **Resposta:** `{"text": "浮", "accept": ["浮", "ふ"]}`
 - 浮 tem o radical da água à esquerda: é o que fica por cima dela. A leitura sino-japonesa é ふ, e as japonesas começam todas por う.
 

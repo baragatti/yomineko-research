@@ -8,7 +8,7 @@
 - Descrever mudanças repentinas com 急に
 - Reforçar a fala casual com o advérbio しっかり (firmeza)
 
-**Introduz:** gramática [kyuu-ni, sakki, sasuga] · vocabulário [確り] · kanji [—] · kana [—]
+**Introduz:** gramática [kyuu-ni, sakki, sasuga] · vocabulário [急, 痩せる, 確り] · kanji [急] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-10914902`, `sent:tatoeba-8533915`, `sent:tatoeba-182469`, `sent:tatoeba-182472`
 
@@ -81,5 +81,10 @@ Os três advérbios numa só cena:さっき急に雨が降ってきた("há pouc
 ### 5. (production) Diga em japonês, de modo casual, 'De repente o tempo piorou.' usando 急に e 悪くなった (piorou).
 - **Resposta:** `{"text": "急に天気が悪くなった。", "accept": ["急に天気が悪くなった", "きゅうに天気が悪くなった", "急にてんきが悪くなった", "急に天気がわるくなった", "急に天気が悪くなってきた"]}`
 -  Por ser casual, o verbo fica na forma simples 悪くなった, e não na polida 悪くなりました: 急に ('de repente') + 天気が ('o tempo') + 悪くなった ('piorou', forma simples passada). 急に vem antes do verbo da mudança.
+
+
+### 6. (recognition) Todos estes kanji trazem 心 ('coração'). Qual deles significa 'apressar-se, urgente'?
+- **Resposta:** `{"choices": ["急", "思", "意", "心"], "correct": "急"}`
+- 急 põe 心 embaixo de uma mão que agarra: o coração acelerado de quem tem pressa. A leitura キュウ é a que aparece tanto no sentido de 'de repente' quanto no nome do trem expresso.
 
 

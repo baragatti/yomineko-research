@@ -7,7 +7,7 @@
 - Reconhecer e escrever os kanji 一, 二 e 十
 - Lembrar os números com som duplo (4・し, 7・しち, 9・きゅう) que costumam confundir
 
-**Introduz:** gramática [—] · vocabulário [七, 三, 九, 五, 十, 四] · kanji [一 二 十] · kana [—]
+**Introduz:** gramática [—] · vocabulário [七, 三, 五, 十, 四] · kanji [一 二 十] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

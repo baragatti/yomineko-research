@@ -7,7 +7,7 @@
 - Empregar 〜ば para expressar condições lógicas, relações naturais de causa e efeito e conselhos
 - Reconhecer que 〜ば enfatiza a condição ('basta que A para que B') e soa natural em provérbios
 
-**Introduz:** gramática [ba, gp-150] · vocabulário [動物園, 怖い, 投げる, 捕まえる, 故障, 触る, 逃げる] · kanji [作 強] · kana [—]
+**Introduz:** gramática [ba, gp-150] · vocabulário [動物園, 怖い, 急ぐ, 投げる, 捕まえる, 故障, 触る, 逃げる, 間に合う] · kanji [合 強 無] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-a6fc1781b5e9`, `sent:gen-4f5ce8074635`, `sent:gen-46f095053830`, `sent:tatoeba-80881`
 
@@ -95,18 +95,18 @@ O condicional 〜ば é o coração de muitos provérbios. Um clássico:塵も�
 - 作 traz uma pessoa do lado esquerdo: é alguém fabricando alguma coisa. Daí vêm tanto o verbo 作る quanto a ideia de "obra".
 
 
-### 7. (production) Escreva em japonês o verbo "fazer, criar, construir" (leitura つくる).
-- **Resposta:** `{"text": "作る", "accept": ["作る", "つくる"]}`
-- O kanji 作 carrega a base つく e o る fica de fora, como okurigana. É esse る solto que permite conjugar o verbo sem mexer no kanji.
-
-
-### 8. (recognition) Em 強い (つよい), qual é o sentido do kanji 強?
+### 7. (recognition) Em 強い (つよい), qual é o sentido do kanji 強?
 - **Resposta:** `{"choices": ["forte, força", "longo, comprido", "mover, movimento", "comprar"], "correct": "forte, força"}`
 - 強 é o kanji da força: com okurigana ele vira o adjetivo 強い, forte. Nos compostos passa à leitura chinesa きょう.
 
 
-### 9. (production) Escreva em japonês o adjetivo "forte" (leitura つよい).
+### 8. (production) Escreva em japonês o adjetivo "forte" (leitura つよい).
 - **Resposta:** `{"text": "強い", "accept": ["強い", "つよい"]}`
 - A base つよ mora no kanji e o い fica visível como okurigana. É esse い que você troca ao negar ou ao pôr o adjetivo no passado.
+
+
+### 9. (production) Escreva em japonês o verbo transitivo 'perder, extraviar' que faz par com 無くなる, na forma de dicionário.
+- **Resposta:** `{"text": "無くす", "accept": ["無くす", "なくす"]}`
+- 無くす é transitivo: alguém perde alguma coisa, marcada por を. Já 無くなる é intransitivo, e nele a coisa some sem culpado. O 無 é a mesma ausência nos dois.
 
 

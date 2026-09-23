@@ -7,7 +7,7 @@
 - Dizer que uma condição mínima já basta com 〜だけで ('só com / basta')
 - Reconhecer 場合は em regras, instruções e avisos do dia a dia
 
-**Introduz:** gramática [baai-wa, dake-de] · vocabulário [ビル, 人形, 会議室, 利用, 包む, 品物, 社長, 飾る] · kanji [主 持] · kana [—]
+**Introduz:** gramática [baai-wa, dake-de] · vocabulário [ビル, 人形, 会議室, 利用, 包む, 品物, 場合, 社長, 飾る] · kanji [主 持 楽 運] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-189516`, `sent:tatoeba-2349428`, `sent:gen-6f9f34d07c95`, `sent:gen-e97bdf76e9db`
 
@@ -127,5 +127,10 @@ Em だけで, o verbo que vem antes fica na forma simples (dicionário), não na
 ### 9. (production) Escreva em japonês o verbo "segurar, carregar", com o kanji 持 e a leitura もつ.
 - **Resposta:** `{"text": "持つ", "accept": ["持つ", "もつ"]}`
 - 持つ guarda a leitura kun もつ. Em palavras compostas o kanji passa para a leitura on ジ.
+
+
+### 10. (production) Escreva em japonês o adjetivo que significa divertido, agradável.
+- **Resposta:** `{"text": "楽しい", "accept": ["楽しい", "たのしい"]}`
+- 楽しい (たのしい) guarda o kanji 楽 e deixa しい em kana. Esse okurigana é o que separa o adjetivo 楽しい do verbo 楽しむ.
 
 

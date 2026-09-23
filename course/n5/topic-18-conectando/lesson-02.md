@@ -8,7 +8,7 @@
 - Usar けど para suavizar uma fala ou deixá-la em aberto, sem soar incompleto
 - Descrever pessoas e coisas com adjetivos novos (ゆうめい, わかい, よわい, わるい, りっぱ, いい)
 
-**Introduz:** gramática [gp-25, kedo, keredo-mo] · vocabulário [いい, 弱い, 悪い, 有名, 留学生, 立派, 若い] · kanji [友] · kana [—]
+**Introduz:** gramática [gp-25, kedo, keredo-mo] · vocabulário [弱い, 有名, 留学生, 立派, 若い] · kanji [友] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-195847`, `sent:tatoeba-229345`, `sent:tatoeba-77203`, `sent:tatoeba-224677`
 

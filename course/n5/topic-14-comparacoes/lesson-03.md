@@ -7,7 +7,7 @@
 - Sugerir e pedir opinião com 〜はどうですか ('que tal...?')
 - Usar vocabulário de bebidas, comida e itens do dia a dia em frases de escolha
 
-**Introduz:** gramática [ni-suru, wa-dou-desu-ka] · vocabulário [ナイフ, ニュース, ネクタイ, ノート, 無い, 無くす, 肉, 荷物, 飲み物, 飲む] · kanji [女] · kana [—]
+**Introduz:** gramática [ni-suru, wa-dou-desu-ka] · vocabulário [ナイフ, ニュース, ネクタイ, ノート, 無くす, 肉, 荷物, 飲み物] · kanji [女] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-223815`, `sent:tatoeba-125116`
 

@@ -9,7 +9,7 @@
 - Conhecer o vocabulário da vida adulta 就く, 勤め, 付き合い e 疲れ
 - Aprender os substantivos concretos 包み, 土, 翼 e 罪 e o verbo 注ぐ
 
-**Introduz:** gramática [—] · vocabulário [注ぐ, 付き合い, 付ける, 勤め, 包み, 土, 就く, 常に, 捕まる, 掴む, 次々, 注ぐ, 疲れ, 続き, 繋ぐ, 罪, 翼, 詰まり, 詰める] · kanji [—] · kana [—]
+**Introduz:** gramática [—] · vocabulário [注ぐ, 付き合い, 付ける, 勤め, 包み, 土, 就く, 常に, 捕まる, 掴む, 次々, 注ぐ, 疲れ, 続き, 繋ぐ, 罪, 翼, 詰める] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

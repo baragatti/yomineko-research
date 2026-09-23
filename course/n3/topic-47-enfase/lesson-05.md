@@ -7,7 +7,7 @@
 - Empregar vocabulário sobre o mundo natural e conectivos de contraste
 - Ler os kanji 耳 e 頂 em palavras compostas
 
-**Introduz:** gramática [—] · vocabulário [だが, タイプライター, タオル, ダイヤ, 互い, 代理, 代表, 倒す, 大半, 大戦, 大統領, 大部分, 大陸, 太陽, 対する, 平ら, 態度, 逮捕] · kanji [頂] · kana [—]
+**Introduz:** gramática [—] · vocabulário [だが, タイプライター, タオル, ダイヤ, 互い, 代理, 代表, 倒す, 大半, 大戦, 大統領, 大部分, 大陸, 太陽, 平ら, 態度, 逮捕] · kanji [頂] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

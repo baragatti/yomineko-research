@@ -7,7 +7,7 @@
 - Formar negativos totais com も + verbo negativo (なにも, だれも, どこも)
 - Ligar alternativas com か～か para dizer 'A ou B'
 
-**Introduz:** gramática [gp-48, gp-49, ka-ka] · vocabulário [喫茶店] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-48, gp-49, ka-ka] · vocabulário [いい, 出かける, 喫茶店, 食べる] · kanji [出 食] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-54dd1d1ebf25`, `sent:gen-c737b9f8b9da`, `sent:tatoeba-201028`, `sent:gen-532623825322`
 
@@ -86,5 +86,10 @@ Em どこかに出かけるの？, o どこか ("algum lugar") mostra o mesmo �
 ### 5. (production) Diga em japonês 'Não tem ninguém.' (use だれ + も + verbo いる no negativo).
 - **Resposta:** `{"text": "誰もいません。", "accept": ["誰もいません", "だれもいません", "誰もいない", "だれもいない"]}`
 - だれ (quem) + も + verbo negativo = 'ninguém'. いる no negativo polido é いません: 誰もいません = 'não tem ninguém'.
+
+
+### 6. (recognition) Entre os kanji que você já conhece, qual significa "sair, aparecer"?
+- **Resposta:** `{"choices": ["出", "見", "日", "大"], "correct": "出"}`
+- 出 é sair, vir para fora: imagine um broto empurrando a terra e aparecendo na superfície. 見 é o outro kanji novo desta lição e significa ver; 日 é sol ou dia e 大 é grande.
 
 

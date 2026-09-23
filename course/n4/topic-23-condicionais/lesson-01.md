@@ -8,7 +8,7 @@
 - Montar frases A→B do cotidiano: condição com たら na primeira oração, resultado na segunda
 - Reconhecer os kanji 体 (corpo) e 力 (força)
 
-**Introduz:** gramática [gp-60, tara] · vocabulário [止める, だから, 力, 寄る, 思う, 残念, 決まる, 開く] · kanji [体] · kana [—]
+**Introduz:** gramática [gp-60, tara, tara-ii-desu-ka] · vocabulário [止める, だから, 力, 寄る, 残念, 決まる, 開く] · kanji [体 着] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-5d330e502fe3`, `sent:gen-54d978e882ca`, `sent:gen-4f79637ba175`, `sent:tatoeba-4713`
 
@@ -113,4 +113,14 @@ Dois kanji simples e muito frequentes entram aqui, um deles direto do vocabulár
 - **Resposta:** `{"text": "体", "accept": ["体", "からだ"]}`
 - 体 sozinho lê-se からだ e é o corpo, inclusive no sentido de saúde. Em compostos ele troca para a leitura chinesa たい.
 
+
+### 9. (recognition) Você está perdido e quer perguntar O QUE deve fazer. Qual fórmula usar?
+- **Resposta:** `{"choices": ["何をしたらいいですか", "何をしたらどうですか", "何をしてよかった"], "correct": "何をしたらいいですか"}`
+- Para pedir orientação, use [pergunta] + verbo たら + いいですか: 何をしたらいいですか = "o que eu devo fazer?". A versão com どうですか seria uma sugestão, não um pedido.
+- frases: `sent:tatoeba-187548`
+
+### 10. (production) Pergunte em japonês "O que eu devo comer?" usando 何 (o quê), o verbo 食べる na forma たら e いいですか.
+- **Resposta:** `{"text": "何を食べたらいいですか。", "accept": ["何を食べたらいいですか", "何を食べたらいいですか？", "なにをたべたらいいですか", "何をたべたらいいですか", "何食べたらいいですか"]}`
+- 何 (o quê) + を + 食べたら (se comer, de 食べる) + いいですか = "o que eu devo comer?". É o esqueleto [pergunta] + verbo たら + いいですか para pedir conselho.
+- frases: `sent:tatoeba-187548`
 

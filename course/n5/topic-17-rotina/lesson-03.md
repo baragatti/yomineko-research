@@ -7,7 +7,7 @@
 - Dizer que uma ação acontece depois de outra com 〜てから (forma て + から)
 - Sequenciar a própria rotina escolhendo entre 〜まえに e 〜てから
 
-**Introduz:** gramática [mae-ni, te-kara] · vocabulário [丸い, 休み, 休む, 南, 夕方, 夕飯, 安い, 易しい, 目, 真っ直ぐ, 短い, 磨く, 米, 耳, 遣る, 難しい] · kanji [南 母] · kana [—]
+**Introduz:** gramática [mae-ni, te-kara] · vocabulário [丸い, 南, 夕方, 夕飯, 安い, 易しい, 目, 真っ直ぐ, 短い, 磨く, 米, 耳, 難しい] · kanji [南 母] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-1ae4a3cf896d`, `sent:gen-ac0e695fa395`
 

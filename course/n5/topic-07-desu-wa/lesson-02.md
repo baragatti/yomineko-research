@@ -7,7 +7,7 @@
 - Apontar objetos do dia a dia (casa, lugares, animais) usando o demonstrativo certo
 - Perceber que o eixo これ/それ/あれ depende também do OUVINTE, não só de quem fala
 
-**Introduz:** gramática [gp-2, gp-3, gp-4] · vocabulário [お手洗い, お風呂, アパート, エレベーター, 入り口, 家, 尾, 彼, 彼の, 彼処, 彼方, 池, 海, 犬, 色, 階段] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-2, gp-3, gp-4] · vocabulário [お手洗い, お風呂, アパート, エレベーター, 何処, 入り口, 其れ, 分かる, 家, 尾, 彼, 彼の, 彼処, 彼方, 来る, 池, 海, 犬, 色, 階段] · kanji [何 分 来] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-229628`, `sent:tatoeba-4802`
 

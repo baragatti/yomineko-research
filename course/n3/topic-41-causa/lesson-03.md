@@ -7,7 +7,7 @@
 - Expressar uma conclusão lógica esperada com ～わけだ
 - Distinguir ～わけだ (conclusão lógica) de から/ので (motivo bruto)
 
-**Introduz:** gramática [n3-to-iu-no, n3-wake-da] · vocabulário [カー, カード, 会員, 会計, 可, 害, 恩, 海外, 温度, 温暖, 絵画, 解決, 課] · kanji [両 容 式 打 果 直 確] · kana [—]
+**Introduz:** gramática [n3-to-iu-no, n3-wake-da] · vocabulário [カー, カード, 会員, 会計, 可, 害, 恩, 海外, 温度, 温暖, 絵画, 解決, 課] · kanji [両 君 喜 容 式 打 直 確] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-220804`, `sent:tatoeba-123542`
 
@@ -129,5 +129,10 @@ Armadilha PT: os empréstimos カー e カード têm vogais de duração inteir
 ### 14. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["直す", "consertar, arrumar"], ["真っ直ぐ", "reto, em frente"], ["確か", "certo, seguro"]]}`
 - 直 e 確 falam de acerto: 直す conserta o que estava errado, 真っ直ぐ é o que segue reto sem desviar, e 確か é aquilo de que se tem certeza.
+
+
+### 15. (production) Escreva em japonês, na forma de dicionário, o verbo alegrar-se, ficar feliz.
+- **Resposta:** `{"text": "喜ぶ", "accept": ["喜ぶ", "よろこぶ"]}`
+- 喜ぶ (よろこぶ) é a alegria de quem recebe alguma coisa boa. Trocando o okurigana por び você tem o substantivo 喜び, a alegria.
 
 

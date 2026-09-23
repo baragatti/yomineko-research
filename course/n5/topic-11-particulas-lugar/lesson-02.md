@@ -7,7 +7,7 @@
 - Usar いる (casual) para dizer que um SER VIVO existe
 - Situar a existência num lugar e usar vocabulário de lugar/direção próxima (そこ, そちら, そば, そと)
 
-**Introduz:** gramática [gp-12, gp-13] · vocabulário [側, 其の, 其処, 其方, 外, 空, 誰, 誰か] · kanji [間] · kana [—]
+**Introduz:** gramática [gp-12] · vocabulário [側, 其方, 外, 空, 誰か] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-78451`, `sent:tatoeba-6828199`, `sent:tatoeba-198627`, `sent:tatoeba-6828196`
 
@@ -66,42 +66,37 @@ Mnemônico de forma: o componente de fora é 門 (um portão de duas folhas) e d
 ---
 
 ## Exercícios
-### 1. (recognition) Na frase 人がいる ('Há pessoas.'), por que o verbo é いる e não ある?
-- **Resposta:** `{"choices": ["Porque 人 (pessoa) é um ser vivo", "Porque いる é mais educado que ある", "Porque a frase está no plural"], "correct": "Porque 人 (pessoa) é um ser vivo"}`
-- O japonês escolhe o verbo de existência pela natureza do sujeito: いる para seres vivos (gente, bicho) e ある para coisas. Como 人 é pessoa, usa-se いる.
-- frases: `sent:tatoeba-6828199`
-
-### 2. (cloze) Complete com o verbo de existência casual certo: 嵐のきざしが＿。 ('Há sinais de tempestade.')
+### 1. (cloze) Complete com o verbo de existência casual certo: 嵐のきざしが＿。 ('Há sinais de tempestade.')
 - **Resposta:** `{"text": "ある", "full": "嵐のきざしがある"}`
 - きざし (sinal/indício) é uma coisa abstrata, não um ser vivo, então o verbo é ある (forma casual). A versão educada seria あります.
 - frases: `sent:tatoeba-78451`
 
-### 3. (particle_choice) Qual partícula marca o LUGAR onde algo existe? そこ＿ネコがいる。 ('Tem um gato aí.')
+### 2. (particle_choice) Qual partícula marca o LUGAR onde algo existe? そこ＿ネコがいる。 ('Tem um gato aí.')
 - **Resposta:** `{"choices": ["に", "で", "が"], "correct": "に"}`
 - Com ある/いる o lugar da existência vem marcado por に (não で). で marcaria o lugar de uma AÇÃO; aqui só dizemos onde o gato ESTÁ.
 
 
-### 4. (sentence_build) Monte 'Tem um cachorro lá fora.' com as peças: [いる] [外] [犬] [に] [が]
+### 3. (sentence_build) Monte 'Tem um cachorro lá fora.' com as peças: [いる] [外] [犬] [に] [が]
 - **Resposta:** `{"order": ["外", "に", "犬", "が", "いる"], "text": "外に犬がいる。"}`
 - Molde lugar に + ser が + いる: 外 (fora) + に (lugar) + 犬 (cachorro) + が + いる. Cachorro é ser vivo, por isso いる, e na forma casual.
 
 
-### 5. (production) Diga em japonês, no registro casual, 'Tem alguém aí.' (use そこ, に, 誰か e o verbo certo).
+### 4. (production) Diga em japonês, no registro casual, 'Tem alguém aí.' (use そこ, に, 誰か e o verbo certo).
 - **Resposta:** `{"text": "そこに誰かいる。", "accept": ["そこに誰かいる", "そこにだれかいる", "そこに誰かがいる", "そこにだれかがいる"]}`
 - そこ (aí) + に (lugar) + 誰か (alguém) + いる (existência de ser vivo, forma casual). Como 誰か é pessoa, o verbo só pode ser いる; が depois de 誰か é opcional na fala.
 
 
-### 6. (production) Diga em japonês, no registro casual, 'Tem um cachorro do meu lado.' (use 私, 側, に, 犬 e o verbo certo).
+### 5. (production) Diga em japonês, no registro casual, 'Tem um cachorro do meu lado.' (use 私, 側, に, 犬 e o verbo certo).
 - **Resposta:** `{"text": "私の側に犬がいる。", "accept": ["私の側に犬がいる", "私のそばに犬がいる", "わたしの側に犬がいる", "わたしのそばに犬がいる"]}`
 - Molde 〜の側に + [ser vivo] + が + いる. 側 (そば) é 'ao lado de, pertinho de', e o lugar da existência vem sempre marcado por に. Como 犬 é ser vivo, o verbo é いる, aqui na forma casual.
 
 
-### 7. (recognition) O kanji 間 aparece em 時間 (じかん, 'tempo'). Qual é o sentido básico de 間 sozinho?
+### 6. (recognition) O kanji 間 aparece em 時間 (じかん, 'tempo'). Qual é o sentido básico de 間 sozinho?
 - **Resposta:** `{"choices": ["intervalo", "meio", "topo", "longo"], "correct": "intervalo"}`
 - 間 é o intervalo, o espaço que fica entre duas coisas. Em 時間 é o intervalo de tempo. Não confunda com 中, que é o meio, o lado de dentro de algo.
 
 
-### 8. (production) Escreva em japonês a palavra que significa 'tempo, hora' e se lê じかん.
+### 7. (production) Escreva em japonês a palavra que significa 'tempo, hora' e se lê じかん.
 - **Resposta:** `{"text": "時間", "accept": ["時間", "じかん"]}`
 - 時 (tempo) somado a 間 (intervalo) dá 時間: o intervalo de tempo. Nesse composto 間 usa a leitura chinesa, que soa かん.
 

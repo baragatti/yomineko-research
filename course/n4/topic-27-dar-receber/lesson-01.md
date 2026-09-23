@@ -7,7 +7,7 @@
 - Escolher 〜てやる para favores a pessoas de status igual ou inferior, crianças, animais e plantas, em tom informal
 - Reconhecer o tom de 〜てあげる/〜てやる e evitar que soe arrogante diante de superiores
 
-**Introduz:** gramática [te-ageru, te-yaru] · vocabulário [ご馳走, はっきり, 凄い, 喜ぶ, 差し上げる, 手袋, 気持ち, 真面目, 祖父, 踊り] · kanji [町 真] · kana [—]
+**Introduz:** gramática [te-ageru, te-yaru] · vocabulário [ご馳走, はっきり, 凄い, 喜ぶ, 差し上げる, 手袋, 気持ち, 真面目, 祖父, 踊り] · kanji [町] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-11059892`, `sent:tatoeba-137941`, `sent:tatoeba-229406`, `sent:tatoeba-4766`
 
@@ -100,15 +100,5 @@ Resuma assim: te-ageru = faço o favor (educado, neutro); te-yaru = mesmo favor,
 ### 7. (production) Escreva em kanji a palavra cidade pequena, vila (まち).
 - **Resposta:** `{"text": "町", "accept": ["町", "まち"]}`
 - 町 (まち) é a cidade pequena. Dentro de endereços e nomes de bairro a leitura vira ちょう.
-
-
-### 8. (recognition) Qual destes kanji significa verdadeiro, real, e se lê しん?
-- **Resposta:** `{"choices": ["真", "新", "心", "目"], "correct": "真"}`
-- 真 é verdadeiro, real. 新 (novo) e 心 (coração) também se leem しん; 目 (olho) é justamente o elemento que aparece dentro de 真.
-
-
-### 9. (production) Escreva o kanji que significa verdadeiro, real (leitura しん).
-- **Resposta:** `{"text": "真", "accept": ["真", "しん"]}`
-- 真 tem 目 (olho) no meio: o que se vê de verdade. Lê-se しん em compostos e ま quando reforça outra palavra.
 
 

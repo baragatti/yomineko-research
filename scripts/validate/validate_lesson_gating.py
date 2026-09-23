@@ -44,7 +44,11 @@ Checks, in order:
                      model is free to drift away from the references it was derived from - a lesson
                      could gain a chip whose introducer is not in its `needs` and nothing would say
                      so. This is the check that makes `needs[]` DATA rather than a snapshot.
-  D  FROZEN    sentence level fit + i+1 budget, compared against the checked-in baseline.
+                 C5  FROZEN: forward references (a lesson using an item a LATER lesson unlocks) by
+                     tier - same topic, same level, across levels - as (lesson, item) uses and as
+                     lesson->lesson edges. C1-C4 exclude them by construction, so C5 is what counts
+                     them; W21b froze them after its moves and they may only shrink.
+  D  FROZEN   sentence level fit + i+1 budget, compared against the checked-in baseline.
 
 Scope note: the readings half of the i+0 rule (corpus/readings/*.json `uses` vs `gated_to_lesson`)
 is already a hard gate over the same exported JSON in validate_readings.py and is deliberately not
@@ -76,7 +80,8 @@ BASELINE_REL = "research/reports/lesson_sentence_baseline.json"
 # W21: lessons that legitimately declare no prerequisite. The ratchet is the count at the
 # moment the model landed; C2 fails on growth, so the list can only shrink.
 ROOT_EXEMPT_REL = "course/needs_root_exemptions.json"
-ROOT_RATCHET = 8
+ROOT_RATCHET = 3          # W21 froze 8; W21b's moves gave four of them prerequisites (7 held -> 3)
+FWD_TIERS = ("same-topic", "same-level", "cross-level")
 REVIEW_REL = "research/reports/lesson_sentence_review.json"
 EXEMPT_REL = "course/gating_exemptions.json"
 
@@ -267,6 +272,37 @@ def main() -> int:
                              f"({have[key]!r} vs {want[key]!r})")
                 break
 
+    # C5 — forward references, ratcheted by tier (W21b). A forward use is (lesson L, item I) where L
+    # references I through derive_needs' five channels and the lesson that unlocks I comes LATER. C1-C4
+    # exclude such edges from `needs` by construction, so without C5 nothing would count them. The
+    # counts are frozen in the D baseline and may only shrink: same-topic and same-level uses are
+    # course-order debt (move the unlock or rewrite the use), cross-level uses are the i+1 backlog.
+    fwd_uses = {t: 0 for t in FWD_TIERS}
+    fwd_edges: set[tuple[str, str, str]] = set()
+    try:
+        import derive_needs                                       # noqa: PLC0415
+        sent_idx = derive_needs.load_sentence_index(root)
+        read_idx = derive_needs.load_reading_index(root)
+        introducer: dict[str, str] = {}
+        for d in lessons:
+            for u in d.get("unlocks") or []:
+                introducer.setdefault(u.get("ref"), d["id"])
+        by_id = {d["id"]: d for d in lessons}
+        for d in lessons:
+            refs, _miss = derive_needs.lesson_references(d, sent_idx, read_idx)
+            for ref in refs:
+                m = introducer.get(ref)
+                if m is None or pos[m] <= pos[d["id"]]:
+                    continue
+                tier = ("same-topic" if by_id[m].get("topic") == d.get("topic") else
+                        "same-level" if by_id[m].get("level") == d.get("level") else "cross-level")
+                fwd_uses[tier] += 1
+                fwd_edges.add((d["id"], m, tier))
+    except Exception as e:                                          # noqa: BLE001
+        c_fails += 1
+        fails.append(f"C5 could not measure forward references on this tree: {e}")
+    fwd_edge_tiers = {t: sum(1 for *_x, tt in fwd_edges if tt == t) for t in FWD_TIERS}
+
     # ---- D: sentence level fit + i+1 budget (frozen, not clean) -----------------------
     bank = {s["slug"]: s for s in
             json.loads((root / "corpus/sentences/bank.json").read_text(encoding="utf-8"))}
@@ -339,6 +375,8 @@ def main() -> int:
         "pairs_with_new_vocab": n_new_vocab,
         "above_level_buckets": dict(sorted(above_buckets.items())),
         "over_budget_by_level": dict(sorted(over_by_level.items())),
+        "forward_uses_by_tier": fwd_uses,            # C5
+        "forward_edges_by_tier": fwd_edge_tiers,     # C5
     }
     GATED = ("pairs_above_level", "pairs_over_budget", "pairs_with_new_kanji", "pairs_with_new_vocab")
 
@@ -398,6 +436,19 @@ def main() -> int:
                 if c > b:
                     d_fails += 1
                     fails.append(f"i+1 backlog GREW: {name}[{key}] {b} -> {c}")
+        for name in ("forward_uses_by_tier", "forward_edges_by_tier"):
+            bb = base.get(name)
+            if bb is None:
+                c_fails += 1
+                fails.append(f"C5 {BASELINE_REL}: no baseline for {name} - freeze it with --write-baseline")
+                continue
+            for tier in FWD_TIERS:
+                b, c = bb.get(tier, 0), current[name][tier]
+                if c > b:
+                    c_fails += 1
+                    fails.append(f"C5 forward references GREW: {name}[{tier}] {b} -> {c}")
+                elif c < b:
+                    drops.append(f"{name}[{tier}] {b} -> {c}")
 
     # ---- report -----------------------------------------------------------------------
     for line in fails[:15]:
@@ -412,6 +463,8 @@ def main() -> int:
               f"lessons; {len(rootless)}/{ROOT_RATCHET} prerequisite-less and held, "
               f"1 course opener, graph acyclic ({drained}/{len(lessons)} drained), "
               f"re-derivation {'agrees' if want is not None and not (set(have) ^ set(want)) else 'DISAGREES'}")
+    print(f"  C5 forward references (uses / edges): "
+          + ", ".join(f"{t} {fwd_uses[t]}/{fwd_edge_tiers[t]}" for t in FWD_TIERS))
     print(f"  ADVISORY: sentence fit {n_above}/{pairs} above lesson level, {n_over}/{pairs} over the "
           f"i+1 budget ({n_new_kanji} with new kanji, {n_new_vocab} with new vocab) — "
           f"{len(offenders)} pairs queued in {REVIEW_REL}")

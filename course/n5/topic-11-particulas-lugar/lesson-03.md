@@ -7,7 +7,7 @@
 - Distinguir で (lugar da ação) de に (lugar onde algo existe)
 - Usar で também para o meio de transporte (ir DE táxi)
 
-**Introduz:** gramática [de] · vocabulário [タクシー, 出す, 掃除, 洗濯, 立つ, 達, 頼む, 食べる] · kanji [生] · kana [—]
+**Introduz:** gramática [de, naide] · vocabulário [後, タクシー, 出す, 又, 掃除, 洗濯, 立つ, 達, 頼む] · kanji [後] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-778974`, `sent:tatoeba-195443`, `sent:tatoeba-1057336`, `sent:tatoeba-125387`
 

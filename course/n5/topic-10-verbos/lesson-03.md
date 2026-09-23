@@ -8,7 +8,7 @@
 - Escolher entre いく (ir, afasta-se) e くる (vir, aproxima-se) pelo ponto de vista de quem fala
 - Reconhecer os kanji 行, 中 e 長 e ligá-los a palavras que você já usa
 
-**Introduz:** gramática [gp-20] · vocabulário [仕事, 住む, 咲く, 帰る, 座る, 散歩, 曇る, 来る, 歩く, 泳ぐ, 罹る, 翔る, 行く, 買い物, 走る, 遊ぶ] · kanji [中 行 長] · kana [—]
+**Introduz:** gramática [gp-20] · vocabulário [仕事, 住む, 咲く, 寒い, 帰る, 座る, 散歩, 曇る, 歩く, 泳ぐ, 生る, 罹る, 翔る, 行く, 買い物, 走る, 遊ぶ] · kanji [毎 行 長] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-5320`, `sent:tatoeba-122195`
 
@@ -121,5 +121,10 @@ Você vai ouvir também os verbos 罹る(contrair uma doença),翔る(planar, vo
 ### 9. (production) Escreva o verbo 'ir' em japonês, na forma de dicionário e com kanji.
 - **Resposta:** `{"text": "行く", "accept": ["行く", "いく"]}`
 - Em 行く, o kanji 行 guarda a raiz い e o く fica de fora, em hiragana. Essa terminação solta ao lado do kanji chama-se okurigana. A leitura é いく, e escrever só em kana (いく) também é comum.
+
+
+### 10. (cloze) Qual é o kanji que falta em 'todo dia' (まいにち), escrito ＿日?
+- **Resposta:** `{"text": "毎", "full": "毎日"}`
+- O prefixo da rotina é 毎, lido まい. Ele encaixa do mesmo jeito em 毎月 (まいつき) e 毎年 (まいとし).
 
 

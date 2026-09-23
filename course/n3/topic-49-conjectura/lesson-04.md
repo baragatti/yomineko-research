@@ -7,7 +7,7 @@
 - Aplicar corretamente os conectores (verbo direto, い direto, な+な, substantivo+の) antes de ふりをする
 - Reconhecer a partícula を como parte fixa da expressão e diferenciar fingimento de impressão
 
-**Introduz:** gramática [n3-furi-wo-suru] · vocabulário [ジェット, ジーンズ, 失業] · kanji [君 恐 息 戻 抱 探 束 欲 犯 痛 越 逃 閉] · kana [—]
+**Introduz:** gramática [n3-furi-wo-suru] · vocabulário [ジェット, ジーンズ, 失業] · kanji [恐 息 戻 抱 探 束 欲 犯 痛 越 逃 閉] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-127076`
 

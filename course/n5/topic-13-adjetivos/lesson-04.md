@@ -8,7 +8,7 @@
 - Completar o quadro de flexão do adjetivo-い (presente/passado, afirmativo/negativo)
 - Reconhecer que 〜たい (querer fazer) se conjuga como adjetivo-い no negativo passado
 
-**Introduz:** gramática [gp-35] · vocabulário [一番, 丈夫, 何時も, 全部, 同じ, 大丈夫, 大切, 如何, 結構] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-35] · vocabulário [一番, 丈夫, 何時も, 余り, 全部, 同じ, 大丈夫, 大切, 如何, 結構] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-230319`, `sent:tatoeba-11117435`
 

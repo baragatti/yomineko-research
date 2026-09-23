@@ -7,7 +7,7 @@
 - Acrescentar mais um item ou tarefa com それと em tom de conversa
 - Distinguir それと (soma, 'e também') de それとも (alternativa, 'ou então')
 
-**Introduz:** gramática [n3-sono-ue, n3-sore-to, n3-sore-tomo] · vocabulário [アイスクリーム, アイロン, アルバム, 合図, 委員, 安定, 意外, 愛, 愛する, 愛情, 或いは, 握手, 明かり, 明らか, 暗記, 案, 相手] · kanji [定 案 相] · kana [—]
+**Introduz:** gramática [n3-sono-ue, n3-sore-to, n3-sore-tomo] · vocabulário [アイスクリーム, アイロン, アルバム, 合図, 委員, 安定, 意外, 愛, 愛する, 愛情, 或いは, 握手, 明かり, 明らか, 暗記, 案, 相手] · kanji [定 案 相 降] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-208980`, `sent:tatoeba-8938683`
 
@@ -106,5 +106,10 @@ O kanji 定 significa "determinar, fixar, decidir". Aparece em 安定 (安定, "
 ### 7. (production) Escreva em japonês, com kanji, a palavra que significa 'a outra pessoa, o parceiro' e se lê あいて.
 - **Resposta:** `{"text": "相手", "accept": ["相手", "あいて"]}`
 - 相手 junta 相 (mútuo) e 手 (mão): quem está do outro lado da interação. Serve para o parceiro de conversa e também para o adversário no jogo.
+
+
+### 8. (production) Escreva em japonês o verbo 'descer (de um veículo)', que se lê おりる.
+- **Resposta:** `{"text": "降りる", "accept": ["降りる", "おりる"]}`
+- 降りる (おりる) é descer do trem, do ônibus, do carro. É o mesmo kanji de 降る (ふる), mas com outro okurigana e outro sentido, então vale prestar atenção no que vem depois do kanji.
 
 

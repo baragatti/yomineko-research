@@ -7,7 +7,7 @@
 - Expressar obrigação forte ('tenho que fazer') em pt-BR natural
 - Distinguir a nuance entre なければならない (dever geral/inevitável) e なければいけない (obrigação pessoal/imediata)
 
-**Introduz:** gramática [nakereba-ikenai, nakereba-naranai] · vocabulário [上手い, 叱る, 子, 折れる, 易い, 沸かす, 見える, 遊び] · kanji [医 去 族 親] · kana [—]
+**Introduz:** gramática [nakereba-ikenai, nakereba-naranai] · vocabulário [上手い, 叱る, 子, 折れる, 易い, 沸かす, 遊び] · kanji [医 去 族 親] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-5185663`, `sent:tatoeba-2656832`, `sent:tatoeba-2040918`, `sent:tatoeba-2656834`
 

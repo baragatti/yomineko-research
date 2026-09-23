@@ -7,7 +7,7 @@
 - Combinar なかなか com a forma potencial negativa (なかなか〜れない)
 - Reconhecer o tom de impaciência/frustração que o padrão carrega
 
-**Introduz:** gramática [nakanaka-nai] · vocabulário [どんどん, 再来月, 無くなる, 終わり, 適当] · kanji [以 院] · kana [—]
+**Introduz:** gramática [nakanaka-nai] · vocabulário [どんどん, 中々, 再来月, 最近, 無くなる, 終わり, 適当] · kanji [仕 近 院] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-9958167b70aa`, `sent:gen-b8b898fb9c68`, `sent:gen-b347563062a8`, `sent:tatoeba-10808987`
 
@@ -103,18 +103,33 @@ Esse なかなか〜ない é ótimo socialmente: ele deixa você expressar irri
 - 以 marca o limite a partir do qual se conta: é ele que abre as palavras de 'daqui para cima', 'daqui para baixo' e 'daqui em diante'. Sozinho ele quase nunca aparece: vive no começo desses pares.
 
 
-### 7. (production) Escreva só o kanji lido イ que marca o ponto de referência ('a partir de') no começo dos compostos.
-- **Resposta:** `{"text": "以", "accept": ["以"]}`
-- É 以, cinco traços. Ele é sempre a primeira metade da palavra: o que vem depois é que diz para que lado se conta.
-
-
-### 8. (recognition) O kanji 院, lido イン, fecha o nome de hospitais, templos e faculdades. Qual é o significado dele?
+### 7. (recognition) O kanji 院, lido イン, fecha o nome de hospitais, templos e faculdades. Qual é o significado dele?
 - **Resposta:** `{"choices": ["instituição", "casa", "escola", "estação"], "correct": "instituição"}`
 - 院 é a 'instituição': um lugar cercado com gente trabalhando dentro, do hospital ao templo. Ele vem sempre no fim da palavra e mantém a leitura いん.
 
 
-### 9. (production) Escreva só o kanji lido イン que significa 'instituição', o que fecha a palavra japonesa para hospital.
+### 8. (production) Escreva só o kanji lido イン que significa 'instituição', o que fecha a palavra japonesa para hospital.
 - **Resposta:** `{"text": "院", "accept": ["院"]}`
 - É 院, dez traços, com o radical de colina à esquerda. Guarde-o pelo som: sempre que a palavra terminar em いん nesse sentido, o kanji é este.
+
+
+### 9. (recognition) Qual destes kanji significa "servir, fazer" e abre a palavra 仕事 (trabalho, emprego)?
+- **Resposta:** `{"choices": ["仕", "使", "事", "私"], "correct": "仕"}`
+- 仕 traz a ideia de servir, de prestar serviço a alguém. 使 é quase igual à esquerda, também se lê つか- e significa usar; 事 é coisa, assunto, e fecha 仕事; 私 divide a leitura シ.
+
+
+### 10. (production) Escreva em japonês, com kanji, a palavra que significa "trabalho, emprego" e se lê しごと.
+- **Resposta:** `{"text": "仕事", "accept": ["仕事", "しごと"]}`
+- 仕事 é 仕 (servir) mais 事 (coisa, assunto): a coisa que se faz para servir. Vale tanto para o emprego quanto para a tarefa que está na sua mesa agora.
+
+
+### 11. (recognition) Qual destes kanji significa 'perto, próximo'?
+- **Resposta:** `{"choices": ["近", "道", "通", "週"], "correct": "近"}`
+- 近 traz o radical de deslocamento, aquele traço que envolve o kanji por baixo e pela esquerda: a distância que se vence em pouco caminho. A leitura nativa é ちか, como em 近い; em compostos, キン. 道, 通 e 週 carregam o mesmo radical, que é o que mais se repete neste grupo.
+
+
+### 12. (production) Escreva 'perto, próximo' como adjetivo い em japonês, com kanji.
+- **Resposta:** `{"text": "近い", "accept": ["近い", "ちかい"]}`
+- 近い é adjetivo-い: 近 guarda a raiz ちか e い fica como okurigana. Trocando い por く sai 近く, 'as proximidades'.
 
 

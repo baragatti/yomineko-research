@@ -8,7 +8,7 @@
 - Usar a partícula に para marcar o agente (quem faz a ação) na passiva
 - Ancorar a passiva em verbos intransitivos e de mudança de estado como 割れる, 冷える e 見つかる
 
-**Introduz:** gramática [gp-63, ukemi-kei] · vocabulário [冷える, 割れる, 太る, 点く, 焼ける, 直す, 直る, 落とす, 見つかる, 集める] · kanji [夏 夕 曜 服] · kana [—]
+**Introduz:** gramática [gp-63, ukemi-kei] · vocabulário [冷える, 割れる, 太る, 点く, 焼ける, 直る, 落とす, 見つかる, 集める] · kanji [曜 服] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-113cd2b42397`, `sent:gen-3de9af165938`, `sent:gen-7db6be25f9be`, `sent:tatoeba-143650`
 
@@ -103,37 +103,27 @@ Quatro kanji do cotidiano, ligados a roupa, estações e calendário:
 - 夏 é o 'verão', lido なつ. Ele abre palavras do dia a dia do calor, como 夏休み (なつやすみ), as férias de verão.
 
 
-### 7. (production) Escreva em japonês 'férias de verão', juntando o kanji do verão à palavra de descanso, 休み.
-- **Resposta:** `{"text": "夏休み", "accept": ["夏休み", "なつやすみ"]}`
-- 夏休み é 夏 (verão) + 休み (descanso), e as duas partes ficam na leitura nativa: なつ + やすみ. O mesmo molde vale para as férias de outras estações.
-
-
-### 8. (recognition) Em 夕方 (ゆうがた, fim de tarde), o que o kanji 夕 traz?
+### 7. (recognition) Em 夕方 (ゆうがた, fim de tarde), o que o kanji 夕 traz?
 - **Resposta:** `{"choices": ["entardecer", "manhã", "noite", "meio-dia"], "correct": "entardecer"}`
 - 夕 é o 'entardecer', a hora em que a tarde vira noite, e se lê ゆう. Ele abre todas as palavras desse momento do dia.
 
 
-### 9. (cloze) Qual é o kanji que falta em 'fim de tarde' (ゆうがた), escrito ＿方?
-- **Resposta:** `{"text": "夕", "full": "夕方"}`
-- 夕方 é 夕 (entardecer) + 方 (lado, direção): literalmente 'o lado do entardecer'. O primeiro kanji é o que você precisa escrever, lido ゆう.
-
-
-### 10. (recognition) Nos nomes dos dias (月曜日, 火曜日, 水曜日), o que o kanji do meio, 曜, marca?
+### 8. (recognition) Nos nomes dos dias (月曜日, 火曜日, 水曜日), o que o kanji do meio, 曜, marca?
 - **Resposta:** `{"choices": ["dia da semana", "dia", "lua", "fogo"], "correct": "dia da semana"}`
 - 曜 é o 'dia da semana' e fica sempre no meio, lido よう. Quem diz qual dia é o kanji da frente (月, 火, 水) e 日 fecha a palavra.
 
 
-### 11. (cloze) Qual é o kanji que falta em 'segunda-feira' (げつようび), escrita 月＿日?
+### 9. (cloze) Qual é o kanji que falta em 'segunda-feira' (げつようび), escrita 月＿日?
 - **Resposta:** `{"text": "曜", "full": "月曜日"}`
 - Todo dia da semana tem a mesma forma: elemento + 曜 + 日. Aqui é 月曜日 (げつようび), e o que faltava era o 曜 do meio.
 
 
-### 12. (recognition) Qual é o significado do kanji 服 (ふく)?
+### 10. (recognition) Qual é o significado do kanji 服 (ふく)?
 - **Resposta:** `{"choices": ["roupa", "vestir", "corpo", "cor"], "correct": "roupa"}`
 - 服 é a 'roupa': a peça em si, não o ato de vestir, que é 着る. Ele mantém a leitura ふく sozinho e nos compostos de vestuário.
 
 
-### 13. (production) Escreva em japonês, com kanji, a palavra 'roupa'.
+### 11. (production) Escreva em japonês, com kanji, a palavra 'roupa'.
 - **Resposta:** `{"text": "服", "accept": ["服", "ふく"]}`
 - É 服, oito traços, lido ふく. Sozinho ele já é a palavra 'roupa'; nos compostos de vestuário ele fica no fim, com a mesma leitura.
 

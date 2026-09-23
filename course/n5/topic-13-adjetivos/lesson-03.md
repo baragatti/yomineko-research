@@ -7,7 +7,7 @@
 - Acrescentar です ao くない para soar polido (くないです)
 - Negar qualidades de pessoas, lugares e coisas com pares de opostos no presente
 
-**Introduz:** gramática [gp-24] · vocabulário [危ない, 多い, 少ない, 忙しい, 明るい, 暗い, 汚い, 煩い, 狭い, 痛い, 遅い] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-24] · vocabulário [危ない, 多い, 少ない, 忙しい, 悪い, 明るい, 暗い, 汚い, 煩い, 狭い, 痛い, 遅い] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-135763`, `sent:tatoeba-158129`, `sent:tatoeba-5210`
 

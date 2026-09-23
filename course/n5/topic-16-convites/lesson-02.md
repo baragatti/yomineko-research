@@ -8,7 +8,7 @@
 - Reconhecer vocabulário de estações, objetos e roupas e usá-lo em propostas
 - Reconhecer os kanji 木 (árvore) e 土 (terra), inclusive em 土曜日 (sábado)
 
-**Introduz:** gramática [mashou] · vocabulário [ベッド, ペット, ポケット, ポスト, 冬, 帽子, 服, 釦] · kanji [土 木] · kana [—]
+**Introduz:** gramática [mashou] · vocabulário [ベッド, ペット, ポケット, ポスト, 冬, 帽子, 服, 釦] · kanji [土] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-139208`, `sent:tatoeba-198378`, `sent:tatoeba-197681`, `sent:tatoeba-200934`
 

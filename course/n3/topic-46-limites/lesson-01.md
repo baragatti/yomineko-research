@@ -8,7 +8,7 @@
 - Formar substantivos de grau a partir de adjetivos com o sufixo さ
 - Reconhecer e ler o vocabulário de medida, limite e resultado deste bloco
 
-**Introduz:** gramática [n3-kurai, n3-kurai-wa-nai, n3-sa] · vocabulário [ケース, ゲーム, 傾向, 刑事, 劇, 劇場, 化粧, 契約, 掲示, 経由, 結果, 芸術, 計算, 警告] · kanji [具 単 号 園 易 辞 速] · kana [—]
+**Introduz:** gramática [n3-kurai, n3-kurai-wa-nai, n3-sa] · vocabulário [ケース, ゲーム, 傾向, 刑事, 劇, 劇場, 化粧, 契約, 掲示, 経由, 芸術, 計算, 警告] · kanji [具 単 号 園 易 辞 速] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-200411`
 

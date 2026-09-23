@@ -7,7 +7,7 @@
 - Usar a variante coloquial ～んだもん na fala íntima
 - Reconhecer que o registro é informal e evitá-lo em contextos formais
 
-**Introduz:** gramática [n3-da-mono-da, n3-nda-mon] · vocabulário [会合, 回復, 外交, 外出, 快適, 抱える, 改善, 替える, 画家, 解釈, 開始, 飼う, 香り] · kanji [争 必 歳 演 能 談] · kana [—]
+**Introduz:** gramática [n3-da-mono-da, n3-nda-mon] · vocabulário [会合, 回復, 外交, 外出, 快適, 抱える, 改善, 替える, 画家, 解釈, 開始, 飼う, 香り] · kanji [争 必 歳 泳 演 能 談] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-161057`, `sent:tatoeba-10107238`
 

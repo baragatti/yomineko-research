@@ -8,7 +8,7 @@
 - Distinguir conectivos de contraste (でも/しかし) dos de adição/sequência (そして/それから)
 - Reconhecer o kanji 休 (descanso) e ler vocabulário de lugares do dia a dia
 
-**Introduz:** gramática [demo, shikashi, sore-kara, soshite] · vocabulário [レストラン, 冷蔵庫, 廊下, 横, 然うして, 郵便局, 風呂] · kanji [休] · kana [—]
+**Introduz:** gramática [demo, shikashi, sore-kara, soshite] · vocabulário [レストラン, 廊下, 横, 然うして, 郵便局, 風呂] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-10588050`, `sent:tatoeba-2469096`, `sent:tatoeba-85538`, `sent:tatoeba-213512`
 

@@ -15,15 +15,21 @@
     }
   ],
   "family_ids": [
+    "grp:godan",
+    "grp:ichidan",
     "grp:particles-core",
     "grp:wa-vs-ga",
+    "grp:i-adj",
+    "grp:kuru-irregular",
     "grp:gram-n5-desu-wa",
     "grp:word-4e0a",
     "grp:word-4f1a",
     "grp:word-4f55",
     "grp:word-5144",
     "grp:word-5165",
+    "grp:word-5176",
     "grp:word-5185",
+    "grp:word-5206",
     "grp:word-533b",
     "grp:word-5916",
     "grp:word-5927",
@@ -31,15 +37,23 @@
     "grp:word-5973",
     "grp:word-59c9",
     "grp:word-5bb6",
+    "grp:word-5e7e",
     "grp:word-5f7c",
     "grp:theme-n5-desu-wa",
     "grp:word-6620",
+    "grp:word-6709",
     "grp:word-671d",
+    "grp:word-6765",
     "grp:word-6b4c",
     "grp:word-6d77",
+    "grp:word-7121",
+    "grp:word-7269",
     "grp:word-7537",
     "grp:word-7d75",
+    "grp:word-805e",
+    "grp:kanji-topic-n5-desu-wa",
     "grp:word-8272",
+    "grp:word-8ca1",
     "grp:word-8cb4",
     "grp:word-8db3",
     "grp:word-968e",
@@ -62,6 +76,10 @@
         {
           "type": "grammar",
           "ref": "gram:da-desu"
+        },
+        {
+          "type": "grammar",
+          "ref": "gram:ka"
         },
         {
           "type": "grammar",
@@ -94,6 +112,14 @@
         {
           "type": "vocab",
           "ref": "vocab:1344930"
+        },
+        {
+          "type": "vocab",
+          "ref": "vocab:1219960"
+        },
+        {
+          "type": "vocab",
+          "ref": "vocab:1219980"
         },
         {
           "type": "vocab",
@@ -154,6 +180,18 @@
           "ref": "gram:gp-4"
         },
         {
+          "type": "kanji",
+          "ref": "kanji:何"
+        },
+        {
+          "type": "kanji",
+          "ref": "kanji:分"
+        },
+        {
+          "type": "kanji",
+          "ref": "kanji:来"
+        },
+        {
           "type": "vocab",
           "ref": "vocab:1002100"
         },
@@ -171,7 +209,19 @@
         },
         {
           "type": "vocab",
+          "ref": "vocab:1577140"
+        },
+        {
+          "type": "vocab",
           "ref": "vocab:1582820"
+        },
+        {
+          "type": "vocab",
+          "ref": "vocab:1006970"
+        },
+        {
+          "type": "vocab",
+          "ref": "vocab:1606560"
         },
         {
           "type": "vocab",
@@ -196,6 +246,10 @@
         {
           "type": "vocab",
           "ref": "vocab:1483185"
+        },
+        {
+          "type": "vocab",
+          "ref": "vocab:1547720"
         },
         {
           "type": "vocab",
@@ -232,11 +286,20 @@
       "needs": [
         {
           "type": "lesson",
+          "ref": "les:n5-desu-wa-01",
+          "note": "Apresenta o ponto de gramática か, que aparece nesta lição."
+        },
+        {
+          "type": "lesson",
           "ref": "les:n5-desu-wa-02",
-          "note": "Apresenta a palavra 彼 (あれ) e o ponto de gramática あれ, que aparecem nesta lição."
+          "note": "Apresenta o kanji 何, a palavra 彼 (あれ) e o ponto de gramática あれ, que aparecem nesta lição."
         }
       ],
       "unlocks": [
+        {
+          "type": "grammar",
+          "ref": "gram:gp-30"
+        },
         {
           "type": "grammar",
           "ref": "gram:gp-33"
@@ -246,8 +309,8 @@
           "ref": "gram:janai-dewa-nai"
         },
         {
-          "type": "grammar",
-          "ref": "gram:ka"
+          "type": "kanji",
+          "ref": "kanji:時"
         },
         {
           "type": "vocab",
@@ -264,6 +327,10 @@
         {
           "type": "vocab",
           "ref": "vocab:1580340"
+        },
+        {
+          "type": "vocab",
+          "ref": "vocab:1577120"
         },
         {
           "type": "vocab",
@@ -284,6 +351,14 @@
         {
           "type": "vocab",
           "ref": "vocab:1586330"
+        },
+        {
+          "type": "vocab",
+          "ref": "vocab:1529520"
+        },
+        {
+          "type": "vocab",
+          "ref": "vocab:1502390"
         },
         {
           "type": "vocab",
@@ -328,13 +403,8 @@
       "needs": [
         {
           "type": "lesson",
-          "ref": "les:n5-desu-wa-01",
-          "note": "Apresenta as palavras 椅子 (いす), 貴方 (あなた) e 鍵 (かぎ), que aparecem nesta lição."
-        },
-        {
-          "type": "lesson",
           "ref": "les:n5-desu-wa-03",
-          "note": "Apresenta a palavra 鉛筆 (えんぴつ), que aparece nesta lição."
+          "note": "Apresenta as palavras 鉛筆 (えんぴつ) e 何故 (なぜ), e o ponto de gramática なぜ, que aparecem nesta lição."
         },
         {
           "type": "lesson",
@@ -345,11 +415,23 @@
       "unlocks": [
         {
           "type": "grammar",
+          "ref": "gram:gp-31"
+        },
+        {
+          "type": "grammar",
           "ref": "gram:mo"
         },
         {
           "type": "grammar",
           "ref": "gram:no"
+        },
+        {
+          "type": "kanji",
+          "ref": "kanji:人"
+        },
+        {
+          "type": "kanji",
+          "ref": "kanji:聞"
         },
         {
           "type": "vocab",
@@ -390,6 +472,14 @@
         {
           "type": "vocab",
           "ref": "vocab:1581930"
+        },
+        {
+          "type": "vocab",
+          "ref": "vocab:1296400"
+        },
+        {
+          "type": "vocab",
+          "ref": "vocab:1591110"
         }
       ]
     },
@@ -416,6 +506,14 @@
           "ref": "gram:o-go"
         },
         {
+          "type": "kanji",
+          "ref": "kanji:入"
+        },
+        {
+          "type": "kanji",
+          "ref": "kanji:金"
+        },
+        {
           "type": "vocab",
           "ref": "vocab:1002330"
         },
@@ -425,7 +523,15 @@
         },
         {
           "type": "vocab",
+          "ref": "vocab:1465610"
+        },
+        {
+          "type": "vocab",
           "ref": "vocab:1179330"
+        },
+        {
+          "type": "vocab",
+          "ref": "vocab:1296970"
         }
       ]
     }

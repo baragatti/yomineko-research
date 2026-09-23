@@ -7,7 +7,7 @@
 - Reconhecer ではないか como a versão neutra/mais formal de じゃないか
 - Transmitir a impressão ou a 'vibe' de algo com って感じ
 
-**Introduz:** gramática [dewa-nai-ka, gp-129, janai-ka] · vocabulário [うん, オートバイ, ガソリン, 怒る, 柔らかい, 生きる, 聞こえる, 苦い, 運動, 運転手, 駄目, 鳴る] · kanji [事 同 自] · kana [—]
+**Introduz:** gramática [dewa-nai-ka, gp-129, janai-ka] · vocabulário [うん, オートバイ, ガソリン, 怒る, 柔らかい, 生きる, 聞こえる, 苦い, 運動, 運転手, 駄目, 鳴る] · kanji [事 同 料 春 理 自] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-5b8afca2e28a`, `sent:tatoeba-228724`, `sent:tatoeba-200192`, `sent:gen-238f14601cdc`
 
@@ -125,5 +125,10 @@ Use って感じ só no casual. Para soar mais neutro, dá para dizer という�
 ### 10. (production) Escreva em japonês, com kanji, o pronome que significa 'si mesmo, eu mesmo' e se lê じぶん.
 - **Resposta:** `{"text": "自分", "accept": ["自分", "じぶん"]}`
 - 自分 abre com 自, e é aí que mora a leitura ジ. Ela é a leitura mais produtiva do caractere: quase todo composto de 自 começa por ela.
+
+
+### 11. (recognition) Qual destes kanji significa "razão, lógica, princípio" e se lê リ?
+- **Resposta:** `{"choices": ["理", "事", "気", "力"], "correct": "理"}`
+- 理 é "razão, lógica" e se lê リ: é a segunda metade de りょうり ("prato, culinária"). 事 ("coisa"), 気 ("ânimo") e 力 ("força") também são abstratos, mas nenhum carrega a ideia de princípio que 理 traz.
 
 

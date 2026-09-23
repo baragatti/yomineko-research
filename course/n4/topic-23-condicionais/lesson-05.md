@@ -7,7 +7,7 @@
 - Usar なら como condicional que reage a um tema ou contexto da conversa
 - Contrastar os usos típicos de と e なら frente a たら e ば
 
-**Introduz:** gramática [gp-82, nara] · vocabulário [其れに, 出席, 地理, 季節, 時代, 西洋, 迎える] · kanji [公 題] · kana [—]
+**Introduz:** gramática [gp-82, nara] · vocabulário [其れに, 出席, 地理, 季節, 時代, 西洋, 迎える] · kanji [公 家] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-acbd1be494f0`, `sent:tatoeba-10365237`, `sent:tatoeba-80586`, `sent:tatoeba-80338`
 
@@ -98,12 +98,7 @@ A grande diferença de なら: nas outras três, a condição costuma vir antes 
 - 公 (コウ) traz a ideia do que é público, de todos. 会 é reunir, 社 é companhia e 国 é país, todos ligados a coletivo, mas nenhum é o público em si.
 
 
-### 7. (recognition) Qual destas palavras significa 'problema, questão'?
-- **Resposta:** `{"choices": ["問題", "意見", "時間", "電話"], "correct": "問題"}`
-- 問題 (もんだい) é 問 (perguntar) mais 題 (tema): a questão que se coloca. A leitura on de 題 é ダイ e aparece em praticamente todas as palavras com esse kanji.
-
-
-### 8. (production) Diga em japonês 'não entendo este problema', na forma educada.
+### 7. (production) Diga em japonês 'não entendo este problema', na forma educada.
 - **Resposta:** `{"text": "この問題が分かりません", "accept": ["この問題が分かりません", "このもんだいがわかりません", "この問題がわかりません"]}`
 - この問題 aponta o problema de que se fala e 分かりません é a negativa educada de 分かる. Com 分かる, aquilo que se entende costuma vir marcado por が, não por を.
 

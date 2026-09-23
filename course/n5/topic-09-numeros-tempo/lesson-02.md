@@ -7,7 +7,7 @@
 - Indicar quantidade aproximada com a partícula くらい/ぐらい depois de um número
 - Distribuir uma quantidade 'por unidade / cada' com ずつ
 
-**Introduz:** gramática [gp-44] · vocabulário [九つ, 五つ, 宛] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-44] · vocabulário [先, 年, 一, 九つ, 五つ, 宛, 高い] · kanji [万 円 前 年 高] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-141433`, `sent:tatoeba-190376`, `sent:tatoeba-200413`, `sent:tatoeba-190227`
 

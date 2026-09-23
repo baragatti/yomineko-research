@@ -8,7 +8,7 @@
 - Distinguir 〜てある (estado intencional) de 〜ています
 - Descrever estados de clima e natureza com o vocabulário novo
 
-**Introduz:** gramática [te-aru, te-iru] · vocabulário [バター, パン, 早い, 春, 晴れ, 晴れる, 母, 花] · kanji [川 水] · kana [—]
+**Introduz:** gramática [te-aru, te-iru] · vocabulário [バター, パン, 冷蔵庫, 春, 晴れ, 晴れる, 母, 花] · kanji [川 書] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-85522`, `sent:gen-8bc9ce5df658`, `sent:gen-6d412e5af5e1`, `sent:gen-47206ec62227`
 
@@ -110,10 +110,5 @@ Na primavera (春), os japoneses fazem hanami: sentam sob as cerejeiras para ver
 ### 7. (production) Escreva em japonês a palavra 'rio', com kanji.
 - **Resposta:** `{"text": "川", "accept": ["川", "かわ"]}`
 - 川 (かわ) é 'rio'. Os três traços desenham a água correndo entre as margens, e é essa forma que torna o kanji fácil de reconhecer.
-
-
-### 8. (recognition) Qual destes kanji significa 'água' e se lê みず?
-- **Resposta:** `{"choices": ["水", "川", "山", "月"], "correct": "水"}`
-- 水 (みず) é 'água'. Os outros três são kanji de natureza que você já viu: 川 é o rio, 山 é a montanha e 月 é a lua.
 
 

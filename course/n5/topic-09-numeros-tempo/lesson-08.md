@@ -7,7 +7,7 @@
 - Falar de itens de higiene e banho (chuveiro, sabonete)
 - Reconhecer que a maioria dessas palavras é empréstimo escrito em katakana
 
-**Introduz:** gramática [—] · vocabulário [シャツ, シャワー, スカート, セーター, 洋袴, 石鹸, 財布] · kanji [—] · kana [—]
+**Introduz:** gramática [—] · vocabulário [シャツ, シャワー, スカート, セーター, 洋袴, 石鹸] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

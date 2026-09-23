@@ -7,7 +7,7 @@
 - Falar de pessoas e grupos com 人, 子供 e 生徒
 - Ler e escrever o kanji 人 (pessoa) e reconhecê-lo dentro de palavras
 
-**Introduz:** gramática [gp-43] · vocabulário [人, 子供, 生徒, 背, 自分] · kanji [人] · kana [—]
+**Introduz:** gramática [gp-43] · vocabulário [子供, 沢山, 生徒, 背, 自分] · kanji [話 語] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-122326`, `sent:tatoeba-112055`
 

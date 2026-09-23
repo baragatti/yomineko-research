@@ -7,7 +7,7 @@
 - Distinguir a forma た (ação concluída) de 〜ている (estado contínuo) dentro da oração
 - Alternar が e の como marcador de sujeito dentro da oração com o mesmo sentido
 
-**Introduz:** gramática [gp-36, gp-37] · vocabulário [ハンカチ, パーティー, 橋, 番号, 箱, 箸, 葉書, 鼻] · kanji [名 書] · kana [—]
+**Introduz:** gramática [gp-36, gp-37] · vocabulário [ハンカチ, パーティー, 橋, 番号, 箱, 箸, 葉書] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-5107`
 
@@ -93,10 +93,5 @@ O primeiro aparece em 書いた("que escreveu") e em 葉書:
 ### 6. (recognition) Em 名前 (なまえ, "nome"), qual é o sentido do kanji 名?
 - **Resposta:** `{"choices": ["nome, fama", "frente, antes", "escrever, livro", "conversar, falar"], "correct": "nome, fama"}`
 - 名 é o kanji do nome e, por extensão, da fama: ter nome é ser conhecido. Em 名前 ele se junta a 前 (frente), o nome que você põe à frente ao se apresentar.
-
-
-### 7. (production) Escreva em japonês a palavra que significa "nome" (leitura なまえ).
-- **Resposta:** `{"text": "名前", "accept": ["名前", "なまえ"]}`
-- 名前 usa as duas leituras nativas: な em 名 e まえ em 前. Guarde a palavra inteira como bloco, porque é assim que ela aparece em toda apresentação.
 
 

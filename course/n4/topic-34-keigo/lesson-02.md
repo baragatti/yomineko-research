@@ -7,7 +7,7 @@
 - Reconhecer variações como お待たせしてすみません e a forma passada すみませんでした
 - Aplicar a fórmula a imprevistos de deslocamento (atraso, baldeação, congestionamento)
 
-**Introduz:** gramática [gp-148, te-sumimasen] · vocabulário [乗り換える, 別れる, 急ぐ, 戻る, 眠る, 込む, 途中, 間に合う] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-148, te-sumimasen] · vocabulário [乗り換える, 別れる, 戻る, 眠る, 込む, 途中] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-126710`, `sent:tatoeba-236843`, `sent:tatoeba-171272`, `sent:tatoeba-125944`
 

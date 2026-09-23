@@ -8,7 +8,7 @@
 - Identificar o vocabulário honorífico/respeitoso (召し上がる, 拝見, 御, 様) que compartilha o mesmo tom de cortesia
 - Empregar substantivos abstratos como 文化, 習慣 e 将来 em frases sobre cultura e hábitos
 
-**Introduz:** gramática [gp-137] · vocabulário [先輩, 召し上がる, 君, 将来, 御, 拝見, 文化, 最初, 習慣] · kanji [堂 習 肉] · kana [—]
+**Introduz:** gramática [gp-137] · vocabulário [先輩, 召し上がる, 将来, 御, 拝見, 文化, 最初, 習慣] · kanji [堂 習 肉] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-552e95412e88`, `sent:tatoeba-112448`, `sent:tatoeba-221717`, `sent:tatoeba-994752`
 

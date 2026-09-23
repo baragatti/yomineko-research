@@ -7,7 +7,7 @@
 - Contrastar じょうず (bom em) e へた (ruim em) usando o mesmo molde の + が
 - Reforçar a nominalização com の + a partícula が para marcar a atividade
 
-**Introduz:** gramática [gp-53, no-ga-heta] · vocabulário [—] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-53, no-ga-heta] · vocabulário [下手, 名前] · kanji [名 手] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-99645`
 
@@ -83,5 +83,15 @@ Com へた você completa o conjunto que usa o molde の が: gostar de fazer (�
 ### 5. (production) Diga em japonês 'Sou ruim em cantar.' usando 歌を歌う (cantar), o の nominalizador, が e o adjetivo de pouca habilidade.
 - **Resposta:** `{"text": "歌を歌うのが下手です。", "accept": ["歌を歌うのが下手です", "歌を歌うのがへたです", "うたをうたうのがへたです", "うたをうたうのが下手です"]}`
 - 歌を歌う (cantar) + の (nominaliza) + が (marca a atividade) + 下手です (sou ruim). É o mesmo molde de じょうず, só trocando a palavra final.
+
+
+### 6. (production) Escreva em japonês a palavra que significa "nome" (leitura なまえ).
+- **Resposta:** `{"text": "名前", "accept": ["名前", "なまえ"]}`
+- 名前 usa as duas leituras nativas: な em 名 e まえ em 前. Guarde a palavra inteira como bloco, porque é assim que ela aparece em toda apresentação.
+
+
+### 7. (production) Escreva em japonês a palavra que significa 'bom em algo, habilidoso', juntando 上 ('em cima') com o kanji de 'mão'.
+- **Resposta:** `{"text": "上手", "accept": ["上手", "じょうず"]}`
+- 上手 (じょうず) é ser bom em alguma coisa, literalmente 'mão por cima'. O oposto é 下手 (へた), 'sem jeito'. Repare que aqui 手 lê-se ず, e não て.
 
 

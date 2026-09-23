@@ -8,7 +8,7 @@
 - Reconhecer ～ほど...はない como um superlativo disfarçado
 - Distinguir o ほど proporcional do ほど comparativo
 
-**Introduz:** gramática [n3-ba-hodo, n3-hodo] · vocabulário [健康, 建築, 建設, 検査, 検討, 現代, 現在, 現場, 現実, 現状, 現象, 現金, 見当, 言語] · kanji [富 座 破 給 降 飛] · kana [—]
+**Introduz:** gramática [n3-ba-hodo, n3-hodo] · vocabulário [健康, 建築, 建設, 検査, 検討, 現代, 現在, 現場, 現実, 現状, 現象, 現金, 見当, 言語] · kanji [富 座 破 給 飛] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-139697`, `sent:tatoeba-79954`
 
@@ -113,10 +113,5 @@ Faça os exercícios abaixo e confira cada explicação.
 ### 7. (recognition) No verbo 降る, que fala da chuva caindo, como se lê o kanji 降?
 - **Resposta:** `{"choices": ["ふ", "お", "こう", "くだ"], "correct": "ふ"}`
 - 降 tem duas leituras nativas de uso diário: 降る (ふる) é cair, para chuva e neve, e 降りる (おりる) é descer de um veículo. こう é a leitura chinesa, que fica para os compostos.
-
-
-### 8. (production) Escreva em japonês o verbo 'descer (de um veículo)', que se lê おりる.
-- **Resposta:** `{"text": "降りる", "accept": ["降りる", "おりる"]}`
-- 降りる (おりる) é descer do trem, do ônibus, do carro. É o mesmo kanji de 降る (ふる), mas com outro okurigana e outro sentido, então vale prestar atenção no que vem depois do kanji.
 
 

@@ -7,7 +7,7 @@
 - Distinguir o ～として de papel do 'como' de comparação (que pede ～のように)
 - Tentar lembrar ou confirmar algo esquecido com ～っけ no registro casual
 
-**Introduz:** gramática [n3-kke, n3-to-shite] · vocabulário [主要, 占める, 小, 章, 賞] · kanji [到 吸 吹 娘 忘 悲 掛 暮 歯 礼 緒 陽 雪] · kana [—]
+**Introduz:** gramática [n3-kke, n3-to-shite] · vocabulário [主要, 占める, 小, 章, 賞] · kanji [到 吸 吹 娘 忘 悲 掛 暮 歯 礼 緒 陽] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-110065`, `sent:tatoeba-11270411`
 
@@ -175,23 +175,13 @@ São muitos kanji de uma vez, então não tente decorar todos agora. Eles vão v
 - 太陽 é o sol, e o 陽 que fecha a palavra é justamente a luz solar. O mesmo 陽 volta em 陽気 (alegre, animado).
 
 
-### 18. (recognition) Qual kanji significa "neve"?
-- **Resposta:** `{"choices": ["雪", "雨", "風", "冬"], "correct": "雪"}`
-- 雪 tem 雨 (chuva) em cima: é a água que cai congelada. Sozinho se lê ゆき, e no 冬 (inverno) ele aparece bastante.
-
-
-### 19. (production) Escreva em japonês o verbo "esquecer", com o kanji 忘 e a leitura わすれる.
+### 18. (production) Escreva em japonês o verbo "esquecer", com o kanji 忘 e a leitura わすれる.
 - **Resposta:** `{"text": "忘れる", "accept": ["忘れる", "わすれる"]}`
 - 忘れる guarda a leitura kun わすれる. O kanji 忘 traz o sentido e a terminação em hiragana marca o verbo.
 
 
-### 20. (production) Escreva em japonês "dente", com o kanji 歯 e a leitura は.
+### 19. (production) Escreva em japonês "dente", com o kanji 歯 e a leitura は.
 - **Resposta:** `{"text": "歯", "accept": ["歯", "は"]}`
 - 歯 sozinho é は, e continua は em 歯医者 (dentista).
-
-
-### 21. (production) Escreva em japonês "neve", com o kanji 雪 e a leitura ゆき.
-- **Resposta:** `{"text": "雪", "accept": ["雪", "ゆき"]}`
-- 雪 sozinho é ゆき. A leitura on セツ aparece em palavras compostas.
 
 

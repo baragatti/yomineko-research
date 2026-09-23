@@ -8,7 +8,7 @@
 - Diferenciar 〜ようにする (esforço contínuo) de 〜ことにする (decisão pontual)
 - Reconhecer os kanji 使 (usar) e 売 (vender)
 
-**Introduz:** gramática [you-ni-suru] · vocabulário [お礼, サラダ, 匂い, 景色, 熱心, 親切, 貰う, 頂く] · kanji [使 売] · kana [—]
+**Introduz:** gramática [you-ni-suru] · vocabulário [お礼, サラダ, 匂い, 景色, 熱心, 親切, 貰う, 頂く] · kanji [使 売 紙] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-10465367`, `sent:tatoeba-366809`, `sent:tatoeba-8939546`, `sent:tatoeba-995566`
 
@@ -121,5 +121,15 @@ Os dois entram fácil numa meta: 日本語を使うようにする ("vou procura
 ### 9. (production) Escreva em japonês o verbo 'vender', que se lê うる.
 - **Resposta:** `{"text": "売る", "accept": ["売る", "うる"]}`
 - 売る é vender. O mesmo kanji aparece em 売り場 (うりば), a seção da loja onde alguma coisa é vendida.
+
+
+### 10. (recognition) Qual kanji completa 手＿ para formar carta (てがみ)?
+- **Resposta:** `{"choices": ["紙", "終", "私", "市"], "correct": "紙"}`
+- 手紙 (てがみ) é 手 (mão) mais 紙 (papel): o papel escrito à mão. Repare que かみ sonoriza e vira がみ dentro da palavra. 終 tem o mesmo radical de fio à esquerda; 私 e 市 também se leem し.
+
+
+### 11. (production) Escreva em kanji a palavra carta (てがみ).
+- **Resposta:** `{"text": "手紙", "accept": ["手紙", "てがみ"]}`
+- 手紙 (てがみ) junta 手 e 紙. Sozinho, 紙 lê-se かみ (papel); a leitura on é し.
 
 

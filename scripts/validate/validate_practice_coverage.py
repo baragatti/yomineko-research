@@ -102,6 +102,13 @@ naming the ceiling to lower. A baseline entry matching no (level, kind) in the d
 failure, so the file cannot rot into decoration. A level the baseline does not know is a failure, so
 a new course tier must be frozen deliberately.
 
+PENDING DRILLS (W21b). The same file's `pending_drills.items` names (lesson, item) pairs that are
+absent ON PURPOSE: W21b moved the item's unlock to the first lesson that uses it, and the old drill
+stayed behind in the later lesson as review (owner ruling 2026-09-23). U5 generates a drill in each
+new home. Those pairs are counted absent in the table above but are subtracted before the ceilings
+are compared; the list gates itself instead - an entry that is no longer an unpractised unlock of its
+lesson FAILS (delete it), and the list may not outgrow its frozen `ceiling`.
+
 EXEMPTIONS. `course/practice_exemptions.json` is read here, and its entries are checked to name real
 lessons, but it does NOT exempt anything from this rule. That file documents one rule only — the
 "renders >=1 retrieval + >=1 production exercise" rule in `validate_exercise_contracts.py`. Its eight
@@ -365,6 +372,13 @@ def main() -> int:
             fails.append(f"registry '{name}' holds {n} records (floor {floor}) — the export this gate "
                          f"measures against is missing or moved; refusing to certify coverage")
 
+    # W21b: moves whose item lost its drill in the new home lesson, held as named debt for U5.
+    pending_doc = (json.loads(BASELINE.read_text(encoding="utf-8")).get("pending_drills")
+                   if BASELINE.exists() else None) or {}
+    pending = {(e["lesson"], e["ref"]) for e in pending_doc.get("items") or []}
+    pending_hit: dict[tuple[str, str], int] = collections.Counter()
+    pending_seen: set[tuple[str, str]] = set()
+
     leaves = sorted(root.glob("course/*/topic-*/lesson-*.json"))
     per: dict[tuple[str, str], list[int]] = collections.defaultdict(lambda: [0, 0])
     per_topic: dict[str, list[int]] = collections.defaultdict(lambda: [0, 0])
@@ -472,6 +486,9 @@ def main() -> int:
                     per_topic[lesson.get("topic") or "?"][1] += 1
                 else:
                     absent.append({"kind": kind, "ref": ref, "display": display})
+                    if (lid, ref) in pending:
+                        pending_hit[(level, kind)] += 1
+                        pending_seen.add((lid, ref))
         if absent:
             n_unlocked = sum(len(v) for v in unlocks.values())
             rows.append({
@@ -501,8 +518,17 @@ def main() -> int:
     exempt = load_exemptions(root, lesson_ids, fails)
 
     # ---- the ratchet ------------------------------------------------------------------
-    current = {lv: {k: per[(lv, k)][0] - per[(lv, k)][1] for k in MEASURED_KINDS if (lv, k) in per}
+    # The ceilings gate the debt NOT named in `pending_drills`; the named list gates itself: every
+    # entry must still be an absent unlock of its lesson (a drill landed or the unlock moved -> delete
+    # it), and it may not outgrow its own frozen `ceiling`.
+    current = {lv: {k: per[(lv, k)][0] - per[(lv, k)][1] - pending_hit[(lv, k)]
+                    for k in MEASURED_KINDS if (lv, k) in per}
                for lv in sorted({lv for lv, _k in per}, key=lambda lv: level_order.get(lv, 99))}
+    for lesson_id, ref in sorted(pending - pending_seen):
+        fails.append(f"{BASELINE_REL}: pending drill {lesson_id} / {ref} is not an unpractised unlock of "
+                     f"that lesson any more - delete the entry (the list may only shrink)")
+    if pending_doc and len(pending) > int(pending_doc.get("ceiling", 0)):
+        fails.append(f"{BASELINE_REL}: pending_drills GREW: {pending_doc.get('ceiling')} -> {len(pending)}")
     unlocked_now = {lv: {k: per[(lv, k)][0] for k in MEASURED_KINDS if (lv, k) in per}
                     for lv in current}
 
@@ -521,6 +547,7 @@ def main() -> int:
                            "re-freeze with --write-baseline in the same commit.",
             "absent": current,
             "unlocked": unlocked_now,
+            **({"pending_drills": pending_doc} if pending_doc else {}),
         }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"  wrote {BASELINE_REL} (frozen at {total_unlocked - total_practised} absent)")
 
@@ -609,6 +636,10 @@ def main() -> int:
               f"not measured — they have no answer-key surface (see the docstring)")
     for drop in drops:
         print(f"  ADVISORY: debt shrank — {drop}; lower the ceiling with --write-baseline")
+    if pending:
+        print(f"  ADVISORY: {len(pending)} named pending drill(s) held for {pending_doc.get('owner', '?')} "
+              f"({', '.join(f'{lv}|{k} {n}' for (lv, k), n in sorted(pending_hit.items()))}) — "
+              f"counted absent above, gated by their own list, not by the ceilings")
 
     shown = fails if args.list else fails[:MAX_SHOWN]
     for line in shown:

@@ -8,7 +8,7 @@
 - Marcar intervalos com espaço entre as ocorrências usando おきに ('de X em X', 'dia sim, dia não')
 - Formar verbos de transformação com o sufixo 化する ('-izar', '-ificar')
 
-**Introduz:** gramática [gp-126, gp-70, gp-87, oki-ni] · vocabulário [—] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-126, gp-70, gp-87, oki-ni] · vocabulário [—] · kanji [市 都] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-8594628`, `sent:tatoeba-1656321`, `sent:tatoeba-235374`, `sent:gen-2d1dcf054c6b`
 
@@ -85,4 +85,9 @@ Aqui 都市 ("cidade") junto com 化する dá "urbanizar-se", e 急に quer diz
 - **Resposta:** `{"text": "この町は都市化した。", "accept": ["この町は都市化した", "この町は都市化しました", "この町は急に都市化した", "このまちは都市化した", "このまちはとしかした"]}`
 - 化する transforma um substantivo em verbo de mudança ('-izar'): 都市 (cidade) + 化する → 都市化する ('urbanizar-se'). No passado vira 都市化した. É o mesmo molde de 変化する ('mudar') e 自動化する ('automatizar').
 - frases: `sent:gen-2d1dcf054c6b`
+
+### 6. (production) Escreva em kanji a palavra que significa disponibilidade, se dá ou não dá para alguém (つごう).
+- **Resposta:** `{"text": "都合", "accept": ["都合", "つごう"]}`
+- 都合 (つごう) junta 都 e 合 (juntar, combinar): é como os compromissos se encaixam. O 都 sozinho é a capital, lida みやこ, mas dentro desta palavra ele vale つ.
+
 

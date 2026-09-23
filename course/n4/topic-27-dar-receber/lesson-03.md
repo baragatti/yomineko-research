@@ -8,7 +8,7 @@
 - Negar o desejo com ～ないでほしい (quero que você NÃO faça)
 - Usar a variante indireta ように～てほしい para pedir uma mudança de hábito ou de estado
 
-**Introduz:** gramática [gp-106, te-hoshii] · vocabulário [ご覧になる, 亡くなる, 入学, 宜しい, 居る, 校長, 申す, 科学, 興味, 試験] · kanji [工 建 料 有] · kana [—]
+**Introduz:** gramática [gp-106, te-hoshii] · vocabulário [ご覧になる, 亡くなる, 入学, 宜しい, 居る, 校長, 申す, 科学, 興味, 試験] · kanji [工 建 有 菜] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-1152237`, `sent:gen-19bb4adab2c3`, `sent:gen-d0193ca6b4d8`, `sent:gen-9c98c3debc99`
 
@@ -128,5 +128,15 @@ Hoje você ganha quatro kanji. Para cada um, a forma e um truque para fixar:
 ### 10. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["建物", "prédio, edifício"], ["料理", "comida, culinária"], ["有名", "famoso, conhecido"]]}`
 - Cada palavra traz um kanji novo da lição: 建 (construir) em 建物, 料 (material, taxa) em 料理 e 有 (ter, existir) em 有名.
+
+
+### 11. (recognition) Qual kanji completa 野＿ para formar legume, verdura (やさい)?
+- **Resposta:** `{"choices": ["菜", "薬", "茶", "花"], "correct": "菜"}`
+- 野菜 (やさい) é o legume: 野 (campo) mais 菜. Os quatro trazem o mesmo radical de planta em cima. 薬 é remédio, 茶 é chá e 花 é flor.
+
+
+### 12. (production) Escreva em kanji a palavra legume, verdura (やさい).
+- **Resposta:** `{"text": "野菜", "accept": ["野菜", "やさい"]}`
+- 野菜 (やさい): o que cresce no campo (野) e vai para a mesa (菜). Sozinho, 菜 lê-se な.
 
 

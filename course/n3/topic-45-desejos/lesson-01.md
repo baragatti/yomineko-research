@@ -7,7 +7,7 @@
 - Expressar um desejo emotivo e informal com 〜といいなあ ('tomara que...')
 - Fazer um voto ou prece sincera com 〜ますように ('oxalá / que dê tudo certo')
 
-**Introduz:** gramática [n3-masu-you-ni, n3-te-hoshii, n3-to-ii-naa] · vocabulário [ぐっすり, クリスマス, グループ, 加える, 加わる, 暮らし, 暮らす, 暮れ, 癖, 組, 組む, 緊張, 繰り返す, 苦しい, 苦しむ, 苦労, 苦痛, 訓練, 詳しい] · kanji [呼 様 申 良] · kana [—]
+**Introduz:** gramática [n3-masu-you-ni, n3-te-hoshii, n3-to-ii-naa] · vocabulário [ぐっすり, クリスマス, グループ, 加える, 加わる, 暮らし, 暮らす, 暮れ, 癖, 組, 組む, 緊張, 繰り返す, 苦しい, 苦しむ, 苦労, 苦痛, 訓練, 詳しい] · kanji [呼 晴 様 申 良] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-148499`, `sent:tatoeba-234462`
 
@@ -147,5 +147,10 @@ Em templos e santuários, os japoneses penduram um 絵馬 (plaquinha de madeira)
 ### 13. (production) Escreva em japonês, com kanji, o adjetivo "bom" na forma よい.
 - **Resposta:** `{"text": "良い", "accept": ["良い", "よい"]}`
 - 良い se lê よい, a forma mais formal de いい. O 良 é o kanji; い é a terminação do adjetivo.
+
+
+### 14. (recognition) Qual destes verbos significa 'abrir o tempo, clarear'?
+- **Resposta:** `{"choices": ["晴れる", "降る", "止まる", "冷える"], "correct": "晴れる"}`
+- 晴れる (はれる) é o céu abrir. 降る é cair chuva ou neve, 止まる é parar e 冷える é esfriar.
 
 

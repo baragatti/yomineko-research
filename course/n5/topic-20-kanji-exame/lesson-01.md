@@ -5,7 +5,7 @@
 **Objetivos:**
 - Reconhecer os kanji 会、口、古、多、安、少、店、手 e localizar suas leituras
 
-**Introduz:** gramática [—] · vocabulário [—] · kanji [会 口 古 多 安 少 店 手] · kana [—]
+**Introduz:** gramática [—] · vocabulário [—] · kanji [会 口 古 多 安 少 店] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 
@@ -114,10 +114,5 @@ Estes kanji fazem parte do conjunto esperado no exame deste nível. Alguns você
 ### 15. (recognition) Como se lê a palavra 手, que significa 'mão'?
 - **Resposta:** `{"choices": ["て", "ひ", "き", "と"], "correct": "て"}`
 - 手 sozinho lê-se て ('mão'). As outras são leituras nativas curtas de kanji já vistos: ひ é 日 ('dia'), き é 木 ('árvore') e と é uma das leituras de 十 ('dez').
-
-
-### 16. (production) Escreva em japonês a palavra que significa 'bom em algo, habilidoso', juntando 上 ('em cima') com o kanji de 'mão'.
-- **Resposta:** `{"text": "上手", "accept": ["上手", "じょうず"]}`
-- 上手 (じょうず) é ser bom em alguma coisa, literalmente 'mão por cima'. O oposto é 下手 (へた), 'sem jeito'. Repare que aqui 手 lê-se ず, e não て.
 
 

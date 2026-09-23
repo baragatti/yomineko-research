@@ -7,7 +7,7 @@
 - Reconhecer os dois nomes de 'dicionário' (じしょ e じびき) e o par ことば/ご para 'palavra/língua'
 - Ligar duas frases com contraste usando o conector しかし ('porém')
 
-**Introduz:** gramática [—] · vocabulário [写真, 字引, 宿題, 新聞, 然し, 言葉, 語, 辞書, 雑誌] · kanji [国] · kana [—]
+**Introduz:** gramática [—] · vocabulário [写真, 字引, 宿題, 然し, 言葉, 語, 辞書, 雑誌] · kanji [国] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

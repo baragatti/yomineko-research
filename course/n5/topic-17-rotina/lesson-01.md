@@ -8,7 +8,7 @@
 - Reconhecer e usar um primeiro bloco de vocabulário de rotina: verbos de ação, lugares e palavras do dia a dia
 - Ler os kanji 車 (carro) e 何 (o que / qual)
 
-**Introduz:** gramática [gp-42, itsumo] · vocabulário [八百屋, 向こう, 山, 店, 待つ, 持つ, 村, 水, 物, 町, 窓, 見せる, 道, 野菜, 門] · kanji [何 車] · kana [—]
+**Introduz:** gramática [gp-42, itsumo] · vocabulário [八百屋, 向こう, 山, 店, 待つ, 持つ, 村, 町, 窓, 見せる, 道, 野菜, 門] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-227007`, `sent:tatoeba-229458`
 

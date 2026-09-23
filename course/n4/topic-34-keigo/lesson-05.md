@@ -7,7 +7,7 @@
 - Usar いたす/いたします como verbo humilde no lugar de する
 - Reconhecer fórmulas fixas de cortesia como よろしくお願いいたします
 
-**Introduz:** gramática [gp-111, gp-112, itashimasu] · vocabulário [入院, 湖, 競争, 翻訳] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-111, gp-112, itashimasu] · vocabulário [湖, 競争, 翻訳] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-59401317dba3`, `sent:gen-a9d2894fca14`, `sent:tatoeba-174355`, `sent:gen-6c6ce0d2199b`
 

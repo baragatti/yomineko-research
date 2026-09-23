@@ -7,7 +7,7 @@
 - Empregar 欲しい para dizer que se quer ter algo e 本当 para 'verdade/de verdade'
 - Localizar com 辺 ('por aqui/região') e nomear itens como フィルム e o momento ひる (meio-dia)
 
-**Introduz:** gramática [—] · vocabulário [フィルム, 吹く, 曲がる, 本当, 欲しい, 辺, 降る] · kanji [—] · kana [—]
+**Introduz:** gramática [—] · vocabulário [フィルム, 吹く, 曲がる, 辺, 降る] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

@@ -8,7 +8,7 @@
 - Apresentar uma crença geral sem dono com 〜と言われている ('diz-se que...') e 〜と考えられている ('acredita-se que...')
 - Separar o que você sabe em primeira mão do que só está repassando (伝聞)
 
-**Introduz:** gramática [gp-136, sou-da-1, to-iwarete-iru, to-kiita] · vocabulário [ご存知, 字, 息子, 承知, 文学, 日記, 訳, 講義, 高校, 高校生] · kanji [紙] · kana [—]
+**Introduz:** gramática [gp-136, sou-da-1, to-iwarete-iru, to-kiita] · vocabulário [ご存知, 息子, 承知, 文学, 日記, 訳, 講義, 高校, 高校生] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-aaabebd8cac1`, `sent:tatoeba-106462`, `sent:gen-45b2abe7f46e`, `sent:tatoeba-104331`
 
@@ -101,15 +101,5 @@ Mnemônico de forma: à esquerda fica o radical de fio/linha 糸 (papel antigo e
 ### 5. (production) Diga em japonês 'Ouvi dizer que o professor vai faltar semana que vem.' usando 先生 (professor), 来週 (semana que vem), 休む (faltar/descansar) e a forma 〜と聞いた.
 - **Resposta:** `{"text": "先生は来週休むと聞いた。", "accept": ["先生は来週休むと聞いた", "先生は来週休むと聞いた。", "せんせいはらいしゅうやすむときいた"]}`
 - 先生は + 来週 + 休む (forma de dicionário) + と + 聞いた. O と cita a frase inteira e 聞いた marca que você OUVIU isso de alguém, não está afirmando por conta própria.
-
-
-### 6. (recognition) Qual kanji completa 手＿ para formar carta (てがみ)?
-- **Resposta:** `{"choices": ["紙", "終", "私", "市"], "correct": "紙"}`
-- 手紙 (てがみ) é 手 (mão) mais 紙 (papel): o papel escrito à mão. Repare que かみ sonoriza e vira がみ dentro da palavra. 終 tem o mesmo radical de fio à esquerda; 私 e 市 também se leem し.
-
-
-### 7. (production) Escreva em kanji a palavra carta (てがみ).
-- **Resposta:** `{"text": "手紙", "accept": ["手紙", "てがみ"]}`
-- 手紙 (てがみ) junta 手 e 紙. Sozinho, 紙 lê-se かみ (papel); a leitura on é し.
 
 

@@ -8,7 +8,7 @@
 - Lembrar que から também marca o ponto de partida no tempo ('a partir de')
 - Reconhecer o kanji 雨 (chuva) em exemplos de motivo ligados ao clima
 
-**Introduz:** gramática [kara, node] · vocabulário [何, より, 報, 夜, 昨夜, 私, 雪] · kanji [雨] · kana [—]
+**Introduz:** gramática [kara, node] · vocabulário [何, より, 夜, 昨夜, 私, 雪] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-671b7aebf53d`, `sent:tatoeba-82538`
 

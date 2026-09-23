@@ -8,7 +8,7 @@
 - Escolher entre ある e いる pela natureza do sujeito (inanimado x animado)
 - Reconhecer o kanji 三 (três) e ligá-lo à ideia de quantidade
 
-**Introduz:** gramática [ga] · vocabulário [借りる, 先生, 居る, 有る, 要る, 閉まる, 開く] · kanji [三] · kana [—]
+**Introduz:** gramática [—] · vocabulário [借りる, 要る, 閉まる, 開く] · kanji [三 間] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-150639`, `sent:tatoeba-11795596`, `sent:tatoeba-150175`, `sent:tatoeba-11561754`
 

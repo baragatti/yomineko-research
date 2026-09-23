@@ -7,7 +7,7 @@
 - Encadear ações no tempo com 後で ('depois de / mais tarde')
 - Escolher entre 間に e ているあいだに conforme a outra ação esteja em curso ou não
 
-**Introduz:** gramática [ato-de, gp-107] · vocabulário [エスカレーター, 一生懸命, 出来るだけ, 噛む, 注意, 祈る, 絹, 葉, 製, 軒] · kanji [明] · kana [—]
+**Introduz:** gramática [ato-de, gp-107] · vocabulário [エスカレーター, 一生懸命, 出来るだけ, 噛む, 注意, 祈る, 絹, 葉, 製, 軒] · kanji [作 夕] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-4590c1e65a70`, `sent:gen-b2c4b3ced962`, `sent:tatoeba-195443`, `sent:tatoeba-2581794`
 
@@ -94,13 +94,13 @@ Esses quatro últimos são substantivos de descrição que você usará nas ora�
 - 電車を待っている (em andamento) + 間に (ponto no intervalo) + 勉強します (ação pontual, 'estudo'). É o mesmo molde da frase anterior, trocando 'ler' por 'estudar'.
 - frases: `sent:gen-4590c1e65a70`
 
-### 6. (recognition) Qual destes kanji junta 日 (sol) e 月 (lua) e significa 'claro, brilhante'?
-- **Resposta:** `{"choices": ["明", "時", "間", "開"], "correct": "明"}`
-- 明 é literalmente 日 (sol) ao lado de 月 (lua): as duas fontes de luz, daí 'claro, brilhante'. Ele aparece em 明るい e, com o sentido de 'seguinte', em 明日. 時 e 間 também carregam 日, e 開 é parecido com 間, mas só 明 tem sol e lua lado a lado.
+### 6. (production) Escreva em japonês o verbo "fazer, criar, construir" (leitura つくる).
+- **Resposta:** `{"text": "作る", "accept": ["作る", "つくる"]}`
+- O kanji 作 carrega a base つく e o る fica de fora, como okurigana. É esse る solto que permite conjugar o verbo sem mexer no kanji.
 
 
-### 7. (production) Esta lição encadeia ações no tempo. Escreva 'amanhã' em japonês, com kanji.
-- **Resposta:** `{"text": "明日", "accept": ["明日", "あした"]}`
-- 明日 é 明 (seguinte) + 日 (dia): o dia que vem depois. No dia a dia lê-se あした.
+### 7. (cloze) Qual é o kanji que falta em 'fim de tarde' (ゆうがた), escrito ＿方?
+- **Resposta:** `{"text": "夕", "full": "夕方"}`
+- 夕方 é 夕 (entardecer) + 方 (lado, direção): literalmente 'o lado do entardecer'. O primeiro kanji é o que você precisa escrever, lido ゆう.
 
 

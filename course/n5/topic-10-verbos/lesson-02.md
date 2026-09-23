@@ -7,7 +7,7 @@
 - Usar a partícula を para marcar o objeto direto numa frase transitiva
 - Montar frases com verbos de ação frequentes (escrever, comprar, ouvir, lavar, dizer)
 
-**Introduz:** gramática [gp-7, o-wo] · vocabulário [切る, 刷る, 吸う, 売る, 差す, 押す, 書く, 歌う, 洗う, 消す, 置く, 聞く, 言う, 買う, 貸す, 返す] · kanji [本] · kana [—]
+**Introduz:** gramática [gp-7, o-wo] · vocabulário [切る, 刷る, 友達, 吸う, 売る, 差す, 戸, 押す, 明日, 書く, 歌う, 洗う, 消す, 置く, 言う, 買う, 貸す, 返す, 電気, 飲む] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-a6201c731653`, `sent:gen-867d5c2e8dc3`, `sent:tatoeba-174533`, `sent:gen-66857872d764`
 

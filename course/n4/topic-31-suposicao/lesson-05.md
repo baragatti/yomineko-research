@@ -8,7 +8,7 @@
 - Descrever a impressão de algo com そうな (antes de substantivo) e そうに (antes de verbo)
 - Distinguir o supor pelo que se vê do ouvir dizer das lições anteriores
 
-**Introduz:** gramática [gp-130, ni-mieru, sou-ni-sou-na] · vocabulário [会場, 席, 空く, 腕, 運ぶ] · kanji [屋 館] · kana [—]
+**Introduz:** gramática [gp-130, ni-mieru, sou-ni-sou-na] · vocabulário [会場, 席, 濡れる, 空く, 腕, 運ぶ] · kanji [館] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-12653680`, `sent:gen-f1b038704e1c`, `sent:tatoeba-3496750`, `sent:tatoeba-10496134`
 
@@ -98,17 +98,12 @@ Palavras que combinam com cenas que a gente observa e interpreta:
 - No fim do nome de um estabelecimento, 屋 lê-se や e funciona como o nosso sufixo -eiro: 八百屋 é o verdureiro. As opções erradas são as leituras de 店 (てん), 室 (しつ) e 院 (いん).
 
 
-### 7. (production) Escreva em japonês a palavra que significa terraço, a cobertura no alto de um prédio.
-- **Resposta:** `{"text": "屋上", "accept": ["屋上", "おくじょう"]}`
-- 屋上 (おくじょう) é o telhado 屋 mais o em cima 上. Repare que aqui 屋 não é や, e sim おく: é a leitura que ele assume quando abre a palavra.
-
-
-### 8. (recognition) O que significa o kanji 館?
+### 7. (recognition) O que significa o kanji 館?
 - **Resposta:** `{"choices": ["edifício", "loja", "sala", "instituição"], "correct": "edifício"}`
 - 館 é o edifício grande, o salão que abriga alguma coisa. As outras opções são o sentido de 店 (loja), 室 (sala) e 院 (instituição).
 
 
-### 9. (production) Escreva em japonês a palavra que significa biblioteca.
+### 8. (production) Escreva em japonês a palavra que significa biblioteca.
 - **Resposta:** `{"text": "図書館", "accept": ["図書館", "としょかん"]}`
 - 図書館 (としょかん) fecha com 館 na leitura かん, que é a de sempre. Vale como regra prática: prédio público terminado em かん costuma terminar em 館.
 

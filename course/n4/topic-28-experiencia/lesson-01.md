@@ -8,7 +8,7 @@
 - Dizer que alguém provoca a mudança com 〜くする / 〜にする ('deixar', 'tornar')
 - Escolher entre なる (espontâneo) e する (causado) conforme quem causa a mudança
 
-**Introduz:** gramática [gp-79, gp-80, ku-suru] · vocabulário [不便, 周り, 喉, 夢, 昼間, 最近, 毛, 片付ける, 理由, 続ける, 血, 邪魔, 酷い, 隅] · kanji [切 待 質 転] · kana [—]
+**Introduz:** gramática [gp-79, gp-80, ku-suru] · vocabulário [音, 下さる, 不便, 周り, 喉, 夢, 昼間, 毛, 片付ける, 理由, 続ける, 血, 邪魔, 酷い, 隅] · kanji [切 寒 屋 薬 質 転] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-11bb4cdbc365`, `sent:gen-79838fe22b3c`, `sent:gen-f1534c9baa43`, `sent:gen-b76ff6005aca`
 
@@ -115,33 +115,48 @@ Estas palavras combinam muito com なる e する. Repare em como cada uma escol
 - 切る se lê きる. Só o 切 é kanji; る é a terminação do verbo.
 
 
-### 9. (recognition) Qual destes kanji significa "esperar"?
-- **Resposta:** `{"choices": ["待", "持", "特", "時"], "correct": "待"}`
-- 待 é esperar. Ele anda com um bando parecidíssimo: 持 é segurar, 特 é especial e 時 é hora. Todos repetem o mesmo bloco à direita; o que muda é a peça da esquerda.
-
-
-### 10. (production) Escreva em japonês, com kanji, o verbo "esperar" na forma de dicionário.
+### 9. (production) Escreva em japonês, com kanji, o verbo "esperar" na forma de dicionário.
 - **Resposta:** `{"text": "待つ", "accept": ["待つ", "まつ"]}`
 - 待つ se lê まつ. Só o 待 é kanji; つ é a terminação do verbo.
 
 
-### 11. (recognition) Como se lê a palavra 質問?
+### 10. (recognition) Como se lê a palavra 質問?
 - **Resposta:** `{"choices": ["しつもん", "もんだい", "でんわ", "かいわ"], "correct": "しつもん"}`
 - 質問 se lê しつもん e é a pergunta. 質 traz natureza, qualidade, e 問 é perguntar; もんだい é 問題, que repete o 問, e かいわ é 会話, que repete o 話 de 電話.
 
 
-### 12. (production) Escreva em japonês, com kanji, a palavra "pergunta".
+### 11. (production) Escreva em japonês, com kanji, a palavra "pergunta".
 - **Resposta:** `{"text": "質問", "accept": ["質問", "しつもん"]}`
 - 質問 se lê しつもん. O 質 aqui não é qualidade solta: ele forma dupla com 問 e o par inteiro vira a pergunta que alguém faz.
 
 
-### 13. (recognition) O kanji 転 aparece em 自転車 e em 運転. Que ideia ele carrega?
+### 12. (recognition) O kanji 転 aparece em 自転車 e em 運転. Que ideia ele carrega?
 - **Resposta:** `{"choices": ["girar, rolar", "cortar", "esperar", "enviar"], "correct": "girar, rolar"}`
 - 転 é girar, rolar. Daí 自転車 ser a bicicleta, o veículo que gira por conta própria, e 運転 ser o ato de dirigir.
 
 
-### 14. (production) Escreva em japonês, com kanji, a palavra "bicicleta".
+### 13. (production) Escreva em japonês, com kanji, a palavra "bicicleta".
 - **Resposta:** `{"text": "自転車", "accept": ["自転車", "じてんしゃ"]}`
 - 自転車 se lê じてんしゃ: 自 mais 転 mais 車, o veículo que gira sozinho.
+
+
+### 14. (recognition) Qual destes adjetivos descreve o clima frio?
+- **Resposta:** `{"choices": ["寒い", "暑い", "暗い", "弱い"], "correct": "寒い"}`
+- 寒い (さむい) é o frio do clima. 暑い é o calor do clima, 暗い é escuro e 弱い é fraco.
+
+
+### 15. (production) Escreva em japonês a palavra que significa terraço, a cobertura no alto de um prédio.
+- **Resposta:** `{"text": "屋上", "accept": ["屋上", "おくじょう"]}`
+- 屋上 (おくじょう) é o telhado 屋 mais o em cima 上. Repare que aqui 屋 não é や, e sim おく: é a leitura que ele assume quando abre a palavra.
+
+
+### 16. (recognition) Qual destes kanji significa remédio, medicamento, e se lê くすり?
+- **Resposta:** `{"choices": ["薬", "楽", "茶", "花"], "correct": "薬"}`
+- 薬 (くすり) é o remédio. Repare: é 楽 (prazer, divertido) com o radical de planta em cima, a erva que faz bem. 茶 é chá e 花 é flor.
+
+
+### 17. (production) Escreva em kanji a palavra remédio, medicamento (くすり).
+- **Resposta:** `{"text": "薬", "accept": ["薬", "くすり"]}`
+- 薬 (くすり) é a planta que cura, escrita sobre 楽. Em compostos a leitura vira やく.
 
 

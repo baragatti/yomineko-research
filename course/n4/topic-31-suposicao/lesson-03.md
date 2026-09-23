@@ -8,7 +8,7 @@
 - Comparar o modo de uma ação com みたいに antes de verbo ou adjetivo ('como / feito')
 - Escolher entre みたいな e みたいに conforme o que vem depois (substantivo vs. verbo/adjetivo)
 
-**Introduz:** gramática [gp-76, mitai-da, mitai-na, mitai-ni] · vocabulário [似る, 光, 様, 笑う, 褒める] · kanji [色 赤 青 黒] · kana [—]
+**Introduz:** gramática [gp-76, mitai-da, mitai-na, mitai-ni] · vocabulário [君, 似る, 光, 様, 笑う, 褒める] · kanji [犬 色 黒] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-774692`, `sent:gen-7ec782cb2980`, `sent:tatoeba-9846192`, `sent:tatoeba-4216208`
 
@@ -108,18 +108,18 @@ Mais alguns vocábulos que combinam bem com comparações:
 - 赤い é o adjetivo vermelho: 赤 (あか) é a cor e o い no fim faz dele adjetivo. O mesmo padrão vale para 青い (azul) e 黒い (preto).
 
 
-### 8. (recognition) Qual destes kanji é o da cor azul, a mesma que o japonês usa para o verde do sinal de trânsito?
-- **Resposta:** `{"choices": ["青", "赤", "黒", "色"], "correct": "青"}`
-- 青 é o azul, e em japonês ele cobre também o verde do sinal de trânsito. Os vizinhos de cor são 赤 (vermelho) e 黒 (preto).
-
-
-### 9. (recognition) No adjetivo 黒い (preto), como se lê o kanji 黒?
+### 8. (recognition) No adjetivo 黒い (preto), como se lê o kanji 黒?
 - **Resposta:** `{"choices": ["くろ", "あか", "あお", "いろ"], "correct": "くろ"}`
 - 黒 se lê くろ: sozinho é a cor preta e com o い vira o adjetivo 黒い. A leitura sino-japonesa コク é rara e só aparece em alguns compostos.
 
 
-### 10. (matching) Ligue cada palavra de cor ao seu significado.
+### 9. (matching) Ligue cada palavra de cor ao seu significado.
 - **Resposta:** `{"pairs": [["色", "cor"], ["赤い", "vermelho"], ["青い", "azul"], ["黒い", "preto"]]}`
 - 色 é a palavra genérica para cor; 赤い, 青い e 黒い são adjetivos, com o い no fim. Sem o い, 赤, 青 e 黒 são os substantivos das cores.
+
+
+### 10. (production) Escreva em japonês a palavra 'cachorro', com kanji.
+- **Resposta:** `{"text": "犬", "accept": ["犬", "いぬ"]}`
+- 犬 (いぬ) é o cachorro. É o traço solto no canto superior direito que separa 犬 de 大 ('grande').
 
 

@@ -7,7 +7,7 @@
 - Reconhecer o outro uso de また como advérbio 'de novo', distinguindo pelo contexto
 - Usar それに para acrescentar um item que reforça a frase anterior no mesmo sentido
 
-**Introduz:** gramática [gp-67, sore-ni] · vocabulário [ソフト, タイプ, 偶に, 大分, 嬉しい, 楽しみ, 矢っ張り, 社会, 趣味, 関係] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-67, sore-ni] · vocabulário [ソフト, タイプ, 偶に, 大分, 嬉しい, 楽しみ, 矢っ張り, 社会, 趣味, 関係] · kanji [頭] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-c30bb4ed15da`, `sent:gen-2983acf2a91a`, `sent:gen-04b97adbf861`, `sent:gen-9e22bc1d7301`
 
@@ -94,4 +94,9 @@ Mais um, com また aditivo: このカフェは静かです また コーヒー�
 - **Resposta:** `{"text": "彼は親切で、また元気だ", "accept": ["彼は親切で、また元気だ", "彼は親切で また元気だ", "かれはしんせつで、またげんきだ", "彼は親切です。また元気です", "彼は親切です また元気です"]}`
 - Aqui また é aditivo ('além disso'). A forma で liga 'é gentil' à segunda qualidade, e また soma 'cheio de energia'. Tanto a versão casual (だ) quanto a educada (です) funcionam.
 - frases: `sent:gen-2983acf2a91a`
+
+### 6. (recognition) Qual destes kanji quer dizer 'cabeça' e se lê あたま quando aparece sozinho?
+- **Resposta:** `{"choices": ["頭", "顔", "題", "首"], "correct": "頭"}`
+- 頭 e 顔 terminam com o mesmo radical à direita, o que marca quase tudo o que tem a ver com a cabeça; 題 também o carrega. Sozinho, 頭 é あたま, a cabeça do dia a dia.
+
 

@@ -7,7 +7,7 @@
 - Expressar o desejo do próprio falante e perguntar pelo desejo de quem você fala
 - Combinar ～たい com verbos de ações cotidianas (dormir, subir, enfileirar, tirar a roupa)
 
-**Introduz:** gramática [tai] · vocabulário [上る, 並ぶ, 並べる, 寝る, 生る, 脱ぐ, 鳴く] · kanji [—] · kana [—]
+**Introduz:** gramática [tai] · vocabulário [上る, 並ぶ, 並べる, 寝る, 脱ぐ, 鳴く] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-83633`, `sent:tatoeba-84964`
 

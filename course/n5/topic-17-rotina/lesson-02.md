@@ -8,7 +8,7 @@
 - Responder 'ainda não fiz' com a forma まだ〜ていません
 - Reconhecer os kanji 万 (dez mil) e 毎 (cada/todo) no vocabulário de rotina
 
-**Introduz:** gramática [mada, mada-te-imasen, mou] · vocabulário [もっと, 万, 万年筆, 三つ, 八つ, 六つ, 又, 右, 問題, 木曜日, 未だ, 皆, 皆さん, 緑, ３日, ６日] · kanji [万 毎] · kana [—]
+**Introduz:** gramática [mada, mada-te-imasen, mou] · vocabulário [万, 万年筆, 三つ, 八つ, 六つ, 右, 問題, 木曜日, 未だ, 皆, 皆さん, 緑, ３日, ６日] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-ffc42666e4f4`
 
@@ -110,10 +110,5 @@ Quer responder rápido em japonês? Para uma pergunta como "já comeu?", o lado 
 ### 8. (recognition) Em 毎日 (todo dia) e 毎月 (todo mês), o que o kanji 毎 acrescenta?
 - **Resposta:** `{"choices": ["cada", "dia", "mês", "ano"], "correct": "cada"}`
 - 毎 quer dizer 'cada, todo' e vem sempre na frente, transformando a unidade de tempo seguinte em rotina. Nesse papel de prefixo ele se lê まい: まいにち, まいつき.
-
-
-### 9. (cloze) Qual é o kanji que falta em 'todo dia' (まいにち), escrito ＿日?
-- **Resposta:** `{"text": "毎", "full": "毎日"}`
-- O prefixo da rotina é 毎, lido まい. Ele encaixa do mesmo jeito em 毎月 (まいつき) e 毎年 (まいとし).
 
 

@@ -8,7 +8,7 @@
 - Formar e usar o negativo polido 〜ません como base do teineigo
 - Reconhecer o kanji 漢 (sino-/China) na palavra 漢字
 
-**Introduz:** gramática [de-gozaimasu, gozaimasu, gp-149] · vocabulário [この頃, 会議, 全然, 復習, 特別, 生活, 相談, 研究, 簡単, 食事] · kanji [漢] · kana [—]
+**Introduz:** gramática [de-gozaimasu, gozaimasu, gp-149] · vocabulário [この頃, 会議, 復習, 特別, 生活, 相談, 研究, 簡単, 食事] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-335372`, `sent:tatoeba-9559301`, `sent:tatoeba-174190`, `sent:tatoeba-77812`
 

@@ -8,7 +8,7 @@
 - Entender que どんなに～ことか é exclamação, não pergunta
 - Evitar traduzir とは限らない como negação total
 
-**Introduz:** gramática [n3-donna-ni-koto-ka, n3-kanarazushimo-towa-kagiranai] · vocabulário [効果, 合格, 幸運, 恋, 恋人, 憲法, 権利, 濃い, 硬貨, 講演, 豪華, 高価] · kanji [彼 愛 捕 殺 責 迎 馬] · kana [—]
+**Introduz:** gramática [n3-donna-ni-koto-ka, n3-kanarazushimo-towa-kagiranai] · vocabulário [効果, 合格, 幸運, 恋, 恋人, 憲法, 権利, 濃い, 硬貨, 講演, 豪華, 高価] · kanji [愛 捕 殺 責 迎 馬] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-111460`, `sent:tatoeba-10151326`
 
@@ -110,12 +110,7 @@ Resolva os exercícios e leia cada explicação com calma.
 - 彼 é 'ele' e reaparece em 彼女 ('ela'); 捕 é pegar, como em 捕まえる; 殺 é matar; 危 é perigoso, o kanji de 危ない.
 
 
-### 7. (production) Escreva em japonês o pronome 'ela', com kanji.
-- **Resposta:** `{"text": "彼女", "accept": ["彼女", "かのじょ"]}`
-- 彼女 (かのじょ) é 'ela'; 彼 (かれ) sozinho é 'ele'. O mesmo 彼 está em 彼ら ('eles').
-
-
-### 8. (production) Escreva em japonês o verbo transitivo 'pegar, agarrar' que faz par com 捕まる, na forma de dicionário.
+### 7. (production) Escreva em japonês o verbo transitivo 'pegar, agarrar' que faz par com 捕まる, na forma de dicionário.
 - **Resposta:** `{"text": "捕まえる", "accept": ["捕まえる", "つかまえる"]}`
 - 捕まえる é transitivo: alguém pega algo ou alguém. 捕まる é o intransitivo, 'ser pego', com o mesmo kanji 捕 e outro okurigana.
 
