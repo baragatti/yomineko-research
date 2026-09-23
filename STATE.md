@@ -58,6 +58,13 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-23 (U1) — second particle table + late N3 relink APPLIED, committed.** 74 particle rows
+> (50 re-authored て-locution connectors, 24 label corrections) in DB + Layer-B, step 126; N3 relink
+> over the 97 late sentences: 48 derived, 19 applied, **29 held** (they would push integrity_audit's
+> sentence-level count 688 → 715 past its 703 ceiling; release = scoped `sentence.level` re-derivation
+> for 27 sentences, owner decision), step 127. Check D unchanged; W05 n3|vocab below 160 → 157, zero
+> 51 → 48. Gate green, full replay recorded (568 held, 1 hash moved). Report `research/reports/u1_particles_relink_report.md`.
+
 > **2026-09-10 (av) — PAUSED by the owner mid-run. Committed here: the W13 APPLY (bank 5,889 → 10,112
 > sentences with full Layer-B, register on all, 128 grammar tags, N3 relink 439 links, W05 n3|vocab
 > below 1,571 → 162 / zero 1,461 → 57, gate green, full replay green; report

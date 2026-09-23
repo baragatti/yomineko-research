@@ -8,27 +8,32 @@ noun, a 連用形 copula, a conjunction or an adverbially-used i-adjective ended
 carries the fixed `chunk_head()` rule; the audit emitted one row per affected particle into
 `research/derived/pending/particle_template_fixes.json`.
 
-This script applies ONLY that table's 201 `explanation_change: "replace"` rows, copied verbatim into
-the tracked table `research/derived/repairs/particle_template_fixes.json`. The same pending file
-also carries 50 `withdraw` rows (their authored replacements are still being verified) and 24
-`function_pt` label overrides of VERIFIED rows (held for sign-off); neither is in the tracked table
-and neither is touched here.
+Two tracked tables, one per manifest step:
 
-Each row is addressed by (sentence slug / Layer-B key, token position) and matched EXACTLY on its
-`old_explanation`; nothing else about the particle changes (`explanation_status` stays `template`,
-`function_pt`, `function_type` and the particle itself are left alone).
+  * `research/derived/repairs/particle_template_fixes.json` (the default) — that pending file's 201
+    `explanation_change: "replace"` rows, copied verbatim. Explanation only.
+  * `research/derived/repairs/particle_template_fixes_second.json` (`--data`, U1) — the 74 rows of
+    `research/derived/pending/particle_template_fixes_second.json`: the 50 withdrawn て-locution
+    connector templates, re-authored and verified (new explanation AND new label), and the 24 label
+    overrides of verified rows (new label only), signed off 2026-09-23.
+
+A row names which fields it changes (`explanation_change`, `function_pt_change`: `replace` or
+`none`) and is addressed by (sentence slug / Layer-B key, token position); every field it changes is
+matched EXACTLY on its `old_*` value. Nothing else about the particle changes (`function_type` and the
+particle itself are left alone). Layer-B also takes the row's `explanation_status_after` /
+`function_status_after` where the row carries one.
 
 TWO LAYERS, so a rebuild reproduces the repair:
-  * db/corpus.sqlite   localized_text (particle, explanation, pt-BR) of the particle whose token is
-                       the row's C-token position;
+  * db/corpus.sqlite   localized_text (particle, explanation|function, pt-BR) of the particle whose
+                       token is the row's C-token position;
   * Layer-B source     research/derived/mined_layerb_n3/batch-NN.json, which
                        `ingest_mined_stages.py` reads, so a manifest replay ingests the fixed text
                        and this script's own replay step finds every row already applied.
 
-Idempotent: a value already equal to `new_explanation` counts as applied; a value that is neither
-`old` nor `new` is reported and never overwritten (exit 2). A batch file is rewritten only when a
-row in it changed, in the file's own serialisation (indent 1, its own line endings), so an
-unchanged file stays byte-identical.
+Idempotent: a value already equal to `new_*` counts as applied; a value that is neither `old` nor
+`new` is reported and never overwritten (exit 2). A batch file is rewritten only when a row in it
+changed, in the file's own serialisation (indent 1, its own line endings), so an unchanged file
+stays byte-identical.
 
 Usage: apply_particle_template_fixes.py [--check] [--data PATH] [--layerb DIR]
 """
@@ -52,6 +57,16 @@ DB = db_target(ROOT / "db" / "corpus.sqlite")
 DATA = ROOT / "research" / "derived" / "repairs" / "particle_template_fixes.json"
 LAYERB = ROOT / "research" / "derived" / "mined_layerb_n3"
 
+# (localized_text field, Layer-B text key, row change flag, row old/new stem, Layer-B status key)
+FIELDS = (
+    ("explanation", "explanation_pt", "explanation_change", "explanation", "explanation_status"),
+    ("function", "function_pt", "function_pt_change", "function_pt", "function_status"),
+)
+
+
+def changed_fields(r: dict) -> list[tuple[str, str, str, str, str]]:
+    return [f for f in FIELDS if r.get(f[2]) == "replace"]
+
 
 def load(path: Path) -> list[dict]:
     doc = json.loads(path.read_text(encoding="utf-8"))
@@ -60,11 +75,14 @@ def load(path: Path) -> list[dict]:
         raise SystemExit(f"{path.name}: row_count {doc.get('row_count')} != {len(rows)} rows")
     seen: set[tuple[str, int]] = set()
     for i, r in enumerate(rows):
-        if r.get("explanation_change") != "replace" or r.get("function_pt_change") != "none":
-            raise SystemExit(f"row {i} ({r.get('slug')}): only explanation replacements belong in "
-                             f"this table (withdraw rows and label overrides are held in pending/)")
-        if r["old_explanation"] == r["new_explanation"]:
-            raise SystemExit(f"row {i} ({r['slug']}): `new_explanation` is identical to `old`")
+        flags = {r.get(f[2]) for f in FIELDS}
+        if not flags <= {"replace", "none"} or not changed_fields(r):
+            raise SystemExit(f"row {i} ({r.get('slug')}): a row must `replace` at least one field "
+                             f"and every change flag must be `replace` or `none` (withdraw rows "
+                             f"belong in pending/, not in a tracked table)")
+        for _, _, _, stem, _ in changed_fields(r):
+            if r[f"old_{stem}"] == r[f"new_{stem}"]:
+                raise SystemExit(f"row {i} ({r['slug']}): `new_{stem}` is identical to `old`")
         k = (r["slug"], r["position"])
         if k in seen:
             raise SystemExit(f"row {i}: duplicate target {k}")
@@ -72,12 +90,17 @@ def load(path: Path) -> list[dict]:
     return rows
 
 
-def classify(value: str | None, r: dict) -> str:
-    if value == r["new_explanation"]:
-        return "already"
-    if value == r["old_explanation"]:
-        return "change"
-    return "mismatch"
+def plan(values: dict[str, str | None], r: dict) -> tuple[str, list[str]]:
+    """values: {field: current text} -> ("already"|"change"|"mismatch", fields still at `old`)."""
+    todo: list[str] = []
+    for field, _, _, stem, _ in changed_fields(r):
+        v = values.get(field)
+        if v == r[f"new_{stem}"]:
+            continue
+        if v != r[f"old_{stem}"]:
+            return "mismatch", [field]
+        todo.append(field)
+    return ("change" if todo else "already"), todo
 
 
 def apply_db(con: sqlite3.Connection, rows: list[dict], write: bool) -> tuple[int, int, list[str]]:
@@ -86,29 +109,32 @@ def apply_db(con: sqlite3.Connection, rows: list[dict], write: bool) -> tuple[in
     for r in rows:
         label = f"{r['slug']} @{r['position']} {r['surface']}"
         hit = con.execute(
-            "SELECT p.id, p.particle, lt.value FROM particle p "
+            "SELECT p.id, p.particle FROM particle p "
             "JOIN sentence s ON s.id = p.sentence_id JOIN token t ON t.id = p.token_id "
-            "LEFT JOIN localized_text lt ON lt.entity_type='particle' AND lt.entity_id=p.id "
-            "AND lt.field='explanation' AND lt.locale='pt-BR' "
             "WHERE s.slug=? AND t.position=? AND t.split_mode='C'",
             (r["slug"], r["position"])).fetchall()
         if len(hit) != 1:
             problems.append(f"db {label}: {len(hit)} particle rows at this position")
             continue
-        pid, particle, value = hit[0]
+        pid, particle = hit[0]
         if particle != r["surface"]:
             problems.append(f"db {label}: the particle there is {particle!r}")
             continue
-        state = classify(value, r)
+        values = dict(con.execute(
+            "SELECT field, value FROM localized_text WHERE entity_type='particle' AND entity_id=? "
+            "AND locale='pt-BR'", (pid,)).fetchall())
+        state, todo = plan(values, r)
         if state == "already":
             already += 1
         elif state == "mismatch":
-            problems.append(f"db {label}: stored text is neither `old` nor `new` - not touching it")
+            problems.append(f"db {label}: stored {todo[0]} is neither `old` nor `new` - not touching it")
         else:
             if write:
-                con.execute("UPDATE localized_text SET value=? WHERE entity_type='particle' AND "
-                            "entity_id=? AND field='explanation' AND locale='pt-BR'",
-                            (r["new_explanation"], pid))
+                for field, _, _, stem, _ in changed_fields(r):
+                    if field in todo:
+                        con.execute("UPDATE localized_text SET value=? WHERE entity_type='particle' "
+                                    "AND entity_id=? AND field=? AND locale='pt-BR'",
+                                    (r[f"new_{stem}"], pid, field))
             changed += 1
     return changed, already, problems
 
@@ -139,15 +165,25 @@ def apply_layerb(layerb: Path, rows: list[dict], write: bool) -> tuple[int, int,
             if p["particle"] != r["surface"]:
                 problems.append(f"layer-b {label}: the particle there is {p['particle']!r}")
                 continue
-            state = classify(p.get("explanation_pt"), r)
-            if state == "already":
-                already += 1
-            elif state == "mismatch":
-                problems.append(f"layer-b {label}: text is neither `old` nor `new` - not touching it")
-            else:
-                p["explanation_pt"] = r["new_explanation"]
+            state, todo = plan({f[0]: p.get(f[1]) for f in FIELDS}, r)
+            if state == "mismatch":
+                problems.append(f"layer-b {label}: {todo[0]} is neither `old` nor `new` - "
+                                f"not touching it")
+                continue
+            touched = False
+            for field, key, _, stem, status_key in changed_fields(r):
+                if field in todo:
+                    p[key] = r[f"new_{stem}"]
+                    touched = True
+                after = r.get(f"{status_key}_after")
+                if after and p.get(status_key) != after:
+                    p[status_key] = after
+                    touched = True
+            if touched:
                 dirty = True
                 changed += 1
+            else:
+                already += 1
         if dirty and write:
             eol = "\r\n" if "\r\n" in raw else "\n"
             path.write_text(json.dumps(doc, ensure_ascii=False, indent=1).replace("\n", eol),
@@ -170,7 +206,7 @@ def main() -> int:
         con.commit()
     con.close()
     verb = "would repair" if args.check else "repaired"
-    print(f"{len(rows)} rows | db: {verb} {d_changed}, {d_already} already | "
+    print(f"{args.data.name}: {len(rows)} rows | db: {verb} {d_changed}, {d_already} already | "
           f"layer-b: {verb} {l_changed}, {l_already} already")
     for p in d_prob + l_prob:
         print(f"  ! {p}")

@@ -1497,6 +1497,46 @@ def handle_particle_template_fixes(rows, sents, gram, table):
     return out
 
 
+def handle_particle_template_fixes_second(rows, sents, gram, table):
+    """U1. The 50 re-authored て-locution connectors and the 24 label corrections.
+
+    Two particles of one sentence can carry the same old LABEL, so the row cannot be proved by
+    "no particle still carries `old`". It carries `ordinal` instead, the particle's index in the
+    exported `particles[]` (particle-id order, which is token order); the C token at the row's
+    position must still be the particle's surface, and the particle at `ordinal` must be that
+    surface and carry `new_function_pt` and `new_explanation` verbatim.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['slug']} @{r['position']} {r['surface']} / function+explanation"
+        s = sents.get(r["slug"])
+        if s is None:
+            out.append(("fail", C_NO_RECORD, addr, "the export carries no such sentence"))
+            continue
+        tok = next((t for t in s.get("tokens") or [] if t.get("split_mode") == "C"
+                    and t.get("position") == r["position"]), None)
+        ps = s.get("particles") or []
+        p = ps[r["ordinal"]] if r["ordinal"] < len(ps) else None
+        if tok is None or tok.get("surface") != r["surface"] or p is None \
+                or p.get("particle") != r["surface"]:
+            out.append(("fail", C_NO_RECORD, addr,
+                        f"C token {r['position']} / particle #{r['ordinal']} no longer resolve to "
+                        f"{r['surface']!r} - the dissection moved under the row"))
+            continue
+        fn = (p.get("function") or {}).get("pt-BR")
+        ex = (p.get("explanation") or {}).get("pt-BR")
+        if fn == r["old_function_pt"] or (r["explanation_change"] == "replace"
+                                          and ex == r["old_explanation"]):
+            out.append(("fail", C_NOT_APPLIED, addr, "the particle still carries an `old` value"))
+            continue
+        if fn != r["new_function_pt"] or ex != r["new_explanation"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"export has function {fn!r:.80} / explanation {ex!r:.120}"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
     "orthographic_relinks.json": handle_orthographic_relinks,
     # W13 apply: the N3 half of the same campaign, same rows, same handler. It is a SECOND
@@ -1504,6 +1544,9 @@ REGISTRY = {
     # the N5/N4 links apply before the W13 ingest and the N3 links cannot, since none of
     # their sentences exist at that point.
     "orthographic_relinks_n3.json": handle_orthographic_relinks,
+    # U1: the same N3 rules over the 97 late sentences of the second W13 ingest, which land
+    # after the N3 table applies - a third table for the same replay-order reason.
+    "orthographic_relinks_n3_late.json": handle_orthographic_relinks,
     "lesson_ref_addresses.json": handle_lesson_ref_addresses,
     "sentence_text_repairs.json": handle_sentence_text_repairs,
     # W13 apply: three de-accented pt-BR translations among the 4,223 mined rows
@@ -1527,6 +1570,9 @@ REGISTRY = {
     # W13 finish: the 201 mechanical explanation re-chunks of the W13b template audit (the
     # withdraw rows and the verified-label overrides stay in pending/ and are not here).
     "particle_template_fixes.json": handle_particle_template_fixes,
+    # U1: the second table of the same audit - the 50 re-authored て-locution connectors and
+    # the 24 signed-off label corrections. Its own handler: it changes labels, which repeat.
+    "particle_template_fixes_second.json": handle_particle_template_fixes_second,
 }
 
 

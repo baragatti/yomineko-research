@@ -1,0 +1,1063 @@
+{
+ "what_this_is": "U1: the N3 orthographic relink over the 97 late W13 sentences (manifest step 124). The rows a full `apply_orthographic_relinks.py --derive --scope n3` produces today that research/derived/repairs/orthographic_relinks_n3.json does not carry: all 48 sit on the 97 late sentences, the 439 applied rows and 37 holds of that table are reproduced unchanged. A separate table because the replay needs it apart: the N3 table applies at step 122, before the late sentences exist. Applied by scripts/apply_orthographic_relinks.py --scope n3 --table <this>. Addressed by sentence SLUG and token POSITION, never by row id.",
+ "derived_by": "scripts/apply_orthographic_relinks.py --derive --scope n3 on a copy of db/corpus.sqlite at e7ff05cd, diffed against the committed N3 table. Do NOT --derive this table on its own: re-derive the N3 table, and diff again.",
+ "match_rule": "lemma (or surface) is a registered form of the record — headword, kana, vocab_form, or a JMdict kanji/kana element — AND the realized reading is a registered kana reading. Never a substring match.",
+ "scope": "taught vocab at n3 under the floor",
+ "derivation_counters": {
+  "kana-exact": 6,
+  "run-reading": 42,
+  "held:sentence-level-ratchet": 29
+ },
+ "links_by_level": {
+  "n3": 19
+ },
+ "row_count": 19,
+ "held_count": 29,
+ "held": [
+  {
+   "sentence": "sent:gen-03ac75285d31",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "ところ",
+    "で"
+   ],
+   "surface": "ところで",
+   "lemma": "ところ+で",
+   "reading": "ところで",
+   "pos": "noun+particle",
+   "vocab": "vocab:1343110",
+   "headword": "所で",
+   "kana": "ところで",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-03ac75285d31 is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-13457c0fbd4c",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "それ",
+    "で",
+    "も"
+   ],
+   "surface": "それでも",
+   "lemma": "それ+で+も",
+   "reading": "それでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1406060",
+   "headword": "其れでも",
+   "kana": "それでも",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-13457c0fbd4c is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-288ed13a45d3",
+   "anchor_position": 0,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "ざっ",
+    "と"
+   ],
+   "surface": "ざっと",
+   "lemma": "ざっ+と",
+   "reading": "ざっと",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1005390",
+   "headword": "ざっと",
+   "kana": "ざっと",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-288ed13a45d3 is filed n5 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-2e89ebd0b9b2",
+   "anchor_position": 2,
+   "span": [
+    1,
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "男",
+    "の",
+    "人"
+   ],
+   "surface": "男の人",
+   "lemma": "男+の+人",
+   "reading": "おとこのひと",
+   "pos": "noun+particle+noun",
+   "vocab": "vocab:1420020",
+   "headword": "男の人",
+   "kana": "おとこのひと",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-2e89ebd0b9b2 is filed n5 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-3ab33f97e1b6",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "今",
+    "に",
+    "も"
+   ],
+   "surface": "今にも",
+   "lemma": "今+に+も",
+   "reading": "いまにも",
+   "pos": "noun+particle+particle",
+   "vocab": "vocab:1288950",
+   "headword": "今にも",
+   "kana": "いまにも",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-3ab33f97e1b6 is filed n5 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-3b2fee497b46",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "なん",
+    "で"
+   ],
+   "surface": "なんで",
+   "lemma": "なん+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-3b2fee497b46 is filed n5 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-3cffd9cadbe7",
+   "anchor_position": 0,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "とんでも",
+    "ない"
+   ],
+   "surface": "とんでもない",
+   "lemma": "とんでも+ない",
+   "reading": "とんでもない",
+   "pos": "adverb+i-adjective",
+   "vocab": "vocab:1008790",
+   "headword": "とんでも無い",
+   "kana": "とんでもない",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-3cffd9cadbe7 is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-3cffd9cadbe7",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なんも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-3cffd9cadbe7 is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-40417a6920af",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-40417a6920af is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-48a579e56f54",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "ところ",
+    "が"
+   ],
+   "surface": "ところが",
+   "lemma": "ところ+が",
+   "reading": "ところが",
+   "pos": "noun+particle",
+   "vocab": "vocab:1008570",
+   "headword": "所が",
+   "kana": "ところが",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-48a579e56f54 is filed n5 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-617ebc589017",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "今",
+    "に"
+   ],
+   "surface": "今に",
+   "lemma": "今+に",
+   "reading": "いまに",
+   "pos": "noun+particle",
+   "vocab": "vocab:1288940",
+   "headword": "今に",
+   "kana": "いまに",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-617ebc589017 is filed n5 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-6238f7249749",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "なぜ",
+    "なら"
+   ],
+   "surface": "なぜなら",
+   "lemma": "なぜ+だ",
+   "reading": "なぜなら",
+   "pos": "adverb+auxiliary",
+   "vocab": "vocab:1009410",
+   "headword": "何故なら",
+   "kana": "なぜなら",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-6238f7249749 is filed n5 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-7f7950a6349b",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-7f7950a6349b is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-8319a8e44d21",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "思わ",
+    "ず"
+   ],
+   "surface": "思わず",
+   "lemma": "思う+ず",
+   "reading": "おもわず",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1309460",
+   "headword": "思わず",
+   "kana": "おもわず",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-8319a8e44d21 is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-85971f5e6f20",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "それ",
+    "と",
+    "も"
+   ],
+   "surface": "それとも",
+   "lemma": "それ+と+も",
+   "reading": "それとも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1007010",
+   "headword": "其れとも",
+   "kana": "それとも",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-85971f5e6f20 is filed n5 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-884d4ad8a039",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "いつ",
+    "まで",
+    "も"
+   ],
+   "surface": "いつまでも",
+   "lemma": "いつ+まで+も",
+   "reading": "いつまでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1188880",
+   "headword": "何時までも",
+   "kana": "いつまでも",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-884d4ad8a039 is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-95ea64271abc",
+   "anchor_position": 0,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "しきり",
+    "に"
+   ],
+   "surface": "しきりに",
+   "lemma": "しきり+に",
+   "reading": "しきりに",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1005480",
+   "headword": "頻りに",
+   "kana": "しきりに",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-95ea64271abc is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-9ede389506d7",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "一度",
+    "に"
+   ],
+   "surface": "一度に",
+   "lemma": "一度+に",
+   "reading": "いちどに",
+   "pos": "noun+particle",
+   "vocab": "vocab:1609210",
+   "headword": "一度に",
+   "kana": "いちどに",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-9ede389506d7 is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-a2e6c06eccd6",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "いつ",
+    "で",
+    "も"
+   ],
+   "surface": "いつでも",
+   "lemma": "いつ+で+も",
+   "reading": "いつでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1577130",
+   "headword": "何時でも",
+   "kana": "いつでも",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-a2e6c06eccd6 is filed n5 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-bd141e644fc0",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-bd141e644fc0 is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-c1dc4ac04cc7",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "何",
+    "と",
+    "か"
+   ],
+   "surface": "何とか",
+   "lemma": "何+と+か",
+   "reading": "なんとか",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1188420",
+   "headword": "何とか",
+   "kana": "なんとか",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-c1dc4ac04cc7 is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-de2b7516143c",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-de2b7516143c is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-e6f0d765640f",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "もし",
+    "も"
+   ],
+   "surface": "もしも",
+   "lemma": "もし+も",
+   "reading": "もしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1612050",
+   "headword": "若しも",
+   "kana": "もしも",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-e6f0d765640f is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-e7e5464992a3",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どこ",
+    "か"
+   ],
+   "surface": "どこか",
+   "lemma": "どこ+か",
+   "reading": "どこか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1189000",
+   "headword": "何処か",
+   "kana": "どこか",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-e7e5464992a3 is filed n5 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-ead76a768ab4",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "別",
+    "に"
+   ],
+   "surface": "別に",
+   "lemma": "別+だ",
+   "reading": "べつに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:1509480",
+   "headword": "別に",
+   "kana": "べつに",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-ead76a768ab4 is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-ead76a768ab4",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "何",
+    "で",
+    "も"
+   ],
+   "surface": "何でも",
+   "lemma": "何+で+も",
+   "reading": "なんでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1611030",
+   "headword": "何でも",
+   "kana": "なんでも",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-ead76a768ab4 is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-f2aa06143ce7",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なんも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-f2aa06143ce7 is filed n5 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:gen-f717dc24d27f",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "少し",
+    "も"
+   ],
+   "surface": "少しも",
+   "lemma": "少し+も",
+   "reading": "すこしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1348900",
+   "headword": "少しも",
+   "kana": "すこしも",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:gen-f717dc24d27f is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  },
+  {
+   "sentence": "sent:tatoeba-235265",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "後"
+   ],
+   "surface": "後",
+   "lemma": "後",
+   "reading": "ご",
+   "pos": "suffix",
+   "vocab": "vocab:2147630",
+   "headword": "後",
+   "kana": "ご",
+   "level": "n3",
+   "rule": "kana-exact",
+   "hold_reason": "integrity_audit sentence.level ratchet: sent:tatoeba-235265 is filed n4 (computed once at persist time) and this link names an n3 record, which would file one more sentence below a component level (ceiling 703, shrink-only). Lands with the sentence-level re-derivation decision, not as a relink side effect."
+  }
+ ],
+ "rows": [
+  {
+   "sentence": "sent:gen-03c27c103a89",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "共",
+    "に"
+   ],
+   "surface": "共に",
+   "lemma": "共+に",
+   "reading": "ともに",
+   "pos": "noun+particle",
+   "vocab": "vocab:1234260",
+   "headword": "共に",
+   "kana": "ともに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-04dd143aa595",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "必ず",
+    "しも"
+   ],
+   "surface": "必ずしも",
+   "lemma": "必ず+しも",
+   "reading": "かならずしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1487410",
+   "headword": "必ずしも",
+   "kana": "かならずしも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-10460328793b",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "常",
+    "に"
+   ],
+   "surface": "常に",
+   "lemma": "常+に",
+   "reading": "つねに",
+   "pos": "noun+particle",
+   "vocab": "vocab:1355970",
+   "headword": "常に",
+   "kana": "つねに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-1b63f3193f07",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "実",
+    "に"
+   ],
+   "surface": "実に",
+   "lemma": "実+に",
+   "reading": "じつに",
+   "pos": "noun+particle",
+   "vocab": "vocab:2820720",
+   "headword": "実に",
+   "kana": "じつに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-39bf31d9bb7a",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "これ",
+    "ら"
+   ],
+   "surface": "これら",
+   "lemma": "これ+ら",
+   "reading": "これら",
+   "pos": "pronoun+suffix",
+   "vocab": "vocab:1004830",
+   "headword": "これ等",
+   "kana": "これら",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-4dc48e6d9e51",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "なん",
+    "で",
+    "も"
+   ],
+   "surface": "なんでも",
+   "lemma": "なん+で+も",
+   "reading": "なんでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1611030",
+   "headword": "何でも",
+   "kana": "なんでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-5d87befce029",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "そこ",
+    "で"
+   ],
+   "surface": "そこで",
+   "lemma": "そこ+で",
+   "reading": "そこで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1406090",
+   "headword": "其処で",
+   "kana": "そこで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-8c60dda0dabf",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-9301df2b9c43",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "要する",
+    "に"
+   ],
+   "surface": "要するに",
+   "lemma": "要する+に",
+   "reading": "ようするに",
+   "pos": "verb+particle",
+   "vocab": "vocab:1546620",
+   "headword": "要するに",
+   "kana": "ようするに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-c1531213a6b7",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "こんな",
+    "に"
+   ],
+   "surface": "こんなに",
+   "lemma": "こんな+だ",
+   "reading": "こんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1004890",
+   "headword": "こんなに",
+   "kana": "こんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-c53c1dc43717",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "たまら",
+    "ない"
+   ],
+   "surface": "たまらない",
+   "lemma": "たまる+ない",
+   "reading": "たまらない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1211340",
+   "headword": "堪らない",
+   "kana": "たまらない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-136764",
+   "anchor_position": 5,
+   "span": [
+    5
+   ],
+   "span_surfaces": [
+    "不"
+   ],
+   "surface": "不",
+   "lemma": "不",
+   "reading": "ふ",
+   "pos": "prefix",
+   "vocab": "vocab:1922780",
+   "headword": "不",
+   "kana": "ふ",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-140818",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "全"
+   ],
+   "surface": "全",
+   "lemma": "全",
+   "reading": "ぜん",
+   "pos": "prefix",
+   "vocab": "vocab:1394770",
+   "headword": "全",
+   "kana": "ぜん",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-155281",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なんも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-174243",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "御"
+   ],
+   "surface": "御",
+   "lemma": "御",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-542960",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "級"
+   ],
+   "surface": "級",
+   "lemma": "級",
+   "reading": "きゅう",
+   "pos": "suffix",
+   "vocab": "vocab:1919590",
+   "headword": "級",
+   "kana": "きゅう",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-7967876",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "上"
+   ],
+   "surface": "上",
+   "lemma": "上",
+   "reading": "じょう",
+   "pos": "suffix",
+   "vocab": "vocab:1352170",
+   "headword": "上",
+   "kana": "じょう",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-85041",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なんも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-85570",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "必ず",
+    "しも"
+   ],
+   "surface": "必ずしも",
+   "lemma": "必ず+しも",
+   "reading": "かならずしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1487410",
+   "headword": "必ずしも",
+   "kana": "かならずしも",
+   "level": "n3",
+   "rule": "run-reading"
+  }
+ ]
+}
