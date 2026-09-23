@@ -1,0 +1,347 @@
+{
+  "rows": [
+    {
+      "lesson": "les:n5-desu-wa-02",
+      "item": "vocab:1577100",
+      "tier": "same-level",
+      "introducer": "les:n5-comparacoes-02",
+      "decision": "inline-gloss",
+      "old_span": "<sentence ref=\"sent:tatoeba-229628\" show=\"furigana\" mode=\"featured\"/>",
+      "new_span": "<p><jp reading=\"あれなに\">あれ何？</jp><text> (\"O que é aquilo?\")</text></p>",
+      "exercise_edits": [
+        {
+          "exercise": "ex:n5-desu-wa-02-1",
+          "field": "sentence_refs",
+          "old": [
+            "sent:tatoeba-229628"
+          ],
+          "new": []
+        },
+        {
+          "exercise": "ex:n5-desu-wa-02-3",
+          "field": "sentence_refs",
+          "old": [
+            "sent:tatoeba-229628"
+          ],
+          "new": []
+        }
+      ],
+      "why": "何 (なに) is the whole point of the example, so it stays; the paragraph right after already glosses it (何 quer dizer \"o quê\"). The kanji 何 is unlocked by this lesson; only the vocab address なに is later. The featured card becomes a plain line with the translation, so no ref reaches vocab:1577100. The two exercises keep their text (あれ / あれ何？) and only lose the provenance cite.",
+      "alternative": "Address ruling (lesson_ref_addresses.json): unlock なに here instead of at les:n5-comparacoes-02; that also clears rows 3, 7, 10, 11.",
+      "layer": "C",
+      "needs_review": true
+    },
+    {
+      "lesson": "les:n5-desu-wa-03",
+      "item": "kanji:大",
+      "tier": "same-level",
+      "introducer": "les:n5-numeros-tempo-04",
+      "decision": "inline-gloss",
+      "old_span": "<sentence ref=\"sent:tatoeba-536769\" show=\"furigana\" mode=\"featured\"/>",
+      "new_span": "<p><jp reading=\"たいしたものじゃない\">大したものじゃない。</jp><text> (\"Não é grande coisa.\")</text></p>",
+      "exercise_edits": [
+        {
+          "exercise": "ex:n5-desu-wa-03-3",
+          "field": "sentence_refs",
+          "old": [
+            "sent:tatoeba-536769"
+          ],
+          "new": []
+        }
+      ],
+      "why": "The example exists to show casual じゃない closing a sentence; no gate-clean じゃない sentence exists in the bank for this lesson. The next paragraph already glosses 大した (\"grande, importante\") and the reading attribute puts furigana on 大. Card -> plain line; the particle_choice exercise (雨＿) only cited the sentence as provenance.",
+      "alternative": "R7 blocked moving 大 (last kanji unlock of les:n5-numeros-tempo-04). Leaving a second kanji there would let 大 move here.",
+      "layer": "C",
+      "needs_review": true
+    },
+    {
+      "lesson": "les:n5-desu-wa-03",
+      "item": "vocab:1577100",
+      "tier": "same-level",
+      "introducer": "les:n5-comparacoes-02",
+      "decision": "inline-gloss",
+      "old_span": "<sentence ref=\"sent:tatoeba-229628\" show=\"furigana\" mode=\"featured\"/>",
+      "new_span": "<p><jp reading=\"あれなに\">あれ何？</jp><text> (\"O que é aquilo?\")</text></p>",
+      "exercise_edits": [
+        {
+          "exercise": "ex:n5-desu-wa-03-5",
+          "field": "sentence_refs",
+          "old": [
+            "sent:tatoeba-229628"
+          ],
+          "new": []
+        }
+      ],
+      "why": "Same sentence as in desu-wa-02, same reason: 何 carries the question and the following paragraph glosses it (\"aquilo, o quê?\"). The sentence_build answer (あれ何) is unchanged.",
+      "alternative": "Same address ruling as row 1.",
+      "layer": "C",
+      "needs_review": true
+    },
+    {
+      "lesson": "les:n5-desu-wa-04",
+      "item": "vocab:2846738",
+      "tier": "same-level",
+      "introducer": "les:n5-conectando-01",
+      "decision": "drop-decorative",
+      "old_span": "\n\n<heading level=\"3\"><text>Mais exemplos</text></heading>\n<sentence ref=\"sent:tatoeba-1057336\" show=\"furigana\" mode=\"card\"/>\n<sentence ref=\"sent:tatoeba-4789\" show=\"furigana\" mode=\"card\"/>",
+      "new_span": "",
+      "exercise_edits": [],
+      "why": "Both なんで cards sit in a trailing 'Mais exemplos' block the body never discusses; the lesson's の question is already shown by the featured なぜ聞くの？. Removing both leaves the heading empty, so it goes too. Note: gram:gp-31 (unlocked here) has no chip or sentence left in the body, as before the cards it had none in prose either.",
+      "alternative": "Address ruling for なん (2846738) would keep the cards.",
+      "layer": "C",
+      "needs_review": true
+    },
+    {
+      "lesson": "les:n5-perguntas-04",
+      "item": "vocab:2846738",
+      "tier": "same-level",
+      "introducer": "les:n5-conectando-01",
+      "decision": "inline-gloss",
+      "old_span": "<sentence ref=\"sent:tatoeba-778974\" show=\"furigana\" mode=\"card\"/>",
+      "new_span": "<p><jp reading=\"なんで\">なんで？</jp><text> (\"Por quê?\", na conversa)</text></p>",
+      "exercise_edits": [
+        {
+          "exercise": "ex:n5-perguntas-04-2",
+          "field": "sentence_refs",
+          "old": [
+            "sent:tatoeba-778974"
+          ],
+          "new": []
+        },
+        {
+          "exercise": "ex:n5-perguntas-04-4",
+          "field": "sentence_refs",
+          "old": [
+            "sent:tatoeba-778974"
+          ],
+          "new": []
+        }
+      ],
+      "why": "The lesson teaches the three 'por quê' words, so なんで is essential. The next paragraph glosses it (なぜ e なんで traduzem o mesmo \"Por quê?\"). Card -> plain line; the two exercises keep なんで in their text and lose only the cite (ex-4's answer is a different sentence anyway).",
+      "alternative": "Address ruling: unlock なん (2846738) here, the lesson that also teaches gp-31; clears rows 4, 5, 9.",
+      "layer": "C",
+      "needs_review": true
+    },
+    {
+      "lesson": "les:n5-perguntas-06",
+      "item": "vocab:1189360",
+      "tier": "same-level",
+      "introducer": "les:n5-passado-05",
+      "decision": "inline-gloss",
+      "old_span": "<sentence ref=\"sent:gen-c737b9f8b9da\" show=\"furigana\" mode=\"featured\"/>",
+      "new_span": "<p><jp reading=\"コーヒーかおちゃかどちらがいいですか\">コーヒーか おちゃか どちらが いいですか</jp><text> (\"Café ou chá, qual você prefere?\")</text></p>",
+      "exercise_edits": [
+        {
+          "exercise": "ex:n5-perguntas-06-4",
+          "field": "sentence_refs",
+          "old": [
+            "sent:gen-c737b9f8b9da"
+          ],
+          "new": []
+        }
+      ],
+      "why": "どちら closes the choice and has no known synonym in the bank for this lesson (no gate-clean か～か sentence exists). The next paragraph glosses どちらが いいですか (\"qual você prefere?\"). Card -> plain line; the sentence_build pieces are unchanged.",
+      "alternative": "Homograph ruling on 何方/どちら (homograph_rulings.json) to unlock どちら here.",
+      "layer": "C",
+      "needs_review": true
+    },
+    {
+      "lesson": "les:n5-perguntas-06",
+      "item": "vocab:1577100",
+      "tier": "same-level",
+      "introducer": "les:n5-comparacoes-02",
+      "decision": "inline-gloss",
+      "old_span": "<sentence ref=\"sent:gen-54dd1d1ebf25\" show=\"furigana\" mode=\"featured\"/>",
+      "new_span": "<p><jp reading=\"なにかたべたいです\">何か食べたいです</jp><text> (\"Quero comer alguma coisa.\")</text></p>",
+      "also": [
+        {
+          "decision": "drop-decorative",
+          "old_span": "\n\n<heading level=\"3\"><text>Mais exemplos</text></heading>\n<sentence ref=\"sent:gen-532623825322\" show=\"furigana\" mode=\"card\"/>",
+          "new_span": ""
+        }
+      ],
+      "exercise_edits": [
+        {
+          "exercise": "ex:n5-perguntas-06-1",
+          "field": "sentence_refs",
+          "old": [
+            "sent:gen-54dd1d1ebf25"
+          ],
+          "new": []
+        }
+      ],
+      "why": "何か is the lesson's headline example, so the featured one stays as a glossed line (the list above and the paragraph after both gloss 何か). The second use is the lone 'Mais exemplos' card (かばんの中に何かありますか), decorative; it and its now-empty heading are dropped.",
+      "alternative": "Same address ruling as row 1.",
+      "layer": "C",
+      "needs_review": true
+    },
+    {
+      "lesson": "les:n5-numeros-tempo-03",
+      "item": "kanji:日",
+      "tier": "same-topic",
+      "introducer": "les:n5-numeros-tempo-05",
+      "decision": "inline-gloss",
+      "old_span": "<sentence ref=\"sent:tatoeba-122326\" show=\"furigana\" mode=\"featured\"/>",
+      "new_span": "<p><jp reading=\"にほんごをはなせるアメリカじんがたくさんいる\">日本語を話せるアメリカ人がたくさんいる。</jp><text> (\"Há muitos americanos que sabem falar japonês.\")</text></p>",
+      "exercise_edits": [],
+      "why": "日 only appears inside 日本語, which the paragraph before glosses (\"língua japonesa\"); the example is there for たくさん + いる with people, and no gate-clean たくさん sentence exists. Card -> plain line with furigana.",
+      "alternative": "R7 blocked moving 日 (last kanji unlock of les:n5-numeros-tempo-05).",
+      "layer": "C",
+      "needs_review": true
+    },
+    {
+      "lesson": "les:n5-particulas-lugar-03",
+      "item": "vocab:2846738",
+      "tier": "same-level",
+      "introducer": "les:n5-conectando-01",
+      "decision": "inline-gloss",
+      "old_span": "<sentence ref=\"sent:tatoeba-778974\" show=\"furigana\" mode=\"featured\"/>",
+      "new_span": "<p><jp reading=\"なんで\">なんで？</jp><text> (\"Por quê?\")</text></p>",
+      "also": [
+        {
+          "decision": "drop-decorative",
+          "old_span": "<sentence ref=\"sent:tatoeba-1057336\" show=\"furigana\" mode=\"card\"/>\n",
+          "new_span": ""
+        }
+      ],
+      "exercise_edits": [],
+      "why": "The featured なんで illustrates で inside a fixed expression and the next paragraph glosses it (なんで é \"por quê?\" bem casual); kept as a glossed line. The 'Mais exemplos' card でもなんで？ is decorative and is dropped; 125387 stays under that heading.",
+      "alternative": "Same なん address ruling as row 5.",
+      "layer": "C",
+      "needs_review": true
+    },
+    {
+      "lesson": "les:n5-particulas-lugar-08",
+      "item": "vocab:1577100",
+      "tier": "same-level",
+      "introducer": "les:n5-comparacoes-02",
+      "decision": "drop-decorative",
+      "old_span": "\n\n<heading level=\"3\"><text>Mais exemplos</text></heading>\n<sentence ref=\"sent:tatoeba-187788\" show=\"furigana\" mode=\"card\"/>\n<sentence ref=\"sent:tatoeba-139686\" show=\"furigana\" mode=\"card\"/>",
+      "new_span": "",
+      "exercise_edits": [],
+      "why": "Both cards (何とかしろ！, 何とか入れた。) sit in a trailing 'Mais exemplos' block; 何とか is an idiom the lesson never explains and neither card shows と as the lesson teaches it. No gate-clean と sentence to swap in, so the block and its heading go.",
+      "alternative": null,
+      "layer": "C",
+      "needs_review": true
+    },
+    {
+      "lesson": "les:n5-adjetivos-03",
+      "item": "vocab:1577100",
+      "tier": "same-level",
+      "introducer": "les:n5-comparacoes-02",
+      "decision": "drop-decorative",
+      "old_span": "<sentence ref=\"sent:tatoeba-158129\" show=\"furigana\" mode=\"card\"/>\n",
+      "new_span": "",
+      "exercise_edits": [],
+      "why": "A supporting card after a paragraph that already shows 食べたい -> 食べたくない in prose; the next paragraph ('Mais um do mesmo tipo') still follows naturally and keeps its own card (行きたくない).",
+      "alternative": null,
+      "layer": "C",
+      "needs_review": true
+    },
+    {
+      "lesson": "les:n4-forma-simples-01",
+      "item": "vocab:1483070",
+      "tier": "same-level",
+      "introducer": "les:n4-oracoes-relativas-01",
+      "decision": "inline-gloss",
+      "old_span": "<sentence ref=\"sent:gen-a57fa0b2f6c3\" show=\"furigana\" mode=\"card\"/>",
+      "new_span": "<p><jp reading=\"かれはもうきたかな\">彼はもう来たかな</jp><text> (\"Será que ele já chegou?\"; </text><jp reading=\"かれ\">彼</jp><text> = \"ele\")</text></p>",
+      "exercise_edits": [
+        {
+          "exercise": "ex:n4-forma-simples-01-2",
+          "field": "sentence_refs",
+          "old": [
+            "sent:gen-a57fa0b2f6c3"
+          ],
+          "new": []
+        }
+      ],
+      "why": "彼 is only the subject; the example is about 来た + かな. The bank has no other gate-clean かな sentence for this lesson, so the line keeps the sentence and glosses 彼 inline. The recognition exercise keeps its prompt and loses the cite.",
+      "alternative": "apply_missing_homograph_unlocks.py hardcodes 彼/かれ at les:n4-oracoes-relativas-01; moving that add here clears rows 12 and 13.",
+      "layer": "C",
+      "needs_review": true
+    },
+    {
+      "lesson": "les:n4-forma-simples-05",
+      "item": "vocab:1483070",
+      "tier": "same-level",
+      "introducer": "les:n4-oracoes-relativas-01",
+      "decision": "inline-gloss",
+      "old_span": "<sentence ref=\"sent:tatoeba-105626\" show=\"furigana\" mode=\"featured\"/>",
+      "new_span": "<p><jp reading=\"かれはわたしよりねんしょうだ\">彼は私より年少だ。</jp><text> (\"Ele é mais novo do que eu.\"; </text><jp reading=\"かれ\">彼</jp><text> = \"ele\")</text></p>",
+      "exercise_edits": [
+        {
+          "exercise": "ex:n4-forma-simples-05-1",
+          "field": "sentence_refs",
+          "old": [
+            "sent:tatoeba-105626"
+          ],
+          "new": []
+        }
+      ],
+      "why": "The paragraph after and exercise 1 are built on this exact sentence (私より, 年少), so a swap would rewrite both. Minimum: a plain line that glosses 彼, the one word the paragraph does not explain.",
+      "alternative": "Same 彼 unlock move as row 12; or re-select tatoeba-79991 (目が口よりものを言う時がある, gate-clean) with a rewritten paragraph.",
+      "layer": "C",
+      "needs_review": true
+    },
+    {
+      "lesson": "les:n4-condicionais-04",
+      "item": "gram:nasaru",
+      "tier": "same-level",
+      "introducer": "les:n4-keigo-03",
+      "decision": "inline-gloss",
+      "old_span": "<sentence ref=\"sent:tatoeba-193408\" show=\"furigana\" mode=\"featured\"/>",
+      "new_span": "<p><jp reading=\"もしこられたらきなさい\">もし来られたら来なさい。</jp><text> (\"Se puder vir, venha.\"; </text><jp reading=\"きなさい\">来なさい</jp><text> é um \"venha\" em tom de orientação, de pai ou professor)</text></p>",
+      "exercise_edits": [
+        {
+          "exercise": "ex:n4-condicionais-04-1",
+          "field": "sentence_refs",
+          "old": [
+            "sent:tatoeba-193408"
+          ],
+          "new": []
+        }
+      ],
+      "why": "gram:nasaru is owner-HELD at les:n4-keigo-03. The next paragraph explains もし and 来られたら but not 来なさい, so the gloss names it. The recognition exercise quotes もし雨なら行きません, not this sentence.",
+      "alternative": "Re-select sent:gen-40a736aa4ac8 (もしあした雨なら行きません, gate-clean, matches ex-1's own example) and rewrite the next paragraph around 雨なら; AI-generated, so needs_review.",
+      "layer": "C",
+      "needs_review": true
+    },
+    {
+      "lesson": "les:n3-tempo-02",
+      "item": "vocab:1445150",
+      "tier": "same-level",
+      "introducer": "les:n3-conjectura-05",
+      "decision": "drop-decorative",
+      "old_span": "<sentence ref=\"sent:tatoeba-11022968\" show=\"furigana\" mode=\"card\"/>\n",
+      "new_span": "",
+      "exercise_edits": [],
+      "why": "A trailing card after the exercise block, not discussed in prose; たびに is explained and practised throughout the lesson (9 mentions). 10914932 stays.",
+      "alternative": "Address ruling for たび (1445150) to unlock it here, next to gram:n3-tabi-ni.",
+      "layer": "C",
+      "needs_review": true
+    }
+  ],
+  "counts": {
+    "rows": 15,
+    "by_decision": {
+      "inline-gloss": 11,
+      "drop-decorative": 4,
+      "swap-synonym": 0
+    },
+    "extra_drops_inside_gloss_rows": 2,
+    "exercise_cites_dropped": 11,
+    "c5_uses_before": {
+      "same-topic": 1,
+      "same-level": 14,
+      "cross-level": 160
+    },
+    "c5_uses_after_simulated": {
+      "same-topic": 0,
+      "same-level": 0,
+      "cross-level": 152
+    },
+    "lessons_touched": 13
+  },
+  "method": "Residue listed by running the gating validator's C5 logic (derive_needs.lesson_references over the exported course, introducer = first lesson whose unlocks carry the ref) on the tree at HEAD f34ef379+97550c2a: 1 same-topic + 14 same-level (lesson, item) uses, matching the frozen baseline. Every use comes from a <sentence ref> (body card, and for 8 rows also exercise sentence_refs); none from a chip or a reading. For each row the bank was searched for a replacement sentence whose every introduced ref is unlocked at or before the lesson (by grammar tag and by surface pattern); none fit without rewriting the surrounding prose, so no row is a swap. Decorative uses (trailing 'Mais exemplos' cards, supporting cards the prose already covers) are dropped, with a heading that would be left empty. Where the item is essential to the example, the <sentence> card becomes a plain <p><jp reading>...</jp> line with the sentence's own pt-BR translation and, where the surrounding prose does not already gloss the item, an inline gloss. Raw <jp> is text, not a reference (derive_needs measures it as an annex channel that C5 does not count). Cost of a gloss row: the card loses its tap-to-dissect tokens and audio. Exercise sentence_refs that cite the same sentence are provenance only (validate_sentence_manifest rule 4 is retired); they are emptied. Lesson sentence_refs is derived from the body at export, so it is not edited. Proof (scratch build.py): every old_span occurs exactly once in both the HEAD source body (research/derived/lessons/<slug>.json) and the exported body, every exercise edit matches its current value, and applying all rows in memory drops C5 same-topic/same-level to 0/0 with zero new forward uses in any tier (cross-level 160 -> 152 as a side effect: the removed cards also carried 8 cross-level refs). 12 rows are table-locked items (何/なに, なん, どちら, 彼, たび); `alternative` names the address/homograph ruling that would fix them without touching prose. Apply must re-run validate_practice_coverage (exercise cites feed its target surfaces) and lower the C5 baseline with --write-baseline."
+}

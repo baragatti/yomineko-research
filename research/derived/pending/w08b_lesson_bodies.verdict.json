@@ -1,0 +1,112 @@
+{
+ "what_this_is": "Adversarial verification of research/derived/pending/w08b_lesson_bodies.json (18 lesson-body edits over 8 lessons). Checks: (1) old_span occurs exactly once in the post-merge body, in row order; (2) no fact or example lost; (3) the new text teaches one point and is correct about Japanese (inherited errors refuted too); (4) natural pt-BR, no em/en dash; (5) markup valid per design/lesson_schema.md (LessonParser).",
+ "verified": "2026-09-23",
+ "key_format": "'<lesson>|<old_span>' (the row's lesson plus its exact old_span); 'row' is the index in rows[] for reading only.",
+ "inputs_confirmed": "All eight bodies at git HEAD 97550c2a are byte-identical to the working tree and to the DB localized_text(lesson, body, pt-BR) (snapshot). Post-merge bodies rebuilt with the exact migrate_grammar_merge.plan_lesson_bodies rewrite (ref= and item-ref= loser -> survivor, all eight pairs). Every old_span occurs exactly once, sequentially, per lesson; survivor ref counts before/after match the input's counts.per_lesson; no loser key in any span; LessonParser reports zero errors on all eight edited bodies (with both corrections applied).",
+ "summary": {
+  "checked": 18,
+  "ok": 16,
+  "corrected": 2,
+  "rejected": 0
+ },
+ "verdicts": {
+  "les:n4-forma-simples-03|<p><text>O mesmo recurso serve para </text><text weight=\"bold\">quantidades</text><text>, e isso é tão comum que tem até um nome próprio, </text><grammar ref=\"gram:gp-118\"/><text>. Você gruda </text>": {
+   "row": 0,
+   "pair": "U1",
+   "ok": true
+  },
+  "les:n4-forma-simples-03|<check item-ref=\"gram:gp-118\"><text>Sei dizer \"só / apenas\" com しか e o verbo no negativo.</text></check>\n <check item-ref=\"gram:gp-118\"><text>Aplico しか〜ない a números e quantidades (千円しかない).</text></check>": {
+   "row": 1,
+   "pair": "U1",
+   "ok": true
+  },
+  "les:n5-adjetivos-07|<grammar ref=\"gram:no-ga-jouzu\"/><text>, registrada também como </text><grammar ref=\"gram:no-ga-jouzu\"/><text>, segue a mesma fórmula": {
+   "row": 2,
+   "pair": "D2",
+   "ok": true
+  },
+  "les:n5-adjetivos-07|<check item-ref=\"gram:no-ga-jouzu\"><text>Consigo dizer que alguém é bom em uma atividade com 〜のが上手です.</text></check>\n <check item-ref=\"gram:no-ga-jouzu\"><text>Sei trocar 上手 por 下手 para dizer que alguém é ruim em algo, e que 上手 é para elogiar os outros.</text></check>": {
+   "row": 3,
+   "pair": "D2",
+   "ok": false,
+   "problem": "(2)/(3) The merged row shortened 'para dizer que alguém é ruim em algo' to 'para dizer que é ruim', which drops what 下手 is about (a person's lack of skill AT something) and reads as 'to say that it is bad', i.e. the activity; 下手 is 'sem jeito, ruim em', not 'ruim' in quality. Fix restores the original clause verbatim; the other two facts and the single row are kept.",
+   "corrected": "<check item-ref=\"gram:no-ga-jouzu\"><text>Consigo dizer que alguém é bom em uma atividade com 〜のが上手です, sei trocar 上手 por 下手 para dizer que alguém é ruim em algo e lembro que 上手 é para elogiar os outros.</text></check>"
+  },
+  "les:n5-comparacoes-01|e treinar os quatro moldes mais comuns.": {
+   "row": 4,
+   "pair": "D4",
+   "ok": true
+  },
+  "les:n5-comparacoes-01|<heading level=\"3\"><text>Quatro moldes, três ordens</text></heading>\n<p><text>Quatro moldes cobrem \"A é mais X que B\", mas em apenas três ordens: o segundo e o quarto repetem a mesma ordem, com usos diferentes. Guarde-os como um só conjunto.": {
+   "row": 5,
+   "pair": "D4",
+   "ok": true
+  },
+  "les:n5-comparacoes-01| <item><text weight=\"bold\">より…のほうが</text><text> (</text><grammar ref=\"gram:yori-hou-ga\"/><text>): começa pelo \"do que\". </text><jp reading=\"ばすよりでんしゃのほうがはやい\">バスより電車のほうが速い</jp><text>.</text></item>\n <item><text weight=\"bold\">のほうが…より</text><text> (</text><grammar ref=\"gram:gp-140\"/><text>): começa pelo lado que ganha. </text><jp reading=\"でんしゃのほうがばすよりはやい\">電車のほうがバスより速い</jp><text>.</text></item>\n <item><text weight=\"bold\">より…のほうが, agora para preferir</text><text> (</text><grammar ref=\"gram:yori-hou-ga\"/><text>): a mesma ordem do segundo item, agora com sentido de escolha, \"prefiro B a A\". </text><jp reading=\"でんしゃよりばすのほうがやすい\">電車よりバスのほうが安い</jp><text> = \"O ônibus é mais barato que o trem.\"</text></item>": {
+   "row": 6,
+   "pair": "D4",
+   "ok": false,
+   "problem": "(3) Carried from gp-47's list entry but now stated outright: 'A mesma ordem também expressa escolha, \"prefiro B a A\":' introduces 電車よりバスのほうが安い as the preference example, and its own gloss ('O ônibus é mais barato que o trem') is a plain comparison, not a preference. より…のほうが says 'prefiro B a A' only when it ends in 好き or いい (gp-47's own record example was コーヒーよりお茶のほうが好きです). Fix names 好き/いい as the preference ending (both already in the cumulative known set at this lesson) and keeps the 安い sentence as the plain comparison it is. No example or fact dropped; the gp-140 entry is untouched.",
+   "corrected": " <item><text weight=\"bold\">より…のほうが</text><text> (</text><grammar ref=\"gram:yori-hou-ga\"/><text>): começa pelo \"do que\". </text><jp reading=\"ばすよりでんしゃのほうがはやい\">バスより電車のほうが速い</jp><text>. A mesma ordem também expressa preferência, \"prefiro B a A\", quando termina em </text><jp reading=\"すき\">好き</jp><text> ou </text><jp>いい</jp><text>. Com outro adjetivo, ela só diz em que B ganha: </text><jp reading=\"でんしゃよりばすのほうがやすい\">電車よりバスのほうが安い</jp><text> = \"O ônibus é mais barato que o trem.\"</text></item>\n <item><text weight=\"bold\">のほうが…より</text><text> (</text><grammar ref=\"gram:gp-140\"/><text>): começa pelo lado que ganha. </text><jp reading=\"でんしゃのほうがばすよりはやい\">電車のほうがバスより速い</jp><text>.</text></item>"
+  },
+  "les:n5-comparacoes-01|<check item-ref=\"gram:yori-hou-ga\"><text>Marco o termo \"do que\" com より e o lado que ganha com のほうが.</text></check>\n <check item-ref=\"gram:wa-yori-desu\"><text>Monto a comparação polida は…より…です.</text></check>\n <check item-ref=\"gram:gp-140\"><text>Sei inverter os blocos (のほうが…より) sem mudar o sentido.</text></check>\n <check item-ref=\"gram:yori-hou-ga\"><text>Uso より…のほうが para dizer \"B é mais / prefiro B\".</text></check>": {
+   "row": 7,
+   "pair": "D4",
+   "ok": true
+  },
+  "les:n4-suposicao-04|<text> algo é, usamos </text><grammar ref=\"gram:gp-77\"/><text>. Ela modifica um verbo ou um adjetivo": {
+   "row": 8,
+   "pair": "D5",
+   "ok": true
+  },
+  "les:n4-suposicao-04|<check item-ref=\"gram:gp-77\"><text>Sei que のよう é a versão formal/escrita de みたい (mesma comparação, tom mais sério).</text></check>\n <check item-ref=\"gram:gp-153\"><text>Uso 〜のような antes de substantivo (qualifica: \"um... como\").</text></check>\n <check item-ref=\"gram:gp-77\"><text>Uso 〜のように antes de verbo/adjetivo (modo: \"do jeito que / como\").</text></check>": {
+   "row": 9,
+   "pair": "D5",
+   "ok": true
+  },
+  "les:n4-condicionais-01|<check item-ref=\"gram:tara\"><text>Sei formar 〜たら: pego a forma de passado casual (た) e acrescento ら.</text></check>\n <check item-ref=\"gram:tara\"><text>Uso 〜たら tanto para \"se\" (hipótese) quanto para \"quando / depois que\" (sequência no tempo).</text></check>": {
+   "row": 10,
+   "pair": "D6",
+   "ok": true
+  },
+  "les:n4-aspecto-03|<text> quase sempre vira </text><grammar ref=\"gram:te-shimau-chau\"/><text>. A regra é mecânica:</text>": {
+   "row": 11,
+   "pair": "D7",
+   "ok": true
+  },
+  "les:n4-aspecto-03|<check item-ref=\"gram:te-shimau-chau\"><text>Reconheço os dois sentidos de 〜てしまう: concluir de vez e fazer sem querer.</text></check>\n <check item-ref=\"gram:te-shimau-chau\"><text>Sei que na fala 〜てしまう vira 〜ちゃう e 〜でしまう vira 〜じゃう.</text></check>": {
+   "row": 12,
+   "pair": "D7",
+   "ok": true
+  },
+  "les:n5-desu-wa-03|<text>, troque a cópula afirmativa pela negativa. A forma casual é </text><grammar ref=\"gram:janai-dewa-nai\"/><text>; a forma completa e mais formal é </text><grammar ref=\"gram:janai-dewa-nai\"/><text>. As três opções": {
+   "row": 13,
+   "pair": "D8",
+   "ok": true
+  },
+  "les:n5-desu-wa-03|<check item-ref=\"gram:janai-dewa-nai\"><text>Sei negar de forma casual com じゃない.</text></check>\n <check item-ref=\"gram:janai-dewa-nai\"><text>Sei a diferença entre じゃない (casual) e ではない・ではありません (formal/polido).</text></check>": {
+   "row": 14,
+   "pair": "D8",
+   "ok": true
+  },
+  "les:n3-causa-04|, o japonês tem </text><grammar ref=\"gram:n3-da-mono-da\"/><text> e sua variante mais falada </text><grammar ref=\"gram:n3-da-mono-da\"/><text>. Pense": {
+   "row": 15,
+   "pair": "D10",
+   "ok": true
+  },
+  "les:n3-causa-04|<p><text>O </text><grammar ref=\"gram:n3-da-mono-da\"/><text> é a mesma ideia, só que </text>": {
+   "row": 16,
+   "pair": "D10",
+   "ok": true
+  },
+  "les:n3-causa-04|<check><text>Sei justificar algo de forma emotiva com ～(ん)だもの.</text></check>\n <check><text>Uso a variante coloquial ～んだもん na fala íntima.</text></check>": {
+   "row": 17,
+   "pair": "D10",
+   "ok": true
+  }
+ },
+ "found_not_in_scope": [
+  "les:n5-comparacoes-01, the lead right after row 5's span: 'Repare que, em todos, より continua colado no termo menor e のほうが no lado que ganha' is false for the first mold は…より…です, which has no のほうが (pre-existing; outside every old_span, so not editable by this table).",
+  "les:n5-comparacoes-01 still says 'o japonês não tem uma palavra solta para \"mais\"' (the より paragraph) and 'não há um \"mais\" avulso' (checklist): the same claim w08b_merges.verdict.json refuted in yori-hou-ga#nuance (もっと is N5; the comparative just does not NEED it). Pre-existing, not in W08b's spans."
+ ]
+}

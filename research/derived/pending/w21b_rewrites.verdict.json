@@ -1,0 +1,105 @@
+{
+  "les:n5-desu-wa-02|<sentence ref=\"sent:tatoeba-229628\" show=\"furigana\" mode=\"featured\"/>": {
+    "lesson": "les:n5-desu-wa-02",
+    "item": "vocab:1577100",
+    "ok": true,
+    "note": "old_span unique in source and export; あれ何？ gate: only 何 (the forward item) unknown, glossed by the next paragraph (何 quer dizer \"o quê\"); reading なに correct here. Side effect: kanji:何, moved here by W21b because this card was its first user, loses its only addressed use, but the lesson still teaches it in prose and ex-3's answer あれ何？ keeps it practised (practice coverage unchanged on the HEAD fixture)."
+  },
+  "les:n5-desu-wa-03|<sentence ref=\"sent:tatoeba-536769\" show=\"furigana\" mode=\"featured\"/>": {
+    "lesson": "les:n5-desu-wa-03",
+    "item": "kanji:大",
+    "ok": false,
+    "problem": "Exercise edit breaks practice coverage. Emptying ex:n5-desu-wa-03-3 sentence_refs removes the only practice credit for two own unlocks, vocab:1502390 もの and vocab:1529520 ない, both moved INTO this lesson by W21b (f34ef379) because tatoeba-536769 was their first user. Replayed on a HEAD fixture, validate_practice_coverage FAILS (n5 vocab absent grows). After the rewrite neither word has an addressed use left in the lesson, so it would enroll SRS cards for words it only prints raw. The span itself is fine: 大 and 大した (vocab:1412960, N3, not in the known set) are glossed by the next paragraph. Fix needs an owner call: keep the ex-3 cite (leaves a same-level C5 exercise-sentence use of kanji:大), or move もの back to les:n5-rotina-01 and ない to les:n5-passado-02 (their first addressed users after the rewrite). Re-prove known sets and readings first, because a later home shrinks the known set of every lesson in between."
+  },
+  "les:n5-desu-wa-03|<sentence ref=\"sent:tatoeba-229628\" show=\"furigana\" mode=\"featured\"/>": {
+    "lesson": "les:n5-desu-wa-03",
+    "item": "vocab:1577100",
+    "ok": true,
+    "note": "old_span unique; only 何 unknown, glossed by the line's translation and the next paragraph (Literalmente \"aquilo, o quê?\"). Removing ex-5's cite changes no practice count."
+  },
+  "les:n5-desu-wa-04|\n\n<heading level=\"3\"><text>Mais exemplos</text></heading>\n<sentence ref=\"sent:tatoeba-1057336\" show=\"furigana\" mode=\"card\"/>\n<sentence ref=\"sent:tatoeba-4789\" show=\"furigana\" mode=\"card\"/>": {
+    "lesson": "les:n5-desu-wa-04",
+    "item": "vocab:2846738",
+    "ok": false,
+    "problem": "Orphans gram:gp-31. W21b moved its unlock into les:n5-desu-wa-04 only because these two cards were its first users. With both dropped (and row 9 removing the particulas-lugar-03 uses), desu-wa-04 would enroll an SRS card for なんで in a lesson that never shows it: no chip, no sentence, no raw text, no exercise. The row notes this but leaves it. Fix: return the gp-31 unlock to les:n5-perguntas-04, its pre-W21b home. That lesson teaches it with chips and becomes its first addressed user once rows 4 and 9 land, so no forward use is created. Also delete any pending-drill entry for (desu-wa-04, gp-31). The drop itself is clean: the heading would be empty, and the featured なぜ聞くの？ (tatoeba-1596597) remains."
+  },
+  "les:n5-perguntas-04|<sentence ref=\"sent:tatoeba-778974\" show=\"furigana\" mode=\"card\"/>": {
+    "lesson": "les:n5-perguntas-04",
+    "item": "vocab:2846738",
+    "ok": true,
+    "note": "なんで？ passes the gate (kana-only carve-out); the next paragraph glosses it. The two cite removals change no practice count (ex-4's answer is a different sentence)."
+  },
+  "les:n5-perguntas-06|<sentence ref=\"sent:gen-c737b9f8b9da\" show=\"furigana\" mode=\"featured\"/>": {
+    "lesson": "les:n5-perguntas-06",
+    "item": "vocab:1189360",
+    "ok": false,
+    "problem": "Exercise edit breaks practice coverage. Emptying ex:n5-perguntas-06-4 sentence_refs removes the only practice credit for own unlock vocab:2820690 いい, which W21b moved here because gen-c737b9f8b9da was its first user. The sentence_build answer いいですか is kana-only, and without the cited dissection the tiler does not credit it. validate_practice_coverage FAILS on the HEAD fixture, and after the rewrite いい has no addressed use left in the lesson. The span itself is fine: どちら is glossed by the next paragraph and the rest of the line is known. Fix needs an owner call: the 何方/どちら homograph ruling (the row's own alternative) keeps the card and the cite; otherwise move いい's unlock to les:n5-passado-04 (its first addressed user after the rewrite) and re-prove known sets and readings."
+  },
+  "les:n5-perguntas-06|<sentence ref=\"sent:gen-54dd1d1ebf25\" show=\"furigana\" mode=\"featured\"/>": {
+    "lesson": "les:n5-perguntas-06",
+    "item": "vocab:1577100",
+    "ok": false,
+    "problem": "Exercise edit breaks practice for the lesson's headline grammar. Emptying ex:n5-perguntas-06-1 sentence_refs removes the only practice credit for gram:gp-48 (the 何か indefinite, this lesson's own point, unlocked here before W21b), kanji:食 and vocab:1358280 食べる. W21b moved the last two here because gen-54dd1d1ebf25 was their first user. validate_practice_coverage FAILS on the HEAD fixture (n5 grammar absent 16->17, kanji 0->1, vocab grows). ex-1 is literally the 何か exercise, so leaving gp-48 unpractised is a real pedagogy regression. The main span and the also-drop (かばんの中に何かありますか, heading) are fine. Fix needs an owner call: the なに address ruling (row 1's alternative) keeps the card and the cite; otherwise re-author ex-1 around a gate-clean gp-48 sentence (誰か/どこか) and cite it, and decide where 食/食べる live (their first addressed user after the rewrite is les:n5-numeros-tempo-03)."
+  },
+  "les:n5-numeros-tempo-03|<sentence ref=\"sent:tatoeba-122326\" show=\"furigana\" mode=\"featured\"/>": {
+    "lesson": "les:n5-numeros-tempo-03",
+    "item": "kanji:日",
+    "ok": false,
+    "problem": "Unflagged side effect. W21b moved kanji:話 and kanji:語 INTO this lesson because tatoeba-122326 was their first user, and this card was their only addressed use here (no chip, no exercise answer). With a plain line the lesson would enroll both kanji as SRS cards without ever addressing them. Everything else passes: old_span is unique, 日 is glossed through 日本語 in the paragraph before, every other kanji is known, and 日本語/話せる/アメリカ人 are glossed in prose. The corrected span keeps the plain line and adds chips for the two own unlocks inside the gloss (the same '; X = ...' pattern as rows 12 and 13). Replayed on the HEAD fixture it parses, check B has 0 FAIL and C5 is unchanged.",
+    "corrected": {
+      "old_span": "<sentence ref=\"sent:tatoeba-122326\" show=\"furigana\" mode=\"featured\"/>",
+      "new_span": "<p><jp reading=\"にほんごをはなせるアメリカじんがたくさんいる\">日本語を話せるアメリカ人がたくさんいる。</jp><text> (\"Há muitos americanos que sabem falar japonês.\"; </text><kanji ref=\"kanji:話\"/><text> = \"falar\", </text><kanji ref=\"kanji:語\"/><text> = \"língua\")</text></p>",
+      "exercise_edits": []
+    }
+  },
+  "les:n5-particulas-lugar-03|<sentence ref=\"sent:tatoeba-778974\" show=\"furigana\" mode=\"featured\"/>": {
+    "lesson": "les:n5-particulas-lugar-03",
+    "item": "vocab:2846738",
+    "ok": true,
+    "note": "Both spans are unique. なんで stays as a glossed line (the next paragraph glosses it), 'duas' expressions still hold, and 'Mais exemplos' keeps tatoeba-125387."
+  },
+  "les:n5-particulas-lugar-08|\n\n<heading level=\"3\"><text>Mais exemplos</text></heading>\n<sentence ref=\"sent:tatoeba-187788\" show=\"furigana\" mode=\"card\"/>\n<sentence ref=\"sent:tatoeba-139686\" show=\"furigana\" mode=\"card\"/>": {
+    "lesson": "les:n5-particulas-lugar-08",
+    "item": "vocab:1577100",
+    "ok": true,
+    "note": "The whole trailing block goes and nothing in the prose points at it. The removed refs were forward uses only (何とか N3, gp-127 N4, する N4); no own unlock is orphaned."
+  },
+  "les:n5-adjetivos-03|<sentence ref=\"sent:tatoeba-158129\" show=\"furigana\" mode=\"card\"/>\n": {
+    "lesson": "les:n5-adjetivos-03",
+    "item": "vocab:1577100",
+    "ok": true,
+    "note": "The prose already shows 食べたい -> 食べたくない and 'Mais um do mesmo tipo' still follows. No own unlock or practice is lost."
+  },
+  "les:n4-forma-simples-01|<sentence ref=\"sent:gen-a57fa0b2f6c3\" show=\"furigana\" mode=\"card\"/>": {
+    "lesson": "les:n4-forma-simples-01",
+    "item": "vocab:1483070",
+    "ok": true,
+    "note": "Only 彼 is unknown (kanji:彼 is cross-level, introduced at les:n3-conectores-03; vocab:1483070 is same-level). The inline gloss かれ = \"ele\" covers both. The generated jp keeps no 。 and the translation matches the bank."
+  },
+  "les:n4-forma-simples-05|<sentence ref=\"sent:tatoeba-105626\" show=\"furigana\" mode=\"featured\"/>": {
+    "lesson": "les:n4-forma-simples-05",
+    "item": "vocab:1483070",
+    "ok": true,
+    "note": "彼 is glossed inline. 年少 has no registry record but the next paragraph glosses it (\"mais jovem\"). Removing ex-1's cite changes no practice count."
+  },
+  "les:n4-condicionais-04|<sentence ref=\"sent:tatoeba-193408\" show=\"furigana\" mode=\"featured\"/>": {
+    "lesson": "les:n4-condicionais-04",
+    "item": "gram:nasaru",
+    "ok": true,
+    "note": "The gate is clean (なさい is a grammar tag, not vocab), and 来なさい gets the only gloss the next paragraph lacked. The gloss is accurate for 〜なさい (a command from someone with authority)."
+  },
+  "les:n3-tempo-02|<sentence ref=\"sent:tatoeba-11022968\" show=\"furigana\" mode=\"card\"/>\n": {
+    "lesson": "les:n3-tempo-02",
+    "item": "vocab:1445150",
+    "ok": true,
+    "note": "A trailing card that the prose never discusses. tatoeba-10914932 stays, and たびに is still taught and practised elsewhere in the lesson."
+  },
+  "summary": {
+    "checked": 15,
+    "ok": 10,
+    "corrected": 1,
+    "rejected": 4,
+    "key": "lesson + '|' + the row's primary old_span, verbatim",
+    "note": "Every old_span (and each 'also' span) occurs exactly once in both the HEAD source (research/derived/lessons) and the HEAD export, and all 11 exercise edits match current values in both. Replaying all 15 rows on a HEAD fixture confirms C5 same-topic/same-level 1/14 -> 0/0 and cross-level 160 -> 152, with no markup errors. The same replay shows two consequences the method does not mention: (1) validate_practice_coverage FAILS with 6 new absents (desu-wa-03 もの/ない; perguntas-06 gp-48/食/食べる/いい), all caused by emptying exercise cites in rows 2, 6 and 7; (2) C4 FAILS 3x until needs[] is re-derived (perguntas-06, particulas-lugar-03, desu-wa-03 note). Several unlocks that W21b moved to these lessons as 'first user' lose that user (rows 1, 2, 4, 6, 7, 8)."
+  }
+}

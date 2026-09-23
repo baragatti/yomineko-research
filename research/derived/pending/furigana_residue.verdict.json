@@ -1,0 +1,692 @@
+{
+  "what_this_is": "Adversarial verification of research/derived/pending/furigana_residue.json: all 208 decided rows and the 9 undecided rows. Each span was read in its lesson body at git HEAD (every occurrence), checked against the lesson's own printed kana, exercises and bank-sentence kana, the vocab/kanji registries, and kanjialive radical data (ka_data.csv). Radical names were held to the conventional name for the position the prose describes.",
+  "verified": "2026-09-23",
+  "key": "<lesson slug>|<span surface>, the row's stable identity in the input file (rows and undecided together).",
+  "layer": "C",
+  "needs_review": true,
+  "summary": {
+    "checked": 217,
+    "ok": 207,
+    "corrected": 9,
+    "rejected": 1,
+    "note": "One decided row is wrong: 夂 under 夏 is なつあし, not のまた. Eight of the nine undecided rows are settled here; two of them (何 in n4-condicionais-08, 人 in n5-numeros-tempo-02) need a reading per occurrence, so `corrected` is a list in document order and the apply must key them by occurrence. 来 in n5-verbos-03 is rejected: it should be exempt from furigana. Confirmed by data: kanji-exame readings match the lessons' exercises (乗 の, 低 ひく, 働 はたら, 合 あい, 太 ふと, 好 す, 引 ひ, 暗 くら, 民 みん, 産 さん, 短 みじか, 軽 かる, 進 すす, 門 もん, 古 ふる, 多 おお, 安 やす, 社 しゃ, 立 た, 言 い, 買 か, 飲 の); bank kana confirm 開きそうにない/開く ひらく, 一千万円 いっせんまんえん, 一年前くらい前に, 来たことがあるの きた; kanjialive confirms 巾 はば (市) and かねへん (銀). READING_OK accepts the space, 〜 and ？ carried by 各 の 駅, 〜の中で and 明日の予定は？."
+  },
+  "verdicts": {
+    "les:n3-conectores-01|その上": {
+      "ok": true
+    },
+    "les:n3-conectores-01|宀": {
+      "ok": true
+    },
+    "les:n3-conectores-01|安": {
+      "ok": true
+    },
+    "les:n3-conectores-03|宀": {
+      "ok": true
+    },
+    "les:n3-conectores-03|息": {
+      "ok": true
+    },
+    "les:n3-conectores-03|氵": {
+      "ok": true
+    },
+    "les:n3-conectores-03|門": {
+      "ok": true
+    },
+    "les:n3-estado-01|亻": {
+      "ok": true
+    },
+    "les:n3-estado-01|氵": {
+      "ok": true
+    },
+    "les:n3-estado-01|直": {
+      "ok": true
+    },
+    "les:n3-estado-01|立": {
+      "ok": true
+    },
+    "les:n3-estado-01|罒": {
+      "ok": true
+    },
+    "les:n3-estado-01|辶": {
+      "ok": true
+    },
+    "les:n3-estado-02|亻": {
+      "ok": true
+    },
+    "les:n3-estado-02|攵": {
+      "ok": true
+    },
+    "les:n3-estado-03|亻": {
+      "ok": true
+    },
+    "les:n3-estado-03|刂": {
+      "ok": true
+    },
+    "les:n3-estado-03|彳": {
+      "ok": true
+    },
+    "les:n3-estado-04|亻": {
+      "ok": true
+    },
+    "les:n3-estado-04|言": {
+      "ok": true
+    },
+    "les:n3-deveres-01|禾": {
+      "ok": true
+    },
+    "les:n3-deveres-01|艹": {
+      "ok": true
+    },
+    "les:n3-deveres-01|頁": {
+      "ok": true
+    },
+    "les:n3-deveres-02|宀": {
+      "ok": true
+    },
+    "les:n3-deveres-02|艹": {
+      "ok": true
+    },
+    "les:n3-deveres-02|辶": {
+      "ok": true
+    },
+    "les:n3-deveres-03|氵": {
+      "ok": true
+    },
+    "les:n3-deveres-03|礻": {
+      "ok": true
+    },
+    "les:n3-deveres-03|艹": {
+      "ok": true
+    },
+    "les:n3-desejos-02|亻": {
+      "ok": true
+    },
+    "les:n3-desejos-02|直": {
+      "ok": true
+    },
+    "les:n3-desejos-02|言": {
+      "ok": true
+    },
+    "les:n3-desejos-02|金": {
+      "ok": true
+    },
+    "les:n3-desejos-03|亻": {
+      "ok": true
+    },
+    "les:n3-desejos-03|示": {
+      "ok": true
+    },
+    "les:n3-desejos-04|師": {
+      "ok": true
+    },
+    "les:n3-desejos-04|氵": {
+      "ok": true
+    },
+    "les:n3-enfase-01|冫": {
+      "ok": true
+    },
+    "les:n3-enfase-02|入": {
+      "ok": true
+    },
+    "les:n3-enfase-02|辶": {
+      "ok": true
+    },
+    "les:n3-enfase-02|頁": {
+      "ok": true
+    },
+    "les:n3-enfase-03|宀": {
+      "ok": true
+    },
+    "les:n3-enfase-03|灬": {
+      "ok": true
+    },
+    "les:n3-enfase-03|艹": {
+      "ok": true
+    },
+    "les:n3-enfase-04|扌": {
+      "ok": true
+    },
+    "les:n3-enfase-04|諺": {
+      "ok": true
+    },
+    "les:n3-concessao-01|亻": {
+      "ok": true
+    },
+    "les:n3-concessao-01|扌": {
+      "ok": true
+    },
+    "les:n3-concessao-02|扌": {
+      "ok": true
+    },
+    "les:n3-concessao-02|罒": {
+      "ok": true
+    },
+    "les:n3-concessao-03|氵": {
+      "ok": true
+    },
+    "les:n3-concessao-03|辶": {
+      "ok": true
+    },
+    "les:n3-conjectura-01|夕": {
+      "ok": true
+    },
+    "les:n3-conjectura-01|頁": {
+      "ok": true
+    },
+    "les:n3-conjectura-02|支": {
+      "ok": true
+    },
+    "les:n3-relato-01|日": {
+      "ok": true
+    },
+    "les:n3-relato-02|ように言う": {
+      "ok": true
+    },
+    "les:n3-relato-02|忄": {
+      "ok": true
+    },
+    "les:n3-relato-02|扌": {
+      "ok": true
+    },
+    "les:n3-relato-02|言": {
+      "ok": true
+    },
+    "les:n3-relato-03|宀": {
+      "ok": true
+    },
+    "les:n3-relato-03|日": {
+      "ok": true
+    },
+    "les:n3-relato-03|氵": {
+      "ok": true
+    },
+    "les:n3-relato-03|音": {
+      "ok": true
+    },
+    "les:n3-relato-04|扌": {
+      "ok": true
+    },
+    "les:n3-relato-04|日": {
+      "ok": true
+    },
+    "les:n3-relato-04|止": {
+      "ok": true
+    },
+    "les:n3-relato-04|氵": {
+      "ok": true
+    },
+    "les:n3-relato-04|礻": {
+      "ok": true
+    },
+    "les:n4-forma-simples-02|冂": {
+      "ok": true
+    },
+    "les:n4-forma-simples-04|六時ごろ": {
+      "ok": true
+    },
+    "les:n4-forma-simples-06|運": {
+      "ok": true
+    },
+    "les:n4-forma-simples-07|何か": {
+      "ok": true
+    },
+    "les:n4-oracoes-relativas-02|亻": {
+      "ok": true
+    },
+    "les:n4-oracoes-relativas-02|里": {
+      "ok": true
+    },
+    "les:n4-oracoes-relativas-02|門": {
+      "ok": true
+    },
+    "les:n4-oracoes-relativas-03|間": {
+      "ok": true
+    },
+    "les:n4-oracoes-relativas-03|間に": {
+      "ok": true
+    },
+    "les:n4-oracoes-relativas-04|後で": {
+      "ok": true
+    },
+    "les:n4-oracoes-relativas-04|明日": {
+      "ok": true
+    },
+    "les:n4-oracoes-relativas-04|間": {
+      "ok": true
+    },
+    "les:n4-oracoes-relativas-04|間に": {
+      "ok": true
+    },
+    "les:n4-oracoes-relativas-06|の一つ": {
+      "ok": true
+    },
+    "les:n4-oracoes-relativas-07|各": {
+      "ok": true
+    },
+    "les:n4-oracoes-relativas-07|各 の 駅": {
+      "ok": true
+    },
+    "les:n4-condicionais-01|亻": {
+      "ok": true
+    },
+    "les:n4-condicionais-02|何": {
+      "ok": true
+    },
+    "les:n4-condicionais-03|亻": {
+      "ok": true
+    },
+    "les:n4-condicionais-04|音": {
+      "ok": true
+    },
+    "les:n4-condicionais-05|頁": {
+      "ok": true
+    },
+    "les:n4-condicionais-08|以": {
+      "ok": true
+    },
+    "les:n4-condicionais-08|何か": {
+      "ok": true
+    },
+    "les:n4-potencial-03|夕": {
+      "ok": true
+    },
+    "les:n4-potencial-03|宀": {
+      "ok": true
+    },
+    "les:n4-potencial-03|里": {
+      "ok": true
+    },
+    "les:n4-volitivo-01|刂": {
+      "ok": true
+    },
+    "les:n4-volitivo-03|毎": {
+      "ok": true
+    },
+    "les:n4-volitivo-04|明日の予定は？": {
+      "ok": true
+    },
+    "les:n4-volitivo-05|使": {
+      "ok": true
+    },
+    "les:n4-transitividade-01|ドアを開く": {
+      "ok": true
+    },
+    "les:n4-transitividade-03|禾": {
+      "ok": true
+    },
+    "les:n4-transitividade-04|亻": {
+      "ok": true
+    },
+    "les:n4-transitividade-04|广": {
+      "ok": true
+    },
+    "les:n4-dar-receber-02|彼に": {
+      "ok": true
+    },
+    "les:n4-dar-receber-03|来てほしい": {
+      "ok": true
+    },
+    "les:n4-dar-receber-04|工": {
+      "ok": true
+    },
+    "les:n4-dar-receber-04|来て": {
+      "ok": true
+    },
+    "les:n4-experiencia-03|来たことがあるの": {
+      "ok": true
+    },
+    "les:n4-experiencia-04|米": {
+      "ok": true
+    },
+    "les:n4-experiencia-04|米から": {
+      "ok": true
+    },
+    "les:n4-experiencia-04|米から作る": {
+      "ok": true
+    },
+    "les:n4-experiencia-05|化": {
+      "ok": true
+    },
+    "les:n4-experiencia-06|悪くない": {
+      "ok": true
+    },
+    "les:n4-obrigacao-01|亠": {
+      "ok": true
+    },
+    "les:n4-obrigacao-01|何が必要ですか": {
+      "ok": true
+    },
+    "les:n4-obrigacao-01|巾": {
+      "ok": true
+    },
+    "les:n4-obrigacao-01|艮": {
+      "ok": true
+    },
+    "les:n4-obrigacao-01|金": {
+      "ok": true
+    },
+    "les:n4-obrigacao-04|5時までに帰る": {
+      "ok": true
+    },
+    "les:n4-obrigacao-04|5時まで待つ": {
+      "ok": true
+    },
+    "les:n4-aspecto-03|亜": {
+      "ok": true
+    },
+    "les:n4-aspecto-06|やっと着いた": {
+      "ok": true
+    },
+    "les:n4-suposicao-03|君": {
+      "ok": true
+    },
+    "les:n4-suposicao-04|天使みたいな人": {
+      "ok": true
+    },
+    "les:n4-suposicao-05|開きそうにない": {
+      "ok": true
+    },
+    "les:n4-suposicao-05|開く": {
+      "ok": true
+    },
+    "les:n4-suposicao-05|雨が降ったそうだ": {
+      "ok": true
+    },
+    "les:n4-suposicao-05|雨が降ったとみえて": {
+      "ok": true
+    },
+    "les:n4-suposicao-05|食": {
+      "ok": true
+    },
+    "les:n4-suposicao-06|音が": {
+      "ok": true
+    },
+    "les:n4-suposicao-06|音を": {
+      "ok": true
+    },
+    "les:n4-passiva-01|夂": {
+      "ok": false,
+      "problem": "Wrong radical name for this position. The prose points at the bottom of 夏 ('o traço de pé embaixo'); kanjialive's own row for 夏 names that radical なつあし (⼢, position あし), and なつあし is the conventional name of the component under 夏. のまた is the generic name of 夂 (as in 各/処), not what this lesson shows.",
+      "corrected": "なつあし"
+    },
+    "les:n4-causativa-02|私に": {
+      "ok": true
+    },
+    "les:n4-causativa-03|彼には": {
+      "ok": true
+    },
+    "les:n4-causativa-03|彼に怒らせられる": {
+      "ok": true
+    },
+    "les:n4-conectores-07|ように言う": {
+      "ok": true
+    },
+    "les:n4-kanji-exame-01|乗": {
+      "ok": true
+    },
+    "les:n4-kanji-exame-01|低": {
+      "ok": true
+    },
+    "les:n4-kanji-exame-01|働": {
+      "ok": true
+    },
+    "les:n4-kanji-exame-01|合": {
+      "ok": true
+    },
+    "les:n4-kanji-exame-02|太": {
+      "ok": true
+    },
+    "les:n4-kanji-exame-02|好": {
+      "ok": true
+    },
+    "les:n4-kanji-exame-02|引": {
+      "ok": true
+    },
+    "les:n4-kanji-exame-02|暗": {
+      "ok": true
+    },
+    "les:n4-kanji-exame-03|民": {
+      "ok": true
+    },
+    "les:n4-kanji-exame-03|産": {
+      "ok": true
+    },
+    "les:n4-kanji-exame-04|短": {
+      "ok": true
+    },
+    "les:n4-kanji-exame-04|軽": {
+      "ok": true
+    },
+    "les:n4-kanji-exame-04|進": {
+      "ok": true
+    },
+    "les:n4-kanji-exame-05|門": {
+      "ok": true
+    },
+    "les:n5-desu-wa-01|私": {
+      "ok": true
+    },
+    "les:n5-desu-wa-02|何": {
+      "ok": true
+    },
+    "les:n5-perguntas-04|誰": {
+      "ok": true
+    },
+    "les:n5-perguntas-04|誰が": {
+      "ok": true
+    },
+    "les:n5-perguntas-04|誰と": {
+      "ok": true
+    },
+    "les:n5-perguntas-04|誰に": {
+      "ok": true
+    },
+    "les:n5-perguntas-04|誰の": {
+      "ok": true
+    },
+    "les:n5-perguntas-04|誰は": {
+      "ok": true
+    },
+    "les:n5-perguntas-04|風": {
+      "ok": true
+    },
+    "les:n5-perguntas-04|風邪": {
+      "ok": true
+    },
+    "les:n5-perguntas-06|何": {
+      "ok": true
+    },
+    "les:n5-numeros-tempo-01|一": {
+      "ok": true
+    },
+    "les:n5-numeros-tempo-02|一千万円くらい": {
+      "ok": true
+    },
+    "les:n5-numeros-tempo-02|千人くらい": {
+      "ok": true
+    },
+    "les:n5-numeros-tempo-05|一年前くらい前に": {
+      "ok": true
+    },
+    "les:n5-numeros-tempo-07|囗": {
+      "ok": true
+    },
+    "les:n5-numeros-tempo-09|自": {
+      "ok": true
+    },
+    "les:n5-verbos-01|儿": {
+      "ok": true
+    },
+    "les:n5-verbos-02|本": {
+      "ok": true
+    },
+    "les:n5-verbos-03|長": {
+      "ok": true
+    },
+    "les:n5-verbos-04|1万円をする": {
+      "ok": true
+    },
+    "les:n5-particulas-lugar-01|いすの上に": {
+      "ok": true
+    },
+    "les:n5-particulas-lugar-01|一": {
+      "ok": true
+    },
+    "les:n5-particulas-lugar-02|日": {
+      "ok": true
+    },
+    "les:n5-particulas-lugar-02|門": {
+      "ok": true
+    },
+    "les:n5-particulas-lugar-03|後で": {
+      "ok": true
+    },
+    "les:n5-particulas-lugar-05|先": {
+      "ok": true
+    },
+    "les:n5-particulas-lugar-06|午": {
+      "ok": true
+    },
+    "les:n5-particulas-lugar-06|日": {
+      "ok": true
+    },
+    "les:n5-particulas-lugar-06|金": {
+      "ok": true
+    },
+    "les:n5-passado-01|来る日も来る日も": {
+      "ok": true
+    },
+    "les:n5-passado-02|着くじゃなかった": {
+      "ok": true
+    },
+    "les:n5-passado-05|冖": {
+      "ok": true
+    },
+    "les:n5-passado-05|子": {
+      "ok": true
+    },
+    "les:n5-adjetivos-02|良": {
+      "ok": true
+    },
+    "les:n5-adjetivos-06|冂": {
+      "ok": true
+    },
+    "les:n5-adjetivos-07|下手": {
+      "ok": true
+    },
+    "les:n5-adjetivos-07|本を読む": {
+      "ok": true
+    },
+    "les:n5-adjetivos-08|下手": {
+      "ok": true
+    },
+    "les:n5-comparacoes-02|〜の中で": {
+      "ok": true
+    },
+    "les:n5-comparacoes-02|の中で": {
+      "ok": true
+    },
+    "les:n5-comparacoes-02|中": {
+      "ok": true
+    },
+    "les:n5-convites-05|毎": {
+      "ok": true
+    },
+    "les:n5-convites-06|雨が降る": {
+      "ok": true
+    },
+    "les:n5-rotina-04|3日": {
+      "ok": true
+    },
+    "les:n5-rotina-04|大": {
+      "ok": true
+    },
+    "les:n5-rotina-04|本を読んだり音楽を聞いたり": {
+      "ok": true
+    },
+    "les:n5-conectando-07|売": {
+      "ok": true
+    },
+    "les:n5-conectando-07|言": {
+      "ok": true
+    },
+    "les:n5-kanji-exame-01|古": {
+      "ok": true
+    },
+    "les:n5-kanji-exame-01|多": {
+      "ok": true
+    },
+    "les:n5-kanji-exame-01|安": {
+      "ok": true
+    },
+    "les:n5-kanji-exame-02|社": {
+      "ok": true
+    },
+    "les:n5-kanji-exame-02|立": {
+      "ok": true
+    },
+    "les:n5-kanji-exame-02|言": {
+      "ok": true
+    },
+    "les:n5-kanji-exame-03|買": {
+      "ok": true
+    },
+    "les:n5-kanji-exame-03|飲": {
+      "ok": true
+    },
+    "les:pre-n5-saudacoes-03|日本について": {
+      "ok": true
+    },
+    "les:n3-desejos-03|也": {
+      "ok": false,
+      "problem": "Undecided row (no reading). 也 is printed as the right component of 他 with no gloss; its only modern reading is the on'yomi や (なり is classical), and nothing in the lesson points elsewhere.",
+      "corrected": "や"
+    },
+    "les:n3-desejos-04|走": {
+      "ok": false,
+      "problem": "Undecided row (no reading). The prose glosses the pair as 'até o mestre corre', so this 走 is the 'correr' of 走る (N5 vocab, はしる); the course writes a lone verb kanji with its stem (暑 あつ, 売 う, 使 つか). そう carries no 'correr' word the learner knows, and わす belongs only to the whole 師走.",
+      "corrected": "はし"
+    },
+    "les:n4-condicionais-08|何": {
+      "ok": false,
+      "problem": "Undecided row: the two occurrences need different readings, so one (lesson, surface) reading cannot be right. In document order: '何を食べるか決めていない ... (何 = o quê)' is なに; 'Molde: 何 [contador] か' is なん (the same passage prints 何[なん] and 何人[なんにん]). `corrected` lists them per occurrence; the apply must key this row by occurrence, not by surface.",
+      "corrected": [
+        "なに",
+        "なん"
+      ]
+    },
+    "les:n4-volitivo-01|老": {
+      "ok": false,
+      "problem": "Undecided row; the builder's refusal is refuted. 'o radical de 老 em cima' names radical 125 (老, top form 耂), which kanjialive gives as 考's radical ⺹ おいかんむり, position かんむり. Printing the full form and reading it with the positional radical name is exactly what this same table does for 言→ごんべん, 金→かねへん, 食→しょくへん, so no prose change is needed.",
+      "corrected": "おいかんむり"
+    },
+    "les:n4-kanji-exame-02|寒": {
+      "ok": false,
+      "problem": "Undecided row (no reading). No exercise drills 寒, so take the sibling-check convention (the reading of the kanji's basic word, stem form: 暑 あつ, 太 ふと): 寒い さむい is N5 vocab in the registry.",
+      "corrected": "さむ"
+    },
+    "les:n4-kanji-exame-03|洗": {
+      "ok": false,
+      "problem": "Undecided row (no reading). No exercise drills 洗; sibling-check convention gives the stem of its basic word 洗う あらう (N5 vocab in the registry; n3-relato-04 prints 洗う[あらう] for the same kanji).",
+      "corrected": "あら"
+    },
+    "les:n4-kanji-exame-04|菜": {
+      "ok": false,
+      "problem": "Undecided row (no reading). No exercise drills 菜; its basic word for this level is 野菜 やさい (N5 vocab in the registry), so the kanji's reading there is さい. な (菜の花) is not in the learner's vocabulary.",
+      "corrected": "さい"
+    },
+    "les:n5-numeros-tempo-02|人": {
+      "ok": false,
+      "problem": "Undecided row: the two occurrences need different readings. The bank sentence sent:tatoeba-141433 is 千人くらいの人がいた (kana せんにんくらいのひとがいた). In document order: 'o contador é 人 (pessoas), preso a 千' is にん; 'O の liga 千人くらい ao substantivo 人' is ひと. `corrected` lists them per occurrence; the apply must key this row by occurrence.",
+      "corrected": [
+        "にん",
+        "ひと"
+      ]
+    },
+    "les:n5-verbos-03|来": {
+      "ok": false,
+      "problem": "No furigana is correct here: the sentence is about the reading varying ('o kanji 来 é sempre o mesmo, mas a leitura passeia por ku / ko / ki'), so any single ruby contradicts it. Exempt this one span from the furigana requirement rather than give it a reading."
+    }
+  }
+}
