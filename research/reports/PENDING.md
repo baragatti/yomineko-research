@@ -254,6 +254,19 @@ Detail: scripts/export/pattern_forms.py (the matcher and its runnable proof); th
   cleared by a script no longer tracked (P5b, 2026-06). The apply resets them from the ingest
   table; if that script's intent was different, say so.
 
+### B-W40. English for Layer-B/C pedagogy: author ~20,300 strings now, or defer (2026-09-23)
+**Finding.** The i18n design made `en` required on every localized field. Re-measured, the gap is
+57,549 fields: 26,438 derive mechanically (existing English for identical pt-BR strings, JMdict
+glosses) and 31,111 rows (~20,300 distinct strings: structure paragraphs, literal translations,
+particle explanations, kanji reading notes, token glosses) would need authoring. The product ships
+pt-BR only; nothing consumes this English today.
+**Options.** (a) Author it all now (a large campaign, roughly the cost of W13b). (b) Apply the
+derivable half and the 6 particle templates (closes 6,449 more at near-zero cost), mark `en`
+optional for Layer-B/C pedagogy fields in the contract (D15 widened), and author the rest only when
+a second locale is scheduled. (c) Drop `en` from pedagogy fields entirely.
+**Recommendation.** (b). The parity validator still guards every field that has English, and the
+residue list is tracked so the day a second locale starts, the work list already exists.
+
 ## C. Mechanical items — done by hand today
 
 - bank `言う` stored as ゆう on 5 source tokens (checked against the re-dissection gate first)
