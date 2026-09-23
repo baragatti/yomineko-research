@@ -91,3 +91,53 @@ Atenção ao par 何も e 何でも. 何も só faz sentido com verbo negativo (
 - 何とか ('dar um jeito') + ～しかない ('não resta senão') reforçam a única saída.
 
 
+### 6. (recognition) Qual destas palavras significa "algo, alguma coisa"?
+- **Resposta:** `{"choices": ["現実", "同一", "何か", "経由"], "correct": "何か"}`
+- 何か（なにか） significa algo, alguma coisa. As outras opções são 現実 (realidade), 経由 (passagem por, via) e 同一 (idêntico, o mesmo).
+
+
+### 7. (recognition) Qual destas palavras significa "por que, por qual motivo"?
+- **Resposta:** `{"choices": ["他", "特に", "大いに", "何で"], "correct": "何で"}`
+- 何で（なんで） significa por que, por qual motivo. As outras opções são 他 (outro, os demais), 特に (especialmente, particularmente) e 大いに (muito, bastante).
+
+
+### 8. (recognition) Qual destas palavras significa "qualquer coisa, tudo"?
+- **Resposta:** `{"choices": ["何も", "その内", "何とか", "何でも"], "correct": "何でも"}`
+- 何でも（なんでも） significa qualquer coisa, tudo. As outras opções são 何も (nada), その内 (em breve, logo) e 何とか (de algum jeito, de uma forma ou de outra).
+
+
+### 9. (recognition) Qual destas palavras significa "ser preguiçoso, vadiar"?
+- **Resposta:** `{"choices": ["なまける", "ふるえる", "かう", "とどく"], "correct": "なまける"}`
+- なまける significa ser preguiçoso, vadiar. As outras opções são とどく (chegar, ser entregue), かう (criar (um animal), ter (de estimação)) e ふるえる (tremer, estremecer).
+
+
+### 10. (recognition) Qual destas palavras significa "preocupar-se, afligir-se"?
+- **Resposta:** `{"choices": ["とじる", "きらう", "なやむ", "ながめる"], "correct": "なやむ"}`
+- なやむ significa preocupar-se, afligir-se. As outras opções são とじる (fechar, cerrar), きらう (detestar, odiar) e ながめる (contemplar, olhar fixamente).
+
+
+### 11. (recognition) Qual destas palavras significa "tornar-se, virar"?
+- **Resposta:** `{"choices": ["切れる", "成る", "解く", "解ける"], "correct": "成る"}`
+- 成る（なる） significa tornar-se, virar. As outras opções são 解ける (desatar-se, soltar-se), 解く (resolver, solucionar) e 切れる (cortar bem, estar afiado).
+
+
+### 12. (recognition) Qual destas palavras significa "onda"?
+- **Resposta:** `{"choices": ["そうち", "かんげい", "きゅうじょ", "なみ"], "correct": "なみ"}`
+- なみ significa onda. As outras opções são きゅうじょ (resgate, salvamento), そうち (dispositivo, aparelho) e かんげい (dar as boas-vindas, acolher).
+
+
+### 13. (cloze) Complete a frase: 君＿＿では生きられない。 (Eu não consigo viver sem você.)
+- **Resposta:** `{"text": "無し", "full": "君無しでは生きられない。"}`
+- A palavra que falta é なし: sem, nada. Na frase ela aparece como 無し.
+- frases: `sent:tatoeba-176724`
+
+### 14. (recognition) Qual destas palavras significa "compreensão, convencimento"?
+- **Resposta:** `{"choices": ["そんがい", "ベンチ", "なっとく", "きんちょう"], "correct": "なっとく"}`
+- なっとく significa compreensão, convencimento. As outras opções são そんがい (dano, prejuízo), きんちょう (tensão, nervosismo) e ベンチ (banco).
+
+
+### 15. (recognition) Qual destas palavras significa "corda, cordame"?
+- **Resposta:** `{"choices": ["ケース", "くだ", "げんしょう", "なわ"], "correct": "なわ"}`
+- なわ significa corda, cordame. As outras opções são げんしょう (fenômeno), ケース (caso, situação) e くだ (tubo, cano).
+
+

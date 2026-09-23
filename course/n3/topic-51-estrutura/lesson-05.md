@@ -102,3 +102,58 @@ Cuidado com 離す e 放す: as duas se leem はなす, mas 離す é separar/af
 - 肌 (はだ) é pele. A frase usa a partícula の para ligar 赤ちゃん (bebê) a 肌 (a pele do bebê) e o adjetivo 柔らかい (macio). A forma com です é a versão polida.
 
 
+### 6. (cloze) Complete a frase: ＿＿が開いてるよ。 (Sua bolsa tá aberta, viu.)
+- **Resposta:** `{"text": "バッグ", "full": "バッグが開いてるよ。"}`
+- A palavra que falta é バッグ: bolsa, sacola.
+- frases: `sent:tatoeba-3565434`
+
+### 7. (cloze) Complete a frase: 手を＿＿。 (Solta a minha mão.)
+- **Resposta:** `{"text": "放して", "full": "手を放して。"}`
+- A palavra que falta é 放す（はなす）: soltar, libertar. Na frase ela aparece como 放して.
+- frases: `sent:tatoeba-9203598`
+
+### 8. (cloze) Complete a frase: ベルは電話を＿＿した。 (Bell inventou o telefone.)
+- **Resposta:** `{"text": "発明", "full": "ベルは電話を発明した。"}`
+- A palavra que falta é 発明（はつめい）: invenção.
+- frases: `sent:tatoeba-196690`
+
+### 9. (cloze) Complete a frase: 私は＿＿をした。 (Eu fiz uma descoberta.)
+- **Resposta:** `{"text": "発見", "full": "私は発見をした。"}`
+- A palavra que falta é 発見（はっけん）: descoberta, detecção.
+- frases: `sent:tatoeba-10917231`
+
+### 10. (cloze) Complete a frase: ＿＿ホームはどちらですか。 (Qual é a plataforma de embarque?)
+- **Resposta:** `{"text": "発車", "full": "発車ホームはどちらですか。"}`
+- A palavra que falta é 発車（はっしゃ）: partida (de trem, ônibus), saída.
+- frases: `sent:tatoeba-121316`
+
+### 11. (cloze) Complete a frase: 彼の精神＿＿は遅かった。 (O desenvolvimento mental dele foi lento.)
+- **Resposta:** `{"text": "発達", "full": "彼の精神発達は遅かった。"}`
+- A palavra que falta é 発達（はったつ）: desenvolvimento, crescimento.
+- frases: `sent:tatoeba-116694`
+
+### 12. (recognition) Qual destas palavras significa "punir, castigar"?
+- **Resposta:** `{"choices": ["ばっする", "しめる", "つかむ", "だまる"], "correct": "ばっする"}`
+- ばっする significa punir, castigar. As outras opções são しめる (ocupar, constituir (uma proporção)), だまる (calar-se, ficar quieto) e つかむ (agarrar, pegar).
+
+
+### 13. (recognition) Qual destas palavras significa "nu, pelado"?
+- **Resposta:** `{"choices": ["はだか", "もくひょう", "さらいしゅう", "のうみん"], "correct": "はだか"}`
+- はだか significa nu, pelado. As outras opções são のうみん (agricultor, camponês), もくひょう (meta, alvo) e さらいしゅう (semana depois da próxima, daqui a duas semanas).
+
+
+### 14. (cloze) Complete a frase: 後で＿＿。 (Vamos conversar sobre isso depois.)
+- **Resposta:** `{"text": "話し合いましょう", "full": "後で話し合いましょう。"}`
+- A palavra que falta é 話し合う（はなしあう）: discutir (juntos), conversar sobre. Na frase ela aparece como 話し合いましょう.
+- frases: `sent:tatoeba-11953090`
+
+### 15. (recognition) Qual destas palavras significa "soltar, largar"?
+- **Resposta:** `{"choices": ["しゃべる", "くさる", "はなす", "のべる"], "correct": "はなす"}`
+- はなす significa soltar, largar. As outras opções são しゃべる (conversar, falar), くさる (apodrecer, estragar) e のべる (declarar, expor).
+
+
+### 16. (recognition) Qual destas palavras significa "afastar-se, sair de"?
+- **Resposta:** `{"choices": ["もえる", "ばっする", "ほえる", "はなれる"], "correct": "はなれる"}`
+- はなれる significa afastar-se, sair de. As outras opções são もえる (queimar, arder), ばっする (punir, castigar) e ほえる (latir, uivar).
+
+

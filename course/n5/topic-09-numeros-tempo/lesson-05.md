@@ -121,3 +121,13 @@ Na fala rápida, じゃあ encurta para じゃ. É super comum na despedida: じ
 - Toda data do mês termina em 日. Aqui ele não se lê にち: nas dez primeiras datas vale a leitura nativa -か, e ９日 sai ここのか.
 
 
+### 10. (recognition) Qual destas formas significa "contador de meses (duração em meses)"?
+- **Resposta:** `{"choices": ["かげつ", "じぶん", "ここのか", "どう"], "correct": "かげつ"}`
+- かげつ significa contador de meses (duração em meses). As outras opções são ここのか (dia nove (do mês)), じぶん (si mesmo, eu mesmo) e どう (movimento).
+
+
+### 11. (recognition) Qual destas palavras significa "tempo"?
+- **Resposta:** `{"choices": ["し", "せい", "ここのつ", "じかん"], "correct": "じかん"}`
+- じかん significa tempo. As outras opções são せい (altura (de uma pessoa), estatura), ここのつ (nove, nove (coisas)) e し (quatro).
+
+

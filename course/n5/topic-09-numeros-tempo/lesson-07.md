@@ -109,3 +109,13 @@ Mnemônico de forma: imagine uma muralha quadrada (囗) cercando um rei (王) e 
 - 国 (くに) é "país". A moldura fechada ao redor do kanji ajuda a lembrar: é um território com fronteira, e dentro dela fica tudo o que o país tem.
 
 
+### 8. (recognition) Qual destas palavras significa "dicionário"?
+- **Resposta:** `{"choices": ["さい", "しゃしん", "じびき", "さかな"], "correct": "じびき"}`
+- じびき significa dicionário. As outras opções são さかな (peixe), しゃしん (foto, fotografia) e さい (anos de idade, anos).
+
+
+### 9. (recognition) Qual destas palavras significa "palavra, expressão"?
+- **Resposta:** `{"choices": ["じしょ", "かい", "ことば", "さん"], "correct": "ことば"}`
+- ことば significa palavra, expressão. As outras opções são じしょ (dicionário), かい (andar, piso) e さん (três).
+
+

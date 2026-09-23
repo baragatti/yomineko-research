@@ -131,3 +131,43 @@ Mesma frase, versão polida: 雨でした = "era chuva / chovia". Trocar だっ�
 - 東 é o kanji de leste. A leitura kun ひがし é a que aparece quando ele vem sozinho.
 
 
+### 10. (recognition) Qual destas palavras significa "loja de departamentos, grande loja"?
+- **Resposta:** `{"choices": ["ペン", "ちず", "タクシー", "デパート"], "correct": "デパート"}`
+- デパート significa loja de departamentos, grande loja. As outras opções são ペン (caneta), ちず (mapa) e タクシー (táxi).
+
+
+### 11. (recognition) Qual destas palavras significa "banheiro, privada"?
+- **Resposta:** `{"choices": ["ドア", "こんしゅう", "トイレ", "と"], "correct": "トイレ"}`
+- トイレ significa banheiro, privada. As outras opções são ドア (porta), こんしゅう (esta semana) e と (porta (de correr)).
+
+
+### 12. (recognition) Qual destas palavras significa "porta"?
+- **Resposta:** `{"choices": ["さらいねん", "たてもの", "トイレ", "ドア"], "correct": "ドア"}`
+- ドア significa porta. As outras opções são さらいねん (daqui a dois anos, ano após o próximo), トイレ (banheiro, privada) e たてもの (prédio, edifício).
+
+
+### 13. (recognition) Qual destas palavras significa "saída"?
+- **Resposta:** `{"choices": ["ごぜん", "でぐち", "ドア", "かようび"], "correct": "でぐち"}`
+- でぐち significa saída. As outras opções são かようび (terça-feira), ごぜん (manhã, da manhã) e ドア (porta).
+
+
+### 14. (recognition) Qual destas palavras significa "metrô"?
+- **Resposta:** `{"choices": ["デパート", "ところ", "ちかてつ", "せんしゅう"], "correct": "ちかてつ"}`
+- ちかてつ significa metrô. As outras opções são せんしゅう (semana passada), デパート (loja de departamentos, grande loja) e ところ (lugar, local).
+
+
+### 15. (recognition) Qual destas palavras significa "mapa"?
+- **Resposta:** `{"choices": ["あさ", "ちず", "でぐち", "きのう"], "correct": "ちず"}`
+- ちず significa mapa. As outras opções são でぐち (saída), きのう (ontem) e あさ (manhã).
+
+
+### 16. (cloze) Complete a frase: 雰囲気が＿＿だった。 (O clima estava desagradável.)
+- **Resposta:** `{"text": "いや", "full": "雰囲気がいやだった。"}`
+- A palavra que falta é いや: desagradável, chato.
+- frases: `sent:tatoeba-83696`
+
+### 17. (cloze) Complete a frase: 学校へ行く＿＿でした。 (Eu estava prestes a ir para a escola.)
+- **Resposta:** `{"text": "ところ", "full": "学校へ行くところでした。"}`
+- A palavra que falta é ところ: lugar, local.
+- frases: `sent:tatoeba-184376`
+

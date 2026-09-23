@@ -160,3 +160,88 @@ Repare como vários destes kanji compartilham o radical da pessoa イ à esquerd
 - 言葉 junta 言 (dizer) e 葉 (folha), e se lê ことば. Os dois kanji ficam com leitura kun, e o segundo sonoriza no meio da palavra.
 
 
+### 14. (cloze) Complete a frase: 私の時計は＿＿動いている。 (Meu relógio está funcionando certinho.)
+- **Resposta:** `{"text": "きちんと", "full": "私の時計はきちんと動いている。"}`
+- A palavra que falta é きちんと: direitinho, corretamente.
+- frases: `sent:tatoeba-163492`
+
+### 15. (cloze) Complete a frase: この仕事は＿＿？ (Esse trabalho é puxado?)
+- **Resposta:** `{"text": "きつい", "full": "この仕事はきつい？"}`
+- A palavra que falta é きつい: puxado, duro.
+- frases: `sent:tatoeba-10236621`
+
+### 16. (cloze) Complete a frase: 私が＿＿です。 (Eu sou o capitão.)
+- **Resposta:** `{"text": "キャプテン", "full": "私がキャプテンです。"}`
+- A palavra que falta é キャプテン: capitão, líder de equipe.
+- frases: `sent:tatoeba-10570155`
+
+### 17. (cloze) Complete a frase: これが初めての＿＿です。 (Este é o meu primeiro acampamento.)
+- **Resposta:** `{"text": "キャンプ", "full": "これが初めてのキャンプです。"}`
+- A palavra que falta é キャンプ: acampamento, camping.
+- frases: `sent:tatoeba-11545588`
+
+### 18. (recognition) Qual destas palavras significa "descanso, pausa"?
+- **Resposta:** `{"choices": ["きゅうけい", "プラン", "どうとく", "スタンド"], "correct": "きゅうけい"}`
+- きゅうけい significa descanso, pausa. As outras opções são プラン (plano, projeto), スタンド (suporte, pedestal) e どうとく (moral, moralidade).
+
+
+### 19. (recognition) Qual destas palavras significa "férias, folga"?
+- **Resposta:** `{"choices": ["とざん", "きゅうか", "せつび", "どく"], "correct": "きゅうか"}`
+- きゅうか significa férias, folga. As outras opções são とざん (montanhismo, escalar montanha), どく (veneno, toxina) e せつび (equipamento, instalações).
+
+
+### 20. (recognition) Qual destas palavras significa "absorção"?
+- **Resposta:** `{"choices": ["きゅうしゅう", "かんり", "れいぎ", "しんぱん"], "correct": "きゅうしゅう"}`
+- きゅうしゅう significa absorção. As outras opções são かんり (gestão, administração), れいぎ (boas maneiras, etiqueta) e しんぱん (arbitragem, arbitrar).
+
+
+### 21. (recognition) Qual destas palavras significa "habilidoso, jeitoso"?
+- **Resposta:** `{"choices": ["せっきょくてき", "かいてき", "かわいそう", "きよう"], "correct": "きよう"}`
+- きよう significa habilidoso, jeitoso. As outras opções são かいてき (confortável, agradável), かわいそう (coitado, digno de pena) e せっきょくてき (positivo, proativo).
+
+
+### 22. (recognition) Qual destas palavras significa "base, fundamento"?
+- **Resposta:** `{"choices": ["ふまん", "きほん", "よゆう", "おん"], "correct": "きほん"}`
+- きほん significa base, fundamento. As outras opções são よゆう (folga, margem), ふまん (insatisfação, descontentamento) e おん (dívida de gratidão, favor).
+
+
+### 23. (recognition) Qual destas palavras significa "esperança, desejo"?
+- **Resposta:** `{"choices": ["ふくろ", "ガソリンスタンド", "かわ", "きぼう"], "correct": "きぼう"}`
+- きぼう significa esperança, desejo. As outras opções são かわ (pele), ふくろ (sacola, saco) e ガソリンスタンド (posto de gasolina).
+
+
+### 24. (recognition) Qual destas palavras significa "livro didático, livro-texto"?
+- **Resposta:** `{"choices": ["きょうかしょ", "よゆう", "アイロン", "いじ"], "correct": "きょうかしょ"}`
+- きょうかしょ significa livro didático, livro-texto. As outras opções são アイロン (ferro de passar roupa), いじ (manutenção, conservação) e よゆう (folga, margem).
+
+
+### 25. (cloze) Complete a frase: 私は＿＿。 (Eu percebi.)
+- **Resposta:** `{"text": "気づいた", "full": "私は気づいた。"}`
+- A palavra que falta é 気づく（きづく）: perceber, notar. Na frase ela aparece como 気づいた.
+- frases: `sent:tatoeba-8736700`
+
+### 26. (recognition) Qual destas palavras significa "gostar de, agradar-se de"?
+- **Resposta:** `{"choices": ["男の人", "かも知れない", "もう一度", "気に入る"], "correct": "気に入る"}`
+- 気に入る（きにいる） significa gostar de, agradar-se de. As outras opções são かも知れない (talvez, pode ser que), もう一度 (mais uma vez, de novo) e 男の人 (homem, pessoa do sexo masculino).
+
+
+### 27. (recognition) Qual destas palavras significa "bola, esfera"?
+- **Resposta:** `{"choices": ["予期", "球", "成人", "同時"], "correct": "球"}`
+- 球（きゅう） significa bola, esfera. As outras opções são 成人 (adulto, pessoa maior de idade), 同時 (mesmo tempo, simultâneo) e 予期 (esperar, prever).
+
+
+### 28. (recognition) Qual destas palavras significa "competição, prova"?
+- **Resposta:** `{"choices": ["プロ", "とざん", "はら", "きょうぎ"], "correct": "きょうぎ"}`
+- きょうぎ significa competição, prova. As outras opções são プロ (profissional, profissa), はら (barriga, estômago) e とざん (montanhismo, escalar montanha).
+
+
+### 29. (recognition) Qual destas palavras significa "salário, remuneração"?
+- **Resposta:** `{"choices": ["きゅうりょう", "わき", "テニス", "へい"], "correct": "きゅうりょう"}`
+- きゅうりょう significa salário, remuneração. As outras opções são へい (muro, cerca), テニス (tênis (esporte)) e わき (axila, sovaco).
+
+
+### 30. (recognition) Qual destas palavras significa "registro, anotação"?
+- **Resposta:** `{"choices": ["きろく", "とき", "ぶんせき", "がまん"], "correct": "きろく"}`
+- きろく significa registro, anotação. As outras opções são ぶんせき (análise), とき (tempo, momento) e がまん (paciência, autocontrole).
+
+

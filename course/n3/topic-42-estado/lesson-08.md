@@ -89,3 +89,53 @@ Cuidado: 態と (わざと, de propósito) tem som parecido com わざわざ ('d
 - 論文 é o sujeito e 論争を呼んだ é a expressão 'provocou polêmica'.
 
 
+### 6. (recognition) Qual destas palavras significa "algodão, enchimento de algodão"?
+- **Resposta:** `{"choices": ["せいひん", "わた", "ぜいきん", "どうし"], "correct": "わた"}`
+- わた significa algodão, enchimento de algodão. As outras opções são ぜいきん (imposto, tributo), どうし (verbo (classe de palavra)) e せいひん (produto, mercadoria).
+
+
+### 7. (cloze) Complete a frase: ＿＿を飲んだ。 (Bebi o vinho.)
+- **Resposta:** `{"text": "ワイン", "full": "ワインを飲んだ。"}`
+- A palavra que falta é ワイン: vinho.
+- frases: `sent:tatoeba-12508662`
+
+### 8. (cloze) Complete a frase: 彼は＿＿な金で働いている。 (Ele trabalha por um dinheiro mísero.)
+- **Resposta:** `{"text": "わずか", "full": "彼はわずかな金で働いている。"}`
+- A palavra que falta é わずか: mínimo, escasso.
+- frases: `sent:tatoeba-110254`
+
+### 9. (cloze) Complete a frase: グラスを＿＿。 (Quebrei um copo.)
+- **Resposta:** `{"text": "割った", "full": "グラスを割った。"}`
+- A palavra que falta é 割る（わる）: quebrar, partir. Na frase ela aparece como 割った.
+- frases: `sent:tatoeba-225562`
+
+### 10. (cloze) Complete a frase: ＿＿がその問題を論じるには、３時間は短すぎます。 (Três horas é pouco para a gente discutir esse assunto.)
+- **Resposta:** `{"text": "われわれ", "full": "われわれがその問題を論じるには、３時間は短すぎます。"}`
+- A palavra que falta é われわれ: nós, a gente.
+- frases: `sent:tatoeba-191744`
+
+### 11. (recognition) Qual destas formas significa "baía, golfo"?
+- **Resposta:** `{"choices": ["ワイン", "わん", "いんたい", "お"], "correct": "わん"}`
+- わん significa baía, golfo. As outras opções são ワイン (vinho), いんたい (aposentar-se, retirar-se (da carreira)) e お (prefixo honorífico (cortesia, respeito)).
+
+
+### 12. (recognition) Qual destas palavras significa "risada, riso"?
+- **Resposta:** `{"choices": ["わらい", "えさ", "ねだん", "はんにん"], "correct": "わらい"}`
+- わらい significa risada, riso. As outras opções são えさ (ração, alimento (para animais)), ねだん (preço, valor) e はんにん (culpado, criminoso).
+
+
+### 13. (recognition) Qual destas palavras significa "axila, sovaco"?
+- **Resposta:** `{"choices": ["スピーチ", "わき", "かかく", "どうとく"], "correct": "わき"}`
+- わき significa axila, sovaco. As outras opções são どうとく (moral, moralidade), スピーチ (discurso, fala) e かかく (preço, valor).
+
+
+### 14. (cloze) Complete a frase: われわれがその問題を＿＿には、３時間は短すぎます。 (Três horas é pouco para a gente discutir esse assunto.)
+- **Resposta:** `{"text": "論じる", "full": "われわれがその問題を論じるには、３時間は短すぎます。"}`
+- A palavra que falta é 論じる（ろんじる）: discutir (argumentar), debater.
+- frases: `sent:tatoeba-191744`
+
+### 15. (recognition) Qual destas palavras significa "anel, aro"?
+- **Resposta:** `{"choices": ["ひひょう", "わ", "しゅうかん", "わらい"], "correct": "わ"}`
+- わ significa anel, aro. As outras opções são わらい (risada, riso), しゅうかん (hábito, costume) e ひひょう (criticar, resenhar).
+
+

@@ -123,3 +123,28 @@ Mais alguns vocábulos que combinam bem com comparações:
 - 犬 (いぬ) é o cachorro. É o traço solto no canto superior direito que separa 犬 de 大 ('grande').
 
 
+### 11. (recognition) Qual destas palavras significa "parecer-se, assemelhar-se"?
+- **Resposta:** `{"choices": ["つる", "にる", "すべる", "あやまる"], "correct": "にる"}`
+- にる significa parecer-se, assemelhar-se. As outras opções são つる (pescar (com vara), fisgar), あやまる (pedir desculpa, desculpar-se) e すべる (escorregar, deslizar).
+
+
+### 12. (recognition) Qual destas palavras significa "luz, raio de luz"?
+- **Resposta:** `{"choices": ["しょうち", "ひかり", "ごぞんじ", "いなか"], "correct": "ひかり"}`
+- ひかり significa luz, raio de luz. As outras opções são しょうち (entendido, compreendido), いなか (campo, zona rural) e ごぞんじ (conhecimento (forma respeitosa), estar a par de).
+
+
+### 13. (recognition) Qual destas formas significa "senhor(a) (sufixo honorífico)"?
+- **Resposta:** `{"choices": ["さま", "ちゃん", "くらい", "キロ"], "correct": "さま"}`
+- さま significa senhor(a) (sufixo honorífico). As outras opções são キロ (quilo, quilograma), ちゃん (-chan (sufixo afetivo de nome), querido(a)) e くらい (cerca de, mais ou menos).
+
+
+### 14. (recognition) Qual destas palavras significa "rir, sorrir"?
+- **Resposta:** `{"choices": ["わらう", "たずねる", "まける", "なおす"], "correct": "わらう"}`
+- わらう significa rir, sorrir. As outras opções são たずねる (perguntar, indagar), なおす (consertar, arrumar) e まける (perder, ser derrotado).
+
+
+### 15. (recognition) Qual destas palavras significa "elogiar, louvar"?
+- **Resposta:** `{"choices": ["たずねる", "なくなる", "ならべる", "ほめる"], "correct": "ほめる"}`
+- ほめる significa elogiar, louvar. As outras opções são なくなる (falecer, morrer), たずねる (perguntar, indagar) e ならべる (enfileirar, arrumar (em fila)).
+
+

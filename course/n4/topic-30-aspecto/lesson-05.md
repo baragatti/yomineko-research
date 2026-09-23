@@ -135,3 +135,28 @@ Encadeando as três fases num dia de viagem:特急に乗るところです(estou
 - 教室 é a sala (室) onde se ensina (教). Os dois kanji entram com a leitura on, e o resultado é きょうしつ.
 
 
+### 11. (recognition) Qual destas palavras significa "previsão do tempo"?
+- **Resposta:** `{"choices": ["てんきよほう", "だんせい", "レコード", "いない"], "correct": "てんきよほう"}`
+- てんきよほう significa previsão do tempo. As outras opções são だんせい (homem, pessoa do sexo masculino), いない (dentro de, em até) e レコード (disco (de vinil), disco).
+
+
+### 12. (recognition) Qual destas palavras significa "ilha"?
+- **Resposta:** `{"choices": ["ひこうじょう", "パート", "しま", "ワープロ"], "correct": "しま"}`
+- しま significa ilha. As outras opções são ワープロ (processador de texto), ひこうじょう (aeroporto, campo de aviação) e パート (trabalho de meio período, meio período).
+
+
+### 13. (recognition) Qual destas palavras significa "galho, ramo"?
+- **Resposta:** `{"choices": ["エスカレーター", "こくさい", "えだ", "コップ"], "correct": "えだ"}`
+- えだ significa galho, ramo. As outras opções são こくさい (internacional), コップ (copo) e エスカレーター (escada rolante).
+
+
+### 14. (recognition) Qual destas palavras significa "trem expresso, expresso limitado"?
+- **Resposta:** `{"choices": ["特急", "空気", "心", "帰り"], "correct": "特急"}`
+- 特急（とっきゅう） significa trem expresso, expresso limitado. As outras opções são 心 (coração, mente), 帰り (volta, regresso) e 空気 (ar, atmosfera).
+
+
+### 15. (recognition) Qual destas palavras significa "estacionamento"?
+- **Resposta:** `{"choices": ["ハンバーグ", "いっぱい", "しま", "ちゅうしゃじょう"], "correct": "ちゅうしゃじょう"}`
+- ちゅうしゃじょう significa estacionamento. As outras opções são しま (ilha), ハンバーグ (hambúrguer (tipo bife, sem pão), bife de hambúrguer) e いっぱい (cheio, bastante).
+
+

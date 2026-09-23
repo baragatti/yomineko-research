@@ -90,3 +90,8 @@ Vale repetir, porque é a confusão número um do brasileiro: すぎる sempre i
 - 飲む → forma ます 飲みます → raiz 飲み + すぎる, no passado polido: 飲みすぎました ('bebi demais').
 
 
+### 6. (recognition) Qual destas palavras significa "dia 7 (do mês)"?
+- **Resposta:** `{"choices": ["七日", "先月", "今日", "名前"], "correct": "七日"}`
+- 七日（なのか） significa dia 7 (do mês). As outras opções são 名前 (nome), 先月 (mês passado) e 今日 (hoje).
+
+

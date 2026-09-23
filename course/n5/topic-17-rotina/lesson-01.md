@@ -115,3 +115,63 @@ Recusar com けっこうです soa firme, porém educado: é o jeito japonês de
 - Sozinho, 車 lê-se くるま e já é a palavra carro. É o contraste com 電車 (でんしゃ): solto vale a leitura japonesa, acompanhado vale a sino-japonesa.
 
 
+### 10. (recognition) Qual destas palavras significa "o outro lado, lá"?
+- **Resposta:** `{"choices": ["むこう", "まいあさ", "ふく", "まいしゅう"], "correct": "むこう"}`
+- むこう significa o outro lado, lá. As outras opções são まいあさ (toda manhã, todas as manhãs), ふく (roupa, roupas) e まいしゅう (toda semana, semanalmente).
+
+
+### 11. (recognition) Qual destas palavras significa "montanha"?
+- **Resposta:** `{"choices": ["二人", "二つ", "分", "山"], "correct": "山"}`
+- 山（やま） significa montanha. As outras opções são 二人 (duas pessoas), 二つ (dois, duas (coisas)) e 分 (minuto).
+
+
+### 12. (recognition) Qual destas palavras significa "loja"?
+- **Resposta:** `{"choices": ["パーティー", "フィルム", "みせ", "ほんだな"], "correct": "みせ"}`
+- みせ significa loja. As outras opções são フィルム (filme (fotográfico)), ほんだな (estante de livros, prateleira de livros) e パーティー (festa).
+
+
+### 13. (recognition) Qual destas palavras significa "esperar, aguardar"?
+- **Resposta:** `{"choices": ["ふる", "できる", "まつ", "ひく"], "correct": "まつ"}`
+- まつ significa esperar, aguardar. As outras opções são ふる (cair (chuva, neve)), ひく (puxar) e できる (poder, ser capaz de).
+
+
+### 14. (recognition) Qual destas palavras significa "segurar, carregar"?
+- **Resposta:** `{"choices": ["はる", "あそぶ", "まがる", "もつ"], "correct": "もつ"}`
+- もつ significa segurar, carregar. As outras opções são まがる (virar, dobrar (uma esquina)), はる (armar (tenda), esticar) e あそぶ (brincar, se divertir).
+
+
+### 15. (recognition) Qual destas palavras significa "aldeia, vila"?
+- **Resposta:** `{"choices": ["ちず", "そん", "プール", "ばん"], "correct": "そん"}`
+- そん（むら） significa aldeia, vila. As outras opções são ばん (noite, anoitecer), プール (piscina) e ちず (mapa).
+
+
+### 16. (recognition) Qual destas palavras significa "cidade pequena, vila"?
+- **Resposta:** `{"choices": ["たてもの", "えき", "まち", "こちら"], "correct": "まち"}`
+- まち significa cidade pequena, vila. As outras opções são たてもの (prédio, edifício), こちら (aqui, para cá) e えき (estação (de trem)).
+
+
+### 17. (recognition) Qual destas palavras significa "janela"?
+- **Resposta:** `{"choices": ["まち", "まいあさ", "まど", "ひるごはん"], "correct": "まど"}`
+- まど significa janela. As outras opções são ひるごはん (almoço), まち (cidade pequena, vila) e まいあさ (toda manhã, todas as manhãs).
+
+
+### 18. (recognition) Qual destas palavras significa "mostrar, exibir"?
+- **Resposta:** `{"choices": ["出かける", "入る", "見せる", "食べる"], "correct": "見せる"}`
+- 見せる（みせる） significa mostrar, exibir. As outras opções são 食べる (comer), 入る (entrar) e 出かける (sair, partir).
+
+
+### 19. (recognition) Qual destas palavras significa "rua, estrada"?
+- **Resposta:** `{"choices": ["はい", "みち", "はじめ", "かいもの"], "correct": "みち"}`
+- みち significa rua, estrada. As outras opções são はじめ (início, começo), はい (cálice de saquê, taça para bebidas alcoólicas) e かいもの (compras).
+
+
+### 20. (recognition) Qual destas palavras significa "legume, verdura"?
+- **Resposta:** `{"choices": ["となり", "ぶんしょう", "やさい", "ふゆ"], "correct": "やさい"}`
+- やさい significa legume, verdura. As outras opções são ぶんしょう (texto, frase), ふゆ (inverno) e となり (vizinho, ao lado).
+
+
+### 21. (recognition) Qual destas palavras significa "portão"?
+- **Resposta:** `{"choices": ["やおや", "フォーク", "もん", "はし"], "correct": "もん"}`
+- もん significa portão. As outras opções são やおや (quitanda, verdureiro), はし (hashi, pauzinhos) e フォーク (garfo).
+
+

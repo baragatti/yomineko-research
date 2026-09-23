@@ -47,3 +47,8 @@ Estes kanji fazem parte do conjunto esperado no exame deste nível. Alguns você
 - 首 guarda 自 dentro dele e é ele mesmo que aparece dentro de 道 ('caminho'). Sozinho é くび, o pescoço; nos compostos, com a leitura シュ, passa a significar 'chefe'.
 
 
+### 4. (recognition) Qual destas palavras significa "oferenda de flores, depositar flores (em memória)"?
+- **Resposta:** `{"choices": ["かっこ", "けんか", "スリ", "ほんやく"], "correct": "けんか"}`
+- けんか significa oferenda de flores, depositar flores (em memória). As outras opções são かっこ (aparência, forma), スリ (batedor de carteira, punguista) e ほんやく (tradução).
+
+

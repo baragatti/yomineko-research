@@ -90,3 +90,28 @@ O arroz é tão central na cultura japonesa que 米 também aparece, por leitura
 - A madeira ainda é visível na cadeira, então é material: 木で + できている. Para descrever o estado ('está feita de'), usa-se できている, não o presente simples できる.
 - frases: `sent:gen-0bc4cf5ddf3e`
 
+### 6. (recognition) Qual destas palavras significa "semana depois da próxima, daqui a duas semanas"?
+- **Resposta:** `{"choices": ["きせつ", "ことり", "ジャム", "さらいしゅう"], "correct": "さらいしゅう"}`
+- さらいしゅう significa semana depois da próxima, daqui a duas semanas. As outras opções são ことり (passarinho, pássaro pequeno), ジャム (geleia, compota) e きせつ (estação, estação do ano).
+
+
+### 7. (recognition) Qual destas palavras significa "internacional"?
+- **Resposta:** `{"choices": ["ひるま", "こうつう", "こくさい", "のど"], "correct": "こくさい"}`
+- こくさい significa internacional. As outras opções são こうつう (trânsito, transporte), ひるま (durante o dia, período diurno) e のど (garganta).
+
+
+### 8. (recognition) Qual destas palavras significa "educação, ensino"?
+- **Resposta:** `{"choices": ["つごう", "きょういく", "ぶちょう", "そこ"], "correct": "きょういく"}`
+- きょういく significa educação, ensino. As outras opções são つごう (conveniência, disponibilidade), ぶちょう (chefe de departamento, gerente) e そこ (aí, esse lugar).
+
+
+### 9. (recognition) Qual destas palavras significa "produção, fabricação"?
+- **Resposta:** `{"choices": ["せいさん", "はいざら", "よこ", "ほんと"], "correct": "せいさん"}`
+- せいさん significa produção, fabricação. As outras opções são はいざら (cinzeiro), ほんと (verdade, realidade) e よこ (lado, ao lado).
+
+
+### 10. (recognition) Qual destas palavras significa "arroz (cru, em grão)"?
+- **Resposta:** `{"choices": ["あんない", "けが", "そぼ", "こめ"], "correct": "こめ"}`
+- こめ significa arroz (cru, em grão). As outras opções são あんない (acompanhamento, orientação), そぼ (avó) e けが (ferimento, machucado).
+
+

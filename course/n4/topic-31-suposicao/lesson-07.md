@@ -88,3 +88,8 @@ Com o mesmo radical がり, mas agora como substantivo, você descreve um traço
 - "Querer (um objeto)" para você é 欲しい; para terceiros vira 欲しがる, e em curso 欲しがっている. Não diga 弟は新しいゲームが欲しい (isso afirmaria diretamente o sentimento dele). O objeto leva を: 新しいゲームを欲しがっている.
 
 
+### 6. (recognition) Qual destas palavras significa "ajudar, dar uma mão"?
+- **Resposta:** `{"choices": ["かむ", "かわく", "しかる", "てつだう"], "correct": "てつだう"}`
+- てつだう significa ajudar, dar uma mão. As outras opções são しかる (repreender, ralhar com), かわく (secar, ficar seco) e かむ (morder, mastigar).
+
+

@@ -65,3 +65,18 @@ Para arredondar o N3, guarde mais algumas palavras úteis do dia a dia.
 - 停留所 (ていりゅうじょ) é o ponto de ônibus; com に行きます você indica o destino do deslocamento.
 
 
+### 5. (cloze) Complete a frase: ＿＿とこないな。 (Não me diz nada.)
+- **Resposta:** `{"text": "ピン", "full": "ピンとこないな。"}`
+- A palavra que falta é ピン: alfinete, pino.
+- frases: `sent:tatoeba-10367348`
+
+### 6. (recognition) Qual destas formas significa "voo (linha regular), serviço de correio"?
+- **Resposta:** `{"choices": ["別れ", "人工", "小", "便"], "correct": "便"}`
+- 便（びん） significa voo (linha regular), serviço de correio. As outras opções são 別れ (despedida, separação), 小 (pequeno, menor) e 人工 (artificial, feito pelo homem).
+
+
+### 7. (recognition) Qual destas palavras significa "correio, correspondência"?
+- **Resposta:** `{"choices": ["しゅうきょう", "はた", "しり", "ゆうびん"], "correct": "ゆうびん"}`
+- ゆうびん significa correio, correspondência. As outras opções são はた (bandeira, estandarte), しゅうきょう (religião) e しり (bunda, traseiro).
+
+

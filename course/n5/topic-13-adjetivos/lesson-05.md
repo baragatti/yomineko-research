@@ -141,3 +141,33 @@ Junte os dois assuntos da lição numa frase só:大人になる("virar adulto")
 - 気, lido き, é o kanji do ânimo. Ele quase nunca vem sozinho: mora dentro de palavras que dizem como alguém está ou como o dia está.
 
 
+### 12. (recognition) Qual destas palavras significa "junto, juntos"?
+- **Resposta:** `{"choices": ["いっしょ", "ほんと", "あて", "あか"], "correct": "いっしょ"}`
+- いっしょ significa junto, juntos. As outras opções são あて (pai), あか (vermelho) e ほんと (verdade, realidade).
+
+
+### 13. (cloze) Complete a frase: ＿＿に分かるよ (Logo você vai entender.)
+- **Resposta:** `{"text": "今", "full": "今に分かるよ"}`
+- A palavra que falta é 今（いま）: agora.
+- frases: `sent:gen-617ebc589017`
+
+### 14. (recognition) Qual destas palavras significa "muitas pessoas, multidão"?
+- **Resposta:** `{"choices": ["そうじ", "おおぜい", "ほんと", "そちら"], "correct": "おおぜい"}`
+- おおぜい significa muitas pessoas, multidão. As outras opções são そうじ (limpeza, limpar), そちら (aí, esse lado) e ほんと (verdade, realidade).
+
+
+### 15. (recognition) Qual destas palavras significa "atrás, parte de trás"?
+- **Resposta:** `{"choices": ["十日", "後ろ", "今", "日"], "correct": "後ろ"}`
+- 後ろ（うしろ） significa atrás, parte de trás. As outras opções são 日 (dia), 今 (agora) e 十日 (dia 10 (do mês)).
+
+
+### 16. (recognition) Qual destas palavras significa "depois de amanhã"?
+- **Resposta:** `{"choices": ["さつ", "かようび", "きょねん", "あさって"], "correct": "あさって"}`
+- あさって significa depois de amanhã. As outras opções são かようび (terça-feira), きょねん (ano passado) e さつ (contador de livros, contador de volumes).
+
+
+### 17. (cloze) Complete a frase: 分かった＿＿？ (Entendeu, né?)
+- **Resposta:** `{"text": "でしょう", "full": "分かったでしょう？"}`
+- O que falta é でしょう: o ponto gramatical desta lição, でしょう (probabilidade / confirmação).
+- frases: `sent:tatoeba-83729`
+

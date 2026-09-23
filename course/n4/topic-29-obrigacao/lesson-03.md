@@ -147,3 +147,38 @@ Verbos e adjetivos úteis para montar suas próprias obrigações. Leia tudo em 
 - 親切 usa 親 na leitura シン e se lê しんせつ. É adjetivo-な: tratar alguém como se fosse próximo.
 
 
+### 15. (cloze) Complete a frase: 父は車の運転がとても＿＿。 (Meu pai dirige muito bem.)
+- **Resposta:** `{"text": "うまい", "full": "父は車の運転がとてもうまい。"}`
+- A palavra que falta é うまい: habilidoso, bom (em algo).
+- frases: `sent:tatoeba-84459`
+
+### 16. (recognition) Qual destas palavras significa "repreender, ralhar com"?
+- **Resposta:** `{"choices": ["つける", "すすむ", "なく", "しかる"], "correct": "しかる"}`
+- しかる significa repreender, ralhar com. As outras opções são つける (mergulhar, deixar de molho), なく (chorar) e すすむ (avançar, seguir em frente).
+
+
+### 17. (cloze) Complete a frase: あの＿＿は手がかかる。 (Aquela criança dá muito trabalho.)
+- **Resposta:** `{"text": "子", "full": "あの子は手がかかる。"}`
+- A palavra que falta é 子（こ）: criança.
+- frases: `sent:tatoeba-230968`
+
+### 18. (recognition) Qual destas palavras significa "quebrar, partir-se"?
+- **Resposta:** `{"choices": ["おれる", "つづける", "かたづける", "わかす"], "correct": "おれる"}`
+- おれる significa quebrar, partir-se. As outras opções são わかす (ferver (água), esquentar), かたづける (arrumar, organizar) e つづける (continuar, prosseguir com).
+
+
+### 19. (cloze) Complete a frase: この本は読み＿＿ (Esse livro é fácil de ler.)
+- **Resposta:** `{"text": "やすい", "full": "この本は読みやすい"}`
+- A palavra que falta é やすい: fácil de, fácil de fazer.
+- frases: `sent:gen-881c93011a31`
+
+### 20. (recognition) Qual destas palavras significa "ferver (água), esquentar"?
+- **Resposta:** `{"choices": ["わかす", "もらう", "おれる", "もうす"], "correct": "わかす"}`
+- わかす significa ferver (água), esquentar. As outras opções são もうす (dizer (humilde), falar), おれる (quebrar, partir-se) e もらう (receber, ganhar).
+
+
+### 21. (recognition) Qual destas palavras significa "brincadeira, diversão"?
+- **Resposta:** `{"choices": ["かがく", "パソコン", "まえ", "あそび"], "correct": "あそび"}`
+- あそび significa brincadeira, diversão. As outras opções são パソコン (computador (pessoal), PC), かがく (ciência) e まえ (frente, à frente).
+
+

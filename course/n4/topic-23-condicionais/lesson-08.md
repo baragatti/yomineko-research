@@ -127,3 +127,8 @@ Já que vimos 以下, repare no mesmo kanji 下 ("abaixo") em 県下 (けんか)
 - ご飯 é o arroz cozido e, por extensão, a própria refeição. O 飯 lê-se はん logo depois do prefixo de cortesia ご.
 
 
+### 10. (recognition) Qual destas palavras significa "na província, dentro da província"?
+- **Resposta:** `{"choices": ["りよう", "こと", "せい", "けんか"], "correct": "けんか"}`
+- けんか significa na província, dentro da província. As outras opções são りよう (uso, utilização), こと (coisa (abstrata), assunto) e せい (altura (de uma pessoa), estatura).
+
+

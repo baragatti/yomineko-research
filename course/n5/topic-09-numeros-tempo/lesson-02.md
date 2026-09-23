@@ -94,3 +94,38 @@ Numa mesa com amigos: ケーキを一つずつください ("um pedaço de bolo 
 - 一千万円 (dez milhões de ienes) + くらい/ぐらい = 'cerca de dez milhões de ienes'. As formas くらい e ぐらい são intercambiáveis.
 - frases: `sent:tatoeba-190376`
 
+### 6. (recognition) Qual destas palavras significa "à frente, adiante"?
+- **Resposta:** `{"choices": ["前", "一", "本", "年"], "correct": "前"}`
+- 前（さき） significa à frente, adiante. As outras opções são 一 (um, 1), 年 (ano) e 本 (livro).
+
+
+### 7. (recognition) Qual destas palavras significa "ano"?
+- **Resposta:** `{"choices": ["天気", "年", "前", "十"], "correct": "年"}`
+- 年（とし） significa ano. As outras opções são 前 (à frente, adiante), 天気 (tempo (clima), clima) e 十 (dez).
+
+
+### 8. (recognition) Qual destas palavras significa "nove, nove (coisas)"?
+- **Resposta:** `{"choices": ["ここのつ", "し", "ギター", "くもり"], "correct": "ここのつ"}`
+- ここのつ significa nove, nove (coisas). As outras opções são し (quatro), くもり (tempo nublado, nebulosidade) e ギター (violão, guitarra).
+
+
+### 9. (cloze) Complete a frase: どのくらい＿＿？ (Qual é a altura?)
+- **Resposta:** `{"text": "高い", "full": "どのくらい高い？"}`
+- A palavra que falta é 高い（たかい）: alto, elevado.
+- frases: `sent:tatoeba-200413`
+
+### 10. (recognition) Qual destas palavras significa "à frente, adiante"?
+- **Resposta:** `{"choices": ["前", "一", "年", "人"], "correct": "前"}`
+- 前（さき） significa à frente, adiante. As outras opções são 人 (pessoa, gente), 一 (um, 1) e 年 (ano). O kanji 前 faz parte desta palavra.
+
+
+### 11. (recognition) Qual destas palavras significa "ano"?
+- **Resposta:** `{"choices": ["車", "年", "前", "新聞"], "correct": "年"}`
+- 年（とし） significa ano. As outras opções são 新聞 (jornal), 前 (à frente, adiante) e 車 (carro, automóvel). O kanji 年 faz parte desta palavra.
+
+
+### 12. (recognition) Qual destas palavras significa "alto, elevado"?
+- **Resposta:** `{"choices": ["ない", "高い", "いい", "とおい"], "correct": "高い"}`
+- 高い（たかい） significa alto, elevado. As outras opções são ない (não haver, não ter), とおい (longe, distante) e いい (bom, legal). O kanji 高 faz parte desta palavra.
+
+

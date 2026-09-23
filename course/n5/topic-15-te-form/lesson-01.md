@@ -73,3 +73,8 @@ Não traduza ください como um imperativo seco ("faça!"). Em japonês, te-ku
 - Verbos godan terminados em く fazem a forma て em いて: 書く → 書いて.
 
 
+### 6. (cloze) Complete a frase: ＿＿がつまっています。 (Estou com o nariz entupido.)
+- **Resposta:** `{"text": "鼻", "full": "鼻がつまっています。"}`
+- A palavra que falta é はな: nariz. Na frase ela aparece como 鼻.
+- frases: `sent:tatoeba-85522`
+

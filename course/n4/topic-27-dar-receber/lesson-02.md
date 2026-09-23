@@ -118,3 +118,48 @@ Quatro kanji que aparecem muito em serviços e pedidos.
 - 送 carrega alguma coisa pela estrada, com o mesmo radical que aparece em 通 e em 道. A leitura nativa おく faz o verbo de mandar algo, e ソウ abre o vocabulário de transporte e entrega.
 
 
+### 10. (recognition) Qual destas palavras significa "reserva, agendamento"?
+- **Resposta:** `{"choices": ["よやく", "こしょう", "もり", "スクリーン"], "correct": "よやく"}`
+- よやく significa reserva, agendamento. As outras opções são こしょう (defeito, pane), もり (floresta, bosque) e スクリーン (tela, telão).
+
+
+### 11. (cloze) Complete a frase: ＿＿うちにいてくれ。 (Fica em casa hoje à noite.)
+- **Resposta:** `{"text": "今夜", "full": "今夜うちにいてくれ。"}`
+- A palavra que falta é 今夜（こんや）: esta noite, hoje à noite.
+- frases: `sent:tatoeba-171170`
+
+### 12. (cloze) Complete a frase: 二人が＿＿をする (Os dois conversam.)
+- **Resposta:** `{"text": "会話", "full": "二人が会話をする"}`
+- A palavra que falta é 会話（かいわ）: conversa, diálogo.
+- frases: `sent:jec-0085`
+
+### 13. (cloze) Complete a frase: この駅に＿＿は止まりません (O expresso não para nesta estação.)
+- **Resposta:** `{"text": "急行", "full": "この駅に急行は止まりません"}`
+- A palavra que falta é 急行（きゅうこう）: trem expresso.
+- frases: `sent:gen-0d0db1186cae`
+
+### 14. (cloze) Complete a frase: 明日このラジオ＿＿もらうよ。 (Amanhã vou mandar consertar esse rádio.)
+- **Resposta:** `{"text": "直して", "full": "明日このラジオ直してもらうよ。"}`
+- A palavra que falta é なおす: consertar, arrumar. Na frase ela aparece como 直して.
+- frases: `sent:tatoeba-9178394`
+
+### 15. (recognition) Qual destas palavras significa "comércio (exterior), intercâmbio comercial"?
+- **Resposta:** `{"choices": ["ほど", "ぼうえき", "いみ", "そん"], "correct": "ぼうえき"}`
+- ぼうえき significa comércio (exterior), intercâmbio comercial. As outras opções são ほど (cerca de, aproximadamente), いみ (significado, sentido) e そん (aldeia, vila).
+
+
+### 16. (recognition) Qual destas palavras significa "reserva, cerimônia"?
+- **Resposta:** `{"choices": ["さんぽ", "えんりょ", "おいわい", "おくさん"], "correct": "えんりょ"}`
+- えんりょ significa reserva, cerimônia. As outras opções são おいわい (comemoração, celebração), おくさん (esposa (de outra pessoa), senhora) e さんぽ (passeio, caminhada).
+
+
+### 17. (recognition) Qual destas palavras significa "conveniência, disponibilidade"?
+- **Resposta:** `{"choices": ["けしゴム", "つごう", "もり", "じゅうどう"], "correct": "つごう"}`
+- つごう significa conveniência, disponibilidade. As outras opções são けしゴム (borracha (de apagar)), もり (floresta, bosque) e じゅうどう (judô).
+
+
+### 18. (cloze) Complete a frase: 教え＿＿か？ (Você me ensina?)
+- **Resposta:** `{"text": "てくれる", "full": "教えてくれるか？"}`
+- O que falta é てくれる: o ponto gramatical desta lição, alguém faz algo para mim (〜てくれる).
+- frases: `sent:tatoeba-1680856`
+

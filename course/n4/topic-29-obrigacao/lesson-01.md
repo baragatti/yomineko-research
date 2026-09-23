@@ -113,3 +113,28 @@ Como 必要 já significa "necessário", você não precisa conjugar verbo algum
 - 市 é "cidade, mercado" e se lê シ no fim dos nomes de cidade. 店 é a loja, 場 é o lugar onde algo acontece e 地 é o solo; todos falam de espaço, mas só 市 nomeia a divisão administrativa.
 
 
+### 9. (cloze) Complete a frase: 夏は毎日＿＿をはく (No verão eu uso sandália todo dia.)
+- **Resposta:** `{"text": "サンダル", "full": "夏は毎日サンダルをはく"}`
+- A palavra que falta é サンダル: sandália, sandálias.
+- frases: `sent:gen-6c1a9bd46750`
+
+### 10. (recognition) Qual destas palavras significa "gaveta"?
+- **Resposta:** `{"choices": ["あんない", "だんせい", "ひきだし", "せいさん"], "correct": "ひきだし"}`
+- ひきだし significa gaveta. As outras opções são せいさん (produção, fabricação), だんせい (homem, pessoa do sexo masculino) e あんない (acompanhamento, orientação).
+
+
+### 11. (recognition) Qual destas palavras significa "armário embutido, closet japonês"?
+- **Resposta:** `{"choices": ["でんとう", "おしいれ", "おもちゃ", "けしゴム"], "correct": "おしいれ"}`
+- おしいれ significa armário embutido, closet japonês. As outras opções são でんとう (lâmpada, luz elétrica), おもちゃ (brinquedo) e けしゴム (borracha (de apagar)).
+
+
+### 12. (recognition) Qual destas palavras significa "rua, avenida"?
+- **Resposta:** `{"choices": ["ご主人", "急行", "通り", "音"], "correct": "通り"}`
+- 通り（とおり） significa rua, avenida. As outras opções são 急行 (trem expresso), 音 (som, ruído) e ご主人 (marido (de outra pessoa), esposo).
+
+
+### 13. (cloze) Complete a frase: ぼくの自動車は＿＿ガソリンをくう。 (Meu carro consome muita gasolina.)
+- **Resposta:** `{"text": "ずいぶん", "full": "ぼくの自動車はずいぶんガソリンをくう。"}`
+- A palavra que falta é ずいぶん: bastante, muito.
+- frases: `sent:tatoeba-196376`
+

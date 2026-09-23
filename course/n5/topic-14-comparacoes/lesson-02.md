@@ -113,3 +113,33 @@ Dois kanji de traçado simples e muito usados aparecem aqui.
 - 話 traz o radical da palavra à esquerda e o desenho da língua à direita: quem fala usa a língua. 見 é ver, 来 é vir e 行 é ir. Todos são ações do dia a dia, mas nenhum deles é falar.
 
 
+### 8. (recognition) Qual destas palavras significa "o que, que"?
+- **Resposta:** `{"choices": ["後ろ", "一日", "毎日", "何"], "correct": "何"}`
+- 何（なに） significa o que, que. As outras opções são 毎日 (todo dia, todos os dias), 後ろ (atrás, parte de trás) e 一日 (primeiro dia (do mês), dia primeiro).
+
+
+### 9. (recognition) Qual destas palavras significa "às vezes, de vez em quando"?
+- **Resposta:** `{"choices": ["そう", "いかが", "時々", "たいへん"], "correct": "時々"}`
+- 時々（ときどき） significa às vezes, de vez em quando. As outras opções são たいへん (muito, extremamente), そう (assim, desse jeito) e いかが (como, que tal).
+
+
+### 10. (production) Escreva em japonês a palavra que significa "e coisas assim, etc.".
+- **Resposta:** `{"text": "など", "accept": ["など"]}`
+- A resposta é など: e coisas assim, etc..
+
+
+### 11. (recognition) Qual destas palavras significa "aprender, ter aulas de"?
+- **Resposta:** `{"choices": ["つく", "ならう", "つくる", "あるく"], "correct": "ならう"}`
+- ならう significa aprender, ter aulas de. As outras opções são つく (chegar, chegar a (um lugar)), つくる (fazer, criar) e あるく (andar, caminhar).
+
+
+### 12. (recognition) Qual destas palavras significa "animado, movimentado"?
+- **Resposta:** `{"choices": ["しずか", "けっこう", "じょうぶ", "にぎやか"], "correct": "にぎやか"}`
+- にぎやか significa animado, movimentado. As outras opções são しずか (quieto, calmo), じょうぶ (resistente, durável) e けっこう (bom, está bom assim).
+
+
+### 13. (recognition) Qual destas palavras significa "proximidades, redondezas"?
+- **Resposta:** `{"choices": ["ちかく", "りょうり", "ほう", "くろ"], "correct": "ちかく"}`
+- ちかく significa proximidades, redondezas. As outras opções são くろ (preto, cor preta), ほう (relatório, notícia) e りょうり (culinária, prato).
+
+

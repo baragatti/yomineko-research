@@ -111,3 +111,28 @@ Mnemônico de forma: imagine uma linha do chão (一) e algo brotando para cima 
 - O japonês escolhe o verbo de existência pela natureza do sujeito: いる para seres vivos (gente, bicho) e ある para coisas. Como 人 é pessoa, usa-se いる.
 - frases: `sent:tatoeba-6828199`
 
+### 8. (recognition) Qual destas palavras significa "ovo"?
+- **Resposta:** `{"choices": ["じてんしゃ", "ゼロ", "けっこん", "たまご"], "correct": "たまご"}`
+- たまご significa ovo. As outras opções são じてんしゃ (bicicleta), ゼロ (zero) e けっこん (casamento, casar-se).
+
+
+### 9. (recognition) Qual destas formas significa "suporte, plataforma"?
+- **Resposta:** `{"choices": ["だい", "ねこ", "がる", "ごはん"], "correct": "だい"}`
+- だい significa suporte, plataforma. As outras opções são ごはん (arroz cozido), がる (mostrar sinais de, demonstrar (sufixo que transforma adjetivo em verbo)) e ねこ (gato).
+
+
+### 10. (recognition) Qual destas palavras significa "embaixada"?
+- **Resposta:** `{"choices": ["コピー", "スカート", "と", "たいしかん"], "correct": "たいしかん"}`
+- たいしかん significa embaixada. As outras opções são と (porta (de correr)), コピー (cópia, copiar) e スカート (saia).
+
+
+### 11. (recognition) Qual destas palavras significa "cigarro, tabaco"?
+- **Resposta:** `{"choices": ["テスト", "タバコ", "しょうゆ", "たてもの"], "correct": "タバコ"}`
+- タバコ significa cigarro, tabaco. As outras opções são たてもの (prédio, edifício), テスト (prova, teste) e しょうゆ (molho de soja, shoyu).
+
+
+### 12. (recognition) Qual destas palavras significa "escudo"?
+- **Resposta:** `{"choices": ["たて", "いみ", "しごと", "さんぽ"], "correct": "たて"}`
+- たて significa escudo. As outras opções são しごと (trabalho, emprego), いみ (significado, sentido) e さんぽ (passeio, caminhada).
+
+

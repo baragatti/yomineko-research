@@ -124,3 +124,33 @@ Dois kanji simples e muito frequentes entram aqui, um deles direto do vocabulár
 - 何 (o quê) + を + 食べたら (se comer, de 食べる) + いいですか = "o que eu devo comer?". É o esqueleto [pergunta] + verbo たら + いいですか para pedir conselho.
 - frases: `sent:tatoeba-187548`
 
+### 11. (production) Escreva em japonês a palavra que significa "por isso, então".
+- **Resposta:** `{"text": "だから", "accept": ["だから"]}`
+- A resposta é だから: por isso, então.
+
+
+### 12. (recognition) Qual destas palavras significa "força, poder"?
+- **Resposta:** `{"choices": ["中学校", "耳", "力", "火事"], "correct": "力"}`
+- 力（ちから） significa força, poder. As outras opções são 耳 (orelha, ouvido), 中学校 (escola de ensino fundamental II (ginásio), ensino fundamental (anos finais)) e 火事 (incêndio, fogo (destrutivo)).
+
+
+### 13. (recognition) Qual destas palavras significa "passar (em um lugar), dar uma passada"?
+- **Resposta:** `{"choices": ["できる", "いたす", "よる", "こわす"], "correct": "よる"}`
+- よる significa passar (em um lugar), dar uma passada. As outras opções são いたす (fazer (humilde)), こわす (quebrar, destruir) e できる (poder, ser capaz de).
+
+
+### 14. (recognition) Qual destas palavras significa "lamentável, uma pena"?
+- **Resposta:** `{"choices": ["ざんねん", "さかん", "まっすぐ", "ひつよう"], "correct": "ざんねん"}`
+- ざんねん significa lamentável, uma pena. As outras opções são さかん (popular, em alta), まっすぐ (reto, direito) e ひつよう (necessário, preciso).
+
+
+### 15. (recognition) Qual destas palavras significa "ser decidido, ficar decidido"?
+- **Resposta:** `{"choices": ["おどろく", "うかがう", "はじまる", "きまる"], "correct": "きまる"}`
+- きまる significa ser decidido, ficar decidido. As outras opções são おどろく (surpreender-se, espantar-se), はじまる (começar, iniciar-se) e うかがう (visitar (humilde), ir à casa de (humilde)).
+
+
+### 16. (recognition) Qual destas palavras significa "abrir, abrir-se"?
+- **Resposta:** `{"choices": ["開く", "話す", "思う", "止める"], "correct": "開く"}`
+- 開く（ひらく） significa abrir, abrir-se. As outras opções são 思う (achar, pensar), 話す (falar, conversar) e 止める (parar (algo), deter).
+
+

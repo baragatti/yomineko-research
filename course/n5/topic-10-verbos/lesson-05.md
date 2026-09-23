@@ -112,3 +112,23 @@ A forma é a mnemônica perfeita: 三 são literalmente três tracinhos horizont
 - 三 são três tracinhos horizontais empilhados, e significa 'três'. A própria forma é a mnemônica.
 
 
+### 7. (recognition) Qual destas palavras significa "pegar emprestado"?
+- **Resposta:** `{"choices": ["さす", "しまる", "かりる", "しる"], "correct": "かりる"}`
+- かりる significa pegar emprestado. As outras opções são しまる (fechar-se, fechar (intransitivo)), しる (saber, conhecer) e さす (abrir (o guarda-chuva), segurar erguido).
+
+
+### 8. (recognition) Qual destas palavras significa "precisar, necessitar"?
+- **Resposta:** `{"choices": ["しまる", "かりる", "いる", "しる"], "correct": "いる"}`
+- いる significa precisar, necessitar. As outras opções são かりる (pegar emprestado), しる (saber, conhecer) e しまる (fechar-se, fechar (intransitivo)).
+
+
+### 9. (recognition) Qual destas palavras significa "fechar-se, fechar (intransitivo)"?
+- **Resposta:** `{"choices": ["しまる", "あらう", "おきる", "おりる"], "correct": "しまる"}`
+- しまる significa fechar-se, fechar (intransitivo). As outras opções são おりる (descer (de um veículo), desembarcar), あらう (lavar) e おきる (levantar-se, acordar).
+
+
+### 10. (recognition) Qual destas palavras significa "abrir, abrir-se"?
+- **Resposta:** `{"choices": ["あく", "かりる", "いる", "かえる"], "correct": "あく"}`
+- あく significa abrir, abrir-se. As outras opções são いる (precisar, necessitar), かりる (pegar emprestado) e かえる (voltar para casa, ir para casa).
+
+

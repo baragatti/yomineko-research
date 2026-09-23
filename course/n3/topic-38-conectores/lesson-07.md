@@ -100,3 +100,58 @@ O par 腹 (はら, barriga) e 原 (はら, campo) é um bom exemplo de como o ka
 - 犯人 (はんにん) é o criminoso e 探す (さがす) é "procurar". O conector その上 liga as duas ideias com o sentido de "além disso, e ainda por cima".
 
 
+### 6. (cloze) Complete a frase: 彼は＿＿です。 (Ele é bonito.)
+- **Resposta:** `{"text": "ハンサム", "full": "彼はハンサムです。"}`
+- A palavra que falta é ハンサム: bonito, atraente (homem).
+- frases: `sent:tatoeba-13231274`
+
+### 7. (cloze) Complete a frase: 黒の＿＿を運転するよ。 (Eu dirijo uma van preta.)
+- **Resposta:** `{"text": "バン", "full": "黒のバンを運転するよ。"}`
+- A palavra que falta é バン: van, furgão.
+- frases: `sent:tatoeba-10273894`
+
+### 8. (cloze) Complete a frase: ＿＿ありますか。 (Vocês têm cerveja?)
+- **Resposta:** `{"text": "ビール", "full": "ビールありますか。"}`
+- A palavra que falta é ビール: cerveja.
+- frases: `sent:tatoeba-197669`
+
+### 9. (recognition) Qual destas palavras significa "julgamento, decisão"?
+- **Resposta:** `{"choices": ["せんたく", "あぶら", "はんだん", "ゆ"], "correct": "はんだん"}`
+- はんだん significa julgamento, decisão. As outras opções são ゆ (água quente), あぶら (óleo, gordura) e せんたく (lavagem de roupa, ato de lavar roupa).
+
+
+### 10. (recognition) Qual destas palavras significa "campo, planície"?
+- **Resposta:** `{"choices": ["うで", "そう", "はら", "いいん"], "correct": "はら"}`
+- はら significa campo, planície. As outras opções são そう (koto, cítara japonesa), いいん (membro de comitê, integrante de comissão) e うで (braço).
+
+
+### 11. (recognition) Qual destas palavras significa "rebeldia, resistência"?
+- **Resposta:** `{"choices": ["あわ", "はんこう", "はいけん", "アイスクリーム"], "correct": "はんこう"}`
+- はんこう significa rebeldia, resistência. As outras opções são はいけん (ver (humilde), dar uma olhada (respeitosamente)), あわ (bolha, espuma) e アイスクリーム (sorvete).
+
+
+### 12. (cloze) Complete a frase: 私は＿＿です。 (Eu sou mãe.)
+- **Resposta:** `{"text": "母親", "full": "私は母親です。"}`
+- A palavra que falta é 母親（ははおや）: mãe.
+- frases: `sent:tatoeba-10225071`
+
+### 13. (recognition) Qual destas palavras significa "luz, lâmpada"?
+- **Resposta:** `{"choices": ["ひげ", "はんだん", "はば", "ひ"], "correct": "ひ"}`
+- ひ significa luz, lâmpada. As outras opções são はば (largura, amplitude), はんだん (julgamento, decisão) e ひげ (barba, bigode).
+
+
+### 14. (recognition) Qual destas palavras significa "crime, delito"?
+- **Resposta:** `{"choices": ["しゅっせき", "ひさしぶり", "はんざい", "こうとうがっこう"], "correct": "はんざい"}`
+- はんざい significa crime, delito. As outras opções são ひさしぶり (depois de muito tempo, há quanto tempo), こうとうがっこう (ensino médio, colégio (ensino médio)) e しゅっせき (presença, comparecimento).
+
+
+### 15. (recognition) Qual destas palavras significa "venda, comercialização"?
+- **Resposta:** `{"choices": ["ひ", "もと", "いし", "はんばい"], "correct": "はんばい"}`
+- はんばい significa venda, comercialização. As outras opções são もと (sob (a orientação/influência de), debaixo de), ひ (luz, lâmpada) e いし (médico, doutor).
+
+
+### 16. (recognition) Qual destas palavras significa "agulha, alfinete"?
+- **Resposta:** `{"choices": ["はり", "つき", "はば", "しゅうかん"], "correct": "はり"}`
+- はり significa agulha, alfinete. As outras opções são しゅうかん (hábito, costume), つき (com (algo incluso), acompanhado de) e はば (largura, amplitude).
+
+

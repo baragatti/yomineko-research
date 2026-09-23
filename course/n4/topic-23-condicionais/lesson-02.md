@@ -111,3 +111,33 @@ Juntando tudo numa conversa: você pergunta 何をしたらいいですか ("o q
 - 用事 (ようじ) é o compromisso concreto: 用 ('tarefa') mais 事 ('coisa, assunto').
 
 
+### 9. (recognition) Qual destas palavras significa "receber, obter"?
+- **Resposta:** `{"choices": ["なさる", "うける", "よる", "すぎる"], "correct": "うける"}`
+- うける significa receber, obter. As outras opções são なさる (fazer (forma honorífica/respeitosa de する), fazer (referindo-se à ação de um superior)), よる (passar (em um lugar), dar uma passada) e すぎる (passar (tempo), decorrer).
+
+
+### 10. (recognition) Qual destas palavras significa "o máximo possível, na medida do possível" (no sentido de se possível)?
+- **Resposta:** `{"choices": ["ちっとも", "なるべく", "しっかり", "そんなに"], "correct": "なるべく"}`
+- なるべく significa o máximo possível, na medida do possível. As outras opções são そんなに (tanto, tão), ちっとも ((não)... nem um pouco, de jeito nenhum) e しっかり (firmemente, com firmeza).
+
+
+### 11. (recognition) Qual destas palavras significa "humor, estado de espírito"?
+- **Resposta:** `{"choices": ["休み", "六日", "気分", "店"], "correct": "気分"}`
+- 気分（きぶん） significa humor, estado de espírito. As outras opções são 六日 (dia 6 (do mês)), 休み (descanso, pausa) e 店 (loja).
+
+
+### 12. (recognition) Qual destas palavras significa "impossível, sem condições"?
+- **Resposta:** `{"choices": ["だめ", "ざんねん", "むり", "ゆうめい"], "correct": "むり"}`
+- むり significa impossível, sem condições. As outras opções são ざんねん (lamentável, uma pena), だめ (ruim, inútil) e ゆうめい (famoso, conhecido).
+
+
+### 13. (recognition) Qual destas palavras significa "errar, cometer um erro"?
+- **Resposta:** `{"choices": ["ゆれる", "いらっしゃる", "まちがえる", "がんばる"], "correct": "まちがえる"}`
+- まちがえる significa errar, cometer um erro. As outras opções são がんばる (esforçar-se, dar o melhor de si), ゆれる (balançar, tremer) e いらっしゃる (estar/ir/vir (forma honorífica)).
+
+
+### 14. (cloze) Complete a frase: 今度は＿＿。 (Da próxima vez eu vou me esforçar.)
+- **Resposta:** `{"text": "がんばります", "full": "今度はがんばります。"}`
+- A palavra que falta é がんばる: esforçar-se, dar o melhor de si. Na frase ela aparece como がんばります.
+- frases: `sent:tatoeba-172109`
+

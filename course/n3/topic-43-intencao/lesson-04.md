@@ -114,3 +114,68 @@ Note que 助 e 労 compartilham o mesmo radical de "força". Quando um kanji nov
 - 訪ねる (たずねる) é ir à casa ou ao lugar de alguém. Nos compostos, 訪 lê-se ホウ.
 
 
+### 10. (recognition) Qual destas palavras significa "ferida, machucado"?
+- **Resposta:** `{"choices": ["きず", "かんじょう", "わき", "とう"], "correct": "きず"}`
+- きず significa ferida, machucado. As outras opções são とう (torre, pagode (torre)), わき (axila, sovaco) e かんじょう (conta (a pagar)).
+
+
+### 11. (recognition) Qual destas palavras significa "fazer efeito, surtir efeito"?
+- **Resposta:** `{"choices": ["利く", "感じる", "止す", "空く"], "correct": "利く"}`
+- 利く（きく） significa fazer efeito, surtir efeito. As outras opções são 感じる (sentir, perceber), 空く (estar vazio, estar com pouca gente) e 止す (parar (de fazer), desistir).
+
+
+### 12. (cloze) Complete a frase: 彼女が＿＿だよ。 (Fico com pena dela.)
+- **Resposta:** `{"text": "かわいそう", "full": "彼女がかわいそうだよ。"}`
+- A palavra que falta é かわいそう: coitado, digno de pena.
+- frases: `sent:tatoeba-9682490`
+
+### 13. (recognition) Qual destas palavras significa "fofo, encantador"?
+- **Resposta:** `{"choices": ["かわいらしい", "するどい", "やすい", "かしこい"], "correct": "かわいらしい"}`
+- かわいらしい significa fofo, encantador. As outras opções são かしこい (sábio, esperto), するどい (afiado, pontiagudo) e やすい (fácil de, fácil de fazer).
+
+
+### 14. (recognition) Qual destas palavras significa "margem, beira"?
+- **Resposta:** `{"choices": ["きし", "ぎし", "せいせき", "びょう"], "correct": "きし"}`
+- きし significa margem, beira. As outras opções são ぎし (engenheiro, técnico), せいせき (notas, desempenho) e びょう (segundo (tempo)).
+
+
+### 15. (recognition) Qual destas palavras significa "paciente (médico), doente"?
+- **Resposta:** `{"choices": ["かんじゃ", "せいしん", "ふだん", "かご"], "correct": "かんじゃ"}`
+- かんじゃ significa paciente (médico), doente. As outras opções são せいしん (espírito, mente), かご (cesto, cesta) e ふだん (normalmente, geralmente).
+
+
+### 16. (recognition) Qual destas palavras significa "engenheiro, técnico"?
+- **Resposta:** `{"choices": ["おに", "きし", "ぎし", "ふたご"], "correct": "ぎし"}`
+- ぎし significa engenheiro, técnico. As outras opções são きし (margem, beira), おに (ogro, demônio) e ふたご (gêmeos, gêmeo).
+
+
+### 17. (cloze) Complete a frase: 問題は＿＿だな。 (O problema é o prazo.)
+- **Resposta:** `{"text": "期間", "full": "問題は期間だな。"}`
+- A palavra que falta é 期間（きかん）: período, prazo.
+- frases: `sent:tatoeba-12288647`
+
+### 18. (recognition) Qual destas palavras significa "máquina, maquinário"?
+- **Resposta:** `{"choices": ["つみ", "ふつう", "きこう", "きかい"], "correct": "きかい"}`
+- きかい significa máquina, maquinário. As outras opções são つみ (crime, pecado), きこう (clima) e ふつう (comum, normal).
+
+
+### 19. (recognition) Qual destas palavras significa "órgão, instituição"?
+- **Resposta:** `{"choices": ["機関", "夜中", "字", "品"], "correct": "機関"}`
+- 機関（きかん） significa órgão, instituição. As outras opções são 夜中 (meio da noite, madrugada), 品 (artigo, mercadoria) e 字 (caractere, letra).
+
+
+### 20. (cloze) Complete a frase: ＿＿をこねます。 (Sove a massa.)
+- **Resposta:** `{"text": "生地", "full": "生地をこねます。"}`
+- A palavra que falta é 生地（きじ）: tecido, pano.
+- frases: `sent:tatoeba-8942698`
+
+### 21. (cloze) Complete a frase: いつも＿＿を書いています。 (Escrevo matérias com frequência.)
+- **Resposta:** `{"text": "記事", "full": "いつも記事を書いています。"}`
+- A palavra que falta é 記事（きじ）: matéria, artigo.
+- frases: `sent:tatoeba-228726`
+
+### 22. (cloze) Complete a frase: 私は＿＿です。 (Eu sou jornalista.)
+- **Resposta:** `{"text": "記者", "full": "私は記者です。"}`
+- A palavra que falta é 記者（きしゃ）: repórter, jornalista.
+- frases: `sent:tatoeba-494535`
+

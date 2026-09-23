@@ -179,3 +179,63 @@ O kanji 由 significa "motivo, razão, origem". Aparece em 理由 ("motivo, raz�
 - 費用 é 費 (gasto) mais 用 (uso): o dinheiro que se usa para uma coisa acontecer. É a palavra de orçamento, mais formal do que falar só em dinheiro.
 
 
+### 19. (recognition) Qual destas palavras significa "espada, sabre japonês"?
+- **Resposta:** `{"choices": ["かかく", "かおり", "かたな", "かげ"], "correct": "かたな"}`
+- かたな significa espada, sabre japonês. As outras opções são かげ (sombra, silhueta), かかく (preço, valor) e かおり (aroma, fragrância).
+
+
+### 20. (recognition) Qual destas formas significa "tipo, modelo"?
+- **Resposta:** `{"choices": ["つゆ", "がた", "ひてい", "えいきょう"], "correct": "がた"}`
+- がた（かた） significa tipo, modelo. As outras opções são えいきょう (influência, efeito), つゆ (estação das chuvas (início do verão no Japão)) e ひてい (negar, desmentir).
+
+
+### 21. (cloze) Complete a frase: ＿＿も大切な仕事です。 (As tarefas domésticas também são um trabalho importante.)
+- **Resposta:** `{"text": "家事", "full": "家事も大切な仕事です。"}`
+- A palavra que falta é 家事（かじ）: tarefas domésticas, afazeres domésticos.
+- frases: `sent:tatoeba-11596184`
+
+### 22. (cloze) Complete a frase: 彼は数が＿＿。 (Ele não sabe contar.)
+- **Resposta:** `{"text": "数えられない", "full": "彼は数が数えられない。"}`
+- A palavra que falta é 数える（かぞえる）: contar, enumerar. Na frase ela aparece como 数えられない.
+- frases: `sent:tatoeba-103470`
+
+### 23. (cloze) Complete a frase: あの人たちが昨日あなたが会った＿＿ですか。 (Aquelas são as pessoas que você encontrou ontem?)
+- **Resposta:** `{"text": "方々", "full": "あの人たちが昨日あなたが会った方々ですか。"}`
+- A palavra que falta é 方々（かたがた）: pessoas (formal), senhores e senhoras.
+- frases: `sent:tatoeba-230802`
+
+### 24. (cloze) Complete a frase: 私は＿＿になりたい。 (Quero ser cantor.)
+- **Resposta:** `{"text": "歌手", "full": "私は歌手になりたい。"}`
+- A palavra que falta é 歌手（かしゅ）: cantor, cantora.
+- frases: `sent:tatoeba-157994`
+
+### 25. (recognition) Qual destas palavras significa "ganhar (dinheiro), faturar"?
+- **Resposta:** `{"choices": ["はぶく", "なくなる", "かがやく", "かせぐ"], "correct": "かせぐ"}`
+- かせぐ significa ganhar (dinheiro), faturar. As outras opções são かがやく (brilhar, reluzir), はぶく (omitir, poupar) e なくなる (falecer, morrer).
+
+
+### 26. (recognition) Qual destas palavras significa "ombro"?
+- **Resposta:** `{"choices": ["りえき", "せいき", "かた", "れんそう"], "correct": "かた"}`
+- かた significa ombro. As outras opções são りえき (lucro, ganho), せいき (século) e れんそう (associar (mentalmente), lembrar (de algo por associação)).
+
+
+### 27. (recognition) Qual destas palavras significa "doces, guloseimas" (no sentido de confeitos)?
+- **Resposta:** `{"choices": ["かくだい", "かし", "おうだん", "かさい"], "correct": "かし"}`
+- かし significa doces, guloseimas. As outras opções são かさい (incêndio, fogo (desastre)), おうだん (atravessar, cruzar) e かくだい (expansão, ampliação).
+
+
+### 28. (cloze) Complete a frase: 彼は音楽について＿＿。 (Ele falou sobre música.)
+- **Resposta:** `{"text": "語った", "full": "彼は音楽について語った。"}`
+- A palavra que falta é 語る（かたる）: narrar, contar. Na frase ela aparece como 語った.
+- frases: `sent:tatoeba-798449`
+
+### 29. (cloze) Complete a frase: でも、これで１つ＿＿だね。 (Mas agora você me deve uma.)
+- **Resposta:** `{"text": "貸し", "full": "でも、これで１つ貸しだね。"}`
+- A palavra que falta é 貸し（かし）: empréstimo (concedido).
+- frases: `sent:tatoeba-202119`
+
+### 30. (recognition) Qual destas palavras significa "sábio, esperto"?
+- **Resposta:** `{"choices": ["かしこい", "にくい", "おさない", "つらい"], "correct": "かしこい"}`
+- かしこい significa sábio, esperto. As outras opções são おさない (jovem (de pouca idade), muito novo), にくい (odioso, detestável) e つらい (doloroso, difícil (de suportar)).
+
+

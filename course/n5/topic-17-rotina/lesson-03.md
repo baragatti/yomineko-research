@@ -124,3 +124,53 @@ Em お母さん, o かあ é uma vogal longa: segure por DOIS tempos (duas palma
 - お母さん junta o prefixo de respeito お, o kanji 母 e o sufixo さん. Use-o para chamar a sua mãe ou para falar da mãe de outra pessoa; 母 (はは) sozinho é como você fala da sua própria mãe para fora de casa.
 
 
+### 10. (recognition) Qual destas palavras significa "redondo, circular"?
+- **Resposta:** `{"choices": ["長い", "大きい", "新しい", "円い"], "correct": "円い"}`
+- 円い（まるい） significa redondo, circular. As outras opções são 長い (longo, comprido), 新しい (novo) e 大きい (grande).
+
+
+### 11. (recognition) Qual destas palavras significa "fim de tarde, entardecer"?
+- **Resposta:** `{"choices": ["みんな", "デパート", "ゆうがた", "おととい"], "correct": "ゆうがた"}`
+- ゆうがた significa fim de tarde, entardecer. As outras opções são みんな (todos, todo mundo), おととい (anteontem) e デパート (loja de departamentos, grande loja).
+
+
+### 12. (recognition) Qual destas palavras significa "barato"?
+- **Resposta:** `{"choices": ["やすい", "むずかしい", "ふるい", "あつい"], "correct": "やすい"}`
+- やすい significa barato. As outras opções são むずかしい (difícil), ふるい (velho, antigo) e あつい (quente (ao toque)).
+
+
+### 13. (recognition) Qual destas palavras significa "fácil, simples"?
+- **Resposta:** `{"choices": ["みじかい", "やさしい", "あまい", "ほそい"], "correct": "やさしい"}`
+- やさしい significa fácil, simples. As outras opções são みじかい (curto), ほそい (fino, delgado) e あまい (doce).
+
+
+### 14. (recognition) Qual destas palavras significa "olho"?
+- **Resposta:** `{"choices": ["みなさん", "ぶたにく", "め", "みち"], "correct": "め"}`
+- め significa olho. As outras opções são みなさん (pessoal, todos (vocês)), ぶたにく (carne de porco) e みち (rua, estrada).
+
+
+### 15. (recognition) Qual destas palavras significa "reto, direito"?
+- **Resposta:** `{"choices": ["べんり", "にぎやか", "どの", "まっすぐ"], "correct": "まっすぐ"}`
+- まっすぐ significa reto, direito. As outras opções são べんり (conveniente, prático), にぎやか (animado, movimentado) e どの (qual (+ substantivo), que (livro, pessoa etc.)).
+
+
+### 16. (recognition) Qual destas palavras significa "curto"?
+- **Resposta:** `{"choices": ["みじかい", "ふるい", "むずかしい", "ひくい"], "correct": "みじかい"}`
+- みじかい significa curto. As outras opções são むずかしい (difícil), ひくい (baixo) e ふるい (velho, antigo).
+
+
+### 17. (recognition) Qual destas palavras significa "metro (unidade de comprimento)"?
+- **Resposta:** `{"choices": ["ひだり", "きんようび", "メートル", "ポケット"], "correct": "メートル"}`
+- メートル significa metro (unidade de comprimento). As outras opções são ポケット (bolso), きんようび (sexta-feira) e ひだり (esquerda, lado esquerdo).
+
+
+### 18. (recognition) Qual destas palavras significa "orelha, ouvido"?
+- **Resposta:** `{"choices": ["どうぶつ", "みみ", "やさい", "ひき"], "correct": "みみ"}`
+- みみ significa orelha, ouvido. As outras opções são やさい (legume, verdura), ひき (contador de animais pequenos) e どうぶつ (animal).
+
+
+### 19. (recognition) Qual destas palavras significa "difícil"?
+- **Resposta:** `{"choices": ["やさしい", "あおい", "むずかしい", "やすい"], "correct": "むずかしい"}`
+- むずかしい significa difícil. As outras opções são やすい (barato), やさしい (fácil, simples) e あおい (azul, (sinal) verde).
+
+

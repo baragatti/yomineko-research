@@ -129,3 +129,48 @@ Dois kanji ligados a lugares e deslocamento, que aparecem o tempo todo quando vo
 - 旅行 é 旅 (viagem) mais 行 (ir): a viagem que se faz saindo de casa. Guarde na mesma prateleira 旅館 (りょかん), a pousada tradicional japonesa.
 
 
+### 9. (recognition) Qual destas palavras significa "outro dia, esses dias"?
+- **Resposta:** `{"choices": ["急行", "この間", "代", "気分"], "correct": "この間"}`
+- この間（このあいだ） significa outro dia, esses dias. As outras opções são 代 (mundo, sociedade), 急行 (trem expresso) e 気分 (humor, estado de espírito).
+
+
+### 10. (recognition) Qual destas palavras significa "cuidado, assistência"?
+- **Resposta:** `{"choices": ["今夜", "会場", "来週", "世話"], "correct": "世話"}`
+- 世話（せわ） significa cuidado, assistência. As outras opções são 今夜 (esta noite, hoje à noite), 会場 (local (do evento), recinto) e 来週 (semana que vem, próxima semana).
+
+
+### 11. (recognition) Qual destas palavras significa "depois de muito tempo, há quanto tempo"?
+- **Resposta:** `{"choices": ["いなか", "ひさしぶり", "ハンバーグ", "じゃま"], "correct": "ひさしぶり"}`
+- ひさしぶり significa depois de muito tempo, há quanto tempo. As outras opções são ハンバーグ (hambúrguer (tipo bife, sem pão), bife de hambúrguer), いなか (campo, zona rural) e じゃま (estorvo, incômodo).
+
+
+### 12. (cloze) Complete a frase: 私よりもっとエッチな人もいて＿＿しました。 (Fiquei aliviado(a) ao ver que também há gente mais safada do que eu.)
+- **Resposta:** `{"text": "安心", "full": "私よりもっとエッチな人もいて安心しました。"}`
+- A palavra que falta é 安心（あんしん）: alívio, tranquilidade.
+- frases: `sent:tatoeba-74659`
+
+### 13. (cloze) Complete a frase: 寒いからオーバーを着ても＿＿。 (Como está frio, você pode manter o casaco vestido.)
+- **Resposta:** `{"text": "かまいません", "full": "寒いからオーバーを着てもかまいません。"}`
+- A palavra que falta é かまう: importar-se, ligar para. Na frase ela aparece como かまいません.
+- frases: `sent:tatoeba-184050`
+
+### 14. (recognition) Qual destas palavras significa "promessa, compromisso"?
+- **Resposta:** `{"choices": ["やくそく", "きゃく", "く", "アジア"], "correct": "やくそく"}`
+- やくそく significa promessa, compromisso. As outras opções são アジア (Ásia), く (distrito, bairro (administrativo)) e きゃく (cliente, convidado).
+
+
+### 15. (recognition) Qual destas palavras significa "continuar, prosseguir"?
+- **Resposta:** `{"choices": ["つる", "つく", "おくれる", "つづく"], "correct": "つづく"}`
+- つづく significa continuar, prosseguir. As outras opções são つく (pegar fogo, acender-se), おくれる (atrasar-se, estar atrasado) e つる (pescar (com vara), fisgar).
+
+
+### 16. (recognition) Qual destas palavras significa "vizinhança, redondezas"?
+- **Resposta:** `{"choices": ["るす", "しみん", "きんじょ", "ゆにゅう"], "correct": "きんじょ"}`
+- きんじょ significa vizinhança, redondezas. As outras opções são るす (ausência, estar fora (de casa)), ゆにゅう (importação) e しみん (cidadão, cidadã).
+
+
+### 17. (recognition) Qual destas palavras significa "atrasar-se, estar atrasado"?
+- **Resposta:** `{"choices": ["しかる", "おくれる", "まちがえる", "なれる"], "correct": "おくれる"}`
+- おくれる significa atrasar-se, estar atrasado. As outras opções são なれる (acostumar-se, habituar-se), しかる (repreender, ralhar com) e まちがえる (errar, cometer um erro).
+
+

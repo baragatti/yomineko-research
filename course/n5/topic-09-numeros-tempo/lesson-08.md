@@ -83,3 +83,13 @@ Repare na diferença entre katakana e kanji nestas palavras:シャツ・スカ�
 - これ (isto) + は (tópico, lê-se 'wa') + さいふ (carteira) + です (cópula educada). さいふ é japonesa, escrita 財布 em kanji, mas você pode escrever em kana por enquanto.
 
 
+### 6. (recognition) Qual destas palavras significa "camisa, camiseta"?
+- **Resposta:** `{"choices": ["シャツ", "じびき", "かげつ", "ことば"], "correct": "シャツ"}`
+- シャツ significa camisa, camiseta. As outras opções são かげつ (contador de meses (duração em meses)), じびき (dicionário) e ことば (palavra, expressão).
+
+
+### 7. (recognition) Qual destas palavras significa "suéter, blusa de lã"?
+- **Resposta:** `{"choices": ["せっけん", "セーター", "さつ", "くち"], "correct": "セーター"}`
+- セーター significa suéter, blusa de lã. As outras opções são さつ (contador de livros, contador de volumes), くち (boca) e せっけん (sabonete, sabão).
+
+

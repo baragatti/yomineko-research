@@ -104,3 +104,28 @@ Cuidado: ４日 (dia 4) e ８日 (dia 8) têm leituras parecidas, mas diferentes
 - Sozinho, 火 lê-se ひ. A leitura chinesa か é a que aparece nos compostos, inclusive no nome da terça-feira.
 
 
+### 8. (cloze) Complete a frase: ここから学校まで三＿＿くらいだ (Daqui até a escola são uns três quilômetros.)
+- **Resposta:** `{"text": "キロ", "full": "ここから学校まで三キロくらいだ"}`
+- A palavra que falta é キロ: quilo, quilograma.
+- frases: `sent:gen-90c50b9be63d`
+
+### 9. (recognition) Qual destas palavras significa "quatro (coisas)"?
+- **Resposta:** `{"choices": ["三つ", "四つ", "山", "南"], "correct": "四つ"}`
+- 四つ（よっつ） significa quatro (coisas). As outras opções são 三つ (três (coisas)), 山 (montanha) e 南 (sul).
+
+
+### 10. (recognition) Qual destas palavras significa "zero"?
+- **Resposta:** `{"choices": ["にもつ", "ばん", "れい", "ゆうべ"], "correct": "れい"}`
+- れい significa zero. As outras opções são ゆうべ (ontem à noite, a noite passada), ばん (número, vez) e にもつ (bagagem, carga).
+
+
+### 11. (recognition) Qual destas palavras significa "dia 4 (do mês)"?
+- **Resposta:** `{"choices": ["天気", "四日", "来月", "六つ"], "correct": "四日"}`
+- 四日（よっか） significa dia 4 (do mês). As outras opções são 来月 (mês que vem, próximo mês), 六つ (seis (coisas)) e 天気 (tempo (clima), clima).
+
+
+### 12. (recognition) Qual destas palavras significa "dia 8 (do mês)"?
+- **Resposta:** `{"choices": ["六つ", "半", "二人", "八日"], "correct": "八日"}`
+- 八日（ようか） significa dia 8 (do mês). As outras opções são 半 (metade), 六つ (seis (coisas)) e 二人 (duas pessoas).
+
+

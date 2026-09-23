@@ -107,3 +107,63 @@ E os dois kanji desta lição, ambos ligados a governo e debate:
 - 政 é "política, governo" e se lê セイ. 西 e 生 também se leem セイ, mas querem dizer "oeste" e "vida"; 教 ("ensinar") é o kanji que divide com 政 o mesmo radical à direita.
 
 
+### 9. (recognition) Qual destas palavras significa "posição, grau"?
+- **Resposta:** `{"choices": ["くらい", "ばんぐみ", "じんじゃ", "ふつう"], "correct": "くらい"}`
+- くらい significa posição, grau. As outras opções são ばんぐみ (programa (de TV/rádio)), じんじゃ (santuário xintoísta) e ふつう (comum, normal).
+
+
+### 10. (recognition) Qual destas palavras significa "vazio, oco"?
+- **Resposta:** `{"choices": ["仕方", "店員", "空", "員"], "correct": "空"}`
+- 空（から） significa vazio, oco. As outras opções são 店員 (vendedor, atendente), 仕方 (jeito (de fazer), maneira) e 員 (membro, funcionário).
+
+
+### 11. (recognition) Qual destas formas significa "poder, ser capaz de (sufixo)"?
+- **Resposta:** `{"choices": ["にげる", "あい", "うる", "たち"], "correct": "うる"}`
+- うる significa poder, ser capaz de (sufixo). As outras opções são たち (sufixo de plural (pessoas e animais)), にげる (fugir, escapar) e あい (amor, afeto).
+
+
+### 12. (recognition) Qual destas palavras significa "sob (a orientação/influência de), debaixo de"?
+- **Resposta:** `{"choices": ["もと", "いし", "もめん", "いいん"], "correct": "もと"}`
+- もと significa sob (a orientação/influência de), debaixo de. As outras opções são もめん (algodão), いいん (membro de comitê, integrante de comissão) e いし (médico, doutor).
+
+
+### 13. (recognition) Qual destas formas significa "depois, mais tarde" (no sentido de em seguida)?
+- **Resposta:** `{"choices": ["花見", "金持ち", "三日", "後"], "correct": "後"}`
+- 後（ご） significa depois, mais tarde. As outras opções são 金持ち (pessoa rica, ricaço), 花見 (contemplação das flores (esp. de cerejeira)) e 三日 (dia 3 (do mês)).
+
+
+### 14. (recognition) Qual destas formas significa "prefixo honorífico (cortesia, respeito)"?
+- **Resposta:** `{"choices": ["キロ", "うる", "お", "がら"], "correct": "お"}`
+- お significa prefixo honorífico (cortesia, respeito). As outras opções são うる (poder, ser capaz de (sufixo)), がら (estampa/padrão/desenho (de tecido)) e キロ (quilo, quilograma).
+
+
+### 15. (recognition) Qual destas formas significa "som, ruído"?
+- **Resposta:** `{"choices": ["工場", "時間", "金", "音"], "correct": "音"}`
+- 音（おん） significa som, ruído. As outras opções são 金 (ouro), 工場 (fábrica, usina) e 時間 (tempo).
+
+
+### 16. (cloze) Complete a frase: バターは＿＿で作る。 (Manteiga se faz com creme de leite.)
+- **Resposta:** `{"text": "クリーム", "full": "バターはクリームで作る。"}`
+- A palavra que falta é クリーム: creme, nata.
+- frases: `sent:tatoeba-198016`
+
+### 17. (cloze) Complete a frase: その＿＿は空だった。 (Aquele copo estava vazio.)
+- **Resposta:** `{"text": "グラス", "full": "そのグラスは空だった。"}`
+- A palavra que falta é グラス: copo (de vidro), taça.
+- frases: `sent:tatoeba-213246`
+
+### 18. (cloze) Complete a frase: ＿＿ホテルまで、行ってください。 (Me leva até o Grand Hotel, por favor.)
+- **Resposta:** `{"text": "グランド", "full": "グランドホテルまで、行ってください。"}`
+- A palavra que falta é グランド: grande, grandioso.
+- frases: `sent:tatoeba-225534`
+
+### 19. (cloze) Complete a frase: 先生、＿＿。 (Olá, professor!)
+- **Resposta:** `{"text": "こんにちは", "full": "先生、こんにちは。"}`
+- A palavra que falta é こんにちは: olá, boa tarde.
+- frases: `sent:tatoeba-13259054`
+
+### 20. (recognition) Qual destas palavras significa "obter, conseguir"?
+- **Resposta:** `{"choices": ["あずける", "える", "つく", "あきる"], "correct": "える"}`
+- える significa obter, conseguir. As outras opções são あきる (enjoar de, cansar-se de), つく (grudar, ficar grudado) e あずける (deixar aos cuidados de, depositar).
+
+

@@ -104,3 +104,13 @@ Duas palavras desta lição mostram bem onde as ordens aparecem:
 - 勉 é 'empenho' e traz 力 (força) embaixo; ao lado de 強 (forte) forma 勉強, o estudo como esforço. É a palavra que vira verbo com する.
 
 
+### 7. (recognition) Qual destas palavras significa "mergulhar, deixar de molho"?
+- **Resposta:** `{"choices": ["なく", "しまう", "かむ", "つける"], "correct": "つける"}`
+- つける significa mergulhar, deixar de molho. As outras opções são なく (chorar), しまう (acabar (fazendo), fazer por completo (muitas vezes com pesar)) e かむ (morder, mastigar).
+
+
+### 8. (recognition) Qual destas palavras significa "bebê, neném"?
+- **Resposta:** `{"choices": ["ばしょ", "あかんぼう", "メートル", "れんらく"], "correct": "あかんぼう"}`
+- あかんぼう significa bebê, neném. As outras opções são ばしょ (lugar, local), れんらく (contato, comunicação) e メートル (metro (unidade de comprimento)).
+
+

@@ -58,6 +58,21 @@ to write it from a gloss alone, which is the item most likely to be ambiguous.
                   set, with the point's own form blanked. The span comes from the grammar record's
                   `forms[].form` / `structure_pattern` probe segments and must align to token
                   boundaries on both sides, so the blank is a morpheme and not a slice of one.
+                  A one-character point (か, が) blanks one particle token of a tagged sentence;
+                  when no tagged sentence serves, an untagged one that spells a multi-character
+                  form is tried; a tagged sentence too short to lose the whole form blanks the
+                  particle the form opens with (が of があります).
+  (e) K         — a kanji pending drill (W21b moved its unlock to its first user): a known word
+                  written with it, served by (a) or (b) with the kanji inside the blank or the key;
+                  else a kanji-by-meaning MCQ over the lesson's kanji known set; else writing the
+                  word with the kanji (kana not accepted).
+
+THE FOUR RULES OF THE W20 FABLE SAMPLE (2026-09-23 re-run)
+  1. every new id is `ex:<lesson slug>-<n>`, so it keeps its level prefix (`id_prefix`);
+  2. no distractor whose glosses share a content word with the key's (`content_words`);
+  3. a cloze on an inflected stem blanks the whole conjugated form (`whole_form_end`);
+  4. no production item for a bound morpheme (`is_bound`); its MCQ may take other bound forms
+     as distractors. Plus a homograph guard (`sense_fits`) found in the same sample.
 
 WHAT THIS SCRIPT REFUSES TO DO
 ------------------------------
@@ -125,6 +140,47 @@ POS_LABEL = {"noun": "substantivo", "verb": "verbo", "adj-i": "adjetivo em -i",
 BRACKET_PAIRS = (("(", ")"), ("（", "）"), ("「", "」"), ("『", "』"), ("[", "]"))
 TERMINAL = tuple(".?!:…。？！」』)）\"'")
 EX_NUM_RX = re.compile(r"^(.*)-(\d+)$")
+
+
+# Rule 2 of the W20 Fable sample: no distractor whose gloss shares a content word with the key's
+# (深刻 "sério, grave" beside 重大 "grave, importante" is two right answers). These pt-BR words carry
+# no meaning of their own in a gloss, so sharing one is not sharing a sense.
+GLOSS_STOP = frozenset((
+    "a", "o", "as", "os", "um", "uma", "uns", "umas", "de", "do", "da", "dos", "das", "em", "no",
+    "na", "nos", "nas", "para", "pra", "por", "pelo", "pela", "com", "sem", "e", "ou", "que", "se",
+    "ao", "aos", "à", "às", "como", "algo", "alguém", "alguma", "algum", "coisa", "coisas", "pessoa",
+    "ser", "estar", "ter", "fazer", "ficar", "dar", "ir", "muito", "mais", "menos", "bem", "não",
+    "tipo", "forma", "modo", "etc", "sobre", "entre", "até", "outro", "outra", "seu", "sua",
+))
+PAREN_RX = re.compile(r"[(（][^()（）]*[)）]")
+WORD_RX = re.compile(r"[a-zà-ÿ]+")
+
+
+def content_words(texts) -> set[str]:
+    """The meaning-bearing pt-BR words of some glosses: parentheticals dropped, stop words dropped,
+    a plural -s folded (olhos = olho), accents kept (they separate words in pt-BR)."""
+    out: set[str] = set()
+    for t in texts:
+        for w in WORD_RX.findall(PAREN_RX.sub(" ", str(t)).lower()):
+            if w in GLOSS_STOP or len(w) < 3:
+                continue
+            out.add(w[:-1] if len(w) > 3 and w.endswith("s") else w)
+    return out
+
+
+def all_glosses(rec: dict) -> list[str]:
+    return [str(g) for s in rec.get("senses") or [] for g in ((s.get("gloss") or {}).get(LOC) or [])]
+
+
+# Rule 4: a bound morpheme (がる, ご, お) cannot be written "as the word that means X"; it has no
+# standalone form to produce. A record is bound when its first glossed sense carries only these tags.
+# A counter is bound only when it is nothing else (年 is also a noun and stays producible).
+BOUND_POS = frozenset(("suf", "pref", "n-suf", "n-pref", "aux", "aux-v", "aux-adj"))
+
+
+def is_bound(rec: dict) -> bool:
+    tags = set((sense_of(rec) or {}).get("pos") or [])
+    return bool(tags & BOUND_POS) or tags == {"ctr"}
 
 
 def pos_class(tag: str) -> str:
@@ -302,6 +358,10 @@ def load_lessons(root: Path) -> list[dict]:
             "sort": vpc.lesson_sort_key(path, d, level_order),
         })
     rows.sort(key=lambda r: r["sort"])
+    for i, r in enumerate(rows):
+        r["pos"] = i
+        for u in r["lesson"].get("unlocks") or []:
+            INTRO_POS.setdefault(u.get("ref"), i)
     return rows
 
 
@@ -335,6 +395,12 @@ def index_bank(root: Path) -> tuple[dict[str, dict], dict[str, list[str]], dict[
     return by_slug, by_vocab, by_gram, need, attested
 
 
+# Filled by main(): the course position of the lesson that unlocks each item, and each bank
+# sentence's references as scripts/derive_needs.py expands them.
+INTRO_POS: dict[str, int] = {}
+SENT_REFS: dict[str, set] = {}
+
+
 def sentence_ok(sslug: str, row: dict, need: dict) -> bool:
     """Is this sentence safe to print in front of THIS lesson's learner? i+0, both registries.
 
@@ -344,7 +410,12 @@ def sentence_ok(sslug: str, row: dict, need: dict) -> bool:
     if sslug in row["rendered"]:
         return True
     kj, vs, unlinked = need[sslug]
-    return not unlinked and kj <= row["known_kanji"] and vs <= row["known_vocab"]
+    if unlinked or not kj <= row["known_kanji"] or not vs <= row["known_vocab"]:
+        return False
+    # Every item the sentence is a reference to (derive_needs' own expansion, grammar tags
+    # included) must be taught by this lesson or an earlier one: citing it from an exercise is a
+    # use, and a use of a later lesson's item is a forward reference (validate_lesson_gating C5).
+    return all(INTRO_POS.get(r, -1) <= row["pos"] for r in SENT_REFS.get(sslug, ()))
 
 
 def rank_sentences(cands: list[str], row: dict, by_slug: dict, need: dict, ref: str) -> list[str]:
@@ -370,7 +441,9 @@ def token_spans(rec: dict) -> list[tuple[int, int, dict]]:
     i = 0
     for t in rec.get("tokens") or []:
         surf = t.get("surface") or ""
-        if not surf:
+        # split_mode A rows are the sub-units of the C token that follows them (日本 + 語 before
+        # 日本語); the C layer alone tiles the sentence
+        if not surf or t.get("split_mode") == "A":
             continue
         j = jp.find(surf, i)
         if j < 0:
@@ -394,11 +467,16 @@ class Credit:
         self.tile = vpc.make_tiler(surfaces, longest)
         self.gram_probes, _labels = vpc.load_grammar(root)
         self.sentences = vpc.load_sentences(root)
+        self.kanji = vpc.load_kanji(root)
 
     def credits(self, ex: dict, kind: str, ref: str) -> bool:
         answers = vpc.answer_surfaces(ex.get("answer"))
         marked = set(vpc.TARGET_REF_RX.findall(json.dumps(ex.get("prompt"), ensure_ascii=False)))
         cited = {s for s in (ex.get("sentence_refs") or []) if s in self.sentences}
+        if kind == "kanji":
+            ch = self.kanji.get(ref, "\x00")
+            return ref in marked or any(ch in s for s in answers) or any(
+                ch in self.sentences[s][2] for s in cited)
         verbatim = {self.sentences[s][3] for s in cited}
         tiled: set[str] = set()
         for s in answers:
@@ -433,12 +511,13 @@ def work_list(root: Path, rows: list[dict], credit: Credit) -> list[dict]:
         d = row["lesson"]
         unlocks: dict[str, list[str]] = collections.defaultdict(list)
         for e in d.get("unlocks") or []:
-            if e.get("type") in ("vocab", "grammar") and isinstance(e.get("ref"), str):
+            if e.get("type") in ("vocab", "grammar", "kanji") and isinstance(e.get("ref"), str):
                 unlocks[e["type"]].append(e["ref"])
         if not unlocks:
             continue
         existing = d.get("exercises") or []
-        for kind in ("vocab", "grammar"):
+        # kanji last: its only source today is W21b's pending drills, served through a word
+        for kind in ("vocab", "grammar", "kanji"):
             for ref in unlocks[kind]:
                 if any(credit.credits(ex, kind, ref) for ex in existing):
                     continue
@@ -449,28 +528,26 @@ def work_list(root: Path, rows: list[dict], credit: Credit) -> list[dict]:
 
 # --------------------------------------------------------------------------- id allocation
 def id_prefix(d: dict) -> str:
-    """The `ex:<prefix>-<n>` pattern THIS lesson already uses, with its own numbering continued.
+    """`ex:<lesson slug>`, always: every id keeps its level prefix (rule 1 of the W20 Fable sample).
 
-    Not every lesson's exercise prefix is derived from its slug (`les:n3-causa-04` numbers its items
-    `ex:causa-04-*`), so the prefix is read off the data and only synthesised when there is none.
+    Some lessons number their older items without it (`les:n3-causa-01` has `ex:causa-01-*`); the
+    first run copied that and produced `ex:causa-01-25`. New ids use the lesson's own slug and
+    continue the lesson's numbering (`next_number`), so `ex:n3-causa-01-25` follows `ex:causa-01-24`.
     """
-    counts: collections.Counter[str] = collections.Counter()
-    for ex in d.get("exercises") or []:
-        m = EX_NUM_RX.match(ex.get("id") or "")
-        if m:
-            counts[m.group(1)] += 1
-    if counts:
-        return counts.most_common(1)[0][0]
     return "ex:" + d.get("id", "").split(":", 1)[-1]
 
 
 def next_number(d: dict, prefix: str) -> int:
-    best = 0
+    """One past the highest number under this prefix or under the lesson's majority prefix."""
+    counts: collections.Counter[str] = collections.Counter()
+    nums: dict[str, int] = collections.defaultdict(int)
     for ex in d.get("exercises") or []:
         m = EX_NUM_RX.match(ex.get("id") or "")
-        if m and m.group(1) == prefix:
-            best = max(best, int(m.group(2)))
-    return best + 1
+        if m:
+            counts[m.group(1)] += 1
+            nums[m.group(1)] = max(nums[m.group(1)], int(m.group(2)))
+    mine = {prefix} | ({counts.most_common(1)[0][0]} if counts else set())
+    return max((nums[p] for p in mine), default=0) + 1
 
 
 # --------------------------------------------------------------------------- templates
@@ -484,11 +561,12 @@ def build_cloze(pair: dict, row: dict, rec: dict, by_slug: dict, by_vocab: dict,
         if not pt:
             continue
         spans = token_spans(sent)
-        hit = next(((a, b, t) for a, b, t in spans
-                    if t.get("vocab") == ref and reading_fits(t, rec)), None)
-        if hit is None:
+        k = next((i for i, (_a, _b, t) in enumerate(spans)
+                  if t.get("vocab") == ref and reading_fits(t, rec) and sense_fits(t, rec)), None)
+        if k is None:
             continue
-        a, b, tok = hit
+        a, b, tok = spans[k]
+        b = whole_form_end(spans, k)
         surface = jp[a:b]
         # a blank that swallows the sentence is a production item wearing a cloze's clothes, and a
         # blank one kana wide is a guess (8人孫が＿ます。 asking for い is not vocabulary practice)
@@ -511,11 +589,59 @@ def build_cloze(pair: dict, row: dict, rec: dict, by_slug: dict, by_vocab: dict,
               "sentence_refs": [sslug]}
         why = (f"cloze over bank sentence {sslug} "
                f"({'rendered by this lesson' if sslug in row['rendered'] else 'inside the cks'}); "
-               f"the target's own token ({surface}, position {tok.get('position')}) is blanked at its "
-               f"Sudachi boundary and answer.full is the sentence verbatim, so the coverage gate "
-               f"reads it through the sentence's Layer-A dissection")
+               f"the target's own token ({tok.get('surface')}, position {tok.get('position')}) is "
+               f"blanked at its Sudachi boundary"
+               + (f", extended over its inflection to the whole form {surface}"
+                  if surface != tok.get("surface") else "")
+               + "; answer.full is the sentence verbatim, so the coverage gate reads it through the "
+                 "sentence's Layer-A dissection")
         return ex, "cloze", why
     return None, None, "no_cks_clean_sentence"
+
+
+def sense_fits(tok: dict, rec: dict) -> bool:
+    """Does the token MEAN the record it links to? A homograph guard on top of `reading_fits`.
+
+    The bank links なり in 行かなければなりませんか to vocab:1611000 (生る, "dar fruto"): same kana,
+    other word. A cloze over it would explain the blank as "dar fruto". The token's own pt-BR gloss
+    (Layer B, written for this sentence) must share a content word with some gloss of the record;
+    a token with no gloss, or a record with none, is not judged.
+    """
+    mine = content_words([((tok.get("gloss") or {}).get(LOC) or "")])
+    theirs = content_words(all_glosses(rec))
+    return not mine or not theirs or bool(mine & theirs)
+
+
+# Rule 3: a cloze on an inflected stem blanks the whole conjugated form (なりません, not なり).
+NON_FINAL = {None, "terminal", "attributive"}
+TE_BA = {"て", "で", "ば"}
+
+
+def whole_form_end(spans: list[tuple[int, int, dict]], k: int) -> int:
+    """End offset of the conjugated form that starts at token k.
+
+    A token Sudachi left in a non-final form (連用形 なり, 未然形 いか, 連用 onbin 行っ) is carried
+    forward over the auxiliaries that complete it (ませ + ん, なけれ, た), stopping after one in a
+    final form, and over a directly attached て/で/ば, which ends the form. Contiguity is required:
+    a gap in the spans means the tokens do not tile the sentence there.
+    """
+    a, b, tok = spans[k]
+    if tok.get("inflection") in NON_FINAL:
+        return b
+    end = b
+    for a2, b2, t in spans[k + 1:]:
+        if a2 != end:
+            break
+        if t.get("pos") == "auxiliary":
+            end = b2
+            if t.get("inflection") in NON_FINAL:
+                break
+        elif t.get("pos") == "particle" and t.get("surface") in TE_BA:
+            end = b2
+            break
+        else:
+            break
+    return end
 
 
 def distractor_pool(pair: dict, row: dict, rec: dict, V: dict, attested: dict) -> list[tuple[str, str]]:
@@ -525,6 +651,8 @@ def distractor_pool(pair: dict, row: dict, rec: dict, V: dict, attested: dict) -
     key_pos = coarse_pos(rec)
     key_forms = surfaces_of(rec)
     key_kana = rec.get("kana")
+    key_words = content_words(all_glosses(rec))
+    key_bound = is_bound(rec)
     if not key_pos:
         return []
     pool = []
@@ -537,13 +665,17 @@ def distractor_pool(pair: dict, row: dict, rec: dict, V: dict, attested: dict) -
         og = gloss_key(other)
         if not og or og == key_gloss:
             continue
-        if coarse_pos(other) != key_pos:
+        # a bound key (prefix, suffix, auxiliary) is compared with other bound forms of any of
+        # those classes: there are too few prefixes in one known set to fill three options
+        if coarse_pos(other) != key_pos and not (key_bound and is_bound(other)):
             continue
         if surfaces_of(other) & key_forms:            # a homograph sibling or a written form of the key
             continue
         if key_kana and other.get("kana") == key_kana:  # a homophone: two right-sounding options
             continue
         if not gloss_text(other):
+            continue
+        if key_words & content_words(all_glosses(other)):   # rule 2: a second right answer
             continue
         # a distractor is on screen, so it obeys the same known-set rule as the key
         form = key_form(other, row["known_kanji"], attested)
@@ -587,7 +719,7 @@ def build_recognition(pair: dict, row: dict, rec: dict, V: dict, used: collectio
     expl = (f"{display(kform, rec)} significa {gl}. As outras opções são "
             f"{parts} e {chosen[2][1]} ({gloss_text(V[chosen[2][0]])}).")
     stem = f'"{gl}"' + (f" ({hint})" if hint else "")
-    prompt = f"Qual destas palavras significa {stem}?"
+    prompt = f"Qual destas {'formas' if is_bound(rec) else 'palavras'} significa {stem}?"
     if not (prose_ok(prompt) and prose_ok(expl)):
         return None, None, "unbalanced_prose"
     ex = {"type": "recognition",
@@ -650,6 +782,8 @@ def build_production(pair: dict, row: dict, rec: dict, V: dict, kform: str
     kana = rec.get("kana")
     if not gl or '"' in gl:
         return None, None, "gloss_unusable_in_stem"
+    if is_bound(rec):
+        return None, None, "bound_morpheme_no_production"
     hint, why_hint = disambiguate(row, rec, V, ref, gloss_key)
     if why_hint == "ambiguous":
         return None, None, "ambiguous_gloss_no_hint"
@@ -674,12 +808,23 @@ def build_grammar_cloze(pair: dict, row: dict, rec: dict, by_slug: dict, by_gram
                         need: dict, probes: dict) -> tuple[dict, str, str] | tuple[None, None, str]:
     ref = pair["ref"]
     segs = sorted((s for s in (probes.get(ref) or set()) if len(s) > 1), key=lambda s: (-len(s), s))
-    if not segs:
+    # A one-character point (か, が, は) is a particle cloze: blank exactly one particle token. The
+    # coverage gate credits a one-character segment only as a whole answer string, which this is.
+    single = sorted(s for s in (probes.get(ref) or set()) if len(s) == 1)
+    if not segs and not single:
         return None, None, "no_probe_segment"
     label = ((rec.get("label") or {}).get(LOC) if isinstance(rec.get("label"), dict) else None) \
         or rec.get("key") or ref
     reason = "no_cks_clean_sentence"
-    for sslug in rank_sentences(by_gram.get(ref, []), row, by_slug, need, ref):
+    tagged = by_gram.get(ref, [])
+    # Fallback after every tagged sentence: an untagged one that spells a multi-character form of the
+    # point. The gate credits it through the blanked answer itself (segment containment), and the
+    # token-boundary rule below still refuses a span that is only a slice of other words.
+    tagged_set = set(tagged)
+    spelled = sorted(s for s, rec_ in by_slug.items() if s not in tagged_set
+                     and any(seg in (rec_.get("jp") or "") for seg in segs))
+    for sslug in (rank_sentences(tagged, row, by_slug, need, ref)
+                  + rank_sentences(spelled, row, by_slug, need, ref)):
         sent = by_slug[sslug]
         jp = sent.get("jp") or ""
         pt = ((sent.get("translation") or {}).get(LOC) or "").strip()
@@ -688,32 +833,159 @@ def build_grammar_cloze(pair: dict, row: dict, rec: dict, by_slug: dict, by_gram
         spans = token_spans(sent)
         if not spans:
             continue
-        starts = {a for a, _b, _t in spans}
+        starts = {a: t for a, _b, t in spans}
         ends = {b for _a, b, _t in spans}
-        for seg in segs:
-            at = jp.find(seg)
-            while at >= 0:
-                rest = jp[:at] + jp[at + len(seg):]
-                if at in starts and at + len(seg) in ends and \
-                        len(JP_LETTER_RX.findall(rest)) >= MIN_JP_LEFT:
-                    blanked = jp[:at] + BLANK + jp[at + len(seg):]
-                    prompt = f"Complete a frase: {blanked} ({pt})"
-                    # the sentence itself is answer.full and the app reveals it; repeating it here
-                    # only produced a 。 followed by a full stop
-                    expl = f"O que falta é {seg}: o ponto gramatical desta lição, {label}."
-                    if prose_ok(prompt) and prose_ok(expl):
-                        ex = {"type": "cloze",
-                              "prompt": {LOC: prompt},
-                              "answer": {"text": seg, "full": jp},
-                              "explanation": {LOC: expl},
-                              "sentence_refs": [sslug]}
-                        why = (f"grammar cloze over bank sentence {sslug}, which carries this point's "
-                               f"own tag; the blanked span {seg} is a probe segment of the record's "
-                               f"forms/structure_pattern and aligns to token boundaries on both sides")
-                        return ex, "cloze", why
-                at = jp.find(seg, at + 1)
+        tagged_here = sslug in tagged_set
+        # (blank, offset): every aligned occurrence of a probe segment. A one-character particle is
+        # taken from the END: the tagged question か is the final one, not the か inside 何か, and a
+        # conjunctive が "mas" is never the subject marker.
+        tries: list[tuple[str, int]] = []
+        for seg in segs + (single if tagged_here else []):
+            hits = [i for i in range(len(jp)) if jp.startswith(seg, i)]
+            for at in (reversed(hits) if len(seg) == 1 else hits):
+                tok = starts.get(at)
+                if tok is None or at + len(seg) not in ends:
+                    continue
+                if len(seg) == 1 and not (tok.get("surface") == seg and tok.get("pos") == "particle"
+                                          and tok.get("pos_fine") != "接続助詞"):
+                    continue
+                tries.append((seg, at))
+        # Last resort on a TAGGED sentence too short to lose the whole form (痔があります leaves one
+        # letter): blank only the particle the form opens with (が of があります); the tag credits it.
+        if tagged_here:
+            for seg, at in list(tries):
+                head = starts[at].get("surface") or ""
+                if len(seg) > 1 and starts[at].get("pos") == "particle" and head \
+                        and seg.startswith(head) and len(head) < len(seg):
+                    tries.append((head, at))
+        for seg, at in tries:
+            if len(JP_LETTER_RX.findall(jp[:at] + jp[at + len(seg):])) < MIN_JP_LEFT:
+                continue
+            blanked = jp[:at] + BLANK + jp[at + len(seg):]
+            prompt = f"Complete a frase: {blanked} ({pt})"
+            # the sentence itself is answer.full and the app reveals it; repeating it here only
+            # produced a 。 followed by a full stop
+            expl = f"O que falta é {seg}: o ponto gramatical desta lição, {label}."
+            if prose_ok(prompt) and prose_ok(expl):
+                ex = {"type": "cloze",
+                      "prompt": {LOC: prompt},
+                      "answer": {"text": seg, "full": jp},
+                      "explanation": {LOC: expl},
+                      "sentence_refs": [sslug]}
+                why = (f"grammar cloze over bank sentence {sslug}, which "
+                       + ("carries this point's own tag" if tagged_here else
+                          "spells this point's form (no tagged sentence was usable)")
+                       + f"; the blanked span {seg} is a probe segment of the record's "
+                       f"forms/structure_pattern (or the particle it opens with) and aligns to token "
+                       f"boundaries on both sides")
+                return ex, "cloze", why
         reason = "no_alignable_form_span"
     return None, None, reason
+
+
+def build_kanji(pair: dict, row: dict, V: dict, by_slug: dict, by_vocab: dict, need: dict,
+                attested: dict, used: collections.Counter, credit: Credit, seen: set,
+                targeted: set, kmean: dict) -> tuple[dict, str, str] | tuple[None, None, str]:
+    """K — a kanji the lesson unlocks, drilled THROUGH a word the lesson knows that is written with it.
+
+    Only W21b's pending drills reach this (the kanji half is otherwise at 0 absent): the kanji moved to
+    its first user and the authored kanji exercise stayed behind as review. The word is chosen from the
+    lesson's known set, own unlocks first and words this run has not already drilled next, and served
+    by the vocab templates; the blank or the key must itself carry the character, so the learner
+    writes or picks the kanji, never just reads it in the scaffolding.
+    """
+    ch = credit.kanji.get(pair["ref"])
+    if not ch:
+        return None, None, "no_kanji_record"
+    own = {e.get("ref") for e in row["lesson"].get("unlocks") or [] if e.get("type") == "vocab"}
+    cands = []
+    for vs in row["known_vocab"]:
+        rec = V.get(vs)
+        kform = rec and key_form(rec, row["known_kanji"], attested)
+        if kform and ch in kform:
+            cands.append((0 if vs in own else 1, 1 if vs in targeted else 0, h(pair["ref"], row["id"], vs),
+                          vs, rec, kform))
+    if not cands:
+        return build_kanji_recognition(pair, row, ch, kmean, used, seen)
+    for _o, _t, _h, vs, rec, kform in sorted(cands)[:24]:
+        sub = {**pair, "kind": "vocab", "ref": vs}
+        for builder in (lambda: build_cloze(sub, row, rec, by_slug, by_vocab, need, kform),
+                        lambda: build_recognition(sub, row, rec, V, used, attested, kform)):
+            ex, kind, why = builder()
+            if ex is None:
+                continue
+            ans = ex["answer"].get("text") or ex["answer"].get("correct") or ""
+            key = (json.dumps(ex["prompt"], sort_keys=True, ensure_ascii=False),
+                   json.dumps(ex["answer"], sort_keys=True, ensure_ascii=False))
+            if ch not in ans or key in seen or not credit.credits(ex, "kanji", pair["ref"]):
+                continue
+            ex["explanation"][LOC] += f" O kanji {ch} faz parte desta palavra."
+            return ex, kind, f"kanji {ch} drilled through {vs} ({kform}): {why}"
+    ex, kind, why = build_kanji_recognition(pair, row, ch, kmean, used, seen)
+    if ex is not None:
+        return ex, kind, why
+    # Last: write the word WITH the kanji. The kana spelling is not accepted, or the item would not
+    # drill the character. Bound morphemes and ambiguous glosses are refused as in V-PROD.
+    for _o, _t, _h, vs, rec, kform in sorted(cands)[:24]:
+        gl = gloss_text(rec)
+        if not gl or '"' in gl or is_bound(rec):
+            continue
+        hint, why_hint = disambiguate(row, rec, V, vs, gloss_key)
+        if why_hint == "ambiguous":
+            continue
+        stem = f'"{gl}"' + (f" ({hint})" if hint else "")
+        prompt = f"Escreva com kanji a palavra que significa {stem}."
+        expl = f"A resposta é {display(kform, rec)}: {gl}. O kanji {ch} faz parte desta palavra."
+        ex = {"type": "production", "prompt": {LOC: prompt},
+              "answer": {"text": kform, "accept": [kform]},
+              "explanation": {LOC: expl}, "sentence_refs": []}
+        key = (json.dumps(ex["prompt"], sort_keys=True, ensure_ascii=False),
+               json.dumps(ex["answer"], sort_keys=True, ensure_ascii=False))
+        if key in seen or not (prose_ok(prompt) and prose_ok(expl)):
+            continue
+        return ex, "production", (f"kanji {ch} drilled by writing {vs} ({kform}) with it: no sentence "
+                                  f"or distractor pool in the known set served a cloze or an MCQ; "
+                                  f"the kana spelling is not accepted. Gloss ambiguity: {why_hint}")
+    return None, None, "no_template_for_kanji_word"
+
+
+def build_kanji_recognition(pair: dict, row: dict, ch: str, kmean: dict, used: collections.Counter,
+                            seen: set) -> tuple[dict, str, str] | tuple[None, None, str]:
+    """K-RECOG — the fallback when no known word carries the kanji: pick the character by meaning.
+
+    Stem: the KANJIDIC-derived pt-BR meanings of the kanji record (Layer A/B, two at most). Options:
+    three other kanji of the lesson's own kanji known set whose meanings share no content word with
+    the key's (rule 2 again), seeded and load-balanced like the word MCQ.
+    """
+    mine = kmean.get(pair["ref"]) or []
+    if not mine:
+        return None, None, "no_template_for_kanji_word"
+    gl = ", ".join(mine[:2])
+    words = content_words(mine)
+    pool = [k for k in sorted(row["known_kanji"])
+            if k != pair["ref"] and kmean.get(k) and not (words & content_words(kmean[k]))]
+    if len(pool) < 3:
+        return None, None, "no_template_for_kanji_word"
+    ranked = sorted(pool, key=lambda k: h(pair["ref"], row["id"], k))[:24]
+    chosen = sorted(ranked, key=lambda k: (used[k], h(pair["ref"], row["id"], k)))[:3]
+    for k in chosen:
+        used[k] += 1
+    chars = [k.split(":", 1)[1] for k in chosen]
+    order = sorted([ch] + chars, key=lambda o: h(pair["ref"], row["id"], "opt", o))
+    prompt = f'Qual destes kanji significa "{gl}"?'
+    expl = (f"{ch} significa {gl}. " + "; ".join(
+        f"{c} significa {', '.join(kmean[k][:2])}" for c, k in zip(chars, chosen)) + ".")
+    ex = {"type": "recognition", "prompt": {LOC: prompt},
+          "answer": {"choices": order, "correct": ch},
+          "explanation": {LOC: expl}, "sentence_refs": []}
+    key = (json.dumps(ex["prompt"], sort_keys=True, ensure_ascii=False),
+           json.dumps(ex["answer"], sort_keys=True, ensure_ascii=False))
+    if key in seen or not (prose_ok(prompt) and prose_ok(expl)):
+        return None, None, "no_template_for_kanji_word"
+    return ex, "recognition", (f"kanji MCQ by meaning: no known word carries {ch} inside the lesson's "
+                               f"known sets, so the stem is the kanji record's own pt-BR meanings and "
+                               f"the options are {', '.join(chars)} from the lesson's kanji known set, "
+                               f"none sharing a content word with the key's meanings")
 
 
 # --------------------------------------------------------------------------- main
@@ -729,10 +1001,16 @@ def main() -> int:
 
     V = load_vocab_records(root)
     G = load_grammar_records(root)
+    kmean = {r["slug"]: [str(m) for m in ((r.get("meanings") or {}).get(LOC) or []) if str(m).strip()]
+             for path in sorted(root.glob("corpus/kanji/*.json"))
+             for r in json.loads(path.read_text(encoding="utf-8"))}
     by_slug, by_vocab, by_gram, need, attested = index_bank(root)
     probes, _labels = vpc.load_grammar(root)
     credit = Credit(root)
     rows = load_lessons(root)
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import derive_needs                                         # noqa: E402, PLC0415
+    SENT_REFS.update(derive_needs.load_sentence_index(root))
     by_lesson = {r["id"]: r for r in rows}
 
     pairs = work_list(root, rows, credit)
@@ -750,6 +1028,9 @@ def main() -> int:
                    json.dumps(e.get("answer"), sort_keys=True, ensure_ascii=False))
                   for e in (r["lesson"].get("exercises") or [])} for r in rows}
     used_distractor: collections.Counter[str] = collections.Counter()
+    all_ids = {e.get("id") for r in rows for e in (r["lesson"].get("exercises") or [])}
+    targeted: dict[str, set[str]] = collections.defaultdict(set)
+    shared = 0
 
     out_rows: list[dict] = []
     residue: list[dict] = []
@@ -780,6 +1061,12 @@ def main() -> int:
                 if ex is not None:
                     break
                 attempts.append(why or "?")
+        elif pair["kind"] == "kanji":
+            ex, kind, why = build_kanji(pair, row, V, by_slug, by_vocab, need, attested,
+                                        used_distractor, credit, seen_keys[row["id"]],
+                                        targeted[row["id"]], kmean)
+            if ex is None:
+                attempts.append(why or "?")
         else:
             rec = G.get(pair["ref"])
             if rec is None:
@@ -805,12 +1092,27 @@ def main() -> int:
         key = (json.dumps(ex["prompt"], sort_keys=True, ensure_ascii=False),
                json.dumps(ex["answer"], sort_keys=True, ensure_ascii=False))
         if key in seen_keys[row["id"]]:
+            # The same item was already generated for another target of this lesson (gram:ga and
+            # gram:ga-arimasu both blank the が of one tagged sentence). If that row closes this pair
+            # too, it names both targets; a second copy would fail the contract's uniqueness rule.
+            twin = next((r for r in out_rows if r["lesson"] == row["id"] and key == (
+                json.dumps(r["exercise"]["prompt"], sort_keys=True, ensure_ascii=False),
+                json.dumps(r["exercise"]["answer"], sort_keys=True, ensure_ascii=False))), None)
+            if twin is not None and credit.credits(twin["exercise"], pair["kind"], pair["ref"]):
+                twin["targets"].append(pair["ref"])
+                shared += 1
+                continue
             residue.append({**pair, "reason": "duplicate_prompt_in_lesson", "tried": attempts + [kind]})
             by_reason["duplicate_prompt_in_lesson"] += 1
             continue
         seen_keys[row["id"]].add(key)
+        targeted[row["id"]].add(pair["ref"])
 
         eid = f"{prefix[row['id']]}-{counter[row['id']]}"
+        while eid in all_ids:                      # ids are global in the index, not per lesson
+            counter[row["id"]] += 1
+            eid = f"{prefix[row['id']]}-{counter[row['id']]}"
+        all_ids.add(eid)
         counter[row["id"]] += 1
         ex = {"id": eid, **ex}
         out_rows.append({"lesson": row["id"], "targets": [pair["ref"]], "exercise": ex, "why": why})
@@ -819,8 +1121,9 @@ def main() -> int:
 
     table = {
         "why": "Every vocab and grammar item a lesson unlocks but never practises, given ONE "
-               "mechanically generated exercise inside that lesson's own cumulative_known_set. The "
-               "vocab + grammar half of the W20 per-item practice campaign (APP_PLAN W20, §6 step "
+               "mechanically generated exercise inside that lesson's own cumulative_known_set, plus "
+               "the kanji whose unlock W21b moved to its first user (the pending drills of "
+               "scripts/validate/practice_coverage_baseline.json). The vocab + grammar half of the W20 per-item practice campaign (APP_PLAN W20, §6 step "
                "11); the kanji half is research/derived/repairs/practice_kanji_exercises.json.",
         "definition": "One row per generated exercise: {lesson, targets, exercise, why}. `targets` "
                       "names the vocab or grammar record the exercise clears in "
@@ -834,7 +1137,8 @@ def main() -> int:
                       "this table was generated against.",
         "generated_by": "scripts/build_vocab_exercises.py (deterministic, seeded, idempotent)",
         "applied_by": "scripts/apply_practice_exercises.py --table "
-                      "research/derived/pending/practice_vocab_exercises.json",
+                      "research/derived/repairs/practice_vocab_exercises.json (the table moves "
+                      "there from pending/ when it is applied)",
         "row_count": len(out_rows),
         "provenance": {
             "layer": "C",
@@ -859,6 +1163,7 @@ def main() -> int:
         "counts": {"by_type": dict(sorted(by_type.items())),
                    "by_level": dict(sorted(collections.Counter(
                        by_lesson[r["lesson"]]["level"] for r in out_rows).items())),
+                   "pairs_closed_by_a_sibling_row": shared,
                    "lessons_touched": len({r["lesson"] for r in out_rows}),
                    "max_added_to_one_lesson": max(per_lesson_added.values(), default=0)},
         "rows": out_rows,
@@ -887,6 +1192,13 @@ def main() -> int:
                                         "validate_practice_coverage's own predicate",
             "key_form_outside_cks": "every written form of the record carries a kanji this "
                                     "lesson has not taught, or is not one Japanese run",
+            "bound_morpheme_no_production": "no cloze or MCQ could be built and the record is a bound "
+                                            "morpheme (suffix, prefix, auxiliary), which has no "
+                                            "standalone form to produce",
+            "no_known_word_with_kanji": "no word in the lesson's known set is written with this kanji "
+                                        "inside the kanji known set",
+            "no_template_for_kanji_word": "words with this kanji exist, but no cloze or MCQ over them "
+                                          "puts the kanji in the answer",
             "no_vocab_record": "the unlock resolves to no exported vocab record",
             "no_grammar_record": "the unlock resolves to no exported grammar record",
         },
@@ -911,7 +1223,8 @@ def main() -> int:
         else:
             print(f"  {path.relative_to(out_root).as_posix()} unchanged (idempotent)")
 
-    print(f"generated {len(out_rows)} exercises by type {dict(sorted(by_type.items()))}; "
+    print(f"generated {len(out_rows)} exercises by type {dict(sorted(by_type.items()))} "
+          f"({shared} more pair(s) closed by a sibling row); "
           f"{len(residue)} pairs to residue by reason {dict(sorted(by_reason.items()))}")
     if args.stats:
         print(f"  lessons touched {len({r['lesson'] for r in out_rows})}, most items added to one "

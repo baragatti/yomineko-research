@@ -138,3 +138,78 @@ Repare que 晴 e 暗 compartilham o radical do sol (日) à esquerda, mas levam 
 - 酒 (さけ) cobre o saquê e a bebida alcoólica em geral. 飲みません é a negativa educada de 飲む, e o que se bebe vem marcado por を.
 
 
+### 9. (cloze) Complete a frase: ＿＿が欲しい。 (Quero suco.)
+- **Resposta:** `{"text": "ジュース", "full": "ジュースが欲しい。"}`
+- A palavra que falta é ジュース: suco.
+- frases: `sent:tatoeba-11903587`
+
+### 10. (cloze) Complete a frase: 彼は１年に１度＿＿する。 (Ele vai a Tóquio uma vez por ano.)
+- **Resposta:** `{"text": "上京", "full": "彼は１年に１度上京する。"}`
+- A palavra que falta é 上京（じょうきょう）: ir a Tóquio, ir para a capital.
+- frases: `sent:tatoeba-115217`
+
+### 11. (cloze) Complete a frase: 私は＿＿です。 (Eu sou dona de casa.)
+- **Resposta:** `{"text": "主婦", "full": "私は主婦です。"}`
+- A palavra que falta é 主婦（しゅふ）: dona de casa.
+- frases: `sent:tatoeba-156092`
+
+### 12. (cloze) Complete a frase: ＿＿計画はダメになった。 (O projeto habitacional foi por água abaixo.)
+- **Resposta:** `{"text": "住宅", "full": "住宅計画はダメになった。"}`
+- A palavra que falta é 住宅（じゅうたく）: habitação, moradia.
+- frases: `sent:tatoeba-148087`
+
+### 13. (recognition) Qual destas palavras significa "consertar, reparar"?
+- **Resposta:** `{"choices": ["しばい", "しゅうり", "じっし", "めいわく"], "correct": "しゅうり"}`
+- しゅうり significa consertar, reparar. As outras opções são めいわく (incômodo, transtorno), しばい (peça (de teatro), espetáculo) e じっし (implementação, aplicação).
+
+
+### 14. (recognition) Qual destas palavras significa "colheita, safra"?
+- **Resposta:** `{"choices": ["しゅうかく", "たま", "ハイキング", "しゅちょう"], "correct": "しゅうかく"}`
+- しゅうかく significa colheita, safra. As outras opções são しゅちょう (afirmar, sustentar), ハイキング (caminhada, trilha) e たま (bola, esfera).
+
+
+### 15. (recognition) Qual destas palavras significa "hospedar-se, pernoitar"?
+- **Resposta:** `{"choices": ["こうか", "しゅうい", "じょうきょう", "しゅくはく"], "correct": "しゅくはく"}`
+- しゅくはく significa hospedar-se, pernoitar. As outras opções são しゅうい (arredores, entorno), じょうきょう (situação, circunstâncias) e こうか (efeito, eficácia).
+
+
+### 16. (recognition) Qual destas formas significa "estado, província"?
+- **Resposta:** `{"choices": ["のうか", "けんか", "しゅう", "しじん"], "correct": "しゅう"}`
+- しゅう significa estado, província. As outras opções são のうか (agricultor, família de agricultores), しじん (poeta) e けんか (briga, discussão).
+
+
+### 17. (cloze) Complete a frase: ＿＿が必要ですか。 (Vai precisar de cirurgia?)
+- **Resposta:** `{"text": "手術", "full": "手術が必要ですか。"}`
+- A palavra que falta é 手術（しゅじゅつ）: cirurgia, operação.
+- frases: `sent:tatoeba-148543`
+
+### 18. (cloze) Complete a frase: 会は＿＿に終わった。 (A reunião terminou ao meio-dia.)
+- **Resposta:** `{"text": "正午", "full": "会は正午に終わった。"}`
+- A palavra que falta é 正午（しょうご）: meio-dia.
+- frases: `sent:tatoeba-185433`
+
+### 19. (recognition) Qual destas palavras significa "congestionamento, engarrafamento"?
+- **Resposta:** `{"choices": ["しも", "じゅうたい", "しげん", "こむぎ"], "correct": "じゅうたい"}`
+- じゅうたい significa congestionamento, engarrafamento. As outras opções são こむぎ (trigo), しも (geada) e しげん (recursos, recursos naturais).
+
+
+### 20. (cloze) Complete a frase: 彼らは＿＿に１回会う。 (Eles se encontram uma vez por semana.)
+- **Resposta:** `{"text": "週", "full": "彼らは週に１回会う。"}`
+- A palavra que falta é 週（しゅう）: semana.
+- frases: `sent:tatoeba-96872`
+
+### 21. (recognition) Qual destas palavras significa "arma de fogo"?
+- **Resposta:** `{"choices": ["じゅう", "はい", "せきたん", "こうげき"], "correct": "じゅう"}`
+- じゅう significa arma de fogo. As outras opções são はい (cinza, cinzas), せきたん (carvão, carvão mineral) e こうげき (atacar, agredir).
+
+
+### 22. (recognition) Qual destas palavras significa "geada"?
+- **Resposta:** `{"choices": ["ことわざ", "はいゆう", "しも", "し"], "correct": "しも"}`
+- しも significa geada. As outras opções são はいゆう (ator, atriz), し (poema, poesia) e ことわざ (provérbio, ditado).
+
+
+### 23. (recognition) Qual destas formas significa "ordem, sequência"?
+- **Resposta:** `{"choices": ["パイプ", "じゅよう", "ネズミ", "じゅん"], "correct": "じゅん"}`
+- じゅん significa ordem, sequência. As outras opções são パイプ (cano, tubo), じゅよう (demanda, procura) e ネズミ (rato, camundongo).
+
+

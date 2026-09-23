@@ -91,3 +91,48 @@ Pratique também com estas palavras do dia a dia. Repare que algumas são bem pr
 - 新聞 (しんぶん) junta 新 (novo) e 聞 (ouvir): o que se ouve de novo, ou seja, a notícia. Aqui 新 usa a leitura on シン.
 
 
+### 7. (recognition) Qual destas palavras significa "turma, classe"?
+- **Resposta:** `{"choices": ["クラス", "きょうしつ", "かてい", "くつした"], "correct": "クラス"}`
+- クラス significa turma, classe. As outras opções são かてい (lar, família), くつした (meia, meias) e きょうしつ (sala de aula).
+
+
+### 8. (recognition) Qual destas palavras significa "irmãos"?
+- **Resposta:** `{"choices": ["この", "きょうだい", "ここ", "かばん"], "correct": "きょうだい"}`
+- きょうだい significa irmãos. As outras opções são ここ (aqui, este lugar), かばん (bolsa, mala) e この (nove, 9).
+
+
+### 9. (recognition) Qual destas palavras significa "estudante, aluno"?
+- **Resposta:** `{"choices": ["げんかん", "がくせい", "きょうしつ", "ぎんこう"], "correct": "がくせい"}`
+- がくせい significa estudante, aluno. As outras opções são げんかん (entrada, hall de entrada), きょうしつ (sala de aula) e ぎんこう (banco).
+
+
+### 10. (recognition) Qual destas palavras significa "lar, família"?
+- **Resposta:** `{"choices": ["がくせい", "がっこう", "かてい", "くつした"], "correct": "かてい"}`
+- かてい significa lar, família. As outras opções são がくせい (estudante, aluno), がっこう (escola) e くつした (meia, meias).
+
+
+### 11. (recognition) Qual destas palavras significa "família"?
+- **Resposta:** `{"choices": ["くつ", "おばあさん", "きょうだい", "かぞく"], "correct": "かぞく"}`
+- かぞく significa família. As outras opções são くつ (sapato, calçado), きょうだい (irmãos) e おばあさん (avó, vovó).
+
+
+### 12. (cloze) Complete a frase: ＿＿はその実で分かる。 (A árvore se reconhece pelo seu fruto.)
+- **Resposta:** `{"text": "木", "full": "木はその実で分かる。"}`
+- A palavra que falta é 木（き）: árvore.
+- frases: `sent:tatoeba-80099`
+
+### 13. (recognition) Qual destas palavras significa "sapato, calçado"?
+- **Resposta:** `{"choices": ["きょうだい", "ここ", "おかあさん", "くつ"], "correct": "くつ"}`
+- くつ significa sapato, calçado. As outras opções são きょうだい (irmãos), ここ (aqui, este lugar) e おかあさん (mãe, mamãe).
+
+
+### 14. (recognition) Qual destas palavras significa "meia, meias"?
+- **Resposta:** `{"choices": ["こうばん", "かばん", "くつした", "がっこう"], "correct": "くつした"}`
+- くつした significa meia, meias. As outras opções são かばん (bolsa, mala), こうばん (posto policial, guarita policial) e がっこう (escola).
+
+
+### 15. (recognition) Qual destas palavras significa "árvore"?
+- **Resposta:** `{"choices": ["木", "人", "新聞", "千"], "correct": "木"}`
+- 木（き） significa árvore. As outras opções são 新聞 (jornal), 人 (pessoa, gente) e 千 (mil, 1000). O kanji 木 faz parte desta palavra.
+
+

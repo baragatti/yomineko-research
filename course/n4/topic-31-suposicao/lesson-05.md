@@ -108,3 +108,33 @@ Palavras que combinam com cenas que a gente observa e interpreta:
 - 図書館 (としょかん) fecha com 館 na leitura かん, que é a de sempre. Vale como regra prática: prédio público terminado em かん costuma terminar em 館.
 
 
+### 9. (recognition) Qual destas palavras significa "local (do evento), recinto"?
+- **Resposta:** `{"choices": ["気持ち", "会場", "気分", "通り"], "correct": "会場"}`
+- 会場（かいじょう） significa local (do evento), recinto. As outras opções são 通り (rua, avenida), 気分 (humor, estado de espírito) e 気持ち (sentimento, emoção).
+
+
+### 10. (recognition) Qual destas palavras significa "assento, lugar (para sentar)"?
+- **Resposta:** `{"choices": ["せき", "まわり", "あそび", "しま"], "correct": "せき"}`
+- せき significa assento, lugar (para sentar). As outras opções são あそび (brincadeira, diversão), しま (ilha) e まわり (arredores, ao redor).
+
+
+### 11. (cloze) Complete a frase: おなか＿＿けど、ご飯ができてない。 (Estou com fome, mas a comida ainda não está pronta.)
+- **Resposta:** `{"text": "すいた", "full": "おなかすいたけど、ご飯ができてない。"}`
+- A palavra que falta é 空く（すく）: estar vazio, estar com pouca gente. Na frase ela aparece como すいた.
+- frases: `sent:tatoeba-8936904`
+
+### 12. (recognition) Qual destas palavras significa "braço"?
+- **Resposta:** `{"choices": ["かい", "テスト", "うで", "スーツ"], "correct": "うで"}`
+- うで significa braço. As outras opções são スーツ (terno), かい (andar, piso) e テスト (prova, teste).
+
+
+### 13. (recognition) Qual destas palavras significa "carregar, transportar"?
+- **Resposta:** `{"choices": ["下さる", "足す", "合う", "運ぶ"], "correct": "運ぶ"}`
+- 運ぶ（はこぶ） significa carregar, transportar. As outras opções são 合う (combinar, ficar bem), 足す (somar, adicionar) e 下さる (dar (a mim, forma honorífica), fazer por mim (forma honorífica)).
+
+
+### 14. (cloze) Complete a frase: 私にはどれも同じ＿＿けど。 (Pra mim todos parecem iguais, mas...)
+- **Resposta:** `{"text": "に見える", "full": "私にはどれも同じに見えるけど。"}`
+- O que falta é に見える: o ponto gramatical desta lição, parecer / aparentar (〜に見える).
+- frases: `sent:tatoeba-9540494`
+

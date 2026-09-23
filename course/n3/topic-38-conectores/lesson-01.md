@@ -113,3 +113,73 @@ O kanji 定 significa "determinar, fixar, decidir". Aparece em 安定 (安定, "
 - 降りる (おりる) é descer do trem, do ônibus, do carro. É o mesmo kanji de 降る (ふる), mas com outro okurigana e outro sentido, então vale prestar atenção no que vem depois do kanji.
 
 
+### 9. (cloze) Complete a frase: ＿＿を食べたい？ (Quer comer sorvete?)
+- **Resposta:** `{"text": "アイスクリーム", "full": "アイスクリームを食べたい？"}`
+- A palavra que falta é アイスクリーム: sorvete.
+- frases: `sent:tatoeba-1364401`
+
+### 10. (recognition) Qual destas palavras significa "ferro de passar roupa"?
+- **Resposta:** `{"choices": ["ゆしゅつ", "アイロン", "じんじゃ", "にかいだて"], "correct": "アイロン"}`
+- アイロン significa ferro de passar roupa. As outras opções são じんじゃ (santuário xintoísta), にかいだて (de dois andares, sobrado) e ゆしゅつ (exportação).
+
+
+### 11. (cloze) Complete a frase: ＿＿を見せてくれませんか。 (Você me mostra o seu álbum de fotos?)
+- **Resposta:** `{"text": "アルバム", "full": "アルバムを見せてくれませんか。"}`
+- A palavra que falta é アルバム: álbum.
+- frases: `sent:tatoeba-229929`
+
+### 12. (recognition) Qual destas palavras significa "sinal, gesto combinado"?
+- **Resposta:** `{"choices": ["不便", "校長", "合図", "以上"], "correct": "合図"}`
+- 合図（あいず） significa sinal, gesto combinado. As outras opções são 校長 (diretor (de escola)), 以上 (ou mais, acima de) e 不便 (inconveniente, incômodo).
+
+
+### 13. (recognition) Qual destas palavras significa "membro de comitê, integrante de comissão"?
+- **Resposta:** `{"choices": ["きょうそう", "ナイフ", "かれら", "いいん"], "correct": "いいん"}`
+- いいん significa membro de comitê, integrante de comissão. As outras opções são きょうそう (competição, concorrência), ナイフ (faca) e かれら (eles).
+
+
+### 14. (cloze) Complete a frase: それは＿＿だな。 (Isso é surpreendente, hein.)
+- **Resposta:** `{"text": "意外", "full": "それは意外だな。"}`
+- A palavra que falta é 意外（いがい）: inesperado, surpreendente.
+- frases: `sent:tatoeba-10028843`
+
+### 15. (recognition) Qual destas formas significa "amor, afeto"?
+- **Resposta:** `{"choices": ["あくしゅ", "かんごし", "あい", "けんか"], "correct": "あい"}`
+- あい significa amor, afeto. As outras opções são あくしゅ (aperto de mão), けんか (oferenda de flores, depositar flores (em memória)) e かんごし (enfermeiro, enfermeira).
+
+
+### 16. (recognition) Qual destas palavras significa "amar, gostar muito de"?
+- **Resposta:** `{"choices": ["あいする", "わらう", "たずねる", "まいる"], "correct": "あいする"}`
+- あいする significa amar, gostar muito de. As outras opções são たずねる (visitar), まいる (ir, vir (humilde)) e わらう (rir, sorrir).
+
+
+### 17. (recognition) Qual destas palavras significa "amor, afeto" (no sentido de carinho)?
+- **Resposta:** `{"choices": ["こと", "ぐあい", "レポート", "あいじょう"], "correct": "あいじょう"}`
+- あいじょう significa amor, afeto. As outras opções são こと (coisa (abstrata), assunto), レポート (relatório, trabalho (escrito)) e ぐあい (estado, condição (de saúde)).
+
+
+### 18. (recognition) Qual destas palavras significa "ou, ou então"?
+- **Resposta:** `{"choices": ["もっとも", "でも", "あるいは", "けれど"], "correct": "あるいは"}`
+- あるいは significa ou, ou então. As outras opções são もっとも (natural, compreensível), けれど (mas, porém) e でも (mas, porém).
+
+
+### 19. (recognition) Qual destas palavras significa "aperto de mão"?
+- **Resposta:** `{"choices": ["あいじょう", "でんぽう", "あくしゅ", "むすめ"], "correct": "あくしゅ"}`
+- あくしゅ significa aperto de mão. As outras opções são でんぽう (telegrama), あいじょう (amor, afeto) e むすめ (filha).
+
+
+### 20. (recognition) Qual destas palavras significa "luz, claridade"?
+- **Resposta:** `{"choices": ["合図", "計画", "来月", "明かり"], "correct": "明かり"}`
+- 明かり（あかり） significa luz, claridade. As outras opções são 合図 (sinal, gesto combinado), 計画 (plano, projeto) e 来月 (mês que vem, próximo mês).
+
+
+### 21. (cloze) Complete a frase: それは＿＿だよ。 (Isso é óbvio.)
+- **Resposta:** `{"text": "明らか", "full": "それは明らかだよ。"}`
+- A palavra que falta é 明らか（あきらか）: claro, evidente.
+- frases: `sent:tatoeba-9529631`
+
+### 22. (recognition) Qual destas palavras significa "memorização, decorar"?
+- **Resposta:** `{"choices": ["あんき", "たいいん", "むし", "こうとうがっこう"], "correct": "あんき"}`
+- あんき significa memorização, decorar. As outras opções são こうとうがっこう (ensino médio, colégio (ensino médio)), むし (inseto, bicho) e たいいん (alta hospitalar, sair do hospital).
+
+

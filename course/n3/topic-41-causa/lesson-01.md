@@ -138,3 +138,73 @@ Armadilha PT: em せいで e おかげで, mantenha o e final limpo. O brasileir
 - 論 junta 言 (palavra) ao elemento que sugere pôr em fileiras: a palavra ordenada, ou seja, o raciocínio.
 
 
+### 16. (cloze) Complete a frase: 彼女は＿＿だ。 (Ela é tagarela.)
+- **Resposta:** `{"text": "おしゃべり", "full": "彼女はおしゃべりだ。"}`
+- A palavra que falta é おしゃべり: conversa fiada, bate-papo.
+- frases: `sent:tatoeba-93131`
+
+### 17. (recognition) Qual destas palavras significa "colina, morro"?
+- **Resposta:** `{"choices": ["ゆか", "おか", "いらい", "うさぎ"], "correct": "おか"}`
+- おか significa colina, morro. As outras opções são うさぎ (coelho, lebre), ゆか (chão, piso) e いらい (pedir, solicitar).
+
+
+### 18. (recognition) Qual destas palavras significa "ser inferior a, ficar atrás de"?
+- **Resposta:** `{"choices": ["うたがう", "よこぎる", "いたる", "おとる"], "correct": "おとる"}`
+- おとる significa ser inferior a, ficar atrás de. As outras opções são よこぎる (atravessar, cruzar), いたる (chegar a, alcançar) e うたがう (duvidar, pôr em dúvida).
+
+
+### 19. (recognition) Qual destas palavras significa "guardar, armazenar"?
+- **Resposta:** `{"choices": ["あきらめる", "あいする", "つなぐ", "おさめる"], "correct": "おさめる"}`
+- おさめる significa guardar, armazenar. As outras opções são あいする (amar, gostar muito de), つなぐ (conectar, ligar) e あきらめる (desistir, dar-se por vencido).
+
+
+### 20. (recognition) Qual destas palavras significa "fundo, interior"?
+- **Resposta:** `{"choices": ["おく", "えさ", "エンジン", "ひょうじょう"], "correct": "おく"}`
+- おく significa fundo, interior. As outras opções são ひょうじょう (expressão facial, semblante), えさ (ração, alimento (para animais)) e エンジン (motor).
+
+
+### 21. (recognition) Qual destas palavras significa "jovem (de pouca idade), muito novo"?
+- **Resposta:** `{"choices": ["おさない", "ねむい", "うまい", "グランド"], "correct": "おさない"}`
+- おさない significa jovem (de pouca idade), muito novo. As outras opções são グランド (grande, grandioso), ねむい (com sono, sonolento) e うまい (habilidoso, bom (em algo)).
+
+
+### 22. (recognition) Qual destas palavras significa "provavelmente, possivelmente"?
+- **Resposta:** `{"choices": ["つねに", "つまり", "いわば", "おそらく"], "correct": "おそらく"}`
+- おそらく significa provavelmente, possivelmente. As outras opções são つねに (sempre, constantemente), いわば (por assim dizer, digamos assim) e つまり (ou seja, isto é).
+
+
+### 23. (recognition) Qual destas palavras significa "temer, ter medo de"?
+- **Resposta:** `{"choices": ["おそれる", "つかむ", "まける", "いらいら"], "correct": "おそれる"}`
+- おそれる significa temer, ter medo de. As outras opções são つかむ (agarrar, pegar), いらいら (irritar-se, ficar nervoso) e まける (perder, ser derrotado).
+
+
+### 24. (recognition) Qual destas palavras significa "terrível, assustador"?
+- **Resposta:** `{"choices": ["ひとしい", "おかしい", "おそろしい", "やさしい"], "correct": "おそろしい"}`
+- おそろしい significa terrível, assustador. As outras opções são おかしい (estranho, esquisito), ひとしい (igual, idêntico) e やさしい (gentil, bondoso).
+
+
+### 25. (recognition) Qual destas palavras significa "poluição, contaminação"?
+- **Resposta:** `{"choices": ["おい", "ひよう", "よろこび", "おせん"], "correct": "おせん"}`
+- おせん significa poluição, contaminação. As outras opções são よろこび (alegria, contentamento), ひよう (custo, despesa) e おい (velhice, envelhecimento).
+
+
+### 26. (recognition) Qual destas palavras significa "homem, pessoa do sexo masculino" (expressão)?
+- **Resposta:** `{"choices": ["下さい", "男の人", "要するに", "男の子"], "correct": "男の人"}`
+- 男の人（おとこのひと） significa homem, pessoa do sexo masculino. As outras opções são 下さい (por favor, faça o favor de), 要するに (em suma, em resumo) e 男の子 (menino, garoto).
+
+
+### 27. (recognition) Qual destas palavras significa "calmo, tranquilo"?
+- **Resposta:** `{"choices": ["おだやか", "ゆたか", "ゆうのう", "ひっし"], "correct": "おだやか"}`
+- おだやか significa calmo, tranquilo. As outras opções são ひっし (desesperado, frenético), ゆたか (abundante, farto) e ゆうのう (competente, capaz).
+
+
+### 28. (recognition) Qual destas palavras significa "presentear, dar de presente"?
+- **Resposta:** `{"choices": ["わらう", "おくる", "おさめる", "うなる"], "correct": "おくる"}`
+- おくる significa presentear, dar de presente. As outras opções são おさめる (guardar, armazenar), うなる (gemer, resmungar) e わらう (rir, sorrir).
+
+
+### 29. (recognition) Qual destas palavras significa "acontecer, ocorrer"?
+- **Resposta:** `{"choices": ["始める", "起こる", "見る", "知らせる"], "correct": "起こる"}`
+- 起こる（おこる） significa acontecer, ocorrer. As outras opções são 見る (ver, olhar), 始める (começar, iniciar) e 知らせる (informar, avisar).
+
+

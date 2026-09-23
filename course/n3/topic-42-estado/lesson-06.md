@@ -88,3 +88,58 @@ Cuidado: どうしても pode parecer "de qualquer jeito" no sentido de descaso,
 - どうしても reforça o empenho ('a todo custo') e 問い (とい) é a pergunta.
 
 
+### 5. (recognition) Qual destas formas significa "partido (político), facção"?
+- **Resposta:** `{"choices": ["いのち", "せいひん", "ふうけい", "とう"], "correct": "とう"}`
+- とう significa partido (político), facção. As outras opções são せいひん (produto, mercadoria), ふうけい (paisagem, cenário) e いのち (vida, a vida (de alguém)).
+
+
+### 6. (recognition) Qual destas palavras significa "verbo (classe de palavra)"?
+- **Resposta:** `{"choices": ["どうし", "スープ", "りょう", "かたな"], "correct": "どうし"}`
+- どうし significa verbo (classe de palavra). As outras opções são かたな (espada, sabre japonês), りょう (quantidade, volume) e スープ (sopa, caldo).
+
+
+### 7. (recognition) Qual destas palavras significa "assimilar, absorver"?
+- **Resposta:** `{"choices": ["同化", "見物", "手品", "学期"], "correct": "同化"}`
+- 同化（どうか） significa assimilar, absorver. As outras opções são 手品 (truque de mágica, mágica), 学期 (período letivo, semestre) e 見物 (passeio turístico, visita a pontos turísticos).
+
+
+### 8. (cloze) Complete a frase: 彼らは＿＿に出発した。 (Eles partiram ao mesmo tempo.)
+- **Resposta:** `{"text": "同時", "full": "彼らは同時に出発した。"}`
+- A palavra que falta é 同時（どうじ）: mesmo tempo, simultâneo.
+- frases: `sent:tatoeba-96453`
+
+### 9. (recognition) Qual destas formas significa "igual, semelhante"?
+- **Resposta:** `{"choices": ["りそう", "カード", "どうよう", "え"], "correct": "どうよう"}`
+- どうよう significa igual, semelhante. As outras opções são カード (cartão), りそう (ideal, ideais) e え (cabo, empunhadura).
+
+
+### 10. (recognition) Qual destas formas significa "torre, pagode (torre)"?
+- **Resposta:** `{"choices": ["とう", "スタイル", "ひげき", "がく"], "correct": "とう"}`
+- とう significa torre, pagode (torre). As outras opções são ひげき (tragédia), がく (quantia, montante) e スタイル (estilo, moda).
+
+
+### 11. (recognition) Qual destas palavras significa "de qualquer jeito, custe o que custar"?
+- **Resposta:** `{"choices": ["いただきます", "どうしても", "よろしく", "いけない"], "correct": "どうしても"}`
+- どうしても significa de qualquer jeito, custe o que custar. As outras opções são よろしく (prazer (em conhecer), conto com você), いただきます (obrigado pela refeição (dito antes de comer), bom apetite) e いけない (não poder ir).
+
+
+### 12. (cloze) Complete a frase: ＿＿私は学生だった。 (Naquela época eu era estudante.)
+- **Resposta:** `{"text": "当時", "full": "当時私は学生だった。"}`
+- A palavra que falta é 当時（とうじ）: naquela época, naquele tempo.
+- frases: `sent:tatoeba-2228514`
+
+### 13. (recognition) Qual destas palavras significa "votar, votação"?
+- **Resposta:** `{"choices": ["りこん", "とうひょう", "ていこう", "せいめい"], "correct": "とうひょう"}`
+- とうひょう significa votar, votação. As outras opções são せいめい (vida), りこん (divórcio) e ていこう (resistir, opor-se).
+
+
+### 14. (cloze) Complete a frase: どうぞ＿＿ください。 (Com licença, deixa eu passar.)
+- **Resposta:** `{"text": "通して", "full": "どうぞ通してください。"}`
+- A palavra que falta é 通す（とおす）: deixar passar, fazer passar. Na frase ela aparece como 通して.
+- frases: `sent:tatoeba-201255`
+
+### 15. (recognition) Qual destas palavras significa "estrada, via"?
+- **Resposta:** `{"choices": ["どうろ", "かぐ", "がい", "がまん"], "correct": "どうろ"}`
+- どうろ significa estrada, via. As outras opções são がまん (paciência, autocontrole), がい (dano, prejuízo) e かぐ (móveis, mobília).
+
+

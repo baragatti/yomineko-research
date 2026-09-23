@@ -113,3 +113,58 @@ Note que ここ também se escreve com kanji, 此処, mas no dia a dia aparece q
 - 千 (せん) é mil. 百 é cem, 十 é dez e 九 é nove. O desenho de 千 é o de 十 com um traço curto por cima, como se o dez ganhasse mais uma casa.
 
 
+### 8. (cloze) Complete a frase: めったに来ない＿＿だ (É uma pessoa que quase nunca aparece.)
+- **Resposta:** `{"text": "人", "full": "めったに来ない人だ"}`
+- A palavra que falta é 人（ひと）: pessoa, gente.
+- frases: `sent:gen-bcf6ad6deb78`
+
+### 9. (recognition) Qual destas formas significa "lado"?
+- **Resposta:** `{"choices": ["きた", "がわ", "さいふ", "くに"], "correct": "がわ"}`
+- がわ significa lado. As outras opções são くに (país, nação), さいふ (carteira, porta-cédulas) e きた (norte).
+
+
+### 10. (recognition) Qual destas palavras significa "cruzamento, interseção"?
+- **Resposta:** `{"choices": ["おとうと", "かた", "おばあさん", "こうさてん"], "correct": "こうさてん"}`
+- こうさてん significa cruzamento, interseção. As outras opções são おとうと (irmão mais novo, irmão caçula), おばあさん (avó, vovó) e かた (pessoa (formal), senhor/senhora).
+
+
+### 11. (recognition) Qual destas palavras significa "posto policial, guarita policial"?
+- **Resposta:** `{"choices": ["かど", "こうばん", "げんかん", "この"], "correct": "こうばん"}`
+- こうばん significa posto policial, guarita policial. As outras opções são げんかん (entrada, hall de entrada), かど (esquina, canto) e この (nove, 9).
+
+
+### 12. (recognition) Qual destas palavras significa "aí, esse lugar"?
+- **Resposta:** `{"choices": ["こうえん", "そこ", "ぎんこう", "かわ"], "correct": "そこ"}`
+- そこ significa aí, esse lugar. As outras opções são こうえん (parque, praça), ぎんこう (banco) e かわ (rio, riacho).
+
+
+### 13. (recognition) Qual destas palavras significa "norte"?
+- **Resposta:** `{"choices": ["おかあさん", "きた", "がわ", "かた"], "correct": "きた"}`
+- きた significa norte. As outras opções são がわ (lado), おかあさん (mãe, mamãe) e かた (pessoa (formal), senhor/senhora).
+
+
+### 14. (recognition) Qual destas palavras significa "país, nação"?
+- **Resposta:** `{"choices": ["こうさてん", "くに", "こうばん", "かわ"], "correct": "くに"}`
+- くに significa país, nação. As outras opções são こうばん (posto policial, guarita policial), こうさてん (cruzamento, interseção) e かわ (rio, riacho).
+
+
+### 15. (recognition) Qual destas palavras significa "rio, riacho"?
+- **Resposta:** `{"choices": ["おくさん", "こうさてん", "そこ", "かわ"], "correct": "かわ"}`
+- かわ significa rio, riacho. As outras opções são そこ (aí, esse lugar), おくさん (esposa (de outra pessoa), senhora) e こうさてん (cruzamento, interseção).
+
+
+### 16. (recognition) Qual destas palavras significa "pessoa (formal), senhor/senhora"?
+- **Resposta:** `{"choices": ["こうえん", "あに", "かた", "くに"], "correct": "かた"}`
+- かた significa pessoa (formal), senhor/senhora. As outras opções são くに (país, nação), あに (irmão mais velho) e こうえん (parque, praça).
+
+
+### 17. (recognition) Qual destas palavras significa "entrada, hall de entrada"?
+- **Resposta:** `{"choices": ["げんかん", "そこ", "がわ", "さいふ"], "correct": "げんかん"}`
+- げんかん significa entrada, hall de entrada. As outras opções são そこ (aí, esse lugar), がわ (lado) e さいふ (carteira, porta-cédulas).
+
+
+### 18. (recognition) Qual destas palavras significa "esquina, canto"?
+- **Resposta:** `{"choices": ["いもうと", "かど", "きた", "おとうと"], "correct": "かど"}`
+- かど significa esquina, canto. As outras opções são きた (norte), おとうと (irmão mais novo, irmão caçula) e いもうと (irmã mais nova).
+
+

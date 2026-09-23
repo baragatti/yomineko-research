@@ -134,3 +134,68 @@ O kanji 沈 significa "afundar", o mesmo da palavra 沈む. À esquerda está o 
 - 願う é desejar com força, quase pedir a alguém. O substantivo da mesma família é 願い (ねがい), o desejo em si.
 
 
+### 14. (cloze) Complete a frase: この前の＿＿知ってるか？ (Você soube daquele caso de outro dia?)
+- **Resposta:** `{"text": "事件", "full": "この前の事件知ってるか？"}`
+- A palavra que falta é 事件（じけん）: incidente, caso.
+- frases: `sent:tatoeba-10953694`
+
+### 15. (recognition) Qual destas palavras significa "realmente, de fato"?
+- **Resposta:** `{"choices": ["実に", "多少", "絶対", "何で"], "correct": "実に"}`
+- 実に（じつに） significa realmente, de fato. As outras opções são 何で (por que, por qual motivo), 絶対 (com certeza, absolutamente) e 多少 (mais ou menos, um pouco).
+
+
+### 16. (recognition) Qual destas palavras significa "na verdade, para dizer a verdade"?
+- **Resposta:** `{"choices": ["何でも", "実は", "かも知れない", "何も"], "correct": "実は"}`
+- 実は（じつは） significa na verdade, para dizer a verdade. As outras opções são 何でも (qualquer coisa, tudo), かも知れない (talvez, pode ser que) e 何も (nada).
+
+
+### 17. (cloze) Complete a frase: ＿＿は自由だ。 (O pensamento é livre.)
+- **Resposta:** `{"text": "思想", "full": "思想は自由だ。"}`
+- A palavra que falta é 思想（しそう）: pensamento, ideologia.
+- frases: `sent:tatoeba-168252`
+
+### 18. (recognition) Qual destas palavras significa "hora (do dia), momento exato"?
+- **Resposta:** `{"choices": ["さばく", "コーチ", "じこく", "サイン"], "correct": "じこく"}`
+- じこく significa hora (do dia), momento exato. As outras opções são コーチ (treinador, técnico), さばく (deserto) e サイン (assinatura, autógrafo).
+
+
+### 19. (cloze) Complete a frase: スキーの＿＿は過ぎた。 (A temporada de esqui já passou.)
+- **Resposta:** `{"text": "時期", "full": "スキーの時期は過ぎた。"}`
+- A palavra que falta é 時期（じき）: época, período.
+- frases: `sent:tatoeba-215010`
+
+### 20. (cloze) Complete a frase: この男性は＿＿しています。 (Este homem está morto.)
+- **Resposta:** `{"text": "死亡", "full": "この男性は死亡しています。"}`
+- A palavra que falta é 死亡（しぼう）: morte, óbito.
+- frases: `sent:tatoeba-869353`
+
+### 21. (cloze) Complete a frase: これは＿＿ですよ。 (Isso é suicídio.)
+- **Resposta:** `{"text": "自殺", "full": "これは自殺ですよ。"}`
+- A palavra que falta é 自殺（じさつ）: suicídio.
+- frases: `sent:tatoeba-3506565`
+
+### 22. (cloze) Complete a frase: 火は＿＿に消えた。 (O fogo se apagou sozinho.)
+- **Resposta:** `{"text": "自然", "full": "火は自然に消えた。"}`
+- A palavra que falta é 自然（しぜん）: natureza, mundo natural.
+- frases: `sent:tatoeba-186736`
+
+### 23. (recognition) Qual destas palavras significa "língua"?
+- **Resposta:** `{"choices": ["なみ", "した", "さら", "けいい"], "correct": "した"}`
+- した significa língua. As outras opções são けいい (respeito, estima), なみ (onda) e さら (prato, travessa).
+
+
+### 24. (recognition) Qual destas palavras significa "poema, poesia"?
+- **Resposta:** `{"choices": ["こな", "ブレーキ", "し", "まめ"], "correct": "し"}`
+- し significa poema, poesia. As outras opções são こな (pó, farinha), まめ (feijão, grão) e ブレーキ (freio, breque).
+
+
+### 25. (recognition) Qual destas palavras significa "poeta"?
+- **Resposta:** `{"choices": ["さつ", "しじん", "けいこう", "ボート"], "correct": "しじん"}`
+- しじん significa poeta. As outras opções são さつ (nota (de dinheiro), cédula), けいこう (tendência, propensão) e ボート (barco, bote).
+
+
+### 26. (recognition) Qual destas formas significa "qualidade, natureza"?
+- **Resposta:** `{"choices": ["名", "作物", "組", "質"], "correct": "質"}`
+- 質（しつ） significa qualidade, natureza. As outras opções são 作物 (plantação, cultura agrícola), 組 (grupo, equipe) e 名 (nome).
+
+

@@ -122,3 +122,33 @@ Um aviso de tom: dar conselho direto a alguém de status superior (chefe, profes
 - 電話 se lê でんわ: 電 mais 話, a conversa que viaja pela eletricidade. Guardar essa soma evita a troca com 電気, que é a eletricidade em si.
 
 
+### 10. (recognition) Qual destas palavras significa "ruim (de gosto), horrível (de sabor)"?
+- **Resposta:** `{"choices": ["ふとい", "ひくい", "まずい", "ひろい"], "correct": "まずい"}`
+- まずい significa ruim (de gosto), horrível (de sabor). As outras opções são ふとい (grosso), ひろい (amplo, espaçoso) e ひくい (baixo).
+
+
+### 11. (recognition) Qual destas palavras significa "conveniente, prático"?
+- **Resposta:** `{"choices": ["べんり", "だいすき", "きらい", "にぎやか"], "correct": "べんり"}`
+- べんり significa conveniente, prático. As outras opções são にぎやか (animado, movimentado), だいすき (adorar, gostar muito) e きらい (não gostar de, detestável).
+
+
+### 12. (recognition) Qual destas palavras significa "velho, antigo"?
+- **Resposta:** `{"choices": ["すずしい", "まずい", "ふとい", "ふるい"], "correct": "ふるい"}`
+- ふるい significa velho, antigo. As outras opções são まずい (ruim (de gosto), horrível (de sabor)), ふとい (grosso) e すずしい (fresco, agradável (clima)).
+
+
+### 13. (recognition) Qual destas palavras significa "grosso"?
+- **Resposta:** `{"choices": ["ふとい", "まずい", "ふるい", "ほそい"], "correct": "ふとい"}`
+- ふとい significa grosso. As outras opções são ほそい (fino, delgado), ふるい (velho, antigo) e まずい (ruim (de gosto), horrível (de sabor)).
+
+
+### 14. (recognition) Qual destas palavras significa "amplo, espaçoso"?
+- **Resposta:** `{"choices": ["ほしい", "ひろい", "ほそい", "つまらない"], "correct": "ひろい"}`
+- ひろい significa amplo, espaçoso. As outras opções são ほしい (querer (ter), desejar), ほそい (fino, delgado) e つまらない (chato, entediante).
+
+
+### 15. (recognition) Qual destas palavras significa "fino, delgado"?
+- **Resposta:** `{"choices": ["しろい", "ほそい", "ほしい", "ひろい"], "correct": "ほそい"}`
+- ほそい significa fino, delgado. As outras opções são ひろい (amplo, espaçoso), ほしい (querer (ter), desejar) e しろい (branco).
+
+

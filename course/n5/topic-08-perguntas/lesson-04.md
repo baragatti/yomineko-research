@@ -105,3 +105,53 @@ Repare em 風邪(かぜ, resfriado) e 体(からだ, corpo): juntos rendem o tip
 - あの (aquele) + 警官 (けいかん, policial) + は + 誰ですか (quem é). Aqui 誰 é o predicado da pergunta, então o tema leva は.
 
 
+### 6. (recognition) Qual destas palavras significa "corpo"?
+- **Resposta:** `{"choices": ["コーヒー", "からだ", "きっぷ", "かみ"], "correct": "からだ"}`
+- からだ significa corpo. As outras opções são きっぷ (bilhete, passagem), かみ (papel) e コーヒー (café).
+
+
+### 7. (recognition) Qual destas palavras significa "curry"?
+- **Resposta:** `{"choices": ["きって", "カレー", "きっぷ", "カメラ"], "correct": "カレー"}`
+- カレー significa curry. As outras opções são カメラ (câmera, máquina fotográfica), きっぷ (bilhete, passagem) e きって (selo postal, selo).
+
+
+### 8. (recognition) Qual destas palavras significa "voz"?
+- **Resposta:** `{"choices": ["クラス", "こえ", "からだ", "くだもの"], "correct": "こえ"}`
+- こえ significa voz. As outras opções são からだ (corpo), くだもの (fruta) e クラス (turma, classe).
+
+
+### 9. (recognition) Qual destas palavras significa "fruta"?
+- **Resposta:** `{"choices": ["ぎゅうにく", "くすり", "くだもの", "おんがく"], "correct": "くだもの"}`
+- くだもの significa fruta. As outras opções são ぎゅうにく (carne bovina, carne de boi), くすり (remédio, medicamento) e おんがく (música).
+
+
+### 10. (recognition) Qual destas palavras significa "leite"?
+- **Resposta:** `{"choices": ["ぎゅうにゅう", "かびん", "こえ", "かてい"], "correct": "ぎゅうにゅう"}`
+- ぎゅうにゅう significa leite. As outras opções são こえ (voz), かびん (vaso (de flores)) e かてい (lar, família).
+
+
+### 11. (recognition) Qual destas palavras significa "carne bovina, carne de boi"?
+- **Resposta:** `{"choices": ["からだ", "コート", "ぎゅうにく", "カレー"], "correct": "ぎゅうにく"}`
+- ぎゅうにく significa carne bovina, carne de boi. As outras opções são コート (casaco, sobretudo), カレー (curry) e からだ (corpo).
+
+
+### 12. (recognition) Qual destas palavras significa "café"?
+- **Resposta:** `{"choices": ["ぎゅうにゅう", "こうちゃ", "コーヒー", "かぜ"], "correct": "コーヒー"}`
+- コーヒー significa café. As outras opções são こうちゃ (chá preto), ぎゅうにゅう (leite) e かぜ (resfriado, gripe).
+
+
+### 13. (recognition) Qual destas palavras significa "chá preto"?
+- **Resposta:** `{"choices": ["だれ", "おじいさん", "どれ", "こうちゃ"], "correct": "こうちゃ"}`
+- こうちゃ significa chá preto. As outras opções são だれ (quem), どれ (qual deles, qual (entre vários)) e おじいさん (avô).
+
+
+### 14. (recognition) Qual destas palavras significa "remédio, medicamento"?
+- **Resposta:** `{"choices": ["くすり", "コーヒー", "けいかん", "かみ"], "correct": "くすり"}`
+- くすり significa remédio, medicamento. As outras opções são けいかん (policial, guarda), かみ (papel) e コーヒー (café).
+
+
+### 15. (recognition) Qual destas palavras significa "resfriado, gripe"?
+- **Resposta:** `{"choices": ["かぜ", "カレー", "こえ", "けいかん"], "correct": "かぜ"}`
+- かぜ significa resfriado, gripe. As outras opções são カレー (curry), けいかん (policial, guarda) e こえ (voz).
+
+

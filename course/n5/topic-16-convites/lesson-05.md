@@ -93,3 +93,28 @@ Pense num convite real: "Toda semana (毎週) eu vou nadar; nós dois (二人) p
 -  毎 ('todo/cada') + 週 ('semana') = 毎週 (まいしゅう), 'toda semana'. É a mesma lógica de 毎日, 毎月 e 毎年: basta trocar a palavra de tempo depois de 毎.
 
 
+### 6. (recognition) Qual destas palavras significa "dois, duas (coisas)"?
+- **Resposta:** `{"choices": ["電話", "電気", "二つ", "後"], "correct": "二つ"}`
+- 二つ（ふたつ） significa dois, duas (coisas). As outras opções são 電話 (telefone), 後 (depois, mais tarde) e 電気 (eletricidade).
+
+
+### 7. (recognition) Qual destas palavras significa "minuto"?
+- **Resposta:** `{"choices": ["分", "七日", "二日", "二十"], "correct": "分"}`
+- 分（ふん） significa minuto. As outras opções são 二日 (dia 2 (do mês)), 二十 (vinte anos (de idade)) e 七日 (dia 7 (do mês)).
+
+
+### 8. (cloze) Complete a frase: ＿＿ここに来なきゃ。 (Tenho que vir aqui todos os anos.)
+- **Resposta:** `{"text": "毎年", "full": "毎年ここに来なきゃ。"}`
+- A palavra que falta é 毎年（まいとし）: todo ano, todos os anos.
+- frases: `sent:tatoeba-81248`
+
+### 9. (recognition) Qual destas palavras significa "todo mês, mensalmente"?
+- **Resposta:** `{"choices": ["もっと", "毎月", "時々", "はじめて"], "correct": "毎月"}`
+- 毎月（まいつき） significa todo mês, mensalmente. As outras opções são 時々 (às vezes, de vez em quando), はじめて (pela primeira vez) e もっと (mais).
+
+
+### 10. (recognition) Qual destas palavras significa "toda manhã, todas as manhãs"?
+- **Resposta:** `{"choices": ["べんきょう", "まいあさ", "ひこうき", "パーティー"], "correct": "まいあさ"}`
+- まいあさ significa toda manhã, todas as manhãs. As outras opções são パーティー (festa), べんきょう (estudo) e ひこうき (avião).
+
+

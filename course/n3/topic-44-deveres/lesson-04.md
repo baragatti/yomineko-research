@@ -111,3 +111,58 @@ O kanji 商 ('comércio, negociar, comerciante') aparece em 商人 ('comerciante
 - 商 se lê sempre ショウ. Ela vale para o kanji sozinho e abre todas as palavras de comércio construídas com ele.
 
 
+### 10. (cloze) Complete a frase: カスタマー＿＿に電話したら？ (Por que você não liga pra central de atendimento?)
+- **Resposta:** `{"text": "センター", "full": "カスタマーセンターに電話したら？"}`
+- A palavra que falta é センター: centro, central.
+- frases: `sent:tatoeba-2990907`
+
+### 11. (cloze) Complete a frase: ＿＿彼に会った。 (Encontrei com ele outro dia.)
+- **Resposta:** `{"text": "先日", "full": "先日彼に会った。"}`
+- A palavra que falta é 先日（せんじつ）: outro dia, dias atrás.
+- frases: `sent:tatoeba-141448`
+
+### 12. (cloze) Complete a frase: 一体＿＿これは何だ。 (Mas o que é isso?)
+- **Resposta:** `{"text": "全体", "full": "一体全体これは何だ。"}`
+- A palavra que falta é 全体（ぜんたい）: o todo, a totalidade.
+- frases: `sent:tatoeba-228934`
+
+### 13. (recognition) Qual destas palavras significa "o primeiro (dos dois), o anterior"?
+- **Resposta:** `{"choices": ["可", "流行", "都市", "前者"], "correct": "前者"}`
+- 前者（ぜんしゃ） significa o primeiro (dos dois), o anterior. As outras opções são 流行 (estar na moda, ser popular), 都市 (cidade, metrópole) e 可 (aceitável, admissível).
+
+
+### 14. (cloze) Complete a frase: 彼らは川まで＿＿した。 (Eles avançaram até o rio.)
+- **Resposta:** `{"text": "前進", "full": "彼らは川まで前進した。"}`
+- A palavra que falta é 前進（ぜんしん）: avanço, progresso.
+- frases: `sent:tatoeba-237381`
+
+### 15. (recognition) Qual destas palavras significa "fundo, base"?
+- **Resposta:** `{"choices": ["きっさてん", "そこ", "せいしん", "きょうぎ"], "correct": "そこ"}`
+- そこ significa fundo, base. As outras opções são きょうぎ (competição, prova), せいしん (espírito, mente) e きっさてん (cafeteria, café).
+
+
+### 16. (recognition) Qual destas palavras significa "imaginação"?
+- **Resposta:** `{"choices": ["ひらがな", "かんせい", "そうぞう", "センター"], "correct": "そうぞう"}`
+- そうぞう significa imaginação. As outras opções são かんせい (conclusão, término), センター (centro, central) e ひらがな (hiragana (silabário japonês)).
+
+
+### 17. (recognition) Qual destas palavras significa "considerável, bastante"?
+- **Resposta:** `{"choices": ["外交", "相当", "夫人", "関連"], "correct": "相当"}`
+- 相当（そうとう） significa considerável, bastante. As outras opções são 関連 (relação, conexão), 夫人 (esposa (de alguém de posição elevada), senhora) e 外交 (diplomacia, relações exteriores).
+
+
+### 18. (recognition) Qual destas palavras significa "herança, sucessão"?
+- **Resposta:** `{"choices": ["相続", "力", "気味", "化学"], "correct": "相続"}`
+- 相続（そうぞく） significa herança, sucessão. As outras opções são 気味 (leve sensação, tendência), 化学 (química) e 力 (força, poder).
+
+
+### 19. (recognition) Qual destas palavras significa "elefante"?
+- **Resposta:** `{"choices": ["きかい", "かし", "ぞう", "かんかく"], "correct": "ぞう"}`
+- ぞう significa elefante. As outras opções são かんかく (sentido (visão, tato, etc.), sensação), かし (doces, guloseimas) e きかい (máquina, maquinário).
+
+
+### 20. (recognition) Qual destas palavras significa "escolha, seleção"?
+- **Resposta:** `{"choices": ["どく", "せんたく", "へいきん", "コンサート"], "correct": "せんたく"}`
+- せんたく significa escolha, seleção. As outras opções são へいきん (média), どく (veneno, toxina) e コンサート (concerto, show).
+
+

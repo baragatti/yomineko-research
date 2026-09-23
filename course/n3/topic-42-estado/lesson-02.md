@@ -130,3 +130,68 @@ O kanji 供 significa "oferecer, servir, acompanhar". À esquerda a pessoa (亻)
 - 常 (つね) é aquilo que é habitual; com に vira o advérbio 常に, "sempre". Na leitura chinesa o mesmo kanji é ジョウ.
 
 
+### 11. (cloze) Complete a frase: いい＿＿にして。 (Chega, para com isso.)
+- **Resposta:** `{"text": "かげん", "full": "いいかげんにして。"}`
+- A palavra que falta é かげん: grau, medida.
+- frases: `sent:tatoeba-2173972`
+
+### 12. (recognition) Qual destas palavras significa "cercar, rodear"?
+- **Resposta:** `{"choices": ["かくれる", "かかる", "おとる", "かこむ"], "correct": "かこむ"}`
+- かこむ significa cercar, rodear. As outras opções são かくれる (esconder-se, ocultar-se), おとる (ser inferior a, ficar atrás de) e かかる (levar (tempo), custar).
+
+
+### 13. (recognition) Qual destas palavras significa "estudo, saber acadêmico"?
+- **Resposta:** `{"choices": ["読み", "港", "学問", "新聞社"], "correct": "学問"}`
+- 学問（がくもん） significa estudo, saber acadêmico. As outras opções são 港 (porto, ancoradouro), 読み (leitura) e 新聞社 (jornal (empresa), editora de jornal).
+
+
+### 14. (recognition) Qual destas palavras significa "sombra, silhueta"?
+- **Resposta:** `{"choices": ["れんそう", "かげ", "おか", "おい"], "correct": "かげ"}`
+- かげ significa sombra, silhueta. As outras opções são れんそう (associar (mentalmente), lembrar (de algo por associação)), おか (colina, morro) e おい (velhice, envelhecimento).
+
+
+### 15. (recognition) Qual destas palavras significa "expansão, ampliação"?
+- **Resposta:** `{"choices": ["よぼう", "デモ", "かくだい", "あわれ"], "correct": "かくだい"}`
+- かくだい significa expansão, ampliação. As outras opções são デモ (manifestação (protesto), passeata), よぼう (prevenção, proteção) e あわれ (pena, compaixão).
+
+
+### 16. (recognition) Qual destas palavras significa "estar lascado, estar quebrado (pedaço)"?
+- **Resposta:** `{"choices": ["おおう", "あつかう", "かける", "かぎる"], "correct": "かける"}`
+- かける significa estar lascado, estar quebrado (pedaço). As outras opções são かぎる (limitar, restringir), あつかう (lidar com, manusear) e おおう (cobrir, encobrir).
+
+
+### 17. (recognition) Qual destas palavras significa "incêndio, fogo (desastre)"?
+- **Resposta:** `{"choices": ["ろうじん", "てつや", "すべて", "かさい"], "correct": "かさい"}`
+- かさい significa incêndio, fogo (desastre). As outras opções são ろうじん (idoso, pessoa idosa), すべて (tudo, todo) e てつや (passar a noite em claro, virar a noite).
+
+
+### 18. (cloze) Complete a frase: 予約の＿＿はすみました。 (A confirmação da sua reserva já foi feita.)
+- **Resposta:** `{"text": "確認", "full": "予約の確認はすみました。"}`
+- A palavra que falta é 確認（かくにん）: confirmação, verificação.
+- frases: `sent:tatoeba-78986`
+
+### 19. (recognition) Qual destas palavras significa "cesto, cesta"?
+- **Resposta:** `{"choices": ["ひざ", "かご", "すいみん", "れつ"], "correct": "かご"}`
+- かご significa cesto, cesta. As outras opções são れつ (fila, fileira), すいみん (sono, dormir) e ひざ (joelho, colo).
+
+
+### 20. (cloze) Complete a frase: ＿＿は過去。 (O passado é passado.)
+- **Resposta:** `{"text": "過去", "full": "過去は過去。"}`
+- A palavra que falta é 過去（かこ）: o passado, passado.
+- frases: `sent:tatoeba-186486`
+
+### 21. (recognition) Qual destas palavras significa "sombra (à sombra), lugar protegido do sol"?
+- **Resposta:** `{"choices": ["テント", "あな", "かげ", "ズボン"], "correct": "かげ"}`
+- かげ significa sombra (à sombra), lugar protegido do sol. As outras opções são テント (barraca, tenda), あな (buraco, cavidade) e ズボン (calça, calças).
+
+
+### 22. (recognition) Qual destas palavras significa "esconder, ocultar"?
+- **Resposta:** `{"choices": ["おう", "かくす", "おとる", "かける"], "correct": "かくす"}`
+- かくす significa esconder, ocultar. As outras opções são かける (estar lascado, estar quebrado (pedaço)), おとる (ser inferior a, ficar atrás de) e おう (perseguir, ir atrás de).
+
+
+### 23. (recognition) Qual destas palavras significa "esconder-se, ocultar-se"?
+- **Resposta:** `{"choices": ["すすめる", "かくれる", "おうじる", "うったえる"], "correct": "かくれる"}`
+- かくれる significa esconder-se, ocultar-se. As outras opções são うったえる (apelar, recorrer), すすめる (recomendar, aconselhar) e おうじる (responder (a), atender).
+
+

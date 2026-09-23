@@ -101,3 +101,73 @@ Numa loja de bilhetes: どの切符ですか = "qual passagem é?". E sem dizer 
 - どれ (何れ) é 'qual' quando há três ou mais opções à vista. どんな seria 'que tipo de' (a categoria, não o item) e なぜ é 'por quê'.
 
 
+### 8. (cloze) Complete a frase: どれ＿＿？ (Quanto tempo?)
+- **Resposta:** `{"text": "くらい", "full": "どれくらい？"}`
+- A palavra que falta é くらい: cerca de, mais ou menos.
+- frases: `sent:tatoeba-5675047`
+
+### 9. (recognition) Qual destas palavras significa "xícara, caneca"?
+- **Resposta:** `{"choices": ["ギター", "カレンダー", "カップ", "かさ"], "correct": "カップ"}`
+- カップ significa xícara, caneca. As outras opções são カレンダー (calendário), かさ (guarda-chuva, sombrinha) e ギター (violão, guitarra).
+
+
+### 10. (recognition) Qual destas palavras significa "câmera, máquina fotográfica"?
+- **Resposta:** `{"choices": ["かぞく", "カップ", "カメラ", "くつ"], "correct": "カメラ"}`
+- カメラ significa câmera, máquina fotográfica. As outras opções são カップ (xícara, caneca), かぞく (família) e くつ (sapato, calçado).
+
+
+### 11. (recognition) Qual destas palavras significa "calendário"?
+- **Resposta:** `{"choices": ["ギター", "おくさん", "かさ", "カレンダー"], "correct": "カレンダー"}`
+- カレンダー significa calendário. As outras opções são ギター (violão, guitarra), おくさん (esposa (de outra pessoa), senhora) e かさ (guarda-chuva, sombrinha).
+
+
+### 12. (recognition) Qual destas palavras significa "violão, guitarra"?
+- **Resposta:** `{"choices": ["カメラ", "もの", "クラス", "ギター"], "correct": "ギター"}`
+- ギター significa violão, guitarra. As outras opções são カメラ (câmera, máquina fotográfica), クラス (turma, classe) e もの (coisa, objeto).
+
+
+### 13. (recognition) Qual destas palavras significa "casaco, sobretudo"?
+- **Resposta:** `{"choices": ["どれ", "コート", "がくせい", "かびん"], "correct": "コート"}`
+- コート significa casaco, sobretudo. As outras opções são どれ (qual deles, qual (entre vários)), かびん (vaso (de flores)) e がくせい (estudante, aluno).
+
+
+### 14. (cloze) Complete a frase: どの電車に＿＿か (Em qual trem você vai?)
+- **Resposta:** `{"text": "乗ります", "full": "どの電車に乗りますか"}`
+- A palavra que falta é のる: andar (de veículo), embarcar. Na frase ela aparece como 乗ります.
+- frases: `sent:gen-40220286d0b2`
+
+### 15. (recognition) Qual destas palavras significa "bilhete, passagem"?
+- **Resposta:** `{"choices": ["きっぷ", "かど", "カレンダー", "かぞく"], "correct": "きっぷ"}`
+- きっぷ significa bilhete, passagem. As outras opções são カレンダー (calendário), かど (esquina, canto) e かぞく (família).
+
+
+### 16. (cloze) Complete a frase: この中でどれが＿＿ですか (Qual desses você gosta?)
+- **Resposta:** `{"text": "好き", "full": "この中でどれが好きですか"}`
+- A palavra que falta é すき: gostar de, preferido. Na frase ela aparece como 好き.
+- frases: `sent:gen-4e9dec6558f5`
+
+### 17. (recognition) Qual destas palavras significa "papel"?
+- **Resposta:** `{"choices": ["おふろ", "エレベーター", "かみ", "きって"], "correct": "かみ"}`
+- かみ significa papel. As outras opções são きって (selo postal, selo), エレベーター (elevador) e おふろ (banho, banheira).
+
+
+### 18. (recognition) Qual destas palavras significa "vaso (de flores)"?
+- **Resposta:** `{"choices": ["カップ", "げんかん", "かびん", "おとこ"], "correct": "かびん"}`
+- かびん significa vaso (de flores). As outras opções são カップ (xícara, caneca), げんかん (entrada, hall de entrada) e おとこ (homem).
+
+
+### 19. (cloze) Complete a frase: どの＿＿に乗りますか (Em qual trem você vai?)
+- **Resposta:** `{"text": "電車", "full": "どの電車に乗りますか"}`
+- A palavra que falta é 電車（でんしゃ）: trem, trem elétrico.
+- frases: `sent:gen-40220286d0b2`
+
+### 20. (recognition) Qual destas palavras significa "dentro, interior"?
+- **Resposta:** `{"choices": ["電車", "先生", "木", "中"], "correct": "中"}`
+- 中（うち） significa dentro, interior. As outras opções são 電車 (trem, trem elétrico), 木 (árvore) e 先生 (professor, professora). O kanji 中 faz parte desta palavra.
+
+
+### 21. (recognition) Qual destas palavras significa "trem, trem elétrico"?
+- **Resposta:** `{"choices": ["電車", "木", "車", "先生"], "correct": "電車"}`
+- 電車（でんしゃ） significa trem, trem elétrico. As outras opções são 車 (carro, automóvel), 木 (árvore) e 先生 (professor, professora). O kanji 電 faz parte desta palavra.
+
+

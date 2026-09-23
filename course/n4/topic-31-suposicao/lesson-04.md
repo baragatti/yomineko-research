@@ -108,3 +108,23 @@ Os dois juntam-se à gramática de hoje: 鳥のように走る ("correr como um 
 - 走る se lê はしる e é correr. Cuidado com あるく, que é 歩く, andar: as duas ações são vizinhas, mas só o 走 tem pressa.
 
 
+### 7. (recognition) Qual destas palavras significa "descer, baixar"?
+- **Resposta:** `{"choices": ["始める", "考える", "出かける", "下がる"], "correct": "下がる"}`
+- 下がる（さがる） significa descer, baixar. As outras opções são 考える (pensar, considerar), 始める (começar, iniciar) e 出かける (sair, partir).
+
+
+### 8. (cloze) Complete a frase: 発音はだいたい＿＿よ。 (A pronúncia está mais ou menos certa, viu.)
+- **Resposta:** `{"text": "合ってます", "full": "発音はだいたい合ってますよ。"}`
+- A palavra que falta é 合う（あう）: combinar, ficar bem. Na frase ela aparece como 合ってます.
+- frases: `sent:tatoeba-10692051`
+
+### 9. (recognition) Qual destas palavras significa "o mais, mais (superlativo)"?
+- **Resposta:** `{"choices": ["はっきり", "もっとも", "なぜ", "もちろん"], "correct": "もっとも"}`
+- もっとも significa o mais, mais (superlativo). As outras opções são はっきり (claramente, nitidamente), もちろん (claro, com certeza) e なぜ (por que, por qual motivo).
+
+
+### 10. (recognition) Qual destas palavras significa "o último, o fim"?
+- **Resposta:** `{"choices": ["レストラン", "サンダル", "さいご", "ゆにゅう"], "correct": "さいご"}`
+- さいご significa o último, o fim. As outras opções são ゆにゅう (importação), サンダル (sandália, sandálias) e レストラン (restaurante).
+
+

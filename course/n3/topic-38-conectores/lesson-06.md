@@ -91,3 +91,53 @@ Quase toda palavra com 通 carrega a ideia de 'algo que passa': 通過 (passar p
 - 通過する significa 'passar por sem parar'; o lugar por onde se passa leva を (駅を通過する).
 
 
+### 6. (cloze) Complete a frase: 市の＿＿に駅があります。 (Tem uma estação no centro da cidade.)
+- **Resposta:** `{"text": "中心", "full": "市の中心に駅があります。"}`
+- A palavra que falta é 中心（ちゅうしん）: centro, meio.
+- frases: `sent:tatoeba-168379`
+
+### 7. (cloze) Complete a frase: ＿＿にしよう！ (Vamos almoçar!)
+- **Resposta:** `{"text": "昼食", "full": "昼食にしよう！"}`
+- A palavra que falta é 昼食（ちゅうしょく）: almoço, refeição do meio-dia.
+- frases: `sent:tatoeba-9489134`
+
+### 8. (cloze) Complete a frase: ご＿＿をどうぞ。 (Pode fazer o pedido, por favor.)
+- **Resposta:** `{"text": "注文", "full": "ご注文をどうぞ。"}`
+- A palavra que falta é 注文（ちゅうもん）: pedido, encomenda.
+- frases: `sent:tatoeba-217060`
+
+### 9. (cloze) Complete a frase: ご＿＿下さい。 (Atenção, por favor.)
+- **Resposta:** `{"text": "注目", "full": "ご注目下さい。"}`
+- A palavra que falta é 注目（ちゅうもく）: atenção, destaque.
+- frases: `sent:tatoeba-217056`
+
+### 10. (recognition) Qual destas palavras significa "direto"?
+- **Resposta:** `{"choices": ["あいにく", "けっこう", "ねっしん", "ちょくせつ"], "correct": "ちょくせつ"}`
+- ちょくせつ significa direto. As outras opções são あいにく (infelizmente, em má hora), ねっしん (entusiasmado, dedicado) e けっこう (bom, está bom assim).
+
+
+### 11. (recognition) Qual destas palavras significa "autor, autora"?
+- **Resposta:** `{"choices": ["こめ", "あらし", "アルバム", "ちょしゃ"], "correct": "ちょしゃ"}`
+- ちょしゃ significa autor, autora. As outras opções são あらし (tempestade, temporal), アルバム (álbum) e こめ (arroz (cru, em grão)).
+
+
+### 12. (recognition) Qual destas palavras significa "pesquisa, investigação"?
+- **Resposta:** `{"choices": ["アウト", "かない", "ちょうさ", "どろぼう"], "correct": "ちょうさ"}`
+- ちょうさ significa pesquisa, investigação. As outras opções são アウト (out (eliminado, no beisebol/esporte)), かない (esposa (minha), minha mulher) e どろぼう (ladrão, assaltante).
+
+
+### 13. (cloze) Complete a frase: これは駅へ＿＿道ですか。 (Esta é a rua que vai até a estação?)
+- **Resposta:** `{"text": "通じる", "full": "これは駅へ通じる道ですか。"}`
+- A palavra que falta é 通じる（つうじる）: ser compreendido, fazer-se entender.
+- frases: `sent:tatoeba-218490`
+
+### 14. (recognition) Qual destas palavras significa "enorme, muito comprido"?
+- **Resposta:** `{"choices": ["下手", "意外", "大きな", "長大"], "correct": "長大"}`
+- 長大（ちょうだい） significa enorme, muito comprido. As outras opções são 大きな (grande, imenso), 意外 (inesperado, surpreendente) e 下手 (ruim (em algo), sem jeito).
+
+
+### 15. (recognition) Qual destas palavras significa "de longo prazo, longo período"?
+- **Resposta:** `{"choices": ["ちょうき", "え", "スーツケース", "くらい"], "correct": "ちょうき"}`
+- ちょうき significa de longo prazo, longo período. As outras opções são え (cabo, empunhadura), くらい (posição, grau) e スーツケース (mala (de viagem)).
+
+

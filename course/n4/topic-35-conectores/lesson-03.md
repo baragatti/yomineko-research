@@ -112,3 +112,53 @@ Repare que 神社 (じんじゃ) é o santuário do xintoísmo, diferente do tem
 - とか pode seguir frases inteiras (本を読む / 映画を見る), não só substantivos, deixando subentendido que há outras atividades. Ao final, する/します resume "faço coisas assim". Lembre que cada item leva seu próprio とか.
 
 
+### 7. (recognition) Qual destas palavras significa "álcool"?
+- **Resposta:** `{"choices": ["かんけい", "えだ", "アルコール", "かいぎ"], "correct": "アルコール"}`
+- アルコール significa álcool. As outras opções são かんけい (relação, relacionamento), かいぎ (reunião, conferência) e えだ (galho, ramo).
+
+
+### 8. (recognition) Qual destas palavras significa "bolsa, bolsa de mão"?
+- **Resposta:** `{"choices": ["ねつ", "アジア", "ハンドバッグ", "さいしょ"], "correct": "ハンドバッグ"}`
+- ハンドバッグ significa bolsa, bolsa de mão. As outras opções são さいしょ (o primeiro, o começo), ねつ (febre) e アジア (Ásia).
+
+
+### 9. (recognition) Qual destas palavras significa "esposa (minha), minha mulher"?
+- **Resposta:** `{"choices": ["せなか", "かない", "こうどう", "ハンドバッグ"], "correct": "かない"}`
+- かない significa esposa (minha), minha mulher. As outras opções são ハンドバッグ (bolsa, bolsa de mão), せなか (costas) e こうどう (auditório, salão de palestras).
+
+
+### 10. (recognition) Qual destas palavras significa "batedor de carteira, punguista"?
+- **Resposta:** `{"choices": ["どうぐ", "スリ", "むこう", "きんじょ"], "correct": "スリ"}`
+- スリ（すり） significa batedor de carteira, punguista. As outras opções são きんじょ (vizinhança, redondezas), どうぐ (ferramenta, instrumento) e むこう (o outro lado, lá).
+
+
+### 11. (recognition) Qual destas palavras significa "algodão"?
+- **Resposta:** `{"choices": ["ぼうし", "わりあい", "もめん", "しゅみ"], "correct": "もめん"}`
+- もめん significa algodão. As outras opções são しゅみ (hobby, passatempo), わりあい (proporção, porcentagem) e ぼうし (chapéu, boné).
+
+
+### 12. (recognition) Qual destas palavras significa "santuário xintoísta"?
+- **Resposta:** `{"choices": ["あんぜん", "じんじゃ", "たな", "ケーキ"], "correct": "じんじゃ"}`
+- じんじゃ significa santuário xintoísta. As outras opções são あんぜん (segurança), ケーキ (bolo) e たな (prateleira, estante).
+
+
+### 13. (recognition) Qual destas palavras significa "exportação"?
+- **Resposta:** `{"choices": ["テニス", "スリ", "ゆしゅつ", "しっぱい"], "correct": "ゆしゅつ"}`
+- ゆしゅつ significa exportação. As outras opções são スリ (batedor de carteira, punguista), テニス (tênis (esporte)) e しっぱい (fracasso, erro).
+
+
+### 14. (cloze) Complete a frase: ＿＿かもしれないがけちだ。 (Ele pode até ser rico, mas é pão-duro.)
+- **Resposta:** `{"text": "金持ち", "full": "金持ちかもしれないがけちだ。"}`
+- A palavra que falta é 金持ち（かねもち）: pessoa rica, ricaço.
+- frases: `sent:tatoeba-179684`
+
+### 15. (recognition) Qual destas palavras significa "telegrama"?
+- **Resposta:** `{"choices": ["たて", "こくさい", "こうどう", "でんぽう"], "correct": "でんぽう"}`
+- でんぽう significa telegrama. As outras opções são こくさい (internacional), たて (escudo) e こうどう (auditório, salão de palestras).
+
+
+### 16. (recognition) Qual destas palavras significa "ensino médio, colégio (ensino médio)"?
+- **Resposta:** `{"choices": ["ケーキ", "こうとうがっこう", "きぬ", "タイプ"], "correct": "こうとうがっこう"}`
+- こうとうがっこう significa ensino médio, colégio (ensino médio). As outras opções são タイプ (tipo, gênero), ケーキ (bolo) e きぬ (seda).
+
+

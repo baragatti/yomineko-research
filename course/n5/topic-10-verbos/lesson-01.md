@@ -113,3 +113,88 @@ O verbo 見る traz o seu primeiro kanji de ação.
 - O seis é 六 e sozinho se lê ろく. Na contagem de unidades ele muda para 六つ (むっつ), com a leitura nativa.
 
 
+### 7. (cloze) Complete a frase: あさ 六＿＿に おきる (De manhã, acordo às seis horas.)
+- **Resposta:** `{"text": "時", "full": "あさ 六時に おきる"}`
+- A palavra que falta é 時（じ）: hora (sufixo), ...horas (ao indicar o horário: 3時 = três horas).
+- frases: `sent:gen-e8f19f968193`
+
+### 8. (recognition) Qual destas palavras significa "levantar, erguer"?
+- **Resposta:** `{"choices": ["おしえる", "あげる", "のる", "しめる"], "correct": "あげる"}`
+- あげる significa levantar, erguer. As outras opções são のる (andar (de veículo), embarcar), おしえる (ensinar, lecionar) e しめる (fechar (algo)).
+
+
+### 9. (recognition) Qual destas palavras significa "pendurar, colocar"?
+- **Resposta:** `{"choices": ["かける", "こたえる", "おぼえる", "あびる"], "correct": "かける"}`
+- かける significa pendurar, colocar. As outras opções são おぼえる (memorizar, decorar), あびる (tomar (banho/ducha), banhar-se) e こたえる (responder, dar uma resposta).
+
+
+### 10. (recognition) Qual destas palavras significa "ensinar, lecionar"?
+- **Resposta:** `{"choices": ["きる", "しめる", "おきる", "おしえる"], "correct": "おしえる"}`
+- おしえる significa ensinar, lecionar. As outras opções são しめる (amarrar, apertar), おきる (levantar-se, acordar) e きる (vestir, pôr (roupa)).
+
+
+### 11. (recognition) Qual destas palavras significa "tomar (banho/ducha), banhar-se"?
+- **Resposta:** `{"choices": ["かける", "きえる", "いる", "あびる"], "correct": "あびる"}`
+- あびる significa tomar (banho/ducha), banhar-se. As outras opções são いる (estar (em algum lugar), existir (seres vivos)), かける (pendurar, colocar) e きえる (apagar-se (luz, fogo), desligar-se).
+
+
+### 12. (recognition) Qual destas palavras significa "apagar-se (luz, fogo), desligar-se"?
+- **Resposta:** `{"choices": ["あげる", "おりる", "やる", "きえる"], "correct": "きえる"}`
+- きえる significa apagar-se (luz, fogo), desligar-se. As outras opções são おりる (descer (de um veículo), desembarcar), やる (fazer, realizar) e あげる (levantar, erguer).
+
+
+### 13. (recognition) Qual destas palavras significa "nascer"?
+- **Resposta:** `{"choices": ["見る", "入れる", "読む", "生まれる"], "correct": "生まれる"}`
+- 生まれる（うまれる） significa nascer. As outras opções são 読む (ler), 入れる (colocar dentro, inserir) e 見る (ver, olhar).
+
+
+### 14. (recognition) Qual destas palavras significa "vestir, pôr (roupa)"?
+- **Resposta:** `{"choices": ["あける", "しめる", "きる", "あげる"], "correct": "きる"}`
+- きる significa vestir, pôr (roupa). As outras opções são あける (abrir (algo)), しめる (amarrar, apertar) e あげる (levantar, erguer).
+
+
+### 15. (recognition) Qual destas palavras significa "responder, dar uma resposta"?
+- **Resposta:** `{"choices": ["こたえる", "きる", "のる", "おぼえる"], "correct": "こたえる"}`
+- こたえる significa responder, dar uma resposta. As outras opções são きる (vestir, pôr (roupa)), おぼえる (memorizar, decorar) e のる (andar (de veículo), embarcar).
+
+
+### 16. (recognition) Qual destas palavras significa "amarrar, apertar"?
+- **Resposta:** `{"choices": ["きえる", "おりる", "おしえる", "しめる"], "correct": "しめる"}`
+- しめる significa amarrar, apertar. As outras opções são きえる (apagar-se (luz, fogo), desligar-se), おしえる (ensinar, lecionar) e おりる (descer (de um veículo), desembarcar).
+
+
+### 17. (recognition) Qual destas palavras significa "memorizar, decorar"?
+- **Resposta:** `{"choices": ["おぼえる", "しめる", "あびる", "あける"], "correct": "おぼえる"}`
+- おぼえる significa memorizar, decorar. As outras opções são しめる (fechar (algo)), あける (abrir (algo)) e あびる (tomar (banho/ducha), banhar-se).
+
+
+### 18. (cloze) Complete a frase: あさ 六時に ＿＿ (De manhã, acordo às seis horas.)
+- **Resposta:** `{"text": "おきる", "full": "あさ 六時に おきる"}`
+- A palavra que falta é おきる: levantar-se, acordar.
+- frases: `sent:gen-e8f19f968193`
+
+### 19. (recognition) Qual destas palavras significa "fechar (algo)"?
+- **Resposta:** `{"choices": ["こたえる", "やる", "しめる", "いる"], "correct": "しめる"}`
+- しめる significa fechar (algo). As outras opções são いる (estar (em algum lugar), existir (seres vivos)), やる (fazer, realizar) e こたえる (responder, dar uma resposta).
+
+
+### 20. (recognition) Qual destas palavras significa "abrir (algo)"?
+- **Resposta:** `{"choices": ["あける", "かける", "おきる", "ある"], "correct": "あける"}`
+- あける significa abrir (algo). As outras opções são おきる (levantar-se, acordar), ある (haver, existir) e かける (pendurar, colocar).
+
+
+### 21. (recognition) Qual destas palavras significa "descer (de um veículo), desembarcar"?
+- **Resposta:** `{"choices": ["こたえる", "やる", "おりる", "おぼえる"], "correct": "おりる"}`
+- おりる significa descer (de um veículo), desembarcar. As outras opções são やる (fazer, realizar), こたえる (responder, dar uma resposta) e おぼえる (memorizar, decorar).
+
+
+### 22. (cloze) Complete a frase: 痔＿＿あります。 (Tenho hemorroidas.)
+- **Resposta:** `{"text": "が", "full": "痔があります。"}`
+- O que falta é が: o ponto gramatical desta lição, が (partícula de sujeito).
+- frases: `sent:tatoeba-150175`
+
+### 23. (cloze) Complete a frase: 8人孫＿＿。 (Nós temos oito netos.)
+- **Resposta:** `{"text": "がいます", "full": "8人孫がいます。"}`
+- O que falta é がいます: o ponto gramatical desta lição, existir (seres vivos) (〜がいます).
+- frases: `sent:tatoeba-11795596`
+

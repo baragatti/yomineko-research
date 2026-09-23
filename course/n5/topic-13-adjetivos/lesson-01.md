@@ -109,3 +109,73 @@ Aqui おいしい ("gostoso") é outro adjetivo-い, e a frase nem usa です ne
 - 小さい: o kanji 小 guarda a raiz ちい e a terminação さい vai em hiragana. Guarde o par: 小さな, com な, faz o mesmo trabalho quando vem antes de um substantivo.
 
 
+### 6. (recognition) Qual destas palavras significa "bem (de saúde), saudável"?
+- **Resposta:** `{"choices": ["きれい", "その", "いろいろ", "げんき"], "correct": "げんき"}`
+- げんき significa bem (de saúde), saudável. As outras opções são いろいろ (vários, diversos), きれい (bonito, lindo) e その (esse, essa).
+
+
+### 7. (recognition) Qual destas palavras significa "branco, a cor branca"?
+- **Resposta:** `{"choices": ["しつもん", "とり", "しろ", "タバコ"], "correct": "しろ"}`
+- しろ significa branco, a cor branca. As outras opções são タバコ (cigarro, tabaco), とり (pássaro, ave) e しつもん (pergunta, questão).
+
+
+### 8. (recognition) Qual destas palavras significa "branco"?
+- **Resposta:** `{"choices": ["さむい", "つめたい", "あかい", "しろい"], "correct": "しろい"}`
+- しろい significa branco. As outras opções são さむい (frio), あかい (vermelho) e つめたい (frio (ao toque), gelado).
+
+
+### 9. (recognition) Qual destas palavras significa "bonito, lindo"?
+- **Resposta:** `{"choices": ["いや", "あの", "げんき", "きれい"], "correct": "きれい"}`
+- きれい significa bonito, lindo. As outras opções são あの (aquele, aquela), いや (desagradável, chato) e げんき (bem (de saúde), saudável).
+
+
+### 10. (cloze) Complete a frase: バナナ＿＿。 (Banana é gostosa.)
+- **Resposta:** `{"text": "おいしい", "full": "バナナおいしい。"}`
+- A palavra que falta é おいしい: delicioso, gostoso.
+- frases: `sent:tatoeba-9865429`
+
+### 11. (recognition) Qual destas palavras significa "vários, diversos"?
+- **Resposta:** `{"choices": ["しずか", "いろいろ", "こんな", "この"], "correct": "いろいろ"}`
+- いろいろ significa vários, diversos. As outras opções são しずか (quieto, calmo), こんな (assim, deste tipo) e この (este, esta).
+
+
+### 12. (recognition) Qual destas palavras significa "vermelho" (substantivo)?
+- **Resposta:** `{"choices": ["じゅぎょう", "あか", "カタカナ", "たまご"], "correct": "あか"}`
+- あか significa vermelho. As outras opções são たまご (ovo), じゅぎょう (aula, lição) e カタカナ (katakana (silabário japonês)).
+
+
+### 13. (recognition) Qual destas palavras significa "vermelho" (adjetivo em -i)?
+- **Resposta:** `{"choices": ["よい", "くろい", "おいしい", "あかい"], "correct": "あかい"}`
+- あかい significa vermelho. As outras opções são くろい (preto), よい (bom, bem) e おいしい (delicioso, gostoso).
+
+
+### 14. (recognition) Qual destas palavras significa "azul"?
+- **Resposta:** `{"choices": ["しお", "ズボン", "あお", "つくえ"], "correct": "あお"}`
+- あお significa azul. As outras opções são つくえ (escrivaninha, carteira (escolar)), ズボン (calça, calças) e しお (sal).
+
+
+### 15. (recognition) Qual destas palavras significa "quieto, calmo"?
+- **Resposta:** `{"choices": ["あの", "しずか", "きれい", "どの"], "correct": "しずか"}`
+- しずか significa quieto, calmo. As outras opções são どの (qual (+ substantivo), que (livro, pessoa etc.)), きれい (bonito, lindo) e あの (aquele, aquela).
+
+
+### 16. (recognition) Qual destas palavras significa "amarelo (a cor)"?
+- **Resposta:** `{"choices": ["どちら", "せんたく", "て", "きいろ"], "correct": "きいろ"}`
+- きいろ significa amarelo (a cor). As outras opções são て (mão), どちら (qual (dos dois)) e せんたく (lavagem de roupa, ato de lavar roupa).
+
+
+### 17. (recognition) Qual destas palavras significa "amarelo"?
+- **Resposta:** `{"choices": ["あおい", "しろい", "きいろい", "くろい"], "correct": "きいろい"}`
+- きいろい significa amarelo. As outras opções são しろい (branco), あおい (azul, (sinal) verde) e くろい (preto).
+
+
+### 18. (recognition) Qual destas palavras significa "preto, cor preta"?
+- **Resposta:** `{"choices": ["タクシー", "スポーツ", "くろ", "とりにく"], "correct": "くろ"}`
+- くろ significa preto, cor preta. As outras opções são とりにく (frango, carne de frango), タクシー (táxi) e スポーツ (esporte, esportes).
+
+
+### 19. (recognition) Qual destas palavras significa "preto"?
+- **Resposta:** `{"choices": ["ない", "きいろい", "くろい", "さむい"], "correct": "くろい"}`
+- くろい significa preto. As outras opções são きいろい (amarelo), さむい (frio) e ない (não haver, não ter).
+
+

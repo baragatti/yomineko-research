@@ -177,3 +177,93 @@ Veja como 観 e 察 se unem em 観察 ('observação'): 'ver' mais 'deduzir' é 
 - 観 termina em 見 ('ver'), mas é um ver demorado: contemplar, observar. 観光 é ir ver a luz de um lugar, ou seja, passear para conhecer; 観察 é olhar de perto para estudar.
 
 
+### 17. (cloze) Complete a frase: 肉は何＿＿にしましょうか。 (Quantas fatias de carne você quer?)
+- **Resposta:** `{"text": "切れ", "full": "肉は何切れにしましょうか。"}`
+- A palavra que falta é 切れ（きれ）: pedaço, fatia.
+- frases: `sent:tatoeba-122987`
+
+### 18. (cloze) Complete a frase: このナイフはあまり＿＿。 (Esta faca não corta muito bem.)
+- **Resposta:** `{"text": "切れない", "full": "このナイフはあまり切れない。"}`
+- A palavra que falta é 切れる（きれる）: cortar bem, estar afiado. Na frase ela aparece como 切れない.
+- frases: `sent:tatoeba-223430`
+
+### 19. (recognition) Qual destas palavras significa "estranho, esquisito" (no sentido de peculiar)?
+- **Resposta:** `{"choices": ["きちょう", "わがまま", "きみょう", "きのどく"], "correct": "きみょう"}`
+- きみょう significa estranho, esquisito. As outras opções são きのどく (lamentável/de dar pena/digno de pena, sinto muito (por alguém)/que é uma pena), きちょう (precioso, valioso) e わがまま (egoísta, mimado).
+
+
+### 20. (recognition) Qual destas palavras significa "detestar, odiar"?
+- **Resposta:** `{"choices": ["すくう", "きらう", "あきる", "かくれる"], "correct": "きらう"}`
+- きらう significa detestar, odiar. As outras opções são かくれる (esconder-se, ocultar-se), あきる (enjoar de, cansar-se de) e すくう (salvar, resgatar).
+
+
+### 21. (recognition) Qual destas formas significa "repartição, agência"?
+- **Resposta:** `{"choices": ["不安", "引用", "出会い", "局"], "correct": "局"}`
+- 局（きょく） significa repartição, agência. As outras opções são 引用 (citar, fazer uma citação), 不安 (ansiedade, inquietação) e 出会い (encontro, encontro casual).
+
+
+### 22. (recognition) Qual destas palavras significa "enorme, gigantesco"?
+- **Resposta:** `{"choices": ["きちょう", "せっきょくてき", "ゆうこう", "きょだい"], "correct": "きょだい"}`
+- きょだい significa enorme, gigantesco. As outras opções são ゆうこう (eficaz, válido), せっきょくてき (positivo, proativo) e きちょう (precioso, valioso).
+
+
+### 23. (recognition) Qual destas palavras significa "poderoso, forte"?
+- **Resposta:** `{"choices": ["強力", "大事", "不思議", "新た"], "correct": "強力"}`
+- 強力（きょうりょく） significa poderoso, forte. As outras opções são 新た (novo, renovado), 不思議 (misterioso, estranho) e 大事 (importante, valioso).
+
+
+### 24. (recognition) Qual destas palavras significa "rápido, veloz"?
+- **Resposta:** `{"choices": ["てきど", "おだやか", "きゅうそく", "きよう"], "correct": "きゅうそく"}`
+- きゅうそく significa rápido, veloz. As outras opções são きよう (habilidoso, jeitoso), てきど (moderado, na medida certa) e おだやか (calmo, tranquilo).
+
+
+### 25. (recognition) Qual destas palavras significa "medo, terror"?
+- **Resposta:** `{"choices": ["きょうちょう", "きょうふ", "ぶき", "セット"], "correct": "きょうふ"}`
+- きょうふ significa medo, terror. As outras opções são セット (conjunto, jogo), きょうちょう (ênfase, destaque) e ぶき (arma, armamento).
+
+
+### 26. (recognition) Qual destas palavras significa "resgate, salvamento"?
+- **Resposta:** `{"choices": ["ぜつめつ", "きょうふ", "きゅうじょ", "キャンプ"], "correct": "きゅうじょ"}`
+- きゅうじょ significa resgate, salvamento. As outras opções são キャンプ (acampamento, camping), ぜつめつ (extinção) e きょうふ (medo, terror).
+
+
+### 27. (recognition) Qual destas formas significa "antigo, ex-"?
+- **Resposta:** `{"choices": ["はず", "どうよう", "きゅう", "さま"], "correct": "きゅう"}`
+- きゅう significa antigo, ex-. As outras opções são どうよう (igual, semelhante), さま (senhor(a) (sufixo honorífico)) e はず (deve ser (o caso), era de se esperar).
+
+
+### 28. (cloze) Complete a frase: なるほど、確かに便利な＿＿ですね。 (Entendi, é mesmo uma função prática.)
+- **Resposta:** `{"text": "機能", "full": "なるほど、確かに便利な機能ですね。"}`
+- A palavra que falta é 機能（きのう）: função, funcionalidade.
+- frases: `sent:tatoeba-10946051`
+
+### 29. (cloze) Complete a frase: 本当に＿＿が悪いと思った。 (Achei aquilo realmente sinistro.)
+- **Resposta:** `{"text": "気味", "full": "本当に気味が悪いと思った。"}`
+- A palavra que falta é 気味（きみ）: leve sensação, tendência.
+- frases: `sent:tatoeba-8549354`
+
+### 30. (recognition) Qual destas palavras significa "nível, grau"?
+- **Resposta:** `{"choices": ["とたん", "キャプテン", "きゅう", "せいき"], "correct": "きゅう"}`
+- きゅう significa nível, grau. As outras opções são キャプテン (capitão, líder de equipe), とたん (assim que, no exato momento em que) e せいき (século).
+
+
+### 31. (recognition) Qual destas palavras significa "permissão, autorização"?
+- **Resposta:** `{"choices": ["きゅうか", "ていあん", "あわ", "きょか"], "correct": "きょか"}`
+- きょか significa permissão, autorização. As outras opções são きゅうか (férias, folga), あわ (bolha, espuma) e ていあん (propor, sugerir).
+
+
+### 32. (recognition) Qual destas palavras significa "precioso, valioso"?
+- **Resposta:** `{"choices": ["きちょう", "きゅうそく", "きょだい", "きみょう"], "correct": "きちょう"}`
+- きちょう significa precioso, valioso. As outras opções são きょだい (enorme, gigantesco), きみょう (estranho, esquisito) e きゅうそく (rápido, veloz).
+
+
+### 33. (recognition) Qual destas palavras significa "inverso, oposto"?
+- **Resposta:** `{"choices": ["ぎゃく", "どくりつ", "きふ", "われわれ"], "correct": "ぎゃく"}`
+- ぎゃく significa inverso, oposto. As outras opções são きふ (doação), どくりつ (independência, tornar-se independente) e われわれ (nós, a gente).
+
+
+### 34. (recognition) Qual destas palavras significa "névoa, neblina"?
+- **Resposta:** `{"choices": ["きり", "とくちょう", "きおん", "きゅうしゅう"], "correct": "きり"}`
+- きり significa névoa, neblina. As outras opções são とくちょう (característica, traço marcante), きおん (temperatura (do ar)) e きゅうしゅう (absorção).
+
+

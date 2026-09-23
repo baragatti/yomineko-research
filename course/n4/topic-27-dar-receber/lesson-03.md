@@ -140,3 +140,53 @@ Hoje você ganha quatro kanji. Para cada um, a forma e um truque para fixar:
 - 野菜 (やさい): o que cresce no campo (野) e vai para a mesa (菜). Sozinho, 菜 lê-se な.
 
 
+### 13. (recognition) Qual destas palavras significa "ver (respeitoso), olhar (respeitoso)"?
+- **Resposta:** `{"choices": ["できるだけ", "ごらんになる", "ございます", "ついて"], "correct": "ごらんになる"}`
+- ごらんになる significa ver (respeitoso), olhar (respeitoso). As outras opções são できるだけ (o máximo possível, na medida do possível), ついて (sobre, a respeito de) e ございます (há, existe (forma polida)).
+
+
+### 14. (recognition) Qual destas palavras significa "falecer, morrer"?
+- **Resposta:** `{"choices": ["ひっこす", "よる", "なくなる", "わたす"], "correct": "なくなる"}`
+- なくなる significa falecer, morrer. As outras opções são ひっこす (mudar-se, mudar de casa), よる (passar (em um lugar), dar uma passada) e わたす (entregar, passar (algo a alguém)).
+
+
+### 15. (recognition) Qual destas palavras significa "ingresso na escola, matrícula"?
+- **Resposta:** `{"choices": ["注意", "入学", "地理", "会話"], "correct": "入学"}`
+- 入学（にゅうがく） significa ingresso na escola, matrícula. As outras opções são 会話 (conversa, diálogo), 注意 (cuidado, atenção) e 地理 (geografia).
+
+
+### 16. (recognition) Qual destas palavras significa "bom, aceitável"?
+- **Resposta:** `{"choices": ["すごい", "よろしい", "さびしい", "こまかい"], "correct": "よろしい"}`
+- よろしい significa bom, aceitável. As outras opções são さびしい (solitário, sozinho), すごい (incrível, impressionante) e こまかい (miúdo, fino).
+
+
+### 17. (recognition) Qual destas palavras significa "estar (forma humilde/cortês de いる), ficar"?
+- **Resposta:** `{"choices": ["おる", "そだてる", "みがく", "ふむ"], "correct": "おる"}`
+- おる significa estar (forma humilde/cortês de いる), ficar. As outras opções são そだてる (criar, educar), ふむ (pisar (em), pisar) e みがく (escovar, polir).
+
+
+### 18. (cloze) Complete a frase: あの人が新しい＿＿です (Aquela pessoa é o novo diretor.)
+- **Resposta:** `{"text": "校長", "full": "あの人が新しい校長です"}`
+- A palavra que falta é 校長（こうちょう）: diretor (de escola).
+- frases: `sent:gen-afc2b20beefe`
+
+### 19. (recognition) Qual destas palavras significa "dizer (humilde), falar"?
+- **Resposta:** `{"choices": ["とまる", "もうす", "わく", "すてる"], "correct": "もうす"}`
+- もうす significa dizer (humilde), falar. As outras opções são とまる (pernoitar, hospedar-se), すてる (jogar fora, descartar) e わく (ferver, entrar em ebulição).
+
+
+### 20. (recognition) Qual destas palavras significa "ciência"?
+- **Resposta:** `{"choices": ["におい", "かがく", "のりもの", "そぼ"], "correct": "かがく"}`
+- かがく significa ciência. As outras opções são そぼ (avó), におい (cheiro, aroma) e のりもの (veículo, meio de transporte).
+
+
+### 21. (recognition) Qual destas palavras significa "interesse, curiosidade"?
+- **Resposta:** `{"choices": ["りょかん", "きょうみ", "はいしゃ", "こしょう"], "correct": "きょうみ"}`
+- きょうみ significa interesse, curiosidade. As outras opções são りょかん (pousada japonesa, ryokan), はいしゃ (dentista) e こしょう (defeito, pane).
+
+
+### 22. (recognition) Qual destas palavras significa "prova, exame"?
+- **Resposta:** `{"choices": ["しょうたい", "かたち", "しけん", "しあい"], "correct": "しけん"}`
+- しけん significa prova, exame. As outras opções são かたち (forma, formato), しょうたい (convite, convidar) e しあい (partida, jogo).
+
+

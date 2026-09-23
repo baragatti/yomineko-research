@@ -143,3 +143,63 @@ Três kanji do campo da mente e do juízo, úteis para falar de capacidade.
 - 海 sozinho já é a palavra うみ, 'mar'. Não leva okurigana.
 
 
+### 15. (cloze) Complete a frase: ＿＿、時間がない (Droga, não tem tempo.)
+- **Resposta:** `{"text": "しまった", "full": "しまった、時間がない"}`
+- A palavra que falta é しまう: acabar (fazendo), fazer por completo (muitas vezes com pesar). Na frase ela aparece como しまった.
+- frases: `sent:gen-baca7e2c5649`
+
+### 16. (recognition) Qual destas palavras significa "brilhar, reluzir"?
+- **Resposta:** `{"choices": ["かざる", "いのる", "つかまえる", "ひかる"], "correct": "ひかる"}`
+- ひかる significa brilhar, reluzir. As outras opções são かざる (decorar, enfeitar), つかまえる (pegar, agarrar) e いのる (rezar, orar).
+
+
+### 17. (recognition) Qual destas palavras significa "dormir demais, preguiça (de levantar)"?
+- **Resposta:** `{"choices": ["せいよう", "にんぎょう", "ねぼう", "ビル"], "correct": "ねぼう"}`
+- ねぼう significa dormir demais, preguiça (de levantar). As outras opções são せいよう (Ocidente, o mundo ocidental), にんぎょう (boneca, boneco) e ビル (prédio, edifício).
+
+
+### 18. (recognition) Qual destas palavras significa "jogar fora, descartar"?
+- **Resposta:** `{"choices": ["いる", "もうしあげる", "すてる", "きめる"], "correct": "すてる"}`
+- すてる significa jogar fora, descartar. As outras opções são きめる (decidir, determinar), もうしあげる (dizer (humilde), falar (humilde)) e いる (precisar, necessitar).
+
+
+### 19. (recognition) Qual destas palavras significa "judô"?
+- **Resposta:** `{"choices": ["ほんとう", "ガラス", "じゅうどう", "みそ"], "correct": "じゅうどう"}`
+- じゅうどう significa judô. As outras opções são ガラス (vidro, vidraça), みそ (missô, pasta de soja fermentada) e ほんとう (ilha principal).
+
+
+### 20. (recognition) Qual destas palavras significa "nunca, de jeito nenhum"?
+- **Resposta:** `{"choices": ["やっと", "いっしょうけんめい", "けっして", "そんなに"], "correct": "けっして"}`
+- けっして significa nunca, de jeito nenhum. As outras opções são いっしょうけんめい (com todas as forças, ao máximo), やっと (finalmente, enfim) e そんなに (tanto, tão).
+
+
+### 21. (recognition) Qual destas palavras significa "decidir, determinar"?
+- **Resposta:** `{"choices": ["もうしあげる", "きめる", "まちがえる", "しまう"], "correct": "きめる"}`
+- きめる significa decidir, determinar. As outras opções são しまう (acabar (fazendo), fazer por completo (muitas vezes com pesar)), まちがえる (errar, cometer um erro) e もうしあげる (dizer (humilde), falar (humilde)).
+
+
+### 22. (recognition) Qual destas palavras significa "finalmente, enfim"?
+- **Resposta:** `{"choices": ["けっして", "なるべく", "いっしょうけんめい", "やっと"], "correct": "やっと"}`
+- やっと significa finalmente, enfim. As outras opções são なるべく (o máximo possível, na medida do possível), けっして (nunca, de jeito nenhum) e いっしょうけんめい (com todas as forças, ao máximo).
+
+
+### 23. (cloze) Complete a frase: 二週間＿＿借りられるかい。 (Dá pra pegar emprestado por umas duas semanas?)
+- **Resposta:** `{"text": "ほど", "full": "二週間ほど借りられるかい。"}`
+- A palavra que falta é ほど: cerca de, aproximadamente.
+- frases: `sent:tatoeba-123138`
+
+### 24. (recognition) Qual destas palavras significa "realizar, executar"?
+- **Resposta:** `{"choices": ["急ぐ", "見つける", "行う", "通る"], "correct": "行う"}`
+- 行う（おこなう） significa realizar, executar. As outras opções são 急ぐ (apressar-se, ter pressa), 通る (passar (por), atravessar) e 見つける (encontrar, achar).
+
+
+### 25. (recognition) Qual destas palavras significa "partida, jogo"?
+- **Resposta:** `{"choices": ["しあい", "どれ", "うそ", "はつおん"], "correct": "しあい"}`
+- しあい significa partida, jogo. As outras opções são うそ (mentira), はつおん (pronúncia) e どれ (qual deles, qual (entre vários)).
+
+
+### 26. (recognition) Qual destas palavras significa "investigar, examinar"?
+- **Resposta:** `{"choices": ["にげる", "すてる", "しらべる", "ひかる"], "correct": "しらべる"}`
+- しらべる significa investigar, examinar. As outras opções são にげる (fugir, escapar), ひかる (brilhar, reluzir) e すてる (jogar fora, descartar).
+
+

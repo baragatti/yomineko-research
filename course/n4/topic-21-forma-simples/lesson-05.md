@@ -115,3 +115,33 @@ O kanji 場 significa lugar, localização. À esquerda o radical de "terra"; à
 - 業 é o kanji do ofício e do ramo de atividade, quase sempre lido ぎょう dentro de palavras compostas.
 
 
+### 10. (recognition) Qual destas palavras significa "a sua casa (polido), residência (de outrem, polido)"?
+- **Resposta:** `{"choices": ["おたく", "こうがい", "く", "みどり"], "correct": "おたく"}`
+- おたく significa a sua casa (polido), residência (de outrem, polido). As outras opções são く (distrito, bairro (administrativo)), こうがい (subúrbios, arredores) e みどり (verde).
+
+
+### 11. (recognition) Qual destas palavras significa "seção (de loja), balcão de vendas"?
+- **Resposta:** `{"choices": ["うりば", "いがい", "うんどう", "べんきょう"], "correct": "うりば"}`
+- うりば significa seção (de loja), balcão de vendas. As outras opções são いがい (exceto, além de), うんどう (exercício físico, atividade física) e べんきょう (estudo).
+
+
+### 12. (recognition) Qual destas palavras significa "terraço, cobertura (de prédio)"?
+- **Resposta:** `{"choices": ["りょうしん", "おくじょう", "ふろ", "マンガ"], "correct": "おくじょう"}`
+- おくじょう significa terraço, cobertura (de prédio). As outras opções são りょうしん (pais), ふろ (banho, banheira) e マンガ (mangá, história em quadrinhos).
+
+
+### 13. (recognition) Qual destas palavras significa "comparar, contrastar"?
+- **Resposta:** `{"choices": ["やむ", "なる", "くらべる", "ぬすむ"], "correct": "くらべる"}`
+- くらべる significa comparar, contrastar. As outras opções são ぬすむ (roubar, furtar), なる (tocar (sino, campainha), soar) e やむ (parar (chuva, vento), cessar).
+
+
+### 14. (recognition) Qual destas palavras significa "frente, face"?
+- **Resposta:** `{"choices": ["みなさん", "しつれい", "レコード", "おもて"], "correct": "おもて"}`
+- おもて significa frente, face. As outras opções são しつれい (grosseiro, mal-educado), みなさん (pessoal, todos (vocês)) e レコード (disco (de vinil), disco).
+
+
+### 15. (recognition) Qual destas palavras significa "subúrbios, arredores"?
+- **Resposta:** `{"choices": ["ほか", "なか", "こうがい", "かぜ"], "correct": "こうがい"}`
+- こうがい significa subúrbios, arredores. As outras opções são ほか (outro, os outros), なか (dentro, interior) e かぜ (vento, brisa).
+
+

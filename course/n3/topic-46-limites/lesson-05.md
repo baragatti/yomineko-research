@@ -111,3 +111,63 @@ O kanji 煙 ('fumaça, fumo') aparece em 煙 ('fumaça') e 煙草 ('cigarro'). T
 - 祖 tem uma única leitura em uso, そ, e quase sempre abre a palavra. Repare que 祖父 é a forma humilde, usada para falar do próprio avô.
 
 
+### 10. (recognition) Qual destas palavras significa "outro, os demais"?
+- **Resposta:** `{"choices": ["急に", "方々", "別に", "他"], "correct": "他"}`
+- 他（た） significa outro, os demais. As outras opções são 別に (não particularmente, nada em especial), 方々 (por toda parte, aqui e ali) e 急に (de repente, subitamente).
+
+
+### 11. (recognition) Qual destas palavras significa "preço, valor a pagar"?
+- **Resposta:** `{"choices": ["方", "大使", "代金", "大気"], "correct": "代金"}`
+- 代金（だいきん） significa preço, valor a pagar. As outras opções são 方 (direção, lado), 大使 (embaixador) e 大気 (atmosfera, o ar).
+
+
+### 12. (recognition) Qual destas palavras significa "educação física"?
+- **Resposta:** `{"choices": ["決心", "体育", "生物", "文明"], "correct": "体育"}`
+- 体育（たいいく） significa educação física. As outras opções são 文明 (civilização), 決心 (determinação, resolução) e 生物 (ser vivo, organismo).
+
+
+### 13. (recognition) Qual destas formas significa "grande, amplo"?
+- **Resposta:** `{"choices": ["半ば", "大", "分", "不"], "correct": "大"}`
+- 大（だい） significa grande, amplo. As outras opções são 半ば (meio, metade), 不 (não-, in- (prefixo negativo)) e 分 (parte, porção).
+
+
+### 14. (cloze) Complete a frase: 君は＿＿ものだ。 (Você é demais.)
+- **Resposta:** `{"text": "大した", "full": "君は大したものだ。"}`
+- A palavra que falta é 大した（たいした）: e tanto, considerável.
+- frases: `sent:tatoeba-177065`
+
+### 15. (cloze) Complete a frase: その選手はこの＿＿で三回連続優勝した。 (Aquele atleta venceu três vezes seguidas neste torneio.)
+- **Resposta:** `{"text": "大会", "full": "その選手はこの大会で三回連続優勝した。"}`
+- A palavra que falta é 大会（たいかい）: torneio, competição.
+- frases: `sent:tatoeba-208396`
+
+### 16. (cloze) Complete a frase: 月に＿＿はない。 (Não há atmosfera na Lua.)
+- **Resposta:** `{"text": "大気", "full": "月に大気はない。"}`
+- A palavra que falta é 大気（たいき）: atmosfera, o ar.
+- frases: `sent:tatoeba-3468845`
+
+### 17. (cloze) Complete a frase: あなたの＿＿が大事だ。 (Sua presença é importante.)
+- **Resposta:** `{"text": "存在", "full": "あなたの存在が大事だ。"}`
+- A palavra que falta é 存在（そんざい）: existência, presença.
+- frases: `sent:tatoeba-8337048`
+
+### 18. (cloze) Complete a frase: ドルは円に＿＿下がった。 (O dólar caiu em relação ao iene.)
+- **Resposta:** `{"text": "対して", "full": "ドルは円に対して下がった。"}`
+- A palavra que falta é 対する（たいする）: voltar-se para, dirigir-se a. Na frase ela aparece como 対して.
+- frases: `sent:tatoeba-199683`
+
+### 19. (recognition) Qual destas palavras significa "respeito, consideração"?
+- **Resposta:** `{"choices": ["そんちょう", "けん", "けっか", "せんこう"], "correct": "そんちょう"}`
+- そんちょう significa respeito, consideração. As outras opções são けん (bilhete, ingresso), せんこう (curso (área de estudo), especialização) e けっか (resultado, consequência).
+
+
+### 20. (cloze) Complete a frase: この村には＿＿が多い (Nessa vila tem muito arrozal.)
+- **Resposta:** `{"text": "田", "full": "この村には田が多い"}`
+- A palavra que falta é 田（た）: arrozal, campo de arroz.
+- frases: `sent:gen-b17216046149`
+
+### 21. (cloze) Complete a frase: なぜその＿＿を選んだのか。 (Por que você escolheu esse tema?)
+- **Resposta:** `{"text": "題", "full": "なぜその題を選んだのか。"}`
+- A palavra que falta é 題（だい）: título, tema.
+- frases: `sent:tatoeba-199247`
+

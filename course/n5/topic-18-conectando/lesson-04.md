@@ -100,3 +100,28 @@ Um kanji, perfeito para falar do tempo com でしょう.
 - あれ (aquilo) + は (tópico) + ラジカセ (rádio-gravador) + でしょう (suposição educada, 'deve ser'). でしょう encaixa direto depois do substantivo, sem precisar de です antes.
 
 
+### 6. (recognition) Qual destas palavras significa "rádio"?
+- **Resposta:** `{"choices": ["みんな", "ボールペン", "ラジオ", "ふく"], "correct": "ラジオ"}`
+- ラジオ significa rádio. As outras opções são ボールペン (caneta esferográfica), ふく (roupa, roupas) e みんな (todos, todo mundo).
+
+
+### 7. (recognition) Qual destas palavras significa "disco (de vinil), disco"?
+- **Resposta:** `{"choices": ["レコード", "はな", "ボールペン", "みどり"], "correct": "レコード"}`
+- レコード significa disco (de vinil), disco. As outras opções são みどり (verde), はな (nariz) e ボールペン (caneta esferográfica).
+
+
+### 8. (recognition) Qual destas palavras significa "entrevista (oficial), audiência"?
+- **Resposta:** `{"choices": ["まど", "せっけん", "まえ", "フィルム"], "correct": "せっけん"}`
+- せっけん significa entrevista (oficial), audiência. As outras opções são まど (janela), フィルム (filme (fotográfico)) e まえ (frente, à frente).
+
+
+### 9. (recognition) Qual destas palavras significa "ilha principal"?
+- **Resposta:** `{"choices": ["やつ", "ゆき", "ほか", "ほんとう"], "correct": "ほんとう"}`
+- ほんとう significa ilha principal. As outras opções são ゆき (neve), やつ (oito (coisas)) e ほか (outro, os outros).
+
+
+### 10. (cloze) Complete a frase: あなた＿＿、なんてきれいなんでしょう！ (Como você é linda!)
+- **Resposta:** `{"text": "って", "full": "あなたって、なんてきれいなんでしょう！"}`
+- O que falta é って: o ponto gramatical desta lição, って (citação/tópico coloquial).
+- frases: `sent:tatoeba-5347`
+

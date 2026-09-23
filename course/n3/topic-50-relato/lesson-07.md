@@ -96,3 +96,58 @@ Duas palavras muito próximas que vale separar:
 - 申し込む (もうしこむ) marca o alvo da inscrição com に (講座に); o passado casual é 申し込んだ.
 
 
+### 6. (cloze) Complete a frase: チームの＿＿を信頼しています。 (Eu confio nos membros do time.)
+- **Resposta:** `{"text": "メンバー", "full": "チームのメンバーを信頼しています。"}`
+- A palavra que falta é メンバー: membro, integrante.
+- frases: `sent:tatoeba-13894257`
+
+### 7. (cloze) Complete a frase: ＿＿が小さすぎる。 (A letra está pequena demais.)
+- **Resposta:** `{"text": "文字", "full": "文字が小さすぎる。"}`
+- A palavra que falta é 文字（もじ）: caractere, letra.
+- frases: `sent:tatoeba-11853813`
+
+### 8. (cloze) Complete a frase: 月曜から＿＿までここにおります。 (Fico aqui de segunda a quinta.)
+- **Resposta:** `{"text": "木曜", "full": "月曜から木曜までここにおります。"}`
+- A palavra que falta é 木曜（もくよう）: quinta-feira.
+- frases: `sent:tatoeba-175608`
+
+### 9. (recognition) Qual destas palavras significa "cobertor, manta"?
+- **Resposta:** `{"choices": ["さつ", "もうふ", "カード", "せいり"], "correct": "もうふ"}`
+- もうふ significa cobertor, manta. As outras opções são さつ (nota (de dinheiro), cédula), せいり (organização, arrumação) e カード (cartão).
+
+
+### 10. (cloze) Complete a frase: 彼はお金を＿＿。 (Ele pediu dinheiro.)
+- **Resposta:** `{"text": "求めた", "full": "彼はお金を求めた。"}`
+- A palavra que falta é 求める（もとめる）: buscar, procurar. Na frase ela aparece como 求めた.
+- frases: `sent:tatoeba-114208`
+
+### 11. (recognition) Qual destas palavras significa "queimar, arder"?
+- **Resposta:** `{"choices": ["なやむ", "のべる", "ふるえる", "もえる"], "correct": "もえる"}`
+- もえる significa queimar, arder. As outras opções são のべる (declarar, expor), ふるえる (tremer, estremecer) e なやむ (preocupar-se, afligir-se).
+
+
+### 12. (recognition) Qual destas palavras significa "desculpa, justificativa"?
+- **Resposta:** `{"choices": ["もうしわけ", "ばくはつ", "しゅくはく", "きず"], "correct": "もうしわけ"}`
+- もうしわけ significa desculpa, justificativa. As outras opções são きず (ferida, machucado), しゅくはく (hospedar-se, pernoitar) e ばくはつ (explosão, explodir).
+
+
+### 13. (cloze) Complete a frase: 旅行の＿＿は何ですか。 (Qual é o motivo da sua viagem?)
+- **Resposta:** `{"text": "目的", "full": "旅行の目的は何ですか。"}`
+- A palavra que falta é 目的（もくてき）: objetivo, propósito.
+- frases: `sent:tatoeba-78160`
+
+### 14. (recognition) Qual destas palavras significa "algodão"?
+- **Resposta:** `{"choices": ["こうくう", "めん", "じゅんばん", "じゅよう"], "correct": "めん"}`
+- めん significa algodão. As outras opções são こうくう (aviação), じゅんばん (ordem, vez) e じゅよう (demanda, procura).
+
+
+### 15. (recognition) Qual destas palavras significa "se por acaso, caso"?
+- **Resposta:** `{"choices": ["若しも", "思わず", "単に", "直に"], "correct": "若しも"}`
+- 若しも（もしも） significa se por acaso, caso. As outras opções são 直に (diretamente, pessoalmente), 単に (simplesmente, meramente) e 思わず (sem querer, involuntariamente).
+
+
+### 16. (cloze) Complete a frase: ＿＿なことになるよ。 (Isso vai dar problema, viu.)
+- **Resposta:** `{"text": "面倒", "full": "面倒なことになるよ。"}`
+- A palavra que falta é 面倒（めんどう）: trabalho, incômodo.
+- frases: `sent:tatoeba-80195`
+

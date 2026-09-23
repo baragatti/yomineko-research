@@ -140,3 +140,73 @@ Faça os exercícios abaixo. Confira a explicação de cada um depois de respond
 - 辞書 é 辞 (palavra) + 書 (escrito): o livro das palavras. Lê-se じしょ.
 
 
+### 12. (cloze) Complete a frase: ここで２つの＿＿がある。 (Aqui existem dois casos.)
+- **Resposta:** `{"text": "ケース", "full": "ここで２つのケースがある。"}`
+- A palavra que falta é ケース: caso, situação.
+- frases: `sent:tatoeba-224674`
+
+### 13. (cloze) Complete a frase: ＿＿しようよ。 (Bora jogar.)
+- **Resposta:** `{"text": "ゲーム", "full": "ゲームしようよ。"}`
+- A palavra que falta é ゲーム: jogo, game.
+- frases: `sent:tatoeba-9001470`
+
+### 14. (recognition) Qual destas palavras significa "tendência, propensão"?
+- **Resposta:** `{"choices": ["ソファー", "きんぞく", "けいこう", "けいやく"], "correct": "けいこう"}`
+- けいこう significa tendência, propensão. As outras opções são きんぞく (metal), ソファー (sofá) e けいやく (contrato, acordo).
+
+
+### 15. (recognition) Qual destas palavras significa "detetive, investigador (policial)"?
+- **Resposta:** `{"choices": ["けいじ", "スケート", "ほね", "すいじゅん"], "correct": "けいじ"}`
+- けいじ significa detetive, investigador (policial). As outras opções são ほね (osso), すいじゅん (nível, padrão) e スケート (patinação, patinar).
+
+
+### 16. (recognition) Qual destas palavras significa "peça (teatral), drama"?
+- **Resposta:** `{"choices": ["れいせい", "げき", "ぼうけん", "てら"], "correct": "げき"}`
+- げき significa peça (teatral), drama. As outras opções são てら (templo (budista)), ぼうけん (aventura) e れいせい (calmo, sereno).
+
+
+### 17. (recognition) Qual destas palavras significa "teatro (local), casa de espetáculos"?
+- **Resposta:** `{"choices": ["きゅうけい", "げきじょう", "どろ", "くろう"], "correct": "げきじょう"}`
+- げきじょう significa teatro (local), casa de espetáculos. As outras opções são くろう (dificuldade, trabalho árduo), どろ (lama, barro) e きゅうけい (descanso, pausa).
+
+
+### 18. (recognition) Qual destas palavras significa "maquiagem"?
+- **Resposta:** `{"choices": ["けしょう", "とうちゃく", "ひも", "ぜん"], "correct": "けしょう"}`
+- けしょう significa maquiagem. As outras opções são ぜん (o bem, virtude), ひも (barbante, cordão) e とうちゃく (chegar, chegada).
+
+
+### 19. (recognition) Qual destas palavras significa "contrato, acordo"?
+- **Resposta:** `{"choices": ["けいやく", "ずつう", "わすれもの", "ふり"], "correct": "けいやく"}`
+- けいやく significa contrato, acordo. As outras opções são ふり (desvantagem, prejuízo), ずつう (dor de cabeça) e わすれもの (objeto esquecido, esquecimento).
+
+
+### 20. (recognition) Qual destas palavras significa "aviso (afixado), comunicado"?
+- **Resposta:** `{"choices": ["きんぞく", "どりょく", "けいじ", "きんこ"], "correct": "けいじ"}`
+- けいじ significa aviso (afixado), comunicado. As outras opções são どりょく (esforço, esforçar-se), きんぞく (metal) e きんこ (cofre, caixa-forte).
+
+
+### 21. (cloze) Complete a frase: 私はアメリカ＿＿でヨーロッパへ行った。 (Eu fui para a Europa passando pelos Estados Unidos.)
+- **Resposta:** `{"text": "経由", "full": "私はアメリカ経由でヨーロッパへ行った。"}`
+- A palavra que falta é 経由（けいゆ）: passagem por, via.
+- frases: `sent:tatoeba-161503`
+
+### 22. (recognition) Qual destas palavras significa "arte, as artes"?
+- **Resposta:** `{"choices": ["どろ", "ボート", "げいじゅつ", "せきにん"], "correct": "げいじゅつ"}`
+- げいじゅつ significa arte, as artes. As outras opções são ボート (barco, bote), せきにん (responsabilidade, encargo) e どろ (lama, barro).
+
+
+### 23. (recognition) Qual destas palavras significa "cálculo, conta"?
+- **Resposta:** `{"choices": ["ぎゃく", "けいさん", "なか", "げいじゅつ"], "correct": "けいさん"}`
+- けいさん significa cálculo, conta. As outras opções são なか (relação, relacionamento), げいじゅつ (arte, as artes) e ぎゃく (inverso, oposto).
+
+
+### 24. (cloze) Complete a frase: ＿＿ありがとう。 (Valeu pelo aviso.)
+- **Resposta:** `{"text": "警告", "full": "警告ありがとう。"}`
+- A palavra que falta é 警告（けいこく）: aviso, advertência.
+- frases: `sent:tatoeba-176298`
+
+### 25. (cloze) Complete a frase: 有り得＿＿！ (Não pode ser!)
+- **Resposta:** `{"text": "ない", "full": "有り得ない！"}`
+- O que falta é ない: o ponto gramatical desta lição, pelo menos (o mínimo de) (くらいは～ない).
+- frases: `sent:tatoeba-4910`
+

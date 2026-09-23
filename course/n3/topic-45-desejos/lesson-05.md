@@ -107,3 +107,58 @@ O kanji 貧 ('pobreza, pobre') aparece em 貧乏 ('pobreza') e 貧しい ('pobre
 - 貧 é a pobreza: em cima está a ideia de repartir e embaixo a concha que valia dinheiro, ou seja, o que sobra quando se divide o dinheiro em partes pequenas demais. 費 é despesa, 財 é riqueza e 貸 é emprestar.
 
 
+### 9. (cloze) Complete a frase: 彼女は母親と＿＿だ。 (Ela é igualzinha à mãe.)
+- **Resposta:** `{"text": "そっくり", "full": "彼女は母親とそっくりだ。"}`
+- A palavra que falta é そっくり: idêntico, igualzinho.
+- frases: `sent:tatoeba-86771`
+
+### 10. (recognition) Qual destas palavras significa "em breve, logo" (no sentido de mais cedo ou mais tarde)?
+- **Resposta:** `{"choices": ["男の子", "気に入る", "その内", "世の中"], "correct": "その内"}`
+- その内（そのうち） significa em breve, logo. As outras opções são 気に入る (gostar de, agradar-se de), 男の子 (menino, garoto) e 世の中 (sociedade, o mundo).
+
+
+### 11. (recognition) Qual destas palavras significa "sofá"?
+- **Resposta:** `{"choices": ["ソファー", "デモ", "くらし", "ぎょうぎ"], "correct": "ソファー"}`
+- ソファー（ソファ） significa sofá. As outras opções são ぎょうぎ (boas maneiras, etiqueta), くらし (vida, modo de vida) e デモ (manifestação (protesto), passeata).
+
+
+### 12. (cloze) Complete a frase: 彼女は美しさを＿＿います。 (Ela tem beleza.)
+- **Resposta:** `{"text": "備えて", "full": "彼女は美しさを備えています。"}`
+- A palavra que falta é 備える（そなえる）: preparar-se para, precaver-se contra. Na frase ela aparece como 備えて.
+- frases: `sent:tatoeba-87083`
+
+### 13. (cloze) Complete a frase: ＿＿続けて。 (Continua assim.)
+- **Resposta:** `{"text": "そのまま", "full": "そのまま続けて。"}`
+- A palavra que falta é そのまま: assim mesmo, sem mudar nada.
+- frases: `sent:tatoeba-3488546`
+
+### 14. (recognition) Qual destas palavras significa "ou, ou então"?
+- **Resposta:** `{"choices": ["それとも", "すなわち", "それでも", "ところで"], "correct": "それとも"}`
+- それとも significa ou, ou então. As outras opções são それでも (mesmo assim, ainda assim), すなわち (isto é, ou seja) e ところで (a propósito, aliás).
+
+
+### 15. (cloze) Complete a frase: 人は＿＿、意見が違う。 (Cada pessoa tem uma opinião diferente.)
+- **Resposta:** `{"text": "それぞれ", "full": "人はそれぞれ、意見が違う。"}`
+- A palavra que falta é それぞれ: cada um, respectivamente.
+- frases: `sent:tatoeba-144562`
+
+### 16. (recognition) Qual destas palavras significa "por isso, então" (no sentido de assim sendo)?
+- **Resposta:** `{"choices": ["けれど", "もっとも", "そこで", "すなわち"], "correct": "そこで"}`
+- そこで significa por isso, então. As outras opções são すなわち (isto é, ou seja), けれど (mas, porém) e もっとも (natural, compreensível).
+
+
+### 17. (recognition) Qual destas palavras significa "prejuízo, perda"?
+- **Resposta:** `{"choices": ["せいり", "えんぎ", "せき", "そん"], "correct": "そん"}`
+- そん significa prejuízo, perda. As outras opções são せいり (organização, arrumação), えんぎ (atuação, interpretação) e せき (tosse).
+
+
+### 18. (recognition) Qual destas palavras significa "simples, modesto"?
+- **Resposta:** `{"choices": ["ほうふ", "おんだん", "そまつ", "すてき"], "correct": "そまつ"}`
+- そまつ significa simples, modesto. As outras opções são ほうふ (abundante, farto), すてき (lindo, maravilhoso) e おんだん (ameno, temperado).
+
+
+### 19. (cloze) Complete a frase: 海の近くで＿＿。 (Eu cresci perto do mar.)
+- **Resposta:** `{"text": "育ちました", "full": "海の近くで育ちました。"}`
+- A palavra que falta é 育つ（そだつ）: crescer, ser criado. Na frase ela aparece como 育ちました.
+- frases: `sent:tatoeba-11735117`
+

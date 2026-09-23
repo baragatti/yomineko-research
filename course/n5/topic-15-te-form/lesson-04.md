@@ -95,3 +95,28 @@ O primeiro aparece em 書いた("que escreveu") e em 葉書:
 - 名 é o kanji do nome e, por extensão, da fama: ter nome é ser conhecido. Em 名前 ele se junta a 前 (frente), o nome que você põe à frente ao se apresentar.
 
 
+### 7. (recognition) Qual destas palavras significa "lenço"?
+- **Resposta:** `{"choices": ["ハンカチ", "ちゃいろ", "いえ", "あに"], "correct": "ハンカチ"}`
+- ハンカチ significa lenço. As outras opções são ちゃいろ (marrom, castanho), いえ (casa) e あに (irmão mais velho).
+
+
+### 8. (recognition) Qual destas palavras significa "festa"?
+- **Resposta:** `{"choices": ["にわ", "コピー", "パーティー", "ちゃわん"], "correct": "パーティー"}`
+- パーティー significa festa. As outras opções são にわ (jardim, quintal), ちゃわん (tigela, tigela de arroz) e コピー (cópia, copiar).
+
+
+### 9. (recognition) Qual destas palavras significa "ponte"?
+- **Resposta:** `{"choices": ["ハンカチ", "はし", "はは", "はがき"], "correct": "はし"}`
+- はし significa ponte. As outras opções são はがき (cartão-postal), ハンカチ (lenço) e はは (mãe).
+
+
+### 10. (recognition) Qual destas palavras significa "número"?
+- **Resposta:** `{"choices": ["はし", "シャツ", "はな", "ばんごう"], "correct": "ばんごう"}`
+- ばんごう significa número. As outras opções são はし (ponte), はな (flor) e シャツ (camisa, camiseta).
+
+
+### 11. (recognition) Qual destas palavras significa "hashi, pauzinhos"?
+- **Resposta:** `{"choices": ["にく", "パン", "となり", "はし"], "correct": "はし"}`
+- はし significa hashi, pauzinhos. As outras opções são となり (vizinho, ao lado), パン (pão) e にく (carne).
+
+

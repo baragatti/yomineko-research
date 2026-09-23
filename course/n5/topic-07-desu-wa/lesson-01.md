@@ -86,3 +86,78 @@ Guarde o molde: [A] は [B] です. Troque só o A e o B e você já fala dezena
 - 私 (eu) + は (tópico, lê-se 'wa') + 外国人 (estrangeiro) + です (cópula educada). É o molde A は B です em ação.
 
 
+### 6. (recognition) Qual destas palavras significa "policial, guarda"?
+- **Resposta:** `{"choices": ["くさ", "がいこくじん", "おまわりさん", "かぎ"], "correct": "おまわりさん"}`
+- おまわりさん significa policial, guarda. As outras opções são くさ (grama, capim), がいこくじん (estrangeiro) e かぎ (chave).
+
+
+### 7. (recognition) Qual destas palavras significa "dinheiro"?
+- **Resposta:** `{"choices": ["おんな", "おかね", "えん", "おんがく"], "correct": "おかね"}`
+- おかね significa dinheiro. As outras opções são えん (iene (moeda)), おんがく (música) e おんな (mulher).
+
+
+### 8. (recognition) Qual destas palavras significa "empresa, companhia"?
+- **Resposta:** `{"choices": ["おまわりさん", "いくら", "いしゃ", "かいしゃ"], "correct": "かいしゃ"}`
+- かいしゃ significa empresa, companhia. As outras opções são いくら (quanto (preço, quantidade)), おまわりさん (policial, guarda) e いしゃ (médico, doutor).
+
+
+### 9. (recognition) Qual destas palavras significa "iene (moeda)"?
+- **Resposta:** `{"choices": ["え", "おとこ", "あなた", "えん"], "correct": "えん"}`
+- えん significa iene (moeda). As outras opções são え (desenho, pintura), あなた (você) e おとこ (homem).
+
+
+### 10. (recognition) Qual destas palavras significa "médico, doutor"?
+- **Resposta:** `{"choices": ["みそ", "いしゃ", "おかね", "かいしゃ"], "correct": "いしゃ"}`
+- いしゃ significa médico, doutor. As outras opções são みそ (missô, pasta de soja fermentada), かいしゃ (empresa, companhia) e おかね (dinheiro).
+
+
+### 11. (recognition) Qual destas formas significa "mulher"?
+- **Resposta:** `{"choices": ["うた", "いす", "おんな", "えいご"], "correct": "おんな"}`
+- おんな significa mulher. As outras opções são えいご (inglês (idioma)), うた (canção, música) e いす (cadeira).
+
+
+### 12. (cloze) Complete a frase: お＿＿ですか？ (Quantos anos você tem?)
+- **Resposta:** `{"text": "いくつ", "full": "おいくつですか？"}`
+- A palavra que falta é いくつ: quantos.
+- frases: `sent:tatoeba-5078`
+
+### 13. (cloze) Complete a frase: ＿＿ですか？ (Quanto custa?)
+- **Resposta:** `{"text": "いくら", "full": "いくらですか？"}`
+- A palavra que falta é いくら: quanto (preço, quantidade).
+- frases: `sent:tatoeba-5332`
+
+### 14. (recognition) Qual destas palavras significa "canção, música"?
+- **Resposta:** `{"choices": ["いくら", "おんな", "がいこくじん", "うた"], "correct": "うた"}`
+- うた significa canção, música. As outras opções são おんな (mulher), いくら (quanto (preço, quantidade)) e がいこくじん (estrangeiro).
+
+
+### 15. (recognition) Qual destas formas significa "homem"?
+- **Resposta:** `{"choices": ["おまわりさん", "おとこ", "おかね", "かいしゃ"], "correct": "おとこ"}`
+- おとこ significa homem. As outras opções são かいしゃ (empresa, companhia), おまわりさん (policial, guarda) e おかね (dinheiro).
+
+
+### 16. (recognition) Qual destas palavras significa "desenho, pintura"?
+- **Resposta:** `{"choices": ["みそ", "おとこ", "うた", "え"], "correct": "え"}`
+- え significa desenho, pintura. As outras opções são うた (canção, música), おとこ (homem) e みそ (missô, pasta de soja fermentada).
+
+
+### 17. (recognition) Qual destas palavras significa "inglês (idioma)"?
+- **Resposta:** `{"choices": ["くさ", "いしゃ", "えいご", "いす"], "correct": "えいご"}`
+- えいご significa inglês (idioma). As outras opções são いしゃ (médico, doutor), いす (cadeira) e くさ (grama, capim).
+
+
+### 18. (recognition) Qual destas palavras significa "você"?
+- **Resposta:** `{"choices": ["えん", "あなた", "え", "おんがく"], "correct": "あなた"}`
+- あなた significa você. As outras opções são おんがく (música), え (desenho, pintura) e えん (iene (moeda)).
+
+
+### 19. (recognition) Qual destas palavras significa "chave"?
+- **Resposta:** `{"choices": ["あなた", "かぎ", "いしゃ", "えいご"], "correct": "かぎ"}`
+- かぎ significa chave. As outras opções são えいご (inglês (idioma)), あなた (você) e いしゃ (médico, doutor).
+
+
+### 20. (cloze) Complete a frase: いくらです＿＿？ (Quanto custa?)
+- **Resposta:** `{"text": "か", "full": "いくらですか？"}`
+- O que falta é か: o ponto gramatical desta lição, partícula か (pergunta).
+- frases: `sent:tatoeba-5332`
+

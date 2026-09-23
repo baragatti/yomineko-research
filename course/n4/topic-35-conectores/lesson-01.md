@@ -101,3 +101,43 @@ Não confunda それで com から/ので. から/ので ligam causa e efeito de
 - 洗 também traz a água à esquerda: lavar. O verbo é 洗う, com a leitura kun あらう.
 
 
+### 8. (cloze) Complete a frase: 私は＿＿を習いたい (Quero aprender piano.)
+- **Resposta:** `{"text": "ピアノ", "full": "私はピアノを習いたい"}`
+- A palavra que falta é ピアノ: piano.
+- frases: `sent:gen-aef805c4840d`
+
+### 9. (recognition) Qual destas palavras significa "de dois andares, sobrado"?
+- **Resposta:** `{"choices": ["どうぐ", "にかいだて", "ガソリンスタンド", "ひかり"], "correct": "にかいだて"}`
+- にかいだて significa de dois andares, sobrado. As outras opções são ひかり (luz, raio de luz), ガソリンスタンド (posto de gasolina) e どうぐ (ferramenta, instrumento).
+
+
+### 10. (recognition) Qual destas palavras significa "dedo (da mão)"?
+- **Resposta:** `{"choices": ["うけつけ", "ゆび", "じこ", "きょうそう"], "correct": "ゆび"}`
+- ゆび significa dedo (da mão). As outras opções são きょうそう (competição, concorrência), じこ (acidente) e うけつけ (recepção, balcão de atendimento).
+
+
+### 11. (recognition) Qual destas palavras significa "aparência, forma"?
+- **Resposta:** `{"choices": ["ぼうえき", "おき", "かみ", "かっこ"], "correct": "かっこ"}`
+- かっこ（かっこう） significa aparência, forma. As outras opções são おき (alto-mar, mar aberto), ぼうえき (comércio (exterior), intercâmbio comercial) e かみ (cabelo).
+
+
+### 12. (recognition) Qual destas palavras significa "prateleira, estante"?
+- **Resposta:** `{"choices": ["たな", "みずうみ", "やくそく", "ガソリンスタンド"], "correct": "たな"}`
+- たな significa prateleira, estante. As outras opções são みずうみ (lago), やくそく (promessa, compromisso) e ガソリンスタンド (posto de gasolina).
+
+
+### 13. (recognition) Qual destas palavras significa "koto, cítara japonesa"?
+- **Resposta:** `{"choices": ["るす", "そう", "けいけん", "にっき"], "correct": "そう"}`
+- そう（こと） significa koto, cítara japonesa. As outras opções são るす (ausência, estar fora (de casa)), けいけん (experiência) e にっき (diário).
+
+
+### 14. (recognition) Qual destas palavras significa "programa (de TV/rádio)"?
+- **Resposta:** `{"choices": ["ばんぐみ", "こうどう", "いと", "かんごし"], "correct": "ばんぐみ"}`
+- ばんぐみ significa programa (de TV/rádio). As outras opções são かんごし (enfermeiro, enfermeira), こうどう (auditório, salão de palestras) e いと (fio, linha (de costura)).
+
+
+### 15. (recognition) Qual destas formas significa "fio, linha (de costura)"?
+- **Resposta:** `{"choices": ["どう", "たち", "ふくしゅう", "いと"], "correct": "いと"}`
+- いと significa fio, linha (de costura). As outras opções são たち (sufixo de plural (pessoas e animais)), ふくしゅう (revisão (de matéria)) e どう (movimento).
+
+

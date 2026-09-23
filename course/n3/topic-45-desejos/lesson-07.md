@@ -87,3 +87,63 @@ Repare em 炎 para descrever fogo e em ホーム no contexto de estação de tre
 - 微笑む (ほほえむ) é sorrir; no passado simples fica 微笑んだ.
 
 
+### 5. (recognition) Qual destas palavras significa "por toda parte, aqui e ali"?
+- **Resposta:** `{"choices": ["共に", "半分", "一人一人", "方々"], "correct": "方々"}`
+- 方々（ほうぼう） significa por toda parte, aqui e ali. As outras opções são 半分 (metade, meio), 共に (junto, juntamente) e 一人一人 (um por um, cada um).
+
+
+### 6. (cloze) Complete a frase: 私は＿＿がやってくるのを見た。 (Eu vi o camareiro chegando.)
+- **Resposta:** `{"text": "ボーイ", "full": "私はボーイがやってくるのを見た。"}`
+- A palavra que falta é ボーイ: garçom, camareiro.
+- frases: `sent:tatoeba-158948`
+
+### 7. (cloze) Complete a frase: 私は＿＿で川を渡った。 (Eu atravessei o rio de barco.)
+- **Resposta:** `{"text": "ボート", "full": "私はボートで川を渡った。"}`
+- A palavra que falta é ボート: barco, bote.
+- frases: `sent:tatoeba-1171169`
+
+### 8. (cloze) Complete a frase: ＿＿を投げてください。 (Joga a bola, por favor.)
+- **Resposta:** `{"text": "ボール", "full": "ボールを投げてください。"}`
+- A palavra que falta é ボール: bola.
+- frases: `sent:tatoeba-196449`
+
+### 9. (recognition) Qual destas palavras significa "Buda"?
+- **Resposta:** `{"choices": ["キャプテン", "トンネル", "きょか", "ほとけ"], "correct": "ほとけ"}`
+- ほとけ significa Buda. As outras opções são きょか (permissão, autorização), トンネル (túnel) e キャプテン (capitão, líder de equipe).
+
+
+### 10. (recognition) Qual destas palavras significa "preservação, conservação"?
+- **Resposta:** `{"choices": ["ドレス", "ほぞん", "きんゆう", "ぼうけん"], "correct": "ほぞん"}`
+- ほぞん significa preservação, conservação. As outras opções são ぼうけん (aventura), きんゆう (finanças, financiamento) e ドレス (vestido).
+
+
+### 11. (recognition) Qual destas palavras significa "professora de creche, educadora infantil"?
+- **Resposta:** `{"choices": ["ほぞん", "ドレス", "おうさま", "ほぼ"], "correct": "ほぼ"}`
+- ほぼ significa professora de creche, educadora infantil. As outras opções são ほぞん (preservação, conservação), ドレス (vestido) e おうさま (rei (esp. em contos de fadas)).
+
+
+### 12. (recognition) Qual destas palavras significa "latir, uivar"?
+- **Resposta:** `{"choices": ["ふるえる", "ほえる", "かこむ", "くりかえす"], "correct": "ほえる"}`
+- ほえる significa latir, uivar. As outras opções são ふるえる (tremer, estremecer), かこむ (cercar, rodear) e くりかえす (repetir, refazer).
+
+
+### 13. (cloze) Complete a frase: ここは＿＿だらけだな。 (Aqui está cheio de poeira, hein.)
+- **Resposta:** `{"text": "ホコリ", "full": "ここはホコリだらけだな。"}`
+- A palavra que falta é ホコリ（ほこり）: poeira, pó.
+- frases: `sent:tatoeba-10784568`
+
+### 14. (cloze) Complete a frase: ＿＿を歩きなさい。 (Ande pela calçada.)
+- **Resposta:** `{"text": "歩道", "full": "歩道を歩きなさい。"}`
+- A palavra que falta é 歩道（ほどう）: calçada, passeio.
+- frases: `sent:tatoeba-83191`
+
+### 15. (cloze) Complete a frase: 明日おじを＿＿する。 (Amanhã eu vou visitar meu tio.)
+- **Resposta:** `{"text": "訪問", "full": "明日おじを訪問する。"}`
+- A palavra que falta é 訪問（ほうもん）: visita.
+- frases: `sent:tatoeba-80625`
+
+### 16. (recognition) Qual destas palavras significa "orgulho"?
+- **Resposta:** `{"choices": ["おおぜい", "ほこり", "アイスクリーム", "くつう"], "correct": "ほこり"}`
+- ほこり significa orgulho. As outras opções são くつう (dor, sofrimento), おおぜい (muitas pessoas, multidão) e アイスクリーム (sorvete).
+
+

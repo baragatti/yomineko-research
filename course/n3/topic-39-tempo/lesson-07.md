@@ -90,3 +90,63 @@ Para fechar, verbos de ação, palavras de tempo e alguns empréstimos do kataka
 - この服は (esta roupa, tópico) + サイズが (o tamanho, sujeito) + ぴったりだ (fica perfeito). ぴったり expressa o encaixe exato; a forma polida seria ぴったりです.
 
 
+### 6. (cloze) Complete a frase: 服が＿＿合っていた。 (A roupa serviu direitinho.)
+- **Resposta:** `{"text": "ぴったり", "full": "服がぴったり合っていた。"}`
+- A palavra que falta é ぴったり: perfeitamente (encaixado), direitinho.
+- frases: `sent:tatoeba-83893`
+
+### 7. (cloze) Complete a frase: ＿＿で映画を見ました。 (Assisti ao filme em vídeo.)
+- **Resposta:** `{"text": "ビデオ", "full": "ビデオで映画を見ました。"}`
+- A palavra que falta é ビデオ: vídeo.
+- frases: `sent:tatoeba-197567`
+
+### 8. (cloze) Complete a frase: 彼は＿＿でスリにあった。 (Bateram a carteira dele no meio da multidão.)
+- **Resposta:** `{"text": "人ごみ", "full": "彼は人ごみでスリにあった。"}`
+- A palavra que falta é 人ごみ（ひとごみ）: multidão, aglomeração de gente.
+- frases: `sent:tatoeba-103592`
+
+### 9. (recognition) Qual destas palavras significa "negar, desmentir"?
+- **Resposta:** `{"choices": ["びじん", "ひづけ", "いどう", "ひてい"], "correct": "ひてい"}`
+- ひてい significa negar, desmentir. As outras opções são いどう (mover-se, deslocar-se), びじん (mulher bonita, beldade) e ひづけ (data, data (em documento)).
+
+
+### 10. (recognition) Qual destas palavras significa "puxar, arrastar"?
+- **Resposta:** `{"choices": ["いだく", "いたる", "ひっぱる", "うる"], "correct": "ひっぱる"}`
+- ひっぱる significa puxar, arrastar. As outras opções são いだく (nutrir (um sentimento), alimentar (uma ideia, dúvida)), いたる (chegar a, alcançar) e うる (poder, ser capaz de (sufixo)).
+
+
+### 11. (recognition) Qual destas palavras significa "desesperado, frenético"?
+- **Resposta:** `{"choices": ["いわゆる", "ちょくせつ", "ひっし", "いじょう"], "correct": "ひっし"}`
+- ひっし significa desesperado, frenético. As outras opções são いじょう (anormal, incomum), いわゆる (chamado, o chamado) e ちょくせつ (direto).
+
+
+### 12. (recognition) Qual destas palavras significa "tragédia"?
+- **Resposta:** `{"choices": ["ちょきん", "ひげき", "あわれ", "アウト"], "correct": "ひげき"}`
+- ひげき significa tragédia. As outras opções são あわれ (pena, compaixão), ちょきん (poupança, economias) e アウト (out (eliminado, no beisebol/esporte)).
+
+
+### 13. (recognition) Qual destas palavras significa "data, data (em documento)"?
+- **Resposta:** `{"choices": ["いま", "いち", "ゆうじょう", "ひづけ"], "correct": "ひづけ"}`
+- ひづけ significa data, data (em documento). As outras opções são いち (posição, localização), ゆうじょう (amizade) e いま (sala de estar, sala).
+
+
+### 14. (recognition) Qual destas palavras significa "igual, idêntico"?
+- **Resposta:** `{"choices": ["ひとしい", "めずらしい", "うれしい", "かたい"], "correct": "ひとしい"}`
+- ひとしい significa igual, idêntico. As outras opções são うれしい (feliz, contente), めずらしい (raro, incomum) e かたい (duro, rígido).
+
+
+### 15. (recognition) Qual destas palavras significa "mulher bonita, beldade"?
+- **Resposta:** `{"choices": ["つつみ", "びじん", "す", "ちょしゃ"], "correct": "びじん"}`
+- びじん significa mulher bonita, beldade. As outras opções são す (ninho, colmeia), ちょしゃ (autor, autora) e つつみ (pacote, embrulho).
+
+
+### 16. (recognition) Qual destas palavras significa "atropelar"?
+- **Resposta:** `{"choices": ["おどろく", "ひく", "おとす", "なおる"], "correct": "ひく"}`
+- ひく significa atropelar. As outras opções são おとす (deixar cair, derrubar), おどろく (surpreender-se, espantar-se) e なおる (ser consertado, ficar bom (consertado)).
+
+
+### 17. (recognition) Qual destas palavras significa "emergência"?
+- **Resposta:** `{"choices": ["ひじょう", "びじん", "いたみ", "ばんぐみ"], "correct": "ひじょう"}`
+- ひじょう significa emergência. As outras opções são いたみ (dor), びじん (mulher bonita, beldade) e ばんぐみ (programa (de TV/rádio)).
+
+

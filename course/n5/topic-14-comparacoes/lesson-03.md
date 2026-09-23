@@ -121,3 +121,33 @@ Um kanji curto e muito frequente fecha a lição.
 - 女の子 junta 女 (mulher) e 子 (criança), ligados pela partícula do meio, e se lê おんなのこ. Repare que 女 sozinho já é おんな.
 
 
+### 9. (recognition) Qual destas palavras significa "faca"?
+- **Resposta:** `{"choices": ["ナイフ", "ネクタイ", "ニュース", "ちかく"], "correct": "ナイフ"}`
+- ナイフ significa faca. As outras opções são ちかく (proximidades, redondezas), ニュース (notícia, notícias) e ネクタイ (gravata).
+
+
+### 10. (recognition) Qual destas palavras significa "notícia, notícias"?
+- **Resposta:** `{"choices": ["ニュース", "コピー", "くろ", "さかな"], "correct": "ニュース"}`
+- ニュース significa notícia, notícias. As outras opções são コピー (cópia, copiar), くろ (preto, cor preta) e さかな (peixe).
+
+
+### 11. (recognition) Qual destas palavras significa "caderno"?
+- **Resposta:** `{"choices": ["いっしょ", "ぎゅうにく", "こんばん", "ノート"], "correct": "ノート"}`
+- ノート significa caderno. As outras opções são いっしょ (junto, juntos), こんばん (esta noite, hoje à noite) e ぎゅうにく (carne bovina, carne de boi).
+
+
+### 12. (recognition) Qual destas palavras significa "perder, extraviar"?
+- **Resposta:** `{"choices": ["とぶ", "なくす", "つとめる", "つかれる"], "correct": "なくす"}`
+- なくす significa perder, extraviar. As outras opções são とぶ (voar), つとめる (trabalhar (em emprego), ser empregado em) e つかれる (cansar-se, ficar cansado).
+
+
+### 13. (recognition) Qual destas palavras significa "bagagem, carga"?
+- **Resposta:** `{"choices": ["ほう", "にもつ", "いっしょ", "あて"], "correct": "にもつ"}`
+- にもつ significa bagagem, carga. As outras opções são いっしょ (junto, juntos), あて (pai) e ほう (relatório, notícia).
+
+
+### 14. (recognition) Qual destas palavras significa "bebida"?
+- **Resposta:** `{"choices": ["あまり", "きいろ", "きんようび", "のみもの"], "correct": "のみもの"}`
+- のみもの significa bebida. As outras opções são あまり ((não) muito, (não) tanto), きいろ (amarelo (a cor)) e きんようび (sexta-feira).
+
+

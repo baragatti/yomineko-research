@@ -128,3 +128,88 @@ Você vai ouvir também os verbos 罹る(contrair uma doença),翔る(planar, vo
 - O prefixo da rotina é 毎, lido まい. Ele encaixa do mesmo jeito em 毎月 (まいつき) e 毎年 (まいとし).
 
 
+### 11. (recognition) Qual destas palavras significa "trabalho, emprego"?
+- **Resposta:** `{"choices": ["しごと", "じどうしゃ", "ストーブ", "あした"], "correct": "しごと"}`
+- しごと significa trabalho, emprego. As outras opções são ストーブ (aquecedor, aquecedor a gás ou querosene), あした (amanhã) e じどうしゃ (carro, automóvel).
+
+
+### 12. (recognition) Qual destas palavras significa "morar, residir"?
+- **Resposta:** `{"choices": ["あそぶ", "かける", "すむ", "くもる"], "correct": "すむ"}`
+- すむ significa morar, residir. As outras opções são くもる (ficar nublado, encobrir-se), あそぶ (brincar, se divertir) e かける (voar (pelo céu), planar).
+
+
+### 13. (recognition) Qual destas palavras significa "florescer, desabrochar"?
+- **Resposta:** `{"choices": ["すむ", "さく", "すわる", "かかる"], "correct": "さく"}`
+- さく significa florescer, desabrochar. As outras opções são すむ (morar, residir), すわる (sentar, sentar-se) e かかる (pegar (uma doença), contrair).
+
+
+### 14. (cloze) Complete a frase: 日毎に＿＿なってくる。 (Está ficando mais frio dia após dia.)
+- **Resposta:** `{"text": "寒く", "full": "日毎に寒くなってくる。"}`
+- A palavra que falta é さむい: frio. Na frase ela aparece como 寒く.
+- frases: `sent:tatoeba-122195`
+
+### 15. (recognition) Qual destas palavras significa "voltar para casa, ir para casa"?
+- **Resposta:** `{"choices": ["およぐ", "さく", "なる", "かえる"], "correct": "かえる"}`
+- かえる significa voltar para casa, ir para casa. As outras opções são なる (dar fruto, frutificar), およぐ (nadar) e さく (florescer, desabrochar).
+
+
+### 16. (recognition) Qual destas palavras significa "sentar, sentar-se"?
+- **Resposta:** `{"choices": ["あるく", "さす", "すわる", "かえる"], "correct": "すわる"}`
+- すわる significa sentar, sentar-se. As outras opções são あるく (andar, caminhar), かえる (voltar para casa, ir para casa) e さす (abrir (o guarda-chuva), segurar erguido).
+
+
+### 17. (recognition) Qual destas palavras significa "passeio, caminhada"?
+- **Resposta:** `{"choices": ["さんぽ", "これ", "シャワー", "あさ"], "correct": "さんぽ"}`
+- さんぽ significa passeio, caminhada. As outras opções são シャワー (chuveiro, banho de chuveiro), あさ (manhã) e これ (isto, este).
+
+
+### 18. (recognition) Qual destas palavras significa "ficar nublado, encobrir-se"?
+- **Resposta:** `{"choices": ["なる", "かける", "くもる", "あるく"], "correct": "くもる"}`
+- くもる significa ficar nublado, encobrir-se. As outras opções são かける (voar (pelo céu), planar), なる (dar fruto, frutificar) e あるく (andar, caminhar).
+
+
+### 19. (recognition) Qual destas palavras significa "andar, caminhar"?
+- **Resposta:** `{"choices": ["くもる", "およぐ", "はしる", "あるく"], "correct": "あるく"}`
+- あるく significa andar, caminhar. As outras opções são はしる (correr), くもる (ficar nublado, encobrir-se) e およぐ (nadar).
+
+
+### 20. (recognition) Qual destas palavras significa "nadar"?
+- **Resposta:** `{"choices": ["すわる", "おく", "およぐ", "すむ"], "correct": "およぐ"}`
+- およぐ significa nadar. As outras opções são すむ (morar, residir), すわる (sentar, sentar-se) e おく (colocar, pôr).
+
+
+### 21. (recognition) Qual destas palavras significa "dar fruto, frutificar"?
+- **Resposta:** `{"choices": ["きる", "かかる", "なる", "のる"], "correct": "なる"}`
+- なる significa dar fruto, frutificar. As outras opções são かかる (pegar (uma doença), contrair), のる (andar (de veículo), embarcar) e きる (cortar).
+
+
+### 22. (recognition) Qual destas palavras significa "pegar (uma doença), contrair"?
+- **Resposta:** `{"choices": ["さく", "かかる", "あそぶ", "かえる"], "correct": "かかる"}`
+- かかる significa pegar (uma doença), contrair. As outras opções são あそぶ (brincar, se divertir), さく (florescer, desabrochar) e かえる (voltar para casa, ir para casa).
+
+
+### 23. (recognition) Qual destas palavras significa "voar (pelo céu), planar"?
+- **Resposta:** `{"choices": ["はしる", "かける", "すむ", "しめる"], "correct": "かける"}`
+- かける significa voar (pelo céu), planar. As outras opções são はしる (correr), すむ (morar, residir) e しめる (amarrar, apertar).
+
+
+### 24. (recognition) Qual destas palavras significa "compras"?
+- **Resposta:** `{"choices": ["こども", "ストーブ", "さとう", "かいもの"], "correct": "かいもの"}`
+- かいもの significa compras. As outras opções são さとう (açúcar), こども (criança) e ストーブ (aquecedor, aquecedor a gás ou querosene).
+
+
+### 25. (recognition) Qual destas palavras significa "correr"?
+- **Resposta:** `{"choices": ["きえる", "なる", "うたう", "はしる"], "correct": "はしる"}`
+- はしる significa correr. As outras opções são なる (dar fruto, frutificar), うたう (cantar) e きえる (apagar-se (luz, fogo), desligar-se).
+
+
+### 26. (recognition) Qual destas palavras significa "brincar, se divertir"?
+- **Resposta:** `{"choices": ["かける", "あそぶ", "かす", "かく"], "correct": "あそぶ"}`
+- あそぶ significa brincar, se divertir. As outras opções são かく (escrever), かす (emprestar (algo a alguém)) e かける (pendurar, colocar).
+
+
+### 27. (cloze) Complete a frase: 日毎に寒くなって＿＿。 (Está ficando mais frio dia após dia.)
+- **Resposta:** `{"text": "くる", "full": "日毎に寒くなってくる。"}`
+- O que falta é くる: o ponto gramatical desta lição, くる, vir (verbo irregular).
+- frases: `sent:tatoeba-122195`
+

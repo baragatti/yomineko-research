@@ -85,3 +85,53 @@ Dica: ユーモア (humor, graça) tem quatro batidas: ユ-ー-モ-ア, e o ー 
 - ユーモアのある人 é 'pessoa com humor' e 愉快だ fecha a ideia de algo prazeroso/divertido.
 
 
+### 6. (recognition) Qual destas palavras significa "ser campeão, vencer o campeonato"?
+- **Resposta:** `{"choices": ["ゆうしょう", "あやまり", "ひがい", "いき"], "correct": "ゆうしょう"}`
+- ゆうしょう significa ser campeão, vencer o campeonato. As outras opções são いき (respiração, fôlego), あやまり (erro, engano) e ひがい (dano, prejuízo).
+
+
+### 7. (cloze) Complete a frase: 彼らは私の＿＿だ。 (Eles são meus amigos.)
+- **Resposta:** `{"text": "友人", "full": "彼らは私の友人だ。"}`
+- A palavra que falta é 友人（ゆうじん）: amigo, amiga.
+- frases: `sent:tatoeba-96996`
+
+### 8. (recognition) Qual destas palavras significa "único, exclusivo"?
+- **Resposta:** `{"choices": ["ゆいいつ", "ビール", "アイロン", "いずれ"], "correct": "ゆいいつ"}`
+- ゆいいつ significa único, exclusivo. As outras opções são ビール (cerveja), いずれ (qual (entre vários), qualquer um) e アイロン (ferro de passar roupa).
+
+
+### 9. (recognition) Qual destas palavras significa "chão, piso"?
+- **Resposta:** `{"choices": ["あくしゅ", "クリーム", "ゆか", "プレゼント"], "correct": "ゆか"}`
+- ゆか significa chão, piso. As outras opções são クリーム (creme, nata), あくしゅ (aperto de mão) e プレゼント (presente, lembrança).
+
+
+### 10. (recognition) Qual destas palavras significa "vantajoso, favorável"?
+- **Resposta:** `{"choices": ["ゆうこう", "ゆうり", "ゆかい", "ハンサム"], "correct": "ゆうり"}`
+- ゆうり significa vantajoso, favorável. As outras opções são ハンサム (bonito, atraente (homem)), ゆかい (agradável, divertido) e ゆうこう (eficaz, válido).
+
+
+### 11. (recognition) Qual destas palavras significa "eficaz, válido"?
+- **Resposta:** `{"choices": ["ゆうり", "ゆうこう", "ゆうしゅう", "ゆたか"], "correct": "ゆうこう"}`
+- ゆうこう significa eficaz, válido. As outras opções são ゆうしゅう (excelente, excepcional), ゆたか (abundante, farto) e ゆうり (vantajoso, favorável).
+
+
+### 12. (recognition) Qual destas palavras significa "competente, capaz"?
+- **Resposta:** `{"choices": ["ゆうのう", "かんたん", "あらゆる", "ハンサム"], "correct": "ゆうのう"}`
+- ゆうのう significa competente, capaz. As outras opções são あらゆる (todo, todos os), ハンサム (bonito, atraente (homem)) e かんたん (simples, fácil).
+
+
+### 13. (recognition) Qual destas palavras significa "perdoar, desculpar"?
+- **Resposta:** `{"choices": ["かつ", "ゆるす", "にる", "つく"], "correct": "ゆるす"}`
+- ゆるす significa perdoar, desculpar. As outras opções são かつ (vencer, ganhar), つく (grudar, ficar grudado) e にる (parecer-se, assemelhar-se).
+
+
+### 14. (recognition) Qual destas palavras significa "ceder, passar (para outro)"?
+- **Resposta:** `{"choices": ["える", "ゆずる", "もうす", "なおす"], "correct": "ゆずる"}`
+- ゆずる significa ceder, passar (para outro). As outras opções são える (obter, conseguir), なおす (consertar, arrumar) e もうす (dizer (humilde), falar).
+
+
+### 15. (recognition) Qual destas formas significa "abundante, farto"?
+- **Resposta:** `{"choices": ["しずか", "がら", "ゆたか", "ちょくせつ"], "correct": "ゆたか"}`
+- ゆたか significa abundante, farto. As outras opções são ちょくせつ (direto), がら (estampa/padrão/desenho (de tecido)) e しずか (quieto, calmo).
+
+

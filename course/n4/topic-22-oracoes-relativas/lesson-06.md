@@ -89,3 +89,8 @@ O conector すると("então", "e então", "em seguida") liga uma ação a uma c
 - A leitura うた fica dentro do kanji e o う aparece como okurigana. Sem esse う a palavra seria o substantivo 歌, a canção.
 
 
+### 7. (production) Escreva em japonês a palavra que significa "então, aí (então)" (no sentido de e então).
+- **Resposta:** `{"text": "すると", "accept": ["すると"]}`
+- A resposta é すると: então, aí (então).
+
+

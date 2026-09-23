@@ -88,3 +88,13 @@ Os três advérbios numa só cena:さっき急に雨が降ってきた("há pouc
 - 急 põe 心 embaixo de uma mão que agarra: o coração acelerado de quem tem pressa. A leitura キュウ é a que aparece tanto no sentido de 'de repente' quanto no nome do trem expresso.
 
 
+### 7. (cloze) Complete a frase: 急に＿＿だしました。 (De repente, comecei a emagrecer.)
+- **Resposta:** `{"text": "やせ", "full": "急にやせだしました。"}`
+- A palavra que falta é やせる: emagrecer, perder peso. Na frase ela aparece como やせ.
+- frases: `sent:tatoeba-182469`
+
+### 8. (recognition) Qual destas palavras significa "firmemente, com firmeza"?
+- **Resposta:** `{"choices": ["とても", "いくつ", "すぐに", "しっかり"], "correct": "しっかり"}`
+- しっかり significa firmemente, com firmeza. As outras opções são いくつ (quantos), すぐに (imediatamente, logo) e とても (muito, extremamente).
+
+

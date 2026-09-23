@@ -125,3 +125,28 @@ Juntando tudo:夕べ具合が悪くなってしまった= ontem à noite acabei 
 - 悪い (わるい) é 'ruim' no sentido amplo: qualidade, comportamento, tempo. Nos compostos, 悪 troca para a leitura sino-japonesa アク.
 
 
+### 10. (cloze) Complete a frase: ＿＿をどうも (Valeu pelo presente.)
+- **Resposta:** `{"text": "プレゼント", "full": "プレゼントをどうも"}`
+- A palavra que falta é プレゼント: presente, lembrança.
+- frases: `sent:gen-7c1c56b2c8fd`
+
+### 11. (recognition) Qual destas palavras significa "estado, condição (de saúde)"?
+- **Resposta:** `{"choices": ["ぐあい", "きいろ", "いし", "おもて"], "correct": "ぐあい"}`
+- ぐあい significa estado, condição (de saúde). As outras opções são いし (pedra, rocha), おもて (frente, face) e きいろ (amarelo (a cor)).
+
+
+### 12. (recognition) Qual destas palavras significa "formatura, conclusão (de curso)"?
+- **Resposta:** `{"choices": ["そつぎょう", "まま", "おつり", "ため"], "correct": "そつぎょう"}`
+- そつぎょう significa formatura, conclusão (de curso). As outras opções são まま (do jeito que está, como está), ため (para, a fim de) e おつり (troco).
+
+
+### 13. (recognition) Qual destas palavras significa "esposa, mulher"?
+- **Resposta:** `{"choices": ["バス", "きそく", "へんじ", "つま"], "correct": "つま"}`
+- つま significa esposa, mulher. As outras opções são へんじ (resposta), きそく (regra, regulamento) e バス (ônibus).
+
+
+### 14. (recognition) Qual destas palavras significa "perder, ser derrotado"?
+- **Resposta:** `{"choices": ["まける", "とまる", "すむ", "うつ"], "correct": "まける"}`
+- まける significa perder, ser derrotado. As outras opções são うつ (bater, golpear), すむ (terminar, concluir-se) e とまる (pernoitar, hospedar-se).
+
+

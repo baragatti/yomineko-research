@@ -103,3 +103,48 @@ Mnemônico de forma: à esquerda fica o radical de fio/linha 糸 (papel antigo e
 - 先生は + 来週 + 休む (forma de dicionário) + と + 聞いた. O と cita a frase inteira e 聞いた marca que você OUVIU isso de alguém, não está afirmando por conta própria.
 
 
+### 6. (recognition) Qual destas palavras significa "conhecimento (forma respeitosa), estar a par de"?
+- **Resposta:** `{"choices": ["ごぞんじ", "プレゼント", "かみ", "ポケット"], "correct": "ごぞんじ"}`
+- ごぞんじ significa conhecimento (forma respeitosa), estar a par de. As outras opções são プレゼント (presente, lembrança), かみ (cabelo) e ポケット (bolso).
+
+
+### 7. (recognition) Qual destas palavras significa "filho"?
+- **Resposta:** `{"choices": ["へん", "よやく", "どうぐ", "むすこ"], "correct": "むすこ"}`
+- むすこ significa filho. As outras opções são どうぐ (ferramenta, instrumento), よやく (reserva, agendamento) e へん (redondeza, por aqui (área)).
+
+
+### 8. (recognition) Qual destas palavras significa "entendido, compreendido"?
+- **Resposta:** `{"choices": ["こうぎ", "こうつう", "しょうち", "ほうそう"], "correct": "しょうち"}`
+- しょうち significa entendido, compreendido. As outras opções são こうぎ (palestra, aula (expositiva)), ほうそう (transmissão, difusão) e こうつう (trânsito, transporte).
+
+
+### 9. (recognition) Qual destas palavras significa "literatura"?
+- **Resposta:** `{"choices": ["時代", "一度", "文学", "高校生"], "correct": "文学"}`
+- 文学（ぶんがく） significa literatura. As outras opções são 時代 (época, era), 一度 (uma vez) e 高校生 (estudante do ensino médio, aluno do colegial).
+
+
+### 10. (recognition) Qual destas palavras significa "diário"?
+- **Resposta:** `{"choices": ["にっき", "しゅっせき", "うら", "ゆき"], "correct": "にっき"}`
+- にっき significa diário. As outras opções são しゅっせき (presença, comparecimento), うら (verso, lado de trás) e ゆき (neve).
+
+
+### 11. (recognition) Qual destas palavras significa "motivo, razão"?
+- **Resposta:** `{"choices": ["プレゼント", "せんもん", "わけ", "れいぼう"], "correct": "わけ"}`
+- わけ significa motivo, razão. As outras opções são せんもん (especialidade, área de especialização), プレゼント (presente, lembrança) e れいぼう (ar-condicionado (refrigeração), refrigeração).
+
+
+### 12. (recognition) Qual destas palavras significa "palestra, aula (expositiva)"?
+- **Resposta:** `{"choices": ["きょうみ", "こうぎ", "ことば", "アナウンサー"], "correct": "こうぎ"}`
+- こうぎ significa palestra, aula (expositiva). As outras opções são アナウンサー (locutor, apresentador), きょうみ (interesse, curiosidade) e ことば (palavra, expressão).
+
+
+### 13. (cloze) Complete a frase: 四月に＿＿に入学する (Vou entrar no ensino médio em abril.)
+- **Resposta:** `{"text": "高校", "full": "四月に高校に入学する"}`
+- A palavra que falta é 高校（こうこう）: ensino médio, colégio.
+- frases: `sent:gen-5051007b6d98`
+
+### 14. (cloze) Complete a frase: ＿＿はこの試合に出られない (Estudantes do ensino médio não podem participar deste jogo.)
+- **Resposta:** `{"text": "高校生", "full": "高校生はこの試合に出られない"}`
+- A palavra que falta é 高校生（こうこうせい）: estudante do ensino médio, aluno do colegial.
+- frases: `sent:gen-0d4be8081c10`
+

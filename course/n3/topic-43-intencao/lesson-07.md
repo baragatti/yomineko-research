@@ -84,3 +84,58 @@ Repare em 雰囲気, uma palavra muito comum, e em 震える para sensações f�
 - 雰囲気 (ふんいき) é o clima do lugar; com 好き expressa o que você aprecia nele.
 
 
+### 5. (recognition) Qual destas formas significa "parte, porção" (no sentido de quinhão)?
+- **Resposta:** `{"choices": ["明かり", "分", "分野", "火曜"], "correct": "分"}`
+- 分（ぶん） significa parte, porção. As outras opções são 明かり (luz, claridade), 分野 (campo, área) e 火曜 (terça-feira).
+
+
+### 6. (cloze) Complete a frase: そんなことをしても何の＿＿にもならない。 (Fazer isso não adianta nada.)
+- **Resposta:** `{"text": "プラス", "full": "そんなことをしても何のプラスにもならない。"}`
+- A palavra que falta é プラス: mais, adição.
+- frases: `sent:tatoeba-204386`
+
+### 7. (recognition) Qual destas palavras significa "profissional, profissa"?
+- **Resposta:** `{"choices": ["ふじん", "プロ", "すえ", "つばさ"], "correct": "プロ"}`
+- プロ significa profissional, profissa. As outras opções são つばさ (asa), すえ (fim, final) e ふじん (mulher, senhora).
+
+
+### 8. (recognition) Qual destas palavras significa "desvantagem, prejuízo"?
+- **Resposta:** `{"choices": ["ふり", "せつやく", "かんこう", "とう"], "correct": "ふり"}`
+- ふり significa desvantagem, prejuízo. As outras opções são かんこう (turismo, passeio turístico), せつやく (economia, poupança) e とう (torre, pagode (torre)).
+
+
+### 9. (recognition) Qual destas palavras significa "insatisfação, descontentamento"?
+- **Resposta:** `{"choices": ["ひはん", "ふまん", "すべて", "かいふく"], "correct": "ふまん"}`
+- ふまん significa insatisfação, descontentamento. As outras opções são すべて (tudo, todo), かいふく (recuperação, restabelecimento) e ひはん (criticar, crítica).
+
+
+### 10. (recognition) Qual destas palavras significa "muro, cerca"?
+- **Resposta:** `{"choices": ["てつどう", "どくりつ", "かんきょう", "へい"], "correct": "へい"}`
+- へい significa muro, cerca. As outras opções são どくりつ (independência, tornar-se independente), てつどう (ferrovia, estrada de ferro) e かんきょう (ambiente, meio ambiente).
+
+
+### 11. (recognition) Qual destas palavras significa "média"?
+- **Resposta:** `{"choices": ["ライター", "へいきん", "わた", "おい"], "correct": "へいきん"}`
+- へいきん significa média. As outras opções são ライター (isqueiro), わた (algodão, enchimento de algodão) e おい (velhice, envelhecimento).
+
+
+### 12. (recognition) Qual destas palavras significa "acenar, balançar"?
+- **Resposta:** `{"choices": ["ふる", "ふれる", "ふせぐ", "ぶつ"], "correct": "ふる"}`
+- ふる significa acenar, balançar. As outras opções são ふせぐ (prevenir, proteger contra), ふれる (tocar, encostar em) e ぶつ (bater, golpear).
+
+
+### 13. (cloze) Complete a frase: ＿＿を変えたよ。 (Mudei a frase.)
+- **Resposta:** `{"text": "文", "full": "文を変えたよ。"}`
+- A palavra que falta é 文（ぶん）: frase, oração.
+- frases: `sent:tatoeba-9520393`
+
+### 14. (recognition) Qual destas palavras significa "civilização"?
+- **Resposta:** `{"choices": ["一家", "帰宅", "活動", "文明"], "correct": "文明"}`
+- 文明（ぶんめい） significa civilização. As outras opções são 帰宅 (voltar para casa, ir para casa), 活動 (atividade, ação) e 一家 (uma família, a família inteira).
+
+
+### 15. (recognition) Qual destas palavras significa "tocar, encostar em"?
+- **Resposta:** `{"choices": ["かける", "かこむ", "かる", "ふれる"], "correct": "ふれる"}`
+- ふれる significa tocar, encostar em. As outras opções são かる (cortar (cabelo, grama), aparar), かこむ (cercar, rodear) e かける (estar lascado, estar quebrado (pedaço)).
+
+

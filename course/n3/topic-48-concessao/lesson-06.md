@@ -94,3 +94,58 @@ Repare como, no exemplo acima, 残り (o substantivo "resto") e 残す (o verbo 
 - 熱中 (ねっちゅう) é estar imerso ou muito empolgado com algo. 熱帯 são os trópicos, 年代 é uma época e 残り é o resto/sobra.
 
 
+### 6. (cloze) Complete a frase: 彼は私の質問に「＿＿」と答えた。 (Ele respondeu não à minha pergunta.)
+- **Resposta:** `{"text": "ノー", "full": "彼は私の質問に「ノー」と答えた。"}`
+- A palavra que falta é ノー: não.
+- frases: `sent:tatoeba-105812`
+
+### 7. (cloze) Complete a frase: 馬に＿＿よ。 (Me põe em cima do cavalo, vai.)
+- **Resposta:** `{"text": "乗せて", "full": "馬に乗せてよ。"}`
+- A palavra que falta é 乗せる（のせる）: colocar (em cima), pôr sobre. Na frase ela aparece como 乗せて.
+- frases: `sent:tatoeba-121636`
+
+### 8. (recognition) Qual destas palavras significa "era, época"?
+- **Resposta:** `{"choices": ["国語", "組合", "年代", "婚約"], "correct": "年代"}`
+- 年代（ねんだい） significa era, época. As outras opções são 婚約 (noivado), 国語 (língua nacional, língua japonesa (matéria escolar)) e 組合 (associação, sindicato).
+
+
+### 9. (cloze) Complete a frase: ぼくは１＿＿禁煙した。 (Eu fiquei um ano sem fumar.)
+- **Resposta:** `{"text": "年間", "full": "ぼくは１年間禁煙した。"}`
+- A palavra que falta é 年間（ねんかん）: período de anos, ao longo dos anos.
+- frases: `sent:tatoeba-196370`
+
+### 10. (recognition) Qual destas palavras significa "idade (de uma pessoa), anos de idade"?
+- **Resposta:** `{"choices": ["さくら", "ぞう", "ねんれい", "ほとけ"], "correct": "ねんれい"}`
+- ねんれい significa idade (de uma pessoa), anos de idade. As outras opções são さくら (flor de cerejeira, cerejeira), ほとけ (Buda) e ぞう (elefante).
+
+
+### 11. (cloze) Complete a frase: 私の分も＿＿よ。 (Deixa um pouco pra mim também.)
+- **Resposta:** `{"text": "残しといて", "full": "私の分も残しといてよ。"}`
+- A palavra que falta é 残す（のこす）: deixar (para trás), guardar. Na frase ela aparece como 残しといて.
+- frases: `sent:tatoeba-10528421`
+
+### 12. (cloze) Complete a frase: ＿＿時間はほとんどない。 (Quase não sobra tempo.)
+- **Resposta:** `{"text": "残り", "full": "残り時間はほとんどない。"}`
+- A palavra que falta é 残り（のこり）: resto, o restante.
+- frases: `sent:tatoeba-169282`
+
+### 13. (recognition) Qual destas palavras significa "trópicos, zona tropical"?
+- **Resposta:** `{"choices": ["けいじ", "こっせつ", "たいよう", "ねったい"], "correct": "ねったい"}`
+- ねったい significa trópicos, zona tropical. As outras opções são たいよう (sol), こっせつ (fratura óssea) e けいじ (aviso (afixado), comunicado).
+
+
+### 14. (recognition) Qual destas palavras significa "capacidade, aptidão"?
+- **Resposta:** `{"choices": ["困難", "関心", "能", "万一"], "correct": "能"}`
+- 能（のう） significa capacidade, aptidão. As outras opções são 困難 (dificuldade, adversidade), 万一 (em caso de emergência, por via das dúvidas) e 関心 (interesse, atenção).
+
+
+### 15. (recognition) Qual destas palavras significa "campo, planície" (no sentido de campo aberto)?
+- **Resposta:** `{"choices": ["料金", "野", "当時", "能"], "correct": "野"}`
+- 野（の） significa campo, planície. As outras opções são 料金 (tarifa, taxa), 当時 (naquela época, naquele tempo) e 能 (capacidade, aptidão).
+
+
+### 16. (cloze) Complete a frase: 彼は日曜を＿＿毎日働く。 (Ele trabalha todo dia, menos domingo.)
+- **Resposta:** `{"text": "除いて", "full": "彼は日曜を除いて毎日働く。"}`
+- A palavra que falta é 除く（のぞく）: remover, tirar. Na frase ela aparece como 除いて.
+- frases: `sent:tatoeba-101435`
+

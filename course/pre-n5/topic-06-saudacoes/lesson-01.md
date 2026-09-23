@@ -73,3 +73,8 @@ Em ちょっと, o pequeno っ é uma pausa de UM tempo, em silêncio, antes do 
 - もういちど = 'mais uma vez'; ótimo para pedir que repitam algo.
 
 
+### 5. (production) Escreva em japonês a palavra que significa "vamos lá, então".
+- **Resposta:** `{"text": "さあ", "accept": ["さあ"]}`
+- A resposta é さあ: vamos lá, então.
+
+

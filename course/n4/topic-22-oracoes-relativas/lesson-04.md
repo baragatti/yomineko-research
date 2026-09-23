@@ -104,3 +104,48 @@ Esses quatro últimos são substantivos de descrição que você usará nas ora�
 - 夕方 é 夕 (entardecer) + 方 (lado, direção): literalmente 'o lado do entardecer'. O primeiro kanji é o que você precisa escrever, lido ゆう.
 
 
+### 8. (cloze) Complete a frase: ＿＿はどこですか？ (Onde fica a escada rolante?)
+- **Resposta:** `{"text": "エスカレーター", "full": "エスカレーターはどこですか？"}`
+- A palavra que falta é エスカレーター: escada rolante.
+- frases: `sent:tatoeba-11286186`
+
+### 9. (recognition) Qual destas palavras significa "com todas as forças, ao máximo"?
+- **Resposta:** `{"choices": ["ちっとも", "いっしょうけんめい", "やはり", "だんだん"], "correct": "いっしょうけんめい"}`
+- いっしょうけんめい significa com todas as forças, ao máximo. As outras opções são ちっとも ((não)... nem um pouco, de jeito nenhum), やはり (como era de se esperar, de fato) e だんだん (gradualmente, aos poucos).
+
+
+### 10. (recognition) Qual destas palavras significa "o máximo possível, na medida do possível"?
+- **Resposta:** `{"choices": ["それから", "できるだけ", "ございます", "ついて"], "correct": "できるだけ"}`
+- できるだけ significa o máximo possível, na medida do possível. As outras opções são それから (depois disso, e então), ございます (há, existe (forma polida)) e ついて (sobre, a respeito de).
+
+
+### 11. (recognition) Qual destas palavras significa "morder, mastigar"?
+- **Resposta:** `{"choices": ["やめる", "こわれる", "おちる", "かむ"], "correct": "かむ"}`
+- かむ significa morder, mastigar. As outras opções são こわれる (quebrar, quebrar-se), やめる (parar (de), largar) e おちる (cair, despencar).
+
+
+### 12. (recognition) Qual destas palavras significa "cuidado, atenção"?
+- **Resposta:** `{"choices": ["レストラン", "てん", "ぎゅうにゅう", "ちゅうい"], "correct": "ちゅうい"}`
+- ちゅうい significa cuidado, atenção. As outras opções são てん (ponto, nota), レストラン (restaurante) e ぎゅうにゅう (leite).
+
+
+### 13. (recognition) Qual destas palavras significa "rezar, orar"?
+- **Resposta:** `{"choices": ["やせる", "ひく", "いのる", "いたす"], "correct": "いのる"}`
+- いのる significa rezar, orar. As outras opções são いたす (fazer (humilde)), やせる (emagrecer, perder peso) e ひく (tocar (instrumento de cordas/teclas)).
+
+
+### 14. (recognition) Qual destas palavras significa "seda"?
+- **Resposta:** `{"choices": ["ぼく", "カップ", "きぬ", "よこ"], "correct": "きぬ"}`
+- きぬ significa seda. As outras opções são ぼく (eu (informal, masculino)), よこ (lado, ao lado) e カップ (xícara, caneca).
+
+
+### 15. (recognition) Qual destas formas significa "feito (de/em), fabricação (sufixo)"?
+- **Resposta:** `{"choices": ["ガス", "ゴミ", "ふとん", "せい"], "correct": "せい"}`
+- せい significa feito (de/em), fabricação (sufixo). As outras opções são ふとん (futon, colchão japonês), ゴミ (lixo) e ガス (gás, gás (de cozinha)).
+
+
+### 16. (recognition) Qual destas palavras significa "beiral, aba do telhado"?
+- **Resposta:** `{"choices": ["うんてんしゅ", "もん", "のき", "さいふ"], "correct": "のき"}`
+- のき significa beiral, aba do telhado. As outras opções são うんてんしゅ (motorista, condutor), もん (portão) e さいふ (carteira, porta-cédulas).
+
+

@@ -86,3 +86,8 @@ Para encerrar, um adjetivo de emoção: 憎い significa "odioso, detestável, i
 - 少し (um pouco) + 待つ na forma て (待って) + いただけませんか = pedido muito educado para alguém aguardar. É exatamente a frase real 少し待っていただけませんか。
 - frases: `sent:tatoeba-146797`
 
+### 6. (recognition) Qual destas palavras significa "odioso, detestável"?
+- **Resposta:** `{"choices": ["やさしい", "ねむい", "にくい", "ひどい"], "correct": "にくい"}`
+- にくい significa odioso, detestável. As outras opções são やさしい (gentil, bondoso), ねむい (com sono, sonolento) e ひどい (terrível, horrível).
+
+

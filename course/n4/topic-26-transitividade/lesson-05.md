@@ -100,3 +100,18 @@ Três substantivos que aparecem muito em textos do dia a dia e em notícias:
 - 時計 é o aparelho que mede (計) o tempo (時). A leitura とけい vem pronta: não se monta somando as leituras dos dois kanji.
 
 
+### 9. (recognition) Qual destas palavras significa "forma, formato"?
+- **Resposta:** `{"choices": ["いない", "かたち", "あいさつ", "うんてん"], "correct": "かたち"}`
+- かたち significa forma, formato. As outras opções são あいさつ (cumprimento, saudação), うんてん (direção, ato de dirigir) e いない (dentro de, em até).
+
+
+### 10. (recognition) Qual destas palavras significa "tecnologia, técnica"?
+- **Resposta:** `{"choices": ["ゴミ", "いがく", "ねつ", "ぎじゅつ"], "correct": "ぎじゅつ"}`
+- ぎじゅつ significa tecnologia, técnica. As outras opções são ねつ (febre), ゴミ (lixo) e いがく (medicina (ciência)).
+
+
+### 11. (recognition) Qual destas palavras significa "lei, legislação"?
+- **Resposta:** `{"choices": ["アナウンサー", "じゅんび", "かがみ", "ほうりつ"], "correct": "ほうりつ"}`
+- ほうりつ significa lei, legislação. As outras opções são かがみ (espelho), アナウンサー (locutor, apresentador) e じゅんび (preparação, preparativos).
+
+

@@ -109,3 +109,33 @@ Na segunda frase,間違えた("errei") +名前("nome") +書きなおす: errou, 
 - 注意する pede に para marcar aquilo a que se presta atenção. Nessa palavra o kanji 注 usa a leitura on チュウ.
 
 
+### 8. (recognition) Qual destas palavras significa "anel"?
+- **Resposta:** `{"choices": ["とおく", "じょせい", "すみ", "ゆびわ"], "correct": "ゆびわ"}`
+- ゆびわ significa anel. As outras opções são じょせい (mulher, pessoa do sexo feminino), とおく (longe, lugar distante) e すみ (canto, recanto).
+
+
+### 9. (recognition) Qual destas palavras significa "duro, rígido"?
+- **Resposta:** `{"choices": ["うまい", "かたい", "かわいい", "すごい"], "correct": "かたい"}`
+- かたい significa duro, rígido. As outras opções são うまい (habilidoso, bom (em algo)), すごい (incrível, impressionante) e かわいい (fofo, bonitinho).
+
+
+### 10. (cloze) Complete a frase: ＿＿おくよ。 (Vou pensar a respeito, viu.)
+- **Resposta:** `{"text": "考えて", "full": "考えておくよ。"}`
+- A palavra que falta é 考える（かんがえる）: pensar, considerar. Na frase ela aparece como 考えて.
+- frases: `sent:tatoeba-173469`
+
+### 11. (recognition) Qual destas palavras significa "explicação"?
+- **Resposta:** `{"choices": ["へんじ", "りょかん", "せつめい", "おしいれ"], "correct": "せつめい"}`
+- せつめい significa explicação. As outras opções são へんじ (resposta), おしいれ (armário embutido, closet japonês) e りょかん (pousada japonesa, ryokan).
+
+
+### 12. (recognition) Qual destas palavras significa "ferramenta, instrumento"?
+- **Resposta:** `{"choices": ["まま", "どうぐ", "におい", "むかし"], "correct": "どうぐ"}`
+- どうぐ significa ferramenta, instrumento. As outras opções são におい (cheiro, aroma), まま (do jeito que está, como está) e むかし (antigamente, tempos antigos).
+
+
+### 13. (recognition) Qual destas palavras significa "cabelo"?
+- **Resposta:** `{"choices": ["かみ", "サンダル", "ゆびわ", "ちず"], "correct": "かみ"}`
+- かみ significa cabelo. As outras opções são ゆびわ (anel), サンダル (sandália, sandálias) e ちず (mapa).
+
+

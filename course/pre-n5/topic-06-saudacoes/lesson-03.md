@@ -73,3 +73,8 @@ Repare na diferença entre おとこのこ(menino) e おんなのこ(menina): o 
 - A fórmula é Xについて = 'sobre X'. A palavra-chave é ついて (a respeito de), usada como について.
 
 
+### 5. (recognition) Qual destas palavras significa "sobre, a respeito de"?
+- **Resposta:** `{"choices": ["ついて", "おんなのこ", "これから", "もういちど"], "correct": "ついて"}`
+- ついて significa sobre, a respeito de. As outras opções são もういちど (mais uma vez, de novo), おんなのこ (menina, garota) e これから (de agora em diante, a partir de agora).
+
+

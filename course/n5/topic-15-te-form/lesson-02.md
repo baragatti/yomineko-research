@@ -91,3 +91,23 @@ Em かかってこい, o かかって é uma forma て colada a 来い: a mesma 
 - Em compostos como 先生 e 先月, 先 usa a leitura chinesa せん. Sozinho o mesmo kanji lê-se さき. As opções まえ e ぜん são leituras de 前, que também fala de 'antes', e é por isso que confundem tanto.
 
 
+### 7. (recognition) Qual destas palavras significa "trabalhar"?
+- **Resposta:** `{"choices": ["ぬぐ", "ならう", "とる", "はたらく"], "correct": "はたらく"}`
+- はたらく significa trabalhar. As outras opções são ならう (aprender, ter aulas de), ぬぐ (tirar (roupa/sapato), despir) e とる (pegar, tomar).
+
+
+### 8. (recognition) Qual destas palavras significa "pela primeira vez"?
+- **Resposta:** `{"choices": ["たぶん", "いかが", "ちょうど", "はじめて"], "correct": "はじめて"}`
+- はじめて significa pela primeira vez. As outras opções são たぶん (provavelmente, talvez), ちょうど (exatamente, justamente) e いかが (como, que tal).
+
+
+### 9. (recognition) Qual destas palavras significa "começar, iniciar-se"?
+- **Resposta:** `{"choices": ["なくす", "はたらく", "はじまる", "かける"], "correct": "はじまる"}`
+- はじまる significa começar, iniciar-se. As outras opções são はたらく (trabalhar), なくす (perder, extraviar) e かける (voar (pelo céu), planar).
+
+
+### 10. (recognition) Qual destas palavras significa "início, começo"?
+- **Resposta:** `{"choices": ["は", "ど", "じてんしゃ", "はじめ"], "correct": "はじめ"}`
+- はじめ significa início, começo. As outras opções são は (dente, dentes), ど (grau) e じてんしゃ (bicicleta).
+
+

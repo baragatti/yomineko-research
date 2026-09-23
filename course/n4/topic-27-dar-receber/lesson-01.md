@@ -102,3 +102,53 @@ Resuma assim: te-ageru = faço o favor (educado, neutro); te-yaru = mesmo favor,
 - 町 (まち) é a cidade pequena. Dentro de endereços e nomes de bairro a leitura vira ちょう.
 
 
+### 8. (recognition) Qual destas palavras significa "banquete, refeição especial"?
+- **Resposta:** `{"choices": ["てぶくろ", "いない", "ごちそう", "ラジオ"], "correct": "ごちそう"}`
+- ごちそう significa banquete, refeição especial. As outras opções são てぶくろ (luvas), いない (dentro de, em até) e ラジオ (rádio).
+
+
+### 9. (cloze) Complete a frase: ＿＿言いなさい。 (Fale com clareza.)
+- **Resposta:** `{"text": "はっきり", "full": "はっきり言いなさい。"}`
+- A palavra que falta é はっきり: claramente, nitidamente.
+- frases: `sent:tatoeba-197986`
+
+### 10. (cloze) Complete a frase: ぼくは＿＿元気だ。 (Eu estou muito bem.)
+- **Resposta:** `{"text": "すごく", "full": "ぼくはすごく元気だ。"}`
+- A palavra que falta é すごい: incrível, impressionante. Na frase ela aparece como すごく.
+- frases: `sent:tatoeba-196346`
+
+### 11. (recognition) Qual destas palavras significa "alegrar-se, ficar feliz"?
+- **Resposta:** `{"choices": ["よろこぶ", "いらっしゃる", "つける", "くれる"], "correct": "よろこぶ"}`
+- よろこぶ significa alegrar-se, ficar feliz. As outras opções são つける (mergulhar, deixar de molho), いらっしゃる (estar/ir/vir (forma honorífica)) e くれる (escurecer, anoitecer).
+
+
+### 12. (recognition) Qual destas palavras significa "dar (humilde, a um superior), oferecer"?
+- **Resposta:** `{"choices": ["楽しむ", "無くなる", "さし上げる", "出す"], "correct": "さし上げる"}`
+- さし上げる（さしあげる） significa dar (humilde, a um superior), oferecer. As outras opções são 楽しむ (aproveitar, divertir-se com), 無くなる (acabar, sumir) e 出す (tirar, pôr para fora).
+
+
+### 13. (recognition) Qual destas palavras significa "luvas"?
+- **Resposta:** `{"choices": ["しんぱい", "だれか", "てぶくろ", "あかんぼう"], "correct": "てぶくろ"}`
+- てぶくろ significa luvas. As outras opções são あかんぼう (bebê, neném), しんぱい (preocupação, ansiedade) e だれか (alguém).
+
+
+### 14. (recognition) Qual destas palavras significa "sentimento, emoção"?
+- **Resposta:** `{"choices": ["気持ち", "人口", "世界", "用意"], "correct": "気持ち"}`
+- 気持ち（きもち） significa sentimento, emoção. As outras opções são 世界 (mundo, o mundo), 用意 (preparo, preparativos) e 人口 (população).
+
+
+### 15. (recognition) Qual destas palavras significa "sério, aplicado"?
+- **Resposta:** `{"choices": ["へん", "しんせつ", "ていねい", "まじめ"], "correct": "まじめ"}`
+- まじめ significa sério, aplicado. As outras opções são しんせつ (gentil, bondoso), ていねい (educado, cortês) e へん (estranho, esquisito).
+
+
+### 16. (recognition) Qual destas palavras significa "avô"?
+- **Resposta:** `{"choices": ["おれい", "じい", "よしゅう", "じこ"], "correct": "じい"}`
+- じい（そふ） significa avô. As outras opções são おれい (agradecimento, obrigado), じこ (acidente) e よしゅう (preparação prévia da aula, estudo antecipado da matéria).
+
+
+### 17. (recognition) Qual destas palavras significa "dança, o ato de dançar"?
+- **Resposta:** `{"choices": ["おどり", "かいがん", "のりもの", "じい"], "correct": "おどり"}`
+- おどり significa dança, o ato de dançar. As outras opções são のりもの (veículo, meio de transporte), じい (avô) e かいがん (litoral, costa).
+
+

@@ -123,3 +123,38 @@ O kanji 田 significa campo de arroz, arrozal. A forma é fácil de gravar: é u
 - 田 são cinco traços: a moldura e a cruz que divide os canteiros. Sozinho lê-se た; em compostos, でん.
 
 
+### 9. (recognition) Qual destas palavras significa "sanduíche"?
+- **Resposta:** `{"choices": ["サンドイッチ", "だい", "ぜんぶ", "ベッド"], "correct": "サンドイッチ"}`
+- サンドイッチ significa sanduíche. As outras opções são ベッド (cama), だい (suporte, plataforma) e ぜんぶ (tudo, todo).
+
+
+### 10. (recognition) Qual destas palavras significa "trabalho de meio período, meio período"?
+- **Resposta:** `{"choices": ["パート", "きぬ", "いもうと", "ステレオ"], "correct": "パート"}`
+- パート significa trabalho de meio período, meio período. As outras opções são きぬ (seda), ステレオ (aparelho de som, som estéreo) e いもうと (irmã mais nova).
+
+
+### 11. (recognition) Qual destas formas significa "família (a casa de ...), clã"?
+- **Resposta:** `{"choices": ["家", "時", "会", "語"], "correct": "家"}`
+- 家（け） significa família (a casa de ...), clã. As outras opções são 時 (hora (sufixo), ...horas (ao indicar o horário: 3時 = três horas)), 会 (reunião, encontro) e 語 (língua, idioma).
+
+
+### 12. (recognition) Qual destas palavras significa "romance (livro), ficção"?
+- **Resposta:** `{"choices": ["てん", "しょうせつ", "サンドイッチ", "ノート"], "correct": "しょうせつ"}`
+- しょうせつ significa romance (livro), ficção. As outras opções são サンドイッチ (sanduíche), てん (ponto, nota) e ノート (caderno).
+
+
+### 13. (recognition) Qual destas formas significa "cerimônia"?
+- **Resposta:** `{"choices": ["しょくどう", "ちゃいろ", "しき", "パン"], "correct": "しき"}`
+- しき significa cerimônia. As outras opções são パン (pão), ちゃいろ (marrom, castanho) e しょくどう (refeitório, cantina).
+
+
+### 14. (recognition) Qual destas palavras significa "tatame, esteira de tatame"?
+- **Resposta:** `{"choices": ["のき", "かちょう", "ろうか", "たたみ"], "correct": "たたみ"}`
+- たたみ significa tatame, esteira de tatame. As outras opções são かちょう (chefe de seção, gerente de seção), のき (beiral, aba do telhado) e ろうか (corredor).
+
+
+### 15. (recognition) Qual destas palavras significa "pai/mãe, pais"?
+- **Resposta:** `{"choices": ["おや", "げつようび", "みどり", "さつ"], "correct": "おや"}`
+- おや significa pai/mãe, pais. As outras opções são みどり (verde), さつ (contador de livros, contador de volumes) e げつようび (segunda-feira).
+
+

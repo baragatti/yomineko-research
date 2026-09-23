@@ -136,3 +136,73 @@ Armadilha PT: em 行こう e 寝よう, o final おう/よう traz uma vogal lon
 - 想 é a ideia que se forma na cabeça: 理想 é a ideia perfeita de alguma coisa, e 連想 (れんそう) é ligar uma ideia a outra. Ele anda perto de 念, mas 念 puxa mais para o sentimento.
 
 
+### 11. (recognition) Qual destas palavras significa "talvez, pode ser que"?
+- **Resposta:** `{"choices": ["かも知れない", "世の中", "下さい", "男の人"], "correct": "かも知れない"}`
+- かも知れない（かもしれない） significa talvez, pode ser que. As outras opções são 男の人 (homem, pessoa do sexo masculino), 世の中 (sociedade, o mundo) e 下さい (por favor, faça o favor de).
+
+
+### 12. (recognition) Qual destas palavras significa "intuição, pressentimento"?
+- **Resposta:** `{"choices": ["うがい", "テント", "どうし", "かん"], "correct": "かん"}`
+- かん significa intuição, pressentimento. As outras opções são うがい (fazer gargarejo, gargarejar), どうし (verbo (classe de palavra)) e テント (barraca, tenda).
+
+
+### 13. (cloze) Complete a frase: そんな＿＿です。 (É mais ou menos isso.)
+- **Resposta:** `{"text": "感じ", "full": "そんな感じです。"}`
+- A palavra que falta é 感じ（かんじ）: sensação, impressão.
+- frases: `sent:tatoeba-11574865`
+
+### 14. (cloze) Complete a frase: 今朝は寒く＿＿。 (Estou sentindo frio hoje de manhã.)
+- **Resposta:** `{"text": "感じる", "full": "今朝は寒く感じる。"}`
+- A palavra que falta é 感じる（かんじる）: sentir, perceber.
+- frases: `sent:tatoeba-172275`
+
+### 15. (cloze) Complete a frase: 映画を見て＿＿した。 (Assisti ao filme e me emocionei.)
+- **Resposta:** `{"text": "感動", "full": "映画を見て感動した。"}`
+- A palavra que falta é 感動（かんどう）: emocionar-se, comover-se.
+- frases: `sent:tatoeba-189302`
+
+### 16. (recognition) Qual destas palavras significa "emoção, sentimento"?
+- **Resposta:** `{"choices": ["制度", "会合", "感情", "十日"], "correct": "感情"}`
+- 感情（かんじょう） significa emoção, sentimento. As outras opções são 会合 (reunião, encontro), 制度 (sistema, instituição) e 十日 (dia 10 (do mês)).
+
+
+### 17. (recognition) Qual destas palavras significa "sentido (visão, tato, etc.), sensação"?
+- **Resposta:** `{"choices": ["われわれ", "かし", "おん", "かんかく"], "correct": "かんかく"}`
+- かんかく significa sentido (visão, tato, etc.), sensação. As outras opções são われわれ (nós, a gente), かし (doces, guloseimas) e おん (dívida de gratidão, favor).
+
+
+### 18. (cloze) Complete a frase: ＿＿しない方がいいよ。 (Melhor não criar expectativa.)
+- **Resposta:** `{"text": "期待", "full": "期待しない方がいいよ。"}`
+- A palavra que falta é 期待（きたい）: esperar, ter expectativa.
+- frases: `sent:tatoeba-11605851`
+
+### 19. (recognition) Qual destas palavras significa "humor, disposição"?
+- **Resposta:** `{"choices": ["ぶたい", "きげん", "がた", "ふだん"], "correct": "きげん"}`
+- きげん significa humor, disposição. As outras opções são がた (tipo, modelo), ぶたい (palco, tablado) e ふだん (normalmente, geralmente).
+
+
+### 20. (recognition) Qual destas palavras significa "matéria, disciplina"?
+- **Resposta:** `{"choices": ["きげん", "かもく", "ふで", "かげん"], "correct": "かもく"}`
+- かもく significa matéria, disciplina. As outras opções são きげん (humor, disposição), ふで (pincel, pincel de caligrafia) e かげん (grau, medida).
+
+
+### 21. (cloze) Complete a frase: いい＿＿ですね。 (Boa ideia, né?)
+- **Resposta:** `{"text": "考え", "full": "いい考えですね。"}`
+- A palavra que falta é 考え（かんがえ）: pensamento, ideia.
+- frases: `sent:tatoeba-229362`
+
+### 22. (recognition) Qual destas palavras significa "memória, lembrança"?
+- **Resposta:** `{"choices": ["きおく", "てき", "エンジン", "せいふ"], "correct": "きおく"}`
+- きおく significa memória, lembrança. As outras opções são せいふ (governo), エンジン (motor) e てき (inimigo, adversário).
+
+
+### 23. (cloze) Complete a frase: 政治に＿＿があるの？ (Você se interessa por política?)
+- **Resposta:** `{"text": "関心", "full": "政治に関心があるの？"}`
+- A palavra que falta é 関心（かんしん）: interesse, atenção.
+- frases: `sent:tatoeba-2166098`
+
+### 24. (recognition) Qual destas palavras significa "cabelo, fio de cabelo"?
+- **Resposta:** `{"choices": ["よろしく", "いただきます", "かみのけ", "どうしても"], "correct": "かみのけ"}`
+- かみのけ significa cabelo, fio de cabelo. As outras opções são どうしても (de qualquer jeito, custe o que custar), よろしく (prazer (em conhecer), conto com você) e いただきます (obrigado pela refeição (dito antes de comer), bom apetite).
+
+

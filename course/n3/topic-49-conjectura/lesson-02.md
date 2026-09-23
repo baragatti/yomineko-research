@@ -146,3 +146,73 @@ O kanji 列 significa "fila, fileira, coluna". À direita está a faca (刂), de
 - 賛成 é 賛 (aprovar) + 成 (concretizar-se), lido さんせい. Anda com する: 賛成する é dizer que se concorda.
 
 
+### 15. (recognition) Qual destas palavras significa "trabalho de escritório, trabalho administrativo"?
+- **Resposta:** `{"choices": ["完成", "出発", "事務", "熱中"], "correct": "事務"}`
+- 事務（じむ） significa trabalho de escritório, trabalho administrativo. As outras opções são 熱中 (mergulhar em, ficar absorto em), 完成 (conclusão, término) e 出発 (partida, partir).
+
+
+### 16. (recognition) Qual destas palavras significa "situação, estado das coisas"?
+- **Resposta:** `{"choices": ["こづつみ", "じっし", "じたい", "きんせん"], "correct": "じたい"}`
+- じたい significa situação, estado das coisas. As outras opções são こづつみ (encomenda, pacote (postal)), じっし (implementação, aplicação) e きんせん (dinheiro, quantia em dinheiro).
+
+
+### 17. (recognition) Qual destas palavras significa "implementação, aplicação"?
+- **Resposta:** `{"choices": ["じっし", "ほこり", "こんらん", "そんがい"], "correct": "じっし"}`
+- じっし significa implementação, aplicação. As outras opções são こんらん (confusão, caos), そんがい (dano, prejuízo) e ほこり (orgulho).
+
+
+### 18. (cloze) Complete a frase: 夢が＿＿した。 (O sonho se realizou.)
+- **Resposta:** `{"text": "実現", "full": "夢が実現した。"}`
+- A palavra que falta é 実現（じつげん）: realização, concretização.
+- frases: `sent:tatoeba-80968`
+
+### 19. (cloze) Complete a frase: 彼は計画を＿＿した。 (Ele executou o plano.)
+- **Resposta:** `{"text": "実行", "full": "彼は計画を実行した。"}`
+- A palavra que falta é 実行（じっこう）: execução, realização.
+- frases: `sent:tatoeba-107961`
+
+### 20. (cloze) Complete a frase: ＿＿は何があったの？ (O que aconteceu de verdade?)
+- **Resposta:** `{"text": "実際", "full": "実際は何があったの？"}`
+- A palavra que falta é 実際（じっさい）: realidade, situação real.
+- frases: `sent:tatoeba-11319970`
+
+### 21. (cloze) Complete a frase: 彼は＿＿を続けた。 (Ele continuou o experimento.)
+- **Resposta:** `{"text": "実験", "full": "彼は実験を続けた。"}`
+- A palavra que falta é 実験（じっけん）: experimento, experiência.
+- frases: `sent:tatoeba-104718`
+
+### 22. (recognition) Qual destas palavras significa "seguir, obedecer"?
+- **Resposta:** `{"choices": ["にあう", "したがう", "にぎる", "ほほえむ"], "correct": "したがう"}`
+- したがう significa seguir, obedecer. As outras opções são にぎる (agarrar, segurar), ほほえむ (sorrir) e にあう (cair bem, ficar bem (em)).
+
+
+### 23. (recognition) Qual destas palavras significa "orientação, instrução"?
+- **Resposta:** `{"choices": ["たいしょう", "しどう", "げきじょう", "かんとく"], "correct": "しどう"}`
+- しどう significa orientação, instrução. As outras opções são たいしょう (alvo, público-alvo), げきじょう (teatro (local), casa de espetáculos) e かんとく (diretor (de filme), técnico (de time)).
+
+
+### 24. (cloze) Complete a frase: ＿＿をお願いします。 (A conta, por favor.)
+- **Resposta:** `{"text": "支払い", "full": "支払いをお願いします。"}`
+- A palavra que falta é 支払い（しはらい）: pagamento.
+- frases: `sent:tatoeba-168195`
+
+### 25. (cloze) Complete a frase: その学校は生徒に本を＿＿する。 (Aquela escola fornece os livros aos alunos.)
+- **Resposta:** `{"text": "支給", "full": "その学校は生徒に本を支給する。"}`
+- A palavra que falta é 支給（しきゅう）: provisão, pagamento.
+- frases: `sent:tatoeba-211658`
+
+### 26. (cloze) Complete a frase: 妻は気分に＿＿されやすい。 (Minha esposa se deixa levar pelo humor com facilidade.)
+- **Resposta:** `{"text": "支配", "full": "妻は気分に支配されやすい。"}`
+- A palavra que falta é 支配（しはい）: controle, domínio.
+- frases: `sent:tatoeba-170344`
+
+### 27. (recognition) Qual destas formas significa "dependendo de, assim que"?
+- **Resposta:** `{"choices": ["きゅう", "しだい", "し", "たっぷり"], "correct": "しだい"}`
+- しだい significa dependendo de, assim que. As outras opções são きゅう (antigo, ex-), し (Sr., Sra.) e たっぷり (bastante, em abundância).
+
+
+### 28. (recognition) Qual destas palavras significa "recursos, recursos naturais"?
+- **Resposta:** `{"choices": ["どくとく", "しげん", "ぐん", "けんちく"], "correct": "しげん"}`
+- しげん significa recursos, recursos naturais. As outras opções são けんちく (arquitetura, construção (de edifícios)), ぐん (exército, forças armadas) e どくとく (único, peculiar).
+
+

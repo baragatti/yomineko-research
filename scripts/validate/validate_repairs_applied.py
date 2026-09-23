@@ -1615,6 +1615,8 @@ REGISTRY = {
     "lesson_furigana.json": handle_lesson_furigana,
     "reading_passages.json": handle_reading_passages,
     "practice_kanji_exercises.json": handle_practice_exercises,
+    # C1-W20v: the vocab + grammar half (plus W21b's pending kanji drills), same row shape.
+    "practice_vocab_exercises.json": handle_practice_exercises,
     "card_production_keys.json": handle_card_production_keys,
     "grammar_register.json": handle_grammar_register,
     "sentence_register.json": handle_sentence_register,

@@ -100,3 +100,23 @@ Juntando os três padrões num só retrato: このカフェは和風で、静か
 - 公園で (no parque, lugar com で) + 桜が (cerejeiras, sujeito com が) + 見られる (podem ser vistas). 〜がみられる descreve o que se pode observar no lugar: 'dá para ver'.
 
 
+### 6. (recognition) Qual destas palavras significa "objeto esquecido, esquecimento"?
+- **Resposta:** `{"choices": ["わすれもの", "げんいん", "わけ", "てんきよほう"], "correct": "わすれもの"}`
+- わすれもの significa objeto esquecido, esquecimento. As outras opções são げんいん (causa, origem), てんきよほう (previsão do tempo) e わけ (razão, motivo).
+
+
+### 7. (recognition) Qual destas palavras significa "acostumar-se, habituar-se"?
+- **Resposta:** `{"choices": ["かわる", "なれる", "ふく", "ぬれる"], "correct": "なれる"}`
+- なれる significa acostumar-se, habituar-se. As outras opções são かわる (mudar, transformar-se), ぬれる (molhar-se, ficar molhado) e ふく (soprar (vento)).
+
+
+### 8. (recognition) Qual destas palavras significa "pausa do almoço, horário de almoço"?
+- **Resposta:** `{"choices": ["したく", "ファックス", "ひるやすみ", "きみ"], "correct": "ひるやすみ"}`
+- ひるやすみ significa pausa do almoço, horário de almoço. As outras opções são したく (preparativos, preparação), ファックス (fax, aparelho de fax) e きみ (você (informal)).
+
+
+### 9. (recognition) Qual destas palavras significa "ausência, estar fora (de casa)"?
+- **Resposta:** `{"choices": ["レジ", "るす", "げんいん", "ばん"], "correct": "るす"}`
+- るす significa ausência, estar fora (de casa). As outras opções são レジ (caixa (registradora), caixa (de loja)), げんいん (causa, origem) e ばん (número, vez).
+
+

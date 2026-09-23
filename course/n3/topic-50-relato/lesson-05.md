@@ -126,3 +126,53 @@ Os dois se parecem à primeira vista, mas o lado direito é bem diferente. Assoc
 - 偶然 (ぐうぜん) é o que acontece sem ser planejado. O mesmo 偶, lido たま, aparece em 偶に (たまに), de vez em quando.
 
 
+### 10. (cloze) Complete a frase: ＿＿は好きですか。 (Você gosta de dançar?)
+- **Resposta:** `{"text": "ダンス", "full": "ダンスは好きですか。"}`
+- A palavra que falta é ダンス: dança, dançar.
+- frases: `sent:tatoeba-203074`
+
+### 11. (cloze) Complete a frase: ＿＿はもうないよ。 (Não tem mais queijo.)
+- **Resposta:** `{"text": "チーズ", "full": "チーズはもうないよ。"}`
+- A palavra que falta é チーズ: queijo.
+- frases: `sent:tatoeba-9551807`
+
+### 12. (cloze) Complete a frase: これは＿＿夢だよ。 (Isso é só um sonho.)
+- **Resposta:** `{"text": "単なる", "full": "これは単なる夢だよ。"}`
+- A palavra que falta é 単なる（たんなる）: mero, simples.
+- frases: `sent:tatoeba-4898135`
+
+### 13. (recognition) Qual destas palavras significa "simples, descomplicado"?
+- **Resposta:** `{"choices": ["みょう", "ごうか", "たんじゅん", "きょだい"], "correct": "たんじゅん"}`
+- たんじゅん significa simples, descomplicado. As outras opções são みょう (estranho, esquisito), きょだい (enorme, gigantesco) e ごうか (luxuoso, suntuoso).
+
+
+### 14. (cloze) Complete a frase: 彼は＿＿に足がついていない。 (Ele não tem os pés no chão.)
+- **Resposta:** `{"text": "地", "full": "彼は地に足がついていない。"}`
+- A palavra que falta é 地（ち）: solo, terra.
+- frases: `sent:tatoeba-102233`
+
+### 15. (recognition) Qual destas palavras significa "subterrâneo, subsolo"?
+- **Resposta:** `{"choices": ["見解", "議長", "地下", "表面"], "correct": "地下"}`
+- 地下（ちか） significa subterrâneo, subsolo. As outras opções são 表面 (superfície, face externa), 見解 (opinião, ponto de vista) e 議長 (presidente (de assembleia), moderador).
+
+
+### 16. (cloze) Complete a frase: 彼はよい＿＿を得た。 (Ele conseguiu um bom cargo.)
+- **Resposta:** `{"text": "地位", "full": "彼はよい地位を得た。"}`
+- A palavra que falta é 地位（ちい）: posição, status.
+- frases: `sent:tatoeba-110457`
+
+### 17. (recognition) Qual destas palavras significa "área, região"?
+- **Resposta:** `{"choices": ["たび", "さばく", "ちいき", "きんせん"], "correct": "ちいき"}`
+- ちいき significa área, região. As outras opções são さばく (deserto), たび (vez, ocasião) e きんせん (dinheiro, quantia em dinheiro).
+
+
+### 18. (cloze) Complete a frase: ＿＿ってよく分かんないや。 (Eu não entendo os garotos.)
+- **Resposta:** `{"text": "男子", "full": "男子ってよく分かんないや。"}`
+- A palavra que falta é 男子（だんし）: menino, rapaz.
+- frases: `sent:tatoeba-3596314`
+
+### 19. (recognition) Qual destas palavras significa "nascimento, vir ao mundo"?
+- **Resposta:** `{"choices": ["さくら", "たんじょう", "しゅうい", "ねんれい"], "correct": "たんじょう"}`
+- たんじょう significa nascimento, vir ao mundo. As outras opções são しゅうい (arredores, entorno), さくら (flor de cerejeira, cerejeira) e ねんれい (idade (de uma pessoa), anos de idade).
+
+

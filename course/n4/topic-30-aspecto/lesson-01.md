@@ -107,3 +107,38 @@ Estas palavras de movimento e comunicação combinam bem com as formas de hoje:
 - Sozinho, o kanji vale como palavra: 音 (おと) é o som. Em composto ele troca de leitura e vira おん, como em 音楽.
 
 
+### 8. (recognition) Qual destas palavras significa "transmitir, comunicar"?
+- **Resposta:** `{"choices": ["ひろう", "する", "さわる", "つたえる"], "correct": "つたえる"}`
+- つたえる significa transmitir, comunicar. As outras opções são さわる (tocar, encostar (em)), ひろう (pegar (do chão), apanhar) e する (fazer).
+
+
+### 9. (recognition) Qual destas palavras significa "então, por isso"?
+- **Resposta:** `{"choices": ["または", "それで", "しかし", "それに"], "correct": "それで"}`
+- それで significa então, por isso. As outras opções são または (ou), しかし (mas, porém) e それに (além disso, ademais).
+
+
+### 10. (recognition) Qual destas palavras significa "perguntar, indagar"?
+- **Resposta:** `{"choices": ["つれる", "びっくり", "もうす", "たずねる"], "correct": "たずねる"}`
+- たずねる significa perguntar, indagar. As outras opções são びっくり (assustar-se, surpreender-se), つれる (levar (alguém) junto, trazer junto) e もうす (dizer (humilde), falar).
+
+
+### 11. (cloze) Complete a frase: ＿＿に買い物してきてくれる？ (Na volta, você faz umas compras pra mim?)
+- **Resposta:** `{"text": "帰り", "full": "帰りに買い物してきてくれる？"}`
+- A palavra que falta é 帰り（かえり）: volta, regresso.
+- frases: `sent:tatoeba-183323`
+
+### 12. (recognition) Qual destas palavras significa "resposta"?
+- **Resposta:** `{"choices": ["けいざい", "こめ", "へんじ", "アフリカ"], "correct": "へんじ"}`
+- へんじ significa resposta. As outras opções são けいざい (economia), こめ (arroz (cru, em grão)) e アフリカ (África).
+
+
+### 13. (recognition) Qual destas palavras significa "enviar, mandar"?
+- **Resposta:** `{"choices": ["間に合う", "思い出す", "さし上げる", "送る"], "correct": "送る"}`
+- 送る（おくる） significa enviar, mandar. As outras opções são 間に合う (chegar a tempo, dar tempo), さし上げる (dar (humilde, a um superior), oferecer) e 思い出す (lembrar, recordar).
+
+
+### 14. (cloze) Complete a frase: 新たに＿＿。 (Vou começar do zero.)
+- **Resposta:** `{"text": "始める", "full": "新たに始める。"}`
+- O que falta é 始める: o ponto gramatical desta lição, começar a fazer (〜始める／はじめる).
+- frases: `sent:tatoeba-945909`
+

@@ -171,3 +171,53 @@ Resolva os exercícios e leia a explicação de cada resposta.
 - 除 se lê ジョ na maioria dos compostos, sempre com o sentido de tirar algo de dentro. A leitura nativa のぞ é a do verbo que significa 'excluir'.
 
 
+### 18. (recognition) Qual destas formas significa "bilhete, ingresso"?
+- **Resposta:** `{"choices": ["スピーチ", "けん", "ぜつめつ", "せっけい"], "correct": "けん"}`
+- けん significa bilhete, ingresso. As outras opções são せっけい (projetar, planejar), ぜつめつ (extinção) e スピーチ (discurso, fala).
+
+
+### 19. (cloze) Complete a frase: 今日は＿＿ですね。 (Hoje é segunda, né?)
+- **Resposta:** `{"text": "月曜", "full": "今日は月曜ですね。"}`
+- A palavra que falta é 月曜（げつよう）: segunda-feira.
+- frases: `sent:tatoeba-1176970`
+
+### 20. (recognition) Qual destas palavras significa "defeito, ponto fraco"?
+- **Resposta:** `{"choices": ["けんか", "けってん", "ほね", "くだ"], "correct": "けってん"}`
+- けってん significa defeito, ponto fraco. As outras opções são くだ (tubo, cano), けんか (briga, discussão) e ほね (osso).
+
+
+### 21. (recognition) Qual destas palavras significa "defeito, falha"?
+- **Resposta:** `{"choices": ["ほぞん", "ぞう", "けっかん", "ほうせき"], "correct": "けっかん"}`
+- けっかん significa defeito, falha. As outras opções são ぞう (elefante), ほうせき (joia, pedra preciosa) e ほぞん (preservação, conservação).
+
+
+### 22. (cloze) Complete a frase: 私は彼の＿＿をよいと思わない。 (Eu não acho boa a decisão dele.)
+- **Resposta:** `{"text": "決定", "full": "私は彼の決定をよいと思わない。"}`
+- A palavra que falta é 決定（けってい）: decisão, determinação.
+- frases: `sent:tatoeba-153956`
+
+### 23. (cloze) Complete a frase: 私は＿＿した。 (Eu me decidi.)
+- **Resposta:** `{"text": "決心", "full": "私は決心した。"}`
+- A palavra que falta é 決心（けっしん）: determinação, resolução.
+- frases: `sent:tatoeba-10908938`
+
+### 24. (recognition) Qual destas palavras significa "fumaça"?
+- **Resposta:** `{"choices": ["どくとく", "けむり", "きんがく", "ボール"], "correct": "けむり"}`
+- けむり significa fumaça. As outras opções são きんがく (quantia, montante), どくとく (único, peculiar) e ボール (bola).
+
+
+### 25. (recognition) Qual destas formas significa "província, prefeitura (japonesa)"?
+- **Resposta:** `{"choices": ["県", "流れ", "不自由", "物質"], "correct": "県"}`
+- 県（けん） significa província, prefeitura (japonesa). As outras opções são 不自由 (inconveniência, falta de liberdade), 物質 (substância, material) e 流れ (fluxo, corrente).
+
+
+### 26. (recognition) Qual destas palavras significa "no fim das contas, afinal"?
+- **Resposta:** `{"choices": ["なお", "そのまま", "けっきょく", "せいぜい"], "correct": "けっきょく"}`
+- けっきょく significa no fim das contas, afinal. As outras opções são そのまま (assim mesmo, sem mudar nada), せいぜい (no máximo) e なお (além disso, ademais).
+
+
+### 27. (cloze) Complete a frase: それが私の＿＿だ。 (Essa é a minha opinião.)
+- **Resposta:** `{"text": "見解", "full": "それが私の見解だ。"}`
+- A palavra que falta é 見解（けんかい）: opinião, ponto de vista.
+- frases: `sent:tatoeba-8715647`
+

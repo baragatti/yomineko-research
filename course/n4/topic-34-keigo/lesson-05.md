@@ -92,3 +92,18 @@ Mais vocabulário de trabalho e serviços para praticar (a leitura já vem na pr
 - É o よろしくお願いします do dia a dia com いたします no lugar de します, soando mais formal. Use ao se apresentar, fechar um pedido ou encerrar um e-mail de trabalho.
 - frases: `sent:gen-6c6ce0d2199b`
 
+### 6. (recognition) Qual destas palavras significa "lago"?
+- **Resposta:** `{"choices": ["レジ", "せいさん", "おき", "みずうみ"], "correct": "みずうみ"}`
+- みずうみ significa lago. As outras opções são おき (alto-mar, mar aberto), レジ (caixa (registradora), caixa (de loja)) e せいさん (produção, fabricação).
+
+
+### 7. (recognition) Qual destas palavras significa "competição, concorrência"?
+- **Resposta:** `{"choices": ["きょうそう", "ふね", "ほう", "ほんやく"], "correct": "きょうそう"}`
+- きょうそう significa competição, concorrência. As outras opções são ほんやく (tradução), ふね (navio, barco) e ほう (relatório, notícia).
+
+
+### 8. (recognition) Qual destas palavras significa "tradução"?
+- **Resposta:** `{"choices": ["てぶくろ", "じむしょ", "スーパー", "ほんやく"], "correct": "ほんやく"}`
+- ほんやく significa tradução. As outras opções são スーパー (supermercado), てぶくろ (luvas) e じむしょ (escritório).
+
+

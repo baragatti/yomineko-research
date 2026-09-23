@@ -102,3 +102,33 @@ O adjetivo 細かい (pequeno, miúdo) aparece bastante em casa: para falar de �
 - Aqui 品 usa a leitura nativa しな e 物 usa もの. Nos compostos só de leitura chinesa, 品 vira ひん e costuma fechar a palavra.
 
 
+### 8. (recognition) Qual destas palavras significa "bife, filé"?
+- **Resposta:** `{"choices": ["サラダ", "ステーキ", "じこ", "りょこう"], "correct": "ステーキ"}`
+- ステーキ significa bife, filé. As outras opções são じこ (acidente), サラダ (salada) e りょこう (viagem).
+
+
+### 9. (recognition) Qual destas palavras significa "borracha (de apagar)"?
+- **Resposta:** `{"choices": ["よう", "ほど", "さいきん", "けしゴム"], "correct": "けしゴム"}`
+- けしゴム significa borracha (de apagar). As outras opções são よう (afazer, tarefa), ほど (cerca de, aproximadamente) e さいきん (recentemente, ultimamente).
+
+
+### 10. (recognition) Qual destas palavras significa "pedra, rocha"?
+- **Resposta:** `{"choices": ["きゃく", "いし", "ジャム", "じゅんび"], "correct": "いし"}`
+- いし significa pedra, rocha. As outras opções são じゅんび (preparação, preparativos), ジャム (geleia, compota) e きゃく (cliente, convidado).
+
+
+### 11. (recognition) Qual destas palavras significa "miúdo, fino"?
+- **Resposta:** `{"choices": ["あぶない", "こまかい", "すばらしい", "つまらない"], "correct": "こまかい"}`
+- こまかい significa miúdo, fino. As outras opções são すばらしい (maravilhoso, esplêndido), あぶない (perigoso, arriscado) e つまらない (chato, entediante).
+
+
+### 12. (recognition) Qual destas palavras significa "espelho"?
+- **Resposta:** `{"choices": ["いし", "ねぼう", "よてい", "かがみ"], "correct": "かがみ"}`
+- かがみ significa espelho. As outras opções são いし (pedra, rocha), よてい (plano, programação) e ねぼう (dormir demais, preguiça (de levantar)).
+
+
+### 13. (cloze) Complete a frase: ＿＿がもうない (Os mantimentos já acabaram.)
+- **Resposta:** `{"text": "食料品", "full": "食料品がもうない"}`
+- A palavra que falta é 食料品（しょくりょうひん）: gêneros alimentícios, alimentos.
+- frases: `sent:gen-9b2d71df600a`
+

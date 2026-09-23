@@ -127,3 +127,48 @@ O kanji 類 significa "tipo, espécie, categoria", como em 種類 ("tipo, varied
 - 朝は abre com o tema (de manhã) e 電車が込む diz o que acontece. 込む é intransitivo, então o trem entra na frase marcado por が.
 
 
+### 10. (cloze) Complete a frase: 彼女はテニスが好きで、テニスの＿＿になった。 (Ela gostava de tênis e virou treinadora de tênis.)
+- **Resposta:** `{"text": "コーチ", "full": "彼女はテニスが好きで、テニスのコーチになった。"}`
+- A palavra que falta é コーチ: treinador, técnico.
+- frases: `sent:tatoeba-92068`
+
+### 11. (cloze) Complete a frase: どうして私が書いた＿＿、動かないの？ (Por que o código que eu escrevi não funciona?)
+- **Resposta:** `{"text": "コード", "full": "どうして私が書いたコード、動かないの？"}`
+- A palavra que falta é コード: cabo, fio.
+- frases: `sent:tatoeba-10042609`
+
+### 12. (cloze) Complete a frase: ＿＿はまだ先だ。 (A linha de chegada ainda está longe.)
+- **Resposta:** `{"text": "ゴール", "full": "ゴールはまだ先だ。"}`
+- A palavra que falta é ゴール: gol, linha de chegada.
+- frases: `sent:tatoeba-224839`
+
+### 13. (recognition) Qual destas palavras significa "candidato, indicado"?
+- **Resposta:** `{"choices": ["そんけい", "きょうりょく", "こうほ", "なかま"], "correct": "こうほ"}`
+- こうほ significa candidato, indicado. As outras opções são そんけい (respeito, admiração), きょうりょく (cooperação, colaboração) e なかま (companheiro, colega).
+
+
+### 14. (recognition) Qual destas palavras significa "congelar, gelar"?
+- **Resposta:** `{"choices": ["かかえる", "うつ", "こおる", "おとる"], "correct": "こおる"}`
+- こおる significa congelar, gelar. As outras opções são かかえる (segurar nos braços, carregar), おとる (ser inferior a, ficar atrás de) e うつ (atirar, disparar).
+
+
+### 15. (recognition) Qual destas palavras significa "respiração"?
+- **Resposta:** `{"choices": ["こきゅう", "こうかん", "けいじ", "ほぼ"], "correct": "こきゅう"}`
+- こきゅう significa respiração. As outras opções são けいじ (aviso (afixado), comunicado), ほぼ (professora de creche, educadora infantil) e こうかん (trocar, substituir).
+
+
+### 16. (cloze) Complete a frase: そんな人は＿＿わずかだよ。 (Gente assim é pouquíssima.)
+- **Resposta:** `{"text": "ごく", "full": "そんな人はごくわずかだよ。"}`
+- A palavra que falta é ごく: extremamente, muitíssimo.
+- frases: `sent:tatoeba-10668538`
+
+### 17. (recognition) Qual destas palavras significa "levar em conta, considerar"?
+- **Resposta:** `{"choices": ["けんちく", "こうりょ", "こきょう", "べんとう"], "correct": "こうりょ"}`
+- こうりょ significa levar em conta, considerar. As outras opções são けんちく (arquitetura, construção (de edifícios)), こきょう (terra natal, cidade natal) e べんとう (marmita, bentô).
+
+
+### 18. (recognition) Qual destas palavras significa "atravessar, transpor"?
+- **Resposta:** `{"choices": ["にあう", "おくる", "こえる", "かくす"], "correct": "こえる"}`
+- こえる significa atravessar, transpor. As outras opções são にあう (cair bem, ficar bem (em)), かくす (esconder, ocultar) e おくる (presentear, dar de presente).
+
+

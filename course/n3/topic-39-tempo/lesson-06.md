@@ -103,3 +103,68 @@ Resolva os exercícios abaixo e confira cada explicação com atenção.
 - 常に (つねに) significa 'sempre, constantemente'; 冷静 (れいせい) é 'calmo, sereno'. 彼は常に冷静だ = 'Ele está sempre calmo.'
 
 
+### 6. (recognition) Qual destas palavras significa "servir, despejar"?
+- **Resposta:** `{"choices": ["現れる", "動く", "注ぐ", "当たる"], "correct": "注ぐ"}`
+- 注ぐ（つぐ） significa servir, despejar. As outras opções são 当たる (acertar, atingir), 現れる (aparecer, surgir) e 動く (mover-se, mexer-se).
+
+
+### 7. (recognition) Qual destas palavras significa "convívio, relacionamento"?
+- **Resposta:** `{"choices": ["つきあい", "インク", "いっしゅん", "ひがい"], "correct": "つきあい"}`
+- つきあい significa convívio, relacionamento. As outras opções são インク (tinta, tinta de caneta), いっしゅん (instante, momento) e ひがい (dano, prejuízo).
+
+
+### 8. (recognition) Qual destas palavras significa "fixar, prender"?
+- **Resposta:** `{"choices": ["止める", "着ける", "注ぐ", "合う"], "correct": "着ける"}`
+- 着ける（つける） significa fixar, prender. As outras opções são 注ぐ (servir, despejar), 合う (combinar, ficar bem) e 止める (parar (algo), deter).
+
+
+### 9. (recognition) Qual destas palavras significa "trabalho, emprego"?
+- **Resposta:** `{"choices": ["通行", "続き", "務め", "行き"], "correct": "務め"}`
+- 務め（つとめ） significa trabalho, emprego. As outras opções são 行き (com destino a, ida), 通行 (passagem, trânsito) e 続き (continuação, sequência).
+
+
+### 10. (cloze) Complete a frase: かれは＿＿に水をやった。 (Ele regou a terra.)
+- **Resposta:** `{"text": "土", "full": "かれは土に水をやった。"}`
+- A palavra que falta é 土（つち）: terra, solo.
+- frases: `sent:tatoeba-518854`
+
+### 11. (recognition) Qual destas palavras significa "assumir (um cargo), ocupar (um posto)"?
+- **Resposta:** `{"choices": ["かたづける", "あらわす", "つく", "かまう"], "correct": "つく"}`
+- つく significa assumir (um cargo), ocupar (um posto). As outras opções são かまう (importar-se, ligar para), あらわす (expressar, representar) e かたづける (arrumar, organizar).
+
+
+### 12. (recognition) Qual destas palavras significa "ser pego, ser preso"?
+- **Resposta:** `{"choices": ["つかまる", "こむ", "あつかう", "あたえる"], "correct": "つかまる"}`
+- つかまる significa ser pego, ser preso. As outras opções são あつかう (lidar com, manusear), こむ (estar lotado, estar cheio) e あたえる (dar, conceder).
+
+
+### 13. (recognition) Qual destas palavras significa "despejar, servir (uma bebida)"?
+- **Resposta:** `{"choices": ["読む", "注ぐ", "開く", "見つかる"], "correct": "注ぐ"}`
+- 注ぐ（そそぐ） significa despejar, servir (uma bebida). As outras opções são 見つかる (ser encontrado, aparecer), 読む (ler) e 開く (abrir, abrir-se).
+
+
+### 14. (recognition) Qual destas palavras significa "cansaço, fadiga"?
+- **Resposta:** `{"choices": ["すいせん", "ちょうじょう", "つかれ", "しんよう"], "correct": "つかれ"}`
+- つかれ significa cansaço, fadiga. As outras opções são すいせん (recomendar, indicar), しんよう (confiar em, dar crédito a) e ちょうじょう (cume, topo).
+
+
+### 15. (cloze) Complete a frase: ＿＿があるのだ。 (Ainda tem continuação.)
+- **Resposta:** `{"text": "続き", "full": "続きがあるのだ。"}`
+- A palavra que falta é 続き（つづき）: continuação, sequência.
+- frases: `sent:tatoeba-1169253`
+
+### 16. (recognition) Qual destas palavras significa "conectar, ligar"?
+- **Resposta:** `{"choices": ["つめる", "つなぐ", "まいる", "あやまる"], "correct": "つなぐ"}`
+- つなぐ significa conectar, ligar. As outras opções são つめる (encher, empacotar), まいる (ir, vir (humilde)) e あやまる (pedir desculpa, desculpar-se).
+
+
+### 17. (recognition) Qual destas palavras significa "asa"?
+- **Resposta:** `{"choices": ["りょうほう", "つばさ", "クラシック", "すいじゅん"], "correct": "つばさ"}`
+- つばさ significa asa. As outras opções são すいじゅん (nível, padrão), クラシック (música clássica, clássico) e りょうほう (ambos, os dois).
+
+
+### 18. (recognition) Qual destas palavras significa "encher, empacotar"?
+- **Resposta:** `{"choices": ["よごれる", "ゆずる", "とりかえる", "つめる"], "correct": "つめる"}`
+- つめる significa encher, empacotar. As outras opções são ゆずる (ceder, passar (para outro)), よごれる (sujar-se, ficar sujo) e とりかえる (trocar, substituir).
+
+

@@ -110,3 +110,53 @@ Repare que で aqui marca onde a ação acontece (no mar), e a frase ainda usa �
 - 彼にとって (para ele, do ponto de vista dele) abre a frase reaproveitando ～にとって. Em seguida, それは (aquilo) + とても辛い (muito doloroso) + 出来事 (acontecimento) + だった (foi). A leitura completa é かれにとってそれはとてもつらいできごとだった.
 
 
+### 6. (recognition) Qual destas palavras significa "em (lugar onde se faz algo), com (meio/instrumento)"?
+- **Resposta:** `{"choices": ["で", "ばかり", "より", "など"], "correct": "で"}`
+- で significa em (lugar onde se faz algo), com (meio/instrumento). As outras opções são ばかり (acabar de (fazer algo), ter acabado de), など (e coisas assim, etc.) e より (do que (comparação)).
+
+
+### 7. (cloze) Complete a frase: ＿＿しませんか？ (Vamos sair juntos?)
+- **Resposta:** `{"text": "デート", "full": "デートしませんか？"}`
+- A palavra que falta é デート: encontro (romântico), sair (com alguém).
+- frases: `sent:tatoeba-10736122`
+
+### 8. (cloze) Complete a frase: 春には、たくさんの＿＿が待っている！ (Na primavera, muitos encontros esperam por você!)
+- **Resposta:** `{"text": "出会い", "full": "春には、たくさんの出会いが待っている！"}`
+- A palavra que falta é 出会い（であい）: encontro, encontro casual.
+- frases: `sent:tatoeba-9182865`
+
+### 9. (cloze) Complete a frase: どうやって＿＿の？ (Como vocês se conheceram?)
+- **Resposta:** `{"text": "出会った", "full": "どうやって出会ったの？"}`
+- A palavra que falta é 出会う（であう）: encontrar (por acaso), topar com. Na frase ela aparece como 出会った.
+- frases: `sent:tatoeba-8719641`
+
+### 10. (recognition) Qual destas palavras significa "resistir, opor-se"?
+- **Resposta:** `{"choices": ["スケート", "すじ", "スター", "ていこう"], "correct": "ていこう"}`
+- ていこう significa resistir, opor-se. As outras opções são スター (estrela, celebridade), すじ (músculo, tendão) e スケート (patinação, patinar).
+
+
+### 11. (recognition) Qual destas palavras significa "inimigo, adversário"?
+- **Resposta:** `{"choices": ["おう", "ヨーロッパ", "てき", "ていしゅつ"], "correct": "てき"}`
+- てき significa inimigo, adversário. As outras opções são ていしゅつ (entregar, apresentar (documento)), おう (rei, monarca) e ヨーロッパ (Europa).
+
+
+### 12. (recognition) Qual destas palavras significa "acumular-se, empilhar-se (neve/poeira)"?
+- **Resposta:** `{"choices": ["ひく", "すすめる", "つもる", "すくう"], "correct": "つもる"}`
+- つもる significa acumular-se, empilhar-se (neve/poeira). As outras opções são すくう (salvar, resgatar), すすめる (recomendar, aconselhar) e ひく (atropelar).
+
+
+### 13. (cloze) Complete a frase: 私はこの子の＿＿だ。 (Eu estou com essa criança.)
+- **Resposta:** `{"text": "連れ", "full": "私はこの子の連れだ。"}`
+- A palavra que falta é 連れ（つれ）: acompanhante, companhia.
+- frases: `sent:tatoeba-1987793`
+
+### 14. (recognition) Qual destas palavras significa "ser adequado, ser apropriado"?
+- **Resposta:** `{"choices": ["てきする", "うたがう", "すぐれる", "よう"], "correct": "てきする"}`
+- てきする significa ser adequado, ser apropriado. As outras opções são すぐれる (ser excelente, ser superior), うたがう (duvidar, pôr em dúvida) e よう (embriagar-se, ficar bêbado).
+
+
+### 15. (recognition) Qual destas palavras significa "pescaria, pesca"?
+- **Resposta:** `{"choices": ["えがお", "ひげき", "エネルギー", "つり"], "correct": "つり"}`
+- つり significa pescaria, pesca. As outras opções são えがお (sorriso, cara sorridente), ひげき (tragédia) e エネルギー (energia).
+
+

@@ -136,3 +136,38 @@ O kanji 約 significa "promessa" e também "aproximadamente". O radical da esque
 - É 約, nove traços, com o fio de seda à esquerda: a ideia de amarrar um acordo. Lido やく, ele fecha as palavras de compromisso e também abre a palavra da promessa.
 
 
+### 14. (recognition) Qual destas palavras significa "todo, todos os"?
+- **Resposta:** `{"choices": ["あらゆる", "かんたん", "ある", "あんな"], "correct": "あらゆる"}`
+- あらゆる significa todo, todos os. As outras opções são かんたん (simples, fácil), ある (um certo, certo (não especificado)) e あんな (daquele tipo, assim (como aquilo)).
+
+
+### 15. (cloze) Complete a frase: 彼の＿＿な犬はまだ生きている。 (O cachorro coitado dele ainda está vivo.)
+- **Resposta:** `{"text": "あわれ", "full": "彼のあわれな犬はまだ生きている。"}`
+- A palavra que falta é あわれ: pena, compaixão.
+- frases: `sent:tatoeba-118426`
+
+### 16. (recognition) Qual destas palavras significa "obrigado, obrigada"?
+- **Resposta:** `{"choices": ["うん", "なるほど", "ありがとう", "ええ"], "correct": "ありがとう"}`
+- ありがとう significa obrigado, obrigada. As outras opções são なるほど (entendi, faz sentido), うん (sim, é) e ええ (sim, é).
+
+
+### 17. (recognition) Qual destas palavras significa "bolha, espuma"?
+- **Resposta:** `{"choices": ["あわ", "ぶちょう", "おく", "ゆび"], "correct": "あわ"}`
+- あわ significa bolha, espuma. As outras opções são ゆび (dedo (da mão)), おく (cem milhões, 100.000.000) e ぶちょう (chefe de departamento, gerente).
+
+
+### 18. (recognition) Qual destas palavras significa "com destino a, ida"?
+- **Resposta:** `{"choices": ["社会", "運転", "行き", "来年"], "correct": "行き"}`
+- 行き（いき） significa com destino a, ida. As outras opções são 社会 (sociedade, comunidade), 運転 (direção, ato de dirigir) e 来年 (ano que vem, próximo ano).
+
+
+### 19. (recognition) Qual destas palavras significa "não poder ir"?
+- **Resposta:** `{"choices": ["やくにたつ", "いけない", "それから", "ごらんになる"], "correct": "いけない"}`
+- いけない significa não poder ir. As outras opções são やくにたつ (ser útil, servir), ごらんになる (ver (respeitoso), olhar (respeitoso)) e それから (depois disso, e então).
+
+
+### 20. (recognition) Qual destas palavras significa "out (eliminado, no beisebol/esporte)"?
+- **Resposta:** `{"choices": ["つぎ", "せいかつ", "あい", "アウト"], "correct": "アウト"}`
+- アウト significa out (eliminado, no beisebol/esporte). As outras opções são あい (amor, afeto), せいかつ (vida, cotidiano) e つぎ (próximo, seguinte).
+
+

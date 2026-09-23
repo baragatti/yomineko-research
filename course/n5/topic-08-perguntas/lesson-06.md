@@ -93,3 +93,8 @@ Em どこかに出かけるの？, o どこか ("algum lugar") mostra o mesmo �
 - 出 é sair, vir para fora: imagine um broto empurrando a terra e aparecendo na superfície. 見 é o outro kanji novo desta lição e significa ver; 日 é sol ou dia e 大 é grande.
 
 
+### 7. (recognition) Qual destas palavras significa "cafeteria, café"?
+- **Resposta:** `{"choices": ["きっさてん", "かぜ", "くもり", "カタカナ"], "correct": "きっさてん"}`
+- きっさてん significa cafeteria, café. As outras opções são くもり (tempo nublado, nebulosidade), カタカナ (katakana (silabário japonês)) e かぜ (vento, brisa).
+
+

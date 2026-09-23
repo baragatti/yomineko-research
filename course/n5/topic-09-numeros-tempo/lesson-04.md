@@ -114,3 +114,13 @@ Não traduza "vezes" e "anos" como palavras soltas. Em japonês eles são sufixo
 - 大きな (おおきな) usa a leitura おお de 大. Ela só existe antes de um substantivo, então aparece sempre colada na coisa que descreve.
 
 
+### 8. (recognition) Qual destas palavras significa "durante/no meio de/em processo de, ao longo de/por todo"?
+- **Resposta:** `{"choices": ["電車", "本", "中", "千"], "correct": "中"}`
+- 中（ちゅう） significa durante/no meio de/em processo de, ao longo de/por todo. As outras opções são 電車 (trem, trem elétrico), 本 (livro) e 千 (mil, 1000).
+
+
+### 9. (recognition) Qual destas formas significa "andar, piso"?
+- **Resposta:** `{"choices": ["じぶん", "かい", "しち", "ここのつ"], "correct": "かい"}`
+- かい significa andar, piso. As outras opções são しち (sete), じぶん (si mesmo, eu mesmo) e ここのつ (nove, nove (coisas)).
+
+

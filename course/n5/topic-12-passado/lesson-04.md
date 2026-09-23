@@ -109,3 +109,48 @@ Dá para juntar tudo: 高かったなあ = "nossa, como foi caro...". O なあ t
 - Em お金 vale a leitura nativa かね; o prefixo de cortesia vem só na frente. A leitura sino-japonesa キン é a dos compostos: é ela que abre きんようび, sexta-feira.
 
 
+### 7. (recognition) Qual destas palavras significa "mas, porém"?
+- **Resposta:** `{"choices": ["では", "じゃあ", "そして", "でも"], "correct": "でも"}`
+- でも significa mas, porém. As outras opções são じゃあ (então, bem), では (então, bem então) e そして (e, e então).
+
+
+### 8. (recognition) Qual destas palavras significa "por favor, fique à vontade"?
+- **Resposta:** `{"choices": ["ちょうど", "そう", "すこし", "どうぞ"], "correct": "どうぞ"}`
+- どうぞ significa por favor, fique à vontade. As outras opções são ちょうど (exatamente, justamente), そう (assim, desse jeito) e すこし (um pouco, um pouquinho).
+
+
+### 9. (recognition) Qual destas palavras significa "exatamente, justamente"?
+- **Resposta:** `{"choices": ["ちょうど", "ちょっと", "とても", "どうぞ"], "correct": "ちょうど"}`
+- ちょうど significa exatamente, justamente. As outras opções são とても (muito, extremamente), どうぞ (por favor, fique à vontade) e ちょっと (um pouco, um pouquinho).
+
+
+### 10. (cloze) Complete a frase: ＿＿なあ。 (Que frieza...)
+- **Resposta:** `{"text": "冷たい", "full": "冷たいなあ。"}`
+- A palavra que falta é つめたい: frio (ao toque), gelado. Na frase ela aparece como 冷たい.
+- frases: `sent:tatoeba-77673`
+
+### 11. (recognition) Qual destas palavras significa "animal"?
+- **Resposta:** `{"choices": ["げつようび", "どうぶつ", "すいようび", "けさ"], "correct": "どうぶつ"}`
+- どうぶつ significa animal. As outras opções são けさ (esta manhã, hoje de manhã), すいようび (quarta-feira) e げつようび (segunda-feira).
+
+
+### 12. (recognition) Qual destas formas significa "grau"?
+- **Resposta:** `{"choices": ["ちかてつ", "すいようび", "ど", "とり"], "correct": "ど"}`
+- ど significa grau. As outras opções são ちかてつ (metrô), とり (pássaro, ave) e すいようび (quarta-feira).
+
+
+### 13. (recognition) Qual destas palavras significa "voar"?
+- **Resposta:** `{"choices": ["とる", "とぶ", "あく", "しまる"], "correct": "とぶ"}`
+- とぶ significa voar. As outras opções são あく (abrir, abrir-se), とる (pegar, tomar) e しまる (fechar-se, fechar (intransitivo)).
+
+
+### 14. (recognition) Qual destas palavras significa "pássaro, ave"?
+- **Resposta:** `{"choices": ["しゃしん", "とり", "キロメートル", "ちゃわん"], "correct": "とり"}`
+- とり significa pássaro, ave. As outras opções são ちゃわん (tigela, tigela de arroz), キロメートル (quilômetro) e しゃしん (foto, fotografia).
+
+
+### 15. (recognition) Qual destas palavras significa "frango, carne de frango"?
+- **Resposta:** `{"choices": ["トイレ", "とりにく", "こえ", "こちら"], "correct": "とりにく"}`
+- とりにく significa frango, carne de frango. As outras opções são トイレ (banheiro, privada), こちら (aqui, para cá) e こえ (voz).
+
+

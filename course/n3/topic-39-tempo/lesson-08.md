@@ -86,3 +86,58 @@ Cuidado: 酔う (よう, ficar bêbado) é o verbo, mas você verá muito 様 e 
 - 要するに abre o resumo e 要点 marca os pontos principais; 三つだ fecha 'são três'.
 
 
+### 6. (cloze) Complete a frase: ＿＿は風を受けて進んだ。 (O veleiro pegou o vento e seguiu em frente.)
+- **Resposta:** `{"text": "ヨット", "full": "ヨットは風を受けて進んだ。"}`
+- A palavra que falta é ヨット: iate, veleiro.
+- frases: `sent:tatoeba-192727`
+
+### 7. (recognition) Qual destas palavras significa "esperar, prever"?
+- **Resposta:** `{"choices": ["いはん", "はんざい", "スイッチ", "よき"], "correct": "よき"}`
+- よき significa esperar, prever. As outras opções são はんざい (crime, delito), いはん (violar, infringir) e スイッチ (interruptor, botão).
+
+
+### 8. (recognition) Qual destas palavras significa "orçamento"?
+- **Resposta:** `{"choices": ["はんばい", "ひじょう", "よさん", "ようきゅう"], "correct": "よさん"}`
+- よさん significa orçamento. As outras opções são ひじょう (emergência), ようきゅう (exigir, reivindicar) e はんばい (venda, comercialização).
+
+
+### 9. (recognition) Qual destas palavras significa "dia da semana"?
+- **Resposta:** `{"choices": ["仕方", "曜日", "教会", "親友"], "correct": "曜日"}`
+- 曜日（ようび） significa dia da semana. As outras opções são 親友 (amigo íntimo, melhor amigo), 教会 (igreja) e 仕方 (jeito (de fazer), maneira).
+
+
+### 10. (recognition) Qual destas palavras significa "atravessar, cruzar"?
+- **Resposta:** `{"choices": ["かざる", "よこぎる", "かつ", "ゆずる"], "correct": "よこぎる"}`
+- よこぎる significa atravessar, cruzar. As outras opções são ゆずる (ceder, passar (para outro)), かざる (decorar, enfeitar) e かつ (vencer, ganhar).
+
+
+### 11. (cloze) Complete a frase: 冬の＿＿は寒い。 (A Europa é fria no inverno.)
+- **Resposta:** `{"text": "ヨーロッパ", "full": "冬のヨーロッパは寒い。"}`
+- A palavra que falta é ヨーロッパ: Europa.
+- frases: `sent:tatoeba-10588030`
+
+### 12. (cloze) Complete a frase: テニスをするのは＿＿。 (Vamos deixar de jogar tênis.)
+- **Resposta:** `{"text": "よしましょう", "full": "テニスをするのはよしましょう。"}`
+- A palavra que falta é 止す（よす）: parar (de fazer), desistir. Na frase ela aparece como よしましょう.
+- frases: `sent:tatoeba-202166`
+
+### 13. (recognition) Qual destas palavras significa "exigir, reivindicar"?
+- **Resposta:** `{"choices": ["いたずら", "もと", "いし", "ようきゅう"], "correct": "ようきゅう"}`
+- ようきゅう significa exigir, reivindicar. As outras opções são いたずら (travessura, traquinagem), いし (vontade, força de vontade) e もと (sob (a orientação/influência de), debaixo de).
+
+
+### 14. (recognition) Qual destas palavras significa "elemento, componente"?
+- **Resposta:** `{"choices": ["ようそ", "ヨーロッパ", "いね", "いしき"], "correct": "ようそ"}`
+- ようそ significa elemento, componente. As outras opções são ヨーロッパ (Europa), いね (pé de arroz, arroz (planta)) e いしき (consciência, percepção).
+
+
+### 15. (recognition) Qual destas palavras significa "embriagar-se, ficar bêbado"?
+- **Resposta:** `{"choices": ["ゆるす", "いわう", "よう", "つなぐ"], "correct": "よう"}`
+- よう significa embriagar-se, ficar bêbado. As outras opções são ゆるす (perdoar, desculpar), つなぐ (conectar, ligar) e いわう (comemorar, celebrar).
+
+
+### 16. (recognition) Qual destas palavras significa "alegre, animado"?
+- **Resposta:** `{"choices": ["ようい", "しんちょう", "ようき", "ゆうのう"], "correct": "ようき"}`
+- ようき significa alegre, animado. As outras opções são しんちょう (cuidadoso, cauteloso), ゆうのう (competente, capaz) e ようい (fácil, simples).
+
+

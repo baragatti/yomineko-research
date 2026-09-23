@@ -122,3 +122,33 @@ Quatro kanji desta vez, ligados a hábitos, lugares e comida.
 - 肉 (にく) é a carne. O desenho fechado, com dois traços marcados por dentro, lembra um pedaço de carne com as fibras à mostra.
 
 
+### 10. (recognition) Qual destas formas significa "veterano (na escola ou trabalho), sênior"?
+- **Resposta:** `{"choices": ["よてい", "いっぱい", "ひきだし", "せんぱい"], "correct": "せんぱい"}`
+- せんぱい significa veterano (na escola ou trabalho), sênior. As outras opções são よてい (plano, programação), ひきだし (gaveta) e いっぱい (cheio, bastante).
+
+
+### 11. (recognition) Qual destas palavras significa "comer (forma respeitosa), beber (forma respeitosa)"?
+- **Resposta:** `{"choices": ["おとす", "なれる", "にる", "めしあがる"], "correct": "めしあがる"}`
+- めしあがる significa comer (forma respeitosa), beber (forma respeitosa). As outras opções são なれる (acostumar-se, habituar-se), おとす (deixar cair, derrubar) e にる (parecer-se, assemelhar-se).
+
+
+### 12. (recognition) Qual destas palavras significa "futuro"?
+- **Resposta:** `{"choices": ["ねだん", "きけん", "しょうらい", "ちゅうしゃじょう"], "correct": "しょうらい"}`
+- しょうらい significa futuro. As outras opções são ねだん (preço, valor), ちゅうしゃじょう (estacionamento) e きけん (perigo, risco).
+
+
+### 13. (recognition) Qual destas formas significa "prefixo honorífico (antes de substantivos)"?
+- **Resposta:** `{"choices": ["はず", "さま", "せんぱい", "ご"], "correct": "ご"}`
+- ご significa prefixo honorífico (antes de substantivos). As outras opções são さま (senhor(a) (sufixo honorífico)), はず (deve ser (o caso), era de se esperar) e せんぱい (veterano (na escola ou trabalho), sênior).
+
+
+### 14. (recognition) Qual destas palavras significa "ver (humilde), dar uma olhada (respeitosamente)"?
+- **Resposta:** `{"choices": ["はいけん", "あそび", "わけ", "いなか"], "correct": "はいけん"}`
+- はいけん significa ver (humilde), dar uma olhada (respeitosamente). As outras opções são わけ (motivo, razão), いなか (campo, zona rural) e あそび (brincadeira, diversão).
+
+
+### 15. (recognition) Qual destas palavras significa "o primeiro, o começo"?
+- **Resposta:** `{"choices": ["ひるやすみ", "ぶんか", "ファックス", "さいしょ"], "correct": "さいしょ"}`
+- さいしょ significa o primeiro, o começo. As outras opções são ぶんか (cultura), ひるやすみ (pausa do almoço, horário de almoço) e ファックス (fax, aparelho de fax).
+
+

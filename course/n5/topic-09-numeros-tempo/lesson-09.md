@@ -91,3 +91,18 @@ Toda essa família começa com こ, que carrega a ideia de "perto de mim". Memor
 - 駅 (estação) + は (tópico) + こちら (por aqui, da família こ-) + です (cópula educada). こちら indica direção ou lugar e soa gentil.
 
 
+### 6. (recognition) Qual destas palavras significa "assim, deste tipo"?
+- **Resposta:** `{"choices": ["どの", "すき", "どんな", "こんな"], "correct": "こんな"}`
+- こんな significa assim, deste tipo. As outras opções são どの (qual (+ substantivo), que (livro, pessoa etc.)), すき (gostar de, preferido) e どんな (que tipo de, que espécie de).
+
+
+### 7. (recognition) Qual destas palavras significa "aquecedor, aquecedor a gás ou querosene"?
+- **Resposta:** `{"choices": ["ストーブ", "かい", "しゅくだい", "ズボン"], "correct": "ストーブ"}`
+- ストーブ significa aquecedor, aquecedor a gás ou querosene. As outras opções são ズボン (calça, calças), しゅくだい (dever de casa, tarefa de casa) e かい (andar, piso).
+
+
+### 8. (recognition) Qual destas palavras significa "esporte, esportes"?
+- **Resposta:** `{"choices": ["セーター", "こちら", "スポーツ", "えき"], "correct": "スポーツ"}`
+- スポーツ significa esporte, esportes. As outras opções são セーター (suéter, blusa de lã), えき (estação (de trem)) e こちら (aqui, para cá).
+
+

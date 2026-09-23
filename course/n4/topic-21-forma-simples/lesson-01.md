@@ -132,3 +132,58 @@ Junte tudo:僕の漫画どこかな("onde será que está o meu mangá?"),心配
 - 明日 é 明 (seguinte) + 日 (dia): o dia que vem depois. No dia a dia lê-se あした.
 
 
+### 14. (recognition) Qual destas palavras significa "aparelho de som, som estéreo"?
+- **Resposta:** `{"choices": ["むこう", "ゆうはん", "ステレオ", "ろうか"], "correct": "ステレオ"}`
+- ステレオ significa aparelho de som, som estéreo. As outras opções são ゆうはん (jantar, refeição da noite), ろうか (corredor) e むこう (o outro lado, lá).
+
+
+### 15. (recognition) Qual destas palavras significa "livro didático, texto"?
+- **Resposta:** `{"choices": ["マンガ", "テキスト", "れんしゅう", "スリッパ"], "correct": "テキスト"}`
+- テキスト significa livro didático, texto. As outras opções são マンガ (mangá, história em quadrinhos), スリッパ (chinelo, pantufa) e れんしゅう (prática, treino).
+
+
+### 16. (recognition) Qual destas palavras significa "eu (informal, masculino)"?
+- **Resposta:** `{"choices": ["まんねんひつ", "ぼく", "りゅうがくせい", "もん"], "correct": "ぼく"}`
+- ぼく significa eu (informal, masculino). As outras opções são もん (portão), りゅうがくせい (estudante de intercâmbio, estudante estrangeiro) e まんねんひつ (caneta-tinteiro).
+
+
+### 17. (recognition) Qual destas palavras significa "outro, diferente"?
+- **Resposta:** `{"choices": ["ボタン", "レコード", "べつ", "ラジオ"], "correct": "べつ"}`
+- べつ significa outro, diferente. As outras opções são レコード (disco (de vinil), disco), ボタン (botão) e ラジオ (rádio).
+
+
+### 18. (recognition) Qual destas palavras significa "estudante universitário, universitário"?
+- **Resposta:** `{"choices": ["外国", "四つ", "大学生", "気"], "correct": "大学生"}`
+- 大学生（だいがくせい） significa estudante universitário, universitário. As outras opções são 気 (disposição, ânimo), 四つ (quatro (coisas)) e 外国 (país estrangeiro, exterior).
+
+
+### 19. (recognition) Qual destas palavras significa "grosseiro, mal-educado"?
+- **Resposta:** `{"choices": ["ラジオ", "しつれい", "べつ", "ぼく"], "correct": "しつれい"}`
+- しつれい significa grosseiro, mal-educado. As outras opções são ぼく (eu (informal, masculino)), べつ (outro, diferente) e ラジオ (rádio).
+
+
+### 20. (recognition) Qual destas palavras significa "barbearia, barbeiro"?
+- **Resposta:** `{"choices": ["メガネ", "とこや", "ひま", "とりにく"], "correct": "とこや"}`
+- とこや significa barbearia, barbeiro. As outras opções são メガネ (óculos), ひま (tempo livre, folga) e とりにく (frango, carne de frango).
+
+
+### 21. (recognition) Qual destas palavras significa "preocupação, ansiedade"?
+- **Resposta:** `{"choices": ["しんぱい", "れい", "テキスト", "ほんとう"], "correct": "しんぱい"}`
+- しんぱい significa preocupação, ansiedade. As outras opções são れい (zero), テキスト (livro didático, texto) e ほんとう (ilha principal).
+
+
+### 22. (recognition) Qual destas palavras significa "opinião, ponto de vista"?
+- **Resposta:** `{"choices": ["いけん", "ようふく", "ゆうびんきょく", "テキスト"], "correct": "いけん"}`
+- いけん significa opinião, ponto de vista. As outras opções são ゆうびんきょく (correio, agência dos correios), ようふく (roupa, roupa ocidental) e テキスト (livro didático, texto).
+
+
+### 23. (cloze) Complete a frase: ＿＿が気じゃなかった。 (Eu não conseguia me acalmar (de tão aflito).)
+- **Resposta:** `{"text": "気", "full": "気が気じゃなかった。"}`
+- A palavra que falta é 気（き）: disposição, ânimo.
+- frases: `sent:tatoeba-12957354`
+
+### 24. (recognition) Qual destas palavras significa "mangá, história em quadrinhos"?
+- **Resposta:** `{"choices": ["りゅうがくせい", "ところ", "マンガ", "ゆうはん"], "correct": "マンガ"}`
+- マンガ（まんが） significa mangá, história em quadrinhos. As outras opções são ゆうはん (jantar, refeição da noite), りゅうがくせい (estudante de intercâmbio, estudante estrangeiro) e ところ (lugar, local).
+
+

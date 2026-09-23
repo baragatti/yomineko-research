@@ -90,3 +90,58 @@ Por fim, palavras que descrevem acontecimentos e coisas concretas. Algumas são 
 - 計る (はかる) é medir. Com a forma てくれと você cita um pedido feito a você: 計ってくれと言われた significa 'me pediram que eu medisse'.
 
 
+### 6. (cloze) Complete a frase: ボールを＿＿して。 (Passa a bola.)
+- **Resposta:** `{"text": "パス", "full": "ボールをパスして。"}`
+- A palavra que falta é パス: passe, passagem livre.
+- frases: `sent:tatoeba-9300169`
+
+### 7. (cloze) Complete a frase: ＿＿は持った？ (Pegou o passaporte?)
+- **Resposta:** `{"text": "パスポート", "full": "パスポートは持った？"}`
+- A palavra que falta é パスポート: passaporte.
+- frases: `sent:tatoeba-198090`
+
+### 8. (recognition) Qual destas palavras significa "doutor, doutorado"?
+- **Resposta:** `{"choices": ["たいりく", "そうぞう", "さわぎ", "はかせ"], "correct": "はかせ"}`
+- はかせ significa doutor, doutorado. As outras opções são そうぞう (imaginação), さわぎ (alvoroço, tumulto) e たいりく (continente).
+
+
+### 9. (cloze) Complete a frase: 私は少しの間、席を＿＿。 (Eu me ausentei por um instante.)
+- **Resposta:** `{"text": "外した", "full": "私は少しの間、席を外した。"}`
+- A palavra que falta é 外す（はずす）: tirar, remover. Na frase ela aparece como 外した.
+- frases: `sent:tatoeba-9165483`
+
+### 10. (cloze) Complete a frase: 日曜日は週の＿＿の日です。 (Domingo é o primeiro dia da semana.)
+- **Resposta:** `{"text": "始まり", "full": "日曜日は週の始まりの日です。"}`
+- A palavra que falta é 始まり（はじまり）: começo, início.
+- frases: `sent:tatoeba-10784272`
+
+### 11. (recognition) Qual destas palavras significa "calçar, vestir (calça, sapato)"?
+- **Resposta:** `{"choices": ["はく", "したがう", "しめる", "ながめる"], "correct": "はく"}`
+- はく significa calçar, vestir (calça, sapato). As outras opções são したがう (seguir, obedecer), しめる (ocupar, constituir (uma proporção)) e ながめる (contemplar, olhar fixamente).
+
+
+### 12. (recognition) Qual destas palavras significa "borda, extremidade"?
+- **Resposta:** `{"choices": ["しげき", "はし", "たんじょう", "チーム"], "correct": "はし"}`
+- はし significa borda, extremidade. As outras opções são たんじょう (nascimento, vir ao mundo), チーム (time, equipe) e しげき (estímulo, incentivo).
+
+
+### 13. (recognition) Qual destas palavras significa "enorme, imenso"?
+- **Resposta:** `{"choices": ["ばくだい", "せいけつ", "いわゆる", "こうか"], "correct": "ばくだい"}`
+- ばくだい significa enorme, imenso. As outras opções são せいけつ (limpo, higiênico), いわゆる (chamado, o chamado) e こうか (caro, custoso).
+
+
+### 14. (cloze) Complete a frase: 熱＿＿みたら？ (Por que você não mede a febre?)
+- **Resposta:** `{"text": "計って", "full": "熱計ってみたら？"}`
+- A palavra que falta é 計る（はかる）: medir, cronometrar. Na frase ela aparece como 計って.
+- frases: `sent:tatoeba-3023116`
+
+### 15. (cloze) Complete a frase: ＿＿を取って下さい。 (Me passa a tesoura, por favor.)
+- **Resposta:** `{"text": "はさみ", "full": "はさみを取って下さい。"}`
+- A palavra que falta é はさみ: tesoura.
+- frases: `sent:tatoeba-198276`
+
+### 16. (recognition) Qual destas palavras significa "bobo, idiota"?
+- **Resposta:** `{"choices": ["ばか", "たいざい", "きゅう", "した"], "correct": "ばか"}`
+- ばか significa bobo, idiota. As outras opções são きゅう (nível, grau), した (língua) e たいざい (estadia, permanência).
+
+

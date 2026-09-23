@@ -139,3 +139,73 @@ Repare como o registro carrega significado. O mesmo motivo ("estou cansado") pod
 - 相談 se lê そうだん: 相, mútuo, mais 談, conversa. É a conversa de mão dupla em que um pede e o outro aconselha.
 
 
+### 17. (cloze) Complete a frase: ＿＿を開いている。 (Estamos em reunião.)
+- **Resposta:** `{"text": "会合", "full": "会合を開いている。"}`
+- A palavra que falta é 会合（かいごう）: reunião, encontro.
+- frases: `sent:tatoeba-185292`
+
+### 18. (recognition) Qual destas palavras significa "recuperação, restabelecimento"?
+- **Resposta:** `{"choices": ["がい", "かいふく", "おび", "かいが"], "correct": "かいふく"}`
+- かいふく significa recuperação, restabelecimento. As outras opções são おび (obi, faixa do quimono), がい (dano, prejuízo) e かいが (pintura, quadro).
+
+
+### 19. (recognition) Qual destas palavras significa "diplomacia, relações exteriores"?
+- **Resposta:** `{"choices": ["外交", "連れ", "上", "大家"], "correct": "外交"}`
+- 外交（がいこう） significa diplomacia, relações exteriores. As outras opções são 大家 (senhorio, proprietário (do imóvel)), 上 (parte de cima, parte superior) e 連れ (acompanhante, companhia).
+
+
+### 20. (cloze) Complete a frase: 明かりがついているのだから、彼らが＿＿したはずがない。 (A luz está acesa, então não tem como eles terem saído.)
+- **Resposta:** `{"text": "外出", "full": "明かりがついているのだから、彼らが外出したはずがない。"}`
+- A palavra que falta é 外出（がいしゅつ）: saída, passeio.
+- frases: `sent:tatoeba-80745`
+
+### 21. (recognition) Qual destas palavras significa "confortável, agradável"?
+- **Resposta:** `{"choices": ["おだやか", "いだい", "かいてき", "びみょう"], "correct": "かいてき"}`
+- かいてき significa confortável, agradável. As outras opções são おだやか (calmo, tranquilo), びみょう (sutil, delicado) e いだい (grandioso, grande).
+
+
+### 22. (recognition) Qual destas palavras significa "segurar nos braços, carregar"?
+- **Resposta:** `{"choices": ["かかえる", "うらぎる", "たずねる", "あたえる"], "correct": "かかえる"}`
+- かかえる significa segurar nos braços, carregar. As outras opções são うらぎる (trair), たずねる (perguntar, indagar) e あたえる (dar, conceder).
+
+
+### 23. (recognition) Qual destas palavras significa "melhoria, aperfeiçoamento"?
+- **Resposta:** `{"choices": ["いし", "おしゃべり", "せき", "かいぜん"], "correct": "かいぜん"}`
+- かいぜん significa melhoria, aperfeiçoamento. As outras opções são おしゃべり (conversa fiada, bate-papo), いし (vontade, força de vontade) e せき (assento, lugar (para sentar)).
+
+
+### 24. (recognition) Qual destas palavras significa "trocar, substituir"?
+- **Resposta:** `{"choices": ["起こる", "関する", "代える", "広がる"], "correct": "代える"}`
+- 代える（かえる） significa trocar, substituir. As outras opções são 起こる (acontecer, ocorrer), 広がる (espalhar-se, alargar-se) e 関する (dizer respeito a, referir-se a).
+
+
+### 25. (cloze) Complete a frase: 彼は有名な＿＿です。 (Ele é um pintor famoso.)
+- **Resposta:** `{"text": "画家", "full": "彼は有名な画家です。"}`
+- A palavra que falta é 画家（がか）: pintor, artista.
+- frases: `sent:tatoeba-99249`
+
+### 26. (recognition) Qual destas palavras significa "interpretação, leitura"?
+- **Resposta:** `{"choices": ["つきあい", "かいしゃく", "バン", "えいきょう"], "correct": "かいしゃく"}`
+- かいしゃく significa interpretação, leitura. As outras opções são えいきょう (influência, efeito), バン (van, furgão) e つきあい (convívio, relacionamento).
+
+
+### 27. (cloze) Complete a frase: 試験は何時＿＿ですか？ (Que horas começa a prova?)
+- **Resposta:** `{"text": "開始", "full": "試験は何時開始ですか？"}`
+- A palavra que falta é 開始（かいし）: início, começo.
+- frases: `sent:tatoeba-8933383`
+
+### 28. (recognition) Qual destas palavras significa "criar (um animal), ter (de estimação)"?
+- **Resposta:** `{"choices": ["おくる", "おそれる", "うばう", "かう"], "correct": "かう"}`
+- かう significa criar (um animal), ter (de estimação). As outras opções são おくる (presentear, dar de presente), おそれる (temer, ter medo de) e うばう (arrebatar, tomar à força).
+
+
+### 29. (recognition) Qual destas palavras significa "aroma, fragrância"?
+- **Resposta:** `{"choices": ["かおり", "ビデオ", "りく", "ビン"], "correct": "かおり"}`
+- かおり significa aroma, fragrância. As outras opções são ビデオ (vídeo), ビン (garrafa, frasco) e りく (terra firme, terra).
+
+
+### 30. (cloze) Complete a frase: 私はここで毎日＿＿ものだ。 (Eu costumava nadar aqui todos os dias.)
+- **Resposta:** `{"text": "泳いだ", "full": "私はここで毎日泳いだものだ。"}`
+- A palavra que falta é 泳ぐ（およぐ）: nadar. Na frase ela aparece como 泳いだ. O kanji 泳 faz parte desta palavra.
+- frases: `sent:tatoeba-161057`
+

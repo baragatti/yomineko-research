@@ -109,3 +109,63 @@ As palavras de tempo combinam por família. Repare como o 先 traz a ideia de "a
 - 月 lido つき é a lua no céu. O mesmo caractere conta os meses, mas ali ele muda de leitura e vira ゲツ ou ガツ, por isso vale guardar つき como a leitura do kanji sozinho.
 
 
+### 8. (recognition) Qual destas palavras significa "um dia, o dia inteiro"?
+- **Resposta:** `{"choices": ["水", "上", "大学", "一日"], "correct": "一日"}`
+- 一日（いちにち） significa um dia, o dia inteiro. As outras opções são 大学 (universidade, faculdade), 水 (água) e 上 (em cima, parte de cima).
+
+
+### 9. (recognition) Qual destas palavras significa "ano retrasado"?
+- **Resposta:** `{"choices": ["これ", "おととし", "じどうしゃ", "だれか"], "correct": "おととし"}`
+- おととし significa ano retrasado. As outras opções são だれか (alguém), じどうしゃ (carro, automóvel) e これ (isto, este).
+
+
+### 10. (recognition) Qual destas palavras significa "este mês"?
+- **Resposta:** `{"choices": ["こんげつ", "せっけん", "きのう", "こんしゅう"], "correct": "こんげつ"}`
+- こんげつ significa este mês. As outras opções são きのう (ontem), こんしゅう (esta semana) e せっけん (sabonete, sabão).
+
+
+### 11. (recognition) Qual destas palavras significa "esta semana"?
+- **Resposta:** `{"choices": ["こんしゅう", "ことし", "あき", "ごご"], "correct": "こんしゅう"}`
+- こんしゅう significa esta semana. As outras opções são あき (outono), ことし (este ano) e ごご (tarde, à tarde).
+
+
+### 12. (cloze) Complete a frase: ＿＿中にどこへいくつもりですか。 (Aonde você pretende ir durante as férias?)
+- **Resposta:** `{"text": "休み", "full": "休み中にどこへいくつもりですか。"}`
+- A palavra que falta é 休み（やすみ）: descanso, pausa.
+- frases: `sent:tatoeba-182700`
+
+### 13. (recognition) Qual destas palavras significa "mês passado"?
+- **Resposta:** `{"choices": ["電気", "先月", "休み", "一日"], "correct": "先月"}`
+- 先月（せんげつ） significa mês passado. As outras opções são 休み (descanso, pausa), 電気 (eletricidade) e 一日 (um dia, o dia inteiro).
+
+
+### 14. (recognition) Qual destas palavras significa "semana passada"?
+- **Resposta:** `{"choices": ["こんばん", "せんしゅう", "きょう", "たべもの"], "correct": "せんしゅう"}`
+- せんしゅう significa semana passada. As outras opções são こんばん (esta noite, hoje à noite), きょう (hoje) e たべもの (comida, alimento).
+
+
+### 15. (recognition) Qual destas palavras significa "daqui a dois anos, ano após o próximo"?
+- **Resposta:** `{"choices": ["ここのか", "こんげつ", "さらいねん", "さくぶん"], "correct": "さらいねん"}`
+- さらいねん significa daqui a dois anos, ano após o próximo. As outras opções são こんげつ (este mês), さくぶん (redação, composição (escrita)) e ここのか (dia nove (do mês)).
+
+
+### 16. (recognition) Qual destas palavras significa "ano passado"?
+- **Resposta:** `{"choices": ["そちら", "そと", "きょねん", "まいばん"], "correct": "きょねん"}`
+- きょねん significa ano passado. As outras opções são そちら (aí, esse lado), そと (fora, do lado de fora) e まいばん (toda noite, todas as noites).
+
+
+### 17. (recognition) Qual destas palavras significa "outono"?
+- **Resposta:** `{"choices": ["きょねん", "かい", "あき", "たて"], "correct": "あき"}`
+- あき significa outono. As outras opções são きょねん (ano passado), かい (vezes (contador de ocorrências)) e たて (escudo).
+
+
+### 18. (cloze) Complete a frase: 休み中にどこ＿＿つもりですか。 (Aonde você pretende ir durante as férias?)
+- **Resposta:** `{"text": "へいく", "full": "休み中にどこへいくつもりですか。"}`
+- O que falta é へいく: o ponto gramatical desta lição, 〜へ行く (e iku) ("ir para/em direção a").
+- frases: `sent:tatoeba-182700`
+
+### 19. (recognition) Qual destas palavras significa "descanso, pausa"?
+- **Resposta:** `{"choices": ["休み", "先月", "語", "下"], "correct": "休み"}`
+- 休み（やすみ） significa descanso, pausa. As outras opções são 先月 (mês passado), 語 (língua, idioma) e 下 (embaixo, sob). O kanji 休 faz parte desta palavra.
+
+

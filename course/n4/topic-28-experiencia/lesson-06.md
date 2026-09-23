@@ -96,3 +96,8 @@ Juntando tudo num minirretrato de mudança:最近ずっと勉強して、とう�
 - 今日は (hoje, tópico) + ずっと (muito mais, reforçando a comparação) + 気分がいい (sentir-se bem). Aqui ずっと não é 'o tempo todo': é o segundo uso, 'bem mais (que antes)'.
 
 
+### 6. (cloze) Complete a frase: ＿＿食べないの！ (Não come tanto assim!)
+- **Resposta:** `{"text": "そんなに", "full": "そんなに食べないの！"}`
+- O que falta é そんなに: o ponto gramatical desta lição, そんなに (tão / tanto assim, そんなに).
+- frases: `sent:tatoeba-10657609`
+

@@ -94,3 +94,63 @@ Repare como muitas dessas palavras começam com o som はい: 灰 (はい, cinza
 - 伸ばす (のばす) é o verbo transitivo usado para deixar crescer cabelo ou unhas; com ～たい ele vira o desejo de fazer isso.
 
 
+### 6. (cloze) Complete a frase: もっと＿＿にそのことを説明します。 (Explico isso mais adiante.)
+- **Resposta:** `{"text": "のち", "full": "もっとのちにそのことを説明します。"}`
+- A palavra que falta é のち: depois, mais tarde.
+- frases: `sent:tatoeba-193338`
+
+### 7. (cloze) Complete a frase: 入る前に＿＿して。 (Bate na porta antes de entrar.)
+- **Resposta:** `{"text": "ノック", "full": "入る前にノックして。"}`
+- A palavra que falta é ノック: batida (na porta), bater (na porta).
+- frases: `sent:tatoeba-6956277`
+
+### 8. (cloze) Complete a frase: ＿＿は秋に限る。 (Nada melhor que uma trilha no outono.)
+- **Resposta:** `{"text": "ハイキング", "full": "ハイキングは秋に限る。"}`
+- A palavra que falta é ハイキング: caminhada, trilha.
+- frases: `sent:tatoeba-198349`
+
+### 9. (cloze) Complete a frase: 彼は＿＿がうまい。 (Ele toca bem violino.)
+- **Resposta:** `{"text": "バイオリン", "full": "彼はバイオリンがうまい。"}`
+- A palavra que falta é バイオリン: violino.
+- frases: `sent:tatoeba-111323`
+
+### 10. (cloze) Complete a frase: ＿＿が見つからないよ。 (Não estou achando o cachimbo.)
+- **Resposta:** `{"text": "パイプ", "full": "パイプが見つからないよ。"}`
+- A palavra que falta é パイプ: cano, tubo.
+- frases: `sent:tatoeba-198330`
+
+### 11. (cloze) Complete a frase: 彼らは＿＿です。 (Eles são pilotos.)
+- **Resposta:** `{"text": "パイロット", "full": "彼らはパイロットです。"}`
+- A palavra que falta é パイロット: piloto.
+- frases: `sent:tatoeba-97727`
+
+### 12. (cloze) Complete a frase: 米の値段が３＿＿上がった。 (O preço do arroz subiu 3 por cento.)
+- **Resposta:** `{"text": "パーセント", "full": "米の値段が３パーセント上がった。"}`
+- A palavra que falta é パーセント: por cento, porcentagem.
+- frases: `sent:tatoeba-83517`
+
+### 13. (recognition) Qual destas palavras significa "esticar-se, estender-se"?
+- **Resposta:** `{"choices": ["だまる", "のびる", "さそう", "へる"], "correct": "のびる"}`
+- のびる significa esticar-se, estender-se. As outras opções são さそう (convidar, chamar (para sair)), だまる (calar-se, ficar quieto) e へる (diminuir, reduzir-se).
+
+
+### 14. (cloze) Complete a frase: その＿＿にいたんでしょ？ (Você estava lá na hora, né?)
+- **Resposta:** `{"text": "場", "full": "その場にいたんでしょ？"}`
+- A palavra que falta é 場（ば）: lugar, local.
+- frases: `sent:tatoeba-10617712`
+
+### 15. (cloze) Complete a frase: ＿＿通りになりましたか。 (Saiu como você queria?)
+- **Resposta:** `{"text": "望み", "full": "望み通りになりましたか。"}`
+- A palavra que falta é 望み（のぞみ）: desejo, esperança.
+- frases: `sent:tatoeba-2256950`
+
+### 16. (recognition) Qual destas palavras significa "cinza, cinzas"?
+- **Resposta:** `{"choices": ["ごかい", "はい", "くせ", "タイプライター"], "correct": "はい"}`
+- はい significa cinza, cinzas. As outras opções são ごかい (entender mal, interpretar errado), くせ (mania, hábito) e タイプライター (máquina de escrever).
+
+
+### 17. (cloze) Complete a frase: 彼は新聞を＿＿している。 (Ele entrega jornais.)
+- **Resposta:** `{"text": "配達", "full": "彼は新聞を配達している。"}`
+- A palavra que falta é 配達（はいたつ）: entrega, entregar.
+- frases: `sent:tatoeba-103743`
+

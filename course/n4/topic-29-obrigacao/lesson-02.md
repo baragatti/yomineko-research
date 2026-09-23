@@ -118,3 +118,33 @@ Palavras que combinam direto com este padrão, porque planejar e preparar é jus
 - 験 é verificar, comprovar, e quase só aparece em compostos como 試験. 駅 (estação) traz o mesmo cavalo do lado esquerdo; 研 (pesquisar) e 見 (ver) dividem com ele a leitura chinesa ケン.
 
 
+### 9. (recognition) Qual destas palavras significa "mudar, transformar-se"?
+- **Resposta:** `{"choices": ["そだてる", "いただく", "かたづける", "かわる"], "correct": "かわる"}`
+- かわる significa mudar, transformar-se. As outras opções são かたづける (arrumar, organizar), そだてる (criar, educar) e いただく (receber (humilde)).
+
+
+### 10. (recognition) Qual destas palavras significa "preparativos, preparação"?
+- **Resposta:** `{"choices": ["ホテル", "ばしょ", "かれら", "したく"], "correct": "したく"}`
+- したく significa preparativos, preparação. As outras opções são かれら (eles), ばしょ (lugar, local) e ホテル (hotel).
+
+
+### 11. (cloze) Complete a frase: あなたの発音はほとんど＿＿です。 (Sua pronúncia está quase toda correta.)
+- **Resposta:** `{"text": "正しい", "full": "あなたの発音はほとんど正しいです。"}`
+- A palavra que falta é 正しい（ただしい）: correto, certo.
+- frases: `sent:tatoeba-233056`
+
+### 12. (recognition) Qual destas palavras significa "terminar, concluir-se"?
+- **Resposta:** `{"choices": ["すむ", "ふえる", "うつ", "かえる"], "correct": "すむ"}`
+- すむ significa terminar, concluir-se. As outras opções são うつ (bater, golpear), かえる (mudar, alterar) e ふえる (aumentar, crescer).
+
+
+### 13. (recognition) Qual destas palavras significa "para, a fim de"?
+- **Resposta:** `{"choices": ["ため", "かがみ", "きょうしつ", "こくさい"], "correct": "ため"}`
+- ため significa para, a fim de. As outras opções são こくさい (internacional), かがみ (espelho) e きょうしつ (sala de aula).
+
+
+### 14. (recognition) Qual destas palavras significa "economia"?
+- **Resposta:** `{"choices": ["アメリカ", "ごちそう", "おじょうさん", "けいざい"], "correct": "けいざい"}`
+- けいざい significa economia. As outras opções são アメリカ (América, Estados Unidos), おじょうさん (senhorita, moça) e ごちそう (banquete, refeição especial).
+
+

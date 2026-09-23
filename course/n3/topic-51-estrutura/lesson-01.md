@@ -141,3 +141,48 @@ O contador 杯 muda de leitura conforme o número: 一杯 (いっぱい), 二杯
 - 箱 sozinho já é a palavra はこ. Com a partícula の ela entra direto nas ligações que esta lição treina: a caixa de alguém, o conteúdo da caixa.
 
 
+### 12. (cloze) Complete a frase: 私は＿＿を探している。 (Estou procurando um assistente.)
+- **Resposta:** `{"text": "助手", "full": "私は助手を探している。"}`
+- A palavra que falta é 助手（じょしゅ）: assistente, auxiliar.
+- frases: `sent:tatoeba-155935`
+
+### 13. (cloze) Complete a frase: 彼は有名な＿＿だ。 (Ele é um comerciante famoso.)
+- **Resposta:** `{"text": "商人", "full": "彼は有名な商人だ。"}`
+- A palavra que falta é 商人（しょうにん）: comerciante, mercador.
+- frases: `sent:tatoeba-99246`
+
+### 14. (cloze) Complete a frase: 彼は＿＿を始めた。 (Ele abriu um negócio.)
+- **Resposta:** `{"text": "商売", "full": "彼は商売を始めた。"}`
+- A palavra que falta é 商売（しょうばい）: negócio, comércio.
+- frases: `sent:tatoeba-104182`
+
+### 15. (cloze) Complete a frase: 彼女は＿＿高校に通っている。 (Ela estuda num colégio só de meninas.)
+- **Resposta:** `{"text": "女子", "full": "彼女は女子高校に通っている。"}`
+- A palavra que falta é 女子（じょし）: menina, moça.
+- frases: `sent:tatoeba-88723`
+
+### 16. (cloze) Complete a frase: 彼は利口な＿＿だ。 (Ele é um menino esperto.)
+- **Resposta:** `{"text": "少年", "full": "彼は利口な少年だ。"}`
+- A palavra que falta é 少年（しょうねん）: menino, garoto.
+- frases: `sent:tatoeba-99082`
+
+### 17. (recognition) Qual destas palavras significa "escritório (em casa), sala de estudos"?
+- **Resposta:** `{"choices": ["きろく", "こくもつ", "めいわく", "しょさい"], "correct": "しょさい"}`
+- しょさい significa escritório (em casa), sala de estudos. As outras opções são めいわく (incômodo, transtorno), こくもつ (grão, cereais) e きろく (registro, anotação).
+
+
+### 18. (cloze) Complete a frase: ＿＿から大きな楽しみが得られます。 (Dá para tirar um grande prazer dos livros.)
+- **Resposta:** `{"text": "書物", "full": "書物から大きな楽しみが得られます。"}`
+- A palavra que falta é 書物（しょもつ）: livro, obra escrita.
+- frases: `sent:tatoeba-147409`
+
+### 19. (cloze) Complete a frase: 収入が増えれば増えるほど、＿＿もいっそう多くなる。 (Quanto mais a renda cresce, mais o consumo aumenta.)
+- **Resposta:** `{"text": "消費", "full": "収入が増えれば増えるほど、消費もいっそう多くなる。"}`
+- A palavra que falta é 消費（しょうひ）: consumir, gastar.
+- frases: `sent:tatoeba-148288`
+
+### 20. (cloze) Complete a frase: 彼は＿＿を探している。 (Ele está procurando emprego.)
+- **Resposta:** `{"text": "職", "full": "彼は職を探している。"}`
+- A palavra que falta é 職（しょく）: emprego, cargo.
+- frases: `sent:tatoeba-103944`
+

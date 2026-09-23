@@ -99,3 +99,23 @@ O kanji 死 tem peso emocional forte. Evite usá-lo de forma leve ou em brincade
 - 死ぬ (しぬ) é o único verbo do japonês cuja forma de dicionário termina em ぬ, então vale guardá-lo à parte. A leitura sino-japonesa シ é a que aparece nos compostos.
 
 
+### 8. (recognition) Qual destas palavras significa "senhorita, moça"?
+- **Resposta:** `{"choices": ["けんか", "さらいげつ", "おじょうさん", "じむしょ"], "correct": "おじょうさん"}`
+- おじょうさん significa senhorita, moça. As outras opções são さらいげつ (daqui a dois meses, o mês depois do próximo), じむしょ (escritório) e けんか (na província, dentro da província).
+
+
+### 9. (recognition) Qual destas palavras significa "comemoração, celebração"?
+- **Resposta:** `{"choices": ["ベル", "ジャム", "おいわい", "にんぎょう"], "correct": "おいわい"}`
+- おいわい significa comemoração, celebração. As outras opções são ベル (sino, campainha), にんぎょう (boneca, boneco) e ジャム (geleia, compota).
+
+
+### 10. (recognition) Qual destas palavras significa "solitário, sozinho"?
+- **Resposta:** `{"choices": ["さびしい", "はずかしい", "こまかい", "うつくしい"], "correct": "さびしい"}`
+- さびしい significa solitário, sozinho. As outras opções são こまかい (miúdo, fino), はずかしい (vergonhoso, constrangedor) e うつくしい (belo, bonito).
+
+
+### 11. (recognition) Qual destas palavras significa "convite, convidar"?
+- **Resposta:** `{"choices": ["あかんぼう", "おじょうさん", "しょうたい", "ほし"], "correct": "しょうたい"}`
+- しょうたい significa convite, convidar. As outras opções são あかんぼう (bebê, neném), ほし (estrela) e おじょうさん (senhorita, moça).
+
+

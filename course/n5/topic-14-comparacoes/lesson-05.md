@@ -93,3 +93,33 @@ Cuidado com os pares parecidos. 並ぶ é você entrar na fila (a fila se forma 
 - 並ぶ na raiz ます é 並び (並びます); trocando o ます por たい temos 並びたい ('quero entrar na fila'). Lembre: 並ぶ é VOCÊ ficar na fila; 並べる seria enfileirar objetos.
 
 
+### 6. (recognition) Qual destas palavras significa "subir, escalar"?
+- **Resposta:** `{"choices": ["生まれる", "出す", "聞く", "上る"], "correct": "上る"}`
+- 上る（のぼる） significa subir, escalar. As outras opções são 聞く (ouvir, escutar), 出す (tirar, pôr para fora) e 生まれる (nascer).
+
+
+### 7. (recognition) Qual destas palavras significa "enfileirar-se, ficar em fila"?
+- **Resposta:** `{"choices": ["ならぶ", "ならう", "ねる", "つとめる"], "correct": "ならぶ"}`
+- ならぶ significa enfileirar-se, ficar em fila. As outras opções são ならう (aprender, ter aulas de), ねる (dormir, ir para a cama) e つとめる (trabalhar (em emprego), ser empregado em).
+
+
+### 8. (recognition) Qual destas palavras significa "enfileirar, arrumar (em fila)"?
+- **Resposta:** `{"choices": ["ねる", "ならべる", "ぬぐ", "つかれる"], "correct": "ならべる"}`
+- ならべる significa enfileirar, arrumar (em fila). As outras opções são ぬぐ (tirar (roupa/sapato), despir), つかれる (cansar-se, ficar cansado) e ねる (dormir, ir para a cama).
+
+
+### 9. (recognition) Qual destas palavras significa "dormir, ir para a cama"?
+- **Resposta:** `{"choices": ["ならぶ", "いる", "ねる", "しぬ"], "correct": "ねる"}`
+- ねる significa dormir, ir para a cama. As outras opções são ならぶ (enfileirar-se, ficar em fila), しぬ (morrer) e いる (estar (em algum lugar), existir (seres vivos)).
+
+
+### 10. (recognition) Qual destas palavras significa "tirar (roupa/sapato), despir"?
+- **Resposta:** `{"choices": ["ぬぐ", "ならぶ", "なくす", "ならべる"], "correct": "ぬぐ"}`
+- ぬぐ significa tirar (roupa/sapato), despir. As outras opções são なくす (perder, extraviar), ならべる (enfileirar, arrumar (em fila)) e ならぶ (enfileirar-se, ficar em fila).
+
+
+### 11. (recognition) Qual destas palavras significa "cantar (animal), piar"?
+- **Resposta:** `{"choices": ["ねる", "おわる", "なく", "とぶ"], "correct": "なく"}`
+- なく significa cantar (animal), piar. As outras opções são とぶ (voar), おわる (terminar, acabar) e ねる (dormir, ir para a cama).
+
+

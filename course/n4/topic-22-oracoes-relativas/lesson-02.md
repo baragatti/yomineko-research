@@ -106,3 +106,48 @@ Estas palavras combinam bem com a família という, porque você costuma citar
 - 知る tem o kanji 知 com a leitura nativa し e a terminação る em hiragana. O par 知らせる (しらせる) é o mesmo kanji no sentido de "fazer saber", isto é, avisar.
 
 
+### 8. (recognition) Qual destas palavras significa "relatório, trabalho (escrito)"?
+- **Resposta:** `{"choices": ["がくぶ", "かれ", "レポート", "おととし"], "correct": "レポート"}`
+- レポート significa relatório, trabalho (escrito). As outras opções são かれ (ele), がくぶ (faculdade (curso), departamento (universitário)) e おととし (ano retrasado).
+
+
+### 9. (recognition) Qual destas palavras significa "escola de ensino fundamental II (ginásio), ensino fundamental (anos finais)"?
+- **Resposta:** `{"choices": ["八日", "七つ", "中学校", "四日"], "correct": "中学校"}`
+- 中学校（ちゅうがっこう） significa escola de ensino fundamental II (ginásio), ensino fundamental (anos finais). As outras opções são 八日 (dia 8 (do mês)), 四日 (dia 4 (do mês)) e 七つ (sete (coisas), sete).
+
+
+### 10. (recognition) Qual destas palavras significa "(não)... nem um pouco, de jeito nenhum"?
+- **Resposta:** `{"choices": ["しっかり", "ちっとも", "たいへん", "とうとう"], "correct": "ちっとも"}`
+- ちっとも significa (não)... nem um pouco, de jeito nenhum. As outras opções são しっかり (firmemente, com firmeza), たいへん (muito, extremamente) e とうとう (finalmente, afinal).
+
+
+### 11. (recognition) Qual destas palavras significa "população"?
+- **Resposta:** `{"choices": ["人口", "西", "目", "来年"], "correct": "人口"}`
+- 人口（じんこう） significa população. As outras opções são 来年 (ano que vem, próximo ano), 目 (olho) e 西 (oeste, ocidente).
+
+
+### 12. (recognition) Qual destas palavras significa "faculdade (curso), departamento (universitário)"?
+- **Resposta:** `{"choices": ["あまり", "ばんごはん", "がくぶ", "ふゆ"], "correct": "がくぶ"}`
+- がくぶ significa faculdade (curso), departamento (universitário). As outras opções são ばんごはん (jantar), あまり ((não) muito, (não) tanto) e ふゆ (inverno).
+
+
+### 13. (recognition) Qual destas palavras significa "estar/ir/vir (forma honorífica)"?
+- **Resposta:** `{"choices": ["やめる", "たりる", "いらっしゃる", "たてる"], "correct": "いらっしゃる"}`
+- いらっしゃる significa estar/ir/vir (forma honorífica). As outras opções são やめる (parar (de), largar), たりる (bastar, ser suficiente) e たてる (construir, erguer).
+
+
+### 14. (recognition) Qual destas palavras significa "popular, em alta"?
+- **Resposta:** `{"choices": ["ひつよう", "ふくざつ", "りっぱ", "さかん"], "correct": "さかん"}`
+- さかん significa popular, em alta. As outras opções são ふくざつ (complicado, complexo), ひつよう (necessário, preciso) e りっぱ (esplêndido, admirável).
+
+
+### 15. (recognition) Qual destas palavras significa "fazer (humilde)"?
+- **Resposta:** `{"choices": ["いたす", "うかがう", "とる", "なく"], "correct": "いたす"}`
+- いたす significa fazer (humilde). As outras opções são うかがう (visitar (humilde), ir à casa de (humilde)), とる (fotografar, filmar) e なく (cantar (animal), piar).
+
+
+### 16. (recognition) Qual destas palavras significa "chefe de seção, gerente de seção"?
+- **Resposta:** `{"choices": ["ラジカセ", "いがく", "ガソリン", "かちょう"], "correct": "かちょう"}`
+- かちょう significa chefe de seção, gerente de seção. As outras opções são ガソリン (gasolina, combustível), いがく (medicina (ciência)) e ラジカセ (rádio-gravador, aparelho de rádio e fita).
+
+

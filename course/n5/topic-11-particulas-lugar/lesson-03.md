@@ -120,3 +120,48 @@ Não confunda os dois で: o desta lição (lugar/meio da ação) é uma partíc
 - 生まれる (うまれる) é 'nascer'. O kanji 生 carrega o sentido de vida; o okurigana まれる é o que o transforma nesse verbo.
 
 
+### 9. (cloze) Complete a frase: また＿＿で。 (Até mais tarde.)
+- **Resposta:** `{"text": "後", "full": "また後で。"}`
+- A palavra que falta é 後（あと）: depois, mais tarde.
+- frases: `sent:tatoeba-195443`
+
+### 10. (cloze) Complete a frase: やぶへびを＿＿な。 (Não cutuque a onça com vara curta.)
+- **Resposta:** `{"text": "出す", "full": "やぶへびを出すな。"}`
+- A palavra que falta é 出す（だす）: tirar, pôr para fora.
+- frases: `sent:tatoeba-193048`
+
+### 11. (cloze) Complete a frase: ＿＿後で。 (Até mais tarde.)
+- **Resposta:** `{"text": "また", "full": "また後で。"}`
+- A palavra que falta é また: de novo, novamente.
+- frases: `sent:tatoeba-195443`
+
+### 12. (recognition) Qual destas palavras significa "lavagem de roupa, ato de lavar roupa"?
+- **Resposta:** `{"choices": ["まいばん", "せんたく", "スポーツ", "たべもの"], "correct": "せんたく"}`
+- せんたく significa lavagem de roupa, ato de lavar roupa. As outras opções são スポーツ (esporte, esportes), まいばん (toda noite, todas as noites) e たべもの (comida, alimento).
+
+
+### 13. (recognition) Qual destas palavras significa "ficar de pé, levantar-se"?
+- **Resposta:** `{"choices": ["たつ", "おわる", "あう", "かかる"], "correct": "たつ"}`
+- たつ significa ficar de pé, levantar-se. As outras opções são おわる (terminar, acabar), あう (encontrar, encontrar-se com) e かかる (pegar (uma doença), contrair).
+
+
+### 14. (recognition) Qual destas formas significa "sufixo de plural (pessoas e animais)"?
+- **Resposta:** `{"choices": ["たち", "かげつ", "ずつ", "だい"], "correct": "たち"}`
+- たち significa sufixo de plural (pessoas e animais). As outras opções são だい (suporte, plataforma), ずつ (cada, por vez) e かげつ (contador de meses (duração em meses)).
+
+
+### 15. (recognition) Qual destas palavras significa "pedir, solicitar"?
+- **Resposta:** `{"choices": ["おわる", "たのむ", "あう", "たつ"], "correct": "たのむ"}`
+- たのむ significa pedir, solicitar. As outras opções são たつ (ficar de pé, levantar-se), あう (encontrar, encontrar-se com) e おわる (terminar, acabar).
+
+
+### 16. (cloze) Complete a frase: 諦め＿＿。 (Não desiste!)
+- **Resposta:** `{"text": "ないで", "full": "諦めないで。"}`
+- O que falta é ないで: o ponto gramatical desta lição, fazer algo sem fazer outra coisa / em vez de (〜ないで).
+- frases: `sent:tatoeba-125387`
+
+### 17. (recognition) Qual destas palavras significa "depois, mais tarde"?
+- **Resposta:** `{"choices": ["下", "六", "後", "中"], "correct": "後"}`
+- 後（あと） significa depois, mais tarde. As outras opções são 六 (seis), 下 (embaixo, sob) e 中 (durante/no meio de/em processo de, ao longo de/por todo). O kanji 後 faz parte desta palavra.
+
+

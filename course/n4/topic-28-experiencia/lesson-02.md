@@ -131,3 +131,53 @@ Juntando tudo: 毎日研究を続けて、日本語がだんだん分かるよ�
 - 身 desenha um corpo de perfil e, sozinho, lê-se み. Ele guarda os dois sentidos de uma vez: o corpo físico e a pessoa que mora nele. 体 dá conta só do primeiro, 自 só do segundo.
 
 
+### 11. (recognition) Qual destas palavras significa "computador (pessoal), PC"?
+- **Resposta:** `{"choices": ["テレビ", "かちょう", "パソコン", "じゅうどう"], "correct": "パソコン"}`
+- パソコン significa computador (pessoal), PC. As outras opções são かちょう (chefe de seção, gerente de seção), テレビ (televisão, TV) e じゅうどう (judô).
+
+
+### 12. (cloze) Complete a frase: 手が＿＿できもい。 (Tô com as mãos cheias e que nojo.)
+- **Resposta:** `{"text": "いっぱい", "full": "手がいっぱいできもい。"}`
+- A palavra que falta é いっぱい: cheio, bastante.
+- frases: `sent:tatoeba-861186`
+
+### 13. (recognition) Qual destas palavras significa "por exemplo"?
+- **Resposta:** `{"choices": ["たとえば", "ぜひ", "どんどん", "はっきり"], "correct": "たとえば"}`
+- たとえば significa por exemplo. As outras opções são はっきり (claramente, nitidamente), ぜひ (com certeza, sem falta) e どんどん (cada vez mais, rapidamente).
+
+
+### 14. (recognition) Qual destas palavras significa "copiar, transcrever"?
+- **Resposta:** `{"choices": ["のこる", "かわく", "うつす", "とまる"], "correct": "うつす"}`
+- うつす significa copiar, transcrever. As outras opções são かわく (secar, ficar seco), とまる (pernoitar, hospedar-se) e のこる (restar, sobrar).
+
+
+### 15. (recognition) Qual destas palavras significa "bater, golpear"?
+- **Resposta:** `{"choices": ["つづける", "ぬる", "うつ", "うつす"], "correct": "うつ"}`
+- うつ significa bater, golpear. As outras opções são うつす (copiar, transcrever), つづける (continuar, prosseguir com) e ぬる (pintar, passar (camada)).
+
+
+### 16. (recognition) Qual destas palavras significa "brinquedo"?
+- **Resposta:** `{"choices": ["じゃま", "すみ", "にんぎょう", "おもちゃ"], "correct": "おもちゃ"}`
+- おもちゃ significa brinquedo. As outras opções são すみ (canto, recanto), じゃま (estorvo, incômodo) e にんぎょう (boneca, boneco).
+
+
+### 17. (recognition) Qual destas palavras significa "pedir desculpa, desculpar-se"?
+- **Resposta:** `{"choices": ["かわく", "あやまる", "なおる", "よろこぶ"], "correct": "あやまる"}`
+- あやまる significa pedir desculpa, desculpar-se. As outras opções são よろこぶ (alegrar-se, ficar feliz), かわく (secar, ficar seco) e なおる (sarar, curar-se).
+
+
+### 18. (cloze) Complete a frase: 三に五を＿＿と八になる (Três mais cinco dá oito.)
+- **Resposta:** `{"text": "足す", "full": "三に五を足すと八になる"}`
+- A palavra que falta é 足す（たす）: somar, adicionar.
+- frases: `sent:gen-9545a622918a`
+
+### 19. (recognition) Qual destas palavras significa "pescar (com vara), fisgar"?
+- **Resposta:** `{"choices": ["わすれる", "つる", "うつす", "よろこぶ"], "correct": "つる"}`
+- つる significa pescar (com vara), fisgar. As outras opções são うつす (copiar, transcrever), よろこぶ (alegrar-se, ficar feliz) e わすれる (esquecer).
+
+
+### 20. (cloze) Complete a frase: 英語を話せる＿＿だろう。 (Você vai passar a conseguir falar inglês.)
+- **Resposta:** `{"text": "ようになる", "full": "英語を話せるようになるだろう。"}`
+- O que falta é ようになる: o ponto gramatical desta lição, passar a (fazer) / chegar a um estado (〜ようになる).
+- frases: `sent:tatoeba-189022`
+

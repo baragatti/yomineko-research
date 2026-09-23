@@ -128,3 +128,68 @@ Combine substituição e comparação:王にかわって王子が演説をする
 - 組 (くみ) é o grupo, a turma que se monta. O radical do fio, à esquerda, traz a ideia de coisas trançadas juntas. 集 é juntar, 会 é reunir e 族 é o clã, a família.
 
 
+### 10. (cloze) Complete a frase: ＿＿が止まった。 (O motor morreu.)
+- **Resposta:** `{"text": "エンジン", "full": "エンジンが止まった。"}`
+- A palavra que falta é エンジン: motor.
+- frases: `sent:tatoeba-227869`
+
+### 11. (cloze) Complete a frase: 今夜は＿＿楽しもうよ。 (Vamos aproveitar bastante hoje à noite!)
+- **Resposta:** `{"text": "大いに", "full": "今夜は大いに楽しもうよ。"}`
+- A palavra que falta é 大いに（おおいに）: muito, bastante.
+- frases: `sent:tatoeba-171093`
+
+### 12. (recognition) Qual destas palavras significa "senhorio, proprietário (do imóvel)"?
+- **Resposta:** `{"choices": ["大家", "出発", "友人", "金"], "correct": "大家"}`
+- 大家（おおや） significa senhorio, proprietário (do imóvel). As outras opções são 出発 (partida, partir), 友人 (amigo, amiga) e 金 (dinheiro).
+
+
+### 13. (recognition) Qual destas palavras significa "responder (a), atender"?
+- **Resposta:** `{"choices": ["おおう", "おうじる", "うなる", "まわる"], "correct": "おうじる"}`
+- おうじる significa responder (a), atender. As outras opções são おおう (cobrir, encobrir), うなる (gemer, resmungar) e まわる (girar, rodar).
+
+
+### 14. (recognition) Qual destas palavras significa "ajuda, assistência"?
+- **Resposta:** `{"choices": ["えいよう", "おうじ", "だんぼう", "えんじょ"], "correct": "えんじょ"}`
+- えんじょ significa ajuda, assistência. As outras opções são えいよう (nutrição, alimentação), おうじ (príncipe) e だんぼう (aquecimento, calefação).
+
+
+### 15. (recognition) Qual destas palavras significa "atravessar, cruzar" (no sentido de travessia)?
+- **Resposta:** `{"choices": ["おうだん", "アルコール", "いらい", "よさん"], "correct": "おうだん"}`
+- おうだん significa atravessar, cruzar. As outras opções são よさん (orçamento), いらい (pedir, solicitar) e アルコール (álcool).
+
+
+### 16. (recognition) Qual destas palavras significa "execução musical, performance (musical)"?
+- **Resposta:** `{"choices": ["えんそう", "よそく", "ひてい", "うちゅう"], "correct": "えんそう"}`
+- えんそう significa execução musical, performance (musical). As outras opções são うちゅう (universo, cosmos), ひてい (negar, desmentir) e よそく (prever, estimar).
+
+
+### 17. (recognition) Qual destas palavras significa "rei (esp. em contos de fadas)"?
+- **Resposta:** `{"choices": ["いんたい", "おうさま", "えいえん", "あと"], "correct": "おうさま"}`
+- おうさま significa rei (esp. em contos de fadas). As outras opções são えいえん (eternidade), あと (marca, rastro) e いんたい (aposentar-se, retirar-se (da carreira)).
+
+
+### 18. (cloze) Complete a frase: 明日までには仕事をやり＿＿いるでしょう。 (Até amanhã eu já devo ter terminado o trabalho.)
+- **Resposta:** `{"text": "終えて", "full": "明日までには仕事をやり終えているでしょう。"}`
+- A palavra que falta é 終える（おえる）: terminar, acabar. Na frase ela aparece como 終えて.
+- frases: `sent:tatoeba-80379`
+
+### 19. (recognition) Qual destas palavras significa "velhice, envelhecimento"?
+- **Resposta:** `{"choices": ["おい", "えいえん", "クラシック", "えいせい"], "correct": "おい"}`
+- おい significa velhice, envelhecimento. As outras opções são えいせい (satélite (artificial)), クラシック (música clássica, clássico) e えいえん (eternidade).
+
+
+### 20. (recognition) Qual destas palavras significa "cobrir, encobrir"?
+- **Resposta:** `{"choices": ["おう", "おおう", "おいつく", "うらぎる"], "correct": "おおう"}`
+- おおう significa cobrir, encobrir. As outras opções são おう (perseguir, ir atrás de), おいつく (alcançar, emparelhar com) e うらぎる (trair).
+
+
+### 21. (recognition) Qual destas palavras significa "alcançar, emparelhar com"?
+- **Resposta:** `{"choices": ["いだく", "いらいら", "おいつく", "うつ"], "correct": "おいつく"}`
+- おいつく significa alcançar, emparelhar com. As outras opções são うつ (atirar, disparar), いらいら (irritar-se, ficar nervoso) e いだく (nutrir (um sentimento), alimentar (uma ideia, dúvida)).
+
+
+### 22. (recognition) Qual destas palavras significa "perseguir, ir atrás de"?
+- **Resposta:** `{"choices": ["つかまる", "うつ", "おう", "かまう"], "correct": "おう"}`
+- おう significa perseguir, ir atrás de. As outras opções são うつ (atirar, disparar), かまう (importar-se, ligar para) e つかまる (ser pego, ser preso).
+
+

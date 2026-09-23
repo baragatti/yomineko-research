@@ -156,3 +156,58 @@ O kanji 亡 significa "falecido, perecer". O kanji 舞 significa "dança, rodopi
 - 適当 (てきとう) é o que cai bem para a situação. Atenção ao duplo sentido: na fala descontraída ela também vira 'de qualquer jeito', então o contexto é que manda.
 
 
+### 15. (cloze) Complete a frase: ＿＿を続けましょう。 (Vamos manter contato.)
+- **Resposta:** `{"text": "交際", "full": "交際を続けましょう。"}`
+- A palavra que falta é 交際（こうさい）: conviver, relacionar-se.
+- frases: `sent:tatoeba-174187`
+
+### 16. (recognition) Qual destas palavras significa "cena, espetáculo"?
+- **Resposta:** `{"choices": ["文明", "光景", "手品", "身体"], "correct": "光景"}`
+- 光景（こうけい） significa cena, espetáculo. As outras opções são 文明 (civilização), 身体 (corpo, o corpo (humano)) e 手品 (truque de mágica, mágica).
+
+
+### 17. (cloze) Complete a frase: それは＿＿ではない。 (Isso não é justo.)
+- **Resposta:** `{"text": "公平", "full": "それは公平ではない。"}`
+- A palavra que falta é 公平（こうへい）: justo, imparcial.
+- frases: `sent:tatoeba-205216`
+
+### 18. (recognition) Qual destas palavras significa "assaltante, roubo"?
+- **Resposta:** `{"choices": ["こいびと", "ごうとう", "ぎむ", "こうか"], "correct": "ごうとう"}`
+- ごうとう significa assaltante, roubo. As outras opções são こうか (moeda (metálica)), こいびと (namorado, namorada) e ぎむ (dever, obrigação).
+
+
+### 19. (cloze) Complete a frase: ＿＿より前者の方がいい。 (O primeiro é melhor que o segundo.)
+- **Resposta:** `{"text": "後者", "full": "後者より前者の方がいい。"}`
+- A palavra que falta é 後者（こうしゃ）: o último (de dois), este último.
+- frases: `sent:tatoeba-4934435`
+
+### 20. (cloze) Complete a frase: 自分のウェブサイトの＿＿を変えた。 (Mudei a estrutura do meu site.)
+- **Resposta:** `{"text": "構成", "full": "自分のウェブサイトの構成を変えた。"}`
+- A palavra que falta é 構成（こうせい）: compor, constituir.
+- frases: `sent:tatoeba-5254`
+
+### 21. (recognition) Qual destas palavras significa "aviação"?
+- **Resposta:** `{"choices": ["こうくう", "けんさ", "く", "きんちょう"], "correct": "こうくう"}`
+- こうくう significa aviação. As outras opções são けんさ (inspeção, exame), きんちょう (tensão, nervosismo) e く (frase, locução).
+
+
+### 22. (cloze) Complete a frase: 今が＿＿する時だ。 (Agora é a hora de agir.)
+- **Resposta:** `{"text": "行動", "full": "今が行動する時だ。"}`
+- A palavra que falta é 行動（こうどう）: agir, tomar uma atitude.
+- frases: `sent:tatoeba-172866`
+
+### 23. (recognition) Qual destas palavras significa "contribuir"?
+- **Resposta:** `{"choices": ["ぼう", "けつろん", "こうけん", "なし"], "correct": "こうけん"}`
+- こうけん significa contribuir. As outras opções são けつろん (conclusão), なし (sem, nada) e ぼう (vara, pau).
+
+
+### 24. (cloze) Complete a frase: 昼も夜も、たくさんの車がこのハイウェーを＿＿で通過する。 (De dia e de noite, muitos carros passam por essa rodovia em alta velocidade.)
+- **Resposta:** `{"text": "高速", "full": "昼も夜も、たくさんの車がこのハイウェーを高速で通過する。"}`
+- A palavra que falta é 高速（こうそく）: de alta velocidade, veloz.
+- frases: `sent:tatoeba-126412`
+
+### 25. (cloze) Complete a frase: ＿＿この機会を利用しさえすれば良い。 (Basta você aproveitar esta oportunidade rara.)
+- **Resposta:** `{"text": "めったにない", "full": "めったにないこの機会を利用しさえすれば良い。"}`
+- O que falta é めったにない: o ponto gramatical desta lição, raramente / quase nunca (めったにない).
+- frases: `sent:tatoeba-194622`
+

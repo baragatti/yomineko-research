@@ -111,3 +111,8 @@ Em português a gente sempre lê "dez" do mesmo jeito, mas no japonês o som de 
 - 十 se lê じゅう. O desenho é uma cruz, como dez dedos cruzados na frente do corpo.
 
 
+### 11. (recognition) Qual destas palavras significa "quatro"?
+- **Resposta:** `{"choices": ["し", "くつ", "ご", "カレー"], "correct": "し"}`
+- し significa quatro. As outras opções são ご (cinco), カレー (curry) e くつ (sapato, calçado).
+
+

@@ -118,3 +118,33 @@ Mais três palavrinhas úteis para suas frases:
 - 五つ lê-se いつつ, com a leitura kun いつ do kanji 五. Sozinho, o número cinco usa a leitura on ご.
 
 
+### 8. (recognition) Qual destas palavras significa "anteontem"?
+- **Resposta:** `{"choices": ["おととい", "そうじ", "そば", "さかな"], "correct": "おととい"}`
+- おととい significa anteontem. As outras opções são そうじ (limpeza, limpar), さかな (peixe) e そば (lado, ao lado de).
+
+
+### 9. (recognition) Qual destas palavras significa "pequeno, pequenino"?
+- **Resposta:** `{"choices": ["この", "ちいさな", "そんな", "こんな"], "correct": "ちいさな"}`
+- ちいさな significa pequeno, pequenino. As outras opções são そんな (esse tipo de, tal), この (este, esta) e こんな (assim, deste tipo).
+
+
+### 10. (recognition) Qual destas palavras significa "um pouco, um pouquinho"?
+- **Resposta:** `{"choices": ["いくつ", "すぐに", "すこし", "どうして"], "correct": "すこし"}`
+- すこし significa um pouco, um pouquinho. As outras opções são すぐに (imediatamente, logo), どうして (por que, por qual motivo) e いくつ (quantos).
+
+
+### 11. (recognition) Qual destas palavras significa "gradualmente, aos poucos"?
+- **Resposta:** `{"choices": ["すぐに", "だんだん", "なぜ", "どうして"], "correct": "だんだん"}`
+- だんだん significa gradualmente, aos poucos. As outras opções são すぐに (imediatamente, logo), どうして (por que, por qual motivo) e なぜ (por que, por qual motivo).
+
+
+### 12. (recognition) Qual destas palavras significa "terça-feira"?
+- **Resposta:** `{"choices": ["あき", "かようび", "だい", "いみ"], "correct": "かようび"}`
+- かようび significa terça-feira. As outras opções são いみ (significado, sentido), だい (suporte, plataforma) e あき (outono).
+
+
+### 13. (recognition) Qual destas palavras significa "aniversário, dia do nascimento"?
+- **Resposta:** `{"choices": ["たんじょうび", "そら", "じゅぎょう", "せんたく"], "correct": "たんじょうび"}`
+- たんじょうび significa aniversário, dia do nascimento. As outras opções são せんたく (lavagem de roupa, ato de lavar roupa), そら (céu) e じゅぎょう (aula, lição).
+
+

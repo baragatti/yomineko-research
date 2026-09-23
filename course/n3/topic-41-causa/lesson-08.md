@@ -86,3 +86,53 @@ Dica: 礼 (れい) e 例 (れい) soam idênticos mas se escrevem diferente. 礼
 - 留学 (estudar fora) é o sujeito e 理想だった fecha 'era o ideal'.
 
 
+### 6. (cloze) Complete a frase: ＿＿は上がっていった。 (O foguete foi subindo.)
+- **Resposta:** `{"text": "ロケット", "full": "ロケットは上がっていった。"}`
+- A palavra que falta é ロケット: foguete.
+- frases: `sent:tatoeba-192215`
+
+### 7. (recognition) Qual destas palavras significa "exemplo"?
+- **Resposta:** `{"choices": ["ふし", "れい", "うわさ", "てつがく"], "correct": "れい"}`
+- れい significa exemplo. As outras opções são ふし (junta, nó (na madeira)), てつがく (filosofia) e うわさ (boato, fofoca).
+
+
+### 8. (recognition) Qual destas palavras significa "fila, fileira"?
+- **Resposta:** `{"choices": ["ふこう", "れつ", "スピーチ", "ふうふ"], "correct": "れつ"}`
+- れつ significa fila, fileira. As outras opções são ふこう (infelicidade, infortúnio), ふうふ (casal, marido e mulher) e スピーチ (discurso, fala).
+
+
+### 9. (recognition) Qual destas palavras significa "trabalho (físico), labor"?
+- **Resposta:** `{"choices": ["ろうどう", "ずつう", "えんぎ", "てつ"], "correct": "ろうどう"}`
+- ろうどう significa trabalho (físico), labor. As outras opções são てつ (ferro), えんぎ (atuação, interpretação) e ずつう (dor de cabeça).
+
+
+### 10. (recognition) Qual destas palavras significa "estar na moda, ser popular"?
+- **Resposta:** `{"choices": ["ピクニック", "りゅうこう", "つみ", "ひざ"], "correct": "りゅうこう"}`
+- りゅうこう significa estar na moda, ser popular. As outras opções são つみ (crime, pecado), ひざ (joelho, colo) e ピクニック (piquenique).
+
+
+### 11. (recognition) Qual destas formas significa "taxa, índice"?
+- **Resposta:** `{"choices": ["せいき", "えんじょ", "ひょうばん", "りつ"], "correct": "りつ"}`
+- りつ significa taxa, índice. As outras opções são せいき (século), ひょうばん (reputação, fama) e えんじょ (ajuda, assistência).
+
+
+### 12. (recognition) Qual destas palavras significa "agradecimento, gratidão"?
+- **Resposta:** `{"choices": ["ピクニック", "れい", "あちこち", "うめ"], "correct": "れい"}`
+- れい significa agradecimento, gratidão. As outras opções são うめ (ameixa japonesa), あちこち (aqui e ali, por toda parte) e ピクニック (piquenique).
+
+
+### 13. (recognition) Qual destas palavras significa "idoso, pessoa idosa"?
+- **Resposta:** `{"choices": ["でんとう", "つばさ", "ろうじん", "てきよう"], "correct": "ろうじん"}`
+- ろうじん significa idoso, pessoa idosa. As outras opções são てきよう (aplicar (regra/método), pôr em uso), でんとう (tradição) e つばさ (asa).
+
+
+### 14. (recognition) Qual destas palavras significa "associar (mentalmente), lembrar (de algo por associação)"?
+- **Resposta:** `{"choices": ["りゅうがく", "ろうどう", "れんそう", "まわり"], "correct": "れんそう"}`
+- れんそう significa associar (mentalmente), lembrar (de algo por associação). As outras opções são ろうどう (trabalho (físico), labor), りゅうがく (estudar no exterior, intercâmbio (estudo no exterior)) e まわり (arredores, ao redor).
+
+
+### 15. (recognition) Qual destas formas significa "quantidade, volume"?
+- **Resposta:** `{"choices": ["お", "はいけん", "りょう", "ひょうか"], "correct": "りょう"}`
+- りょう significa quantidade, volume. As outras opções são ひょうか (avaliar, avaliação), お (prefixo honorífico (cortesia, respeito)) e はいけん (ver (humilde), dar uma olhada (respeitosamente)).
+
+

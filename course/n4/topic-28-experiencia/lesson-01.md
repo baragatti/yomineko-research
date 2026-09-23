@@ -160,3 +160,68 @@ Estas palavras combinam muito com なる e する. Repare em como cada uma escol
 - 薬 (くすり) é a planta que cura, escrita sobre 楽. Em compostos a leitura vira やく.
 
 
+### 18. (recognition) Qual destas palavras significa "inconveniente, incômodo"?
+- **Resposta:** `{"choices": ["よやく", "しょうたい", "ふべん", "チェック"], "correct": "ふべん"}`
+- ふべん significa inconveniente, incômodo. As outras opções são よやく (reserva, agendamento), チェック (verificação, checagem) e しょうたい (convite, convidar).
+
+
+### 19. (recognition) Qual destas palavras significa "arredores, ao redor"?
+- **Resposta:** `{"choices": ["まわり", "ことり", "ステーキ", "のど"], "correct": "まわり"}`
+- まわり significa arredores, ao redor. As outras opções são のど (garganta), ステーキ (bife, filé) e ことり (passarinho, pássaro pequeno).
+
+
+### 20. (recognition) Qual destas palavras significa "garganta"?
+- **Resposta:** `{"choices": ["じい", "じゃま", "げしゅく", "のど"], "correct": "のど"}`
+- のど significa garganta. As outras opções são げしゅく (pensão, quarto alugado), じゃま (estorvo, incômodo) e じい (avô).
+
+
+### 21. (recognition) Qual destas palavras significa "sonho (durante o sono)"?
+- **Resposta:** `{"choices": ["ほうりつ", "ゆめ", "れいぼう", "はんたい"], "correct": "ゆめ"}`
+- ゆめ significa sonho (durante o sono). As outras opções são はんたい (oposição, ser contra), れいぼう (ar-condicionado (refrigeração), refrigeração) e ほうりつ (lei, legislação).
+
+
+### 22. (recognition) Qual destas palavras significa "durante o dia, período diurno"?
+- **Resposta:** `{"choices": ["あじ", "ほうりつ", "ひるま", "ごちそう"], "correct": "ひるま"}`
+- ひるま significa durante o dia, período diurno. As outras opções são ごちそう (banquete, refeição especial), あじ (sabor, gosto) e ほうりつ (lei, legislação).
+
+
+### 23. (recognition) Qual destas palavras significa "pelo, pelos"?
+- **Resposta:** `{"choices": ["うけつけ", "かたち", "け", "ふべん"], "correct": "け"}`
+- け significa pelo, pelos. As outras opções são ふべん (inconveniente, incômodo), かたち (forma, formato) e うけつけ (recepção, balcão de atendimento).
+
+
+### 24. (recognition) Qual destas palavras significa "arrumar, organizar"?
+- **Resposta:** `{"choices": ["かたづける", "よぶ", "そだてる", "すすむ"], "correct": "かたづける"}`
+- かたづける significa arrumar, organizar. As outras opções são そだてる (criar, educar), すすむ (avançar, seguir em frente) e よぶ (chamar, convocar).
+
+
+### 25. (recognition) Qual destas palavras significa "razão, motivo"?
+- **Resposta:** `{"choices": ["おっと", "ゆめ", "けしき", "わけ"], "correct": "わけ"}`
+- わけ（りゆう） significa razão, motivo. As outras opções são ゆめ (sonho (durante o sono)), けしき (paisagem, cenário) e おっと (marido, esposo).
+
+
+### 26. (recognition) Qual destas palavras significa "continuar, prosseguir com"?
+- **Resposta:** `{"choices": ["つかまえる", "おる", "つづける", "ひかる"], "correct": "つづける"}`
+- つづける significa continuar, prosseguir com. As outras opções são おる (estar (forma humilde/cortês de いる), ficar), つかまえる (pegar, agarrar) e ひかる (brilhar, reluzir).
+
+
+### 27. (recognition) Qual destas palavras significa "sangue"?
+- **Resposta:** `{"choices": ["おれい", "てぶくろ", "ち", "アナウンサー"], "correct": "ち"}`
+- ち significa sangue. As outras opções são てぶくろ (luvas), アナウンサー (locutor, apresentador) e おれい (agradecimento, obrigado).
+
+
+### 28. (recognition) Qual destas palavras significa "estorvo, incômodo"?
+- **Resposta:** `{"choices": ["こうがい", "かのじょ", "じゃま", "ゆめ"], "correct": "じゃま"}`
+- じゃま significa estorvo, incômodo. As outras opções são ゆめ (sonho (durante o sono)), こうがい (subúrbios, arredores) e かのじょ (ela).
+
+
+### 29. (recognition) Qual destas palavras significa "terrível, horrível"?
+- **Resposta:** `{"choices": ["ふとい", "めずらしい", "ひどい", "よろしい"], "correct": "ひどい"}`
+- ひどい significa terrível, horrível. As outras opções são めずらしい (raro, incomum), よろしい (bom, aceitável) e ふとい (grosso).
+
+
+### 30. (recognition) Qual destas formas significa "canto, recanto"?
+- **Resposta:** `{"choices": ["ぼうえき", "えんりょ", "すみ", "たち"], "correct": "すみ"}`
+- すみ significa canto, recanto. As outras opções são ぼうえき (comércio (exterior), intercâmbio comercial), えんりょ (reserva, cerimônia) e たち (sufixo de plural (pessoas e animais)).
+
+

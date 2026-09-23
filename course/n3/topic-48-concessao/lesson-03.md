@@ -120,3 +120,58 @@ O kanji 浮 ('flutuar, boiar') tem água (氵) à esquerda: algo que boia na ág
 - 浮 tem o radical da água à esquerda: é o que fica por cima dela. A leitura sino-japonesa é ふ, e as japonesas começam todas por う.
 
 
+### 9. (cloze) Complete a frase: ＿＿分かりません。 (Não entendo nada.)
+- **Resposta:** `{"text": "さっぱり", "full": "さっぱり分かりません。"}`
+- A palavra que falta é さっぱり: completamente, (não) nem um pouco.
+- frases: `sent:tatoeba-8935746`
+
+### 10. (recognition) Qual destas palavras significa "por alto, superficialmente"?
+- **Resposta:** `{"choices": ["ざっと", "まったく", "ぐっすり", "ごく"], "correct": "ざっと"}`
+- ざっと significa por alto, superficialmente. As outras opções são まったく (completamente, totalmente), ぐっすり (profundamente (dormir), tranquilamente) e ごく (extremamente, muitíssimo).
+
+
+### 11. (cloze) Complete a frase: 彼の＿＿を一つ読んだ。 (Li uma obra dele.)
+- **Resposta:** `{"text": "作品", "full": "彼の作品を一つ読んだ。"}`
+- A palavra que falta é 作品（さくひん）: obra, criação.
+- frases: `sent:tatoeba-10837034`
+
+### 12. (cloze) Complete a frase: 彼は学者でなく＿＿だ。 (Ele não é acadêmico, é escritor.)
+- **Resposta:** `{"text": "作家", "full": "彼は学者でなく作家だ。"}`
+- A palavra que falta é 作家（さっか）: autor, escritor.
+- frases: `sent:tatoeba-108846`
+
+### 13. (cloze) Complete a frase: ご＿＿までに。 (Só para você ter uma referência.)
+- **Resposta:** `{"text": "参考", "full": "ご参考までに。"}`
+- A palavra que falta é 参考（さんこう）: referência, consulta.
+- frases: `sent:tatoeba-217156`
+
+### 14. (cloze) Complete a frase: 家に帰るには＿＿一時間かかる。 (Para chegar em casa leva no mínimo uma hora.)
+- **Resposta:** `{"text": "最低", "full": "家に帰るには最低一時間かかる。"}`
+- A palavra que falta é 最低（さいてい）: mínimo, mais baixo.
+- frases: `sent:tatoeba-11364955`
+
+### 15. (cloze) Complete a frase: ＿＿決定は彼に任せた。 (Deixamos a decisão final com ele.)
+- **Resposta:** `{"text": "最終", "full": "最終決定は彼に任せた。"}`
+- A palavra que falta é 最終（さいしゅう）: último, final.
+- frases: `sent:tatoeba-170519`
+
+### 16. (cloze) Complete a frase: ＿＿の気分だ。 (Estou me sentindo ótimo.)
+- **Resposta:** `{"text": "最高", "full": "最高の気分だ。"}`
+- A palavra que falta é 最高（さいこう）: o mais alto, máximo.
+- frases: `sent:tatoeba-170540`
+
+### 17. (recognition) Qual destas palavras significa "acordar (alguém), despertar (alguém)"?
+- **Resposta:** `{"choices": ["加える", "転ぶ", "覚ます", "利く"], "correct": "覚ます"}`
+- 覚ます（さます） significa acordar (alguém), despertar (alguém). As outras opções são 利く (fazer efeito, surtir efeito), 転ぶ (cair, tombar) e 加える (adicionar, acrescentar).
+
+
+### 18. (cloze) Complete a frase: 何で目が＿＿の？ (O que te acordou?)
+- **Resposta:** `{"text": "覚めた", "full": "何で目が覚めたの？"}`
+- A palavra que falta é 覚める（さめる）: acordar, despertar. Na frase ela aparece como 覚めた.
+- frases: `sent:tatoeba-177419`
+
+### 19. (recognition) Qual destas formas significa "alvoroço, tumulto"?
+- **Resposta:** `{"choices": ["たいおん", "さわぎ", "ゴール", "どくしん"], "correct": "さわぎ"}`
+- さわぎ significa alvoroço, tumulto. As outras opções são ゴール (gol, linha de chegada), どくしん (solteiro, não casado) e たいおん (temperatura corporal).
+
+

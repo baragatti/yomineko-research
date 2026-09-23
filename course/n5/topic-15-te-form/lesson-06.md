@@ -115,3 +115,33 @@ Repare no ん final dessas leituras: はん, ばん, はんぶん. O ん é uma 
 - 半分 (はんぶん) é literalmente 'a parte da metade'. O 半 sozinho, lido はん, também vale por 'metade' e é o que você acrescenta às horas para dizer 'e meia'.
 
 
+### 8. (recognition) Qual destas palavras significa "esquerda, lado esquerdo"?
+- **Resposta:** `{"choices": ["は", "にわ", "ひだり", "はる"], "correct": "ひだり"}`
+- ひだり significa esquerda, lado esquerdo. As outras opções são はる (primavera), にわ (jardim, quintal) e は (dente, dentes).
+
+
+### 9. (recognition) Qual destas palavras significa "armar (tenda), esticar"?
+- **Resposta:** `{"choices": ["つかれる", "ひく", "はる", "ぬぐ"], "correct": "はる"}`
+- はる significa armar (tenda), esticar. As outras opções são ひく (tocar (instrumento de cordas/teclas)), つかれる (cansar-se, ficar cansado) e ぬぐ (tirar (roupa/sapato), despir).
+
+
+### 10. (recognition) Qual destas palavras significa "noite, anoitecer"?
+- **Resposta:** `{"choices": ["のみもの", "しお", "バター", "ばん"], "correct": "ばん"}`
+- ばん significa noite, anoitecer. As outras opções são のみもの (bebida), バター (manteiga) e しお (sal).
+
+
+### 11. (recognition) Qual destas palavras significa "jantar"?
+- **Resposta:** `{"choices": ["ノート", "ばんごはん", "はいざら", "とりにく"], "correct": "ばんごはん"}`
+- ばんごはん significa jantar. As outras opções são ノート (caderno), はいざら (cinzeiro) e とりにく (frango, carne de frango).
+
+
+### 12. (recognition) Qual destas palavras significa "leste, oriente"?
+- **Resposta:** `{"choices": ["二", "東", "外", "七つ"], "correct": "東"}`
+- 東（ひがし） significa leste, oriente. As outras opções são 二 (dois), 七つ (sete (coisas), sete) e 外 (fora, do lado de fora).
+
+
+### 13. (recognition) Qual destas formas significa "número, vez"?
+- **Resposta:** `{"choices": ["どなた", "なか", "ひだり", "ばん"], "correct": "ばん"}`
+- ばん significa número, vez. As outras opções são ひだり (esquerda, lado esquerdo), なか (dentro, interior) e どなた (quem (formal)).
+
+

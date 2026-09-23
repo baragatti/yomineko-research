@@ -99,3 +99,98 @@ A mesma lógica こ・そ・あ também vale para LUGARES. Aqui estão os "primo
 - これ = 'isto', perto de quem fala; + は (tópico) + 何 (o quê) + ですか (pergunta polida). A partícula は vem depois do pronome, e a pergunta é marcada por か no fim.
 
 
+### 6. (recognition) Qual destas palavras significa "banheiro, lavabo"?
+- **Resposta:** `{"choices": ["おてあらい", "いぬ", "かいだん", "アパート"], "correct": "おてあらい"}`
+- おてあらい significa banheiro, lavabo. As outras opções são かいだん (escada, degraus), アパート (apartamento) e いぬ (cachorro, cão).
+
+
+### 7. (recognition) Qual destas palavras significa "banho, banheira"?
+- **Resposta:** `{"choices": ["いえ", "おふろ", "それ", "どこ"], "correct": "おふろ"}`
+- おふろ significa banho, banheira. As outras opções são どこ (onde, que lugar), いえ (casa) e それ (isso, esse).
+
+
+### 8. (recognition) Qual destas palavras significa "apartamento"?
+- **Resposta:** `{"choices": ["うみ", "アパート", "いけ", "おてあらい"], "correct": "アパート"}`
+- アパート significa apartamento. As outras opções são おてあらい (banheiro, lavabo), うみ (mar, oceano) e いけ (lagoa, tanque).
+
+
+### 9. (recognition) Qual destas palavras significa "elevador"?
+- **Resposta:** `{"choices": ["エレベーター", "あれ", "あそこ", "あちら"], "correct": "エレベーター"}`
+- エレベーター significa elevador. As outras opções são あれ (aquilo, aquele (ali)), あそこ (ali, lá) e あちら (ali, lá).
+
+
+### 10. (cloze) Complete a frase: それが＿＿から来たのか分からなかった。 (Eu não sabia de onde aquilo tinha vindo.)
+- **Resposta:** `{"text": "どこ", "full": "それがどこから来たのか分からなかった。"}`
+- A palavra que falta é どこ: onde, que lugar.
+- frases: `sent:tatoeba-4802`
+
+### 11. (recognition) Qual destas palavras significa "entrada, acesso"?
+- **Resposta:** `{"choices": ["おふろ", "いりぐち", "いろ", "お"], "correct": "いりぐち"}`
+- いりぐち significa entrada, acesso. As outras opções são おふろ (banho, banheira), いろ (cor) e お (cauda, rabo).
+
+
+### 12. (cloze) Complete a frase: それがどこから来たのか＿＿。 (Eu não sabia de onde aquilo tinha vindo.)
+- **Resposta:** `{"text": "分からなかった", "full": "それがどこから来たのか分からなかった。"}`
+- A palavra que falta é 分かる（わかる）: entender, compreender. Na frase ela aparece como 分からなかった.
+- frases: `sent:tatoeba-4802`
+
+### 13. (recognition) Qual destas palavras significa "casa"?
+- **Resposta:** `{"choices": ["いえ", "かぎ", "いりぐち", "アパート"], "correct": "いえ"}`
+- いえ significa casa. As outras opções são いりぐち (entrada, acesso), かぎ (chave) e アパート (apartamento).
+
+
+### 14. (recognition) Qual destas palavras significa "cauda, rabo"?
+- **Resposta:** `{"choices": ["お", "エレベーター", "いぬ", "あれ"], "correct": "お"}`
+- お significa cauda, rabo. As outras opções são エレベーター (elevador), あれ (aquilo, aquele (ali)) e いぬ (cachorro, cão).
+
+
+### 15. (production) Escreva em japonês a palavra que significa "aquele, aquela".
+- **Resposta:** `{"text": "あの", "accept": ["あの"]}`
+- A resposta é あの: aquele, aquela.
+
+
+### 16. (recognition) Qual destas palavras significa "ali, lá" (no sentido de aquele lugar)?
+- **Resposta:** `{"choices": ["あそこ", "いろ", "おてあらい", "うみ"], "correct": "あそこ"}`
+- あそこ significa ali, lá. As outras opções são おてあらい (banheiro, lavabo), いろ (cor) e うみ (mar, oceano).
+
+
+### 17. (recognition) Qual destas palavras significa "ali, lá" (no sentido de aquele lado (formal))?
+- **Resposta:** `{"choices": ["あちら", "いえ", "お", "どこ"], "correct": "あちら"}`
+- あちら significa ali, lá. As outras opções são お (cauda, rabo), いえ (casa) e どこ (onde, que lugar).
+
+
+### 18. (production) Escreva em japonês a palavra que significa "vir, chegar".
+- **Resposta:** `{"text": "来る", "accept": ["来る", "くる"]}`
+- A resposta é 来る（くる）: vir, chegar.
+
+
+### 19. (recognition) Qual destas palavras significa "lagoa, tanque"?
+- **Resposta:** `{"choices": ["あそこ", "おふろ", "いりぐち", "いけ"], "correct": "いけ"}`
+- いけ significa lagoa, tanque. As outras opções são おふろ (banho, banheira), いりぐち (entrada, acesso) e あそこ (ali, lá).
+
+
+### 20. (recognition) Qual destas palavras significa "mar, oceano"?
+- **Resposta:** `{"choices": ["かいだん", "おかね", "それ", "うみ"], "correct": "うみ"}`
+- うみ significa mar, oceano. As outras opções são それ (isso, esse), かいだん (escada, degraus) e おかね (dinheiro).
+
+
+### 21. (recognition) Qual destas palavras significa "cor"?
+- **Resposta:** `{"choices": ["かぎ", "いろ", "いけ", "あちら"], "correct": "いろ"}`
+- いろ significa cor. As outras opções são あちら (ali, lá), いけ (lagoa, tanque) e かぎ (chave).
+
+
+### 22. (recognition) Qual destas palavras significa "escada, degraus"?
+- **Resposta:** `{"choices": ["えん", "エレベーター", "うみ", "かいだん"], "correct": "かいだん"}`
+- かいだん significa escada, degraus. As outras opções são エレベーター (elevador), えん (iene (moeda)) e うみ (mar, oceano).
+
+
+### 23. (production) Escreva com kanji a palavra que significa "entender, compreender".
+- **Resposta:** `{"text": "分かる", "accept": ["分かる"]}`
+- A resposta é 分かる（わかる）: entender, compreender. O kanji 分 faz parte desta palavra.
+
+
+### 24. (production) Escreva com kanji a palavra que significa "vir, chegar".
+- **Resposta:** `{"text": "来る", "accept": ["来る"]}`
+- A resposta é 来る（くる）: vir, chegar. O kanji 来 faz parte desta palavra.
+
+

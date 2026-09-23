@@ -162,3 +162,78 @@ Encadeie fonte e perspectiva:噂によれば彼は引退するそうだ (segundo
 - 雪 sozinho é ゆき. A leitura on セツ aparece em palavras compostas.
 
 
+### 15. (recognition) Qual destas palavras significa "energia"?
+- **Resposta:** `{"choices": ["エネルギー", "はんざい", "ひかく", "しょうかい"], "correct": "エネルギー"}`
+- エネルギー significa energia. As outras opções são ひかく (comparação), しょうかい (apresentar (alguém)) e はんざい (crime, delito).
+
+
+### 16. (recognition) Qual destas palavras significa "atividade comercial, operação (de negócio)"?
+- **Resposta:** `{"choices": ["はんこう", "コンピューター", "ゆいいつ", "えいぎょう"], "correct": "えいぎょう"}`
+- えいぎょう significa atividade comercial, operação (de negócio). As outras opções são はんこう (rebeldia, resistência), コンピューター (computador) e ゆいいつ (único, exclusivo).
+
+
+### 17. (recognition) Qual destas palavras significa "boato, fofoca"?
+- **Resposta:** `{"choices": ["うわさ", "いどう", "にかいだて", "いと"], "correct": "うわさ"}`
+- うわさ significa boato, fofoca. As outras opções são にかいだて (de dois andares, sobrado), いと (fio, linha (de costura)) e いどう (mover-se, deslocar-se).
+
+
+### 18. (cloze) Complete a frase: それは高く＿＿。 (Aquilo vendeu por um bom preço.)
+- **Resposta:** `{"text": "売れた", "full": "それは高く売れた。"}`
+- A palavra que falta é 売れる（うれる）: vender-se, ter saída. Na frase ela aparece como 売れた.
+- frases: `sent:tatoeba-205207`
+
+### 19. (recognition) Qual destas palavras significa "adiamento, prorrogação"?
+- **Resposta:** `{"choices": ["えんき", "かい", "ビール", "いんしょう"], "correct": "えんき"}`
+- えんき significa adiamento, prorrogação. As outras opções são いんしょう (impressão, sensação), かい (vezes (contador de ocorrências)) e ビール (cerveja).
+
+
+### 20. (recognition) Qual destas palavras significa "influência, efeito"?
+- **Resposta:** `{"choices": ["アイスクリーム", "えいきょう", "アクセサリー", "とたん"], "correct": "えいきょう"}`
+- えいきょう significa influência, efeito. As outras opções são とたん (assim que, no exato momento em que), アイスクリーム (sorvete) e アクセサリー (acessório, bijuteria).
+
+
+### 21. (recognition) Qual destas palavras significa "desenhar, pintar"?
+- **Resposta:** `{"choices": ["ゆるす", "あらわす", "えがく", "おれる"], "correct": "えがく"}`
+- えがく significa desenhar, pintar. As outras opções são ゆるす (perdoar, desculpar), おれる (quebrar, partir-se) e あらわす (expressar, representar).
+
+
+### 22. (recognition) Qual destas palavras significa "ameixa japonesa"?
+- **Resposta:** `{"choices": ["じんるい", "えいぎょう", "いねむり", "うめ"], "correct": "うめ"}`
+- うめ significa ameixa japonesa. As outras opções são いねむり (cochilar, dormitar), えいぎょう (atividade comercial, operação (de negócio)) e じんるい (humanidade, gênero humano).
+
+
+### 23. (recognition) Qual destas palavras significa "permanência, perpetuidade"?
+- **Resposta:** `{"choices": ["えんき", "えいきゅう", "コンサート", "かんごし"], "correct": "えいきゅう"}`
+- えいきゅう significa permanência, perpetuidade. As outras opções são えんき (adiamento, prorrogação), コンサート (concerto, show) e かんごし (enfermeiro, enfermeira).
+
+
+### 24. (recognition) Qual destas palavras significa "eternidade"?
+- **Resposta:** `{"choices": ["うわさ", "きけん", "あちこち", "えいえん"], "correct": "えいえん"}`
+- えいえん significa eternidade. As outras opções são うわさ (boato, fofoca), あちこち (aqui e ali, por toda parte) e きけん (perigo, risco).
+
+
+### 25. (cloze) Complete a frase: あなたは何年＿＿ですか？ (Você nasceu em que ano?)
+- **Resposta:** `{"text": "生まれ", "full": "あなたは何年生まれですか？"}`
+- A palavra que falta é 生まれ（うまれ）: nascimento, naturalidade.
+- frases: `sent:tatoeba-1147746`
+
+### 26. (recognition) Qual destas palavras significa "sorriso, cara sorridente"?
+- **Resposta:** `{"choices": ["えがお", "ちょうし", "せき", "ひづけ"], "correct": "えがお"}`
+- えがお significa sorriso, cara sorridente. As outras opções são せき (assento, lugar (para sentar)), ちょうし (estado, condição) e ひづけ (data, data (em documento)).
+
+
+### 27. (recognition) Qual destas palavras significa "satélite (artificial)"?
+- **Resposta:** `{"choices": ["うわさ", "えいせい", "ようそ", "あたり"], "correct": "えいせい"}`
+- えいせい significa satélite (artificial). As outras opções são ようそ (elemento, componente), あたり (redondezas, arredores) e うわさ (boato, fofoca).
+
+
+### 28. (recognition) Qual destas palavras significa "trair"?
+- **Resposta:** `{"choices": ["うらぎる", "ひっぱる", "もうしあげる", "うつす"], "correct": "うらぎる"}`
+- うらぎる significa trair. As outras opções são ひっぱる (puxar, arrastar), うつす (mover, transferir) e もうしあげる (dizer (humilde), falar (humilde)).
+
+
+### 29. (recognition) Qual destas palavras significa "ração, alimento (para animais)"?
+- **Resposta:** `{"choices": ["とちゅう", "えさ", "しゅっぱん", "ため"], "correct": "えさ"}`
+- えさ significa ração, alimento (para animais). As outras opções são しゅっぱん (publicar, editar (um livro)), ため (para, a fim de) e とちゅう (no caminho, a caminho).
+
+

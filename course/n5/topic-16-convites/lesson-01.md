@@ -101,3 +101,28 @@ Dois kanji deste bloco de vocabulário:
 - 西 (にし) é o ponto cardeal oeste. Sozinho lê-se にし; dentro de compostos aparece como せい.
 
 
+### 8. (recognition) Qual destas palavras significa "garfo"?
+- **Resposta:** `{"choices": ["ひま", "いちばん", "フォーク", "ねこ"], "correct": "フォーク"}`
+- フォーク significa garfo. As outras opções são ひま (tempo livre, folga), ねこ (gato) e いちばん (o melhor, o mais).
+
+
+### 9. (recognition) Qual destas palavras significa "hotel"?
+- **Resposta:** `{"choices": ["なつ", "ホテル", "れいぞうこ", "ど"], "correct": "ホテル"}`
+- ホテル significa hotel. As outras opções são なつ (verão), ど (grau) e れいぞうこ (geladeira, refrigerador).
+
+
+### 10. (cloze) Complete a frase: さあ話した＿＿。 (Vamos, fale logo.)
+- **Resposta:** `{"text": "まえ", "full": "さあ話したまえ。"}`
+- A palavra que falta é まえ: frente, à frente.
+- frases: `sent:tatoeba-216863`
+
+### 11. (recognition) Qual destas palavras significa "carne de porco"?
+- **Resposta:** `{"choices": ["ばんごはん", "ぶたにく", "はく", "としょかん"], "correct": "ぶたにく"}`
+- ぶたにく significa carne de porco. As outras opções são はく (conde), ばんごはん (jantar) e としょかん (biblioteca).
+
+
+### 12. (recognition) Qual destas palavras significa "quarto, cômodo"?
+- **Resposta:** `{"choices": ["へや", "ひだり", "ハンカチ", "つぎ"], "correct": "へや"}`
+- へや significa quarto, cômodo. As outras opções são つぎ (próximo, seguinte), ハンカチ (lenço) e ひだり (esquerda, lado esquerdo).
+
+

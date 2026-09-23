@@ -102,3 +102,58 @@ Dois kanji que voltarão muito em palavras de N3:
 - 連れる é levar uma pessoa com você. O kanji 連 traz a ideia de ligar e de enfileirar, e daí vem o sentido de ir acompanhado.
 
 
+### 8. (recognition) Qual destas formas significa "do ponto de vista de …, em termos de …"?
+- **Resposta:** `{"choices": ["上", "音", "後", "以来"], "correct": "上"}`
+- 上（じょう） significa do ponto de vista de …, em termos de …. As outras opções são 音 (som, ruído), 以来 (desde, a partir de) e 後 (depois, mais tarde).
+
+
+### 9. (cloze) Complete a frase: テレビの＿＿を切った。 (Desliguei a TV.)
+- **Resposta:** `{"text": "スイッチ", "full": "テレビのスイッチを切った。"}`
+- A palavra que falta é スイッチ: interruptor, botão.
+- frases: `sent:tatoeba-8576127`
+
+### 10. (cloze) Complete a frase: あの人はどんな＿＿か教えて下さい？ (Me diz que tipo de pessoa é aquela, por favor?)
+- **Resposta:** `{"text": "人物", "full": "あの人はどんな人物か教えて下さい？"}`
+- A palavra que falta é 人物（じんぶつ）: pessoa, personagem.
+- frases: `sent:tatoeba-230735`
+
+### 11. (recognition) Qual destas palavras significa "confiar em, dar crédito a"?
+- **Resposta:** `{"choices": ["いっしゅ", "ビール", "しんよう", "ゆうじょう"], "correct": "しんよう"}`
+- しんよう significa confiar em, dar crédito a. As outras opções são ゆうじょう (amizade), いっしゅ (um tipo, uma espécie) e ビール (cerveja).
+
+
+### 12. (recognition) Qual destas palavras significa "publicar, editar (um livro)"?
+- **Resposta:** `{"choices": ["しゅっぱん", "びじゅつかん", "きみ", "フィルム"], "correct": "しゅっぱん"}`
+- しゅっぱん significa publicar, editar (um livro). As outras opções são きみ (você (informal)), フィルム (filme (fotográfico)) e びじゅつかん (museu de arte, galeria de arte).
+
+
+### 13. (cloze) Complete a frase: ＿＿で説明しましょう。 (Vou explicar com um diagrama.)
+- **Resposta:** `{"text": "図", "full": "図で説明しましょう。"}`
+- A palavra que falta é 図（ず）: figura, diagrama.
+- frases: `sent:tatoeba-143893`
+
+### 14. (recognition) Qual destas palavras significa "arbitragem, arbitrar"?
+- **Resposta:** `{"choices": ["スイッチ", "いずれ", "いわい", "しんぱん"], "correct": "しんぱん"}`
+- しんぱん significa arbitragem, arbitrar. As outras opções são いわい (comemoração, felicitação), スイッチ (interruptor, botão) e いずれ (qual (entre vários), qualquer um).
+
+
+### 15. (recognition) Qual destas palavras significa "ninho, colmeia"?
+- **Resposta:** `{"choices": ["す", "いわい", "つうか", "コンサート"], "correct": "す"}`
+- す significa ninho, colmeia. As outras opções são コンサート (concerto, show), いわい (comemoração, felicitação) e つうか (passagem, trânsito).
+
+
+### 16. (recognition) Qual destas palavras significa "recomendar, indicar"?
+- **Resposta:** `{"choices": ["いとこ", "すいせん", "いた", "いんしょう"], "correct": "すいせん"}`
+- すいせん significa recomendar, indicar. As outras opções são いた (tábua, prancha), いとこ (primo, prima) e いんしょう (impressão, sensação).
+
+
+### 17. (recognition) Qual destas palavras significa "corpo, o corpo (humano)"?
+- **Resposta:** `{"choices": ["身体", "夜明け", "この間", "四日"], "correct": "身体"}`
+- 身体（しんたい） significa corpo, o corpo (humano). As outras opções são この間 (outro dia, esses dias), 夜明け (amanhecer, alvorada) e 四日 (dia 4 (do mês)).
+
+
+### 18. (cloze) Complete a frase: 今、＿＿どれぐらい？ (Você tá com quanto de altura agora?)
+- **Resposta:** `{"text": "身長", "full": "今、身長どれぐらい？"}`
+- A palavra que falta é 身長（しんちょう）: altura (de uma pessoa), estatura.
+- frases: `sent:tatoeba-10952389`
+

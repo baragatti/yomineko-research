@@ -119,3 +119,58 @@ No Japão, o número 四 (quatro) costuma ser evitado porque uma de suas leitura
 - 四 é o quatro. A leitura on é し, mas no dia a dia costuma-se dizer よん, para fugir da confusão com outra palavra de mesmo som.
 
 
+### 10. (recognition) Qual destas palavras significa "fazer, criar"?
+- **Resposta:** `{"choices": ["ちがう", "とまる", "たつ", "つくる"], "correct": "つくる"}`
+- つくる significa fazer, criar. As outras opções são とまる (parar), ちがう (ser diferente, diferir) e たつ (ficar de pé, levantar-se).
+
+
+### 11. (recognition) Qual destas palavras significa "usar, utilizar"?
+- **Resposta:** `{"choices": ["とる", "つくる", "つかう", "つける"], "correct": "つかう"}`
+- つかう significa usar, utilizar. As outras opções são つける (ligar, acender), とる (pegar, tomar) e つくる (fazer, criar).
+
+
+### 12. (cloze) Complete a frase: どこから＿＿んですか。 (De onde (ele/isso) parte?)
+- **Resposta:** `{"text": "出る", "full": "どこから出るんですか。"}`
+- A palavra que falta é 出る（でる）: sair.
+- frases: `sent:tatoeba-201017`
+
+### 13. (recognition) Qual destas palavras significa "pegar, tomar"?
+- **Resposta:** `{"choices": ["とまる", "とる", "つかう", "しる"], "correct": "とる"}`
+- とる significa pegar, tomar. As outras opções são つかう (usar, utilizar), とまる (parar) e しる (saber, conhecer).
+
+
+### 14. (recognition) Qual destas palavras significa "fotografar, filmar"?
+- **Resposta:** `{"choices": ["つける", "つかう", "とる", "ちがう"], "correct": "とる"}`
+- とる significa fotografar, filmar. As outras opções são つかう (usar, utilizar), つける (ligar, acender) e ちがう (ser diferente, diferir).
+
+
+### 15. (recognition) Qual destas palavras significa "parar"?
+- **Resposta:** `{"choices": ["およぐ", "とまる", "さく", "つける"], "correct": "とまる"}`
+- とまる significa parar. As outras opções são さく (florescer, desabrochar), つける (ligar, acender) e およぐ (nadar).
+
+
+### 16. (recognition) Qual destas palavras significa "ligar, acender"?
+- **Resposta:** `{"choices": ["つくる", "たのむ", "つける", "つく"], "correct": "つける"}`
+- つける significa ligar, acender. As outras opções são つく (chegar, chegar a (um lugar)), たのむ (pedir, solicitar) e つくる (fazer, criar).
+
+
+### 17. (recognition) Qual destas palavras significa "chegar, chegar a (um lugar)"?
+- **Resposta:** `{"choices": ["とる", "たのむ", "つく", "きる"], "correct": "つく"}`
+- つく significa chegar, chegar a (um lugar). As outras opções são とる (fotografar, filmar), たのむ (pedir, solicitar) e きる (vestir, pôr (roupa)).
+
+
+### 18. (recognition) Qual destas palavras significa "ser diferente, diferir"?
+- **Resposta:** `{"choices": ["つかう", "とる", "ちがう", "のむ"], "correct": "ちがう"}`
+- ちがう significa ser diferente, diferir. As outras opções são とる (fotografar, filmar), のむ (beber, tomar) e つかう (usar, utilizar).
+
+
+### 19. (recognition) Qual destas palavras significa "primeiro dia (do mês), dia primeiro"?
+- **Resposta:** `{"choices": ["大人", "一日", "電話", "六"], "correct": "一日"}`
+- 一日（ついたち） significa primeiro dia (do mês), dia primeiro. As outras opções são 大人 (adulto), 電話 (telefone) e 六 (seis).
+
+
+### 20. (recognition) Qual destas palavras significa "dia 10 (do mês)"?
+- **Resposta:** `{"choices": ["十日", "上", "後", "水"], "correct": "十日"}`
+- 十日（とおか） significa dia 10 (do mês). As outras opções são 後 (depois, mais tarde), 上 (em cima, parte de cima) e 水 (água).
+
+

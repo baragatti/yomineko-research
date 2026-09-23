@@ -93,3 +93,13 @@ Detalhe importante: com 会う a pessoa que você encontra costuma vir marcada p
 - 水 (みず) é 'água'. Os outros três são kanji de natureza que você já viu: 川 é o rio, 山 é a montanha e 月 é a lua.
 
 
+### 7. (recognition) Qual destas palavras significa "encontrar, encontrar-se com"?
+- **Resposta:** `{"choices": ["こまる", "あう", "いる", "あく"], "correct": "あう"}`
+- あう significa encontrar, encontrar-se com. As outras opções são あく (abrir, abrir-se), いる (precisar, necessitar) e こまる (ter problemas, ficar em apuros).
+
+
+### 8. (recognition) Qual destas palavras significa "zero"?
+- **Resposta:** `{"choices": ["あめ", "うた", "ゼロ", "セーター"], "correct": "ゼロ"}`
+- ゼロ significa zero. As outras opções são セーター (suéter, blusa de lã), うた (canção, música) e あめ (chuva).
+
+

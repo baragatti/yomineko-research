@@ -90,3 +90,28 @@ Cuidado para não confundir 食堂 (食堂, refeitório) com a ideia de "restaur
 - スプーン é 'colher'. Como é uma palavra estrangeira, escreve-se em katakana. O 'copo' é コップ, também em katakana.
 
 
+### 6. (recognition) Qual destas palavras significa "arroz cozido"?
+- **Resposta:** `{"choices": ["すぎ", "ごはん", "さい", "かい"], "correct": "ごはん"}`
+- ごはん significa arroz cozido. As outras opções são さい (anos de idade, anos), すぎ (passado (das horas), depois de) e かい (vezes (contador de ocorrências)).
+
+
+### 7. (recognition) Qual destas palavras significa "boca"?
+- **Resposta:** `{"choices": ["こども", "スプーン", "くち", "しお"], "correct": "くち"}`
+- くち significa boca. As outras opções são しお (sal), こども (criança) e スプーン (colher).
+
+
+### 8. (recognition) Qual destas palavras significa "sal"?
+- **Resposta:** `{"choices": ["きっさてん", "しお", "コップ", "しょくどう"], "correct": "しお"}`
+- しお significa sal. As outras opções são コップ (copo), しょくどう (refeitório, cantina) e きっさてん (cafeteria, café).
+
+
+### 9. (recognition) Qual destas palavras significa "copo"?
+- **Resposta:** `{"choices": ["しょうゆ", "じかん", "きっさてん", "コップ"], "correct": "コップ"}`
+- コップ significa copo. As outras opções são じかん (tempo), しょうゆ (molho de soja, shoyu) e きっさてん (cafeteria, café).
+
+
+### 10. (recognition) Qual destas palavras significa "molho de soja, shoyu"?
+- **Resposta:** `{"choices": ["しょうゆ", "しち", "さとう", "すぎ"], "correct": "しょうゆ"}`
+- しょうゆ significa molho de soja, shoyu. As outras opções são さとう (açúcar), すぎ (passado (das horas), depois de) e しち (sete).
+
+

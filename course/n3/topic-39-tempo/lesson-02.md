@@ -149,3 +149,48 @@ Resolva os exercícios; confira a explicação de cada um.
 - 機会 é 機 (momento em que as peças se encaixam) + 会 (encontro): a ocasião que aparece. Lê-se きかい.
 
 
+### 15. (recognition) Qual destas palavras significa "uma família, a família inteira"?
+- **Resposta:** `{"choices": ["一家", "間", "意思", "一時"], "correct": "一家"}`
+- 一家（いっか） significa uma família, a família inteira. As outras opções são 一時 (uma hora), 意思 (intenção, propósito) e 間 (intervalo, espaço).
+
+
+### 16. (cloze) Complete a frase: 今日は＿＿寒い。 (Hoje está ainda mais frio.)
+- **Resposta:** `{"text": "いっそう", "full": "今日はいっそう寒い。"}`
+- A palavra que falta é いっそう: ainda mais, mais ainda.
+- frases: `sent:tatoeba-171813`
+
+### 17. (recognition) Qual destas palavras significa "de uma vez, ao mesmo tempo"?
+- **Resposta:** `{"choices": ["一度に", "毎年", "今にも", "毎月"], "correct": "一度に"}`
+- 一度に（いちどに） significa de uma vez, ao mesmo tempo. As outras opções são 今にも (a qualquer momento, prestes a), 毎年 (todo ano, todos os anos) e 毎月 (todo mês, mensalmente).
+
+
+### 18. (cloze) Complete a frase: 彼は＿＿ここに住んでいた。 (Ele morou aqui por um tempo.)
+- **Resposta:** `{"text": "一時", "full": "彼は一時ここに住んでいた。"}`
+- A palavra que falta é 一時（いちじ）: uma hora.
+- frases: `sent:tatoeba-110005`
+
+### 19. (cloze) Complete a frase: ＿＿はあっという間だ。 (A vida inteira passa num piscar de olhos.)
+- **Resposta:** `{"text": "一生", "full": "一生はあっという間だ。"}`
+- A palavra que falta é 一生（いっしょう）: uma vida inteira, a vida toda.
+- frases: `sent:tatoeba-10723744`
+
+### 20. (recognition) Qual destas palavras significa "um tipo, uma espécie"?
+- **Resposta:** `{"choices": ["いっしゅ", "はんい", "いのち", "いっしゅん"], "correct": "いっしゅ"}`
+- いっしゅ significa um tipo, uma espécie. As outras opções são いっしゅん (instante, momento), はんい (âmbito, alcance) e いのち (vida, a vida (de alguém)).
+
+
+### 21. (recognition) Qual destas palavras significa "posição, localização"?
+- **Resposta:** `{"choices": ["じゆう", "グラス", "けんか", "いち"], "correct": "いち"}`
+- いち significa posição, localização. As outras opções são グラス (copo (de vidro), taça), じゆう (liberdade) e けんか (oferenda de flores, depositar flores (em memória)).
+
+
+### 22. (recognition) Qual destas palavras significa "mercado, feira"?
+- **Resposta:** `{"choices": ["生き物", "空", "市場", "最中"], "correct": "市場"}`
+- 市場（いちば） significa mercado, feira. As outras opções são 生き物 (ser vivo, criatura), 空 (vazio, oco) e 最中 (no meio de (algo), em plena ação).
+
+
+### 23. (recognition) Qual destas palavras significa "primo, prima"?
+- **Resposta:** `{"choices": ["つうか", "はんにん", "いとこ", "あな"], "correct": "いとこ"}`
+- いとこ significa primo, prima. As outras opções são はんにん (culpado, criminoso), つうか (passagem, trânsito) e あな (buraco, cavidade).
+
+

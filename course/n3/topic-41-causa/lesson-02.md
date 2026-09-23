@@ -124,3 +124,73 @@ O pronome お前 é bruto e íntimo. O japonês prefere omitir o sujeito sempre 
 - 示 é o altar antigo visto de frente, o lugar onde a oferenda fica à vista. Ele é o radical que aparece à esquerda de 社, e sozinho carrega a ideia de apontar e deixar exposto.
 
 
+### 13. (cloze) Complete a frase: ＿＿は学生か？ (Cê é estudante?)
+- **Resposta:** `{"text": "お前", "full": "お前は学生か？"}`
+- A palavra que falta é お前（おまえ）: você (informal/rude), tu.
+- frases: `sent:tatoeba-13172379`
+
+### 14. (recognition) Qual destas palavras significa "meio-dia, hora do almoço"?
+- **Resposta:** `{"choices": ["つつみ", "ていあん", "おひる", "スープ"], "correct": "おひる"}`
+- おひる significa meio-dia, hora do almoço. As outras opções são スープ (sopa, caldo), ていあん (propor, sugerir) e つつみ (pacote, embrulho).
+
+
+### 15. (cloze) Complete a frase: 彼女の＿＿はどこ？ (Onde fica o escritório dela?)
+- **Resposta:** `{"text": "オフィス", "full": "彼女のオフィスはどこ？"}`
+- A palavra que falta é オフィス: escritório, escritório (de empresa).
+- frases: `sent:tatoeba-10908730`
+
+### 16. (cloze) Complete a frase: カーテン＿＿。 (Abaixa a cortina.)
+- **Resposta:** `{"text": "下ろして", "full": "カーテン下ろして。"}`
+- A palavra que falta é 下す（おろす）: descer (algo), baixar. Na frase ela aparece como 下ろして.
+- frases: `sent:tatoeba-11588303`
+
+### 17. (recognition) Qual destas palavras significa "principalmente, sobretudo"?
+- **Resposta:** `{"choices": ["少しも", "主に", "次々", "一人一人"], "correct": "主に"}`
+- 主に（おもに） significa principalmente, sobretudo. As outras opções são 次々 (um após o outro, sucessivamente), 一人一人 (um por um, cada um) e 少しも (nem um pouco, de modo algum).
+
+
+### 18. (recognition) Qual destas palavras significa "aproximadamente, cerca de"?
+- **Resposta:** `{"choices": ["そろそろ", "およそ", "ぴったり", "いわば"], "correct": "およそ"}`
+- およそ significa aproximadamente, cerca de. As outras opções são ぴったり (perfeitamente (encaixado), direitinho), そろそろ (logo, já já) e いわば (por assim dizer, digamos assim).
+
+
+### 19. (recognition) Qual destas palavras significa "exercer (influência), causar (efeito)"?
+- **Resposta:** `{"choices": ["てつだう", "おいつく", "およぼす", "てきする"], "correct": "およぼす"}`
+- およぼす significa exercer (influência), causar (efeito). As outras opções são てきする (ser adequado, ser apropriado), てつだう (ajudar, dar uma mão) e おいつく (alcançar, emparelhar com).
+
+
+### 20. (recognition) Qual destas palavras significa "obi, faixa do quimono"?
+- **Resposta:** `{"choices": ["つゆ", "おか", "おび", "ひみつ"], "correct": "おび"}`
+- おび significa obi, faixa do quimono. As outras opções são ひみつ (segredo), おか (colina, morro) e つゆ (estação das chuvas (início do verão no Japão)).
+
+
+### 21. (cloze) Complete a frase: 明けまして＿＿。 (Feliz Ano Novo!)
+- **Resposta:** `{"text": "おめでとう", "full": "明けましておめでとう。"}`
+- A palavra que falta é おめでとう: parabéns, felicitações.
+- frases: `sent:tatoeba-80729`
+
+### 22. (recognition) Qual destas palavras significa "lembrança, recordação"?
+- **Resposta:** `{"choices": ["高校", "表現", "思い出", "空き"], "correct": "思い出"}`
+- 思い出（おもいで） significa lembrança, recordação. As outras opções são 表現 (expressar, expressão), 空き (espaço vago, vão) e 高校 (ensino médio, colégio).
+
+
+### 23. (recognition) Qual destas palavras significa "sem querer, involuntariamente"?
+- **Resposta:** `{"choices": ["何時でも", "思わず", "主に", "今に"], "correct": "思わず"}`
+- 思わず（おもわず） significa sem querer, involuntariamente. As outras opções são 主に (principalmente, sobretudo), 今に (em breve, logo) e 何時でも (a qualquer hora, sempre).
+
+
+### 24. (recognition) Qual destas palavras significa "natação, nado"?
+- **Resposta:** `{"choices": ["おに", "すいじゅん", "およぎ", "そう"], "correct": "およぎ"}`
+- およぎ significa natação, nado. As outras opções são おに (ogro, demônio), そう (koto, cítara japonesa) e すいじゅん (nível, padrão).
+
+
+### 25. (cloze) Complete a frase: 彼は川で＿＿。 (Ele se afogou no rio.)
+- **Resposta:** `{"text": "おぼれた", "full": "彼は川でおぼれた。"}`
+- A palavra que falta é おぼれる: afogar-se, quase se afogar. Na frase ela aparece como おぼれた.
+- frases: `sent:tatoeba-103023`
+
+### 26. (recognition) Qual destas palavras significa "ogro, demônio"?
+- **Resposta:** `{"choices": ["おに", "えいせい", "デート", "つき"], "correct": "おに"}`
+- おに significa ogro, demônio. As outras opções são デート (encontro (romântico), sair (com alguém)), つき (com (algo incluso), acompanhado de) e えいせい (satélite (artificial)).
+
+

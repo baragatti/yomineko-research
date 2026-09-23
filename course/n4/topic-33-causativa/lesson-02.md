@@ -128,3 +128,63 @@ Quatro kanji do dia a dia, todos ligados a comida e animais:
 - 小 ('pequeno') mais 鳥 ('pássaro') dá 小鳥 (ことり). Sozinho, 鳥 lê-se とり e vale para qualquer ave.
 
 
+### 10. (cloze) Complete a frase: この＿＿はとても安い (Esse acessório é bem baratinho.)
+- **Resposta:** `{"text": "アクセサリー", "full": "このアクセサリーはとても安い"}`
+- A palavra que falta é アクセサリー: acessório, bijuteria.
+- frases: `sent:gen-61d38f327c75`
+
+### 11. (cloze) Complete a frase: ＿＿の会場まで歩きました (Fui a pé até o local do show.)
+- **Resposta:** `{"text": "コンサート", "full": "コンサートの会場まで歩きました"}`
+- A palavra que falta é コンサート: concerto, show.
+- frases: `sent:gen-23a3b4d1912f`
+
+### 12. (recognition) Qual destas palavras significa "computador"?
+- **Resposta:** `{"choices": ["うで", "コンピューター", "スーツケース", "むすこ"], "correct": "コンピューター"}`
+- コンピューター（コンピュータ） significa computador. As outras opções são うで (braço), スーツケース (mala (de viagem)) e むすこ (filho).
+
+
+### 13. (recognition) Qual destas palavras significa "mala (de viagem)"?
+- **Resposta:** `{"choices": ["わけ", "スーツケース", "てんらんかい", "さいご"], "correct": "スーツケース"}`
+- スーツケース significa mala (de viagem). As outras opções são さいご (o último, o fim), てんらんかい (exposição, mostra (de arte)) e わけ (razão, motivo).
+
+
+### 14. (cloze) Complete a frase: 今月あの＿＿は水曜日が休みです。 (Este mês, aquele supermercado fecha às quartas-feiras.)
+- **Resposta:** `{"text": "スーパー", "full": "今月あのスーパーは水曜日が休みです。"}`
+- A palavra que falta é スーパー: supermercado.
+- frases: `sent:tatoeba-11001318`
+
+### 15. (recognition) Qual destas palavras significa "fracasso, erro"?
+- **Resposta:** `{"choices": ["しっぱい", "こうぎ", "たくさん", "カレンダー"], "correct": "しっぱい"}`
+- しっぱい significa fracasso, erro. As outras opções são カレンダー (calendário), こうぎ (palestra, aula (expositiva)) e たくさん (muito, muitos).
+
+
+### 16. (recognition) Qual destas palavras significa "fábrica, usina"?
+- **Resposta:** `{"choices": ["答え", "工場", "気持ち", "用意"], "correct": "工場"}`
+- 工場（こうじょう） significa fábrica, usina. As outras opções são 用意 (preparo, preparativos), 気持ち (sentimento, emoção) e 答え (resposta).
+
+
+### 17. (cloze) Complete a frase: この町は＿＿がさかんだ (Nesta cidade a indústria é forte.)
+- **Resposta:** `{"text": "工業", "full": "この町は工業がさかんだ"}`
+- A palavra que falta é 工業（こうぎょう）: indústria, setor industrial.
+- frases: `sent:gen-81dcb423c28e`
+
+### 18. (cloze) Complete a frase: ＿＿に手紙を送った (Mandei uma carta para a empresa de jornal.)
+- **Resposta:** `{"text": "新聞社", "full": "新聞社に手紙を送った"}`
+- A palavra que falta é 新聞社（しんぶんしゃ）: jornal (empresa), editora de jornal.
+- frases: `sent:gen-ab43eee467fe`
+
+### 19. (recognition) Qual destas palavras significa "natação"?
+- **Resposta:** `{"choices": ["すいえい", "しょうかい", "けいけん", "さいしょ"], "correct": "すいえい"}`
+- すいえい significa natação. As outras opções são けいけん (experiência), さいしょ (o primeiro, o começo) e しょうかい (apresentar (alguém)).
+
+
+### 20. (cloze) Complete a frase: 先生は＿＿にいます (O professor está no laboratório.)
+- **Resposta:** `{"text": "研究室", "full": "先生は研究室にいます"}`
+- A palavra que falta é 研究室（けんきゅうしつ）: laboratório, sala de pesquisa.
+- frases: `sent:gen-abef3875344f`
+
+### 21. (recognition) Qual destas palavras significa "experiência"?
+- **Resposta:** `{"choices": ["かみ", "コンピューター", "ちゅうしゃ", "けいけん"], "correct": "けいけん"}`
+- けいけん significa experiência. As outras opções são ちゅうしゃ (injeção, aplicação (de vacina)), コンピューター (computador) e かみ (cabelo).
+
+

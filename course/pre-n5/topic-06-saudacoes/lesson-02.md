@@ -70,3 +70,13 @@ Quer soar mais educado? Várias dessas reações combinam com expressões polida
 - "Não" = いいえ (dois い + え).
 
 
+### 5. (production) Escreva em japonês a palavra que significa "esse tipo de, tal".
+- **Resposta:** `{"text": "そんな", "accept": ["そんな"]}`
+- A resposta é そんな: esse tipo de, tal.
+
+
+### 6. (recognition) Qual destas palavras significa "ah, ai"?
+- **Resposta:** `{"choices": ["さあ", "どうも", "ああ", "もしもし"], "correct": "ああ"}`
+- ああ significa ah, ai. As outras opções são どうも (obrigado, valeu), もしもし (alô, oi) e さあ (vamos lá, então).
+
+

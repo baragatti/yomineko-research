@@ -101,3 +101,63 @@ Marcadores de discurso e palavras de transação.
 - 以内 (いない) marca o teto de um intervalo: tudo o que cabe dentro do limite. Sozinho e lido うち, 内 já quer dizer dentro.
 
 
+### 8. (cloze) Complete a frase: こっちにきてから、＿＿近所でビバークしてたの？大変だったね。 (Desde que você chegou aqui, ficou acampando aqui perto esse tempo todo? Deve ter sido difícil, hein.)
+- **Resposta:** `{"text": "ずっと", "full": "こっちにきてから、ずっと近所でビバークしてたの？大変だったね。"}`
+- A palavra que falta é ずっと: o tempo todo, desde sempre.
+- frases: `sent:tatoeba-76761`
+
+### 9. (cloze) Complete a frase: 明日＿＿をします。 (Amanhã eu vou fazer um discurso.)
+- **Resposta:** `{"text": "スピーチ", "full": "明日スピーチをします。"}`
+- A palavra que falta é スピーチ: discurso, fala.
+- frases: `sent:tatoeba-9575815`
+
+### 10. (recognition) Qual destas palavras significa "século"?
+- **Resposta:** `{"choices": ["よめ", "せいき", "いしき", "けっか"], "correct": "せいき"}`
+- せいき significa século. As outras opções são けっか (resultado, consequência), よめ (esposa, noiva) e いしき (consciência, percepção).
+
+
+### 11. (cloze) Complete a frase: 彼の＿＿が好き。 (Eu gosto de tudo nele.)
+- **Resposta:** `{"text": "全て", "full": "彼の全てが好き。"}`
+- A palavra que falta é すべて: tudo, todo. Na frase ela aparece como 全て.
+- frases: `sent:tatoeba-11609794`
+
+### 12. (cloze) Complete a frase: 彼らはどうも＿＿が合わない。 (Eles simplesmente não combinam.)
+- **Resposta:** `{"text": "性", "full": "彼らはどうも性が合わない。"}`
+- A palavra que falta é 性（せい）: natureza, índole.
+- frases: `sent:tatoeba-97774`
+
+### 13. (recognition) Qual destas palavras significa "personalidade, temperamento"?
+- **Resposta:** `{"choices": ["カー", "せいかく", "ひひょう", "しんらい"], "correct": "せいかく"}`
+- せいかく significa personalidade, temperamento. As outras opções são カー (carro, automóvel), しんらい (confiar em, ter confiança em) e ひひょう (criticar, resenhar).
+
+
+### 14. (recognition) Qual destas palavras significa "culpa, por causa de"?
+- **Resposta:** `{"choices": ["スキー", "はんい", "せい", "えんき"], "correct": "せい"}`
+- せい significa culpa, por causa de. As outras opções são スキー (esqui, esquiar), はんい (âmbito, alcance) e えんき (adiamento, prorrogação).
+
+
+### 15. (recognition) Qual destas palavras significa "já, previamente"?
+- **Resposta:** `{"choices": ["ほぼ", "すでに", "おそらく", "まず"], "correct": "すでに"}`
+- すでに significa já, previamente. As outras opções são おそらく (provavelmente, possivelmente), ほぼ (quase, aproximadamente) e まず (primeiro, antes de mais nada).
+
+
+### 16. (recognition) Qual destas palavras significa "correto, certo" (substantivo)?
+- **Resposta:** `{"choices": ["お前", "泳ぎ", "解決", "正"], "correct": "正"}`
+- 正（せい） significa correto, certo. As outras opções são お前 (você (informal/rude), tu), 泳ぎ (natação, nado) e 解決 (solução, resolução).
+
+
+### 17. (cloze) Complete a frase: 彼らはお昼を＿＿から出かけた。 (Eles saíram depois de terminar o almoço.)
+- **Resposta:** `{"text": "すませて", "full": "彼らはお昼をすませてから出かけた。"}`
+- A palavra que falta é 済ませる（すませる）: terminar, concluir. Na frase ela aparece como すませて.
+- frases: `sent:tatoeba-98124`
+
+### 18. (cloze) Complete a frase: この食べ物は＿＿だ。 (Esta comida está crua.)
+- **Resposta:** `{"text": "生", "full": "この食べ物は生だ。"}`
+- A palavra que falta é 生（なま）: cru.
+- frases: `sent:tatoeba-3418236`
+
+### 19. (recognition) Qual destas palavras significa "reivindicar, exigir"?
+- **Resposta:** `{"choices": ["カード", "いっぱん", "かいしゃく", "せいきゅう"], "correct": "せいきゅう"}`
+- せいきゅう significa reivindicar, exigir. As outras opções são いっぱん (geral, comum), カード (cartão) e かいしゃく (interpretação, leitura).
+
+

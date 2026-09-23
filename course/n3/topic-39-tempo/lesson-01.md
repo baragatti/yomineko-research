@@ -169,3 +169,53 @@ Faça os exercícios abaixo. Cada resposta vem com explicação.
 - 要る é precisar de alguma coisa, e o kanji guarda o sentido de essencial. Cuidado para não confundir com o いる de estar, que se escreve sem kanji.
 
 
+### 18. (recognition) Qual destas palavras significa "em breve, logo"?
+- **Resposta:** `{"choices": ["特に", "毎月", "大分", "今に"], "correct": "今に"}`
+- 今に（いまに） significa em breve, logo. As outras opções são 大分 (bastante, consideravelmente), 毎月 (todo mês, mensalmente) e 特に (especialmente, particularmente).
+
+
+### 19. (recognition) Qual destas palavras significa "a qualquer momento, prestes a"?
+- **Resposta:** `{"choices": ["今にも", "今に", "半分", "最も"], "correct": "今にも"}`
+- 今にも（いまにも） significa a qualquer momento, prestes a. As outras opções são 今に (em breve, logo), 最も (o mais, mais (superlativo)) e 半分 (metade, meio).
+
+
+### 20. (recognition) Qual destas formas significa "antes, anteriormente"?
+- **Resposta:** `{"choices": ["相手", "市", "母親", "以前"], "correct": "以前"}`
+- 以前（いぜん） significa antes, anteriormente. As outras opções são 母親 (mãe), 相手 (o outro (com quem se interage), companhia) e 市 (cidade, município).
+
+
+### 21. (recognition) Qual destas palavras significa "cochilar, dormitar"?
+- **Resposta:** `{"choices": ["ゆいいつ", "いねむり", "いき", "あやまり"], "correct": "いねむり"}`
+- いねむり significa cochilar, dormitar. As outras opções são ゆいいつ (único, exclusivo), あやまり (erro, engano) e いき (respiração, fôlego).
+
+
+### 22. (recognition) Qual destas palavras significa "sala de estar, sala"?
+- **Resposta:** `{"choices": ["ちょうし", "はんばい", "いま", "けいさつ"], "correct": "いま"}`
+- いま significa sala de estar, sala. As outras opções são ちょうし (estado, condição), はんばい (venda, comercialização) e けいさつ (a polícia).
+
+
+### 23. (recognition) Qual destas palavras significa "vontade, força de vontade"?
+- **Resposta:** `{"choices": ["つうか", "いし", "いま", "パソコン"], "correct": "いし"}`
+- いし significa vontade, força de vontade. As outras opções são つうか (passagem, trânsito), いま (sala de estar, sala) e パソコン (computador (pessoal), PC).
+
+
+### 24. (recognition) Qual destas palavras significa "intenção, propósito"?
+- **Resposta:** `{"choices": ["特急", "意思", "入院", "市"], "correct": "意思"}`
+- 意思（いし） significa intenção, propósito. As outras opções são 入院 (internação (hospitalar)), 市 (mercado, feira) e 特急 (trem expresso, expresso limitado).
+
+
+### 25. (recognition) Qual destas palavras significa "tábua, prancha"?
+- **Resposta:** `{"choices": ["いた", "ゆうき", "い", "あくま"], "correct": "いた"}`
+- いた significa tábua, prancha. As outras opções são あくま (demônio, diabo), ゆうき (coragem, bravura) e い (estômago).
+
+
+### 26. (recognition) Qual destas palavras significa "nascente, fonte"?
+- **Resposta:** `{"choices": ["いずみ", "はら", "ちょうき", "つうしん"], "correct": "いずみ"}`
+- いずみ significa nascente, fonte. As outras opções são ちょうき (de longo prazo, longo período), はら (campo, planície) e つうしん (comunicação, correspondência).
+
+
+### 27. (recognition) Qual destas palavras significa "anormal, incomum"?
+- **Resposta:** `{"choices": ["いじょう", "ゆかい", "ソフト", "ある"], "correct": "いじょう"}`
+- いじょう significa anormal, incomum. As outras opções são ソフト (suave, macio), ある (um certo, certo (não especificado)) e ゆかい (agradável, divertido).
+
+

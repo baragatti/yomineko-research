@@ -170,3 +170,68 @@ Não confunda 世界 ("mundo", せかい) com 線 ("linha", せん): começam co
 - 走る se lê はしる. O kanji 走 desenha uma pessoa em movimento sobre o chão; る é a terminação.
 
 
+### 17. (recognition) Qual destas palavras significa "escritório"?
+- **Resposta:** `{"choices": ["じむしょ", "かちょう", "ビル", "エスカレーター"], "correct": "じむしょ"}`
+- じむしょ significa escritório. As outras opções são エスカレーター (escada rolante), ビル (prédio, edifício) e かちょう (chefe de seção, gerente de seção).
+
+
+### 18. (recognition) Qual destas palavras significa "endereço"?
+- **Resposta:** `{"choices": ["しょうゆ", "うそ", "じゅうしょ", "どようび"], "correct": "じゅうしょ"}`
+- じゅうしょ significa endereço. As outras opções são うそ (mentira), どようび (sábado) e しょうゆ (molho de soja, shoyu).
+
+
+### 19. (recognition) Qual destas palavras significa "dobro, o dobro"?
+- **Resposta:** `{"choices": ["レポート", "よしゅう", "ばい", "たいしかん"], "correct": "ばい"}`
+- ばい significa dobro, o dobro. As outras opções são よしゅう (preparação prévia da aula, estudo antecipado da matéria), レポート (relatório, trabalho (escrito)) e たいしかん (embaixada).
+
+
+### 20. (recognition) Qual destas palavras significa "cliente, convidado"?
+- **Resposta:** `{"choices": ["はい", "は", "きゃく", "きかい"], "correct": "きゃく"}`
+- きゃく significa cliente, convidado. As outras opções são きかい (oportunidade, chance), は (folha (de planta)) e はい (cálice de saquê, taça para bebidas alcoólicas).
+
+
+### 21. (cloze) Complete a frase: この＿＿はとても古い (Esta escola primária é bem antiga.)
+- **Resposta:** `{"text": "小学校", "full": "この小学校はとても古い"}`
+- A palavra que falta é 小学校（しょうがっこう）: escola primária, ensino fundamental (inicial).
+- frases: `sent:gen-39d841e13cad`
+
+### 22. (recognition) Qual destas palavras significa "guerra"?
+- **Resposta:** `{"choices": ["れい", "のき", "せんそう", "かさ"], "correct": "せんそう"}`
+- せんそう significa guerra. As outras opções são れい (zero), のき (beiral, aba do telhado) e かさ (guarda-chuva, sombrinha).
+
+
+### 23. (recognition) Qual destas palavras significa "gramática"?
+- **Resposta:** `{"choices": ["ぶんぽう", "びじゅつかん", "パート", "せん"], "correct": "ぶんぽう"}`
+- ぶんぽう significa gramática. As outras opções são パート (trabalho de meio período, meio período), びじゅつかん (museu de arte, galeria de arte) e せん (linha).
+
+
+### 24. (recognition) Qual destas palavras significa "antigamente, tempos antigos"?
+- **Resposta:** `{"choices": ["は", "むかし", "はつおん", "しき"], "correct": "むかし"}`
+- むかし significa antigamente, tempos antigos. As outras opções são しき (cerimônia), は (dente, dentes) e はつおん (pronúncia).
+
+
+### 25. (recognition) Qual destas palavras significa "preparação, preparativos"?
+- **Resposta:** `{"choices": ["じゅんび", "ばい", "むかし", "おや"], "correct": "じゅんび"}`
+- じゅんび significa preparação, preparativos. As outras opções são おや (pai/mãe, pais), ばい (dobro, o dobro) e むかし (antigamente, tempos antigos).
+
+
+### 26. (recognition) Qual destas formas significa "linha"?
+- **Resposta:** `{"choices": ["せん", "おばあさん", "れんらく", "あかちゃん"], "correct": "せん"}`
+- せん significa linha. As outras opções são れんらく (contato, comunicação), あかちゃん (bebê, neném) e おばあさん (avó, vovó).
+
+
+### 27. (recognition) Qual destas palavras significa "museu de arte, galeria de arte"?
+- **Resposta:** `{"choices": ["びじゅつかん", "ぶんぽう", "パート", "たたみ"], "correct": "びじゅつかん"}`
+- びじゅつかん significa museu de arte, galeria de arte. As outras opções são たたみ (tatame, esteira de tatame), ぶんぽう (gramática) e パート (trabalho de meio período, meio período).
+
+
+### 28. (recognition) Qual destas palavras significa "contato, comunicação"?
+- **Resposta:** `{"choices": ["れんらく", "ぶんぽう", "ほど", "エスカレーター"], "correct": "れんらく"}`
+- れんらく significa contato, comunicação. As outras opções são ほど (cerca de, aproximadamente), ぶんぽう (gramática) e エスカレーター (escada rolante).
+
+
+### 29. (recognition) Qual destas palavras significa "aeroporto, campo de aviação"?
+- **Resposta:** `{"choices": ["かびん", "きせつ", "ひこうじょう", "すいようび"], "correct": "ひこうじょう"}`
+- ひこうじょう significa aeroporto, campo de aviação. As outras opções são きせつ (estação, estação do ano), かびん (vaso (de flores)) e すいようび (quarta-feira).
+
+

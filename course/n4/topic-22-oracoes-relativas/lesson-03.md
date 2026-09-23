@@ -114,3 +114,58 @@ Dois kanji de movimento e abertura aparecem nas frases de exemplo deste tópico.
 - 問題 (もんだい) é 問 (perguntar) mais 題 (tema): a questão que se coloca. A leitura on de 題 é ダイ e aparece em praticamente todas as palavras com esse kanji.
 
 
+### 12. (recognition) Qual destas palavras significa "trabalho de meio período, bico"?
+- **Resposta:** `{"choices": ["つもり", "アルバイト", "うんてんしゅ", "たいふう"], "correct": "アルバイト"}`
+- アルバイト significa trabalho de meio período, bico. As outras opções são たいふう (tufão), つもり (intenção, plano (de fazer algo)) e うんてんしゅ (motorista, condutor).
+
+
+### 13. (recognition) Qual destas palavras significa "terremoto, tremor de terra"?
+- **Resposta:** `{"choices": ["おくりもの", "かのじょ", "じしん", "きかい"], "correct": "じしん"}`
+- じしん significa terremoto, tremor de terra. As outras opções são おくりもの (presente, brinde), きかい (oportunidade, chance) e かのじょ (ela).
+
+
+### 14. (recognition) Qual destas palavras significa "lixo"?
+- **Resposta:** `{"choices": ["ゴミ", "よこ", "かれ", "いけん"], "correct": "ゴミ"}`
+- ゴミ significa lixo. As outras opções são よこ (lado, ao lado), かれ (ele) e いけん (opinião, ponto de vista).
+
+
+### 15. (recognition) Qual destas palavras significa "quebrar, quebrar-se"?
+- **Resposta:** `{"choices": ["おちる", "ひろう", "いらっしゃる", "こわれる"], "correct": "こわれる"}`
+- こわれる significa quebrar, quebrar-se. As outras opções são いらっしゃる (estar/ir/vir (forma honorífica)), おちる (cair, despencar) e ひろう (pegar (do chão), apanhar).
+
+
+### 16. (recognition) Qual destas palavras significa "futon, colchão japonês"?
+- **Resposta:** `{"choices": ["まち", "りょうしん", "じしん", "ふとん"], "correct": "ふとん"}`
+- ふとん significa futon, colchão japonês. As outras opções são じしん (terremoto, tremor de terra), りょうしん (pais) e まち (cidade pequena, vila).
+
+
+### 17. (recognition) Qual destas palavras significa "balançar, tremer"?
+- **Resposta:** `{"choices": ["くらべる", "はらう", "まがる", "ゆれる"], "correct": "ゆれる"}`
+- ゆれる significa balançar, tremer. As outras opções são くらべる (comparar, contrastar), はらう (pagar) e まがる (virar, dobrar (uma esquina)).
+
+
+### 18. (recognition) Qual destas palavras significa "ladrão, assaltante"?
+- **Resposta:** `{"choices": ["どろぼう", "く", "やつ", "うりば"], "correct": "どろぼう"}`
+- どろぼう significa ladrão, assaltante. As outras opções são うりば (seção (de loja), balcão de vendas), く (distrito, bairro (administrativo)) e やつ (oito (coisas)).
+
+
+### 19. (recognition) Qual destas palavras significa "gás, gás (de cozinha)"?
+- **Resposta:** `{"choices": ["ガス", "ワイシャツ", "たいふう", "いがい"], "correct": "ガス"}`
+- ガス significa gás, gás (de cozinha). As outras opções são ワイシャツ (camisa social, camisa de botão), たいふう (tufão) e いがい (exceto, além de).
+
+
+### 20. (recognition) Qual destas palavras significa "vidro, vidraça"?
+- **Resposta:** `{"choices": ["やさい", "ガラス", "おくじょう", "レポート"], "correct": "ガラス"}`
+- ガラス significa vidro, vidraça. As outras opções são レポート (relatório, trabalho (escrito)), やさい (legume, verdura) e おくじょう (terraço, cobertura (de prédio)).
+
+
+### 21. (recognition) Qual destas palavras significa "presente, brinde"?
+- **Resposta:** `{"choices": ["おたく", "こうがい", "おくりもの", "きそく"], "correct": "おくりもの"}`
+- おくりもの significa presente, brinde. As outras opções são おたく (a sua casa (polido), residência (de outrem, polido)), きそく (regra, regulamento) e こうがい (subúrbios, arredores).
+
+
+### 22. (recognition) Qual destas palavras significa "bebê, neném"?
+- **Resposta:** `{"choices": ["カメラ", "この", "あかちゃん", "こんど"], "correct": "あかちゃん"}`
+- あかちゃん significa bebê, neném. As outras opções são こんど (desta vez, agora), この (nove, 9) e カメラ (câmera, máquina fotográfica).
+
+

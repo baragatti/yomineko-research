@@ -131,3 +131,43 @@ Resolva os exercícios finais do tópico e confira cada explicação.
 - 点 (てん) é o ponto e também a nota de uma prova. O mesmo kanji aparece em 点ける (つける), acender: pôr um ponto de luz.
 
 
+### 12. (recognition) Qual destas palavras significa "bem-vindo!, seja bem-vindo!"?
+- **Resposta:** `{"choices": ["はい", "いや", "いらしゃい", "ありがとう"], "correct": "いらしゃい"}`
+- いらしゃい（いらっしゃい） significa bem-vindo!, seja bem-vindo!. As outras opções são いや (não), はい (sim, isso mesmo) e ありがとう (obrigado, obrigada).
+
+
+### 13. (cloze) Complete a frase: 彼女は＿＿で書いた。 (Ela escreveu a tinta.)
+- **Resposta:** `{"text": "インク", "full": "彼女はインクで書いた。"}`
+- A palavra que falta é インク: tinta, tinta de caneta.
+- frases: `sent:tatoeba-226251`
+
+### 14. (recognition) Qual destas palavras significa "a qualquer hora, sempre"?
+- **Resposta:** `{"choices": ["何時でも", "一体", "一度に", "最も"], "correct": "何時でも"}`
+- 何時でも（いつでも） significa a qualquer hora, sempre. As outras opções são 一体 (afinal, afinal de contas), 一度に (de uma vez, ao mesmo tempo) e 最も (o mais, mais (superlativo)).
+
+
+### 15. (recognition) Qual destas palavras significa "para sempre, indefinidamente"?
+- **Resposta:** `{"choices": ["ゆっくり", "いつまでも", "ぜひ", "いっそう"], "correct": "いつまでも"}`
+- いつまでも significa para sempre, indefinidamente. As outras opções são いっそう (ainda mais, mais ainda), ゆっくり (devagar, com calma) e ぜひ (com certeza, sem falta).
+
+
+### 16. (recognition) Qual destas palavras significa "não"?
+- **Resposta:** `{"choices": ["ええ", "いや", "こんにちは", "いらしゃい"], "correct": "いや"}`
+- いや significa não. As outras opções são こんにちは (olá, boa tarde), いらしゃい (bem-vindo!, seja bem-vindo!) e ええ (sim, é).
+
+
+### 17. (cloze) Complete a frase: ＿＿してきた。 (Estou começando a ficar irritado.)
+- **Resposta:** `{"text": "イライラ", "full": "イライラしてきた。"}`
+- A palavra que falta é いらいら: irritar-se, ficar nervoso. Na frase ela aparece como イライラ.
+- frases: `sent:tatoeba-11875849`
+
+### 18. (recognition) Qual destas palavras significa "por assim dizer, digamos assim"?
+- **Resposta:** `{"choices": ["このごろ", "たまに", "いわば", "いつまでも"], "correct": "いわば"}`
+- いわば significa por assim dizer, digamos assim. As outras opções são このごろ (ultimamente, hoje em dia), たまに (de vez em quando, ocasionalmente) e いつまでも (para sempre, indefinidamente).
+
+
+### 19. (recognition) Qual destas palavras significa "obrigado pela refeição (dito antes de comer), bom apetite"?
+- **Resposta:** `{"choices": ["これから", "いけない", "やくにたつ", "いただきます"], "correct": "いただきます"}`
+- いただきます significa obrigado pela refeição (dito antes de comer), bom apetite. As outras opções são いけない (não poder ir), やくにたつ (ser útil, servir) e これから (de agora em diante, a partir de agora).
+
+

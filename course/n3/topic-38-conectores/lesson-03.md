@@ -121,3 +121,78 @@ O kanji 首 significa "pescoço, cabeça". É um pictograma de uma cabeça com c
 - 彼女 (かのじょ) é 'ela'; 彼 (かれ) sozinho é 'ele'. O mesmo 彼 está em 彼ら ('eles').
 
 
+### 11. (recognition) Qual destas palavras significa "dar, conceder"?
+- **Resposta:** `{"choices": ["あずける", "あたえる", "つれる", "めしあがる"], "correct": "あたえる"}`
+- あたえる significa dar, conceder. As outras opções são あずける (deixar aos cuidados de, depositar), つれる (levar (alguém) junto, trazer junto) e めしあがる (comer (forma respeitosa), beber (forma respeitosa)).
+
+
+### 12. (recognition) Qual destas palavras significa "médico, doutor"?
+- **Resposta:** `{"choices": ["きしゃ", "いし", "しょうらい", "みずうみ"], "correct": "いし"}`
+- いし significa médico, doutor. As outras opções são しょうらい (futuro), きしゃ (trem (esp. a vapor)) e みずうみ (lago).
+
+
+### 13. (recognition) Qual destas palavras significa "tempestade, temporal"?
+- **Resposta:** `{"choices": ["あい", "アルバム", "あらし", "つま"], "correct": "あらし"}`
+- あらし significa tempestade, temporal. As outras opções são アルバム (álbum), あい (amor, afeto) e つま (esposa, mulher).
+
+
+### 14. (recognition) Qual destas palavras significa "respiração, fôlego"?
+- **Resposta:** `{"choices": ["おもちゃ", "スーツケース", "いき", "けいけん"], "correct": "いき"}`
+- いき significa respiração, fôlego. As outras opções são スーツケース (mala (de viagem)), おもちゃ (brinquedo) e けいけん (experiência).
+
+
+### 15. (recognition) Qual destas palavras significa "demônio, diabo"?
+- **Resposta:** `{"choices": ["あせ", "ち", "かない", "あくま"], "correct": "あくま"}`
+- あくま significa demônio, diabo. As outras opções são あせ (suor), かない (esposa (minha), minha mulher) e ち (sangue).
+
+
+### 16. (recognition) Qual destas palavras significa "lidar com, manusear"?
+- **Resposta:** `{"choices": ["おる", "わかす", "あつかう", "こわれる"], "correct": "あつかう"}`
+- あつかう significa lidar com, manusear. As outras opções são おる (dobrar, curvar), こわれる (quebrar, quebrar-se) e わかす (ferver (água), esquentar).
+
+
+### 17. (recognition) Qual destas palavras significa "suor"?
+- **Resposta:** `{"choices": ["やくそく", "あせ", "ちゅうしゃじょう", "ハンドバッグ"], "correct": "あせ"}`
+- あせ significa suor. As outras opções são ハンドバッグ (bolsa, bolsa de mão), ちゅうしゃじょう (estacionamento) e やくそく (promessa, compromisso).
+
+
+### 18. (recognition) Qual destas palavras significa "óleo, gordura"?
+- **Resposta:** `{"choices": ["あぶら", "カーテン", "おどり", "そうだん"], "correct": "あぶら"}`
+- あぶら significa óleo, gordura. As outras opções são そうだん (consulta, conversa para pedir conselho), カーテン (cortina) e おどり (dança, o ato de dançar).
+
+
+### 19. (recognition) Qual destas palavras significa "ser vivo, criatura"?
+- **Resposta:** `{"choices": ["工業", "生き物", "安心", "特急"], "correct": "生き物"}`
+- 生き物（いきもの） significa ser vivo, criatura. As outras opções são 工業 (indústria, setor industrial), 特急 (trem expresso, expresso limitado) e 安心 (alívio, tranquilidade).
+
+
+### 20. (cloze) Complete a frase: ＿＿私はカメラを家においてきた。 (Infelizmente, deixei a câmera em casa.)
+- **Resposta:** `{"text": "あいにく", "full": "あいにく私はカメラを家においてきた。"}`
+- A palavra que falta é あいにく: infelizmente, em má hora.
+- frases: `sent:tatoeba-234564`
+
+### 21. (recognition) Qual destas palavras significa "buraco, cavidade"?
+- **Resposta:** `{"choices": ["あいじょう", "あな", "あぶら", "あんき"], "correct": "あな"}`
+- あな significa buraco, cavidade. As outras opções são あぶら (óleo, gordura), あんき (memorização, decorar) e あいじょう (amor, afeto).
+
+
+### 22. (cloze) Complete a frase: うちの会社には＿＿がない。 (Não tem vaga na nossa empresa.)
+- **Resposta:** `{"text": "空き", "full": "うちの会社には空きがない。"}`
+- A palavra que falta é 空き（あき）: espaço vago, vão.
+- frases: `sent:tatoeba-228222`
+
+### 23. (recognition) Qual destas palavras significa "estômago"?
+- **Resposta:** `{"choices": ["とちゅう", "あな", "い", "せなか"], "correct": "い"}`
+- い significa estômago. As outras opções são あな (buraco, cavidade), とちゅう (no caminho, a caminho) e せなか (costas).
+
+
+### 24. (cloze) Complete a frase: 雨で＿＿はなくなった。 (O encontro foi cancelado por causa da chuva.)
+- **Resposta:** `{"text": "集まり", "full": "雨で集まりはなくなった。"}`
+- A palavra que falta é 集まり（あつまり）: reunião, encontro.
+- frases: `sent:tatoeba-11682886`
+
+### 25. (recognition) Qual destas palavras significa "deixar aos cuidados de, depositar"?
+- **Resposta:** `{"choices": ["あきらめる", "かつ", "ねむる", "あずける"], "correct": "あずける"}`
+- あずける significa deixar aos cuidados de, depositar. As outras opções são かつ (vencer, ganhar), あきらめる (desistir, dar-se por vencido) e ねむる (dormir, adormecer).
+
+

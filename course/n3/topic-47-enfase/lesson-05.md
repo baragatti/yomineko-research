@@ -101,3 +101,48 @@ O kanji 頂 ('topo, cume; receber') aparece em 頂上 ('cume, topo') e em 頂く
 - 頂く é receber levantando a coisa até o alto da cabeça, o mesmo kanji do cume 頂上. É a forma humilde: quem recebe se abaixa diante de quem dá.
 
 
+### 8. (cloze) Complete a frase: ＿＿の調子がおかしい。 (A máquina de escrever está com algum problema.)
+- **Resposta:** `{"text": "タイプライター", "full": "タイプライターの調子がおかしい。"}`
+- A palavra que falta é タイプライター: máquina de escrever.
+- frases: `sent:tatoeba-1555133`
+
+### 9. (cloze) Complete a frase: ＿＿は明るく光った。 (O diamante brilhou forte.)
+- **Resposta:** `{"text": "ダイヤ", "full": "ダイヤは明るく光った。"}`
+- A palavra que falta é ダイヤ: diamante.
+- frases: `sent:tatoeba-203874`
+
+### 10. (cloze) Complete a frase: 私が彼の＿＿をします。 (Eu vou representá-lo.)
+- **Resposta:** `{"text": "代理", "full": "私が彼の代理をします。"}`
+- A palavra que falta é 代理（だいり）: representação, procuração.
+- frases: `sent:tatoeba-167486`
+
+### 11. (recognition) Qual destas palavras significa "derrubar, jogar no chão"?
+- **Resposta:** `{"choices": ["たおす", "ことなる", "くるう", "なやむ"], "correct": "たおす"}`
+- たおす significa derrubar, jogar no chão. As outras opções são なやむ (preocupar-se, afligir-se), ことなる (diferir, ser diferente) e くるう (enlouquecer, ficar louco).
+
+
+### 12. (recognition) Qual destas palavras significa "grande guerra, guerra mundial"?
+- **Resposta:** `{"choices": ["大戦", "学習", "疑問", "世話"], "correct": "大戦"}`
+- 大戦（たいせん） significa grande guerra, guerra mundial. As outras opções são 疑問 (dúvida, questionamento), 学習 (aprendizado, estudo) e 世話 (cuidado, assistência).
+
+
+### 13. (cloze) Complete a frase: その仕事は＿＿完成した。 (Esse trabalho já está quase todo pronto.)
+- **Resposta:** `{"text": "大部分", "full": "その仕事は大部分完成した。"}`
+- A palavra que falta é 大部分（だいぶぶん）: a maior parte, a maioria.
+- frases: `sent:tatoeba-210355`
+
+### 14. (cloze) Complete a frase: あの山の頂上は＿＿だ。 (O topo daquela montanha é plano.)
+- **Resposta:** `{"text": "平ら", "full": "あの山の頂上は平らだ。"}`
+- A palavra que falta é 平ら（たいら）: plano, nivelado.
+- frases: `sent:tatoeba-230999`
+
+### 15. (recognition) Qual destas palavras significa "atitude, postura"?
+- **Resposta:** `{"choices": ["こうえん", "こっせつ", "たいど", "たいほ"], "correct": "たいど"}`
+- たいど significa atitude, postura. As outras opções são こうえん (dar uma palestra, fazer uma conferência), たいほ (prisão, detenção) e こっせつ (fratura óssea).
+
+
+### 16. (recognition) Qual destas palavras significa "prisão, detenção"?
+- **Resposta:** `{"choices": ["こうけん", "たいほ", "けっせき", "こうか"], "correct": "たいほ"}`
+- たいほ significa prisão, detenção. As outras opções são こうけん (contribuir), けっせき (falta (ausência), ausência) e こうか (moeda (metálica)).
+
+

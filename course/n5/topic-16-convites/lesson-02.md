@@ -125,3 +125,43 @@ Dois kanji simples de traços, ligados à natureza:
 - 木 é o desenho de uma árvore: o tronco no meio, os galhos abertos em cima e as raízes embaixo. Sozinho ele já é a palavra き.
 
 
+### 9. (recognition) Qual destas palavras significa "cama"?
+- **Resposta:** `{"choices": ["ベッド", "はじめ", "フォーク", "にもつ"], "correct": "ベッド"}`
+- ベッド significa cama. As outras opções são はじめ (início, começo), フォーク (garfo) e にもつ (bagagem, carga).
+
+
+### 10. (recognition) Qual destas palavras significa "animal de estimação, bicho de estimação"?
+- **Resposta:** `{"choices": ["ころ", "ペット", "ぼうし", "なつやすみ"], "correct": "ペット"}`
+- ペット significa animal de estimação, bicho de estimação. As outras opções são ぼうし (chapéu, boné), なつやすみ (férias de verão, recesso de verão) e ころ (época, por volta de).
+
+
+### 11. (recognition) Qual destas palavras significa "bolso"?
+- **Resposta:** `{"choices": ["ポケット", "ひらがな", "はい", "へや"], "correct": "ポケット"}`
+- ポケット significa bolso. As outras opções são はい (cálice de saquê, taça para bebidas alcoólicas), へや (quarto, cômodo) e ひらがな (hiragana (silabário japonês)).
+
+
+### 12. (recognition) Qual destas palavras significa "caixa de correio"?
+- **Resposta:** `{"choices": ["ばんごう", "ポスト", "びょういん", "ペット"], "correct": "ポスト"}`
+- ポスト significa caixa de correio. As outras opções são ペット (animal de estimação, bicho de estimação), ばんごう (número) e びょういん (hospital).
+
+
+### 13. (recognition) Qual destas palavras significa "inverno"?
+- **Resposta:** `{"choices": ["ひき", "ふゆ", "プール", "へや"], "correct": "ふゆ"}`
+- ふゆ significa inverno. As outras opções são ひき (contador de animais pequenos), プール (piscina) e へや (quarto, cômodo).
+
+
+### 14. (recognition) Qual destas palavras significa "chapéu, boné"?
+- **Resposta:** `{"choices": ["ぼうし", "あお", "まえ", "ナイフ"], "correct": "ぼうし"}`
+- ぼうし significa chapéu, boné. As outras opções são まえ (frente, à frente), あお (azul) e ナイフ (faca).
+
+
+### 15. (recognition) Qual destas formas significa "roupa, roupas"?
+- **Resposta:** `{"choices": ["ひらがな", "ふく", "ふゆ", "はがき"], "correct": "ふく"}`
+- ふく significa roupa, roupas. As outras opções são ふゆ (inverno), はがき (cartão-postal) e ひらがな (hiragana (silabário japonês)).
+
+
+### 16. (recognition) Qual destas palavras significa "botão"?
+- **Resposta:** `{"choices": ["ひこうき", "ノート", "はれ", "ボタン"], "correct": "ボタン"}`
+- ボタン significa botão. As outras opções são ひこうき (avião), ノート (caderno) e はれ (tempo bom, céu claro).
+
+

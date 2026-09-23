@@ -97,3 +97,13 @@ Antes de praticar, guarde dois itens que vão aparecer em textos mais à frente.
 - Eu dou (a coisa sai de mim) = あげる. 私は (tópico) + 友だちに (quem recebe) + 本を (coisa) + あげます (dou, educado). O に marca o destino.
 
 
+### 7. (recognition) Qual destas palavras significa "assim, desse jeito"?
+- **Resposta:** `{"choices": ["ちょっと", "もう", "そう", "だんだん"], "correct": "そう"}`
+- そう significa assim, desse jeito. As outras opções são ちょっと (um pouco, um pouquinho), もう (já) e だんだん (gradualmente, aos poucos).
+
+
+### 8. (production) Escreva em japonês a palavra que significa "e, e então".
+- **Resposta:** `{"text": "そして", "accept": ["そして"]}`
+- A resposta é そして: e, e então.
+
+

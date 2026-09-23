@@ -195,3 +195,73 @@ O 桜 (flor de cerejeira) tem o seu 盛り ('auge') por poucos dias na primavera
 - É 静か, um adjetivo-な: o か fica em kana e a leitura しず mora no kanji. Nos compostos ele muda para せい, como em 冷静 (れいせい).
 
 
+### 23. (cloze) Complete a frase: ＿＿はどこにするの？ (Onde é que eu assino?)
+- **Resposta:** `{"text": "サイン", "full": "サインはどこにするの？"}`
+- A palavra que falta é サイン: assinatura, autógrafo.
+- frases: `sent:tatoeba-10643571`
+
+### 24. (cloze) Complete a frase: この天気は＿＿によくない。 (Esse tempo não é bom para as plantações.)
+- **Resposta:** `{"text": "作物", "full": "この天気は作物によくない。"}`
+- A palavra que falta é 作物（さくもつ）: plantação, cultura agrícola.
+- frases: `sent:tatoeba-220444`
+
+### 25. (cloze) Complete a frase: 台風は＿＿。 (O tufão passou.)
+- **Resposta:** `{"text": "去った", "full": "台風は去った。"}`
+- A palavra que falta é 去る（さる）: partir, ir embora. Na frase ela aparece como 去った.
+- frases: `sent:tatoeba-137786`
+
+### 26. (cloze) Complete a frase: ぜひご＿＿ください。 (Participe, por favor!)
+- **Resposta:** `{"text": "参加", "full": "ぜひご参加ください。"}`
+- A palavra que falta é 参加（さんか）: participação.
+- frases: `sent:tatoeba-9966137`
+
+### 27. (recognition) Qual destas palavras significa "limite, fronteira"?
+- **Resposta:** `{"choices": ["マイク", "さかい", "ゲーム", "なみだ"], "correct": "さかい"}`
+- さかい significa limite, fronteira. As outras opções são マイク (microfone), ゲーム (jogo, game) e なみだ (lágrimas).
+
+
+### 28. (cloze) Complete a frase: 彼は＿＿を見た。 (Ele olhou para os dois lados.)
+- **Resposta:** `{"text": "左右", "full": "彼は左右を見た。"}`
+- A palavra que falta é 左右（さゆう）: esquerda e direita.
+- frases: `sent:tatoeba-8693841`
+
+### 29. (cloze) Complete a frase: 時計は２時を＿＿いる。 (O relógio está marcando duas horas.)
+- **Resposta:** `{"text": "指して", "full": "時計は２時を指している。"}`
+- A palavra que falta é 指す（さす）: apontar (para), indicar. Na frase ela aparece como 指して.
+- frases: `sent:tatoeba-150519`
+
+### 30. (recognition) Qual destas palavras significa "flor de cerejeira, cerejeira"?
+- **Resposta:** `{"choices": ["わけ", "つゆ", "さくら", "ホーム"], "correct": "さくら"}`
+- さくら significa flor de cerejeira, cerejeira. As outras opções são ホーム (plataforma (de estação)), つゆ (estação das chuvas (início do verão no Japão)) e わけ (razão, motivo).
+
+
+### 31. (recognition) Qual destas formas significa "Sr., Sra."?
+- **Resposta:** `{"choices": ["さわぎ", "し", "さかり", "ご"], "correct": "し"}`
+- し significa Sr., Sra.. As outras opções são さわぎ (alvoroço, tumulto), さかり (auge, pico) e ご (prefixo honorífico (antes de substantivos)).
+
+
+### 32. (recognition) Qual destas palavras significa "macaco, símio"?
+- **Resposta:** `{"choices": ["こうえん", "だいじん", "タオル", "さる"], "correct": "さる"}`
+- さる significa macaco, símio. As outras opções são だいじん (ministro (de Estado)), こうえん (dar uma palestra, fazer uma conferência) e タオル (toalha).
+
+
+### 33. (recognition) Qual destas formas significa "auge, pico"?
+- **Resposta:** `{"choices": ["さかり", "かんりょう", "まく", "マイク"], "correct": "さかり"}`
+- さかり significa auge, pico. As outras opções são かんりょう (conclusão, finalização), まく (cortina (de palco)) e マイク (microfone).
+
+
+### 34. (recognition) Qual destas palavras significa "julgamento, processo judicial"?
+- **Resposta:** `{"choices": ["こんざつ", "りょう", "びょう", "さいばん"], "correct": "さいばん"}`
+- さいばん significa julgamento, processo judicial. As outras opções são びょう (segundo (tempo)), こんざつ (aglomeração, congestionamento) e りょう (quantidade, volume).
+
+
+### 35. (recognition) Qual destas palavras significa "oxigênio"?
+- **Resposta:** `{"choices": ["りこん", "クリスマス", "たいりく", "さんそ"], "correct": "さんそ"}`
+- さんそ significa oxigênio. As outras opções são たいりく (continente), クリスマス (Natal) e りこん (divórcio).
+
+
+### 36. (cloze) Complete a frase: 友人を選ぶ＿＿には気を付けるべきだ。 (É bom ter cuidado na hora de escolher os amigos.)
+- **Resposta:** `{"text": "際", "full": "友人を選ぶ際には気を付けるべきだ。"}`
+- A palavra que falta é 際（さい）: ocasião, momento (de fazer algo).
+- frases: `sent:tatoeba-79337`
+

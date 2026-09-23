@@ -137,3 +137,63 @@ Armadilha PT: palavras como 観光 (かんこう) têm DUAS coisas de duração 
 - 違 carrega o radical de movimento e a ideia de sair do lugar certo: daí vêm tanto "ser diferente" quanto "errar". A base ちが reaparece igual em 間違える.
 
 
+### 13. (recognition) Qual destas palavras significa "cortar (cabelo, grama), aparar"?
+- **Resposta:** `{"choices": ["いじめる", "かる", "おぼれる", "うったえる"], "correct": "かる"}`
+- かる significa cortar (cabelo, grama), aparar. As outras opções são おぼれる (afogar-se, quase se afogar), うったえる (apelar, recorrer) e いじめる (maltratar, atormentar).
+
+
+### 14. (recognition) Qual destas palavras significa "conclusão, finalização"?
+- **Resposta:** `{"choices": ["あと", "ろうじん", "かんりょう", "おひる"], "correct": "かんりょう"}`
+- かんりょう significa conclusão, finalização. As outras opções são おひる (meio-dia, hora do almoço), ろうじん (idoso, pessoa idosa) e あと (marca, rastro).
+
+
+### 15. (recognition) Qual destas palavras significa "completo, perfeito"?
+- **Resposta:** `{"choices": ["わずか", "かんぜん", "おんだん", "すてき"], "correct": "かんぜん"}`
+- かんぜん significa completo, perfeito. As outras opções são すてき (lindo, maravilhoso), おんだん (ameno, temperado) e わずか (mínimo, escasso).
+
+
+### 16. (recognition) Qual destas palavras significa "conclusão, término"?
+- **Resposta:** `{"choices": ["かんせい", "ていしゅつ", "かくご", "かん"], "correct": "かんせい"}`
+- かんせい significa conclusão, término. As outras opções são かん (lata), かくご (determinação, preparo psicológico) e ていしゅつ (entregar, apresentar (documento)).
+
+
+### 17. (recognition) Qual destas palavras significa "clima"?
+- **Resposta:** `{"choices": ["とうちゃく", "ふうふ", "きこう", "かくだい"], "correct": "きこう"}`
+- きこう significa clima. As outras opções são とうちゃく (chegar, chegada), かくだい (expansão, ampliação) e ふうふ (casal, marido e mulher).
+
+
+### 18. (recognition) Qual destas palavras significa "temperatura (do ar)"?
+- **Resposta:** `{"choices": ["きこう", "ていど", "きおん", "バン"], "correct": "きおん"}`
+- きおん significa temperatura (do ar). As outras opções são きこう (clima), ていど (grau, nível) e バン (van, furgão).
+
+
+### 19. (recognition) Qual destas palavras significa "pele"?
+- **Resposta:** `{"choices": ["かわ", "い", "どうりょう", "ちょしゃ"], "correct": "かわ"}`
+- かわ significa pele. As outras opções são どうりょう (colega de trabalho, colega), ちょしゃ (autor, autora) e い (estômago).
+
+
+### 20. (recognition) Qual destas palavras significa "lata"?
+- **Resposta:** `{"choices": ["オフィス", "かん", "せいきゅう", "きおく"], "correct": "かん"}`
+- かん significa lata. As outras opções são せいきゅう (reivindicar, exigir), オフィス (escritório, escritório (de empresa)) e きおく (memória, lembrança).
+
+
+### 21. (recognition) Qual destas palavras significa "turismo, passeio turístico"?
+- **Resposta:** `{"choices": ["よさん", "ふこう", "とうひょう", "かんこう"], "correct": "かんこう"}`
+- かんこう significa turismo, passeio turístico. As outras opções são とうひょう (votar, votação), よさん (orçamento) e ふこう (infelicidade, infortúnio).
+
+
+### 22. (recognition) Qual destas palavras significa "público, espectadores"?
+- **Resposta:** `{"choices": ["いねむり", "かんきゃく", "ペン", "ふち"], "correct": "かんきゃく"}`
+- かんきゃく significa público, espectadores. As outras opções são ふち (borda, beira), ペン (caneta) e いねむり (cochilar, dormitar).
+
+
+### 23. (recognition) Qual destas palavras significa "observação"?
+- **Resposta:** `{"choices": ["かんきゃく", "かんさつ", "かんげい", "わん"], "correct": "かんさつ"}`
+- かんさつ significa observação. As outras opções são わん (baía, golfo), かんげい (dar as boas-vindas, acolher) e かんきゃく (público, espectadores).
+
+
+### 24. (recognition) Qual destas palavras significa "couro"?
+- **Resposta:** `{"choices": ["かげん", "かんきょう", "かわ", "ユーモア"], "correct": "かわ"}`
+- かわ significa couro. As outras opções são かんきょう (ambiente, meio ambiente), ユーモア (humor, senso de humor) e かげん (grau, medida).
+
+

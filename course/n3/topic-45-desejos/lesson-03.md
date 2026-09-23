@@ -140,3 +140,68 @@ O kanji 突 significa 'perfurar, cravar, de repente'. Tem a abertura (穴) em ci
 - É 突然, とつぜん. O 然 do fim é o mesmo de 全然: nessas palavras ele funciona como um sufixo de 'estado, jeito'.
 
 
+### 14. (recognition) Qual destas palavras significa "descida, trajeto de descida"?
+- **Resposta:** `{"choices": ["下り", "無事", "銀", "全員"], "correct": "下り"}`
+- 下り（くだり） significa descida, trajeto de descida. As outras opções são 無事 (segurança, são e salvo), 銀 (prata) e 全員 (todos os membros, todo mundo).
+
+
+### 15. (recognition) Qual destas palavras significa "enlouquecer, ficar louco"?
+- **Resposta:** `{"choices": ["くりかえす", "くさる", "くらす", "くるう"], "correct": "くるう"}`
+- くるう significa enlouquecer, ficar louco. As outras opções são くらす (viver, levar a vida), くさる (apodrecer, estragar) e くりかえす (repetir, refazer).
+
+
+### 16. (recognition) Qual destas palavras significa "proibido fumar, área de não fumantes"?
+- **Resposta:** `{"choices": ["きんえん", "わ", "キロメートル", "はし"], "correct": "きんえん"}`
+- きんえん significa proibido fumar, área de não fumantes. As outras opções são わ (anel, aro), はし (hashi, pauzinhos) e キロメートル (quilômetro).
+
+
+### 17. (recognition) Qual destas palavras significa "músculo, musculatura"?
+- **Resposta:** `{"choices": ["きんにく", "グループ", "トラ", "グラス"], "correct": "きんにく"}`
+- きんにく significa músculo, musculatura. As outras opções são グループ (grupo), トラ (tigre) e グラス (copo (de vidro), taça).
+
+
+### 18. (recognition) Qual destas palavras significa "tubo, cano"?
+- **Resposta:** `{"choices": ["くだ", "ぐんたい", "そうさ", "かち"], "correct": "くだ"}`
+- くだ significa tubo, cano. As outras opções são ぐんたい (exército, forças armadas), そうさ (operação, manuseio (de máquina)) e かち (valor, mérito).
+
+
+### 19. (recognition) Qual destas palavras significa "associação, sindicato"?
+- **Resposta:** `{"choices": ["青年", "組合", "機関", "記事"], "correct": "組合"}`
+- 組合（くみあい） significa associação, sindicato. As outras opções são 機関 (órgão, instituição), 青年 (jovem, rapaz) e 記事 (matéria, artigo).
+
+
+### 20. (recognition) Qual destas palavras significa "apodrecer, estragar"?
+- **Resposta:** `{"choices": ["うつす", "かせぐ", "ふる", "くさる"], "correct": "くさる"}`
+- くさる significa apodrecer, estragar. As outras opções são ふる (acenar, balançar), かせぐ (ganhar (dinheiro), faturar) e うつす (mover, transferir).
+
+
+### 21. (cloze) Complete a frase: 彼の言うことは＿＿。 (O que ele diz é suspeito.)
+- **Resposta:** `{"text": "くさい", "full": "彼の言うことはくさい。"}`
+- A palavra que falta é くさい: feder, ter mau cheiro.
+- frases: `sent:tatoeba-117628`
+
+### 22. (recognition) Qual destas palavras significa "leitura kun (leitura japonesa de um kanji)"?
+- **Resposta:** `{"choices": ["くせ", "くん", "きんえん", "くれ"], "correct": "くん"}`
+- くん significa leitura kun (leitura japonesa de um kanji). As outras opções são くせ (mania, hábito), きんえん (proibido fumar, área de não fumantes) e くれ (anoitecer, crepúsculo).
+
+
+### 23. (recognition) Qual destas palavras significa "exército, forças armadas"?
+- **Resposta:** `{"choices": ["やくそく", "ぐん", "プラン", "スポーツ"], "correct": "ぐん"}`
+- ぐん significa exército, forças armadas. As outras opções são プラン (plano, projeto), スポーツ (esporte, esportes) e やくそく (promessa, compromisso).
+
+
+### 24. (recognition) Qual destas palavras significa "exército, forças armadas"?
+- **Resposta:** `{"choices": ["ドライブ", "いね", "えいぎょう", "ぐんたい"], "correct": "ぐんたい"}`
+- ぐんたい significa exército, forças armadas. As outras opções são えいぎょう (atividade comercial, operação (de negócio)), ドライブ (passeio de carro, volta de carro) e いね (pé de arroz, arroz (planta)).
+
+
+### 25. (recognition) Qual destas palavras significa "corrente"?
+- **Resposta:** `{"choices": ["ベルト", "きんこ", "せつび", "くさり"], "correct": "くさり"}`
+- くさり significa corrente. As outras opções são きんこ (cofre, caixa-forte), せつび (equipamento, instalações) e ベルト (cinto).
+
+
+### 26. (cloze) Complete a frase: ＿＿んなら、食え。 (Se quer comer, come.)
+- **Resposta:** `{"text": "食いたい", "full": "食いたいんなら、食え。"}`
+- A palavra que falta é 食う（くう）: comer (informal), papar. Na frase ela aparece como 食いたい.
+- frases: `sent:tatoeba-11195681`
+

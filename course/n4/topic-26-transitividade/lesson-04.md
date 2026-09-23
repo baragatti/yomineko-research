@@ -112,3 +112,33 @@ Cinco kanji ligados a viagem, tempo e moradia:
 - 毎朝 abre a frase marcando a frequência e 運動する vira 運動します no educado. O kanji 運 usa aqui a leitura on ウン.
 
 
+### 9. (recognition) Qual destas palavras significa "veículo, meio de transporte"?
+- **Resposta:** `{"choices": ["にく", "のりもの", "どうぶつえん", "けっこん"], "correct": "のりもの"}`
+- のりもの significa veículo, meio de transporte. As outras opções são どうぶつえん (zoológico, jardim zoológico), けっこん (casamento, casar-se) e にく (carne).
+
+
+### 10. (recognition) Qual destas palavras significa "passarinho, pássaro pequeno"?
+- **Resposta:** `{"choices": ["サラダ", "ことり", "けが", "おみやげ"], "correct": "ことり"}`
+- ことり significa passarinho, pássaro pequeno. As outras opções são おみやげ (lembrança, souvenir), サラダ (salada) e けが (ferimento, machucado).
+
+
+### 11. (recognition) Qual destas palavras significa "pousada japonesa, ryokan"?
+- **Resposta:** `{"choices": ["じゅうどう", "オーバー", "かいがん", "りょかん"], "correct": "りょかん"}`
+- りょかん significa pousada japonesa, ryokan. As outras opções são オーバー (sobretudo, casacão), じゅうどう (judô) e かいがん (litoral, costa).
+
+
+### 12. (recognition) Qual destas palavras significa "acompanhamento, orientação"?
+- **Resposta:** `{"choices": ["スクリーン", "あんない", "こうむいん", "りょかん"], "correct": "あんない"}`
+- あんない significa acompanhamento, orientação. As outras opções são りょかん (pousada japonesa, ryokan), スクリーン (tela, telão) e こうむいん (funcionário público, servidor público).
+
+
+### 13. (recognition) Qual destas palavras significa "floresta, bosque"?
+- **Resposta:** `{"choices": ["こうむいん", "ことり", "もり", "おいわい"], "correct": "もり"}`
+- もり significa floresta, bosque. As outras opções são おいわい (comemoração, celebração), ことり (passarinho, pássaro pequeno) e こうむいん (funcionário público, servidor público).
+
+
+### 14. (recognition) Qual destas palavras significa "direção, ato de dirigir"?
+- **Resposta:** `{"choices": ["きって", "うんてん", "しょうせつ", "しき"], "correct": "うんてん"}`
+- うんてん significa direção, ato de dirigir. As outras opções são しょうせつ (romance (livro), ficção), きって (selo postal, selo) e しき (cerimônia).
+
+

@@ -96,3 +96,28 @@ O kanji 雨 significa chuva. A leitura principal é あめ (sozinho, 雨 = "chuv
 - Aqui 何 se lê なん: 何で (なんで) é o 'por quê' mais casual, irmão de どうして. A resposta volta com から, como em 熱があったから ('porque eu estava com febre'). A leitura なん vem antes de sons das linhas た, だ e な (何で なんで, 何と なんと, 何の なんの, 何です なんです) e antes de contadores (何人 なんにん, 何時 なんじ). Antes de か, 何 continua なに: 何か se lê なにか.
 
 
+### 7. (production) Escreva em japonês a palavra que significa "do que (comparação)".
+- **Resposta:** `{"text": "より", "accept": ["より"]}`
+- A resposta é より: do que (comparação).
+
+
+### 8. (recognition) Qual destas palavras significa "noite"?
+- **Resposta:** `{"choices": ["みせ", "よる", "むこう", "メガネ"], "correct": "よる"}`
+- よる significa noite. As outras opções são メガネ (óculos), むこう (o outro lado, lá) e みせ (loja).
+
+
+### 9. (recognition) Qual destas palavras significa "ontem à noite, a noite passada"?
+- **Resposta:** `{"choices": ["マッチ", "とけい", "ゆうべ", "わたし"], "correct": "ゆうべ"}`
+- ゆうべ significa ontem à noite, a noite passada. As outras opções são わたし (eu, mim), マッチ (fósforo (palito de acender)) e とけい (relógio).
+
+
+### 10. (recognition) Qual destas palavras significa "eu, mim"?
+- **Resposta:** `{"choices": ["ぶんしょう", "ゆうべ", "わたし", "じびき"], "correct": "わたし"}`
+- わたし significa eu, mim. As outras opções são ゆうべ (ontem à noite, a noite passada), ぶんしょう (texto, frase) e じびき (dicionário).
+
+
+### 11. (recognition) Qual destas palavras significa "neve"?
+- **Resposta:** `{"choices": ["ゆき", "わたし", "ポケット", "ほんだな"], "correct": "ゆき"}`
+- ゆき significa neve. As outras opções são ポケット (bolso), ほんだな (estante de livros, prateleira de livros) e わたし (eu, mim).
+
+

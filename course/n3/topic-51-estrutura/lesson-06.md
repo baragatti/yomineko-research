@@ -97,3 +97,58 @@ Não troque 辞める (やめる, "demitir-se, largar o emprego") por 止める 
 - 辞める (やめる) é "sair do cargo"; o objeto vem com を (会社を) e つもりだ expressa intenção.
 
 
+### 6. (recognition) Qual destas palavras significa "incômodo, trabalhoso"?
+- **Resposta:** `{"choices": ["そまつ", "ばくだい", "やっかい", "たいくつ"], "correct": "やっかい"}`
+- やっかい significa incômodo, trabalhoso. As outras opções são たいくつ (entediante, chato), ばくだい (enorme, imenso) e そまつ (simples, modesto).
+
+
+### 7. (recognition) Qual destas palavras significa "aluguel"?
+- **Resposta:** `{"choices": ["やちん", "たいほ", "ボール", "こうくう"], "correct": "やちん"}`
+- やちん significa aluguel. As outras opções são ボール (bola), こうくう (aviação) e たいほ (prisão, detenção).
+
+
+### 8. (cloze) Complete a frase: ＿＿では昼食は出ません。 (A pousada não serve almoço.)
+- **Resposta:** `{"text": "宿", "full": "宿では昼食は出ません。"}`
+- A palavra que falta é 宿（やど）: pousada, hospedagem.
+- frases: `sent:tatoeba-2950759`
+
+### 9. (cloze) Complete a frase: 私のパソコンは何かの＿＿に立つはずだ。 (Meu computador tem que servir para alguma coisa.)
+- **Resposta:** `{"text": "役", "full": "私のパソコンは何かの役に立つはずだ。"}`
+- A palavra que falta é 役（やく）: papel, personagem.
+- frases: `sent:tatoeba-4827`
+
+### 10. (recognition) Qual destas palavras significa "reclamação, queixa"?
+- **Resposta:** `{"choices": ["こっきょう", "もんく", "むだ", "しょめい"], "correct": "もんく"}`
+- もんく significa reclamação, queixa. As outras opções são むだ (inútil, em vão), しょめい (assinar (o nome)) e こっきょう (fronteira (entre países)).
+
+
+### 11. (recognition) Qual destas palavras significa "padrão, estampa"?
+- **Resposta:** `{"choices": ["しんさつ", "もよう", "だんたい", "こむぎ"], "correct": "もよう"}`
+- もよう significa padrão, estampa. As outras opções são だんたい (grupo, organização), しんさつ (examinar (o paciente), consultar) e こむぎ (trigo).
+
+
+### 12. (cloze) Complete a frase: ＿＿の明るい面を見なさい。 (Olhe o lado bom das coisas.)
+- **Resposta:** `{"text": "物事", "full": "物事の明るい面を見なさい。"}`
+- A palavra que falta é 物事（ものごと）: as coisas, os assuntos.
+- frases: `sent:tatoeba-83763`
+
+### 13. (cloze) Complete a frase: 彼は約束を＿＿。 (Ele quebrou a promessa.)
+- **Resposta:** `{"text": "破った", "full": "彼は約束を破った。"}`
+- A palavra que falta é 破る（やぶる）: rasgar, romper. Na frase ela aparece como 破った.
+- frases: `sent:tatoeba-5095`
+
+### 14. (recognition) Qual destas palavras significa "um pouco, ligeiramente"?
+- **Resposta:** `{"choices": ["やや", "めったに", "ちかごろ", "そっと"], "correct": "やや"}`
+- やや significa um pouco, ligeiramente. As outras opções são そっと (de leve, suavemente), ちかごろ (ultimamente, recentemente) e めったに (raramente, quase nunca).
+
+
+### 15. (cloze) Complete a frase: 彼は正直＿＿だ。 (Ele é uma pessoa honesta.)
+- **Resposta:** `{"text": "者", "full": "彼は正直者だ。"}`
+- A palavra que falta é 者（もの）: pessoa, aquele que.
+- frases: `sent:tatoeba-103272`
+
+### 16. (cloze) Complete a frase: ＿＿静かになった。 (Logo depois tudo ficou quieto.)
+- **Resposta:** `{"text": "やがて", "full": "やがて静かになった。"}`
+- A palavra que falta é やがて: em breve, logo.
+- frases: `sent:tatoeba-11013713`
+

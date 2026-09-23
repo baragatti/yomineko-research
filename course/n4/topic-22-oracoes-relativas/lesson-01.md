@@ -138,3 +138,83 @@ E adjetivos de medida como 深い ("fundo") e 浅い ("raso") ajudam a completar
 - 食べ物 é a coisa (物) que se come. O mesmo molde dá 飲み物 (bebida) e 買い物 (compras): verbo na base mais 物.
 
 
+### 13. (recognition) Qual destas palavras significa "parar (de), largar"?
+- **Resposta:** `{"choices": ["おる", "やめる", "はらう", "なる"], "correct": "やめる"}`
+- やめる significa parar (de), largar. As outras opções são はらう (pagar), おる (dobrar, curvar) e なる (tocar (sino, campainha), soar).
+
+
+### 14. (recognition) Qual destas palavras significa "desta vez, agora"?
+- **Resposta:** `{"choices": ["スリッパ", "こんど", "びょうき", "ぶんしょう"], "correct": "こんど"}`
+- こんど significa desta vez, agora. As outras opções são びょうき (doença, enfermidade), スリッパ (chinelo, pantufa) e ぶんしょう (texto, frase).
+
+
+### 15. (recognition) Qual destas palavras significa "rigoroso, severo"?
+- **Resposta:** `{"choices": ["あたたかい", "にがい", "ふかい", "きびしい"], "correct": "きびしい"}`
+- きびしい significa rigoroso, severo. As outras opções são ふかい (fundo, profundo (água, buraco)), にがい (amargo) e あたたかい (quente (clima ameno), morno).
+
+
+### 16. (recognition) Qual destas palavras significa "construir, erguer"?
+- **Resposta:** `{"choices": ["うかがう", "おちる", "たてる", "やせる"], "correct": "たてる"}`
+- たてる significa construir, erguer. As outras opções são おちる (cair, despencar), うかがう (visitar (humilde), ir à casa de (humilde)) e やせる (emagrecer, perder peso).
+
+
+### 17. (recognition) Qual destas palavras significa "ele"?
+- **Resposta:** `{"choices": ["かれ", "オートバイ", "しょうがつ", "おくじょう"], "correct": "かれ"}`
+- かれ significa ele. As outras opções são しょうがつ (Ano-Novo, feriado de Ano-Novo), おくじょう (terraço, cobertura (de prédio)) e オートバイ (moto, motocicleta).
+
+
+### 18. (cloze) Complete a frase: 私は人ごみのなかで＿＿を見つけた。 (Eu a avistei no meio da multidão.)
+- **Resposta:** `{"text": "彼女", "full": "私は人ごみのなかで彼女を見つけた。"}`
+- A palavra que falta é かのじょ: ela. Na frase ela aparece como 彼女.
+- frases: `sent:tatoeba-155677`
+
+### 19. (recognition) Qual destas palavras significa "necessário, preciso"?
+- **Resposta:** `{"choices": ["ひつよう", "まっすぐ", "たいてい", "べんり"], "correct": "ひつよう"}`
+- ひつよう significa necessário, preciso. As outras opções são たいてい (geralmente, na maioria das vezes), まっすぐ (reto, direito) e べんり (conveniente, prático).
+
+
+### 20. (recognition) Qual destas palavras significa "triste"?
+- **Resposta:** `{"choices": ["わかい", "つよい", "きびしい", "かなしい"], "correct": "かなしい"}`
+- かなしい significa triste. As outras opções são きびしい (rigoroso, severo), わかい (jovem, novo) e つよい (forte, poderoso).
+
+
+### 21. (recognition) Qual destas palavras significa "oportunidade, chance"?
+- **Resposta:** `{"choices": ["ふろ", "きかい", "おもて", "かのじょ"], "correct": "きかい"}`
+- きかい significa oportunidade, chance. As outras opções são おもて (frente, face), かのじょ (ela) e ふろ (banho, banheira).
+
+
+### 22. (recognition) Qual destas palavras significa "raso"?
+- **Resposta:** `{"choices": ["よわい", "かなしい", "やわらかい", "あさい"], "correct": "あさい"}`
+- あさい significa raso. As outras opções são よわい (fraco, frágil), かなしい (triste) e やわらかい (macio, mole).
+
+
+### 23. (recognition) Qual destas palavras significa "fundo, profundo (água, buraco)"?
+- **Resposta:** `{"choices": ["にがい", "かなしい", "ふかい", "きびしい"], "correct": "ふかい"}`
+- ふかい significa fundo, profundo (água, buraco). As outras opções são かなしい (triste), きびしい (rigoroso, severo) e にがい (amargo).
+
+
+### 24. (recognition) Qual destas palavras significa "ponto, nota"?
+- **Resposta:** `{"choices": ["しつれい", "きそく", "やおや", "てん"], "correct": "てん"}`
+- てん significa ponto, nota. As outras opções são きそく (regra, regulamento), しつれい (grosseiro, mal-educado) e やおや (quitanda, verdureiro).
+
+
+### 25. (recognition) Qual destas palavras significa "cair, despencar"?
+- **Resposta:** `{"choices": ["やせる", "おどろく", "おちる", "たてる"], "correct": "おちる"}`
+- おちる significa cair, despencar. As outras opções são たてる (construir, erguer), おどろく (surpreender-se, espantar-se) e やせる (emagrecer, perder peso).
+
+
+### 26. (cloze) Complete a frase: 私は人ごみのなかで彼女を＿＿。 (Eu a avistei no meio da multidão.)
+- **Resposta:** `{"text": "見つけた", "full": "私は人ごみのなかで彼女を見つけた。"}`
+- A palavra que falta é 見つける（みつける）: encontrar, achar. Na frase ela aparece como 見つけた.
+- frases: `sent:tatoeba-155677`
+
+### 27. (recognition) Qual destas palavras significa "acordar (alguém), despertar"?
+- **Resposta:** `{"choices": ["上る", "生きる", "起こす", "見せる"], "correct": "起こす"}`
+- 起こす（おこす） significa acordar (alguém), despertar. As outras opções são 生きる (viver, estar vivo), 上る (subir, escalar) e 見せる (mostrar, exibir).
+
+
+### 28. (cloze) Complete a frase: 小さ＿＿？ (Está pequeno demais?)
+- **Resposta:** `{"text": "すぎる", "full": "小さすぎる？"}`
+- A palavra que falta é すぎる: passar (tempo), decorrer.
+- frases: `sent:tatoeba-1658061`
+

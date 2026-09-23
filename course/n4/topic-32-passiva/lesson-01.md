@@ -128,3 +128,48 @@ Quatro kanji do cotidiano, ligados a roupa, estações e calendário:
 - É 服, oito traços, lido ふく. Sozinho ele já é a palavra 'roupa'; nos compostos de vestuário ele fica no fim, com a mesma leitura.
 
 
+### 12. (recognition) Qual destas palavras significa "esfriar, gelar"?
+- **Resposta:** `{"choices": ["ひえる", "さわぐ", "てつだう", "なおる"], "correct": "ひえる"}`
+- ひえる significa esfriar, gelar. As outras opções são なおる (ser consertado, ficar bom (consertado)), てつだう (ajudar, dar uma mão) e さわぐ (fazer barulho, fazer algazarra).
+
+
+### 13. (recognition) Qual destas palavras significa "quebrar, estilhaçar"?
+- **Resposta:** `{"choices": ["つたえる", "なくなる", "われる", "やける"], "correct": "われる"}`
+- われる significa quebrar, estilhaçar. As outras opções são やける (assar (ficar pronto), grelhar), つたえる (transmitir, comunicar) e なくなる (falecer, morrer).
+
+
+### 14. (recognition) Qual destas palavras significa "engordar, ganhar peso"?
+- **Resposta:** `{"choices": ["すべる", "おる", "かわる", "ふとる"], "correct": "ふとる"}`
+- ふとる significa engordar, ganhar peso. As outras opções são かわる (mudar, transformar-se), おる (estar (forma humilde/cortês de いる), ficar) e すべる (escorregar, deslizar).
+
+
+### 15. (recognition) Qual destas palavras significa "pegar fogo, acender-se"?
+- **Resposta:** `{"choices": ["きまる", "ふる", "ひえる", "つく"], "correct": "つく"}`
+- つく significa pegar fogo, acender-se. As outras opções são ひえる (esfriar, gelar), ふる (cair (chuva, neve)) e きまる (ser decidido, ficar decidido).
+
+
+### 16. (recognition) Qual destas palavras significa "assar (ficar pronto), grelhar"?
+- **Resposta:** `{"choices": ["わらう", "なおる", "やける", "ひえる"], "correct": "やける"}`
+- やける significa assar (ficar pronto), grelhar. As outras opções são わらう (rir, sorrir), なおる (ser consertado, ficar bom (consertado)) e ひえる (esfriar, gelar).
+
+
+### 17. (recognition) Qual destas palavras significa "ser consertado, ficar bom (consertado)"?
+- **Resposta:** `{"choices": ["かわる", "てつだう", "なおる", "おれる"], "correct": "なおる"}`
+- なおる significa ser consertado, ficar bom (consertado). As outras opções são てつだう (ajudar, dar uma mão), おれる (quebrar, partir-se) e かわる (mudar, transformar-se).
+
+
+### 18. (recognition) Qual destas palavras significa "deixar cair, derrubar"?
+- **Resposta:** `{"choices": ["にる", "あやまる", "おとす", "われる"], "correct": "おとす"}`
+- おとす significa deixar cair, derrubar. As outras opções são にる (parecer-se, assemelhar-se), われる (quebrar, estilhaçar) e あやまる (pedir desculpa, desculpar-se).
+
+
+### 19. (cloze) Complete a frase: きっと＿＿よ。 (Você com certeza vai encontrar, viu.)
+- **Resposta:** `{"text": "見つかります", "full": "きっと見つかりますよ。"}`
+- A palavra que falta é 見つかる（みつかる）: ser encontrado, aparecer. Na frase ela aparece como 見つかります.
+- frases: `sent:tatoeba-226023`
+
+### 20. (cloze) Complete a frase: はがきを＿＿。 (Eu coleciono cartões-postais.)
+- **Resposta:** `{"text": "集める", "full": "はがきを集める。"}`
+- A palavra que falta é 集める（あつめる）: reunir, coletar.
+- frases: `sent:tatoeba-7486196`
+

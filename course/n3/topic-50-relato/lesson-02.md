@@ -144,3 +144,88 @@ Os mnemônicos são só a porta de entrada. A fixação real vem de reencontrar 
 - 誤り (あやまり) é o erro em si. Nos compostos, 誤 troca para a leitura sino-japonesa ゴ, como em 誤解 ('entender mal').
 
 
+### 11. (recognition) Qual destas palavras significa "afirmar, sustentar"?
+- **Resposta:** `{"choices": ["しゅちょう", "ビデオ", "さかい", "ダイヤ"], "correct": "しゅちょう"}`
+- しゅちょう significa afirmar, sustentar. As outras opções são さかい (limite, fronteira), ビデオ (vídeo) e ダイヤ (diamante).
+
+
+### 12. (cloze) Complete a frase: 列車は＿＿でいっぱいだった。 (O trem estava lotado de passageiros.)
+- **Resposta:** `{"text": "乗客", "full": "列車は乗客でいっぱいだった。"}`
+- A palavra que falta é 乗客（じょうきゃく）: passageiro.
+- frases: `sent:tatoeba-77485`
+
+### 13. (cloze) Complete a frase: このトイレは生徒＿＿禁止です。 (Este banheiro é proibido para alunos.)
+- **Resposta:** `{"text": "使用", "full": "このトイレは生徒使用禁止です。"}`
+- A palavra que falta é 使用（しよう）: usar, utilizar.
+- frases: `sent:tatoeba-11072023`
+
+### 14. (recognition) Qual destas palavras significa "correção, revisão"?
+- **Resposta:** `{"choices": ["しゅうせい", "ケース", "こんらん", "むすめ"], "correct": "しゅうせい"}`
+- しゅうせい significa correção, revisão. As outras opções são ケース (caso, situação), こんらん (confusão, caos) e むすめ (filha).
+
+
+### 15. (cloze) Complete a frase: ＿＿してるんだよ。 (Eu estou endividado, viu.)
+- **Resposta:** `{"text": "借金", "full": "借金してるんだよ。"}`
+- A palavra que falta é 借金（しゃっきん）: dívida, empréstimo.
+- frases: `sent:tatoeba-10826637`
+
+### 16. (cloze) Complete a frase: 今の＿＿に満足している。 (Estou satisfeito com o que ganho hoje.)
+- **Resposta:** `{"text": "収入", "full": "今の収入に満足している。"}`
+- A palavra que falta é 収入（しゅうにゅう）: renda, rendimento.
+- frases: `sent:tatoeba-172700`
+
+### 17. (recognition) Qual destas palavras significa "bolsa de estudos"?
+- **Resposta:** `{"choices": ["のち", "しょうがくきん", "こな", "ヨット"], "correct": "しょうがくきん"}`
+- しょうがくきん significa bolsa de estudos. As outras opções são のち (depois, mais tarde), こな (pó, farinha) e ヨット (iate, veleiro).
+
+
+### 18. (recognition) Qual destas palavras significa "conseguir emprego, obtenção de emprego"?
+- **Resposta:** `{"choices": ["こじん", "たいど", "たいよう", "しゅうしょく"], "correct": "しゅうしょく"}`
+- しゅうしょく significa conseguir emprego, obtenção de emprego. As outras opções são こじん (indivíduo, pessoa física), たいよう (sol) e たいど (atitude, postura).
+
+
+### 19. (cloze) Complete a frase: これは＿＿なミスだよ。 (Isso é um erro grave.)
+- **Resposta:** `{"text": "重大", "full": "これは重大なミスだよ。"}`
+- A palavra que falta é 重大（じゅうだい）: grave, sério.
+- frases: `sent:tatoeba-9171497`
+
+### 20. (recognition) Qual destas palavras significa "dar importância a, levar a sério"?
+- **Resposta:** `{"choices": ["だいとうりょう", "こうげき", "ねったい", "じゅうし"], "correct": "じゅうし"}`
+- じゅうし significa dar importância a, levar a sério. As outras opções são こうげき (atacar, agredir), だいとうりょう (presidente (de um país)) e ねったい (trópicos, zona tropical).
+
+
+### 21. (recognition) Qual destas palavras significa "obstáculo, empecilho"?
+- **Resposta:** `{"choices": ["じゅんばん", "たて", "たから", "しょうがい"], "correct": "しょうがい"}`
+- しょうがい significa obstáculo, empecilho. As outras opções são じゅんばん (ordem, vez), たて (vertical, comprimento) e たから (tesouro).
+
+
+### 22. (cloze) Complete a frase: 仕事に＿＿しろ。 (Foca no trabalho.)
+- **Resposta:** `{"text": "集中", "full": "仕事に集中しろ。"}`
+- A palavra que falta é 集中（しゅうちゅう）: concentração, concentrar-se.
+- frases: `sent:tatoeba-10058994`
+
+### 23. (recognition) Qual destas palavras significa "grupo, multidão"?
+- **Resposta:** `{"choices": ["けいい", "しゅうだん", "しじん", "ミス"], "correct": "しゅうだん"}`
+- しゅうだん significa grupo, multidão. As outras opções são ミス (erro, engano), しじん (poeta) e けいい (respeito, estima).
+
+
+### 24. (recognition) Qual destas palavras significa "demanda, procura"?
+- **Resposta:** `{"choices": ["じゅよう", "なし", "パイロット", "たび"], "correct": "じゅよう"}`
+- じゅよう significa demanda, procura. As outras opções são たび (vez, ocasião), パイロット (piloto) e なし (sem, nada).
+
+
+### 25. (recognition) Qual destas palavras significa "ordem, vez"?
+- **Resposta:** `{"choices": ["だいとうりょう", "こくもつ", "じたい", "じゅんばん"], "correct": "じゅんばん"}`
+- じゅんばん significa ordem, vez. As outras opções são じたい (situação, estado das coisas), こくもつ (grão, cereais) e だいとうりょう (presidente (de um país)).
+
+
+### 26. (recognition) Qual destas palavras significa "tranquilo, favorável"?
+- **Resposta:** `{"choices": ["じゅんちょう", "ようき", "きみょう", "こうか"], "correct": "じゅんちょう"}`
+- じゅんちょう significa tranquilo, favorável. As outras opções são こうか (caro, custoso), きみょう (estranho, esquisito) e ようき (alegre, animado).
+
+
+### 27. (cloze) Complete a frase: 先生は私たちに毎日教室を掃除する＿＿。 (O professor manda a gente limpar a sala de aula todos os dias.)
+- **Resposta:** `{"text": "ように言う", "full": "先生は私たちに毎日教室を掃除するように言う。"}`
+- O que falta é ように言う: o ponto gramatical desta lição, mandar / pedir para alguém fazer (～ように言う).
+- frases: `sent:tatoeba-141613`
+

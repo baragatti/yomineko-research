@@ -117,3 +117,8 @@ Por exemplo: どんなアフリカ料理 = "que tipo de comida africana?".
 - 京 vale 'capital' e carrega a leitura キョウ nos nomes de cidade. A leitura nativa みやこ significa a mesma coisa, mas soa antiga.
 
 
+### 9. (cloze) Complete a frase: ＿＿に行ってみたいです (Quero conhecer a África.)
+- **Resposta:** `{"text": "アフリカ", "full": "アフリカに行ってみたいです"}`
+- A palavra que falta é アフリカ: África.
+- frases: `sent:gen-a793b5185326`
+

@@ -87,3 +87,63 @@ Repare em 弁当, parte essencial do dia japonês, e em 冒険 para histórias.
 - 弁当 (べんとう) é a marmita e ベンチ é o banco; a partícula で marca o lugar da ação.
 
 
+### 5. (recognition) Qual destas palavras significa "direção, lado"?
+- **Resposta:** `{"choices": ["得意", "方", "決まり", "成長"], "correct": "方"}`
+- 方（ほう） significa direção, lado. As outras opções são 決まり (regra, norma), 得意 (bom em, habilidoso) e 成長 (crescimento, desenvolvimento).
+
+
+### 6. (recognition) Qual destas palavras significa "cinto"?
+- **Resposta:** `{"choices": ["プラス", "ベルト", "かおり", "タイプ"], "correct": "ベルト"}`
+- ベルト significa cinto. As outras opções são プラス (mais, adição), かおり (aroma, fragrância) e タイプ (tipo, gênero).
+
+
+### 7. (recognition) Qual destas palavras significa "aventura"?
+- **Resposta:** `{"choices": ["せんたく", "きょうじゅ", "ぼうけん", "せき"], "correct": "ぼうけん"}`
+- ぼうけん significa aventura. As outras opções são せんたく (escolha, seleção), きょうじゅ (professor universitário, catedrático) e せき (tosse).
+
+
+### 8. (recognition) Qual destas palavras significa "não particularmente, nada em especial"?
+- **Resposta:** `{"choices": ["共に", "別に", "必ずしも", "急に"], "correct": "別に"}`
+- 別に（べつに） significa não particularmente, nada em especial. As outras opções são 急に (de repente, subitamente), 共に (junto, juntamente) e 必ずしも (não necessariamente, nem sempre).
+
+
+### 9. (cloze) Complete a frase: いくつか＿＿があります。 (Tenho alguns informes para dar.)
+- **Resposta:** `{"text": "報告", "full": "いくつか報告があります。"}`
+- A palavra que falta é 報告（ほうこく）: relatório, comunicado.
+- frases: `sent:tatoeba-7534704`
+
+### 10. (recognition) Qual destas palavras significa "mudança, alteração"?
+- **Resposta:** `{"choices": ["へい", "わ", "へんこう", "そこ"], "correct": "へんこう"}`
+- へんこう significa mudança, alteração. As outras opções são わ (anel, aro), そこ (fundo, base) e へい (muro, cerca).
+
+
+### 11. (cloze) Complete a frase: 東はどの＿＿なの？ (Para que lado fica o leste?)
+- **Resposta:** `{"text": "方向", "full": "東はどの方向なの？"}`
+- A palavra que falta é 方向（ほうこう）: direção, sentido.
+- frases: `sent:tatoeba-4562324`
+
+### 12. (recognition) Qual destas palavras significa "vara, pau"?
+- **Resposta:** `{"choices": ["ひこう", "ぼう", "かたな", "そくど"], "correct": "ぼう"}`
+- ぼう significa vara, pau. As outras opções são ひこう (voo, aviação), そくど (velocidade) e かたな (espada, sabre japonês).
+
+
+### 13. (recognition) Qual destas formas significa "lei, norma"?
+- **Resposta:** `{"choices": ["全体", "法", "論争", "不正"], "correct": "法"}`
+- 法（ほう） significa lei, norma. As outras opções são 全体 (o todo, a totalidade), 不正 (injustiça, irregularidade) e 論争 (disputa, controvérsia).
+
+
+### 14. (recognition) Qual destas palavras significa "reduzir, diminuir"?
+- **Resposta:** `{"choices": ["とびだす", "ふる", "へらす", "つもる"], "correct": "へらす"}`
+- へらす significa reduzir, diminuir. As outras opções são とびだす (sair correndo, disparar para fora), ふる (acenar, balançar) e つもる (acumular-se, empilhar-se (neve/poeira)).
+
+
+### 15. (recognition) Qual destas palavras significa "diminuir, reduzir-se"?
+- **Resposta:** `{"choices": ["へる", "とばす", "かくす", "がっかり"], "correct": "へる"}`
+- へる significa diminuir, reduzir-se. As outras opções são かくす (esconder, ocultar), とばす (fazer voar, arremessar) e がっかり (ficar decepcionado, ficar desapontado).
+
+
+### 16. (cloze) Complete a frase: ＿＿はまだかわいてない。 (A tinta ainda não secou.)
+- **Resposta:** `{"text": "ペンキ", "full": "ペンキはまだかわいてない。"}`
+- A palavra que falta é ペンキ: tinta.
+- frases: `sent:tatoeba-196639`
+

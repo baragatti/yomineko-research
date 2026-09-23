@@ -102,3 +102,38 @@ Repare que todas essas contrações vivem em 平仮名(ひらがな). O hiragana
 - 男の子 junta 男 (homem) e 子 (criança) com a partícula の no meio. Os dois kanji ficam com a leitura kun: おとこ e こ.
 
 
+### 8. (recognition) Qual destas palavras significa "um, uma unidade"?
+- **Resposta:** `{"choices": ["一月", "二十日", "何", "一つ"], "correct": "一つ"}`
+- 一つ（ひとつ） significa um, uma unidade. As outras opções são 何 (o que, que), 二十日 (dia 20) e 一月 (um mês).
+
+
+### 9. (cloze) Complete a frase: ＿＿だけ来た (Só uma pessoa veio.)
+- **Resposta:** `{"text": "一人", "full": "一人だけ来た"}`
+- A palavra que falta é 一人（ひとり）: uma pessoa, só uma pessoa.
+- frases: `sent:gen-10932a1910b5`
+
+### 10. (recognition) Qual destas palavras significa "um mês"?
+- **Resposta:** `{"choices": ["百", "一月", "東", "八"], "correct": "一月"}`
+- 一月（ひとつき） significa um mês. As outras opções são 八 (oito), 百 (cem, cento) e 東 (leste, oriente).
+
+
+### 11. (cloze) Complete a frase: 一、二、三、四、五、六、七、＿＿、九、十。 (Um, dois, três, quatro, cinco, seis, sete, oito, nove, dez.)
+- **Resposta:** `{"text": "八", "full": "一、二、三、四、五、六、七、八、九、十。"}`
+- A palavra que falta é 八（はち）: oito.
+- frases: `sent:tatoeba-349881`
+
+### 12. (recognition) Qual destas palavras significa "hiragana (silabário japonês)"?
+- **Resposta:** `{"choices": ["はく", "ばんごはん", "ひらがな", "あまり"], "correct": "ひらがな"}`
+- ひらがな significa hiragana (silabário japonês). As outras opções são はく (conde), ばんごはん (jantar) e あまり ((não) muito, (não) tanto).
+
+
+### 13. (recognition) Qual destas palavras significa "dia 20"?
+- **Resposta:** `{"choices": ["二十日", "一つ", "百", "二"], "correct": "二十日"}`
+- 二十日（はつか） significa dia 20. As outras opções são 一つ (um, uma unidade), 百 (cem, cento) e 二 (dois).
+
+
+### 14. (recognition) Qual destas palavras significa "vinte anos (de idade)"?
+- **Resposta:** `{"choices": ["二十", "五", "一人", "七日"], "correct": "二十"}`
+- 二十（はたち） significa vinte anos (de idade). As outras opções são 一人 (uma pessoa, só uma pessoa), 七日 (dia 7 (do mês)) e 五 (cinco).
+
+

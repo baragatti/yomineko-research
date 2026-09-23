@@ -93,3 +93,63 @@ O par 向く / 向ける é um clássico de transitivo e intransitivo. 向く (�
 - 味方 (みかた) é "aliado"; aqui forma o predicado 僕の味方だ ("é meu aliado"), com いつも ("sempre") como advérbio.
 
 
+### 6. (cloze) Complete a frase: ＿＿は許されない。 (Erro aqui não passa.)
+- **Resposta:** `{"text": "ミス", "full": "ミスは許されない。"}`
+- A palavra que falta é ミス: erro, engano.
+- frases: `sent:tatoeba-12976334`
+
+### 7. (cloze) Complete a frase: ＿＿は買った？ (Você comprou leite?)
+- **Resposta:** `{"text": "ミルク", "full": "ミルクは買った？"}`
+- A palavra que falta é ミルク: leite.
+- frases: `sent:tatoeba-9203665`
+
+### 8. (cloze) Complete a frase: 店は銀行の＿＿にある。 (A loja fica em frente ao banco.)
+- **Resposta:** `{"text": "向かい", "full": "店は銀行の向かいにある。"}`
+- A palavra que falta é 向かい（むかい）: o lado oposto, em frente.
+- frases: `sent:tatoeba-124984`
+
+### 9. (cloze) Complete a frase: 顔はこっちに＿＿。 (Vira o rosto pra cá.)
+- **Resposta:** `{"text": "向けて", "full": "顔はこっちに向けて。"}`
+- A palavra que falta é 向ける（むける）: virar (algo) para, apontar (para). Na frase ela aparece como 向けて.
+- frases: `sent:tatoeba-9299698`
+
+### 10. (cloze) Complete a frase: これはお＿＿です。 (Isto é uma lembrancinha para você.)
+- **Resposta:** `{"text": "土産", "full": "これはお土産です。"}`
+- A palavra que falta é 土産（みやげ）: lembrança (de viagem), souvenir.
+- frases: `sent:tatoeba-218629`
+
+### 11. (recognition) Qual destas palavras significa "estranho, esquisito" (no sentido de curioso)?
+- **Resposta:** `{"choices": ["わずか", "みょう", "しんちょう", "たいくつ"], "correct": "みょう"}`
+- みょう significa estranho, esquisito. As outras opções são たいくつ (entediante, chato), しんちょう (cuidadoso, cauteloso) e わずか (mínimo, escasso).
+
+
+### 12. (recognition) Qual destas palavras significa "fruto, semente"?
+- **Resposta:** `{"choices": ["土", "言語", "実", "確認"], "correct": "実"}`
+- 実（み） significa fruto, semente. As outras opções são 土 (terra, solo), 確認 (confirmação, verificação) e 言語 (língua, idioma).
+
+
+### 13. (cloze) Complete a frase: ホテルは外国人で＿＿。 (O hotel está cheio de estrangeiros.)
+- **Resposta:** `{"text": "満ちてる", "full": "ホテルは外国人で満ちてる。"}`
+- A palavra que falta é 満ちる（みちる）: estar cheio, encher-se (de). Na frase ela aparece como 満ちてる.
+- frases: `sent:tatoeba-4562258`
+
+### 14. (cloze) Complete a frase: 友人を＿＿に行く所です。 (Estou indo visitar um amigo no hospital.)
+- **Resposta:** `{"text": "見舞い", "full": "友人を見舞いに行く所です。"}`
+- A palavra que falta é 見舞い（みまい）: visita a um doente, visita de conforto.
+- frases: `sent:tatoeba-79343`
+
+### 15. (cloze) Complete a frase: ＿＿ありがとう。 (Obrigado por vir se despedir de mim.)
+- **Resposta:** `{"text": "見送り", "full": "見送りありがとう。"}`
+- A palavra que falta é 見送り（みおくり）: despedida, ato de ver (alguém) partir.
+- frases: `sent:tatoeba-175143`
+
+### 16. (cloze) Complete a frase: 私は自由の＿＿だ。 (Estou livre.)
+- **Resposta:** `{"text": "身", "full": "私は自由の身だ。"}`
+- A palavra que falta é 身（み）: corpo, si mesmo.
+- frases: `sent:tatoeba-1302430`
+
+### 17. (cloze) Complete a frase: ＿＿が来たよ。 (Chegou quem vem te buscar.)
+- **Resposta:** `{"text": "迎え", "full": "迎えが来たよ。"}`
+- A palavra que falta é 迎え（むかえ）: recepção (de quem chega), ir buscar (alguém).
+- frases: `sent:tatoeba-9232924`
+

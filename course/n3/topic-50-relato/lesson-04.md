@@ -185,3 +185,28 @@ São muitos kanji de uma vez, então não tente decorar todos agora. Eles vão v
 - 歯 sozinho é は, e continua は em 歯医者 (dentista).
 
 
+### 20. (cloze) Complete a frase: 日本の＿＿作物は米である。 (A principal cultura do Japão é o arroz.)
+- **Resposta:** `{"text": "主要", "full": "日本の主要作物は米である。"}`
+- A palavra que falta é 主要（しゅよう）: principal, primordial.
+- frases: `sent:tatoeba-122595`
+
+### 21. (recognition) Qual destas palavras significa "ocupar, constituir (uma proporção)"?
+- **Resposta:** `{"choices": ["のばす", "のびる", "ことなる", "しめる"], "correct": "しめる"}`
+- しめる significa ocupar, constituir (uma proporção). As outras opções são のばす (esticar, estender), のびる (esticar-se, estender-se) e ことなる (diferir, ser diferente).
+
+
+### 22. (cloze) Complete a frase: 大か、＿＿か。 (Grande ou pequeno?)
+- **Resposta:** `{"text": "小", "full": "大か、小か。"}`
+- A palavra que falta é 小（しょう）: pequeno, menor.
+- frases: `sent:tatoeba-137762`
+
+### 23. (recognition) Qual destas palavras significa "capítulo"?
+- **Resposta:** `{"choices": ["しょう", "せきゆ", "くさり", "どこか"], "correct": "しょう"}`
+- しょう significa capítulo. As outras opções são くさり (corrente), どこか (em algum lugar, em alguma parte) e せきゆ (petróleo).
+
+
+### 24. (recognition) Qual destas formas significa "prêmio, premiação"?
+- **Resposta:** `{"choices": ["ほしょう", "しょう", "し", "ほり"], "correct": "しょう"}`
+- しょう significa prêmio, premiação. As outras opções são ほしょう (garantia), ほり (fosso, vala) e し (Sr., Sra.).
+
+

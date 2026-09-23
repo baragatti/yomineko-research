@@ -93,3 +93,63 @@ Para fechar, um grupo de palavras avulsas muito usadas no dia a dia.
 - 伝統 (でんとう) é 'tradição'; aqui funciona como substantivo predicativo com です. A partícula の liga 日本 a 伝統 ('tradição do Japão').
 
 
+### 6. (cloze) Complete a frase: ＿＿の中は暑かった。 (Dentro da barraca estava quente.)
+- **Resposta:** `{"text": "テント", "full": "テントの中は暑かった。"}`
+- A palavra que falta é テント: barraca, tenda.
+- frases: `sent:tatoeba-11491189`
+
+### 7. (cloze) Complete a frase: ＿＿が行われている間、社長はノートを取っていた。 (Enquanto a manifestação acontecia, o presidente da empresa anotava tudo.)
+- **Resposta:** `{"text": "デモ", "full": "デモが行われている間、社長はノートを取っていた。"}`
+- A palavra que falta é デモ: manifestação (protesto), passeata.
+- frases: `sent:tatoeba-202102`
+
+### 8. (recognition) Qual destas palavras significa "exemplo típico, modelo"?
+- **Resposta:** `{"choices": ["つかれ", "クリーム", "えがお", "てんけい"], "correct": "てんけい"}`
+- てんけい significa exemplo típico, modelo. As outras opções são つかれ (cansaço, fadiga), クリーム (creme, nata) e えがお (sorriso, cara sorridente).
+
+
+### 9. (recognition) Qual destas palavras significa "tempo (meteorológico), condições do tempo"?
+- **Resposta:** `{"choices": ["てんこう", "ライター", "おしゃべり", "せいきゅう"], "correct": "てんこう"}`
+- てんこう significa tempo (meteorológico), condições do tempo. As outras opções são せいきゅう (reivindicar, exigir), ライター (isqueiro) e おしゃべり (conversa fiada, bate-papo).
+
+
+### 10. (recognition) Qual destas palavras significa "ser minucioso, fazer a fundo"?
+- **Resposta:** `{"choices": ["てってい", "かいが", "ラケット", "いねむり"], "correct": "てってい"}`
+- てってい significa ser minucioso, fazer a fundo. As outras opções são かいが (pintura, quadro), ラケット (raquete) e いねむり (cochilar, dormitar).
+
+
+### 11. (recognition) Qual destas palavras significa "ajuda, auxílio"?
+- **Resposta:** `{"choices": ["てつだい", "いとこ", "すえ", "ゆびわ"], "correct": "てつだい"}`
+- てつだい significa ajuda, auxílio. As outras opções são すえ (fim, final), いとこ (primo, prima) e ゆびわ (anel).
+
+
+### 12. (cloze) Complete a frase: ＿＿できるよ。 (Eu sei fazer mágica.)
+- **Resposta:** `{"text": "手品", "full": "手品できるよ。"}`
+- A palavra que falta é 手品（てじな）: truque de mágica, mágica.
+- frases: `sent:tatoeba-8621633`
+
+### 13. (cloze) Complete a frase: お＿＿をおかけしました。 (Desculpe o trabalho que dei.)
+- **Resposta:** `{"text": "手間", "full": "お手間をおかけしました。"}`
+- A palavra que falta é 手間（てま）: trabalho, esforço.
+- frases: `sent:tatoeba-227081`
+
+### 14. (recognition) Qual destas palavras significa "adequado, apropriado" (no sentido de pertinente)?
+- **Resposta:** `{"choices": ["てきど", "てきせつ", "ゆうしゅう", "よぶん"], "correct": "てきせつ"}`
+- てきせつ significa adequado, apropriado. As outras opções são てきど (moderado, na medida certa), よぶん (extra, excedente) e ゆうしゅう (excelente, excepcional).
+
+
+### 15. (recognition) Qual destas palavras significa "aplicar (regra/método), pôr em uso"?
+- **Resposta:** `{"choices": ["てんけい", "カー", "ひみつ", "てきよう"], "correct": "てきよう"}`
+- てきよう significa aplicar (regra/método), pôr em uso. As outras opções são てんけい (exemplo típico, modelo), ひみつ (segredo) e カー (carro, automóvel).
+
+
+### 16. (recognition) Qual destas palavras significa "ferro"?
+- **Resposta:** `{"choices": ["せいかく", "てつだい", "てんこう", "てつ"], "correct": "てつ"}`
+- てつ significa ferro. As outras opções são てつだい (ajuda, auxílio), せいかく (personalidade, temperamento) e てんこう (tempo (meteorológico), condições do tempo).
+
+
+### 17. (recognition) Qual destas palavras significa "elétron"?
+- **Resposta:** `{"choices": ["画家", "電子", "可", "思い出"], "correct": "電子"}`
+- 電子（でんし） significa elétron. As outras opções são 思い出 (lembrança, recordação), 可 (aceitável, admissível) e 画家 (pintor, artista).
+
+

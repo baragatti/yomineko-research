@@ -116,3 +116,28 @@ Frases-modelo para guardar: 予習はたいてい夜する ("costumo fazer a pre
 - É 起きる, quem acorda é você mesmo. Com outro okurigana o sentido vira transitivo: 起こす (おこす) é acordar outra pessoa.
 
 
+### 9. (recognition) Qual destas palavras significa "preparação prévia da aula, estudo antecipado da matéria"?
+- **Resposta:** `{"choices": ["はつおん", "ゆき", "よしゅう", "しんぱい"], "correct": "よしゅう"}`
+- よしゅう significa preparação prévia da aula, estudo antecipado da matéria. As outras opções são しんぱい (preocupação, ansiedade), はつおん (pronúncia) e ゆき (neve).
+
+
+### 10. (recognition) Qual destas palavras significa "medicina (ciência)"?
+- **Resposta:** `{"choices": ["べつ", "オートバイ", "いがく", "ラジカセ"], "correct": "いがく"}`
+- いがく significa medicina (ciência). As outras opções são ラジカセ (rádio-gravador, aparelho de rádio e fita), オートバイ (moto, motocicleta) e べつ (outro, diferente).
+
+
+### 11. (recognition) Qual destas palavras significa "Ano-Novo, feriado de Ano-Novo"?
+- **Resposta:** `{"choices": ["なん", "なつ", "しょうがつ", "さっき"], "correct": "しょうがつ"}`
+- しょうがつ significa Ano-Novo, feriado de Ano-Novo. As outras opções são なん (o quê, que), さっき (agora há pouco, há pouco) e なつ (verão).
+
+
+### 12. (recognition) Qual destas palavras significa "pronúncia"?
+- **Resposta:** `{"choices": ["しんぱい", "はつおん", "アパート", "れんしゅう"], "correct": "はつおん"}`
+- はつおん significa pronúncia. As outras opções são しんぱい (preocupação, ansiedade), れんしゅう (prática, treino) e アパート (apartamento).
+
+
+### 13. (recognition) Qual destas palavras significa "regra, regulamento"?
+- **Resposta:** `{"choices": ["とこや", "きそく", "ワイシャツ", "ばん"], "correct": "きそく"}`
+- きそく significa regra, regulamento. As outras opções são ワイシャツ (camisa social, camisa de botão), とこや (barbearia, barbeiro) e ばん (noite, anoitecer).
+
+

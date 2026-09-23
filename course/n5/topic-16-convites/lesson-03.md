@@ -91,3 +91,28 @@ Juntando tudo:日本語を勉強しましょうか= "Vamos estudar japonês?" / 
 - 校 é o kanji de escola e quase nunca aparece sozinho: ele fecha os nomes de escola. Em 学校 ele vem depois de 学 (estudo) e traz a leitura sino-japonesa コウ; a consoante dobrada de がっこう vem do 学 da frente, que de がく passa a がっ.
 
 
+### 7. (recognition) Qual destas palavras significa "caneta esferográfica"?
+- **Resposta:** `{"choices": ["せびろ", "ボールペン", "ホテル", "ちかく"], "correct": "ボールペン"}`
+- ボールペン significa caneta esferográfica. As outras opções são ホテル (hotel), ちかく (proximidades, redondezas) e せびろ (terno).
+
+
+### 8. (recognition) Qual destas palavras significa "envelope"?
+- **Resposta:** `{"choices": ["あさって", "トイレ", "ぼうし", "ふうとう"], "correct": "ふうとう"}`
+- ふうとう significa envelope. As outras opções são あさって (depois de amanhã), ぼうし (chapéu, boné) e トイレ (banheiro, privada).
+
+
+### 9. (recognition) Qual destas palavras significa "texto, frase"?
+- **Resposta:** `{"choices": ["のみもの", "ぶんしょう", "テープ", "ペット"], "correct": "ぶんしょう"}`
+- ぶんしょう significa texto, frase. As outras opções são ペット (animal de estimação, bicho de estimação), のみもの (bebida) e テープ (fita, fita adesiva).
+
+
+### 10. (recognition) Qual destas palavras significa "estante de livros, prateleira de livros"?
+- **Resposta:** `{"choices": ["びょうき", "ばん", "ほんだな", "ベッド"], "correct": "ほんだな"}`
+- ほんだな significa estante de livros, prateleira de livros. As outras opções são びょうき (doença, enfermidade), ばん (número, vez) e ベッド (cama).
+
+
+### 11. (cloze) Complete a frase: 本の＿＿をめくる。 (Eu viro a página do livro.)
+- **Resposta:** `{"text": "ページ", "full": "本のページをめくる。"}`
+- A palavra que falta é ページ: página.
+- frases: `sent:tatoeba-81661`
+

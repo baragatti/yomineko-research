@@ -106,3 +106,8 @@ E o vocabulário 留学生(estudante estrangeiro, de intercâmbio) rende ótimos
 - 友 é 'amigo' e lê-se とも quando vem sozinho; é o 友 de ともだち. 母 (mãe), 男 (homem) e 女 (mulher) dizem quem a pessoa é; 友 é o único dos quatro que nomeia uma relação entre pessoas.
 
 
+### 7. (cloze) Complete a frase: ＿＿な大人になりたいです。 (Quero me tornar um adulto admirável.)
+- **Resposta:** `{"text": "りっぱ", "full": "りっぱな大人になりたいです。"}`
+- A palavra que falta é りっぱ: esplêndido, admirável.
+- frases: `sent:tatoeba-10901881`
+

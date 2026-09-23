@@ -11,19 +11,22 @@
     "duplicate_prompt_in_lesson": "the generated prompt+answer already exists in that lesson",
     "template_does_not_credit": "the generated item did not close the pair under validate_practice_coverage's own predicate",
     "key_form_outside_cks": "every written form of the record carries a kanji this lesson has not taught, or is not one Japanese run",
+    "bound_morpheme_no_production": "no cloze or MCQ could be built and the record is a bound morpheme (suffix, prefix, auxiliary), which has no standalone form to produce",
+    "no_known_word_with_kanji": "no word in the lesson's known set is written with this kanji inside the kanji known set",
+    "no_template_for_kanji_word": "words with this kanji exist, but no cloze or MCQ over them puts the kanji in the answer",
     "no_vocab_record": "the unlock resolves to no exported vocab record",
     "no_grammar_record": "the unlock resolves to no exported grammar record"
   },
   "generated_by": "scripts/build_vocab_exercises.py",
-  "count": 27,
+  "count": 19,
   "counts_by_reason": {
     "no_alignable_form_span": 4,
-    "no_cks_clean_sentence": 20,
+    "no_cks_clean_sentence": 12,
     "no_probe_segment": 3
   },
   "counts_by_reason_and_kind": {
     "grammar|no_alignable_form_span": 4,
-    "grammar|no_cks_clean_sentence": 20,
+    "grammar|no_cks_clean_sentence": 12,
     "grammar|no_probe_segment": 3
   },
   "pairs": [
@@ -34,30 +37,6 @@
       "path": "course/n5/topic-08-perguntas/lesson-04.json",
       "kind": "grammar",
       "ref": "gram:doushite",
-      "reason": "no_cks_clean_sentence",
-      "tried": [
-        "no_cks_clean_sentence"
-      ]
-    },
-    {
-      "lesson": "les:n5-perguntas-04",
-      "level": "n5",
-      "topic": "top:n5-perguntas",
-      "path": "course/n5/topic-08-perguntas/lesson-04.json",
-      "kind": "grammar",
-      "ref": "gram:gp-30",
-      "reason": "no_alignable_form_span",
-      "tried": [
-        "no_alignable_form_span"
-      ]
-    },
-    {
-      "lesson": "les:n5-verbos-03",
-      "level": "n5",
-      "topic": "top:n5-verbos",
-      "path": "course/n5/topic-10-verbos/lesson-03.json",
-      "kind": "grammar",
-      "ref": "gram:gp-20",
       "reason": "no_cks_clean_sentence",
       "tried": [
         "no_cks_clean_sentence"
@@ -112,18 +91,6 @@
       ]
     },
     {
-      "lesson": "les:n5-te-form-03",
-      "level": "n5",
-      "topic": "top:n5-te-form",
-      "path": "course/n5/topic-15-te-form/lesson-03.json",
-      "kind": "grammar",
-      "ref": "gram:te-iru",
-      "reason": "no_cks_clean_sentence",
-      "tried": [
-        "no_cks_clean_sentence"
-      ]
-    },
-    {
       "lesson": "les:n5-te-form-04",
       "level": "n5",
       "topic": "top:n5-te-form",
@@ -166,18 +133,6 @@
       "path": "course/n5/topic-15-te-form/lesson-07.json",
       "kind": "grammar",
       "ref": "gram:nakute-wa-naranai",
-      "reason": "no_cks_clean_sentence",
-      "tried": [
-        "no_cks_clean_sentence"
-      ]
-    },
-    {
-      "lesson": "les:n5-rotina-04",
-      "level": "n5",
-      "topic": "top:n5-rotina",
-      "path": "course/n5/topic-17-rotina/lesson-04.json",
-      "kind": "grammar",
-      "ref": "gram:gp-144",
       "reason": "no_cks_clean_sentence",
       "tried": [
         "no_cks_clean_sentence"
@@ -238,9 +193,9 @@
       "path": "course/n4/topic-23-condicionais/lesson-08.json",
       "kind": "grammar",
       "ref": "gram:gp-93",
-      "reason": "no_cks_clean_sentence",
+      "reason": "no_alignable_form_span",
       "tried": [
-        "no_cks_clean_sentence"
+        "no_alignable_form_span"
       ]
     },
     {
@@ -292,30 +247,6 @@
       ]
     },
     {
-      "lesson": "les:n4-experiencia-06",
-      "level": "n4",
-      "topic": "top:n4-experiencia",
-      "path": "course/n4/topic-28-experiencia/lesson-06.json",
-      "kind": "grammar",
-      "ref": "gram:sonna-ni",
-      "reason": "no_cks_clean_sentence",
-      "tried": [
-        "no_cks_clean_sentence"
-      ]
-    },
-    {
-      "lesson": "les:n3-perspectiva-01",
-      "level": "n3",
-      "topic": "top:n3-perspectiva",
-      "path": "course/n3/topic-40-perspectiva/lesson-01.json",
-      "kind": "grammar",
-      "ref": "gram:n3-ni-kanshite",
-      "reason": "no_cks_clean_sentence",
-      "tried": [
-        "no_cks_clean_sentence"
-      ]
-    },
-    {
       "lesson": "les:n3-estado-02",
       "level": "n3",
       "topic": "top:n3-estado",
@@ -325,30 +256,6 @@
       "reason": "no_alignable_form_span",
       "tried": [
         "no_alignable_form_span"
-      ]
-    },
-    {
-      "lesson": "les:n3-limites-01",
-      "level": "n3",
-      "topic": "top:n3-limites",
-      "path": "course/n3/topic-46-limites/lesson-01.json",
-      "kind": "grammar",
-      "ref": "gram:n3-kurai-wa-nai",
-      "reason": "no_cks_clean_sentence",
-      "tried": [
-        "no_cks_clean_sentence"
-      ]
-    },
-    {
-      "lesson": "les:n3-relato-02",
-      "level": "n3",
-      "topic": "top:n3-relato",
-      "path": "course/n3/topic-50-relato/lesson-02.json",
-      "kind": "grammar",
-      "ref": "gram:n3-you-ni-iu",
-      "reason": "no_cks_clean_sentence",
-      "tried": [
-        "no_cks_clean_sentence"
       ]
     }
   ]

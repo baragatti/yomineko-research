@@ -128,3 +128,83 @@ O kanji 識 significa 'conhecer, discernir, consciência'. Tem a palavra (言) �
 - 財 traz à esquerda o radical da concha, que era o dinheiro antigo e hoje marca quase tudo o que fala de valor. Em palavras compostas lê-se ざい.
 
 
+### 11. (recognition) Qual destas palavras significa "coincidência, acaso"?
+- **Resposta:** `{"choices": ["くつう", "スター", "ふり", "ぐうぜん"], "correct": "ぐうぜん"}`
+- ぐうぜん significa coincidência, acaso. As outras opções são くつう (dor, sofrimento), ふり (desvantagem, prejuízo) e スター (estrela, celebridade).
+
+
+### 12. (recognition) Qual destas palavras significa "concreto, tangível"?
+- **Resposta:** `{"choices": ["ドライブ", "きゅうか", "ふうとう", "ぐたい"], "correct": "ぐたい"}`
+- ぐたい significa concreto, tangível. As outras opções são ドライブ (passeio de carro, volta de carro), きゅうか (férias, folga) e ふうとう (envelope).
+
+
+### 13. (cloze) Complete a frase: それとこれを＿＿できない。 (Não consigo distinguir uma coisa da outra.)
+- **Resposta:** `{"text": "区別", "full": "それとこれを区別できない。"}`
+- A palavra que falta é 区別（くべつ）: distinguir, diferenciar.
+- frases: `sent:tatoeba-1484688`
+
+### 14. (recognition) Qual destas formas significa "frase, locução"?
+- **Resposta:** `{"choices": ["アウト", "りつ", "く", "がた"], "correct": "く"}`
+- く significa frase, locução. As outras opções são りつ (taxa, índice), がた (tipo, modelo) e アウト (out (eliminado, no beisebol/esporte)).
+
+
+### 15. (recognition) Qual destas palavras significa "respeito, estima"?
+- **Resposta:** `{"choices": ["く", "か", "けいい", "ぐうぜん"], "correct": "けいい"}`
+- けいい significa respeito, estima. As outras opções são く (frase, locução), ぐうぜん (coincidência, acaso) e か (seção (de empresa), departamento).
+
+
+### 16. (recognition) Qual destas palavras significa "situação econômica, conjuntura"?
+- **Resposta:** `{"choices": ["けいき", "トランプ", "おく", "きょうふ"], "correct": "けいき"}`
+- けいき significa situação econômica, conjuntura. As outras opções são トランプ (baralho, cartas de baralho), きょうふ (medo, terror) e おく (fundo, interior).
+
+
+### 17. (recognition) Qual destas palavras significa "administração, gestão"?
+- **Resposta:** `{"choices": ["けいえい", "かんとく", "つばさ", "スタンド"], "correct": "けいえい"}`
+- けいえい significa administração, gestão. As outras opções são スタンド (suporte, pedestal), かんとく (diretor (de filme), técnico (de time)) e つばさ (asa).
+
+
+### 18. (recognition) Qual destas formas significa "total, soma"?
+- **Resposta:** `{"choices": ["計", "選手", "物理", "牛"], "correct": "計"}`
+- 計（けい） significa total, soma. As outras opções são 物理 (física), 牛 (vaca, boi) e 選手 (jogador, atleta).
+
+
+### 19. (recognition) Qual destas palavras significa "era moderna, época moderna"?
+- **Resposta:** `{"choices": ["学問", "議員", "近代", "制限"], "correct": "近代"}`
+- 近代（きんだい） significa era moderna, época moderna. As outras opções são 制限 (limitar, restringir), 議員 (parlamentar, deputado) e 学問 (estudo, saber acadêmico).
+
+
+### 20. (recognition) Qual destas palavras significa "metal"?
+- **Resposta:** `{"choices": ["キャンプ", "きんぞく", "クリスマス", "くらし"], "correct": "きんぞく"}`
+- きんぞく significa metal. As outras opções são くらし (vida, modo de vida), クリスマス (Natal) e キャンプ (acampamento, camping).
+
+
+### 21. (recognition) Qual destas palavras significa "cofre, caixa-forte"?
+- **Resposta:** `{"choices": ["トラック", "きんこ", "せんたく", "きり"], "correct": "きんこ"}`
+- きんこ significa cofre, caixa-forte. As outras opções são トラック (caminhão), せんたく (escolha, seleção) e きり (névoa, neblina).
+
+
+### 22. (cloze) Complete a frase: ＿＿ならどう？ (E se for sexta?)
+- **Resposta:** `{"text": "金曜", "full": "金曜ならどう？"}`
+- A palavra que falta é 金曜（きんよう）: sexta-feira.
+- frases: `sent:tatoeba-9776975`
+
+### 23. (recognition) Qual destas palavras significa "finanças, financiamento"?
+- **Resposta:** `{"choices": ["ひかく", "ふんいき", "きんゆう", "きゅうりょう"], "correct": "きんゆう"}`
+- きんゆう significa finanças, financiamento. As outras opções são きゅうりょう (salário, remuneração), ひかく (comparação) e ふんいき (atmosfera, clima).
+
+
+### 24. (recognition) Qual destas palavras significa "dinheiro, quantia em dinheiro"?
+- **Resposta:** `{"choices": ["どくしん", "センター", "かん", "きんせん"], "correct": "きんせん"}`
+- きんせん significa dinheiro, quantia em dinheiro. As outras opções são どくしん (solteiro, não casado), かん (lata) e センター (centro, central).
+
+
+### 25. (recognition) Qual destas palavras significa "quantia, montante" (no sentido de valor (em dinheiro))?
+- **Resposta:** `{"choices": ["としより", "デート", "うさぎ", "きんがく"], "correct": "きんがく"}`
+- きんがく significa quantia, montante. As outras opções são としより (idoso, pessoa idosa), うさぎ (coelho, lebre) e デート (encontro (romântico), sair (com alguém)).
+
+
+### 26. (cloze) Complete a frase: 金は＿＿より重い。 (O ouro é mais pesado que a prata.)
+- **Resposta:** `{"text": "銀", "full": "金は銀より重い。"}`
+- A palavra que falta é 銀（ぎん）: prata.
+- frases: `sent:tatoeba-179732`
+

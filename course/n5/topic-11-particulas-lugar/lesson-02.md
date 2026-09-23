@@ -101,3 +101,13 @@ Mnemônico de forma: o componente de fora é 門 (um portão de duas folhas) e d
 - 時 (tempo) somado a 間 (intervalo) dá 時間: o intervalo de tempo. Nesse composto 間 usa a leitura chinesa, que soa かん.
 
 
+### 8. (recognition) Qual destas palavras significa "aí, esse lado"?
+- **Resposta:** `{"choices": ["そちら", "たまご", "たくさん", "あした"], "correct": "そちら"}`
+- そちら significa aí, esse lado. As outras opções são たまご (ovo), たくさん (muito, muitos) e あした (amanhã).
+
+
+### 9. (recognition) Qual destas palavras significa "céu"?
+- **Resposta:** `{"choices": ["そら", "シャワー", "ごはん", "いつつ"], "correct": "そら"}`
+- そら significa céu. As outras opções são いつつ (cinco (coisas)), ごはん (arroz cozido) e シャワー (chuveiro, banho de chuveiro).
+
+

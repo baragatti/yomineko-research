@@ -136,3 +136,73 @@ Armadilha PT: os empréstimos カー e カード têm vogais de duração inteir
 - 喜ぶ (よろこぶ) é a alegria de quem recebe alguma coisa boa. Trocando o okurigana por び você tem o substantivo 喜び, a alegria.
 
 
+### 16. (recognition) Qual destas palavras significa "carro, automóvel"?
+- **Resposta:** `{"choices": ["あくま", "スタイル", "うま", "カー"], "correct": "カー"}`
+- カー significa carro, automóvel. As outras opções são スタイル (estilo, moda), うま (cavalo) e あくま (demônio, diabo).
+
+
+### 17. (cloze) Complete a frase: ＿＿を入れてください。 (Insira o cartão, por favor.)
+- **Resposta:** `{"text": "カード", "full": "カードを入れてください。"}`
+- A palavra que falta é カード: cartão.
+- frases: `sent:tatoeba-226471`
+
+### 18. (cloze) Complete a frase: 私は＿＿でした。 (Eu era sócio.)
+- **Resposta:** `{"text": "会員", "full": "私は会員でした。"}`
+- A palavra que falta é 会員（かいいん）: membro, associado.
+- frases: `sent:tatoeba-3552071`
+
+### 19. (recognition) Qual destas palavras significa "contabilidade, finanças"?
+- **Resposta:** `{"choices": ["中心", "この間", "昼食", "会計"], "correct": "会計"}`
+- 会計（かいけい） significa contabilidade, finanças. As outras opções são 中心 (centro, meio), 昼食 (almoço, refeição do meio-dia) e この間 (outro dia, esses dias).
+
+
+### 20. (recognition) Qual destas formas significa "aceitável, admissível"?
+- **Resposta:** `{"choices": ["進歩", "安定", "予報", "可"], "correct": "可"}`
+- 可（か） significa aceitável, admissível. As outras opções são 予報 (previsão (especialmente do tempo), prognóstico), 安定 (estabilidade, equilíbrio) e 進歩 (progresso, avanço).
+
+
+### 21. (recognition) Qual destas palavras significa "dano, prejuízo"?
+- **Resposta:** `{"choices": ["すいせん", "いわ", "バター", "がい"], "correct": "がい"}`
+- がい significa dano, prejuízo. As outras opções são いわ (rocha, pedra), すいせん (recomendar, indicar) e バター (manteiga).
+
+
+### 22. (recognition) Qual destas palavras significa "dívida de gratidão, favor"?
+- **Resposta:** `{"choices": ["おん", "おうじ", "ラケット", "スキー"], "correct": "おん"}`
+- おん significa dívida de gratidão, favor. As outras opções são スキー (esqui, esquiar), ラケット (raquete) e おうじ (príncipe).
+
+
+### 23. (cloze) Complete a frase: ＿＿に行きたい。 (Quero viajar para fora do país.)
+- **Resposta:** `{"text": "海外", "full": "海外に行きたい。"}`
+- A palavra que falta é 海外（かいがい）: exterior, no exterior.
+- frases: `sent:tatoeba-1200846`
+
+### 24. (recognition) Qual destas palavras significa "temperatura"?
+- **Resposta:** `{"choices": ["おんど", "ようす", "いきおい", "うめ"], "correct": "おんど"}`
+- おんど significa temperatura. As outras opções são うめ (ameixa japonesa), ようす (estado, aparência) e いきおい (ímpeto, força).
+
+
+### 25. (recognition) Qual destas palavras significa "ameno, temperado"?
+- **Resposta:** `{"choices": ["ようい", "おんだん", "あいにく", "よぶん"], "correct": "おんだん"}`
+- おんだん significa ameno, temperado. As outras opções são よぶん (extra, excedente), あいにく (infelizmente, em má hora) e ようい (fácil, simples).
+
+
+### 26. (recognition) Qual destas palavras significa "pintura, quadro"?
+- **Resposta:** `{"choices": ["おんど", "ひはん", "えんじょ", "かいが"], "correct": "かいが"}`
+- かいが significa pintura, quadro. As outras opções são えんじょ (ajuda, assistência), ひはん (criticar, crítica) e おんど (temperatura).
+
+
+### 27. (cloze) Complete a frase: ＿＿は時間の問題だ。 (A solução é só uma questão de tempo.)
+- **Resposta:** `{"text": "解決", "full": "解決は時間の問題だ。"}`
+- A palavra que falta é 解決（かいけつ）: solução, resolução.
+- frases: `sent:tatoeba-185197`
+
+### 28. (recognition) Qual destas formas significa "seção (de empresa), departamento"?
+- **Resposta:** `{"choices": ["けっか", "よめ", "か", "おく"], "correct": "か"}`
+- か significa seção (de empresa), departamento. As outras opções são よめ (esposa, noiva), けっか (resultado, consequência) e おく (fundo, interior).
+
+
+### 29. (cloze) Complete a frase: 道理で、＿＿が喜ぶわけだ。 (Com razão você está tão feliz.)
+- **Resposta:** `{"text": "君", "full": "道理で、君が喜ぶわけだ。"}`
+- A palavra que falta é 君（きみ）: você (informal). O kanji 君 faz parte desta palavra.
+- frases: `sent:tatoeba-123542`
+

@@ -133,3 +133,58 @@ O kanji 遊 significa "brincar, divertir-se, passear". O radical da esquerda (�
 - Trocando o okurigana de 遊ぶ você tem o substantivo 遊び. A leitura nativa あそ fica igual nos dois.
 
 
+### 14. (recognition) Qual destas palavras significa "droga!, ah, não!"?
+- **Resposta:** `{"choices": ["ノー", "まさか", "おめでとう", "しまった"], "correct": "しまった"}`
+- しまった significa droga!, ah, não!. As outras opções são まさか (não pode ser!, de jeito nenhum!), おめでとう (parabéns, felicitações) e ノー (não).
+
+
+### 15. (cloze) Complete a frase: ＿＿して！ (Fica parado!)
+- **Resposta:** `{"text": "じっと", "full": "じっとして！"}`
+- A palavra que falta é じっと: fixamente, atentamente.
+- frases: `sent:tatoeba-1507522`
+
+### 16. (recognition) Qual destas palavras significa "estímulo, incentivo"?
+- **Resposta:** `{"choices": ["そうおん", "いんさつ", "しげき", "さら"], "correct": "しげき"}`
+- しげき significa estímulo, incentivo. As outras opções são さら (prato, travessa), そうおん (barulho, ruído) e いんさつ (imprimir).
+
+
+### 17. (cloze) Complete a frase: ＿＿はいますか？ (Você tem irmãs?)
+- **Resposta:** `{"text": "姉妹", "full": "姉妹はいますか？"}`
+- A palavra que falta é 姉妹（しまい）: irmãs.
+- frases: `sent:tatoeba-168885`
+
+### 18. (cloze) Complete a frase: それは作りやすいし、＿＿安い。 (É fácil de fazer e ainda por cima é barato.)
+- **Resposta:** `{"text": "しかも", "full": "それは作りやすいし、しかも安い。"}`
+- A palavra que falta é しかも: além disso, e ainda.
+- frases: `sent:tatoeba-205185`
+
+### 19. (cloze) Complete a frase: もう＿＿クリスマスが来る。 (O Natal está chegando.)
+- **Resposta:** `{"text": "じき", "full": "もうじきクリスマスが来る。"}`
+- A palavra que falta é 直（じき）: imediato, logo.
+- frases: `sent:tatoeba-194451`
+
+### 20. (recognition) Qual destas palavras significa "diretamente, pessoalmente"?
+- **Resposta:** `{"choices": ["直ちに", "直に", "絶対", "更に"], "correct": "直に"}`
+- 直に（じかに） significa diretamente, pessoalmente. As outras opções são 更に (além disso, ademais), 直ちに (imediatamente, na hora) e 絶対 (com certeza, absolutamente).
+
+
+### 21. (cloze) Complete a frase: ドアは＿＿で開きます。 (As portas abrem automaticamente.)
+- **Resposta:** `{"text": "自動", "full": "ドアは自動で開きます。"}`
+- A palavra que falta é 自動（じどう）: automático.
+- frases: `sent:tatoeba-11851971`
+
+### 22. (cloze) Complete a frase: 私は＿＿の部屋がほしい。 (Eu quero um quarto só meu.)
+- **Resposta:** `{"text": "自身", "full": "私は自身の部屋がほしい。"}`
+- A palavra que falta é 自身（じしん）: si mesmo, próprio.
+- frases: `sent:tatoeba-156336`
+
+### 23. (recognition) Qual destas palavras significa "gramado, grama"?
+- **Resposta:** `{"choices": ["こおり", "しばふ", "まつり", "さんそ"], "correct": "しばふ"}`
+- しばふ significa gramado, grama. As outras opções são こおり (gelo), さんそ (oxigênio) e まつり (festival, festa popular).
+
+
+### 24. (recognition) Qual destas palavras significa "frequentemente, repetidamente"?
+- **Resposta:** `{"choices": ["ゆっくり", "まぁ", "しきりに", "わざと"], "correct": "しきりに"}`
+- しきりに significa frequentemente, repetidamente. As outras opções são わざと (de propósito, intencionalmente), まぁ (bem…, sei lá) e ゆっくり (devagar, com calma).
+
+

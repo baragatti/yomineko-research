@@ -103,3 +103,38 @@ A grande diferença de なら: nas outras três, a condição costuma vir antes 
 - この問題 aponta o problema de que se fala e 分かりません é a negativa educada de 分かる. Com 分かる, aquilo que se entende costuma vir marcado por が, não por を.
 
 
+### 8. (recognition) Qual destas palavras significa "além disso, ademais"?
+- **Resposta:** `{"choices": ["でも", "それに", "すると", "それでは"], "correct": "それに"}`
+- それに significa além disso, ademais. As outras opções são すると (então, aí (então)), でも (mas, porém) e それでは (então, nesse caso).
+
+
+### 9. (recognition) Qual destas palavras significa "presença, comparecimento"?
+- **Resposta:** `{"choices": ["しゅっせき", "メートル", "きぬ", "ステレオ"], "correct": "しゅっせき"}`
+- しゅっせき significa presença, comparecimento. As outras opções são ステレオ (aparelho de som, som estéreo), きぬ (seda) e メートル (metro (unidade de comprimento)).
+
+
+### 10. (recognition) Qual destas palavras significa "geografia"?
+- **Resposta:** `{"choices": ["地理", "八日", "二日", "大学生"], "correct": "地理"}`
+- 地理（ちり） significa geografia. As outras opções são 大学生 (estudante universitário, universitário), 八日 (dia 8 (do mês)) e 二日 (dia 2 (do mês)).
+
+
+### 11. (recognition) Qual destas palavras significa "estação, estação do ano"?
+- **Resposta:** `{"choices": ["なん", "きせつ", "くもり", "うりば"], "correct": "きせつ"}`
+- きせつ significa estação, estação do ano. As outras opções são うりば (seção (de loja), balcão de vendas), なん (o quê, que) e くもり (tempo nublado, nebulosidade).
+
+
+### 12. (recognition) Qual destas palavras significa "época, era"?
+- **Resposta:** `{"choices": ["時代", "夕方", "気", "今月"], "correct": "時代"}`
+- 時代（じだい） significa época, era. As outras opções são 夕方 (fim de tarde, entardecer), 今月 (este mês) e 気 (disposição, ânimo).
+
+
+### 13. (recognition) Qual destas palavras significa "Ocidente, o mundo ocidental"?
+- **Resposta:** `{"choices": ["いがく", "おたく", "ガラス", "せいよう"], "correct": "せいよう"}`
+- せいよう significa Ocidente, o mundo ocidental. As outras opções são ガラス (vidro, vidraça), いがく (medicina (ciência)) e おたく (a sua casa (polido), residência (de outrem, polido)).
+
+
+### 14. (recognition) Qual destas palavras significa "ir buscar, receber"?
+- **Resposta:** `{"choices": ["はらう", "なげる", "むかえる", "する"], "correct": "むかえる"}`
+- むかえる significa ir buscar, receber. As outras opções são する (fazer), なげる (jogar, arremessar) e はらう (pagar).
+
+

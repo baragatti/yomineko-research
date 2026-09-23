@@ -82,3 +82,53 @@ Repare em 含む, um verbo bem útil, e em 夫婦 para falar de um casal.
 - 不安 (ふあん) expressa ansiedade ou insegurança diante de algo que vem por aí.
 
 
+### 5. (recognition) Qual destas formas significa "não-, in- (prefixo negativo)"?
+- **Resposta:** `{"choices": ["不可", "来", "以前", "不"], "correct": "不"}`
+- 不（ふ） significa não-, in- (prefixo negativo). As outras opções são 不可 (proibido, inaceitável), 来 (próximo (no tempo), que vem) e 以前 (antes, anteriormente).
+
+
+### 6. (recognition) Qual destas formas significa "proibido, inaceitável"?
+- **Resposta:** `{"choices": ["不可", "無", "中心", "安心"], "correct": "不可"}`
+- 不可（ふか） significa proibido, inaceitável. As outras opções são 無 (nada, vazio), 中心 (centro, meio) e 安心 (alívio, tranquilidade).
+
+
+### 7. (recognition) Qual destas palavras significa "infelicidade, infortúnio"?
+- **Resposta:** `{"choices": ["かいぜん", "ふこう", "おせん", "つきあい"], "correct": "ふこう"}`
+- ふこう significa infelicidade, infortúnio. As outras opções são おせん (poluição, contaminação), かいぜん (melhoria, aperfeiçoamento) e つきあい (convívio, relacionamento).
+
+
+### 8. (cloze) Complete a frase: ＿＿な話でした。 (Foi uma história estranha.)
+- **Resposta:** `{"text": "不思議", "full": "不思議な話でした。"}`
+- A palavra que falta é 不思議（ふしぎ）: misterioso, estranho.
+- frases: `sent:tatoeba-9974615`
+
+### 9. (recognition) Qual destas palavras significa "inconveniência, falta de liberdade"?
+- **Resposta:** `{"choices": ["ふじゆう", "すがた", "せい", "ふえ"], "correct": "ふじゆう"}`
+- ふじゆう significa inconveniência, falta de liberdade. As outras opções são ふえ (flauta, apito), すがた (figura, aparência) e せい (culpa, por causa de).
+
+
+### 10. (recognition) Qual destas palavras significa "conter, incluir"?
+- **Resposta:** `{"choices": ["おうじる", "およぼす", "ふくむ", "おぼれる"], "correct": "ふくむ"}`
+- ふくむ significa conter, incluir. As outras opções são およぼす (exercer (influência), causar (efeito)), おうじる (responder (a), atender) e おぼれる (afogar-se, quase se afogar).
+
+
+### 11. (recognition) Qual destas palavras significa "vestimenta, traje"?
+- **Resposta:** `{"choices": ["くらい", "あせ", "おび", "ふくそう"], "correct": "ふくそう"}`
+- ふくそう significa vestimenta, traje. As outras opções são くらい (posição, grau), あせ (suor) e おび (obi, faixa do quimono).
+
+
+### 12. (recognition) Qual destas palavras significa "nada, vazio"?
+- **Resposta:** `{"choices": ["楽", "出来事", "無", "予期"], "correct": "無"}`
+- 無（む） significa nada, vazio. As outras opções são 予期 (esperar, prever), 出来事 (acontecimento, incidente) e 楽 (confortável, fácil).
+
+
+### 13. (recognition) Qual destas palavras significa "flauta, apito"?
+- **Resposta:** `{"choices": ["てつや", "はんにん", "すがた", "ふえ"], "correct": "ふえ"}`
+- ふえ significa flauta, apito. As outras opções são てつや (passar a noite em claro, virar a noite), はんにん (culpado, criminoso) e すがた (figura, aparência).
+
+
+### 14. (recognition) Qual destas palavras significa "junta, nó (na madeira)"?
+- **Resposta:** `{"choices": ["つり", "ラケット", "インク", "ふし"], "correct": "ふし"}`
+- ふし significa junta, nó (na madeira). As outras opções são つり (pescaria, pesca), インク (tinta, tinta de caneta) e ラケット (raquete).
+
+

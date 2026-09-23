@@ -101,3 +101,53 @@ Bônus de vocabulário:大きな(おおきな) quer dizer "grande" e vem antes d
 - 兄 (meu irmão mais velho) + も ('também', no lugar de は) + 医者 (médico) + です: 兄も医者です。
 
 
+### 6. (recognition) Qual destas palavras significa "irmão mais velho"?
+- **Resposta:** `{"choices": ["いぬ", "あね", "おとうさん", "おにいさん"], "correct": "おにいさん"}`
+- おにいさん significa irmão mais velho. As outras opções são おとうさん (pai, papai), あね (irmã mais velha) e いぬ (cachorro, cão).
+
+
+### 7. (recognition) Qual destas palavras significa "irmã mais velha"?
+- **Resposta:** `{"choices": ["どこ", "おとうさん", "おねえさん", "おにいさん"], "correct": "おねえさん"}`
+- おねえさん significa irmã mais velha. As outras opções são おにいさん (irmão mais velho), おとうさん (pai, papai) e どこ (onde, que lugar).
+
+
+### 8. (recognition) Qual destas palavras significa "pai, papai"?
+- **Resposta:** `{"choices": ["お", "おとうさん", "いもうと", "おねえさん"], "correct": "おとうさん"}`
+- おとうさん significa pai, papai. As outras opções são いもうと (irmã mais nova), おねえさん (irmã mais velha) e お (cauda, rabo).
+
+
+### 9. (recognition) Qual destas palavras significa "tio (mais novo que o pai/mãe)"?
+- **Resposta:** `{"choices": ["おてあらい", "おにいさん", "おじ", "あに"], "correct": "おじ"}`
+- おじ significa tio (mais novo que o pai/mãe). As outras opções são あに (irmão mais velho), おにいさん (irmão mais velho) e おてあらい (banheiro, lavabo).
+
+
+### 10. (production) Escreva em japonês a palavra que significa "grande, imenso".
+- **Resposta:** `{"text": "おおきな", "accept": ["おおきな"]}`
+- A resposta é おおきな: grande, imenso.
+
+
+### 11. (recognition) Qual destas palavras significa "irmã mais nova"?
+- **Resposta:** `{"choices": ["えいが", "おべんとう", "あれ", "いもうと"], "correct": "いもうと"}`
+- いもうと significa irmã mais nova. As outras opções são えいが (filme, cinema), おべんとう (marmita, bentô) e あれ (aquilo, aquele (ali)).
+
+
+### 12. (recognition) Qual destas palavras significa "irmão mais novo, irmão caçula"?
+- **Resposta:** `{"choices": ["あさごはん", "あね", "おじ", "おとうと"], "correct": "おとうと"}`
+- おとうと significa irmão mais novo, irmão caçula. As outras opções são おじ (tio (mais novo que o pai/mãe)), あね (irmã mais velha) e あさごはん (café da manhã).
+
+
+### 13. (cloze) Complete a frase: なぜ＿＿の？ (Por que você (me) pergunta?)
+- **Resposta:** `{"text": "聞く", "full": "なぜ聞くの？"}`
+- A palavra que falta é 聞く（きく）: ouvir, escutar.
+- frases: `sent:tatoeba-1596597`
+
+### 14. (cloze) Complete a frase: でも＿＿？ (Mas por quê?)
+- **Resposta:** `{"text": "なんで", "full": "でもなんで？"}`
+- O que falta é なんで: o ponto gramatical desta lição, por quê / como (なんで).
+- frases: `sent:tatoeba-1057336`
+
+### 15. (recognition) Qual destas palavras significa "ouvir, escutar"?
+- **Resposta:** `{"choices": ["分かる", "ある", "来る", "聞く"], "correct": "聞く"}`
+- 聞く（きく） significa ouvir, escutar. As outras opções são ある (haver, existir), 分かる (entender, compreender) e 来る (vir, chegar). O kanji 聞 faz parte desta palavra.
+
+

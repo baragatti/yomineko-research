@@ -119,3 +119,43 @@ Os três lado a lado, mesmo verbo やめる: 仕事をやめることにした =
 - 予定 (よてい) = planos / agenda / cronograma, o que você tem marcado. ようい (用意) é 'preparação' e いない (以内) é 'dentro de'.
 
 
+### 10. (cloze) Complete a frase: 前の＿＿がよく見える (Dá pra ver bem a tela da frente.)
+- **Resposta:** `{"text": "スクリーン", "full": "前のスクリーンがよく見える"}`
+- A palavra que falta é スクリーン: tela, telão.
+- frases: `sent:gen-d27d859af529`
+
+### 11. (recognition) Qual destas palavras significa "sino, campainha"?
+- **Resposta:** `{"choices": ["タバコ", "どろぼう", "はやし", "ベル"], "correct": "ベル"}`
+- ベル significa sino, campainha. As outras opções são はやし (bosque, mata), どろぼう (ladrão, assaltante) e タバコ (cigarro, tabaco).
+
+
+### 12. (cloze) Complete a frase: 千円＿＿の本を買いました (Comprei um livro de mil ienes ou menos.)
+- **Resposta:** `{"text": "いか", "full": "千円いかの本を買いました"}`
+- A palavra que falta é 以下（いか）: ou menos, abaixo de.
+- frases: `sent:gen-b249a5f48dc6`
+
+### 13. (recognition) Qual destas palavras significa "ou"?
+- **Resposta:** `{"choices": ["または", "それに", "しかし", "だから"], "correct": "または"}`
+- または significa ou. As outras opções são それに (além disso, ademais), だから (por isso, então) e しかし (mas, porém).
+
+
+### 14. (recognition) Qual destas palavras significa "recepção, balcão de atendimento"?
+- **Resposta:** `{"choices": ["うけつけ", "つもり", "くつした", "ばい"], "correct": "うけつけ"}`
+- うけつけ significa recepção, balcão de atendimento. As outras opções são ばい (dobro, o dobro), つもり (intenção, plano (de fazer algo)) e くつした (meia, meias).
+
+
+### 15. (recognition) Qual destas formas significa "membro, funcionário"?
+- **Resposta:** `{"choices": ["終わり", "員", "答え", "地理"], "correct": "員"}`
+- 員（いん） significa membro, funcionário. As outras opções são 終わり (o fim, o final), 答え (resposta) e 地理 (geografia).
+
+
+### 16. (recognition) Qual destas palavras significa "cumprimento, saudação"?
+- **Resposta:** `{"choices": ["きゃく", "そちら", "どなた", "あいさつ"], "correct": "あいさつ"}`
+- あいさつ significa cumprimento, saudação. As outras opções são きゃく (cliente, convidado), どなた (quem (formal)) e そちら (aí, esse lado).
+
+
+### 17. (recognition) Qual destas palavras significa "água encanada, abastecimento de água"?
+- **Resposta:** `{"choices": ["今度", "水道", "社長", "用事"], "correct": "水道"}`
+- 水道（すいどう） significa água encanada, abastecimento de água. As outras opções são 社長 (presidente da empresa, diretor-presidente), 用事 (afazer, compromisso) e 今度 (desta vez, agora).
+
+

@@ -125,3 +125,73 @@ Decisões coletivas vivem no mundo do trabalho e das instituições. Guarde este
 - 一番 (いちばん) é literalmente 'número um': 一 mais 番 ('número, vez'). Antes de um adjetivo, vira o superlativo.
 
 
+### 11. (recognition) Qual destas palavras significa "empresa, corporação"?
+- **Resposta:** `{"choices": ["ふじん", "きぎょう", "かもく", "りつ"], "correct": "きぎょう"}`
+- きぎょう significa empresa, corporação. As outras opções são かもく (matéria, disciplina), りつ (taxa, índice) e ふじん (mulher, senhora).
+
+
+### 12. (recognition) Qual destas palavras significa "conta (a pagar)"?
+- **Resposta:** `{"choices": ["すみ", "てつだい", "かんじょう", "れい"], "correct": "かんじょう"}`
+- かんじょう significa conta (a pagar). As outras opções são てつだい (ajuda, auxílio), れい (agradecimento, gratidão) e すみ (canto, recanto).
+
+
+### 13. (cloze) Complete a frase: 私はアメリカで医学を＿＿つもりでした。 (Eu pretendia estudar medicina nos Estados Unidos.)
+- **Resposta:** `{"text": "学ぶ", "full": "私はアメリカで医学を学ぶつもりでした。"}`
+- A palavra que falta é 学ぶ（まなぶ）: aprender, estudar.
+- frases: `sent:tatoeba-1119969`
+
+### 14. (cloze) Complete a frase: いつ＿＿しますか。 (Você volta para casa quando?)
+- **Resposta:** `{"text": "帰宅", "full": "いつ帰宅しますか。"}`
+- A palavra que falta é 帰宅（きたく）: voltar para casa, ir para casa.
+- frases: `sent:tatoeba-228672`
+
+### 15. (recognition) Qual destas palavras significa "ficar impressionado, admirar-se"?
+- **Resposta:** `{"choices": ["曜日", "感心", "手間", "係"], "correct": "感心"}`
+- 感心（かんしん） significa ficar impressionado, admirar-se. As outras opções são 曜日 (dia da semana), 係 (responsável, encarregado) e 手間 (trabalho, esforço).
+
+
+### 16. (recognition) Qual destas palavras significa "gratidão, agradecimento"?
+- **Resposta:** `{"choices": ["びょうどう", "エネルギー", "かんしゃ", "おんど"], "correct": "かんしゃ"}`
+- かんしゃ significa gratidão, agradecimento. As outras opções são エネルギー (energia), おんど (temperatura) e びょうどう (igualdade).
+
+
+### 17. (recognition) Qual destas palavras significa "dar as boas-vindas, acolher"?
+- **Resposta:** `{"choices": ["れっしゃ", "かくご", "かんげい", "ぶっか"], "correct": "かんげい"}`
+- かんげい significa dar as boas-vindas, acolher. As outras opções são ぶっか (preços (de mercadorias), custo de vida), れっしゃ (trem) e かくご (determinação, preparo psicológico).
+
+
+### 18. (cloze) Complete a frase: 今日は＿＿です。 (Hoje é terça.)
+- **Resposta:** `{"text": "火曜", "full": "今日は火曜です。"}`
+- A palavra que falta é 火曜（かよう）: terça-feira.
+- frases: `sent:tatoeba-11332318`
+
+### 19. (recognition) Qual destas palavras significa "ambiente, meio ambiente"?
+- **Resposta:** `{"choices": ["てきよう", "か", "つり", "かんきょう"], "correct": "かんきょう"}`
+- かんきょう significa ambiente, meio ambiente. As outras opções são か (seção (de empresa), departamento), てきよう (aplicar (regra/método), pôr em uso) e つり (pescaria, pesca).
+
+
+### 20. (recognition) Qual destas palavras significa "diretor (de filme), técnico (de time)"?
+- **Resposta:** `{"choices": ["れいぎ", "わらい", "すじ", "かんとく"], "correct": "かんとく"}`
+- かんとく significa diretor (de filme), técnico (de time). As outras opções são れいぎ (boas maneiras, etiqueta), わらい (risada, riso) e すじ (músculo, tendão).
+
+
+### 21. (recognition) Qual destas palavras significa "gestão, administração"?
+- **Resposta:** `{"choices": ["かん", "かんり", "きおく", "どうよう"], "correct": "かんり"}`
+- かんり significa gestão, administração. As outras opções são かん (intuição, pressentimento), どうよう (igual, semelhante) e きおく (memória, lembrança).
+
+
+### 22. (cloze) Complete a frase: ＿＿が最初に生まれたのはいつだか知っていますか。 (Você sabe quando surgiu o primeiro parlamento?)
+- **Resposta:** `{"text": "議会", "full": "議会が最初に生まれたのはいつだか知っていますか。"}`
+- A palavra que falta é 議会（ぎかい）: assembleia, parlamento.
+- frases: `sent:tatoeba-182902`
+
+### 23. (cloze) Complete a frase: 彼は＿＿である。 (Ele é parlamentar.)
+- **Resposta:** `{"text": "議員", "full": "彼は議員である。"}`
+- A palavra que falta é 議員（ぎいん）: parlamentar, deputado.
+- frases: `sent:tatoeba-108526`
+
+### 24. (cloze) Complete a frase: コンピューター＿＿の仕事をしています。 (Trabalho na área de computação.)
+- **Resposta:** `{"text": "関連", "full": "コンピューター関連の仕事をしています。"}`
+- A palavra que falta é 関連（かんれん）: relação, conexão.
+- frases: `sent:tatoeba-991928`
+

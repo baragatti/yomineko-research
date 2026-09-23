@@ -92,3 +92,33 @@ No atendimento japonês, desculpar-se por incômodos pequenos é um gesto de cor
 - 間に合う na negativa é 間に合わない; a forma て da negativa é 間に合わなくて. Some すみません e você se desculpa por algo que NÃO conseguiu fazer.
 
 
+### 6. (recognition) Qual destas palavras significa "fazer baldeação, trocar (de trem, ônibus)"?
+- **Resposta:** `{"choices": ["ほめる", "のりかえる", "いじめる", "もどる"], "correct": "のりかえる"}`
+- のりかえる significa fazer baldeação, trocar (de trem, ônibus). As outras opções são いじめる (maltratar, atormentar), もどる (voltar, retornar) e ほめる (elogiar, louvar).
+
+
+### 7. (recognition) Qual destas palavras significa "separar-se, despedir-se"?
+- **Resposta:** `{"choices": ["下がる", "動く", "別れる", "運ぶ"], "correct": "別れる"}`
+- 別れる（わかれる） significa separar-se, despedir-se. As outras opções são 動く (mover-se, mexer-se), 運ぶ (carregar, transportar) e 下がる (descer, baixar).
+
+
+### 8. (recognition) Qual destas palavras significa "voltar, retornar"?
+- **Resposta:** `{"choices": ["むかう", "もどる", "いじめる", "すべる"], "correct": "もどる"}`
+- もどる significa voltar, retornar. As outras opções são むかう (dirigir-se a, ir em direção a), いじめる (maltratar, atormentar) e すべる (escorregar, deslizar).
+
+
+### 9. (recognition) Qual destas palavras significa "dormir, adormecer"?
+- **Resposta:** `{"choices": ["えらぶ", "うえる", "ねむる", "やける"], "correct": "ねむる"}`
+- ねむる significa dormir, adormecer. As outras opções são うえる (plantar), やける (assar (ficar pronto), grelhar) e えらぶ (escolher, selecionar).
+
+
+### 10. (recognition) Qual destas palavras significa "estar lotado, estar cheio"?
+- **Resposta:** `{"choices": ["びっくり", "われる", "ひっこす", "こむ"], "correct": "こむ"}`
+- こむ significa estar lotado, estar cheio. As outras opções são びっくり (assustar-se, surpreender-se), われる (quebrar, estilhaçar) e ひっこす (mudar-se, mudar de casa).
+
+
+### 11. (recognition) Qual destas palavras significa "no caminho, a caminho"?
+- **Resposta:** `{"choices": ["とちゅう", "となり", "だんぼう", "アジア"], "correct": "とちゅう"}`
+- とちゅう significa no caminho, a caminho. As outras opções são だんぼう (aquecimento, calefação), アジア (Ásia) e となり (vizinho, ao lado).
+
+

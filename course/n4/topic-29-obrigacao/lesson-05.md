@@ -133,3 +133,48 @@ Estes três aparecem em palavras do dia a dia ligadas a imagem e idioma.
 - 英 é a forma abreviada de Inglaterra em japonês. Por isso 英語 (えいご) é 'a língua inglesa': 英 mais 語, 'língua'.
 
 
+### 10. (recognition) Qual destas palavras significa "hambúrguer (tipo bife, sem pão), bife de hambúrguer"?
+- **Resposta:** `{"choices": ["こめ", "チェック", "ハンバーグ", "ぶちょう"], "correct": "ハンバーグ"}`
+- ハンバーグ significa hambúrguer (tipo bife, sem pão), bife de hambúrguer. As outras opções são こめ (arroz (cru, em grão)), ぶちょう (chefe de departamento, gerente) e チェック (verificação, checagem).
+
+
+### 11. (recognition) Qual destas palavras significa "caixa (registradora), caixa (de loja)"?
+- **Resposta:** `{"choices": ["レジ", "とおく", "ち", "ため"], "correct": "レジ"}`
+- レジ significa caixa (registradora), caixa (de loja). As outras opções são ち (sangue), とおく (longe, lugar distante) e ため (para, a fim de).
+
+
+### 12. (cloze) Complete a frase: ＿＿しなくてもいいです。 (Você não precisa ser internado.)
+- **Resposta:** `{"text": "入院", "full": "入院しなくてもいいです。"}`
+- A palavra que falta é 入院（にゅういん）: internação (hospitalar).
+- frases: `sent:tatoeba-122086`
+
+### 13. (recognition) Qual destas palavras significa "suficiente, bastante"?
+- **Resposta:** `{"choices": ["上手", "無理", "小さな", "十分"], "correct": "十分"}`
+- 十分（じゅうぶん） significa suficiente, bastante. As outras opções são 上手 (bom em, habilidoso), 無理 (impossível, sem condições) e 小さな (pequeno, pequenino).
+
+
+### 14. (recognition) Qual destas palavras significa "assustar-se, surpreender-se"?
+- **Resposta:** `{"choices": ["びっくり", "ひっこす", "すむ", "かえる"], "correct": "びっくり"}`
+- びっくり significa assustar-se, surpreender-se. As outras opções são すむ (terminar, concluir-se), ひっこす (mudar-se, mudar de casa) e かえる (mudar, alterar).
+
+
+### 15. (recognition) Qual destas formas significa "cidade, município"?
+- **Resposta:** `{"choices": ["来週", "火", "計画", "市"], "correct": "市"}`
+- 市（し） significa cidade, município. As outras opções são 計画 (plano, projeto), 来週 (semana que vem, próxima semana) e 火 (fogo, chama).
+
+
+### 16. (recognition) Qual destas palavras significa "assim, deste jeito"?
+- **Resposta:** `{"choices": ["こう", "しばらく", "まず", "だいたい"], "correct": "こう"}`
+- こう significa assim, deste jeito. As outras opções são だいたい (mais ou menos, aproximadamente), しばらく (por um tempo, por um momento) e まず (primeiro, antes de mais nada).
+
+
+### 17. (recognition) Qual destas palavras significa "verso, lado de trás"?
+- **Resposta:** `{"choices": ["ざっし", "はんたい", "うら", "かど"], "correct": "うら"}`
+- うら significa verso, lado de trás. As outras opções são はんたい (oposição, ser contra), ざっし (revista, periódico) e かど (esquina, canto).
+
+
+### 18. (recognition) Qual destas palavras significa "auditório, salão de palestras"?
+- **Resposta:** `{"choices": ["おしいれ", "こうどう", "でんとう", "あかちゃん"], "correct": "こうどう"}`
+- こうどう significa auditório, salão de palestras. As outras opções são おしいれ (armário embutido, closet japonês), でんとう (lâmpada, luz elétrica) e あかちゃん (bebê, neném).
+
+

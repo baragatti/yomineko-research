@@ -128,3 +128,18 @@ O 君 (きみ) é um "você" informal e carinhoso, usado entre amigos próximos 
 - 痛い (いたい) é o que dói. O mesmo kanji forma 痛み (いたみ), a dor como substantivo, e 頭痛 (ずつう), a dor de cabeça.
 
 
+### 14. (cloze) Complete a frase: あの飛行機は＿＿だ (Aquele avião é a jato.)
+- **Resposta:** `{"text": "ジェット", "full": "あの飛行機はジェットだ"}`
+- A palavra que falta é ジェット: jato.
+- frases: `sent:gen-fcfd758524c3`
+
+### 15. (cloze) Complete a frase: 彼は＿＿をはいていた。 (Ele estava de calça jeans.)
+- **Resposta:** `{"text": "ジーンズ", "full": "彼はジーンズをはいていた。"}`
+- A palavra que falta é ジーンズ: jeans, calça jeans.
+- frases: `sent:tatoeba-113616`
+
+### 16. (cloze) Complete a frase: 彼は＿＿した。 (Ele perdeu o emprego.)
+- **Resposta:** `{"text": "失業", "full": "彼は失業した。"}`
+- A palavra que falta é 失業（しつぎょう）: desemprego.
+- frases: `sent:tatoeba-104763`
+

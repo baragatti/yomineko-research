@@ -96,3 +96,28 @@ O número 千 (せん) significa "mil". É o passo seguinte depois de 百 ("cem"
 - 二千円 lê-se にせんえん. O kanji 千 mantém aqui a leitura on せん, que é a que aparece em quase todos os múltiplos de mil.
 
 
+### 7. (recognition) Qual destas palavras significa "baixo"?
+- **Resposta:** `{"choices": ["ちかい", "つよい", "ひくい", "ほしい"], "correct": "ひくい"}`
+- ひくい significa baixo. As outras opções são ほしい (querer (ter), desejar), つよい (forte, poderoso) e ちかい (perto, próximo).
+
+
+### 8. (recognition) Qual destas formas significa "contador de animais pequenos"?
+- **Resposta:** `{"choices": ["びょういん", "ひき", "パン", "ぜんぶ"], "correct": "ひき"}`
+- ひき significa contador de animais pequenos. As outras opções são びょういん (hospital), ぜんぶ (tudo, todo) e パン (pão).
+
+
+### 9. (recognition) Qual destas palavras significa "doença, enfermidade"?
+- **Resposta:** `{"choices": ["テーブル", "びょうき", "かいもの", "はる"], "correct": "びょうき"}`
+- びょうき significa doença, enfermidade. As outras opções são はる (primavera), かいもの (compras) e テーブル (mesa).
+
+
+### 10. (recognition) Qual destas palavras significa "cem, cento"?
+- **Resposta:** `{"choices": ["一日", "外国", "百", "話"], "correct": "百"}`
+- 百（ひゃく） significa cem, cento. As outras opções são 外国 (país estrangeiro, exterior), 話 (conversa, papo) e 一日 (um dia, o dia inteiro).
+
+
+### 11. (recognition) Qual destas palavras significa "avião"?
+- **Resposta:** `{"choices": ["ひこうき", "きいろ", "にちようび", "ネクタイ"], "correct": "ひこうき"}`
+- ひこうき significa avião. As outras opções são にちようび (domingo), きいろ (amarelo (a cor)) e ネクタイ (gravata).
+
+

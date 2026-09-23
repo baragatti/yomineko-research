@@ -100,3 +100,48 @@ Esses padrões são a trilha sonora do atendimento japonês. Ao entrar numa loja
 - お + raiz 入り + ください = お入りください ('entre, por favor'), mais cortês que 入ってください. どうぞ reforça o convite.
 - frases: `sent:gen-0114d50c684c`
 
+### 6. (cloze) Complete a frase: 近くに＿＿がありますか (Tem algum posto de gasolina aqui perto?)
+- **Resposta:** `{"text": "ガソリンスタンド", "full": "近くにガソリンスタンドがありますか"}`
+- A palavra que falta é ガソリンスタンド: posto de gasolina.
+- frases: `sent:gen-e2b899655850`
+
+### 7. (cloze) Complete a frase: ＿＿を五つ作った (Fiz cinco bolos.)
+- **Resposta:** `{"text": "ケーキ", "full": "ケーキを五つ作った"}`
+- A palavra que falta é ケーキ: bolo.
+- frases: `sent:gen-3463a43db9a2`
+
+### 8. (cloze) Complete a frase: ＿＿は始めたばかりなんだよ。 (Eu acabei de começar a jogar tênis.)
+- **Resposta:** `{"text": "テニス", "full": "テニスは始めたばかりなんだよ。"}`
+- A palavra que falta é テニス: tênis (esporte).
+- frases: `sent:tatoeba-9938017`
+
+### 9. (cloze) Complete a frase: トレーはどこに＿＿いいですか。 (Onde eu devo deixar a bandeja?)
+- **Resposta:** `{"text": "下げたら", "full": "トレーはどこに下げたらいいですか。"}`
+- A palavra que falta é 下げる（さげる）: abaixar, baixar. Na frase ela aparece como 下げたら.
+- frases: `sent:tatoeba-10587976`
+
+### 10. (recognition) Qual destas palavras significa "ir, vir (humilde)"?
+- **Resposta:** `{"choices": ["たおれる", "なれる", "まいる", "なおる"], "correct": "まいる"}`
+- まいる significa ir, vir (humilde). As outras opções são たおれる (cair, tombar), なおる (sarar, curar-se) e なれる (acostumar-se, habituar-se).
+
+
+### 11. (recognition) Qual destas palavras significa "trocar, substituir"?
+- **Resposta:** `{"choices": ["こむ", "ぬれる", "とりかえる", "もどる"], "correct": "とりかえる"}`
+- とりかえる significa trocar, substituir. As outras opções são こむ (estar lotado, estar cheio), ぬれる (molhar-se, ficar molhado) e もどる (voltar, retornar).
+
+
+### 12. (recognition) Qual destas palavras significa "ser útil, servir"?
+- **Resposta:** `{"choices": ["これから", "やくにたつ", "ごらんになる", "できるだけ"], "correct": "やくにたつ"}`
+- やくにたつ significa ser útil, servir. As outras opções são ごらんになる (ver (respeitoso), olhar (respeitoso)), できるだけ (o máximo possível, na medida do possível) e これから (de agora em diante, a partir de agora).
+
+
+### 13. (recognition) Qual destas palavras significa "água quente"?
+- **Resposta:** `{"choices": ["ゆ", "せいかつ", "たいいん", "しょうらい"], "correct": "ゆ"}`
+- ゆ significa água quente. As outras opções são しょうらい (futuro), せいかつ (vida, cotidiano) e たいいん (alta hospitalar, sair do hospital).
+
+
+### 14. (recognition) Qual destas palavras significa "visitar"?
+- **Resposta:** `{"choices": ["おっしゃる", "よごれる", "とどける", "たずねる"], "correct": "たずねる"}`
+- たずねる significa visitar. As outras opções são よごれる (sujar-se, ficar sujo), おっしゃる (dizer (honorífico), falar (honorífico)) e とどける (entregar, enviar).
+
+

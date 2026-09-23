@@ -100,3 +100,23 @@ Juntando tudo: この放送は分かりやすい = esse programa é fácil de en
 - 説明 (せつめい) deixa claro (明) aquilo que se expõe (説). O mesmo 説 aparece em 小説 (しょうせつ, romance).
 
 
+### 7. (recognition) Qual destas palavras significa "perigo, risco"?
+- **Resposta:** `{"choices": ["きけん", "パパ", "ひきだし", "さんぎょう"], "correct": "きけん"}`
+- きけん significa perigo, risco. As outras opções são ひきだし (gaveta), さんぎょう (indústria, setor produtivo) e パパ (papai, pai).
+
+
+### 8. (recognition) Qual destas palavras significa "especialidade, área de especialização"?
+- **Resposta:** `{"choices": ["さらいしゅう", "せんもん", "うら", "フォーク"], "correct": "せんもん"}`
+- せんもん significa especialidade, área de especialização. As outras opções são さらいしゅう (semana depois da próxima, daqui a duas semanas), うら (verso, lado de trás) e フォーク (garfo).
+
+
+### 9. (recognition) Qual destas palavras significa "transmissão, difusão"?
+- **Resposta:** `{"choices": ["ぐあい", "せいさん", "さんぎょう", "ほうそう"], "correct": "ほうそう"}`
+- ほうそう significa transmissão, difusão. As outras opções são ぐあい (estado, condição (de saúde)), さんぎょう (indústria, setor produtivo) e せいさん (produção, fabricação).
+
+
+### 10. (recognition) Qual destas palavras significa "fax, aparelho de fax"?
+- **Resposta:** `{"choices": ["れんらく", "ファックス", "はいしゃ", "せん"], "correct": "ファックス"}`
+- ファックス significa fax, aparelho de fax. As outras opções são れんらく (contato, comunicação), せん (linha) e はいしゃ (dentista).
+
+

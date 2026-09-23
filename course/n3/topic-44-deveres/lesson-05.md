@@ -87,3 +87,53 @@ Não troque 突然 (advérbio solto: "de repente") por 途端. 途端 sempre vem
 - 友 (とも) é 'amigo' e 共に (ともに), 'juntos'. と liga o companheiro à ação.
 
 
+### 5. (cloze) Complete a frase: 彼女はクラスで＿＿です。 (Ela é a primeira da turma.)
+- **Resposta:** `{"text": "トップ", "full": "彼女はクラスでトップです。"}`
+- A palavra que falta é トップ: topo, o primeiro.
+- frases: `sent:tatoeba-92959`
+
+### 6. (cloze) Complete a frase: ＿＿は好きですか？ (Você gosta de jogar baralho?)
+- **Resposta:** `{"text": "トランプ", "full": "トランプは好きですか？"}`
+- A palavra que falta é トランプ: baralho, cartas de baralho.
+- frases: `sent:tatoeba-9812296`
+
+### 7. (cloze) Complete a frase: ＿＿に行きませんか。 (Vamos dar uma volta de carro?)
+- **Resposta:** `{"text": "ドライブ", "full": "ドライブに行きませんか。"}`
+- A palavra que falta é ドライブ: passeio de carro, volta de carro.
+- frases: `sent:tatoeba-199758`
+
+### 8. (cloze) Complete a frase: どの＿＿が一番好きですか。 (De qual série você gosta mais?)
+- **Resposta:** `{"text": "ドラマ", "full": "どのドラマが一番好きですか。"}`
+- A palavra que falta é ドラマ: drama, novela.
+- frases: `sent:tatoeba-432842`
+
+### 9. (cloze) Complete a frase: ＿＿急げ。 (Seja como for, anda logo.)
+- **Resposta:** `{"text": "とにかく", "full": "とにかく急げ。"}`
+- A palavra que falta é とにかく: de qualquer forma, enfim.
+- frases: `sent:tatoeba-3496807`
+
+### 10. (cloze) Complete a frase: ＿＿は、学校に行かないよ。 (No sábado a gente não vai à escola.)
+- **Resposta:** `{"text": "土曜", "full": "土曜は、学校に行かないよ。"}`
+- A palavra que falta é 土曜（どよう）: sábado.
+- frases: `sent:tatoeba-11056024`
+
+### 11. (recognition) Qual destas palavras significa "repentino, súbito" (no sentido de de repente)?
+- **Resposta:** `{"choices": ["そうさ", "ふくそう", "とつぜん", "かんしゃ"], "correct": "とつぜん"}`
+- とつぜん significa repentino, súbito. As outras opções são そうさ (operação, manuseio (de máquina)), ふくそう (vestimenta, traje) e かんしゃ (gratidão, agradecimento).
+
+
+### 12. (recognition) Qual destas palavras significa "fechar, cerrar"?
+- **Resposta:** `{"choices": ["がっかり", "ふせぐ", "ぶつ", "とじる"], "correct": "とじる"}`
+- とじる significa fechar, cerrar. As outras opções são がっかり (ficar decepcionado, ficar desapontado), ぶつ (bater, golpear) e ふせぐ (prevenir, proteger contra).
+
+
+### 13. (recognition) Qual destas palavras significa "fazer voar, arremessar"?
+- **Resposta:** `{"choices": ["つく", "てきする", "とばす", "つもる"], "correct": "とばす"}`
+- とばす significa fazer voar, arremessar. As outras opções são つもる (acumular-se, empilhar-se (neve/poeira)), つく (assumir (um cargo), ocupar (um posto)) e てきする (ser adequado, ser apropriado).
+
+
+### 14. (recognition) Qual destas palavras significa "sair correndo, disparar para fora"?
+- **Resposta:** `{"choices": ["かがやく", "かせぐ", "およぼす", "とびだす"], "correct": "とびだす"}`
+- とびだす significa sair correndo, disparar para fora. As outras opções são かせぐ (ganhar (dinheiro), faturar), かがやく (brilhar, reluzir) e およぼす (exercer (influência), causar (efeito)).
+
+

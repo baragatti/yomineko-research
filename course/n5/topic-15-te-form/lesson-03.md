@@ -112,3 +112,43 @@ Na primavera (春), os japoneses fazem hanami: sentam sob as cerejeiras para ver
 - 川 (かわ) é 'rio'. Os três traços desenham a água correndo entre as margens, e é essa forma que torna o kanji fácil de reconhecer.
 
 
+### 8. (recognition) Qual destas palavras significa "manteiga"?
+- **Resposta:** `{"choices": ["どなた", "せい", "はな", "バター"], "correct": "バター"}`
+- バター significa manteiga. As outras opções são はな (flor), どなた (quem (formal)) e せい (altura (de uma pessoa), estatura).
+
+
+### 9. (recognition) Qual destas palavras significa "pão"?
+- **Resposta:** `{"choices": ["バター", "パン", "はは", "にもつ"], "correct": "パン"}`
+- パン significa pão. As outras opções são にもつ (bagagem, carga), バター (manteiga) e はは (mãe).
+
+
+### 10. (recognition) Qual destas palavras significa "primavera"?
+- **Resposta:** `{"choices": ["たんじょうび", "おおぜい", "にちようび", "はる"], "correct": "はる"}`
+- はる significa primavera. As outras opções são おおぜい (muitas pessoas, multidão), にちようび (domingo) e たんじょうび (aniversário, dia do nascimento).
+
+
+### 11. (recognition) Qual destas palavras significa "tempo bom, céu claro"?
+- **Resposta:** `{"choices": ["あお", "はれ", "ちゃいろ", "ナイフ"], "correct": "はれ"}`
+- はれ significa tempo bom, céu claro. As outras opções são ナイフ (faca), あお (azul) e ちゃいろ (marrom, castanho).
+
+
+### 12. (recognition) Qual destas palavras significa "abrir o tempo, clarear"?
+- **Resposta:** `{"choices": ["つく", "はれる", "とぶ", "はじまる"], "correct": "はれる"}`
+- はれる significa abrir o tempo, clarear. As outras opções são はじまる (começar, iniciar-se), とぶ (voar) e つく (chegar, chegar a (um lugar)).
+
+
+### 13. (recognition) Qual destas palavras significa "mãe"?
+- **Resposta:** `{"choices": ["はは", "ニュース", "はれ", "テープ"], "correct": "はは"}`
+- はは significa mãe. As outras opções são はれ (tempo bom, céu claro), テープ (fita, fita adesiva) e ニュース (notícia, notícias).
+
+
+### 14. (recognition) Qual destas palavras significa "flor"?
+- **Resposta:** `{"choices": ["にく", "はな", "つくえ", "タバコ"], "correct": "はな"}`
+- はな significa flor. As outras opções são にく (carne), タバコ (cigarro, tabaco) e つくえ (escrivaninha, carteira (escolar)).
+
+
+### 15. (cloze) Complete a frase: ただ見＿＿だけです。 (Estou só olhando.)
+- **Resposta:** `{"text": "ている", "full": "ただ見ているだけです。"}`
+- O que falta é ている: o ponto gramatical desta lição, estar fazendo / estado contínuo (～ている).
+- frases: `sent:tatoeba-203622`
+

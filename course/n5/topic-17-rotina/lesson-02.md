@@ -112,3 +112,63 @@ Quer responder rápido em japonês? Para uma pergunta como "já comeu?", o lado 
 - 毎 quer dizer 'cada, todo' e vem sempre na frente, transformando a unidade de tempo seguinte em rotina. Nesse papel de prefixo ele se lê まい: まいにち, まいつき.
 
 
+### 9. (recognition) Qual destas palavras significa "caneta-tinteiro"?
+- **Resposta:** `{"choices": ["しろ", "ページ", "まんねんひつ", "きっぷ"], "correct": "まんねんひつ"}`
+- まんねんひつ significa caneta-tinteiro. As outras opções são ページ (página), しろ (branco, a cor branca) e きっぷ (bilhete, passagem).
+
+
+### 10. (recognition) Qual destas palavras significa "três (coisas)"?
+- **Resposta:** `{"choices": ["三つ", "万", "半", "十"], "correct": "三つ"}`
+- 三つ（みっつ） significa três (coisas). As outras opções são 半 (metade), 万 (dez mil) e 十 (dez).
+
+
+### 11. (recognition) Qual destas palavras significa "oito (coisas)"?
+- **Resposta:** `{"choices": ["やつ", "そん", "ページ", "ふうとう"], "correct": "やつ"}`
+- やつ（やっつ） significa oito (coisas). As outras opções são ふうとう (envelope), そん (aldeia, vila) e ページ (página).
+
+
+### 12. (recognition) Qual destas palavras significa "seis (coisas)"?
+- **Resposta:** `{"choices": ["大人", "何", "三日", "六つ"], "correct": "六つ"}`
+- 六つ（むっつ） significa seis (coisas). As outras opções são 三日 (dia 3 (do mês)), 大人 (adulto) e 何 (o que, que).
+
+
+### 13. (recognition) Qual destas palavras significa "direita"?
+- **Resposta:** `{"choices": ["みぎ", "まんねんひつ", "みち", "ポスト"], "correct": "みぎ"}`
+- みぎ significa direita. As outras opções são ポスト (caixa de correio), まんねんひつ (caneta-tinteiro) e みち (rua, estrada).
+
+
+### 14. (recognition) Qual destas palavras significa "problema, questão"?
+- **Resposta:** `{"choices": ["おおぜい", "ポスト", "もんだい", "ベッド"], "correct": "もんだい"}`
+- もんだい significa problema, questão. As outras opções são おおぜい (muitas pessoas, multidão), ポスト (caixa de correio) e ベッド (cama).
+
+
+### 15. (recognition) Qual destas palavras significa "quinta-feira"?
+- **Resposta:** `{"choices": ["もくようび", "ひるごはん", "まい", "みぎ"], "correct": "もくようび"}`
+- もくようび significa quinta-feira. As outras opções são まい (contador para objetos planos e finos (folhas, pratos, camisas)), みぎ (direita) e ひるごはん (almoço).
+
+
+### 16. (recognition) Qual destas palavras significa "todos, todo mundo"?
+- **Resposta:** `{"choices": ["あさって", "みんな", "もくようび", "かようび"], "correct": "みんな"}`
+- みんな（みな） significa todos, todo mundo. As outras opções são もくようび (quinta-feira), あさって (depois de amanhã) e かようび (terça-feira).
+
+
+### 17. (recognition) Qual destas palavras significa "pessoal, todos (vocês)"?
+- **Resposta:** `{"choices": ["にわ", "はいざら", "みなさん", "ふうとう"], "correct": "みなさん"}`
+- みなさん significa pessoal, todos (vocês). As outras opções são ふうとう (envelope), はいざら (cinzeiro) e にわ (jardim, quintal).
+
+
+### 18. (recognition) Qual destas palavras significa "verde"?
+- **Resposta:** `{"choices": ["もんだい", "みぎ", "ぶたにく", "みどり"], "correct": "みどり"}`
+- みどり significa verde. As outras opções são もんだい (problema, questão), ぶたにく (carne de porco) e みぎ (direita).
+
+
+### 19. (recognition) Qual destas palavras significa "dia 3 (do mês)"?
+- **Resposta:** `{"choices": ["一人", "三日", "今年", "二十"], "correct": "三日"}`
+- 三日（みっか） significa dia 3 (do mês). As outras opções são 今年 (este ano), 一人 (uma pessoa, só uma pessoa) e 二十 (vinte anos (de idade)).
+
+
+### 20. (recognition) Qual destas palavras significa "dia 6 (do mês)"?
+- **Resposta:** `{"choices": ["六日", "中", "後ろ", "話"], "correct": "六日"}`
+- 六日（むいか） significa dia 6 (do mês). As outras opções são 中 (durante/no meio de/em processo de, ao longo de/por todo), 後ろ (atrás, parte de trás) e 話 (conversa, papo).
+
+

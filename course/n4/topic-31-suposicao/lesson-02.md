@@ -108,3 +108,28 @@ Três kanji ligados à natureza e às estações, que casam com o らしい de "
 - 秋 sozinho já é a palavra あき. O kanji também tem a leitura sino-japonesa シュウ, mas nenhuma palavra deste banco a usa, então あき é a única que você precisa guardar por enquanto.
 
 
+### 8. (recognition) Qual destas palavras significa "mundo, sociedade"?
+- **Resposta:** `{"choices": ["代", "空港", "親", "都"], "correct": "代"}`
+- 代（よ） significa mundo, sociedade. As outras opções são 都 (capital), 空港 (aeroporto) e 親 (pai/mãe, pais).
+
+
+### 9. (cloze) Complete a frase: 母は＿＿の料理が大好きだ (Minha mãe adora comida asiática.)
+- **Resposta:** `{"text": "アジア", "full": "母はアジアの料理が大好きだ"}`
+- A palavra que falta é アジア: Ásia.
+- frases: `sent:gen-84919f25317e`
+
+### 10. (recognition) Qual destas palavras significa "proporção, porcentagem"?
+- **Resposta:** `{"choices": ["しみん", "つま", "きょういく", "わりあい"], "correct": "わりあい"}`
+- わりあい significa proporção, porcentagem. As outras opções são つま (esposa, mulher), しみん (cidadão, cidadã) e きょういく (educação, ensino).
+
+
+### 11. (recognition) Qual destas palavras significa "templo (budista)"?
+- **Resposta:** `{"choices": ["うそ", "おじょうさん", "ぶどう", "てら"], "correct": "てら"}`
+- てら significa templo (budista). As outras opções são うそ (mentira), ぶどう (uva, uvas) e おじょうさん (senhorita, moça).
+
+
+### 12. (recognition) Qual destas palavras significa "comum, normal"?
+- **Resposta:** `{"choices": ["ぐあい", "きょういく", "ふつう", "こうぎ"], "correct": "ふつう"}`
+- ふつう significa comum, normal. As outras opções são こうぎ (palestra, aula (expositiva)), ぐあい (estado, condição (de saúde)) e きょういく (educação, ensino).
+
+

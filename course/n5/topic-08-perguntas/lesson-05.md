@@ -108,3 +108,43 @@ Hoje quase ninguém os escreve assim; você verá essas unidades em katakana. Gu
 - 学校 junta 学 (estudo) e 校 (escola). Vale guardar os dois juntos: 校 é a parte que reaparece em todo nome de escola.
 
 
+### 9. (recognition) Qual destas palavras significa "tempo nublado, nebulosidade"?
+- **Resposta:** `{"choices": ["かんじ", "くもり", "テスト", "キロメートル"], "correct": "くもり"}`
+- くもり significa tempo nublado, nebulosidade. As outras opções são キロメートル (quilômetro), かんじ (kanji, caractere chinês) e テスト (prova, teste).
+
+
+### 10. (recognition) Qual destas palavras significa "lua"?
+- **Resposta:** `{"choices": ["つき", "かぜ", "ぎゅうにゅう", "こうちゃ"], "correct": "つき"}`
+- つき significa lua. As outras opções são こうちゃ (chá preto), ぎゅうにゅう (leite) e かぜ (resfriado, gripe).
+
+
+### 11. (recognition) Qual destas palavras significa "kanji, caractere chinês"?
+- **Resposta:** `{"choices": ["かんじ", "かぜ", "くだもの", "キログラム"], "correct": "かんじ"}`
+- かんじ significa kanji, caractere chinês. As outras opções são かぜ (vento, brisa), キログラム (quilograma, quilo) e くだもの (fruta).
+
+
+### 12. (recognition) Qual destas palavras significa "katakana (silabário japonês)"?
+- **Resposta:** `{"choices": ["キログラム", "きょうだい", "カタカナ", "ここ"], "correct": "カタカナ"}`
+- カタカナ significa katakana (silabário japonês). As outras opções são キログラム (quilograma, quilo), きょうだい (irmãos) e ここ (aqui, este lugar).
+
+
+### 13. (recognition) Qual destas palavras significa "grama"?
+- **Resposta:** `{"choices": ["おじ", "かんじ", "どう", "グラム"], "correct": "グラム"}`
+- グラム significa grama. As outras opções são どう (movimento), かんじ (kanji, caractere chinês) e おじ (tio (mais novo que o pai/mãe)).
+
+
+### 14. (recognition) Qual destas palavras significa "quilograma, quilo"?
+- **Resposta:** `{"choices": ["くすり", "キログラム", "だれ", "つき"], "correct": "キログラム"}`
+- キログラム significa quilograma, quilo. As outras opções são つき (lua), くすり (remédio, medicamento) e だれ (quem).
+
+
+### 15. (recognition) Qual destas palavras significa "quilômetro"?
+- **Resposta:** `{"choices": ["かてい", "カタカナ", "つき", "キロメートル"], "correct": "キロメートル"}`
+- キロメートル significa quilômetro. As outras opções são カタカナ (katakana (silabário japonês)), つき (lua) e かてい (lar, família).
+
+
+### 16. (recognition) Qual destas palavras significa "vento, brisa"?
+- **Resposta:** `{"choices": ["コート", "おじ", "かぜ", "かた"], "correct": "かぜ"}`
+- かぜ significa vento, brisa. As outras opções são コート (casaco, sobretudo), おじ (tio (mais novo que o pai/mãe)) e かた (pessoa (formal), senhor/senhora).
+
+

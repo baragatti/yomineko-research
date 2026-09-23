@@ -107,3 +107,38 @@ Para usar bem esses moldes em frases reais, junte algumas palavras de movimento,
 - 青 é o azul, e em japonês ele cobre também o verde do sinal de trânsito. Os vizinhos de cor são 赤 (vermelho) e 黒 (preto).
 
 
+### 9. (recognition) Qual destas palavras significa "num movimento ágil, suavemente e rápido"?
+- **Resposta:** `{"choices": ["ひじょうに", "もし", "すっと", "やはり"], "correct": "すっと"}`
+- すっと significa num movimento ágil, suavemente e rápido. As outras opções são ひじょうに (muito, extremamente), もし (se, caso) e やはり (como era de se esperar, de fato).
+
+
+### 10. (recognition) Qual destas palavras significa "visitar (humilde), ir à casa de (humilde)"?
+- **Resposta:** `{"choices": ["たりる", "やく", "うかがう", "はれる"], "correct": "うかがう"}`
+- うかがう significa visitar (humilde), ir à casa de (humilde). As outras opções são たりる (bastar, ser suficiente), やく (assar, grelhar) e はれる (abrir o tempo, clarear).
+
+
+### 11. (recognition) Qual destas palavras significa "como era de se esperar, de fato"?
+- **Resposta:** `{"choices": ["ひじょうに", "もし", "すっと", "やはり"], "correct": "やはり"}`
+- やはり significa como era de se esperar, de fato. As outras opções são すっと (num movimento ágil, suavemente e rápido), もし (se, caso) e ひじょうに (muito, extremamente).
+
+
+### 12. (cloze) Complete a frase: 大きくなったら何になる＿＿かい。 (Quando você crescer, o que pretende ser?)
+- **Resposta:** `{"text": "つもり", "full": "大きくなったら何になるつもりかい。"}`
+- A palavra que falta é つもり: intenção, plano (de fazer algo).
+- frases: `sent:tatoeba-137755`
+
+### 13. (cloze) Complete a frase: ＿＿も雨だったらどうする？ (E se por acaso chover, você faz o quê?)
+- **Resposta:** `{"text": "もし", "full": "もしも雨だったらどうする？"}`
+- A palavra que falta é もし: se, caso.
+- frases: `sent:gen-e6f0d765640f`
+
+### 14. (cloze) Complete a frase: バス代が＿＿ (O dinheiro da passagem de ônibus não dá.)
+- **Resposta:** `{"text": "足りない", "full": "バス代が足りない"}`
+- A palavra que falta é たりる: bastar, ser suficiente. Na frase ela aparece como 足りない.
+- frases: `sent:gen-6ffac971eaff`
+
+### 15. (recognition) Qual destas palavras significa "muito, extremamente"?
+- **Resposta:** `{"choices": ["やはり", "ひじょうに", "すっと", "ほとんど"], "correct": "ひじょうに"}`
+- ひじょうに significa muito, extremamente. As outras opções são やはり (como era de se esperar, de fato), すっと (num movimento ágil, suavemente e rápido) e ほとんど (quase, na maior parte).
+
+

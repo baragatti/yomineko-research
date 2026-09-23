@@ -152,3 +152,88 @@ Os mnemônicos acima são só uma rampa de entrada. Você vai fixar de verdade r
 - Sozinho, 草 lê-se くさ. No fim de um composto essa mesma leitura pode sonorizar e virar ぐさ; a leitura chinesa そう aparece pouco.
 
 
+### 12. (recognition) Qual destas palavras significa "princípio, doutrina"?
+- **Resposta:** `{"choices": ["のち", "ノック", "はか", "しゅぎ"], "correct": "しゅぎ"}`
+- しゅぎ significa princípio, doutrina. As outras opções são ノック (batida (na porta), bater (na porta)), のち (depois, mais tarde) e はか (túmulo, sepultura).
+
+
+### 13. (cloze) Complete a frase: その計画は＿＿の反対にあった。 (O projeto encontrou a oposição dos moradores.)
+- **Resposta:** `{"text": "住民", "full": "その計画は住民の反対にあった。"}`
+- A palavra que falta é 住民（じゅうみん）: morador, residente.
+- frases: `sent:tatoeba-211242`
+
+### 14. (cloze) Complete a frase: 彼はこの町の＿＿です。 (Ele é desta cidade.)
+- **Resposta:** `{"text": "出身", "full": "彼はこの町の出身です。"}`
+- A palavra que falta é 出身（しゅっしん）: origem, procedência.
+- frases: `sent:tatoeba-113727`
+
+### 15. (recognition) Qual destas palavras significa "arredores, entorno"?
+- **Resposta:** `{"choices": ["した", "ま", "めいれい", "しゅうい"], "correct": "しゅうい"}`
+- しゅうい significa arredores, entorno. As outras opções são した (língua), めいれい (ordem, comando) e ま (intervalo, espaço).
+
+
+### 16. (recognition) Qual destas palavras significa "conversar, falar"?
+- **Resposta:** `{"choices": ["へらす", "ふる", "うらぎる", "しゃべる"], "correct": "しゃべる"}`
+- しゃべる significa conversar, falar. As outras opções são へらす (reduzir, diminuir), ふる (acenar, balançar) e うらぎる (trair).
+
+
+### 17. (recognition) Qual destas palavras significa "religião"?
+- **Resposta:** `{"choices": ["しゅうきょう", "ねんれい", "むね", "ボーイ"], "correct": "しゅうきょう"}`
+- しゅうきょう significa religião. As outras opções são むね (peito, tórax), ねんれい (idade (de uma pessoa), anos de idade) e ボーイ (garçom, camareiro).
+
+
+### 18. (cloze) Complete a frase: 彼は＿＿がない。 (Ele não tem noção.)
+- **Resposta:** `{"text": "常識", "full": "彼は常識がない。"}`
+- A palavra que falta é 常識（じょうしき）: senso comum, bom senso.
+- frases: `sent:tatoeba-103965`
+
+### 19. (cloze) Complete a frase: 彼はそれを不正な＿＿でした。 (Ele fez isso por meios desonestos.)
+- **Resposta:** `{"text": "手段", "full": "彼はそれを不正な手段でした。"}`
+- A palavra que falta é 手段（しゅだん）: meio, método.
+- frases: `sent:tatoeba-112160`
+
+### 20. (recognition) Qual destas palavras significa "condição, requisito"?
+- **Resposta:** `{"choices": ["じょうけん", "ぬの", "そんちょう", "むし"], "correct": "じょうけん"}`
+- じょうけん significa condição, requisito. As outras opções são むし (ato de ignorar, desconsideração), ぬの (pano, tecido) e そんちょう (respeito, consideração).
+
+
+### 21. (cloze) Complete a frase: 彼は＿＿な男だ。 (Ele é um homem honesto.)
+- **Resposta:** `{"text": "正直", "full": "彼は正直な男だ。"}`
+- A palavra que falta é 正直（しょうじき）: honesto, franco.
+- frases: `sent:tatoeba-103281`
+
+### 22. (recognition) Qual destas palavras significa "situação, circunstâncias"?
+- **Resposta:** `{"choices": ["じょうきょう", "けしょう", "ようそ", "なべ"], "correct": "じょうきょう"}`
+- じょうきょう significa situação, circunstâncias. As outras opções são なべ (panela, caçarola), ようそ (elemento, componente) e けしょう (maquiagem).
+
+
+### 23. (recognition) Qual destas palavras significa "momento, instante"?
+- **Resposta:** `{"choices": ["じまん", "さいばん", "ジーンズ", "しゅんかん"], "correct": "しゅんかん"}`
+- しゅんかん significa momento, instante. As outras opções são ジーンズ (jeans, calça jeans), じまん (orgulho, gabarolice) e さいばん (julgamento, processo judicial).
+
+
+### 24. (cloze) Complete a frase: 友達が＿＿方向へ行った。 (Fui na direção que meu amigo apontou.)
+- **Resposta:** `{"text": "示した", "full": "友達が示した方向へ行った。"}`
+- A palavra que falta é 示す（しめす）: mostrar, indicar. Na frase ela aparece como 示した.
+- frases: `sent:tatoeba-79324`
+
+### 25. (cloze) Complete a frase: どんな＿＿の花が好きですか。 (De que tipo de flor você gosta?)
+- **Resposta:** `{"text": "種類", "full": "どんな種類の花が好きですか。"}`
+- A palavra que falta é 種類（しゅるい）: tipo, espécie.
+- frases: `sent:tatoeba-199410`
+
+### 26. (cloze) Complete a frase: それは＿＿ですか？ (Isso é importante?)
+- **Resposta:** `{"text": "重要", "full": "それは重要ですか？"}`
+- A palavra que falta é 重要（じゅうよう）: importante, essencial.
+- frases: `sent:tatoeba-5431301`
+
+### 27. (cloze) Complete a frase: ＿＿は明日放送に出る。 (O primeiro-ministro vai ao ar amanhã.)
+- **Resposta:** `{"text": "首相", "full": "首相は明日放送に出る。"}`
+- A palavra que falta é 首相（しゅしょう）: primeiro-ministro.
+- frases: `sent:tatoeba-148388`
+
+### 28. (cloze) Complete a frase: ＿＿に住んでいます。 (Moro na capital.)
+- **Resposta:** `{"text": "首都", "full": "首都に住んでいます。"}`
+- A palavra que falta é 首都（しゅと）: capital.
+- frases: `sent:tatoeba-9434679`
+

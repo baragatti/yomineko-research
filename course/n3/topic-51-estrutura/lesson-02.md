@@ -140,3 +140,68 @@ O kanji 才 significa "talento" e também conta "anos de idade" (五才, "cinco 
 - Quatro kanji novos em palavras que descrevem como a pessoa está: 忙 (ocupado), 才 (talento), 眠 (dormir) e 疲 (cansado).
 
 
+### 12. (cloze) Complete a frase: これは＿＿なワインだ。 (Este é um vinho de primeira.)
+- **Resposta:** `{"text": "上等", "full": "これは上等なワインだ。"}`
+- A palavra que falta é 上等（じょうとう）: de alta qualidade, superior.
+- frases: `sent:tatoeba-218257`
+
+### 13. (cloze) Complete a frase: ＿＿は短い。 (A vida é curta.)
+- **Resposta:** `{"text": "人生", "full": "人生は短い。"}`
+- A palavra que falta é 人生（じんせい）: vida (humana), a vida.
+- frases: `sent:tatoeba-3496836`
+
+### 14. (recognition) Qual destas palavras significa "piada, brincadeira"?
+- **Resposta:** `{"choices": ["ミス", "じょうだん", "とき", "じょうたい"], "correct": "じょうだん"}`
+- じょうだん significa piada, brincadeira. As outras opções são じょうたい (estado, condição), ミス (erro, engano) e とき (tempo, momento).
+
+
+### 15. (cloze) Complete a frase: その問題はまもなく＿＿されるだろう。 (Esse problema deve ser resolvido em breve.)
+- **Resposta:** `{"text": "処理", "full": "その問題はまもなく処理されるだろう。"}`
+- A palavra que falta é 処理（しょり）: processar, tratar.
+- frases: `sent:tatoeba-206450`
+
+### 16. (cloze) Complete a frase: ＿＿お待ちください。 (Aguarde um instante, por favor.)
+- **Resposta:** `{"text": "少々", "full": "少々お待ちください。"}`
+- A palavra que falta é 少々（しょうしょう）: um pouco, um instante.
+- frases: `sent:tatoeba-8886173`
+
+### 17. (recognition) Qual destas palavras significa "aprovar, autorizar"?
+- **Resposta:** `{"choices": ["げき", "えんりょ", "しょうにん", "さかり"], "correct": "しょうにん"}`
+- しょうにん significa aprovar, autorizar. As outras opções são さかり (auge, pico), げき (peça (teatral), drama) e えんりょ (reserva, cerimônia).
+
+
+### 18. (recognition) Qual destas palavras significa "fresco, novo"?
+- **Resposta:** `{"choices": ["しんけん", "たんじゅん", "しんせん", "ばくだい"], "correct": "しんせん"}`
+- しんせん significa fresco, novo. As outras opções são しんけん (sério, empenhado), たんじゅん (simples, descomplicado) e ばくだい (enorme, imenso).
+
+
+### 19. (recognition) Qual destas palavras significa "estado, condição" (no sentido de situação)?
+- **Resposta:** `{"choices": ["じょうたい", "しゅちょう", "えんじょ", "しょうがくきん"], "correct": "じょうたい"}`
+- じょうたい significa estado, condição. As outras opções são しょうがくきん (bolsa de estudos), しゅちょう (afirmar, sustentar) e えんじょ (ajuda, assistência).
+
+
+### 20. (cloze) Complete a frase: 病気はしばしば飲みすぎから＿＿。 (Muita doença surge do excesso de bebida.)
+- **Resposta:** `{"text": "生じる", "full": "病気はしばしば飲みすぎから生じる。"}`
+- A palavra que falta é 生じる（しょうじる）: surgir, ocorrer.
+- frases: `sent:tatoeba-85255`
+
+### 21. (recognition) Qual destas palavras significa "sintoma"?
+- **Resposta:** `{"choices": ["れきし", "コード", "しょうじょう", "かん"], "correct": "しょうじょう"}`
+- しょうじょう significa sintoma. As outras opções são コード (cabo, fio), かん (intuição, pressentimento) e れきし (história).
+
+
+### 22. (recognition) Qual destas palavras significa "provar, demonstrar"?
+- **Resposta:** `{"choices": ["はさみ", "そこ", "しょうめい", "じょうたい"], "correct": "しょうめい"}`
+- しょうめい significa provar, demonstrar. As outras opções são はさみ (tesoura), じょうたい (estado, condição) e そこ (fundo, base).
+
+
+### 23. (cloze) Complete a frase: 彼は大学に＿＿すればよかったのに。 (Ele devia ter ido para a faculdade.)
+- **Resposta:** `{"text": "進学", "full": "彼は大学に進学すればよかったのに。"}`
+- A palavra que falta é 進学（しんがく）: ingressar (em escola de nível superior), prosseguir os estudos.
+- frases: `sent:tatoeba-102452`
+
+### 24. (cloze) Complete a frase: 私は＿＿がある。 (Estou com apetite.)
+- **Resposta:** `{"text": "食欲", "full": "私は食欲がある。"}`
+- A palavra que falta é 食欲（しょくよく）: apetite.
+- frases: `sent:tatoeba-155780`
+

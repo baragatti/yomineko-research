@@ -111,3 +111,63 @@ Numa refeição, soltar um 美味しい sincero é quase um agradecimento ao coz
 - おいしい (gostoso/delicioso) é um adjetivo-い que já carrega a descrição; basta acrescentar です para soar educado. É o elogio número um numa refeição japonesa.
 
 
+### 7. (recognition) Qual destas palavras significa "grosso, espesso"?
+- **Resposta:** `{"choices": ["からい", "すずしい", "かわいい", "あつい"], "correct": "あつい"}`
+- あつい significa grosso, espesso. As outras opções são かわいい (fofo, bonitinho), すずしい (fresco, agradável (clima)) e からい (picante, apimentado).
+
+
+### 8. (recognition) Qual destas palavras significa "fofo, bonitinho"?
+- **Resposta:** `{"choices": ["かわいい", "あつい", "うすい", "あまい"], "correct": "かわいい"}`
+- かわいい significa fofo, bonitinho. As outras opções são うすい (fino), あまい (doce) e あつい (grosso, espesso).
+
+
+### 9. (recognition) Qual destas palavras significa "novo"?
+- **Resposta:** `{"choices": ["高い", "あつい", "新しい", "かるい"], "correct": "新しい"}`
+- 新しい（あたらしい） significa novo. As outras opções são 高い (alto, elevado), かるい (leve) e あつい (quente (clima, ambiente)).
+
+
+### 10. (recognition) Qual destas palavras significa "quente (clima, ambiente)"?
+- **Resposta:** `{"choices": ["あつい", "おもい", "うすい", "おもしろい"], "correct": "あつい"}`
+- あつい significa quente (clima, ambiente). As outras opções são おもしろい (interessante), おもい (pesado) e うすい (fino).
+
+
+### 11. (recognition) Qual destas palavras significa "quente (clima ameno), morno"?
+- **Resposta:** `{"choices": ["かわいい", "あたたかい", "よい", "あかい"], "correct": "あたたかい"}`
+- あたたかい significa quente (clima ameno), morno. As outras opções são かわいい (fofo, bonitinho), あかい (vermelho) e よい (bom, bem).
+
+
+### 12. (recognition) Qual destas palavras significa "fresco, agradável (clima)"?
+- **Resposta:** `{"choices": ["あつい", "あおい", "すずしい", "あたたかい"], "correct": "すずしい"}`
+- すずしい significa fresco, agradável (clima). As outras opções são あつい (quente (ao toque)), あたたかい (quente (clima ameno), morno) e あおい (azul, (sinal) verde).
+
+
+### 13. (recognition) Qual destas palavras significa "doce"?
+- **Resposta:** `{"choices": ["あつい", "おもしろい", "つめたい", "あまい"], "correct": "あまい"}`
+- あまい significa doce. As outras opções são あつい (quente (ao toque)), おもしろい (interessante) e つめたい (frio (ao toque), gelado).
+
+
+### 14. (recognition) Qual destas palavras significa "fino"?
+- **Resposta:** `{"choices": ["かるい", "うすい", "あつい", "きいろい"], "correct": "うすい"}`
+- うすい significa fino. As outras opções são あつい (grosso, espesso), かるい (leve) e きいろい (amarelo).
+
+
+### 15. (recognition) Qual destas palavras significa "picante, apimentado"?
+- **Resposta:** `{"choices": ["あつい", "しろい", "いい", "からい"], "correct": "からい"}`
+- からい significa picante, apimentado. As outras opções são しろい (branco), あつい (quente (clima, ambiente)) e いい (bom, legal).
+
+
+### 16. (recognition) Qual destas palavras significa "pesado"?
+- **Resposta:** `{"choices": ["おもい", "あたたかい", "おいしい", "からい"], "correct": "おもい"}`
+- おもい significa pesado. As outras opções são おいしい (delicioso, gostoso), あたたかい (quente (clima ameno), morno) e からい (picante, apimentado).
+
+
+### 17. (recognition) Qual destas palavras significa "interessante"?
+- **Resposta:** `{"choices": ["あまい", "おもしろい", "おもい", "すずしい"], "correct": "おもしろい"}`
+- おもしろい significa interessante. As outras opções são あまい (doce), すずしい (fresco, agradável (clima)) e おもい (pesado).
+
+
+### 18. (cloze) Complete a frase: 話し＿＿か。 (Posso falar (com você)?)
+- **Resposta:** `{"text": "てもいいです", "full": "話してもいいですか。"}`
+- O que falta é てもいいです: o ponto gramatical desta lição, dar permissão (〜てもいいです).
+- frases: `sent:tatoeba-77189`
+

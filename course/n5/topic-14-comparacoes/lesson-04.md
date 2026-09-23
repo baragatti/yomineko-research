@@ -151,3 +151,23 @@ Quatro kanji para fixar, três deles ligados a números e direções.
 - 百 se lê ヒャク e é o cem que aparece em preços e contagens. Repare que ele nasce de um traço a mais sobre o kanji de 'branco'.
 
 
+### 14. (cloze) Complete a frase: ＿＿、三デメリットがありますね。 (Há duas ou três desvantagens, né.)
+- **Resposta:** `{"text": "二", "full": "二、三デメリットがありますね。"}`
+- A palavra que falta é 二（に）: dois.
+- frases: `sent:tatoeba-123182`
+
+### 15. (recognition) Qual destas palavras significa "verão"?
+- **Resposta:** `{"choices": ["ぜんぶ", "ネクタイ", "なつ", "おととい"], "correct": "なつ"}`
+- なつ significa verão. As outras opções são ぜんぶ (tudo, todo), おととい (anteontem) e ネクタイ (gravata).
+
+
+### 16. (recognition) Qual destas palavras significa "domingo"?
+- **Resposta:** `{"choices": ["でぐち", "コップ", "にちようび", "りょうり"], "correct": "にちようび"}`
+- にちようび significa domingo. As outras opções são りょうり (culinária, prato), コップ (copo) e でぐち (saída).
+
+
+### 17. (recognition) Qual destas palavras significa "oeste, ocidente"?
+- **Resposta:** `{"choices": ["ころ", "ペン", "にし", "てがみ"], "correct": "にし"}`
+- にし significa oeste, ocidente. As outras opções são ペン (caneta), てがみ (carta) e ころ (época, por volta de).
+
+

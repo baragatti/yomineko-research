@@ -116,3 +116,8 @@ Mnemônico de forma: imagine dois braços cruzados em X por cima de duas pernas 
 - Do próprio pai você fala 父 (ちち), sem お e sem さん. お父さん (おとうさん) fica para o pai dos outros e para chamar o seu.
 
 
+### 9. (recognition) Qual destas palavras significa "esquecer"?
+- **Resposta:** `{"choices": ["なく", "わたる", "わすれる", "まつ"], "correct": "わすれる"}`
+- わすれる significa esquecer. As outras opções são まつ (esperar, aguardar), なく (cantar (animal), piar) e わたる (atravessar, cruzar).
+
+

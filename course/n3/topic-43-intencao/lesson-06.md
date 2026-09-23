@@ -91,3 +91,58 @@ Não confunda ところが com ところで. ところが introduz um contraste 
 - 解く é o transitivo ('resolver'); ～ことにしている indica hábito assumido por escolha.
 
 
+### 6. (cloze) Complete a frase: 部屋を出る＿＿は必ず明かりを消してね。 (Quando sair do quarto, não esquece de apagar a luz, tá?)
+- **Resposta:** `{"text": "とき", "full": "部屋を出るときは必ず明かりを消してね。"}`
+- A palavra que falta é とき: tempo, momento.
+- frases: `sent:tatoeba-84114`
+
+### 7. (recognition) Qual destas palavras significa "em algum lugar, em alguma parte"?
+- **Resposta:** `{"choices": ["おうさま", "どこか", "ぎし", "わた"], "correct": "どこか"}`
+- どこか significa em algum lugar, em alguma parte. As outras opções são おうさま (rei (esp. em contos de fadas)), わた (algodão, enchimento de algodão) e ぎし (engenheiro, técnico).
+
+
+### 8. (cloze) Complete a frase: 私の＿＿は自由にお使い下さい。 (Fique à vontade para usar os meus livros.)
+- **Resposta:** `{"text": "図書", "full": "私の図書は自由にお使い下さい。"}`
+- A palavra que falta é 図書（としょ）: livros, obras escritas.
+- frases: `sent:tatoeba-163240`
+
+### 9. (cloze) Complete a frase: 長い＿＿が過ぎた。 (Muitos anos se passaram.)
+- **Resposta:** `{"text": "年月", "full": "長い年月が過ぎた。"}`
+- A palavra que falta é 年月（としつき）: anos, o passar do tempo.
+- frases: `sent:tatoeba-125933`
+
+### 10. (cloze) Complete a frase: テニスは＿＿？ (Você joga bem tênis?)
+- **Resposta:** `{"text": "得意", "full": "テニスは得意？"}`
+- A palavra que falta é 得意（とくい）: bom em, habilidoso.
+- frases: `sent:tatoeba-8747270`
+
+### 11. (recognition) Qual destas palavras significa "porém, no entanto"?
+- **Resposta:** `{"choices": ["ですから", "所が", "さて", "ところで"], "correct": "所が"}`
+- 所が（ところが） significa porém, no entanto. As outras opções são さて (bem, então), ですから (por isso, portanto) e ところで (a propósito, aliás).
+
+
+### 12. (recognition) Qual destas palavras significa "único, peculiar"?
+- **Resposta:** `{"choices": ["かんりょう", "いりょう", "われわれ", "どくとく"], "correct": "どくとく"}`
+- どくとく significa único, peculiar. As outras opções são かんりょう (conclusão, finalização), われわれ (nós, a gente) e いりょう (assistência médica, tratamento médico).
+
+
+### 13. (recognition) Qual destas palavras significa "solteiro, não casado"?
+- **Resposta:** `{"choices": ["どうりょう", "せつやく", "どくしん", "ふち"], "correct": "どくしん"}`
+- どくしん significa solteiro, não casado. As outras opções são せつやく (economia, poupança), どうりょう (colega de trabalho, colega) e ふち (borda, beira).
+
+
+### 14. (recognition) Qual destas palavras significa "desatar-se, soltar-se"?
+- **Resposta:** `{"choices": ["下す", "解ける", "付ける", "語る"], "correct": "解ける"}`
+- 解ける（とける） significa desatar-se, soltar-se. As outras opções são 語る (narrar, contar), 付ける (fixar, prender) e 下す (descer (algo), baixar).
+
+
+### 15. (cloze) Complete a frase: ＿＿は好きですか？ (Você gosta de ler?)
+- **Resposta:** `{"text": "読書", "full": "読書は好きですか？"}`
+- A palavra que falta é 読書（どくしょ）: leitura, ler (livros).
+- frases: `sent:tatoeba-10574442`
+
+### 16. (cloze) Complete a frase: あなたは＿＿に住んでいますか。 (Você mora na cidade?)
+- **Resposta:** `{"text": "都市", "full": "あなたは都市に住んでいますか。"}`
+- A palavra que falta é 都市（とし）: cidade, metrópole.
+- frases: `sent:tatoeba-231711`
+

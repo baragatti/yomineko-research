@@ -96,3 +96,48 @@ Três kanji que aparecem em palavras de paisagem e do dia a dia.
 - 野 tem duas leituras que valem a pena guardar: の, a japonesa, que aparece em nomes de lugar e em sobrenomes, e や, a sino-japonesa, que aparece em palavras compostas.
 
 
+### 8. (cloze) Complete a frase: ＿＿の料理はとてもおいしい (A comida do papai é muito gostosa.)
+- **Resposta:** `{"text": "パパ", "full": "パパの料理はとてもおいしい"}`
+- A palavra que falta é パパ: papai, pai.
+- frases: `sent:gen-0b56243431b6`
+
+### 9. (recognition) Qual destas palavras significa "ladeira, encosta"?
+- **Resposta:** `{"choices": ["けんか", "おっと", "しごと", "さか"], "correct": "さか"}`
+- さか significa ladeira, encosta. As outras opções são おっと (marido, esposo), けんか (na província, dentro da província) e しごと (trabalho, emprego).
+
+
+### 10. (recognition) Qual destas palavras significa "parede, muro"?
+- **Resposta:** `{"choices": ["しょうせつ", "かべ", "ひこうじょう", "どうぶつえん"], "correct": "かべ"}`
+- かべ significa parede, muro. As outras opções são どうぶつえん (zoológico, jardim zoológico), しょうせつ (romance (livro), ficção) e ひこうじょう (aeroporto, campo de aviação).
+
+
+### 11. (recognition) Qual destas palavras significa "marido, esposo"?
+- **Resposta:** `{"choices": ["きせつ", "おっと", "やつ", "りゅうがくせい"], "correct": "おっと"}`
+- おっと significa marido, esposo. As outras opções são きせつ (estação, estação do ano), やつ (oito (coisas)) e りゅうがくせい (estudante de intercâmbio, estudante estrangeiro).
+
+
+### 12. (recognition) Qual destas palavras significa "estrela"?
+- **Resposta:** `{"choices": ["じゅうしょ", "さか", "ほし", "かべ"], "correct": "ほし"}`
+- ほし significa estrela. As outras opções são かべ (parede, muro), さか (ladeira, encosta) e じゅうしょ (endereço).
+
+
+### 13. (recognition) Qual destas palavras significa "bosque, mata"?
+- **Resposta:** `{"choices": ["りよう", "ガス", "りょこう", "はやし"], "correct": "はやし"}`
+- はやし significa bosque, mata. As outras opções são りょこう (viagem), りよう (uso, utilização) e ガス (gás, gás (de cozinha)).
+
+
+### 14. (recognition) Qual destas palavras significa "maravilhoso, esplêndido"?
+- **Resposta:** `{"choices": ["こわい", "あさい", "すばらしい", "ふかい"], "correct": "すばらしい"}`
+- すばらしい significa maravilhoso, esplêndido. As outras opções são こわい (assustador, apavorante), あさい (raso) e ふかい (fundo, profundo (água, buraco)).
+
+
+### 15. (recognition) Qual destas palavras significa "belo, bonito"?
+- **Resposta:** `{"choices": ["からい", "はずかしい", "うつくしい", "くろい"], "correct": "うつくしい"}`
+- うつくしい significa belo, bonito. As outras opções são はずかしい (vergonhoso, constrangedor), からい (picante, apimentado) e くろい (preto).
+
+
+### 16. (recognition) Qual destas palavras significa "uva, uvas"?
+- **Resposta:** `{"choices": ["アフリカ", "ぶどう", "サンドイッチ", "じしん"], "correct": "ぶどう"}`
+- ぶどう significa uva, uvas. As outras opções são アフリカ (África), じしん (terremoto, tremor de terra) e サンドイッチ (sanduíche).
+
+

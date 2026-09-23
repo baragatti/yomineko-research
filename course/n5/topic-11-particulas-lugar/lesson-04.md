@@ -126,3 +126,43 @@ O par 前 (antes) e 後 (depois) é um casal: 午前 (manhã) e 午後 (tarde) d
 - うしろ é o "atrás" físico, o que fica nas suas costas; あと e のち são o "depois" do relógio. Mesmo kanji, dois eixos diferentes.
 
 
+### 12. (recognition) Qual destas palavras significa "hoje"?
+- **Resposta:** `{"choices": ["くち", "きょう", "たまご", "ねこ"], "correct": "きょう"}`
+- きょう significa hoje. As outras opções são たまご (ovo), くち (boca) e ねこ (gato).
+
+
+### 13. (recognition) Qual destas palavras significa "esta noite, hoje à noite"?
+- **Resposta:** `{"choices": ["スプーン", "じゅぎょう", "さくぶん", "こんばん"], "correct": "こんばん"}`
+- こんばん significa esta noite, hoje à noite. As outras opções são さくぶん (redação, composição (escrita)), じゅぎょう (aula, lição) e スプーン (colher).
+
+
+### 14. (recognition) Qual destas palavras significa "esta manhã, hoje de manhã"?
+- **Resposta:** `{"choices": ["グラム", "だいどころ", "せびろ", "けさ"], "correct": "けさ"}`
+- けさ significa esta manhã, hoje de manhã. As outras opções são だいどころ (cozinha), せびろ (terno) e グラム (grama).
+
+
+### 15. (recognition) Qual destas palavras significa "manhã, da manhã"?
+- **Resposta:** `{"choices": ["たて", "ごぜん", "たいしかん", "おちゃ"], "correct": "ごぜん"}`
+- ごぜん significa manhã, da manhã. As outras opções são たて (escudo), たいしかん (embaixada) e おちゃ (chá, chá-verde).
+
+
+### 16. (recognition) Qual destas palavras significa "tarde, à tarde"?
+- **Resposta:** `{"choices": ["ごご", "えき", "たいしかん", "だれか"], "correct": "ごご"}`
+- ごご significa tarde, à tarde. As outras opções são だれか (alguém), たいしかん (embaixada) e えき (estação (de trem)).
+
+
+### 17. (recognition) Qual destas palavras significa "ontem"?
+- **Resposta:** `{"choices": ["ごご", "きのう", "だいどころ", "そば"], "correct": "きのう"}`
+- きのう significa ontem. As outras opções são そば (lado, ao lado de), ごご (tarde, à tarde) e だいどころ (cozinha).
+
+
+### 18. (recognition) Qual destas palavras significa "imediatamente, logo"?
+- **Resposta:** `{"choices": ["すぐに", "なぜ", "いくつ", "また"], "correct": "すぐに"}`
+- すぐに significa imediatamente, logo. As outras opções são また (de novo, novamente), いくつ (quantos) e なぜ (por que, por qual motivo).
+
+
+### 19. (recognition) Qual destas formas significa "época, por volta de"?
+- **Resposta:** `{"choices": ["せいと", "じびき", "ころ", "そら"], "correct": "ころ"}`
+- ころ significa época, por volta de. As outras opções são そら (céu), じびき (dicionário) e せいと (aluno, estudante (escolar)).
+
+

@@ -111,3 +111,23 @@ O 週 de 週末 (fim de semana) carrega aquele radical de caminho ⻌: a ideia j
 - 歩く se lê あるく. Só o 歩 é kanji; く é a terminação do verbo.
 
 
+### 9. (recognition) Qual destas palavras significa "tanto assim, tão"?
+- **Resposta:** `{"choices": ["それほど", "しばらく", "きっと", "たとえば"], "correct": "それほど"}`
+- それほど significa tanto assim, tão. As outras opções são たとえば (por exemplo), きっと (com certeza, certamente) e しばらく (por um tempo, por um momento).
+
+
+### 10. (recognition) Qual destas palavras significa "do jeito que está, como está"?
+- **Resposta:** `{"choices": ["パパ", "いっしょ", "まま", "ほうりつ"], "correct": "まま"}`
+- まま significa do jeito que está, como está. As outras opções são パパ (papai, pai), ほうりつ (lei, legislação) e いっしょ (junto, juntos).
+
+
+### 11. (recognition) Qual destas palavras significa "escorregar, deslizar"?
+- **Resposta:** `{"choices": ["すべる", "びっくり", "さわぐ", "たりる"], "correct": "すべる"}`
+- すべる significa escorregar, deslizar. As outras opções são さわぐ (fazer barulho, fazer algazarra), びっくり (assustar-se, surpreender-se) e たりる (bastar, ser suficiente).
+
+
+### 12. (recognition) Qual destas palavras significa "fazer barulho, fazer algazarra"?
+- **Resposta:** `{"choices": ["よろこぶ", "もらう", "うける", "さわぐ"], "correct": "さわぐ"}`
+- さわぐ significa fazer barulho, fazer algazarra. As outras opções são よろこぶ (alegrar-se, ficar feliz), うける (receber, obter) e もらう (receber, ganhar).
+
+

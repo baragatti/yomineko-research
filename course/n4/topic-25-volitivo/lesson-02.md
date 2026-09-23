@@ -95,3 +95,38 @@ Não confunda 考 ("ponderar", com a perna comprida embaixo) com 老 ("velho"): 
 - いい ('é bom', forma casual) + と思う = 'acho que é bom'. Adjetivos-i entram na forma de dicionário, sem です/だ antes do と.
 
 
+### 6. (recognition) Qual destas palavras significa "acidente"?
+- **Resposta:** `{"choices": ["しき", "ばしょ", "まんねんひつ", "じこ"], "correct": "じこ"}`
+- じこ significa acidente. As outras opções são ばしょ (lugar, local), しき (cerimônia) e まんねんひつ (caneta-tinteiro).
+
+
+### 7. (recognition) Qual destas palavras significa "claro, com certeza"?
+- **Resposta:** `{"choices": ["なかなか", "なるべく", "もちろん", "どんどん"], "correct": "もちろん"}`
+- もちろん significa claro, com certeza. As outras opções são どんどん (cada vez mais, rapidamente), なかなか (bastante, consideravelmente) e なるべく (o máximo possível, na medida do possível).
+
+
+### 8. (recognition) Qual destas palavras significa "causa, origem"?
+- **Resposta:** `{"choices": ["くも", "げんいん", "かべ", "じてん"], "correct": "げんいん"}`
+- げんいん significa causa, origem. As outras opções são じてん (dicionário), かべ (parede, muro) e くも (nuvem).
+
+
+### 9. (recognition) Qual destas palavras significa "estranho, esquisito" (adjetivo em -i)?
+- **Resposta:** `{"choices": ["よわい", "やさしい", "おかしい", "うつくしい"], "correct": "おかしい"}`
+- おかしい significa estranho, esquisito. As outras opções são うつくしい (belo, bonito), よわい (fraco, frágil) e やさしい (fácil, simples).
+
+
+### 10. (recognition) Qual destas palavras significa "estranho, esquisito" (adjetivo em -na)?
+- **Resposta:** `{"choices": ["ていねい", "へん", "てきとう", "たしか"], "correct": "へん"}`
+- へん significa estranho, esquisito. As outras opções são てきとう (adequado, apropriado), たしか (certo, seguro) e ていねい (educado, cortês).
+
+
+### 11. (recognition) Qual destas palavras significa "chorar"?
+- **Resposta:** `{"choices": ["のこる", "なく", "きめる", "むかえる"], "correct": "なく"}`
+- なく significa chorar. As outras opções são のこる (restar, sobrar), きめる (decidir, determinar) e むかえる (ir buscar, receber).
+
+
+### 12. (recognition) Qual destas palavras significa "certo, seguro"?
+- **Resposta:** `{"choices": ["ふくざつ", "へん", "そんな", "たしか"], "correct": "たしか"}`
+- たしか significa certo, seguro. As outras opções são へん (estranho, esquisito), ふくざつ (complicado, complexo) e そんな (esse tipo de, tal).
+
+

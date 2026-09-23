@@ -100,3 +100,58 @@ A expressão 迷惑をかける (めいわくをかける, "causar incômodo a a
 - 無料 (むりょう) é "gratuito"; aqui forma o predicado 入場無料です ("a entrada é de graça").
 
 
+### 6. (cloze) Complete a frase: ＿＿を取りなさい。 (Anote isso.)
+- **Resposta:** `{"text": "メモ", "full": "メモを取りなさい。"}`
+- A palavra que falta é メモ: anotação, bilhete.
+- frases: `sent:tatoeba-194608`
+
+### 7. (recognition) Qual destas palavras significa "ordenar, mandar"?
+- **Resposta:** `{"choices": ["命じる", "支える", "下がる", "流れる"], "correct": "命じる"}`
+- 命じる（めいじる） significa ordenar, mandar. As outras opções são 支える (apoiar, sustentar), 流れる (fluir, correr) e 下がる (descer, baixar).
+
+
+### 8. (cloze) Complete a frase: あなたに＿＿なの。 (Eu sou louca por você.)
+- **Resposta:** `{"text": "夢中", "full": "あなたに夢中なの。"}`
+- A palavra que falta é 夢中（むちゅう）: absorto (em), louco (por).
+- frases: `sent:tatoeba-2117555`
+
+### 9. (cloze) Complete a frase: 私は＿＿ここにいたい。 (Eu prefiro ficar aqui.)
+- **Resposta:** `{"text": "むしろ", "full": "私はむしろここにいたい。"}`
+- A palavra que falta é むしろ: antes, pelo contrário.
+- frases: `sent:tatoeba-158828`
+
+### 10. (recognition) Qual destas palavras significa "ato de ignorar, desconsideração"?
+- **Resposta:** `{"choices": ["ことわざ", "みりょく", "けしょう", "むし"], "correct": "むし"}`
+- むし significa ato de ignorar, desconsideração. As outras opções são けしょう (maquiagem), みりょく (charme, atrativo) e ことわざ (provérbio, ditado).
+
+
+### 11. (recognition) Qual destas palavras significa "inútil, em vão"?
+- **Resposta:** `{"choices": ["ごうとう", "ペンキ", "むだ", "ミルク"], "correct": "むだ"}`
+- むだ significa inútil, em vão. As outras opções são ごうとう (assaltante, roubo), ミルク (leite) e ペンキ (tinta).
+
+
+### 12. (recognition) Qual destas palavras significa "amarrar, atar"?
+- **Resposta:** `{"choices": ["むすぶ", "さける", "およぼす", "たたく"], "correct": "むすぶ"}`
+- むすぶ significa amarrar, atar. As outras opções são たたく (bater, golpear), さける (evitar, esquivar-se de) e およぼす (exercer (influência), causar (efeito)).
+
+
+### 13. (recognition) Qual destas palavras significa "peito, tórax"?
+- **Resposta:** `{"choices": ["しどう", "こおり", "ぶき", "むね"], "correct": "むね"}`
+- むね significa peito, tórax. As outras opções são しどう (orientação, instrução), こおり (gelo) e ぶき (arma, armamento).
+
+
+### 14. (recognition) Qual destas palavras significa "broto, botão"?
+- **Resposta:** `{"choices": ["のうか", "きんにく", "きゅうしゅう", "め"], "correct": "め"}`
+- め significa broto, botão. As outras opções são きんにく (músculo, musculatura), のうか (agricultor, família de agricultores) e きゅうしゅう (absorção).
+
+
+### 15. (cloze) Complete a frase: 私は彼と＿＿と向かって話したい。 (Quero falar com ele cara a cara.)
+- **Resposta:** `{"text": "面", "full": "私は彼と面と向かって話したい。"}`
+- A palavra que falta é 面（めん）: rosto, máscara.
+- frases: `sent:tatoeba-154308`
+
+### 16. (cloze) Complete a frase: 今帰って＿＿食った。 (Cheguei em casa agora e comi.)
+- **Resposta:** `{"text": "飯", "full": "今帰って飯食った。"}`
+- A palavra que falta é 飯（めし）: arroz cozido, refeição.
+- frases: `sent:tatoeba-1656034`
+

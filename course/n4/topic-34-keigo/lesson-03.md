@@ -97,3 +97,38 @@ O erro mais comum do brasileiro é usar いらっしゃる ou なさる para si 
 - なさる + ます é irregular: vira なさいます (não なさります). 何をなさいますか eleva a ação 'fazer' do interlocutor, como faria um atendente com um cliente.
 
 
+### 6. (recognition) Qual destas palavras significa "filha"?
+- **Resposta:** `{"choices": ["しっぱい", "せいじ", "むすめ", "しま"], "correct": "むすめ"}`
+- むすめ significa filha. As outras opções são しっぱい (fracasso, erro), せいじ (política, governo) e しま (ilha).
+
+
+### 7. (recognition) Qual destas palavras significa "segurança"?
+- **Resposta:** `{"choices": ["ふくしゅう", "あんぜん", "むすめ", "けいさつ"], "correct": "あんぜん"}`
+- あんぜん significa segurança. As outras opções são むすめ (filha), ふくしゅう (revisão (de matéria)) e けいさつ (a polícia).
+
+
+### 8. (recognition) Qual destas palavras significa "enfermeiro, enfermeira"?
+- **Resposta:** `{"choices": ["かんごし", "すうがく", "ガラス", "おしいれ"], "correct": "かんごし"}`
+- かんごし significa enfermeiro, enfermeira. As outras opções são すうがく (matemática), ガラス (vidro, vidraça) e おしいれ (armário embutido, closet japonês).
+
+
+### 9. (recognition) Qual destas palavras significa "contemplação das flores (esp. de cerejeira)"?
+- **Resposta:** `{"choices": ["字", "研究室", "水道", "花見"], "correct": "花見"}`
+- 花見（はなみ） significa contemplação das flores (esp. de cerejeira). As outras opções são 研究室 (laboratório, sala de pesquisa), 字 (caractere, letra) e 水道 (água encanada, abastecimento de água).
+
+
+### 10. (cloze) Complete a frase: 町を＿＿してから帰る (Vou voltar depois de passear pela cidade.)
+- **Resposta:** `{"text": "見物", "full": "町を見物してから帰る"}`
+- A palavra que falta é 見物（けんぶつ）: passeio turístico, visita a pontos turísticos.
+- frases: `sent:gen-72e1322146c6`
+
+### 11. (recognition) Qual destas palavras significa "a polícia"?
+- **Resposta:** `{"choices": ["どちら", "りょうほう", "けいさつ", "じゆう"], "correct": "けいさつ"}`
+- けいさつ significa a polícia. As outras opções são りょうほう (ambos, os dois), じゆう (liberdade) e どちら (qual (dos dois)).
+
+
+### 12. (recognition) Qual destas palavras significa "reunir-se, juntar-se"?
+- **Resposta:** `{"choices": ["通る", "生まれる", "別れる", "集まる"], "correct": "集まる"}`
+- 集まる（あつまる） significa reunir-se, juntar-se. As outras opções são 別れる (separar-se, despedir-se), 生まれる (nascer) e 通る (passar (por), atravessar).
+
+

@@ -134,3 +134,43 @@ Em だけで, o verbo que vem antes fica na forma simples (dicionário), não na
 - 楽しい (たのしい) guarda o kanji 楽 e deixa しい em kana. Esse okurigana é o que separa o adjetivo 楽しい do verbo 楽しむ.
 
 
+### 11. (recognition) Qual destas palavras significa "prédio, edifício"?
+- **Resposta:** `{"choices": ["ビル", "かいぎしつ", "アルバイト", "せい"], "correct": "ビル"}`
+- ビル significa prédio, edifício. As outras opções são かいぎしつ (sala de reunião, sala de conferência), せい (feito (de/em), fabricação (sufixo)) e アルバイト (trabalho de meio período, bico).
+
+
+### 12. (recognition) Qual destas palavras significa "boneca, boneco"?
+- **Resposta:** `{"choices": ["はく", "にんぎょう", "あか", "ワイシャツ"], "correct": "にんぎょう"}`
+- にんぎょう significa boneca, boneco. As outras opções são ワイシャツ (camisa social, camisa de botão), はく (conde) e あか (vermelho).
+
+
+### 13. (recognition) Qual destas palavras significa "sala de reunião, sala de conferência"?
+- **Resposta:** `{"choices": ["おくりもの", "アルバイト", "かいぎしつ", "は"], "correct": "かいぎしつ"}`
+- かいぎしつ significa sala de reunião, sala de conferência. As outras opções são は (folha (de planta)), アルバイト (trabalho de meio período, bico) e おくりもの (presente, brinde).
+
+
+### 14. (recognition) Qual destas palavras significa "uso, utilização"?
+- **Resposta:** `{"choices": ["おとうと", "どろぼう", "せい", "りよう"], "correct": "りよう"}`
+- りよう significa uso, utilização. As outras opções são どろぼう (ladrão, assaltante), せい (feito (de/em), fabricação (sufixo)) e おとうと (irmão mais novo, irmão caçula).
+
+
+### 15. (recognition) Qual destas palavras significa "embrulhar, empacotar"?
+- **Resposta:** `{"choices": ["さわる", "がんばる", "つつむ", "うける"], "correct": "つつむ"}`
+- つつむ significa embrulhar, empacotar. As outras opções são さわる (tocar, encostar (em)), うける (receber, obter) e がんばる (esforçar-se, dar o melhor de si).
+
+
+### 16. (recognition) Qual destas palavras significa "mercadoria, artigo"?
+- **Resposta:** `{"choices": ["こと", "しなもの", "おもて", "ガソリン"], "correct": "しなもの"}`
+- しなもの significa mercadoria, artigo. As outras opções são こと (coisa (abstrata), assunto), ガソリン (gasolina, combustível) e おもて (frente, face).
+
+
+### 17. (recognition) Qual destas palavras significa "presidente da empresa, diretor-presidente"?
+- **Resposta:** `{"choices": ["二十日", "社長", "毎週", "力"], "correct": "社長"}`
+- 社長（しゃちょう） significa presidente da empresa, diretor-presidente. As outras opções são 力 (força, poder), 二十日 (dia 20) e 毎週 (toda semana, semanalmente).
+
+
+### 18. (recognition) Qual destas palavras significa "decorar, enfeitar"?
+- **Resposta:** `{"choices": ["こわれる", "かざる", "つつむ", "ぬすむ"], "correct": "かざる"}`
+- かざる significa decorar, enfeitar. As outras opções são つつむ (embrulhar, empacotar), こわれる (quebrar, quebrar-se) e ぬすむ (roubar, furtar).
+
+

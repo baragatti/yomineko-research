@@ -94,3 +94,8 @@ Repare como os dois recursos descrevem por ângulos diferentes:ように compara
 - 注意 (ちゅうい) é atenção ou cuidado. Compare com 用意 (ようい), preparativo, e 意味 (いみ), significado: as três compartilham 意, e o que muda o sentido é o outro kanji.
 
 
+### 8. (cloze) Complete a frase: ＿＿が出てきました。 (O vento começou a soprar.)
+- **Resposta:** `{"text": "風", "full": "風が出てきました。"}`
+- A palavra que falta é 風（かぜ）: vento, brisa. O kanji 風 faz parte desta palavra.
+- frases: `sent:tatoeba-84044`
+

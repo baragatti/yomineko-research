@@ -90,3 +90,58 @@ Um belo par de verbos com seus substantivos derivados.
 - 努力 (どりょく) é o esforço; ～といいなあ expressa o desejo 'tomara que...'.
 
 
+### 6. (recognition) Qual destas palavras significa "absurdo, escandaloso"?
+- **Resposta:** `{"choices": ["とんでもない", "するどい", "くるしい", "かしこい"], "correct": "とんでもない"}`
+- とんでもない significa absurdo, escandaloso. As outras opções são くるしい (doloroso, sofrido), するどい (afiado, pontiagudo) e かしこい (sábio, esperto).
+
+
+### 7. (cloze) Complete a frase: きれいな＿＿ですね。 (Que vestido bonito!)
+- **Resposta:** `{"text": "ドレス", "full": "きれいなドレスですね。"}`
+- A palavra que falta é ドレス: vestido.
+- frases: `sent:tatoeba-225747`
+
+### 8. (recognition) Qual destas palavras significa "companheiro, colega"?
+- **Resposta:** `{"choices": ["なかま", "せきゆ", "せっけい", "ぐんたい"], "correct": "なかま"}`
+- なかま significa companheiro, colega. As outras opções são せっけい (projetar, planejar), せきゆ (petróleo) e ぐんたい (exército, forças armadas).
+
+
+### 9. (cloze) Complete a frase: 彼のスピーチの＿＿はとても良かった。 (O conteúdo do discurso dele foi muito bom.)
+- **Resposta:** `{"text": "内容", "full": "彼のスピーチの内容はとても良かった。"}`
+- A palavra que falta é 内容（ないよう）: conteúdo, teor.
+- frases: `sent:tatoeba-118302`
+
+### 10. (recognition) Qual destas formas significa "meio, metade"?
+- **Resposta:** `{"choices": ["新聞社", "生", "半ば", "前進"], "correct": "半ば"}`
+- 半ば（なかば） significa meio, metade. As outras opções são 生 (cru), 前進 (avanço, progresso) e 新聞社 (jornal (empresa), editora de jornal).
+
+
+### 11. (recognition) Qual destas palavras significa "soltar-se, desprender-se"?
+- **Resposta:** `{"choices": ["気づく", "割る", "分ける", "取れる"], "correct": "取れる"}`
+- 取れる（とれる） significa soltar-se, desprender-se. As outras opções são 割る (quebrar, partir), 気づく (perceber, notar) e 分ける (dividir, separar).
+
+
+### 12. (cloze) Complete a frase: 紙に自分の＿＿を記入した。 (Escrevi meu nome no papel.)
+- **Resposta:** `{"text": "名", "full": "紙に自分の名を記入した。"}`
+- A palavra que falta é 名（な）: nome.
+- frases: `sent:tatoeba-151213`
+
+### 13. (cloze) Complete a frase: あとで起こったことは＿＿悪かった。 (O que veio depois foi ainda pior.)
+- **Resposta:** `{"text": "なお", "full": "あとで起こったことはなお悪かった。"}`
+- A palavra que falta é なお: além disso, ademais.
+- frases: `sent:tatoeba-234309`
+
+### 14. (cloze) Complete a frase: 音楽を＿＿もいい？ (Posso botar uma música?)
+- **Resposta:** `{"text": "流して", "full": "音楽を流してもいい？"}`
+- A palavra que falta é 流す（ながす）: deixar correr, escoar. Na frase ela aparece como 流して.
+- frases: `sent:tatoeba-11582318`
+
+### 15. (cloze) Complete a frase: トイレの水が＿＿。 (A descarga do banheiro funciona.)
+- **Resposta:** `{"text": "流れます", "full": "トイレの水が流れます。"}`
+- A palavra que falta é 流れる（ながれる）: fluir, correr. Na frase ela aparece como 流れます.
+- frases: `sent:tatoeba-8888552`
+
+### 16. (recognition) Qual destas palavras significa "contemplar, olhar fixamente"?
+- **Resposta:** `{"choices": ["くるしむ", "いわう", "のりかえる", "ながめる"], "correct": "ながめる"}`
+- ながめる significa contemplar, olhar fixamente. As outras opções são くるしむ (sofrer, padecer), いわう (comemorar, celebrar) e のりかえる (fazer baldeação, trocar (de trem, ônibus)).
+
+

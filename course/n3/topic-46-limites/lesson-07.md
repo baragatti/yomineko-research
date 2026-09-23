@@ -95,3 +95,58 @@ Repare no contraste sonoro entre 正に (まさに, "exatamente") e 真逆 (ま�
 - 任せる (まかせる) pede a pessoa a quem se confia marcada por に (君に), e o que se delega vem antes (この仕事は).
 
 
+### 6. (recognition) Qual destas palavras significa "intervalo, espaço" (no sentido de vão)?
+- **Resposta:** `{"choices": ["かみなり", "あらし", "ま", "ぜいきん"], "correct": "ま"}`
+- ま significa intervalo, espaço. As outras opções são かみなり (trovão, raio), ぜいきん (imposto, tributo) e あらし (tempestade, temporal).
+
+
+### 7. (cloze) Complete a frase: 彼は＿＿した表情をしていた。 (Ele estava com uma expressão vazia.)
+- **Resposta:** `{"text": "ぼんやり", "full": "彼はぼんやりした表情をしていた。"}`
+- A palavra que falta é ぼんやり: vagamente, de forma indistinta.
+- frases: `sent:tatoeba-110899`
+
+### 8. (cloze) Complete a frase: ＿＿無理ですな。 (Bem, acho que não vai dar.)
+- **Resposta:** `{"text": "まあ", "full": "まあ無理ですな。"}`
+- A palavra que falta é まぁ（まあ）: bem…, sei lá.
+- frases: `sent:tatoeba-195802`
+
+### 9. (recognition) Qual destas palavras significa "microfone"?
+- **Resposta:** `{"choices": ["マイク", "げきじょう", "くん", "なっとく"], "correct": "マイク"}`
+- マイク significa microfone. As outras opções são なっとく (compreensão, convencimento), げきじょう (teatro (local), casa de espetáculos) e くん (leitura kun (leitura japonesa de um kanji)).
+
+
+### 10. (cloze) Complete a frase: 英語を＿＿したいな。 (Queria dominar o inglês.)
+- **Resposta:** `{"text": "マスター", "full": "英語をマスターしたいな。"}`
+- A palavra que falta é マスター: dominar, tornar-se proficiente em.
+- frases: `sent:tatoeba-10769968`
+
+### 11. (cloze) Complete a frase: 母は＿＿へ買い物に行きました。 (Minha mãe foi fazer compras no mercado.)
+- **Resposta:** `{"text": "マーケット", "full": "母はマーケットへ買い物に行きました。"}`
+- A palavra que falta é マーケット: mercado, feira.
+- frases: `sent:tatoeba-82993`
+
+### 12. (recognition) Qual destas palavras significa "fosso, vala"?
+- **Resposta:** `{"choices": ["げいじゅつ", "だいじん", "ほり", "けっかん"], "correct": "ほり"}`
+- ほり significa fosso, vala. As outras opções são だいじん (ministro (de Estado)), けっかん (defeito, falha) e げいじゅつ (arte, as artes).
+
+
+### 13. (recognition) Qual destas palavras significa "neto, neta"?
+- **Resposta:** `{"choices": ["まご", "きほん", "ホコリ", "ライター"], "correct": "まご"}`
+- まご significa neto, neta. As outras opções são きほん (base, fundamento), ホコリ (poeira, pó) e ライター (isqueiro).
+
+
+### 14. (recognition) Qual destas palavras significa "cortina (de palco)"?
+- **Resposta:** `{"choices": ["なん", "きおん", "そうおん", "まく"], "correct": "まく"}`
+- まく significa cortina (de palco). As outras opções são そうおん (barulho, ruído), きおん (temperatura (do ar)) e なん (o quê, que).
+
+
+### 15. (recognition) Qual destas palavras significa "a própria pessoa, o próprio"?
+- **Resposta:** `{"choices": ["内容", "論文", "会計", "本人"], "correct": "本人"}`
+- 本人（ほんにん） significa a própria pessoa, o próprio. As outras opções são 論文 (artigo (acadêmico), tese), 会計 (contabilidade, finanças) e 内容 (conteúdo, teor).
+
+
+### 16. (cloze) Complete a frase: どっちにしろ、お前の＿＿だ。 (De qualquer jeito, você perdeu.)
+- **Resposta:** `{"text": "負け", "full": "どっちにしろ、お前の負けだ。"}`
+- A palavra que falta é 負け（まけ）: derrota, perda.
+- frases: `sent:tatoeba-8619629`
+

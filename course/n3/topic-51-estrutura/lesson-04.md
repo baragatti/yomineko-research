@@ -128,3 +128,63 @@ Aproveite o tema desta lição para guardar dois kanji que não estão nas palav
 - 猫 sozinho já é a palavra: ねこ. É um dos exemplos preferidos das explicações de voz passiva, então vale ter o kanji na ponta da língua.
 
 
+### 10. (cloze) Complete a frase: ＿＿やって。 (Faz direito.)
+- **Resposta:** `{"text": "ちゃんと", "full": "ちゃんとやって。"}`
+- A palavra que falta é ちゃんと: direitinho, corretamente.
+- frases: `sent:tatoeba-2581815`
+
+### 11. (cloze) Complete a frase: もう一度＿＿をくれ。 (Me dá mais uma chance.)
+- **Resposta:** `{"text": "チャンス", "full": "もう一度チャンスをくれ。"}`
+- A palavra que falta é チャンス: chance, oportunidade.
+- frases: `sent:tatoeba-194317`
+
+### 12. (recognition) Qual destas palavras significa "centro, parte central"?
+- **Resposta:** `{"choices": ["ほぼ", "ちゅうおう", "ちゅうしゃ", "きぎょう"], "correct": "ちゅうおう"}`
+- ちゅうおう significa centro, parte central. As outras opções são ちゅうしゃ (estacionamento), きぎょう (empresa, corporação) e ほぼ (professora de creche, educadora infantil).
+
+
+### 13. (cloze) Complete a frase: 彼は、＿＿で英語を教えている。 (Ele dá aula de inglês no fundamental II.)
+- **Resposta:** `{"text": "中学", "full": "彼は、中学で英語を教えている。"}`
+- A palavra que falta é 中学（ちゅうがく）: ensino fundamental II, escola de nível médio inferior (chūgaku).
+- frases: `sent:tatoeba-10588060`
+
+### 14. (recognition) Qual destas palavras significa "horizonte"?
+- **Resposta:** `{"choices": ["ちへいせん", "むね", "じゅう", "ねったい"], "correct": "ちへいせん"}`
+- ちへいせん significa horizonte. As outras opções são じゅう (arma de fogo), ねったい (trópicos, zona tropical) e むね (peito, tórax).
+
+
+### 15. (cloze) Complete a frase: この＿＿には台風が良く来ます。 (Nesta região vem muito tufão.)
+- **Resposta:** `{"text": "地方", "full": "この地方には台風が良く来ます。"}`
+- A palavra que falta é 地方（ちほう）: região, área.
+- frases: `sent:tatoeba-220581`
+
+### 16. (cloze) Complete a frase: そのページの下の＿＿を読みなさい。 (Leia a nota no pé da página.)
+- **Resposta:** `{"text": "注", "full": "そのページの下の注を読みなさい。"}`
+- A palavra que falta é 注（ちゅう）: nota, anotação.
+- frases: `sent:tatoeba-212656`
+
+### 17. (cloze) Complete a frase: 息子は＿＿に似る。 (Tal pai, tal filho.)
+- **Resposta:** `{"text": "父親", "full": "息子は父親に似る。"}`
+- A palavra que falta é 父親（ちちおや）: pai.
+- frases: `sent:tatoeba-139908`
+
+### 18. (recognition) Qual destas palavras significa "governador (de província)"?
+- **Resposta:** `{"choices": ["最終", "一言", "年代", "知事"], "correct": "知事"}`
+- 知事（ちじ） significa governador (de província). As outras opções são 年代 (era, época), 最終 (último, final) e 一言 (uma palavra, poucas palavras).
+
+
+### 19. (cloze) Complete a frase: 彼女は＿＿の程度が高い。 (O nível de inteligência dela é alto.)
+- **Resposta:** `{"text": "知能", "full": "彼女は知能の程度が高い。"}`
+- A palavra que falta é 知能（ちのう）: inteligência, intelecto.
+- frases: `sent:tatoeba-87935`
+
+### 20. (cloze) Complete a frase: お＿＿の時間よ。 (Hora do chá!)
+- **Resposta:** `{"text": "茶", "full": "お茶の時間よ。"}`
+- A palavra que falta é 茶（ちゃ）: chá.
+- frases: `sent:tatoeba-12461936`
+
+### 21. (recognition) Qual destas palavras significa "estacionamento"?
+- **Resposta:** `{"choices": ["しょくぶつ", "ちいき", "ハイキング", "ちゅうしゃ"], "correct": "ちゅうしゃ"}`
+- ちゅうしゃ significa estacionamento. As outras opções são ちいき (área, região), しょくぶつ (planta, vegetal) e ハイキング (caminhada, trilha).
+
+

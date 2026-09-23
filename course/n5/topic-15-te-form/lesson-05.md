@@ -95,3 +95,38 @@ Avisos públicos no Japão quase sempre usam 〜てはいけません ou só 禁
 - 来る → negativo 来ない → 来なくて + もいいです = 'não precisa vir'. 〜なくてもいい indica que a ação é dispensável.
 
 
+### 6. (recognition) Qual destas palavras significa "sim, isso mesmo"?
+- **Resposta:** `{"choices": ["はい", "ああ", "あ", "いいえ"], "correct": "はい"}`
+- はい significa sim, isso mesmo. As outras opções são ああ (ah, ai), あ (ah!, ih!) e いいえ (não).
+
+
+### 7. (recognition) Qual destas palavras significa "conde"?
+- **Resposta:** `{"choices": ["はこ", "はく", "ひま", "にし"], "correct": "はく"}`
+- はく significa conde. As outras opções são ひま (tempo livre, folga), にし (oeste, ocidente) e はこ (caixa).
+
+
+### 8. (recognition) Qual destas palavras significa "puxar"?
+- **Resposta:** `{"choices": ["ひく", "ならべる", "はたらく", "おしえる"], "correct": "ひく"}`
+- ひく significa puxar. As outras opções são ならべる (enfileirar, arrumar (em fila)), はたらく (trabalhar) e おしえる (ensinar, lecionar).
+
+
+### 9. (recognition) Qual destas palavras significa "tocar (instrumento de cordas/teclas)"?
+- **Resposta:** `{"choices": ["はれる", "うる", "ひく", "できる"], "correct": "ひく"}`
+- ひく significa tocar (instrumento de cordas/teclas). As outras opções são できる (poder, ser capaz de), はれる (abrir o tempo, clarear) e うる (vender).
+
+
+### 10. (recognition) Qual destas palavras significa "tempo livre, folga"?
+- **Resposta:** `{"choices": ["はし", "ひま", "なか", "なつやすみ"], "correct": "ひま"}`
+- ひま significa tempo livre, folga. As outras opções são なつやすみ (férias de verão, recesso de verão), なか (dentro, interior) e はし (ponte).
+
+
+### 11. (recognition) Qual destas palavras significa "cálice de saquê, taça para bebidas alcoólicas"?
+- **Resposta:** `{"choices": ["はい", "れいぞうこ", "バス", "はこ"], "correct": "はい"}`
+- はい significa cálice de saquê, taça para bebidas alcoólicas. As outras opções são れいぞうこ (geladeira, refrigerador), はこ (caixa) e バス (ônibus).
+
+
+### 12. (recognition) Qual destas palavras significa "cinzeiro"?
+- **Resposta:** `{"choices": ["ばんごう", "はいざら", "いちばん", "はな"], "correct": "はいざら"}`
+- はいざら significa cinzeiro. As outras opções são はな (nariz), ばんごう (número) e いちばん (o melhor, o mais).
+
+

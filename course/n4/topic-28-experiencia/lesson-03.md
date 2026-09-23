@@ -113,3 +113,43 @@ E estas palavras dão o tom ou o tema à experiência:
 - 起 é 'levantar-se': o radical de correr à esquerda dá a ideia do corpo que se põe de pé. O mesmo kanji também serve para um fato que 'se levanta', ou seja, que acontece.
 
 
+### 9. (recognition) Qual destas palavras significa "daquele tipo, assim (como aquilo)"?
+- **Resposta:** `{"choices": ["まじめ", "ねっしん", "あんな", "ざんねん"], "correct": "あんな"}`
+- あんな significa daquele tipo, assim (como aquilo). As outras opções são ねっしん (entusiasmado, dedicado), まじめ (sério, aplicado) e ざんねん (lamentável, uma pena).
+
+
+### 10. (cloze) Complete a frase: 「どいてください」「やんのか？あん＿＿」 ("Saia da frente, por favor." "Quer brigar, garotão?")
+- **Resposta:** `{"text": "ちゃん", "full": "「どいてください」「やんのか？あんちゃん」"}`
+- A palavra que falta é ちゃん: -chan (sufixo afetivo de nome), querido(a).
+- frases: `sent:tatoeba-74723`
+
+### 11. (recognition) Qual destas palavras significa "América, Estados Unidos"?
+- **Resposta:** `{"choices": ["テープ", "かばん", "みなさん", "アメリカ"], "correct": "アメリカ"}`
+- アメリカ significa América, Estados Unidos. As outras opções são テープ (fita, fita adesiva), みなさん (pessoal, todos (vocês)) e かばん (bolsa, mala).
+
+
+### 12. (recognition) Qual destas palavras significa "mulher, pessoa do sexo feminino"?
+- **Resposta:** `{"choices": ["じょせい", "おもちゃ", "さらいげつ", "ひるま"], "correct": "じょせい"}`
+- じょせい significa mulher, pessoa do sexo feminino. As outras opções são おもちゃ (brinquedo), ひるま (durante o dia, período diurno) e さらいげつ (daqui a dois meses, o mês depois do próximo).
+
+
+### 13. (recognition) Qual destas palavras significa "eles"?
+- **Resposta:** `{"choices": ["かれら", "おつり", "げしゅく", "はやし"], "correct": "かれら"}`
+- かれら significa eles. As outras opções são おつり (troco), げしゅく (pensão, quarto alugado) e はやし (bosque, mata).
+
+
+### 14. (recognition) Qual destas palavras significa "história"?
+- **Resposta:** `{"choices": ["りょこう", "かべ", "アメリカ", "れきし"], "correct": "れきし"}`
+- れきし significa história. As outras opções são アメリカ (América, Estados Unidos), かべ (parede, muro) e りょこう (viagem).
+
+
+### 15. (recognition) Qual destas palavras significa "homem, pessoa do sexo masculino"?
+- **Resposta:** `{"choices": ["ほし", "ぼうえき", "だんせい", "はんたい"], "correct": "だんせい"}`
+- だんせい significa homem, pessoa do sexo masculino. As outras opções são ほし (estrela), はんたい (oposição, ser contra) e ぼうえき (comércio (exterior), intercâmbio comercial).
+
+
+### 16. (recognition) Qual destas palavras significa "chefe de departamento, gerente"?
+- **Resposta:** `{"choices": ["かいぎしつ", "パソコン", "れきし", "ぶちょう"], "correct": "ぶちょう"}`
+- ぶちょう significa chefe de departamento, gerente. As outras opções são パソコン (computador (pessoal), PC), れきし (história) e かいぎしつ (sala de reunião, sala de conferência).
+
+

@@ -92,3 +92,13 @@ Ainda no espírito de afinar o tom, vale guardar a palavrinha 許り(許り), qu
 - 天使のように ("feito um anjo") modifica やさしい ("gentil"). のように liga a um adjetivo ou verbo; se fosse antes de um substantivo, viraria のような (ex.: 天使のような人 = "uma pessoa feito um anjo").
 
 
+### 6. (production) Escreva em japonês a palavra que significa "acabar de (fazer algo), ter acabado de".
+- **Resposta:** `{"text": "ばかり", "accept": ["ばかり"]}`
+- A resposta é ばかり: acabar de (fazer algo), ter acabado de.
+
+
+### 7. (cloze) Complete a frase: 彼はもう二度と来る＿＿ (Ele com certeza não vem mais nunca.)
+- **Resposta:** `{"text": "まい", "full": "彼はもう二度と来るまい"}`
+- O que falta é まい: o ponto gramatical desta lição, decerto não / recusa firme (〜まい).
+- frases: `sent:gen-e4c675e9ca2d`
+

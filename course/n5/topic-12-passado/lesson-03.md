@@ -113,3 +113,38 @@ Mnemônico de forma: imagine um telhadinho (o tampo ⼈ por cima) cobrindo um pe
 - おおきい (大きい, 'grande') termina em い de verdade: é adjetivo-い. Cuidado com きれい: ela tem o som 'i' no fim, mas é adjetivo-な disfarçado. しずか é claramente adjetivo-な.
 
 
+### 9. (recognition) Qual destas palavras significa "mesa"?
+- **Resposta:** `{"choices": ["ひる", "げつようび", "テーブル", "どようび"], "correct": "テーブル"}`
+- テーブル significa mesa. As outras opções são ひる (meio-dia), どようび (sábado) e げつようび (segunda-feira).
+
+
+### 10. (recognition) Qual destas palavras significa "fita, fita adesiva"?
+- **Resposta:** `{"choices": ["ころ", "おととし", "テープ", "てがみ"], "correct": "テープ"}`
+- テープ significa fita, fita adesiva. As outras opções são ころ (época, por volta de), てがみ (carta) e おととし (ano retrasado).
+
+
+### 11. (recognition) Qual destas palavras significa "carta"?
+- **Resposta:** `{"choices": ["とけい", "てがみ", "デパート", "さらいねん"], "correct": "てがみ"}`
+- てがみ significa carta. As outras opções são とけい (relógio), デパート (loja de departamentos, grande loja) e さらいねん (daqui a dois anos, ano após o próximo).
+
+
+### 12. (recognition) Qual destas palavras significa "relógio"?
+- **Resposta:** `{"choices": ["きんようび", "とけい", "しごと", "たんじょうび"], "correct": "とけい"}`
+- とけい significa relógio. As outras opções são たんじょうび (aniversário, dia do nascimento), きんようび (sexta-feira) e しごと (trabalho, emprego).
+
+
+### 13. (recognition) Qual destas palavras significa "tigela, tigela de arroz"?
+- **Resposta:** `{"choices": ["ごぜん", "ところ", "ちゃわん", "ひる"], "correct": "ちゃわん"}`
+- ちゃわん significa tigela, tigela de arroz. As outras opções são ところ (lugar, local), ごぜん (manhã, da manhã) e ひる (meio-dia).
+
+
+### 14. (cloze) Complete a frase: 後で＿＿ね。 (A gente conversa depois, tá?)
+- **Resposta:** `{"text": "話そう", "full": "後で話そうね。"}`
+- A palavra que falta é 話す（はなす）: falar, conversar. Na frase ela aparece como 話そう.
+- frases: `sent:tatoeba-8608115`
+
+### 15. (cloze) Complete a frase: ＿＿大きいね。 (É bem grande, né?)
+- **Resposta:** `{"text": "とても", "full": "とても大きいね。"}`
+- A palavra que falta é とても: muito, extremamente.
+- frases: `sent:tatoeba-200577`
+

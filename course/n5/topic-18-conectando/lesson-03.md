@@ -109,3 +109,13 @@ Encadeando tudo:郵便局に行きます。それから、レストランで食�
 - 休 é 人 (pessoa) encostado em 木 (árvore): alguém à sombra, descansando. Com um okurigana ele vira o verbo 休む; com outro, o substantivo 休み.
 
 
+### 8. (recognition) Qual destas palavras significa "lado, ao lado"?
+- **Resposta:** `{"choices": ["よこ", "マッチ", "メートル", "よる"], "correct": "よこ"}`
+- よこ significa lado, ao lado. As outras opções são よる (noite), メートル (metro (unidade de comprimento)) e マッチ (fósforo (palito de acender)).
+
+
+### 9. (production) Escreva em japonês a palavra que significa "e então, e assim".
+- **Resposta:** `{"text": "そうして", "accept": ["そうして"]}`
+- A resposta é そうして: e então, e assim.
+
+

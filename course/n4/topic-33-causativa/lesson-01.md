@@ -129,3 +129,53 @@ Os exemplos de obrigação usam muito a família. Aproveite para fixar os quatro
 - Em お姉さん o 姉 tem leitura irregular, diferente de あね. É o mesmo padrão de お兄さん (おにいさん): a forma cortês estica a vogal.
 
 
+### 13. (cloze) Complete a frase: 運転の＿＿は、親が教えてくれたんだ。 (Quem me ensinou a dirigir foram meus pais.)
+- **Resposta:** `{"text": "仕方", "full": "運転の仕方は、親が教えてくれたんだ。"}`
+- A palavra que falta é 仕方（しかた）: jeito (de fazer), maneira.
+- frases: `sent:tatoeba-11735124`
+
+### 14. (recognition) Qual destas palavras significa "cair, tombar"?
+- **Resposta:** `{"choices": ["さわぐ", "なげる", "なおす", "たおれる"], "correct": "たおれる"}`
+- たおれる significa cair, tombar. As outras opções são なおす (consertar, arrumar), さわぐ (fazer barulho, fazer algazarra) e なげる (jogar, arremessar).
+
+
+### 15. (recognition) Qual destas palavras significa "mover-se, mexer-se"?
+- **Resposta:** `{"choices": ["通う", "動く", "分かる", "集める"], "correct": "動く"}`
+- 動く（うごく） significa mover-se, mexer-se. As outras opções são 通う (frequentar, ir e voltar (regularmente)), 集める (reunir, coletar) e 分かる (entender, compreender).
+
+
+### 16. (recognition) Qual destas palavras significa "vencer, ganhar"?
+- **Resposta:** `{"choices": ["うつる", "やける", "まわる", "かつ"], "correct": "かつ"}`
+- かつ significa vencer, ganhar. As outras opções são うつる (mudar-se, transferir-se), まわる (girar, rodar) e やける (assar (ficar pronto), grelhar).
+
+
+### 17. (recognition) Qual destas palavras significa "dirigir-se a, ir em direção a"?
+- **Resposta:** `{"choices": ["めしあがる", "いのる", "むかう", "うえる"], "correct": "むかう"}`
+- むかう significa dirigir-se a, ir em direção a. As outras opções são うえる (plantar), めしあがる (comer (forma respeitosa), beber (forma respeitosa)) e いのる (rezar, orar).
+
+
+### 18. (recognition) Qual destas palavras significa "girar, rodar"?
+- **Resposta:** `{"choices": ["われる", "まわる", "わかす", "つく"], "correct": "まわる"}`
+- まわる significa girar, rodar. As outras opções são つく (pegar fogo, acender-se), わかす (ferver (água), esquentar) e われる (quebrar, estilhaçar).
+
+
+### 19. (recognition) Qual destas palavras significa "plantar"?
+- **Resposta:** `{"choices": ["ふとる", "まわる", "うえる", "おとす"], "correct": "うえる"}`
+- うえる significa plantar. As outras opções são ふとる (engordar, ganhar peso), おとす (deixar cair, derrubar) e まわる (girar, rodar).
+
+
+### 20. (recognition) Qual destas palavras significa "sujar-se, ficar sujo"?
+- **Resposta:** `{"choices": ["つづく", "むかう", "めしあがる", "よごれる"], "correct": "よごれる"}`
+- よごれる significa sujar-se, ficar sujo. As outras opções são むかう (dirigir-se a, ir em direção a), つづく (continuar, prosseguir) e めしあがる (comer (forma respeitosa), beber (forma respeitosa)).
+
+
+### 21. (recognition) Qual destas palavras significa "mudar-se, transferir-se"?
+- **Resposta:** `{"choices": ["うつる", "しまう", "つく", "おどる"], "correct": "うつる"}`
+- うつる significa mudar-se, transferir-se. As outras opções são つく (pegar fogo, acender-se), おどる (dançar) e しまう (acabar (fazendo), fazer por completo (muitas vezes com pesar)).
+
+
+### 22. (recognition) Qual destas palavras significa "maltratar, atormentar"?
+- **Resposta:** `{"choices": ["ひえる", "まける", "おくれる", "いじめる"], "correct": "いじめる"}`
+- いじめる significa maltratar, atormentar. As outras opções são まける (perder, ser derrotado), おくれる (atrasar-se, estar atrasado) e ひえる (esfriar, gelar).
+
+

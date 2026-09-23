@@ -179,3 +179,88 @@ Repare quantos kanji de sentimento trazem o coração (心 ou 忄): 怒 (raiva),
 - 鳴る se lê なる e é o soar de campainhas e telefones. O par 鳴く, com o mesmo kanji, é o som que os animais fazem.
 
 
+### 17. (cloze) Complete a frase: この庭の美しさは自然より＿＿のおかげだ。 (A beleza deste jardim vem mais da mão humana do que da natureza.)
+- **Resposta:** `{"text": "人工", "full": "この庭の美しさは自然より人工のおかげだ。"}`
+- A palavra que falta é 人工（じんこう）: artificial, feito pelo homem.
+- frases: `sent:tatoeba-220458`
+
+### 18. (cloze) Complete a frase: 世界にはいろいろな＿＿がいる。 (No mundo existem várias etnias.)
+- **Resposta:** `{"text": "人種", "full": "世界にはいろいろな人種がいる。"}`
+- A palavra que falta é 人種（じんしゅ）: raça (humana), etnia.
+- frases: `sent:tatoeba-143444`
+
+### 19. (recognition) Qual destas palavras significa "crer (em), ter fé (em)"?
+- **Resposta:** `{"choices": ["ジーンズ", "そうぞう", "むしば", "しんこう"], "correct": "しんこう"}`
+- しんこう significa crer (em), ter fé (em). As outras opções são むしば (cárie, dente cariado), そうぞう (imaginação) e ジーンズ (jeans, calça jeans).
+
+
+### 20. (cloze) Complete a frase: ＿＿待ってます。 (Estou esperando o sinal.)
+- **Resposta:** `{"text": "信号", "full": "信号待ってます。"}`
+- A palavra que falta é 信号（しんごう）: semáforo, sinal de trânsito.
+- frases: `sent:tatoeba-11195166`
+
+### 21. (recognition) Qual destas palavras significa "marca, sinal"?
+- **Resposta:** `{"choices": ["しるし", "ま", "たから", "そで"], "correct": "しるし"}`
+- しるし significa marca, sinal. As outras opções são そで (manga (de roupa)), ま (intervalo, espaço) e たから (tesouro).
+
+
+### 22. (recognition) Qual destas palavras significa "bunda, traseiro"?
+- **Resposta:** `{"choices": ["のうぎょう", "しり", "そん", "ドラマ"], "correct": "しり"}`
+- しり significa bunda, traseiro. As outras opções são のうぎょう (agricultura, lavoura), そん (prejuízo, perda) e ドラマ (drama, novela).
+
+
+### 23. (recognition) Qual destas palavras significa "planta, vegetal"?
+- **Resposta:** `{"choices": ["しょくぶつ", "パス", "けんぽう", "もうしわけ"], "correct": "しょくぶつ"}`
+- しょくぶつ significa planta, vegetal. As outras opções são けんぽう (constituição), もうしわけ (desculpa, justificativa) e パス (passe, passagem livre).
+
+
+### 24. (recognition) Qual destas palavras significa "combate a incêndios, prevenção de incêndios"?
+- **Resposta:** `{"choices": ["ばか", "しょうぼう", "なっとく", "パーセント"], "correct": "しょうぼう"}`
+- しょうぼう significa combate a incêndios, prevenção de incêndios. As outras opções são パーセント (por cento, porcentagem), ばか (bobo, idiota) e なっとく (compreensão, convencimento).
+
+
+### 25. (cloze) Complete a frase: ＿＿な問題だな。 (É um problema sério, hein.)
+- **Resposta:** `{"text": "深刻", "full": "深刻な問題だな。"}`
+- A palavra que falta é 深刻（しんこく）: sério, grave.
+- frases: `sent:tatoeba-9250767`
+
+### 26. (cloze) Complete a frase: ああいう人は＿＿にさわる。 (Gente daquele tipo me dá nos nervos.)
+- **Resposta:** `{"text": "神経", "full": "ああいう人は神経にさわる。"}`
+- A palavra que falta é 神経（しんけい）: nervo.
+- frases: `sent:tatoeba-234725`
+
+### 27. (recognition) Qual destas palavras significa "parente, parentes"?
+- **Resposta:** `{"choices": ["しんせき", "ウイスキー", "めんきょ", "まつ"], "correct": "しんせき"}`
+- しんせき significa parente, parentes. As outras opções são めんきょ (licença, habilitação), まつ (pinheiro) e ウイスキー (uísque).
+
+
+### 28. (recognition) Qual destas palavras significa "mesa de jantar"?
+- **Resposta:** `{"choices": ["しょうぼう", "しょうじょう", "しょうとつ", "しょくたく"], "correct": "しょくたく"}`
+- しょくたく significa mesa de jantar. As outras opções são しょうぼう (combate a incêndios, prevenção de incêndios), しょうとつ (colidir, chocar-se) e しょうじょう (sintoma).
+
+
+### 29. (cloze) Complete a frase: 妻は＿＿を買いに毎日村のマーケットに出かける。 (Minha esposa vai todo dia ao mercado da vila comprar comida.)
+- **Resposta:** `{"text": "食品", "full": "妻は食品を買いに毎日村のマーケットに出かける。"}`
+- A palavra que falta é 食品（しょくひん）: alimento, produto alimentício.
+- frases: `sent:tatoeba-170337`
+
+### 30. (cloze) Complete a frase: 十分な＿＿があるか。 (Temos comida suficiente?)
+- **Resposta:** `{"text": "食料", "full": "十分な食料があるか。"}`
+- A palavra que falta é 食料（しょくりょう）: alimentos, mantimentos.
+- frases: `sent:tatoeba-148044`
+
+### 31. (cloze) Complete a frase: ＿＿は生命に必要だ。 (A comida é necessária para a vida.)
+- **Resposta:** `{"text": "食物", "full": "食物は生命に必要だ。"}`
+- A palavra que falta é 食物（しょくもつ）: alimento, comida.
+- frases: `sent:tatoeba-145775`
+
+### 32. (recognition) Qual destas palavras significa "mantimentos, provisões (de alimentos)"?
+- **Resposta:** `{"choices": ["め", "もうふ", "しょくりょう", "じまん"], "correct": "しょくりょう"}`
+- しょくりょう significa mantimentos, provisões (de alimentos). As outras opções são もうふ (cobertor, manta), め (broto, botão) e じまん (orgulho, gabarolice).
+
+
+### 33. (cloze) Complete a frase: 彼は弟と間違え＿＿。 (Ele foi confundido com o irmão mais novo.)
+- **Resposta:** `{"text": "られた", "full": "彼は弟と間違えられた。"}`
+- O que falta é られた: o ponto gramatical desta lição, foi / foi feito por (passiva no passado) (～られた).
+- frases: `sent:tatoeba-101981`
+

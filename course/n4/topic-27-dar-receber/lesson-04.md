@@ -101,3 +101,38 @@ Combine tudo:冷房をつけてくれない？("você não poderia ligar o ar-co
 - 空港 (aeroporto) + まで (até) + 送って (て-forma de levar) + くれない？／もらえない？ (pedido suave). A negativa interrogativa deixa o favor educado. くれない？ olha para quem age; もらえない？ olha para quem recebe; as duas servem.
 - frases: `sent:tatoeba-9974818`
 
+### 6. (recognition) Qual destas palavras significa "verificação, checagem"?
+- **Resposta:** `{"choices": ["チェック", "がくぶ", "じてん", "きょうみ"], "correct": "チェック"}`
+- チェック significa verificação, checagem. As outras opções são きょうみ (interesse, curiosidade), じてん (dicionário) e がくぶ (faculdade (curso), departamento (universitário)).
+
+
+### 7. (recognition) Qual destas palavras significa "processador de texto"?
+- **Resposta:** `{"choices": ["かがく", "しけん", "ワープロ", "あじ"], "correct": "ワープロ"}`
+- ワープロ significa processador de texto. As outras opções são しけん (prova, exame), かがく (ciência) e あじ (sabor, gosto).
+
+
+### 8. (recognition) Qual destas palavras significa "trânsito, transporte"?
+- **Resposta:** `{"choices": ["ステーキ", "チェック", "けしき", "こうつう"], "correct": "こうつう"}`
+- こうつう significa trânsito, transporte. As outras opções são けしき (paisagem, cenário), チェック (verificação, checagem) e ステーキ (bife, filé).
+
+
+### 9. (recognition) Qual destas palavras significa "oposição, ser contra"?
+- **Resposta:** `{"choices": ["はんたい", "ぎじゅつ", "オーバー", "おどり"], "correct": "はんたい"}`
+- はんたい significa oposição, ser contra. As outras opções são ぎじゅつ (tecnologia, técnica), おどり (dança, o ato de dançar) e オーバー (sobretudo, casacão).
+
+
+### 10. (recognition) Qual destas palavras significa "sabor, gosto"?
+- **Resposta:** `{"choices": ["きょうみ", "あじ", "あいさつ", "おみやげ"], "correct": "あじ"}`
+- あじ significa sabor, gosto. As outras opções são おみやげ (lembrança, souvenir), きょうみ (interesse, curiosidade) e あいさつ (cumprimento, saudação).
+
+
+### 11. (cloze) Complete a frase: この町には小さい＿＿がある (Nesta cidade tem um porto pequeno.)
+- **Resposta:** `{"text": "港", "full": "この町には小さい港がある"}`
+- A palavra que falta é 港（みなと）: porto, ancoradouro.
+- frases: `sent:gen-51662c7821ca`
+
+### 12. (cloze) Complete a frase: 山の＿＿はすばらしい。 (O ar da montanha é maravilhoso.)
+- **Resposta:** `{"text": "空気", "full": "山の空気はすばらしい。"}`
+- A palavra que falta é 空気（くうき）: ar, atmosfera.
+- frases: `sent:tatoeba-169430`
+

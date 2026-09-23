@@ -133,3 +133,33 @@ Esse なかなか〜ない é ótimo socialmente: ele deixa você expressar irri
 - 近い é adjetivo-い: 近 guarda a raiz ちか e い fica como okurigana. Trocando い por く sai 近く, 'as proximidades'.
 
 
+### 13. (recognition) Qual destas palavras significa "cada vez mais, rapidamente"?
+- **Resposta:** `{"choices": ["なかなか", "やっと", "けっして", "どんどん"], "correct": "どんどん"}`
+- どんどん significa cada vez mais, rapidamente. As outras opções são なかなか (bastante, consideravelmente), やっと (finalmente, enfim) e けっして (nunca, de jeito nenhum).
+
+
+### 14. (recognition) Qual destas palavras significa "daqui a dois meses, o mês depois do próximo"?
+- **Resposta:** `{"choices": ["さか", "せんそう", "せん", "さらいげつ"], "correct": "さらいげつ"}`
+- さらいげつ significa daqui a dois meses, o mês depois do próximo. As outras opções são せんそう (guerra), せん (linha) e さか (ladeira, encosta).
+
+
+### 15. (cloze) Complete a frase: ＿＿は仕事がなかなかないんだよ。 (Ultimamente, emprego é difícil de achar, viu.)
+- **Resposta:** `{"text": "最近", "full": "最近は仕事がなかなかないんだよ。"}`
+- A palavra que falta é さいきん: recentemente, ultimamente. Na frase ela aparece como 最近.
+- frases: `sent:tatoeba-10808987`
+
+### 16. (cloze) Complete a frase: ＿＿１ドルはどこへ行ったのでしょう。 (Para onde será que foi o dólar que sumiu?)
+- **Resposta:** `{"text": "無くなった", "full": "無くなった１ドルはどこへ行ったのでしょう。"}`
+- A palavra que falta é 無くなる（なくなる）: acabar, sumir. Na frase ela aparece como 無くなった.
+- frases: `sent:tatoeba-80944`
+
+### 17. (recognition) Qual destas palavras significa "o fim, o final"?
+- **Resposta:** `{"choices": ["人口", "三つ", "終わり", "小学校"], "correct": "終わり"}`
+- 終わり（おわり） significa o fim, o final. As outras opções são 人口 (população), 小学校 (escola primária, ensino fundamental (inicial)) e 三つ (três (coisas)).
+
+
+### 18. (recognition) Qual destas palavras significa "adequado, apropriado"?
+- **Resposta:** `{"choices": ["たいてい", "てきとう", "ていねい", "ざんねん"], "correct": "てきとう"}`
+- てきとう significa adequado, apropriado. As outras opções são ていねい (educado, cortês), ざんねん (lamentável, uma pena) e たいてい (geralmente, na maioria das vezes).
+
+

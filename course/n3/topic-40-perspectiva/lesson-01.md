@@ -146,3 +146,88 @@ Junte tema e contexto:この映画について会議で訴える (apelar sobre e
 - 活 tem o radical da água e fala de vida em movimento, não de existência abstrata. Por isso 生活 é a vida do dia a dia, a rotina.
 
 
+### 11. (cloze) Complete a frase: この＿＿は強すぎる。 (Esse uísque é forte demais.)
+- **Resposta:** `{"text": "ウイスキー", "full": "このウイスキーは強すぎる。"}`
+- A palavra que falta é ウイスキー: uísque.
+- frases: `sent:tatoeba-223983`
+
+### 12. (cloze) Complete a frase: ＿＿は好きよ。 (Eu gosto de coelho.)
+- **Resposta:** `{"text": "うさぎ", "full": "うさぎは好きよ。"}`
+- A palavra que falta é うさぎ: coelho, lebre.
+- frases: `sent:tatoeba-12324605`
+
+### 13. (cloze) Complete a frase: 車を＿＿ください。 (Por favor, mova o carro.)
+- **Resposta:** `{"text": "動かして", "full": "車を動かしてください。"}`
+- A palavra que falta é 動かす（うごかす）: mover (algo), mexer. Na frase ela aparece como 動かして.
+- frases: `sent:tatoeba-148938`
+
+### 14. (cloze) Complete a frase: お手紙を＿＿。 (Recebi a sua carta.)
+- **Resposta:** `{"text": "受け取りました", "full": "お手紙を受け取りました。"}`
+- A palavra que falta é 受け取る（うけとる）: receber, aceitar. Na frase ela aparece como 受け取りました.
+- frases: `sent:tatoeba-227075`
+
+### 15. (recognition) Qual destas palavras significa "gemer, resmungar"?
+- **Resposta:** `{"choices": ["ほめる", "うしなう", "うなる", "おっしゃる"], "correct": "うなる"}`
+- うなる significa gemer, resmungar. As outras opções são うしなう (perder, perder (algo ou alguém)), おっしゃる (dizer (honorífico), falar (honorífico)) e ほめる (elogiar, louvar).
+
+
+### 16. (cloze) Complete a frase: ＿＿はしたの？ (Você já fez gargarejo?)
+- **Resposta:** `{"text": "うがい", "full": "うがいはしたの？"}`
+- A palavra que falta é うがい: fazer gargarejo, gargarejar.
+- frases: `sent:tatoeba-10177373`
+
+### 17. (recognition) Qual destas palavras significa "perder, perder (algo ou alguém)"?
+- **Resposta:** `{"choices": ["うしなう", "あきる", "よう", "よごれる"], "correct": "うしなう"}`
+- うしなう significa perder, perder (algo ou alguém). As outras opções são よう (embriagar-se, ficar bêbado), あきる (enjoar de, cansar-se de) e よごれる (sujar-se, ficar sujo).
+
+
+### 18. (recognition) Qual destas palavras significa "arrebatar, tomar à força"?
+- **Resposta:** `{"choices": ["いらいら", "ひく", "うつす", "うばう"], "correct": "うばう"}`
+- うばう significa arrebatar, tomar à força. As outras opções são うつす (mover, transferir), いらいら (irritar-se, ficar nervoso) e ひく (atropelar).
+
+
+### 19. (cloze) Complete a frase: ＿＿してもいいですか？ (Posso citar?)
+- **Resposta:** `{"text": "引用", "full": "引用してもいいですか？"}`
+- A palavra que falta é 引用（いんよう）: citar, fazer uma citação.
+- frases: `sent:tatoeba-13342669`
+
+### 20. (recognition) Qual destas palavras significa "aposentar-se, retirar-se (da carreira)"?
+- **Resposta:** `{"choices": ["いんたい", "ひたい", "いきおい", "いわ"], "correct": "いんたい"}`
+- いんたい significa aposentar-se, retirar-se (da carreira). As outras opções são ひたい (testa, fronte), いきおい (ímpeto, força) e いわ (rocha, pedra).
+
+
+### 21. (recognition) Qual destas palavras significa "atirar, disparar"?
+- **Resposta:** `{"choices": ["うしなう", "つめる", "うつ", "ぬれる"], "correct": "うつ"}`
+- うつ significa atirar, disparar. As outras opções são つめる (encher, empacotar), うしなう (perder, perder (algo ou alguém)) e ぬれる (molhar-se, ficar molhado).
+
+
+### 22. (recognition) Qual destas palavras significa "vaca, boi"?
+- **Resposta:** `{"choices": ["牛", "現れ", "身体", "一生"], "correct": "牛"}`
+- 牛（うし） significa vaca, boi. As outras opções são 一生 (uma vida inteira, a vida toda), 身体 (corpo, o corpo (humano)) e 現れ (manifestação, expressão).
+
+
+### 23. (recognition) Qual destas palavras significa "duvidar, pôr em dúvida"?
+- **Resposta:** `{"choices": ["よこぎる", "うたがう", "うなる", "かえる"], "correct": "うたがう"}`
+- うたがう significa duvidar, pôr em dúvida. As outras opções são よこぎる (atravessar, cruzar), うなる (gemer, resmungar) e かえる (mudar, alterar).
+
+
+### 24. (recognition) Qual destas palavras significa "mover, transferir"?
+- **Resposta:** `{"choices": ["うつす", "のりかえる", "つかまる", "うたがう"], "correct": "うつす"}`
+- うつす significa mover, transferir. As outras opções são うたがう (duvidar, pôr em dúvida), つかまる (ser pego, ser preso) e のりかえる (fazer baldeação, trocar (de trem, ônibus)).
+
+
+### 25. (recognition) Qual destas palavras significa "apelar, recorrer"?
+- **Resposta:** `{"choices": ["つかまる", "うったえる", "ひく", "つかむ"], "correct": "うったえる"}`
+- うったえる significa apelar, recorrer. As outras opções são つかむ (agarrar, pegar), ひく (atropelar) e つかまる (ser pego, ser preso).
+
+
+### 26. (recognition) Qual destas palavras significa "cavalo"?
+- **Resposta:** `{"choices": ["はり", "よそく", "うま", "じんるい"], "correct": "うま"}`
+- うま significa cavalo. As outras opções são よそく (prever, estimar), じんるい (humanidade, gênero humano) e はり (agulha, alfinete).
+
+
+### 27. (cloze) Complete a frase: この問題＿＿は３つの意見がある。 (A respeito dessa questão, há três opiniões.)
+- **Resposta:** `{"text": "に関して", "full": "この問題に関しては３つの意見がある。"}`
+- O que falta é に関して: o ponto gramatical desta lição, a respeito de / quanto a (に関して).
+- frases: `sent:tatoeba-219422`
+

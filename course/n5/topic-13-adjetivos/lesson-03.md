@@ -104,3 +104,63 @@ Não tente dizer ない sozinho depois do adjetivo, como se fosse o nosso "não"
 - 痛い → corta o い, entra くない → 痛くない ('não dói'); com です fica polido: 痛くないです. Aceitamos também a forma informal 痛くない.
 
 
+### 7. (recognition) Qual destas palavras significa "perigoso, arriscado"?
+- **Resposta:** `{"choices": ["くらい", "うるさい", "あぶない", "すくない"], "correct": "あぶない"}`
+- あぶない significa perigoso, arriscado. As outras opções são すくない (poucos, escasso), うるさい (barulhento, ruidoso) e くらい (escuro).
+
+
+### 8. (recognition) Qual destas palavras significa "muitos, numerosos"?
+- **Resposta:** `{"choices": ["きたない", "せまい", "おおい", "わるい"], "correct": "おおい"}`
+- おおい significa muitos, numerosos. As outras opções são わるい (ruim, mau), せまい (estreito, apertado) e きたない (sujo, imundo).
+
+
+### 9. (recognition) Qual destas palavras significa "poucos, escasso"?
+- **Resposta:** `{"choices": ["いそがしい", "すくない", "あかるい", "おそい"], "correct": "すくない"}`
+- すくない significa poucos, escasso. As outras opções são いそがしい (ocupado, atarefado), あかるい (claro, iluminado) e おそい (lento, devagar).
+
+
+### 10. (recognition) Qual destas palavras significa "ocupado, atarefado"?
+- **Resposta:** `{"choices": ["あぶない", "とおい", "いそがしい", "いたい"], "correct": "いそがしい"}`
+- いそがしい significa ocupado, atarefado. As outras opções são いたい (dolorido, que dói), あぶない (perigoso, arriscado) e とおい (longe, distante).
+
+
+### 11. (cloze) Complete a frase: ちくしょう！＿＿ないなあ！ (Droga! Não é nada mau!)
+- **Resposta:** `{"text": "わるく", "full": "ちくしょう！わるくないなあ！"}`
+- A palavra que falta é わるい: ruim, mau. Na frase ela aparece como わるく.
+- frases: `sent:tatoeba-135763`
+
+### 12. (recognition) Qual destas palavras significa "claro, iluminado"?
+- **Resposta:** `{"choices": ["いそがしい", "うるさい", "せまい", "あかるい"], "correct": "あかるい"}`
+- あかるい significa claro, iluminado. As outras opções são せまい (estreito, apertado), いそがしい (ocupado, atarefado) e うるさい (barulhento, ruidoso).
+
+
+### 13. (recognition) Qual destas palavras significa "escuro"?
+- **Resposta:** `{"choices": ["わるい", "あぶない", "おそい", "くらい"], "correct": "くらい"}`
+- くらい significa escuro. As outras opções são あぶない (perigoso, arriscado), おそい (lento, devagar) e わるい (ruim, mau).
+
+
+### 14. (recognition) Qual destas palavras significa "sujo, imundo"?
+- **Resposta:** `{"choices": ["きたない", "くらい", "あかるい", "おおい"], "correct": "きたない"}`
+- きたない significa sujo, imundo. As outras opções são おおい (muitos, numerosos), くらい (escuro) e あかるい (claro, iluminado).
+
+
+### 15. (recognition) Qual destas palavras significa "barulhento, ruidoso"?
+- **Resposta:** `{"choices": ["うるさい", "いたい", "おおい", "すくない"], "correct": "うるさい"}`
+- うるさい significa barulhento, ruidoso. As outras opções são いたい (dolorido, que dói), すくない (poucos, escasso) e おおい (muitos, numerosos).
+
+
+### 16. (recognition) Qual destas palavras significa "estreito, apertado"?
+- **Resposta:** `{"choices": ["いそがしい", "くらい", "せまい", "きたない"], "correct": "せまい"}`
+- せまい significa estreito, apertado. As outras opções são きたない (sujo, imundo), いそがしい (ocupado, atarefado) e くらい (escuro).
+
+
+### 17. (recognition) Qual destas palavras significa "dolorido, que dói"?
+- **Resposta:** `{"choices": ["いたい", "おそい", "おもしろい", "あつい"], "correct": "いたい"}`
+- いたい significa dolorido, que dói. As outras opções são あつい (quente (clima, ambiente)), おそい (lento, devagar) e おもしろい (interessante).
+
+
+### 18. (recognition) Qual destas palavras significa "lento, devagar"?
+- **Resposta:** `{"choices": ["かるい", "あつい", "きたない", "おそい"], "correct": "おそい"}`
+- おそい significa lento, devagar. As outras opções são あつい (grosso, espesso), かるい (leve) e きたない (sujo, imundo).
+
+

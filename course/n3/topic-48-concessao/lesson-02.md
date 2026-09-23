@@ -163,3 +163,58 @@ O kanji 招 ('convidar') também tem a mão (扌): a mão que acena chamando alg
 - 雑 é misturado, diverso. O mesmo bloco da direita reaparece em 集, juntar, 進, avançar, e 曜, o dia da semana: a parte comum não dá o sentido, é só o desenho.
 
 
+### 18. (cloze) Complete a frase: あの店は＿＿が良い。 (Aquela loja tem um bom atendimento.)
+- **Resposta:** `{"text": "サービス", "full": "あの店はサービスが良い。"}`
+- A palavra que falta é サービス: serviço, atendimento.
+- frases: `sent:tatoeba-230537`
+
+### 19. (cloze) Complete a frase: ＿＿は全部自分がやりました。 (Fiz todo o trabalho sozinho.)
+- **Resposta:** `{"text": "作業", "full": "作業は全部自分がやりました。"}`
+- A palavra que falta é 作業（さぎょう）: trabalho, tarefa.
+- frases: `sent:tatoeba-10900730`
+
+### 20. (cloze) Complete a frase: 彼は＿＿がぎこちない。 (Ele é desajeitado nas maneiras.)
+- **Resposta:** `{"text": "作法", "full": "彼は作法がぎこちない。"}`
+- A palavra que falta é 作法（さほう）: boas maneiras, etiqueta.
+- frases: `sent:tatoeba-106822`
+
+### 21. (recognition) Qual destas palavras significa "discriminação, discriminar"?
+- **Resposta:** `{"choices": ["差別", "図書", "先日", "説"], "correct": "差別"}`
+- 差別（さべつ） significa discriminação, discriminar. As outras opções são 説 (teoria, tese), 図書 (livros, obras escritas) e 先日 (outro dia, dias atrás).
+
+
+### 22. (cloze) Complete a frase: ＿＿を予約しました。 (Reservei um assento.)
+- **Resposta:** `{"text": "座席", "full": "座席を予約しました。"}`
+- A palavra que falta é 座席（ざせき）: assento, lugar (sentado).
+- frases: `sent:tatoeba-170829`
+
+### 23. (recognition) Qual destas formas significa "nota (de dinheiro), cédula"?
+- **Resposta:** `{"choices": ["ながめ", "ママ", "マーケット", "さつ"], "correct": "さつ"}`
+- さつ significa nota (de dinheiro), cédula. As outras opções são ママ (mamãe, mãe), マーケット (mercado, feira) e ながめ (vista, panorama).
+
+
+### 24. (recognition) Qual destas palavras significa "material, matéria-prima"?
+- **Resposta:** `{"choices": ["げんしょう", "ペンキ", "ざいりょう", "さいのう"], "correct": "ざいりょう"}`
+- ざいりょう significa material, matéria-prima. As outras opções são さいのう (talento, dom), ペンキ (tinta) e げんしょう (fenômeno).
+
+
+### 25. (recognition) Qual destas palavras significa "prato, travessa"?
+- **Resposta:** `{"choices": ["さら", "ほのお", "ダイヤ", "こうりょ"], "correct": "さら"}`
+- さら significa prato, travessa. As outras opções são ほのお (chama, labareda), ダイヤ (diamante) e こうりょ (levar em conta, considerar).
+
+
+### 26. (recognition) Qual destas palavras significa "convidar, chamar (para sair)"?
+- **Resposta:** `{"choices": ["マスター", "おそれる", "さそう", "なまける"], "correct": "さそう"}`
+- さそう significa convidar, chamar (para sair). As outras opções são マスター (dominar, tornar-se proficiente em), なまける (ser preguiçoso, vadiar) e おそれる (temer, ter medo de).
+
+
+### 27. (cloze) Complete a frase: ＿＿を相続する。 (Herdar um patrimônio.)
+- **Resposta:** `{"text": "財産", "full": "財産を相続する。"}`
+- A palavra que falta é 財産（ざいさん）: bens, patrimônio.
+- frases: `sent:tatoeba-170222`
+
+### 28. (recognition) Qual destas palavras significa "concordância, aprovação"?
+- **Resposta:** `{"choices": ["こうほ", "そんけい", "さんせい", "けんせつ"], "correct": "さんせい"}`
+- さんせい significa concordância, aprovação. As outras opções são こうほ (candidato, indicado), けんせつ (construção, obra) e そんけい (respeito, admiração).
+
+

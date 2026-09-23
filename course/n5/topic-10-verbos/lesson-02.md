@@ -101,3 +101,83 @@ Mais alguns verbos う com を para você ver o padrão se repetindo:
 - 手 (mãos, objeto) + を (marca o objeto, lê-se 'o') + 洗う (verbo う, no fim). É o molde [objeto] を [verbo] com um verbo godan terminado em う.
 
 
+### 6. (recognition) Qual destas palavras significa "cortar"?
+- **Resposta:** `{"choices": ["いう", "おす", "かう", "きる"], "correct": "きる"}`
+- きる significa cortar. As outras opções são おす (empurrar, pressionar), いう (dizer, falar) e かう (comprar).
+
+
+### 7. (recognition) Qual destas palavras significa "imprimir"?
+- **Resposta:** `{"choices": ["かえす", "すう", "うる", "する"], "correct": "する"}`
+- する significa imprimir. As outras opções são かえす (devolver), すう (fumar) e うる (vender).
+
+
+### 8. (cloze) Complete a frase: ＿＿と コーヒーを のむ (Eu tomo café com um amigo.)
+- **Resposta:** `{"text": "ともだち", "full": "ともだちと コーヒーを のむ"}`
+- A palavra que falta é ともだち: amigo, amiga.
+- frases: `sent:gen-66857872d764`
+
+### 9. (recognition) Qual destas palavras significa "fumar"?
+- **Resposta:** `{"choices": ["うたう", "さす", "かす", "すう"], "correct": "すう"}`
+- すう significa fumar. As outras opções são かす (emprestar (algo a alguém)), さす (abrir (o guarda-chuva), segurar erguido) e うたう (cantar).
+
+
+### 10. (recognition) Qual destas palavras significa "vender"?
+- **Resposta:** `{"choices": ["する", "かく", "けす", "うる"], "correct": "うる"}`
+- うる significa vender. As outras opções são かく (escrever), する (imprimir) e けす (desligar, apagar (luz, fogo)).
+
+
+### 11. (recognition) Qual destas palavras significa "abrir (o guarda-chuva), segurar erguido"?
+- **Resposta:** `{"choices": ["さす", "のむ", "あらう", "おく"], "correct": "さす"}`
+- さす significa abrir (o guarda-chuva), segurar erguido. As outras opções são おく (colocar, pôr), あらう (lavar) e のむ (beber, tomar).
+
+
+### 12. (cloze) Complete a frase: ＿＿を閉めろ。 (Fecha a porta!)
+- **Resposta:** `{"text": "戸", "full": "戸を閉めろ。"}`
+- A palavra que falta é と: porta (de correr). Na frase ela aparece como 戸.
+- frases: `sent:tatoeba-174533`
+
+### 13. (recognition) Qual destas palavras significa "empurrar, pressionar"?
+- **Resposta:** `{"choices": ["かえす", "おす", "きる", "かす"], "correct": "おす"}`
+- おす significa empurrar, pressionar. As outras opções são きる (cortar), かす (emprestar (algo a alguém)) e かえす (devolver).
+
+
+### 14. (recognition) Qual destas palavras significa "cantar"?
+- **Resposta:** `{"choices": ["あらう", "きる", "かく", "うたう"], "correct": "うたう"}`
+- うたう significa cantar. As outras opções são あらう (lavar), かく (escrever) e きる (cortar).
+
+
+### 15. (cloze) Complete a frase: 電気を＿＿ (Apaguei a luz.)
+- **Resposta:** `{"text": "消した", "full": "電気を消した"}`
+- A palavra que falta é けす: desligar, apagar (luz, fogo). Na frase ela aparece como 消した.
+- frases: `sent:gen-867d5c2e8dc3`
+
+### 16. (recognition) Qual destas palavras significa "colocar, pôr"?
+- **Resposta:** `{"choices": ["おく", "かう", "うたう", "けす"], "correct": "おく"}`
+- おく significa colocar, pôr. As outras opções são うたう (cantar), けす (desligar, apagar (luz, fogo)) e かう (comprar).
+
+
+### 17. (recognition) Qual destas palavras significa "dizer, falar"?
+- **Resposta:** `{"choices": ["する", "うる", "いう", "のむ"], "correct": "いう"}`
+- いう significa dizer, falar. As outras opções são のむ (beber, tomar), する (imprimir) e うる (vender).
+
+
+### 18. (recognition) Qual destas palavras significa "emprestar (algo a alguém)"?
+- **Resposta:** `{"choices": ["かす", "すう", "おく", "おす"], "correct": "かす"}`
+- かす significa emprestar (algo a alguém). As outras opções são すう (fumar), おす (empurrar, pressionar) e おく (colocar, pôr).
+
+
+### 19. (recognition) Qual destas palavras significa "devolver"?
+- **Resposta:** `{"choices": ["かえす", "いう", "おす", "かう"], "correct": "かえす"}`
+- かえす significa devolver. As outras opções são いう (dizer, falar), かう (comprar) e おす (empurrar, pressionar).
+
+
+### 20. (cloze) Complete a frase: ＿＿を消した (Apaguei a luz.)
+- **Resposta:** `{"text": "電気", "full": "電気を消した"}`
+- A palavra que falta é 電気（でんき）: eletricidade.
+- frases: `sent:gen-867d5c2e8dc3`
+
+### 21. (cloze) Complete a frase: ともだちと コーヒーを ＿＿ (Eu tomo café com um amigo.)
+- **Resposta:** `{"text": "のむ", "full": "ともだちと コーヒーを のむ"}`
+- A palavra que falta é のむ: beber, tomar.
+- frases: `sent:gen-66857872d764`
+

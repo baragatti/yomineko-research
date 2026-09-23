@@ -86,3 +86,53 @@ Cuidado: ライター (raitaa) pode ser 'escritor' (writer) OU 'isqueiro' (light
 - 余裕がある é 'ter folga' e 楽に行ける é 'dá para ir tranquilo/sem esforço'.
 
 
+### 6. (cloze) Complete a frase: ＿＿持ってる？ (Você tem isqueiro?)
+- **Resposta:** `{"text": "ライター", "full": "ライター持ってる？"}`
+- A palavra que falta é ライター: isqueiro.
+- frases: `sent:tatoeba-192664`
+
+### 7. (cloze) Complete a frase: この＿＿は私のものです。 (Esta raquete é minha.)
+- **Resposta:** `{"text": "ラケット", "full": "このラケットは私のものです。"}`
+- A palavra que falta é ラケット: raquete.
+- frases: `sent:tatoeba-223034`
+
+### 8. (cloze) Complete a frase: ＿＿、親切な人ばかりじゃない。 (Nem todo mundo por aí é gente boa.)
+- **Resposta:** `{"text": "世の中", "full": "世の中、親切な人ばかりじゃない。"}`
+- A palavra que falta é 世の中（よのなか）: sociedade, o mundo.
+- frases: `sent:tatoeba-1331104`
+
+### 9. (recognition) Qual destas palavras significa "extra, excedente"?
+- **Resposta:** `{"choices": ["ようき", "びみょう", "いだい", "よぶん"], "correct": "よぶん"}`
+- よぶん significa extra, excedente. As outras opções são ようき (alegre, animado), いだい (grandioso, grande) e びみょう (sutil, delicado).
+
+
+### 10. (recognition) Qual destas palavras significa "alegria, contentamento"?
+- **Resposta:** `{"choices": ["ようす", "よろこび", "ひ", "すいみん"], "correct": "よろこび"}`
+- よろこび significa alegria, contentamento. As outras opções são すいみん (sono, dormir), ようす (estado, aparência) e ひ (luz, lâmpada).
+
+
+### 11. (recognition) Qual destas palavras significa "esposa, noiva"?
+- **Resposta:** `{"choices": ["ヨット", "りく", "しんぱん", "よめ"], "correct": "よめ"}`
+- よめ significa esposa, noiva. As outras opções são しんぱん (arbitragem, arbitrar), ヨット (iate, veleiro) e りく (terra firme, terra).
+
+
+### 12. (cloze) Complete a frase: 後は＿＿。 (O resto fica com você.)
+- **Resposta:** `{"text": "よろしく", "full": "後はよろしく。"}`
+- A palavra que falta é よろしく: prazer (em conhecer), conto com você.
+- frases: `sent:tatoeba-12700844`
+
+### 13. (recognition) Qual destas formas significa "próximo (no tempo), que vem"?
+- **Resposta:** `{"choices": ["終える", "表", "来", "数"], "correct": "来"}`
+- 来（らい） significa próximo (no tempo), que vem. As outras opções são 終える (terminar, acabar), 表 (tabela, quadro) e 数 (alguns, vários (prefixo)).
+
+
+### 14. (recognition) Qual destas palavras significa "leitura"?
+- **Resposta:** `{"choices": ["一方", "数字", "務め", "読み"], "correct": "読み"}`
+- 読み（よみ） significa leitura. As outras opções são 務め (trabalho, emprego), 一方 (um lado, uma direção) e 数字 (algarismo, número).
+
+
+### 15. (recognition) Qual destas palavras significa "terra firme, terra"?
+- **Resposta:** `{"choices": ["いっち", "す", "ビン", "りく"], "correct": "りく"}`
+- りく significa terra firme, terra. As outras opções são ビン (garrafa, frasco), いっち (concordar, coincidir) e す (ninho, colmeia).
+
+

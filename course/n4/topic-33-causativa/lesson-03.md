@@ -116,3 +116,63 @@ Quatro caracteres concretos para fixar agora.
 - 冬 (ふゆ) é o inverno. Os dois pinguinhos embaixo são o radical do gelo, e é essa peça que dá a pista do sentido.
 
 
+### 9. (recognition) Qual destas palavras significa "mas, porém"?
+- **Resposta:** `{"choices": ["けれど", "それで", "それでは", "そうして"], "correct": "けれど"}`
+- けれど significa mas, porém. As outras opções são それで (então, por isso), そうして (e então, e assim) e それでは (então, nesse caso).
+
+
+### 10. (recognition) Qual destas palavras significa "ambos, os dois"?
+- **Resposta:** `{"choices": ["スーツ", "ひげ", "ぶんか", "りょうほう"], "correct": "りょうほう"}`
+- りょうほう significa ambos, os dois. As outras opções são ひげ (barba, bigode), ぶんか (cultura) e スーツ (terno).
+
+
+### 11. (recognition) Qual destas palavras significa "substituto, em lugar de"?
+- **Resposta:** `{"choices": ["品物", "着物", "文学", "代わり"], "correct": "代わり"}`
+- 代わり（かわり） significa substituto, em lugar de. As outras opções são 着物 (quimono, vestimenta tradicional japonesa), 品物 (mercadoria, artigo) e 文学 (literatura).
+
+
+### 12. (recognition) Qual destas palavras significa "dizer (honorífico), falar (honorífico)"?
+- **Resposta:** `{"choices": ["たおれる", "つづく", "おっしゃる", "ほめる"], "correct": "おっしゃる"}`
+- おっしゃる significa dizer (honorífico), falar (honorífico). As outras opções são たおれる (cair, tombar), ほめる (elogiar, louvar) e つづく (continuar, prosseguir).
+
+
+### 13. (recognition) Qual destas palavras significa "gentil, bondoso" (no sentido de amável)?
+- **Resposta:** `{"choices": ["やすい", "やさしい", "かたい", "すばらしい"], "correct": "やさしい"}`
+- やさしい significa gentil, bondoso. As outras opções são やすい (fácil de, fácil de fazer), かたい (duro, rígido) e すばらしい (maravilhoso, esplêndido).
+
+
+### 14. (recognition) Qual destas palavras significa "com sono, sonolento"?
+- **Resposta:** `{"choices": ["ひどい", "さびしい", "ねむい", "よろしい"], "correct": "ねむい"}`
+- ねむい significa com sono, sonolento. As outras opções são ひどい (terrível, horrível), さびしい (solitário, sozinho) e よろしい (bom, aceitável).
+
+
+### 15. (recognition) Qual destas palavras significa "areia"?
+- **Resposta:** `{"choices": ["け", "じょせい", "ふね", "すな"], "correct": "すな"}`
+- すな significa areia. As outras opções são ふね (navio, barco), じょせい (mulher, pessoa do sexo feminino) e け (pelo, pelos).
+
+
+### 16. (recognition) Qual destas palavras significa "costas"?
+- **Resposta:** `{"choices": ["パパ", "せなか", "さらいしゅう", "しょうち"], "correct": "せなか"}`
+- せなか significa costas. As outras opções são しょうち (entendido, compreendido), さらいしゅう (semana depois da próxima, daqui a duas semanas) e パパ (papai, pai).
+
+
+### 17. (recognition) Qual destas palavras significa "navio, barco"?
+- **Resposta:** `{"choices": ["ページ", "てんきよほう", "むすこ", "ふね"], "correct": "ふね"}`
+- ふね significa navio, barco. As outras opções são むすこ (filho), てんきよほう (previsão do tempo) e ページ (página).
+
+
+### 18. (recognition) Qual destas palavras significa "inseto, bicho"?
+- **Resposta:** `{"choices": ["せんそう", "かっこう", "すいえい", "むし"], "correct": "むし"}`
+- むし significa inseto, bicho. As outras opções são かっこう (descida (esqui), descer ladeira esquiando), すいえい (natação) e せんそう (guerra).
+
+
+### 19. (recognition) Qual destas palavras significa "pescoço"?
+- **Resposta:** `{"choices": ["せいじ", "すな", "クビ", "アクセサリー"], "correct": "クビ"}`
+- クビ（くび） significa pescoço. As outras opções são すな (areia), アクセサリー (acessório, bijuteria) e せいじ (política, governo).
+
+
+### 20. (recognition) Qual destas palavras significa "barba, bigode"?
+- **Resposta:** `{"choices": ["おく", "ひげ", "スーツ", "ちゅうしゃ"], "correct": "ひげ"}`
+- ひげ significa barba, bigode. As outras opções são おく (cem milhões, 100.000.000), ちゅうしゃ (injeção, aplicação (de vacina)) e スーツ (terno).
+
+

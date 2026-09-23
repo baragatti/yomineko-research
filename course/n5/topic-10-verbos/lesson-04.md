@@ -128,3 +128,73 @@ Mnemônico de forma: 時 junta 日 (sol/dia) à esquerda com 寺 (templo) à dir
 - 時 tem 日 (sol, dia) do lado esquerdo: é o tempo medido pelo sol. Sozinho ele é とき (momento); em composto vira ジ.
 
 
+### 9. (recognition) Qual destas palavras significa "chá, chá-verde"?
+- **Resposta:** `{"choices": ["こ", "おちゃ", "ざっし", "しつもん"], "correct": "おちゃ"}`
+- おちゃ significa chá, chá-verde. As outras opções são ざっし (revista, periódico), しつもん (pergunta, questão) e こ (unidade, contador de objetos pequenos).
+
+
+### 10. (recognition) Qual destas formas significa "mostrar sinais de, demonstrar (sufixo que transforma adjetivo em verbo)"?
+- **Resposta:** `{"choices": ["ずつ", "くらい", "こ", "がる"], "correct": "がる"}`
+- がる significa mostrar sinais de, demonstrar (sufixo que transforma adjetivo em verbo). As outras opções são くらい (cerca de, mais ou menos), ずつ (cada, por vez) e こ (unidade, contador de objetos pequenos).
+
+
+### 11. (recognition) Qual destas palavras significa "redação, composição (escrita)"?
+- **Resposta:** `{"choices": ["テレビ", "しゅうかん", "ともだち", "さくぶん"], "correct": "さくぶん"}`
+- さくぶん significa redação, composição (escrita). As outras opções são テレビ (televisão, TV), ともだち (amigo, amiga) e しゅうかん (semana, período de uma semana).
+
+
+### 12. (recognition) Qual destas palavras significa "ter problemas, ficar em apuros"?
+- **Resposta:** `{"choices": ["こまる", "はしる", "しめる", "くもる"], "correct": "こまる"}`
+- こまる significa ter problemas, ficar em apuros. As outras opções são はしる (correr), くもる (ficar nublado, encobrir-se) e しめる (fechar (algo)).
+
+
+### 13. (recognition) Qual destas palavras significa "significado, sentido"?
+- **Resposta:** `{"choices": ["テレビ", "かいもの", "いみ", "スカート"], "correct": "いみ"}`
+- いみ significa significado, sentido. As outras opções são スカート (saia), かいもの (compras) e テレビ (televisão, TV).
+
+
+### 14. (recognition) Qual destas palavras significa "morrer"?
+- **Resposta:** `{"choices": ["いう", "あげる", "しぬ", "かぶる"], "correct": "しぬ"}`
+- しぬ significa morrer. As outras opções são かぶる (pôr (na cabeça), usar (chapéu)), あげる (levantar, erguer) e いう (dizer, falar).
+
+
+### 15. (cloze) Complete a frase: ＿＿電話するよ。 (Eu te ligo toda noite, viu.)
+- **Resposta:** `{"text": "毎晩", "full": "毎晩電話するよ。"}`
+- A palavra que falta é まいばん: toda noite, todas as noites. Na frase ela aparece como 毎晩.
+- frases: `sent:tatoeba-81225`
+
+### 16. (recognition) Qual destas palavras significa "saber, conhecer"?
+- **Resposta:** `{"choices": ["しる", "あびる", "すう", "ある"], "correct": "しる"}`
+- しる significa saber, conhecer. As outras opções são すう (fumar), ある (haver, existir) e あびる (tomar (banho/ducha), banhar-se).
+
+
+### 17. (recognition) Qual destas palavras significa "terminar, acabar"?
+- **Resposta:** `{"choices": ["おわる", "かぶる", "しぬ", "する"], "correct": "おわる"}`
+- おわる significa terminar, acabar. As outras opções são しぬ (morrer), かぶる (pôr (na cabeça), usar (chapéu)) e する (imprimir).
+
+
+### 18. (recognition) Qual destas palavras significa "casamento, casar-se"?
+- **Resposta:** `{"choices": ["しょくどう", "しゅうかん", "けっこん", "じしょ"], "correct": "けっこん"}`
+- けっこん significa casamento, casar-se. As outras opções são しゅうかん (semana, período de uma semana), じしょ (dicionário) e しょくどう (refeitório, cantina).
+
+
+### 19. (recognition) Qual destas palavras significa "terno"?
+- **Resposta:** `{"choices": ["シャツ", "いつつ", "けっこん", "せびろ"], "correct": "せびろ"}`
+- せびろ significa terno. As outras opções são いつつ (cinco (coisas)), けっこん (casamento, casar-se) e シャツ (camisa, camiseta).
+
+
+### 20. (recognition) Qual destas palavras significa "pôr (na cabeça), usar (chapéu)"?
+- **Resposta:** `{"choices": ["こまる", "けす", "かぶる", "しぬ"], "correct": "かぶる"}`
+- かぶる significa pôr (na cabeça), usar (chapéu). As outras opções são こまる (ter problemas, ficar em apuros), しぬ (morrer) e けす (desligar, apagar (luz, fogo)).
+
+
+### 21. (recognition) Qual destas palavras significa "pergunta, questão"?
+- **Resposta:** `{"choices": ["しつもん", "しゅくだい", "さんぽ", "ざっし"], "correct": "しつもん"}`
+- しつもん significa pergunta, questão. As outras opções são さんぽ (passeio, caminhada), しゅくだい (dever de casa, tarefa de casa) e ざっし (revista, periódico).
+
+
+### 22. (cloze) Complete a frase: 毎晩＿＿するよ。 (Eu te ligo toda noite, viu.)
+- **Resposta:** `{"text": "電話", "full": "毎晩電話するよ。"}`
+- A palavra que falta é 電話（でんわ）: telefone.
+- frases: `sent:tatoeba-81225`
+

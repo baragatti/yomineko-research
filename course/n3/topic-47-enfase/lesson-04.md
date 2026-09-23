@@ -154,3 +154,53 @@ Um provérbio (諺) famoso usa essa ideia de raridade ao contrário: 七転び�
 - 途中 (とちゅう) é 途 (percurso) mais 中 (meio). Serve para o caminho físico e também para algo interrompido pela metade.
 
 
+### 16. (recognition) Qual destas palavras significa "estes, estas"?
+- **Resposta:** `{"choices": ["これら", "おせん", "とうひょう", "ひげき"], "correct": "これら"}`
+- これら significa estes, estas. As outras opções são おせん (poluição, contaminação), とうひょう (votar, votação) e ひげき (tragédia).
+
+
+### 17. (cloze) Complete a frase: ＿＿が最後の試合だ。 (Esta é a última partida.)
+- **Resposta:** `{"text": "今回", "full": "今回が最後の試合だ。"}`
+- A palavra que falta é 今回（こんかい）: desta vez, agora.
+- frases: `sent:tatoeba-172519`
+
+### 18. (cloze) Complete a frase: ＿＿何が起こるか分からない。 (Não dá para saber o que vai acontecer daqui pra frente.)
+- **Resposta:** `{"text": "今後", "full": "今後何が起こるか分からない。"}`
+- A palavra que falta é 今後（こんご）: de agora em diante, daqui para frente.
+- frases: `sent:tatoeba-172421`
+
+### 19. (recognition) Qual destas palavras significa "gosto, preferência"?
+- **Resposta:** `{"choices": ["何か", "小屋", "共同", "好み"], "correct": "好み"}`
+- 好み（このみ） significa gosto, preferência. As outras opções são 共同 (cooperação, colaboração), 小屋 (cabana, barraco) e 何か (algo, alguma coisa).
+
+
+### 20. (cloze) Complete a frase: 人は明るい日の光を＿＿。 (As pessoas gostam da luz clara do sol.)
+- **Resposta:** `{"text": "好む", "full": "人は明るい日の光を好む。"}`
+- A palavra que falta é 好む（このむ）: gostar de, apreciar.
+- frases: `sent:tatoeba-144433`
+
+### 21. (cloze) Complete a frase: 遠くに＿＿が見えた。 (Dava para ver uma cabana ao longe.)
+- **Resposta:** `{"text": "小屋", "full": "遠くに小屋が見えた。"}`
+- A palavra que falta é 小屋（こや）: cabana, barraco.
+- frases: `sent:tatoeba-188685`
+
+### 22. (recognition) Qual destas palavras significa "trigo"?
+- **Resposta:** `{"choices": ["そんちょう", "こんざつ", "きゅうけい", "こむぎ"], "correct": "こむぎ"}`
+- こむぎ significa trigo. As outras opções são そんちょう (respeito, consideração), こんざつ (aglomeração, congestionamento) e きゅうけい (descanso, pausa).
+
+
+### 23. (cloze) Complete a frase: 彼は＿＿。 (Ele foi assassinado.)
+- **Resposta:** `{"text": "殺された", "full": "彼は殺された。"}`
+- A palavra que falta é 殺す（ころす）: matar, assassinar. Na frase ela aparece como 殺された.
+- frases: `sent:tatoeba-6206842`
+
+### 24. (recognition) Qual destas palavras significa "aglomeração, congestionamento"?
+- **Resposta:** `{"choices": ["こんざつ", "まいご", "かいしゃく", "こくばん"], "correct": "こんざつ"}`
+- こんざつ significa aglomeração, congestionamento. As outras opções são こくばん (quadro-negro, lousa), まいご (criança perdida, pessoa perdida) e かいしゃく (interpretação, leitura).
+
+
+### 25. (cloze) Complete a frase: ＿＿ようにね。 (Cuidado pra não cair, viu.)
+- **Resposta:** `{"text": "転ばない", "full": "転ばないようにね。"}`
+- A palavra que falta é 転ぶ（ころぶ）: cair, tombar. Na frase ela aparece como 転ばない.
+- frases: `sent:tatoeba-3241561`
+

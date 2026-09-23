@@ -110,3 +110,33 @@ O condicional 〜ば é o coração de muitos provérbios. Um clássico:塵も�
 - 無くす é transitivo: alguém perde alguma coisa, marcada por を. Já 無くなる é intransitivo, e nele a coisa some sem culpado. O 無 é a mesma ausência nos dois.
 
 
+### 10. (recognition) Qual destas palavras significa "zoológico, jardim zoológico"?
+- **Resposta:** `{"choices": ["ゼロ", "しつもん", "みんな", "どうぶつえん"], "correct": "どうぶつえん"}`
+- どうぶつえん significa zoológico, jardim zoológico. As outras opções são ゼロ (zero), しつもん (pergunta, questão) e みんな (todos, todo mundo).
+
+
+### 11. (recognition) Qual destas palavras significa "assustador, apavorante"?
+- **Resposta:** `{"choices": ["いたい", "やわらかい", "つめたい", "こわい"], "correct": "こわい"}`
+- こわい significa assustador, apavorante. As outras opções são つめたい (frio (ao toque), gelado), いたい (dolorido, que dói) e やわらかい (macio, mole).
+
+
+### 12. (recognition) Qual destas palavras significa "jogar, arremessar"?
+- **Resposta:** `{"choices": ["いたす", "すぎる", "なげる", "たてる"], "correct": "なげる"}`
+- なげる significa jogar, arremessar. As outras opções são すぎる (passar (tempo), decorrer), たてる (construir, erguer) e いたす (fazer (humilde)).
+
+
+### 13. (recognition) Qual destas palavras significa "pegar, agarrar"?
+- **Resposta:** `{"choices": ["ゆれる", "まちがえる", "くらべる", "つかまえる"], "correct": "つかまえる"}`
+- つかまえる significa pegar, agarrar. As outras opções são まちがえる (errar, cometer um erro), くらべる (comparar, contrastar) e ゆれる (balançar, tremer).
+
+
+### 14. (recognition) Qual destas palavras significa "defeito, pane"?
+- **Resposta:** `{"choices": ["こしょう", "のき", "かぜ", "ガス"], "correct": "こしょう"}`
+- こしょう significa defeito, pane. As outras opções são のき (beiral, aba do telhado), ガス (gás, gás (de cozinha)) e かぜ (resfriado, gripe).
+
+
+### 15. (recognition) Qual destas palavras significa "tocar, encostar (em)"?
+- **Resposta:** `{"choices": ["かむ", "うける", "ならぶ", "さわる"], "correct": "さわる"}`
+- さわる significa tocar, encostar (em). As outras opções são かむ (morder, mastigar), うける (receber, obter) e ならぶ (enfileirar-se, ficar em fila).
+
+

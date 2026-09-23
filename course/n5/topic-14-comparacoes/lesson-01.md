@@ -114,3 +114,58 @@ O kanji 小 significa pequeno, reduzido. Suas leituras principais são ちい (e
 - 小さい se lê ちいさい: o kanji carrega ちい e a terminação さい fica em hiragana. As outras opções são as leituras nativas de 大 (おお), 高 (たか) e 長 (なが), os adjetivos de tamanho com que 小さい costuma ser comparado.
 
 
+### 8. (recognition) Qual destas palavras significa "provavelmente, talvez"?
+- **Resposta:** `{"choices": ["とても", "たぶん", "たいへん", "すこし"], "correct": "たぶん"}`
+- たぶん significa provavelmente, talvez. As outras opções são たいへん (muito, extremamente), すこし (um pouco, um pouquinho) e とても (muito, extremamente).
+
+
+### 9. (recognition) Qual destas palavras significa "muito, extremamente"?
+- **Resposta:** `{"choices": ["もう", "いつも", "たぶん", "たいへん"], "correct": "たいへん"}`
+- たいへん significa muito, extremamente. As outras opções são たぶん (provavelmente, talvez), もう (já) e いつも (sempre).
+
+
+### 10. (recognition) Qual destas palavras significa "forte, poderoso"?
+- **Resposta:** `{"choices": ["ちかい", "つよい", "ぬるい", "たのしい"], "correct": "つよい"}`
+- つよい significa forte, poderoso. As outras opções são ぬるい (morno), ちかい (perto, próximo) e たのしい (divertido, agradável).
+
+
+### 11. (recognition) Qual destas palavras significa "divertido, agradável"?
+- **Resposta:** `{"choices": ["はやい", "つよい", "たのしい", "おなじ"], "correct": "たのしい"}`
+- たのしい significa divertido, agradável. As outras opções são つよい (forte, poderoso), はやい (cedo) e おなじ (mesmo, igual).
+
+
+### 12. (recognition) Qual destas palavras significa "próximo, seguinte"?
+- **Resposta:** `{"choices": ["あか", "つぎ", "バス", "テーブル"], "correct": "つぎ"}`
+- つぎ significa próximo, seguinte. As outras opções são バス (ônibus), あか (vermelho) e テーブル (mesa).
+
+
+### 13. (recognition) Qual destas palavras significa "morno"?
+- **Resposta:** `{"choices": ["うすい", "よい", "ぬるい", "おなじ"], "correct": "ぬるい"}`
+- ぬるい significa morno. As outras opções são おなじ (mesmo, igual), うすい (fino) e よい (bom, bem).
+
+
+### 14. (recognition) Qual destas palavras significa "marrom, castanho"?
+- **Resposta:** `{"choices": ["つぎ", "しろ", "あさって", "ちゃいろ"], "correct": "ちゃいろ"}`
+- ちゃいろ significa marrom, castanho. As outras opções são つぎ (próximo, seguinte), あさって (depois de amanhã) e しろ (branco, a cor branca).
+
+
+### 15. (recognition) Qual destas palavras significa "chato, entediante"?
+- **Resposta:** `{"choices": ["はやい", "いい", "つまらない", "たのしい"], "correct": "つまらない"}`
+- つまらない significa chato, entediante. As outras opções são はやい (cedo), たのしい (divertido, agradável) e いい (bom, legal).
+
+
+### 16. (recognition) Qual destas palavras significa "perto, próximo"?
+- **Resposta:** `{"choices": ["つまらない", "ぬるい", "ちかい", "おいしい"], "correct": "ちかい"}`
+- ちかい significa perto, próximo. As outras opções são つまらない (chato, entediante), ぬるい (morno) e おいしい (delicioso, gostoso).
+
+
+### 17. (recognition) Qual destas palavras significa "longo, comprido"?
+- **Resposta:** `{"choices": ["小さい", "大きい", "新しい", "長い"], "correct": "長い"}`
+- 長い（ながい） significa longo, comprido. As outras opções são 新しい (novo), 大きい (grande) e 小さい (pequeno).
+
+
+### 18. (recognition) Qual destas palavras significa "vizinho, ao lado"?
+- **Resposta:** `{"choices": ["ちかてつ", "となり", "いちばん", "せびろ"], "correct": "となり"}`
+- となり significa vizinho, ao lado. As outras opções são いちばん (o melhor, o mais), せびろ (terno) e ちかてつ (metrô).
+
+

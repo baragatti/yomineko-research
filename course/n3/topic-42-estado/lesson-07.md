@@ -86,3 +86,63 @@ Para fechar, pessoas e alguns verbos.
 - 防ぐ (ふせぐ) é proteger-se de ou prevenir; com ましょう vira um convite, vamos prevenir.
 
 
+### 5. (cloze) Complete a frase: 彼女は彼を＿＿。 (Ela bateu nele.)
+- **Resposta:** `{"text": "ぶった", "full": "彼女は彼をぶった。"}`
+- A palavra que falta é ぶつ: bater, golpear. Na frase ela aparece como ぶった.
+- frases: `sent:tatoeba-1320959`
+
+### 6. (recognition) Qual destas palavras significa "de repente, inesperadamente"?
+- **Resposta:** `{"choices": ["ずいぶん", "ずっと", "ふと", "すでに"], "correct": "ふと"}`
+- ふと significa de repente, inesperadamente. As outras opções são ずっと (o tempo todo, desde sempre), すでに (já, previamente) e ずいぶん (bastante, muito).
+
+
+### 7. (recognition) Qual destas palavras significa "queixa, descontentamento"?
+- **Resposta:** `{"choices": ["不平", "終わり", "三", "親友"], "correct": "不平"}`
+- 不平（ふへい） significa queixa, descontentamento. As outras opções são 親友 (amigo íntimo, melhor amigo), 三 (três) e 終わり (o fim, o final).
+
+
+### 8. (cloze) Complete a frase: 私はそんな＿＿をするくらいなら死んだ方がいい。 (Prefiro morrer a cometer uma desonestidade dessas.)
+- **Resposta:** `{"text": "不正", "full": "私はそんな不正をするくらいなら死んだ方がいい。"}`
+- A palavra que falta é 不正（ふせい）: injustiça, irregularidade.
+- frases: `sent:tatoeba-159638`
+
+### 9. (cloze) Complete a frase: はじめまして、ジョーンズ＿＿。 (Prazer em conhecê-la, senhora Jones.)
+- **Resposta:** `{"text": "夫人", "full": "はじめまして、ジョーンズ夫人。"}`
+- A palavra que falta é 夫人（ふじん）: esposa (de alguém de posição elevada), senhora.
+- frases: `sent:tatoeba-198254`
+
+### 10. (recognition) Qual destas palavras significa "mulher, senhora"?
+- **Resposta:** `{"choices": ["りゅうがく", "かみなり", "ゆうき", "ふじん"], "correct": "ふじん"}`
+- ふじん significa mulher, senhora. As outras opções são かみなり (trovão, raio), ゆうき (coragem, bravura) e りゅうがく (estudar no exterior, intercâmbio (estudo no exterior)).
+
+
+### 11. (recognition) Qual destas palavras significa "normalmente, geralmente"?
+- **Resposta:** `{"choices": ["ウイスキー", "てってい", "ふだん", "ふち"], "correct": "ふだん"}`
+- ふだん significa normalmente, geralmente. As outras opções são ふち (borda, beira), てってい (ser minucioso, fazer a fundo) e ウイスキー (uísque).
+
+
+### 12. (cloze) Complete a frase: ＿＿は難しい。 (Física é difícil.)
+- **Resposta:** `{"text": "物理", "full": "物理は難しい。"}`
+- A palavra que falta é 物理（ぶつり）: física.
+- frases: `sent:tatoeba-13388238`
+
+### 13. (recognition) Qual destas palavras significa "substância, material"?
+- **Resposta:** `{"choices": ["勝ち", "集まり", "案", "物質"], "correct": "物質"}`
+- 物質（ぶっしつ） significa substância, material. As outras opções são 案 (plano, proposta), 集まり (reunião, encontro) e 勝ち (vitória, triunfo).
+
+
+### 14. (recognition) Qual destas palavras significa "pincel, pincel de caligrafia"?
+- **Resposta:** `{"choices": ["りょうがえ", "かち", "ふで", "ロケット"], "correct": "ふで"}`
+- ふで significa pincel, pincel de caligrafia. As outras opções são かち (valor, mérito), ロケット (foguete) e りょうがえ (trocar (dinheiro/câmbio), câmbio de moeda).
+
+
+### 15. (recognition) Qual destas palavras significa "borda, beira"?
+- **Resposta:** `{"choices": ["ふたご", "オフィス", "とう", "ふち"], "correct": "ふち"}`
+- ふち significa borda, beira. As outras opções são ふたご (gêmeos, gêmeo), オフィス (escritório, escritório (de empresa)) e とう (partido (político), facção).
+
+
+### 16. (recognition) Qual destas palavras significa "palco, tablado"?
+- **Resposta:** `{"choices": ["いりょう", "せいこう", "ぶたい", "かさい"], "correct": "ぶたい"}`
+- ぶたい significa palco, tablado. As outras opções são せいこう (sucesso, êxito), いりょう (assistência médica, tratamento médico) e かさい (incêndio, fogo (desastre)).
+
+

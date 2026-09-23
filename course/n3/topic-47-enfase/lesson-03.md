@@ -165,3 +165,53 @@ O kanji 妻 tem o radical da mulher (女) embaixo e significa "esposa". O kanji 
 - 頼む guarda a leitura kun たのむ. Em palavras compostas como 信頼 o kanji passa para a leitura on ライ.
 
 
+### 16. (recognition) Qual destas palavras significa "indivíduo, pessoa física"?
+- **Resposta:** `{"choices": ["まく", "ホーム", "こじん", "こうふく"], "correct": "こじん"}`
+- こじん significa indivíduo, pessoa física. As outras opções são こうふく (felicidade, bem-estar), ホーム (plataforma (de estação)) e まく (cortina (de palco)).
+
+
+### 17. (recognition) Qual destas palavras significa "superação"?
+- **Resposta:** `{"choices": ["こし", "とう", "くんれん", "こくふく"], "correct": "こくふく"}`
+- こくふく significa superação. As outras opções são くんれん (treinamento, instrução), こし (lombar, cintura) e とう (partido (político), facção).
+
+
+### 18. (cloze) Complete a frase: 火曜日に＿＿が開かれる。 (O parlamento se reúne na terça-feira.)
+- **Resposta:** `{"text": "国会", "full": "火曜日に国会が開かれる。"}`
+- A palavra que falta é 国会（こっかい）: parlamento, assembleia nacional.
+- frases: `sent:tatoeba-186646`
+
+### 19. (cloze) Complete a frase: アフリカは＿＿じゃない。 (A África não é um país.)
+- **Resposta:** `{"text": "国家", "full": "アフリカは国家じゃない。"}`
+- A palavra que falta é 国家（こっか）: Estado, nação.
+- frases: `sent:tatoeba-1683111`
+
+### 20. (cloze) Complete a frase: 彼は、アメリカ＿＿になった。 (Ele virou cidadão americano.)
+- **Resposta:** `{"text": "国民", "full": "彼は、アメリカ国民になった。"}`
+- A palavra que falta é 国民（こくみん）: cidadão, povo.
+- frases: `sent:tatoeba-115707`
+
+### 21. (recognition) Qual destas palavras significa "encomenda, pacote (postal)"?
+- **Resposta:** `{"choices": ["ベンチ", "こづつみ", "けん", "なか"], "correct": "こづつみ"}`
+- こづつみ significa encomenda, pacote (postal). As outras opções são けん (bilhete, ingresso), なか (relação, relacionamento) e ベンチ (banco).
+
+
+### 22. (recognition) Qual destas palavras significa "grão, cereais"?
+- **Resposta:** `{"choices": ["げき", "トラ", "たいおん", "こくもつ"], "correct": "こくもつ"}`
+- こくもつ significa grão, cereais. As outras opções são たいおん (temperatura corporal), げき (peça (teatral), drama) e トラ (tigre).
+
+
+### 23. (recognition) Qual destas palavras significa "pó, farinha"?
+- **Resposta:** `{"choices": ["けんとう", "まご", "こな", "こううん"], "correct": "こな"}`
+- こな significa pó, farinha. As outras opções são まご (neto, neta), けんとう (examinar, considerar) e こううん (boa sorte, sorte).
+
+
+### 24. (recognition) Qual destas palavras significa "lombar, cintura"?
+- **Resposta:** `{"choices": ["たいざい", "えいきゅう", "きんがく", "こし"], "correct": "こし"}`
+- こし significa lombar, cintura. As outras opções são たいざい (estadia, permanência), えいきゅう (permanência, perpetuidade) e きんがく (quantia, montante).
+
+
+### 25. (recognition) Qual destas palavras significa "atravessar, transpor"?
+- **Resposta:** `{"choices": ["こおる", "こす", "おくれる", "かくす"], "correct": "こす"}`
+- こす significa atravessar, transpor. As outras opções são こおる (congelar, gelar), かくす (esconder, ocultar) e おくれる (atrasar-se, estar atrasado).
+
+

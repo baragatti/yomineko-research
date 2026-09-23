@@ -139,3 +139,63 @@ A persistência apesar das dificuldades é um valor muito presente no Japão, re
 - Os cinco kanji novos em palavras do dia a dia: 倒 em 倒れる, 努 em 努力, 押 em 押す, 散 em 散歩 e 欠 em 欠点.
 
 
+### 12. (recognition) Qual destas palavras significa "assim, tanto assim"?
+- **Resposta:** `{"choices": ["まさに", "こんなに", "どんなに", "ぼんやり"], "correct": "こんなに"}`
+- こんなに significa assim, tanto assim. As outras opções são ぼんやり (vagamente, de forma indistinta), まさに (exatamente, precisamente) e どんなに (por mais que, não importa quanto).
+
+
+### 13. (recognition) Qual destas palavras significa "gritar, berrar"?
+- **Resposta:** `{"choices": ["ふれる", "さけぶ", "こす", "ねがう"], "correct": "さけぶ"}`
+- さけぶ significa gritar, berrar. As outras opções são ねがう (desejar, almejar), ふれる (tocar, encostar em) e こす (atravessar, transpor).
+
+
+### 14. (cloze) Complete a frase: それは大変な＿＿である。 (Isso representa uma diferença enorme.)
+- **Resposta:** `{"text": "差", "full": "それは大変な差である。"}`
+- A palavra que falta é 差（さ）: diferença, disparidade.
+- frases: `sent:tatoeba-205001`
+
+### 15. (recognition) Qual destas palavras significa "afortunado, feliz"?
+- **Resposta:** `{"choices": ["さいわい", "けいさん", "ほり", "ゲーム"], "correct": "さいわい"}`
+- さいわい significa afortunado, feliz. As outras opções são ゲーム (jogo, game), ほり (fosso, vala) e けいさん (cálculo, conta).
+
+
+### 16. (recognition) Qual destas palavras significa "talento, dom"?
+- **Resposta:** `{"choices": ["まね", "わん", "まつり", "さいのう"], "correct": "さいのう"}`
+- さいのう significa talento, dom. As outras opções são まね (imitação, mímica), まつり (festival, festa popular) e わん (baía, golfo).
+
+
+### 17. (cloze) Complete a frase: 彼女が一家を＿＿いる。 (É ela que sustenta a família.)
+- **Resposta:** `{"text": "支えて", "full": "彼女が一家を支えている。"}`
+- A palavra que falta é 支える（ささえる）: apoiar, sustentar. Na frase ela aparece como 支えて.
+- frases: `sent:tatoeba-91176`
+
+### 18. (recognition) Qual destas palavras significa "além disso, ademais"?
+- **Resposta:** `{"choices": ["そのまま", "にっこり", "さらに", "ぼんやり"], "correct": "さらに"}`
+- さらに significa além disso, ademais. As outras opções são にっこり (com um sorriso, sorridentemente), そのまま (assim mesmo, sem mudar nada) e ぼんやり (vagamente, de forma indistinta).
+
+
+### 19. (cloze) Complete a frase: 海の中では＿＿な生き物が見られます。 (No mar dá para ver os mais variados seres vivos.)
+- **Resposta:** `{"text": "様々", "full": "海の中では様々な生き物が見られます。"}`
+- A palavra que falta é 様々（さまざま）: vários, variados.
+- frases: `sent:tatoeba-185104`
+
+### 20. (recognition) Qual destas palavras significa "confusão, caos"?
+- **Resposta:** `{"choices": ["こんらん", "まご", "きょうじゅ", "ソファー"], "correct": "こんらん"}`
+- こんらん significa confusão, caos. As outras opções são まご (neto, neta), ソファー (sofá) e きょうじゅ (professor universitário, catedrático).
+
+
+### 21. (recognition) Qual destas palavras significa "deserto"?
+- **Resposta:** `{"choices": ["さばく", "タオル", "なみだ", "まつ"], "correct": "さばく"}`
+- さばく significa deserto. As outras opções são タオル (toalha), なみだ (lágrimas) e まつ (pinheiro).
+
+
+### 22. (recognition) Qual destas palavras significa "ir contra, opor-se a"?
+- **Resposta:** `{"choices": ["きらう", "かなしむ", "さからう", "ねがう"], "correct": "さからう"}`
+- さからう significa ir contra, opor-se a. As outras opções são かなしむ (entristecer-se, lamentar), きらう (detestar, odiar) e ねがう (desejar, almejar).
+
+
+### 23. (recognition) Qual destas palavras significa "evitar, esquivar-se de"?
+- **Resposta:** `{"choices": ["なまける", "こえる", "さける", "なやむ"], "correct": "さける"}`
+- さける significa evitar, esquivar-se de. As outras opções são なまける (ser preguiçoso, vadiar), こえる (atravessar, transpor) e なやむ (preocupar-se, afligir-se).
+
+

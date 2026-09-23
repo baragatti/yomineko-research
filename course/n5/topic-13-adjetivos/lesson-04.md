@@ -95,3 +95,53 @@ Para perguntar a opinião de alguém com elegância, use 如何(いかが), "que
 - 高い → 高く + なかった = 高くなかった ('não estava caro'). Com です fica polido: 高くなかったです. Lembre: a negação e o passado ficam dentro do próprio adjetivo.
 
 
+### 6. (recognition) Qual destas palavras significa "o melhor, o mais"?
+- **Resposta:** `{"choices": ["ゼロ", "ことば", "いちばん", "どようび"], "correct": "いちばん"}`
+- いちばん significa o melhor, o mais. As outras opções são どようび (sábado), ゼロ (zero) e ことば (palavra, expressão).
+
+
+### 7. (recognition) Qual destas palavras significa "resistente, durável"?
+- **Resposta:** `{"choices": ["たいせつ", "じょうぶ", "けっこう", "だいじょうぶ"], "correct": "じょうぶ"}`
+- じょうぶ significa resistente, durável. As outras opções são たいせつ (importante, precioso), だいじょうぶ (tudo bem, tudo certo) e けっこう (bom, está bom assim).
+
+
+### 8. (recognition) Qual destas palavras significa "sempre"?
+- **Resposta:** `{"choices": ["ちょうど", "いかが", "だんだん", "いつも"], "correct": "いつも"}`
+- いつも significa sempre. As outras opções são いかが (como, que tal), だんだん (gradualmente, aos poucos) e ちょうど (exatamente, justamente).
+
+
+### 9. (cloze) Complete a frase: ＿＿出かけたくなかった。 (Eu não estava muito a fim de sair.)
+- **Resposta:** `{"text": "あまり", "full": "あまり出かけたくなかった。"}`
+- A palavra que falta é あまり: (não) muito, (não) tanto.
+- frases: `sent:tatoeba-230319`
+
+### 10. (recognition) Qual destas palavras significa "tudo, todo"?
+- **Resposta:** `{"choices": ["おちゃ", "としょかん", "せんしゅう", "ぜんぶ"], "correct": "ぜんぶ"}`
+- ぜんぶ significa tudo, todo. As outras opções são としょかん (biblioteca), おちゃ (chá, chá-verde) e せんしゅう (semana passada).
+
+
+### 11. (recognition) Qual destas palavras significa "mesmo, igual"?
+- **Resposta:** `{"choices": ["あかい", "ない", "あかるい", "おなじ"], "correct": "おなじ"}`
+- おなじ significa mesmo, igual. As outras opções são あかるい (claro, iluminado), あかい (vermelho) e ない (não haver, não ter).
+
+
+### 12. (recognition) Qual destas palavras significa "tudo bem, tudo certo"?
+- **Resposta:** `{"choices": ["じょうぶ", "たいせつ", "だいじょうぶ", "どんな"], "correct": "だいじょうぶ"}`
+- だいじょうぶ significa tudo bem, tudo certo. As outras opções são じょうぶ (resistente, durável), たいせつ (importante, precioso) e どんな (que tipo de, que espécie de).
+
+
+### 13. (recognition) Qual destas palavras significa "importante, precioso"?
+- **Resposta:** `{"choices": ["すき", "げんき", "たいせつ", "だいじょうぶ"], "correct": "たいせつ"}`
+- たいせつ significa importante, precioso. As outras opções são げんき (bem (de saúde), saudável), だいじょうぶ (tudo bem, tudo certo) e すき (gostar de, preferido).
+
+
+### 14. (recognition) Qual destas palavras significa "como, que tal"?
+- **Resposta:** `{"choices": ["また", "どうぞ", "いつも", "いかが"], "correct": "いかが"}`
+- いかが significa como, que tal. As outras opções são いつも (sempre), どうぞ (por favor, fique à vontade) e また (de novo, novamente).
+
+
+### 15. (recognition) Qual destas palavras significa "bom, está bom assim"?
+- **Resposta:** `{"choices": ["いろいろ", "けっこう", "いや", "その"], "correct": "けっこう"}`
+- けっこう significa bom, está bom assim. As outras opções são いや (desagradável, chato), その (esse, essa) e いろいろ (vários, diversos).
+
+

@@ -116,3 +116,28 @@ Por exemplo: 遊びに行く前に宿題をしないと ("antes de sair pra brin
 - Sozinho, 味 é あじ, o sabor concreto da comida, e não à toa ele traz 口 (boca) à esquerda. Em composto ele passa a ミ e ganha sentido figurado, como em 意味.
 
 
+### 8. (cloze) Complete a frase: あんな親切な人たちは＿＿めったにいない。 (Pessoas tão gentis assim quase nunca existem.)
+- **Resposta:** `{"text": "まず", "full": "あんな親切な人たちはまずめったにいない。"}`
+- A palavra que falta é まず: primeiro, antes de mais nada.
+- frases: `sent:tatoeba-229545`
+
+### 9. (cloze) Complete a frase: ＿＿手紙くださいね。 (Não deixe de me escrever, viu?)
+- **Resposta:** `{"text": "きっと", "full": "きっと手紙くださいね。"}`
+- A palavra que falta é きっと: com certeza, certamente.
+- frases: `sent:tatoeba-226013`
+
+### 10. (recognition) Qual destas palavras significa "por um tempo, por um momento"?
+- **Resposta:** `{"choices": ["もちろん", "ずいぶん", "しばらく", "すっかり"], "correct": "しばらく"}`
+- しばらく significa por um tempo, por um momento. As outras opções são ずいぶん (bastante, muito), もちろん (claro, com certeza) e すっかり (completamente, totalmente).
+
+
+### 11. (cloze) Complete a frase: 今日の午後って、＿＿用事はないんでしょ？ (Hoje à tarde você não tem nada de especial pra fazer, né?)
+- **Resposta:** `{"text": "特に", "full": "今日の午後って、特に用事はないんでしょ？"}`
+- A palavra que falta é 特に（とくに）: especialmente, particularmente.
+- frases: `sent:tatoeba-12164913`
+
+### 12. (recognition) Qual destas palavras significa "longe, lugar distante"?
+- **Resposta:** `{"choices": ["まわり", "とおく", "えんりょ", "たたみ"], "correct": "とおく"}`
+- とおく significa longe, lugar distante. As outras opções são まわり (arredores, ao redor), えんりょ (reserva, cerimônia) e たたみ (tatame, esteira de tatame).
+
+

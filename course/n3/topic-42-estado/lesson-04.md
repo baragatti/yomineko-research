@@ -166,3 +166,78 @@ O kanji 断 significa "cortar, recusar, decisão". À direita o machado (斤): C
 - 難しい é adjetivo-い: 難 guarda a raiz むずか e しい é okurigana. É a palavra do dia a dia para 'difícil, complicado'.
 
 
+### 17. (cloze) Complete a frase: ＿＿しないで。 (Não desanima.)
+- **Resposta:** `{"text": "がっかり", "full": "がっかりしないで。"}`
+- A palavra que falta é がっかり: ficar decepcionado, ficar desapontado.
+- frases: `sent:tatoeba-226355`
+
+### 18. (recognition) Qual destas palavras significa "valor, mérito"?
+- **Resposta:** `{"choices": ["かち", "れい", "しんらい", "デモ"], "correct": "かち"}`
+- かち significa valor, mérito. As outras opções são れい (exemplo), デモ (manifestação (protesto), passeata) e しんらい (confiar em, ter confiança em).
+
+
+### 19. (cloze) Complete a frase: おまえの＿＿だ。 (Você venceu.)
+- **Resposta:** `{"text": "勝ち", "full": "おまえの勝ちだ。"}`
+- A palavra que falta é 勝ち（かち）: vitória, triunfo.
+- frases: `sent:tatoeba-3480413`
+
+### 20. (cloze) Complete a frase: 今日は＿＿寒い。 (Hoje está bem frio.)
+- **Resposta:** `{"text": "かなり", "full": "今日はかなり寒い。"}`
+- A palavra que falta é かなり: bastante, consideravelmente.
+- frases: `sent:tatoeba-171800`
+
+### 21. (cloze) Complete a frase: 両方とも＿＿です。 (As duas coisas são possíveis.)
+- **Resposta:** `{"text": "可能", "full": "両方とも可能です。"}`
+- A palavra que falta é 可能（かのう）: possível, viável.
+- frases: `sent:tatoeba-10553465`
+
+### 22. (cloze) Complete a frase: １＿＿は４月から始まる。 (O primeiro período letivo começa em abril.)
+- **Resposta:** `{"text": "学期", "full": "１学期は４月から始まる。"}`
+- A palavra que falta é 学期（がっき）: período letivo, semestre.
+- frases: `sent:tatoeba-235811`
+
+### 23. (recognition) Qual destas palavras significa "não necessariamente, nem sempre"?
+- **Resposta:** `{"choices": ["必ずしも", "大分", "一度に", "思わず"], "correct": "必ずしも"}`
+- 必ずしも（かならずしも） significa não necessariamente, nem sempre. As outras opções são 思わず (sem querer, involuntariamente), 大分 (bastante, consideravelmente) e 一度に (de uma vez, ao mesmo tempo).
+
+
+### 24. (recognition) Qual destas palavras significa "entristecer-se, lamentar"?
+- **Resposta:** `{"choices": ["おう", "かかえる", "かなしむ", "たずねる"], "correct": "かなしむ"}`
+- かなしむ significa entristecer-se, lamentar. As outras opções são かかえる (segurar nos braços, carregar), たずねる (visitar) e おう (perseguir, ir atrás de).
+
+
+### 25. (recognition) Qual destas palavras significa "paciência, autocontrole"?
+- **Resposta:** `{"choices": ["かぐ", "ていど", "ふし", "がまん"], "correct": "がまん"}`
+- がまん significa paciência, autocontrole. As outras opções são かぐ (móveis, mobília), ていど (grau, nível) e ふし (junta, nó (na madeira)).
+
+
+### 26. (recognition) Qual destas palavras significa "ação (de empresa), cota"?
+- **Resposta:** `{"choices": ["ちょうじょう", "おう", "いふく", "かぶ"], "correct": "かぶ"}`
+- かぶ significa ação (de empresa), cota. As outras opções são おう (rei, monarca), ちょうじょう (cume, topo) e いふく (roupa, vestuário).
+
+
+### 27. (cloze) Complete a frase: 夜に＿＿する動物もいる。 (Tem animal que só fica ativo de noite.)
+- **Resposta:** `{"text": "活動", "full": "夜に活動する動物もいる。"}`
+- A palavra que falta é 活動（かつどう）: atividade, ação.
+- frases: `sent:tatoeba-79701`
+
+### 28. (cloze) Complete a frase: この町は＿＿がない。 (Essa cidade não tem vida.)
+- **Resposta:** `{"text": "活気", "full": "この町は活気がない。"}`
+- A palavra que falta é 活気（かっき）: vivacidade, energia.
+- frases: `sent:tatoeba-220510`
+
+### 29. (recognition) Qual destas palavras significa "aproveitamento, aplicação prática"?
+- **Resposta:** `{"choices": ["会員", "安定", "代", "活用"], "correct": "活用"}`
+- 活用（かつよう） significa aproveitamento, aplicação prática. As outras opções são 会員 (membro, associado), 代 (mundo, sociedade) e 安定 (estabilidade, equilíbrio).
+
+
+### 30. (recognition) Qual destas palavras significa "deus, divindade"?
+- **Resposta:** `{"choices": ["でんとう", "かみ", "れい", "かげ"], "correct": "かみ"}`
+- かみ significa deus, divindade. As outras opções são れい (agradecimento, gratidão), かげ (sombra (à sombra), lugar protegido do sol) e でんとう (tradição).
+
+
+### 31. (recognition) Qual destas palavras significa "trovão, raio"?
+- **Resposta:** `{"choices": ["ふえ", "かた", "かげ", "かみなり"], "correct": "かみなり"}`
+- かみなり significa trovão, raio. As outras opções são かた (ombro), ふえ (flauta, apito) e かげ (sombra, silhueta).
+
+

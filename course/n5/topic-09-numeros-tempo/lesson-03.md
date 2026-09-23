@@ -92,3 +92,23 @@ Mnemônico de forma: 人 parece duas perninhas, uma apoiando a outra, como algu�
 - 人 (pessoa) + が + たくさん (muitas) + いる/います (existir). Use たくさん (quantidade), não とても, porque está contando pessoas.
 
 
+### 6. (recognition) Qual destas palavras significa "altura (de uma pessoa), estatura"?
+- **Resposta:** `{"choices": ["いけ", "ぎゅうにく", "うわぎ", "せい"], "correct": "せい"}`
+- せい significa altura (de uma pessoa), estatura. As outras opções são ぎゅうにく (carne bovina, carne de boi), うわぎ (casaco, jaqueta) e いけ (lagoa, tanque).
+
+
+### 7. (recognition) Qual destas palavras significa "si mesmo, eu mesmo"?
+- **Resposta:** `{"choices": ["せいと", "じぶん", "グラム", "たくさん"], "correct": "じぶん"}`
+- じぶん significa si mesmo, eu mesmo. As outras opções são せいと (aluno, estudante (escolar)), たくさん (muito, muitos) e グラム (grama).
+
+
+### 8. (recognition) Qual destes kanji significa "conversar, falar"?
+- **Resposta:** `{"choices": ["金", "一", "話", "生"], "correct": "話"}`
+- 話 significa conversar, falar. 一 significa um; 生 significa vida, nascer; 金 significa ouro, dinheiro.
+
+
+### 9. (recognition) Qual destes kanji significa "língua, palavra"?
+- **Resposta:** `{"choices": ["食", "学", "年", "語"], "correct": "語"}`
+- 語 significa língua, palavra. 学 significa estudo, aprender; 食 significa comer, comida; 年 significa ano, idade.
+
+

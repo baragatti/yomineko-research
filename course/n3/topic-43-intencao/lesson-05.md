@@ -111,3 +111,58 @@ Três palavras lidas ぜん, fáceis de confundir.
 - 仕事の経験 liga com の o tipo de experiência, e があります diz que ela existe. Nessa palavra o kanji 経 lê-se ケイ.
 
 
+### 9. (recognition) Qual destas palavras significa "conjunto, jogo"?
+- **Resposta:** `{"choices": ["セット", "きし", "ぶっか", "ワイン"], "correct": "セット"}`
+- セット significa conjunto, jogo. As outras opções são ワイン (vinho), ぶっか (preços (de mercadorias), custo de vida) e きし (margem, beira).
+
+
+### 10. (cloze) Complete a frase: 彼は＿＿知らずだ。 (Ele não tem noção de como o mundo funciona.)
+- **Resposta:** `{"text": "世間", "full": "彼は世間知らずだ。"}`
+- A palavra que falta é 世間（せけん）: o mundo, a sociedade.
+- frases: `sent:tatoeba-155585`
+
+### 11. (recognition) Qual destas palavras significa "tosse"?
+- **Resposta:** `{"choices": ["おうだん", "しゅっぱん", "せき", "ぜいたく"], "correct": "せき"}`
+- せき significa tosse. As outras opções são ぜいたく (luxo, extravagância), しゅっぱん (publicar, editar (um livro)) e おうだん (atravessar, cruzar).
+
+
+### 12. (recognition) Qual destas palavras significa "o bem, virtude"?
+- **Resposta:** `{"choices": ["てってい", "むし", "かんとく", "ぜん"], "correct": "ぜん"}`
+- ぜん significa o bem, virtude. As outras opções são かんとく (diretor (de filme), técnico (de time)), てってい (ser minucioso, fazer a fundo) e むし (inseto, bicho).
+
+
+### 13. (recognition) Qual destas palavras significa "curso (área de estudo), especialização"?
+- **Resposta:** `{"choices": ["かわ", "せきゆ", "かんじゃ", "せんこう"], "correct": "せんこう"}`
+- せんこう significa curso (área de estudo), especialização. As outras opções são かんじゃ (paciente (médico), doente), せきゆ (petróleo) e かわ (couro).
+
+
+### 14. (recognition) Qual destas palavras significa "carvão, carvão mineral"?
+- **Resposta:** `{"choices": ["ぜん", "せきたん", "いっぱん", "わん"], "correct": "せきたん"}`
+- せきたん significa carvão, carvão mineral. As outras opções são ぜん (o bem, virtude), わん (baía, golfo) e いっぱん (geral, comum).
+
+
+### 15. (recognition) Qual destas palavras significa "com certeza, absolutamente"?
+- **Resposta:** `{"choices": ["つまり", "ぜったい", "ふたたび", "ずっと"], "correct": "ぜったい"}`
+- ぜったい significa com certeza, absolutamente. As outras opções são ふたたび (de novo, novamente), つまり (ou seja, isto é) e ずっと (o tempo todo, desde sempre).
+
+
+### 16. (recognition) Qual destas palavras significa "extinção"?
+- **Resposta:** `{"choices": ["せい", "ぜつめつ", "きげん", "せいこう"], "correct": "ぜつめつ"}`
+- ぜつめつ significa extinção. As outras opções são せいこう (sucesso, êxito), きげん (humor, disposição) e せい (culpa, por causa de).
+
+
+### 17. (recognition) Qual destas palavras significa "projetar, planejar"?
+- **Resposta:** `{"choices": ["きぎょう", "せっけい", "かんじゃ", "かわ"], "correct": "せっけい"}`
+- せっけい significa projetar, planejar. As outras opções são きぎょう (empresa, corporação), かわ (pele) e かんじゃ (paciente (médico), doente).
+
+
+### 18. (recognition) Qual destas formas significa "teoria, tese"?
+- **Resposta:** `{"choices": ["説", "感動", "方々", "火曜"], "correct": "説"}`
+- 説（せつ） significa teoria, tese. As outras opções são 方々 (pessoas (formal), senhores e senhoras), 火曜 (terça-feira) e 感動 (emocionar-se, comover-se).
+
+
+### 19. (recognition) Qual destas palavras significa "culpar, repreender"?
+- **Resposta:** `{"choices": ["かかる", "うつる", "せめる", "ひっぱる"], "correct": "せめる"}`
+- せめる significa culpar, repreender. As outras opções são かかる (levar (tempo), custar), ひっぱる (puxar, arrastar) e うつる (mudar-se, transferir-se).
+
+

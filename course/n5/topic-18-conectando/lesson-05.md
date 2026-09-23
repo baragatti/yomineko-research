@@ -128,3 +128,38 @@ Os dois compartilham o "telhado" de mão lá em cima, mudando só a base (口 à
 - 左 é ひだり. Treine sempre em par com 右 (みぎ): a diferença entre os dois está só na parte de baixo do kanji.
 
 
+### 10. (recognition) Qual destas palavras significa "chinelo, pantufa"?
+- **Resposta:** `{"choices": ["まい", "ようふく", "へん", "スリッパ"], "correct": "スリッパ"}`
+- スリッパ significa chinelo, pantufa. As outras opções são ようふく (roupa, roupa ocidental), まい (contador para objetos planos e finos (folhas, pratos, camisas)) e へん (redondeza, por aqui (área)).
+
+
+### 11. (recognition) Qual destas palavras significa "chamar, convocar"?
+- **Resposta:** `{"choices": ["よぶ", "もつ", "わたす", "ひく"], "correct": "よぶ"}`
+- よぶ significa chamar, convocar. As outras opções são もつ (segurar, carregar), わたす (entregar, passar (algo a alguém)) e ひく (tocar (instrumento de cordas/teclas)).
+
+
+### 12. (recognition) Qual destas palavras significa "roupa, roupa ocidental"?
+- **Resposta:** `{"choices": ["レストラン", "ようふく", "そん", "ホテル"], "correct": "ようふく"}`
+- ようふく significa roupa, roupa ocidental. As outras opções são レストラン (restaurante), ホテル (hotel) e そん (aldeia, vila).
+
+
+### 13. (recognition) Qual destas palavras significa "entregar, passar (algo a alguém)"?
+- **Resposta:** `{"choices": ["みがく", "まつ", "わたる", "わたす"], "correct": "わたす"}`
+- わたす significa entregar, passar (algo a alguém). As outras opções são まつ (esperar, aguardar), みがく (escovar, polir) e わたる (atravessar, cruzar).
+
+
+### 14. (recognition) Qual destas palavras significa "atravessar, cruzar"?
+- **Resposta:** `{"choices": ["はじまる", "なく", "もつ", "わたる"], "correct": "わたる"}`
+- わたる significa atravessar, cruzar. As outras opções são なく (cantar (animal), piar), はじまる (começar, iniciar-se) e もつ (segurar, carregar).
+
+
+### 15. (recognition) Qual destas palavras significa "bem"?
+- **Resposta:** `{"choices": ["まだ", "はじめて", "もっと", "よく"], "correct": "よく"}`
+- よく significa bem. As outras opções são まだ (ainda), もっと (mais) e はじめて (pela primeira vez).
+
+
+### 16. (recognition) Qual destas palavras significa "camisa social, camisa de botão"?
+- **Resposta:** `{"choices": ["ほんとう", "コート", "ワイシャツ", "せっけん"], "correct": "ワイシャツ"}`
+- ワイシャツ significa camisa social, camisa de botão. As outras opções são ほんとう (ilha principal), せっけん (entrevista (oficial), audiência) e コート (casaco, sobretudo).
+
+

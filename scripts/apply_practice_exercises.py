@@ -61,7 +61,7 @@ IDEMPOTENT. An exercise whose slug is already there is re-asserted from the tabl
 prompt, explanation) and its body node is left alone; a second run reports 0 changes.
 
 Run `scripts/export/export_course.py` afterwards.
-Usage: apply_practice_exercises.py [--check]
+Usage: apply_practice_exercises.py [--check] [--table PATH]
 """
 from __future__ import annotations
 
@@ -91,10 +91,10 @@ NODE_RX = re.compile(r'<exercise\s+ref="[^"]+"\s*/>')
 CHECKLIST_RX = re.compile(r"<checklist[\s>]")
 
 
-def load_table() -> dict:
-    doc = json.loads(TABLE.read_text(encoding="utf-8"))
+def load_table(table: Path = TABLE) -> dict:
+    doc = json.loads(table.read_text(encoding="utf-8"))
     if doc.get("row_count") != len(doc["rows"]):
-        raise SystemExit(f"{TABLE.name}: row_count {doc.get('row_count')} != {len(doc['rows'])} rows")
+        raise SystemExit(f"{table.name}: row_count {doc.get('row_count')} != {len(doc['rows'])} rows")
     return doc
 
 
@@ -134,12 +134,16 @@ def insert_node(body: str, node: str) -> tuple[str, str] | None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true", help="report what would change; write nothing")
+    ap.add_argument("--table", default=None,
+                    help="the exercise table to apply, relative to the repo root (default: the kanji "
+                         "table; the W20 vocab + grammar half is "
+                         "research/derived/repairs/practice_vocab_exercises.json)")
     args = ap.parse_args()
 
     sys.path.insert(0, str(ROOT / "scripts" / "ingest"))
     from i18n_text import set_text                                          # noqa: E402
 
-    doc = load_table()
+    doc = load_table(ROOT / args.table if args.table else TABLE)
     remap = {(r["lesson"], r["from"]): r["to"] for r in doc.get("apply_id_remap") or []}
     rows = doc["rows"]
 
@@ -210,6 +214,28 @@ def main() -> int:
                     reasserted += 1
                     if not args.check:
                         set_text(con, "exercise", eid, field, want, layer="C")
+
+        # ---- the cited sentences (exercise_sentence), which the exporter publishes as
+        # sentence_refs. The kanji table cites none, so this was never exercised before the vocab
+        # table; a cloze whose sentence link is lost is not credited by the coverage gate.
+        want_refs = list(ex.get("sentence_refs") or [])
+        if want_refs:
+            eid_row = con.execute("SELECT id FROM exercise WHERE slug=?", (exslug,)).fetchone()
+            got_refs = set() if eid_row is None else {r[0] for r in con.execute(
+                "SELECT s.slug FROM exercise_sentence es JOIN sentence s ON s.id=es.sentence_id "
+                "WHERE es.exercise_id=?", (eid_row[0],))}
+            for sl in want_refs:
+                if sl in got_refs:
+                    continue
+                sid = con.execute("SELECT id FROM sentence WHERE slug=?", (sl,)).fetchone()
+                if sid is None:
+                    problems.append(f"{lslug}: {exslug} cites {sl}, which is not in the index")
+                    continue
+                print(f"  {lslug}: {exslug} +sentence {sl} (db)")
+                changed += 1
+                if not args.check and eid_row is not None:
+                    con.execute("INSERT OR IGNORE INTO exercise_sentence (exercise_id, sentence_id) "
+                                "VALUES (?,?)", (eid_row[0], sid[0]))
 
         # ---- the body node, in both layers -------------------------------------------------
         node = f'<exercise ref="{exslug}"/>'

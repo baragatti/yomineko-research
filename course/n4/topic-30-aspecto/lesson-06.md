@@ -100,3 +100,23 @@ Juntando tudo: 市民は政治の話ばかりしている = "Os 市民 só falam
 - 市民は (tópico) + 政治の話 (assunto política) + ばかり ('só / nada além de', com substantivo) + している (estar fazendo). Aqui ばかり marca exclusividade, não recência.
 
 
+### 6. (recognition) Qual destas palavras significa "pessoa rica, ricaço"?
+- **Resposta:** `{"choices": ["小学校", "お金持ち", "耳", "入学"], "correct": "お金持ち"}`
+- お金持ち（おかねもち） significa pessoa rica, ricaço. As outras opções são 入学 (ingresso na escola, matrícula), 小学校 (escola primária, ensino fundamental (inicial)) e 耳 (orelha, ouvido).
+
+
+### 7. (cloze) Complete a frase: じゃあ、＿＿帰ろう (Então, está quase na hora de ir embora.)
+- **Resposta:** `{"text": "そろそろ", "full": "じゃあ、そろそろ帰ろう"}`
+- A palavra que falta é そろそろ: logo, já já.
+- frases: `sent:gen-f9d0dfdb86c2`
+
+### 8. (recognition) Qual destas palavras significa "indústria, setor produtivo"?
+- **Resposta:** `{"choices": ["おどり", "かれら", "さんぎょう", "けいかん"], "correct": "さんぎょう"}`
+- さんぎょう significa indústria, setor produtivo. As outras opções são かれら (eles), おどり (dança, o ato de dançar) e けいかん (policial, guarda).
+
+
+### 9. (recognition) Qual destas palavras significa "importação"?
+- **Resposta:** `{"choices": ["ゆにゅう", "へんじ", "どうぶつえん", "レジ"], "correct": "ゆにゅう"}`
+- ゆにゅう significa importação. As outras opções são レジ (caixa (registradora), caixa (de loja)), へんじ (resposta) e どうぶつえん (zoológico, jardim zoológico).
+
+

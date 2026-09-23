@@ -132,3 +132,63 @@ Use って感じ só no casual. Para soar mais neutro, dá para dizer という�
 - 理 é "razão, lógica" e se lê リ: é a segunda metade de りょうり ("prato, culinária"). 事 ("coisa"), 気 ("ânimo") e 力 ("força") também são abstratos, mas nenhum carrega a ideia de princípio que 理 traz.
 
 
+### 12. (recognition) Qual destas palavras significa "sim, é" (no sentido de aham)?
+- **Resposta:** `{"choices": ["ああ", "もしもし", "あ", "うん"], "correct": "うん"}`
+- うん significa sim, é. As outras opções são ああ (ah, ai), あ (ah!, ih!) e もしもし (alô, oi).
+
+
+### 13. (recognition) Qual destas palavras significa "moto, motocicleta"?
+- **Resposta:** `{"choices": ["ハンカチ", "テキスト", "ボタン", "オートバイ"], "correct": "オートバイ"}`
+- オートバイ significa moto, motocicleta. As outras opções são ボタン (botão), ハンカチ (lenço) e テキスト (livro didático, texto).
+
+
+### 14. (recognition) Qual destas palavras significa "gasolina, combustível"?
+- **Resposta:** `{"choices": ["まど", "とこや", "ガソリン", "ろうか"], "correct": "ガソリン"}`
+- ガソリン significa gasolina, combustível. As outras opções são とこや (barbearia, barbeiro), まど (janela) e ろうか (corredor).
+
+
+### 15. (recognition) Qual destas palavras significa "ficar bravo, ficar com raiva"?
+- **Resposta:** `{"choices": ["おこる", "はる", "わたる", "ふく"], "correct": "おこる"}`
+- おこる significa ficar bravo, ficar com raiva. As outras opções são ふく (soprar (vento)), わたる (atravessar, cruzar) e はる (armar (tenda), esticar).
+
+
+### 16. (recognition) Qual destas palavras significa "macio, mole"?
+- **Resposta:** `{"choices": ["やわらかい", "みじかい", "わかい", "やさしい"], "correct": "やわらかい"}`
+- やわらかい significa macio, mole. As outras opções são わかい (jovem, novo), みじかい (curto) e やさしい (fácil, simples).
+
+
+### 17. (recognition) Qual destas palavras significa "viver, estar vivo"?
+- **Resposta:** `{"choices": ["聞こえる", "生きる", "休む", "出る"], "correct": "生きる"}`
+- 生きる（いきる） significa viver, estar vivo. As outras opções são 聞こえる (ser audível, ser ouvido), 休む (descansar, fazer uma pausa) e 出る (sair).
+
+
+### 18. (cloze) Complete a frase: もしもし、＿＿か (Alô, você está me ouvindo?)
+- **Resposta:** `{"text": "聞こえます", "full": "もしもし、聞こえますか"}`
+- A palavra que falta é 聞こえる（きこえる）: ser audível, ser ouvido. Na frase ela aparece como 聞こえます.
+- frases: `sent:gen-3ddd2024fd6d`
+
+### 19. (recognition) Qual destas palavras significa "amargo"?
+- **Resposta:** `{"choices": ["ひろい", "やわらかい", "にがい", "せまい"], "correct": "にがい"}`
+- にがい significa amargo. As outras opções são やわらかい (macio, mole), せまい (estreito, apertado) e ひろい (amplo, espaçoso).
+
+
+### 20. (recognition) Qual destas palavras significa "exercício físico, atividade física"?
+- **Resposta:** `{"choices": ["うんどう", "ゆうびんきょく", "もくようび", "せっけん"], "correct": "うんどう"}`
+- うんどう significa exercício físico, atividade física. As outras opções são せっけん (entrevista (oficial), audiência), もくようび (quinta-feira) e ゆうびんきょく (correio, agência dos correios).
+
+
+### 21. (recognition) Qual destas palavras significa "motorista, condutor"?
+- **Resposta:** `{"choices": ["いけん", "うんてんしゅ", "と", "はし"], "correct": "うんてんしゅ"}`
+- うんてんしゅ significa motorista, condutor. As outras opções são いけん (opinião, ponto de vista), はし (hashi, pauzinhos) e と (porta (de correr)).
+
+
+### 22. (cloze) Complete a frase: もう＿＿だ。 (Já era.)
+- **Resposta:** `{"text": "だめ", "full": "もうだめだ。"}`
+- A palavra que falta é だめ: ruim, inútil.
+- frases: `sent:tatoeba-75261`
+
+### 23. (recognition) Qual destas palavras significa "tocar (sino, campainha), soar"?
+- **Resposta:** `{"choices": ["なる", "はれる", "みがく", "おこる"], "correct": "なる"}`
+- なる significa tocar (sino, campainha), soar. As outras opções são おこる (ficar bravo, ficar com raiva), はれる (abrir o tempo, clarear) e みがく (escovar, polir).
+
+

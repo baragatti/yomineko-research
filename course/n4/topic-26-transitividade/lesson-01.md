@@ -112,3 +112,48 @@ Por fim, 無 significa "nada / nenhum / inexistência" (leituras な.い, on ム
 - 終わる é 'acabar' visto de dentro: a coisa termina sozinha. O kanji 終 traz o sentido de fim, e わる é o okurigana que fecha o verbo.
 
 
+### 9. (recognition) Qual destas palavras significa "secar, ficar seco"?
+- **Resposta:** `{"choices": ["いただく", "なおる", "かわく", "さがす"], "correct": "かわく"}`
+- かわく significa secar, ficar seco. As outras opções são さがす (procurar, buscar), いただく (receber (humilde)) e なおる (sarar, curar-se).
+
+
+### 10. (recognition) Qual destas palavras significa "pintar, passar (camada)"?
+- **Resposta:** `{"choices": ["いただく", "ぬる", "なく", "きまる"], "correct": "ぬる"}`
+- ぬる significa pintar, passar (camada). As outras opções são いただく (receber (humilde)), なく (chorar) e きまる (ser decidido, ficar decidido).
+
+
+### 11. (cloze) Complete a frase: この歌を聞くと私の中学校時代を＿＿。 (Quando ouço essa música, lembro da minha época do ginásio.)
+- **Resposta:** `{"text": "思い出します", "full": "この歌を聞くと私の中学校時代を思い出します。"}`
+- A palavra que falta é 思い出す（おもいだす）: lembrar, recordar. Na frase ela aparece como 思い出します.
+- frases: `sent:tatoeba-222763`
+
+### 12. (recognition) Qual destas palavras significa "procurar, buscar"?
+- **Resposta:** `{"choices": ["さがす", "なさる", "すすむ", "えらぶ"], "correct": "さがす"}`
+- さがす significa procurar, buscar. As outras opções são すすむ (avançar, seguir em frente), えらぶ (escolher, selecionar) e なさる (fazer (forma honorífica/respeitosa de する), fazer (referindo-se à ação de um superior)).
+
+
+### 13. (recognition) Qual destas palavras significa "aproveitar, divertir-se com"?
+- **Resposta:** `{"choices": ["知らせる", "楽しむ", "起こす", "行く"], "correct": "楽しむ"}`
+- 楽しむ（たのしむ） significa aproveitar, divertir-se com. As outras opções são 起こす (acordar (alguém), despertar), 行く (ir) e 知らせる (informar, avisar).
+
+
+### 14. (recognition) Qual destas palavras significa "criar, educar"?
+- **Resposta:** `{"choices": ["つつむ", "さがす", "もらう", "そだてる"], "correct": "そだてる"}`
+- そだてる significa criar, educar. As outras opções são もらう (receber, ganhar), つつむ (embrulhar, empacotar) e さがす (procurar, buscar).
+
+
+### 15. (recognition) Qual destas palavras significa "dançar"?
+- **Resposta:** `{"choices": ["くれる", "つかまえる", "おどる", "つれる"], "correct": "おどる"}`
+- おどる significa dançar. As outras opções são つれる (levar (alguém) junto, trazer junto), くれる (escurecer, anoitecer) e つかまえる (pegar, agarrar).
+
+
+### 16. (recognition) Qual destas palavras significa "levar (alguém) junto, trazer junto"?
+- **Resposta:** `{"choices": ["つれる", "ぬる", "えらぶ", "おどる"], "correct": "つれる"}`
+- つれる significa levar (alguém) junto, trazer junto. As outras opções são ぬる (pintar, passar (camada)), おどる (dançar) e えらぶ (escolher, selecionar).
+
+
+### 17. (recognition) Qual destas palavras significa "avançar, seguir em frente"?
+- **Resposta:** `{"choices": ["つとめる", "すすむ", "おどる", "つける"], "correct": "すすむ"}`
+- すすむ significa avançar, seguir em frente. As outras opções são つける (mergulhar, deixar de molho), おどる (dançar) e つとめる (trabalhar (em emprego), ser empregado em).
+
+

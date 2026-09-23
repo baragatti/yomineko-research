@@ -115,3 +115,63 @@ Resolva os exercícios e leia cada explicação com calma.
 - 捕まえる é transitivo: alguém pega algo ou alguém. 捕まる é o intransitivo, 'ser pego', com o mesmo kanji 捕 e outro okurigana.
 
 
+### 8. (recognition) Qual destas palavras significa "efeito, eficácia"?
+- **Resposta:** `{"choices": ["きゅう", "こい", "へんこう", "こうか"], "correct": "こうか"}`
+- こうか significa efeito, eficácia. As outras opções são へんこう (mudança, alteração), こい (amor, paixão) e きゅう (nível, grau).
+
+
+### 9. (cloze) Complete a frase: 試験に＿＿できた。 (Consegui passar na prova.)
+- **Resposta:** `{"text": "合格", "full": "試験に合格できた。"}`
+- A palavra que falta é 合格（ごうかく）: passar (em prova), ser aprovado.
+- frases: `sent:tatoeba-151110`
+
+### 10. (recognition) Qual destas palavras significa "boa sorte, sorte"?
+- **Resposta:** `{"choices": ["こううん", "きぼう", "ぐん", "きょか"], "correct": "こううん"}`
+- こううん significa boa sorte, sorte. As outras opções são きぼう (esperança, desejo), ぐん (exército, forças armadas) e きょか (permissão, autorização).
+
+
+### 11. (recognition) Qual destas palavras significa "amor, paixão"?
+- **Resposta:** `{"choices": ["どこか", "けいえい", "こい", "ほしょう"], "correct": "こい"}`
+- こい significa amor, paixão. As outras opções são けいえい (administração, gestão), ほしょう (garantia) e どこか (em algum lugar, em alguma parte).
+
+
+### 12. (recognition) Qual destas palavras significa "namorado, namorada"?
+- **Resposta:** `{"choices": ["プラス", "けいじ", "くさり", "こいびと"], "correct": "こいびと"}`
+- こいびと significa namorado, namorada. As outras opções são くさり (corrente), けいじ (detetive, investigador (policial)) e プラス (mais, adição).
+
+
+### 13. (recognition) Qual destas palavras significa "constituição"?
+- **Resposta:** `{"choices": ["けんぽう", "けんこう", "ぐうぜん", "ほお"], "correct": "けんぽう"}`
+- けんぽう significa constituição. As outras opções são ほお (bochecha, face), けんこう (saúde) e ぐうぜん (coincidência, acaso).
+
+
+### 14. (cloze) Complete a frase: 君にはそういう＿＿が無い。 (Você não tem esse direito.)
+- **Resposta:** `{"text": "権利", "full": "君にはそういう権利が無い。"}`
+- A palavra que falta é 権利（けんり）: direito, privilégio.
+- frases: `sent:tatoeba-178683`
+
+### 15. (recognition) Qual destas palavras significa "forte (sabor, cor), concentrado"?
+- **Resposta:** `{"choices": ["とんでもない", "きつい", "うれしい", "こい"], "correct": "こい"}`
+- こい significa forte (sabor, cor), concentrado. As outras opções são とんでもない (absurdo, escandaloso), きつい (puxado, duro) e うれしい (feliz, contente).
+
+
+### 16. (recognition) Qual destas palavras significa "moeda (metálica)"?
+- **Resposta:** `{"choices": ["きんえん", "ぎむ", "ボート", "こうか"], "correct": "こうか"}`
+- こうか significa moeda (metálica). As outras opções são ぎむ (dever, obrigação), ボート (barco, bote) e きんえん (proibido fumar, área de não fumantes).
+
+
+### 17. (recognition) Qual destas palavras significa "dar uma palestra, fazer uma conferência"?
+- **Resposta:** `{"choices": ["べんとう", "こいびと", "こうえん", "ぼう"], "correct": "こうえん"}`
+- こうえん significa dar uma palestra, fazer uma conferência. As outras opções são べんとう (marmita, bentô), こいびと (namorado, namorada) e ぼう (vara, pau).
+
+
+### 18. (recognition) Qual destas palavras significa "luxuoso, suntuoso"?
+- **Resposta:** `{"choices": ["いじょう", "ごうか", "そまつ", "かいてき"], "correct": "ごうか"}`
+- ごうか significa luxuoso, suntuoso. As outras opções são そまつ (simples, modesto), かいてき (confortável, agradável) e いじょう (anormal, incomum).
+
+
+### 19. (recognition) Qual destas palavras significa "caro, custoso"?
+- **Resposta:** `{"choices": ["こうか", "てきせつ", "きよう", "ごうか"], "correct": "こうか"}`
+- こうか significa caro, custoso. As outras opções são ごうか (luxuoso, suntuoso), きよう (habilidoso, jeitoso) e てきせつ (adequado, apropriado).
+
+

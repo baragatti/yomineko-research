@@ -136,3 +136,8 @@ O molde do gosto é sempre o mesmo: troque a coisa e a partícula が faz o rest
 - É 子, três traços, o desenho de um bebê de braços abertos. Na leitura sino-japonesa ele vira し e fecha muitas palavras que já nem falam de criança.
 
 
+### 13. (recognition) Qual destas palavras significa "bom em, habilidoso"?
+- **Resposta:** `{"choices": ["そんな", "じょうず", "だいすき", "きらい"], "correct": "じょうず"}`
+- じょうず significa bom em, habilidoso. As outras opções são だいすき (adorar, gostar muito), きらい (não gostar de, detestável) e そんな (esse tipo de, tal).
+
+

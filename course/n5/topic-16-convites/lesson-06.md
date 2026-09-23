@@ -88,3 +88,18 @@ Veja como essas palavras já encaixam em frases simples que você monta com o qu
 - 欲しい (ほしい) é um adjetivo, não um verbo: 水が欲しい = 'quero água'. O objeto desejado vem marcado por が.
 
 
+### 6. (cloze) Complete a frase: ＿＿がもうありません (Não tem mais filme.)
+- **Resposta:** `{"text": "フィルム", "full": "フィルムがもうありません"}`
+- A palavra que falta é フィルム: filme (fotográfico).
+- frases: `sent:gen-ac8c3eeccea9`
+
+### 7. (recognition) Qual destas palavras significa "soprar (vento)"?
+- **Resposta:** `{"choices": ["ひく", "たのむ", "ふく", "はたらく"], "correct": "ふく"}`
+- ふく significa soprar (vento). As outras opções são ひく (puxar), たのむ (pedir, solicitar) e はたらく (trabalhar).
+
+
+### 8. (recognition) Qual destas palavras significa "virar, dobrar (uma esquina)"?
+- **Resposta:** `{"choices": ["はる", "ふる", "なくす", "まがる"], "correct": "まがる"}`
+- まがる significa virar, dobrar (uma esquina). As outras opções são ふる (cair (chuva, neve)), はる (armar (tenda), esticar) e なくす (perder, extraviar).
+
+

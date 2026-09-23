@@ -154,3 +154,98 @@ Em templos e santuários, os japoneses penduram um 絵馬 (plaquinha de madeira)
 - 晴れる (はれる) é o céu abrir. 降る é cair chuva ou neve, 止まる é parar e 冷える é esfriar.
 
 
+### 15. (recognition) Qual destas palavras significa "profundamente (dormir), tranquilamente"?
+- **Resposta:** `{"choices": ["とにかく", "ついに", "ふと", "ぐっすり"], "correct": "ぐっすり"}`
+- ぐっすり significa profundamente (dormir), tranquilamente. As outras opções são ふと (de repente, inesperadamente), とにかく (de qualquer forma, enfim) e ついに (finalmente, por fim).
+
+
+### 16. (cloze) Complete a frase: 明日は＿＿だ。 (Amanhã é Natal.)
+- **Resposta:** `{"text": "クリスマス", "full": "明日はクリスマスだ。"}`
+- A palavra que falta é クリスマス: Natal.
+- frases: `sent:tatoeba-80472`
+
+### 17. (cloze) Complete a frase: 君の好きな音楽＿＿は何？ (Qual é a sua banda favorita?)
+- **Resposta:** `{"text": "グループ", "full": "君の好きな音楽グループは何？"}`
+- A palavra que falta é グループ: grupo.
+- frases: `sent:tatoeba-3452231`
+
+### 18. (recognition) Qual destas palavras significa "adicionar, acrescentar"?
+- **Resposta:** `{"choices": ["数える", "代える", "当たる", "加える"], "correct": "加える"}`
+- 加える（くわえる） significa adicionar, acrescentar. As outras opções são 数える (contar, enumerar), 代える (trocar, substituir) e 当たる (acertar, atingir).
+
+
+### 19. (cloze) Complete a frase: 会話に＿＿？ (Por que você não entra na conversa?)
+- **Resposta:** `{"text": "加われば", "full": "会話に加われば？"}`
+- A palavra que falta é 加わる（くわわる）: juntar-se, ser acrescentado. Na frase ela aparece como 加われば.
+- frases: `sent:tatoeba-185209`
+
+### 20. (recognition) Qual destas formas significa "vida, modo de vida"?
+- **Resposta:** `{"choices": ["れいせい", "てんこう", "くらし", "ふんいき"], "correct": "くらし"}`
+- くらし significa vida, modo de vida. As outras opções são ふんいき (atmosfera, clima), てんこう (tempo (meteorológico), condições do tempo) e れいせい (calmo, sereno).
+
+
+### 21. (recognition) Qual destas palavras significa "viver, levar a vida"?
+- **Resposta:** `{"choices": ["とばす", "くらす", "かう", "くるしむ"], "correct": "くらす"}`
+- くらす significa viver, levar a vida. As outras opções são くるしむ (sofrer, padecer), かう (criar (um animal), ter (de estimação)) e とばす (fazer voar, arremessar).
+
+
+### 22. (recognition) Qual destas formas significa "anoitecer, crepúsculo"?
+- **Resposta:** `{"choices": ["とくちょう", "せきたん", "ふくそう", "くれ"], "correct": "くれ"}`
+- くれ significa anoitecer, crepúsculo. As outras opções são せきたん (carvão, carvão mineral), ふくそう (vestimenta, traje) e とくちょう (característica, traço marcante).
+
+
+### 23. (recognition) Qual destas palavras significa "mania, hábito"?
+- **Resposta:** `{"choices": ["くせ", "とつぜん", "せんこう", "きり"], "correct": "くせ"}`
+- くせ significa mania, hábito. As outras opções são きり (névoa, neblina), とつぜん (repentino, súbito) e せんこう (curso (área de estudo), especialização).
+
+
+### 24. (recognition) Qual destas formas significa "grupo, equipe"?
+- **Resposta:** `{"choices": ["答案", "組", "過去", "生地"], "correct": "組"}`
+- 組（くみ） significa grupo, equipe. As outras opções são 答案 (folha de respostas, prova respondida), 生地 (tecido, pano) e 過去 (o passado, passado).
+
+
+### 25. (cloze) Complete a frase: 予定を＿＿。 (Montei a programação.)
+- **Resposta:** `{"text": "組んだ", "full": "予定を組んだ。"}`
+- A palavra que falta é 組む（くむ）: cruzar (os braços, as pernas), entrelaçar. Na frase ela aparece como 組んだ.
+- frases: `sent:tatoeba-12164668`
+
+### 26. (recognition) Qual destas palavras significa "tensão, nervosismo"?
+- **Resposta:** `{"choices": ["ベルト", "そくど", "きょうかしょ", "きんちょう"], "correct": "きんちょう"}`
+- きんちょう significa tensão, nervosismo. As outras opções são ベルト (cinto), きょうかしょ (livro didático, livro-texto) e そくど (velocidade).
+
+
+### 27. (recognition) Qual destas palavras significa "repetir, refazer"?
+- **Resposta:** `{"choices": ["とびだす", "くりかえす", "やめる", "ゆずる"], "correct": "くりかえす"}`
+- くりかえす significa repetir, refazer. As outras opções são とびだす (sair correndo, disparar para fora), やめる (parar (de), largar) e ゆずる (ceder, passar (para outro)).
+
+
+### 28. (recognition) Qual destas palavras significa "doloroso, sofrido"?
+- **Resposta:** `{"choices": ["ひとしい", "くるしい", "おそろしい", "うれしい"], "correct": "くるしい"}`
+- くるしい significa doloroso, sofrido. As outras opções são おそろしい (terrível, assustador), うれしい (feliz, contente) e ひとしい (igual, idêntico).
+
+
+### 29. (recognition) Qual destas palavras significa "sofrer, padecer"?
+- **Resposta:** `{"choices": ["かる", "くるしむ", "つる", "へらす"], "correct": "くるしむ"}`
+- くるしむ significa sofrer, padecer. As outras opções são へらす (reduzir, diminuir), かる (cortar (cabelo, grama), aparar) e つる (pescar (com vara), fisgar).
+
+
+### 30. (recognition) Qual destas palavras significa "dificuldade, trabalho árduo"?
+- **Resposta:** `{"choices": ["くろう", "かんきゃく", "そうち", "ぶんせき"], "correct": "くろう"}`
+- くろう significa dificuldade, trabalho árduo. As outras opções são そうち (dispositivo, aparelho), かんきゃく (público, espectadores) e ぶんせき (análise).
+
+
+### 31. (recognition) Qual destas palavras significa "dor, sofrimento"?
+- **Resposta:** `{"choices": ["くつう", "ひこう", "せいぞう", "ふで"], "correct": "くつう"}`
+- くつう significa dor, sofrimento. As outras opções são ひこう (voo, aviação), せいぞう (fabricar, produzir) e ふで (pincel, pincel de caligrafia).
+
+
+### 32. (recognition) Qual destas palavras significa "treinamento, instrução"?
+- **Resposta:** `{"choices": ["トランプ", "くんれん", "トップ", "きょうきゅう"], "correct": "くんれん"}`
+- くんれん significa treinamento, instrução. As outras opções são トランプ (baralho, cartas de baralho), トップ (topo, o primeiro) e きょうきゅう (abastecimento, fornecimento).
+
+
+### 33. (recognition) Qual destas palavras significa "detalhado, minucioso"?
+- **Resposta:** `{"choices": ["くわしい", "きつい", "グランド", "おさない"], "correct": "くわしい"}`
+- くわしい significa detalhado, minucioso. As outras opções são きつい (puxado, duro), グランド (grande, grandioso) e おさない (jovem (de pouca idade), muito novo).
+
+

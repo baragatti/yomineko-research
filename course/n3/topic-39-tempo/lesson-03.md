@@ -152,3 +152,58 @@ Resolva e confira cada explicação.
 - 暗 é 'escuro' e 記 é 'registrar': gravar no escuro, ou seja, de cabeça. Em 日記 e em 暗記 o 記 mantém a mesma leitura キ.
 
 
+### 16. (recognition) Qual destas palavras significa "imprimir" (substantivo)?
+- **Resposta:** `{"choices": ["いんさつ", "ゆ", "はんこう", "アルコール"], "correct": "いんさつ"}`
+- いんさつ significa imprimir. As outras opções são アルコール (álcool), はんこう (rebeldia, resistência) e ゆ (água quente).
+
+
+### 17. (recognition) Qual destas palavras significa "rocha, pedra"?
+- **Resposta:** `{"choices": ["ばめん", "いわ", "いずみ", "いはん"], "correct": "いわ"}`
+- いわ significa rocha, pedra. As outras opções são いずみ (nascente, fonte), いはん (violar, infringir) e ばめん (cena, situação).
+
+
+### 18. (cloze) Complete a frase: それはひどい＿＿だ。 (Isso é uma brincadeira de muito mau gosto.)
+- **Resposta:** `{"text": "いたずら", "full": "それはひどいいたずらだ。"}`
+- A palavra que falta é いたずら: travessura, traquinagem.
+- frases: `sent:tatoeba-205409`
+
+### 19. (recognition) Qual destas palavras significa "nutrir (um sentimento), alimentar (uma ideia, dúvida)"?
+- **Resposta:** `{"choices": ["つたえる", "あきらめる", "いわう", "いだく"], "correct": "いだく"}`
+- いだく significa nutrir (um sentimento), alimentar (uma ideia, dúvida). As outras opções são いわう (comemorar, celebrar), あきらめる (desistir, dar-se por vencido) e つたえる (transmitir, comunicar).
+
+
+### 20. (recognition) Qual destas palavras significa "comemoração, felicitação"?
+- **Resposta:** `{"choices": ["グラス", "いわい", "いんさつ", "ちょきん"], "correct": "いわい"}`
+- いわい significa comemoração, felicitação. As outras opções são いんさつ (imprimir), ちょきん (poupança, economias) e グラス (copo (de vidro), taça).
+
+
+### 21. (recognition) Qual destas palavras significa "comemorar, celebrar"?
+- **Resposta:** `{"choices": ["あらわす", "あたえる", "のりかえる", "いわう"], "correct": "いわう"}`
+- いわう significa comemorar, celebrar. As outras opções são あらわす (expressar, representar), あたえる (dar, conceder) e のりかえる (fazer baldeação, trocar (de trem, ônibus)).
+
+
+### 22. (recognition) Qual destas palavras significa "pé de arroz, arroz (planta)"?
+- **Resposta:** `{"choices": ["ゆうしょう", "ユーモア", "いね", "いじ"], "correct": "いね"}`
+- いね significa pé de arroz, arroz (planta). As outras opções são ゆうしょう (ser campeão, vencer o campeonato), いじ (manutenção, conservação) e ユーモア (humor, senso de humor).
+
+
+### 23. (recognition) Qual destas palavras significa "chegar a, alcançar"?
+- **Resposta:** `{"choices": ["すぎる", "あずける", "うる", "いたる"], "correct": "いたる"}`
+- いたる significa chegar a, alcançar. As outras opções são うる (poder, ser capaz de (sufixo)), あずける (deixar aos cuidados de, depositar) e すぎる (passar (tempo), decorrer).
+
+
+### 24. (recognition) Qual destas palavras significa "roupa, vestuário"?
+- **Resposta:** `{"choices": ["あらし", "いふく", "いずみ", "はり"], "correct": "いふく"}`
+- いふく significa roupa, vestuário. As outras opções são はり (agulha, alfinete), あらし (tempestade, temporal) e いずみ (nascente, fonte).
+
+
+### 25. (recognition) Qual destas palavras significa "violar, infringir"?
+- **Resposta:** `{"choices": ["いんさつ", "いっち", "ゆか", "いはん"], "correct": "いはん"}`
+- いはん significa violar, infringir. As outras opções são いっち (concordar, coincidir), ゆか (chão, piso) e いんさつ (imprimir).
+
+
+### 26. (cloze) Complete a frase: 駅へ行って来＿＿だ。 (Acabei de ir até a estação.)
+- **Resposta:** `{"text": "たところ", "full": "駅へ行って来たところだ。"}`
+- O que falta é たところ: o ponto gramatical desta lição, ao fazer / quando fui fazer (descoberta) (～たところ).
+- frases: `sent:tatoeba-188870`
+

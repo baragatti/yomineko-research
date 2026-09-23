@@ -85,3 +85,8 @@ Tanto おじいさん quanto おばあさん têm uma vogal longa de duas moras:
 - お金 é o jeito cotidiano e educado de dizer dinheiro. O kanji 金 carrega ouro, metal e dinheiro; sozinho ele também se lê かね.
 
 
+### 7. (recognition) Qual destas palavras significa "avó, vovó"?
+- **Resposta:** `{"choices": ["おじいさん", "おばあさん", "あたま", "おねえさん"], "correct": "おばあさん"}`
+- おばあさん significa avó, vovó. As outras opções são おじいさん (avô), おねえさん (irmã mais velha) e あたま (cabeça).
+
+

@@ -84,3 +84,63 @@ Repare em 一人一人 (ひとりひとり) destacando cada indivíduo, e em 瓶
 - 瓶 (びん) é garrafa e 空 (から) significa vazio; juntos formam uma frase simples e natural.
 
 
+### 5. (recognition) Qual destas formas significa "tabela, quadro"?
+- **Resposta:** `{"choices": ["表", "説明", "数", "定期"], "correct": "表"}`
+- 表（ひょう） significa tabela, quadro. As outras opções são 数 (número, quantidade), 定期 (período fixo, periódico) e 説明 (explicação).
+
+
+### 6. (recognition) Qual destas palavras significa "artigo, mercadoria"?
+- **Resposta:** `{"choices": ["品", "注文", "注目", "下着"], "correct": "品"}`
+- 品（ひん） significa artigo, mercadoria. As outras opções são 下着 (roupa íntima, roupa de baixo), 注文 (pedido, encomenda) e 注目 (atenção, destaque).
+
+
+### 7. (cloze) Complete a frase: 彼らは＿＿プレゼントをもらった。 (Cada um deles ganhou um presente.)
+- **Resposta:** `{"text": "ひとりひとり", "full": "彼らはひとりひとりプレゼントをもらった。"}`
+- A palavra que falta é 一人一人（ひとりひとり）: um por um, cada um.
+- frases: `sent:tatoeba-97702`
+
+### 8. (cloze) Complete a frase: 同じような＿＿がまだ何点かありますよ。 (Ainda temos alguns itens parecidos.)
+- **Resposta:** `{"text": "品", "full": "同じような品がまだ何点かありますよ。"}`
+- A palavra que falta é 品（しな）: mercadoria, artigo.
+- frases: `sent:tatoeba-75844`
+
+### 9. (recognition) Qual destas palavras significa "espalhar-se, alargar-se"?
+- **Resposta:** `{"choices": ["通じる", "止す", "注ぐ", "広がる"], "correct": "広がる"}`
+- 広がる（ひろがる） significa espalhar-se, alargar-se. As outras opções são 止す (parar (de fazer), desistir), 注ぐ (despejar, servir (uma bebida)) e 通じる (ser compreendido, fazer-se entender).
+
+
+### 10. (recognition) Qual destas palavras significa "criticar, crítica"?
+- **Resposta:** `{"choices": ["ひはん", "ちょうさ", "がく", "うちゅう"], "correct": "ひはん"}`
+- ひはん significa criticar, crítica. As outras opções são がく (quantia, montante), ちょうさ (pesquisa, investigação) e うちゅう (universo, cosmos).
+
+
+### 11. (recognition) Qual destas palavras significa "segundo (tempo)"?
+- **Resposta:** `{"choices": ["びょうどう", "ひょうばん", "びょう", "いっしゅ"], "correct": "びょう"}`
+- びょう significa segundo (tempo). As outras opções são びょうどう (igualdade), ひょうばん (reputação, fama) e いっしゅ (um tipo, uma espécie).
+
+
+### 12. (recognition) Qual destas palavras significa "segredo"?
+- **Resposta:** `{"choices": ["ひみつ", "すな", "てき", "はら"], "correct": "ひみつ"}`
+- ひみつ significa segredo. As outras opções são はら (barriga, estômago), てき (inimigo, adversário) e すな (areia).
+
+
+### 13. (cloze) Complete a frase: この＿＿は強い。 (Este barbante é resistente.)
+- **Resposta:** `{"text": "ひも", "full": "このひもは強い。"}`
+- A palavra que falta é ひも: barbante, cordão.
+- frases: `sent:tatoeba-223271`
+
+### 14. (cloze) Complete a frase: いい＿＿だね。 (Boa forma de dizer isso.)
+- **Resposta:** `{"text": "表現", "full": "いい表現だね。"}`
+- A palavra que falta é 表現（ひょうげん）: expressar, expressão.
+- frases: `sent:tatoeba-11220484`
+
+### 15. (cloze) Complete a frase: 彼は月の＿＿に立った。 (Ele pisou na superfície da Lua.)
+- **Resposta:** `{"text": "表面", "full": "彼は月の表面に立った。"}`
+- A palavra que falta é 表面（ひょうめん）: superfície, face externa.
+- frases: `sent:tatoeba-107778`
+
+### 16. (recognition) Qual destas palavras significa "avaliar, avaliação"?
+- **Resposta:** `{"choices": ["ひょうか", "えんそう", "いたずら", "いち"], "correct": "ひょうか"}`
+- ひょうか significa avaliar, avaliação. As outras opções são えんそう (execução musical, performance (musical)), いたずら (travessura, traquinagem) e いち (posição, localização).
+
+

@@ -113,3 +113,63 @@ Juntando tudo: 新しい傘は千円しかしなかった = "o guarda-chuva novo
 - 待 é esperar. Ele anda com um bando parecidíssimo: 持 é segurar, 特 é especial e 時 é hora. Todos repetem o mesmo bloco à direita; o que muda é a peça da esquerda.
 
 
+### 9. (recognition) Qual destas palavras significa "finalmente, afinal"?
+- **Resposta:** `{"choices": ["とうとう", "ほとんど", "よく", "かならず"], "correct": "とうとう"}`
+- とうとう significa finalmente, afinal. As outras opções são かならず (sem falta, com certeza), ほとんど (quase, na maior parte) e よく (bem).
+
+
+### 10. (recognition) Qual destas palavras significa "quebrar, destruir"?
+- **Resposta:** `{"choices": ["やく", "ぬすむ", "ひろう", "こわす"], "correct": "こわす"}`
+- こわす significa quebrar, destruir. As outras opções são やく (assar, grelhar), ぬすむ (roubar, furtar) e ひろう (pegar (do chão), apanhar).
+
+
+### 11. (recognition) Qual destas palavras significa "geralmente, na maioria das vezes"?
+- **Resposta:** `{"choices": ["たいてい", "だめ", "ゆうめい", "りっぱ"], "correct": "たいてい"}`
+- たいてい significa geralmente, na maioria das vezes. As outras opções são りっぱ (esplêndido, admirável), ゆうめい (famoso, conhecido) e だめ (ruim, inútil).
+
+
+### 12. (recognition) Qual destas palavras significa "sem falta, com certeza"?
+- **Resposta:** `{"choices": ["よく", "まだ", "かならず", "とうとう"], "correct": "かならず"}`
+- かならず significa sem falta, com certeza. As outras opções são とうとう (finalmente, afinal), まだ (ainda) e よく (bem).
+
+
+### 13. (recognition) Qual destas palavras significa "dobrar, curvar"?
+- **Resposta:** `{"choices": ["おる", "やむ", "ふむ", "わすれる"], "correct": "おる"}`
+- おる significa dobrar, curvar. As outras opções são やむ (parar (chuva, vento), cessar), わすれる (esquecer) e ふむ (pisar (em), pisar).
+
+
+### 14. (recognition) Qual destas palavras significa "pegar (do chão), apanhar"?
+- **Resposta:** `{"choices": ["こわす", "おこる", "ふく", "ひろう"], "correct": "ひろう"}`
+- ひろう significa pegar (do chão), apanhar. As outras opções são こわす (quebrar, destruir), おこる (ficar bravo, ficar com raiva) e ふく (soprar (vento)).
+
+
+### 15. (recognition) Qual destas palavras significa "parar (chuva, vento), cessar"?
+- **Resposta:** `{"choices": ["おる", "ふむ", "まがる", "やむ"], "correct": "やむ"}`
+- やむ significa parar (chuva, vento), cessar. As outras opções são おる (dobrar, curvar), ふむ (pisar (em), pisar) e まがる (virar, dobrar (uma esquina)).
+
+
+### 16. (recognition) Qual destas palavras significa "quase, na maior parte"?
+- **Resposta:** `{"choices": ["とうとう", "また", "ほとんど", "かならず"], "correct": "ほとんど"}`
+- ほとんど significa quase, na maior parte. As outras opções são とうとう (finalmente, afinal), かならず (sem falta, com certeza) e また (de novo, novamente).
+
+
+### 17. (recognition) Qual destas palavras significa "ferver, entrar em ebulição"?
+- **Resposta:** `{"choices": ["こまる", "なる", "やく", "わく"], "correct": "わく"}`
+- わく significa ferver, entrar em ebulição. As outras opções são なる (tocar (sino, campainha), soar), やく (assar, grelhar) e こまる (ter problemas, ficar em apuros).
+
+
+### 18. (recognition) Qual destas palavras significa "assar, grelhar"?
+- **Resposta:** `{"choices": ["わたす", "わく", "やく", "よぶ"], "correct": "やく"}`
+- やく significa assar, grelhar. As outras opções são わく (ferver, entrar em ebulição), よぶ (chamar, convocar) e わたす (entregar, passar (algo a alguém)).
+
+
+### 19. (recognition) Qual destas palavras significa "roubar, furtar"?
+- **Resposta:** `{"choices": ["こわす", "すわる", "よぶ", "ぬすむ"], "correct": "ぬすむ"}`
+- ぬすむ significa roubar, furtar. As outras opções são こわす (quebrar, destruir), よぶ (chamar, convocar) e すわる (sentar, sentar-se).
+
+
+### 20. (recognition) Qual destas palavras significa "pisar (em), pisar"?
+- **Resposta:** `{"choices": ["ふむ", "わすれる", "わく", "ひく"], "correct": "ふむ"}`
+- ふむ significa pisar (em), pisar. As outras opções são わすれる (esquecer), わく (ferver, entrar em ebulição) e ひく (puxar).
+
+

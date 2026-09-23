@@ -180,3 +180,93 @@ O kanji 落 ('cair, queda') tem o radical de planta (艹) no topo, como folha qu
 - 非常に (ひじょうに) é extremamente: o que não (非) é comum (常). Sem o に, 非常 é o substantivo emergência.
 
 
+### 19. (recognition) Qual destas palavras significa "abastecimento, fornecimento"?
+- **Resposta:** `{"choices": ["ぶたい", "おひる", "きょうきゅう", "てつ"], "correct": "きょうきゅう"}`
+- きょうきゅう significa abastecimento, fornecimento. As outras opções são てつ (ferro), おひる (meio-dia, hora do almoço) e ぶたい (palco, tablado).
+
+
+### 20. (cloze) Complete a frase: 私は妹と＿＿で部屋を使っている。 (Divido o quarto com a minha irmã mais nova.)
+- **Resposta:** `{"text": "共同", "full": "私は妹と共同で部屋を使っている。"}`
+- A palavra que falta é 共同（きょうどう）: cooperação, colaboração.
+- frases: `sent:tatoeba-152777`
+
+### 21. (cloze) Complete a frase: 私と彼は＿＿することが多い。 (Eu e ele temos muita coisa em comum.)
+- **Resposta:** `{"text": "共通", "full": "私と彼は共通することが多い。"}`
+- A palavra que falta é 共通（きょうつう）: comum, compartilhado.
+- frases: `sent:tatoeba-164869`
+
+### 22. (recognition) Qual destas palavras significa "cooperação, colaboração" (no sentido de ajuda)?
+- **Resposta:** `{"choices": ["かんしゃ", "かんさつ", "つかれ", "きょうりょく"], "correct": "きょうりょく"}`
+- きょうりょく significa cooperação, colaboração. As outras opções são かんさつ (observação), かんしゃ (gratidão, agradecimento) e つかれ (cansaço, fadiga).
+
+
+### 23. (recognition) Qual destas palavras significa "doação"?
+- **Resposta:** `{"choices": ["せきにん", "ブレーキ", "きふ", "ロケット"], "correct": "きふ"}`
+- きふ significa doação. As outras opções são せきにん (responsabilidade, encargo), ブレーキ (freio, breque) e ロケット (foguete).
+
+
+### 24. (recognition) Qual destas palavras significa "ênfase, destaque"?
+- **Resposta:** `{"choices": ["きょうきゅう", "きょうちょう", "ふまん", "かんり"], "correct": "きょうちょう"}`
+- きょうちょう significa ênfase, destaque. As outras opções são きょうきゅう (abastecimento, fornecimento), かんり (gestão, administração) e ふまん (insatisfação, descontentamento).
+
+
+### 25. (recognition) Qual destas palavras significa "de repente, subitamente"?
+- **Resposta:** `{"choices": ["必ずしも", "次々", "今にも", "急に"], "correct": "急に"}`
+- 急に（きゅうに） significa de repente, subitamente. As outras opções são 必ずしも (não necessariamente, nem sempre), 次々 (um após o outro, sucessivamente) e 今にも (a qualquer momento, prestes a).
+
+
+### 26. (recognition) Qual destas palavras significa "repentino, abrupto"?
+- **Resposta:** `{"choices": ["かわいそう", "かんぜん", "てきせつ", "きゅうげき"], "correct": "きゅうげき"}`
+- きゅうげき significa repentino, abrupto. As outras opções são てきせつ (adequado, apropriado), かんぜん (completo, perfeito) e かわいそう (coitado, digno de pena).
+
+
+### 27. (recognition) Qual destas palavras significa "professor, docente"?
+- **Resposta:** `{"choices": ["きょうし", "プロ", "かん", "かんさつ"], "correct": "きょうし"}`
+- きょうし significa professor, docente. As outras opções são かん (intuição, pressentimento), かんさつ (observação) e プロ (profissional, profissa).
+
+
+### 28. (recognition) Qual destas palavras significa "professor universitário, catedrático"?
+- **Resposta:** `{"choices": ["きょうじゅ", "ぜいたく", "いたみ", "かもく"], "correct": "きょうじゅ"}`
+- きょうじゅ significa professor universitário, catedrático. As outras opções são いたみ (dor), かもく (matéria, disciplina) e ぜいたく (luxo, extravagância).
+
+
+### 29. (recognition) Qual destas palavras significa "lamentável/de dar pena/digno de pena, sinto muito (por alguém)/que é uma pena"?
+- **Resposta:** `{"choices": ["せいけつ", "きゅうげき", "わがまま", "きのどく"], "correct": "きのどく"}`
+- きのどく significa lamentável/de dar pena/digno de pena, sinto muito (por alguém)/que é uma pena. As outras opções são きゅうげき (repentino, abrupto), わがまま (egoísta, mimado) e せいけつ (limpo, higiênico).
+
+
+### 30. (recognition) Qual destas palavras significa "regra, norma"?
+- **Resposta:** `{"choices": ["期待", "決まり", "生まれ", "記入"], "correct": "決まり"}`
+- 決まり（きまり） significa regra, norma. As outras opções são 記入 (preencher, anotar), 生まれ (nascimento, naturalidade) e 期待 (esperar, ter expectativa).
+
+
+### 31. (cloze) Complete a frase: 私は＿＿に思った。 (Fiquei em dúvida.)
+- **Resposta:** `{"text": "疑問", "full": "私は疑問に思った。"}`
+- A palavra que falta é 疑問（ぎもん）: dúvida, questionamento.
+- frases: `sent:tatoeba-2245823`
+
+### 32. (recognition) Qual destas palavras significa "dever, obrigação"?
+- **Resposta:** `{"choices": ["かわ", "ぎむ", "どうろ", "きろく"], "correct": "ぎむ"}`
+- ぎむ significa dever, obrigação. As outras opções são どうろ (estrada, via), きろく (registro, anotação) e かわ (couro).
+
+
+### 33. (recognition) Qual destas palavras significa "boas maneiras, etiqueta" (no sentido de comportamento)?
+- **Resposta:** `{"choices": ["ぎょうぎ", "へいきん", "きかい", "きほん"], "correct": "ぎょうぎ"}`
+- ぎょうぎ significa boas maneiras, etiqueta. As outras opções são きほん (base, fundamento), きかい (máquina, maquinário) e へいきん (média).
+
+
+### 34. (cloze) Complete a frase: ＿＿すべき一日となりました。 (Foi um dia para ficar na memória.)
+- **Resposta:** `{"text": "記念", "full": "記念すべき一日となりました。"}`
+- A palavra que falta é 記念（きねん）: comemoração, memória.
+- frases: `sent:tatoeba-11254025`
+
+### 35. (cloze) Complete a frase: もう＿＿はやめよう。 (Chega de discussão.)
+- **Resposta:** `{"text": "議論", "full": "もう議論はやめよう。"}`
+- A palavra que falta é 議論（ぎろん）: discussão, debate.
+- frases: `sent:tatoeba-194225`
+
+### 36. (cloze) Complete a frase: 彼は＿＿を務めた。 (Ele atuou como presidente da assembleia.)
+- **Resposta:** `{"text": "議長", "full": "彼は議長を務めた。"}`
+- A palavra que falta é 議長（ぎちょう）: presidente (de assembleia), moderador.
+- frases: `sent:tatoeba-108517`
+

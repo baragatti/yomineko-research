@@ -122,3 +122,8 @@ O par 師 + 走 forma 師走, o nome poético de dezembro: 'até o mestre corre'
 - 道路 é 道 ("caminho") mais 路 ("estrada"): dois kanji de caminho reforçando um ao outro. 路 se lê ロ nesse composto.
 
 
+### 12. (recognition) Qual destas palavras significa "Japão"?
+- **Resposta:** `{"choices": ["日本", "教師", "開始", "係"], "correct": "日本"}`
+- 日本（にほん） significa Japão. As outras opções são 開始 (início, começo), 教師 (professor, docente) e 係 (responsável, encarregado).
+
+

@@ -100,3 +100,48 @@ Mais um, com また aditivo: このカフェは静かです また コーヒー�
 - 頭 e 顔 terminam com o mesmo radical à direita, o que marca quase tudo o que tem a ver com a cabeça; 題 também o carrega. Sozinho, 頭 é あたま, a cabeça do dia a dia.
 
 
+### 7. (cloze) Complete a frase: ＿＿をパソコンに入れた (Instalei o programa no computador.)
+- **Resposta:** `{"text": "ソフト", "full": "ソフトをパソコンに入れた"}`
+- A palavra que falta é ソフト: suave, macio.
+- frases: `sent:jec-1000`
+
+### 8. (cloze) Complete a frase: 人には二つ＿＿が有ります (Existem dois tipos de pessoa.)
+- **Resposta:** `{"text": "タイプ", "full": "人には二つタイプが有ります"}`
+- A palavra que falta é タイプ: tipo, gênero.
+- frases: `sent:jec-0272`
+
+### 9. (recognition) Qual destas palavras significa "de vez em quando, ocasionalmente"?
+- **Resposta:** `{"choices": ["きっと", "たまに", "それほど", "やっぱり"], "correct": "たまに"}`
+- たまに significa de vez em quando, ocasionalmente. As outras opções são それほど (tanto assim, tão), やっぱり (como era de se esperar, no fim das contas) e きっと (com certeza, certamente).
+
+
+### 10. (cloze) Complete a frase: 今日は＿＿寒い (Hoje está bem frio.)
+- **Resposta:** `{"text": "大分", "full": "今日は大分寒い"}`
+- A palavra que falta é 大分（だいぶ）: bastante, consideravelmente.
+- frases: `sent:gen-b0cfa40d6604`
+
+### 11. (cloze) Complete a frase: 来てくださればとても＿＿。 (Eu ficaria muito feliz se você viesse.)
+- **Resposta:** `{"text": "うれしい", "full": "来てくださればとてもうれしい。"}`
+- A palavra que falta é うれしい: feliz, contente.
+- frases: `sent:tatoeba-78723`
+
+### 12. (recognition) Qual destas palavras significa "diversão, prazer"?
+- **Resposta:** `{"choices": ["会話", "会場", "楽しみ", "以下"], "correct": "楽しみ"}`
+- 楽しみ（たのしみ） significa diversão, prazer. As outras opções são 以下 (ou menos, abaixo de), 会話 (conversa, diálogo) e 会場 (local (do evento), recinto).
+
+
+### 13. (cloze) Complete a frase: ＿＿今日は雨だった (No fim das contas, hoje choveu mesmo.)
+- **Resposta:** `{"text": "やっぱり", "full": "やっぱり今日は雨だった"}`
+- A palavra que falta é やっぱり: como era de se esperar, no fim das contas.
+- frases: `sent:gen-6a89161d71dd`
+
+### 14. (cloze) Complete a frase: ＿＿はぜんぜん気にしない。 (A sociedade não liga nem um pouco.)
+- **Resposta:** `{"text": "社会", "full": "社会はぜんぜん気にしない。"}`
+- A palavra que falta é 社会（しゃかい）: sociedade, comunidade.
+- frases: `sent:tatoeba-149216`
+
+### 15. (recognition) Qual destas palavras significa "relação, relacionamento"?
+- **Resposta:** `{"choices": ["かんけい", "たな", "クビ", "ふつう"], "correct": "かんけい"}`
+- かんけい significa relação, relacionamento. As outras opções são たな (prateleira, estante), クビ (pescoço) e ふつう (comum, normal).
+
+

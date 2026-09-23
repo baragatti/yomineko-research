@@ -131,3 +131,73 @@ O kanji 当 significa "acertar, apropriado, corresponder". Aparece nos verbos �
 - 表す se lê あらわす. É o par transitivo de 現れる: 現れる é algo que aparece sozinho, 表す é alguém que põe algo à mostra.
 
 
+### 12. (recognition) Qual destas palavras significa "ímpeto, força"?
+- **Resposta:** `{"choices": ["いきおい", "にっき", "ゆしゅつ", "きみ"], "correct": "いきおい"}`
+- いきおい significa ímpeto, força. As outras opções são ゆしゅつ (exportação), きみ (você (informal)) e にっき (diário).
+
+
+### 13. (cloze) Complete a frase: 時間を＿＿なさい。 (Acerte o relógio.)
+- **Resposta:** `{"text": "合わせ", "full": "時間を合わせなさい。"}`
+- A palavra que falta é 合わせる（あわせる）: juntar, combinar. Na frase ela aparece como 合わせ.
+- frases: `sent:tatoeba-150547`
+
+### 14. (recognition) Qual destas palavras significa "acertar, atingir"?
+- **Resposta:** `{"choices": ["下げる", "当たる", "合わせる", "集まる"], "correct": "当たる"}`
+- 当たる（あたる） significa acertar, atingir. As outras opções são 合わせる (juntar, combinar), 下げる (abaixar, baixar) e 集まる (reunir-se, juntar-se).
+
+
+### 15. (recognition) Qual destas palavras significa "acertar, encostar"?
+- **Resposta:** `{"choices": ["急ぐ", "見つける", "送る", "当てる"], "correct": "当てる"}`
+- 当てる（あてる） significa acertar, encostar. As outras opções são 送る (enviar, mandar), 見つける (encontrar, achar) e 急ぐ (apressar-se, ter pressa).
+
+
+### 16. (cloze) Complete a frase: 犬は＿＿走った。 (O cachorro correu de um lado pro outro.)
+- **Resposta:** `{"text": "あちこち", "full": "犬はあちこち走った。"}`
+- A palavra que falta é あちこち: aqui e ali, por toda parte.
+- frases: `sent:tatoeba-1911366`
+
+### 17. (recognition) Qual destas palavras significa "um certo, certo (não especificado)"?
+- **Resposta:** `{"choices": ["あんな", "ソフト", "ある", "まじめ"], "correct": "ある"}`
+- ある significa um certo, certo (não especificado). As outras opções são ソフト (suave, macio), あんな (daquele tipo, assim (como aquilo)) e まじめ (sério, aplicado).
+
+
+### 18. (cloze) Complete a frase: 明日はまた＿＿な日がやってくる。 (Amanhã chega mais um dia novo.)
+- **Resposta:** `{"text": "新た", "full": "明日はまた新たな日がやってくる。"}`
+- A palavra que falta é 新た（あらた）: novo, renovado.
+- frases: `sent:tatoeba-80464`
+
+### 19. (recognition) Qual destas palavras significa "manifestação, expressão"?
+- **Resposta:** `{"choices": ["子", "光", "現れ", "目"], "correct": "現れ"}`
+- 現れ（あらわれ） significa manifestação, expressão. As outras opções são 子 (criança), 光 (luz, raio de luz) e 目 (olho).
+
+
+### 20. (cloze) Complete a frase: ＿＿終わった。 (Já quase terminei.)
+- **Resposta:** `{"text": "ほぼ", "full": "ほぼ終わった。"}`
+- A palavra que falta é ほぼ: quase, aproximadamente.
+- frases: `sent:tatoeba-5260`
+
+### 21. (recognition) Qual destas palavras significa "erro, engano"?
+- **Resposta:** `{"choices": ["あんぜん", "あたり", "あやまり", "そうだん"], "correct": "あやまり"}`
+- あやまり significa erro, engano. As outras opções são あたり (redondezas, arredores), そうだん (consulta, conversa para pedir conselho) e あんぜん (segurança).
+
+
+### 22. (recognition) Qual destas palavras significa "desistir, dar-se por vencido"?
+- **Resposta:** `{"choices": ["むかう", "たずねる", "あきらめる", "あいする"], "correct": "あきらめる"}`
+- あきらめる significa desistir, dar-se por vencido. As outras opções são あいする (amar, gostar muito de), たずねる (visitar) e むかう (dirigir-se a, ir em direção a).
+
+
+### 23. (recognition) Qual destas palavras significa "marca, rastro"?
+- **Resposta:** `{"choices": ["ピアノ", "ベル", "とちゅう", "あと"], "correct": "あと"}`
+- あと significa marca, rastro. As outras opções são ピアノ (piano), とちゅう (no caminho, a caminho) e ベル (sino, campainha).
+
+
+### 24. (recognition) Qual destas formas significa "redondezas, arredores"?
+- **Resposta:** `{"choices": ["あたり", "ひさしぶり", "しゅみ", "でんぽう"], "correct": "あたり"}`
+- あたり significa redondezas, arredores. As outras opções são ひさしぶり (depois de muito tempo, há quanto tempo), でんぽう (telegrama) e しゅみ (hobby, passatempo).
+
+
+### 25. (recognition) Qual destas formas significa "enjoar de, cansar-se de"?
+- **Resposta:** `{"choices": ["すむ", "あきる", "もどる", "うつる"], "correct": "あきる"}`
+- あきる significa enjoar de, cansar-se de. As outras opções são うつる (mudar-se, transferir-se), すむ (terminar, concluir-se) e もどる (voltar, retornar).
+
+

@@ -91,3 +91,48 @@ Mais um par de verbos com a mesma raiz e papéis opostos.
 - ～こそ enfatiza ('justamente'); 日常 é 'cotidiano' e 人間, 'ser humano'.
 
 
+### 6. (recognition) Qual destas palavras significa "dia, um dia"?
+- **Resposta:** `{"choices": ["相当", "日", "歩道", "品"], "correct": "日"}`
+- 日（にち） significa dia, um dia. As outras opções são 歩道 (calçada, passeio), 品 (mercadoria, artigo) e 相当 (considerável, bastante).
+
+
+### 7. (cloze) Complete a frase: この本は注目に＿＿する。 (Este livro merece atenção.)
+- **Resposta:** `{"text": "値", "full": "この本は注目に値する。"}`
+- A palavra que falta é 値（あたい）: valor, mérito.
+- frases: `sent:tatoeba-219572`
+
+### 8. (cloze) Complete a frase: 学生に限り＿＿可。 (Entrada permitida somente para estudantes.)
+- **Resposta:** `{"text": "入場", "full": "学生に限り入場可。"}`
+- A palavra que falta é 入場（にゅうじょう）: entrada (em um recinto), ingresso.
+- frases: `sent:tatoeba-184284`
+
+### 9. (cloze) Complete a frase: なぜ毎日昼食を＿＿のですか。 (Por que você pula o almoço todo dia?)
+- **Resposta:** `{"text": "抜く", "full": "なぜ毎日昼食を抜くのですか。"}`
+- A palavra que falta é 抜く（ぬく）: arrancar, extrair.
+- frases: `sent:tatoeba-199126`
+
+### 10. (recognition) Qual destas palavras significa "durante o dia, de dia"?
+- **Resposta:** `{"choices": ["現代", "人間", "日中", "家事"], "correct": "日中"}`
+- 日中（にっちゅう） significa durante o dia, de dia. As outras opções são 現代 (a época atual, tempos modernos), 人間 (ser humano, pessoa) e 家事 (tarefas domésticas, afazeres domésticos).
+
+
+### 11. (cloze) Complete a frase: ＿＿って、空いてる？ (No domingo, você tá livre?)
+- **Resposta:** `{"text": "日曜", "full": "日曜って、空いてる？"}`
+- A palavra que falta é 日曜（にちよう）: domingo.
+- frases: `sent:tatoeba-11825711`
+
+### 12. (recognition) Qual destas palavras significa "raiz (de planta)"?
+- **Resposta:** `{"choices": ["ね", "ほこり", "けんこう", "こうけん"], "correct": "ね"}`
+- ね significa raiz (de planta). As outras opções são ほこり (orgulho), こうけん (contribuir) e けんこう (saúde).
+
+
+### 13. (recognition) Qual destas palavras significa "desejo, anseio"?
+- **Resposta:** `{"choices": ["こじん", "ね", "くんれん", "ねがい"], "correct": "ねがい"}`
+- ねがい significa desejo, anseio. As outras opções são ね (raiz (de planta)), こじん (indivíduo, pessoa física) e くんれん (treinamento, instrução).
+
+
+### 14. (recognition) Qual destas palavras significa "desejar, almejar"?
+- **Resposta:** `{"choices": ["ねがう", "とどく", "かる", "ふくむ"], "correct": "ねがう"}`
+- ねがう significa desejar, almejar. As outras opções são ふくむ (conter, incluir), とどく (chegar, ser entregue) e かる (cortar (cabelo, grama), aparar).
+
+

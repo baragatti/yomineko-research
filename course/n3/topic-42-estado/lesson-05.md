@@ -113,3 +113,63 @@ Repare na diferença entre 成人 (せいじん, 'adulto' no sentido legal, maio
 - 選 traz embaixo o mesmo traço de movimento de 道 e 通: escolher é ir buscar entre várias opções. Em composto ele passa a セン, a leitura das eleições.
 
 
+### 10. (recognition) Qual destas palavras significa "limitar, restringir" (substantivo)?
+- **Resposta:** `{"choices": ["ふうけい", "せいげん", "かぶ", "かた"], "correct": "せいげん"}`
+- せいげん significa limitar, restringir. As outras opções são ふうけい (paisagem, cenário), かぶ (ação (de empresa), cota) e かた (ombro).
+
+
+### 11. (cloze) Complete a frase: 彼女は＿＿前に死んだ。 (Ela morreu antes de chegar à maioridade.)
+- **Resposta:** `{"text": "成人", "full": "彼女は成人前に死んだ。"}`
+- A palavra que falta é 成人（せいじん）: adulto, pessoa maior de idade.
+- frases: `sent:tatoeba-88402`
+
+### 12. (cloze) Complete a frase: 子供は＿＿が早い。 (Criança cresce rápido.)
+- **Resposta:** `{"text": "成長", "full": "子供は成長が早い。"}`
+- A palavra que falta é 成長（せいちょう）: crescimento, desenvolvimento.
+- frases: `sent:tatoeba-168525`
+
+### 13. (recognition) Qual destas palavras significa "organização, arrumação"?
+- **Resposta:** `{"choices": ["せいり", "せいぞう", "ていこう", "かみ"], "correct": "せいり"}`
+- せいり significa organização, arrumação. As outras opções são かみ (deus, divindade), せいぞう (fabricar, produzir) e ていこう (resistir, opor-se).
+
+
+### 14. (cloze) Complete a frase: あなたは＿＿なスピーチを用意する必要がありません。 (Você não precisa preparar um discurso formal.)
+- **Resposta:** `{"text": "正式", "full": "あなたは正式なスピーチを用意する必要がありません。"}`
+- A palavra que falta é 正式（せいしき）: oficial, formal.
+- frases: `sent:tatoeba-231802`
+
+### 15. (recognition) Qual destas palavras significa "vida"?
+- **Resposta:** `{"choices": ["せいめい", "せいふ", "ろうどう", "かぶ"], "correct": "せいめい"}`
+- せいめい significa vida. As outras opções são せいふ (governo), ろうどう (trabalho (físico), labor) e かぶ (ação (de empresa), cota).
+
+
+### 16. (cloze) Complete a frase: 月に＿＿はいない。 (Não existe vida na lua.)
+- **Resposta:** `{"text": "生物", "full": "月に生物はいない。"}`
+- A palavra que falta é 生物（せいぶつ）: ser vivo, organismo.
+- frases: `sent:tatoeba-175657`
+
+### 17. (recognition) Qual destas palavras significa "no máximo"?
+- **Resposta:** `{"choices": ["せいぜい", "かなり", "およそ", "ついに"], "correct": "せいぜい"}`
+- せいぜい significa no máximo. As outras opções são ついに (finalmente, por fim), およそ (aproximadamente, cerca de) e かなり (bastante, consideravelmente).
+
+
+### 18. (recognition) Qual destas palavras significa "espírito, mente"?
+- **Resposta:** `{"choices": ["りえき", "いた", "れいせい", "せいしん"], "correct": "せいしん"}`
+- せいしん significa espírito, mente. As outras opções são れいせい (calmo, sereno), りえき (lucro, ganho) e いた (tábua, prancha).
+
+
+### 19. (recognition) Qual destas palavras significa "produto, mercadoria"?
+- **Resposta:** `{"choices": ["れつ", "せいひん", "ふくろ", "りそう"], "correct": "せいひん"}`
+- せいひん significa produto, mercadoria. As outras opções são りそう (ideal, ideais), ふくろ (sacola, saco) e れつ (fila, fileira).
+
+
+### 20. (recognition) Qual destas palavras significa "luxo, extravagância"?
+- **Resposta:** `{"choices": ["ずつう", "ぜいたく", "かげ", "ひも"], "correct": "ぜいたく"}`
+- ぜいたく significa luxo, extravagância. As outras opções são ひも (barbante, cordão), ずつう (dor de cabeça) e かげ (sombra (à sombra), lugar protegido do sol).
+
+
+### 21. (cloze) Complete a frase: 彼はすてきな＿＿です。 (Ele é um ótimo rapaz.)
+- **Resposta:** `{"text": "青年", "full": "彼はすてきな青年です。"}`
+- A palavra que falta é 青年（せいねん）: jovem, rapaz.
+- frases: `sent:tatoeba-2138425`
+

@@ -133,3 +133,38 @@ Os dois entram fácil numa meta: 日本語を使うようにする ("vou procura
 - 手紙 (てがみ) junta 手 e 紙. Sozinho, 紙 lê-se かみ (papel); a leitura on é し.
 
 
+### 12. (recognition) Qual destas palavras significa "agradecimento, obrigado"?
+- **Resposta:** `{"choices": ["よしゅう", "びじゅつかん", "はいしゃ", "おれい"], "correct": "おれい"}`
+- おれい significa agradecimento, obrigado. As outras opções são はいしゃ (dentista), びじゅつかん (museu de arte, galeria de arte) e よしゅう (preparação prévia da aula, estudo antecipado da matéria).
+
+
+### 13. (recognition) Qual destas palavras significa "cheiro, aroma"?
+- **Resposta:** `{"choices": ["けが", "じむしょ", "ゴミ", "におい"], "correct": "におい"}`
+- におい significa cheiro, aroma. As outras opções são じむしょ (escritório), けが (ferimento, machucado) e ゴミ (lixo).
+
+
+### 14. (recognition) Qual destas palavras significa "paisagem, cenário"?
+- **Resposta:** `{"choices": ["おにいさん", "けしき", "ぶどう", "うけつけ"], "correct": "けしき"}`
+- けしき significa paisagem, cenário. As outras opções são うけつけ (recepção, balcão de atendimento), ぶどう (uva, uvas) e おにいさん (irmão mais velho).
+
+
+### 15. (recognition) Qual destas palavras significa "entusiasmado, dedicado"?
+- **Resposta:** `{"choices": ["てきとう", "へん", "たしか", "ねっしん"], "correct": "ねっしん"}`
+- ねっしん significa entusiasmado, dedicado. As outras opções são へん (estranho, esquisito), たしか (certo, seguro) e てきとう (adequado, apropriado).
+
+
+### 16. (recognition) Qual destas palavras significa "gentil, bondoso"?
+- **Resposta:** `{"choices": ["あの", "べんり", "この", "しんせつ"], "correct": "しんせつ"}`
+- しんせつ significa gentil, bondoso. As outras opções são べんり (conveniente, prático), あの (aquele, aquela) e この (este, esta).
+
+
+### 17. (cloze) Complete a frase: 一人三つずつ＿＿ (Cada um recebeu três.)
+- **Resposta:** `{"text": "もらった", "full": "一人三つずつもらった"}`
+- A palavra que falta é もらう: receber, ganhar. Na frase ela aparece como もらった.
+- frases: `sent:gen-7656e510d682`
+
+### 18. (cloze) Complete a frase: 気にかけて＿＿どうも。 (Obrigado por se preocupar comigo.)
+- **Resposta:** `{"text": "いただいて", "full": "気にかけていただいてどうも。"}`
+- A palavra que falta é いただく: receber (humilde). Na frase ela aparece como いただいて.
+- frases: `sent:tatoeba-183277`
+

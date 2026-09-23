@@ -180,3 +180,63 @@ O kanji 局 significa "repartição, escritório, setor". Aparece em 郵便局 (
 - É 過ごす, quando você passa o tempo de propósito. O par intransitivo é 過ぎる (すぎる), quando o tempo passa sozinho: mesmo kanji, okurigana diferente.
 
 
+### 20. (recognition) Qual destas palavras significa "preço, valor"?
+- **Resposta:** `{"choices": ["かいぜん", "りょう", "かいふく", "かかく"], "correct": "かかく"}`
+- かかく significa preço, valor. As outras opções são かいふく (recuperação, restabelecimento), りょう (quantidade, volume) e かいぜん (melhoria, aperfeiçoamento).
+
+
+### 21. (recognition) Qual destas palavras significa "responsável, encarregado"?
+- **Resposta:** `{"choices": ["一生", "外出", "身長", "係"], "correct": "係"}`
+- 係（かかり） significa responsável, encarregado. As outras opções são 外出 (saída, passeio), 身長 (altura (de uma pessoa), estatura) e 一生 (uma vida inteira, a vida toda).
+
+
+### 22. (cloze) Complete a frase: ＿＿の勉強をしているの？ (Você está estudando química?)
+- **Resposta:** `{"text": "化学", "full": "化学の勉強をしているの？"}`
+- A palavra que falta é 化学（かがく）: química.
+- frases: `sent:tatoeba-8799000`
+
+### 23. (recognition) Qual destas palavras significa "estudo, saber"?
+- **Resposta:** `{"choices": ["学", "お前", "連れ", "画家"], "correct": "学"}`
+- 学（がく） significa estudo, saber. As outras opções são 連れ (acompanhante, companhia), 画家 (pintor, artista) e お前 (você (informal/rude), tu).
+
+
+### 24. (cloze) Complete a frase: ＿＿のあらゆる機会を利用すべきだ。 (Você deve aproveitar toda oportunidade de aprender.)
+- **Resposta:** `{"text": "学習", "full": "学習のあらゆる機会を利用すべきだ。"}`
+- A palavra que falta é 学習（がくしゅう）: aprendizado, estudo.
+- frases: `sent:tatoeba-184331`
+
+### 25. (recognition) Qual destas palavras significa "estudioso, acadêmico"?
+- **Resposta:** `{"choices": ["要点", "学者", "一つ", "不可"], "correct": "学者"}`
+- 学者（がくしゃ） significa estudioso, acadêmico. As outras opções são 要点 (ponto principal, essência), 不可 (proibido, inaceitável) e 一つ (um, uma unidade).
+
+
+### 26. (recognition) Qual destas palavras significa "móveis, mobília"?
+- **Resposta:** `{"choices": ["えいきゅう", "よぼう", "てつどう", "かぐ"], "correct": "かぐ"}`
+- かぐ significa móveis, mobília. As outras opções são てつどう (ferrovia, estrada de ferro), よぼう (prevenção, proteção) e えいきゅう (permanência, perpetuidade).
+
+
+### 27. (recognition) Qual destas palavras significa "levar (tempo), custar"?
+- **Resposta:** `{"choices": ["えがく", "ねむる", "おさめる", "かかる"], "correct": "かかる"}`
+- かかる significa levar (tempo), custar. As outras opções são おさめる (guardar, armazenar), えがく (desenhar, pintar) e ねむる (dormir, adormecer).
+
+
+### 28. (cloze) Complete a frase: 彼が行くのは＿＿だ。 (É certo que ele vai.)
+- **Resposta:** `{"text": "確実", "full": "彼が行くのは確実だ。"}`
+- A palavra que falta é 確実（かくじつ）: certo, seguro.
+- frases: `sent:tatoeba-120374`
+
+### 29. (recognition) Qual destas palavras significa "determinação, preparo psicológico"?
+- **Resposta:** `{"choices": ["てんけい", "かくご", "うがい", "りょうがえ"], "correct": "かくご"}`
+- かくご significa determinação, preparo psicológico. As outras opções são りょうがえ (trocar (dinheiro/câmbio), câmbio de moeda), うがい (fazer gargarejo, gargarejar) e てんけい (exemplo típico, modelo).
+
+
+### 30. (recognition) Qual destas palavras significa "brilhar, reluzir"?
+- **Resposta:** `{"choices": ["ふくむ", "つもる", "かがやく", "おくる"], "correct": "かがやく"}`
+- かがやく significa brilhar, reluzir. As outras opções são ふくむ (conter, incluir), つもる (acumular-se, empilhar-se (neve/poeira)) e おくる (presentear, dar de presente).
+
+
+### 31. (recognition) Qual destas palavras significa "limitar, restringir"?
+- **Resposta:** `{"choices": ["すくう", "かぎる", "うばう", "てきする"], "correct": "かぎる"}`
+- かぎる significa limitar, restringir. As outras opções são すくう (salvar, resgatar), てきする (ser adequado, ser apropriado) e うばう (arrebatar, tomar à força).
+
+

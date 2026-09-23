@@ -86,3 +86,23 @@ Estas palavras aparecem o tempo todo quando descrevemos coisas que "vêm junto" 
 - この店は (esse restaurante) + 安い (barato) + し (e ainda por cima) + おいしい (gostoso). O し soma a segunda qualidade como mais uma razão para gostar do lugar.
 - frases: `sent:gen-3612bfffc506`
 
+### 6. (cloze) Complete a frase: 私は今朝バター＿＿のパンを食べた。 (Eu comi pão com manteiga hoje de manhã.)
+- **Resposta:** `{"text": "つき", "full": "私は今朝バターつきのパンを食べた。"}`
+- A palavra que falta é つき: com (algo incluso), acompanhado de.
+- frases: `sent:tatoeba-156999`
+
+### 7. (recognition) Qual destas palavras significa "grudar, ficar grudado"?
+- **Resposta:** `{"choices": ["ふとる", "ぬる", "つく", "ねむる"], "correct": "つく"}`
+- つく significa grudar, ficar grudado. As outras opções são ねむる (dormir, adormecer), ふとる (engordar, ganhar peso) e ぬる (pintar, passar (camada)).
+
+
+### 8. (recognition) Qual destas palavras significa "natural, compreensível"?
+- **Resposta:** `{"choices": ["もっとも", "または", "だから", "すると"], "correct": "もっとも"}`
+- もっとも significa natural, compreensível. As outras opções são だから (por isso, então), または (ou) e すると (então, aí (então)).
+
+
+### 9. (recognition) Qual destas palavras significa "extrair, fazer aflorar"?
+- **Resposta:** `{"choices": ["がんばる", "とりかえる", "ひきだす", "いのる"], "correct": "ひきだす"}`
+- ひきだす significa extrair, fazer aflorar. As outras opções são とりかえる (trocar, substituir), がんばる (esforçar-se, dar o melhor de si) e いのる (rezar, orar).
+
+

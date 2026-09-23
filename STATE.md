@@ -73,6 +73,8 @@ appearance and reuse only.
 > → U8 W14 → U9 W18 → U10 W37/W40 → U11 W32/W30 → U12 W23 → U13 review-tooling fix; then the W08b merge
 > with its six fix-first rows. Owner items: PENDING A9b, B-W11, B-W37, B-W40, D1–D16.
 
+> **2026-09-23 (C1-W20v) — W20 vocab + grammar practice APPLIED, committed.** Generator re-run with the four Fable rules + homograph guard + kanji drills; 2,283 exercises (cloze 618, 27.1%; N3 cloze 38.8%, was 3.6%) via `apply_practice_exercises.py --table`, step 131 (families 132-134). Vocab absent 0 at every level, pending_drills 76 -> 0, practised 43.5% -> 99.5%. Applier now writes `exercise_sentence`. Needs re-derived (760 -> 741); C5 unchanged 1/14/160. Gate green. Open: Fable sample 30, grammar residue 19. Report `research/reports/w20_vocab_apply_report.md`.
+
 > **2026-09-23 (U2-W21b) — forward references APPLIED, committed.** 276 unlocks moved to the first same-level lesson that uses them (card, production key, 81 exercises travel; 156 stay as review), steps 112+130 (`scripts/apply_forward_refs.py`, derived by `scripts/derive_forward_refs.py`). Forward uses same-topic 35 -> 1, same-level 461 -> 14, cross-level 160 held; check D over-budget 148 -> 25; 0 cks shrinks; 0 homograph flips (1 new review row, 君, same record). New gates: C5 forward ratchet, practice `pending_drills` (76 drills for U5). Gate green, full replay recorded. Report `research/reports/w21b_apply_report.md`.
 
 > **2026-09-23 (U1) — second particle table + late N3 relink APPLIED, committed.** 74 particle rows

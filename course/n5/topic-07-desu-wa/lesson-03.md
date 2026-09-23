@@ -107,3 +107,78 @@ E ainda:
 - 雨 (chuva) + です (cópula polida) + か (pergunta) = 雨ですか.
 
 
+### 7. (recognition) Qual destas palavras significa "marmita, bentô"?
+- **Resposta:** `{"choices": ["うち", "おべんとう", "あめ", "いつか"], "correct": "おべんとう"}`
+- おべんとう significa marmita, bentô. As outras opções são いつか (dia cinco (do mês)), あめ (chuva) e うち (dentro, interior).
+
+
+### 8. (recognition) Qual destas palavras significa "barriga, estômago"?
+- **Resposta:** `{"choices": ["あさごはん", "おなか", "もの", "あたま"], "correct": "おなか"}`
+- おなか significa barriga, estômago. As outras opções são もの (coisa, objeto), あたま (cabeça) e あさごはん (café da manhã).
+
+
+### 9. (recognition) Qual destas palavras significa "doces, guloseimas"?
+- **Resposta:** `{"choices": ["えいがかん", "おなか", "あし", "おかし"], "correct": "おかし"}`
+- おかし significa doces, guloseimas. As outras opções são おなか (barriga, estômago), あし (pé, perna) e えいがかん (cinema, sala de cinema).
+
+
+### 10. (recognition) Qual destas palavras significa "casaco, jaqueta"?
+- **Resposta:** `{"choices": ["うわぎ", "いつか", "えいが", "おかし"], "correct": "うわぎ"}`
+- うわぎ significa casaco, jaqueta. As outras opções são おかし (doces, guloseimas), えいが (filme, cinema) e いつか (dia cinco (do mês)).
+
+
+### 11. (recognition) Qual destas palavras significa "quando"?
+- **Resposta:** `{"choices": ["おなか", "えいが", "いつ", "あめ"], "correct": "いつ"}`
+- いつ significa quando. As outras opções são あめ (bala, doce), えいが (filme, cinema) e おなか (barriga, estômago).
+
+
+### 12. (recognition) Qual destas palavras significa "dentro, interior"?
+- **Resposta:** `{"choices": ["あめ", "あさごはん", "かお", "うち"], "correct": "うち"}`
+- うち significa dentro, interior. As outras opções são かお (rosto, cara), あさごはん (café da manhã) e あめ (chuva).
+
+
+### 13. (recognition) Qual destas palavras significa "cinema, sala de cinema"?
+- **Resposta:** `{"choices": ["うわぎ", "えいがかん", "えんぴつ", "いつ"], "correct": "えいがかん"}`
+- えいがかん significa cinema, sala de cinema. As outras opções são うわぎ (casaco, jaqueta), えんぴつ (lápis) e いつ (quando).
+
+
+### 14. (recognition) Qual destas palavras significa "café da manhã"?
+- **Resposta:** `{"choices": ["えいがかん", "あさごはん", "うわぎ", "おべんとう"], "correct": "あさごはん"}`
+- あさごはん significa café da manhã. As outras opções são おべんとう (marmita, bentô), うわぎ (casaco, jaqueta) e えいがかん (cinema, sala de cinema).
+
+
+### 15. (recognition) Qual destas palavras significa "pé, perna"?
+- **Resposta:** `{"choices": ["おかし", "うち", "いつ", "あし"], "correct": "あし"}`
+- あし significa pé, perna. As outras opções são うち (dentro, interior), いつ (quando) e おかし (doces, guloseimas).
+
+
+### 16. (recognition) Qual destas palavras significa "lápis"?
+- **Resposta:** `{"choices": ["あめ", "あたま", "えんぴつ", "あし"], "correct": "えんぴつ"}`
+- えんぴつ significa lápis. As outras opções são あし (pé, perna), あめ (bala, doce) e あたま (cabeça).
+
+
+### 17. (recognition) Qual destas palavras significa "cabeça"?
+- **Resposta:** `{"choices": ["おべんとう", "あたま", "かお", "もの"], "correct": "あたま"}`
+- あたま significa cabeça. As outras opções são かお (rosto, cara), もの (coisa, objeto) e おべんとう (marmita, bentô).
+
+
+### 18. (recognition) Qual destas palavras significa "rosto, cara"?
+- **Resposta:** `{"choices": ["いろ", "それ", "かお", "あし"], "correct": "かお"}`
+- かお significa rosto, cara. As outras opções são あし (pé, perna), それ (isso, esse) e いろ (cor).
+
+
+### 19. (recognition) Qual destas palavras significa "bala, doce"?
+- **Resposta:** `{"choices": ["かいしゃ", "あちら", "えんぴつ", "あめ"], "correct": "あめ"}`
+- あめ significa bala, doce. As outras opções são えんぴつ (lápis), あちら (ali, lá) e かいしゃ (empresa, companhia).
+
+
+### 20. (recognition) Qual destas palavras significa "dia cinco (do mês)"?
+- **Resposta:** `{"choices": ["いくら", "あめ", "いつか", "あなた"], "correct": "いつか"}`
+- いつか significa dia cinco (do mês). As outras opções são あなた (você), あめ (bala, doce) e いくら (quanto (preço, quantidade)).
+
+
+### 21. (recognition) Qual destes kanji significa "tempo, hora"?
+- **Resposta:** `{"choices": ["来", "時", "何", "分"], "correct": "時"}`
+- 時 significa tempo, hora. 分 significa dividir, parte; 来 significa vir, chegar; 何 significa o quê, quantos.
+
+

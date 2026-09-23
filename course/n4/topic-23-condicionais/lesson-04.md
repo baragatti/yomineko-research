@@ -98,3 +98,23 @@ O par 不 + 意 forma 不意 ("de repente, inesperado"); "sem que a mente espera
 - 意 tem uma única leitura viva nos compostos, a sino-japonesa イ, e ela vale tanto quando 意 abre a palavra quanto quando fecha. き é 気, じ é 時 e しゃ é 者: outros kanji, outros sons.
 
 
+### 8. (recognition) Qual destas palavras significa "educado, cortês"?
+- **Resposta:** `{"choices": ["たいてい", "ていねい", "ふくざつ", "さかん"], "correct": "ていねい"}`
+- ていねい significa educado, cortês. As outras opções são さかん (popular, em alta), たいてい (geralmente, na maioria das vezes) e ふくざつ (complicado, complexo).
+
+
+### 9. (recognition) Qual destas palavras significa "mentira"?
+- **Resposta:** `{"choices": ["れんしゅう", "ふとん", "ゆうべ", "うそ"], "correct": "うそ"}`
+- うそ significa mentira. As outras opções são ふとん (futon, colchão japonês), れんしゅう (prática, treino) e ゆうべ (ontem à noite, a noite passada).
+
+
+### 10. (recognition) Qual destas palavras significa "vergonhoso, constrangedor"?
+- **Resposta:** `{"choices": ["こわい", "はずかしい", "きびしい", "あさい"], "correct": "はずかしい"}`
+- はずかしい significa vergonhoso, constrangedor. As outras opções são あさい (raso), こわい (assustador, apavorante) e きびしい (rigoroso, severo).
+
+
+### 11. (recognition) Qual destas palavras significa "dizer (humilde), falar (humilde)"?
+- **Resposta:** `{"choices": ["さわる", "もうしあげる", "なげる", "きまる"], "correct": "もうしあげる"}`
+- もうしあげる significa dizer (humilde), falar (humilde). As outras opções são さわる (tocar, encostar (em)), きまる (ser decidido, ficar decidido) e なげる (jogar, arremessar).
+
+

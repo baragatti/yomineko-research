@@ -112,3 +112,53 @@ Três kanji para reconhecer, dois deles um par fácil de confundir:
 - 洋服 é 洋 (ocidental) + 服 (roupa), lido ようふく. É a roupa do dia a dia, por oposição à roupa tradicional japonesa.
 
 
+### 8. (recognition) Qual destas palavras significa "cortina"?
+- **Resposta:** `{"choices": ["カーテン", "わりあい", "すうがく", "わすれもの"], "correct": "カーテン"}`
+- カーテン significa cortina. As outras opções são わりあい (proporção, porcentagem), すうがく (matemática) e わすれもの (objeto esquecido, esquecimento).
+
+
+### 9. (recognition) Qual destas palavras significa "cem milhões, 100.000.000"?
+- **Resposta:** `{"choices": ["けいざい", "おく", "わけ", "れきし"], "correct": "おく"}`
+- おく significa cem milhões, 100.000.000. As outras opções são けいざい (economia), れきし (história) e わけ (motivo, razão).
+
+
+### 10. (cloze) Complete a frase: 私は＿＿するところです。 (Estou prestes a sair.)
+- **Resposta:** `{"text": "出発", "full": "私は出発するところです。"}`
+- A palavra que falta é 出発（しゅっぱつ）: partida, partir.
+- frases: `sent:tatoeba-155972`
+
+### 11. (recognition) Qual destas palavras significa "exposição, mostra (de arte)"?
+- **Resposta:** `{"choices": ["ぎじゅつ", "てんらんかい", "ワープロ", "ゆびわ"], "correct": "てんらんかい"}`
+- てんらんかい significa exposição, mostra (de arte). As outras opções são ぎじゅつ (tecnologia, técnica), ワープロ (processador de texto) e ゆびわ (anel).
+
+
+### 12. (recognition) Qual destas palavras significa "matemática"?
+- **Resposta:** `{"choices": ["すうがく", "にっき", "ごぞんじ", "てら"], "correct": "すうがく"}`
+- すうがく significa matemática. As outras opções são てら (templo (budista)), にっき (diário) e ごぞんじ (conhecimento (forma respeitosa), estar a par de).
+
+
+### 13. (recognition) Qual destas palavras significa "trem (esp. a vapor)"?
+- **Resposta:** `{"choices": ["てんらんかい", "そつぎょう", "せんぱい", "きしゃ"], "correct": "きしゃ"}`
+- きしゃ significa trem (esp. a vapor). As outras opções são てんらんかい (exposição, mostra (de arte)), そつぎょう (formatura, conclusão (de curso)) e せんぱい (veterano (na escola ou trabalho), sênior).
+
+
+### 14. (recognition) Qual destas palavras significa "alto-mar, mar aberto"?
+- **Resposta:** `{"choices": ["そつぎょう", "ほうそう", "け", "おき"], "correct": "おき"}`
+- おき significa alto-mar, mar aberto. As outras opções são け (pelo, pelos), ほうそう (transmissão, difusão) e そつぎょう (formatura, conclusão (de curso)).
+
+
+### 15. (recognition) Qual destas palavras significa "injeção, aplicação (de vacina)"?
+- **Resposta:** `{"choices": ["ちゅうしゃ", "えだ", "ドア", "せんもん"], "correct": "ちゅうしゃ"}`
+- ちゅうしゃ significa injeção, aplicação (de vacina). As outras opções são えだ (galho, ramo), せんもん (especialidade, área de especialização) e ドア (porta).
+
+
+### 16. (recognition) Qual destas palavras significa "descida (esqui), descer ladeira esquiando"?
+- **Resposta:** `{"choices": ["えんぴつ", "コーヒー", "かっこう", "ねだん"], "correct": "かっこう"}`
+- かっこう significa descida (esqui), descer ladeira esquiando. As outras opções são ねだん (preço, valor), コーヒー (café) e えんぴつ (lápis).
+
+
+### 17. (recognition) Qual destas palavras significa "alta hospitalar, sair do hospital"?
+- **Resposta:** `{"choices": ["ぼく", "ひるやすみ", "たいいん", "よやく"], "correct": "たいいん"}`
+- たいいん significa alta hospitalar, sair do hospital. As outras opções são ひるやすみ (pausa do almoço, horário de almoço), よやく (reserva, agendamento) e ぼく (eu (informal, masculino)).
+
+

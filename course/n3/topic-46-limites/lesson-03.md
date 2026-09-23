@@ -115,3 +115,68 @@ Faça os exercícios abaixo e confira cada explicação.
 - 降 tem duas leituras nativas de uso diário: 降る (ふる) é cair, para chuva e neve, e 降りる (おりる) é descer de um veículo. こう é a leitura chinesa, que fica para os compostos.
 
 
+### 8. (recognition) Qual destas palavras significa "arquitetura, construção (de edifícios)"?
+- **Resposta:** `{"choices": ["そで", "けいこう", "けんちく", "そん"], "correct": "けんちく"}`
+- けんちく significa arquitetura, construção (de edifícios). As outras opções são そん (prejuízo, perda), そで (manga (de roupa)) e けいこう (tendência, propensão).
+
+
+### 9. (recognition) Qual destas palavras significa "construção, obra"?
+- **Resposta:** `{"choices": ["ボーイ", "けんせつ", "けっかん", "ぎゃく"], "correct": "けんせつ"}`
+- けんせつ significa construção, obra. As outras opções são ボーイ (garçom, camareiro), けっかん (defeito, falha) e ぎゃく (inverso, oposto).
+
+
+### 10. (recognition) Qual destas palavras significa "inspeção, exame"?
+- **Resposta:** `{"choices": ["セット", "なかま", "ドラマ", "けんさ"], "correct": "けんさ"}`
+- けんさ significa inspeção, exame. As outras opções são なかま (companheiro, colega), ドラマ (drama, novela) e セット (conjunto, jogo).
+
+
+### 11. (recognition) Qual destas palavras significa "examinar, considerar"?
+- **Resposta:** `{"choices": ["けんとう", "けいさん", "ホコリ", "げき"], "correct": "けんとう"}`
+- けんとう significa examinar, considerar. As outras opções são げき (peça (teatral), drama), けいさん (cálculo, conta) e ホコリ (poeira, pó).
+
+
+### 12. (cloze) Complete a frase: ＿＿において電気のない生活は考えられない。 (Hoje em dia, não se pode imaginar a vida sem eletricidade.)
+- **Resposta:** `{"text": "現代", "full": "現代において電気のない生活は考えられない。"}`
+- A palavra que falta é 現代（げんだい）: a época atual, tempos modernos.
+- frases: `sent:tatoeba-4022623`
+
+### 13. (cloze) Complete a frase: この文は＿＿形です。 (Esta frase está no presente.)
+- **Resposta:** `{"text": "現在", "full": "この文は現在形です。"}`
+- A palavra que falta é 現在（げんざい）: o presente, atualmente.
+- frases: `sent:tatoeba-2243170`
+
+### 14. (cloze) Complete a frase: 私は＿＿に行ってみた。 (Eu fui até o local para ver.)
+- **Resposta:** `{"text": "現場", "full": "私は現場に行ってみた。"}`
+- A palavra que falta é 現場（げんば）: local (do crime, acidente), cena.
+- frases: `sent:tatoeba-157250`
+
+### 15. (cloze) Complete a frase: ＿＿へようこそ！ (Bem-vindo ao mundo real!)
+- **Resposta:** `{"text": "現実", "full": "現実へようこそ！"}`
+- A palavra que falta é 現実（げんじつ）: realidade.
+- frases: `sent:tatoeba-10721698`
+
+### 16. (recognition) Qual destas palavras significa "situação atual, estado atual"?
+- **Resposta:** `{"choices": ["今夜", "分野", "日本", "現状"], "correct": "現状"}`
+- 現状（げんじょう） significa situação atual, estado atual. As outras opções são 日本 (Japão), 今夜 (esta noite, hoje à noite) e 分野 (campo, área).
+
+
+### 17. (recognition) Qual destas palavras significa "fenômeno"?
+- **Resposta:** `{"choices": ["げんしょう", "ほうせき", "すべて", "ビル"], "correct": "げんしょう"}`
+- げんしょう significa fenômeno. As outras opções são ほうせき (joia, pedra preciosa), ビル (prédio, edifício) e すべて (tudo, todo).
+
+
+### 18. (cloze) Complete a frase: ＿＿が要るの。 (Eu preciso de dinheiro vivo.)
+- **Resposta:** `{"text": "現金", "full": "現金が要るの。"}`
+- A palavra que falta é 現金（げんきん）: dinheiro em espécie, dinheiro vivo.
+- frases: `sent:tatoeba-8667950`
+
+### 19. (cloze) Complete a frase: 何時なのか＿＿もつかない。 (Não faço ideia de que horas são.)
+- **Resposta:** `{"text": "見当", "full": "何時なのか見当もつかない。"}`
+- A palavra que falta é 見当（けんとう）: palpite, ideia (estimativa).
+- frases: `sent:tatoeba-8587104`
+
+### 20. (cloze) Complete a frase: ＿＿が好きです。 (Eu gosto de idiomas.)
+- **Resposta:** `{"text": "言語", "full": "言語が好きです。"}`
+- A palavra que falta é 言語（げんご）: língua, idioma.
+- frases: `sent:tatoeba-9834942`
+

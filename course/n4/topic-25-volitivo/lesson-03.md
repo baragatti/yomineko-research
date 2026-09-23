@@ -107,3 +107,28 @@ Três kanji que aparecem em palavras de intenção e descrição:
 - 重い é adjetivo-い: 重 guarda a raiz おも e い é okurigana. Serve tanto para peso físico quanto para algo 'grave, sério'.
 
 
+### 8. (cloze) Complete a frase: ＿＿にたくさん食べないで (Não come tudo de uma vez só.)
+- **Resposta:** `{"text": "一度", "full": "一度にたくさん食べないで"}`
+- A palavra que falta é 一度（いちど）: uma vez.
+- frases: `sent:gen-9ede389506d7`
+
+### 9. (recognition) Qual destas palavras significa "ferimento, machucado"?
+- **Resposta:** `{"choices": ["ねつ", "じゅうしょ", "けが", "は"], "correct": "けが"}`
+- けが significa ferimento, machucado. As outras opções são ねつ (febre), じゅうしょ (endereço) e は (folha (de planta)).
+
+
+### 10. (recognition) Qual destas palavras significa "sarar, curar-se"?
+- **Resposta:** `{"choices": ["おこる", "くれる", "なおる", "かざる"], "correct": "なおる"}`
+- なおる significa sarar, curar-se. As outras opções são くれる (escurecer, anoitecer), かざる (decorar, enfeitar) e おこる (ficar bravo, ficar com raiva).
+
+
+### 11. (recognition) Qual destas palavras significa "febre"?
+- **Resposta:** `{"choices": ["アフリカ", "ぶどう", "ひこうじょう", "ねつ"], "correct": "ねつ"}`
+- ねつ significa febre. As outras opções são ぶどう (uva, uvas), ひこうじょう (aeroporto, campo de aviação) e アフリカ (África).
+
+
+### 12. (recognition) Qual destas palavras significa "avó"?
+- **Resposta:** `{"choices": ["しゅっせき", "そぼ", "せいよう", "さいきん"], "correct": "そぼ"}`
+- そぼ significa avó. As outras opções são しゅっせき (presença, comparecimento), さいきん (recentemente, ultimamente) e せいよう (Ocidente, o mundo ocidental).
+
+

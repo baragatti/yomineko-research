@@ -124,3 +124,33 @@ Mnemônico de forma: imagine uma criança (o componente 子, 'filho/criança') s
 - 大学 se lê だいがく e junta 大 com 学: o lugar do estudo maior. Serve tanto para universidade quanto para faculdade.
 
 
+### 10. (cloze) Complete a frase: ＿＿があなたのギターですか。 (Qual é o seu violão?)
+- **Resposta:** `{"text": "どちら", "full": "どちらがあなたのギターですか。"}`
+- A palavra que falta é どちら: qual (dos dois).
+- frases: `sent:tatoeba-200823`
+
+### 11. (cloze) Complete a frase: それ＿＿？ (Você consegue fazer isso?)
+- **Resposta:** `{"text": "できる", "full": "それできる？"}`
+- A palavra que falta é できる: poder, ser capaz de.
+- frases: `sent:tatoeba-2080528`
+
+### 12. (recognition) Qual destas palavras significa "trabalhar (em emprego), ser empregado em"?
+- **Resposta:** `{"choices": ["かえす", "かりる", "かぶる", "つとめる"], "correct": "つとめる"}`
+- つとめる significa trabalhar (em emprego), ser empregado em. As outras opções são かりる (pegar emprestado), かぶる (pôr (na cabeça), usar (chapéu)) e かえす (devolver).
+
+
+### 13. (recognition) Qual destas palavras significa "mão"?
+- **Resposta:** `{"choices": ["て", "けさ", "おととし", "ともだち"], "correct": "て"}`
+- て significa mão. As outras opções são ともだち (amigo, amiga), けさ (esta manhã, hoje de manhã) e おととし (ano retrasado).
+
+
+### 14. (recognition) Qual destas palavras significa "pai"?
+- **Resposta:** `{"choices": ["あて", "どちら", "テーブル", "どうぶつ"], "correct": "あて"}`
+- あて（ちち） significa pai. As outras opções são どちら (qual (dos dois)), どうぶつ (animal) e テーブル (mesa).
+
+
+### 15. (recognition) Qual destas palavras significa "cansar-se, ficar cansado"?
+- **Resposta:** `{"choices": ["あく", "あける", "つかれる", "ちがう"], "correct": "つかれる"}`
+- つかれる significa cansar-se, ficar cansado. As outras opções são あく (abrir, abrir-se), ちがう (ser diferente, diferir) e あける (abrir (algo)).
+
+

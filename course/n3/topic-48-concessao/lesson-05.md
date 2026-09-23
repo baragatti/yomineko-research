@@ -102,3 +102,58 @@ O kanji 寒 ('frio') aparece em 寒い ('frio') e 寒気 ('ar frio, frio intenso
 - 毎晩 é 毎 ("cada") mais 晩 ("noite"). O kanji 晩 traz 日 ("sol, dia") à esquerda, o sinal de que ele marca uma hora do dia.
 
 
+### 8. (recognition) Qual destas palavras significa "mas, porém" (no sentido de só que)?
+- **Resposta:** `{"choices": ["そこで", "なぜなら", "だけど", "あるいは"], "correct": "だけど"}`
+- だけど significa mas, porém. As outras opções são なぜなら (porque, isso porque), あるいは (ou, ou então) e そこで (por isso, então).
+
+
+### 9. (recognition) Qual destas palavras significa "é que, afinal"?
+- **Resposta:** `{"choices": ["だが", "だけど", "それとも", "だって"], "correct": "だって"}`
+- だって significa é que, afinal. As outras opções são だが (mas, porém), だけど (mas, porém) e それとも (ou, ou então).
+
+
+### 10. (cloze) Complete a frase: ＿＿雨が降っても、私は出発する。 (Mesmo que chova, eu vou partir.)
+- **Resposta:** `{"text": "たとえ", "full": "たとえ雨が降っても、私は出発する。"}`
+- A palavra que falta é たとえ: mesmo que, ainda que.
+- frases: `sent:tatoeba-203526`
+
+### 11. (cloze) Complete a frase: 私は彼を＿＿。 (Eu salvei ele.)
+- **Resposta:** `{"text": "助けた", "full": "私は彼を助けた。"}`
+- A palavra que falta é 助ける（たすける）: ajudar, salvar. Na frase ela aparece como 助けた.
+- frases: `sent:tatoeba-1780150`
+
+### 12. (recognition) Qual destas palavras significa "bater, golpear"?
+- **Resposta:** `{"choices": ["たたく", "さける", "えがく", "ねがう"], "correct": "たたく"}`
+- たたく significa bater, golpear. As outras opções são さける (evitar, esquivar-se de), えがく (desenhar, pintar) e ねがう (desejar, almejar).
+
+
+### 13. (recognition) Qual destas palavras significa "grátis, de graça"?
+- **Resposta:** `{"choices": ["こっきょう", "ただ", "たいしょう", "ほお"], "correct": "ただ"}`
+- ただ significa grátis, de graça. As outras opções são こっきょう (fronteira (entre países)), たいしょう (alvo, público-alvo) e ほお (bochecha, face).
+
+
+### 14. (cloze) Complete a frase: 私の車でお＿＿まで送らせましょう。 (Deixa eu te levar até sua casa de carro.)
+- **Resposta:** `{"text": "宅", "full": "私の車でお宅まで送らせましょう。"}`
+- A palavra que falta é 宅（たく）: residência, lar.
+- frases: `sent:tatoeba-163448`
+
+### 15. (cloze) Complete a frase: ＿＿は終わった。 (A luta acabou.)
+- **Resposta:** `{"text": "戦い", "full": "戦いは終わった。"}`
+- A palavra que falta é 戦い（たたかい）: batalha, luta.
+- frases: `sent:tatoeba-141338`
+
+### 16. (cloze) Complete a frase: 私は死ぬまで＿＿。 (Eu vou lutar até morrer.)
+- **Resposta:** `{"text": "戦う", "full": "私は死ぬまで戦う。"}`
+- A palavra que falta é 戦う（たたかう）: lutar, combater.
+- frases: `sent:tatoeba-156512`
+
+### 17. (cloze) Complete a frase: 時が＿＿のは早い。 (O tempo passa rápido.)
+- **Resposta:** `{"text": "経つ", "full": "時が経つのは早い。"}`
+- A palavra que falta é 経つ（たつ）: passar (tempo), transcorrer.
+- frases: `sent:tatoeba-150689`
+
+### 18. (cloze) Complete a frase: ついに彼らは決定に＿＿。 (Por fim, eles chegaram a uma decisão.)
+- **Resposta:** `{"text": "達した", "full": "ついに彼らは決定に達した。"}`
+- A palavra que falta é 達する（たっする）: alcançar, atingir. Na frase ela aparece como 達した.
+- frases: `sent:tatoeba-202623`
+

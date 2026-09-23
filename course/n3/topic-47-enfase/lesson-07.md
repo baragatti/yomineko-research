@@ -90,3 +90,53 @@ Não confunda 全く (まったく, "completamente") com 丸で (まるで, "com
 - 守る (まもる) aqui significa "cumprir"; 約束 é o objeto (marcado por は ou を) e 必ず reforça "sem falta".
 
 
+### 6. (recognition) Qual destas palavras significa "mamãe, mãe"?
+- **Resposta:** `{"choices": ["そしき", "ほとけ", "せいせき", "ママ"], "correct": "ママ"}`
+- ママ significa mamãe, mãe. As outras opções são そしき (organização, estrutura), ほとけ (Buda) e せいせき (notas, desempenho).
+
+
+### 7. (recognition) Qual destas palavras significa "em caso de emergência, por via das dúvidas"?
+- **Resposta:** `{"choices": ["万一", "現金", "合格", "期間"], "correct": "万一"}`
+- 万一（まんいち） significa em caso de emergência, por via das dúvidas. As outras opções são 現金 (dinheiro em espécie, dinheiro vivo), 期間 (período, prazo) e 合格 (passar (em prova), ser aprovado).
+
+
+### 8. (recognition) Qual destas palavras significa "círculo, redondo"?
+- **Resposta:** `{"choices": ["ピアノ", "きょうぎ", "ゴール", "まる"], "correct": "まる"}`
+- まる significa círculo, redondo. As outras opções são ゴール (gol, linha de chegada), ピアノ (piano) e きょうぎ (competição, prova).
+
+
+### 9. (cloze) Complete a frase: ＿＿です。 (Concordo plenamente.)
+- **Resposta:** `{"text": "まったく", "full": "まったくです。"}`
+- A palavra que falta é まったく: completamente, totalmente.
+- frases: `sent:tatoeba-2390206`
+
+### 10. (cloze) Complete a frase: 社長に電話を＿＿。 (Vou transferir a ligação para o diretor.)
+- **Resposta:** `{"text": "回します", "full": "社長に電話を回します。"}`
+- A palavra que falta é 回す（まわす）: girar, rodar. Na frase ela aparece como 回します.
+- frases: `sent:tatoeba-149189`
+
+### 11. (cloze) Complete a frase: 家の＿＿には何かしらいつも仕事がある。 (Sempre tem alguma coisa para fazer em volta de casa.)
+- **Resposta:** `{"text": "回り", "full": "家の回りには何かしらいつも仕事がある。"}`
+- A palavra que falta é 回り（まわり）: arredores, redondezas.
+- frases: `sent:tatoeba-187049`
+
+### 12. (recognition) Qual destas palavras significa "convidar, chamar"?
+- **Resposta:** `{"choices": ["へる", "ほえる", "まねく", "こす"], "correct": "まねく"}`
+- まねく significa convidar, chamar. As outras opções são ほえる (latir, uivar), こす (atravessar, transpor) e へる (diminuir, reduzir-se).
+
+
+### 13. (recognition) Qual destas palavras significa "pinheiro"?
+- **Resposta:** `{"choices": ["きんゆう", "こきょう", "まつ", "こうりょ"], "correct": "まつ"}`
+- まつ significa pinheiro. As outras opções são こうりょ (levar em conta, considerar), きんゆう (finanças, financiamento) e こきょう (terra natal, cidade natal).
+
+
+### 14. (recognition) Qual destas palavras significa "feijão, grão"?
+- **Resposta:** `{"choices": ["ながめ", "こし", "たいど", "まめ"], "correct": "まめ"}`
+- まめ significa feijão, grão. As outras opções são たいど (atitude, postura), ながめ (vista, panorama) e こし (lombar, cintura).
+
+
+### 15. (cloze) Complete a frase: これは＿＿だ。 (Isso é um erro.)
+- **Resposta:** `{"text": "間違い", "full": "これは間違いだ。"}`
+- A palavra que falta é 間違い（まちがい）: erro, engano.
+- frases: `sent:tatoeba-1780176`
+

@@ -147,3 +147,63 @@ E alguns substantivos úteis do tópico:
 - 画 é 'imagem, desenho' e se lê ガ nesse sentido. 田 e 界 guardam mesmo o bloco 田, e 用 só se parece com ele, então repare no contorno: só 画 fica emoldurado em cima e embaixo.
 
 
+### 12. (recognition) Qual destas palavras significa "lugar, local"?
+- **Resposta:** `{"choices": ["おねえさん", "ばしょ", "さっき", "むかし"], "correct": "ばしょ"}`
+- ばしょ significa lugar, local. As outras opções são むかし (antigamente, tempos antigos), さっき (agora há pouco, há pouco) e おねえさん (irmã mais velha).
+
+
+### 13. (recognition) Qual destas palavras significa "aumentar, crescer"?
+- **Resposta:** `{"choices": ["する", "なさる", "ふえる", "ひかる"], "correct": "ふえる"}`
+- ふえる significa aumentar, crescer. As outras opções são する (fazer), ひかる (brilhar, reluzir) e なさる (fazer (forma honorífica/respeitosa de する), fazer (referindo-se à ação de um superior)).
+
+
+### 14. (cloze) Complete a frase: いつ＿＿つもりですか？ (Quando você pretende começar?)
+- **Resposta:** `{"text": "始める", "full": "いつ始めるつもりですか？"}`
+- A palavra que falta é 始める（はじめる）: começar, iniciar.
+- frases: `sent:tatoeba-10014826`
+
+### 15. (recognition) Qual destas palavras significa "entregar, enviar"?
+- **Resposta:** `{"choices": ["むかえる", "にげる", "とどける", "すてる"], "correct": "とどける"}`
+- とどける significa entregar, enviar. As outras opções são むかえる (ir buscar, receber), すてる (jogar fora, descartar) e にげる (fugir, escapar).
+
+
+### 16. (recognition) Qual destas palavras significa "coração, mente"?
+- **Resposta:** `{"choices": ["毎日", "心", "六日", "火事"], "correct": "心"}`
+- 心（こころ） significa coração, mente. As outras opções são 六日 (dia 6 (do mês)), 毎日 (todo dia, todos os dias) e 火事 (incêndio, fogo (destrutivo)).
+
+
+### 17. (cloze) Complete a frase: なにか書くものを＿＿。 (Me dá alguma coisa pra escrever.)
+- **Resposta:** `{"text": "くれ", "full": "なにか書くものをくれ。"}`
+- A palavra que falta é くれる: escurecer, anoitecer. Na frase ela aparece como くれ.
+- frases: `sent:tatoeba-2242447`
+
+### 18. (recognition) Qual destas palavras significa "restar, sobrar"?
+- **Resposta:** `{"choices": ["しらべる", "のこる", "とどける", "ふえる"], "correct": "のこる"}`
+- のこる significa restar, sobrar. As outras opções são とどける (entregar, enviar), ふえる (aumentar, crescer) e しらべる (investigar, examinar).
+
+
+### 19. (recognition) Qual destas palavras significa "informar, avisar"?
+- **Resposta:** `{"choices": ["見える", "知らせる", "立てる", "無くなる"], "correct": "知らせる"}`
+- 知らせる（しらせる） significa informar, avisar. As outras opções são 無くなる (acabar, sumir), 見える (ser visível, estar à vista) e 立てる (pôr de pé, erguer).
+
+
+### 20. (recognition) Qual destas palavras significa "pôr de pé, erguer"?
+- **Resposta:** `{"choices": ["立てる", "開く", "行う", "上がる"], "correct": "立てる"}`
+- 立てる（たてる） significa pôr de pé, erguer. As outras opções são 開く (abrir, abrir-se), 行う (realizar, executar) e 上がる (subir, aumentar).
+
+
+### 21. (recognition) Qual destas palavras significa "resposta"?
+- **Resposta:** `{"choices": ["四つ", "西", "場合", "答え"], "correct": "答え"}`
+- 答え（こたえ） significa resposta. As outras opções são 場合 (caso, situação), 四つ (quatro (coisas)) e 西 (oeste, ocidente).
+
+
+### 22. (recognition) Qual destas palavras significa "dicionário"?
+- **Resposta:** `{"choices": ["じてん", "よう", "くも", "ねぼう"], "correct": "じてん"}`
+- じてん significa dicionário. As outras opções são よう (afazer, tarefa), くも (nuvem) e ねぼう (dormir demais, preguiça (de levantar)).
+
+
+### 23. (recognition) Qual destas palavras significa "escolher, selecionar"?
+- **Resposta:** `{"choices": ["しらべる", "えらぶ", "よる", "とどける"], "correct": "えらぶ"}`
+- えらぶ significa escolher, selecionar. As outras opções são しらべる (investigar, examinar), とどける (entregar, enviar) e よる (passar (em um lugar), dar uma passada).
+
+

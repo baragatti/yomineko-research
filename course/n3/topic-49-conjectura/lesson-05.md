@@ -106,3 +106,58 @@ O kanji 靴 ('sapato, calçado') aparece em 靴 ('sapato') e 靴下 ('meia'). Te
 - 髪 (かみ) é o cabelo da cabeça. Cuidado com os homófonos já vistos: 紙 também é かみ ('papel') e 上 tem a leitura かみ ('acima').
 
 
+### 9. (cloze) Complete a frase: この写真を見る＿＿に、父を思い出す。 (Toda vez que vejo esta foto, me lembro do meu pai.)
+- **Resposta:** `{"text": "たび", "full": "この写真を見るたびに、父を思い出す。"}`
+- A palavra que falta é たび: vez, ocasião.
+- frases: `sent:tatoeba-221453`
+
+### 10. (cloze) Complete a frase: ＿＿に頼るな。 (Não dependa dos outros.)
+- **Resposta:** `{"text": "他人", "full": "他人に頼るな。"}`
+- A palavra que falta é 他人（たにん）: estranho, outras pessoas.
+- frases: `sent:tatoeba-138545`
+
+### 11. (cloze) Complete a frase: この科目は何＿＿ですか。 (Esta matéria vale quantos créditos?)
+- **Resposta:** `{"text": "単位", "full": "この科目は何単位ですか。"}`
+- A palavra que falta é 単位（たんい）: unidade (de medida).
+- frases: `sent:tatoeba-222795`
+
+### 12. (recognition) Qual destas palavras significa "insuportável, intolerável"?
+- **Resposta:** `{"choices": ["たまらない", "かみのけ", "どうしても", "よろしく"], "correct": "たまらない"}`
+- たまらない significa insuportável, intolerável. As outras opções são かみのけ (cabelo, fio de cabelo), どうしても (de qualquer jeito, custe o que custar) e よろしく (prazer (em conhecer), conto com você).
+
+
+### 13. (cloze) Complete a frase: ＿＿すみません。 (Desculpa incomodar de novo.)
+- **Resposta:** `{"text": "度々", "full": "度々すみません。"}`
+- A palavra que falta é 度々（たびたび）: frequentemente, seguidamente.
+- frases: `sent:tatoeba-10193299`
+
+### 14. (cloze) Complete a frase: パセリを一＿＿ください。 (Me vê um maço de salsinha.)
+- **Resposta:** `{"text": "束", "full": "パセリを一束ください。"}`
+- A palavra que falta é 束（たば）: maço, feixe.
+- frases: `sent:tatoeba-10472541`
+
+### 15. (recognition) Qual destas palavras significa "degrau, lance de escada"?
+- **Resposta:** `{"choices": ["下り", "法", "段", "楽しみ"], "correct": "段"}`
+- 段（だん） significa degrau, lance de escada. As outras opções são 下り (descida, trajeto de descida), 法 (lei, norma) e 楽しみ (diversão, prazer).
+
+
+### 16. (recognition) Qual destas palavras significa "bola, esfera"?
+- **Resposta:** `{"choices": ["たま", "ね", "タイプライター", "ただ"], "correct": "たま"}`
+- たま significa bola, esfera. As outras opções são ただ (grátis, de graça), タイプライター (máquina de escrever) e ね (raiz (de planta)).
+
+
+### 17. (recognition) Qual destas palavras significa "semente, caroço"?
+- **Resposta:** `{"choices": ["種", "研究", "思想", "景気"], "correct": "種"}`
+- 種（たね） significa semente, caroço. As outras opções são 研究 (pesquisa, estudo), 思想 (pensamento, ideologia) e 景気 (situação econômica, conjuntura).
+
+
+### 18. (cloze) Complete a frase: ものは＿＿だよ。 (Tentando é que a gente descobre.)
+- **Resposta:** `{"text": "試し", "full": "ものは試しだよ。"}`
+- A palavra que falta é 試し（ためし）: teste, experiência.
+- frases: `sent:tatoeba-193176`
+
+### 19. (recognition) Qual destas palavras significa "calar-se, ficar quieto"?
+- **Resposta:** `{"choices": ["くらす", "たたく", "だまる", "ふせぐ"], "correct": "だまる"}`
+- だまる significa calar-se, ficar quieto. As outras opções são たたく (bater, golpear), くらす (viver, levar a vida) e ふせぐ (prevenir, proteger contra).
+
+

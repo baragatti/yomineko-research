@@ -117,3 +117,43 @@ O keigo é cheio de cortesia, mas a escrita não foge dos kanji. Hoje você ganh
 - 漢 traz o radical da água à esquerda, herdado do nome de um rio da China. Junto de 字 (caractere), forma o nome do próprio sistema que você está aprendendo.
 
 
+### 8. (recognition) Qual destas palavras significa "ultimamente, hoje em dia"?
+- **Resposta:** `{"choices": ["ぜんぜん", "そろそろ", "このごろ", "こう"], "correct": "このごろ"}`
+- このごろ significa ultimamente, hoje em dia. As outras opções são こう (assim, deste jeito), ぜんぜん ((não) ... de jeito nenhum, nada) e そろそろ (logo, já já).
+
+
+### 9. (recognition) Qual destas palavras significa "revisão (de matéria)"?
+- **Resposta:** `{"choices": ["わりあい", "ふくしゅう", "メガネ", "りよう"], "correct": "ふくしゅう"}`
+- ふくしゅう significa revisão (de matéria). As outras opções são わりあい (proporção, porcentagem), りよう (uso, utilização) e メガネ (óculos).
+
+
+### 10. (cloze) Complete a frase: ＿＿料理がございますが。 (Nós temos um prato especial...)
+- **Resposta:** `{"text": "特別", "full": "特別料理がございますが。"}`
+- A palavra que falta é 特別（とくべつ）: especial, particular.
+- frases: `sent:tatoeba-123440`
+
+### 11. (recognition) Qual destas palavras significa "vida, cotidiano"?
+- **Resposta:** `{"choices": ["カーテン", "スーパー", "せいかつ", "ひげ"], "correct": "せいかつ"}`
+- せいかつ significa vida, cotidiano. As outras opções são スーパー (supermercado), カーテン (cortina) e ひげ (barba, bigode).
+
+
+### 12. (recognition) Qual destas palavras significa "consulta, conversa para pedir conselho"?
+- **Resposta:** `{"choices": ["そうだん", "かっこう", "タクシー", "きしゃ"], "correct": "そうだん"}`
+- そうだん significa consulta, conversa para pedir conselho. As outras opções são きしゃ (trem (esp. a vapor)), かっこう (descida (esqui), descer ladeira esquiando) e タクシー (táxi).
+
+
+### 13. (cloze) Complete a frase: いろんな人が＿＿をします (Muitas pessoas diferentes fazem pesquisa.)
+- **Resposta:** `{"text": "研究", "full": "いろんな人が研究をします"}`
+- A palavra que falta é 研究（けんきゅう）: pesquisa, estudo.
+- frases: `sent:jec-0121`
+
+### 14. (cloze) Complete a frase: テストは＿＿じゃなかった (A prova não foi fácil.)
+- **Resposta:** `{"text": "かんたん", "full": "テストはかんたんじゃなかった"}`
+- A palavra que falta é かんたん: simples, fácil.
+- frases: `sent:gen-bf196c5c616d`
+
+### 15. (cloze) Complete a frase: ステーキとサラダの＿＿をしました。 (Fiz uma refeição de bife com salada.)
+- **Resposta:** `{"text": "食事", "full": "ステーキとサラダの食事をしました。"}`
+- A palavra que falta é 食事（しょくじ）: refeição.
+- frases: `sent:tatoeba-214629`
+

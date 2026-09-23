@@ -24,18 +24,23 @@
   "needs": [
     {
       "type": "lesson",
+      "ref": "les:n3-causa-01",
+      "note": "Apresenta o kanji 論, que aparece nesta lição."
+    },
+    {
+      "type": "lesson",
+      "ref": "les:n3-estado-01",
+      "note": "Apresenta o kanji 疑, que aparece nesta lição."
+    },
+    {
+      "type": "lesson",
+      "ref": "les:n3-intencao-01",
+      "note": "Apresenta o kanji 念, que aparece nesta lição."
+    },
+    {
+      "type": "lesson",
       "ref": "les:n3-perspectiva-04",
       "note": "Apresenta o kanji 部, que aparece nesta lição."
-    },
-    {
-      "type": "lesson",
-      "ref": "les:n3-tempo-03",
-      "note": "Apresenta o kanji 続, que aparece nesta lição."
-    },
-    {
-      "type": "lesson",
-      "ref": "les:n3-tempo-04",
-      "note": "Apresenta o kanji 点, que aparece nesta lição."
     }
   ],
   "unlocks": [
@@ -4046,8 +4051,350 @@
         "pt-BR": "非常に (ひじょうに) é extremamente: o que não (非) é comum (常). Sem o に, 非常 é o substantivo emergência."
       },
       "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-deveres-02-19",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Qual destas palavras significa \"abastecimento, fornecimento\"?"
+      },
+      "answer": {
+        "choices": [
+          "ぶたい",
+          "おひる",
+          "きょうきゅう",
+          "てつ"
+        ],
+        "correct": "きょうきゅう"
+      },
+      "explanation": {
+        "pt-BR": "きょうきゅう significa abastecimento, fornecimento. As outras opções são てつ (ferro), おひる (meio-dia, hora do almoço) e ぶたい (palco, tablado)."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-deveres-02-20",
+      "type": "cloze",
+      "prompt": {
+        "pt-BR": "Complete a frase: 私は妹と＿＿で部屋を使っている。 (Divido o quarto com a minha irmã mais nova.)"
+      },
+      "answer": {
+        "text": "共同",
+        "full": "私は妹と共同で部屋を使っている。"
+      },
+      "explanation": {
+        "pt-BR": "A palavra que falta é 共同（きょうどう）: cooperação, colaboração."
+      },
+      "sentence_refs": [
+        "sent:tatoeba-152777"
+      ]
+    },
+    {
+      "id": "ex:n3-deveres-02-21",
+      "type": "cloze",
+      "prompt": {
+        "pt-BR": "Complete a frase: 私と彼は＿＿することが多い。 (Eu e ele temos muita coisa em comum.)"
+      },
+      "answer": {
+        "text": "共通",
+        "full": "私と彼は共通することが多い。"
+      },
+      "explanation": {
+        "pt-BR": "A palavra que falta é 共通（きょうつう）: comum, compartilhado."
+      },
+      "sentence_refs": [
+        "sent:tatoeba-164869"
+      ]
+    },
+    {
+      "id": "ex:n3-deveres-02-22",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Qual destas palavras significa \"cooperação, colaboração\" (no sentido de ajuda)?"
+      },
+      "answer": {
+        "choices": [
+          "かんしゃ",
+          "かんさつ",
+          "つかれ",
+          "きょうりょく"
+        ],
+        "correct": "きょうりょく"
+      },
+      "explanation": {
+        "pt-BR": "きょうりょく significa cooperação, colaboração. As outras opções são かんさつ (observação), かんしゃ (gratidão, agradecimento) e つかれ (cansaço, fadiga)."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-deveres-02-23",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Qual destas palavras significa \"doação\"?"
+      },
+      "answer": {
+        "choices": [
+          "せきにん",
+          "ブレーキ",
+          "きふ",
+          "ロケット"
+        ],
+        "correct": "きふ"
+      },
+      "explanation": {
+        "pt-BR": "きふ significa doação. As outras opções são せきにん (responsabilidade, encargo), ブレーキ (freio, breque) e ロケット (foguete)."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-deveres-02-24",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Qual destas palavras significa \"ênfase, destaque\"?"
+      },
+      "answer": {
+        "choices": [
+          "きょうきゅう",
+          "きょうちょう",
+          "ふまん",
+          "かんり"
+        ],
+        "correct": "きょうちょう"
+      },
+      "explanation": {
+        "pt-BR": "きょうちょう significa ênfase, destaque. As outras opções são きょうきゅう (abastecimento, fornecimento), かんり (gestão, administração) e ふまん (insatisfação, descontentamento)."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-deveres-02-25",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Qual destas palavras significa \"de repente, subitamente\"?"
+      },
+      "answer": {
+        "choices": [
+          "必ずしも",
+          "次々",
+          "今にも",
+          "急に"
+        ],
+        "correct": "急に"
+      },
+      "explanation": {
+        "pt-BR": "急に（きゅうに） significa de repente, subitamente. As outras opções são 必ずしも (não necessariamente, nem sempre), 次々 (um após o outro, sucessivamente) e 今にも (a qualquer momento, prestes a)."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-deveres-02-26",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Qual destas palavras significa \"repentino, abrupto\"?"
+      },
+      "answer": {
+        "choices": [
+          "かわいそう",
+          "かんぜん",
+          "てきせつ",
+          "きゅうげき"
+        ],
+        "correct": "きゅうげき"
+      },
+      "explanation": {
+        "pt-BR": "きゅうげき significa repentino, abrupto. As outras opções são てきせつ (adequado, apropriado), かんぜん (completo, perfeito) e かわいそう (coitado, digno de pena)."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-deveres-02-27",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Qual destas palavras significa \"professor, docente\"?"
+      },
+      "answer": {
+        "choices": [
+          "きょうし",
+          "プロ",
+          "かん",
+          "かんさつ"
+        ],
+        "correct": "きょうし"
+      },
+      "explanation": {
+        "pt-BR": "きょうし significa professor, docente. As outras opções são かん (intuição, pressentimento), かんさつ (observação) e プロ (profissional, profissa)."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-deveres-02-28",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Qual destas palavras significa \"professor universitário, catedrático\"?"
+      },
+      "answer": {
+        "choices": [
+          "きょうじゅ",
+          "ぜいたく",
+          "いたみ",
+          "かもく"
+        ],
+        "correct": "きょうじゅ"
+      },
+      "explanation": {
+        "pt-BR": "きょうじゅ significa professor universitário, catedrático. As outras opções são いたみ (dor), かもく (matéria, disciplina) e ぜいたく (luxo, extravagância)."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-deveres-02-29",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Qual destas palavras significa \"lamentável/de dar pena/digno de pena, sinto muito (por alguém)/que é uma pena\"?"
+      },
+      "answer": {
+        "choices": [
+          "せいけつ",
+          "きゅうげき",
+          "わがまま",
+          "きのどく"
+        ],
+        "correct": "きのどく"
+      },
+      "explanation": {
+        "pt-BR": "きのどく significa lamentável/de dar pena/digno de pena, sinto muito (por alguém)/que é uma pena. As outras opções são きゅうげき (repentino, abrupto), わがまま (egoísta, mimado) e せいけつ (limpo, higiênico)."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-deveres-02-30",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Qual destas palavras significa \"regra, norma\"?"
+      },
+      "answer": {
+        "choices": [
+          "期待",
+          "決まり",
+          "生まれ",
+          "記入"
+        ],
+        "correct": "決まり"
+      },
+      "explanation": {
+        "pt-BR": "決まり（きまり） significa regra, norma. As outras opções são 記入 (preencher, anotar), 生まれ (nascimento, naturalidade) e 期待 (esperar, ter expectativa)."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-deveres-02-31",
+      "type": "cloze",
+      "prompt": {
+        "pt-BR": "Complete a frase: 私は＿＿に思った。 (Fiquei em dúvida.)"
+      },
+      "answer": {
+        "text": "疑問",
+        "full": "私は疑問に思った。"
+      },
+      "explanation": {
+        "pt-BR": "A palavra que falta é 疑問（ぎもん）: dúvida, questionamento."
+      },
+      "sentence_refs": [
+        "sent:tatoeba-2245823"
+      ]
+    },
+    {
+      "id": "ex:n3-deveres-02-32",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Qual destas palavras significa \"dever, obrigação\"?"
+      },
+      "answer": {
+        "choices": [
+          "かわ",
+          "ぎむ",
+          "どうろ",
+          "きろく"
+        ],
+        "correct": "ぎむ"
+      },
+      "explanation": {
+        "pt-BR": "ぎむ significa dever, obrigação. As outras opções são どうろ (estrada, via), きろく (registro, anotação) e かわ (couro)."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-deveres-02-33",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Qual destas palavras significa \"boas maneiras, etiqueta\" (no sentido de comportamento)?"
+      },
+      "answer": {
+        "choices": [
+          "ぎょうぎ",
+          "へいきん",
+          "きかい",
+          "きほん"
+        ],
+        "correct": "ぎょうぎ"
+      },
+      "explanation": {
+        "pt-BR": "ぎょうぎ significa boas maneiras, etiqueta. As outras opções são きほん (base, fundamento), きかい (máquina, maquinário) e へいきん (média)."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-deveres-02-34",
+      "type": "cloze",
+      "prompt": {
+        "pt-BR": "Complete a frase: ＿＿すべき一日となりました。 (Foi um dia para ficar na memória.)"
+      },
+      "answer": {
+        "text": "記念",
+        "full": "記念すべき一日となりました。"
+      },
+      "explanation": {
+        "pt-BR": "A palavra que falta é 記念（きねん）: comemoração, memória."
+      },
+      "sentence_refs": [
+        "sent:tatoeba-11254025"
+      ]
+    },
+    {
+      "id": "ex:n3-deveres-02-35",
+      "type": "cloze",
+      "prompt": {
+        "pt-BR": "Complete a frase: もう＿＿はやめよう。 (Chega de discussão.)"
+      },
+      "answer": {
+        "text": "議論",
+        "full": "もう議論はやめよう。"
+      },
+      "explanation": {
+        "pt-BR": "A palavra que falta é 議論（ぎろん）: discussão, debate."
+      },
+      "sentence_refs": [
+        "sent:tatoeba-194225"
+      ]
+    },
+    {
+      "id": "ex:n3-deveres-02-36",
+      "type": "cloze",
+      "prompt": {
+        "pt-BR": "Complete a frase: 彼は＿＿を務めた。 (Ele atuou como presidente da assembleia.)"
+      },
+      "answer": {
+        "text": "議長",
+        "full": "彼は議長を務めた。"
+      },
+      "explanation": {
+        "pt-BR": "A palavra que falta é 議長（ぎちょう）: presidente (de assembleia), moderador."
+      },
+      "sentence_refs": [
+        "sent:tatoeba-108517"
+      ]
     }
   ],
-  "body": "<heading level=\"2\"><text>Conselho, necessidade e dever</text></heading>\n\n<p><text>Agora vamos aprender a orientar alguém em três tons diferentes: sugerir o que convém fazer, tranquilizar dizendo que algo não é preciso, e afirmar com firmeza o que se deve fazer. Todas as três usam o verbo na forma de dicionário (forma simples), então preste atenção a esse detalhe comum.</text></p>\n\n<heading level=\"3\"><text>～ことだ: o ideal é, o melhor a fazer é</text></heading>\n<p><text>A estrutura </text><grammar ref=\"gram:n3-koto-da\"/><text> dá um conselho ou recomendação geral, dizendo o que convém fazer numa situação. Não é uma ordem direta, e sim a indicação do que é sensato. Soa como o conselho de quem tem certa experiência sobre o assunto.</text></p>\n<p><text>Monta-se com o verbo na forma de dicionário mais </text><jp>ことだ</jp><text>. Exemplo: </text><jp reading=\"けんこうのためにはまいにちうんどうすることだ\">健康のためには毎日運動することだ</jp><text> ('para a saúde, o ideal é se exercitar todo dia'). A forma negativa também funciona como conselho: </text><jp reading=\"むりをしないことだ\">無理をしないことだ</jp><text> ('o melhor é não se forçar').</text></p>\n<note type=\"tip\"><p><text>É um conselho impessoal e genérico, diferente de </text><jp>～ほうがいい</jp><text>, que compara opções e soa mais brando e próximo. </text><jp>ことだ</jp><text> tem um quê de 'a regra de ouro é...'.</text></p></note>\n<note type=\"l1-pitfall\"><p><text>Armadilha PT: não confunda este </text><jp>ことだ</jp><text> (conselho) com o </text><jp>こと</jp><text> que apenas nominaliza um verbo. O que marca o conselho é o verbo na forma de dicionário logo antes de </text><jp>ことだ</jp><text>, fechando a frase.</text></p></note>\n\n<heading level=\"3\"><text>～ことはない: não precisa, não há por que</text></heading>\n<p><text>A estrutura </text><grammar ref=\"gram:n3-koto-wa-nai\"/><text> indica que não é necessário fazer algo, que não há motivo para tal ação. Equivale a 'não precisa', 'não há por que'. É muito usada para tranquilizar ou aconselhar alguém, dizendo que certo esforço ou preocupação é dispensável.</text></p>\n<p><text>Forma-se com o verbo na forma de dicionário mais </text><jp>ことはない</jp><text>. Exemplo: </text><jp reading=\"そんなにしんぱいすることはない\">そんなに心配することはない</jp><text> ('não precisa se preocupar tanto'), </text><jp reading=\"あやまることはない\">謝ることはない</jp><text> ('não há por que pedir desculpa').</text></p>\n<note type=\"l1-pitfall\"><p><text>Armadilha PT: não confunda </text><jp>～ことはない</jp><text> (desnecessidade) com </text><jp>～ことがない</jp><text> ('nunca fiz', experiência). E lembre: 'não precisa' não quer dizer 'é proibido'. A frase só diz que a ação é dispensável; a pessoa fica livre para fazer ou não.</text></p></note>\n\n<heading level=\"3\"><text>～べきだ: deveria, é o certo</text></heading>\n<p><text>A estrutura </text><grammar ref=\"gram:n3-beki-da\"/><text> exprime obrigação ou aquilo que é correto fazer segundo um princípio, moral ou bom senso: 'deveria', 'é o certo'. É mais forte e normativo que um simples conselho; o falante afirma que aquela ação é a coisa certa.</text></p>\n<p><text>Monta-se com o verbo na forma de dicionário mais </text><jp>べきだ</jp><text>. Exemplo: </text><jp reading=\"やくそくはまもるべきだ\">約束は守るべきだ</jp><text> ('a gente deveria cumprir as promessas'). Com </text><jp>する</jp><text> existe a forma clássica </text><jp reading=\"すべきだ\">すべきだ</jp><text>, ainda muito comum. No passado, </text><jp reading=\"べきだった\">べきだった</jp><text> = 'deveria ter feito'. Na negativa, </text><jp reading=\"べきではない\">べきではない</jp><text> = 'não se deve'.</text></p>\n<note type=\"warning\"><p><text>Soa autoritário e opinativo. Evite dirigi-lo a superiores, pois pode parecer que você está dando ordem.</text></p></note>\n<note type=\"l1-pitfall\"><p><text>Armadilha PT: </text><jp>べきだ</jp><text> é o 'deve' de obrigação moral, enquanto o 'deve' de dedução ('ele deve estar em casa') é </text><jp>はずだ</jp><text>. Não confunda os dois 'deves' do português.</text></p></note>\n\n<heading level=\"3\"><text>Vocabulário de deveres e relações</text></heading>\n<p><text>Palavras ligadas a regras, dever e convivência (mostradas em kana):</text></p>\n<list ordered=\"false\">\n <item><vocab ref=\"vocab:1225900\"/><text> (</text><jp>ぎむ</jp><text>) = 'dever, obrigação'. Ex.: 'cumprir o seu dever é o certo'.</text></item>\n <item><vocab ref=\"vocab:1609660\"/><text> (</text><jp>きまり</jp><text>) = 'regra, norma'.</text></item>\n <item><vocab ref=\"vocab:1281890\"/><text> (</text><jp>ぎょうぎ</jp><text>) = 'modos, boas maneiras'. Como em 'a gente deveria ter bons modos'.</text></item>\n <item><text> (</text><jp>きじゅん</jp><text>) = 'critério, padrão de referência'.</text></item>\n <item><vocab ref=\"vocab:1225630\"/><text> (</text><jp>ぎもん</jp><text>) = 'dúvida, questionamento'.</text></item>\n <item><vocab ref=\"vocab:1226160\"/><text> (</text><jp>ぎろん</jp><text>) = 'debate, discussão'.</text></item>\n <item><vocab ref=\"vocab:1236470\"/><text> (</text><jp>きょうちょう</jp><text>) = 'ênfase, destaque'.</text></item>\n <item><vocab ref=\"vocab:1591720\"/><text> (</text><jp>きょうりょく</jp><text>) = 'cooperação, apoio'.</text></item>\n <item><vocab ref=\"vocab:1591660\"/><text> (</text><jp>きょうどう</jp><text>) = 'cooperação, parceria, conjunto'.</text></item>\n <item><vocab ref=\"vocab:1234700\"/><text> (</text><jp>きょうつう</jp><text>) = 'comum, compartilhado'.</text></item>\n <item><vocab ref=\"vocab:1233630\"/><text> (</text><jp>きょうきゅう</jp><text>) = 'fornecimento, abastecimento'.</text></item>\n <item><vocab ref=\"vocab:1237130\"/><text> (</text><jp>きょうし</jp><text>) = 'professor, instrutor'.</text></item>\n <item><vocab ref=\"vocab:1237160\"/><text> (</text><jp>きょうじゅ</jp><text>) = 'professor universitário, catedrático'.</text></item>\n <item><vocab ref=\"vocab:1226140\"/><text> (</text><jp>ぎちょう</jp><text>) = 'presidente de assembleia, mediador'.</text></item>\n <item><vocab ref=\"vocab:1223340\"/><text> (</text><jp>きねん</jp><text>) = 'comemoração, lembrança'.</text></item>\n <item><vocab ref=\"vocab:1221770\"/><text> (</text><jp>きのどく</jp><text>) = 'lamentável, coitado, digno de pena'.</text></item>\n <item><vocab ref=\"vocab:1591400\"/><text> (</text><jp>きふ</jp><text>) = 'doação, contribuição'. Ex.: 'não precisa doar tudo'.</text></item>\n <item><vocab ref=\"vocab:2269050\"/><text> (</text><jp>きゅうに</jp><text>) = 'de repente, na hora'.</text></item>\n <item><vocab ref=\"vocab:1228680\"/><text> (</text><jp>きゅうげき</jp><text>) = 'repentino, abrupto'.</text></item>\n</list>\n\n<heading level=\"3\"><text>Kanji novos</text></heading>\n<p><text>O kanji </text><kanji ref=\"kanji:命\"/><text> ('vida, destino, ordem') aparece em </text><jp reading=\"いのち\">命</jp><text> ('vida') e </text><jp reading=\"めいれい\">命令</jp><text> ('ordem, comando'). Pense numa boca que dá uma ordem sob um teto.</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:守\"/><text> ('guardar, proteger') mostra uma mão (</text><jp reading=\"すん\">寸</jp><text>) sob um teto (</text><jp>宀</jp><text>): proteger a casa. Está em </text><jp reading=\"まもる\">守る</jp><text> ('proteger, cumprir').</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:非\"/><text> ('não, erro') é um prefixo de negação, como em </text><jp reading=\"ひじょうに\">非常に</jp><text> ('extremamente') e </text><jp reading=\"ひじょうぐち\">非常口</jp><text> ('saída de emergência'). As duas metades viradas para fora lembram algo 'fora do certo'.</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:失\"/><text> ('perder, falha') aparece em </text><jp reading=\"しっぱい\">失敗</jp><text> ('fracasso') e </text><jp reading=\"うしなう\">失う</jp><text> ('perder'). Pense numa mão deixando algo escapar.</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:負\"/><text> ('derrota, perder, carregar') aparece em </text><jp reading=\"まける\">負ける</jp><text> ('perder, ser derrotado'). Tem o radical de 'concha/dinheiro' (</text><jp reading=\"かい\">貝</jp><text>) embaixo, como quem carrega um peso.</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:退\"/><text> ('recuar, retirar-se') traz o radical de movimento (</text><jp>辶</jp><text>): andar para trás. Está em </text><jp reading=\"たいいん\">退院</jp><text> ('receber alta do hospital').</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:落\"/><text> ('cair, queda') tem o radical de planta (</text><jp>艹</jp><text>) no topo, como folha que cai. Aparece em </text><jp reading=\"おちる\">落ちる</jp><text> ('cair') e </text><jp reading=\"おとす\">落とす</jp><text> ('deixar cair').</text></p>\n\n<heading level=\"3\"><text>Exemplos do banco</text></heading>\n<sentence ref=\"sent:tatoeba-8842279\" show=\"furigana\" mode=\"card\"/>\n<sentence ref=\"sent:tatoeba-144981\" show=\"furigana\" mode=\"card\"/>\n<heading level=\"3\"><text>Hora de praticar</text></heading>\n<exercise ref=\"ex:n3-deveres-02-1\"/>\n<exercise ref=\"ex:n3-deveres-02-2\"/>\n<exercise ref=\"ex:n3-deveres-02-3\"/>\n<exercise ref=\"ex:n3-deveres-02-4\"/>\n<exercise ref=\"ex:n3-deveres-02-5\"/>\n<exercise ref=\"ex:n3-deveres-02-6\"/>\n<exercise ref=\"ex:n3-deveres-02-7\"/>\n<exercise ref=\"ex:n3-deveres-02-8\"/>\n<exercise ref=\"ex:n3-deveres-02-9\"/>\n<exercise ref=\"ex:n3-deveres-02-10\"/>\n<exercise ref=\"ex:n3-deveres-02-11\"/>\n<exercise ref=\"ex:n3-deveres-02-12\"/>\n<exercise ref=\"ex:n3-deveres-02-13\"/>\n<exercise ref=\"ex:n3-deveres-02-14\"/>\n<exercise ref=\"ex:n3-deveres-02-15\"/>\n<exercise ref=\"ex:n3-deveres-02-16\"/>\n<exercise ref=\"ex:n3-deveres-02-17\"/>\n<exercise ref=\"ex:n3-deveres-02-18\"/><heading level=\"3\"><text>Leitura</text></heading><reading ref=\"read:n3-deveres-02-01\"/><checklist>\n <check><text>Sei dar um conselho geral com ～ことだ ('o ideal é', 'o melhor a fazer é').</text></check>\n <check><text>Consigo tranquilizar alguém com ～ことはない ('não precisa, não há por que').</text></check>\n <check><text>Sei afirmar uma obrigação moral com ～べきだ ('deveria, é o certo') e sua negativa べきではない.</text></check>\n <check><text>Não confundo べきだ (dever moral) com はずだ (dedução), nem ことはない (desnecessidade) com ことがない (experiência).</text></check>\n</checklist>",
+  "body": "<heading level=\"2\"><text>Conselho, necessidade e dever</text></heading>\n\n<p><text>Agora vamos aprender a orientar alguém em três tons diferentes: sugerir o que convém fazer, tranquilizar dizendo que algo não é preciso, e afirmar com firmeza o que se deve fazer. Todas as três usam o verbo na forma de dicionário (forma simples), então preste atenção a esse detalhe comum.</text></p>\n\n<heading level=\"3\"><text>～ことだ: o ideal é, o melhor a fazer é</text></heading>\n<p><text>A estrutura </text><grammar ref=\"gram:n3-koto-da\"/><text> dá um conselho ou recomendação geral, dizendo o que convém fazer numa situação. Não é uma ordem direta, e sim a indicação do que é sensato. Soa como o conselho de quem tem certa experiência sobre o assunto.</text></p>\n<p><text>Monta-se com o verbo na forma de dicionário mais </text><jp>ことだ</jp><text>. Exemplo: </text><jp reading=\"けんこうのためにはまいにちうんどうすることだ\">健康のためには毎日運動することだ</jp><text> ('para a saúde, o ideal é se exercitar todo dia'). A forma negativa também funciona como conselho: </text><jp reading=\"むりをしないことだ\">無理をしないことだ</jp><text> ('o melhor é não se forçar').</text></p>\n<note type=\"tip\"><p><text>É um conselho impessoal e genérico, diferente de </text><jp>～ほうがいい</jp><text>, que compara opções e soa mais brando e próximo. </text><jp>ことだ</jp><text> tem um quê de 'a regra de ouro é...'.</text></p></note>\n<note type=\"l1-pitfall\"><p><text>Armadilha PT: não confunda este </text><jp>ことだ</jp><text> (conselho) com o </text><jp>こと</jp><text> que apenas nominaliza um verbo. O que marca o conselho é o verbo na forma de dicionário logo antes de </text><jp>ことだ</jp><text>, fechando a frase.</text></p></note>\n\n<heading level=\"3\"><text>～ことはない: não precisa, não há por que</text></heading>\n<p><text>A estrutura </text><grammar ref=\"gram:n3-koto-wa-nai\"/><text> indica que não é necessário fazer algo, que não há motivo para tal ação. Equivale a 'não precisa', 'não há por que'. É muito usada para tranquilizar ou aconselhar alguém, dizendo que certo esforço ou preocupação é dispensável.</text></p>\n<p><text>Forma-se com o verbo na forma de dicionário mais </text><jp>ことはない</jp><text>. Exemplo: </text><jp reading=\"そんなにしんぱいすることはない\">そんなに心配することはない</jp><text> ('não precisa se preocupar tanto'), </text><jp reading=\"あやまることはない\">謝ることはない</jp><text> ('não há por que pedir desculpa').</text></p>\n<note type=\"l1-pitfall\"><p><text>Armadilha PT: não confunda </text><jp>～ことはない</jp><text> (desnecessidade) com </text><jp>～ことがない</jp><text> ('nunca fiz', experiência). E lembre: 'não precisa' não quer dizer 'é proibido'. A frase só diz que a ação é dispensável; a pessoa fica livre para fazer ou não.</text></p></note>\n\n<heading level=\"3\"><text>～べきだ: deveria, é o certo</text></heading>\n<p><text>A estrutura </text><grammar ref=\"gram:n3-beki-da\"/><text> exprime obrigação ou aquilo que é correto fazer segundo um princípio, moral ou bom senso: 'deveria', 'é o certo'. É mais forte e normativo que um simples conselho; o falante afirma que aquela ação é a coisa certa.</text></p>\n<p><text>Monta-se com o verbo na forma de dicionário mais </text><jp>べきだ</jp><text>. Exemplo: </text><jp reading=\"やくそくはまもるべきだ\">約束は守るべきだ</jp><text> ('a gente deveria cumprir as promessas'). Com </text><jp>する</jp><text> existe a forma clássica </text><jp reading=\"すべきだ\">すべきだ</jp><text>, ainda muito comum. No passado, </text><jp reading=\"べきだった\">べきだった</jp><text> = 'deveria ter feito'. Na negativa, </text><jp reading=\"べきではない\">べきではない</jp><text> = 'não se deve'.</text></p>\n<note type=\"warning\"><p><text>Soa autoritário e opinativo. Evite dirigi-lo a superiores, pois pode parecer que você está dando ordem.</text></p></note>\n<note type=\"l1-pitfall\"><p><text>Armadilha PT: </text><jp>べきだ</jp><text> é o 'deve' de obrigação moral, enquanto o 'deve' de dedução ('ele deve estar em casa') é </text><jp>はずだ</jp><text>. Não confunda os dois 'deves' do português.</text></p></note>\n\n<heading level=\"3\"><text>Vocabulário de deveres e relações</text></heading>\n<p><text>Palavras ligadas a regras, dever e convivência (mostradas em kana):</text></p>\n<list ordered=\"false\">\n <item><vocab ref=\"vocab:1225900\"/><text> (</text><jp>ぎむ</jp><text>) = 'dever, obrigação'. Ex.: 'cumprir o seu dever é o certo'.</text></item>\n <item><vocab ref=\"vocab:1609660\"/><text> (</text><jp>きまり</jp><text>) = 'regra, norma'.</text></item>\n <item><vocab ref=\"vocab:1281890\"/><text> (</text><jp>ぎょうぎ</jp><text>) = 'modos, boas maneiras'. Como em 'a gente deveria ter bons modos'.</text></item>\n <item><text> (</text><jp>きじゅん</jp><text>) = 'critério, padrão de referência'.</text></item>\n <item><vocab ref=\"vocab:1225630\"/><text> (</text><jp>ぎもん</jp><text>) = 'dúvida, questionamento'.</text></item>\n <item><vocab ref=\"vocab:1226160\"/><text> (</text><jp>ぎろん</jp><text>) = 'debate, discussão'.</text></item>\n <item><vocab ref=\"vocab:1236470\"/><text> (</text><jp>きょうちょう</jp><text>) = 'ênfase, destaque'.</text></item>\n <item><vocab ref=\"vocab:1591720\"/><text> (</text><jp>きょうりょく</jp><text>) = 'cooperação, apoio'.</text></item>\n <item><vocab ref=\"vocab:1591660\"/><text> (</text><jp>きょうどう</jp><text>) = 'cooperação, parceria, conjunto'.</text></item>\n <item><vocab ref=\"vocab:1234700\"/><text> (</text><jp>きょうつう</jp><text>) = 'comum, compartilhado'.</text></item>\n <item><vocab ref=\"vocab:1233630\"/><text> (</text><jp>きょうきゅう</jp><text>) = 'fornecimento, abastecimento'.</text></item>\n <item><vocab ref=\"vocab:1237130\"/><text> (</text><jp>きょうし</jp><text>) = 'professor, instrutor'.</text></item>\n <item><vocab ref=\"vocab:1237160\"/><text> (</text><jp>きょうじゅ</jp><text>) = 'professor universitário, catedrático'.</text></item>\n <item><vocab ref=\"vocab:1226140\"/><text> (</text><jp>ぎちょう</jp><text>) = 'presidente de assembleia, mediador'.</text></item>\n <item><vocab ref=\"vocab:1223340\"/><text> (</text><jp>きねん</jp><text>) = 'comemoração, lembrança'.</text></item>\n <item><vocab ref=\"vocab:1221770\"/><text> (</text><jp>きのどく</jp><text>) = 'lamentável, coitado, digno de pena'.</text></item>\n <item><vocab ref=\"vocab:1591400\"/><text> (</text><jp>きふ</jp><text>) = 'doação, contribuição'. Ex.: 'não precisa doar tudo'.</text></item>\n <item><vocab ref=\"vocab:2269050\"/><text> (</text><jp>きゅうに</jp><text>) = 'de repente, na hora'.</text></item>\n <item><vocab ref=\"vocab:1228680\"/><text> (</text><jp>きゅうげき</jp><text>) = 'repentino, abrupto'.</text></item>\n</list>\n\n<heading level=\"3\"><text>Kanji novos</text></heading>\n<p><text>O kanji </text><kanji ref=\"kanji:命\"/><text> ('vida, destino, ordem') aparece em </text><jp reading=\"いのち\">命</jp><text> ('vida') e </text><jp reading=\"めいれい\">命令</jp><text> ('ordem, comando'). Pense numa boca que dá uma ordem sob um teto.</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:守\"/><text> ('guardar, proteger') mostra uma mão (</text><jp reading=\"すん\">寸</jp><text>) sob um teto (</text><jp>宀</jp><text>): proteger a casa. Está em </text><jp reading=\"まもる\">守る</jp><text> ('proteger, cumprir').</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:非\"/><text> ('não, erro') é um prefixo de negação, como em </text><jp reading=\"ひじょうに\">非常に</jp><text> ('extremamente') e </text><jp reading=\"ひじょうぐち\">非常口</jp><text> ('saída de emergência'). As duas metades viradas para fora lembram algo 'fora do certo'.</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:失\"/><text> ('perder, falha') aparece em </text><jp reading=\"しっぱい\">失敗</jp><text> ('fracasso') e </text><jp reading=\"うしなう\">失う</jp><text> ('perder'). Pense numa mão deixando algo escapar.</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:負\"/><text> ('derrota, perder, carregar') aparece em </text><jp reading=\"まける\">負ける</jp><text> ('perder, ser derrotado'). Tem o radical de 'concha/dinheiro' (</text><jp reading=\"かい\">貝</jp><text>) embaixo, como quem carrega um peso.</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:退\"/><text> ('recuar, retirar-se') traz o radical de movimento (</text><jp>辶</jp><text>): andar para trás. Está em </text><jp reading=\"たいいん\">退院</jp><text> ('receber alta do hospital').</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:落\"/><text> ('cair, queda') tem o radical de planta (</text><jp>艹</jp><text>) no topo, como folha que cai. Aparece em </text><jp reading=\"おちる\">落ちる</jp><text> ('cair') e </text><jp reading=\"おとす\">落とす</jp><text> ('deixar cair').</text></p>\n\n<heading level=\"3\"><text>Exemplos do banco</text></heading>\n<sentence ref=\"sent:tatoeba-8842279\" show=\"furigana\" mode=\"card\"/>\n<sentence ref=\"sent:tatoeba-144981\" show=\"furigana\" mode=\"card\"/>\n<heading level=\"3\"><text>Hora de praticar</text></heading>\n<exercise ref=\"ex:n3-deveres-02-1\"/>\n<exercise ref=\"ex:n3-deveres-02-2\"/>\n<exercise ref=\"ex:n3-deveres-02-3\"/>\n<exercise ref=\"ex:n3-deveres-02-4\"/>\n<exercise ref=\"ex:n3-deveres-02-5\"/>\n<exercise ref=\"ex:n3-deveres-02-6\"/>\n<exercise ref=\"ex:n3-deveres-02-7\"/>\n<exercise ref=\"ex:n3-deveres-02-8\"/>\n<exercise ref=\"ex:n3-deveres-02-9\"/>\n<exercise ref=\"ex:n3-deveres-02-10\"/>\n<exercise ref=\"ex:n3-deveres-02-11\"/>\n<exercise ref=\"ex:n3-deveres-02-12\"/>\n<exercise ref=\"ex:n3-deveres-02-13\"/>\n<exercise ref=\"ex:n3-deveres-02-14\"/>\n<exercise ref=\"ex:n3-deveres-02-15\"/>\n<exercise ref=\"ex:n3-deveres-02-16\"/>\n<exercise ref=\"ex:n3-deveres-02-17\"/>\n<exercise ref=\"ex:n3-deveres-02-18\"/>\n<exercise ref=\"ex:n3-deveres-02-19\"/>\n<exercise ref=\"ex:n3-deveres-02-20\"/>\n<exercise ref=\"ex:n3-deveres-02-21\"/>\n<exercise ref=\"ex:n3-deveres-02-22\"/>\n<exercise ref=\"ex:n3-deveres-02-23\"/>\n<exercise ref=\"ex:n3-deveres-02-24\"/>\n<exercise ref=\"ex:n3-deveres-02-25\"/>\n<exercise ref=\"ex:n3-deveres-02-26\"/>\n<exercise ref=\"ex:n3-deveres-02-27\"/>\n<exercise ref=\"ex:n3-deveres-02-28\"/>\n<exercise ref=\"ex:n3-deveres-02-29\"/>\n<exercise ref=\"ex:n3-deveres-02-30\"/>\n<exercise ref=\"ex:n3-deveres-02-31\"/>\n<exercise ref=\"ex:n3-deveres-02-32\"/>\n<exercise ref=\"ex:n3-deveres-02-33\"/>\n<exercise ref=\"ex:n3-deveres-02-34\"/>\n<exercise ref=\"ex:n3-deveres-02-35\"/>\n<exercise ref=\"ex:n3-deveres-02-36\"/><heading level=\"3\"><text>Leitura</text></heading><reading ref=\"read:n3-deveres-02-01\"/><checklist>\n <check><text>Sei dar um conselho geral com ～ことだ ('o ideal é', 'o melhor a fazer é').</text></check>\n <check><text>Consigo tranquilizar alguém com ～ことはない ('não precisa, não há por que').</text></check>\n <check><text>Sei afirmar uma obrigação moral com ～べきだ ('deveria, é o certo') e sua negativa べきではない.</text></check>\n <check><text>Não confundo べきだ (dever moral) com はずだ (dedução), nem ことはない (desnecessidade) com ことがない (experiência).</text></check>\n</checklist>",
   "needs_review": true
 }

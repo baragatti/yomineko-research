@@ -123,3 +123,18 @@ Mnemônico de forma:天 é a pessoa 大(braços abertos) com um traço reto por 
 - O adjetivo 白い vem do substantivo 白 (a cor branca) com a terminação dos adjetivos-i. A leitura しろ do kanji aparece nos dois.
 
 
+### 9. (cloze) Complete a frase: ＿＿がもうない (Já não tem mais fósforo.)
+- **Resposta:** `{"text": "マッチ", "full": "マッチがもうない"}`
+- A palavra que falta é マッチ: fósforo (palito de acender).
+- frases: `sent:gen-e9500630efbe`
+
+### 10. (recognition) Qual destas palavras significa "óculos"?
+- **Resposta:** `{"choices": ["もんだい", "せっけん", "へん", "メガネ"], "correct": "メガネ"}`
+- メガネ significa óculos. As outras opções são へん (redondeza, por aqui (área)), もんだい (problema, questão) e せっけん (sabonete, sabão).
+
+
+### 11. (cloze) Complete a frase: 他人を見下し＿＿な。 (Não fique menosprezando os outros.)
+- **Resposta:** `{"text": "たりする", "full": "他人を見下したりするな。"}`
+- O que falta é たりする: o ponto gramatical desta lição, fazer coisas como... (〜たりする).
+- frases: `sent:tatoeba-1170360`
+
