@@ -161,9 +161,12 @@ Upstream licence archived 2026-09-02: `research/datasets/kanjialive/LICENSE.md` 
   shadow outlines. Parsed into our own schema (`kana_stroke` → `corpus/strokes/kana.json`) as
   `{char, viewbox, strokes[], shadows[]}` and animated with a dash-offset pen draw. **We do not ship the raw
   strokesvg files.** Kana only — strokesvg carries no kanji.
-- **Ships:** **162 records** measured over `corpus/strokes/kana.json` — 160 parsed from the 160 dist SVGs
-  (79 hiragana + 81 katakana) plus **2 derived** (っ and ッ, reusing the つ/ツ glyph, `source` records the
-  derivation); all carry `license: "OFL-1.1+MIT"`.
+- **Ships:** **228 records** measured over `corpus/strokes/kana.json` — 160 parsed from the 160 dist SVGs
+  (79 hiragana + 81 katakana) plus **68 derived**: っ and ッ (reusing the つ/ツ glyph) and the **66 yoon
+  composites** (base glyph + its small ゃゅょ/ャュョ record one em cell to the right, unscaled; P3-yoon,
+  `research/derived/repairs/yoon_strokes.json`). `source` records each derivation; all carry
+  `license: "OFL-1.1+MIT"`. Under the conservative reading below, a composite of two such records is a further
+  Modified Version and stays under OFL 1.1.
 - **Owner:** `zhengkyl/strokesvg` (https://github.com/zhengkyl/strokesvg) — **Copyright (c) 2024 Kyle**; the
   glyph shapes derive from the **Klee One** font, **Copyright 2020 The Klee Project Authors**
   (https://github.com/fontworks-fonts/Klee).

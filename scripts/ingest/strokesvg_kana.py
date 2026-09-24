@@ -2,7 +2,9 @@
 """Ingest strokesvg (Klee One SIL OFL + MIT) KANA stroke-order into OUR schema. Each dist SVG has a
 `<g data-strokesvg="strokes">` group of ordered per-stroke centerline <path d> (animatable via dash-offset).
 We extract {char, viewbox, strokes:[d,…]} into a `kana_stroke` table → corpus/strokes/kana.json. Permissive,
-attributed; kana-only (no kanji). Idempotent. Usage: strokesvg_kana.py"""
+attributed; kana-only (no kanji). Idempotent. Usage: strokesvg_kana.py
+Derived rows (layer 'B'): っ/ッ (same glyph as つ/ツ) and, P3-yoon, the 66 yoon composites, re-derived from
+the parsed rows and exact-matched against research/derived/repairs/yoon_strokes.json before any write."""
 from __future__ import annotations
 import json, re, sqlite3, sys
 from pathlib import Path
@@ -108,6 +110,108 @@ def strokes_of(svg: str) -> tuple[list[str], list[str]]:
     return strokes, shadows
 
 
+# ---------- minimal SVG path tokenizer + translate (all commands, compact arc flags) ----------
+NUM = re.compile(r"[-+]?(?:\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?")
+ARITY = {"M": 2, "L": 2, "T": 2, "H": 1, "V": 1, "C": 6, "S": 4, "Q": 4, "A": 7, "Z": 0}
+
+
+def parse(d: str) -> list[tuple[str, list[str]]]:
+    segs: list[tuple[str, list[str]]] = []
+    i, n = 0, len(d)
+    while i < n:
+        c = d[i]
+        if c in " ,\t\n\r":
+            i += 1; continue
+        if not c.isalpha():
+            raise ValueError(f"expected command at {i}: {d[i:i+20]!r}")
+        cmd, i, args = c, i + 1, []
+        k = ARITY[cmd.upper()]
+        while True:
+            while i < n and d[i] in " ,\t\n\r":
+                i += 1
+            if i >= n or d[i].isalpha():
+                break
+            if cmd in "Aa" and len(args) % 7 in (3, 4):
+                if d[i] not in "01":
+                    raise ValueError(f"bad arc flag at {i}")
+                args.append(d[i]); i += 1; continue
+            m = NUM.match(d, i)
+            if not m:
+                raise ValueError(f"bad number at {i}: {d[i:i+20]!r}")
+            args.append(m.group()); i = m.end()
+        if k == 0:
+            assert not args, d
+        elif not args or len(args) % k:
+            raise ValueError(f"{cmd} with {len(args)} args")
+        segs.append((cmd, args))
+    return segs
+
+
+def _axis(cmd: str, j: int, k: int) -> str | None:
+    """'x' / 'y' / None for arg j of an (absolute) command with arity k."""
+    u, p = cmd.upper(), j % k
+    if u == "H": return "x"
+    if u == "V": return "y"
+    if u == "A": return {5: "x", 6: "y"}.get(p)
+    return "x" if p % 2 == 0 else "y"
+
+
+def _fmt(v: float) -> str:
+    return str(int(v)) if v == int(v) else f"{v:.3f}".rstrip("0")
+
+
+def translate(d: str, dx: float, dy: float) -> str:
+    """Shift a path's ABSOLUTE coordinates by (dx, dy); relative segments are untouched."""
+    out = []
+    for cmd, args in parse(d):
+        k = ARITY[cmd.upper()]
+        if cmd.isupper() and k:
+            args = [_fmt(float(a) + (dx if _axis(cmd, j, k) == "x" else dy)) if _axis(cmd, j, k) else a
+                    for j, a in enumerate(args)]
+        out.append(cmd + " ".join(args))
+    return "".join(out)
+
+
+# P3-yoon: the 66 yoon composites (base glyph + small ya/yu/yo one em cell to the right), verified in
+# research/derived/pending/yoon_strokes.verdict.json. The tracked table is the exact-match contract:
+# the composition is re-derived here from the rows just parsed and must reproduce every table row.
+YOON_TABLE = ROOT / "research" / "derived" / "repairs" / "yoon_strokes.json"
+ADV = 1024  # strokesvg em square: every parsed record's viewbox is 0 0 1024 1024
+# Layer policy for ALL derived rows (っ/ッ + the 66 yoon): 'B'. They are not in the strokesvg dataset
+# (Layer A is dataset-only, spec §1.1); they are deterministic transforms of Layer-A rows, no AI,
+# machine-checked against those rows (the table's exact match). Parsed rows stay 'A'.
+DERIVED_LAYER = "B"
+COLS = ("char", "kind", "viewbox", "strokes", "shadows", "source", "license")
+
+
+def yoon_rows(con: sqlite3.Connection) -> list[dict]:
+    """Compose the table's 66 rows from the live kana_stroke records; raise on any drift."""
+    table = json.loads(YOON_TABLE.read_text(encoding="utf-8"))
+    rec = {r[0]: dict(zip(COLS, r)) for r in con.execute(f"SELECT {','.join(COLS)} FROM kana_stroke")}
+    for r in rec.values():
+        r["strokes"] = json.loads(r["strokes"])
+        r["shadows"] = json.loads(r["shadows"]) if r["shadows"] else None
+    want = {r["char"]: r for r in table["rows"]}
+    assert len(want) == table["row_count"] == len(table["derivation"]) == 66, "yoon table shape"
+    out = []
+    for d in table["derivation"]:
+        b, s = rec[d["base"]], rec[d["small"]]  # KeyError = a component lost its stroke data
+        assert b["viewbox"] == s["viewbox"] == f"0 0 {ADV} {ADV}" and b["kind"] == s["kind"], d["char"]
+        row = {
+            "char": d["char"], "kind": b["kind"], "viewbox": f"0 0 {2 * ADV} {ADV}",
+            "strokes": b["strokes"] + [translate(p, ADV, 0) for p in s["strokes"]],
+            "shadows": (b["shadows"] or [[""] for _ in b["strokes"]])
+                       + [[translate(p, ADV, 0) if p else "" for p in sh]
+                          for sh in (s["shadows"] or [[""] for _ in s["strokes"]])],
+            "source": f"strokesvg (derived: composite of {d['base']} + {d['small']})",
+            "license": b["license"],
+        }
+        if row != want.get(d["char"]):
+            raise SystemExit(f"yoon {d['char']}: composition != {YOON_TABLE.name} row (component drift); nothing written")
+        out.append(row)
+    return out
+
+
 def main() -> int:
     con = sqlite3.connect(DB)
     con.execute("""CREATE TABLE IF NOT EXISTS kana_stroke (
@@ -139,9 +243,16 @@ def main() -> int:
     for src, dst in (("つ", "っ"), ("ツ", "ッ")):
         r = con.execute("SELECT kind,viewbox,strokes,shadows,license FROM kana_stroke WHERE char=?", (src,)).fetchone()
         if r:
-            con.execute("INSERT OR REPLACE INTO kana_stroke (char,kind,viewbox,strokes,shadows,source,license) "
-                        "VALUES (?,?,?,?,?,?,?)",
-                        (dst, r[0], r[1], r[2], r[3], f"strokesvg (derived: same glyph as {src})", r[4]))
+            con.execute("INSERT OR REPLACE INTO kana_stroke (char,kind,viewbox,strokes,shadows,source,license,layer) "
+                        "VALUES (?,?,?,?,?,?,?,?)",
+                        (dst, r[0], r[1], r[2], r[3], f"strokesvg (derived: same glyph as {src})", r[4], DERIVED_LAYER))
+    yoon = yoon_rows(con)  # all 66 verified before any is written
+    for y in yoon:
+        con.execute("INSERT OR REPLACE INTO kana_stroke (char,kind,viewbox,strokes,shadows,source,license,layer) "
+                    "VALUES (?,?,?,?,?,?,?,?)",
+                    (y["char"], y["kind"], y["viewbox"], json.dumps(y["strokes"], ensure_ascii=False),
+                     json.dumps(y["shadows"], ensure_ascii=False), y["source"], y["license"], DERIVED_LAYER))
+    print(f"strokesvg kana: 2 sokuon + {len(yoon)} yoon derived (layer {DERIVED_LAYER})")
     con.commit()
     tot = con.execute("SELECT COUNT(*) FROM kana_stroke").fetchone()[0]
     by = dict(con.execute("SELECT kind, COUNT(*) FROM kana_stroke GROUP BY kind").fetchall())

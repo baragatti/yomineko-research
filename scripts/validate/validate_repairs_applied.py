@@ -1489,6 +1489,25 @@ def handle_kana_cards(rows, sents, gram, table):
     return out
 
 
+def handle_yoon_strokes(rows, sents, gram, table):
+    """P3-yoon. Every composite row ships in corpus/strokes/kana.json EXACTLY as the table has it
+    (the whole record: kind, viewbox, strokes, shadows, source, license), addressed by `char`."""
+    kana = {r["char"]: r for r in json.loads(
+        (EXPORT_ROOT["root"] / "corpus" / "strokes" / "kana.json").read_text(encoding="utf-8"))}
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['char']}"
+        got = kana.get(r["char"])
+        if got is None:
+            out.append(("fail", C_NOT_APPLIED, addr, "no stroke record in corpus/strokes/kana.json"))
+        elif got != r:
+            diff = sorted(k for k in set(got) | set(r) if got.get(k) != r.get(k))
+            out.append(("fail", C_VALUE_MISMATCH, addr, f"exported record differs in {diff}"))
+        else:
+            out.append(("ok", "", addr, "exact"))
+    return out
+
+
 def handle_grammar_register(rows, sents, gram, table):
     """W31. A grammar point's `register` is the register its OWN FORMS impose.
 
@@ -2088,6 +2107,8 @@ REGISTRY = {
     "en_backfill_derived.json": handle_en_backfill,
     # W29: kana cards one glyph per card (57 family cards -> 211 glyph cards, derived keys).
     "kana_cards.json": handle_kana_cards,
+    # P3-yoon: the 66 yoon composite stroke records (strokesvg_kana.py, rebuild step 6).
+    "yoon_strokes.json": handle_yoon_strokes,
     # W28: each SRS card's example sentence + cloze span (selected from the bank, not authored).
     "card_examples.json": handle_card_examples,
     # W24: the authored half of the capability layer (can_do, evidence, quotes, curated lessons).

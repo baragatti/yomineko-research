@@ -1,6 +1,8 @@
 """Derive composite stroke records for the 66 yoon kana (base glyph + small ya/yu/yo) from the
 strokesvg-derived records in corpus/strokes/kana.json (read from git HEAD). Files only.
-Writes research/derived/pending/yoon_strokes.json; `--svg DIR` also renders 6 inspection SVGs there."""
+Writes research/derived/pending/yoon_strokes.json; `--svg DIR` also renders 6 inspection SVGs there.
+FROZEN (P3-yoon): its output was verified and landed as research/derived/repairs/yoon_strokes.json, applied by
+scripts/ingest/strokesvg_kana.py. HEAD now carries the 66 rows, so a re-run stops at its not-in-registry assert."""
 from __future__ import annotations
 import hashlib, json, re, statistics, subprocess, sys
 from pathlib import Path
@@ -15,65 +17,9 @@ def head(path: str) -> bytes:
     return subprocess.run(["git", "-C", str(ROOT), "show", f"HEAD:{path}"], check=True, capture_output=True).stdout
 
 
-# ---------- minimal SVG path tokenizer (all commands, compact arc flags) ----------
-NUM = re.compile(r"[-+]?(?:\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?")
-ARITY = {"M": 2, "L": 2, "T": 2, "H": 1, "V": 1, "C": 6, "S": 4, "Q": 4, "A": 7, "Z": 0}
-
-
-def parse(d: str) -> list[tuple[str, list[str]]]:
-    segs: list[tuple[str, list[str]]] = []
-    i, n = 0, len(d)
-    while i < n:
-        c = d[i]
-        if c in " ,\t\n\r":
-            i += 1; continue
-        if not c.isalpha():
-            raise ValueError(f"expected command at {i}: {d[i:i+20]!r}")
-        cmd, i, args = c, i + 1, []
-        k = ARITY[cmd.upper()]
-        while True:
-            while i < n and d[i] in " ,\t\n\r":
-                i += 1
-            if i >= n or d[i].isalpha():
-                break
-            if cmd in "Aa" and len(args) % 7 in (3, 4):
-                if d[i] not in "01":
-                    raise ValueError(f"bad arc flag at {i}")
-                args.append(d[i]); i += 1; continue
-            m = NUM.match(d, i)
-            if not m:
-                raise ValueError(f"bad number at {i}: {d[i:i+20]!r}")
-            args.append(m.group()); i = m.end()
-        if k == 0:
-            assert not args, d
-        elif not args or len(args) % k:
-            raise ValueError(f"{cmd} with {len(args)} args")
-        segs.append((cmd, args))
-    return segs
-
-
-def x_idx(cmd: str, j: int, k: int) -> str | None:
-    """'x' / 'y' / None for arg j of an (absolute) command with arity k."""
-    u, p = cmd.upper(), j % k
-    if u == "H": return "x"
-    if u == "V": return "y"
-    if u == "A": return {5: "x", 6: "y"}.get(p)
-    return "x" if p % 2 == 0 else "y"
-
-
-def fmt(v: float) -> str:
-    return str(int(v)) if v == int(v) else f"{v:.3f}".rstrip("0")
-
-
-def translate(d: str, dx: float, dy: float) -> str:
-    out = []
-    for cmd, args in parse(d):
-        k = ARITY[cmd.upper()]
-        if cmd.isupper() and k:
-            args = [fmt(float(a) + (dx if x_idx(cmd, j, k) == "x" else dy if x_idx(cmd, j, k) == "y" else 0))
-                    if x_idx(cmd, j, k) else a for j, a in enumerate(args)]
-        out.append(cmd + " ".join(args))
-    return "".join(out)
+# Path tokenizer + translate live with the tracked DB writer (P3-yoon), one implementation for both.
+sys.path.insert(0, str(ROOT / "scripts" / "ingest"))
+from strokesvg_kana import ARITY, NUM, parse, translate  # noqa: E402
 
 
 def bbox(d: str) -> tuple[float, float, float, float]:
