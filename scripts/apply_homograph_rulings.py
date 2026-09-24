@@ -373,8 +373,10 @@ def prune_exemptions(doc_table: dict, rows: list[dict], check: bool, problems: l
     exist. The replacement text lives in the ruling table, beside the decision it describes, and is
     rewritten from there on every run so the two cannot drift.
     """
-    promoted = {r["new"] for r in rows if r["kind"] == "unlock"}
-    held = {r["new"]: r for r in rows if r["kind"] == "hold"}
+    # Q2: a hold another table released (`released_by`, e.g. 様/よう unlocked by
+    # research/derived/repairs/sibling_unlock_repoint.json) leaves the exemption file like a promotion.
+    promoted = {r["new"] for r in rows if r["kind"] == "unlock" or r.get("released_by")}
+    held = {r["new"]: r for r in rows if r["kind"] == "hold" and not r.get("released_by")}
     # W11c: a `ref` ruling with verdict `change` means the body stops rendering `old` in that lesson,
     # so a gating exemption written for (lesson, old) is stale the moment the ruling lands. Dropping
     # it here rather than by hand is the same rule as the reasons below: the table decides, the file

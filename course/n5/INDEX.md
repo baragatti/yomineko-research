@@ -5,17 +5,17 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 | # | tópico | tema | vocab | kanji | gramática |
 |--:|--------|------|------:|------:|----------:|
 | 7 | Frases básicas: o tópico は e o copula です | identificação | 73 | 8 | 12 |
-| 8 | Perguntas e demonstrativos | perguntar | 82 | 17 | 16 |
+| 8 | Perguntas e demonstrativos | perguntar | 81 | 17 | 16 |
 | 9 | Números, horas e datas | tempo/dinheiro | 60 | 13 | 2 |
-| 10 | Verbos: dicionário + ます; partículas を e が | ações | 79 | 7 | 10 |
-| 11 | Lugar, tempo e direção: で/に/へ/と | lugar | 62 | 6 | 17 |
-| 12 | Passado polido e nuances | passado | 46 | 5 | 7 |
+| 10 | Verbos: dicionário + ます; partículas を e が | ações | 80 | 7 | 10 |
+| 11 | Lugar, tempo e direção: で/に/へ/と | lugar | 63 | 6 | 17 |
+| 12 | Passado polido e nuances | passado | 47 | 5 | 7 |
 | 13 | Adjetivos い e な | descrever | 64 | 6 | 18 |
-| 14 | Comparações, desejos e preferências | preferências | 44 | 6 | 11 |
+| 14 | Comparações, desejos e preferências | preferências | 45 | 6 | 11 |
 | 15 | A forma て e seus usos | conectar ações | 51 | 4 | 19 |
 | 16 | Convites, sugestões e habilidade | interação | 44 | 2 | 6 |
 | 17 | Rotina, frequência e advérbios | rotina | 42 | 3 | 10 |
-| 18 | Conectando ideias e opiniões | discurso | 41 | 5 | 19 |
+| 18 | Conectando ideias e opiniões | discurso | 42 | 5 | 19 |
 | 19 | Revisão N5 e consolidação | revisão | 0 | 0 | 0 |
 | 20 | Kanji do exame N5: reforço | kanji | 0 | 21 | 0 |
 
@@ -28,7 +28,7 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 8. Perguntas e demonstrativos
 - **kanji** (17): 千 見 新 木 中 先 生 車 電 本 読 天 学 校 気 出 食
-- **vocab** (82, amostra): 居る、人、側、九、交差点、交番、公園、其処、北、千、国、川、方、此処、玄関
+- **vocab** (81, amostra): 方、居る、人、側、九、交差点、交番、公園、其処、北、千、国、川、此処、玄関
 - **gramática** (16): gp-10, gp-11, gp-39, gp-9, gp-14, gp-15, gp-16, gp-38, gp-40, doushite, gp-29, donna
 
 ### 9. Números, horas e datas
@@ -38,17 +38,17 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 10. Verbos: dicionário + ます; partículas を e が
 - **kanji** (7): 六 毎 行 長 三 間 水
-- **vocab** (79, amostra): 時、テレビ、上げる、六、掛ける、教える、朝、毎日、浴びる、消える、生まれる、着る、答える、締める、覚える
+- **vocab** (80, amostra): 時、テレビ、上げる、六、掛ける、教える、朝、毎日、浴びる、消える、生まれる、着る、答える、締める、覚える
 - **gramática** (10): ga, ga-arimasu, ga-imasu, gp-6, gp-8, gp-7, o-wo, gp-20, gp-19, o-kudasai
 
 ### 11. Lugar, tempo e direção: で/に/へ/と
 - **kanji** (6): 上 下 後 休 月 五
-- **vocab** (62, amostra): 下、上、卵、台、台所、大使館、大学、建物、煙草、猫、盾、食べ物、側、其方、外
+- **vocab** (63, amostra): 下、上、卵、台、台所、大使館、大学、建物、煙草、猫、盾、食べ物、側、其方、外
 - **gramática** (17): gp-13, gp-12, de, naide, ni, gp-18, gp-27, ni-e, gp-28, ni-iku, gp-55, gp-56
 
 ### 12. Passado polido e nuances
 - **kanji** (5): 東 雨 九 四 今
-- **vocab** (46, amostra): 日、デパート、トイレ、ドア、出口、図書館、地下鉄、地図、嫌、所、作る、使う、出る、取る、土曜日
+- **vocab** (47, amostra): 日、デパート、トイレ、ドア、出口、図書館、地下鉄、地図、嫌、所、作る、使う、出る、取る、土曜日
 - **gramática** (7): gp-32, gp-34, i-adjectives, ne, yo, naa, na
 
 ### 13. Adjetivos い e な
@@ -58,7 +58,7 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 14. Comparações, desejos e preferências
 - **kanji** (6): 山 女 七 北 午 百
-- **vocab** (44, amostra): バス、報、多分、大変、強い、早い、楽しい、次、温い、茶色、詰らない、近い、長い、隣、中
+- **vocab** (45, amostra): 方、バス、多分、大変、強い、早い、楽しい、次、温い、茶色、詰らない、近い、長い、隣、中
 - **gramática** (11): gp-140, wa-yori-desu, yori-hou-ga, gp-46, ichiban, no-naka-de-a-ga-ichiban, ni-suru, wa-dou-desu-ka, ga-hoshii, tai, sugiru
 
 ### 15. A forma て e seus usos
@@ -78,7 +78,7 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 18. Conectando ideias e opiniões
 - **kanji** (5): 友 右 左 父 火
-- **vocab** (41, amostra): 何、より、夜、昨夜、私、雪、弱い、有名、留学生、立派、若い、レストラン、廊下、横、然うして
+- **vocab** (42, amostra): 報、何、より、夜、昨夜、私、雪、弱い、有名、留学生、立派、若い、レストラン、廊下、横
 - **gramática** (19): kara, node, gp-25, kedo, keredo-mo, demo, shikashi, sore-kara, soshite, darou, gp-17, ndesu
 
 ### 19. Revisão N5 e consolidação

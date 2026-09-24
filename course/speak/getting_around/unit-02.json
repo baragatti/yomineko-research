@@ -26,6 +26,7 @@
     "vocab:1486460"
   ],
   "patterns": [
+    "gram:gp-145",
     "gram:gp-52",
     "gram:nakucha"
   ],
@@ -93,7 +94,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 177,
+  "cumulative_known_vocab": 173,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -103,8 +104,8 @@
       "via": "phrase",
       "distractors": [
         "駅",
-        "手",
-        "毒"
+        "毒",
+        "間"
       ]
     },
     {
@@ -114,7 +115,7 @@
       "distractors": [
         "今",
         "日",
-        "事"
+        "前"
       ]
     },
     {
@@ -133,24 +134,32 @@
       "via": "new-word",
       "distractors": [
         "じ",
-        "ひ",
-        "て"
+        "ほう",
+        "こと"
       ]
     }
   ],
   "patterns_chunked": [
     "gram:n3-koto-ni-natte-iru",
-    "gram:gp-145",
     "gram:cha-ikenai-ja-ikenai",
     "gram:gp-116"
   ],
   "drills": [
     {
+      "pattern": "gram:gp-145",
+      "examples": [
+        "sent:tatoeba-10589883",
+        "sent:tatoeba-8914577",
+        "sent:tatoeba-10723299"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:gp-52",
       "examples": [
         "sent:tatoeba-8753239",
-        "sent:tatoeba-12483339",
-        "sent:tatoeba-8736593"
+        "sent:tatoeba-8736593",
+        "sent:tatoeba-528350"
       ],
       "strand": "language-focused"
     },
@@ -221,9 +230,9 @@
       "sent:tatoeba-203703",
       "sent:tatoeba-201726",
       "sent:tatoeba-188894",
-      "sent:tatoeba-8729106",
-      "sent:tatoeba-10617667",
-      "sent:tatoeba-5329"
+      "sent:tatoeba-179391",
+      "sent:tatoeba-9936514",
+      "sent:tatoeba-236798"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -231,15 +240,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
+    "meaning-input": 27,
     "meaning-output": 7,
-    "language-focused": 50,
+    "language-focused": 52,
     "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 21,
+    "language-focused": 23,
     "fluency": 6
   }
 }

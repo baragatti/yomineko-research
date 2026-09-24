@@ -7,55 +7,69 @@
     "pt-BR": "Dormir e resolver problemas, parte 6"
   },
   "say_now": [
-    "sent:tatoeba-8787906",
+    "sent:tatoeba-11072023",
+    "sent:tatoeba-218592",
+    "sent:tatoeba-74415",
     "sent:tatoeba-74765",
     "sent:tatoeba-3313203",
-    "sent:tatoeba-171033",
-    "sent:tatoeba-11556335",
-    "sent:tatoeba-76532"
+    "sent:tatoeba-12829766"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1087820",
-    "vocab:1396130",
+    "vocab:1379380",
+    "vocab:1202450",
+    "vocab:1502390",
     "vocab:1595730",
     "vocab:1289520",
-    "vocab:1289590",
-    "vocab:1446070",
-    "vocab:1323560",
-    "vocab:1474850",
+    "vocab:1260490",
+    "vocab:1585650",
+    "vocab:1306200",
     "vocab:1425790",
-    "vocab:1533950",
-    "vocab:1207590",
-    "vocab:1337190"
+    "vocab:1241550",
+    "vocab:1535850"
   ],
   "patterns": [
     "gram:gp-78",
     "gram:gp-149",
-    "gram:to-omou"
+    "gram:to-omou",
+    "gram:da-desu"
   ],
   "kanji_recognition": [
-    "掛",
-    "鍵",
-    "全",
-    "部",
-    "間",
-    "寝"
+    "禁",
+    "使",
+    "止",
+    "生",
+    "徒",
+    "用"
   ],
   "shadowing": [
-    "sent:tatoeba-8787906",
+    "sent:tatoeba-11072023",
+    "sent:tatoeba-218592",
+    "sent:tatoeba-74415",
     "sent:tatoeba-74765",
     "sent:tatoeba-3313203",
-    "sent:tatoeba-171033",
-    "sent:tatoeba-11556335",
-    "sent:tatoeba-76532"
+    "sent:tatoeba-12829766"
   ],
   "srs": {
     "introduces_cards": [
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-8787906",
+        "item": "sent:tatoeba-11072023",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-218592",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-74415",
         "card_types": [
           "production"
         ]
@@ -76,21 +90,7 @@
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-171033",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-11556335",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-76532",
+        "item": "sent:tatoeba-12829766",
         "card_types": [
           "production"
         ]
@@ -99,55 +99,54 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 286,
+  "cumulative_known_vocab": 284,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n4:844:568",
+      "id": "cf:n3:185:642",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "奥",
-        "上",
-        "道"
+        "毒",
+        "道",
+        "前"
       ]
     },
     {
-      "id": "kr:n3:1584",
+      "id": "kr:n3:10",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "よやく",
-        "すべて",
-        "わるい"
+        "もっと",
+        "けいい",
+        "ごはん"
       ]
     },
     {
-      "id": "kr:n3:175",
+      "id": "kr:n4:10",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "やめる",
-        "やすい",
-        "あがる"
+        "ひとり",
+        "つかう",
+        "なまえ"
       ]
     },
     {
-      "id": "cf:n3:165:256",
+      "id": "cf:n3:156:690",
       "type": "context_fill",
       "via": "review",
       "distractors": [
-        "はい",
-        "今夜",
-        "毛布"
+        "人",
+        "方",
+        "水"
       ]
     }
   ],
   "patterns_chunked": [
     "gram:n3-you-to-omou",
-    "gram:te-ita",
-    "gram:n3-kake"
+    "gram:te-ita"
   ],
   "drills": [
     {
@@ -155,7 +154,7 @@
       "examples": [
         "sent:tatoeba-5049",
         "sent:tatoeba-11045111",
-        "sent:tatoeba-166326"
+        "sent:tatoeba-222659"
       ],
       "strand": "language-focused"
     },
@@ -176,57 +175,66 @@
         "sent:tatoeba-160737"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-75140"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
     {
       "prompt": {
-        "pt-BR": "Os livros deste quarto não são meus."
+        "pt-BR": "Ele saiu do quarto furioso."
       },
-      "answer_key": "この部屋の本は私の物ではありません。",
+      "answer_key": "彼は怒って部屋を飛び出した。",
       "accepted_variants": [
-        "このへやのほんはわたしのものではありません",
-        "このへやのほんはわたしのものではありません。",
-        "このへやのほんわわたしのものでわありません",
-        "このへやのほんわわたしのものでわありません。",
-        "この部屋の本は私の物ではありません",
-        "この部屋の本は私の物ではありません。"
+        "かれはおこってへやをとびだした",
+        "かれはおこってへやをとびだした。",
+        "かれわおこってへやをとびだした",
+        "かれわおこってへやをとびだした。",
+        "彼は怒って部屋を飛び出した",
+        "彼は怒って部屋を飛び出した。"
       ],
-      "sentence": "sent:tatoeba-74415",
+      "sentence": "sent:tatoeba-101820",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Esta é a chave que abre essa caixa."
+        "pt-BR": "Ele ficou só dormindo na cama o dia inteiro."
       },
-      "answer_key": "これはその箱をあける鍵です。",
+      "answer_key": "彼は一日中ベッドで寝てばかりいた。",
       "accepted_variants": [
-        "これはそのはこをあけるかぎです",
-        "これはそのはこをあけるかぎです。",
-        "これはその箱をあける鍵です",
-        "これはその箱をあける鍵です。",
-        "これわそのはこをあけるかぎです",
-        "これわそのはこをあけるかぎです。"
+        "かれはいちにちじゅうべっどでねてばかりいた",
+        "かれはいちにちじゅうべっどでねてばかりいた。",
+        "かれわいちにちじゅうべっどでねてばかりいた",
+        "かれわいちにちじゅうべっどでねてばかりいた。",
+        "彼は一日中ベッドで寝てばかりいた",
+        "彼は一日中ベッドで寝てばかりいた。"
       ],
-      "sentence": "sent:tatoeba-218592",
+      "sentence": "sent:tatoeba-109884",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Este banheiro é proibido para alunos."
+        "pt-BR": "Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo."
       },
-      "answer_key": "このトイレは生徒使用禁止です。",
+      "answer_key": "最近あまり寝ていないので今日は早く寝ようと思う。",
       "accepted_variants": [
-        "このといれはせいとしようきんしです",
-        "このといれはせいとしようきんしです。",
-        "このといれわせいとしようきんしです",
-        "このといれわせいとしようきんしです。",
-        "このトイレは生徒使用禁止です",
-        "このトイレは生徒使用禁止です。"
+        "さいきんあまりねていないのできょうははやくねようとおもう",
+        "さいきんあまりねていないのできょうははやくねようとおもう。",
+        "さいきんあまりねていないのできょうわはやくねようとおもう",
+        "さいきんあまりねていないのできょうわはやくねようとおもう。",
+        "最近あまり寝ていないので今日は早く寝ようと思う",
+        "最近あまり寝ていないので今日は早く寝ようと思う。"
       ],
-      "sentence": "sent:tatoeba-11072023",
+      "sentence": "sent:tatoeba-13059182",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -236,12 +244,12 @@
       "pt-BR": "Você chegou no hotel. Faça o check-in e resolva um problema no quarto."
     },
     "items": [
-      "sent:tatoeba-101820",
-      "sent:tatoeba-77964",
-      "sent:tatoeba-121988",
+      "sent:tatoeba-86878",
+      "sent:tatoeba-212601",
+      "sent:tatoeba-10723441",
+      "sent:tatoeba-4562257",
       "sent:tatoeba-126245",
-      "sent:tatoeba-84229",
-      "sent:tatoeba-176088"
+      "sent:tatoeba-220035"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -251,13 +259,13 @@
   "strands": {
     "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 57,
+    "language-focused": 58,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 29,
     "fluency": 6
   }
 }

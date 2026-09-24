@@ -355,6 +355,7 @@ _Generated 2026-09-23. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 忙しい | いそがしい | n5 | ocupado, atarefado |
 | 悪い | わるい | n5 | ruim, mau |
 | 意味 | いみ | n5 | significado, sentido |
+| 成る | なる | n5 | tornar-se, virar |
 | 戸 | と | n5 | porta (de correr) |
 | 所 | ところ | n5 | lugar, local |
 | 手 | て | n5 | mão |
@@ -363,6 +364,7 @@ _Generated 2026-09-23. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 持つ | もつ | n5 | segurar, carregar |
 | 掃除 | そうじ | n5 | limpeza, limpar |
 | 授業 | じゅぎょう | n5 | aula, lição |
+| 掛かる | かかる | n5 | levar (tempo), custar |
 | 掛ける | かける | n5 | pendurar, colocar |
 | 撮る | とる | n5 | fotografar, filmar |
 | 教える | おしえる | n5 | ensinar, lecionar |
@@ -373,6 +375,7 @@ _Generated 2026-09-23. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 新しい | あたらしい | n5 | novo |
 | 新聞 | しんぶん | n5 | jornal |
 | 方 | かた | n5 | pessoa (formal), senhor/senhora |
+| 方 | ほう | n5 | direção, lado |
 | 旅行 | りょこう | n5 | viagem |
 | 日 | ひ | n5 | dia |
 | 日曜日 | にちようび | n5 | domingo |
@@ -476,6 +479,7 @@ _Generated 2026-09-23. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 火曜日 | かようび | n5 | terça-feira |
 | 灰皿 | はいざら | n5 | cinzeiro |
 | 点ける | つける | n5 | ligar, acender |
+| 為る | する | n5 | fazer |
 | 無い | ない | n5 | não haver, não ter |
 | 無くす | なくす | n5 | perder, extraviar |
 | 然う | そう | n5 | assim, desse jeito |
@@ -899,6 +903,7 @@ _Generated 2026-09-23. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 向かう | むかう | n4 | dirigir-se a, ir em direção a |
 | 君 | きみ | n4 | você (informal) |
 | 君 | くん | n4 | (sufixo de nome, esp. para meninos/juniores) |
+| 呉れる | くれる | n4 | dar (a mim/nós) |
 | 周り | まわり | n4 | arredores, ao redor |
 | 味 | あじ | n4 | sabor, gosto |
 | 味噌 | みそ | n4 | missô, pasta de soja fermentada |
@@ -1138,7 +1143,6 @@ _Generated 2026-09-23. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 点く | つく | n4 | pegar fogo, acender-se |
 | 為 | ため | n4 | para, a fim de |
 | 為さる | なさる | n4 | fazer (forma honorífica/respeitosa de する), fazer (referindo-se à ação de um superior) |
-| 為る | する | n4 | fazer |
 | 無くなる | なくなる | n4 | acabar, sumir |
 | 無理 | むり | n4 | impossível, sem condições |
 | 焼く | やく | n4 | assar, grelhar |
@@ -2114,7 +2118,6 @@ _Generated 2026-09-23. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 態度 | たいど | n3 | atitude, postura |
 | 慎重 | しんちょう | n3 | cuidadoso, cauteloso |
 | 憲法 | けんぽう | n3 | constituição |
-| 成る | なる | n3 | tornar-se, virar |
 | 成人 | せいじん | n3 | adulto, pessoa maior de idade |
 | 成功 | せいこう | n3 | sucesso, êxito |
 | 成績 | せいせき | n3 | notas, desempenho |
@@ -2157,7 +2160,6 @@ _Generated 2026-09-23. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 指導 | しどう | n3 | orientação, instrução |
 | 振る | ふる | n3 | acenar, balançar |
 | 捕まる | つかまる | n3 | ser pego, ser preso |
-| 掛かる | かかる | n3 | levar (tempo), custar |
 | 推薦 | すいせん | n3 | recomendar, indicar |
 | 掲示 | けいじ | n3 | aviso (afixado), comunicado |
 | 掴む | つかむ | n3 | agarrar, pegar |
@@ -2203,7 +2205,6 @@ _Generated 2026-09-23. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 断る | ことわる | n3 | recusar, negar |
 | 新た | あらた | n3 | novo, renovado |
 | 新鮮 | しんせん | n3 | fresco, novo |
-| 方 | ほう | n3 | direção, lado |
 | 方々 | かたがた | n3 | pessoas (formal), senhores e senhoras |
 | 方々 | ほうぼう | n3 | por toda parte, aqui e ali |
 | 方向 | ほうこう | n3 | direção, sentido |
@@ -5538,7 +5539,6 @@ _Generated 2026-09-23. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 否 | いな | n1 | não, não! |
 | 否決 | ひけつ | n1 | rejeição, reprovação (de proposta) |
 | 呆ける | ボケる | n1 | ficar senil, caducar |
-| 呉れる | くれる | n1 | dar (a mim/nós) |
 | 告げる | つげる | n1 | dizer, anunciar |
 | 告白 | こくはく | n1 | declaração (de amor), confissão de sentimentos |
 | 呟く | つぶやく | n1 | resmungar, murmurar |

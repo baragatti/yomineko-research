@@ -1,0 +1,167 @@
+{
+ "generated_for": "Q2-token-links (d): the registry level of records whose JLPT evidence was filed on a same-reading sibling (research/reports/token_link_cascade_plan.md section 2.3)",
+ "what_this_is": "The level half of the token-link repair. The JLPT reconcile resolved each community-list entry to a record by its READING, the same way the dissector resolved tokens, so the kana entries する 'to do', なる 'to become', くれる 'to give', かかる 'to take (time, money)' and ほう were filed on 刷る 'to print', 生る 'to bear fruit', 暮れる, 罹る and 報 'report', and the words they name were left with a stray higher-level tally. Each row moves the level, the agreement pair and level_sources onto the record the lists' own glosses name. Applied by scripts/apply_level_evidence.py --db-only --data research/derived/repairs/level_transfer_repairs.json (rebuild step after the last orthographic relink, before scripts/apply_token_link_repairs.py re-levels the touched sentences); the exporter publishes corpus/vocab/*.json.",
+ "formula": "scripts/ingest/reconcile_levels.py :: assign(): level = the EARLIEST level any consulted list assigns; level_agreement = n_for/consulted over the four vocab lists (elzup, openanki, bluskyo, jlptvocabapi); level_confidence = round(n_for/consulted, 3). Spec section 1.5: at least three independent lists.",
+ "siblings_not_changed": "刷る, 生る, 罹る and 報 keep the n5 tally the lists gave the kana entry. Their own glossed entries sit at N2/N3 (openanki_vocab_n2 'する to print', jlptvocabapi_n2 刷る, jlptvocabapi_n2 生る, jlptvocabapi_n3 罹る), but lowering them now would re-level every sentence whose する/なる/かかる run still carries a sibling edge through rule R2 of scripts/ingest/build_sentence_vocab.py. After Q2 no lesson unlocks them; correcting their tallies is an open item (research/reports/q2_token_links_report.md).",
+ "refused": [
+  {
+   "address": "vocab:1483070",
+   "record": "彼/かれ",
+   "plan_proposed": "n4 -> n5 (cascade plan variant C)",
+   "why_refused": "the lists do not support it: all four place かれ 'he, boyfriend' at N4 (research/datasets/jlpt/n4.csv '彼,かれ,\"he, boyfriend\"', openanki_vocab_n4.csv, bluskyo_vocab_n4.csv '彼,かれ', jlptvocabapi_n4.json {\"word\": \"彼\", \"furigana\": \"かれ\"}). The N5 entry the sibling 彼/あれ carries is the demonstrative あれ 'that one', which is what that record is. Nothing moves."
+  }
+ ],
+ "row_count": 5,
+ "rows": [
+  {
+   "entity": "vocab",
+   "address": "vocab:1157170",
+   "record": "為る/する",
+   "file": "n5.json",
+   "group": "token-link-level-transfer",
+   "level": "n5",
+   "old_level": "n4",
+   "new_level": "n5",
+   "old_agreement": "1/1",
+   "new_agreement": "4/4",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "old_sources": {
+    "jlptvocabapi": "n4"
+   },
+   "new_sources": {
+    "elzup": "n5",
+    "openanki": "n5",
+    "bluskyo": "n5",
+    "jlptvocabapi": "n5"
+   },
+   "evidence": [
+    "research/datasets/jlpt/n5.csv: する,する,\"to do, to try; to wear small items (e.g., necktie, watch, etc.)\"",
+    "openanki_vocab_n5.csv: する,する,\"to do, to try; ...\"",
+    "bluskyo_vocab_n5.csv: する,する",
+    "jlptvocabapi_n5.json: {\"word\": \"する\", \"meaning\": \"to do\"}"
+   ],
+   "reason": "all four lists place the kana entry する glossed 'to do' at N5; that entry is 為る, not 刷る 'to print' (whose own glossed entries are N2: openanki_vocab_n2 'する to print', jlptvocabapi_n2 刷る)."
+  },
+  {
+   "entity": "vocab",
+   "address": "vocab:1375610",
+   "record": "成る/なる",
+   "file": "n5.json",
+   "group": "token-link-level-transfer",
+   "level": "n5",
+   "old_level": "n3",
+   "new_level": "n5",
+   "old_agreement": "1/3",
+   "new_agreement": "4/4",
+   "old_confidence": 0.34,
+   "new_confidence": 1.0,
+   "old_sources": {
+    "bluskyo": "n3"
+   },
+   "new_sources": {
+    "elzup": "n5",
+    "openanki": "n5",
+    "bluskyo": "n5",
+    "jlptvocabapi": "n5"
+   },
+   "evidence": [
+    "research/datasets/jlpt/n5.csv: なる,なる,to become",
+    "openanki_vocab_n5.csv: なる,なる,to become",
+    "bluskyo_vocab_n5.csv: なる,なる",
+    "jlptvocabapi_n5.json: {\"word\": \"なる\", \"meaning\": \"to become\"}"
+   ],
+   "reason": "all four lists place なる glossed 'to become' at N5; that entry is 成る, not 生る 'to bear fruit' (N2 in openanki_vocab_n2 and jlptvocabapi_n2). Earliest level wins over bluskyo_vocab_n3 成る."
+  },
+  {
+   "entity": "vocab",
+   "address": "vocab:1269130",
+   "record": "呉れる/くれる",
+   "file": "n4.json",
+   "group": "token-link-level-transfer",
+   "level": "n4",
+   "old_level": "n1",
+   "new_level": "n4",
+   "old_agreement": "1/3",
+   "new_agreement": "4/4",
+   "old_confidence": 0.34,
+   "new_confidence": 1.0,
+   "old_sources": {
+    "jlpt-lists": "n1"
+   },
+   "new_sources": {
+    "elzup": "n4",
+    "openanki": "n4",
+    "bluskyo": "n4",
+    "jlptvocabapi": "n4"
+   },
+   "evidence": [
+    "research/datasets/jlpt/n4.csv: くれる,くれる,\"to give, to do for\"",
+    "openanki_vocab_n4.csv: くれる,くれる,\"to give, to do for\"",
+    "bluskyo_vocab_n4.csv: くれる,くれる",
+    "jlptvocabapi_n4.json: {\"word\": \"くれる\", \"meaning\": \"to give\"}"
+   ],
+   "reason": "all four lists place くれる glossed 'to give' at N4 (the separate 暮れる 'to get dark' entries are N4 too and stay on 暮れる). jlptvocabapi_n1 also lists 呉れる; the earliest level wins."
+  },
+  {
+   "entity": "vocab",
+   "address": "vocab:1207590",
+   "record": "掛かる/かかる",
+   "file": "n5.json",
+   "group": "token-link-level-transfer",
+   "level": "n5",
+   "old_level": "n3",
+   "new_level": "n5",
+   "old_agreement": "1/3",
+   "new_agreement": "4/4",
+   "old_confidence": 0.34,
+   "new_confidence": 1.0,
+   "old_sources": {
+    "bluskyo": "n3"
+   },
+   "new_sources": {
+    "elzup": "n5",
+    "openanki": "n5",
+    "bluskyo": "n5",
+    "jlptvocabapi": "n5"
+   },
+   "evidence": [
+    "research/datasets/jlpt/n5.csv: かかる,かかる,\"it takes (amount of time, money) (v.i.)\"",
+    "openanki_vocab_n5.csv: かかる,かかる,\"it takes (amount of time, money) (v.i.)\"",
+    "bluskyo_vocab_n5.csv: かかる,かかる",
+    "jlptvocabapi_n5.json: {\"word\": \"かかる\", \"meaning\": \"to take time or money\"}"
+   ],
+   "reason": "all four lists place かかる glossed 'to take (time, money)' at N5; that entry is 掛かる, not 罹る 'to suffer from' (jlptvocabapi_n3 罹る). Not in the plan's four (it has 51 relink rows, just over the plan's cut) but the same fault on the same evidence; earliest level wins over the N3 entries for 掛かる."
+  },
+  {
+   "entity": "vocab",
+   "address": "vocab:1516930",
+   "record": "方/ほう",
+   "file": "n5.json",
+   "group": "token-link-level-transfer",
+   "level": "n5",
+   "old_level": "n3",
+   "new_level": "n5",
+   "old_agreement": "1/3",
+   "new_agreement": "1/4",
+   "old_confidence": 0.34,
+   "new_confidence": 0.25,
+   "old_sources": {
+    "bluskyo": "n3"
+   },
+   "new_sources": {
+    "bluskyo": "n5",
+    "elzup": "n3",
+    "openanki": "n3",
+    "jlptvocabapi": "n3"
+   },
+   "evidence": [
+    "bluskyo_vocab_n5.csv: ほう,ほう (filed on 報/ほう, whose only evidence it is: vocab:1515620 {\"bluskyo\": \"n5\"})",
+    "research/datasets/jlpt/n3.csv: 方,ほう,side",
+    "openanki_vocab_n3.csv: 方,ほう,side",
+    "jlptvocabapi_n3.json: {\"word\": \"方\", \"meaning\": \"side\"}"
+   ],
+   "reason": "the one N5 list entry for ほう is the kana word itself, and the word the course teaches at N5 as ～のほうが (les:n5-comparacoes-01) is 方 'side, the ... one'; the reconcile filed it on 報 'report' by reading. The formula's earliest-level rule then puts 方/ほう at N5 on one list of the four (the other three say N3), so the agreement is recorded honestly as 1/4. Not in the plan's four; same fault, found when the re-level showed 方 lifting 32 touched N4/N5 sentences to N3."
+  }
+ ]
+}

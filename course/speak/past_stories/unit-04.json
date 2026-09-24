@@ -7,53 +7,49 @@
     "pt-BR": "Contar o que aconteceu, parte 4"
   },
   "say_now": [
-    "sent:tatoeba-144504",
     "sent:tatoeba-157654",
     "sent:tatoeba-223949",
     "sent:tatoeba-12275994",
     "sent:tatoeba-78171",
-    "sent:tatoeba-156748"
+    "sent:tatoeba-156748",
+    "sent:tatoeba-214558"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1206530",
     "vocab:1191320",
     "vocab:1335080",
     "vocab:1378690",
+    "vocab:1358490",
+    "vocab:1397300",
     "vocab:1340570",
+    "vocab:1538330",
     "vocab:1519830"
   ],
   "patterns": [
     "gram:ga-arimasu",
+    "gram:n3-ni-totte",
     "gram:janai-dewa-nai",
-    "gram:gp-14"
+    "gram:n3-rashii"
   ],
   "kanji_recognition": [
-    "学",
-    "経",
-    "験",
-    "人",
     "夏",
-    "覚"
+    "覚",
+    "去",
+    "険",
+    "私",
+    "年"
   ],
   "shadowing": [
-    "sent:tatoeba-144504",
     "sent:tatoeba-157654",
     "sent:tatoeba-223949",
     "sent:tatoeba-12275994",
     "sent:tatoeba-78171",
-    "sent:tatoeba-156748"
+    "sent:tatoeba-156748",
+    "sent:tatoeba-214558"
   ],
   "srs": {
     "introduces_cards": [
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-144504",
-        "card_types": [
-          "production"
-        ]
-      },
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-157654",
@@ -88,33 +84,55 @@
         "card_types": [
           "production"
         ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-214558",
+        "card_types": [
+          "production"
+        ]
       }
     ]
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 484,
+  "cumulative_known_vocab": 479,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
+    {
+      "id": "so:n3:259",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:208:1302",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "会社",
+        "医者",
+        "成る"
+      ]
+    },
     {
       "id": "cf:n3:233:1099",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
         "何処",
-        "知恵",
-        "禁止"
+        "禁止",
+        "意見"
       ]
     },
     {
-      "id": "cf:n3:767:80",
-      "type": "context_fill",
+      "id": "pp:n4:1302",
+      "type": "paraphrase",
       "via": "new-word",
       "distractors": [
-        "美味しい",
-        "タクシー",
-        "出かける"
+        "許り",
+        "暑い",
+        "地図"
       ]
     },
     {
@@ -132,15 +150,14 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
+        "すばらしい",
         "しゅっしん",
-        "こんにちは",
-        "しゅうかん"
+        "こんにちは"
       ]
     }
   ],
   "patterns_chunked": [
     "gram:n3-wake-dewa-nai",
-    "gram:n3-ni-totte",
     "gram:gp-36"
   ],
   "drills": [
@@ -154,6 +171,15 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:n3-ni-totte",
+      "examples": [
+        "sent:tatoeba-164771",
+        "sent:tatoeba-164781",
+        "sent:tatoeba-11995507"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:janai-dewa-nai",
       "examples": [
         "sent:gen-c8e36c94f4e2",
@@ -163,16 +189,33 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-14",
+      "pattern": "gram:n3-rashii",
       "examples": [
-        "sent:tatoeba-74498",
-        "sent:tatoeba-76735",
-        "sent:tatoeba-76749"
+        "sent:tatoeba-100541",
+        "sent:tatoeba-108826",
+        "sent:tatoeba-107636"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
+    {
+      "prompt": {
+        "pt-BR": "A gente aprende com a experiência."
+      },
+      "answer_key": "人は経験から学ぶ。",
+      "accepted_variants": [
+        "ひとはけいけんからまなぶ",
+        "ひとはけいけんからまなぶ。",
+        "ひとわけいけんからまなぶ",
+        "ひとわけいけんからまなぶ。",
+        "人は経験から学ぶ",
+        "人は経験から学ぶ。"
+      ],
+      "sentence": "sent:tatoeba-144504",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
     {
       "prompt": {
         "pt-BR": "Meu pai já foi duas vezes para a Austrália."
@@ -208,21 +251,6 @@
       "sentence": "sent:tatoeba-235631",
       "kind": "same-stage",
       "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "\"É a primeira vez que você vem a esta loja?\" \"Sim, é a primeira vez.\""
-      },
-      "answer_key": "「この店は初めて？」「ええ、初めてです」",
-      "accepted_variants": [
-        "「このみせははじめて?」「ええ、はじめてです」",
-        "「このみせわはじめて?」「ええ、はじめてです」",
-        "「この店は初めて?」「ええ、初めてです」",
-        "「この店は初めて？」「ええ、初めてです」"
-      ],
-      "sentence": "sent:tatoeba-228002",
-      "kind": "same-stage",
-      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -230,8 +258,8 @@
       "pt-BR": "Alguém perguntou como foi seu fim de semana. Conte, no passado."
     },
     "items": [
+      "sent:tatoeba-228002",
       "sent:tatoeba-171398",
-      "sent:tatoeba-127068",
       "sent:tatoeba-156822",
       "sent:tatoeba-78156",
       "sent:tatoeba-169967",
@@ -243,15 +271,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
-    "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 28,
     "fluency": 6
   }
 }

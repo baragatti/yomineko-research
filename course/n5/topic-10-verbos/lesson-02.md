@@ -7,7 +7,7 @@
 - Usar a partícula を para marcar o objeto direto numa frase transitiva
 - Montar frases com verbos de ação frequentes (escrever, comprar, ouvir, lavar, dizer)
 
-**Introduz:** gramática [gp-7, o-wo] · vocabulário [切る, 刷る, 友達, 吸う, 売る, 差す, 戸, 押す, 明日, 書く, 歌う, 洗う, 消す, 置く, 言う, 買う, 貸す, 返す, 電気, 飲む] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-7, o-wo] · vocabulário [為る, 切る, 友達, 吸う, 売る, 差す, 戸, 押す, 明日, 書く, 歌う, 洗う, 消す, 置く, 言う, 買う, 貸す, 返す, 電気, 飲む] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-a6201c731653`, `sent:gen-867d5c2e8dc3`, `sent:tatoeba-174533`, `sent:gen-66857872d764`
 
@@ -106,9 +106,9 @@ Mais alguns verbos う com を para você ver o padrão se repetindo:
 - きる significa cortar. As outras opções são おす (empurrar, pressionar), いう (dizer, falar) e かう (comprar).
 
 
-### 7. (recognition) Qual destas palavras significa "imprimir"?
-- **Resposta:** `{"choices": ["かえす", "すう", "うる", "する"], "correct": "する"}`
-- する significa imprimir. As outras opções são かえす (devolver), すう (fumar) e うる (vender).
+### 7. (recognition) Qual destas palavras significa "fazer"?
+- **Resposta:** `{"choices": ["いう", "する", "あびる", "おく"], "correct": "する"}`
+- する significa fazer. As outras opções são いう (dizer, falar), あびる (tomar (banho/ducha), banhar-se) e おく (colocar, pôr).
 
 
 ### 8. (cloze) Complete a frase: ＿＿と コーヒーを のむ (Eu tomo café com um amigo.)
@@ -122,8 +122,8 @@ Mais alguns verbos う com を para você ver o padrão se repetindo:
 
 
 ### 10. (recognition) Qual destas palavras significa "vender"?
-- **Resposta:** `{"choices": ["する", "かく", "けす", "うる"], "correct": "うる"}`
-- うる significa vender. As outras opções são かく (escrever), する (imprimir) e けす (desligar, apagar (luz, fogo)).
+- **Resposta:** `{"choices": ["しめる", "ある", "かす", "うる"], "correct": "うる"}`
+- うる significa vender. As outras opções são ある (haver, existir), しめる (amarrar, apertar) e かす (emprestar (algo a alguém)).
 
 
 ### 11. (recognition) Qual destas palavras significa "abrir (o guarda-chuva), segurar erguido"?
@@ -157,8 +157,8 @@ Mais alguns verbos う com を para você ver o padrão se repetindo:
 
 
 ### 17. (recognition) Qual destas palavras significa "dizer, falar"?
-- **Resposta:** `{"choices": ["する", "うる", "いう", "のむ"], "correct": "いう"}`
-- いう significa dizer, falar. As outras opções são のむ (beber, tomar), する (imprimir) e うる (vender).
+- **Resposta:** `{"choices": ["あげる", "こたえる", "いう", "かえす"], "correct": "いう"}`
+- いう significa dizer, falar. As outras opções são こたえる (responder, dar uma resposta), かえす (devolver) e あげる (levantar, erguer).
 
 
 ### 18. (recognition) Qual destas palavras significa "emprestar (algo a alguém)"?

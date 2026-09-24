@@ -7,84 +7,91 @@
     "pt-BR": "Comer e beber fora, parte 3"
   },
   "say_now": [
-    "sent:tatoeba-172639",
-    "sent:tatoeba-10557770",
-    "sent:tatoeba-10657609",
-    "sent:tatoeba-204265",
-    "sent:tatoeba-145930",
-    "sent:tatoeba-145934"
+    "sent:tatoeba-1115376",
+    "sent:tatoeba-10899775",
+    "sent:tatoeba-200661",
+    "sent:tatoeba-182254",
+    "sent:tatoeba-171644",
+    "sent:tatoeba-172639"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1000420",
+    "vocab:1012480",
+    "vocab:1008630",
+    "vocab:1579110",
     "vocab:1288850",
-    "vocab:1463770",
-    "vocab:1007130",
-    "vocab:1456360",
-    "vocab:1169870",
-    "vocab:1348910",
-    "vocab:1157760",
-    "vocab:1327410"
+    "vocab:1151260",
+    "vocab:1578010",
+    "vocab:1145310",
+    "vocab:1231690",
+    "vocab:1426250",
+    "vocab:1436560",
+    "vocab:1358550"
   ],
   "patterns": [
-    "gram:gp-149"
+    "gram:gp-17",
+    "gram:ndesu",
+    "gram:n3-temo",
+    "gram:da-desu"
   ],
   "kanji_recognition": [
-    "今",
+    "何",
+    "時",
+    "閉",
     "食",
-    "飲",
-    "少",
-    "水",
-    "日"
+    "昼",
+    "堂"
   ],
   "shadowing": [
-    "sent:tatoeba-172639",
-    "sent:tatoeba-10557770",
-    "sent:tatoeba-10657609",
-    "sent:tatoeba-204265",
-    "sent:tatoeba-145930",
-    "sent:tatoeba-145934"
+    "sent:tatoeba-1115376",
+    "sent:tatoeba-10899775",
+    "sent:tatoeba-200661",
+    "sent:tatoeba-182254",
+    "sent:tatoeba-171644",
+    "sent:tatoeba-172639"
   ],
   "srs": {
     "introduces_cards": [
       {
         "deck": "deck:phrases",
+        "item": "sent:tatoeba-1115376",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10899775",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-200661",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-182254",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-171644",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
         "item": "sent:tatoeba-172639",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-10557770",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-10657609",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-204265",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-145930",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-145934",
         "card_types": [
           "production"
         ]
@@ -93,28 +100,48 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 124,
+  "cumulative_known_vocab": 126,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n4:693:617",
+      "id": "so:n3:818",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:818",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:818:313",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "話",
-        "何",
-        "人"
+        "会計",
+        "勘定",
+        "何時"
       ]
     },
     {
-      "id": "cf:n3:123:64",
+      "id": "cf:n4:930:202",
       "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "程度",
+        "用意",
+        "幾ら"
+      ]
+    },
+    {
+      "id": "kr:n3:31",
+      "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "私",
-        "時",
-        "日"
+        "こと",
+        "いく",
+        "あれ"
       ]
     },
     {
@@ -126,32 +153,46 @@
         "かれ",
         "みず"
       ]
-    },
-    {
-      "id": "kr:n4:324",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はじめて",
-        "おしえる",
-        "ぐうぜん"
-      ]
     }
   ],
   "patterns_chunked": [
-    "gram:sonna-ni",
-    "gram:doushite",
-    "gram:gp-87",
-    "gram:gp-89",
-    "gram:nagara"
+    "gram:totemo",
+    "gram:gp-121"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-149",
+      "pattern": "gram:gp-17",
       "examples": [
-        "sent:tatoeba-4856",
-        "sent:tatoeba-83623",
-        "sent:tatoeba-79091"
+        "sent:tatoeba-124633",
+        "sent:tatoeba-144227",
+        "sent:tatoeba-80132"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:ndesu",
+      "examples": [
+        "sent:tatoeba-80973",
+        "sent:tatoeba-137685",
+        "sent:tatoeba-80780"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-temo",
+      "examples": [
+        "sent:tatoeba-6015",
+        "sent:tatoeba-173357",
+        "sent:tatoeba-85028"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5332",
+        "sent:tatoeba-4708",
+        "sent:tatoeba-4973"
       ],
       "strand": "language-focused"
     }
@@ -159,46 +200,51 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Hoje os peixes não estão mordendo a isca."
+        "pt-BR": "Vamos comer lá fora em vez de dentro da barraca."
       },
-      "answer_key": "今日は魚の食いが悪い。",
+      "answer_key": "テントの中ではなくて外で食べよう。",
       "accepted_variants": [
-        "きょうはさかなのくいがわるい",
-        "きょうはさかなのくいがわるい。",
-        "きょうわさかなのくいがわるい",
-        "きょうわさかなのくいがわるい。",
-        "今日は魚の食いが悪い",
-        "今日は魚の食いが悪い。"
+        "てんとのなかではなくてそとでたべよう",
+        "てんとのなかではなくてそとでたべよう。",
+        "てんとのなかでわなくてそとでたべよう",
+        "てんとのなかでわなくてそとでたべよう。",
+        "テントの中ではなくて外で食べよう",
+        "テントの中ではなくて外で食べよう。"
       ],
-      "sentence": "sent:tatoeba-171644",
+      "sentence": "sent:tatoeba-201917",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "No ano passado eu plantei tomates, e ficaram muito gostosos."
+        "pt-BR": "Por que ninguém quer comer o que eu fiz?"
       },
-      "answer_key": "去年トマトを作ったがとてもおいしかった。",
+      "answer_key": "どうして誰も私が作ったものを食べようとしないの？",
       "accepted_variants": [
-        "きょねんとまとをつくったがとてもおいしかった",
-        "きょねんとまとをつくったがとてもおいしかった。",
-        "去年トマトを作ったがとてもおいしかった",
-        "去年トマトを作ったがとてもおいしかった。"
+        "どうしてだれもわたしがつくったものをたべようとしないの",
+        "どうしてだれもわたしがつくったものをたべようとしないの?",
+        "どうして誰も私が作ったものを食べようとしないの",
+        "どうして誰も私が作ったものを食べようとしないの?",
+        "どうして誰も私が作ったものを食べようとしないの？"
       ],
-      "sentence": "sent:tatoeba-182254",
+      "sentence": "sent:tatoeba-9819543",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Está muito gostoso!"
+        "pt-BR": "O jantar já está pronto, então a gente pode comer na hora que quiser."
       },
-      "answer_key": "とてもおいしいよ。",
+      "answer_key": "夕食の用意はできているから、いつでも食べたいときに食べられるよ。",
       "accepted_variants": [
-        "とてもおいしいよ",
-        "とてもおいしいよ。"
+        "ゆうしょくのよういはできているから、いつでもたべたいときにたべられるよ",
+        "ゆうしょくのよういはできているから、いつでもたべたいときにたべられるよ。",
+        "ゆうしょくのよういわできているから、いつでもたべたいときにたべられるよ",
+        "ゆうしょくのよういわできているから、いつでもたべたいときにたべられるよ。",
+        "夕食の用意はできているから、いつでも食べたいときに食べられるよ",
+        "夕食の用意はできているから、いつでも食べたいときに食べられるよ。"
       ],
-      "sentence": "sent:tatoeba-200661",
+      "sentence": "sent:tatoeba-79093",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -208,12 +254,12 @@
       "pt-BR": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom."
     },
     "items": [
+      "sent:tatoeba-13795168",
       "sent:tatoeba-226787",
       "sent:tatoeba-12890046",
-      "sent:tatoeba-196349",
-      "sent:tatoeba-160740",
-      "sent:tatoeba-76098",
-      "sent:tatoeba-121802"
+      "sent:tatoeba-159773",
+      "sent:tatoeba-204523",
+      "sent:tatoeba-76098"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -221,15 +267,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 49,
-    "fluency": 15
+    "meaning-input": 23,
+    "meaning-output": 6,
+    "language-focused": 60,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 20,
+    "language-focused": 32,
     "fluency": 6
   }
 }

@@ -23,10 +23,10 @@
     "vocab:1171900",
     "vocab:1519290",
     "vocab:1202270",
-    "vocab:1548220",
-    "vocab:1582920"
+    "vocab:1548220"
   ],
   "patterns": [
+    "gram:n3-te-hajimete",
     "gram:n3-ni-tsuite",
     "gram:deshou",
     "gram:gp-62",
@@ -96,7 +96,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 360,
+  "cumulative_known_vocab": 352,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -105,9 +105,9 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "困る",
         "時間",
-        "今夜"
+        "今夜",
+        "電車"
       ]
     },
     {
@@ -115,9 +115,9 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
+        "外",
         "僕",
-        "町",
-        "丈"
+        "町"
       ]
     },
     {
@@ -125,9 +125,9 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
+        "ぎむ",
         "よい",
-        "きく",
-        "いぬ"
+        "きく"
       ]
     },
     {
@@ -142,25 +142,33 @@
     }
   ],
   "patterns_chunked": [
-    "gram:n3-donna-ni-temo",
-    "gram:n3-te-hajimete"
+    "gram:n3-donna-ni-temo"
   ],
   "drills": [
     {
+      "pattern": "gram:n3-te-hajimete",
+      "examples": [
+        "sent:tatoeba-170073",
+        "sent:tatoeba-182409",
+        "sent:tatoeba-234911"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:n3-ni-tsuite",
       "examples": [
-        "sent:tatoeba-80136",
         "sent:tatoeba-77936",
-        "sent:tatoeba-123701"
+        "sent:tatoeba-123701",
+        "sent:tatoeba-80136"
       ],
       "strand": "language-focused"
     },
     {
       "pattern": "gram:deshou",
       "examples": [
-        "sent:tatoeba-98793",
-        "sent:tatoeba-79089",
-        "sent:tatoeba-78454"
+        "sent:tatoeba-78454",
+        "sent:tatoeba-77841",
+        "sent:tatoeba-98793"
       ],
       "strand": "language-focused"
     },
@@ -177,8 +185,8 @@
       "pattern": "gram:gp-89",
       "examples": [
         "sent:tatoeba-144038",
-        "sent:tatoeba-4855",
-        "sent:tatoeba-164675"
+        "sent:tatoeba-10541587",
+        "sent:tatoeba-8699443"
       ],
       "strand": "language-focused"
     }
@@ -240,9 +248,9 @@
       "sent:tatoeba-1171888",
       "sent:tatoeba-235793",
       "sent:tatoeba-11171012",
-      "sent:tatoeba-199410",
       "sent:tatoeba-13172379",
-      "sent:tatoeba-179712"
+      "sent:tatoeba-179712",
+      "sent:tatoeba-102734"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -250,15 +258,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 25,
     "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 27,
     "fluency": 6
   }
 }

@@ -7,7 +7,7 @@
 - Expressar finalidade com 〜ように ('de modo que / para que') após verbo potencial ou negativo
 - Distribuir algo por todos os itens de um grupo com o prefixo 各 ('cada / cada um dos')
 
-**Introduz:** gramática [gp-90, you-ni-you-na] · vocabulário [為さる, 為る, 用] · kanji [意 止 注 風] · kana [—]
+**Introduz:** gramática [gp-90, you-ni-you-na] · vocabulário [様, 為さる] · kanji [意 止 注 風] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-78536`, `sent:tatoeba-83950`, `sent:gen-344b2dbc4a13`, `sent:gen-71eeebb22ba7`
 

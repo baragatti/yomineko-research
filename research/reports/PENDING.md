@@ -167,6 +167,16 @@ For 13, the intended entry IS already another published record — 成る (n3), 
 掛ける (n5), 履く (n3), 縦 (n3), 方 (already unlocked by n5-perguntas-01), 本当 (n5), 格好 (n4),
 事 (n4), 喧嘩 (two records collide), 御 (n3) — so each is a MERGE spanning two lessons or two levels,
 the conditions W08 refused; the 14th (動→如何) would collapse two words 239 lessons keep apart.
+**Status (2026-09-23, Q2-token-links): DONE BY SCENARIO D for 為る, 成る, 掛かる, 方 and 動.** Not by
+merging records: the token links were repaired (3,835 verified rows) and the course follows them
+(`research/derived/repairs/sibling_unlock_repoint.json`): the lessons that unlocked 刷る, 生る, 報, 用
+for する/なる/ほう/よう now unlock 為る, 成る, 方, 様 in the same slot (moving the later unlock and its
+card), 掛かる is added beside 罹る at n5-verbos-03 (whose prose teaches 罹る), 動 leaves the どうやって
+lesson, 呉れる is unlocked where くれる is taught, and the four siblings whose W21b move rested on the
+mislinked tokens go back to the lessons whose prose teaches them. The level evidence of 為る, 成る,
+呉れる, 掛かる and 方 moved off the siblings (`level_transfer_repairs.json`; 彼/かれ refused, the lists
+say N4). Still open from the 14: 掛ける, 履く, 縦, 本当, 格好, 事, 喧嘩, 御, and the sibling tallies
+(刷る, 生る, 罹る, 報 keep list evidence that belongs to their targets). `research/reports/q2_token_links_report.md`.
 **Options.** Per pair: merge into the existing record (its lesson keeps the introduction; the
 other lesson loses an unlock — a curriculum edit), or keep both and mark the wrong one deprecated
 with no survivor (learner never sees it). Ledger with per-record evidence:

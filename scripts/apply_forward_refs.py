@@ -159,6 +159,11 @@ def main() -> int:
             w(f"UPDATE {tbl} SET introducing_topic_id=? WHERE id=?", (ttop, rec[0]))
         if args.placement_only:
             continue
+        # Q2: a move whose record the sibling repoint retired from the course (or moved to the lesson
+        # that unlocked its sibling) is history; research/derived/repairs/sibling_unlock_repoint.json
+        # owns that unlock now, and its apply wrote both layers.
+        if r.get("retired_by"):
+            continue
 
         # ---- unlock (db) ------------------------------------------------------------------
         # `ref_at_new_home` is the published slug for an ambiguous headword (see the derivation),
@@ -264,8 +269,8 @@ def main() -> int:
         return 2 if problems else 0
 
     # ---- lesson-addressed tables a rebuild replays against the moved sources --------------
-    moved_item = {(r["from"], r["item"]): r["to"] for r in rows}
-    moved_ex = {(r["from"], e): r["to"] for r in rows for e in r["exercises_moved"]}
+    moved_item = {(r["from"], r["item"]): r["to"] for r in rows if not r.get("retired_by")}
+    moved_ex = {(r["from"], e): r["to"] for r in rows for e in r["exercises_moved"] if not r.get("retired_by")}
     for path, key in ((CARD_TABLE, lambda x: (x["lesson"], x["item"])),
                       (W20_TABLE, lambda x: (x["lesson"], x["exercise"]["id"]))):
         tdoc = json.loads(path.read_text(encoding="utf-8"))

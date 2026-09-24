@@ -43,6 +43,13 @@ Idempotent, exact-precondition: a row applies only when the stored pair equals `
 holding `new_*` is a no-op; ANY other value is SKIPPED, reported and exits 1 -- it is never guessed at
 or overwritten. So a second run reports 0 changes and `--check` after an apply exits clean.
 
+LEVEL TRANSFERS (Q2). A row may also carry `old_level`/`new_level` and `old_sources`/`new_sources`
+(research/derived/repairs/level_transfer_repairs.json): the evidence was filed on a same-reading
+sibling, so the level and `level_sources` move with the agreement pair, under the same
+exact-precondition rule (all four stored values must equal the `old_*` side). A level move changes
+the registry file the exporter writes the record to, so such a row has no in-place JSON half: it is
+counted "json via exporter" and the rebuild path (`--db-only`, then `export_corpus.py`) publishes it.
+
 Usage: apply_level_evidence.py [--check] [--db-only] [--group NAME ...] [--data PATH] [--root PATH]
                                [--db PATH]
 """
@@ -119,6 +126,9 @@ def main() -> int:
             index = {str(rec.get("slug") or rec.get("id")): rec for rec in data}
             dirty = False
             for r in group:
+                if "new_level" in r:
+                    stats[(r["group"], "json via exporter")] += 1
+                    continue
                 rec = index.get(r["address"])
                 if rec is None:
                     skipped.append(f"json {r['entity']} {r['address']}: not in {fname}")
@@ -157,6 +167,28 @@ def main() -> int:
                 tbl = TABLES[r["entity"]]
                 if not populated[tbl]:
                     stats[(r["group"], "db out-of-scope")] += 1
+                    continue
+                if "new_level" in r:
+                    got = con.execute(f"SELECT level, level_agreement, level_confidence, level_sources "
+                                      f"FROM {tbl} WHERE slug=?", (r["address"],)).fetchone()
+                    if got is None:
+                        skipped.append(f"db {r['entity']} {r['address']}: no such row in {tbl}")
+                        continue
+                    have = (got[0], got[1], got[2], json.loads(got[3]) if got[3] else None)
+                    new = (r["new_level"], r["new_agreement"], r["new_confidence"], r["new_sources"])
+                    old = (r["old_level"], r["old_agreement"], r["old_confidence"], r["old_sources"])
+                    if all(same(a, b) for a, b in zip(have, new)):
+                        stats[(r["group"], "db already")] += 1
+                    elif all(same(a, b) for a, b in zip(have, old)):
+                        if not args.check:
+                            con.execute(f"UPDATE {tbl} SET level=?, level_agreement=?, level_confidence=?, "
+                                        f"level_sources=? WHERE slug=?",
+                                        (new[0], new[1], new[2], json.dumps(new[3], ensure_ascii=False),
+                                         r["address"]))
+                        stats[(r["group"], "db applied")] += 1
+                    else:
+                        skipped.append(f"db {r['entity']} {r['address']}: holds {have!r}, expected "
+                                       f"{old!r} — not overwritten")
                     continue
                 got = con.execute(f"SELECT level_agreement, level_confidence FROM {tbl} WHERE slug=?",
                                   (r["address"],)).fetchone()

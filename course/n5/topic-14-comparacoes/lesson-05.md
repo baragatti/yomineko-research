@@ -7,7 +7,7 @@
 - Expressar o desejo do próprio falante e perguntar pelo desejo de quem você fala
 - Combinar ～たい com verbos de ações cotidianas (dormir, subir, enfileirar, tirar a roupa)
 
-**Introduz:** gramática [tai] · vocabulário [上る, 並ぶ, 並べる, 寝る, 脱ぐ, 鳴く] · kanji [—] · kana [—]
+**Introduz:** gramática [tai] · vocabulário [生る, 上る, 並ぶ, 並べる, 寝る, 脱ぐ, 鳴く] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-83633`, `sent:tatoeba-84964`
 
@@ -121,5 +121,10 @@ Cuidado com os pares parecidos. 並ぶ é você entrar na fila (a fila se forma 
 ### 11. (recognition) Qual destas palavras significa "cantar (animal), piar"?
 - **Resposta:** `{"choices": ["ねる", "おわる", "なく", "とぶ"], "correct": "なく"}`
 - なく significa cantar (animal), piar. As outras opções são とぶ (voar), おわる (terminar, acabar) e ねる (dormir, ir para a cama).
+
+
+### 12. (recognition) Qual destas palavras significa "dar fruto, frutificar"?
+- **Resposta:** `{"choices": ["出かける", "生る", "生まれる", "出す"], "correct": "生る"}`
+- 生る（なる） significa dar fruto, frutificar. As outras opções são 生まれる (nascer), 出かける (sair, partir) e 出す (tirar, pôr para fora).
 
 

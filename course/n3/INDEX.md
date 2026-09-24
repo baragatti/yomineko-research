@@ -8,11 +8,11 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 | 39 | Tempo, simultaneidade e sequência | tempo | 128 | 24 | 11 |
 | 40 | Perspectiva, escopo e comparação | referência | 124 | 28 | 8 |
 | 41 | Causa, razão e consequência | causa | 125 | 29 | 8 |
-| 42 | Estado, modo e ação inacabada | estado | 124 | 27 | 12 |
+| 42 | Estado, modo e ação inacabada | estado | 123 | 27 | 12 |
 | 43 | Intenção, propósito e decisão | intenção | 107 | 26 | 11 |
-| 44 | Conselho, obrigação e permissão | deveres | 107 | 23 | 9 |
+| 44 | Conselho, obrigação e permissão | deveres | 106 | 23 | 9 |
 | 45 | Desejos, hipóteses e arrependimento | desejos | 103 | 28 | 10 |
-| 46 | Limite, escassez e grau | limites | 108 | 26 | 10 |
+| 46 | Limite, escassez e grau | limites | 107 | 26 | 10 |
 | 47 | Ênfase, adição e negação total | ênfase | 106 | 24 | 9 |
 | 48 | Concessão e contraste | contraste | 106 | 26 | 12 |
 | 49 | Conjectura, aparência e probabilidade | conjectura | 108 | 27 | 8 |
@@ -44,7 +44,7 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 42. Estado, modo e ação inacabada
 - **kanji** (27): 位 局 格 流 疑 置 過 与 供 常 放 状 球 職 付 割 役 構 由 費
-- **vocab** (124, amostra): 価格、係、化学、学、学習、学者、家具、掛かる、確実、覚悟、輝く、限る、加減、囲む、学問
+- **vocab** (123, amostra): 価格、係、化学、学、学習、学者、家具、確実、覚悟、輝く、限る、加減、囲む、学問、影
 - **gramática** (12): n3-kake, n3-tate, n3-te-iru, n3-ageru, n3-chatta, n3-kirenai, n3-mama, n3-naide, n3-zu-ni, n3-ppai, n3-ppanashi, n3-toori
 
 ### 43. Intenção, propósito e decisão
@@ -54,7 +54,7 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 44. Conselho, obrigação e permissão
 - **kanji** (23): 伝 形 種 葉 命 失 守 落 負 退 非 察 差 望 末 段 渡 福 美 若
-- **vocab** (107, amostra): きちんと、きつい、キャプテン、キャンプ、休憩、休暇、吸収、器用、基本、希望、教科書、気づく、気に入る、球、競技
+- **vocab** (106, amostra): きちんと、きつい、キャプテン、キャンプ、休憩、休暇、吸収、器用、基本、希望、教科書、気づく、気に入る、球、競技
 - **gramática** (9): n3-te-goran, n3-te-miru, n3-toku, n3-beki-da, n3-koto-da, n3-koto-wa-nai, n3-nai-koto-wa-nai, n3-sete-kudasai, n3-wake-ni-wa-ikanai
 
 ### 45. Desejos, hipóteses e arrependimento
@@ -64,7 +64,7 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 46. Limite, escassez e grau
 - **kanji** (26): 具 単 号 園 易 辞 速 危 因 存 完 苦 除 富 座 破 給 飛 愛 捕
-- **vocab** (108, amostra): ケース、ゲーム、傾向、刑事、劇、劇場、化粧、契約、掲示、経由、芸術、計算、警告、券、喧嘩
+- **vocab** (107, amostra): ケース、ゲーム、傾向、刑事、劇、劇場、化粧、契約、掲示、経由、芸術、計算、警告、券、喧嘩
 - **gramática** (10): n3-kurai, n3-kurai-wa-nai, n3-sa, n3-bakari, n3-dake-shika, n3-shika-nai, n3-ba-hodo, n3-hodo, n3-donna-ni-koto-ka, n3-kanarazushimo-towa-kagiranai
 
 ### 47. Ênfase, adição e negação total

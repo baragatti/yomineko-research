@@ -8,7 +8,7 @@
 - Escolher entre いく (ir, afasta-se) e くる (vir, aproxima-se) pelo ponto de vista de quem fala
 - Reconhecer os kanji 行, 中 e 長 e ligá-los a palavras que você já usa
 
-**Introduz:** gramática [gp-20] · vocabulário [仕事, 住む, 咲く, 寒い, 帰る, 座る, 散歩, 曇る, 歩く, 泳ぐ, 生る, 罹る, 翔る, 行く, 買い物, 走る, 遊ぶ] · kanji [毎 行 長] · kana [—]
+**Introduz:** gramática [gp-20] · vocabulário [掛かる, 成る, 仕事, 住む, 咲く, 寒い, 帰る, 座る, 散歩, 曇る, 歩く, 泳ぐ, 罹る, 翔る, 行く, 買い物, 走る, 遊ぶ] · kanji [毎 行 長] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-5320`, `sent:tatoeba-122195`
 
@@ -149,8 +149,8 @@ Você vai ouvir também os verbos 罹る(contrair uma doença),翔る(planar, vo
 - frases: `sent:tatoeba-122195`
 
 ### 15. (recognition) Qual destas palavras significa "voltar para casa, ir para casa"?
-- **Resposta:** `{"choices": ["およぐ", "さく", "なる", "かえる"], "correct": "かえる"}`
-- かえる significa voltar para casa, ir para casa. As outras opções são なる (dar fruto, frutificar), およぐ (nadar) e さく (florescer, desabrochar).
+- **Resposta:** `{"choices": ["おす", "うる", "うたう", "かえる"], "correct": "かえる"}`
+- かえる significa voltar para casa, ir para casa. As outras opções são うる (vender), うたう (cantar) e おす (empurrar, pressionar).
 
 
 ### 16. (recognition) Qual destas palavras significa "sentar, sentar-se"?
@@ -164,8 +164,8 @@ Você vai ouvir também os verbos 罹る(contrair uma doença),翔る(planar, vo
 
 
 ### 18. (recognition) Qual destas palavras significa "ficar nublado, encobrir-se"?
-- **Resposta:** `{"choices": ["なる", "かける", "くもる", "あるく"], "correct": "くもる"}`
-- くもる significa ficar nublado, encobrir-se. As outras opções são かける (voar (pelo céu), planar), なる (dar fruto, frutificar) e あるく (andar, caminhar).
+- **Resposta:** `{"choices": ["かける", "おしえる", "やる", "くもる"], "correct": "くもる"}`
+- くもる significa ficar nublado, encobrir-se. As outras opções são かける (voar (pelo céu), planar), やる (fazer, realizar) e おしえる (ensinar, lecionar).
 
 
 ### 19. (recognition) Qual destas palavras significa "andar, caminhar"?
@@ -178,37 +178,32 @@ Você vai ouvir também os verbos 罹る(contrair uma doença),翔る(planar, vo
 - およぐ significa nadar. As outras opções são すむ (morar, residir), すわる (sentar, sentar-se) e おく (colocar, pôr).
 
 
-### 21. (recognition) Qual destas palavras significa "dar fruto, frutificar"?
-- **Resposta:** `{"choices": ["きる", "かかる", "なる", "のる"], "correct": "なる"}`
-- なる significa dar fruto, frutificar. As outras opções são かかる (pegar (uma doença), contrair), のる (andar (de veículo), embarcar) e きる (cortar).
-
-
-### 22. (recognition) Qual destas palavras significa "pegar (uma doença), contrair"?
+### 21. (recognition) Qual destas palavras significa "pegar (uma doença), contrair"?
 - **Resposta:** `{"choices": ["さく", "かかる", "あそぶ", "かえる"], "correct": "かかる"}`
 - かかる significa pegar (uma doença), contrair. As outras opções são あそぶ (brincar, se divertir), さく (florescer, desabrochar) e かえる (voltar para casa, ir para casa).
 
 
-### 23. (recognition) Qual destas palavras significa "voar (pelo céu), planar"?
+### 22. (recognition) Qual destas palavras significa "voar (pelo céu), planar"?
 - **Resposta:** `{"choices": ["はしる", "かける", "すむ", "しめる"], "correct": "かける"}`
 - かける significa voar (pelo céu), planar. As outras opções são はしる (correr), すむ (morar, residir) e しめる (amarrar, apertar).
 
 
-### 24. (recognition) Qual destas palavras significa "compras"?
+### 23. (recognition) Qual destas palavras significa "compras"?
 - **Resposta:** `{"choices": ["こども", "ストーブ", "さとう", "かいもの"], "correct": "かいもの"}`
 - かいもの significa compras. As outras opções são さとう (açúcar), こども (criança) e ストーブ (aquecedor, aquecedor a gás ou querosene).
 
 
-### 25. (recognition) Qual destas palavras significa "correr"?
-- **Resposta:** `{"choices": ["きえる", "なる", "うたう", "はしる"], "correct": "はしる"}`
-- はしる significa correr. As outras opções são なる (dar fruto, frutificar), うたう (cantar) e きえる (apagar-se (luz, fogo), desligar-se).
+### 24. (recognition) Qual destas palavras significa "correr"?
+- **Resposta:** `{"choices": ["きえる", "なる", "かかる", "はしる"], "correct": "はしる"}`
+- はしる significa correr. As outras opções são なる (tornar-se, virar), かかる (levar (tempo), custar) e きえる (apagar-se (luz, fogo), desligar-se).
 
 
-### 26. (recognition) Qual destas palavras significa "brincar, se divertir"?
+### 25. (recognition) Qual destas palavras significa "brincar, se divertir"?
 - **Resposta:** `{"choices": ["かける", "あそぶ", "かす", "かく"], "correct": "あそぶ"}`
 - あそぶ significa brincar, se divertir. As outras opções são かく (escrever), かす (emprestar (algo a alguém)) e かける (pendurar, colocar).
 
 
-### 27. (cloze) Complete a frase: 日毎に寒くなって＿＿。 (Está ficando mais frio dia após dia.)
+### 26. (cloze) Complete a frase: 日毎に寒くなって＿＿。 (Está ficando mais frio dia após dia.)
 - **Resposta:** `{"text": "くる", "full": "日毎に寒くなってくる。"}`
 - O que falta é くる: o ponto gramatical desta lição, くる, vir (verbo irregular).
 - frases: `sent:tatoeba-122195`

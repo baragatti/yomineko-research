@@ -172,10 +172,10 @@ E alguns substantivos úteis do tópico:
 - 心（こころ） significa coração, mente. As outras opções são 六日 (dia 6 (do mês)), 毎日 (todo dia, todos os dias) e 火事 (incêndio, fogo (destrutivo)).
 
 
-### 17. (cloze) Complete a frase: なにか書くものを＿＿。 (Me dá alguma coisa pra escrever.)
-- **Resposta:** `{"text": "くれ", "full": "なにか書くものをくれ。"}`
-- A palavra que falta é くれる: escurecer, anoitecer. Na frase ela aparece como くれ.
-- frases: `sent:tatoeba-2242447`
+### 17. (recognition) Qual destas palavras significa "escurecer, anoitecer"?
+- **Resposta:** `{"choices": ["うける", "できる", "およぐ", "くれる"], "correct": "くれる"}`
+- くれる significa escurecer, anoitecer. As outras opções são およぐ (nadar), うける (receber, obter) e できる (poder, ser capaz de).
+
 
 ### 18. (recognition) Qual destas palavras significa "restar, sobrar"?
 - **Resposta:** `{"choices": ["しらべる", "のこる", "とどける", "ふえる"], "correct": "のこる"}`
@@ -198,8 +198,8 @@ E alguns substantivos úteis do tópico:
 
 
 ### 22. (recognition) Qual destas palavras significa "dicionário"?
-- **Resposta:** `{"choices": ["じてん", "よう", "くも", "ねぼう"], "correct": "じてん"}`
-- じてん significa dicionário. As outras opções são よう (afazer, tarefa), くも (nuvem) e ねぼう (dormir demais, preguiça (de levantar)).
+- **Resposta:** `{"choices": ["じてん", "ゴミ", "ふろ", "どうぶつえん"], "correct": "じてん"}`
+- じてん significa dicionário. As outras opções são ゴミ (lixo), ふろ (banho, banheira) e どうぶつえん (zoológico, jardim zoológico).
 
 
 ### 23. (recognition) Qual destas palavras significa "escolher, selecionar"?

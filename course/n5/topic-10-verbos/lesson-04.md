@@ -169,8 +169,8 @@ Mnemônico de forma: 時 junta 日 (sol/dia) à esquerda com 寺 (templo) à dir
 
 
 ### 17. (recognition) Qual destas palavras significa "terminar, acabar"?
-- **Resposta:** `{"choices": ["おわる", "かぶる", "しぬ", "する"], "correct": "おわる"}`
-- おわる significa terminar, acabar. As outras opções são しぬ (morrer), かぶる (pôr (na cabeça), usar (chapéu)) e する (imprimir).
+- **Resposta:** `{"choices": ["おわる", "かぶる", "かく", "しぬ"], "correct": "おわる"}`
+- おわる significa terminar, acabar. As outras opções são かく (escrever), かぶる (pôr (na cabeça), usar (chapéu)) e しぬ (morrer).
 
 
 ### 18. (recognition) Qual destas palavras significa "casamento, casar-se"?

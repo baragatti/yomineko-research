@@ -7,8 +7,8 @@
     "pt-BR": "Contar o que aconteceu, parte 5"
   },
   "say_now": [
-    "sent:tatoeba-214558",
     "sent:tatoeba-8842226",
+    "sent:tatoeba-83999",
     "sent:tatoeba-1590863",
     "sent:tatoeba-5118",
     "sent:tatoeba-225041",
@@ -17,30 +17,29 @@
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1358490",
     "vocab:1196000",
+    "vocab:1499720",
     "vocab:1044070",
     "vocab:1260720",
     "vocab:1355810",
     "vocab:1106010",
-    "vocab:1397300"
+    "vocab:1412770"
   ],
   "patterns": [
-    "gram:n3-rashii",
     "gram:gp-32",
     "gram:yori"
   ],
   "kanji_recognition": [
-    "下",
-    "経",
-    "験",
-    "事",
-    "食",
-    "過"
+    "過",
+    "楽",
+    "雨",
+    "行",
+    "台",
+    "風"
   ],
   "shadowing": [
-    "sent:tatoeba-214558",
     "sent:tatoeba-8842226",
+    "sent:tatoeba-83999",
     "sent:tatoeba-1590863",
     "sent:tatoeba-5118",
     "sent:tatoeba-225041",
@@ -50,14 +49,14 @@
     "introduces_cards": [
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-214558",
+        "item": "sent:tatoeba-8842226",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-8842226",
+        "item": "sent:tatoeba-83999",
         "card_types": [
           "production"
         ]
@@ -94,7 +93,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 491,
+  "cumulative_known_vocab": 486,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -104,7 +103,7 @@
       "via": "phrase"
     },
     {
-      "id": "so:n3:259",
+      "id": "so:n3:673",
       "type": "sentence_order",
       "via": "phrase"
     },
@@ -115,7 +114,7 @@
       "distractors": [
         "大学",
         "大変",
-        "引用"
+        "取る"
       ]
     },
     {
@@ -129,23 +128,23 @@
       ]
     },
     {
-      "id": "pp:n4:1302",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "許り",
-        "暑い",
-        "地図"
-      ]
-    },
-    {
-      "id": "kr:n4:1302",
+      "id": "kr:n3:157",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "われわれ",
-        "たてもの",
-        "うまれる"
+        "はこ",
+        "あさ",
+        "レジ"
+      ]
+    },
+    {
+      "id": "kr:n4:157",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ひく",
+        "かく",
+        "かう"
       ]
     }
   ],
@@ -153,15 +152,6 @@
     "gram:gp-121"
   ],
   "drills": [
-    {
-      "pattern": "gram:n3-rashii",
-      "examples": [
-        "sent:tatoeba-100541",
-        "sent:tatoeba-108826",
-        "sent:tatoeba-107636"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:gp-32",
       "examples": [
@@ -182,6 +172,21 @@
     }
   ],
   "production": [
+    {
+      "prompt": {
+        "pt-BR": "Por favor, tenha uma refeição maravilhosa."
+      },
+      "answer_key": "すばらしい食事を経験下さい。",
+      "accepted_variants": [
+        "すばらしいしょくじをけいけんください",
+        "すばらしいしょくじをけいけんください。",
+        "すばらしい食事を経験下さい",
+        "すばらしい食事を経験下さい。"
+      ],
+      "sentence": "sent:tatoeba-214558",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
     {
       "prompt": {
         "pt-BR": "Eu não nasci ontem."
@@ -213,23 +218,6 @@
       "sentence": "sent:tatoeba-78171",
       "kind": "same-stage",
       "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "Não consigo esquecer o que aconteceu no verão passado."
-      },
-      "answer_key": "去年の夏の出来事は忘れられないよ。",
-      "accepted_variants": [
-        "きょねんのなつのできごとはわすれられないよ",
-        "きょねんのなつのできごとはわすれられないよ。",
-        "きょねんのなつのできごとわわすれられないよ",
-        "きょねんのなつのできごとわわすれられないよ。",
-        "去年の夏の出来事は忘れられないよ",
-        "去年の夏の出来事は忘れられないよ。"
-      ],
-      "sentence": "sent:tatoeba-12275994",
-      "kind": "same-stage",
-      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -237,12 +225,12 @@
       "pt-BR": "Alguém perguntou como foi seu fim de semana. Conte, no passado."
     },
     "items": [
+      "sent:tatoeba-12275994",
       "sent:tatoeba-144504",
-      "sent:tatoeba-228002",
       "sent:tatoeba-170021",
       "sent:tatoeba-106778",
       "sent:tatoeba-122452",
-      "sent:tatoeba-186727"
+      "sent:tatoeba-5001"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -250,15 +238,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 27,
     "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "language-focused": 52,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 23,
     "fluency": 6
   }
 }

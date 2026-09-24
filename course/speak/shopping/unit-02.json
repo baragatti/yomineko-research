@@ -8,11 +8,11 @@
   },
   "say_now": [
     "sent:tatoeba-190094",
+    "sent:tatoeba-114208",
     "sent:jec-0436",
-    "sent:tatoeba-109210",
-    "sent:tatoeba-112260",
-    "sent:tatoeba-205912",
-    "sent:tatoeba-119330"
+    "sent:tatoeba-161238",
+    "sent:tatoeba-204922",
+    "sent:tatoeba-116321"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -20,13 +20,14 @@
     "vocab:1483070",
     "vocab:1259290",
     "vocab:1323080",
+    "vocab:1001820",
     "vocab:1165970",
     "vocab:1342550",
-    "vocab:1310680",
-    "vocab:1577280",
-    "vocab:1577670",
-    "vocab:1371920",
-    "vocab:1012980"
+    "vocab:1229350",
+    "vocab:1549470",
+    "vocab:1490010",
+    "vocab:1544990",
+    "vocab:1483440"
   ],
   "patterns": [
     "gram:da-desu",
@@ -37,22 +38,29 @@
     "高",
     "車",
     "番",
-    "見",
-    "初"
+    "求",
+    "金"
   ],
   "shadowing": [
     "sent:tatoeba-190094",
+    "sent:tatoeba-114208",
     "sent:jec-0436",
-    "sent:tatoeba-109210",
-    "sent:tatoeba-112260",
-    "sent:tatoeba-205912",
-    "sent:tatoeba-119330"
+    "sent:tatoeba-161238",
+    "sent:tatoeba-204922",
+    "sent:tatoeba-116321"
   ],
   "srs": {
     "introduces_cards": [
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-190094",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-114208",
         "card_types": [
           "production"
         ]
@@ -66,28 +74,21 @@
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-109210",
+        "item": "sent:tatoeba-161238",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-112260",
+        "item": "sent:tatoeba-204922",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-205912",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-119330",
+        "item": "sent:tatoeba-116321",
         "card_types": [
           "production"
         ]
@@ -96,7 +97,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 66,
+  "cumulative_known_vocab": 67,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -107,7 +108,7 @@
       "distractors": [
         "車",
         "夜",
-        "暇"
+        "間"
       ]
     },
     {
@@ -116,8 +117,18 @@
       "via": "new-word",
       "distractors": [
         "車",
-        "暇",
-        "何"
+        "何",
+        "夜"
+      ]
+    },
+    {
+      "id": "kr:n3:102",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "できる",
+        "ながい",
+        "もっと"
       ]
     },
     {
@@ -127,35 +138,15 @@
       "distractors": [
         "くださる",
         "せんせい",
-        "すいどう"
-      ]
-    },
-    {
-      "id": "kr:n4:225",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こちら",
-        "もっと",
-        "たかい"
-      ]
-    },
-    {
-      "id": "pp:n5:286",
-      "type": "paraphrase",
-      "via": "review",
-      "distractors": [
-        "見る",
-        "願う",
-        "値段"
+        "おしえる"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:sore-kara",
-    "gram:n3-rareta",
-    "gram:gp-121",
-    "gram:ichiban"
+    "gram:gp-142",
+    "gram:gp-45",
+    "gram:ichiban",
+    "gram:naru"
   ],
   "drills": [
     {

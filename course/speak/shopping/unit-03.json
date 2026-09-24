@@ -11,26 +11,29 @@
     "sent:tatoeba-204910",
     "sent:tatoeba-13713986",
     "sent:tatoeba-205962",
-    "sent:tatoeba-10094172",
-    "sent:tatoeba-8938683"
+    "sent:tatoeba-229723",
+    "sent:tatoeba-228934"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1483150",
-    "vocab:1587040",
+    "vocab:2846738",
     "vocab:1220570",
     "vocab:1436540",
+    "vocab:1395660",
     "vocab:1375290",
+    "vocab:1164510",
     "vocab:1155210",
     "vocab:1420680",
     "vocab:1610550"
   ],
   "patterns": [
     "gram:gp-149",
-    "gram:nikui",
     "gram:da-desu",
-    "gram:gp-3"
+    "gram:gp-3",
+    "gram:gp-4",
+    "gram:tte"
   ],
   "kanji_recognition": [
     "高",
@@ -45,8 +48,8 @@
     "sent:tatoeba-204910",
     "sent:tatoeba-13713986",
     "sent:tatoeba-205962",
-    "sent:tatoeba-10094172",
-    "sent:tatoeba-8938683"
+    "sent:tatoeba-229723",
+    "sent:tatoeba-228934"
   ],
   "srs": {
     "introduces_cards": [
@@ -80,14 +83,14 @@
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-10094172",
+        "item": "sent:tatoeba-229723",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-8938683",
+        "item": "sent:tatoeba-228934",
         "card_types": [
           "production"
         ]
@@ -96,7 +99,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 74,
+  "cumulative_known_vocab": 77,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -106,8 +109,8 @@
       "via": "new-word",
       "distractors": [
         "此方",
-        "来る",
-        "長い"
+        "お金",
+        "来る"
       ]
     },
     {
@@ -117,7 +120,7 @@
       "distractors": [
         "予約",
         "幾ら",
-        "遣る"
+        "最中"
       ]
     },
     {
@@ -125,9 +128,9 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "くださる",
-        "はじめる",
-        "ゆっくり"
+        "もとめる",
+        "あずける",
+        "くださる"
       ]
     },
     {
@@ -142,8 +145,7 @@
     }
   ],
   "patterns_chunked": [
-    "gram:n3-sore-tomo",
-    "gram:n3-sore-to"
+    "gram:gp-2"
   ],
   "drills": [
     {
@@ -152,15 +154,6 @@
         "sent:tatoeba-4856",
         "sent:tatoeba-83623",
         "sent:tatoeba-79091"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nikui",
-      "examples": [
-        "sent:tatoeba-9458223",
-        "sent:tatoeba-10006818",
-        "sent:tatoeba-11995722"
       ],
       "strand": "language-focused"
     },
@@ -181,55 +174,75 @@
         "sent:tatoeba-4802"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-4",
+      "examples": [
+        "sent:tatoeba-229742",
+        "sent:tatoeba-229731",
+        "sent:tatoeba-229736"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tte",
+      "examples": [
+        "sent:gen-fee342a8016b",
+        "sent:gen-48c455d520ba",
+        "sent:gen-5412a2ccf468"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
     {
       "prompt": {
-        "pt-BR": "Como ele não pagou a conta, cortaram a água dele."
+        "pt-BR": "As críticas dele foram muito bem avaliadas."
       },
-      "answer_key": "彼が料金を払わなかったので水道を止められた。",
+      "answer_key": "彼の批評は高く評価された。",
       "accepted_variants": [
-        "かれがりょうきんをはらわなかったのですいどうをとめられた",
-        "かれがりょうきんをはらわなかったのですいどうをとめられた。",
-        "彼が料金を払わなかったので水道を止められた",
-        "彼が料金を払わなかったので水道を止められた。"
+        "かれのひひょうはたかくひょうかされた",
+        "かれのひひょうはたかくひょうかされた。",
+        "かれのひひょうわたかくひょうかされた",
+        "かれのひひょうわたかくひょうかされた。",
+        "彼の批評は高く評価された",
+        "彼の批評は高く評価された。"
       ],
-      "sentence": "sent:tatoeba-119330",
+      "sentence": "sent:tatoeba-116321",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Depois disso, ele tirou os óculos."
+        "pt-BR": "Isso é vantajoso para ele."
       },
-      "answer_key": "それから彼はメガネをはずした。",
+      "answer_key": "それは彼の利益になる。",
       "accepted_variants": [
-        "それからかれはめがねをはずした",
-        "それからかれはめがねをはずした。",
-        "それからかれわめがねをはずした",
-        "それからかれわめがねをはずした。",
-        "それから彼はメガネをはずした",
-        "それから彼はメガネをはずした。"
+        "それはかれのりえきになる",
+        "それはかれのりえきになる。",
+        "それは彼の利益になる",
+        "それは彼の利益になる。",
+        "それわかれのりえきになる",
+        "それわかれのりえきになる。"
       ],
-      "sentence": "sent:tatoeba-205912",
+      "sentence": "sent:tatoeba-204922",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "E ele, o que aconteceu com ele depois disso?"
+        "pt-BR": "Confiei meu dinheiro a ele."
       },
-      "answer_key": "彼はそれからどうなりましたか。",
+      "answer_key": "私はお金を彼に預けた。",
       "accepted_variants": [
-        "かれはそれからどうなりましたか",
-        "かれはそれからどうなりましたか。",
-        "かれわそれからどうなりましたか",
-        "かれわそれからどうなりましたか。",
-        "彼はそれからどうなりましたか",
-        "彼はそれからどうなりましたか。"
+        "わたしはおかねをかれにあずけた",
+        "わたしはおかねをかれにあずけた。",
+        "わたしわおかねをかれにあずけた",
+        "わたしわおかねをかれにあずけた。",
+        "私はお金を彼に預けた",
+        "私はお金を彼に預けた。"
       ],
-      "sentence": "sent:tatoeba-112260",
+      "sentence": "sent:tatoeba-161238",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -239,8 +252,8 @@
       "pt-BR": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra."
     },
     "items": [
-      "sent:tatoeba-109210",
       "sent:jec-0436",
+      "sent:tatoeba-114208",
       "sent:tatoeba-3598838",
       "sent:tatoeba-127122",
       "sent:tatoeba-229460",
@@ -252,15 +265,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "language-focused": 59,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 30,
     "fluency": 6
   }
 }

@@ -7,27 +7,27 @@
     "pt-BR": "Falar de você, parte 4"
   },
   "say_now": [
+    "sent:tatoeba-12476202",
+    "sent:tatoeba-222670",
+    "sent:jec-4753",
     "sent:tatoeba-104573",
     "sent:tatoeba-189285",
-    "sent:tatoeba-102734",
-    "sent:tatoeba-179712",
-    "sent:tatoeba-13172379",
-    "sent:tatoeba-78188"
+    "sent:tatoeba-102734"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1592250",
+    "vocab:1080510",
     "vocab:1324300",
     "vocab:1173720",
+    "vocab:1460850",
     "vocab:1404390",
-    "vocab:1242590",
-    "vocab:1002290",
-    "vocab:1553170",
-    "vocab:1206900",
     "vocab:1254180",
-    "vocab:1310050",
     "vocab:1357030",
-    "vocab:1595090"
+    "vocab:1380690",
+    "vocab:1516750",
+    "vocab:1331530"
   ],
   "patterns": [
     "gram:gp-105",
@@ -35,23 +35,44 @@
     "gram:n3-temo"
   ],
   "kanji_recognition": [
+    "国",
     "仕",
     "事",
-    "若",
-    "彼",
-    "映",
-    "画"
+    "就",
+    "難",
+    "会"
   ],
   "shadowing": [
+    "sent:tatoeba-12476202",
+    "sent:tatoeba-222670",
+    "sent:jec-4753",
     "sent:tatoeba-104573",
     "sent:tatoeba-189285",
-    "sent:tatoeba-102734",
-    "sent:tatoeba-179712",
-    "sent:tatoeba-13172379",
-    "sent:tatoeba-78188"
+    "sent:tatoeba-102734"
   ],
   "srs": {
     "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-12476202",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-222670",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:jec-4753",
+        "card_types": [
+          "production"
+        ]
+      },
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-104573",
@@ -72,33 +93,12 @@
         "card_types": [
           "production"
         ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-179712",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-13172379",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-78188",
-        "card_types": [
-          "production"
-        ]
       }
     ]
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 323,
+  "cumulative_known_vocab": 321,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -112,49 +112,39 @@
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
+        "贅沢",
         "余り",
-        "此れ",
-        "毛布"
+        "此れ"
       ]
     },
     {
-      "id": "cf:n3:197:151",
+      "id": "cf:n3:227:217",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "過ぎ",
-        "持つ",
-        "去年"
+        "奥",
+        "猫",
+        "中"
       ]
     },
     {
-      "id": "pp:n3:1544",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "時",
-        "冬",
-        "丈"
-      ]
-    },
-    {
-      "id": "kr:n3:151",
+      "id": "kr:n3:86",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ゆっくり",
-        "きのどく",
-        "いじょう"
+        "ホテル",
+        "でんわ",
+        "もどす"
       ]
     },
     {
-      "id": "kr:n3:1544",
+      "id": "kr:n4:217",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "くうき",
-        "たがい",
-        "いくら"
+        "あう",
+        "なん",
+        "はし"
       ]
     }
   ],
@@ -195,52 +185,52 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Esta empresa fabrica televisores."
+        "pt-BR": "O trabalho já está quase terminado."
       },
-      "answer_key": "この会社はテレビを製造しています。",
+      "answer_key": "仕事はほとんど終わった。",
       "accepted_variants": [
-        "このかいしゃはてれびをせいぞうしています",
-        "このかいしゃはてれびをせいぞうしています。",
-        "このかいしゃわてれびをせいぞうしています",
-        "このかいしゃわてれびをせいぞうしています。",
-        "この会社はテレビを製造しています",
-        "この会社はテレビを製造しています。"
+        "しごとはほとんどおわった",
+        "しごとはほとんどおわった。",
+        "しごとわほとんどおわった",
+        "しごとわほとんどおわった。",
+        "仕事はほとんど終わった",
+        "仕事はほとんど終わった。"
       ],
-      "sentence": "sent:tatoeba-222670",
+      "sentence": "sent:tatoeba-169112",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Neste país é difícil arrumar emprego."
+        "pt-BR": "A maioria dos meus amigos já casou."
       },
-      "answer_key": "この国で仕事に就くのは難しいよ。",
+      "answer_key": "友達の大半はもう結婚してるよ。",
       "accepted_variants": [
-        "このくにでしごとにつくのはむずかしいよ",
-        "このくにでしごとにつくのはむずかしいよ。",
-        "このくにでしごとにつくのわむずかしいよ",
-        "このくにでしごとにつくのわむずかしいよ。",
-        "この国で仕事に就くのは難しいよ",
-        "この国で仕事に就くのは難しいよ。"
+        "ともだちのたいはんはもうけっこんしてるよ",
+        "ともだちのたいはんはもうけっこんしてるよ。",
+        "ともだちのたいはんわもうけっこんしてるよ",
+        "ともだちのたいはんわもうけっこんしてるよ。",
+        "友達の大半はもう結婚してるよ",
+        "友達の大半はもう結婚してるよ。"
       ],
-      "sentence": "sent:tatoeba-12476202",
+      "sentence": "sent:tatoeba-9855987",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "O trabalho está praticamente terminado."
+        "pt-BR": "Homem gosta de conversar."
       },
-      "answer_key": "仕事はだいたい終わった。",
+      "answer_key": "男はしゃべるのが好き。",
       "accepted_variants": [
-        "しごとはだいたいおわった",
-        "しごとはだいたいおわった。",
-        "しごとわだいたいおわった",
-        "しごとわだいたいおわった。",
-        "仕事はだいたい終わった",
-        "仕事はだいたい終わった。"
+        "おとこはしゃべるのがすき",
+        "おとこはしゃべるのがすき。",
+        "おとこわしゃべるのがすき",
+        "おとこわしゃべるのがすき。",
+        "男はしゃべるのが好き",
+        "男はしゃべるのが好き。"
       ],
-      "sentence": "sent:tatoeba-169114",
+      "sentence": "sent:tatoeba-11386733",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -250,12 +240,12 @@
       "pt-BR": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta."
     },
     "items": [
-      "sent:tatoeba-169112",
-      "sent:tatoeba-11386733",
       "sent:tatoeba-9553773",
-      "sent:tatoeba-79312",
       "sent:tatoeba-84568",
-      "sent:tatoeba-227125"
+      "sent:tatoeba-1046077",
+      "sent:jec-0320",
+      "sent:tatoeba-227125",
+      "sent:tatoeba-11072023"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -265,13 +255,13 @@
   "strands": {
     "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 58,
+    "language-focused": 57,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 28,
     "fluency": 6
   }
 }

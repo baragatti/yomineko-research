@@ -4,7 +4,7 @@ Built by `scripts/export/build_role_exercises.py` from the mechanical sentence p
 
 **Why this and not a word-order drill.** Japanese word order is flexible, so an auto-graded reassembly item cannot tell the learner which of several correct orders it wanted - a defect the existing `sentence_order` bank has. Role identification has exactly one answer, and it teaches the idea the ordering drill only gestures at: Japanese marks grammatical role with a PARTICLE, not with position, which is the hardest single adjustment for a Portuguese speaker whose L1 marks role by position.
 
-**5358 items** across N3 2710, N4 2409, N5 239.
+**5325 items** across N3 2694, N4 2396, N5 235.
 
 A role is only asked about when it occurs EXACTLY ONCE in the sentence; two を chunks would mean two defensible answers.
 

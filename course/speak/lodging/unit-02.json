@@ -9,29 +9,29 @@
   "say_now": [
     "sent:tatoeba-193308",
     "sent:tatoeba-186534",
+    "sent:tatoeba-219976",
     "sent:tatoeba-84171",
     "sent:tatoeba-220035",
-    "sent:tatoeba-84169",
-    "sent:tatoeba-84229"
+    "sent:tatoeba-84169"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1463770",
     "vocab:1465590",
     "vocab:1576150",
     "vocab:1195430",
     "vocab:1384860",
-    "vocab:1093920",
-    "vocab:1529560",
+    "vocab:1448810",
     "vocab:1544970"
   ],
   "patterns": [
-    "gram:naide-kudasai",
     "gram:te-kudasai",
     "gram:n3-kirenai",
-    "gram:n3-naide",
     "gram:gp-61",
-    "gram:gp-17"
+    "gram:gp-17",
+    "gram:da-desu",
+    "gram:gp-14"
   ],
   "kanji_recognition": [
     "安",
@@ -44,10 +44,10 @@
   "shadowing": [
     "sent:tatoeba-193308",
     "sent:tatoeba-186534",
+    "sent:tatoeba-219976",
     "sent:tatoeba-84171",
     "sent:tatoeba-220035",
-    "sent:tatoeba-84169",
-    "sent:tatoeba-84229"
+    "sent:tatoeba-84169"
   ],
   "srs": {
     "introduces_cards": [
@@ -61,6 +61,13 @@
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-186534",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-219976",
         "card_types": [
           "production"
         ]
@@ -85,40 +92,43 @@
         "card_types": [
           "production"
         ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-84229",
-        "card_types": [
-          "production"
-        ]
       }
     ]
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 232,
+  "cumulative_known_vocab": 236,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
+    {
+      "id": "cf:n4:3545:484",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "二",
+        "話",
+        "一"
+      ]
+    },
+    {
+      "id": "kr:n3:1380",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ながい",
+        "こちら",
+        "あがる"
+      ]
+    },
     {
       "id": "kr:n4:505",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "いれる",
         "きっぷ",
-        "たかい"
-      ]
-    },
-    {
-      "id": "kr:n5:505",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ようい",
-        "じょう",
-        "ひとり"
+        "たかい",
+        "しごと"
       ]
     },
     {
@@ -128,37 +138,18 @@
       "distractors": [
         "二",
         "夜",
-        "今"
-      ]
-    },
-    {
-      "id": "cf:n3:175:690",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "頁",
-        "彼",
-        "日"
+        "差"
       ]
     }
   ],
   "patterns_chunked": [],
   "drills": [
     {
-      "pattern": "gram:naide-kudasai",
-      "examples": [
-        "sent:tatoeba-2006378",
-        "sent:tatoeba-1200727",
-        "sent:tatoeba-6704205"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:te-kudasai",
       "examples": [
+        "sent:tatoeba-146189",
         "sent:tatoeba-124708",
-        "sent:tatoeba-5109",
-        "sent:tatoeba-146189"
+        "sent:tatoeba-5109"
       ],
       "strand": "language-focused"
     },
@@ -168,15 +159,6 @@
         "sent:tatoeba-94359",
         "sent:tatoeba-237013",
         "sent:tatoeba-229178"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-naide",
-      "examples": [
-        "sent:tatoeba-152171",
-        "sent:tatoeba-123792",
-        "sent:tatoeba-148614"
       ],
       "strand": "language-focused"
     },
@@ -193,8 +175,26 @@
       "pattern": "gram:gp-17",
       "examples": [
         "sent:tatoeba-124633",
-        "sent:tatoeba-80132",
-        "sent:tatoeba-172639"
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-75140"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-14",
+      "examples": [
+        "sent:tatoeba-74498",
+        "sent:tatoeba-76735",
+        "sent:tatoeba-74036"
       ],
       "strand": "language-focused"
     }
@@ -257,10 +257,10 @@
     "items": [
       "sent:tatoeba-176088",
       "sent:tatoeba-226801",
-      "sent:tatoeba-182700",
-      "sent:tatoeba-5115",
-      "sent:tatoeba-162318",
-      "sent:tatoeba-79841"
+      "sent:tatoeba-126863",
+      "sent:tatoeba-203709",
+      "sent:tatoeba-4786026",
+      "sent:tatoeba-182700"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

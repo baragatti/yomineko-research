@@ -5,7 +5,7 @@ _Generated 2026-09-23. `label`/`governing_rule` = locale-objects (pt-BR)._
 | family | type | label | #members |
 |--------|------|-------|---------:|
 | grp:godan | conjugation_class | Verbos godan (う) | 311 |
-| grp:ichidan | conjugation_class | Verbos ichidan (る) | 156 |
+| grp:ichidan | conjugation_class | Verbos ichidan (る) | 157 |
 | grp:particles-core | particle_set | Partículas essenciais | 7 |
 | grp:ni-vs-de | contrast_pair | に × で (lugar) | 2 |
 | grp:wa-vs-ga | contrast_pair | は (tópico) × が (sujeito) | 2 |

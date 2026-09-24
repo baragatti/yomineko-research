@@ -30,6 +30,7 @@
     "gram:n3-wake-dewa-nai",
     "gram:n3-wake-ga-nai",
     "gram:gp-76",
+    "gram:mitai-ni",
     "gram:ta-bakari",
     "gram:janai-dewa-nai"
   ],
@@ -97,10 +98,20 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 615,
+  "cumulative_known_vocab": 613,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
+    {
+      "id": "cf:n4:3830:113",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "メニュー",
+        "パソコン",
+        "シャワー"
+      ]
+    },
     {
       "id": "cf:n3:738:113",
       "type": "context_fill",
@@ -112,23 +123,13 @@
       ]
     },
     {
-      "id": "cf:n3:774:100",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "お父さん",
-        "はっきり",
-        "シャワー"
-      ]
-    },
-    {
       "id": "kr:n3:100",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
         "じゅぎょう",
-        "りょうきん",
-        "しょうぼう"
+        "こんにちは",
+        "びょういん"
       ]
     },
     {
@@ -136,15 +137,13 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "げつようび",
         "おんなのこ",
+        "しょくどう",
         "りょうしん"
       ]
     }
   ],
-  "patterns_chunked": [
-    "gram:mitai-ni"
-  ],
+  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:n3-wake-dewa-nai",
@@ -168,8 +167,17 @@
       "pattern": "gram:gp-76",
       "examples": [
         "sent:tatoeba-11041688",
-        "sent:tatoeba-12698746",
-        "sent:tatoeba-220740"
+        "sent:tatoeba-3458976",
+        "sent:tatoeba-11169170"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:mitai-ni",
+      "examples": [
+        "sent:tatoeba-9846192",
+        "sent:tatoeba-11044901",
+        "sent:tatoeba-11009578"
       ],
       "strand": "language-focused"
     },
@@ -224,16 +232,18 @@
     },
     {
       "prompt": {
-        "pt-BR": "Nem todo mundo por aí é gente boa."
+        "pt-BR": "O mundo não gira em torno de você, viu."
       },
-      "answer_key": "世の中、親切な人ばかりじゃない。",
+      "answer_key": "世界は君を中心に回っているわけではないんだよ。",
       "accepted_variants": [
-        "よのなか、しんせつなひとばかりじゃない",
-        "よのなか、しんせつなひとばかりじゃない。",
-        "世の中、親切な人ばかりじゃない",
-        "世の中、親切な人ばかりじゃない。"
+        "せかいはきみをちゅうしんにまわっているわけではないんだよ",
+        "せかいはきみをちゅうしんにまわっているわけではないんだよ。",
+        "せかいわきみをちゅうしんにまわっているわけでわないんだよ",
+        "せかいわきみをちゅうしんにまわっているわけでわないんだよ。",
+        "世界は君を中心に回っているわけではないんだよ",
+        "世界は君を中心に回っているわけではないんだよ。"
       ],
-      "sentence": "sent:tatoeba-1331104",
+      "sentence": "sent:tatoeba-5287",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -243,12 +253,12 @@
       "pt-BR": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa."
     },
     "items": [
+      "sent:tatoeba-1331104",
       "sent:tatoeba-80952",
-      "sent:tatoeba-230514",
       "sent:tatoeba-171474",
       "sent:tatoeba-77494",
       "sent:tatoeba-83210",
-      "sent:tatoeba-74941"
+      "sent:tatoeba-153687"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -258,13 +268,13 @@
   "strands": {
     "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 57,
+    "language-focused": 59,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 30,
     "fluency": 6
   }
 }

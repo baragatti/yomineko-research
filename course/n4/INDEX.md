@@ -5,11 +5,11 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 | # | tópico | tema | vocab | kanji | gramática |
 |--:|--------|------|------:|------:|----------:|
 | 21 | Forma simples e registro casual | registro | 64 | 24 | 17 |
-| 22 | Orações relativas | descrever | 59 | 21 | 16 |
+| 22 | Orações relativas | descrever | 58 | 21 | 16 |
 | 23 | Condicionais (たら/ば/と/なら) | hipóteses | 52 | 23 | 21 |
 | 24 | Potencial | capacidade | 44 | 15 | 6 |
 | 25 | Volitivo e intenção | intenção | 46 | 12 | 15 |
-| 26 | Transitivos × intransitivos | pares verbais | 43 | 7 | 2 |
+| 26 | Transitivos × intransitivos | pares verbais | 44 | 7 | 2 |
 | 27 | Dar e receber | favores | 41 | 9 | 8 |
 | 28 | Experiência e mudança | experiência | 40 | 13 | 21 |
 | 29 | Obrigação e permissão | deveres | 36 | 9 | 7 |
@@ -31,7 +31,7 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 22. Orações relativas
 - **kanji** (21): 力 好 物 通 問 知 動 夏 夜 字 漢 開 題 作 夕 京 歌 意 止 注
-- **vocab** (59, amostra): 止める、事、今度、厳しい、大事、建てる、彼、彼女、必要、悲しい、機会、浅い、深い、点、落ちる
+- **vocab** (58, amostra): 止める、事、今度、厳しい、大事、建てる、彼、彼女、必要、悲しい、機会、浅い、深い、点、落ちる
 - **gramática** (16): gp-97, koto, no-naka-de, to-iu, to-iu-koto, aida, aida-ni, ato-de, gp-107, gp-73, gp-89, gp-101
 
 ### 23. Condicionais (たら/ば/と/なら)
@@ -51,7 +51,7 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 26. Transitivos × intransitivos
 - **kanji** (7): 品 死 住 台 広 特 計
-- **vocab** (43, amostra): 乾く、塗る、思い出す、探す、楽しむ、育てる、踊る、連れる、進む、オーバー、ジャム、ステーキ、消しゴム、火、石
+- **vocab** (44, amostra): 乾く、塗る、思い出す、探す、楽しむ、育てる、踊る、連れる、進む、オーバー、ジャム、ステーキ、消しゴム、火、石
 - **gramática** (2): gp-64, tadoushi-jidoushi
 
 ### 27. Dar e receber

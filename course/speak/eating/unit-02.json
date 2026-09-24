@@ -8,49 +8,67 @@
   },
   "say_now": [
     "sent:tatoeba-3549484",
+    "sent:tatoeba-10364750",
+    "sent:tatoeba-13795168",
     "sent:tatoeba-79093",
     "sent:tatoeba-9819543",
-    "sent:tatoeba-200661",
-    "sent:tatoeba-182254",
-    "sent:tatoeba-171644"
+    "sent:tatoeba-201917"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1277450",
     "vocab:1315840",
     "vocab:1416830",
-    "vocab:1008630",
-    "vocab:1579110",
+    "vocab:1423310",
     "vocab:1174420",
-    "vocab:1151260",
+    "vocab:1169870",
     "vocab:1597890",
-    "vocab:1578010",
+    "vocab:1203250",
     "vocab:1188760",
-    "vocab:1231690",
-    "vocab:1546220"
+    "vocab:1103090",
+    "vocab:1546220",
+    "vocab:1270590",
+    "vocab:1439580"
   ],
-  "patterns": [],
+  "patterns": [
+    "gram:gp-62"
+  ],
   "kanji_recognition": [
     "英",
     "語",
-    "意",
-    "食",
-    "夕",
-    "用"
+    "好",
+    "飯",
+    "飲",
+    "然"
   ],
   "shadowing": [
     "sent:tatoeba-3549484",
+    "sent:tatoeba-10364750",
+    "sent:tatoeba-13795168",
     "sent:tatoeba-79093",
     "sent:tatoeba-9819543",
-    "sent:tatoeba-200661",
-    "sent:tatoeba-182254",
-    "sent:tatoeba-171644"
+    "sent:tatoeba-201917"
   ],
   "srs": {
     "introduces_cards": [
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-3549484",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10364750",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-13795168",
         "card_types": [
           "production"
         ]
@@ -71,21 +89,7 @@
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-200661",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-182254",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-171644",
+        "item": "sent:tatoeba-201917",
         "card_types": [
           "production"
         ]
@@ -94,38 +98,38 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 116,
+  "cumulative_known_vocab": 114,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n4:930",
+      "id": "so:n3:714",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "so:n4:956",
+      "id": "so:n4:714",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n4:930:202",
+      "id": "cf:n3:714:258",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "程度",
-        "用意",
-        "幾ら"
+        "利益",
+        "いい",
+        "貴方"
       ]
     },
     {
-      "id": "cf:n4:956:199",
+      "id": "cf:n4:714:258",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
         "行く",
-        "話す",
-        "先生"
+        "勘定",
+        "値段"
       ]
     },
     {
@@ -133,8 +137,8 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
+        "パン",
         "レジ",
-        "ぼく",
         "はい"
       ]
     },
@@ -143,21 +147,30 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
+        "おれい",
         "たかい",
-        "きょう",
-        "おもう"
+        "りえき"
       ]
     }
   ],
   "patterns_chunked": [
     "gram:n3-you-to-shinai",
     "gram:doushite",
+    "gram:no-ga-suki",
     "gram:gp-36",
-    "gram:gp-115",
-    "gram:rareru",
-    "gram:totemo"
+    "gram:gp-115"
   ],
-  "drills": [],
+  "drills": [
+    {
+      "pattern": "gram:gp-62",
+      "examples": [
+        "sent:tatoeba-174749",
+        "sent:tatoeba-174748",
+        "sent:tatoeba-182548"
+      ],
+      "strand": "language-focused"
+    }
+  ],
   "production": [
     {
       "prompt": {
@@ -214,10 +227,10 @@
     "items": [
       "sent:tatoeba-188145",
       "sent:tatoeba-137275",
-      "sent:tatoeba-205802",
+      "sent:tatoeba-10744469",
       "sent:tatoeba-8748248",
-      "sent:tatoeba-159773",
-      "sent:tatoeba-204523"
+      "sent:tatoeba-121802",
+      "sent:tatoeba-112261"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -225,15 +238,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 52,
-    "fluency": 14
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 27,
     "fluency": 6
   }
 }

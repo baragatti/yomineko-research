@@ -96,7 +96,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 170,
+  "cumulative_known_vocab": 166,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -107,7 +107,7 @@
       "distractors": [
         "人",
         "生",
-        "君"
+        "彼"
       ]
     },
     {
@@ -125,9 +125,9 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "だす",
         "えき",
-        "ない"
+        "ない",
+        "あう"
       ]
     },
     {
@@ -159,9 +159,9 @@
     {
       "pattern": "gram:gp-17",
       "examples": [
-        "sent:tatoeba-80132",
         "sent:tatoeba-172639",
-        "sent:tatoeba-124633"
+        "sent:tatoeba-124633",
+        "sent:tatoeba-144227"
       ],
       "strand": "language-focused"
     },
@@ -169,8 +169,8 @@
       "pattern": "gram:da-desu",
       "examples": [
         "sent:tatoeba-5332",
-        "sent:tatoeba-5057",
-        "sent:tatoeba-4708"
+        "sent:tatoeba-4708",
+        "sent:tatoeba-4973"
       ],
       "strand": "language-focused"
     }
@@ -178,49 +178,48 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Quer creme no café?"
+        "pt-BR": "A relação entre o ar e o ser humano é igual à relação entre a água e o peixe."
       },
-      "answer_key": "コーヒーにクリームを入れますか？",
+      "answer_key": "空気と人間との関係は水と魚との関係と同じだ。",
       "accepted_variants": [
-        "こーひーにくりーむをいれますか",
-        "こーひーにくりーむをいれますか?",
-        "コーヒーにクリームを入れますか",
-        "コーヒーにクリームを入れますか?",
-        "コーヒーにクリームを入れますか？"
+        "くうきとにんげんとのかんけいはみずとさかなとのかんけいとおなじだ",
+        "くうきとにんげんとのかんけいはみずとさかなとのかんけいとおなじだ。",
+        "くうきとにんげんとのかんけいわみずとさかなとのかんけいとおなじだ",
+        "くうきとにんげんとのかんけいわみずとさかなとのかんけいとおなじだ。",
+        "空気と人間との関係は水と魚との関係と同じだ",
+        "空気と人間との関係は水と魚との関係と同じだ。"
       ],
-      "sentence": "sent:tatoeba-8729106",
+      "sentence": "sent:tatoeba-179391",
       "kind": "review",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "A gente comeu e depois foi dormir."
+        "pt-BR": "Nunca na vida trabalhei em restaurante."
       },
-      "answer_key": "食べてから寝たよ。",
+      "answer_key": "レストランで働いたことなど一度もない。",
       "accepted_variants": [
-        "たべてからねたよ",
-        "たべてからねたよ。",
-        "食べてから寝たよ",
-        "食べてから寝たよ。"
+        "れすとらんではたらいたことなどいちどもない",
+        "れすとらんではたらいたことなどいちどもない。",
+        "レストランで働いたことなど一度もない",
+        "レストランで働いたことなど一度もない。"
       ],
-      "sentence": "sent:tatoeba-10617667",
+      "sentence": "sent:tatoeba-9936514",
       "kind": "review",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "No almoço, minha mãe serviu o que eu queria comer."
+        "pt-BR": "Hoje à noite não posso ir ao restaurante com você."
       },
-      "answer_key": "母はお昼に私が食べたいものを出してくれた。",
+      "answer_key": "今晩あなたと一緒にレストランにいけません。",
       "accepted_variants": [
-        "はははおひるにわたしがたべたいものをだしてくれた",
-        "はははおひるにわたしがたべたいものをだしてくれた。",
-        "ははわおひるにわたしがたべたいものをだしてくれた",
-        "ははわおひるにわたしがたべたいものをだしてくれた。",
-        "母はお昼に私が食べたいものを出してくれた",
-        "母はお昼に私が食べたいものを出してくれた。"
+        "こんばんあなたといっしょにれすとらんにいけません",
+        "こんばんあなたといっしょにれすとらんにいけません。",
+        "今晩あなたと一緒にレストランにいけません",
+        "今晩あなたと一緒にレストランにいけません。"
       ],
-      "sentence": "sent:tatoeba-83083",
+      "sentence": "sent:tatoeba-236798",
       "kind": "review",
       "strand": "meaning-output"
     }
@@ -230,12 +229,12 @@
       "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
-      "sent:tatoeba-225298",
-      "sent:tatoeba-97583",
-      "sent:tatoeba-179391",
-      "sent:tatoeba-9936514",
-      "sent:tatoeba-185915",
-      "sent:tatoeba-204265"
+      "sent:tatoeba-5329",
+      "sent:tatoeba-157292",
+      "sent:tatoeba-172639",
+      "sent:tatoeba-171644",
+      "sent:tatoeba-182254",
+      "sent:tatoeba-1115376"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

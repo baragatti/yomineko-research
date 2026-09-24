@@ -7,7 +7,7 @@
 - Descrever algo deixado pela metade com ～かけ (um livro começado, comida só mordida)
 - Marcar que algo está recém-feito e no auge com ～たて (pão recém-assado, roupa recém-lavada)
 
-**Introduz:** gramática [n3-kake, n3-tate, n3-te-iru] · vocabulário [価格, 係, 化学, 学, 学習, 学者, 家具, 掛かる, 確実, 覚悟, 輝く, 限る] · kanji [位 局 格 流 疑 置 過] · kana [—]
+**Introduz:** gramática [n3-kake, n3-tate, n3-te-iru] · vocabulário [価格, 係, 化学, 学, 学習, 学者, 家具, 確実, 覚悟, 輝く, 限る] · kanji [位 局 格 流 疑 置 過] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-78016`, `sent:tatoeba-79761`
 

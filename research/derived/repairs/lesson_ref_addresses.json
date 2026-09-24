@@ -7,7 +7,7 @@
     "row_id": "A `vocab:<row number>` ref. `new` is that row's `vocab.slug`. The apply script re-derives the mapping from the registry and refuses to write if the row now names a different record, so a stale table cannot silently re-point a chip.",
     "ambiguous_headword": "A `vocab:<headword>` ref two records answer to, written as the address of the one the lesson means. NOT a general headword sweep: 322 lessons still address by headword and vocab_identity.py settles them on evidence. This is the whole of one measured class — the four headwords unlocked by two lessons AT THE SAME LEVEL, where the `level` tier cannot separate them and the decision falls to vocab.introducing_topic_id, a placement column scripts/ingest/place_items.py recomputes from freq_rank on every from-scratch replay. Nine ambiguous headwords are unlocked twice; the other five are separated by `level`, which is a record field and survives a rebuild, and are left alone. Before this table, the replay resolved both lessons of each same-level pair to one record and familylib.unlock_topic_map() aborted the manifest rebuild."
   },
-  "row_count": 39,
+  "row_count": 40,
   "rows": [
     {
       "kind": "row_id",
@@ -437,6 +437,17 @@
       "kana": "とめる",
       "occurrences": 2,
       "evidence": "止める/とめる, the transitive \"parar algo\" — the record W11a promoted here, whose たら list conjugates 止めたら and whose exercise ex:n4-condicionais-01-6 contrasts it with 止まる. Same reason."
+    },
+    {
+      "kind": "ambiguous_headword",
+      "file": "n5-perguntas-01.json",
+      "lesson": "les:n5-perguntas-01",
+      "old": "vocab:方",
+      "new": "vocab:1516925",
+      "headword": "方",
+      "kana": "かた",
+      "occurrences": 2,
+      "evidence": "Q2-token-links (2026-09-23). The lesson's こ・そ・あ・ど list teaches かた, the polite 'person / way' (its W27 card prompt: 'pessoa (o jeito respeitoso de se referir a alguém)'), and the export resolved `vocab:方` to it only because 方/ほう sat at N3. research/derived/repairs/level_transfer_repairs.json moves 方/ほう to N5 (the N5 list entry ほう was filed on 報), so both 方 records are N5 and the level tier no longer separates them; a full replay then resolved the chip and the unlock to ほう through the placement tier. Writing the address the lesson means removes the guess."
     }
   ]
 }

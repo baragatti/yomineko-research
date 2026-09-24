@@ -44,11 +44,11 @@
     },
     {
       "type": "vocab",
-      "ref": "vocab:1384830"
+      "ref": "vocab:1157170"
     },
     {
       "type": "vocab",
-      "ref": "vocab:1298670"
+      "ref": "vocab:1384830"
     },
     {
       "type": "vocab",
@@ -154,6 +154,34 @@
       },
       {
         "deck": "deck:vocab-n5",
+        "item": "vocab:1157170",
+        "card_types": [
+          "recognition",
+          "production"
+        ],
+        "production_key": {
+          "prompt": {
+            "pt-BR": "fazer (o verbo irregular básico, o que vira ～する com substantivos)"
+          },
+          "accept": [
+            "する",
+            "為る"
+          ],
+          "sense_index": 0,
+          "verified": "sampled",
+          "verified_by": "research/reports/w27_sample_report.md"
+        },
+        "example": {
+          "sentence": "sent:tatoeba-11038521",
+          "cloze": {
+            "start": 8,
+            "end": 10,
+            "answer": "する"
+          }
+        }
+      },
+      {
+        "deck": "deck:vocab-n5",
         "item": "vocab:1384830",
         "card_types": [
           "recognition",
@@ -166,27 +194,6 @@
           "accept": [
             "きる",
             "切る"
-          ],
-          "sense_index": 0,
-          "verified": "sampled",
-          "verified_by": "research/reports/w27_sample_report.md"
-        }
-      },
-      {
-        "deck": "deck:vocab-n5",
-        "item": "vocab:1298670",
-        "card_types": [
-          "recognition",
-          "production"
-        ],
-        "production_key": {
-          "prompt": {
-            "pt-BR": "imprimir (verbo próprio, não substantivo + する)"
-          },
-          "accept": [
-            "する",
-            "刷る",
-            "摺る"
           ],
           "sense_index": 0,
           "verified": "sampled",
@@ -786,6 +793,7 @@
       "vocab:1465610",
       "vocab:1179330",
       "vocab:1296970",
+      "vocab:1516925",
       "vocab:1577980",
       "vocab:1580640",
       "vocab:1581310",
@@ -798,7 +806,6 @@
       "vocab:1388740",
       "vocab:1592250",
       "vocab:1390020",
-      "vocab:1516925",
       "vocab:1288810",
       "vocab:1263400",
       "vocab:1259290",
@@ -853,7 +860,6 @@
       "vocab:1583720",
       "vocab:1009330",
       "vocab:1079760",
-      "vocab:1451160",
       "vocab:1438690",
       "vocab:1592340",
       "vocab:1255430",
@@ -947,8 +953,8 @@
       "vocab:1508590",
       "vocab:1202450",
       "vocab:1589500",
+      "vocab:1157170",
       "vocab:1384830",
-      "vocab:1298670",
       "vocab:1540170",
       "vocab:1228260",
       "vocab:1473950",
@@ -1241,25 +1247,25 @@
       "id": "ex:n5-verbos-02-7",
       "type": "recognition",
       "prompt": {
-        "pt-BR": "Qual destas palavras significa \"imprimir\"?"
+        "pt-BR": "Qual destas palavras significa \"fazer\"?"
       },
       "answer": {
         "choices": [
-          "かえす",
-          "すう",
-          "うる",
-          "する"
+          "いう",
+          "する",
+          "あびる",
+          "おく"
         ],
         "correct": "する"
       },
       "explanation": {
-        "pt-BR": "する significa imprimir. As outras opções são かえす (devolver), すう (fumar) e うる (vender)."
+        "pt-BR": "する significa fazer. As outras opções são いう (dizer, falar), あびる (tomar (banho/ducha), banhar-se) e おく (colocar, pôr)."
       },
       "sentence_refs": [],
       "item_refs": [
         {
           "type": "vocab",
-          "ref": "vocab:1298670",
+          "ref": "vocab:1157170",
           "role": "target",
           "derived_by": "table:practice_vocab_exercises"
         }
@@ -1326,15 +1332,15 @@
       },
       "answer": {
         "choices": [
-          "する",
-          "かく",
-          "けす",
+          "しめる",
+          "ある",
+          "かす",
           "うる"
         ],
         "correct": "うる"
       },
       "explanation": {
-        "pt-BR": "うる significa vender. As outras opções são かく (escrever), する (imprimir) e けす (desligar, apagar (luz, fogo))."
+        "pt-BR": "うる significa vender. As outras opções são ある (haver, existir), しめる (amarrar, apertar) e かす (emprestar (algo a alguém))."
       },
       "sentence_refs": [],
       "item_refs": [
@@ -1516,15 +1522,15 @@
       },
       "answer": {
         "choices": [
-          "する",
-          "うる",
+          "あげる",
+          "こたえる",
           "いう",
-          "のむ"
+          "かえす"
         ],
         "correct": "いう"
       },
       "explanation": {
-        "pt-BR": "いう significa dizer, falar. As outras opções são のむ (beber, tomar), する (imprimir) e うる (vender)."
+        "pt-BR": "いう significa dizer, falar. As outras opções são こたえる (responder, dar uma resposta), かえす (devolver) e あげる (levantar, erguer)."
       },
       "sentence_refs": [],
       "item_refs": [

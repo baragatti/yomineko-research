@@ -7,7 +7,7 @@
 - Distinguir as expressões なし, 何も e 何でも
 - Empregar なぜなら e なんとか como conectores de razão e improviso
 
-**Introduz:** gramática [—] · vocabulário [似合う, 何か, 何で, 何でも, 何とか, 何も, 何故なら, 怠ける, 悩む, 成る, 波, 涙, 無し, 納得, 縄, 苦手, 謎, 鍋] · kanji [—] · kana [—]
+**Introduz:** gramática [—] · vocabulário [似合う, 何か, 何で, 何でも, 何とか, 何も, 何故なら, 怠ける, 悩む, 波, 涙, 無し, 納得, 縄, 苦手, 謎, 鍋] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-187672`, `sent:tatoeba-11883177`, `sent:tatoeba-109745`
 

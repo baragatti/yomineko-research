@@ -7,7 +7,7 @@
 - Perguntar o método ou o meio de uma ação com どうやって
 - Distinguir どんな (que tipo) de どうやって (de que forma) e de どうして (por quê)
 
-**Introduz:** gramática [donna, douyatte] · vocabulário [どんな, テスト, 動, 天気, 曇り, 月, 漢字, 片仮名, 瓦, 瓩, 粁, 遣る, 風] · kanji [天 学 校 気] · kana [—]
+**Introduz:** gramática [donna, douyatte] · vocabulário [どんな, テスト, 天気, 曇り, 月, 漢字, 片仮名, 瓦, 瓩, 粁, 遣る, 風] · kanji [天 学 校 気] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-199569`, `sent:tatoeba-199382`, `sent:tatoeba-9611533`, `sent:tatoeba-201153`
 
@@ -129,8 +129,8 @@ Hoje quase ninguém os escreve assim; você verá essas unidades em katakana. Gu
 
 
 ### 13. (recognition) Qual destas palavras significa "grama"?
-- **Resposta:** `{"choices": ["おじ", "かんじ", "どう", "グラム"], "correct": "グラム"}`
-- グラム significa grama. As outras opções são どう (movimento), かんじ (kanji, caractere chinês) e おじ (tio (mais novo que o pai/mãe)).
+- **Resposta:** `{"choices": ["おまわりさん", "あなた", "グラム", "かぜ"], "correct": "グラム"}`
+- グラム significa grama. As outras opções são おまわりさん (policial, guarda), かぜ (resfriado, gripe) e あなた (você).
 
 
 ### 14. (recognition) Qual destas palavras significa "quilograma, quilo"?

@@ -93,7 +93,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 443,
+  "cumulative_known_vocab": 438,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -103,8 +103,8 @@
       "via": "new-word",
       "distractors": [
         "今",
-        "風",
-        "上"
+        "上",
+        "箱"
       ]
     },
     {
@@ -124,7 +124,7 @@
       "distractors": [
         "たがい",
         "ひとり",
-        "とまる"
+        "おとこ"
       ]
     },
     {
@@ -158,7 +158,7 @@
       "examples": [
         "sent:tatoeba-5332",
         "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
+        "sent:tatoeba-75140"
       ],
       "strand": "language-focused"
     },
@@ -173,23 +173,6 @@
     }
   ],
   "production": [
-    {
-      "prompt": {
-        "pt-BR": "O que fica perto de casa é um hospital militar."
-      },
-      "answer_key": "家から遠くないところにあるのは軍の病院です。",
-      "accepted_variants": [
-        "いえからとおくないところにあるのはぐんのびょういんです",
-        "いえからとおくないところにあるのはぐんのびょういんです。",
-        "いえからとおくないところにあるのわぐんのびょういんです",
-        "いえからとおくないところにあるのわぐんのびょういんです。",
-        "家から遠くないところにあるのは軍の病院です",
-        "家から遠くないところにあるのは軍の病院です。"
-      ],
-      "sentence": "sent:tatoeba-2205072",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
     {
       "prompt": {
         "pt-BR": "Por pouco não fui atropelado por um carro."
@@ -221,6 +204,21 @@
       "sentence": "sent:tatoeba-125242",
       "kind": "same-stage",
       "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "Depois que dormi bem, me senti bem melhor."
+      },
+      "answer_key": "よく眠ったらだいぶ気分がよくなった。",
+      "accepted_variants": [
+        "よくねむったらだいぶきぶんがよくなった",
+        "よくねむったらだいぶきぶんがよくなった。",
+        "よく眠ったらだいぶ気分がよくなった",
+        "よく眠ったらだいぶ気分がよくなった。"
+      ],
+      "sentence": "sent:tatoeba-192750",
+      "kind": "same-stage",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -228,12 +226,12 @@
       "pt-BR": "Você não está bem. Explique o que está sentindo e peça ajuda."
     },
     "items": [
+      "sent:tatoeba-189575",
+      "sent:tatoeba-2265692",
       "sent:tatoeba-179256",
       "sent:tatoeba-137964",
       "sent:tatoeba-10647294",
-      "sent:tatoeba-190738",
-      "sent:tatoeba-1039551",
-      "sent:tatoeba-174391"
+      "sent:tatoeba-190738"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

@@ -7,51 +7,81 @@
     "pt-BR": "Falar de você, parte 2"
   },
   "say_now": [
+    "sent:tatoeba-210316",
+    "sent:tatoeba-159950",
+    "sent:tatoeba-147013",
+    "sent:tatoeba-222662",
     "sent:jec-0320",
-    "sent:tatoeba-164979",
-    "sent:tatoeba-1046077",
-    "sent:tatoeba-84568",
-    "sent:tatoeba-79312",
-    "sent:tatoeba-9553773"
+    "sent:tatoeba-164979"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1247250",
+    "vocab:1420470",
     "vocab:1318610",
-    "vocab:1487660",
-    "vocab:1579260",
-    "vocab:1001820",
-    "vocab:1221270",
     "vocab:1156530",
-    "vocab:1227560",
+    "vocab:1332760",
+    "vocab:2136180",
     "vocab:1010150",
     "vocab:1329000",
-    "vocab:1612530"
+    "vocab:1225900",
+    "vocab:1427110",
+    "vocab:1612530",
+    "vocab:1433330",
+    "vocab:1499540"
   ],
   "patterns": [
-    "gram:ta-bakari",
-    "gram:n3-bakari",
-    "gram:gp-8",
-    "gram:kara"
+    "gram:gp-14",
+    "gram:gp-15",
+    "gram:gp-8"
   ],
   "kanji_recognition": [
-    "意",
-    "見",
-    "言",
-    "自",
-    "生",
-    "先"
+    "義",
+    "君",
+    "仕",
+    "事",
+    "終",
+    "務"
   ],
   "shadowing": [
+    "sent:tatoeba-210316",
+    "sent:tatoeba-159950",
+    "sent:tatoeba-147013",
+    "sent:tatoeba-222662",
     "sent:jec-0320",
-    "sent:tatoeba-164979",
-    "sent:tatoeba-1046077",
-    "sent:tatoeba-84568",
-    "sent:tatoeba-79312",
-    "sent:tatoeba-9553773"
+    "sent:tatoeba-164979"
   ],
   "srs": {
     "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-210316",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-159950",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-147013",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-222662",
+        "card_types": [
+          "production"
+        ]
+      },
       {
         "deck": "deck:phrases",
         "item": "sent:jec-0320",
@@ -65,51 +95,33 @@
         "card_types": [
           "production"
         ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-1046077",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-84568",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-79312",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-9553773",
-        "card_types": [
-          "production"
-        ]
       }
     ]
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 301,
+  "cumulative_known_vocab": 302,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n3:777:102",
+      "id": "so:n3:690",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:690",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:690:390",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "去年",
-        "生徒",
-        "読む"
+        "閉まる",
+        "預ける",
+        "教える"
       ]
     },
     {
@@ -117,52 +129,53 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "休む",
-        "自分",
-        "会計"
+        "全体",
+        "一体",
+        "自分"
       ]
     },
     {
-      "id": "kr:n3:102",
+      "id": "kr:n3:1521",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "すべて",
-        "かぞく",
-        "できる"
+        "はいる",
+        "こんや",
+        "いらい"
       ]
     },
     {
-      "id": "kr:n3:146",
+      "id": "kr:n3:706",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ほしい",
-        "きのう",
-        "さかな"
+        "きんし",
+        "はらう",
+        "しまる"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:ga-hitsuyou",
-    "gram:n3-kiri"
+    "gram:gp-36",
+    "gram:n3-kiri",
+    "gram:demo"
   ],
   "drills": [
     {
-      "pattern": "gram:ta-bakari",
+      "pattern": "gram:gp-14",
       "examples": [
-        "sent:tatoeba-11009581",
-        "sent:tatoeba-9722237",
-        "sent:tatoeba-159565"
+        "sent:tatoeba-74498",
+        "sent:tatoeba-76735",
+        "sent:tatoeba-74036"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:n3-bakari",
+      "pattern": "gram:gp-15",
       "examples": [
-        "sent:tatoeba-147558",
-        "sent:tatoeba-88247",
-        "sent:tatoeba-96219"
+        "sent:gen-6fe6c769a3a7",
+        "sent:tatoeba-84720",
+        "sent:gen-353c01dbf76e"
       ],
       "strand": "language-focused"
     },
@@ -172,15 +185,6 @@
         "sent:tatoeba-5320",
         "sent:tatoeba-176635",
         "sent:tatoeba-150175"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:kara",
-      "examples": [
-        "sent:tatoeba-76156",
-        "sent:tatoeba-4772",
-        "sent:gen-671b7aebf53d"
       ],
       "strand": "language-focused"
     }
@@ -242,11 +246,11 @@
     },
     "items": [
       "sent:tatoeba-227125",
-      "sent:tatoeba-101820",
-      "sent:tatoeba-77964",
-      "sent:tatoeba-121988",
+      "sent:tatoeba-86878",
+      "sent:tatoeba-212601",
+      "sent:tatoeba-10723441",
       "sent:tatoeba-4562257",
-      "sent:tatoeba-126245"
+      "sent:tatoeba-5049"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -254,15 +258,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 23,
     "meaning-output": 6,
-    "language-focused": 57,
+    "language-focused": 60,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 31,
     "fluency": 6
   }
 }

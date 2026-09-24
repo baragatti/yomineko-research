@@ -7,47 +7,75 @@
     "pt-BR": "Dizer o que você acha, parte 3"
   },
   "say_now": [
+    "sent:tatoeba-77523",
+    "sent:tatoeba-77481",
+    "sent:tatoeba-77555",
+    "sent:tatoeba-77522",
     "sent:tatoeba-191077",
-    "sent:tatoeba-11692639",
-    "sent:tatoeba-118153",
-    "sent:tatoeba-119734",
-    "sent:tatoeba-5348453",
-    "sent:tatoeba-151044"
+    "sent:tatoeba-11692639"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1558370",
     "vocab:1202150",
     "vocab:1376600",
-    "vocab:1312420",
-    "vocab:1497980",
+    "vocab:1449870",
+    "vocab:1377080",
     "vocab:1156100"
   ],
   "patterns": [
-    "gram:n3-to-iu-no-wa",
+    "gram:kamo-shirenai",
     "gram:hazu-ga-nai",
-    "gram:n3-ni-tsuite",
-    "gram:n3-to-iu-no",
-    "gram:hazu-da"
+    "gram:hazu-da",
+    "gram:n3-hazu-da"
   ],
   "kanji_recognition": [
-    "委",
-    "員",
-    "皆",
-    "対",
-    "達",
-    "反"
+    "時",
+    "車",
+    "着",
+    "到",
+    "列",
+    "午"
   ],
   "shadowing": [
+    "sent:tatoeba-77523",
+    "sent:tatoeba-77481",
+    "sent:tatoeba-77555",
+    "sent:tatoeba-77522",
     "sent:tatoeba-191077",
-    "sent:tatoeba-11692639",
-    "sent:tatoeba-118153",
-    "sent:tatoeba-119734",
-    "sent:tatoeba-5348453",
-    "sent:tatoeba-151044"
+    "sent:tatoeba-11692639"
   ],
   "srs": {
     "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-77523",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-77481",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-77555",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-77522",
+        "card_types": [
+          "production"
+        ]
+      },
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-191077",
@@ -61,34 +89,6 @@
         "card_types": [
           "production"
         ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-118153",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-119734",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-5348453",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-151044",
-        "card_types": [
-          "production"
-        ]
       }
     ]
   },
@@ -98,36 +98,6 @@
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
-    {
-      "id": "so:n3:132",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:196",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:196:889",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "到着",
-        "値段",
-        "立つ"
-      ]
-    },
-    {
-      "id": "cf:n3:195:889",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "問題",
-        "煙草",
-        "明日"
-      ]
-    },
     {
       "id": "kr:n4:1106",
       "type": "kanji_reading",
@@ -139,26 +109,47 @@
       ]
     },
     {
-      "id": "kr:n4:889",
-      "type": "kanji_reading",
-      "via": "new-word",
+      "id": "cf:n3:173:551",
+      "type": "context_fill",
+      "via": "review",
       "distractors": [
-        "あまり",
-        "きゅう",
-        "あがる"
+        "以来",
+        "当時",
+        "日本"
+      ]
+    },
+    {
+      "id": "cf:n3:175:690",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "昔",
+        "彼",
+        "雨"
+      ]
+    },
+    {
+      "id": "kr:n3:163",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "でかける",
+        "しゅるい",
+        "あずける"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:n3-ni-oite"
+    "gram:gp-36",
+    "gram:sore-ni"
   ],
   "drills": [
     {
-      "pattern": "gram:n3-to-iu-no-wa",
+      "pattern": "gram:kamo-shirenai",
       "examples": [
-        "sent:tatoeba-423387",
-        "sent:tatoeba-168168",
-        "sent:tatoeba-120314"
+        "sent:tatoeba-2684823",
+        "sent:tatoeba-189633",
+        "sent:tatoeba-152614"
       ],
       "strand": "language-focused"
     },
@@ -172,24 +163,6 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:n3-ni-tsuite",
-      "examples": [
-        "sent:tatoeba-80136",
-        "sent:tatoeba-77936",
-        "sent:tatoeba-123701"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-to-iu-no",
-      "examples": [
-        "sent:tatoeba-220804",
-        "sent:tatoeba-138773",
-        "sent:tatoeba-214502"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:hazu-da",
       "examples": [
         "sent:tatoeba-235244",
@@ -197,28 +170,18 @@
         "sent:tatoeba-198131"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-hazu-da",
+      "examples": [
+        "sent:tatoeba-8579878",
+        "sent:tatoeba-10631706",
+        "sent:tatoeba-3552030"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt": {
-        "pt-BR": "O trem era pra chegar às seis."
-      },
-      "answer_key": "列車は６時到着のはずだった。",
-      "accepted_variants": [
-        "れっしゃはろくじとうちゃくのはずだった",
-        "れっしゃはろくじとうちゃくのはずだった。",
-        "れっしゃわろくじとうちゃくのはずだった",
-        "れっしゃわろくじとうちゃくのはずだった。",
-        "列車は6時到着のはずだった",
-        "列車は6時到着のはずだった。",
-        "列車は６時到着のはずだった",
-        "列車は６時到着のはずだった。"
-      ],
-      "sentence": "sent:tatoeba-77523",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
     {
       "prompt": {
         "pt-BR": "É impossível que aquela menina tenha feito uma coisa dessas."
@@ -231,6 +194,21 @@
         "その女の子がそんなことをしたはずがない。"
       ],
       "sentence": "sent:tatoeba-209394",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "Sou exatamente da mesma opinião."
+      },
+      "answer_key": "まったく同意見です。",
+      "accepted_variants": [
+        "まったくどういけんです",
+        "まったくどういけんです。",
+        "まったく同意見です",
+        "まったく同意見です。"
+      ],
+      "sentence": "sent:tatoeba-162311",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
@@ -260,9 +238,9 @@
       "sent:tatoeba-81566",
       "sent:tatoeba-78713",
       "sent:tatoeba-11870768",
-      "sent:tatoeba-206210",
-      "sent:tatoeba-78723",
-      "sent:tatoeba-123791"
+      "sent:tatoeba-74723",
+      "sent:tatoeba-201255",
+      "sent:tatoeba-78628"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -270,15 +248,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 24,
     "fluency": 6
   }
 }

@@ -154,6 +154,40 @@ def main() -> int:
     inserted = reasserted = nodes = 0
     lessons_touched: set[str] = set()
 
+    # ---- Q2: retired rows leave both layers; regenerated rows cite exactly their own sentences ---
+    # (`retired_by_q2` / `q2_regenerated` in the vocab table; research/reports/q2_token_links_report.md)
+    exact_refs = {x["exercise"] for x in (doc.get("q2_regenerated") or {}).get("regenerated") or []}
+    for x in doc.get("retired_by_q2") or []:
+        lslug, exslug = x["lesson"], x["exercise"]
+        node = f'<exercise ref="{exslug}"/>'
+        e = con.execute("SELECT id, lesson_id FROM exercise WHERE slug=?", (exslug,)).fetchone()
+        if e is not None:
+            print(f"  {lslug}: -exercise {exslug} (retired by Q2) (db)")
+            changed += 1
+            if not args.check:
+                for sql in ("DELETE FROM exercise_sentence WHERE exercise_id=?",
+                            "DELETE FROM exercise_item WHERE exercise_id=?",
+                            "DELETE FROM localized_text WHERE entity_type='exercise' AND entity_id=?",
+                            "DELETE FROM exercise WHERE id=?"):
+                    con.execute(sql, (e[0],))
+                con.execute("DELETE FROM exercise_item_ref WHERE exercise=?", (exslug,))
+                body = _lesson_body(con, e[1])
+                if node in body:
+                    from apply_forward_refs import remove_node  # noqa: PLC0415
+                    con.execute("UPDATE localized_text SET value=? WHERE entity_type='lesson' AND "
+                                "entity_id=? AND field='body' AND locale=?", (remove_node(body, node), e[1], LOC))
+        f = SRC / f"{lslug.split(':', 1)[1]}.json"
+        d = json.loads(f.read_text(encoding="utf-8"))
+        exs = [ex for ex in d.get("exercises", []) if ex.get("slug") != exslug]
+        if len(exs) != len(d.get("exercises", [])) or node in (d.get("body") or ""):
+            print(f"  {lslug}: -exercise {exslug} (retired by Q2) (source)")
+            changed += 1
+            if not args.check:
+                from apply_forward_refs import remove_node  # noqa: PLC0415
+                d["exercises"] = exs
+                d["body"] = remove_node(d.get("body") or "", node)
+                f.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
     for r in rows:
         lslug = r["lesson"]
         ex = r["exercise"]
@@ -219,6 +253,18 @@ def main() -> int:
         # sentence_refs. The kanji table cites none, so this was never exercised before the vocab
         # table; a cloze whose sentence link is lost is not credited by the coverage gate.
         want_refs = list(ex.get("sentence_refs") or [])
+        if exslug in exact_refs:
+            eid_row = con.execute("SELECT id FROM exercise WHERE slug=?", (exslug,)).fetchone()
+            if eid_row is not None:
+                for sid_, sl in con.execute(
+                        "SELECT s.id, s.slug FROM exercise_sentence es JOIN sentence s ON s.id=es.sentence_id "
+                        "WHERE es.exercise_id=?", (eid_row[0],)).fetchall():
+                    if sl not in want_refs:
+                        print(f"  {lslug}: {exslug} -sentence {sl} (regenerated row) (db)")
+                        changed += 1
+                        if not args.check:
+                            con.execute("DELETE FROM exercise_sentence WHERE exercise_id=? AND sentence_id=?",
+                                        (eid_row[0], sid_))
         if want_refs:
             eid_row = con.execute("SELECT id FROM exercise WHERE slug=?", (exslug,)).fetchone()
             got_refs = set() if eid_row is None else {r[0] for r in con.execute(
@@ -269,8 +315,11 @@ def main() -> int:
                 "explanation": explanation, "sentence_refs": list(ex.get("sentence_refs") or []),
                 "item_refs": []})
         else:
-            for field, want in (("type", ex["type"]), ("prompt", prompt),
-                                ("answer", ex.get("answer")), ("explanation", explanation)):
+            fields = [("type", ex["type"]), ("prompt", prompt), ("answer", ex.get("answer")),
+                      ("explanation", explanation)]
+            if exslug in exact_refs:
+                fields.append(("sentence_refs", list(ex.get("sentence_refs") or [])))
+            for field, want in fields:
                 if src_ex.get(field) != want:
                     print(f"  {lslug}: {exslug} {field} rewritten from the table (source)")
                     changed += 1

@@ -75,9 +75,17 @@ def main() -> int:
         return out
     cumsets = {"n5": ("n5",), "n4": ("n5", "n4"), "n3": ("n5", "n4", "n3")}
     prefixes = {"n5": ("pre-n5", "n5"), "n4": ("pre-n5", "n5", "n4"), "n3": ("pre-n5", "n5", "n4", "n3")}
+    # A record course/coverage_exemptions.json holds back (taught-level, unlocked by no lesson, with a
+    # stated reason; validate_unlock_ledger.py fails an entry that matches nothing) is not a coverage
+    # hole here either. Q2: 刷る and 罹る, the same-reading siblings whose list tallies belong to 為る
+    # and 掛かる. Excluded by slug, so a sibling that shares the headword is still required.
+    cov = ROOT / "course" / "coverage_exemptions.json"
+    exempt = {e["id"] for e in json.loads(cov.read_text(encoding="utf-8")).get("vocab", [])} \
+        if cov.is_file() else set()
     for lvl, (lo, hi) in VBANDS.items():
-        tagged = {r[0] for r in con.execute(
-            f"SELECT headword FROM vocab WHERE level IN ({','.join('?'*len(cumsets[lvl]))})", cumsets[lvl])}
+        tagged = {hw for slug, hw in con.execute(
+            f"SELECT slug, headword FROM vocab WHERE level IN ({','.join('?'*len(cumsets[lvl]))})",
+            cumsets[lvl]) if slug not in exempt}
         ts = vtaught(prefixes[lvl])
         miss = tagged - ts
         if miss:

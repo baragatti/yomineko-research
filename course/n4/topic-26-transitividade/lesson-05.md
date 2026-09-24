@@ -7,7 +7,7 @@
 - Dizer 'deve ser / é de se esperar' com はず para expressar certeza baseada em lógica
 - Reconhecer os kanji 計 (plano/medir) e 特 (especial) em palavras de agenda e julgamento
 
-**Introduz:** gramática [—] · vocabulário [すっかり, 以内, 形, 技術, 法律, 用意, 筈] · kanji [特 計] · kana [—]
+**Introduz:** gramática [—] · vocabulário [用, すっかり, 以内, 形, 技術, 法律, 用意, 筈] · kanji [特 計] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-95ea64271abc`, `sent:tatoeba-78865`
 
@@ -117,5 +117,10 @@ Três substantivos que aparecem muito em textos do dia a dia e em notícias:
 ### 11. (recognition) Qual destas palavras significa "lei, legislação"?
 - **Resposta:** `{"choices": ["アナウンサー", "じゅんび", "かがみ", "ほうりつ"], "correct": "ほうりつ"}`
 - ほうりつ significa lei, legislação. As outras opções são かがみ (espelho), アナウンサー (locutor, apresentador) e じゅんび (preparação, preparativos).
+
+
+### 12. (recognition) Qual destas palavras significa "afazer, tarefa"?
+- **Resposta:** `{"choices": ["用", "近く", "今日", "発音"], "correct": "用"}`
+- 用（よう） significa afazer, tarefa. As outras opções são 近く (proximidades, redondezas), 今日 (hoje) e 発音 (pronúncia).
 
 

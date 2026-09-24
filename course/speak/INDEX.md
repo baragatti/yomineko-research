@@ -4,21 +4,21 @@ A SECOND ORDERING over the same corpus, not a second corpus: every unit holds co
 
 Ordering is **survival scenario** (primary) then **word frequency** (secondary, from `vocab.freq_rank`). Every stage is a usable stopping point: a learner who stops after stage 4 can still land, eat, buy and navigate.
 
-**12 stages · 72 units · 432 phrases (431 real / 1 generated) · 641 vocabulary items introduced**
+**12 stages · 72 units · 432 phrases (431 real / 1 generated) · 640 vocabulary items introduced**
 
 | # | Stage | Units | Phrases | New words | ≈band |
 |---|---|---|---|---|---|
 | 1 | Chegar e cumprimentar | 6 | 36 | 46 | pre-n5 |
-| 2 | Isto, aquilo, quanto custa | 6 | 36 | 53 | pre-n5/n5 |
+| 2 | Isto, aquilo, quanto custa | 6 | 36 | 49 | pre-n5/n5 |
 | 3 | Comer e beber fora | 6 | 36 | 62 | n5 |
-| 4 | Chegar aonde você quer | 6 | 36 | 59 | n5 |
-| 5 | Dormir e resolver problemas | 6 | 36 | 66 | n5 |
-| 6 | Falar de você | 6 | 36 | 63 | n5 |
-| 7 | Quando, que horas, combinar | 6 | 36 | 48 | n5/n4 |
+| 4 | Chegar aonde você quer | 6 | 36 | 67 | n5 |
+| 5 | Dormir e resolver problemas | 6 | 36 | 60 | n5 |
+| 6 | Falar de você | 6 | 36 | 58 | n5 |
+| 7 | Quando, que horas, combinar | 6 | 36 | 49 | n5/n4 |
 | 8 | Emergência e saúde | 6 | 36 | 56 | n4 |
-| 9 | Contar o que aconteceu | 6 | 36 | 48 | n4 |
-| 10 | Pedir, oferecer, agradecer com jeito | 6 | 36 | 57 | n4 |
-| 11 | Dizer o que você acha | 6 | 36 | 40 | n4/n3 |
-| 12 | Conversa de verdade | 6 | 36 | 43 | n3 |
+| 9 | Contar o que aconteceu | 6 | 36 | 49 | n4 |
+| 10 | Pedir, oferecer, agradecer com jeito | 6 | 36 | 61 | n4 |
+| 11 | Dizer o que você acha | 6 | 36 | 37 | n4/n3 |
+| 12 | Conversa de verdade | 6 | 36 | 46 | n3 |
 
 `say_now` phrases are real human-written bank sentences; set expressions (ありがとう, すみません) are taught whole as `chunk_phrases` because the analyzer mis-lemmatises them (すみません → 住む+ます+ぬ) and because that is how a learner meets them anyway. `kanji_recognition` is **recognition only** — this path never asks the learner to write kanji. `audio: "pending"` throughout, awaiting the voice-over pass (`design/listening.md`).

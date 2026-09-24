@@ -12,7 +12,7 @@
     "sent:tatoeba-10263746",
     "sent:tatoeba-137964",
     "sent:tatoeba-179256",
-    "sent:tatoeba-110065"
+    "sent:tatoeba-2265692"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -22,7 +22,7 @@
     "vocab:1404630",
     "vocab:1409140",
     "vocab:1246700",
-    "vocab:1541620",
+    "vocab:1590560",
     "vocab:2842174",
     "vocab:1200220",
     "vocab:1365860",
@@ -31,8 +31,10 @@
     "vocab:1409200"
   ],
   "patterns": [
+    "gram:gp-17",
     "gram:totemo",
-    "gram:n3-temo"
+    "gram:n3-temo",
+    "gram:kana"
   ],
   "kanji_recognition": [
     "引",
@@ -48,7 +50,7 @@
     "sent:tatoeba-10263746",
     "sent:tatoeba-137964",
     "sent:tatoeba-179256",
-    "sent:tatoeba-110065"
+    "sent:tatoeba-2265692"
   ],
   "srs": {
     "introduces_cards": [
@@ -89,7 +91,7 @@
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-110065",
+        "item": "sent:tatoeba-2265692",
         "card_types": [
           "production"
         ]
@@ -98,7 +100,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 426,
+  "cumulative_known_vocab": 422,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -109,7 +111,7 @@
       "distractors": [
         "時",
         "国",
-        "風"
+        "魚"
       ]
     },
     {
@@ -129,7 +131,7 @@
       "distractors": [
         "すき",
         "もう",
-        "つき"
+        "なく"
       ]
     },
     {
@@ -144,12 +146,19 @@
     }
   ],
   "patterns_chunked": [
-    "gram:n3-to-shite",
     "gram:n3-you-ni",
-    "gram:you-ni-you-na",
-    "gram:gp-121"
+    "gram:you-ni-you-na"
   ],
   "drills": [
+    {
+      "pattern": "gram:gp-17",
+      "examples": [
+        "sent:tatoeba-124633",
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:totemo",
       "examples": [
@@ -165,6 +174,15 @@
         "sent:tatoeba-173357",
         "sent:tatoeba-6015",
         "sent:tatoeba-85028"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kana",
+      "examples": [
+        "sent:gen-a57fa0b2f6c3",
+        "sent:gen-f626c3374153",
+        "sent:gen-72c52ba4dd08"
       ],
       "strand": "language-focused"
     }
@@ -224,10 +242,10 @@
     "items": [
       "sent:tatoeba-10647294",
       "sent:tatoeba-190738",
-      "sent:tatoeba-1039551",
-      "sent:tatoeba-143418",
-      "sent:tatoeba-80364",
-      "sent:tatoeba-2298758"
+      "sent:tatoeba-10008425",
+      "sent:tatoeba-12508743",
+      "sent:tatoeba-171514",
+      "sent:tatoeba-11013726"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -235,15 +253,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "language-focused": 59,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 30,
     "fluency": 6
   }
 }

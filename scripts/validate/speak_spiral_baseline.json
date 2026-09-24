@@ -4,46 +4,47 @@
   "denominators": {
     "say_now": 216,
     "fluency": 216,
-    "drills": 438
+    "drills": 447
   },
   "floors": {
     "about_you": {
-      "say_now": 4,
-      "fluency": 17,
+      "say_now": 5,
+      "fluency": 16,
       "drills": 10,
-      "late_units": 18
+      "late_units": 17
     },
     "arrival": {
       "say_now": 2,
       "fluency": 0,
-      "drills": 23,
-      "late_units": 17
+      "drills": 27,
+      "late_units": 18
     },
     "eating": {
       "say_now": 1,
       "fluency": 2,
       "drills": 9,
-      "late_units": 9
+      "late_units": 10
     },
     "getting_around": {
       "say_now": 7,
-      "fluency": 9,
-      "drills": 7,
+      "fluency": 7,
+      "drills": 9,
       "late_units": 16
     },
     "lodging": {
       "say_now": 1,
       "fluency": 0,
-      "drills": 1,
-      "late_units": 2
+      "drills": 0,
+      "late_units": 1
     },
     "shopping": {
       "say_now": 16,
-      "fluency": 16,
-      "drills": 47,
-      "late_units": 30
+      "fluency": 15,
+      "drills": 39,
+      "late_units": 28
     }
   },
   "w32_cause": "Re-recorded by W32 (2026-09-23). Two causes, measured apart. (1) DRIFT: the committed path was built before the W13 ingest grew the bank 5,889 -> 10,209, so the HEAD builder run on today's index already moves this ratchet (HEAD builder, no W32 change: near-duplicate pairs 24 -> 26 with 4 FAIL, spiral 13 FAIL, strands 28 FAIL). (2) W32: survival cores live in 9 stages (only the terms whose own sentence is banked) plus one phrase per survival term per stage; on top of the drift it lowers near-duplicates 26 -> 21, spiral FAILs 13 -> 12, strand FAILs 28 -> 25. Every number in research/reports/w32_w30_apply_report.md.",
-  "p4w32_cause": "Re-recorded by P4-w32-ingest (2026-09-23). Two causes, measured apart. (1) INGEST: the 62 unbanked W32 survival-core sentences were banked (research/derived/repairs/w32_layerb.json, bank 10,209 -> 10,271), so the C9 builder on the grown index already moves the ratchets: near-duplicate pairs 21 -> 18 with 0 FAIL, spiral 1 FAIL (shopping|fluency 20 -> 18), strands 13 FAIL. (2) THE CORES: all 71 W32 survival terms live in all 12 stages (16 seed extensions; 今何時 -> 今何時か, お勘定 -> the lemma 勘定) and a term's OWN row ranks first in the survival bucket (D10 default for the one generated core, 薬をください); 71 / 71 rows reach their own stage, 60 in unit 01, SURVIVAL_CORE_PENDING empty. On top of the ingest: near-duplicates 18, 4 FAIL (getting_around 0 -> 1, lodging 0 -> 1, shopping 1 -> 2, time_plans 0 -> 1; arrival 16 -> 13, health 1 -> 0), spiral 8 FAIL, strands 16 FAIL, all within 1.3 points. Numbers in research/reports/p4_w32_ingest_report.md."
+  "p4w32_cause": "Re-recorded by P4-w32-ingest (2026-09-23). Two causes, measured apart. (1) INGEST: the 62 unbanked W32 survival-core sentences were banked (research/derived/repairs/w32_layerb.json, bank 10,209 -> 10,271), so the C9 builder on the grown index already moves the ratchets: near-duplicate pairs 21 -> 18 with 0 FAIL, spiral 1 FAIL (shopping|fluency 20 -> 18), strands 13 FAIL. (2) THE CORES: all 71 W32 survival terms live in all 12 stages (16 seed extensions; 今何時 -> 今何時か, お勘定 -> the lemma 勘定) and a term's OWN row ranks first in the survival bucket (D10 default for the one generated core, 薬をください); 71 / 71 rows reach their own stage, 60 in unit 01, SURVIVAL_CORE_PENDING empty. On top of the ingest: near-duplicates 18, 4 FAIL (getting_around 0 -> 1, lodging 0 -> 1, shopping 1 -> 2, time_plans 0 -> 1; arrival 16 -> 13, health 1 -> 0), spiral 8 FAIL, strands 16 FAIL, all within 1.3 points. Numbers in research/reports/p4_w32_ingest_report.md.",
+  "q2_cause": "Re-recorded by Q2-token-links (2026-09-23). Measured apart: the HEAD builders (build_speaking_path, build_speaking_checkpoints, build_speaking_practice) run on the pre-Q2 index reproduce the committed course/speak exactly (73/73 files), so none of this is drift. The token relink (する -> 為る, なる -> 成る, ほう -> 方, かかる -> 掛かる, くれる -> 呉れる and 3,830 more links), the 62 repair-driven re-levels and the course repoint (the cumulative known sets trade 刷る/生る/罹る/報/用/動 for 為る/成る/掛かる/方/様/呉れる) change which bank sentences the builders may use: 66 of 73 unit files change, 56 cited sentences leave and 60 enter (18 and 24 of them touched by the relink). Spiral reach shrank in eight (stage, slot) cells: shopping drills 47 -> 39, late_units 30 -> 28, fluency 16 -> 15; getting_around fluency 9 -> 7; about_you fluency 17 -> 16, late_units 18 -> 17; lodging drills 1 -> 0, late_units 2 -> 1. Queued for the speak review (research/reports/q2_token_links_report.md, open items)."
 }

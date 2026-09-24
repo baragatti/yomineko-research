@@ -11,8 +11,8 @@
     "sent:tatoeba-152088",
     "sent:tatoeba-81566",
     "sent:tatoeba-78959",
-    "sent:tatoeba-209394",
-    "sent:tatoeba-77523"
+    "sent:tatoeba-162311",
+    "sent:tatoeba-209394"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -20,16 +20,14 @@
     "vocab:1252090",
     "vocab:1359070",
     "vocab:1281000",
+    "vocab:1394800",
     "vocab:1344970",
-    "vocab:1558370",
-    "vocab:1449870",
     "vocab:1264770",
     "vocab:1334210",
     "vocab:1476430"
   ],
   "patterns": [
     "gram:janai-dewa-nai",
-    "gram:n3-hazu-da",
     "gram:n3-to-shite",
     "gram:gp-89"
   ],
@@ -46,8 +44,8 @@
     "sent:tatoeba-152088",
     "sent:tatoeba-81566",
     "sent:tatoeba-78959",
-    "sent:tatoeba-209394",
-    "sent:tatoeba-77523"
+    "sent:tatoeba-162311",
+    "sent:tatoeba-209394"
   ],
   "srs": {
     "introduces_cards": [
@@ -81,14 +79,14 @@
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-209394",
+        "item": "sent:tatoeba-162311",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-77523",
+        "item": "sent:tatoeba-209394",
         "card_types": [
           "production"
         ]
@@ -97,7 +95,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 568,
+  "cumulative_known_vocab": 567,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -116,9 +114,9 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "買い物",
         "決して",
-        "尋ねる"
+        "尋ねる",
+        "危ない"
       ]
     },
     {
@@ -136,13 +134,14 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "しょさい",
-        "だんせい",
-        "いただく"
+        "もとめる",
+        "ぜんたい",
+        "しょさい"
       ]
     }
   ],
   "patterns_chunked": [
+    "gram:n3-mattaku-nai",
     "gram:hazu-ga-nai",
     "gram:n3-nai-to"
   ],
@@ -153,15 +152,6 @@
         "sent:gen-c8e36c94f4e2",
         "sent:tatoeba-144679",
         "sent:tatoeba-536769"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-hazu-da",
-      "examples": [
-        "sent:tatoeba-8579878",
-        "sent:tatoeba-10631706",
-        "sent:tatoeba-3552030"
       ],
       "strand": "language-focused"
     },
@@ -179,7 +169,7 @@
       "examples": [
         "sent:tatoeba-144038",
         "sent:tatoeba-123036",
-        "sent:tatoeba-4855"
+        "sent:tatoeba-10541587"
       ],
       "strand": "language-focused"
     }
@@ -242,10 +232,10 @@
     "items": [
       "sent:tatoeba-8724557",
       "sent:tatoeba-3583428",
-      "sent:tatoeba-201255",
-      "sent:tatoeba-9614704",
-      "sent:tatoeba-226013",
-      "sent:tatoeba-149694"
+      "sent:tatoeba-83404",
+      "sent:tatoeba-149694",
+      "sent:tatoeba-184096",
+      "sent:tatoeba-124654"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -253,15 +243,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 24,
     "fluency": 6
   }
 }

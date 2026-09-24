@@ -7,47 +7,70 @@
     "pt-BR": "Quando, que horas, combinar, parte 6"
   },
   "say_now": [
+    "sent:tatoeba-12508743",
+    "sent:tatoeba-145155",
+    "sent:tatoeba-11870752",
     "sent:tatoeba-171539",
     "sent:tatoeba-2298758",
-    "sent:tatoeba-80364",
-    "sent:tatoeba-143418",
-    "sent:tatoeba-11991839",
-    "sent:tatoeba-174391"
+    "sent:tatoeba-80364"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1386500",
     "vocab:1542160",
     "vocab:1540150",
     "vocab:1413240",
-    "vocab:1373860",
-    "vocab:1203250",
     "vocab:1438690",
     "vocab:1265070",
-    "vocab:1268990"
+    "vocab:1273270",
+    "vocab:1362360",
+    "vocab:1382990"
   ],
   "patterns": [
-    "gram:owaru",
-    "gram:darou"
+    "gram:n3-n-datte",
+    "gram:gp-43",
+    "gram:gp-142"
   ],
   "kanji_recognition": [
-    "外",
-    "気",
-    "今",
-    "天",
+    "雪",
     "日",
-    "遊"
+    "明",
+    "新",
+    "聞",
+    "園"
   ],
   "shadowing": [
+    "sent:tatoeba-12508743",
+    "sent:tatoeba-145155",
+    "sent:tatoeba-11870752",
     "sent:tatoeba-171539",
     "sent:tatoeba-2298758",
-    "sent:tatoeba-80364",
-    "sent:tatoeba-143418",
-    "sent:tatoeba-11991839",
-    "sent:tatoeba-174391"
+    "sent:tatoeba-80364"
   ],
   "srs": {
     "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-12508743",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-145155",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-11870752",
+        "card_types": [
+          "production"
+        ]
+      },
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-171539",
@@ -68,33 +91,12 @@
         "card_types": [
           "production"
         ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-143418",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-11991839",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-174391",
-        "card_types": [
-          "production"
-        ]
       }
     ]
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 397,
+  "cumulative_known_vocab": 391,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -105,17 +107,17 @@
       "distractors": [
         "何方",
         "切符",
-        "飲む"
+        "天然"
       ]
     },
     {
-      "id": "cf:n4:3427:133",
+      "id": "cf:n3:618:362",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
-        "始める",
-        "今日は",
-        "展覧会"
+        "はい",
+        "遊ぶ",
+        "レジ"
       ]
     },
     {
@@ -123,66 +125,57 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "やめる",
         "おおい",
-        "あける"
+        "あける",
+        "はしる"
       ]
     },
     {
-      "id": "kr:n4:247",
+      "id": "kr:n4:318",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "はは",
-        "なま",
-        "そこ"
+        "てつだう",
+        "りょこう",
+        "せいかく"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-110",
-    "gram:n3-to-shitara",
-    "gram:tara-dou",
-    "gram:tsumori"
+    "gram:n3-ni-yoreba",
+    "gram:sou-da-1",
+    "gram:gp-36"
   ],
   "drills": [
     {
-      "pattern": "gram:owaru",
+      "pattern": "gram:n3-n-datte",
       "examples": [
-        "sent:tatoeba-228649",
-        "sent:tatoeba-8727067",
-        "sent:tatoeba-10206436"
+        "sent:tatoeba-9240812",
+        "sent:tatoeba-11016376",
+        "sent:tatoeba-234696"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:darou",
+      "pattern": "gram:gp-43",
       "examples": [
-        "sent:tatoeba-80452",
-        "sent:tatoeba-85312",
-        "sent:tatoeba-84837"
+        "sent:tatoeba-112055",
+        "sent:tatoeba-81631",
+        "sent:tatoeba-79299"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-142",
+      "examples": [
+        "sent:tatoeba-78454",
+        "sent:tatoeba-137678",
+        "sent:tatoeba-83221"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt": {
-        "pt-BR": "Ouvi dizer que amanhã vai nevar."
-      },
-      "answer_key": "明日は雪になるんだって。",
-      "accepted_variants": [
-        "あすはゆきになるんだって",
-        "あすはゆきになるんだって。",
-        "あすわゆきになるんだって",
-        "あすわゆきになるんだって。",
-        "明日は雪になるんだって",
-        "明日は雪になるんだって。"
-      ],
-      "sentence": "sent:tatoeba-12508743",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
     {
       "prompt": {
         "pt-BR": "Hoje está muito quente."
@@ -216,6 +209,21 @@
       "sentence": "sent:tatoeba-4905",
       "kind": "same-stage",
       "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "Se você continua todos os dias, isso vira força."
+      },
+      "answer_key": "毎日続けると力になる。",
+      "accepted_variants": [
+        "まいにちつづけるとちからになる",
+        "まいにちつづけるとちからになる。",
+        "毎日続けると力になる",
+        "毎日続けると力になる。"
+      ],
+      "sentence": "sent:tatoeba-11013726",
+      "kind": "same-stage",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -228,7 +236,7 @@
       "sent:tatoeba-171531",
       "sent:tatoeba-1037362",
       "sent:tatoeba-100542",
-      "sent:tatoeba-209504"
+      "sent:tatoeba-12524635"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -236,15 +244,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
+    "meaning-input": 26,
     "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 25,
     "fluency": 6
   }
 }

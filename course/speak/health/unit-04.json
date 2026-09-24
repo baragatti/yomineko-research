@@ -7,26 +7,25 @@
     "pt-BR": "Emergência e saúde, parte 4"
   },
   "say_now": [
+    "sent:tatoeba-110065",
     "sent:tatoeba-189575",
     "sent:tatoeba-203287",
     "sent:tatoeba-192750",
     "sent:tatoeba-125242",
-    "sent:tatoeba-183591",
-    "sent:tatoeba-2205072"
+    "sent:tatoeba-183591"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1541620",
     "vocab:1588120",
     "vocab:1510650",
     "vocab:1529390",
     "vocab:1441870",
     "vocab:1343100",
-    "vocab:1177800",
     "vocab:1634500",
     "vocab:1218380",
     "vocab:1437780",
-    "vocab:1247660",
     "vocab:1414920"
   ],
   "patterns": [
@@ -34,23 +33,30 @@
     "gram:gp-32"
   ],
   "kanji_recognition": [
-    "雨",
-    "歌",
-    "気",
-    "中",
-    "分",
-    "外"
+    "医",
+    "者",
+    "彼",
+    "名",
+    "有",
+    "雨"
   ],
   "shadowing": [
+    "sent:tatoeba-110065",
     "sent:tatoeba-189575",
     "sent:tatoeba-203287",
     "sent:tatoeba-192750",
     "sent:tatoeba-125242",
-    "sent:tatoeba-183591",
-    "sent:tatoeba-2205072"
+    "sent:tatoeba-183591"
   ],
   "srs": {
     "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-110065",
+        "card_types": [
+          "production"
+        ]
+      },
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-189575",
@@ -85,19 +91,12 @@
         "card_types": [
           "production"
         ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-2205072",
-        "card_types": [
-          "production"
-        ]
       }
     ]
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 437,
+  "cumulative_known_vocab": 432,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -112,8 +111,8 @@
       "via": "phrase",
       "distractors": [
         "戻る",
-        "体育",
-        "有名"
+        "贅沢",
+        "体育"
       ]
     },
     {
@@ -121,9 +120,9 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "頁",
         "金",
-        "肉"
+        "肉",
+        "日"
       ]
     },
     {
@@ -131,9 +130,9 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
+        "おえる",
         "こんな",
-        "じぶん",
-        "ことば"
+        "じぶん"
       ]
     },
     {
@@ -149,7 +148,7 @@
   ],
   "patterns_chunked": [
     "gram:gp-72",
-    "gram:n3-nai-to",
+    "gram:n3-to-shite",
     "gram:no-naka-de",
     "gram:tokoro"
   ],
@@ -176,18 +175,17 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Ele é famoso como médico."
+        "pt-BR": "Dói bastante?"
       },
-      "answer_key": "彼は医者として有名だ。",
+      "answer_key": "かなり痛いのですか？",
       "accepted_variants": [
-        "かれはいしゃとしてゆうめいだ",
-        "かれはいしゃとしてゆうめいだ。",
-        "かれわいしゃとしてゆうめいだ",
-        "かれわいしゃとしてゆうめいだ。",
-        "彼は医者として有名だ",
-        "彼は医者として有名だ。"
+        "かなりいたいのですか",
+        "かなりいたいのですか?",
+        "かなり痛いのですか",
+        "かなり痛いのですか?",
+        "かなり痛いのですか？"
       ],
-      "sentence": "sent:tatoeba-110065",
+      "sentence": "sent:tatoeba-2265692",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
@@ -228,11 +226,11 @@
     },
     "items": [
       "sent:tatoeba-10263746",
+      "sent:tatoeba-223742",
       "sent:tatoeba-90106",
       "sent:jec-0673",
-      "sent:tatoeba-10008425",
       "sent:tatoeba-752231",
-      "sent:gen-1c83f478ab11"
+      "sent:tatoeba-1039551"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -241,14 +239,14 @@
   },
   "strands": {
     "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
+    "meaning-output": 7,
+    "language-focused": 54,
     "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 25,
     "fluency": 6
   }
 }

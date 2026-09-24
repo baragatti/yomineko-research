@@ -2,23 +2,23 @@
  "what_this_is": "W28: the example sentence and cloze span of every SRS card, keyed (lesson, item). Derived by scripts/derive_card_examples.py from the exported tree; applied by scripts/apply_card_examples.py into card_example (migration 018); export_course.py joins it onto srs.introduces_cards[].example. design/srs_design.md §9.",
  "derived_by": "scripts/derive_card_examples.py",
  "counts": {
-  "ai_generated_sentence": 326,
-  "gram_cards": 486,
-  "gram_with_example": 396,
-  "i+0 in the known set": 466,
-  "i+1 within the level budget": 582,
+  "ai_generated_sentence": 322,
+  "gram_cards": 485,
+  "gram_with_example": 395,
+  "i+0 in the known set": 478,
+  "i+1 within the level budget": 579,
   "kana_cards": 211,
   "kanji_cards": 634,
   "kanji_with_example": 581,
   "missing_kana-family": 211,
-  "missing_no-alignable-span": 162,
-  "missing_no-sentence-carries-item": 72,
-  "missing_none-passes-display-rule": 1605,
-  "rendered by the lesson": 1184,
-  "vocab_cards": 2951,
-  "vocab_with_example": 1255
+  "missing_no-alignable-span": 148,
+  "missing_no-sentence-carries-item": 57,
+  "missing_none-passes-display-rule": 1622,
+  "rendered by the lesson": 1187,
+  "vocab_cards": 2952,
+  "vocab_with_example": 1268
  },
- "row_count": 2232,
+ "row_count": 2244,
  "rows": [
   {
    "lesson": "les:n5-desu-wa-01",
@@ -495,6 +495,17 @@
   },
   {
    "lesson": "les:n5-perguntas-01",
+   "item": "vocab:1288810",
+   "sentence": "sent:tatoeba-5055",
+   "cloze": {
+    "start": 0,
+    "end": 2,
+    "answer": "ここ"
+   },
+   "why": "rendered by the lesson; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n5-perguntas-01",
    "item": "vocab:1259290",
    "sentence": "sent:tatoeba-5933519",
    "cloze": {
@@ -558,17 +569,6 @@
     "answer": "木"
    },
    "why": "rendered by the lesson; cloze = the card's own token, whole form"
-  },
-  {
-   "lesson": "les:n5-perguntas-02",
-   "item": "vocab:1208910",
-   "sentence": "sent:gen-6072d882349c",
-   "cloze": {
-    "start": 0,
-    "end": 3,
-    "answer": "かばん"
-   },
-   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n5-perguntas-03",
@@ -902,17 +902,6 @@
   },
   {
    "lesson": "les:n5-perguntas-05",
-   "item": "vocab:1451160",
-   "sentence": "sent:tatoeba-9611533",
-   "cloze": {
-    "start": 0,
-    "end": 2,
-    "answer": "どう"
-   },
-   "why": "rendered by the lesson; cloze = the card's own token, whole form"
-  },
-  {
-   "lesson": "les:n5-perguntas-05",
    "item": "vocab:1438690",
    "sentence": "sent:tatoeba-199382",
    "cloze": {
@@ -1101,7 +1090,7 @@
   {
    "lesson": "les:n5-numeros-tempo-03",
    "item": "kanji:話",
-   "sentence": "sent:tatoeba-77200",
+   "sentence": "sent:tatoeba-77203",
    "cloze": {
     "start": 0,
     "end": 1,
@@ -1161,6 +1150,17 @@
     "start": 0,
     "end": 2,
     "answer": "これ"
+   },
+   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-09",
+   "item": "vocab:1175140",
+   "sentence": "sent:tatoeba-188894",
+   "cloze": {
+    "start": 0,
+    "end": 1,
+    "answer": "駅"
    },
    "why": "i+1 within the level budget; cloze = the card's own token, whole form"
   },
@@ -1320,6 +1320,17 @@
   },
   {
    "lesson": "les:n5-verbos-02",
+   "item": "vocab:1157170",
+   "sentence": "sent:tatoeba-11038521",
+   "cloze": {
+    "start": 8,
+    "end": 10,
+    "answer": "する"
+   },
+   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n5-verbos-02",
    "item": "vocab:1540170",
    "sentence": "sent:gen-66857872d764",
    "cloze": {
@@ -1452,6 +1463,28 @@
   },
   {
    "lesson": "les:n5-verbos-03",
+   "item": "vocab:1207590",
+   "sentence": "sent:tatoeba-5010",
+   "cloze": {
+    "start": 5,
+    "end": 8,
+    "answer": "かかる"
+   },
+   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n5-verbos-03",
+   "item": "vocab:1375610",
+   "sentence": "sent:tatoeba-122195",
+   "cloze": {
+    "start": 5,
+    "end": 8,
+    "answer": "なって"
+   },
+   "why": "rendered by the lesson; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n5-verbos-03",
    "item": "vocab:1210360",
    "sentence": "sent:tatoeba-122195",
    "cloze": {
@@ -1541,11 +1574,11 @@
   {
    "lesson": "les:n5-verbos-06",
    "item": "vocab:1198180",
-   "sentence": "sent:gen-e7e5464992a3",
+   "sentence": "sent:tatoeba-235793",
    "cloze": {
-    "start": 4,
+    "start": 3,
     "end": 9,
-    "answer": "会いました"
+    "answer": "会いましょう"
    },
    "why": "i+1 within the level budget; cloze = the card's own token, whole form"
   },
@@ -1859,6 +1892,17 @@
   },
   {
    "lesson": "les:n5-particulas-lugar-07",
+   "item": "vocab:1269130",
+   "sentence": "sent:tatoeba-145739",
+   "cloze": {
+    "start": 3,
+    "end": 6,
+    "answer": "くれる"
+   },
+   "why": "rendered by the lesson; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n5-particulas-lugar-07",
    "item": "vocab:2137720",
    "sentence": "sent:tatoeba-11016226",
    "cloze": {
@@ -1969,6 +2013,17 @@
   },
   {
    "lesson": "les:n5-passado-01",
+   "item": "vocab:1084810",
+   "sentence": "sent:tatoeba-201726",
+   "cloze": {
+    "start": 0,
+    "end": 3,
+    "answer": "トイレ"
+   },
+   "why": "i+0 in the known set; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n5-passado-01",
    "item": "vocab:1587610",
    "sentence": "sent:tatoeba-83696",
    "cloze": {
@@ -2058,13 +2113,13 @@
   {
    "lesson": "les:n5-passado-03",
    "item": "kanji:今",
-   "sentence": "sent:tatoeba-172845",
+   "sentence": "sent:tatoeba-171474",
    "cloze": {
     "start": 0,
-    "end": 1,
-    "answer": "今"
+    "end": 2,
+    "answer": "今日"
    },
-   "why": "i+1 within the level budget; cloze = the whole token that carries the character"
+   "why": "i+0 in the known set; cloze = the whole token that carries the character"
   },
   {
    "lesson": "les:n5-passado-03",
@@ -2320,17 +2375,6 @@
    "why": "rendered by the lesson; cloze = the card's own token, whole form"
   },
   {
-   "lesson": "les:n5-adjetivos-02",
-   "item": "vocab:1554370",
-   "sentence": "sent:tatoeba-234998",
-   "cloze": {
-    "start": 9,
-    "end": 13,
-    "answer": "すずしい"
-   },
-   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
-  },
-  {
    "lesson": "les:n5-adjetivos-04",
    "item": "vocab:1188890",
    "sentence": "sent:tatoeba-228724",
@@ -2410,7 +2454,7 @@
   {
    "lesson": "les:n5-adjetivos-05",
    "item": "kanji:外",
-   "sentence": "sent:tatoeba-10962356",
+   "sentence": "sent:tatoeba-184891",
    "cloze": {
     "start": 0,
     "end": 1,
@@ -2574,6 +2618,17 @@
   },
   {
    "lesson": "les:n5-comparacoes-01",
+   "item": "vocab:1516930",
+   "sentence": "sent:gen-dc17b084b7de",
+   "cloze": {
+    "start": 7,
+    "end": 9,
+    "answer": "ほう"
+   },
+   "why": "rendered by the lesson; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n5-comparacoes-01",
    "item": "vocab:1098390",
    "sentence": "sent:gen-dc17b084b7de",
    "cloze": {
@@ -2615,6 +2670,17 @@
     "answer": "山"
    },
    "why": "i+1 within the level budget; cloze = the whole token that carries the character"
+  },
+  {
+   "lesson": "les:n5-comparacoes-02",
+   "item": "vocab:1423310",
+   "sentence": "sent:gen-c94b958f1ed1",
+   "cloze": {
+    "start": 5,
+    "end": 6,
+    "answer": "中"
+   },
+   "why": "rendered by the lesson; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n5-comparacoes-02",
@@ -2762,7 +2828,7 @@
   {
    "lesson": "les:n5-te-form-02",
    "item": "vocab:1600900",
-   "sentence": "sent:tatoeba-77200",
+   "sentence": "sent:tatoeba-77149",
    "cloze": {
     "start": 0,
     "end": 1,
@@ -2978,6 +3044,17 @@
     "answer": "休みません"
    },
    "why": "rendered by the lesson; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n5-convites-01",
+   "item": "vocab:1392580",
+   "sentence": "sent:tatoeba-193032",
+   "cloze": {
+    "start": 4,
+    "end": 5,
+    "answer": "前"
+   },
+   "why": "i+0 in the known set; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n5-convites-02",
@@ -3730,10 +3807,10 @@
   {
    "lesson": "les:n4-forma-simples-01",
    "item": "kanji:方",
-   "sentence": "sent:tatoeba-12321669",
+   "sentence": "sent:tatoeba-76723",
    "cloze": {
-    "start": 4,
-    "end": 5,
+    "start": 2,
+    "end": 3,
     "answer": "方"
    },
    "why": "i+1 within the level budget; cloze = the whole token that carries the character"
@@ -3851,11 +3928,11 @@
   {
    "lesson": "les:n4-forma-simples-02",
    "item": "kanji:事",
-   "sentence": "sent:tatoeba-144601",
+   "sentence": "sent:tatoeba-227125",
    "cloze": {
-    "start": 2,
+    "start": 1,
     "end": 3,
-    "answer": "事"
+    "answer": "仕事"
    },
    "why": "i+1 within the level budget; cloze = the whole token that carries the character"
   },
@@ -4709,11 +4786,11 @@
   {
    "lesson": "les:n4-oracoes-relativas-03",
    "item": "kanji:開",
-   "sentence": "sent:gen-92a97f6c7c9e",
+   "sentence": "sent:tatoeba-1171888",
    "cloze": {
-    "start": 9,
-    "end": 14,
-    "answer": "開きました"
+    "start": 4,
+    "end": 9,
+    "answer": "開いてます"
    },
    "why": "i+0 in the known set; cloze = the whole token that carries the character"
   },
@@ -4747,17 +4824,6 @@
     "start": 9,
     "end": 14,
     "answer": "アルバイト"
-   },
-   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
-  },
-  {
-   "lesson": "les:n4-oracoes-relativas-03",
-   "item": "vocab:1596780",
-   "sentence": "sent:tatoeba-8888417",
-   "cloze": {
-    "start": 12,
-    "end": 14,
-    "answer": "台風"
    },
    "why": "i+1 within the level budget; cloze = the card's own token, whole form"
   },
@@ -4961,6 +5027,17 @@
   },
   {
    "lesson": "les:n4-oracoes-relativas-07",
+   "item": "vocab:1605840",
+   "sentence": "sent:tatoeba-171289",
+   "cloze": {
+    "start": 11,
+    "end": 13,
+    "answer": "よう"
+   },
+   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n4-oracoes-relativas-07",
    "item": "vocab:1157090",
    "sentence": "sent:tatoeba-78536",
    "cloze": {
@@ -4969,28 +5046,6 @@
     "answer": "なさい"
    },
    "why": "rendered by the lesson; cloze = the card's own token, whole form"
-  },
-  {
-   "lesson": "les:n4-oracoes-relativas-07",
-   "item": "vocab:1157170",
-   "sentence": "sent:tatoeba-1817889",
-   "cloze": {
-    "start": 4,
-    "end": 6,
-    "answer": "する"
-   },
-   "why": "i+0 in the known set; cloze = the card's own token, whole form"
-  },
-  {
-   "lesson": "les:n4-oracoes-relativas-07",
-   "item": "vocab:1546200",
-   "sentence": "sent:tatoeba-11027872",
-   "cloze": {
-    "start": 9,
-    "end": 11,
-    "answer": "よう"
-   },
-   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n4-condicionais-01",
@@ -5038,6 +5093,17 @@
   },
   {
    "lesson": "les:n4-condicionais-01",
+   "item": "vocab:1310670",
+   "sentence": "sent:tatoeba-143650",
+   "cloze": {
+    "start": 5,
+    "end": 10,
+    "answer": "止められた"
+   },
+   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n4-condicionais-01",
    "item": "vocab:1554820",
    "sentence": "sent:tatoeba-77812",
    "cloze": {
@@ -5046,6 +5112,28 @@
     "answer": "力"
    },
    "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n4-condicionais-01",
+   "item": "vocab:1219680",
+   "sentence": "sent:tatoeba-202824",
+   "cloze": {
+    "start": 8,
+    "end": 11,
+    "answer": "よって"
+   },
+   "why": "i+0 in the known set; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n4-condicionais-01",
+   "item": "vocab:1202440",
+   "sentence": "sent:tatoeba-226598",
+   "cloze": {
+    "start": 10,
+    "end": 13,
+    "answer": "開いた"
+   },
+   "why": "i+0 in the known set; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n4-condicionais-02",
@@ -5100,7 +5188,7 @@
     "end": 4,
     "answer": "用"
    },
-   "why": "i+0 in the known set; cloze = the whole token that carries the character"
+   "why": "i+1 within the level budget; cloze = the whole token that carries the character"
   },
   {
    "lesson": "les:n4-condicionais-02",
@@ -5451,17 +5539,6 @@
     "start": 11,
     "end": 14,
     "answer": "パート"
-   },
-   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
-  },
-  {
-   "lesson": "les:n4-condicionais-07",
-   "item": "vocab:1365040",
-   "sentence": "sent:tatoeba-144802",
-   "cloze": {
-    "start": 0,
-    "end": 1,
-    "answer": "親"
    },
    "why": "i+1 within the level budget; cloze = the card's own token, whole form"
   },
@@ -5864,11 +5941,11 @@
   {
    "lesson": "les:n4-potencial-03",
    "item": "vocab:1499230",
-   "sentence": "sent:gen-9e643c0b17a7",
+   "sentence": "sent:tatoeba-10083431",
    "cloze": {
-    "start": 4,
-    "end": 7,
-    "answer": "ぶどう"
+    "start": 3,
+    "end": 5,
+    "answer": "葡萄"
    },
    "why": "i+1 within the level budget; cloze = the card's own token, whole form"
   },
@@ -6078,17 +6155,6 @@
     "start": 2,
     "end": 5,
     "answer": "始める"
-   },
-   "why": "rendered by the lesson; cloze = the card's own token, whole form"
-  },
-  {
-   "lesson": "les:n4-volitivo-01",
-   "item": "vocab:1514960",
-   "sentence": "sent:tatoeba-2242447",
-   "cloze": {
-    "start": 8,
-    "end": 10,
-    "answer": "くれ"
    },
    "why": "rendered by the lesson; cloze = the card's own token, whole form"
   },
@@ -6337,7 +6403,7 @@
   {
    "lesson": "les:n4-volitivo-05",
    "item": "vocab:1587290",
-   "sentence": "sent:gen-baf1ae13c6ee",
+   "sentence": "sent:tatoeba-11041808",
    "cloze": {
     "start": 3,
     "end": 9,
@@ -6898,13 +6964,24 @@
   {
    "lesson": "les:n4-dar-receber-03",
    "item": "vocab:1465850",
-   "sentence": "sent:gen-5051007b6d98",
+   "sentence": "sent:gen-910b3a53d79c",
    "cloze": {
-    "start": 6,
-    "end": 8,
+    "start": 7,
+    "end": 9,
     "answer": "入学"
    },
    "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n4-dar-receber-03",
+   "item": "vocab:1224880",
+   "sentence": "sent:tatoeba-122101",
+   "cloze": {
+    "start": 4,
+    "end": 8,
+    "answer": "よろしい"
+   },
+   "why": "i+0 in the known set; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n4-dar-receber-03",
@@ -7025,7 +7102,7 @@
     "end": 7,
     "answer": "にする"
    },
-   "why": "i+0 in the known set; cloze = a probe segment of the point, tagged sentence"
+   "why": "i+1 within the level budget; cloze = a probe segment of the point, tagged sentence"
   },
   {
    "lesson": "les:n4-experiencia-01",
@@ -7369,6 +7446,17 @@
    "why": "rendered by the lesson; cloze = the whole token that carries the character"
   },
   {
+   "lesson": "les:n4-experiencia-04",
+   "item": "vocab:1508750",
+   "sentence": "sent:gen-585a1fd61d9e",
+   "cloze": {
+    "start": 4,
+    "end": 5,
+    "answer": "米"
+   },
+   "why": "rendered by the lesson; cloze = the card's own token, whole form"
+  },
+  {
    "lesson": "les:n4-experiencia-05",
    "item": "gram:gp-70",
    "sentence": "sent:tatoeba-1656321",
@@ -7668,13 +7756,13 @@
   {
    "lesson": "les:n4-obrigacao-03",
    "item": "kanji:族",
-   "sentence": "sent:gen-d8cbff5f4a1e",
+   "sentence": "sent:tatoeba-237476",
    "cloze": {
-    "start": 2,
-    "end": 4,
+    "start": 1,
+    "end": 3,
     "answer": "家族"
    },
-   "why": "i+1 within the level budget; cloze = the whole token that carries the character"
+   "why": "i+0 in the known set; cloze = the whole token that carries the character"
   },
   {
    "lesson": "les:n4-obrigacao-03",
@@ -7998,10 +8086,10 @@
   {
    "lesson": "les:n4-aspecto-03",
    "item": "gram:te-shimau-chau",
-   "sentence": "sent:tatoeba-150664",
+   "sentence": "sent:tatoeba-234345",
    "cloze": {
-    "start": 6,
-    "end": 10,
+    "start": 8,
+    "end": 12,
     "answer": "てしまう"
    },
    "why": "rendered by the lesson; cloze = a probe segment of the point, tagged sentence"
@@ -8294,6 +8382,17 @@
   },
   {
    "lesson": "les:n4-suposicao-01",
+   "item": "vocab:1538330",
+   "sentence": "sent:tatoeba-2190027",
+   "cloze": {
+    "start": 2,
+    "end": 4,
+    "answer": "わけ"
+   },
+   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n4-suposicao-01",
    "item": "vocab:1283500",
    "sentence": "sent:gen-5051007b6d98",
    "cloze": {
@@ -8361,10 +8460,10 @@
   {
    "lesson": "les:n4-suposicao-03",
    "item": "gram:gp-76",
-   "sentence": "sent:tatoeba-12698746",
+   "sentence": "sent:tatoeba-3458976",
    "cloze": {
-    "start": 3,
-    "end": 7,
+    "start": 8,
+    "end": 12,
     "answer": "みたいに"
    },
    "why": "i+0 in the known set; cloze = a probe segment of the point, tagged sentence"
@@ -8416,11 +8515,11 @@
   {
    "lesson": "les:n4-suposicao-03",
    "item": "kanji:色",
-   "sentence": "sent:gen-3ba9b006d263",
+   "sentence": "sent:jec-0466",
    "cloze": {
-    "start": 3,
-    "end": 4,
-    "answer": "色"
+    "start": 0,
+    "end": 2,
+    "answer": "色々"
    },
    "why": "i+0 in the known set; cloze = the whole token that carries the character"
   },
@@ -8470,23 +8569,12 @@
   },
   {
    "lesson": "les:n4-suposicao-04",
-   "item": "gram:gp-153",
+   "item": "gram:gp-77",
    "sentence": "sent:tatoeba-218631",
    "cloze": {
     "start": 5,
     "end": 9,
     "answer": "のような"
-   },
-   "why": "rendered by the lesson; cloze = a probe segment of the point, tagged sentence"
-  },
-  {
-   "lesson": "les:n4-suposicao-04",
-   "item": "gram:gp-77",
-   "sentence": "sent:tatoeba-141991",
-   "cloze": {
-    "start": 1,
-    "end": 5,
-    "answer": "のように"
    },
    "why": "rendered by the lesson; cloze = a probe segment of the point, tagged sentence"
   },
@@ -8988,13 +9076,13 @@
   {
    "lesson": "les:n4-causativa-01",
    "item": "vocab:1451210",
-   "sentence": "sent:tatoeba-123791",
+   "sentence": "sent:tatoeba-123754",
    "cloze": {
-    "start": 0,
-    "end": 4,
-    "answer": "動かない"
+    "start": 8,
+    "end": 10,
+    "answer": "動く"
    },
-   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+   "why": "i+0 in the known set; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n4-causativa-02",
@@ -9390,7 +9478,7 @@
     "end": 4,
     "answer": "する"
    },
-   "why": "i+0 in the known set; cloze = a probe segment of the point, spelled (no tagged sentence fit)"
+   "why": "i+1 within the level budget; cloze = a probe segment of the point, spelled (no tagged sentence fit)"
   },
   {
    "lesson": "les:n4-keigo-05",
@@ -9666,6 +9754,17 @@
     "answer": "つき"
    },
    "why": "rendered by the lesson; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n4-conectores-04",
+   "item": "vocab:1495740",
+   "sentence": "sent:tatoeba-84691",
+   "cloze": {
+    "start": 2,
+    "end": 5,
+    "answer": "ついて"
+   },
+   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n4-conectores-04",
@@ -10264,10 +10363,10 @@
   {
    "lesson": "les:n3-conectores-02",
    "item": "gram:n3-tsumari",
-   "sentence": "sent:tatoeba-202538",
+   "sentence": "sent:tatoeba-111877",
    "cloze": {
-    "start": 0,
-    "end": 3,
+    "start": 2,
+    "end": 5,
     "answer": "つまり"
    },
    "why": "i+1 within the level budget; cloze = a probe segment of the point, tagged sentence"
@@ -10352,13 +10451,13 @@
   {
    "lesson": "les:n3-conectores-02",
    "item": "vocab:1586840",
-   "sentence": "sent:tatoeba-2172642",
+   "sentence": "sent:tatoeba-229897",
    "cloze": {
-    "start": 2,
-    "end": 4,
-    "answer": "或る"
+    "start": 0,
+    "end": 2,
+    "answer": "ある"
    },
-   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+   "why": "i+0 in the known set; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n3-conectores-02",
@@ -10407,10 +10506,10 @@
   {
    "lesson": "les:n3-conectores-02",
    "item": "vocab:1610430",
-   "sentence": "sent:tatoeba-202538",
+   "sentence": "sent:tatoeba-111877",
    "cloze": {
-    "start": 0,
-    "end": 3,
+    "start": 2,
+    "end": 5,
     "answer": "つまり"
    },
    "why": "i+1 within the level budget; cloze = the card's own token, whole form"
@@ -10484,11 +10583,11 @@
   {
    "lesson": "les:n3-conectores-03",
    "item": "kanji:決",
-   "sentence": "sent:tatoeba-93741",
+   "sentence": "sent:tatoeba-175925",
    "cloze": {
-    "start": 16,
-    "end": 19,
-    "answer": "決めて"
+    "start": 0,
+    "end": 4,
+    "answer": "決まった"
    },
    "why": "i+0 in the known set; cloze = the whole token that carries the character"
   },
@@ -10511,6 +10610,17 @@
     "start": 2,
     "end": 4,
     "answer": "医師"
+   },
+   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n3-conectores-03",
+   "item": "vocab:1404320",
+   "sentence": "sent:tatoeba-11814369",
+   "cloze": {
+    "start": 2,
+    "end": 3,
+    "answer": "息"
    },
    "why": "i+1 within the level budget; cloze = the card's own token, whole form"
   },
@@ -10660,13 +10770,13 @@
   {
    "lesson": "les:n3-conectores-04",
    "item": "vocab:1000730",
-   "sentence": "sent:tatoeba-213958",
+   "sentence": "sent:tatoeba-5185663",
    "cloze": {
-    "start": 17,
-    "end": 21,
-    "answer": "行けない"
+    "start": 6,
+    "end": 10,
+    "answer": "いけない"
    },
-   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+   "why": "i+0 in the known set; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n3-conectores-05",
@@ -10698,6 +10808,17 @@
     "start": 0,
     "end": 1,
     "answer": "金"
+   },
+   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n3-conectores-05",
+   "item": "vocab:1454500",
+   "sentence": "sent:tatoeba-3496789",
+   "cloze": {
+    "start": 5,
+    "end": 7,
+    "answer": "得る"
    },
    "why": "i+1 within the level budget; cloze = the card's own token, whole form"
   },
@@ -11309,13 +11430,13 @@
   {
    "lesson": "les:n3-tempo-02",
    "item": "gram:n3-kara-ni-kakete",
-   "sentence": "sent:tatoeba-4212797",
+   "sentence": "sent:tatoeba-175628",
    "cloze": {
-    "start": 15,
-    "end": 19,
-    "answer": "にかけて"
+    "start": 3,
+    "end": 5,
+    "answer": "から"
    },
-   "why": "i+0 in the known set; cloze = a probe segment of the point, tagged sentence"
+   "why": "i+0 in the known set; cloze = a probe segment of the point, spelled (no tagged sentence fit)"
   },
   {
    "lesson": "les:n3-tempo-02",
@@ -11568,7 +11689,7 @@
     "end": 14,
     "answer": "日記"
    },
-   "why": "i+0 in the known set; cloze = the whole token that carries the character"
+   "why": "i+1 within the level budget; cloze = the whole token that carries the character"
   },
   {
    "lesson": "les:n3-tempo-03",
@@ -11671,17 +11792,6 @@
   },
   {
    "lesson": "les:n3-tempo-04",
-   "item": "vocab:1000920",
-   "sentence": "sent:tatoeba-163310",
-   "cloze": {
-    "start": 10,
-    "end": 15,
-    "answer": "いらしゃい"
-   },
-   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
-  },
-  {
-   "lesson": "les:n3-tempo-04",
    "item": "vocab:1022210",
    "sentence": "sent:tatoeba-226251",
    "cloze": {
@@ -11733,7 +11843,7 @@
     "end": 6,
     "answer": "いわゆる"
    },
-   "why": "i+0 in the known set; cloze = the card's own token, whole form"
+   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n3-tempo-04",
@@ -12607,10 +12717,10 @@
   {
    "lesson": "les:n3-perspectiva-02",
    "item": "kanji:反",
-   "sentence": "sent:tatoeba-225064",
+   "sentence": "sent:tatoeba-3583428",
    "cloze": {
-    "start": 13,
-    "end": 15,
+    "start": 2,
+    "end": 4,
     "answer": "反対"
    },
    "why": "i+1 within the level budget; cloze = the whole token that carries the character"
@@ -12783,10 +12893,10 @@
   {
    "lesson": "les:n3-perspectiva-03",
    "item": "kanji:信",
-   "sentence": "sent:tatoeba-95846",
+   "sentence": "sent:tatoeba-4289240",
    "cloze": {
-    "start": 2,
-    "end": 4,
+    "start": 0,
+    "end": 2,
     "answer": "信用"
    },
    "why": "i+0 in the known set; cloze = the whole token that carries the character"
@@ -12856,17 +12966,6 @@
     "answer": "大いに"
    },
    "why": "rendered by the lesson; cloze = the card's own token, whole form"
-  },
-  {
-   "lesson": "les:n3-perspectiva-03",
-   "item": "vocab:1180900",
-   "sentence": "sent:tatoeba-125614",
-   "cloze": {
-    "start": 3,
-    "end": 5,
-    "answer": "横断"
-   },
-   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n3-perspectiva-03",
@@ -12948,10 +13047,10 @@
   {
    "lesson": "les:n3-perspectiva-04",
    "item": "kanji:対",
-   "sentence": "sent:tatoeba-82992",
+   "sentence": "sent:tatoeba-3583428",
    "cloze": {
-    "start": 15,
-    "end": 17,
+    "start": 2,
+    "end": 4,
     "answer": "反対"
    },
    "why": "i+0 in the known set; cloze = the whole token that carries the character"
@@ -13134,17 +13233,6 @@
   },
   {
    "lesson": "les:n3-perspectiva-05",
-   "item": "vocab:1435490",
-   "sentence": "sent:tatoeba-3475208",
-   "cloze": {
-    "start": 7,
-    "end": 9,
-    "answer": "定期"
-   },
-   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
-  },
-  {
-   "lesson": "les:n3-perspectiva-05",
    "item": "vocab:1436540",
    "sentence": "sent:tatoeba-204973",
    "cloze": {
@@ -13186,6 +13274,17 @@
     "answer": "適して"
    },
    "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n3-perspectiva-06",
+   "item": "vocab:1489350",
+   "sentence": "sent:tatoeba-220393",
+   "cloze": {
+    "start": 12,
+    "end": 13,
+    "answer": "表"
+   },
+   "why": "i+0 in the known set; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n3-perspectiva-06",
@@ -13421,10 +13520,10 @@
   {
    "lesson": "les:n3-causa-01",
    "item": "kanji:昨",
-   "sentence": "sent:tatoeba-84568",
+   "sentence": "sent:tatoeba-169967",
    "cloze": {
-    "start": 2,
-    "end": 4,
+    "start": 0,
+    "end": 2,
     "answer": "昨日"
    },
    "why": "i+0 in the known set; cloze = the whole token that carries the character"
@@ -13575,11 +13674,11 @@
   {
    "lesson": "les:n3-causa-02",
    "item": "kanji:変",
-   "sentence": "sent:jec-2121",
+   "sentence": "sent:tatoeba-137275",
    "cloze": {
-    "start": 7,
-    "end": 11,
-    "answer": "変わった"
+    "start": 0,
+    "end": 2,
+    "answer": "大変"
    },
    "why": "i+0 in the known set; cloze = the whole token that carries the character"
   },
@@ -13740,11 +13839,11 @@
   {
    "lesson": "les:n3-causa-03",
    "item": "kanji:両",
-   "sentence": "sent:tatoeba-77990",
+   "sentence": "sent:tatoeba-77975",
    "cloze": {
     "start": 0,
     "end": 2,
-    "answer": "両親"
+    "answer": "両方"
    },
    "why": "i+0 in the known set; cloze = the whole token that carries the character"
   },
@@ -14400,7 +14499,7 @@
   {
    "lesson": "les:n3-causa-08",
    "item": "vocab:1558370",
-   "sentence": "sent:tatoeba-77522",
+   "sentence": "sent:tatoeba-77494",
    "cloze": {
     "start": 0,
     "end": 2,
@@ -15610,13 +15709,13 @@
   {
    "lesson": "les:n3-estado-08",
    "item": "vocab:1561760",
-   "sentence": "sent:tatoeba-206467",
+   "sentence": "sent:tatoeba-225026",
    "cloze": {
-    "start": 10,
-    "end": 12,
+    "start": 4,
+    "end": 6,
     "answer": "論争"
    },
-   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+   "why": "i+0 in the known set; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n3-estado-08",
@@ -15957,7 +16056,7 @@
     "end": 15,
     "answer": "ように"
    },
-   "why": "i+1 within the level budget; cloze = a probe segment of the point, tagged sentence"
+   "why": "i+0 in the known set; cloze = a probe segment of the point, tagged sentence"
   },
   {
    "lesson": "les:n3-intencao-03",
@@ -16490,10 +16589,10 @@
   {
    "lesson": "les:n3-intencao-07",
    "item": "vocab:1502860",
-   "sentence": "sent:tatoeba-222609",
+   "sentence": "sent:jec-1177",
    "cloze": {
-    "start": 6,
-    "end": 7,
+    "start": 10,
+    "end": 11,
     "answer": "分"
    },
    "why": "i+1 within the level budget; cloze = the card's own token, whole form"
@@ -17574,7 +17673,7 @@
     "end": 11,
     "answer": "ますように"
    },
-   "why": "i+1 within the level budget; cloze = a probe segment of the point, tagged sentence"
+   "why": "i+0 in the known set; cloze = a probe segment of the point, tagged sentence"
   },
   {
    "lesson": "les:n3-desejos-01",
@@ -17601,11 +17700,11 @@
   {
    "lesson": "les:n3-desejos-01",
    "item": "kanji:呼",
-   "sentence": "sent:tatoeba-98336",
+   "sentence": "sent:tatoeba-190738",
    "cloze": {
-    "start": 12,
-    "end": 14,
-    "answer": "呼ぶ"
+    "start": 3,
+    "end": 6,
+    "answer": "呼んで"
    },
    "why": "i+0 in the known set; cloze = the whole token that carries the character"
   },
@@ -18701,13 +18800,13 @@
   {
    "lesson": "les:n3-limites-02",
    "item": "vocab:1257040",
-   "sentence": "sent:tatoeba-8705972",
+   "sentence": "sent:tatoeba-176251",
    "cloze": {
-    "start": 0,
-    "end": 2,
-    "answer": "喧嘩"
+    "start": 5,
+    "end": 8,
+    "answer": "けんか"
    },
-   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+   "why": "i+0 in the known set; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n3-limites-02",
@@ -19086,11 +19185,11 @@
   {
    "lesson": "les:n3-limites-05",
    "item": "kanji:祖",
-   "sentence": "sent:tatoeba-102896",
+   "sentence": "sent:tatoeba-140689",
    "cloze": {
-    "start": 2,
-    "end": 4,
-    "answer": "祖母"
+    "start": 0,
+    "end": 2,
+    "answer": "祖父"
    },
    "why": "i+0 in the known set; cloze = the whole token that carries the character"
   },
@@ -19250,6 +19349,17 @@
   },
   {
    "lesson": "les:n3-limites-07",
+   "item": "vocab:1215240",
+   "sentence": "sent:tatoeba-10723744",
+   "cloze": {
+    "start": 8,
+    "end": 9,
+    "answer": "間"
+   },
+   "why": "i+0 in the known set; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n3-limites-07",
    "item": "vocab:1011920",
    "sentence": "sent:tatoeba-110899",
    "cloze": {
@@ -19383,7 +19493,7 @@
   {
    "lesson": "les:n3-enfase-01",
    "item": "gram:n3-koso",
-   "sentence": "sent:tatoeba-172857",
+   "sentence": "sent:tatoeba-172859",
    "cloze": {
     "start": 1,
     "end": 3,
@@ -19823,7 +19933,7 @@
   {
    "lesson": "les:n3-enfase-03",
    "item": "kanji:妻",
-   "sentence": "sent:jec-0048",
+   "sentence": "sent:tatoeba-170380",
    "cloze": {
     "start": 0,
     "end": 1,
@@ -19856,11 +19966,11 @@
   {
    "lesson": "les:n3-enfase-03",
    "item": "kanji:背",
-   "sentence": "sent:tatoeba-101293",
+   "sentence": "sent:tatoeba-74070",
    "cloze": {
-    "start": 2,
-    "end": 3,
-    "answer": "背"
+    "start": 7,
+    "end": 9,
+    "answer": "背広"
    },
    "why": "i+0 in the known set; cloze = the whole token that carries the character"
   },
@@ -20043,13 +20153,13 @@
   {
    "lesson": "les:n3-enfase-04",
    "item": "vocab:1277500",
-   "sentence": "sent:tatoeba-163655",
+   "sentence": "sent:tatoeba-10880227",
    "cloze": {
-    "start": 2,
-    "end": 4,
+    "start": 7,
+    "end": 9,
     "answer": "好み"
    },
-   "why": "i+1 within the level budget; cloze = the card's own token, whole form"
+   "why": "i+0 in the known set; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n3-enfase-04",
@@ -20175,10 +20285,10 @@
   {
    "lesson": "les:n3-enfase-05",
    "item": "vocab:1414790",
-   "sentence": "sent:tatoeba-190270",
+   "sentence": "sent:tatoeba-224369",
    "cloze": {
-    "start": 3,
-    "end": 5,
+    "start": 6,
+    "end": 8,
     "answer": "大半"
    },
    "why": "i+0 in the known set; cloze = the card's own token, whole form"
@@ -20215,6 +20325,17 @@
     "answer": "平ら"
    },
    "why": "rendered by the lesson; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n3-enfase-06",
+   "item": "vocab:2083100",
+   "sentence": "sent:tatoeba-10778312",
+   "cloze": {
+    "start": 1,
+    "end": 2,
+    "answer": "日"
+   },
+   "why": "i+0 in the known set; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n3-enfase-06",
@@ -20857,10 +20978,10 @@
   {
    "lesson": "les:n3-concessao-03",
    "item": "gram:n3-tokoro-ga",
-   "sentence": "sent:tatoeba-200872",
+   "sentence": "sent:tatoeba-193645",
    "cloze": {
-    "start": 0,
-    "end": 4,
+    "start": 18,
+    "end": 22,
     "answer": "ところが"
    },
    "why": "i+1 within the level budget; cloze = a probe segment of the point, tagged sentence"
@@ -20901,11 +21022,11 @@
   {
    "lesson": "les:n3-concessao-03",
    "item": "kanji:遅",
-   "sentence": "sent:tatoeba-9979558",
+   "sentence": "sent:tatoeba-8724557",
    "cloze": {
-    "start": 5,
-    "end": 7,
-    "answer": "遅い"
+    "start": 3,
+    "end": 6,
+    "answer": "遅れる"
    },
    "why": "i+0 in the known set; cloze = the whole token that carries the character"
   },
@@ -21220,11 +21341,11 @@
   {
    "lesson": "les:n3-concessao-05",
    "item": "kanji:晩",
-   "sentence": "sent:tatoeba-81225",
+   "sentence": "sent:tatoeba-171261",
    "cloze": {
     "start": 0,
     "end": 2,
-    "answer": "毎晩"
+    "answer": "今晩"
    },
    "why": "i+0 in the known set; cloze = the whole token that carries the character"
   },
@@ -21677,7 +21798,7 @@
     "end": 18,
     "answer": "かもしれない"
    },
-   "why": "i+0 in the known set; cloze = a probe segment of the point, tagged sentence"
+   "why": "i+1 within the level budget; cloze = a probe segment of the point, tagged sentence"
   },
   {
    "lesson": "les:n3-conjectura-01",
@@ -21737,10 +21858,10 @@
   {
    "lesson": "les:n3-conjectura-01",
    "item": "vocab:1314010",
-   "sentence": "sent:tatoeba-174340",
+   "sentence": "sent:tatoeba-172646",
    "cloze": {
-    "start": 0,
-    "end": 2,
+    "start": 2,
+    "end": 4,
     "answer": "事情"
    },
    "why": "i+0 in the known set; cloze = the card's own token, whole form"
@@ -21880,11 +22001,11 @@
   {
    "lesson": "les:n3-conjectura-02",
    "item": "kanji:列",
-   "sentence": "sent:tatoeba-152280",
+   "sentence": "sent:tatoeba-77494",
    "cloze": {
-    "start": 2,
-    "end": 3,
-    "answer": "列"
+    "start": 0,
+    "end": 2,
+    "answer": "列車"
    },
    "why": "i+0 in the known set; cloze = the whole token that carries the character"
   },
@@ -22481,6 +22602,17 @@
     "answer": "束"
    },
    "why": "rendered by the lesson; cloze = the card's own token, whole form"
+  },
+  {
+   "lesson": "les:n3-conjectura-05",
+   "item": "vocab:1240530",
+   "sentence": "sent:tatoeba-119118",
+   "cloze": {
+    "start": 4,
+    "end": 5,
+    "answer": "球"
+   },
+   "why": "i+0 in the known set; cloze = the card's own token, whole form"
   },
   {
    "lesson": "les:n3-conjectura-05",
@@ -23860,11 +23992,11 @@
   {
    "lesson": "les:n3-estrutura-02",
    "item": "kanji:忙",
-   "sentence": "sent:tatoeba-83088",
+   "sentence": "sent:tatoeba-1059956",
    "cloze": {
-    "start": 5,
-    "end": 8,
-    "answer": "忙しい"
+    "start": 0,
+    "end": 2,
+    "answer": "忙し"
    },
    "why": "i+0 in the known set; cloze = the whole token that carries the character"
   },
@@ -25727,7 +25859,7 @@
   {
    "lesson": "les:pre-n5-saudacoes-03",
    "item": "vocab:1466940",
-   "why": "no-sentence-carries-item"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:pre-n5-saudacoes-03",
@@ -26046,13 +26178,18 @@
   },
   {
    "lesson": "les:n5-perguntas-01",
+   "item": "vocab:1516925",
+   "why": "none-passes-display-rule"
+  },
+  {
+   "lesson": "les:n5-perguntas-01",
    "item": "vocab:1581310",
    "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-perguntas-01",
    "item": "vocab:1578150",
-   "why": "no-alignable-span"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-perguntas-01",
@@ -26087,16 +26224,6 @@
   {
    "lesson": "les:n5-perguntas-01",
    "item": "vocab:1390020",
-   "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n5-perguntas-01",
-   "item": "vocab:1516925",
-   "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n5-perguntas-01",
-   "item": "vocab:1288810",
    "why": "none-passes-display-rule"
   },
   {
@@ -26187,6 +26314,11 @@
   {
    "lesson": "les:n5-perguntas-02",
    "item": "vocab:1246740",
+   "why": "none-passes-display-rule"
+  },
+  {
+   "lesson": "les:n5-perguntas-02",
+   "item": "vocab:1208910",
    "why": "none-passes-display-rule"
   },
   {
@@ -26382,12 +26514,12 @@
   {
    "lesson": "les:n5-numeros-tempo-02",
    "item": "vocab:1387210",
-   "why": "no-alignable-span"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-numeros-tempo-02",
    "item": "vocab:1468060",
-   "why": "no-alignable-span"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-numeros-tempo-02",
@@ -26437,7 +26569,7 @@
   {
    "lesson": "les:n5-numeros-tempo-04",
    "item": "vocab:1620400",
-   "why": "no-sentence-carries-item"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-numeros-tempo-04",
@@ -26640,11 +26772,6 @@
    "why": "none-passes-display-rule"
   },
   {
-   "lesson": "les:n5-numeros-tempo-09",
-   "item": "vocab:1175140",
-   "why": "none-passes-display-rule"
-  },
-  {
    "lesson": "les:n5-verbos-01",
    "item": "gram:gp-6",
    "why": "no-alignable-span"
@@ -26712,11 +26839,6 @@
   {
    "lesson": "les:n5-verbos-02",
    "item": "vocab:1384830",
-   "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n5-verbos-02",
-   "item": "vocab:1298670",
    "why": "none-passes-display-rule"
   },
   {
@@ -26816,13 +26938,8 @@
   },
   {
    "lesson": "les:n5-verbos-03",
-   "item": "vocab:1611000",
-   "why": "no-alignable-span"
-  },
-  {
-   "lesson": "les:n5-verbos-03",
    "item": "vocab:1609500",
-   "why": "no-alignable-span"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-verbos-03",
@@ -27007,7 +27124,7 @@
   {
    "lesson": "les:n5-particulas-lugar-02",
    "item": "vocab:1245290",
-   "why": "no-alignable-span"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-particulas-lugar-02",
@@ -27211,11 +27328,6 @@
   },
   {
    "lesson": "les:n5-passado-01",
-   "item": "vocab:1084810",
-   "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n5-passado-01",
    "item": "vocab:1087820",
    "why": "none-passes-display-rule"
   },
@@ -27282,12 +27394,12 @@
   {
    "lesson": "les:n5-passado-02",
    "item": "vocab:2225040",
-   "why": "no-sentence-carries-item"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-passado-02",
    "item": "vocab:1335000",
-   "why": "no-sentence-carries-item"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-passado-03",
@@ -27317,6 +27429,11 @@
   {
    "lesson": "les:n5-passado-03",
    "item": "vocab:1597530",
+   "why": "none-passes-display-rule"
+  },
+  {
+   "lesson": "les:n5-passado-04",
+   "item": "vocab:1451160",
    "why": "none-passes-display-rule"
   },
   {
@@ -27447,6 +27564,11 @@
   {
    "lesson": "les:n5-adjetivos-02",
    "item": "vocab:1586420",
+   "why": "none-passes-display-rule"
+  },
+  {
+   "lesson": "les:n5-adjetivos-02",
+   "item": "vocab:1554370",
    "why": "none-passes-display-rule"
   },
   {
@@ -27656,11 +27778,6 @@
   },
   {
    "lesson": "les:n5-comparacoes-01",
-   "item": "vocab:1515620",
-   "why": "no-alignable-span"
-  },
-  {
-   "lesson": "les:n5-comparacoes-01",
    "item": "vocab:1407980",
    "why": "none-passes-display-rule"
   },
@@ -27722,11 +27839,6 @@
   {
    "lesson": "les:n5-comparacoes-02",
    "item": "gram:no-naka-de-a-ga-ichiban",
-   "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n5-comparacoes-02",
-   "item": "vocab:1423310",
    "why": "none-passes-display-rule"
   },
   {
@@ -27827,6 +27939,11 @@
   {
    "lesson": "les:n5-comparacoes-04",
    "item": "vocab:1380840",
+   "why": "none-passes-display-rule"
+  },
+  {
+   "lesson": "les:n5-comparacoes-05",
+   "item": "vocab:1611000",
    "why": "none-passes-display-rule"
   },
   {
@@ -27992,7 +28109,7 @@
   {
    "lesson": "les:n5-te-form-05",
    "item": "vocab:1474240",
-   "why": "none-passes-display-rule"
+   "why": "no-sentence-carries-item"
   },
   {
    "lesson": "les:n5-te-form-05",
@@ -28012,7 +28129,7 @@
   {
    "lesson": "les:n5-te-form-05",
    "item": "vocab:2019640",
-   "why": "none-passes-display-rule"
+   "why": "no-sentence-carries-item"
   },
   {
    "lesson": "les:n5-te-form-05",
@@ -28137,7 +28254,7 @@
   {
    "lesson": "les:n5-te-form-08",
    "item": "vocab:1600850",
-   "why": "no-sentence-carries-item"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-te-form-08",
@@ -28162,11 +28279,6 @@
   {
    "lesson": "les:n5-convites-01",
    "item": "vocab:1122650",
-   "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n5-convites-01",
-   "item": "vocab:1392580",
    "why": "none-passes-display-rule"
   },
   {
@@ -28392,7 +28504,7 @@
   {
    "lesson": "les:n5-rotina-01",
    "item": "vocab:1584800",
-   "why": "no-sentence-carries-item"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-rotina-02",
@@ -28407,17 +28519,17 @@
   {
    "lesson": "les:n5-rotina-02",
    "item": "vocab:1299740",
-   "why": "no-alignable-span"
-  },
-  {
-   "lesson": "les:n5-rotina-02",
-   "item": "vocab:1583095",
    "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-rotina-02",
+   "item": "vocab:1583095",
+   "why": "no-sentence-carries-item"
+  },
+  {
+   "lesson": "les:n5-rotina-02",
    "item": "vocab:1585315",
-   "why": "no-alignable-span"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-rotina-02",
@@ -28536,13 +28648,18 @@
   },
   {
    "lesson": "les:n5-conectando-01",
+   "item": "vocab:1515620",
+   "why": "no-sentence-carries-item"
+  },
+  {
+   "lesson": "les:n5-conectando-01",
    "item": "vocab:1013190",
    "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-conectando-01",
    "item": "vocab:1536350",
-   "why": "no-alignable-span"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-conectando-01",
@@ -28727,7 +28844,7 @@
   {
    "lesson": "les:n5-conectando-07",
    "item": "vocab:1557630",
-   "why": "no-sentence-carries-item"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n5-conectando-07",
@@ -29071,6 +29188,11 @@
   },
   {
    "lesson": "les:n4-oracoes-relativas-03",
+   "item": "vocab:1596780",
+   "why": "none-passes-display-rule"
+  },
+  {
+   "lesson": "les:n4-oracoes-relativas-03",
    "item": "vocab:1421210",
    "why": "none-passes-display-rule"
   },
@@ -29186,18 +29308,8 @@
   },
   {
    "lesson": "les:n4-condicionais-01",
-   "item": "vocab:1310670",
-   "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n4-condicionais-01",
    "item": "vocab:1007310",
    "why": "no-sentence-carries-item"
-  },
-  {
-   "lesson": "les:n4-condicionais-01",
-   "item": "vocab:1219680",
-   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n4-condicionais-01",
@@ -29208,11 +29320,6 @@
    "lesson": "les:n4-condicionais-01",
    "item": "vocab:1591420",
    "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n4-condicionais-01",
-   "item": "vocab:1202440",
-   "why": "no-sentence-carries-item"
   },
   {
    "lesson": "les:n4-condicionais-02",
@@ -29390,6 +29497,11 @@
    "why": "none-passes-display-rule"
   },
   {
+   "lesson": "les:n4-condicionais-07",
+   "item": "vocab:1365040",
+   "why": "none-passes-display-rule"
+  },
+  {
    "lesson": "les:n4-condicionais-08",
    "item": "gram:gp-91",
    "why": "none-passes-display-rule"
@@ -29563,6 +29675,11 @@
    "lesson": "les:n4-volitivo-01",
    "item": "vocab:1360480",
    "why": "none-passes-display-rule"
+  },
+  {
+   "lesson": "les:n4-volitivo-01",
+   "item": "vocab:1514960",
+   "why": "no-sentence-carries-item"
   },
   {
    "lesson": "les:n4-volitivo-01",
@@ -29836,6 +29953,11 @@
   },
   {
    "lesson": "les:n4-transitividade-05",
+   "item": "vocab:1546200",
+   "why": "no-alignable-span"
+  },
+  {
+   "lesson": "les:n4-transitividade-05",
    "item": "vocab:1006110",
    "why": "none-passes-display-rule"
   },
@@ -29936,13 +30058,8 @@
   },
   {
    "lesson": "les:n4-dar-receber-03",
-   "item": "vocab:1224880",
-   "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n4-dar-receber-03",
    "item": "vocab:1577985",
-   "why": "no-sentence-carries-item"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n4-dar-receber-03",
@@ -30027,7 +30144,7 @@
   {
    "lesson": "les:n4-experiencia-01",
    "item": "vocab:1550140",
-   "why": "no-alignable-span"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n4-experiencia-01",
@@ -30072,7 +30189,7 @@
   {
    "lesson": "les:n4-experiencia-02",
    "item": "vocab:1434120",
-   "why": "no-alignable-span"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n4-experiencia-03",
@@ -30122,11 +30239,6 @@
   {
    "lesson": "les:n4-experiencia-04",
    "item": "vocab:1378990",
-   "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n4-experiencia-04",
-   "item": "vocab:1508750",
    "why": "none-passes-display-rule"
   },
   {
@@ -30222,7 +30334,7 @@
   {
    "lesson": "les:n4-obrigacao-05",
    "item": "vocab:1550190",
-   "why": "no-sentence-carries-item"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n4-obrigacao-05",
@@ -30402,11 +30514,6 @@
   {
    "lesson": "les:n4-suposicao-01",
    "item": "vocab:1463930",
-   "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n4-suposicao-01",
-   "item": "vocab:1538330",
    "why": "none-passes-display-rule"
   },
   {
@@ -30962,7 +31069,7 @@
   {
    "lesson": "les:n4-conectores-01",
    "item": "vocab:1241450",
-   "why": "none-passes-display-rule"
+   "why": "no-alignable-span"
   },
   {
    "lesson": "les:n4-conectores-01",
@@ -31035,11 +31142,6 @@
    "why": "no-alignable-span"
   },
   {
-   "lesson": "les:n4-conectores-04",
-   "item": "vocab:1495740",
-   "why": "none-passes-display-rule"
-  },
-  {
    "lesson": "les:n4-conectores-07",
    "item": "gram:gp-124",
    "why": "no-alignable-span"
@@ -31097,7 +31199,7 @@
   {
    "lesson": "les:n3-conectores-01",
    "item": "vocab:1154770",
-   "why": "no-sentence-carries-item"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n3-conectores-01",
@@ -31138,11 +31240,6 @@
    "lesson": "les:n3-conectores-03",
    "item": "vocab:1549340",
    "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n3-conectores-03",
-   "item": "vocab:1404320",
-   "why": "no-sentence-carries-item"
   },
   {
    "lesson": "les:n3-conectores-03",
@@ -31216,13 +31313,8 @@
   },
   {
    "lesson": "les:n3-conectores-05",
-   "item": "vocab:1454500",
-   "why": "no-sentence-carries-item"
-  },
-  {
-   "lesson": "les:n3-conectores-05",
    "item": "vocab:1508300",
-   "why": "no-sentence-carries-item"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n3-conectores-05",
@@ -31237,7 +31329,7 @@
   {
    "lesson": "les:n3-conectores-05",
    "item": "vocab:2859161",
-   "why": "no-sentence-carries-item"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n3-conectores-05",
@@ -31506,6 +31598,11 @@
   },
   {
    "lesson": "les:n3-tempo-04",
+   "item": "vocab:1000920",
+   "why": "no-sentence-carries-item"
+  },
+  {
+   "lesson": "les:n3-tempo-04",
    "item": "vocab:1577130",
    "why": "no-alignable-span"
   },
@@ -31547,7 +31644,7 @@
   {
    "lesson": "les:n3-tempo-05",
    "item": "vocab:1400390",
-   "why": "no-alignable-span"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n3-tempo-05",
@@ -31587,12 +31684,12 @@
   {
    "lesson": "les:n3-tempo-06",
    "item": "vocab:1331530",
-   "why": "none-passes-display-rule"
+   "why": "no-alignable-span"
   },
   {
    "lesson": "les:n3-tempo-06",
    "item": "vocab:1355970",
-   "why": "no-alignable-span"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n3-tempo-06",
@@ -31761,6 +31858,11 @@
   },
   {
    "lesson": "les:n3-perspectiva-03",
+   "item": "vocab:1180900",
+   "why": "none-passes-display-rule"
+  },
+  {
+   "lesson": "les:n3-perspectiva-03",
    "item": "vocab:1607520",
    "why": "none-passes-display-rule"
   },
@@ -31782,7 +31884,7 @@
   {
    "lesson": "les:n3-perspectiva-04",
    "item": "vocab:1580825",
-   "why": "no-sentence-carries-item"
+   "why": "no-alignable-span"
   },
   {
    "lesson": "les:n3-perspectiva-04",
@@ -31831,6 +31933,11 @@
   },
   {
    "lesson": "les:n3-perspectiva-05",
+   "item": "vocab:1435490",
+   "why": "none-passes-display-rule"
+  },
+  {
+   "lesson": "les:n3-perspectiva-05",
    "item": "vocab:1436260",
    "why": "none-passes-display-rule"
   },
@@ -31858,11 +31965,6 @@
    "lesson": "les:n3-perspectiva-05",
    "item": "vocab:1434040",
    "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n3-perspectiva-06",
-   "item": "vocab:1489350",
-   "why": "no-sentence-carries-item"
   },
   {
    "lesson": "les:n3-perspectiva-06",
@@ -31947,7 +32049,7 @@
   {
    "lesson": "les:n3-perspectiva-07",
    "item": "vocab:1550980",
-   "why": "no-sentence-carries-item"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n3-perspectiva-07",
@@ -32262,11 +32364,6 @@
   {
    "lesson": "les:n3-estado-01",
    "item": "vocab:1189500",
-   "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n3-estado-01",
-   "item": "vocab:1207590",
    "why": "none-passes-display-rule"
   },
   {
@@ -32807,7 +32904,7 @@
   {
    "lesson": "les:n3-intencao-07",
    "item": "vocab:1495220",
-   "why": "no-alignable-span"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n3-intencao-07",
@@ -33043,11 +33140,6 @@
    "lesson": "les:n3-deveres-05",
    "item": "vocab:1457200",
    "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n3-deveres-06",
-   "item": "vocab:1516930",
-   "why": "no-sentence-carries-item"
   },
   {
    "lesson": "les:n3-deveres-06",
@@ -33631,11 +33723,6 @@
   },
   {
    "lesson": "les:n3-limites-06",
-   "item": "vocab:1375610",
-   "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n3-limites-06",
    "item": "vocab:1470970",
    "why": "none-passes-display-rule"
   },
@@ -33666,11 +33753,6 @@
   },
   {
    "lesson": "les:n3-limites-07",
-   "item": "vocab:1215240",
-   "why": "no-alignable-span"
-  },
-  {
-   "lesson": "les:n3-limites-07",
    "item": "vocab:1126590",
    "why": "no-alignable-span"
   },
@@ -33687,7 +33769,7 @@
   {
    "lesson": "les:n3-limites-07",
    "item": "vocab:1524750",
-   "why": "no-alignable-span"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n3-limites-07",
@@ -33838,11 +33920,6 @@
    "lesson": "les:n3-enfase-05",
    "item": "vocab:1411470",
    "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n3-enfase-06",
-   "item": "vocab:2083100",
-   "why": "no-sentence-carries-item"
   },
   {
    "lesson": "les:n3-enfase-06",
@@ -34082,7 +34159,7 @@
   {
    "lesson": "les:n3-conjectura-01",
    "item": "vocab:2820720",
-   "why": "no-alignable-span"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n3-conjectura-01",
@@ -34102,7 +34179,7 @@
   {
    "lesson": "les:n3-conjectura-01",
    "item": "vocab:1929950",
-   "why": "no-sentence-carries-item"
+   "why": "none-passes-display-rule"
   },
   {
    "lesson": "les:n3-conjectura-01",
@@ -34197,11 +34274,6 @@
   {
    "lesson": "les:n3-conjectura-05",
    "item": "vocab:1633690",
-   "why": "none-passes-display-rule"
-  },
-  {
-   "lesson": "les:n3-conjectura-05",
-   "item": "vocab:1240530",
    "why": "none-passes-display-rule"
   },
   {

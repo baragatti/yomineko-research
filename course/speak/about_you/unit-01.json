@@ -93,7 +93,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 291,
+  "cumulative_known_vocab": 289,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -102,9 +102,9 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
+        "贅沢",
         "安い",
-        "時間",
-        "叔父"
+        "時間"
       ]
     },
     {
@@ -122,9 +122,9 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ノック",
         "どちら",
-        "あした"
+        "あした",
+        "はだか"
       ]
     },
     {
@@ -132,9 +132,9 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
+        "ごはん",
         "たべる",
-        "なまえ",
-        "こども"
+        "なまえ"
       ]
     }
   ],
@@ -145,7 +145,7 @@
       "examples": [
         "sent:tatoeba-5332",
         "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
+        "sent:tatoeba-75140"
       ],
       "strand": "language-focused"
     },
@@ -171,8 +171,8 @@
       "pattern": "gram:wa-yori-desu",
       "examples": [
         "sent:gen-bb02a0ac267e",
-        "sent:gen-b5e6eb9f01a1",
-        "sent:gen-b7fbd0edad7c"
+        "sent:gen-e97b8aeb1456",
+        "sent:gen-b5e6eb9f01a1"
       ],
       "strand": "language-focused"
     }
@@ -195,6 +195,21 @@
     },
     {
       "prompt": {
+        "pt-BR": "Em que empresa você trabalha?"
+      },
+      "answer_key": "どこの会社にお勤めですか。",
+      "accepted_variants": [
+        "どこのかいしゃにおつとめですか",
+        "どこのかいしゃにおつとめですか。",
+        "どこの会社にお勤めですか",
+        "どこの会社にお勤めですか。"
+      ],
+      "sentence": "sent:tatoeba-200910",
+      "kind": "on-topic",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt": {
         "pt-BR": "Meu tio mora perto da escola."
       },
       "answer_key": "おじは学校の近くに住んでいる。",
@@ -209,23 +224,6 @@
       "sentence": "sent:tatoeba-227716",
       "kind": "on-topic",
       "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "Meu pai costumava ir de ônibus para o trabalho."
-      },
-      "answer_key": "父は以前はバスで仕事に行ったものだ。",
-      "accepted_variants": [
-        "ちちはいぜんはばすでしごとにいったものだ",
-        "ちちはいぜんはばすでしごとにいったものだ。",
-        "ちちわいぜんわばすでしごとにいったものだ",
-        "ちちわいぜんわばすでしごとにいったものだ。",
-        "父は以前はバスで仕事に行ったものだ",
-        "父は以前はバスで仕事に行ったものだ。"
-      ],
-      "sentence": "sent:tatoeba-84645",
-      "kind": "on-topic",
-      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -233,12 +231,12 @@
       "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
+      "sent:tatoeba-12829766",
       "sent:tatoeba-3313203",
-      "sent:tatoeba-8787906",
       "sent:tatoeba-218592",
-      "sent:tatoeba-86878",
-      "sent:tatoeba-10723441",
-      "sent:tatoeba-212601"
+      "sent:tatoeba-11072023",
+      "sent:tatoeba-101820",
+      "sent:tatoeba-82875"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

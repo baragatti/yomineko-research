@@ -8,26 +8,32 @@
   },
   "say_now": [
     "sent:tatoeba-10349168",
-    "sent:tatoeba-5115",
-    "sent:tatoeba-182700",
-    "sent:tatoeba-10725053",
-    "sent:tatoeba-4786026",
-    "sent:tatoeba-10899657"
+    "sent:tatoeba-203709",
+    "sent:tatoeba-198114",
+    "sent:tatoeba-230210",
+    "sent:tatoeba-75827",
+    "sent:tatoeba-198075"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1361490",
-    "vocab:1443840",
-    "vocab:1382980",
-    "vocab:1519210",
+    "vocab:1404975",
+    "vocab:2147630",
+    "vocab:1149830",
+    "vocab:1461140",
+    "vocab:1514320",
+    "vocab:1502840",
+    "vocab:1454080",
     "vocab:1390020",
-    "vocab:1301940",
-    "vocab:1227500"
+    "vocab:1604870",
+    "vocab:1329340",
+    "vocab:1477500"
   ],
   "patterns": [
-    "gram:gp-122",
-    "gram:gp-18"
+    "gram:darou",
+    "gram:yori",
+    "gram:da-desu"
   ],
   "kanji_recognition": [
     "橋",
@@ -35,15 +41,15 @@
     "新",
     "設",
     "川",
-    "電"
+    "歩"
   ],
   "shadowing": [
     "sent:tatoeba-10349168",
-    "sent:tatoeba-5115",
-    "sent:tatoeba-182700",
-    "sent:tatoeba-10725053",
-    "sent:tatoeba-4786026",
-    "sent:tatoeba-10899657"
+    "sent:tatoeba-203709",
+    "sent:tatoeba-198114",
+    "sent:tatoeba-230210",
+    "sent:tatoeba-75827",
+    "sent:tatoeba-198075"
   ],
   "srs": {
     "introduces_cards": [
@@ -56,35 +62,35 @@
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-5115",
+        "item": "sent:tatoeba-203709",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-182700",
+        "item": "sent:tatoeba-198114",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-10725053",
+        "item": "sent:tatoeba-230210",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-4786026",
+        "item": "sent:tatoeba-75827",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-10899657",
+        "item": "sent:tatoeba-198075",
         "card_types": [
           "production"
         ]
@@ -93,28 +99,33 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 210,
+  "cumulative_known_vocab": 211,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n3:28:21",
+      "id": "so:n3:755",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:755:40",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "phrase",
       "distractors": [
-        "もっと",
-        "始める",
-        "ケーキ"
+        "空気",
+        "先生",
+        "悪い"
       ]
     },
     {
-      "id": "cf:n3:29:21",
+      "id": "cf:n3:235:526",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "どんな",
-        "有難う",
-        "決して"
+        "一体",
+        "勘定",
+        "無い"
       ]
     },
     {
@@ -122,9 +133,9 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ひま",
         "それ",
-        "いつ"
+        "いつ",
+        "なか"
       ]
     },
     {
@@ -132,34 +143,42 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "じょうけん",
         "こんにちは",
-        "しゅうかん"
+        "ありがとう",
+        "もういちど"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:n3-sore-tomo",
-    "gram:n3-sore-to",
-    "gram:tsumori",
-    "gram:gp-121"
+    "gram:gp-36",
+    "gram:gp-121",
+    "gram:gp-10"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-122",
+      "pattern": "gram:darou",
       "examples": [
-        "sent:gen-8a3363848885",
-        "sent:gen-9e643c0b17a7",
-        "sent:tatoeba-9043644"
+        "sent:tatoeba-84837",
+        "sent:tatoeba-80452",
+        "sent:tatoeba-85312"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-18",
+      "pattern": "gram:yori",
       "examples": [
-        "sent:gen-caa85f6bf50a",
-        "sent:gen-145d7fcd0d32",
-        "sent:tatoeba-97651"
+        "sent:tatoeba-105626",
+        "sent:tatoeba-76098",
+        "sent:tatoeba-173719"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-75140"
       ],
       "strand": "language-focused"
     }
@@ -167,52 +186,50 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Meu tio mora perto da escola."
+        "pt-BR": "Esqueci o guarda-chuva no trem."
       },
-      "answer_key": "おじは学校の近くに住んでいる。",
+      "answer_key": "電車のなかに傘を忘れてきた。",
       "accepted_variants": [
-        "おじはがっこうのちかくにすんでいる",
-        "おじはがっこうのちかくにすんでいる。",
-        "おじは学校の近くに住んでいる",
-        "おじは学校の近くに住んでいる。",
-        "おじわがっこうのちかくにすんでいる",
-        "おじわがっこうのちかくにすんでいる。"
+        "でんしゃのなかにかさをわすれてきた",
+        "でんしゃのなかにかさをわすれてきた。",
+        "電車のなかに傘を忘れてきた",
+        "電車のなかに傘を忘れてきた。"
       ],
-      "sentence": "sent:tatoeba-227716",
+      "sentence": "sent:tatoeba-4786026",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Eu vou para a escola de ônibus."
+        "pt-BR": "Você pretende ir de trem? Ou de carro?"
       },
-      "answer_key": "私は、バスで学校に行く。",
+      "answer_key": "電車で行くつもりなの？それとも車？",
       "accepted_variants": [
-        "わたしは、ばすでがっこうにいく",
-        "わたしは、ばすでがっこうにいく。",
-        "わたしわ、ばすでがっこうにいく",
-        "わたしわ、ばすでがっこうにいく。",
-        "私は、バスで学校に行く",
-        "私は、バスで学校に行く。"
+        "でんしゃでいくつもりなの?それともくるま",
+        "でんしゃでいくつもりなの?それともくるま?",
+        "電車で行くつもりなの?それとも車",
+        "電車で行くつもりなの?それとも車?",
+        "電車で行くつもりなの？それとも車",
+        "電車で行くつもりなの？それとも車？"
       ],
-      "sentence": "sent:tatoeba-162318",
+      "sentence": "sent:tatoeba-10725053",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "O problema era onde almoçar."
+        "pt-BR": "Aonde você pretende ir durante as férias?"
       },
-      "answer_key": "問題はどこで昼食をたべるかだった。",
+      "answer_key": "休み中にどこへいくつもりですか。",
       "accepted_variants": [
-        "もんだいはどこでちゅうしょくをたべるかだった",
-        "もんだいはどこでちゅうしょくをたべるかだった。",
-        "もんだいわどこでちゅうしょくをたべるかだった",
-        "もんだいわどこでちゅうしょくをたべるかだった。",
-        "問題はどこで昼食をたべるかだった",
-        "問題はどこで昼食をたべるかだった。"
+        "やすみちゅうにどこえいくつもりですか",
+        "やすみちゅうにどこえいくつもりですか。",
+        "やすみちゅうにどこへいくつもりですか",
+        "やすみちゅうにどこへいくつもりですか。",
+        "休み中にどこへいくつもりですか",
+        "休み中にどこへいくつもりですか。"
       ],
-      "sentence": "sent:tatoeba-79841",
+      "sentence": "sent:tatoeba-182700",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -222,12 +239,12 @@
       "pt-BR": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu."
     },
     "items": [
-      "sent:tatoeba-208558",
-      "sent:tatoeba-198119",
+      "sent:tatoeba-5115",
+      "sent:tatoeba-162318",
       "sent:tatoeba-200960",
       "sent:tatoeba-142095",
-      "sent:tatoeba-225298",
-      "sent:tatoeba-97583"
+      "sent:tatoeba-9936514",
+      "sent:tatoeba-236798"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -235,15 +252,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 50,
-    "fluency": 14
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 21,
+    "language-focused": 29,
     "fluency": 6
   }
 }

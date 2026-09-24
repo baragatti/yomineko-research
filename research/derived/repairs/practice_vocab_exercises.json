@@ -3,7 +3,7 @@
   "definition": "One row per generated exercise: {lesson, targets, exercise, why}. `targets` names the vocab or grammar record the exercise clears in validate_practice_coverage; `exercise` is a complete lesson.schema.json exercise object (id, type, prompt, answer, explanation, sentence_refs and nothing else); `why` records which template fired and on what evidence. Every Japanese string is a bank sentence verbatim, a token surface cut from that sentence's Layer-A dissection, or a registry headword/kana; every pt-BR string is a fixed template filled with a registry gloss, a grammar label or a bank translation. Ids continue each lesson's own numbering as of the tree this table was generated against.",
   "generated_by": "scripts/build_vocab_exercises.py (deterministic, seeded, idempotent)",
   "applied_by": "scripts/apply_practice_exercises.py --table research/derived/repairs/practice_vocab_exercises.json (the table moves there from pending/ when it is applied)",
-  "row_count": 2284,
+  "row_count": 2287,
   "provenance": {
     "layer": "C",
     "source": "derived:w20-vocab-practice",
@@ -39,9 +39,9 @@
   },
   "counts": {
     "by_type": {
-      "cloze": 618,
+      "cloze": 617,
       "production": 14,
-      "recognition": 1652
+      "recognition": 1656
     },
     "by_level": {
       "n3": 1190,
@@ -3032,19 +3032,19 @@
         },
         "answer": {
           "choices": [
-            "おじ",
-            "かんじ",
-            "どう",
-            "グラム"
+            "おまわりさん",
+            "あなた",
+            "グラム",
+            "かぜ"
           ],
           "correct": "グラム"
         },
         "explanation": {
-          "pt-BR": "グラム significa grama. As outras opções são どう (movimento), かんじ (kanji, caractere chinês) e おじ (tio (mais novo que o pai/mãe))."
+          "pt-BR": "グラム significa grama. As outras opções são おまわりさん (policial, guarda), かぜ (resfriado, gripe) e あなた (você)."
         },
         "sentence_refs": []
       },
-      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling グラム (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1451160, vocab:1213170, vocab:1607070) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling グラム (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1002120, vocab:1583720, vocab:1223615) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
     },
     {
       "lesson": "les:n5-perguntas-05",
@@ -3543,18 +3543,18 @@
         "answer": {
           "choices": [
             "かげつ",
-            "じぶん",
-            "ここのか",
-            "どう"
+            "あそこ",
+            "あし",
+            "おべんとう"
           ],
           "correct": "かげつ"
         },
         "explanation": {
-          "pt-BR": "かげつ significa contador de meses (duração em meses). As outras opções são ここのか (dia nove (do mês)), じぶん (si mesmo, eu mesmo) e どう (movimento)."
+          "pt-BR": "かげつ significa contador de meses (duração em meses). As outras opções são あし (pé, perna), あそこ (ali, lá) e おべんとう (marmita, bentô)."
         },
         "sentence_refs": []
       },
-      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling かげつ (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1243850, vocab:1318610, vocab:1451160) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling かげつ (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1404630, vocab:1000320, vocab:1513065) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
     },
     {
       "lesson": "les:n5-numeros-tempo-05",
@@ -4385,29 +4385,29 @@
     {
       "lesson": "les:n5-verbos-02",
       "targets": [
-        "vocab:1298670"
+        "vocab:1157170"
       ],
       "exercise": {
         "id": "ex:n5-verbos-02-7",
         "type": "recognition",
         "prompt": {
-          "pt-BR": "Qual destas palavras significa \"imprimir\"?"
+          "pt-BR": "Qual destas palavras significa \"fazer\"?"
         },
         "answer": {
           "choices": [
-            "かえす",
-            "すう",
-            "うる",
-            "する"
+            "いう",
+            "する",
+            "あびる",
+            "おく"
           ],
           "correct": "する"
         },
         "explanation": {
-          "pt-BR": "する significa imprimir. As outras opções são かえす (devolver), すう (fumar) e うる (vender)."
+          "pt-BR": "する significa fazer. As outras opções são いう (dizer, falar), あびる (tomar (banho/ducha), banhar-se) e おく (colocar, pôr)."
         },
         "sentence_refs": []
       },
-      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling する (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1512130, vocab:1228260, vocab:1473950) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling する (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1587040, vocab:1547450, vocab:1421850) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
     },
     {
       "lesson": "les:n5-verbos-02",
@@ -4473,19 +4473,19 @@
         },
         "answer": {
           "choices": [
-            "する",
-            "かく",
-            "けす",
+            "しめる",
+            "ある",
+            "かす",
             "うる"
           ],
           "correct": "うる"
         },
         "explanation": {
-          "pt-BR": "うる significa vender. As outras opções são かく (escrever), する (imprimir) e けす (desligar, apagar (luz, fogo))."
+          "pt-BR": "うる significa vender. As outras opções são ある (haver, existir), しめる (amarrar, apertar) e かす (emprestar (algo a alguém))."
         },
         "sentence_refs": []
       },
-      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling うる (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1343950, vocab:1298670, vocab:1350110) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling うる (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1296400, vocab:1436570, vocab:1411160) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
     },
     {
       "lesson": "les:n5-verbos-02",
@@ -4656,19 +4656,19 @@
         },
         "answer": {
           "choices": [
-            "する",
-            "うる",
+            "あげる",
+            "こたえる",
             "いう",
-            "のむ"
+            "かえす"
           ],
           "correct": "いう"
         },
         "explanation": {
-          "pt-BR": "いう significa dizer, falar. As outras opções são のむ (beber, tomar), する (imprimir) e うる (vender)."
+          "pt-BR": "いう significa dizer, falar. As outras opções são こたえる (responder, dar uma resposta), かえす (devolver) e あげる (levantar, erguer)."
         },
         "sentence_refs": []
       },
-      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling いう (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1169870, vocab:1298670, vocab:1473950) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling いう (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1449540, vocab:1512130, vocab:1352320) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
     },
     {
       "lesson": "les:n5-verbos-02",
@@ -4890,19 +4890,19 @@
         },
         "answer": {
           "choices": [
-            "およぐ",
-            "さく",
-            "なる",
+            "おす",
+            "うる",
+            "うたう",
             "かえる"
           ],
           "correct": "かえる"
         },
         "explanation": {
-          "pt-BR": "かえる significa voltar para casa, ir para casa. As outras opções são なる (dar fruto, frutificar), およぐ (nadar) e さく (florescer, desabrochar)."
+          "pt-BR": "かえる significa voltar para casa, ir para casa. As outras opções são うる (vender), うたう (cantar) e おす (empurrar, pressionar)."
         },
         "sentence_refs": []
       },
-      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling かえる (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1611000, vocab:1174340, vocab:1297210) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling かえる (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1473950, vocab:1588120, vocab:1180470) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
     },
     {
       "lesson": "les:n5-verbos-03",
@@ -4971,19 +4971,19 @@
         },
         "answer": {
           "choices": [
-            "なる",
             "かける",
-            "くもる",
-            "あるく"
+            "おしえる",
+            "やる",
+            "くもる"
           ],
           "correct": "くもる"
         },
         "explanation": {
-          "pt-BR": "くもる significa ficar nublado, encobrir-se. As outras opções são かける (voar (pelo céu), planar), なる (dar fruto, frutificar) e あるく (andar, caminhar)."
+          "pt-BR": "くもる significa ficar nublado, encobrir-se. As outras opções são かける (voar (pelo céu), planar), やる (fazer, realizar) e おしえる (ensinar, lecionar)."
         },
         "sentence_refs": []
       },
-      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling くもる (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1570710, vocab:1611000, vocab:1514320) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling くもる (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1570710, vocab:1012980, vocab:1236900) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
     },
     {
       "lesson": "les:n5-verbos-03",
@@ -5038,33 +5038,6 @@
         "sentence_refs": []
       },
       "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling およぐ (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1334040, vocab:1291800, vocab:1421850) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
-    },
-    {
-      "lesson": "les:n5-verbos-03",
-      "targets": [
-        "vocab:1611000"
-      ],
-      "exercise": {
-        "id": "ex:n5-verbos-03-20",
-        "type": "recognition",
-        "prompt": {
-          "pt-BR": "Qual destas palavras significa \"dar fruto, frutificar\"?"
-        },
-        "answer": {
-          "choices": [
-            "きる",
-            "かかる",
-            "なる",
-            "のる"
-          ],
-          "correct": "なる"
-        },
-        "explanation": {
-          "pt-BR": "なる significa dar fruto, frutificar. As outras opções são かかる (pegar (uma doença), contrair), のる (andar (de veículo), embarcar) e きる (cortar)."
-        },
-        "sentence_refs": []
-      },
-      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling なる (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1609500, vocab:1355120, vocab:1384830) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
     },
     {
       "lesson": "les:n5-verbos-03",
@@ -5162,17 +5135,17 @@
           "choices": [
             "きえる",
             "なる",
-            "うたう",
+            "かかる",
             "はしる"
           ],
           "correct": "はしる"
         },
         "explanation": {
-          "pt-BR": "はしる significa correr. As outras opções são なる (dar fruto, frutificar), うたう (cantar) e きえる (apagar-se (luz, fogo), desligar-se)."
+          "pt-BR": "はしる significa correr. As outras opções são なる (tornar-se, virar), かかる (levar (tempo), custar) e きえる (apagar-se (luz, fogo), desligar-se)."
         },
         "sentence_refs": []
       },
-      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling はしる (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1611000, vocab:1588120, vocab:1350040) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling はしる (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1375610, vocab:1207590, vocab:1350040) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
     },
     {
       "lesson": "les:n5-verbos-03",
@@ -5453,17 +5426,17 @@
           "choices": [
             "おわる",
             "かぶる",
-            "しぬ",
-            "する"
+            "かく",
+            "しぬ"
           ],
           "correct": "おわる"
         },
         "explanation": {
-          "pt-BR": "おわる significa terminar, acabar. As outras opções são しぬ (morrer), かぶる (pôr (na cabeça), usar (chapéu)) e する (imprimir)."
+          "pt-BR": "おわる significa terminar, acabar. As outras opções são かく (escrever), かぶる (pôr (na cabeça), usar (chapéu)) e しぬ (morrer)."
         },
         "sentence_refs": []
       },
-      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling おわる (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1310730, vocab:1484330, vocab:1298670) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling おわる (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1343950, vocab:1484330, vocab:1310730) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
     },
     {
       "lesson": "les:n5-verbos-04",
@@ -9919,18 +9892,18 @@
         "answer": {
           "choices": [
             "ちかく",
-            "りょうり",
-            "ほう",
+            "せっけん",
+            "あに",
             "くろ"
           ],
           "correct": "ちかく"
         },
         "explanation": {
-          "pt-BR": "ちかく significa proximidades, redondezas. As outras opções são くろ (preto, cor preta), ほう (relatório, notícia) e りょうり (culinária, prato)."
+          "pt-BR": "ちかく significa proximidades, redondezas. As outras opções são あに (irmão mais velho), くろ (preto, cor preta) e せっけん (sabonete, sabão)."
         },
         "sentence_refs": []
       },
-      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling ちかく (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1287410, vocab:1515620, vocab:1554310) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling ちかく (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1249900, vocab:1287410, vocab:1382590) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
     },
     {
       "lesson": "les:n5-comparacoes-03",
@@ -10053,19 +10026,19 @@
         },
         "answer": {
           "choices": [
-            "ほう",
             "にもつ",
-            "いっしょ",
-            "あて"
+            "こんしゅう",
+            "エレベーター",
+            "たて"
           ],
           "correct": "にもつ"
         },
         "explanation": {
-          "pt-BR": "にもつ significa bagagem, carga. As outras opções são いっしょ (junto, juntos), あて (pai) e ほう (relatório, notícia)."
+          "pt-BR": "にもつ significa bagagem, carga. As outras opções são こんしゅう (esta semana), エレベーター (elevador) e たて (escudo)."
         },
         "sentence_refs": []
       },
-      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling にもつ (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1163400, vocab:1497610, vocab:1515620) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling にもつ (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1289220, vocab:1030630, vocab:1341840) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
     },
     {
       "lesson": "les:n5-comparacoes-03",
@@ -19218,22 +19191,25 @@
       ],
       "exercise": {
         "id": "ex:n4-volitivo-01-16",
-        "type": "cloze",
+        "type": "recognition",
         "prompt": {
-          "pt-BR": "Complete a frase: なにか書くものを＿＿。 (Me dá alguma coisa pra escrever.)"
+          "pt-BR": "Qual destas palavras significa \"escurecer, anoitecer\"?"
         },
         "answer": {
-          "text": "くれ",
-          "full": "なにか書くものをくれ。"
+          "choices": [
+            "うける",
+            "できる",
+            "およぐ",
+            "くれる"
+          ],
+          "correct": "くれる"
         },
         "explanation": {
-          "pt-BR": "A palavra que falta é くれる: escurecer, anoitecer. Na frase ela aparece como くれ."
+          "pt-BR": "くれる significa escurecer, anoitecer. As outras opções são およぐ (nadar), うける (receber, obter) e できる (poder, ser capaz de)."
         },
-        "sentence_refs": [
-          "sent:tatoeba-2242447"
-        ]
+        "sentence_refs": []
       },
-      "why": "cloze over bank sentence sent:tatoeba-2242447 (inside the cks); the target's own token (くれ, position 5) is blanked at its Sudachi boundary; answer.full is the sentence verbatim, so the coverage gate reads it through the sentence's Layer-A dissection"
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling くれる (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1174340, vocab:1329590, vocab:1340450) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
     },
     {
       "lesson": "les:n4-volitivo-01",
@@ -19357,18 +19333,18 @@
         "answer": {
           "choices": [
             "じてん",
-            "よう",
-            "くも",
-            "ねぼう"
+            "ゴミ",
+            "ふろ",
+            "どうぶつえん"
           ],
           "correct": "じてん"
         },
         "explanation": {
-          "pt-BR": "じてん significa dicionário. As outras opções são よう (afazer, tarefa), くも (nuvem) e ねぼう (dormir demais, preguiça (de levantar))."
+          "pt-BR": "じてん significa dicionário. As outras opções são ゴミ (lixo), ふろ (banho, banheira) e どうぶつえん (zoológico, jardim zoológico)."
         },
         "sentence_refs": []
       },
-      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling じてん (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1546200, vocab:1173100, vocab:1360320) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: ambiguous"
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling じてん (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1369900, vocab:1500100, vocab:1451490) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: ambiguous"
     },
     {
       "lesson": "les:n4-volitivo-01",
@@ -20493,19 +20469,19 @@
         },
         "answer": {
           "choices": [
-            "よう",
-            "ほど",
-            "さいきん",
-            "けしゴム"
+            "だいどころ",
+            "けしゴム",
+            "レポート",
+            "つぎ"
           ],
           "correct": "けしゴム"
         },
         "explanation": {
-          "pt-BR": "けしゴム significa borracha (de apagar). As outras opções são よう (afazer, tarefa), ほど (cerca de, aproximadamente) e さいきん (recentemente, ultimamente)."
+          "pt-BR": "けしゴム significa borracha (de apagar). As outras opções são レポート (relatório, trabalho (escrito)), つぎ (próximo, seguinte) e だいどころ (cozinha)."
         },
         "sentence_refs": []
       },
-      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling けしゴム (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1546200, vocab:1436510, vocab:1293780) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling けしゴム (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1145990, vocab:1316380, vocab:1412640) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
     },
     {
       "lesson": "les:n4-transitividade-02",
@@ -59827,6 +59803,114 @@
         "sentence_refs": []
       },
       "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling ていりゅうじょ (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1044480, vocab:1335570, vocab:1042820) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+    },
+    {
+      "lesson": "les:n5-passado-04",
+      "targets": [
+        "vocab:1451160"
+      ],
+      "exercise": {
+        "id": "ex:n5-passado-04-17",
+        "type": "recognition",
+        "prompt": {
+          "pt-BR": "Qual destas palavras significa \"movimento\"?"
+        },
+        "answer": {
+          "choices": [
+            "こんばん",
+            "どう",
+            "かいだん",
+            "さいふ"
+          ],
+          "correct": "どう"
+        },
+        "explanation": {
+          "pt-BR": "どう significa movimento. As outras opções são こんばん (esta noite, hoje à noite), かいだん (escada, degraus) e さいふ (carteira, porta-cédulas)."
+        },
+        "sentence_refs": []
+      },
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling どう (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1289470, vocab:1203090, vocab:1296970) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+    },
+    {
+      "lesson": "les:n5-comparacoes-05",
+      "targets": [
+        "vocab:1611000"
+      ],
+      "exercise": {
+        "id": "ex:n5-comparacoes-05-12",
+        "type": "recognition",
+        "prompt": {
+          "pt-BR": "Qual destas palavras significa \"dar fruto, frutificar\"?"
+        },
+        "answer": {
+          "choices": [
+            "出かける",
+            "生る",
+            "生まれる",
+            "出す"
+          ],
+          "correct": "生る"
+        },
+        "explanation": {
+          "pt-BR": "生る（なる） significa dar fruto, frutificar. As outras opções são 生まれる (nascer), 出かける (sair, partir) e 出す (tirar, pôr para fora)."
+        },
+        "sentence_refs": []
+      },
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling 生る (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1378690, vocab:1598550, vocab:1338180) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+    },
+    {
+      "lesson": "les:n5-conectando-01",
+      "targets": [
+        "vocab:1515620"
+      ],
+      "exercise": {
+        "id": "ex:n5-conectando-01-12",
+        "type": "recognition",
+        "prompt": {
+          "pt-BR": "Qual destas formas significa \"relatório, notícia\"?"
+        },
+        "answer": {
+          "choices": [
+            "ほう",
+            "ハンカチ",
+            "みち",
+            "にちようび"
+          ],
+          "correct": "ほう"
+        },
+        "explanation": {
+          "pt-BR": "ほう significa relatório, notícia. As outras opções são ハンカチ (lenço), みち (rua, estrada) e にちようび (domingo)."
+        },
+        "sentence_refs": []
+      },
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling ほう (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1096420, vocab:1454080, vocab:1464900) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+    },
+    {
+      "lesson": "les:n4-transitividade-05",
+      "targets": [
+        "vocab:1546200"
+      ],
+      "exercise": {
+        "id": "ex:n4-transitividade-05-13",
+        "type": "recognition",
+        "prompt": {
+          "pt-BR": "Qual destas palavras significa \"afazer, tarefa\"?"
+        },
+        "answer": {
+          "choices": [
+            "用",
+            "近く",
+            "今日",
+            "発音"
+          ],
+          "correct": "用"
+        },
+        "explanation": {
+          "pt-BR": "用（よう） significa afazer, tarefa. As outras opções são 近く (proximidades, redondezas), 今日 (hoje) e 発音 (pronúncia)."
+        },
+        "sentence_refs": []
+      },
+      "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling 用 (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1242160, vocab:1579110, vocab:1477170) are records in this lesson's cumulative_known_set with the same coarse POS (noun) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
     }
   ],
   "appended_rows": [
@@ -59838,6 +59922,406 @@
       ],
       "by": "P5-n3-review",
       "reason": "the rewritten les:n3-revisao-01 no longer drills vocab:1435080 (its old production exercise -4 was replaced by the verified review exercises), so scripts/build_vocab_exercises.py was re-run on the post-apply tree into a scratch out-root: its work list had exactly this one vocab pair, and its one generated row is appended here verbatim (template V-RECOG, nothing authored)"
+    }
+  ],
+  "q2_regenerated": {
+    "why": "Q2-token-links. After the token relink and the course repoint (research/derived/repairs/sibling_unlock_repoint.json), 15 rows no longer held: their target left the lesson (刷る, 生る), their cloze sentence no longer links the target (暮れる in 「なにか書くものをくれ」), or a distractor or explanation named a record the lesson no longer knows (する 'imprimir', なる 'dar fruto', ほう 'informação', どう 'movimento', よう 'afazer'). Those rows were stripped from a scratch copy of the exported tree and scripts/build_vocab_exercises.py re-run on it; each regenerated row keeps the stripped exercise's id (same lesson, same body node) and takes the builder's content verbatim. Rows the builder produced for pairs with no row at all (the four records returned to the lessons whose prose teaches them) are appended with the builder's ids. Nothing here is authored.",
+    "regenerated": [
+      {
+        "lesson": "les:n4-transitividade-02",
+        "exercise": "ex:n4-transitividade-02-9",
+        "was": {
+          "targets": [
+            "vocab:1350080"
+          ],
+          "type": "recognition",
+          "prompt": {
+            "pt-BR": "Qual destas palavras significa \"borracha (de apagar)\"?"
+          },
+          "answer": {
+            "choices": [
+              "よう",
+              "ほど",
+              "さいきん",
+              "けしゴム"
+            ],
+            "correct": "けしゴム"
+          }
+        },
+        "reason": "why names vocab:1546200, not in the known set",
+        "builder_id_in_scratch_run": "ex:n4-transitividade-02-14"
+      },
+      {
+        "lesson": "les:n4-volitivo-01",
+        "exercise": "ex:n4-volitivo-01-16",
+        "was": {
+          "targets": [
+            "vocab:1514960"
+          ],
+          "type": "cloze",
+          "prompt": {
+            "pt-BR": "Complete a frase: なにか書くものを＿＿。 (Me dá alguma coisa pra escrever.)"
+          },
+          "answer": {
+            "text": "くれ",
+            "full": "なにか書くものをくれ。"
+          }
+        },
+        "reason": "cited sent:tatoeba-2242447 no longer links vocab:1514960",
+        "builder_id_in_scratch_run": "ex:n4-volitivo-01-23"
+      },
+      {
+        "lesson": "les:n4-volitivo-01",
+        "exercise": "ex:n4-volitivo-01-21",
+        "was": {
+          "targets": [
+            "vocab:1595270"
+          ],
+          "type": "recognition",
+          "prompt": {
+            "pt-BR": "Qual destas palavras significa \"dicionário\"?"
+          },
+          "answer": {
+            "choices": [
+              "じてん",
+              "よう",
+              "くも",
+              "ねぼう"
+            ],
+            "correct": "じてん"
+          }
+        },
+        "reason": "why names vocab:1546200, not in the known set",
+        "builder_id_in_scratch_run": "ex:n4-volitivo-01-24"
+      },
+      {
+        "lesson": "les:n5-comparacoes-02",
+        "exercise": "ex:n5-comparacoes-02-14",
+        "was": {
+          "targets": [
+            "vocab:1242160"
+          ],
+          "type": "recognition",
+          "prompt": {
+            "pt-BR": "Qual destas palavras significa \"proximidades, redondezas\"?"
+          },
+          "answer": {
+            "choices": [
+              "ちかく",
+              "りょうり",
+              "ほう",
+              "くろ"
+            ],
+            "correct": "ちかく"
+          }
+        },
+        "reason": "why names vocab:1515620, not in the known set",
+        "builder_id_in_scratch_run": "ex:n5-comparacoes-02-14"
+      },
+      {
+        "lesson": "les:n5-comparacoes-03",
+        "exercise": "ex:n5-comparacoes-03-13",
+        "was": {
+          "targets": [
+            "vocab:1195430"
+          ],
+          "type": "recognition",
+          "prompt": {
+            "pt-BR": "Qual destas palavras significa \"bagagem, carga\"?"
+          },
+          "answer": {
+            "choices": [
+              "ほう",
+              "にもつ",
+              "いっしょ",
+              "あて"
+            ],
+            "correct": "にもつ"
+          }
+        },
+        "reason": "why names vocab:1515620, not in the known set",
+        "builder_id_in_scratch_run": "ex:n5-comparacoes-03-15"
+      },
+      {
+        "lesson": "les:n5-numeros-tempo-05",
+        "exercise": "ex:n5-numeros-tempo-05-10",
+        "was": {
+          "targets": [
+            "vocab:1194480"
+          ],
+          "type": "recognition",
+          "prompt": {
+            "pt-BR": "Qual destas formas significa \"contador de meses (duração em meses)\"?"
+          },
+          "answer": {
+            "choices": [
+              "かげつ",
+              "じぶん",
+              "ここのか",
+              "どう"
+            ],
+            "correct": "かげつ"
+          }
+        },
+        "reason": "why names vocab:1451160, not in the known set",
+        "builder_id_in_scratch_run": "ex:n5-numeros-tempo-05-12"
+      },
+      {
+        "lesson": "les:n5-perguntas-05",
+        "exercise": "ex:n5-perguntas-05-10",
+        "was": {
+          "targets": [
+            "vocab:1046810"
+          ],
+          "type": "recognition",
+          "prompt": {
+            "pt-BR": "Qual destas palavras significa \"grama\"?"
+          },
+          "answer": {
+            "choices": [
+              "おじ",
+              "かんじ",
+              "どう",
+              "グラム"
+            ],
+            "correct": "グラム"
+          }
+        },
+        "reason": "why names vocab:1451160, not in the known set",
+        "builder_id_in_scratch_run": "ex:n5-perguntas-05-14"
+      },
+      {
+        "lesson": "les:n5-verbos-02",
+        "exercise": "ex:n5-verbos-02-10",
+        "was": {
+          "targets": [
+            "vocab:1473950"
+          ],
+          "type": "recognition",
+          "prompt": {
+            "pt-BR": "Qual destas palavras significa \"vender\"?"
+          },
+          "answer": {
+            "choices": [
+              "する",
+              "かく",
+              "けす",
+              "うる"
+            ],
+            "correct": "うる"
+          }
+        },
+        "reason": "why names vocab:1298670, not in the known set",
+        "builder_id_in_scratch_run": "ex:n5-verbos-02-23"
+      },
+      {
+        "lesson": "les:n5-verbos-02",
+        "exercise": "ex:n5-verbos-02-17",
+        "was": {
+          "targets": [
+            "vocab:1587040"
+          ],
+          "type": "recognition",
+          "prompt": {
+            "pt-BR": "Qual destas palavras significa \"dizer, falar\"?"
+          },
+          "answer": {
+            "choices": [
+              "する",
+              "うる",
+              "いう",
+              "のむ"
+            ],
+            "correct": "いう"
+          }
+        },
+        "reason": "why names vocab:1298670, not in the known set",
+        "builder_id_in_scratch_run": "ex:n5-verbos-02-24"
+      },
+      {
+        "lesson": "les:n5-verbos-02",
+        "exercise": "ex:n5-verbos-02-7",
+        "was": {
+          "targets": [
+            "vocab:1298670"
+          ],
+          "type": "recognition",
+          "prompt": {
+            "pt-BR": "Qual destas palavras significa \"imprimir\"?"
+          },
+          "answer": {
+            "choices": [
+              "かえす",
+              "すう",
+              "うる",
+              "する"
+            ],
+            "correct": "する"
+          }
+        },
+        "reason": "target vocab:1298670 not unlocked here",
+        "builder_id_in_scratch_run": "ex:n5-verbos-02-22"
+      },
+      {
+        "lesson": "les:n5-verbos-03",
+        "exercise": "ex:n5-verbos-03-14",
+        "was": {
+          "targets": [
+            "vocab:1221270"
+          ],
+          "type": "recognition",
+          "prompt": {
+            "pt-BR": "Qual destas palavras significa \"voltar para casa, ir para casa\"?"
+          },
+          "answer": {
+            "choices": [
+              "およぐ",
+              "さく",
+              "なる",
+              "かえる"
+            ],
+            "correct": "かえる"
+          }
+        },
+        "reason": "why names vocab:1611000, not in the known set",
+        "builder_id_in_scratch_run": "ex:n5-verbos-03-27"
+      },
+      {
+        "lesson": "les:n5-verbos-03",
+        "exercise": "ex:n5-verbos-03-17",
+        "was": {
+          "targets": [
+            "vocab:1457560"
+          ],
+          "type": "recognition",
+          "prompt": {
+            "pt-BR": "Qual destas palavras significa \"ficar nublado, encobrir-se\"?"
+          },
+          "answer": {
+            "choices": [
+              "なる",
+              "かける",
+              "くもる",
+              "あるく"
+            ],
+            "correct": "くもる"
+          }
+        },
+        "reason": "why names vocab:1611000, not in the known set",
+        "builder_id_in_scratch_run": "ex:n5-verbos-03-28"
+      },
+      {
+        "lesson": "les:n5-verbos-03",
+        "exercise": "ex:n5-verbos-03-24",
+        "was": {
+          "targets": [
+            "vocab:1402540"
+          ],
+          "type": "recognition",
+          "prompt": {
+            "pt-BR": "Qual destas palavras significa \"correr\"?"
+          },
+          "answer": {
+            "choices": [
+              "きえる",
+              "なる",
+              "うたう",
+              "はしる"
+            ],
+            "correct": "はしる"
+          }
+        },
+        "reason": "why names vocab:1611000, not in the known set",
+        "builder_id_in_scratch_run": "ex:n5-verbos-03-29"
+      },
+      {
+        "lesson": "les:n5-verbos-04",
+        "exercise": "ex:n5-verbos-04-17",
+        "was": {
+          "targets": [
+            "vocab:1589600"
+          ],
+          "type": "recognition",
+          "prompt": {
+            "pt-BR": "Qual destas palavras significa \"terminar, acabar\"?"
+          },
+          "answer": {
+            "choices": [
+              "おわる",
+              "かぶる",
+              "しぬ",
+              "する"
+            ],
+            "correct": "おわる"
+          }
+        },
+        "reason": "why names vocab:1298670, not in the known set",
+        "builder_id_in_scratch_run": "ex:n5-verbos-04-23"
+      }
+    ],
+    "appended": [
+      {
+        "lesson": "les:n5-passado-04",
+        "exercise": "ex:n5-passado-04-17",
+        "targets": [
+          "vocab:1451160"
+        ]
+      },
+      {
+        "lesson": "les:n5-comparacoes-05",
+        "exercise": "ex:n5-comparacoes-05-12",
+        "targets": [
+          "vocab:1611000"
+        ]
+      },
+      {
+        "lesson": "les:n5-conectando-01",
+        "exercise": "ex:n5-conectando-01-12",
+        "targets": [
+          "vocab:1515620"
+        ]
+      },
+      {
+        "lesson": "les:n4-transitividade-05",
+        "exercise": "ex:n4-transitividade-05-13",
+        "targets": [
+          "vocab:1546200"
+        ]
+      }
+    ]
+  },
+  "retired_by_q2": [
+    {
+      "lesson": "les:n5-verbos-03",
+      "exercise": "ex:n5-verbos-03-20",
+      "row": {
+        "lesson": "les:n5-verbos-03",
+        "targets": [
+          "vocab:1611000"
+        ],
+        "exercise": {
+          "id": "ex:n5-verbos-03-20",
+          "type": "recognition",
+          "prompt": {
+            "pt-BR": "Qual destas palavras significa \"dar fruto, frutificar\"?"
+          },
+          "answer": {
+            "choices": [
+              "きる",
+              "かかる",
+              "なる",
+              "のる"
+            ],
+            "correct": "なる"
+          },
+          "explanation": {
+            "pt-BR": "なる significa dar fruto, frutificar. As outras opções são かかる (pegar (uma doença), contrair), のる (andar (de veículo), embarcar) e きる (cortar)."
+          },
+          "sentence_refs": []
+        },
+        "why": "recognition MCQ: stem is the record's own pt-BR gloss, key is the spelling なる (attested/common form inside this lesson's kanji known set), and the three distractors (vocab:1609500, vocab:1355120, vocab:1384830) are records in this lesson's cumulative_known_set with the same coarse POS (verb) and a different gloss, none of them a homograph sibling, a written form of the key or a homophone of it. Stem collision inside the known set: unique"
+      },
+      "why": "its target 生る left this lesson; 成る, which took the slot, is already practised here by another exercise, so the builder generated nothing for it"
     }
   ]
 }

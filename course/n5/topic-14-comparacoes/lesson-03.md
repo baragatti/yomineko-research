@@ -142,8 +142,8 @@ Um kanji curto e muito frequente fecha a lição.
 
 
 ### 13. (recognition) Qual destas palavras significa "bagagem, carga"?
-- **Resposta:** `{"choices": ["ほう", "にもつ", "いっしょ", "あて"], "correct": "にもつ"}`
-- にもつ significa bagagem, carga. As outras opções são いっしょ (junto, juntos), あて (pai) e ほう (relatório, notícia).
+- **Resposta:** `{"choices": ["にもつ", "こんしゅう", "エレベーター", "たて"], "correct": "にもつ"}`
+- にもつ significa bagagem, carga. As outras opções são こんしゅう (esta semana), エレベーター (elevador) e たて (escudo).
 
 
 ### 14. (recognition) Qual destas palavras significa "bebida"?

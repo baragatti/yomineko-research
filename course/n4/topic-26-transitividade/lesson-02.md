@@ -112,8 +112,8 @@ O adjetivo 細かい (pequeno, miúdo) aparece bastante em casa: para falar de �
 
 
 ### 9. (recognition) Qual destas palavras significa "borracha (de apagar)"?
-- **Resposta:** `{"choices": ["よう", "ほど", "さいきん", "けしゴム"], "correct": "けしゴム"}`
-- けしゴム significa borracha (de apagar). As outras opções são よう (afazer, tarefa), ほど (cerca de, aproximadamente) e さいきん (recentemente, ultimamente).
+- **Resposta:** `{"choices": ["だいどころ", "けしゴム", "レポート", "つぎ"], "correct": "けしゴム"}`
+- けしゴム significa borracha (de apagar). As outras opções são レポート (relatório, trabalho (escrito)), つぎ (próximo, seguinte) e だいどころ (cozinha).
 
 
 ### 10. (recognition) Qual destas palavras significa "pedra, rocha"?

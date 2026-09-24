@@ -7,8 +7,8 @@
     "pt-BR": "Quando, que horas, combinar, parte 3"
   },
   "say_now": [
-    "sent:tatoeba-234998",
     "sent:tatoeba-209504",
+    "sent:tatoeba-12524635",
     "sent:tatoeba-100542",
     "sent:tatoeba-152614",
     "sent:tatoeba-78591",
@@ -17,13 +17,13 @@
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1255430",
     "vocab:1327720",
+    "vocab:1338180",
     "vocab:1490230",
     "vocab:1310730",
     "vocab:1294940",
     "vocab:1412890",
-    "vocab:1554370",
+    "vocab:1449530",
     "vocab:1539980",
     "vocab:1083590",
     "vocab:1604690",
@@ -32,21 +32,23 @@
   ],
   "patterns": [
     "gram:kamo-shirenai",
+    "gram:n3-te-hoshii",
     "gram:gp-115",
     "gram:rareru",
-    "gram:gp-142"
+    "gram:gp-142",
+    "gram:gp-45"
   ],
   "kanji_recognition": [
-    "月",
-    "今",
-    "日",
     "紙",
     "手",
-    "付"
+    "日",
+    "付",
+    "今",
+    "出"
   ],
   "shadowing": [
-    "sent:tatoeba-234998",
     "sent:tatoeba-209504",
+    "sent:tatoeba-12524635",
     "sent:tatoeba-100542",
     "sent:tatoeba-152614",
     "sent:tatoeba-78591",
@@ -56,14 +58,14 @@
     "introduces_cards": [
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-234998",
+        "item": "sent:tatoeba-209504",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-209504",
+        "item": "sent:tatoeba-12524635",
         "card_types": [
           "production"
         ]
@@ -100,28 +102,28 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 372,
+  "cumulative_known_vocab": 364,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
+    {
+      "id": "cf:n3:111:924",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "性格",
+        "贅沢",
+        "何方"
+      ]
+    },
     {
       "id": "cf:n3:129:268",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "丈",
         "昼",
-        "宿"
-      ]
-    },
-    {
-      "id": "cf:n3:773:98",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "ビール",
-        "切れる",
-        "掛かる"
+        "方",
+        "外"
       ]
     },
     {
@@ -129,33 +131,39 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "あつまる",
         "ほとんど",
-        "ぐうぜん"
+        "ぐうぜん",
+        "あずける"
       ]
     },
     {
-      "id": "kr:n4:162",
+      "id": "kr:n4:295",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "たつ",
-        "とも",
-        "でる"
+        "かぐ",
+        "すぎ",
+        "まつ"
       ]
     }
   ],
-  "patterns_chunked": [
-    "gram:n3-ni-shite-wa",
-    "gram:gp-45"
-  ],
+  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:kamo-shirenai",
       "examples": [
         "sent:tatoeba-2684823",
-        "sent:tatoeba-218082",
-        "sent:tatoeba-189633"
+        "sent:tatoeba-189633",
+        "sent:tatoeba-193130"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-te-hoshii",
+      "examples": [
+        "sent:tatoeba-148499",
+        "sent:tatoeba-157446",
+        "sent:tatoeba-153028"
       ],
       "strand": "language-focused"
     },
@@ -171,9 +179,9 @@
     {
       "pattern": "gram:rareru",
       "examples": [
-        "sent:tatoeba-161847",
+        "sent:tatoeba-195054",
         "sent:tatoeba-192185",
-        "sent:tatoeba-195054"
+        "sent:tatoeba-80149"
       ],
       "strand": "language-focused"
     },
@@ -183,6 +191,15 @@
         "sent:tatoeba-78454",
         "sent:tatoeba-137678",
         "sent:tatoeba-83221"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-45",
+      "examples": [
+        "sent:tatoeba-78583",
+        "sent:tatoeba-79741",
+        "sent:tatoeba-79742"
       ],
       "strand": "language-focused"
     }
@@ -247,8 +264,8 @@
       "sent:tatoeba-189309",
       "sent:tatoeba-172526",
       "sent:tatoeba-80332",
-      "sent:tatoeba-117939",
-      "sent:tatoeba-11727272"
+      "sent:tatoeba-99645",
+      "sent:tatoeba-157990"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -256,15 +273,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "meaning-input": 22,
+    "meaning-output": 5,
+    "language-focused": 62,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 34,
     "fluency": 6
   }
 }

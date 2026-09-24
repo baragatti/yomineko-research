@@ -29,7 +29,12 @@ DEFAULT_ROOT = HERE.parents[1]
 # Q1-exam-fixes-3 (2026-09-23), re-recorded with cause: 4932 -> 4700. context_fill got the
 # stem-sufficiency rules and 185 second-key / key-defect items were withdrawn by ledger
 # (5103 -> 4871 items); unplaced unchanged at 171. research/reports/q1_exam_fixes_3_report.md.
-EXAM_FLOOR = 4700
+# Q2-token-links (2026-09-23), re-recorded with cause: 4700 -> 4696. The relinked tokens and the 62
+# repair-driven sentence re-levels (research/derived/repairs/token_link_repairs.json) take some items'
+# sentences out of their bank's taught set or level, so the rebuilt banks hold 4871 -> 4867 items
+# (n5 context_fill 93 -> 91, n5 sentence_order 58 -> 55, n4 context_fill 317 -> 318); unplaced
+# unchanged at 171. research/reports/q2_token_links_report.md.
+EXAM_FLOOR = 4696
 MIN_EXERCISES = 2000
 
 

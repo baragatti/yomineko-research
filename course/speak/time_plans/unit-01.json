@@ -91,7 +91,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 352,
+  "cumulative_known_vocab": 345,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -100,9 +100,9 @@
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
+        "義務",
         "はい",
-        "種類",
-        "期待"
+        "種類"
       ]
     },
     {
@@ -111,8 +111,8 @@
       "via": "phrase",
       "distractors": [
         "年",
-        "頁",
-        "男"
+        "男",
+        "肉"
       ]
     },
     {
@@ -132,7 +132,7 @@
       "distractors": [
         "ゆいいつ",
         "タクシー",
-        "けいやく"
+        "あずかる"
       ]
     }
   ],
@@ -155,7 +155,7 @@
       "examples": [
         "sent:tatoeba-5332",
         "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
+        "sent:tatoeba-75140"
       ],
       "strand": "language-focused"
     },
@@ -179,6 +179,20 @@
     }
   ],
   "production": [
+    {
+      "prompt": {
+        "pt-BR": "Hoje passou na TV uma reportagem sobre o trabalho dos seguranças."
+      },
+      "answer_key": "ＳＰの仕事の様子が今日テレビで放送されました",
+      "accepted_variants": [
+        "SPの仕事の様子が今日テレビで放送されました",
+        "えすぴーのしごとのようすがきょうてれびでほうそうされました",
+        "ＳＰの仕事の様子が今日テレビで放送されました"
+      ],
+      "sentence": "sent:jec-4753",
+      "kind": "on-topic",
+      "strand": "meaning-output"
+    },
     {
       "prompt": {
         "pt-BR": "Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo."
@@ -212,23 +226,6 @@
       "sentence": "sent:tatoeba-10723441",
       "kind": "on-topic",
       "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "Essa passagem vale por uma semana."
-      },
-      "answer_key": "その切符は一週間有効です。",
-      "accepted_variants": [
-        "そのきっぷはいちしゅうかんゆうこうです",
-        "そのきっぷはいちしゅうかんゆうこうです。",
-        "そのきっぷわいちしゅうかんゆうこうです",
-        "そのきっぷわいちしゅうかんゆうこうです。",
-        "その切符は一週間有効です",
-        "その切符は一週間有効です。"
-      ],
-      "sentence": "sent:tatoeba-208558",
-      "kind": "on-topic",
-      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -236,12 +233,12 @@
       "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
-      "sent:tatoeba-117939",
-      "sent:tatoeba-11727272",
-      "sent:tatoeba-173057",
-      "sent:tatoeba-184200",
       "sent:tatoeba-99645",
-      "sent:tatoeba-157990"
+      "sent:tatoeba-157990",
+      "sent:tatoeba-199410",
+      "sent:tatoeba-233401",
+      "sent:tatoeba-12476202",
+      "sent:tatoeba-169112"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

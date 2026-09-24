@@ -7,33 +7,34 @@
     "n3": 2
   },
   "pairs_total": 761,
-  "pairs_above_level": 150,
-  "pairs_over_budget": 19,
+  "pairs_above_level": 160,
+  "pairs_over_budget": 21,
   "pairs_with_new_kanji": 137,
-  "pairs_with_new_vocab": 25,
+  "pairs_with_new_vocab": 39,
   "above_level_buckets": {
-    "n3<-n1": 1,
-    "n3<-n2": 1,
+    "n3<-n1": 2,
+    "n3<-n2": 5,
     "n4<-n1": 10,
     "n4<-n2": 9,
-    "n4<-n3": 74,
+    "n4<-n3": 78,
     "n5<-n1": 5,
     "n5<-n2": 7,
-    "n5<-n3": 25,
+    "n5<-n3": 26,
     "n5<-n4": 18
   },
   "over_budget_by_level": {
-    "n4": 2,
+    "n4": 4,
     "n5": 17
   },
   "forward_uses_by_tier": {
     "same-topic": 0,
-    "same-level": 4,
-    "cross-level": 148
+    "same-level": 10,
+    "cross-level": 146
   },
   "forward_edges_by_tier": {
     "same-topic": 0,
-    "same-level": 4,
-    "cross-level": 148
-  }
+    "same-level": 10,
+    "cross-level": 146
+  },
+  "q2_cause": "Re-recorded by Q2-token-links (2026-09-23). The relinked tokens now name the word the sentence uses, and some of those words are taught later or not at all: pairs_with_new_vocab 25 -> 39 (行けない 6, 年/ねん 3, 依る 3, 前 2, 中/なか, 付く, 詩, 何/なん, 吐く, 振り), pairs_over_budget 19 -> 21 (n4 2 -> 4), pairs_above_level 150 -> 160 (the 62 repair-driven re-levels), C5 same-level forward uses 4 -> 10 (中 at les:n5-perguntas-03, 前 at les:n5-numeros-tempo-02/05, 何/なに at les:n5-perguntas-06, 付く at les:n4-experiencia-03, 間/ま at les:n3-tempo-02). Cross-level forward uses shrank 148 -> 146. The pairs are W14 re-selection work (research/reports/lesson_sentence_review.json), not a ceiling to spend."
 }

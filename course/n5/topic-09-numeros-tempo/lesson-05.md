@@ -122,8 +122,8 @@ Na fala rápida, じゃあ encurta para じゃ. É super comum na despedida: じ
 
 
 ### 10. (recognition) Qual destas formas significa "contador de meses (duração em meses)"?
-- **Resposta:** `{"choices": ["かげつ", "じぶん", "ここのか", "どう"], "correct": "かげつ"}`
-- かげつ significa contador de meses (duração em meses). As outras opções são ここのか (dia nove (do mês)), じぶん (si mesmo, eu mesmo) e どう (movimento).
+- **Resposta:** `{"choices": ["かげつ", "あそこ", "あし", "おべんとう"], "correct": "かげつ"}`
+- かげつ significa contador de meses (duração em meses). As outras opções são あし (pé, perna), あそこ (ali, lá) e おべんとう (marmita, bentô).
 
 
 ### 11. (recognition) Qual destas palavras significa "tempo"?

@@ -20,7 +20,7 @@ Every deterministic item is selected against its level's taught set (the `cumula
 - `n3_sentence_order.json` — 300 items
 - `n3_text_grammar.json` — 122 items
 - `n3_usage.json` — 33 items
-- `n4_context_fill.json` — 317 items
+- `n4_context_fill.json` — 318 items
 - `n4_grammar_form.json` — 288 items
 - `n4_kanji_reading.json` — 400 items
 - `n4_listening_point.json` — 21 items
@@ -33,7 +33,7 @@ Every deterministic item is selected against its level's taught set (the `cumula
 - `n4_sentence_order.json` — 300 items
 - `n4_text_grammar.json` — 75 items
 - `n4_usage.json` — 14 items
-- `n5_context_fill.json` — 93 items
+- `n5_context_fill.json` — 91 items
 - `n5_grammar_form.json` — 71 items
 - `n5_kanji_reading.json` — 176 items
 - `n5_listening_point.json` — 18 items
@@ -43,6 +43,6 @@ Every deterministic item is selected against its level's taught set (the `cumula
 - `n5_orthography.json` — 177 items
 - `n5_paraphrase.json` — 9 items
 - `n5_reading_comp.json` — 43 items
-- `n5_sentence_order.json` — 58 items
+- `n5_sentence_order.json` — 55 items
 - `n5_text_grammar.json` — 34 items
 - `n5_usage.json` — 8 items

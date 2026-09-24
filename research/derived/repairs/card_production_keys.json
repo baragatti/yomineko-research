@@ -7,7 +7,7 @@
   "authored_in": 2946,
   "residue_in": 13,
   "dropped_repointed": 8,
-  "rows": 2951,
+  "rows": 2952,
   "rows_with_a_form_removed": 831,
   "forms_removed": 1396
  },
@@ -143,7 +143,7 @@
   }
  ],
  "prompt_collisions": [],
- "row_count": 2951,
+ "row_count": 2952,
  "rows": [
   {
    "lesson": "les:n3-causa-01",
@@ -13526,7 +13526,7 @@
    "accept_removed": []
   },
   {
-   "lesson": "les:n3-deveres-06",
+   "lesson": "les:n5-comparacoes-01",
    "item": "vocab:1516930",
    "origin": "w27-campaign",
    "prompt": {
@@ -15877,7 +15877,7 @@
    ]
   },
   {
-   "lesson": "les:n3-estado-01",
+   "lesson": "les:n5-verbos-03",
    "item": "vocab:1207590",
    "origin": "w27-campaign",
    "prompt": {
@@ -23774,7 +23774,7 @@
    ]
   },
   {
-   "lesson": "les:n3-limites-06",
+   "lesson": "les:n5-verbos-03",
    "item": "vocab:1375610",
    "origin": "w27-campaign",
    "prompt": {
@@ -34452,7 +34452,7 @@
    ]
   },
   {
-   "lesson": "les:n4-oracoes-relativas-07",
+   "lesson": "les:n5-verbos-02",
    "item": "vocab:1157170",
    "origin": "w27-campaign",
    "prompt": {
@@ -44457,7 +44457,7 @@
    "accept_removed": []
   },
   {
-   "lesson": "les:n4-oracoes-relativas-07",
+   "lesson": "les:n4-transitividade-05",
    "item": "vocab:1546200",
    "origin": "w27-campaign",
    "prompt": {
@@ -48518,7 +48518,7 @@
    "accept_removed": []
   },
   {
-   "lesson": "les:n5-verbos-03",
+   "lesson": "les:n5-comparacoes-05",
    "item": "vocab:1611000",
    "origin": "w27-campaign",
    "prompt": {
@@ -48628,7 +48628,7 @@
    "accept_removed": []
   },
   {
-   "lesson": "les:n5-comparacoes-01",
+   "lesson": "les:n5-conectando-01",
    "item": "vocab:1515620",
    "origin": "w27-campaign",
    "prompt": {
@@ -55552,7 +55552,7 @@
    "accept_removed": []
   },
   {
-   "lesson": "les:n5-perguntas-05",
+   "lesson": "les:n5-passado-04",
    "item": "vocab:1451160",
    "origin": "w27-campaign",
    "prompt": {
@@ -59842,24 +59842,6 @@
   },
   {
    "lesson": "les:n5-verbos-02",
-   "item": "vocab:1298670",
-   "origin": "w27-campaign",
-   "prompt": {
-    "pt-BR": "imprimir (verbo próprio, não substantivo + する)"
-   },
-   "accept": [
-    "する",
-    "刷る",
-    "摺る"
-   ],
-   "sense_index": 0,
-   "why": "",
-   "verified": "sampled",
-   "verified_by": "research/reports/w27_sample_report.md",
-   "accept_removed": []
-  },
-  {
-   "lesson": "les:n5-verbos-02",
    "item": "vocab:1343950",
    "origin": "w27-campaign",
    "prompt": {
@@ -61732,6 +61714,55 @@
    "verified": "sampled",
    "verified_by": "research/reports/w27_sample_report.md",
    "accept_removed": []
+  },
+  {
+   "lesson": "les:n4-oracoes-relativas-07",
+   "item": "vocab:1605840",
+   "origin": "q2-derived",
+   "prompt": {
+    "pt-BR": "como, igual a (a raiz よう de ～ように e ～ような)"
+   },
+   "accept": [
+    "様",
+    "よう"
+   ],
+   "sense_index": 2,
+   "why": "sense 2 of 3 ('tipo, como (este/esse)'): the lesson teaches のように/のような 'como / igual a' and says 'A raiz よう nunca muda'. Cue names the pattern so the card is not 様子 or 方法.",
+   "verified": "derived",
+   "verified_by": "research/reports/q2_token_links_report.md",
+   "accept_removed": []
+  },
+  {
+   "lesson": "les:n5-particulas-lugar-07",
+   "item": "vocab:1269130",
+   "origin": "q2-derived",
+   "prompt": {
+    "pt-BR": "dar (a mim ou ao meu grupo)"
+   },
+   "accept": [
+    "呉れる",
+    "くれる"
+   ],
+   "sense_index": 0,
+   "why": "sense 0 of 2 ('dar (a mim/nós)'): the lesson is 'Dar e receber: あげる, くれる e もらう' and teaches くれる as giving toward the speaker. Distinct from 上げる (dar a outra pessoa).",
+   "verified": "derived",
+   "verified_by": "research/reports/q2_token_links_report.md",
+   "accept_removed": []
+  }
+ ],
+ "retired_by_q2": [
+  {
+   "lesson": "les:n5-verbos-02",
+   "item": "vocab:1298670",
+   "prompt": {
+    "pt-BR": "imprimir (verbo próprio, não substantivo + する)"
+   },
+   "accept": [
+    "する",
+    "刷る",
+    "摺る"
+   ],
+   "why": "the unlock is retired by sibling_unlock_repoint.json (the lesson teaches the same-reading sibling)"
   }
  ]
 }

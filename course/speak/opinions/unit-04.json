@@ -7,9 +7,9 @@
     "pt-BR": "Dizer o que você acha, parte 4"
   },
   "say_now": [
+    "sent:tatoeba-151044",
     "sent:tatoeba-80053",
     "sent:tatoeba-86311",
-    "sent:tatoeba-153687",
     "sent:tatoeba-78366",
     "sent:tatoeba-85041",
     "sent:tatoeba-79537"
@@ -17,38 +17,46 @@
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1312420",
     "vocab:1254690",
     "vocab:1214330",
-    "vocab:1229350",
     "vocab:1550140",
     "vocab:1327120",
-    "vocab:1304200",
+    "vocab:1497980",
     "vocab:1494790",
     "vocab:1534880"
   ],
   "patterns": [
+    "gram:hazu-ga-nai",
     "gram:n3-hazu-da",
     "gram:made-ni",
     "gram:gp-8"
   ],
   "kanji_recognition": [
+    "合",
+    "試",
+    "負",
     "果",
     "結",
-    "分",
-    "木",
-    "曜",
-    "簡"
+    "分"
   ],
   "shadowing": [
+    "sent:tatoeba-151044",
     "sent:tatoeba-80053",
     "sent:tatoeba-86311",
-    "sent:tatoeba-153687",
     "sent:tatoeba-78366",
     "sent:tatoeba-85041",
     "sent:tatoeba-79537"
   ],
   "srs": {
     "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-151044",
+        "card_types": [
+          "production"
+        ]
+      },
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-80053",
@@ -59,13 +67,6 @@
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-86311",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-153687",
         "card_types": [
           "production"
         ]
@@ -100,43 +101,48 @@
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n3:208:1302",
+      "id": "so:n3:196",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:196:889",
       "type": "context_fill",
-      "via": "review",
+      "via": "phrase",
       "distractors": [
-        "会社",
-        "医者",
-        "遅い"
+        "到着",
+        "値段",
+        "立つ"
       ]
     },
     {
-      "id": "cf:n3:20:283",
+      "id": "cf:n3:195:889",
       "type": "context_fill",
-      "via": "review",
+      "via": "new-word",
       "distractors": [
-        "上",
-        "僕",
-        "金"
+        "問題",
+        "煙草",
+        "明日"
       ]
     },
     {
-      "id": "kr:n3:195",
+      "id": "kr:n4:889",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あまり",
+        "きゅう",
+        "あがる"
+      ]
+    },
+    {
+      "id": "kr:n3:1688",
       "type": "kanji_reading",
       "via": "review",
       "distractors": [
-        "たがい",
-        "してん",
-        "てんき"
-      ]
-    },
-    {
-      "id": "kr:n3:23",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "うたう",
-        "みせる",
-        "たまに"
+        "ちゃん",
+        "よやく",
+        "おそい"
       ]
     }
   ],
@@ -145,6 +151,15 @@
     "gram:gp-5"
   ],
   "drills": [
+    {
+      "pattern": "gram:hazu-ga-nai",
+      "examples": [
+        "sent:tatoeba-11692639",
+        "sent:tatoeba-81586",
+        "sent:tatoeba-141784"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:n3-hazu-da",
       "examples": [
@@ -176,50 +191,52 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Não é possível que eles tenham perdido a partida."
+        "pt-BR": "Não tem como estar certo!"
       },
-      "answer_key": "試合に負けたはずがない。",
+      "answer_key": "正しいはずがないよ。",
       "accepted_variants": [
-        "しあいにまけたはずがない",
-        "しあいにまけたはずがない。",
-        "試合に負けたはずがない",
-        "試合に負けたはずがない。"
+        "ただしいはずがないよ",
+        "ただしいはずがないよ。",
+        "正しいはずがないよ",
+        "正しいはずがないよ。"
       ],
-      "sentence": "sent:tatoeba-151044",
+      "sentence": "sent:tatoeba-11692639",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Sobre isto, eu devo estar certo."
+        "pt-BR": "Os membros do comitê são todos contra isso."
       },
-      "answer_key": "これについては、私は正しいはずです。",
+      "answer_key": "委員達は皆それに反対している。",
       "accepted_variants": [
-        "これについては、わたしはただしいはずです",
-        "これについては、わたしはただしいはずです。",
-        "これについては、私は正しいはずです",
-        "これについては、私は正しいはずです。",
-        "これについてわ、わたしわただしいはずです",
-        "これについてわ、わたしわただしいはずです。"
+        "いいんたちはみなそれにはんたいしている",
+        "いいんたちはみなそれにはんたいしている。",
+        "いいんたちわみなそれにはんたいしている",
+        "いいんたちわみなそれにはんたいしている。",
+        "委員達は皆それに反対している",
+        "委員達は皆それに反対している。"
       ],
-      "sentence": "sent:tatoeba-5348453",
+      "sentence": "sent:tatoeba-191077",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Que ele tem razão é a minha opinião."
+        "pt-BR": "O trem deve sair daqui a cinco minutos."
       },
-      "answer_key": "彼が正しいというのは私の意見です。",
+      "answer_key": "列車はあと５分で出発するはずです。",
       "accepted_variants": [
-        "かれがただしいというのはわたしのいけんです",
-        "かれがただしいというのはわたしのいけんです。",
-        "かれがただしいというのわわたしのいけんです",
-        "かれがただしいというのわわたしのいけんです。",
-        "彼が正しいというのは私の意見です",
-        "彼が正しいというのは私の意見です。"
+        "れっしゃはあとごふんでしゅっぱつするはずです",
+        "れっしゃはあとごふんでしゅっぱつするはずです。",
+        "れっしゃわあとごふんでしゅっぱつするはずです",
+        "れっしゃわあとごふんでしゅっぱつするはずです。",
+        "列車はあと5分で出発するはずです",
+        "列車はあと5分で出発するはずです。",
+        "列車はあと５分で出発するはずです",
+        "列車はあと５分で出発するはずです。"
       ],
-      "sentence": "sent:tatoeba-119734",
+      "sentence": "sent:tatoeba-77522",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -229,12 +246,12 @@
       "pt-BR": "Perguntaram sua opinião. Diga o que você acha e por quê."
     },
     "items": [
-      "sent:tatoeba-118153",
-      "sent:tatoeba-11692639",
+      "sent:tatoeba-77555",
+      "sent:tatoeba-162311",
       "sent:tatoeba-78959",
       "sent:tatoeba-8724557",
       "sent:tatoeba-3583428",
-      "sent:tatoeba-9966137"
+      "sent:tatoeba-9614704"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -242,15 +259,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 53,
-    "fluency": 13
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 24,
+    "language-focused": 27,
     "fluency": 6
   }
 }

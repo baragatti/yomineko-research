@@ -7,7 +7,7 @@
 - Encaixar なあ depois de だ／だった e de adjetivos
 - Diferenciar なあ (introspectivo) de ね (busca concordância)
 
-**Introduz:** gramática [naa] · vocabulário [でも, どうぞ, 丁度, 冷たい, 動物, 度, 飛ぶ, 鳥, 鶏肉] · kanji [—] · kana [—]
+**Introduz:** gramática [naa] · vocabulário [動, でも, どうぞ, 丁度, 冷たい, 動物, 度, 飛ぶ, 鳥, 鶏肉] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-3488338`, `sent:tatoeba-229334`, `sent:tatoeba-226045`, `sent:tatoeba-203366`
 
@@ -152,5 +152,10 @@ Dá para juntar tudo: 高かったなあ = "nossa, como foi caro...". O なあ t
 ### 15. (recognition) Qual destas palavras significa "frango, carne de frango"?
 - **Resposta:** `{"choices": ["トイレ", "とりにく", "こえ", "こちら"], "correct": "とりにく"}`
 - とりにく significa frango, carne de frango. As outras opções são トイレ (banheiro, privada), こちら (aqui, para cá) e こえ (voz).
+
+
+### 16. (recognition) Qual destas palavras significa "movimento"?
+- **Resposta:** `{"choices": ["こんばん", "どう", "かいだん", "さいふ"], "correct": "どう"}`
+- どう significa movimento. As outras opções são こんばん (esta noite, hoje à noite), かいだん (escada, degraus) e さいふ (carteira, porta-cédulas).
 
 

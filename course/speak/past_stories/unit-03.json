@@ -8,11 +8,11 @@
   },
   "say_now": [
     "sent:tatoeba-156822",
-    "sent:tatoeba-127068",
     "sent:tatoeba-171398",
     "sent:tatoeba-228002",
     "sent:tatoeba-235631",
-    "sent:tatoeba-84745"
+    "sent:tatoeba-84745",
+    "sent:tatoeba-144504"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -21,12 +21,11 @@
     "vocab:1158880",
     "vocab:1582120",
     "vocab:1589060",
+    "vocab:1206530",
     "vocab:1175570",
     "vocab:1579130",
     "vocab:1251270",
-    "vocab:1549470",
-    "vocab:1001140",
-    "vocab:1420530"
+    "vocab:1001140"
   ],
   "patterns": [
     "gram:ta-koto-ga-aru",
@@ -45,24 +44,17 @@
   ],
   "shadowing": [
     "sent:tatoeba-156822",
-    "sent:tatoeba-127068",
     "sent:tatoeba-171398",
     "sent:tatoeba-228002",
     "sent:tatoeba-235631",
-    "sent:tatoeba-84745"
+    "sent:tatoeba-84745",
+    "sent:tatoeba-144504"
   ],
   "srs": {
     "introduces_cards": [
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-156822",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-127068",
         "card_types": [
           "production"
         ]
@@ -94,12 +86,19 @@
         "card_types": [
           "production"
         ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-144504",
+        "card_types": [
+          "production"
+        ]
       }
     ]
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 478,
+  "cumulative_known_vocab": 471,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -135,7 +134,7 @@
       "distractors": [
         "よろしく",
         "タクシー",
-        "こくさい"
+        "サービス"
       ]
     },
     {
@@ -158,7 +157,7 @@
       "examples": [
         "sent:tatoeba-8842279",
         "sent:gen-52a2e8482686",
-        "sent:tatoeba-9387697"
+        "sent:gen-c39fca7e5ee6"
       ],
       "strand": "language-focused"
     },
@@ -176,7 +175,7 @@
       "examples": [
         "sent:tatoeba-84959",
         "sent:tatoeba-78451",
-        "sent:tatoeba-11960481"
+        "sent:tatoeba-4835"
       ],
       "strand": "language-focused"
     },
@@ -185,16 +184,16 @@
       "examples": [
         "sent:tatoeba-5332",
         "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
+        "sent:tatoeba-75140"
       ],
       "strand": "language-focused"
     },
     {
       "pattern": "gram:gp-14",
       "examples": [
+        "sent:tatoeba-74036",
         "sent:tatoeba-74498",
-        "sent:tatoeba-76735",
-        "sent:tatoeba-76749"
+        "sent:tatoeba-76735"
       ],
       "strand": "language-focused"
     }
@@ -258,9 +257,9 @@
       "sent:tatoeba-170021",
       "sent:tatoeba-106778",
       "sent:tatoeba-122452",
+      "sent:tatoeba-5001",
       "sent:tatoeba-186727",
-      "sent:tatoeba-8743355",
-      "sent:tatoeba-179256"
+      "sent:tatoeba-8743355"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -268,15 +267,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 60,
+    "language-focused": 59,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 30,
     "fluency": 6
   }
 }

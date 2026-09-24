@@ -7,56 +7,52 @@
     "pt-BR": "Conversa de verdade, parte 2"
   },
   "say_now": [
-    "sent:tatoeba-230514",
     "sent:tatoeba-213958",
     "sent:tatoeba-80952",
     "sent:tatoeba-1331104",
+    "sent:tatoeba-5287",
     "sent:tatoeba-9846192",
     "sent:jec-4908"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1013190",
     "vocab:1000730",
     "vocab:1529410",
     "vocab:1365250",
+    "vocab:1373860",
     "vocab:1236070",
     "vocab:1487400",
-    "vocab:1373850"
+    "vocab:1604300",
+    "vocab:1373850",
+    "vocab:1424550"
   ],
   "patterns": [
     "gram:n3-wake-dewa-nai",
     "gram:n3-mitai-da",
     "gram:gp-73",
     "gram:gp-76",
+    "gram:mitai-ni",
     "gram:janai-dewa-nai"
   ],
   "kanji_recognition": [
-    "人",
-    "二",
-    "戻",
     "一",
     "君",
-    "行"
+    "行",
+    "私",
+    "緒",
+    "夢"
   ],
   "shadowing": [
-    "sent:tatoeba-230514",
     "sent:tatoeba-213958",
     "sent:tatoeba-80952",
     "sent:tatoeba-1331104",
+    "sent:tatoeba-5287",
     "sent:tatoeba-9846192",
     "sent:jec-4908"
   ],
   "srs": {
     "introduces_cards": [
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-230514",
-        "card_types": [
-          "production"
-        ]
-      },
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-213958",
@@ -80,6 +76,13 @@
       },
       {
         "deck": "deck:phrases",
+        "item": "sent:tatoeba-5287",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
         "item": "sent:tatoeba-9846192",
         "card_types": [
           "production"
@@ -96,7 +99,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 607,
+  "cumulative_known_vocab": 605,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -111,13 +114,13 @@
       ]
     },
     {
-      "id": "cf:n4:3528:898",
+      "id": "cf:n3:385:859",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "支店",
-        "通す",
-        "時間"
+        "書く",
+        "もう",
+        "新聞"
       ]
     },
     {
@@ -135,15 +138,13 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "たいてい",
         "どういつ",
-        "かんする"
+        "かんする",
+        "けいかん"
       ]
     }
   ],
-  "patterns_chunked": [
-    "gram:mitai-ni"
-  ],
+  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:n3-wake-dewa-nai",
@@ -168,7 +169,7 @@
       "examples": [
         "sent:tatoeba-2171509",
         "sent:tatoeba-127272",
-        "sent:tatoeba-11980988"
+        "sent:tatoeba-4779"
       ],
       "strand": "language-focused"
     },
@@ -176,8 +177,17 @@
       "pattern": "gram:gp-76",
       "examples": [
         "sent:tatoeba-11041688",
-        "sent:tatoeba-12698746",
-        "sent:tatoeba-220740"
+        "sent:tatoeba-3458976",
+        "sent:tatoeba-11169170"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:mitai-ni",
+      "examples": [
+        "sent:tatoeba-11044901",
+        "sent:tatoeba-11264620",
+        "sent:tatoeba-11009578"
       ],
       "strand": "language-focused"
     },
@@ -248,9 +258,9 @@
       "sent:tatoeba-3385029",
       "sent:tatoeba-79537",
       "sent:tatoeba-78366",
-      "sent:tatoeba-153687",
       "sent:tatoeba-86311",
-      "sent:tatoeba-80053"
+      "sent:tatoeba-80053",
+      "sent:tatoeba-151044"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -258,15 +268,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
+    "meaning-input": 23,
     "meaning-output": 6,
-    "language-focused": 56,
+    "language-focused": 60,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 31,
     "fluency": 6
   }
 }

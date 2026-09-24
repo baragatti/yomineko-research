@@ -8,9 +8,9 @@
   },
   "say_now": [
     "sent:gen-1c83f478ab11",
+    "sent:tatoeba-1039551",
     "sent:tatoeba-752231",
     "sent:tatoeba-10008425",
-    "sent:tatoeba-1039551",
     "sent:tatoeba-190738",
     "sent:tatoeba-200568"
   ],
@@ -18,32 +18,33 @@
   "untranslated": [],
   "words": [
     "vocab:1159980",
+    "vocab:1344410",
     "vocab:1222590",
     "vocab:1538160",
     "vocab:1002610",
     "vocab:1467710"
   ],
   "patterns": [
-    "gram:o-kudasai-2",
     "gram:ga-arimasu",
     "gram:o-kudasai",
     "gram:te-kudasai",
     "gram:totemo",
-    "gram:n3-temo"
+    "gram:n3-temo",
+    "gram:da-desu"
   ],
   "kanji_recognition": [
     "薬",
+    "助",
     "悪",
     "気",
     "分",
-    "痛",
-    "腹"
+    "痛"
   ],
   "shadowing": [
     "sent:gen-1c83f478ab11",
+    "sent:tatoeba-1039551",
     "sent:tatoeba-752231",
     "sent:tatoeba-10008425",
-    "sent:tatoeba-1039551",
     "sent:tatoeba-190738",
     "sent:tatoeba-200568"
   ],
@@ -58,6 +59,13 @@
       },
       {
         "deck": "deck:phrases",
+        "item": "sent:tatoeba-1039551",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
         "item": "sent:tatoeba-752231",
         "card_types": [
           "production"
@@ -66,13 +74,6 @@
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-10008425",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-1039551",
         "card_types": [
           "production"
         ]
@@ -95,7 +96,7 @@
   },
   "audio": "pending",
   "real_phrases": 5,
-  "cumulative_known_vocab": 402,
+  "cumulative_known_vocab": 397,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -104,9 +105,9 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "月",
+        "差",
         "町",
-        "木"
+        "母"
       ]
     },
     {
@@ -126,7 +127,7 @@
       "distractors": [
         "ゆびわ",
         "ふるい",
-        "こまる"
+        "おきる"
       ]
     },
     {
@@ -135,22 +136,13 @@
       "via": "new-word",
       "distractors": [
         "してん",
-        "かりる",
-        "てんき"
+        "てんき",
+        "おもう"
       ]
     }
   ],
   "patterns_chunked": [],
   "drills": [
-    {
-      "pattern": "gram:o-kudasai-2",
-      "examples": [
-        "sent:gen-0e95f64b542d",
-        "sent:gen-96ce440b58e0",
-        "sent:gen-0114d50c684c"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:ga-arimasu",
       "examples": [
@@ -172,9 +164,9 @@
     {
       "pattern": "gram:te-kudasai",
       "examples": [
+        "sent:tatoeba-146189",
         "sent:tatoeba-124708",
-        "sent:tatoeba-5109",
-        "sent:tatoeba-146189"
+        "sent:tatoeba-5109"
       ],
       "strand": "language-focused"
     },
@@ -193,6 +185,15 @@
         "sent:tatoeba-173357",
         "sent:tatoeba-6015",
         "sent:tatoeba-85028"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-75140"
       ],
       "strand": "language-focused"
     }
@@ -217,33 +218,33 @@
     },
     {
       "prompt": {
-        "pt-BR": "Eu faço isso, com a condição de que você me ajude."
+        "pt-BR": "Amanhã também pretendo ir à universidade."
       },
-      "answer_key": "君が助けてくれるという条件で、それをやります。",
+      "answer_key": "明日も大学へ行くつもりだよ。",
       "accepted_variants": [
-        "きみがたすけてくれるというじょうけんで、それをやります",
-        "きみがたすけてくれるというじょうけんで、それをやります。",
-        "君が助けてくれるという条件で、それをやります",
-        "君が助けてくれるという条件で、それをやります。"
+        "あすもだいがくえいくつもりだよ",
+        "あすもだいがくえいくつもりだよ。",
+        "あすもだいがくへいくつもりだよ",
+        "あすもだいがくへいくつもりだよ。",
+        "明日も大学へ行くつもりだよ",
+        "明日も大学へ行くつもりだよ。"
       ],
-      "sentence": "sent:tatoeba-178954",
-      "kind": "on-topic",
+      "sentence": "sent:tatoeba-80364",
+      "kind": "review",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "À tarde não quero sair de casa."
+        "pt-BR": "Encontrei um velho amigo esses dias."
       },
-      "answer_key": "午後は外へ出たくない。",
+      "answer_key": "最近古い友人に会った。",
       "accepted_variants": [
-        "ごごはそとへでたくない",
-        "ごごはそとへでたくない。",
-        "ごごわそとえでたくない",
-        "ごごわそとえでたくない。",
-        "午後は外へ出たくない",
-        "午後は外へ出たくない。"
+        "さいきんふるいゆうじんにあった",
+        "さいきんふるいゆうじんにあった。",
+        "最近古い友人に会った",
+        "最近古い友人に会った。"
       ],
-      "sentence": "sent:tatoeba-174391",
+      "sentence": "sent:tatoeba-2298758",
       "kind": "review",
       "strand": "meaning-output"
     }
@@ -253,12 +254,12 @@
       "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
-      "sent:tatoeba-143418",
-      "sent:tatoeba-80364",
-      "sent:tatoeba-2298758",
+      "sent:tatoeba-12508743",
       "sent:tatoeba-171514",
+      "sent:tatoeba-11013726",
       "sent:tatoeba-80068",
-      "sent:tatoeba-150277"
+      "sent:tatoeba-150277",
+      "sent:tatoeba-78591"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -266,15 +267,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 56,
+    "language-focused": 57,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 28,
     "fluency": 6
   }
 }

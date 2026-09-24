@@ -8,7 +8,7 @@
 - Montar as quatro variações de ordem mais comuns (は…より…です, より…ほうが, のほうが…より, より…のほうが)
 - Usar adjetivos-い (高い, 小さい, 近い, 遠い, 長い, 強い, 冷たい) para descrever a comparação
 
-**Introduz:** gramática [gp-140, wa-yori-desu, yori-hou-ga] · vocabulário [バス, 報, 多分, 大変, 強い, 早い, 楽しい, 次, 温い, 茶色, 詰らない, 近い, 長い, 隣] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-140, wa-yori-desu, yori-hou-ga] · vocabulário [方, バス, 多分, 大変, 強い, 早い, 楽しい, 次, 温い, 茶色, 詰らない, 近い, 長い, 隣] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-dc17b084b7de`, `sent:gen-ead8371d038a`, `sent:gen-326ea97de1a1`
 

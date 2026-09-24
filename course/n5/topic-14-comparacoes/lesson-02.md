@@ -138,7 +138,7 @@ Dois kanji de traçado simples e muito usados aparecem aqui.
 
 
 ### 13. (recognition) Qual destas palavras significa "proximidades, redondezas"?
-- **Resposta:** `{"choices": ["ちかく", "りょうり", "ほう", "くろ"], "correct": "ちかく"}`
-- ちかく significa proximidades, redondezas. As outras opções são くろ (preto, cor preta), ほう (relatório, notícia) e りょうり (culinária, prato).
+- **Resposta:** `{"choices": ["ちかく", "せっけん", "あに", "くろ"], "correct": "ちかく"}`
+- ちかく significa proximidades, redondezas. As outras opções são あに (irmão mais velho), くろ (preto, cor preta) e せっけん (sabonete, sabão).
 
 

@@ -7,7 +7,7 @@
 - Perguntar o lugar de algo com どこ
 - Localizar coisas e pessoas com a partícula に + o pronome de lugar
 
-**Introduz:** gramática [gp-10, gp-11, gp-39, gp-9] · vocabulário [居る, 人, 側, 九, 交差点, 交番, 公園, 其処, 北, 千, 国, 川, 方, 此処, 玄関, 見る, 角, 遠い, 銀行] · kanji [千 見] · kana [—]
+**Introduz:** gramática [gp-10, gp-11, gp-39, gp-9] · vocabulário [方, 居る, 人, 側, 九, 交差点, 交番, 公園, 其処, 北, 千, 国, 川, 此処, 玄関, 見る, 角, 遠い, 銀行] · kanji [千 見] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-5055`, `sent:tatoeba-141432`, `sent:tatoeba-5933519`, `sent:tatoeba-5319`
 

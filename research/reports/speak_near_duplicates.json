@@ -1,7 +1,7 @@
 {
   "note": "W34 / readiness G4 work list: say_now phrases inside one stage that are the same utterance to a listener. Rule and threshold in scripts/validate/validate_speak_duplicates.py.",
   "threshold": 0.72,
-  "total": 18,
+  "total": 17,
   "stages": {
     "arrival": [
       {
@@ -226,25 +226,6 @@
         }
       }
     ],
-    "getting_around": [
-      {
-        "mean": 0.762,
-        "jp_ratio": 0.615,
-        "pt_ratio": 0.909,
-        "a": {
-          "unit": "speak:getting_around-05",
-          "sentence": "sent:tatoeba-4786026",
-          "jp": "電車のなかに傘を忘れてきた。",
-          "pt": "Esqueci o guarda-chuva no trem."
-        },
-        "b": {
-          "unit": "speak:getting_around-05",
-          "sentence": "sent:tatoeba-10899657",
-          "jp": "きのう電車に傘を忘れました。",
-          "pt": "Ontem esqueci o guarda-chuva no trem."
-        }
-      }
-    ],
     "lodging": [
       {
         "mean": 0.817,
@@ -264,39 +245,41 @@
         }
       }
     ],
+    "politeness": [
+      {
+        "mean": 0.785,
+        "jp_ratio": 0.889,
+        "pt_ratio": 0.681,
+        "a": {
+          "unit": "speak:politeness-03",
+          "sentence": "sent:tatoeba-141924",
+          "jp": "舌を見せてください。",
+          "pt": "Mostre a língua, por favor."
+        },
+        "b": {
+          "unit": "speak:politeness-03",
+          "sentence": "sent:tatoeba-9851514",
+          "jp": "傷を見せてください。",
+          "pt": "Me mostra o machucado, por favor."
+        }
+      }
+    ],
     "shopping": [
       {
         "mean": 0.955,
         "jp_ratio": 0.909,
         "pt_ratio": 1.0,
         "a": {
-          "unit": "speak:shopping-05",
+          "unit": "speak:shopping-06",
           "sentence": "sent:tatoeba-8687007",
           "jp": "それでいい？",
           "pt": "Assim está bom?"
         },
         "b": {
-          "unit": "speak:shopping-05",
+          "unit": "speak:shopping-06",
           "sentence": "sent:tatoeba-3488181",
           "jp": "それでいいよ。",
           "pt": "Assim está bom."
-        }
-      },
-      {
-        "mean": 0.808,
-        "jp_ratio": 0.615,
-        "pt_ratio": 1.0,
-        "a": {
-          "unit": "speak:shopping-06",
-          "sentence": "sent:tatoeba-160740",
-          "jp": "私はこれだけしか知りません。",
-          "pt": "Eu só sei isto."
-        },
-        "b": {
-          "unit": "speak:shopping-06",
-          "sentence": "sent:tatoeba-196349",
-          "jp": "ぼくはこれだけしか知らない。",
-          "pt": "Eu só sei isto."
         }
       }
     ],

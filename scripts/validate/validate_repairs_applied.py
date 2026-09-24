@@ -510,6 +510,18 @@ def handle_homograph_rulings(rows, sents, gram, table):
             out.append(("ok", "", addr, "exact"))
         elif kind == "hold":
             addr = f"{table} row {i}: {r['new']} ({r.get('kana')}) stays exempt"
+            if r.get("released_by"):
+                # Q2: the hold was released by a later table that unlocks the record. SKIP only when
+                # that table names it, exactly one lesson unlocks it, and the exemption is gone.
+                owner = [x for x in TABLES.get(r["released_by"]) or [] if x.get("unlock") == r["new"]]
+                holders = unlocked_by.get(r["new"], [])
+                if not owner or holders != [owner[0]["lesson"]] or r["new"] in EXEMPT["coverage"]:
+                    out.append(("fail", C_BAD_MARKER, addr,
+                                f"released_by {r['released_by']!r} does not hold: owner rows {len(owner)}, "
+                                f"unlocked by {holders}, still exempt: {r['new'] in EXEMPT['coverage']}"))
+                    continue
+                out.append(("skip", "", addr, f"hold released by {r['released_by']} ({holders[0]})"))
+                continue
             if r["new"] not in EXEMPT["coverage"]:
                 out.append(("fail", C_VALUE_MISMATCH, addr,
                             "the row holds this record back, but course/coverage_exemptions.json "
@@ -1017,6 +1029,13 @@ def handle_level_evidence(rows, sents, gram, table):
             out.append(("fail", C_NO_FIELD, addr,
                         f"level_agreement={got_a!r}, level_confidence={got_c!r} — the exporter is "
                         f"not projecting the evidence pair for this record at all"))
+            continue
+        # Q2 level transfers also move `level_sources`: the list tally is the evidence the pair
+        # restates, so a transfer that moved the pair and not the tally half-landed.
+        if "new_sources" in r and rec.get("level_sources") != r["new_sources"]:
+            out.append(("fail", C_LEVEL_EVIDENCE, addr,
+                        f"level_sources {rec.get('level_sources')!r}, the transfer wrote "
+                        f"{r['new_sources']!r}"))
             continue
         if got_a == r["new_agreement"] and _conf_eq(got_c, r["new_confidence"]):
             out.append(("ok", "", addr, "exact"))
@@ -1690,6 +1709,9 @@ def handle_forward_refs(rows, sents, gram, table):
             continue
         um = {u.get("ref") for u in lm.get("unlocks") or []}
         ut = {u.get("ref") for u in lt.get("unlocks") or []}
+        if r.get("retired_by"):
+            out.append(sibling_repoint_gate(r, I, T, ut, addr))
+            continue
         if I not in ut:
             out.append(("fail", C_NOT_APPLIED if I in um else C_NO_RECORD, addr,
                         "the new home does not unlock the item" + (" - the old home still does"
@@ -1718,6 +1740,94 @@ def handle_forward_refs(rows, sents, gram, table):
             out.append(("fail", C_NOT_APPLIED, addr, bad))
             continue
         out.append(("ok", "", addr, "exact"))
+    return out
+
+
+def sibling_repoint_gate(r, item, to, ut, addr) -> tuple:
+    """Q2. A W21b move marked `retired_by: sibling_unlock_repoint.json` SKIPs only when that table
+    really owns the item now: a row retires it at the move's new home, or moves it away from there,
+    and the export agrees (the new home no longer unlocks it)."""
+    if r.get("retired_by") != "sibling_unlock_repoint.json":
+        return ("fail", C_BAD_MARKER, addr, f"unknown retired_by {r.get('retired_by')!r}")
+    q2 = TABLES.get("sibling_unlock_repoint.json") or []
+    owner = [x for x in q2 if (x.get("retire") == item) or (x.get("moved_from") == to and x.get("unlock") == item)]
+    if not owner:
+        return ("fail", C_BAD_MARKER, addr, "no sibling_unlock_repoint.json row retires or moves this item")
+    if item in ut:
+        return ("fail", C_NOT_APPLIED, addr, f"{to} still unlocks {item}")
+    return ("skip", "", addr, f"retired by sibling_unlock_repoint.json ({owner[0]['lesson']})")
+
+
+def handle_token_link_repairs(rows, sents, gram, table):
+    """Q2. Every repaired token link is what the SHIPPED bank carries on that token.
+
+    Addressed by sentence slug and C-token position; the surface is re-proved (a re-dissection that
+    moved the boundaries invalidates the row, it does not inherit it) and the token must carry the
+    row's `new_vocab` (null for an unlink). The sentence-level `vocab` edge is not asserted: it is a
+    union of rules, and the old record can survive there through R2 by design.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['sentence']} @{r['position']} {r['surface']} -> {r['new_vocab']}"
+        s = sents.get(r["sentence"])
+        if s is None:
+            out.append(("fail", C_NO_RECORD, addr, "the export carries no such sentence"))
+            continue
+        tok = next((t for t in s.get("tokens") or []
+                    if t.get("split_mode") == "C" and t.get("position") == r["position"]), None)
+        if tok is None or tok.get("surface") != r["surface"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"the C token there reads {None if tok is None else tok.get('surface')!r}"))
+            continue
+        got = tok.get("vocab")
+        if got != r["new_vocab"]:
+            out.append(("fail", C_NOT_APPLIED if got == r["old_vocab"] else C_VALUE_MISMATCH, addr,
+                        f"the token carries {got!r}"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
+def handle_sibling_unlock_repoint(rows, sents, gram, table):
+    """Q2 (c). The course follows the relink: in the SHIPPED lesson the sibling is not unlocked and
+    has no card, the record the lesson teaches is unlocked with exactly one card, a later unlock of it
+    (`moved_from`) is gone with its card, and no lesson anywhere still unlocks the retired sibling."""
+    unlocked_anywhere: dict[str, list[str]] = defaultdict(list)
+    for lid, L in LESSONS.items():
+        for u in L.get("unlocks") or []:
+            unlocked_anywhere[u.get("ref")].append(lid)
+    out = []
+    for i, r in enumerate(rows):
+        L, M, old, new = r["lesson"], r.get("moved_from"), r.get("retire"), r.get("unlock")
+        addr = f"{table} row {i}: {L} {old} -> {new}"
+        les = LESSONS.get(L)
+        if les is None or (M and M not in LESSONS) or (r.get("returns_to") and r["returns_to"] not in LESSONS):
+            out.append(("fail", C_NO_RECORD, addr, "a lesson the row names is not in the export"))
+            continue
+        refs = {u.get("ref") for u in les.get("unlocks") or []}
+        cards = [c.get("item") for c in (les.get("srs") or {}).get("introduces_cards") or []]
+        bad = ""
+        if old and (old in refs or old in cards):
+            bad = f"{L} still unlocks or carries a card for {old}"
+        elif old and unlocked_anywhere.get(old, []) != ([r["returns_to"]] if r.get("returns_to") else []):
+            bad = (f"{old} is unlocked by {unlocked_anywhere.get(old)}; the row sends it "
+                   f"{'back to ' + r['returns_to'] if r.get('returns_to') else 'out of the course'}")
+        elif r.get("returns_to") and [c.get("item") for c in (LESSONS[r["returns_to"]].get("srs") or {})
+                                      .get("introduces_cards") or []].count(old) != 1:
+            bad = f"{r['returns_to']} unlocks {old} without exactly one card"
+        elif new and (new not in refs or cards.count(new) != 1):
+            bad = f"{L} does not unlock {new} with exactly one card"
+        elif r.get("keeps") and (unlocked_anywhere.get(r["keeps"]) != [L] or cards.count(r["keeps"]) != 1):
+            bad = f"{L} must keep {r['keeps']} (its prose teaches it) with one card; unlocked by " \
+                  f"{unlocked_anywhere.get(r['keeps'])}"
+        elif new and len(unlocked_anywhere.get(new, [])) != 1:
+            bad = f"{new} is unlocked by {unlocked_anywhere.get(new)} (introduce-once)"
+        elif M:
+            lm = LESSONS[M]
+            if new in {u.get("ref") for u in lm.get("unlocks") or []} or \
+                    new in [c.get("item") for c in (lm.get("srs") or {}).get("introduces_cards") or []]:
+                bad = f"{M} still unlocks or carries a card for {new}"
+        out.append(("fail", C_NOT_APPLIED, addr, bad) if bad else ("ok", "", addr, "exact"))
     return out
 
 
@@ -2202,6 +2312,11 @@ def handle_w32_layerb(rows, sents, gram, table):
 
 
 REGISTRY = {
+    # Q2-token-links: the verified token-link audit (tokens + reading-box uses), the level transfer of
+    # the four records whose list evidence sat on a same-reading sibling, and the course repoint.
+    "token_link_repairs.json": handle_token_link_repairs,
+    "level_transfer_repairs.json": handle_level_evidence,
+    "sibling_unlock_repoint.json": handle_sibling_unlock_repoint,
     # P4-w32-ingest: the 62 W32 survival-core sentences, source row + inline Layer-B (verified).
     "w32_layerb.json": handle_w32_layerb,
     # P5-n3-review: the three N3 review lessons + the top:n3-revisao objective (W22 §3).

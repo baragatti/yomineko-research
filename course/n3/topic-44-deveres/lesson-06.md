@@ -7,7 +7,7 @@
 - Empregar termos de mudança e relato como 変化, 変更 e 報告
 - Identificar objetos cotidianos como ベルト, 弁当 e 宝石
 
-**Introduz:** gramática [—] · vocabulário [方, ベルト, ベンチ, 冒険, 別に, 報告, 変化, 変更, 宝石, 弁当, 方向, 方法, 棒, 法, 減らす, 減る, 番瀝青, 豊富] · kanji [—] · kana [—]
+**Introduz:** gramática [—] · vocabulário [ベルト, ベンチ, 冒険, 別に, 報告, 変化, 変更, 宝石, 弁当, 方向, 方法, 棒, 法, 減らす, 減る, 番瀝青, 豊富] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-2973587`, `sent:tatoeba-82756`, `sent:tatoeba-1690218`
 

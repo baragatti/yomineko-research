@@ -7,52 +7,64 @@
     "pt-BR": "Conversa de verdade, parte 6"
   },
   "say_now": [
+    "sent:tatoeba-89607",
+    "sent:tatoeba-214502",
     "sent:tatoeba-185295",
     "sent:tatoeba-142020",
     "sent:tatoeba-12776411",
-    "sent:tatoeba-8988161",
-    "sent:tatoeba-195794",
-    "sent:tatoeba-175375"
+    "sent:tatoeba-8988161"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1006110",
+    "vocab:1526960",
     "vocab:1198530",
     "vocab:1381390",
     "vocab:1271290",
     "vocab:1376760",
     "vocab:1332650",
-    "vocab:1126590",
-    "vocab:1325910",
-    "vocab:1258200",
     "vocab:1499830"
   ],
   "patterns": [
+    "gram:n3-wake-dewa-nai",
     "gram:n3-to-iu-no-wa",
     "gram:n3-wake-ga-nai",
-    "gram:hazu-ga-nai",
     "gram:n3-mitai-da",
-    "gram:n3-to-iu-no",
     "gram:hazu-da"
   ],
   "kanji_recognition": [
-    "会",
-    "開",
-    "合",
-    "週",
-    "木",
-    "曜"
+    "意",
+    "見",
+    "私",
+    "女",
+    "同",
+    "彼"
   ],
   "shadowing": [
+    "sent:tatoeba-89607",
+    "sent:tatoeba-214502",
     "sent:tatoeba-185295",
     "sent:tatoeba-142020",
     "sent:tatoeba-12776411",
-    "sent:tatoeba-8988161",
-    "sent:tatoeba-195794",
-    "sent:tatoeba-175375"
+    "sent:tatoeba-8988161"
   ],
   "srs": {
     "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-89607",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-214502",
+        "card_types": [
+          "production"
+        ]
+      },
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-185295",
@@ -80,47 +92,43 @@
         "card_types": [
           "production"
         ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-195794",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-175375",
-        "card_types": [
-          "production"
-        ]
       }
     ]
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 641,
+  "cumulative_known_vocab": 640,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
+    {
+      "id": "cf:n3:97:690",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "生",
+        "歳",
+        "川"
+      ]
+    },
     {
       "id": "cf:n3:740:4",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "有効",
         "建物",
-        "何れ"
+        "何れ",
+        "先生"
       ]
     },
     {
-      "id": "cf:n3:741:4",
-      "type": "context_fill",
+      "id": "kr:n3:1006",
+      "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "経験",
-        "水道",
-        "以上"
+        "ねん",
+        "まだ",
+        "ねこ"
       ]
     },
     {
@@ -129,23 +137,34 @@
       "via": "new-word",
       "distractors": [
         "ていあん",
-        "ひつよう",
-        "いただく"
+        "きんがく",
+        "ひつよう"
       ]
     },
     {
-      "id": "kr:n3:1567",
-      "type": "kanji_reading",
-      "via": "new-word",
+      "id": "pp:n5:286",
+      "type": "paraphrase",
+      "via": "review",
       "distractors": [
-        "こんばん",
-        "くださる",
-        "タクシー"
+        "場合",
+        "過ぎ",
+        "仲間"
       ]
     }
   ],
-  "patterns_chunked": [],
+  "patterns_chunked": [
+    "gram:n3-to-iu-no"
+  ],
   "drills": [
+    {
+      "pattern": "gram:n3-wake-dewa-nai",
+      "examples": [
+        "sent:tatoeba-10901570",
+        "sent:tatoeba-156748",
+        "sent:tatoeba-77972"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:n3-to-iu-no-wa",
       "examples": [
@@ -165,29 +184,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:hazu-ga-nai",
-      "examples": [
-        "sent:tatoeba-11692639",
-        "sent:tatoeba-81586",
-        "sent:tatoeba-141784"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:n3-mitai-da",
       "examples": [
         "sent:tatoeba-80952",
         "sent:tatoeba-11281222",
         "sent:tatoeba-184879"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-to-iu-no",
-      "examples": [
-        "sent:tatoeba-220804",
-        "sent:tatoeba-214502",
-        "sent:tatoeba-138773"
       ],
       "strand": "language-focused"
     },
@@ -204,35 +205,18 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Como é o sabor do especial?"
+        "pt-BR": "Segundo ele, o trabalho de bombeiro ou é correria total ou é tempo parado."
       },
-      "answer_key": "スペシャルというのはどんな味ですか。",
+      "answer_key": "彼が言うには、消防の仕事というのは大忙しか全く暇かのいずれかだそうだ。",
       "accepted_variants": [
-        "すぺしゃるというのはどんなあじですか",
-        "すぺしゃるというのはどんなあじですか。",
-        "すぺしゃるというのわどんなあじですか",
-        "すぺしゃるというのわどんなあじですか。",
-        "スペシャルというのはどんな味ですか",
-        "スペシャルというのはどんな味ですか。"
+        "かれがいうには、しょうぼうのしごとというのはおおいそがしかまったくひまかのいずれかだそうだ",
+        "かれがいうには、しょうぼうのしごとというのはおおいそがしかまったくひまかのいずれかだそうだ。",
+        "かれがゆうにわ、しょうぼうのしごとというのわおおいそがしかまったくひまかのいずれかだそうだ",
+        "かれがゆうにわ、しょうぼうのしごとというのわおおいそがしかまったくひまかのいずれかだそうだ。",
+        "彼が言うには、消防の仕事というのは大忙しか全く暇かのいずれかだそうだ",
+        "彼が言うには、消防の仕事というのは大忙しか全く暇かのいずれかだそうだ。"
       ],
-      "sentence": "sent:tatoeba-214502",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "Não é que ela concordasse totalmente comigo."
-      },
-      "answer_key": "彼女は私とすっかり同意見だったわけではない。",
-      "accepted_variants": [
-        "かのじょはわたしとすっかりどういけんだったわけではない",
-        "かのじょはわたしとすっかりどういけんだったわけではない。",
-        "かのじょわわたしとすっかりどういけんだったわけでわない",
-        "かのじょわわたしとすっかりどういけんだったわけでわない。",
-        "彼女は私とすっかり同意見だったわけではない",
-        "彼女は私とすっかり同意見だったわけではない。"
-      ],
-      "sentence": "sent:tatoeba-89607",
+      "sentence": "sent:tatoeba-120412",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
@@ -250,6 +234,21 @@
         "事件は終わったわけではない。"
       ],
       "sentence": "sent:tatoeba-10901570",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "A luz está acesa, então não tem como eles terem saído."
+      },
+      "answer_key": "明かりがついているのだから、彼らが外出したはずがない。",
+      "accepted_variants": [
+        "あかりがついているのだから、かれらががいしゅつしたはずがない",
+        "あかりがついているのだから、かれらががいしゅつしたはずがない。",
+        "明かりがついているのだから、彼らが外出したはずがない",
+        "明かりがついているのだから、彼らが外出したはずがない。"
+      ],
+      "sentence": "sent:tatoeba-80745",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -272,15 +271,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 60,
+    "language-focused": 58,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 29,
     "fluency": 6
   }
 }

@@ -10,9 +10,9 @@
     "sent:tatoeba-143985",
     "sent:tatoeba-172198",
     "sent:tatoeba-169225",
+    "sent:tatoeba-80745",
     "sent:tatoeba-10901570",
-    "sent:tatoeba-89607",
-    "sent:tatoeba-214502"
+    "sent:tatoeba-120412"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -20,18 +20,21 @@
     "vocab:1207250",
     "vocab:1289370",
     "vocab:1304680",
+    "vocab:1203800",
     "vocab:1313830",
-    "vocab:1006110",
-    "vocab:1526960",
-    "vocab:1589590",
-    "vocab:1542070"
+    "vocab:1577280",
+    "vocab:1586210",
+    "vocab:1542070",
+    "vocab:1350340",
+    "vocab:1566210"
   ],
   "patterns": [
     "gram:n3-wake-dewa-nai",
     "gram:n3-to-iu-no-wa",
     "gram:n3-to-iu-yori",
+    "gram:hazu-ga-nai",
     "gram:n3-mitai-da",
-    "gram:janai-dewa-nai"
+    "gram:n3-to-iu-no"
   ],
   "kanji_recognition": [
     "楽",
@@ -45,9 +48,9 @@
     "sent:tatoeba-143985",
     "sent:tatoeba-172198",
     "sent:tatoeba-169225",
+    "sent:tatoeba-80745",
     "sent:tatoeba-10901570",
-    "sent:tatoeba-89607",
-    "sent:tatoeba-214502"
+    "sent:tatoeba-120412"
   ],
   "srs": {
     "introduces_cards": [
@@ -74,6 +77,13 @@
       },
       {
         "deck": "deck:phrases",
+        "item": "sent:tatoeba-80745",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
         "item": "sent:tatoeba-10901570",
         "card_types": [
           "production"
@@ -81,14 +91,7 @@
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-89607",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-214502",
+        "item": "sent:tatoeba-120412",
         "card_types": [
           "production"
         ]
@@ -117,8 +120,8 @@
       "via": "phrase",
       "distractors": [
         "今年",
-        "無し",
-        "更に"
+        "趣味",
+        "意見"
       ]
     },
     {
@@ -132,16 +135,6 @@
       ]
     },
     {
-      "id": "kr:n3:1006",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ねこ",
-        "ぎん",
-        "ぜひ"
-      ]
-    },
-    {
       "id": "kr:n3:1096",
       "type": "kanji_reading",
       "via": "new-word",
@@ -150,11 +143,19 @@
         "もどる",
         "こころ"
       ]
+    },
+    {
+      "id": "kr:n3:1369",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しかし",
+        "おえる",
+        "にほん"
+      ]
     }
   ],
-  "patterns_chunked": [
-    "gram:n3-to-iu-no"
-  ],
+  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:n3-wake-dewa-nai",
@@ -184,6 +185,15 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:hazu-ga-nai",
+      "examples": [
+        "sent:tatoeba-11692639",
+        "sent:tatoeba-81586",
+        "sent:tatoeba-141784"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:n3-mitai-da",
       "examples": [
         "sent:tatoeba-80952",
@@ -193,11 +203,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:janai-dewa-nai",
+      "pattern": "gram:n3-to-iu-no",
       "examples": [
-        "sent:gen-c8e36c94f4e2",
-        "sent:tatoeba-144679",
-        "sent:tatoeba-536769"
+        "sent:tatoeba-220804",
+        "sent:tatoeba-138773",
+        "sent:tatoeba-214502"
       ],
       "strand": "language-focused"
     }
@@ -261,9 +271,9 @@
       "sent:tatoeba-120314",
       "sent:tatoeba-123542",
       "sent:tatoeba-1227292",
+      "sent:tatoeba-11264620",
       "sent:tatoeba-10050266",
-      "sent:tatoeba-80952",
-      "sent:tatoeba-230514"
+      "sent:tatoeba-1331104"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -271,15 +281,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "meaning-input": 22,
+    "meaning-output": 5,
+    "language-focused": 62,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 34,
     "fluency": 6
   }
 }
