@@ -10,13 +10,15 @@
   "rows": [
     {
       "section": "features",
-      "lesson": "les:n3-revisao-01",
+      "lesson": "les:n3-revisao-03",
       "type": "feature",
       "ref": "feat:jlpt-sim-n3",
       "rule": "R1",
-      "course_index": 321,
+      "course_index": 323,
       "evidence": "`les:n3-revisao-01` is the last of the 1 lesson(s) of `top:n3-revisao` today; siblings: feat:jlpt-sim-n5 @ les:n5-revisao-03 (3/3), feat:jlpt-sim-n4 @ les:n4-revisao-03 (3/3)",
-      "target_when_authored": "les:n3-revisao-03"
+      "target_when_authored": "les:n3-revisao-03",
+      "moved_from": "les:n3-revisao-01",
+      "moved_by": "P5-n3-review: les:n3-revisao-02/-03 authored, so the last lesson of top:n3-revisao is -03 (rule R1, as the n5/n4 siblings)"
     },
     {
       "section": "home_lessons",
@@ -878,7 +880,7 @@
         "reason": "`prototype/app/lib/exam.server.ts` declares LEVELS = [n5,n4,n3] and all 14 N3 exam banks exist, so the simulator can already run an N3 paper; only the unlock vocabulary is missing."
       }
     ],
-    "applied_to_today": "les:n3-revisao-01",
+    "applied_to_today": "les:n3-revisao-03",
     "why_not_revisao_03": "`les:n3-revisao-03` does not exist and cannot without authored prose (title, body, objectives, exercises). R1 names the LAST lesson of `top:n3-revisao`, which today is `les:n3-revisao-01`; when -02/-03 are authored the row's lesson becomes `target_when_authored`."
   },
   "home_lessons": {

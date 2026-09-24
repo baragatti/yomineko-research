@@ -53,7 +53,8 @@ LIVE = ROOT / "db" / "corpus.sqlite"
 DB = db_target(LIVE)
 SRC = out_root(ROOT) / "research" / "derived" / "lessons"
 REPAIRS = ROOT / "research" / "derived" / "repairs"
-TABLES = ("w08b_lesson_bodies.json", "w21b_rewrites.json", "furigana_residue.json", "comparacoes_fixes.json")
+TABLES = ("w08b_lesson_bodies.json", "w21b_rewrites.json", "furigana_residue.json", "comparacoes_fixes.json",
+          "n3_review_furigana.json")
 SENT_REF = re.compile(r'<sentence\s+ref="([^"]+)"')
 BODY_WHERE = ("WHERE entity_type='lesson' AND entity_id=? AND field='body' AND locale='pt-BR'")
 

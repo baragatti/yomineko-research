@@ -72,6 +72,10 @@ TEACHING_UNLOCKS = {"kana-family", "vocab", "kanji", "grammar", "conjugation-for
 CHOICE_TYPES = {"recognition", "particle_choice", "reading", "listening"}
 BRACKETS = (("(", ")"), ("（", "）"), ("「", "」"), ("『", "』"), ("[", "]"))
 TERMINAL = tuple(".?!:…。？！」』)）\"'")
+# F0-P5-finish ruling: a sentence_build prompt that ENDS with its bracketed piece list is terminated
+# (house style: "Monte a frase: [a / b / c]"). sentence_build prompts only; every other prose field
+# still needs TERMINAL.
+PIECE_LIST_END = re.compile(r"\[[^\[\]]+\]$")
 
 
 def norm_answer(s: str) -> str:
@@ -191,7 +195,8 @@ def main() -> int:
                     if txt.count(open_c) != txt.count(close_c):
                         fails.append(f"{where}: {fld} has unbalanced {open_c}{close_c} "
                                      f"(likely truncated): {txt[:120]}")
-                if not txt.strip().endswith(TERMINAL):
+                piece_list = typ == "sentence_build" and fld == "prompt" and PIECE_LIST_END.search(txt.strip())
+                if not txt.strip().endswith(TERMINAL) and not piece_list:
                     no_terminal += 1   # ratcheted against NO_TERMINAL_CEILING below
 
             # ---- 4. within/cross-lesson duplicates ----
@@ -361,7 +366,9 @@ def main() -> int:
     # Terminal-punctuation ratchet: 171 prose fields ended without terminal punctuation when this
     # gate was written (mostly stylistic fragments, not truncations — truncation is caught by the
     # bracket-balance rule). The count may only shrink; growth means new unfinished prose shipped.
-    NO_TERMINAL_CEILING = 171
+    # F0-P5-finish: 174 -> 8. 166 were sentence_build prompts ending with their piece list, now
+    # terminated by PIECE_LIST_END (the 3 new N3 review prompts among them).
+    NO_TERMINAL_CEILING = 8
     if no_terminal > NO_TERMINAL_CEILING:
         print(f"FAIL: {no_terminal} prose fields lack terminal punctuation "
               f"(ceiling {NO_TERMINAL_CEILING}) — new unfinished prose shipped")

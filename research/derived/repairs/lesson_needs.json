@@ -3,11 +3,11 @@
  "what_this_is": "Every `needs[]` entry the courseware carries, as {lesson, ref, origin, note}. `origin` derived = copied from scripts/derive_needs.py on the current tree; kana-chain / review-chain = added by the two rules stated in this script's docstring, because those lessons reference nothing a derivation could see. `note` is learner-facing pt-BR produced by a fixed template per reason class, never free prose.",
  "applied_by": "scripts/apply_lesson_needs.py",
  "counts": {
-  "rows": 736,
-  "derived": 693,
+  "rows": 743,
+  "derived": 700,
   "kana_chain": 40,
   "review_chain": 3,
-  "lessons_with_needs": 318,
+  "lessons_with_needs": 320,
   "roots": 4
  },
  "roots": [
@@ -16,7 +16,7 @@
   "les:n5-numeros-tempo-09",
   "les:pre-n5-orientacao-01"
  ],
- "row_count": 736,
+ "row_count": 743,
  "rows": [
   {
    "lesson": "les:pre-n5-orientacao-02",
@@ -7391,6 +7391,16 @@
   },
   {
    "lesson": "les:n3-revisao-01",
+   "ref": "les:n3-conjectura-05",
+   "origin": "derived",
+   "note": "Apresenta o kanji 靴, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:靴"
+   ],
+   "channels": "exercise-sentence"
+  },
+  {
+   "lesson": "les:n3-revisao-01",
    "ref": "les:n3-conjectura-07",
    "origin": "derived",
    "note": "Apresenta a palavra 無駄 (むだ), que aparece nesta lição.",
@@ -7398,6 +7408,66 @@
     "vocab:1530510"
    ],
    "channels": "body-reading"
+  },
+  {
+   "lesson": "les:n3-revisao-02",
+   "ref": "les:n3-desejos-01",
+   "origin": "derived",
+   "note": "Apresenta o ponto de gramática ～ますように, que aparece nesta lição.",
+   "driving_refs": [
+    "gram:n3-masu-you-ni"
+   ],
+   "channels": "exercise-sentence"
+  },
+  {
+   "lesson": "les:n3-revisao-02",
+   "ref": "les:n3-limites-01",
+   "origin": "derived",
+   "note": "Apresenta o ponto de gramática ～くらい, que aparece nesta lição.",
+   "driving_refs": [
+    "gram:n3-kurai"
+   ],
+   "channels": "exercise-sentence"
+  },
+  {
+   "lesson": "les:n3-revisao-03",
+   "ref": "les:n3-concessao-01",
+   "origin": "derived",
+   "note": "Apresenta o ponto de gramática どんなに～ても, que aparece nesta lição.",
+   "driving_refs": [
+    "gram:n3-donna-ni-temo"
+   ],
+   "channels": "exercise-sentence"
+  },
+  {
+   "lesson": "les:n3-revisao-03",
+   "ref": "les:n3-relato-04",
+   "origin": "derived",
+   "note": "Apresenta o kanji 忘, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:忘"
+   ],
+   "channels": "exercise-sentence"
+  },
+  {
+   "lesson": "les:n3-revisao-03",
+   "ref": "les:n3-estrutura-01",
+   "origin": "derived",
+   "note": "Apresenta o ponto de gramática ～の～, que aparece nesta lição.",
+   "driving_refs": [
+    "gram:n3-no"
+   ],
+   "channels": "exercise-sentence"
+  },
+  {
+   "lesson": "les:n3-revisao-03",
+   "ref": "les:n3-estrutura-02",
+   "origin": "derived",
+   "note": "Apresenta o kanji 忙, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:忙"
+   ],
+   "channels": "exercise-sentence"
   }
  ]
 }

@@ -2088,6 +2088,75 @@ def handle_item_refs(rows, sents, gram, table):
     return out
 
 
+def handle_n3_review_lessons(rows, sents, gram, table):
+    """P5-n3-review. Each row IS a shipped lesson of top:n3-revisao: title, description and
+    objectives [pt-BR] are the row's; its first exercises are the row's, in order, with the row's
+    type, prompt, answer, explanation and sentence_refs; its feature_unlocks and per-type unlock
+    counts are the row's; and its body is the row's body once the two later tracked tables that add
+    to it are taken back out (the W20 drills' `<exercise ref>` nodes for exercises the row does not
+    list, and the `add` rows of lesson_sentences.json). The table's topic objective is the shipped
+    topic's (a topic failure fails every row, since the gate counts one result per row)."""
+    topic_bad = ""
+    doc = json.loads((EXPORT_ROOT["root"] / "research" / "derived" / "repairs" / table)
+                     .read_text(encoding="utf-8"))
+    t = doc.get("topic")
+    if t:
+        got = None
+        for p in (EXPORT_ROOT["root"] / "course").glob("*/topic-*/topic.json"):
+            rec = json.loads(p.read_text(encoding="utf-8"))
+            if rec.get("id") == t["id"]:
+                got = [o.get("pt-BR") for o in rec.get("objectives") or []]
+        if got != t["objectives"]:
+            topic_bad = f"{t['id']} objectives are {got}, the table's are {t['objectives']}"
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['slug']}"
+        les = LESSONS.get(r["slug"])
+        if les is None:
+            out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['slug']} in the export"))
+            continue
+        bad = topic_bad
+        for f in ("title", "description"):
+            if (les.get(f) or {}).get("pt-BR") != r[f]:
+                bad = bad or f"{f} [pt-BR] differs from the row"
+        if [o.get("pt-BR") for o in les.get("objectives") or []] != r["objectives"]:
+            bad = bad or "objectives [pt-BR] differ from the row"
+        exs = les.get("exercises") or []
+        for k, want in enumerate(r["exercises"]):
+            got = exs[k] if k < len(exs) else {}
+            if got.get("id") != want["slug"]:
+                bad = bad or f"exercise #{k} is {got.get('id')}, the row's is {want['slug']}"
+                break
+            diff = [f for f in ("prompt", "explanation") if (got.get(f) or {}).get("pt-BR") != want[f]]
+            diff += [f for f in ("type", "answer", "sentence_refs") if got.get(f) != want[f]]
+            if diff:
+                bad = bad or f"{want['slug']}: {diff} differ from the row"
+        if sorted(les.get("feature_unlocks") or []) != sorted(r["feature_unlocks"]):
+            bad = bad or f"feature_unlocks {les.get('feature_unlocks')} are not the row's"
+        per_type = Counter(u["type"] for u in les.get("unlocks") or [])
+        want_type = Counter(u["type"] for u in r["unlocks"]) + Counter(
+            "feature" for f in r["feature_unlocks"] if {"type": "feature", "ref": f} not in r["unlocks"])
+        if per_type != want_type:
+            bad = bad or f"unlocks by type {dict(per_type)} are not the row's {dict(want_type)}"
+        body = les.get("body") or ""
+        for fr in TABLES.get("n3_review_furigana.json") or []:   # readings added after this step
+            if fr.get("lesson") == r["slug"]:
+                for s in fr["spans"]:
+                    body = body.replace(s["to"], s["from"])
+        for s in TABLES.get("lesson_sentences.json") or []:
+            if s.get("lesson") == r["slug"] and s.get("op") == "add":
+                body = body.replace(s["to"], s["from"])
+        listed = {e["slug"] for e in r["exercises"]}
+        for e in exs:
+            if e.get("id") not in listed:
+                body = body.replace(f'\n<exercise ref="{e["id"]}"/>', "").replace(
+                    f'<exercise ref="{e["id"]}"/>', "")
+        if body != r["body"]:
+            bad = bad or "the shipped body is not the row's body plus the later tables' additions"
+        out.append(("fail", C_NOT_APPLIED, addr, bad) if bad else ("ok", "", addr, "exact"))
+    return out
+
+
 def handle_w32_layerb(rows, sents, gram, table):
     """P4-w32-ingest. Each W32 survival-core row IS a banked sentence carrying the row's Layer-B.
 
@@ -2135,6 +2204,9 @@ def handle_w32_layerb(rows, sents, gram, table):
 REGISTRY = {
     # P4-w32-ingest: the 62 W32 survival-core sentences, source row + inline Layer-B (verified).
     "w32_layerb.json": handle_w32_layerb,
+    # P5-n3-review: the three N3 review lessons + the top:n3-revisao objective (W22 §3).
+    "n3_review_lessons.json": handle_n3_review_lessons,
+    "n3_review_furigana.json": handle_lesson_body_spans,
     # C13: verified lesson-body span tables (W08b one-point bodies, W21b rewrites, furigana residue).
     "w08b_lesson_bodies.json": handle_lesson_body_spans,
     "w21b_rewrites.json": handle_lesson_body_spans,
