@@ -1,0 +1,82 @@
+{
+  "sent:gen-1e46ed72d33e#5": {
+    "ok": true
+  },
+  "sent:gen-2112f4e084cd#0": {
+    "ok": true
+  },
+  "sent:gen-273365e59ffa#5": {
+    "ok": true
+  },
+  "sent:gen-38cf83e6738d#1": {
+    "ok": false,
+    "problem": "Double-links the compound. The お token (position 0) already carries お祖母さん[おばあさん] (applied W12 run お+祖母+さん, repairs/orthographic_relinks.json). Moving 祖母 onto the same record puts one word on two adjacent tokens, which the bank never does outside reduplication. It also breaks the token_link_audit convention for 一つ: the numeral piece is unlinked in all 15 rows where the sibling already holds the compound, and relinked only in the 7 rows where the sibling holds nothing. No record reads 祖母 as ばあ on its own, so unlink it. The same fix applies to the 2 お祖父さん tokens whose 祖父 still links 祖父[そふ].",
+    "corrected": {
+      "new_vocab": null,
+      "action": "unlink",
+      "reason": "お祖母さん read おばあさん: the お token already carries お祖母さん[おばあさん] (W12 run). 祖母 read ばあ is a piece of that word, and no record reads it ばあ alone. Unlink it, as token_link_audit does for 一 in 一つ when つ holds the compound; relinking would put the record on two tokens.",
+      "covered_by_existing": false
+    }
+  },
+  "sent:gen-c8b0183139d0#1": {
+    "ok": true
+  },
+  "sent:gen-db7c9ec97d99#4": {
+    "ok": true
+  },
+  "sent:gen-e0a5079e0046#1": {
+    "ok": true
+  },
+  "sent:tatoeba-11056577#2": {
+    "ok": true
+  },
+  "sent:tatoeba-11248814#10": {
+    "ok": true
+  },
+  "sent:tatoeba-11870768#1": {
+    "ok": true
+  },
+  "sent:tatoeba-139686#3": {
+    "ok": true
+  },
+  "sent:tatoeba-142999#1": {
+    "ok": true
+  },
+  "sent:tatoeba-145552#1": {
+    "ok": true
+  },
+  "sent:tatoeba-161297#10": {
+    "ok": true
+  },
+  "sent:tatoeba-183265#2": {
+    "ok": true
+  },
+  "sent:tatoeba-220272#3": {
+    "ok": true
+  },
+  "sent:tatoeba-234717#4": {
+    "ok": true
+  },
+  "sent:tatoeba-235276#2": {
+    "ok": true
+  },
+  "sent:tatoeba-235631#4": {
+    "ok": true
+  },
+  "sent:tatoeba-4562518#6": {
+    "ok": true
+  },
+  "sent:tatoeba-5046#2": {
+    "ok": true
+  },
+  "sent:tatoeba-8672817#4": {
+    "ok": false,
+    "problem": "Double-links the compound. The 日 token (position 5) already carries ２日[ふつか] from the applied W12 run-reading row (repairs/orthographic_relinks.json, span [4,5]). Joining 二 to it puts one record on two adjacent tokens. The reason cites the 一つ precedent, but in token_link_audit the numeral piece is unlinked whenever the sibling already holds the compound (15 of 15 rows) and relinked only when the sibling holds nothing (7 rows). 二 read ふつ is not a reading of 二[に] and has no record of its own, so unlink it. The bank's 3 other 二日 ふつか tokens (二 still on 二[に]) need the same fix.",
+    "corrected": {
+      "new_vocab": null,
+      "action": "unlink",
+      "reason": "二日 read ふつか 'two days': the 日 token already carries ２日[ふつか] (W12 run). 二 read ふつ is a piece of that word, and no record reads it ふつ. Unlink it, as token_link_audit does for 一 in 一つ when つ holds the compound; relinking would put the record on two tokens.",
+      "covered_by_existing": false
+    }
+  }
+}

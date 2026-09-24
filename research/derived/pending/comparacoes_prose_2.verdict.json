@@ -1,0 +1,40 @@
+{
+ "what_this_is": "Adversarial verification of research/derived/pending/comparacoes_prose_2.json: 5 prose edit rows for les:n5-comparacoes-01 (three orders counted as two, false 'every comparison' generalization, のほうが called a particle).",
+ "verified": "2026-09-23",
+ "key_format": "'<lesson>|<old_span>' (as in comparacoes_fixes.verdict.json). 'corrected' present only when ok is false.",
+ "inputs_confirmed": "Every old_span counts exactly 1 in the git HEAD bodies of research/derived/lessons/n5-comparacoes-01.json and course/n5/topic-14-comparacoes/lesson-01.json, and in localized_text(lesson 16512, body, pt-BR) of a sqlite3-backup snapshot of db/corpus.sqlite. All 5 rows applied in table order leave LessonParser (scripts/validate/validate_lessons.py) with 0 errors on both HEAD bodies.",
+ "order_count": "Counted from the lesson's own list: mold 1 は…より…です (電車はバスより速いです) and mold 3 のほうが…より (電車のほうがバスより速い) start with the winning side; mold 2 より…のほうが (バスより電車のほうが速い) starts with the より term. Two orders, matching the section 'A ordem é flexível' (winner first or 'do que' first) and the following sentence 'só diferem por onde a frase começa'.",
+ "summary": {
+  "checked": 5,
+  "ok": 5,
+  "corrected": 0,
+  "rejected": 0
+ },
+ "verdicts": {
+  "les:n5-comparacoes-01|O japonês resolve toda comparação entre duas coisas com duas pecinhas: a partícula ": {
+   "row": 0,
+   "ok": true,
+   "note": "Removes the false universal (mold 1 has no ほうが) without calling ほうが a particle; the rest of the sentence (より = 'do que', ほうが = lado que ganha) and 'três moldes mais comuns' kept. Natural pt-BR."
+  },
+  "les:n5-comparacoes-01|você tem o par </text><jp>のほうが … より</jp><text>, que cobre qualquer comparação entre dois itens.": {
+   "row": 1,
+   "ok": true,
+   "note": "True: のほうが…より is a very common comparison pattern, not the only one. Markup unchanged."
+  },
+  "les:n5-comparacoes-01|<text>Três moldes, três ordens</text>": {
+   "row": 2,
+   "ok": true,
+   "note": "Two orders by the lesson's own definition (see order_count); the paragraph right below now explains the pairing."
+  },
+  "les:n5-comparacoes-01|Três moldes cobrem \"A é mais X que B\", um para cada ordem.": {
+   "row": 3,
+   "ok": true,
+   "note": "Mapping checked against the list order: 1st and 3rd winner-first, 2nd starts with 'do que'. Consistent with the next sentences (は in the first, のほうが in the other two). 'em só duas ordens' is colloquial but natural pt-BR; no fact or example lost."
+  },
+  "les:n5-comparacoes-01|as partículas </text><jp>より</jp><text> e </text><jp>のほうが</jp><text> dizem sozinhas": {
+   "row": 4,
+   "ok": true,
+   "note": "ほう is a noun, so のほうが is の + noun + が, not a particle; 'a expressão' is accurate and the feminine plural 'dizem sozinhas' still agrees. Markup balanced."
+  }
+ }
+}

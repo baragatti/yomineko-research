@@ -1,0 +1,48 @@
+{
+ "what_this_is": "P2-gp153 follow-up for les:n5-comparacoes-01: the three claims comparacoes_fixes.verdict.json listed in found_not_in_scope (three orders counted where the lesson defines two; より + ほうが claimed to resolve every comparison; のほうが called a particle). Minimal span edits, every example and the lesson voice kept.",
+ "authored": "2026-09-23",
+ "source_body": "git HEAD research/derived/lessons/n5-comparacoes-01.json body (the course/ export differs only in vocab ref ids; every old_span counts 1 in both)",
+ "apply_contract": "per lesson, in table order: body.count(old_span) == count, then body = body.replace(old_span, new_span). Both layers: research/derived/lessons/<slug>.json body and localized_text(lesson, body, pt-BR).",
+ "checked": "each old_span count 1 in the HEAD body; all rows applied in order leave LessonParser with 0 errors",
+ "layer": "C",
+ "ai_generated": true,
+ "needs_review": true,
+ "row_count": 5,
+ "edits": [
+  {
+   "lesson": "les:n5-comparacoes-01",
+   "old_span": "O japonês resolve toda comparação entre duas coisas com duas pecinhas: a partícula ",
+   "new_span": "Para comparar duas coisas, o japonês conta com duas pecinhas-chave: a partícula ",
+   "why": "research/derived/pending/comparacoes_fixes.verdict.json found_not_in_scope[1]: 'resolve toda comparação ... com duas pecinhas' is false, the lesson's own first mold は…より…です has no ほうが. Now names the two key pieces without claiming every comparison uses both.",
+   "count": 1
+  },
+  {
+   "lesson": "les:n5-comparacoes-01",
+   "old_span": "você tem o par </text><jp>のほうが … より</jp><text>, que cobre qualquer comparação entre dois itens.",
+   "new_span": "você tem o par </text><jp>のほうが … より</jp><text>, um dos jeitos mais usados de comparar dois itens.",
+   "why": "research/derived/pending/comparacoes_fixes.verdict.json found_not_in_scope[1]: same false generalization ('cobre qualquer comparação'); the pair is one of three molds taught here, not the only one.",
+   "count": 1
+  },
+  {
+   "lesson": "les:n5-comparacoes-01",
+   "old_span": "<text>Três moldes, três ordens</text>",
+   "new_span": "<text>Três moldes, duas ordens</text>",
+   "why": "research/derived/pending/comparacoes_fixes.verdict.json found_not_in_scope[0]: by the lesson's own definition of ordem ('A ordem é flexível': which block comes first), は…より…です and のほうが…より both start with the winning side, so there are two orders.",
+   "count": 1
+  },
+  {
+   "lesson": "les:n5-comparacoes-01",
+   "old_span": "Três moldes cobrem \"A é mais X que B\", um para cada ordem.",
+   "new_span": "Três moldes cobrem \"A é mais X que B\", em só duas ordens: o primeiro e o terceiro começam pelo lado que ganha, e o segundo começa pelo \"do que\".",
+   "why": "research/derived/pending/comparacoes_fixes.verdict.json found_not_in_scope[0]: 'um para cada ordem' counts three orders; now says which molds share an order, consistent with the next sentences (winner takes は in the first, のほうが in the other two, which differ only by where the sentence starts).",
+   "count": 1
+  },
+  {
+   "lesson": "les:n5-comparacoes-01",
+   "old_span": "as partículas </text><jp>より</jp><text> e </text><jp>のほうが</jp><text> dizem sozinhas",
+   "new_span": "a partícula </text><jp>より</jp><text> e a expressão </text><jp>のほうが</jp><text> dizem sozinhas",
+   "why": "research/derived/pending/comparacoes_fixes.verdict.json found_not_in_scope[2]: calls のほうが a particle; ほう（方）is a noun ('lado', as the lesson itself says), so のほうが is の + noun + が. Same slip w08b_merges.verdict.json fixed in yori-hou-ga#nuance.",
+   "count": 1
+  }
+ ]
+}
