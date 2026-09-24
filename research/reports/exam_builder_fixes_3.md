@@ -1,6 +1,7 @@
 # Exam builder fixes 3: context_fill gets the context-sufficiency rules
 
-Status: **pending, nothing applied.** Patch `research/derived/patches/exam_builder_fixes_3.patch`
+Status: **APPLIED 2026-09-23 by Q1-exam-fixes-3** (with `exam_function_word_tweak.patch` on top;
+`research/reports/q1_exam_fixes_3_report.md`). Originally: pending, nothing applied. Patch `research/derived/patches/exam_builder_fixes_3.patch`
 applies on top of `exam_equivalence_filter.patch` (patch 1) and `exam_builder_fixes_2.patch` (patch 2)
 and touches one file, `scripts/export/build_exam_banks.py`. Measured 2026-09-23 in a scratch tree
 (`git archive HEAD` + patches 1 and 2) over an sqlite backup of `db/corpus.sqlite`.

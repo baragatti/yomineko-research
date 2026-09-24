@@ -6,8 +6,8 @@ Every deterministic item is selected against its level's taught set (the `cumula
 
 `removed_items.json` is a withdrawal ledger, not a bank, and is deliberately absent below.
 
-- `n3_context_fill.json` — 400 items
-- `n3_grammar_form.json` — 300 items
+- `n3_context_fill.json` — 337 items
+- `n3_grammar_form.json` — 292 items
 - `n3_kanji_reading.json` — 400 items
 - `n3_listening_gist.json` — 9 items
 - `n3_listening_point.json` — 18 items
@@ -20,8 +20,8 @@ Every deterministic item is selected against its level's taught set (the `cumula
 - `n3_sentence_order.json` — 300 items
 - `n3_text_grammar.json` — 122 items
 - `n3_usage.json` — 33 items
-- `n4_context_fill.json` — 400 items
-- `n4_grammar_form.json` — 300 items
+- `n4_context_fill.json` — 317 items
+- `n4_grammar_form.json` — 288 items
 - `n4_kanji_reading.json` — 400 items
 - `n4_listening_point.json` — 21 items
 - `n4_listening_reply.json` — 24 items
@@ -33,8 +33,8 @@ Every deterministic item is selected against its level's taught set (the `cumula
 - `n4_sentence_order.json` — 300 items
 - `n4_text_grammar.json` — 75 items
 - `n4_usage.json` — 14 items
-- `n5_context_fill.json` — 155 items
-- `n5_grammar_form.json` — 75 items
+- `n5_context_fill.json` — 93 items
+- `n5_grammar_form.json` — 71 items
 - `n5_kanji_reading.json` — 176 items
 - `n5_listening_point.json` — 18 items
 - `n5_listening_reply.json` — 17 items

@@ -24,6 +24,7 @@ sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 import sys as _sys, pathlib as _pl  # noqa: E402
 _sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
 from dbtarget import db_target  # noqa: E402
+from export_course import _deref  # noqa: E402  (the exporter's own ref -> published-slug resolver)
 
 ROOT = Path(__file__).resolve().parents[2]
 DB = db_target(ROOT / "db" / "corpus.sqlite")
@@ -174,8 +175,11 @@ def main() -> int:
     topic_level = {t: lvl for _, _, t, lvl in lessons}
     vocab_topic: dict[str, str] = {}
     unlocks: dict[int, list[tuple[str, str]]] = defaultdict(list)
+    # The DB keeps the authoring form (`vocab:<headword>`, 2,897 of 2,951 vocab refs); the banks and
+    # the course export speak the published slug (`vocab:<jmdict_id>`). Resolve through the exporter's
+    # own `_deref`, or exam items join to 54 refs and kanji_reading/orthography read as "3.7% taught".
     for lid, typ, ref in con.execute("SELECT lesson_id, unlock_type, ref FROM lesson_unlocks"):
-        unlocks[lid].append((typ, ref))
+        unlocks[lid].append((typ, _deref(con, ref, lid)))
     for lid, _, tslug, _ in lessons:
         for typ, ref in unlocks[lid]:
             if typ == "vocab":

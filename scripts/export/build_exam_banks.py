@@ -96,6 +96,16 @@ of those findings; each is marked with the finding it closes.
      moves no item; it pins the rule should the cks ever widen. W24's "72 of 1,953" joined bank slugs
      to the DB's `vocab:<headword>` unlock refs; against the export all 1,953 test a taught word.
      Report: research/reports/exam_taught_word_rule.md.
+ 21  18 AND 19 FOR `cf`. The stem needs MIN_STEM_CONTENT content tokens: 「（　）だけ来た」 keyed 一人
+     is answered as well by 先月. A word distractor is refused when (a) it makes the stem a sentence
+     the bank or raw_tatoeba_sentence has, (b) the bank or Tatoeba shows it between the same
+     neighbours as the blank (`word_frames`): 「いい（　）だけど」 keyed 人 offered 男, or (c) it
+     shares the key's open group (`open_group`), read in the filled stem: 「りんごが（　）ある」 keyed
+     九つ offered 六つ and 四つ. Report: research/reports/exam_builder_fixes_3.md.
+ 22  WITHDRAWAL LEDGER. research/derived/reauthor/exam_authored/_flagged_auto.json, read by default
+     (`--flagged {}` builds without it): ids a review withdrew (a second key the rules cannot see, a
+     defective key sentence). Applied after the cap, so a withdrawal shrinks the bank and never
+     backfills an unchecked item. Report: research/reports/q1_exam_fixes_3_report.md.
 
 RUN ORDER (W18): the authored, listening and reading_comp builders first, this one LAST — the
 INDEX below is a glob over every bank file, so a bank written after it leaves a stale row.
@@ -106,6 +116,7 @@ only the exporter resolves to `vocab:<jmdict_id>`. Run `export_course.py` before
 """
 from __future__ import annotations
 import argparse, hashlib, json, sqlite3, sys
+from itertools import islice
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 # W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
@@ -134,6 +145,8 @@ HAS_KANJI = has_kanji
 # Sidecars under corpus/exam_banks that are not banks. `removed_items.json` matched `*_*.json`, so the
 # INDEX gained the line "- removed_items.json — 3 items" (len() over its {why,count,items} dict).
 NOT_A_BANK = {"removed_items.json"}
+# Fix 22: ids withdrawn by review, {bank: [{id, kind, why, ...}]}.
+FLAGGED = ROOT / "research" / "derived" / "reauthor" / "exam_authored" / "_flagged_auto.json"
 
 _TOK = None
 _MODE_C = None
@@ -180,6 +193,10 @@ def boundary_occurrence(text: str, form: str, starts: set, ends: set) -> int:
 # Fix 19: POS that carry no context of their own. A stem is only as informative as the content words
 # printed around its blank; 「（　）？」 keyed なぜ has none, and する / もう / まだ fit it as well.
 FUNCTION_POS = {"助詞", "助動詞", "補助記号", "記号", "空白"}
+# Prefixes, prenominals and conjunctions give a stem no context either: お（　）だけ keyed 水, どの（　）が
+# 安い keyed 店, また話し（　）だ keyed 中 each count only one real content word. The stem counter only;
+# `word_frames` keeps FUNCTION_POS, since a prenominal (その試合) is a real frame neighbour.
+STEM_FUNCTION_POS = FUNCTION_POS | {"接頭辞", "連体詞", "接続詞"}
 MIN_STEM_CONTENT = 2
 # Conjugation types whose 未然形 and 連用形 print the same string (食べ, し, 来, 入れられ).
 SAME_MIZEN_RENYOU = ("上一段", "下一段", "カ行変格", "サ行変格",
@@ -215,7 +232,49 @@ def slot_shape(ms, at: int) -> frozenset[str]:
 def content_tokens(ms, at: int, end: int) -> int:
     """Fix 19: content tokens printed outside the blank [at, end)."""
     return sum(1 for m in ms if (m.end() <= at or m.begin() >= end)
-               and m.part_of_speech()[0] not in FUNCTION_POS)
+               and m.part_of_speech()[0] not in STEM_FUNCTION_POS)
+
+
+# Fix 21: SudachiPy subclasses that name a semantic group, not just a syntax. Members of one group stand
+# in for each other wherever the group can stand: 「（　）だけ来た」 keyed 一人 is answered as well by
+# 先月, 「りんごを（　）買った」 keyed 五つ by 九つ or 毎年. The stem cannot rule a same-group
+# distractor out, so it is refused. Common nouns and verbs carry no such group and are left to the
+# attestation test.
+OPEN_GROUPS = (
+    ("adverbial", ("名詞-普通名詞-副詞可能", "名詞-数詞", "副詞")),   # time / quantity / place; numerals
+    ("adjectival", ("形容詞", "形状詞", "連体詞")),
+    ("pronoun", ("代名詞",)),
+    ("counter-noun", ("名詞-普通名詞-助数詞可能",)),
+)
+
+
+def open_group(ms, at: int, end: int) -> str | None:
+    """Fix 21: the open group of the word printed at [at, end) of a tokenized text, read in place (千
+    alone is a name, in 千人 a numeral), or None when it has none or does not stand as its own tokens."""
+    span = [m for m in ms if m.begin() >= at and m.end() <= end]
+    if not span or span[0].begin() != at or span[-1].end() != end:
+        return None
+    c = "-".join(x for x in span[0].part_of_speech()[:3] if x != "*")
+    return next((g for g, prefixes in OPEN_GROUPS if c.startswith(prefixes)), None)
+
+
+def word_frames(ms: list, i: int) -> list[tuple[str, str, str, str]]:
+    """Fix 21: token i's frame on each side that has a content word, by normalized form: (content word
+    before, the particles between, w) and (w, the particles between, content word after)."""
+    out = []
+    j = i + 1
+    while j < len(ms) and ms[j].part_of_speech()[0] == "助詞":
+        j += 1
+    if j < len(ms) and ms[j].part_of_speech()[0] not in FUNCTION_POS:
+        out.append(("R", ms[i].normalized_form(), "".join(m.surface() for m in ms[i + 1:j]),
+                    ms[j].normalized_form()))
+    j = i - 1
+    while j >= 0 and ms[j].part_of_speech()[0] == "助詞":
+        j -= 1
+    if j >= 0 and ms[j].part_of_speech()[0] not in FUNCTION_POS:
+        out.append(("L", ms[j].normalized_form(), "".join(m.surface() for m in ms[j + 1:i]),
+                    ms[i].normalized_form()))
+    return out
 
 
 def hiragana_tail(s: str) -> str:
@@ -287,7 +346,15 @@ def main() -> int:
     ap.add_argument("--root", default=None,
                     help="tree to read the course export from (default: the repo root)")
     ap.add_argument("--stats", default=None, help="write per-family selection counters here (JSON)")
+    # Fix 22: the withdrawal ledger, read by default like build_listening_bank.py's
+    # `_flagged_listen.json`, so a rebuild never re-admits a withdrawn item. `--flagged {}` builds
+    # without it.
+    ap.add_argument("--flagged", default=None, help="withdrawal ledger as a JSON string")
     args = ap.parse_args()
+    raw = args.flagged if args.flagged is not None else (
+        FLAGGED.read_text(encoding="utf-8") if FLAGGED.is_file() else "{}")
+    withdrawn: dict[str, set[str]] = {bank: {r["id"] for r in rows}
+                                      for bank, rows in json.loads(raw).items()}
     out_dir = Path(args.out) if args.out else OUT
     root = Path(args.root).resolve() if args.root else ROOT
     con = sqlite3.connect(DB)
@@ -477,6 +544,32 @@ def main() -> int:
         return (x not in pre + post and not shape & slot_seen.get(x, set())
                 and stem_key(pre + x + post) not in bank_keys)
 
+    # Fix 21: the same rule for context_fill, where the options are words. A word distractor is refused
+    # when it makes the stem a sentence the bank or Tatoeba has; when the bank or Tatoeba shows it
+    # between the same neighbours as the blank (`word_frames`, every side that has a content word):
+    # 「いい（　）だけど」 keyed 人 offered 男; or when it shares the key's open group (`open_group`).
+    said = [s[1] for s in sents.values()]
+    if con.execute("SELECT name FROM sqlite_master WHERE name='raw_tatoeba_sentence'").fetchone():
+        said += [t for (t,) in con.execute("SELECT text FROM raw_tatoeba_sentence ORDER BY id")]
+    said_keys = {stem_key(t) for t in said}
+    frame_seen: set[tuple[str, str, str, str]] = set()
+    for text in said:
+        ms = list(tk.tokenize(text, _MODE_C))
+        for i, m in enumerate(ms):
+            if m.part_of_speech()[0] not in FUNCTION_POS:
+                frame_seen.update(word_frames(ms, i))
+
+    def cf_admissible(x: str, group: str | None, pre: str, post: str) -> bool:
+        if x in pre + post or stem_key(pre + x + post) in said_keys:
+            return False
+        ms = list(tk.tokenize(pre + x + post, _MODE_C))
+        i = next((k for k, m in enumerate(ms)
+                  if m.begin() == len(pre) and m.end() == len(pre) + len(x)), None)
+        fr = word_frames(ms, i) if i is not None else []
+        if fr and all(f in frame_seen for f in fr):
+            return False
+        return group is None or open_group(ms, len(pre), len(pre) + len(x)) != group
+
     # ---- the taught, level-clean vocabulary pool ----------------------------------------------
     # A word may be the ANSWER or a DISTRACTOR at a level only when the course has taught the record
     # and every kanji it prints. This is the pool W03 measured (177 level-clean N5 words against an
@@ -615,6 +708,12 @@ def main() -> int:
                                         for t in toks_c.get(sid, [])], v["hw"], v["kana"]):
                     drop("context_fill", "reading-does-not-agree")
                     continue        # qa F4: 空/から on a *sky* sentence, 時/とき on a clock reading
+                at = jp.index(v["hw"])
+                end = at + len(v["hw"])
+                ms = tk.tokenize(jp, _MODE_C)
+                if content_tokens(ms, at, end) < MIN_STEM_CONTENT:
+                    drop("context_fill", "stem-too-short")          # fix 21 (19 for cf)
+                    continue
                 # W18: two sentences that differ only in the blanked word print the SAME question
                 # with two keys (どのくらい（　） keyed 大きい and 高い); whichever the learner picks,
                 # one item marks it wrong. The first stem wins; the sentence tries its next word.
@@ -632,7 +731,11 @@ def main() -> int:
                     cands.append((abs(len(w["hw"]) - len(v["hw"])) * 10
                                   + (0 if w["lex"] == v["lex"] else 20), w["hw"]))
                 cands.sort(key=lambda t: (t[0], spread(f"{sid}:{v['hw']}", t[1])))
-                dh = pick_distractors(cands, v["hw"])
+                # fix 21: walk the same order, keeping only what the stem rules out.
+                base = pick_distractors(cands, v["hw"], want=len(cands))
+                group = open_group(ms, at, end)
+                dh = list(islice((x for x in base
+                                  if cf_admissible(x, group, jp[:at], jp[end:])), 3))
                 if len(dh) == 3:
                     cf_stems.add(stem_key(jp.replace(v["hw"], "（　）", 1)))
                     cf.append({"id": f"cf:{lvl}:{sid}:{vid}", "level": lvl,
@@ -642,7 +745,8 @@ def main() -> int:
                                "layer": "B", "ai_generated": bool(ai), "needs_review": bool(ai),
                                "source": "sentence+vocab"})
                 else:
-                    drop("context_fill", "no-clean-distractor-set")
+                    drop("context_fill", "no-admissible-distractor" if len(base) >= 3
+                         else "no-clean-distractor-set")
                 break  # one item per sentence
 
         # ---- grammar_form --------------------------------------------------------------------
@@ -824,6 +928,15 @@ def main() -> int:
         for name, items in (("kanji_reading", kr), ("orthography", ort), ("context_fill", cf),
                             ("grammar_form", gf), ("sentence_order", so), ("text_grammar", tg)):
             items = items[:CAPS[name]]
+            # Fix 22: withdraw AFTER the cap, so a withdrawal never backfills an unchecked item.
+            out = withdrawn.get(f"{lvl}_{name}", set())
+            if out:
+                absent = sorted(out - {it["id"] for it in items})
+                items = [it for it in items if it["id"] not in out]
+                drops.setdefault(name, {})["withdrawn"] = (
+                    drops.get(name, {}).get("withdrawn", 0) + len(out) - len(absent))
+                if absent:
+                    print(f"{lvl}_{name}: {len(absent)} ledger ids not built: {' '.join(absent)}")
             (out_dir / f"{lvl}_{name}.json").write_text(json.dumps(items, ensure_ascii=False), encoding="utf-8")
             counts[f"{lvl}_{name}"] = len(items)
 

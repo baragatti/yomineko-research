@@ -1,6 +1,7 @@
 # Capability exam_link join: resolve unlock refs the way the exporter does
 
-Status: **pending, nothing applied.** Patch `research/derived/patches/capability_exam_link_join.patch`
+Status: **APPLIED 2026-09-23 by Q1-exam-fixes-3** (`research/reports/q1_exam_fixes_3_report.md`:
+3,079 -> 634 unlinked on the 4,871-item banks). Originally: pending, nothing applied. Patch `research/derived/patches/capability_exam_link_join.patch`
 touches only `scripts/export/build_capabilities.py` (`git apply --check` passes on the current tree; that
 file is unchanged from HEAD). Measured 2026-09-23 on a `git archive HEAD` tree (7ffdd6d0) and an sqlite
 backup of `db/corpus.sqlite`. The unpatched build on that snapshot reproduces HEAD's

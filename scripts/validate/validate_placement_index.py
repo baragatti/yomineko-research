@@ -26,7 +26,10 @@ DEFAULT_ROOT = HERE.parents[1]
 # P1-exam-fixes (2026-09-23), re-recorded with cause: 4970 -> 4932. The builder rules dropped 39
 # n5 grammar_form items and the rebuild added 1 n4 text_grammar item (5141 -> 5103 items); the
 # unplaced count is unchanged at 171. research/reports/p1_exam_fixes_report.md.
-EXAM_FLOOR = 4932
+# Q1-exam-fixes-3 (2026-09-23), re-recorded with cause: 4932 -> 4700. context_fill got the
+# stem-sufficiency rules and 185 second-key / key-defect items were withdrawn by ledger
+# (5103 -> 4871 items); unplaced unchanged at 171. research/reports/q1_exam_fixes_3_report.md.
+EXAM_FLOOR = 4700
 MIN_EXERCISES = 2000
 
 
