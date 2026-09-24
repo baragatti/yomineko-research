@@ -40,7 +40,7 @@ _Generated 2026-09-23. `label`/`governing_rule` = locale-objects (pt-BR)._
 | grp:gram-n4-oracoes-relativas | topic_set | Gramática: Orações relativas | 16 |
 | grp:gram-n4-passiva | topic_set | Gramática: Voz passiva | 9 |
 | grp:gram-n4-potencial | topic_set | Gramática: Potencial | 6 |
-| grp:gram-n4-suposicao | topic_set | Gramática: Aparência e suposição | 26 |
+| grp:gram-n4-suposicao | topic_set | Gramática: Aparência e suposição | 25 |
 | grp:gram-n4-transitividade | topic_set | Gramática: Transitivos × intransitivos | 2 |
 | grp:gram-n4-volitivo | topic_set | Gramática: Volitivo e intenção | 15 |
 | grp:gram-n5-adjetivos | topic_set | Gramática: Adjetivos い e な | 18 |

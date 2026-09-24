@@ -8,7 +8,7 @@
 - Reconhecer o par coloquial vs. formal: みたい ↔ のよう
 - Usar 〜のように para indicar modo, como em いつものように ('como de costume')
 
-**Introduz:** gramática [gp-153, gp-77] · vocabulário [下がる, 合う, 最も, 最後] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-77] · vocabulário [下がる, 合う, 最も, 最後] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-218631`, `sent:tatoeba-141991`, `sent:tatoeba-160307`
 
@@ -21,7 +21,7 @@ Na lição passada você aprendeu a comparar do jeito coloquial, com みたい. 
 O atalho mental: troque みたい por のよう e a frase sobe de registro. 天使みたいな人 (casual) vira 天使のような人 ("uma pessoa como um anjo", formal). O sentido é o mesmo; muda só o tom.
 
 #### 〜のような: antes de substantivo
-A forma gp-153 qualifica o substantivo que vem logo depois. Equivale a "um... como", "do tipo de", "parecido com".
+A forma のような de gp-77 qualifica o substantivo que vem logo depois. Equivale a "um... como", "do tipo de", "parecido com".
 Molde: [coisa comparada] のような [substantivo]
 Em [coisa comparada] entra aquilo com que você compara, e o substantivo qualificado vem logo depois de のような.
 > 🗣 これはお茶のような味だ。 — Isto tem um gosto parecido com o de chá.
@@ -68,8 +68,7 @@ Os dois juntam-se à gramática de hoje: 鳥のように走る ("correr como um 
 
 #### Leitura
 > 📖 今朝の空は春のように青かった。私はいつものように駅まで歩いた。駅の前で、小さな子どもが歌のようなこえで話していた。その子は元気で、かぜのように走って行った。私も春のような気持ちで、しずかに会社へ歩いて行った。 — O céu desta manhã estava azul como o de primavera. Fui a pé até a estação, como sempre. Na frente da estação, uma criança pequena falava com uma voz que parecia música. A criança estava cheia de energia e saiu correndo como o vento. Eu também segui andando quieto até o trabalho, com um ânimo de primavera.
-- Sei que のよう é a versão formal/escrita de みたい (mesma comparação, tom mais sério) e uso 〜のように antes de verbo/adjetivo (modo: "do jeito que / como").
-- Uso 〜のような antes de substantivo (qualifica: "um... como").
+- Sei que のよう é a versão formal/escrita de みたい (mesma comparação, tom mais sério), uso 〜のような antes de substantivo (qualifica: "um... como") e 〜のように antes de verbo/adjetivo (modo: "do jeito que / como").
 - Reconheço いつものように / そのように como "como de costume / dessa forma".
 - Leio o kanji 歩 (ある〜く / ホ, "andar, passo").
 - Leio o kanji 走 (はし〜る, "correr").

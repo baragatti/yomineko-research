@@ -11,10 +11,6 @@
    "why": "KEEP BOTH — passive vs potential. The collision is manufactured by a wrong gp-115.forms[0]. §2.3."
   },
   {
-   "pair": "gram:gp-153 / gram:gp-77  {のような}",
-   "why": "UNTRIAGED — the third record in les:n4-suposicao-04, a subset of gp-77; found by W08b, not in its eight."
-  },
-  {
    "pair": "gram:no-ga-suki / gram:gp-23",
    "why": "UNTRIAGED — les:n5-adjetivos-07 calls them 'the same construction registered under two keys'; found by the W08b lesson-body pass, not in its eight."
   },
@@ -1084,6 +1080,112 @@
     },
     "cumulative_known_set_lessons": 75
    }
+  },
+  {
+   "loser": "gram:gp-153",
+   "loser_key": "gp-153",
+   "winner": "gram:gp-77",
+   "winner_key": "gp-77",
+   "verdict": "MERGE",
+   "why": "W08b D5b. gp-153 {のような} is the adnominal half of gp-77 {のように, のような}: a clean superset, the twin of D5. Same topic (top:n4-suposicao), same family, ONE lesson (les:n4-suposicao-04) unlocks both. Survivor gp-77, as for D5.",
+   "appended": {
+    "references_json": "{\"label_en\": \"のようにのような\", \"also_known_as\": [\"のように\", \"のような\"], \"level_sources\": {\"bunpro\": \"n4\", \"tanos\": \"n4\"}}",
+    "formation_steps_json": "{\"variants\": [{\"base\": \"noun\", \"steps\": [{\"base\": \"noun\", \"op\": \"append\", \"token\": \"のような\"}], \"example\": \"氷のような\"}, {\"base\": \"noun\", \"steps\": [{\"base\": \"noun\", \"op\": \"append\", \"token\": \"のように\"}], \"example\": \"鳥のように\"}, {\"base\": \"noun\", \"steps\": [{\"base\": \"noun\", \"op\": \"append\", \"token\": \"のようだ\"}], \"example\": \"氷のようだ\"}, {\"base\": \"clause\", \"steps\": [{\"base\": \"clause\", \"op\": \"none\"}, {\"op\": \"append\", \"token\": \"ように\"}], \"example\": \"約束したように\"}, {\"base\": \"clause\", \"steps\": [{\"base\": \"clause\", \"op\": \"to-attributive\"}, {\"op\": \"append\", \"token\": \"ように\"}], \"example\": \"先生が言ったように\"}, {\"base\": \"clause\", \"steps\": [{\"base\": \"clause\", \"op\": \"to-attributive\"}, {\"op\": \"append\", \"token\": \"ような\"}], \"example\": \"子供が遊んでいるような\"}]}"
+   },
+   "appended_localized": [],
+   "covered": [
+    "forms_json: loser adds nothing (['のような'] ⊆ ['のように', 'のような'])",
+    "register_json: loser adds nothing (['plain'] ⊆ ['formal', 'written', 'plain'])",
+    "usage_contexts_json: loser adds nothing (['spoken', 'written'] ⊆ ['written', 'formal-email', 'literary', 'spoken'])",
+    "nuance_tags_json: loser adds nothing (['comparison'] ⊆ ['comparison', 'conjecture'])",
+    "level_sources: loser adds nothing",
+    "refs: also_known_as += ['のような'], level_sources += {}",
+    "formation_steps: appended 1 variant(s) ['子供が遊んでいるような'] (signature = base + step chain; `example` is not part of it, so two variants differing only in the example word stay one rule)",
+    "structure_pattern: '～のような' is already inside survivor 'のように・のような'",
+    "localized form_meanings/en: every form the loser glossed is glossed by the survivor (['のような']); the wording differs and is salvaged",
+    "localized form_meanings/pt-BR: every form the loser glossed is glossed by the survivor (['のような']); the wording differs and is salvaged"
+   ],
+   "salvage": [
+    {
+     "field": "register",
+     "value": "neutral",
+     "why": "survivor has its own value; picking between them is authoring"
+    },
+    {
+     "field": "explanation/en",
+     "value": "〜のような serves to compare, saying that something is \"like\" or \"similar to\" something else, and qualifies the noun that comes right after. Equivalent to \"a... like,\" \"of the type of,\" \"just like\" (天使のような人 = \"an angelic person / a person like an angel\"). It is the form used when the comparison modifies a noun.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "explanation/pt-BR",
+     "value": "〜のような serve para comparar, dizendo que algo é \"como\" ou \"parecido com\" outra coisa, e qualifica o substantivo que vem logo depois. Equivale a \"um... como\", \"do tipo de\", \"igual a\" (天使のような人 = \"uma pessoa angelical / como um anjo\"). É a forma usada quando a comparação modifica um substantivo.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "form_meanings/en",
+     "value": "{\"のような\": \"like / similar to (before a noun)\"}",
+     "why": "same form keys, different wording"
+    },
+    {
+     "field": "form_meanings/pt-BR",
+     "value": "{\"のような\": \"como / parecido com (antes de substantivo)\"}",
+     "why": "same form keys, different wording"
+    },
+    {
+     "field": "formation/en",
+     "value": "Noun + のような + noun. It comes from よう (\"appearance, resemblance\") + な, the attributive ending used before nouns, as with な-adjectives. When the comparison starts from a verb phrase, [clause] + ような is used (子供が遊んでいるような声). Compare: のような (before a noun) and のように (before a verb/adjective, see next point).",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "formation/pt-BR",
+     "value": "Substantivo + のような + substantivo. Vem de よう (\"aparência, semelhança\") + な, a terminação atributiva usada antes de substantivos, como nos adjetivos-な. Quando a comparação parte de uma frase verbal, usa-se [frase] + ような (子供が遊んでいるような声). Compare: のような (antes de substantivo) e のように (antes de verbo/adjetivo, ver próximo ponto).",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/en",
+     "value": "〜のような (like / similar to, adjective)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/pt-BR",
+     "value": "〜のような (como / parecido com, adjetivo)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/en",
+     "value": "The な/に pair is the key: use のような when a noun follows, and のように when a verb or adjective follows. It's the same contrast as na-adjectives (静かな人 / 静かに話す). For Brazilians, remember that no を particle or verb 'to be' enters here: it's just noun + のような + noun. In a more formal or written register, のような can appear as 〜のごとき.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/pt-BR",
+     "value": "O par な/に é a chave: use のような quando depois vem um substantivo, e のように quando vem um verbo ou adjetivo. É o mesmo contraste dos adjetivos-な (静かな人 / 静かに話す). Para brasileiros, lembre que aqui não entra a partícula を nem o verbo \"ser\": é só substantivo + のような + substantivo. Em registro mais formal ou escrito, のような pode aparecer como 〜のごとき.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    }
+   ],
+   "refused": [],
+   "edges": {
+    "sentence_grammar_repointed": 5,
+    "sentence_grammar_dropped_as_duplicate": 0,
+    "sentence_tags_rewritten": [],
+    "lesson_unlocks_dropped_as_duplicate": 1,
+    "lesson_unlocks_repointed": 0,
+    "lesson_introduces_dropped_as_duplicate": 1,
+    "lesson_introduces_repointed": 0,
+    "family_member_repointed": [],
+    "family_member_dropped_as_duplicate": [
+     80
+    ],
+    "exercise_item_repointed": 1,
+    "exercise_item_dropped_as_duplicate": 0,
+    "exercise_item_ref_repointed": [
+     "ex:n4-suposicao-04-2"
+    ],
+    "exercise_item_ref_dropped_as_duplicate": [],
+    "lesson_body_addresses_repointed": {
+     "les:n4-suposicao-04": 2
+    },
+    "cumulative_known_set_lessons": 134
+   }
   }
  ],
  "authoring_source": [
@@ -1229,6 +1331,14 @@
    "actions": [
     "exercises[3].item_refs: dropped duplicate gram:gp-47"
    ]
+  },
+  {
+   "file": "research/derived/lessons/n4-suposicao-04.json",
+   "actions": [
+    "unlocks: dropped duplicate gram:gp-153 (gram:gp-77 already there)",
+    "exercises[1].item_refs: gram:gp-153 -> gram:gp-77",
+    "body: 2x ref=\"gram:gp-153\" -> \"gram:gp-77\""
+   ]
   }
  ],
  "exam_banks": [
@@ -1250,6 +1360,12 @@
    "file": "corpus/exam_banks/n5_grammar_form.json",
    "actions": [
     "4 item(s) gp-33 -> janai-dewa-nai: ['gf:n5:4308', 'gf:n5:4309', 'gf:n5:4310', 'gf:n5:4311']"
+   ]
+  },
+  {
+   "file": "corpus/exam_banks/n4_grammar_form.json",
+   "actions": [
+    "4 item(s) gp-153 -> gp-77: ['gf:n4:3535', 'gf:n4:3536', 'gf:n4:3537', 'gf:n4:3538']"
    ]
   }
  ]

@@ -26,7 +26,11 @@ DRIFT: refused (exit 2, nothing written) on the live index, applied anyway on a 
 `apply_grammar_register_repairs.py` idiom — a from-scratch replay is a different graph by construction
 and validate_index_rebuildable.py's byte diff is what checks it.
 
-Usage: apply_w08b_merges.py --phase pre|prose [--check]
+P2-gp153 (D5b, gp-153 -> gp-77) is a second table of the same shape, `gp153_merge.json`: its prose rows
+replace D5's gp-77 texts (their `old` is D5's `new`, and D5's rows carry `superseded_by`), so it runs as
+its own step AFTER the w08b prose step.
+
+Usage: apply_w08b_merges.py --phase pre|prose [--table w08b_merges.json|gp153_merge.json] [--check]
 """
 from __future__ import annotations
 
@@ -43,7 +47,9 @@ from dbtarget import db_target  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 LIVE = ROOT / "db" / "corpus.sqlite"
 DB = db_target(LIVE)
-TABLE = ROOT / "research" / "derived" / "repairs" / "w08b_merges.json"
+REPAIRS = ROOT / "research" / "derived" / "repairs"
+TABLES = ("w08b_merges.json", "gp153_merge.json")
+TABLE = REPAIRS / TABLES[0]
 JSON_COLUMNS = {"forms_json", "register_json", "formation_steps_json"}
 
 
@@ -98,8 +104,11 @@ def write_value(con: sqlite3.Connection, gid: int, r: dict) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--phase", choices=("pre", "prose"), required=True)
+    ap.add_argument("--table", choices=TABLES, default=TABLES[0])
     ap.add_argument("--check", action="store_true", help="report what would change; write nothing")
     args = ap.parse_args()
+    global TABLE
+    TABLE = REPAIRS / args.table
     live = Path(DB).resolve() == LIVE.resolve()
     rows = load_rows("pre-merge" if args.phase == "pre" else "prose")
     merges = {r["winner"]: r["loser"] for r in load_rows("merge")}
@@ -110,6 +119,11 @@ def main() -> int:
     drift: list[str] = []
     missing: list[str] = []
     for r in rows:
+        if r.get("superseded_by") and live:
+            # a later table's row consumed this one (its `old` is this `new`); on a replay the chain
+            # runs in order, so only the live index skips it
+            already += 1
+            continue
         # (no deprecated_by here: on a replay the pre phase runs before the merge adds that column)
         g = con.execute("SELECT id FROM grammar_point WHERE key=?", (r["key"],)).fetchone()
         what = f"{r['key']}.{r.get('column') or r['field'] + '/' + r['locale']}"
@@ -152,7 +166,7 @@ def main() -> int:
         con.commit()
     con.close()
     verb = "would change" if args.check else "changed"
-    print(f"apply_w08b_merges --phase {args.phase}: {len(rows)} row(s); {verb} {changed}, "
+    print(f"apply_w08b_merges --phase {args.phase} --table {args.table}: {len(rows)} row(s); {verb} {changed}, "
           f"already applied {already}")
     return 1 if (args.check and changed) else 0
 

@@ -210,7 +210,6 @@ _Generated 2026-09-23. `label`/`explanation`/`formation`/`nuance` are locale-obj
 | gp-148 | ～てすみません | n4 | authored |
 | gp-149 | ません | n4 | authored |
 | gp-150 | ～れば | n4 | authored |
-| gp-153 | ～のような | n4 | authored |
 | gp-58 | だんだん | n4 | authored |
 | gp-59 | どんどん | n4 | authored |
 | gp-61 | だが・ですが | n4 | authored |
@@ -491,4 +490,4 @@ _Generated 2026-09-23. `label`/`explanation`/`formation`/`nuance` are locale-obj
 | n3-you-to-shinai | ～ようとしない | n3 | authored |
 | n3-zu-ni | ～ずに | n3 | authored |
 
-**Deprecated:** 10 record(s) merged into another and dropped from the lists above; `../grammar_deprecated.json` maps each old slug to its survivor.
+**Deprecated:** 11 record(s) merged into another and dropped from the lists above; `../grammar_deprecated.json` maps each old slug to its survivor.

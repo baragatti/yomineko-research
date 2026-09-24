@@ -1702,6 +1702,36 @@ def handle_forward_refs(rows, sents, gram, table):
     return out
 
 
+def span_marker_gate(r, table, i, body, addr) -> tuple:
+    """P2-gp153. A span row whose `to` a LATER span row consumed (w08b_lesson_bodies row 9 -> the D5b
+    checklist row). SKIP only when the chain holds against the export: the named row is in a tracked
+    table, addresses the same lesson, its first span's `from` is this row's `to` with every merged-away
+    `gram:` address resolved through corpus/grammar_deprecated.json, and the export carries its `to`."""
+    m = r["superseded_by"]
+    if not isinstance(m, dict) or set(m) != {"table", "row"}:
+        return ("fail", C_BAD_MARKER, addr, f"`superseded_by` must be {{table, row}}, got {m!r}"[:200])
+    rows = TABLES.get(m["table"])
+    j = m["row"]
+    if rows is None or not isinstance(j, int) or isinstance(j, bool) or not 0 <= j < len(rows) \
+            or (m["table"], j) == (table, i):
+        return ("fail", C_BAD_MARKER, addr, f"names {m['table']} row {j!r}, which is not another tracked row")
+    succ = rows[j]
+    if succ.get("lesson") != r["lesson"]:
+        return ("fail", C_BAD_MARKER, addr, f"{m['table']} row {j} addresses {succ.get('lesson')!r}")
+    to = "".join(s["to"] for s in r["spans"])
+    for loser, survivor in REDIRECT.items():
+        to = to.replace(f'"gram:{loser}"', f'"gram:{survivor}"')
+    frm = succ["spans"][0]["from"]
+    if frm != to:
+        return ("fail", C_BAD_MARKER, addr, f"{m['table']} row {j} does not continue the chain: its `from` "
+                                            f"is not this row's `to` (redirects resolved)")
+    if any(s["to"] and s["to"] not in body for s in succ["spans"]):
+        return ("fail", C_BAD_MARKER, addr, f"{m['table']} row {j} chains, but the shipped body does not "
+                                            f"carry its `to`")
+    return ("skip", "", addr, f"superseded by {m['table']} row {j} (chain proved through the grammar "
+                              f"redirect; the export carries its `to`)")
+
+
 def handle_lesson_body_spans(rows, sents, gram, table):
     """C13 (W08b lesson bodies, W21b rewrites, W21 furigana residue). Every span of a row is in the
     SHIPPED body in its new form: `from` gone (unless `to` itself contains it), a non-empty `to`
@@ -1714,6 +1744,9 @@ def handle_lesson_body_spans(rows, sents, gram, table):
             out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['lesson']} in the export"))
             continue
         body = lesson.get("body") or ""
+        if r.get("superseded_by") is not None:
+            out.append(span_marker_gate(r, table, i, body, addr))
+            continue
         bad = ""
         for s in r["spans"]:
             if s["from"] not in s["to"] and s["from"] in body:
@@ -1997,6 +2030,11 @@ def handle_w08b_merges(rows, sents, gram, table):
             if g is None:
                 out.append(("fail", C_NO_RECORD, addr, "no such grammar point in the export"))
                 continue
+            # P2-gp153: D5's gp-77 prose was replaced by gp153_merge.json's (D5b); the marker must chain
+            marked = marker_gate(r, table, i, locale_value(g, r["field"], r["locale"]), addr)
+            if marked:
+                out.append(marked)
+                continue
             ok, cls, note = check_text(g, r["field"], r["locale"], r["old"], r["new"], span_ok=False)
             out.append(("ok", "", addr, note) if ok else ("fail", cls, addr, f"export carries {note}"))
         else:
@@ -2036,8 +2074,12 @@ REGISTRY = {
     "w08b_lesson_bodies.json": handle_lesson_body_spans,
     "w21b_rewrites.json": handle_lesson_body_spans,
     "furigana_residue.json": handle_lesson_body_spans,
+    # P2-gp153: n4-suposicao-04 after the D5b merge + the two n5-comparacoes-01 false claims.
+    "comparacoes_fixes.json": handle_lesson_body_spans,
     # W08b: eight grammar merges + their pre-merge repairs, exam-item re-points and reconciled prose.
     "w08b_merges.json": handle_w08b_merges,
+    # P2-gp153: the ninth pair (D5b, gp-153 -> gp-77), same row kinds.
+    "gp153_merge.json": handle_w08b_merges,
     # W23: every lesson exercise's item_refs (what it tests), derived by rule.
     "item_refs.json": handle_item_refs,
     # W37: record provenance + per-field layers on the ten entities that carried none.

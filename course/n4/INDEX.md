@@ -14,7 +14,7 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 | 28 | Experiência e mudança | experiência | 40 | 13 | 21 |
 | 29 | Obrigação e permissão | deveres | 36 | 9 | 7 |
 | 30 | Tentar, preparar, completar | aspecto | 39 | 5 | 21 |
-| 31 | Aparência e suposição | inferir | 38 | 5 | 26 |
+| 31 | Aparência e suposição | inferir | 38 | 5 | 25 |
 | 32 | Voz passiva | passiva | 37 | 7 | 9 |
 | 33 | Causativa e causativa-passiva | causar | 36 | 8 | 4 |
 | 34 | Keigo básico | formalidade | 35 | 0 | 13 |
@@ -77,7 +77,7 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 ### 31. Aparência e suposição
 - **kanji** (5): 秋 犬 色 黒 館
 - **vocab** (38, amostra): ご存知、息子、承知、文学、日記、訳、講義、高校、高校生、世、亜細亜、割合、寺、普通、田舎
-- **gramática** (26): gp-136, sou-da-1, to-iwarete-iru, to-kiita, gp-110, rashii, gp-76, mitai-da, mitai-na, mitai-ni, gp-153, gp-77
+- **gramática** (25): gp-136, sou-da-1, to-iwarete-iru, to-kiita, gp-110, rashii, gp-76, mitai-da, mitai-na, mitai-ni, gp-77, gp-130
 
 ### 32. Voz passiva
 - **kanji** (7): 曜 服 堂 習 肉 旅 洋

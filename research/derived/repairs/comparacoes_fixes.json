@@ -1,0 +1,96 @@
+{
+ "what_this_is": "P2-gp153 lesson bodies: (1) les:n4-suposicao-04 after the D5b merge re-points its two gp-153 chips to gp-77: the のような chip is named as that point's adnominal form and the checklist keeps ONE row for gp-77 (the verifier's SEPARATE-RUN rows: D5 and W08b rows 8-9 had already landed, then D5b's address rewrite); (2) les:n5-comparacoes-01, the two false claims w08b_lesson_bodies.verdict.json listed in found_not_in_scope (which marker carries the winning side in each mold; the comparison does not need a word for 'mais').",
+ "applied_by": "scripts/apply_lesson_body_spans.py --table comparacoes_fixes.json",
+ "assembled_from": "research/derived/pending/comparacoes_fixes.json `edits` (authored, Layer C) + research/derived/pending/comparacoes_fixes.verdict.json (independent verifier; the n4-suposicao-04 rows are the verifier's `separate_later_run` rows)",
+ "fold_rule": "verdict keyed by the row's stable identity: ok -> the authored text; corrected -> the verifier's text (authored text kept as `authored`); rejected -> never applied (none)",
+ "layer": "C",
+ "ai_generated": true,
+ "needs_review": true,
+ "apply_contract": "per lesson, in table order, per span: body.count(from) == count, then body = body.replace(from, to). Measured on the body AFTER the D5b merge's address rewrite. Both layers: research/derived/lessons/<slug>.json body and localized_text(lesson, body, pt-BR).",
+ "supersedes": {
+  "w08b_lesson_bodies.json row 9": "row 1 of this table consumes its `to` (after the D5b address rewrite gram:gp-153 -> gram:gp-77)"
+ },
+ "verdict_summary": {
+  "checked": 5,
+  "ok": 2,
+  "corrected": 3,
+  "rejected": 0
+ },
+ "row_count": 5,
+ "held": [],
+ "rows": [
+  {
+   "lesson": "les:n4-suposicao-04",
+   "pair": "D5b",
+   "loser": "gp-153",
+   "survivor": "gp-77",
+   "spans": [
+    {
+     "from": "<p><text>A forma </text><grammar ref=\"gram:gp-77\"/><text> qualifica o substantivo que vem logo depois.",
+     "to": "<p><text>A forma </text><jp>のような</jp><text> de </text><grammar ref=\"gram:gp-77\"/><text> qualifica o substantivo que vem logo depois.",
+     "count": 1
+    }
+   ],
+   "verdict": "corrected",
+   "authored_row": null,
+   "why": "After the merge the chip is the whole のよう point (gp-77), so 'A forma [gp-77] qualifica o substantivo' says the whole point is only the adnominal form, while the のように section names the same chip. Same fix W08b row 8 made for のように."
+  },
+  {
+   "lesson": "les:n4-suposicao-04",
+   "pair": "D5b",
+   "loser": "gp-153",
+   "survivor": "gp-77",
+   "spans": [
+    {
+     "from": "<check item-ref=\"gram:gp-77\"><text>Sei que のよう é a versão formal/escrita de みたい (mesma comparação, tom mais sério) e uso 〜のように antes de verbo/adjetivo (modo: \"do jeito que / como\").</text></check>\n <check item-ref=\"gram:gp-77\"><text>Uso 〜のような antes de substantivo (qualifica: \"um... como\").</text></check>",
+     "to": "<check item-ref=\"gram:gp-77\"><text>Sei que のよう é a versão formal/escrita de みたい (mesma comparação, tom mais sério), uso 〜のような antes de substantivo (qualifica: \"um... como\") e 〜のように antes de verbo/adjetivo (modo: \"do jeito que / como\").</text></check>",
+     "count": 1
+    }
+   ],
+   "verdict": "corrected",
+   "authored_row": null,
+   "why": "Two checklist rows for one record once gp-153 re-points to gp-77 (W08b row 9 already merged gp-154's). One row, all three facts kept."
+  },
+  {
+   "lesson": "les:n5-comparacoes-01",
+   "spans": [
+    {
+     "from": "Repare que, em todos, </text><jp>より</jp><text> continua colado no termo menor e </text><jp>のほうが</jp><text> no lado que ganha; o que muda é só por onde a frase começa.",
+     "to": "Repare que, em todos, </text><jp>より</jp><text> continua colado no termo menor. O lado que ganha leva </text><jp>は</jp><text> no primeiro e </text><jp>のほうが</jp><text> nos outros dois, que só diferem por onde a frase começa.",
+     "count": 1
+    }
+   ],
+   "verdict": "corrected",
+   "authored_row": 0,
+   "why": "False for the first mold: は…より…です (電車はバスより速いです) has no のほうが; its winner is the は topic. The lead now says which marker carries the winner in each mold. Found by w08b_lesson_bodies.verdict.json found_not_in_scope[0].",
+   "authored_to": "Repare que, em todos, </text><jp>より</jp><text> continua colado no termo menor. O lado que ganha vem com </text><jp>は</jp><text> no primeiro e com </text><jp>のほうが</jp><text> nos outros dois; o que muda é só por onde a frase começa.",
+   "verifier_problem": "(3) Half-fixed. The new lead names two differences between the molds (the winner takes は in the first, のほうが in the other two) and then keeps the original tail 'o que muda é só por onde a frase começa', which the same sentence has just contradicted. It is also false on its own terms: は…より…です and のほうが…より both begin with the winning side (電車は／電車のほうが … バスより), so between them the start does NOT change; only the marker does. The 'only the start changes' claim holds for the last two molds only. Fix keeps both markers and scopes 'only the start' to those two. Measured: old_span count 1 in HEAD, in the post-merge body and after W08b rows 4-7 (both the input rows and the verdict-corrected row 6); LessonParser 0 errors before and after, with this correction too."
+  },
+  {
+   "lesson": "les:n5-comparacoes-01",
+   "spans": [
+    {
+     "from": "o japonês </text><text weight=\"bold\">não tem</text><text> uma palavra solta para \"mais\".",
+     "to": "a comparação </text><text weight=\"bold\">não precisa</text><text> de uma palavra para \"mais\".",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 1,
+   "why": "Japanese does have a word for 'more' (もっと, N5); what is true is that the より comparative does not need one. Same correction w08b_merges.verdict.json made in yori-hou-ga#nuance. もっと is deliberately not named here, so no new vocab address enters the body. found_not_in_scope[1]."
+  },
+  {
+   "lesson": "les:n5-comparacoes-01",
+   "spans": [
+    {
+     "from": "e que não há um \"mais\" avulso.",
+     "to": "e que a comparação dispensa uma palavra para \"mais\".",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 2,
+   "why": "Checklist restatement of the same false claim (found_not_in_scope[1]); now matches the corrected paragraph."
+  }
+ ]
+}

@@ -2,8 +2,8 @@
  "generated_for": "W01 — DB rebuildability (research/reports/APP_PLAN.md)",
  "what_this_is": "Every script that has ever written db/corpus.sqlite, in the order a rebuild must run them. scripts/rebuild_index.py executes this list against a fresh DB; scripts/validate/validate_index_rebuildable.py exports the result and diffs it against the committed corpus/ and course/ trees. Order is the order the steps must run, which is NOT always the order they landed: first_commit records when each one first appeared so the history stays auditable. A step with enabled=false cannot run today; note says why.",
  "db_is_not_the_source_of_truth": "corpus/ and course/ JSON are canonical (CLAUDE.md). This manifest exists so the git-ignored index behind them is reconstructible, not so it becomes authoritative.",
- "step_count": 147,
- "enabled_count": 111,
+ "step_count": 149,
+ "enabled_count": 113,
  "steps": [
   {
    "n": 1,
@@ -1750,7 +1750,7 @@
     "exercise_item",
     "grammar_related"
    ],
-   "note": "W08 / owner decision A3: merges the two duplicate-identity grammar points (gram:gp -> gram:da-desu, gram:gp-152 -> gram:te-hoshii) with no content loss. Runs LAST, and has to: it consumes the finished graph, and every earlier step that writes grammar_point, sentence_grammar, family_member or a lesson body would otherwise re-introduce the loser's edges after the merge. Idempotent -- a second run reads grammar_point.deprecated_by and does nothing. It also rewrites the authoring source under research/derived/lessons/, which the rebuild does not re-read, so on a rebuild that part is a no-op re-proof rather than a change. Its EXACT preconditions (MERGES[].expect) are measured against the rebuilt graph before any write, so a rebuild that produced a different shape refuses here instead of merging blind W08b (C12): MERGES grew by eight pairs (gp-100, gp-54, gp-47, gp-154, gp-60, gp-151, gp-33, n3-nda-mon); runs between the two apply_w08b_merges.py phases, and also re-points W23's exercise_item_ref rows and the exam-bank items (files follow $YOMINEKO_OUT_ROOT on a replay)."
+   "note": "W08 / owner decision A3: merges the two duplicate-identity grammar points (gram:gp -> gram:da-desu, gram:gp-152 -> gram:te-hoshii) with no content loss. Runs LAST, and has to: it consumes the finished graph, and every earlier step that writes grammar_point, sentence_grammar, family_member or a lesson body would otherwise re-introduce the loser's edges after the merge. Idempotent -- a second run reads grammar_point.deprecated_by and does nothing. It also rewrites the authoring source under research/derived/lessons/, which the rebuild does not re-read, so on a rebuild that part is a no-op re-proof rather than a change. Its EXACT preconditions (MERGES[].expect) are measured against the rebuilt graph before any write, so a rebuild that produced a different shape refuses here instead of merging blind W08b (C12): MERGES grew by eight pairs (gp-100, gp-54, gp-47, gp-154, gp-60, gp-151, gp-33, n3-nda-mon); runs between the two apply_w08b_merges.py phases, and also re-points W23's exercise_item_ref rows and the exam-bank items (files follow $YOMINEKO_OUT_ROOT on a replay). P2-gp153: MERGES grew by a ninth W08b pair, D5b (gp-153 -> gp-77, right after D5; `expect` re-measured on the live index, unchanged); its exam items (4 re-pointed, 1 retired by P1) and prose live in research/derived/repairs/gp153_merge.json."
   },
   {
    "n": 112,
@@ -2329,6 +2329,43 @@
   },
   {
    "n": 145,
+   "phase": "repair",
+   "quick_family": "grammar",
+   "script": "scripts/apply_w08b_merges.py",
+   "args": [
+    "--phase",
+    "prose",
+    "--table",
+    "gp153_merge.json"
+   ],
+   "enabled": true,
+   "first_commit": null,
+   "first_commit_date": "2026-09-23",
+   "writes": [
+    "grammar_point",
+    "localized_text"
+   ],
+   "note": "P2-gp153 reconciled prose. Applies the 3 `prose` rows of research/derived/repairs/gp153_merge.json (verifier-corrected): gp-77's ONE pt-BR explanation / formation / nuance after the D5b merge (gp-153 -> gp-77, a MERGES row of step 111). Each row's `old` is D5's reconciled text (step 112), whose rows carry `superseded_by`, so this runs after 112; placed with the other late authored applies. Survivor keeps needs_review = 1. Exact-match; drift refused on the live index, applied on a replay. Families stay last."
+  },
+  {
+   "n": 146,
+   "phase": "repair",
+   "quick_family": null,
+   "script": "scripts/apply_lesson_body_spans.py",
+   "args": [
+    "--table",
+    "comparacoes_fixes.json"
+   ],
+   "enabled": true,
+   "first_commit": null,
+   "first_commit_date": "2026-09-23",
+   "writes": [
+    "localized_text"
+   ],
+   "note": "P2-gp153 lesson bodies. Applies research/derived/repairs/comparacoes_fixes.json (authored Layer C, verifier-checked; 5 rows, 3 corrected) in BOTH layers: les:n4-suposicao-04 after the D5b address rewrite (the のような chip named as gp-77's adnominal form; one checklist row for gp-77, consuming w08b_lesson_bodies.json row 9, which now carries `superseded_by` and is skipped) and the two false claims of les:n5-comparacoes-01. Runs after step 142 and every earlier body writer. Families stay last."
+  },
+  {
+   "n": 147,
    "phase": "families",
    "quick_family": null,
    "script": "scripts/ingest/build_families.py",
@@ -2343,7 +2380,7 @@
    "note": "W11b: RECOMPUTES the class families (six conjugation/adjective classes + counters) over the levels course_module declares taught, instead of the old `if COUNT(*) FROM family > 0: skip` guard that made it a permanent no-op after its first run. Owner decision D14 also retires the 51 materialized kanji_component families here (family.deprecated_by = 'kanji.components'): they were a cache of the store kanji.components is exported from, 0 of 51 still matched it, and design/schema_v2.md answers the component query from that store directly. MOVED from step 37 in the pre-W11b numbering to after the lesson chain: the family layer is now derived from lesson_unlocks, which replay_all.py (load_lessons) does not populate until step 37 and which steps 90, 110, 111, 112 and 113 then correct. Built at 37 it would have derived every topic-bound family from an empty ledger."
   },
   {
-   "n": 146,
+   "n": 148,
    "phase": "families",
    "quick_family": null,
    "script": "scripts/ingest/build_families_full.py",
@@ -2358,7 +2395,7 @@
    "note": "W11b: RECOMPUTES the topic-bound families from the LIVE unlock ledger (lesson_unlocks) instead of the frozen grammar_point.introducing_topic_id snapshot that put 272 of 364 grammar memberships in the wrong family, and drops the hardcoded `level IN ('n5','n4')` in favour of course_module.level. Renames the two types that lied about themselves: function_set -> topic_set and semantic_field -> topic_residual (the slugs, which are published addresses, do not change). Must run after the lesson chain and after the three identity migrations, for the same reason as the step before it."
   },
   {
-   "n": 147,
+   "n": 149,
    "phase": "families",
    "quick_family": null,
    "script": "scripts/ingest/fix_contrasts.py",

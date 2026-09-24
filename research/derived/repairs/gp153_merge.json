@@ -1,0 +1,149 @@
+{
+ "unit": "P2-gp153",
+ "table": "gp153_merge",
+ "what_this_is": "W08b D5b: the ninth duplicate grammar pair, gp-153 {のような} merged into gp-77 {のように, のような} (D5's twin; scripts/migrate_grammar_merge.py MERGES row after D5). Same row kinds as w08b_merges.json: `merge` (the published redirect proves it), `exam-item` (E1: grammar_form items whose `grammar` named gp-153, re-pointed by the migration's rewrite_exam_banks(); re-measured on the P1-rebuilt banks), `prose` (the ONE pt-BR explanation / formation / nuance of gp-77, replacing D5's reconciled text; applied AFTER the merge by scripts/apply_w08b_merges.py --phase prose --table gp153_merge.json). `old` of each prose row is D5's verified text as the index holds it today; `new` is the verifier's corrected text (all three were corrected).",
+ "layer": "C",
+ "ai_generated": true,
+ "needs_review": true,
+ "assembled_from": "research/derived/pending/comparacoes_fixes.json `gp153` (authored) + research/derived/pending/comparacoes_fixes.verdict.json (independent verifier)",
+ "fold_rule": "verdict keyed by the row's stable identity: ok -> the authored text; corrected -> the verifier's text (authored text kept as `authored`); rejected -> never applied (none)",
+ "rule_check": {
+  "same_form": "gp-153 forms ['のような'] is a subset of gp-77 ['のように', 'のような'] (diff_content: 'loser adds nothing'); structure_pattern '～のような' is inside 'のように・のような'. The A1/D5 shape.",
+  "same_meaning": "both are the comparison/semelhança point ('como', 'parecido com'); nuance_tags ['comparison'] is a subset of gp-77 ['comparison', 'conjecture']; gp-153's only formation variant gp-77 lacks is the clause + ような one, which the migration appends (1 variant).",
+  "same_topic": "introducing_topic_id 30 (top:n4-suposicao) on both",
+  "same_family": "grp:gram-n4-suposicao on both",
+  "one_lesson_unlocks_both": "les:n4-suposicao-04 unlocks gp-153, gp-77 and gp-154 (lesson_unlocks_dup 1, lesson_introduces_dup 1)",
+  "survivor": "gp-77: superset forms and variants; both gp-N with a topic-fallback capability, so the semantic-slug step does not decide. Same survivor D5 already chose."
+ },
+ "expect_remeasured": "migrate_grammar_merge.py dry run on the live index at HEAD 6d863af1 (post D5, post P1 banks): every one of the 14 `expect` counts equals the derivation's; no precondition failed",
+ "content": {
+  "appended_post_d5": [
+   "references_json.also_known_as: ['のように'] -> ['のように', 'のような']",
+   "formation_steps_json += clause variant [to-attributive, append ような] (子供が遊んでいるような)"
+  ],
+  "covered_by_d5": [
+   "register_json += plain",
+   "usage_contexts_json += spoken",
+   "level_sources += tanos (level_agreement 1/1 -> 2/2)"
+  ],
+  "lost": 0,
+  "salvaged": [
+   "register 'neutral' (survivor 'formal')",
+   "label, explanation, formation, nuance, form_meanings (pt-BR, en)"
+  ],
+  "refused": []
+ },
+ "counts": {
+  "merge": 1,
+  "exam-item": 5,
+  "prose": 3,
+  "prose_corrected": 3
+ },
+ "row_count": 9,
+ "rows": [
+  {
+   "kind": "merge",
+   "pair": "D5b",
+   "loser": "gp-153",
+   "winner": "gp-77"
+  },
+  {
+   "kind": "exam-item",
+   "file": "corpus/exam_banks/n4_grammar_form.json",
+   "id": "gf:n4:3535",
+   "old": "gp-153",
+   "new": "gp-77",
+   "correct": "のような"
+  },
+  {
+   "kind": "exam-item",
+   "file": "corpus/exam_banks/n4_grammar_form.json",
+   "id": "gf:n4:3536",
+   "old": "gp-153",
+   "new": "gp-77",
+   "correct": "のような"
+  },
+  {
+   "kind": "exam-item",
+   "file": "corpus/exam_banks/n4_grammar_form.json",
+   "id": "gf:n4:3537",
+   "old": "gp-153",
+   "new": "gp-77",
+   "correct": "のような"
+  },
+  {
+   "kind": "exam-item",
+   "file": "corpus/exam_banks/n4_grammar_form.json",
+   "id": "gf:n4:3538",
+   "old": "gp-153",
+   "new": "gp-77",
+   "correct": "のような"
+  },
+  {
+   "kind": "exam-item",
+   "file": "corpus/exam_banks/n4_grammar_form.json",
+   "id": "gf:n4:3539",
+   "old": "gp-153",
+   "new": "gp-77",
+   "correct": "のような",
+   "retired_by": "p1-exam-fixes",
+   "retired_why": "build_exam_banks.py dropped the item (exam_builder_fixes_2, fix 18a: the blank starts inside どのような and no form of the point is token-aligned)"
+  },
+  {
+   "kind": "prose",
+   "pair": "D5b",
+   "key": "gp-77",
+   "field": "explanation",
+   "locale": "pt-BR",
+   "old": "のよう é a forma de comparação e semelhança usada em registro mais formal e na escrita, equivalente a \"como\", \"semelhante a\", \"tal qual\", \"à maneira de\". のような vem antes de substantivo (qualifica) e のように, a versão adverbial, antes de verbo/adjetivo (modo: \"do jeito que\", \"feito\"). Ex.: 雪のように白い = \"branco como a neve\"; 鳥のように飛ぶ = \"voar como um pássaro\". Depois de verbo, a forma é ように, sem o の: 先生が言ったように = \"como o professor disse\"; 思ったように = \"como eu pensava\". Pode também marcar exemplo (\"como, por exemplo\") e conjectura (\"parece que\").",
+   "new": "のよう é a forma de comparação e semelhança usada em registro mais formal e na escrita, equivalente a \"como\", \"semelhante a\", \"tal qual\", \"à maneira de\". のような vem antes de substantivo e o qualifica (\"um... como\", \"do tipo de\", \"igual a\"); のように, a versão adverbial, vem antes de verbo/adjetivo (modo: \"do jeito que\", \"feito\"). Ex.: 天使のような人 = \"uma pessoa angelical / como um anjo\"; 雪のように白い = \"branco como a neve\"; 鳥のように飛ぶ = \"voar como um pássaro\". Depois de verbo, a forma é ように, sem o の: 先生が言ったように = \"como o professor disse\"; 思ったように = \"como eu pensava\". Pode também marcar exemplo (\"como, por exemplo\") e conjectura (\"parece que\").",
+   "verdict": "corrected",
+   "loser_key": "gp-153",
+   "loser_original": "〜のような serve para comparar, dizendo que algo é \"como\" ou \"parecido com\" outra coisa, e qualifica o substantivo que vem logo depois. Equivale a \"um... como\", \"do tipo de\", \"igual a\" (天使のような人 = \"uma pessoa angelical / como um anjo\"). É a forma usada quando a comparação modifica um substantivo.",
+   "from_loser": [
+    "qualifica o substantivo que vem logo depois",
+    "\"um... como\", \"do tipo de\", \"igual a\"",
+    "天使のような人 = \"uma pessoa angelical / como um anjo\""
+   ],
+   "authored": "のよう é a forma de comparação e semelhança usada em registro mais formal e na escrita, equivalente a \"como\", \"semelhante a\", \"tal qual\", \"à maneira de\". のような vem antes de substantivo e qualifica o substantivo que vem logo depois (\"um... como\", \"do tipo de\", \"igual a\"); のように, a versão adverbial, vem antes de verbo/adjetivo (modo: \"do jeito que\", \"feito\"). Ex.: 天使のような人 = \"uma pessoa angelical / como um anjo\"; 雪のように白い = \"branco como a neve\"; 鳥のように飛ぶ = \"voar como um pássaro\"; 先生が言ったように = \"como o professor disse\"; 思ったように = \"como eu pensava\". Pode também marcar exemplo (\"como, por exemplo\") e conjectura (\"parece que\").",
+   "verifier_problem": "(3) Built on D5's UNcorrected `new` (survivor_original is byte-identical to w08b_merges.json D5 explanation.new). w08b_merges.verdict.json corrected that text because it lists 先生が言ったように and 思ったように (verb + ように, no の) in one 'Ex.' run right after the のような/のように rule, which teaches *言ったのように. This row replaces D5's text, so it would undo that correction. (4) 'vem antes de substantivo e qualifica o substantivo que vem logo depois' says the same thing twice. Fix = the verdict-corrected D5 text plus the loser's facts (qualifica o substantivo, \"um... como\", \"do tipo de\", \"igual a\", 天使のような人). No fact dropped."
+  },
+  {
+   "kind": "prose",
+   "pair": "D5b",
+   "key": "gp-77",
+   "field": "formation",
+   "locale": "pt-BR",
+   "old": "Substantivo + の + よう: のような + substantivo (氷のような手 \"mãos como gelo\"); のように + verbo/adjetivo (鳥のように歌う \"cantar como um pássaro\"). よう quer dizer \"aparência\", e o に é a terminação adverbial, a mesma dos adjetivos-な (静かに). Depois de verbo/oração na forma simples, usa-se direto よう sem の (約束したように \"como prometido\"; 先生が言ったように \"como o professor disse\"). No fim da frase: 〜のようだ／のようです. Existe também 〜のように〜ない, para \"não tanto quanto\" ou para negar a semelhança.",
+   "new": "Substantivo + の + よう: のような + substantivo (氷のような手 \"mãos como gelo\"); のように + verbo/adjetivo (鳥のように歌う \"cantar como um pássaro\"). よう quer dizer \"aparência, semelhança\"; o な é a terminação atributiva e o に a adverbial, as mesmas dos adjetivos-な (静かな／静かに). Depois de verbo na forma simples, usa-se direto よう, sem の: ような antes de substantivo (子供が遊んでいるような声 \"uma voz como a de crianças brincando\") e ように antes de verbo/adjetivo (約束したように \"como prometido\"; 先生が言ったように \"como o professor disse\"). No fim da frase: 〜のようだ／のようです. Existe também 〜のように〜ない, para \"não tanto quanto\" ou para negar a semelhança.",
+   "verdict": "corrected",
+   "loser_key": "gp-153",
+   "loser_original": "Substantivo + のような + substantivo. Vem de よう (\"aparência, semelhança\") + な, a terminação atributiva usada antes de substantivos, como nos adjetivos-な. Quando a comparação parte de uma frase verbal, usa-se [frase] + ような (子供が遊んでいるような声). Compare: のような (antes de substantivo) e のように (antes de verbo/adjetivo, ver próximo ponto).",
+   "from_loser": [
+    "よう = \"aparência, semelhança\"; な = terminação atributiva, como nos adjetivos-な",
+    "[frase] + ような antes de substantivo (子供が遊んでいるような声)"
+   ],
+   "authored": "Substantivo + の + よう: のような + substantivo (氷のような手 \"mãos como gelo\"); のように + verbo/adjetivo (鳥のように歌う \"cantar como um pássaro\"). よう quer dizer \"aparência, semelhança\"; o な é a terminação atributiva e o に a adverbial, as mesmas dos adjetivos-な (静かな／静かに). Depois de verbo/oração na forma simples, usa-se direto よう sem の: ような antes de substantivo (子供が遊んでいるような声 \"uma voz como a de crianças brincando\") e ように antes de verbo/adjetivo (約束したように \"como prometido\"; 先生が言ったように \"como o professor disse\"). No fim da frase: 〜のようだ／のようです. Existe também 〜のように〜ない, para \"não tanto quanto\" ou para negar a semelhança.",
+   "verifier_problem": "(3) This row rewrites the clause sentence and now hangs ような on it too, keeping the inherited 'Depois de verbo/oração na forma simples, usa-se direto よう sem の'. For a noun or adjetivo-な predicate the plain form is wrong (*学生だような, *静かだような; it is 学生のような, 静かなような), which is why gp-153's and gp-154's own formation_steps use to-attributive; the loser itself said 'frase verbal'. Every example given is a verb clause, so the fix scopes the sentence to 'verbo na forma simples'. Everything else is kept (loser facts all present: よう = \"aparência, semelhança\", な atributiva como nos adjetivos-な, [frase] + ような with 子供が遊んでいるような声)."
+  },
+  {
+   "kind": "prose",
+   "pair": "D5b",
+   "key": "gp-77",
+   "field": "nuance",
+   "locale": "pt-BR",
+   "old": "Não esqueça o の entre o substantivo e よう: é justamente o que distingue a versão formal (山のような = \"como uma montanha\") da coloquial (山みたいな, sem の). Para lusófonos, atenção à divisão な／に, igual à de みたい: a escolha depende só do que vem depois (substantivo → のような; verbo/adjetivo → のように). Não confunda com o 〜ように sem の, depois de verbos: é outra função, que indica finalidade (\"para que...\") e aparece em pedidos suaves e instruções (〜ようにしてください, \"faça de modo que...\"), um sentido que o nosso simples \"como\" não cobre. E o contrário também vale: nem todo \"como\" do português vira のように; ele é o caminho natural quando a ideia é \"igual a tal coisa\".",
+   "new": "Não esqueça o の entre o substantivo e よう: é justamente o que distingue a versão formal (山のような = \"como uma montanha\") da coloquial (山みたいな, sem の). Para lusófonos, atenção à divisão な／に, igual à de みたい e à dos adjetivos-な (静かな人 / 静かに話す): a escolha depende só do que vem depois (substantivo → のような; verbo/adjetivo → のように). E no meio não entra を nem verbo \"ser\": é só substantivo + のような + substantivo. Não confunda com o 〜ように sem の, depois de verbos: é outra função, que indica finalidade (\"para que...\") e aparece em pedidos suaves e instruções (〜ようにしてください, \"faça de modo que...\"), um sentido que o nosso simples \"como\" não cobre. E o contrário também vale: nem todo \"como\" do português vira のように; ele é o caminho natural quando a ideia é \"igual a tal coisa\". Na escrita bem formal, のような pode aparecer como 〜のごとき.",
+   "verdict": "corrected",
+   "loser_key": "gp-153",
+   "loser_original": "O par な/に é a chave: use のような quando depois vem um substantivo, e のように quando vem um verbo ou adjetivo. É o mesmo contraste dos adjetivos-な (静かな人 / 静かに話す). Para brasileiros, lembre que aqui não entra a partícula を nem o verbo \"ser\": é só substantivo + のような + substantivo. Em registro mais formal ou escrito, のような pode aparecer como 〜のごとき.",
+   "from_loser": [
+    "mesmo contraste dos adjetivos-な (静かな人 / 静かに話す)",
+    "sem verbo \"ser\": substantivo + のような + substantivo",
+    "〜のごとき como variante formal/escrita"
+   ],
+   "authored": "Não esqueça o の entre o substantivo e よう: é justamente o que distingue a versão formal (山のような = \"como uma montanha\") da coloquial (山みたいな, sem の). Para lusófonos, atenção à divisão な／に, igual à de みたい e à dos adjetivos-な (静かな人 / 静かに話す): a escolha depende só do que vem depois (substantivo → のような; verbo/adjetivo → のように). E não precisa de verbo \"ser\" no meio: é só substantivo + のような + substantivo. Não confunda com o 〜ように sem の que indica finalidade (\"para que...\") depois de verbos: é outra função. のように também aparece em pedidos suaves e instruções (〜のようにしてください \"faça de modo que...\"), sentido que o nosso simples \"como\" nem sempre cobre. E o contrário também vale: nem todo \"como\" do português vira のように; ele é o caminho natural quando a ideia é \"igual a tal coisa\". Na escrita bem formal, のような pode aparecer como 〜のごとき.",
+   "verifier_problem": "(3) Built on D5's UNcorrected `new`: keeps 'のように também aparece em pedidos suaves e instruções (〜のようにしてください \"faça de modo que...\")', which w08b_merges.verdict.json refuted (the soft request is verb + ようにしてください, no の: 遅れないようにしてください) and which sits right after 'não confunda com o 〜ように sem の', so the text contradicts itself. Replacing D5's text would undo that correction. (1) The loser's 'não entra a partícula を' was dropped; it is a true caution and costs four words, so it is kept. Fix = the verdict-corrected D5 nuance plus the loser's facts (adjetivos-な 静かな人 / 静かに話す, no を nor \"ser\" between the nouns, 〜のごとき)."
+  }
+ ]
+}

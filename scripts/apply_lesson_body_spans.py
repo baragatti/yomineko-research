@@ -12,6 +12,11 @@ in: ok rows keep the authored text, corrected rows carry the verifier's text, re
                            `exercise_edits` empty the exercise cites of the same sentence.
   furigana_residue.json    the `reading` attribute on the <jp> spans build_furigana_table.py refused
                            (W21 residue). An attribute only: the rendered text does not move.
+  comparacoes_fixes.json   P2-gp153: n4-suposicao-04 after the D5b merge (one のよう point, one checklist
+                           row) and the two false claims in n5-comparacoes-01.
+
+A row carrying `superseded_by: {table, row}` is skipped: the named later row consumed its `to`
+(validate_repairs_applied.py proves the chain against the export).
 
 Every row is {lesson, spans: [{from, to, count}], ...}. Per lesson, in table order, per span: `from`
 must occur exactly `count` times, then body = body.replace(from, to). A span whose `from` is gone and
@@ -48,7 +53,7 @@ LIVE = ROOT / "db" / "corpus.sqlite"
 DB = db_target(LIVE)
 SRC = out_root(ROOT) / "research" / "derived" / "lessons"
 REPAIRS = ROOT / "research" / "derived" / "repairs"
-TABLES = ("w08b_lesson_bodies.json", "w21b_rewrites.json", "furigana_residue.json")
+TABLES = ("w08b_lesson_bodies.json", "w21b_rewrites.json", "furigana_residue.json", "comparacoes_fixes.json")
 SENT_REF = re.compile(r'<sentence\s+ref="([^"]+)"')
 BODY_WHERE = ("WHERE entity_type='lesson' AND entity_id=? AND field='body' AND locale='pt-BR'")
 
@@ -64,6 +69,8 @@ def edit(body: str, group: list[dict], where: str, drift: list[str]) -> tuple[st
     """(new body, spans changed, sentence refs the changed spans removed)."""
     changed, dropped = 0, set()
     for r in group:
+        if r.get("superseded_by"):
+            continue                                       # a later table's row consumed its `to`
         for s in r["spans"]:
             frm, to, count = s["from"], s["to"], s["count"]
             n = body.count(frm)

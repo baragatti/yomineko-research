@@ -206,6 +206,18 @@ MERGES: list[dict] = [
                    "family_member_dup": 1, "exercise_item": 2, "exercise_item_dup": 0,
                    "grammar_related": 0, "cumulative_known_set": 134},
     },
+    # P2-gp153 (2026-09-23): D5's twin, triaged after W08b (research/derived/repairs/gp153_merge.json).
+    {
+        "loser": "gp-153", "winner": "gp-77", "verdict": "MERGE",
+        "why": ("W08b D5b. gp-153 {のような} is the adnominal half of gp-77 {のように, のような}: a clean "
+                "superset, the twin of D5. Same topic (top:n4-suposicao), same family, ONE lesson "
+                "(les:n4-suposicao-04) unlocks both. Survivor gp-77, as for D5."),
+        "expect": {"sentence_grammar": 5, "sentence_grammar_overlap": 0, "sentence_tags": 0,
+                   "lesson_unlocks": 1, "lesson_unlocks_dup": 1, "lesson_introduces": 1,
+                   "lesson_introduces_dup": 1, "lesson_needs": 0, "family_member": 1,
+                   "family_member_dup": 1, "exercise_item": 1, "exercise_item_dup": 0,
+                   "grammar_related": 0, "cumulative_known_set": 134},
+    },
     {
         "loser": "gp-60", "winner": "tara", "verdict": "MERGE",
         "why": ("W08b D6. Same point 〜たら; gp-60's five formation variants are tara's five and only "
@@ -258,9 +270,6 @@ DECLINED: list[tuple[str, str]] = [
      "wrong forms[] on gp-36, not one point. §2.2."),
     ("gram:gp-63 / gram:gp-115",
      "KEEP BOTH — passive vs potential. The collision is manufactured by a wrong gp-115.forms[0]. §2.3."),
-    ("gram:gp-153 / gram:gp-77  {のような}",
-     "UNTRIAGED — the third record in les:n4-suposicao-04, a subset of gp-77; found by W08b, not in "
-     "its eight."),
     ("gram:no-ga-suki / gram:gp-23",
      "UNTRIAGED — les:n5-adjetivos-07 calls them 'the same construction registered under two keys'; "
      "found by the W08b lesson-body pass, not in its eight."),
