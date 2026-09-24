@@ -1,0 +1,2820 @@
+{
+ "unit": "token-link-audit mechanical sample",
+ "generated": "2026-09-23",
+ "status": "pending: review evidence for the token_link_audit apply; nothing applied",
+ "input": "research/derived/pending/token_link_audit.json (4,004 rows; relink 3,262, unlink 212) against corpus/sentences/bank.json and corpus/vocab/*.json at git HEAD",
+ "method": "seeded (random.Random(20260923)) proportional sample, largest-remainder allocation per class within action, rows sorted by (sentence, position) before sampling; each row read by eye in its sentence with the old and new record glosses, then the trap families the sample exposed were censused over every relink/unlink row",
+ "sample": {
+  "relink": {
+   "n": 200,
+   "wrong_homograph": 99,
+   "wrong_reading": 61,
+   "wrong_pos": 28,
+   "auxiliary_as_lexical": 12
+  },
+  "unlink": {
+   "n": 50,
+   "wrong_pos": 43,
+   "wrong_reading": 7
+  }
+ },
+ "verdicts": {
+  "correct": "the proposed link (or unlink) is right in this sentence",
+  "wrong": "the proposed link names the wrong word, or the unlink deletes a right link",
+  "incomplete": "unlink is safe (the old link is wrong) but a registry record is the word; not counted as an error"
+ },
+ "error_rate_by_class": {
+  "auxiliary_as_lexical": {
+   "n": 12,
+   "wrong": 2,
+   "incomplete": 0,
+   "error_rate": 0.1667,
+   "error_rate_95_upper": 0.448,
+   "above_2pct": true,
+   "by_action": {
+    "relink": {
+     "n": 12,
+     "wrong": 2,
+     "incomplete": 0,
+     "error_rate": 0.1667,
+     "error_rate_95_upper": 0.448,
+     "above_2pct": true
+    }
+   }
+  },
+  "wrong_homograph": {
+   "n": 99,
+   "wrong": 1,
+   "incomplete": 0,
+   "error_rate": 0.0101,
+   "error_rate_95_upper": 0.055,
+   "above_2pct": false,
+   "by_action": {
+    "relink": {
+     "n": 99,
+     "wrong": 1,
+     "incomplete": 0,
+     "error_rate": 0.0101,
+     "error_rate_95_upper": 0.055,
+     "above_2pct": false
+    }
+   }
+  },
+  "wrong_pos": {
+   "n": 71,
+   "wrong": 1,
+   "incomplete": 10,
+   "error_rate": 0.0141,
+   "error_rate_95_upper": 0.0756,
+   "above_2pct": false,
+   "by_action": {
+    "relink": {
+     "n": 28,
+     "wrong": 1,
+     "incomplete": 0,
+     "error_rate": 0.0357,
+     "error_rate_95_upper": 0.1771,
+     "above_2pct": true
+    },
+    "unlink": {
+     "n": 43,
+     "wrong": 0,
+     "incomplete": 10,
+     "error_rate": 0.0,
+     "error_rate_95_upper": 0.082,
+     "above_2pct": false
+    }
+   }
+  },
+  "wrong_reading": {
+   "n": 68,
+   "wrong": 0,
+   "incomplete": 0,
+   "error_rate": 0.0,
+   "error_rate_95_upper": 0.0535,
+   "above_2pct": false,
+   "by_action": {
+    "relink": {
+     "n": 61,
+     "wrong": 0,
+     "incomplete": 0,
+     "error_rate": 0.0,
+     "error_rate_95_upper": 0.0592,
+     "above_2pct": false
+    },
+    "unlink": {
+     "n": 7,
+     "wrong": 0,
+     "incomplete": 0,
+     "error_rate": 0.0,
+     "error_rate_95_upper": 0.3543,
+     "above_2pct": false
+    }
+   }
+  },
+  "_all": {
+   "n": 250,
+   "wrong": 4,
+   "incomplete": 10,
+   "error_rate": 0.016,
+   "error_rate_95_upper": 0.0404,
+   "above_2pct": false
+  }
+ },
+ "exclude_patterns": [
+  {
+   "id": "aux-sou-to-然う",
+   "class": "auxiliary_as_lexical",
+   "action": "relink",
+   "match": {
+    "old_vocab": "vocab:1241450",
+    "new_vocab": "vocab:2137720",
+    "sudachi_pos": "形状詞-助動詞語幹",
+    "surface": "そう"
+   },
+   "rows": 21,
+   "keys": [
+    "sent:tatoeba-103067#6",
+    "sent:tatoeba-11891593#5",
+    "sent:tatoeba-119419#4",
+    "sent:tatoeba-12001843#3",
+    "sent:tatoeba-120412#22",
+    "sent:tatoeba-12143027#5",
+    "sent:tatoeba-137657#7",
+    "sent:tatoeba-137876#3",
+    "sent:tatoeba-170271#7",
+    "sent:tatoeba-183286#3",
+    "sent:tatoeba-198244#5",
+    "sent:tatoeba-207514#4",
+    "sent:tatoeba-208254#9",
+    "sent:tatoeba-2702337#9",
+    "sent:tatoeba-3573943#1",
+    "sent:tatoeba-78455#3",
+    "sent:tatoeba-81074#1",
+    "sent:tatoeba-82756#9",
+    "sent:tatoeba-86410#6",
+    "sent:tatoeba-86466#3",
+    "sent:tatoeba-95333#5"
+   ],
+   "found_by": "sample (2/2 sampled そう rows wrong) + census (all 21 are 様態/伝聞 そうだ)",
+   "why": "the auxiliary そう(だ) 'looks like / I hear' is not 然う (JMdict 2137720 is adv/int 'in that way/so' only) and the registry has no record for it",
+   "apply_instead": "unlink (the 173 用->様 よう rows of this class are right: JMdict 様 carries 'appearing/like/way to')"
+  },
+  {
+   "id": "yoru-drop-by",
+   "class": "wrong_pos",
+   "action": "relink",
+   "match": {
+    "old_vocab": "vocab:1536350",
+    "new_vocab": "vocab:1168660",
+    "context": "よっ + て followed by 来る/行く/下さる (に寄って来る/行く, 脇に寄ってください)"
+   },
+   "rows": 3,
+   "keys": [
+    "sent:tatoeba-202786#3",
+    "sent:tatoeba-202824#4",
+    "sent:tatoeba-77135#2"
+   ],
+   "found_by": "sample (1 of 28 wrong_pos relinks) + census of all 32 夜->依る rows",
+   "why": "寄る 'drop in / move aside', not 依る; Sudachi gives kana normalized よる, so identity never separated them",
+   "apply_instead": "relink to 寄る vocab:1219680"
+  },
+  {
+   "id": "tsuku-lie-and-post",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "match": {
+    "old_vocab": "vocab:1422970",
+    "new_vocab": "vocab:1495740",
+    "context": "嘘 ... つく (吐く) or 仕事/職/地位 に つく (就く)"
+   },
+   "rows": 3,
+   "keys": [
+    "sent:tatoeba-189506#3",
+    "sent:tatoeba-3507342#2",
+    "sent:tatoeba-229052#6"
+   ],
+   "found_by": "sample (1 of 99 wrong_homograph rows) + census of all 32 着く->付く rows",
+   "why": "Sudachi normalizes every kana つく to 付く; 嘘をつく is 吐く/つく (vocab:1444150), 仕事につく is 就く (vocab:1331530)",
+   "apply_instead": "relink 189506#3 and 3507342#2 to vocab:1444150, 229052#6 to vocab:1331530 (the 6 light/fire rows stay on 付く: JMdict 1495740 sense 9 covers them; 点く vocab:1441400 would be more precise)"
+  },
+  {
+   "id": "kakaru-disease",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "match": {
+    "old_vocab": "vocab:1609500",
+    "new_vocab": "vocab:1207590",
+    "context": "disease noun + に + かかる (インフルエンザ/性病/病気/風邪)"
+   },
+   "rows": 3,
+   "keys": [
+    "sent:tatoeba-141890#3",
+    "sent:tatoeba-143299#2",
+    "sent:tatoeba-82900#5"
+   ],
+   "found_by": "census of all 51 罹る->掛かる rows (not hit by the sample)",
+   "why": "catching an illness is 罹る 'contract (a disease)'; the old link is right, 掛かる has no disease sense",
+   "apply_instead": "drop the row (keep 罹る)"
+  },
+  {
+   "id": "karada-written-身体",
+   "class": "wrong_reading",
+   "action": "relink",
+   "match": {
+    "old_vocab": "vocab:1409140",
+    "new_vocab": "vocab:2830705"
+   },
+   "rows": 3,
+   "keys": [
+    "sent:tatoeba-12439920#0",
+    "sent:tatoeba-144733#0",
+    "sent:tatoeba-75043#3"
+   ],
+   "found_by": "census (not hit by the sample)",
+   "why": "身体 in everyday speech (身体は洗った？, 身体を大事に) is からだ, a registered form of 体/からだ (JMdict 1409140); the しんたい reading is Sudachi's default, both witnesses share it",
+   "apply_instead": "drop the rows (keep 体/からだ)"
+  },
+  {
+   "id": "census-singletons",
+   "class": "mixed",
+   "action": "relink/unlink",
+   "rows": 7,
+   "keys": [
+    "sent:tatoeba-2190027#0",
+    "sent:gen-36325d6776f7#5",
+    "sent:tatoeba-10083431#4",
+    "sent:tatoeba-10917216#0",
+    "sent:gen-7dbe2462fc9a#3",
+    "sent:gen-82a15e826996#3",
+    "sent:tatoeba-205312#9"
+   ],
+   "found_by": "census of every relink/unlink pattern with 21 rows or fewer (not hit by the sample)",
+   "why": "2190027#0 あるわけがない is the verb 有る (keep); gen-36325d6776f7#5 ほしがる is 欲しい+がる, not 干す; 10083431#4 葡萄のつる is 蔓 (no record: unlink, not 吊る); 10917216#0 さい1組 is 賽 'dice' (no record: unlink, not 際); unlinks that delete a right link: gen-7dbe2462fc9a#3 紙にえを描いた is 絵, gen-82a15e826996#3 なんさつ is the counter 冊, 205312#9 不可でもなし is 無し",
+   "apply_instead": "drop all seven, except 10083431#4 and 10917216#0 which become unlink"
+  },
+  {
+   "id": "doushite-progressive",
+   "class": "wrong_pos",
+   "action": "relink",
+   "rows": 1,
+   "keys": [
+    "sent:tatoeba-210836#1"
+   ],
+   "found_by": "census, borderline",
+   "why": "その後どうしていますか is どう + している 'how are you doing', not the adverb どうして; the run steals the progressive て",
+   "apply_instead": "unlink (どう has no record)"
+  }
+ ],
+ "upgrade_candidates": {
+  "note": "unlink rows that are safe (the old link is wrong) but the registry holds the word; not errors, apply may upgrade them to relink",
+  "伯/はく -> 履く vocab:1607260": [
+   "sent:gen-184539bcd1c1#4",
+   "sent:gen-32732cd45600#3",
+   "sent:gen-6c1a9bd46750#5",
+   "sent:gen-f850284436ae#7",
+   "sent:tatoeba-103106#5",
+   "sent:tatoeba-113616#4",
+   "sent:tatoeba-204778#6",
+   "sent:tatoeba-214119#2"
+  ],
+  "池/いけ (いけません, no ない-run) -> 行けない vocab:1000730": [
+   "sent:gen-e3f62021ed35#6",
+   "sent:tatoeba-122103#3",
+   "sent:tatoeba-123027#10",
+   "sent:tatoeba-123771#7",
+   "sent:tatoeba-145934#5",
+   "sent:tatoeba-148322#10",
+   "sent:tatoeba-172934#4",
+   "sent:tatoeba-173416#4",
+   "sent:tatoeba-175939#6",
+   "sent:tatoeba-211701#6",
+   "sent:tatoeba-2125062#5",
+   "sent:tatoeba-224260#5",
+   "sent:tatoeba-741581#3",
+   "sent:tatoeba-79750#8",
+   "sent:tatoeba-80396#5"
+  ],
+  "池/いけ 'can't go' -> 行く vocab:1578850": [
+   "sent:tatoeba-236798#7"
+  ],
+  "家内/かない (かないます) -> 叶う vocab:1208870": [
+   "sent:tatoeba-162586#4",
+   "sent:tatoeba-80958#2"
+  ],
+  "為/ため (ためて) -> 溜める vocab:1552630": [
+   "sent:gen-67098aef1bd0#2"
+  ],
+  "君/くん (腕をくんで) -> 組む vocab:1397590": [
+   "sent:tatoeba-96005#5"
+  ],
+  "いいえ (いえない) -> 言う vocab:1587040": [
+   "sent:tatoeba-156290#10"
+  ],
+  "いらっしゃい (いらしゃい) -> 居らっしゃる vocab:1000940": [
+   "sent:tatoeba-163310#9"
+  ]
+ },
+ "rows": [
+  {
+   "key": "sent:tatoeba-183142#3",
+   "class": "auxiliary_as_lexical",
+   "action": "relink",
+   "surface": "よう",
+   "old": "用/よう",
+   "new": "様/よう",
+   "verdict": "correct",
+   "why": "auxiliary よう (ように/ような/ようだ) is 様 'appearing/like/way to'; 用 'errand/use' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-151103#3",
+   "class": "auxiliary_as_lexical",
+   "action": "relink",
+   "surface": "よう",
+   "old": "用/よう",
+   "new": "様/よう",
+   "verdict": "correct",
+   "why": "auxiliary よう (ように/ような/ようだ) is 様 'appearing/like/way to'; 用 'errand/use' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-168859#4",
+   "class": "auxiliary_as_lexical",
+   "action": "relink",
+   "surface": "よう",
+   "old": "用/よう",
+   "new": "様/よう",
+   "verdict": "correct",
+   "why": "auxiliary よう (ように/ような/ようだ) is 様 'appearing/like/way to'; 用 'errand/use' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-189022#3",
+   "class": "auxiliary_as_lexical",
+   "action": "relink",
+   "surface": "よう",
+   "old": "用/よう",
+   "new": "様/よう",
+   "verdict": "correct",
+   "why": "auxiliary よう (ように/ような/ようだ) is 様 'appearing/like/way to'; 用 'errand/use' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-145193#7",
+   "class": "auxiliary_as_lexical",
+   "action": "relink",
+   "surface": "よう",
+   "old": "用/よう",
+   "new": "様/よう",
+   "verdict": "correct",
+   "why": "auxiliary よう (ように/ような/ようだ) is 様 'appearing/like/way to'; 用 'errand/use' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-207514#4",
+   "class": "auxiliary_as_lexical",
+   "action": "relink",
+   "surface": "そう",
+   "old": "琴/こと",
+   "new": "然う/そう",
+   "verdict": "wrong",
+   "why": "倒れそうだ: そう is the 様態 auxiliary そうだ 'looks like'. 然う (JMdict 2137720) is only adv/int 'in that way/so', so the link gives the wrong word; no registry record is this auxiliary, so the right action is unlink."
+  },
+  {
+   "key": "sent:tatoeba-4930#5",
+   "class": "auxiliary_as_lexical",
+   "action": "relink",
+   "surface": "よう",
+   "old": "用/よう",
+   "new": "様/よう",
+   "verdict": "correct",
+   "why": "auxiliary よう (ように/ような/ようだ) is 様 'appearing/like/way to'; 用 'errand/use' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-137876#3",
+   "class": "auxiliary_as_lexical",
+   "action": "relink",
+   "surface": "そう",
+   "old": "琴/こと",
+   "new": "然う/そう",
+   "verdict": "wrong",
+   "why": "死にそうだ: そう is the 様態 auxiliary そうだ. 然う 'in that way/so' is a different word (adv/int only); should be unlink."
+  },
+  {
+   "key": "sent:gen-2dfc60410a66#4",
+   "class": "auxiliary_as_lexical",
+   "action": "relink",
+   "surface": "よう",
+   "old": "用/よう",
+   "new": "様/よう",
+   "verdict": "correct",
+   "why": "auxiliary よう (ように/ような/ようだ) is 様 'appearing/like/way to'; 用 'errand/use' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-83953#4",
+   "class": "auxiliary_as_lexical",
+   "action": "relink",
+   "surface": "よう",
+   "old": "用/よう",
+   "new": "様/よう",
+   "verdict": "correct",
+   "why": "auxiliary よう (ように/ような/ようだ) is 様 'appearing/like/way to'; 用 'errand/use' does not fit"
+  },
+  {
+   "key": "sent:gen-4558abf25a14#4",
+   "class": "auxiliary_as_lexical",
+   "action": "relink",
+   "surface": "よう",
+   "old": "用/よう",
+   "new": "様/よう",
+   "verdict": "correct",
+   "why": "auxiliary よう (ように/ような/ようだ) is 様 'appearing/like/way to'; 用 'errand/use' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-75844#1",
+   "class": "auxiliary_as_lexical",
+   "action": "relink",
+   "surface": "よう",
+   "old": "用/よう",
+   "new": "様/よう",
+   "verdict": "correct",
+   "why": "auxiliary よう (ように/ような/ようだ) is 様 'appearing/like/way to'; 用 'errand/use' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-12142846#3",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-219030#5",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "くれ",
+   "old": "暮れる/くれる",
+   "new": "呉れる/くれる",
+   "verdict": "correct",
+   "why": "くれる 'give / do for me'; 暮れる 'get dark' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-236104#9",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:jec-1732#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なら",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-208436#11",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-79133#4",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "くれ",
+   "old": "暮れる/くれる",
+   "new": "呉れる/くれる",
+   "verdict": "correct",
+   "why": "くれる 'give / do for me'; 暮れる 'get dark' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-81651#8",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なり",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-10317752#2",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-10021569#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "ほう",
+   "old": "報/ほう",
+   "new": "方/ほう",
+   "verdict": "correct",
+   "why": "ほう in 〜ほうがいい is 方 'the ... one'; 報 'news' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-157994#4",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なり",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-124754#2",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "かかっ",
+   "old": "罹る/かかる",
+   "new": "掛かる/かかる",
+   "verdict": "correct",
+   "why": "かかる 'take (time)/get a call'; no disease in the sentence, so 罹る 'contract (a disease)' does not fit"
+  },
+  {
+   "key": "sent:gen-9bc0cee86eab#4",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "つい",
+   "old": "着く/つく",
+   "new": "付く/つく",
+   "verdict": "correct",
+   "why": "つく here is 付く (stick/気が付く/見分けが付く/(light) be on = JMdict 1495740 sense 9); 着く 'arrive' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-229105#2",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "せよ",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-172700#5",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-162459#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "くれ",
+   "old": "暮れる/くれる",
+   "new": "呉れる/くれる",
+   "verdict": "correct",
+   "why": "くれる 'give / do for me'; 暮れる 'get dark' does not fit"
+  },
+  {
+   "key": "sent:gen-16f904158589#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "つい",
+   "old": "着く/つく",
+   "new": "付く/つく",
+   "verdict": "correct",
+   "why": "つく here is 付く (stick/気が付く/見分けが付く/(light) be on = JMdict 1495740 sense 9); 着く 'arrive' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-8619682#1",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "する",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-11741587#1",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-228672#2",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-75913#10",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "つく",
+   "old": "着く/つく",
+   "new": "付く/つく",
+   "verdict": "correct",
+   "why": "つく here is 付く (stick/気が付く/見分けが付く/(light) be on = JMdict 1495740 sense 9); 着く 'arrive' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-77841#1",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なる",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-175272#8",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "つく",
+   "old": "着く/つく",
+   "new": "付く/つく",
+   "verdict": "correct",
+   "why": "つく here is 付く (stick/気が付く/見分けが付く/(light) be on = JMdict 1495740 sense 9); 着く 'arrive' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-221141#5",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "さ",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-159638#5",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "する",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-230222#8",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-186055#7",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-351848#5",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なっ",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-11041688#3",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なり",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-8760373#4",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なっ",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-141652#8",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-105937#10",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "くれ",
+   "old": "暮れる/くれる",
+   "new": "呉れる/くれる",
+   "verdict": "correct",
+   "why": "くれる 'give / do for me'; 暮れる 'get dark' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-150304#5",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-214766#7",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なる",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-214854#4",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "ほう",
+   "old": "報/ほう",
+   "new": "方/ほう",
+   "verdict": "correct",
+   "why": "ほう in 〜ほうがいい is 方 'the ... one'; 報 'news' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-164476#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-9780631#10",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なる",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-9032587#7",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なる",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:jec-4908#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "わけ",
+   "old": "理由/りゆう",
+   "new": "訳/わけ",
+   "verdict": "correct",
+   "why": "わけ is 訳; 理由 is read りゆう"
+  },
+  {
+   "key": "sent:tatoeba-144733#7",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なら",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-11013889#7",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なっ",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-91654#5",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-80845#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なっ",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-11410808#1",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-76366#14",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なっ",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-193877#2",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "する",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-79032#1",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "せ",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-217130#5",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-193327#12",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なる",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-229052#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "つく",
+   "old": "着く/つく",
+   "new": "付く/つく",
+   "verdict": "wrong",
+   "why": "仕事につく is 就く 'to take (a job)' (vocab:1331530 is in the registry). 付く has no 'take up a post' sense, so the relink replaces one wrong record with another."
+  },
+  {
+   "key": "sent:tatoeba-101851#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-185352#4",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なっ",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-11700358#3",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-137468#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-5046#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "くれれ",
+   "old": "暮れる/くれる",
+   "new": "呉れる/くれる",
+   "verdict": "correct",
+   "why": "くれる 'give / do for me'; 暮れる 'get dark' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-3366797#3",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なっ",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-13894076#2",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-82481#2",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-13065971#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "かかる",
+   "old": "罹る/かかる",
+   "new": "掛かる/かかる",
+   "verdict": "correct",
+   "why": "かかる 'take (time)/get a call'; no disease in the sentence, so 罹る 'contract (a disease)' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-5751859#4",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "さ",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-78371#7",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "さ",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-183471#2",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "する",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-110899#3",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-10274623#7",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "わけ",
+   "old": "理由/りゆう",
+   "new": "訳/わけ",
+   "verdict": "correct",
+   "why": "わけ is 訳; 理由 is read りゆう"
+  },
+  {
+   "key": "sent:tatoeba-138023#4",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なっ",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-91815#5",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-10125680#8",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-223736#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "する",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-90015#7",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-222722#7",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "する",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-191067#3",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-13885246#4",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "つい",
+   "old": "着く/つく",
+   "new": "付く/つく",
+   "verdict": "correct",
+   "why": "つく here is 付く (stick/気が付く/見分けが付く/(light) be on = JMdict 1495740 sense 9); 着く 'arrive' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-156782#4",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:gen-9403f234e3a8#8",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なる",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-230091#7",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "さ",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-1483594#3",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-219572#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "する",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-146812#2",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "すれ",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-231142#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "する",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-8547369#2",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-122465#10",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なら",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-95846#3",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "する",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:gen-4b510979efef#4",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なっ",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-78637#7",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なら",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-204386#11",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なら",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-10013076#2",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なり",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-8582190#4",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-80465#4",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なる",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-140945#8",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "する",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-188589#4",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "くれ",
+   "old": "暮れる/くれる",
+   "new": "呉れる/くれる",
+   "verdict": "correct",
+   "why": "くれる 'give / do for me'; 暮れる 'get dark' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-2486229#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-189302#5",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-104032#4",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-224485#3",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:gen-c058146d69ad#2",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "なり",
+   "old": "生る/なる",
+   "new": "成る/なる",
+   "verdict": "correct",
+   "why": "なる 'become' (incl. なければならない, ことになる); 生る 'bear fruit' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-219532#5",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "さ",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-85088#7",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-84185#6",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "ほう",
+   "old": "報/ほう",
+   "new": "方/ほう",
+   "verdict": "correct",
+   "why": "ほう in 〜ほうがいい is 方 'the ... one'; 報 'news' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-101851#3",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "し",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-222481#7",
+   "class": "wrong_homograph",
+   "action": "relink",
+   "surface": "する",
+   "old": "刷る/する",
+   "new": "為る/する",
+   "verdict": "correct",
+   "why": "する here is 'do' (light verb / する-verb), Sudachi normalizes to 為る; 刷る 'to print' does not fit"
+  },
+  {
+   "key": "sent:gen-355dc3f7dd5b#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "ここ",
+   "old": "九/きゅう",
+   "new": "此処/ここ",
+   "verdict": "correct",
+   "why": "ここ is the demonstrative 此処; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-10682352#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-1683463#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-171833#2",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "ここ",
+   "old": "九/きゅう",
+   "new": "此処/ここ",
+   "verdict": "correct",
+   "why": "ここ is the demonstrative 此処; 九 is a numeral"
+  },
+  {
+   "key": "sent:gen-6c6232da3d11#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "ここ",
+   "old": "九/きゅう",
+   "new": "此処/ここ",
+   "verdict": "correct",
+   "why": "ここ is the demonstrative 此処; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-220458#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-210852#11",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "よっ",
+   "old": "夜/よる",
+   "new": "依る/よる",
+   "verdict": "correct",
+   "why": "によって (agent/means) is 依る; 夜 'night' is a noun"
+  },
+  {
+   "key": "sent:tatoeba-219701#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:gen-cb8965c16361#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "ここ",
+   "old": "九/きゅう",
+   "new": "此処/ここ",
+   "verdict": "correct",
+   "why": "ここ is the demonstrative 此処; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-160838#2",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-9972246#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "ここ",
+   "old": "九/きゅう",
+   "new": "此処/ここ",
+   "verdict": "correct",
+   "why": "ここ is the demonstrative 此処; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-11801342#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "ここ",
+   "old": "九/きゅう",
+   "new": "此処/ここ",
+   "verdict": "correct",
+   "why": "ここ is the demonstrative 此処; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-220404#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-222168#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-2431512#7",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "いけ",
+   "old": "池/いけ",
+   "new": "行けない/いけない",
+   "verdict": "correct",
+   "why": "いけ+ない 'must/not allowed' is the 行けない record (run); 池 'pond' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-126512#5",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-220515#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-223122#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-201846#4",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "よっ",
+   "old": "夜/よる",
+   "new": "依る/よる",
+   "verdict": "correct",
+   "why": "によって (agent/means) is 依る; 夜 'night' is a noun"
+  },
+  {
+   "key": "sent:tatoeba-220914#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:gen-89e4943d32e5#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-9165367#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "ここ",
+   "old": "九/きゅう",
+   "new": "此処/ここ",
+   "verdict": "correct",
+   "why": "ここ is the demonstrative 此処; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-202824#4",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "よっ",
+   "old": "夜/よる",
+   "new": "依る/よる",
+   "verdict": "wrong",
+   "why": "その店によって行きませんか 'drop in at the shop' is 寄る (vocab:1219680 is in the registry), not 依る 'depend on/by means of'."
+  },
+  {
+   "key": "sent:tatoeba-393788#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-10647266#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:gen-d636b2844d52#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-222882#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "この",
+   "old": "九/きゅう",
+   "new": "此の/この",
+   "verdict": "correct",
+   "why": "この is the demonstrative 此の; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-224348#0",
+   "class": "wrong_pos",
+   "action": "relink",
+   "surface": "ここ",
+   "old": "九/きゅう",
+   "new": "此処/ここ",
+   "verdict": "correct",
+   "why": "ここ is the demonstrative 此処; 九 is a numeral"
+  },
+  {
+   "key": "sent:tatoeba-162185#3",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-110488#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-108517#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-96193#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-100638#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-102240#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-96393#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-97774#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-190227#2",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "前",
+   "old": "先/さき",
+   "new": "前/まえ",
+   "verdict": "correct",
+   "why": "前 read まえ 'front/before'; 先 is a different word"
+  },
+  {
+   "key": "sent:tatoeba-101872#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-221717#1",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "詩",
+   "old": "歌/うた",
+   "new": "詩/し",
+   "verdict": "correct",
+   "why": "詩 read し 'poem'; 歌 is a different word"
+  },
+  {
+   "key": "sent:tatoeba-11216254#10",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "一",
+   "old": "一/いち",
+   "new": "一つ/ひとつ",
+   "verdict": "correct",
+   "why": "一+つ read ひとつ is the 一つ record (run)"
+  },
+  {
+   "key": "sent:tatoeba-1583548#2",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "前",
+   "old": "先/さき",
+   "new": "前/まえ",
+   "verdict": "correct",
+   "why": "前 read まえ 'front/before'; 先 is a different word"
+  },
+  {
+   "key": "sent:tatoeba-142364#1",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:gen-7922a3568468#4",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "前",
+   "old": "先/さき",
+   "new": "前/まえ",
+   "verdict": "correct",
+   "why": "前 read まえ 'front/before'; 先 is a different word"
+  },
+  {
+   "key": "sent:tatoeba-118426#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-119244#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-173984#5",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:gen-6e5337d59331#2",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "前",
+   "old": "先/さき",
+   "new": "前/まえ",
+   "verdict": "correct",
+   "why": "前 read まえ 'front/before'; 先 is a different word"
+  },
+  {
+   "key": "sent:tatoeba-108828#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-78168#3",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "前",
+   "old": "先/さき",
+   "new": "前/まえ",
+   "verdict": "correct",
+   "why": "前 read まえ 'front/before'; 先 is a different word"
+  },
+  {
+   "key": "sent:tatoeba-156735#3",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-98637#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-106641#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-118003#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-190768#2",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-84173#2",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "中",
+   "old": "内/うち",
+   "new": "中/なか",
+   "verdict": "correct",
+   "why": "中 read なか 'inside'; 内/うち is a different word"
+  },
+  {
+   "key": "sent:tatoeba-100928#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-12829733#2",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "中",
+   "old": "内/うち",
+   "new": "中/なか",
+   "verdict": "correct",
+   "why": "中 read なか 'inside'; 内/うち is a different word"
+  },
+  {
+   "key": "sent:tatoeba-206497#4",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "一",
+   "old": "一/いち",
+   "new": "一つ/ひとつ",
+   "verdict": "correct",
+   "why": "一+つ read ひとつ is the 一つ record (run)"
+  },
+  {
+   "key": "sent:tatoeba-112160#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-116193#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-1273301#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-100315#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-119258#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-108550#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-113958#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-116494#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-107254#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-104593#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-77624#4",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-108525#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:gen-d08a62bfe768#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "中",
+   "old": "内/うち",
+   "new": "中/ちゅう",
+   "verdict": "correct",
+   "why": "中 read ちゅう 'medium (size)' = JMdict 1620400 sense 1 (the export trims that sense, the record identity is right)"
+  },
+  {
+   "key": "sent:tatoeba-228616#1",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-97583#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-118304#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-118077#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-104812#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-115376#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-105226#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-102723#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-107256#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-100485#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-193781#11",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-101156#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-84179#2",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "中",
+   "old": "内/うち",
+   "new": "中/なか",
+   "verdict": "correct",
+   "why": "中 read なか 'inside'; 内/うち is a different word"
+  },
+  {
+   "key": "sent:tatoeba-103940#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-6956277#1",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "前",
+   "old": "先/さき",
+   "new": "前/まえ",
+   "verdict": "correct",
+   "why": "前 read まえ 'front/before'; 先 is a different word"
+  },
+  {
+   "key": "sent:tatoeba-116449#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-95846#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-104605#0",
+   "class": "wrong_reading",
+   "action": "relink",
+   "surface": "彼",
+   "old": "彼/あれ",
+   "new": "彼/かれ",
+   "verdict": "correct",
+   "why": "彼 read かれ 'he/him'; 彼/あれ 'that' does not fit"
+  },
+  {
+   "key": "sent:tatoeba-123771#7",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いけ",
+   "old": "池/いけ",
+   "new": null,
+   "verdict": "incomplete",
+   "why": "いけません (polite いけない 'must not'): 池 is wrong and unlink is safe, but the registry has 行けない/いけない (vocab:1000730); no ない-run exists here so the run rule missed it."
+  },
+  {
+   "key": "sent:tatoeba-83185#2",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:gen-50ec2f620020#2",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 2+3 already carries vocab:1009000 on position 3; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:tatoeba-175295#2",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-145934#5",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いけ",
+   "old": "池/いけ",
+   "new": null,
+   "verdict": "incomplete",
+   "why": "いけません 'must not': unlink is safe; 行けない (vocab:1000730) is the word."
+  },
+  {
+   "key": "sent:tatoeba-211701#6",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いけ",
+   "old": "池/いけ",
+   "new": null,
+   "verdict": "incomplete",
+   "why": "いけません 'must not': unlink is safe; 行けない (vocab:1000730) is the word."
+  },
+  {
+   "key": "sent:tatoeba-211124#3",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-7989417#0",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-201716#0",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-184859#5",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いけ",
+   "old": "池/いけ",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 5+6 already carries vocab:1000730 on position 6; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:tatoeba-112260#4",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-1485397#8",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 8+9 already carries vocab:1009000 on position 9; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:tatoeba-10534607#5",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-4934639#4",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いけ",
+   "old": "池/いけ",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 4+5 already carries vocab:1000730 on position 5; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:gen-62dba560bd6b#4",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-75539#0",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "わ",
+   "old": "輪/わ",
+   "new": null,
+   "verdict": "correct",
+   "why": "interjection わ; 輪 'ring' does not fit and no registry record is the interjection"
+  },
+  {
+   "key": "sent:tatoeba-214119#2",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "はい",
+   "old": "伯/はく",
+   "new": null,
+   "verdict": "incomplete",
+   "why": "スリッパをはいて: はく is 履く 'put on (footwear)', which is in the registry (vocab:1607260); unlink is safe but a relink was available."
+  },
+  {
+   "key": "sent:tatoeba-4751207#2",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-190365#1",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-198428#4",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:gen-1ab712f1023e#6",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いけ",
+   "old": "池/いけ",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 6+7 already carries vocab:1000730 on position 7; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:tatoeba-1483683#3",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-11471873#5",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-10723299#3",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いけ",
+   "old": "池/いけ",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 3+4 already carries vocab:1000730 on position 4; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:tatoeba-156290#10",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いえ",
+   "old": "いいえ/いいえ",
+   "new": null,
+   "verdict": "incomplete",
+   "why": "いえない is 言える (potential of 言う); 言う (vocab:1587040) is in the registry; unlink is safe."
+  },
+  {
+   "key": "sent:tatoeba-175939#6",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いけ",
+   "old": "池/いけ",
+   "new": null,
+   "verdict": "incomplete",
+   "why": "いけません 'must not': unlink is safe; 行けない (vocab:1000730) is the word."
+  },
+  {
+   "key": "sent:gen-e3f62021ed35#6",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いけ",
+   "old": "池/いけ",
+   "new": null,
+   "verdict": "incomplete",
+   "why": "いけません 'must not': unlink is safe; 行けない (vocab:1000730) is the word."
+  },
+  {
+   "key": "sent:tatoeba-165585#9",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いけ",
+   "old": "池/いけ",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 9+10 already carries vocab:1000730 on position 10; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:tatoeba-5001#3",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-10989322#1",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "おい",
+   "old": "老い/おい",
+   "new": null,
+   "verdict": "correct",
+   "why": "interjection おい 'hey'; 老い 'old age' does not fit and the registry has no interjection おい"
+  },
+  {
+   "key": "sent:tatoeba-230963#4",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-82890#11",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いけ",
+   "old": "池/いけ",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 11+12 already carries vocab:1000730 on position 12; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:tatoeba-236798#7",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いけ",
+   "old": "池/いけ",
+   "new": null,
+   "verdict": "incomplete",
+   "why": "レストランにいけません 'can't go': potential of 行く; unlink is safe but 行く (vocab:1578850) is the word."
+  },
+  {
+   "key": "sent:gen-4a22c783f8ef#0",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 0+1 already carries vocab:1009000 on position 1; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:tatoeba-174758#2",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いけ",
+   "old": "池/いけ",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 2+3 already carries vocab:1000730 on position 3; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:tatoeba-11733143#6",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-163310#9",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いらしゃい",
+   "old": "いらっしゃい/いらっしゃい",
+   "new": null,
+   "verdict": "incomplete",
+   "why": "いらしゃい is a misspelt imperative of いらっしゃる (vocab:1000940 居らっしゃる); unlink is safe, relink possible."
+  },
+  {
+   "key": "sent:tatoeba-96005#5",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "くん",
+   "old": "君/くん",
+   "new": null,
+   "verdict": "incomplete",
+   "why": "腕をくんで is 組む 'cross (one's arms)' (vocab:1397590); unlink is safe but a relink was available."
+  },
+  {
+   "key": "sent:tatoeba-174834#3",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-11733683#0",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-3362247#2",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-79829#7",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "どう",
+   "old": "動/どう",
+   "new": null,
+   "verdict": "correct",
+   "why": "adverb どう 'how'; registry holds only 動/銅/同/胴 read どう, none is this word, so unlink is right"
+  },
+  {
+   "key": "sent:tatoeba-148036#6",
+   "class": "wrong_pos",
+   "action": "unlink",
+   "surface": "いけ",
+   "old": "池/いけ",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 6+7 already carries vocab:1000730 on position 7; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:gen-c45651cd754a#4",
+   "class": "wrong_reading",
+   "action": "unlink",
+   "surface": "六",
+   "old": "六/ろく",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 4+5 already carries vocab:1585315 on position 5; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:gen-b2a1c62b3fbb#2",
+   "class": "wrong_reading",
+   "action": "unlink",
+   "surface": "六",
+   "old": "六/ろく",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 2+3 already carries vocab:1585315 on position 3; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:gen-7656e510d682#1",
+   "class": "wrong_reading",
+   "action": "unlink",
+   "surface": "三",
+   "old": "三/さん",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 1+2 already carries vocab:1299740 on position 2; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:gen-f61dd9927146#7",
+   "class": "wrong_reading",
+   "action": "unlink",
+   "surface": "一",
+   "old": "一/いち",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 7+8 already carries vocab:1160820 on position 8; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:tatoeba-3496943#3",
+   "class": "wrong_reading",
+   "action": "unlink",
+   "surface": "一",
+   "old": "一/いち",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 3+4 already carries vocab:1160820 on position 4; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:gen-14fbecd995be#2",
+   "class": "wrong_reading",
+   "action": "unlink",
+   "surface": "六",
+   "old": "六/ろく",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 2+3 already carries vocab:1585315 on position 3; this token's own link is the stray one"
+  },
+  {
+   "key": "sent:gen-dff45461fa90#2",
+   "class": "wrong_reading",
+   "action": "unlink",
+   "surface": "一",
+   "old": "一/いち",
+   "new": null,
+   "verdict": "correct",
+   "why": "old link is the stray half of a run: the run 2+3 already carries vocab:1160820 on position 3; this token's own link is the stray one"
+  }
+ ]
+}
