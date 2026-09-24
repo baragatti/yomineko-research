@@ -134,9 +134,14 @@ class Context:
         for name in TABLES:
             p = root / "research" / "derived" / "repairs" / f"{name}.json"
             if p.exists():
-                for r in json.loads(p.read_text(encoding="utf-8"))["rows"]:
+                doc = json.loads(p.read_text(encoding="utf-8"))
+                # Keyed on the id the exercise was PLACED under: apply_practice_exercises.py shifts
+                # a row whose authored id collides (`apply_id_remap`, (lesson, from) -> to).
+                remap = {(m["lesson"], m["from"]): m["to"] for m in doc.get("apply_id_remap") or []}
+                for r in doc["rows"]:
+                    ex_id = remap.get((r["lesson"], r["exercise"]["id"]), r["exercise"]["id"])
                     # 65 kanji rows name the bare character (探), the rest the slug (kanji:探).
-                    self.tables[r["exercise"]["id"]] = (
+                    self.tables[ex_id] = (
                         name, [t if ":" in t else f"kanji:{t}" for t in r["targets"]])
 
     # --- matchers over one string set --------------------------------------------------------

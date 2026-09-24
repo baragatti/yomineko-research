@@ -68,9 +68,10 @@ def retarget_tables() -> None:
     """The two tracked tables whose rows name what this unit moves. Idempotent.
 
     * practice_vocab_exercises.json: the 3 drills on les:n3-revisao-01 are renumbered in the rows
-      themselves (not via `apply_id_remap`, which scripts/derive_item_refs.py does not read: it keys
-      rule 0 on the row's own id, so a remap would hand the drills' vocab targets to the authored
-      -5/-6). Each renumber is recorded in `id_fixes`, the table's own ledger for that.
+      themselves (not via `apply_id_remap`, which scripts/derive_item_refs.py did not read when this
+      ran: it keyed rule 0 on the row's own id, so a remap would have handed the drills' vocab
+      targets to the authored -5/-6; it keys on the remapped id now). Each renumber is recorded in
+      `id_fixes`, the table's own ledger for that.
     * w22_n3_dead_end.json rows[0]: feat:jlpt-sim-n3 moves to the row's `target_when_authored`.
     """
     pv = ROOT / "research" / "derived" / "repairs" / "practice_vocab_exercises.json"
