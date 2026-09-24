@@ -1,0 +1,62 @@
+{
+ "lt:n3:017": {
+  "script": [
+   {"speaker": "N", "text": "アパートの前で、女の人とかんりにんの男の人が話しています。"},
+   {"speaker": "M1", "text": "こんにちは。今夜は台風が来るそうですから、用心してくださいね。"},
+   {"speaker": "F1", "text": "そうなんですか。何か、しておいたほうがいいことはありますか。"},
+   {"speaker": "M1", "text": "ベランダの物は、風で飛ぶと危ないので、部屋の中に入れてください。あと、自転車も倒しておいたほうがいいですよ。"},
+   {"speaker": "F1", "text": "自転車は、先週から両親の家に置いてあるのでだいじょうぶです。それから、電気が止まるといけないから、かいちゅうでんとうを買っておこうかな。"},
+   {"speaker": "M1", "text": "かいちゅうでんとうは、駅前の店ではもう全部売れてしまったそうですよ。スーパーには、そのうち入るそうですけど。それより、水道が止まる前に、おふろに水を入れておくといいですよ。"},
+   {"speaker": "F1", "text": "水は、夜おふろに入ったあとで入れておきます。じゃあ、まず、ベランダの花を部屋に入れますね。"}
+  ],
+  "question": "女の人はこのあとまず何をしますか。",
+  "options": [
+   "ベランダの花を部屋に入れる",
+   "おふろに水を入れておく",
+   "かいちゅうでんとうを買いに行く",
+   "自転車を倒しておく"
+  ],
+  "key": "ベランダの花を部屋に入れる",
+  "changed_tokens": [
+   {"from": "管理人", "to": "かんりにん", "why": "kanji 管 untaught; word kept, kana spelling"},
+   {"from": "今晩は", "to": "今夜は", "why": "Sudachi reads 今晩は as the untaught greeting こんばんは; 今夜 is taught, same role"},
+   {"from": "実家", "to": "両親の家", "why": "実家 untaught word; 両親 taught, same meaning"},
+   {"from": "大丈夫", "to": "だいじょうぶ", "why": "kanji 丈 untaught; word taught, kana spelling"},
+   {"from": "懐中電灯", "to": "かいちゅうでんとう", "why": "kanji 懐/灯 untaught; same word, kana spelling (script, option)"},
+   {"from": "売り切れだ", "to": "全部売れてしまった", "why": "売り切れ untaught word; 売れる and 全部 taught"},
+   {"from": "ためる", "to": "入れる", "why": "溜める untaught word (advisory); 入れる taught, same action (script, option)"},
+   {"from": "植木鉢", "to": "花", "why": "kanji 植/鉢 untaught; 花 taught, same object role (script, key)"}
+  ],
+  "source": "edited",
+  "needs_review": true,
+  "layer": "C"
+ },
+ "lt:n3:018": {
+  "script": [
+   {"speaker": "N", "text": "映画館の前で、女の人と男の人が話しています。"},
+   {"speaker": "F1", "text": "ねえ、どれにする？私はこのれんあい映画がいいな。大好きな女優が出てるの。"},
+   {"speaker": "M1", "text": "あ、それ、次の回はもう席がないって。ほら、あそこに書いてある。"},
+   {"speaker": "F1", "text": "ええっ、残念。じゃあ、このアクション映画は？今、一番人気なんでしょ？"},
+   {"speaker": "M1", "text": "うーん、ぼく、大きい音の映画はちょっと苦手なんだ。この動物の映画はどう？"},
+   {"speaker": "F1", "text": "それ、私、先月友達と見ちゃったんだよね。"},
+   {"speaker": "M1", "text": "そうか。じゃあ、この料理の映画は？おいしそうな場面がたっぷり出てくるんだって。時間もちょうどいいよ。"},
+   {"speaker": "F1", "text": "いいね。それにしよう。じゃあ、チケット買ってきてくれる？"}
+  ],
+  "question": "男の人はどの映画のチケットを買いますか。",
+  "options": [
+   "料理の映画",
+   "れんあい映画",
+   "アクション映画",
+   "動物の映画"
+  ],
+  "key": "料理の映画",
+  "changed_tokens": [
+   {"from": "恋愛映画", "to": "れんあい映画", "why": "kanji 恋 untaught; same word, kana spelling (script, distractor)"},
+   {"from": "売り切れだ", "to": "席がない", "why": "売り切れ untaught word; 席 taught, same meaning"},
+   {"from": "僕", "to": "ぼく", "why": "kanji 僕 untaught; word taught, kana spelling"}
+  ],
+  "source": "edited",
+  "needs_review": true,
+  "layer": "C"
+ }
+}

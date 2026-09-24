@@ -1,0 +1,483 @@
+{
+ "ls:n5:005": {
+  "ok": true
+ },
+ "ls:n5:006": {
+  "ok": true
+ },
+ "ls:n5:007": {
+  "ok": true
+ },
+ "ls:n5:009": {
+  "ok": true,
+  "note": "Advisory: おはようございます (registry お早う, untaught) is a set phrase the vocab registry does not carry as taught N5 vocab (same blind spot as すみません / ありがとう); advisory only, not a level break; identical in all three options, so it is not the discriminator."
+ },
+ "ls:n5:010": {
+  "ok": true
+ },
+ "ls:n5:011": {
+  "ok": false,
+  "problem": "Level (word dimension): both distractors rest on words untaught at the end of N5: くれる (呉れる, not taught through N4) and もらう (貰う, taught in N4). The option set is learner-visible, so a distractor the learner cannot parse is a level break the kanji gate does not see. Replaced with two taught, natural, clearly wrong utterances (borrowing / wearing the gift).",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "今日は友だちのたんじょうびです。友だちにセーターを買いました。友だちに何と言いますか。"
+    }
+   ],
+   "question": "",
+   "options": [
+    "このセーターをあげます。",
+    "このセーターをかしてください。",
+    "このセーターをきてもいいですか。"
+   ],
+   "key": "このセーターをあげます。",
+   "changed_tokens": [
+    "誕生日→たんじょうび",
+    "セーターのプレゼントを→友だちにセーターを (プレゼント untaught word)",
+    "くれます→かしてください (呉れる untaught word)",
+    "もらいます→きてもいいですか (貰う untaught word, n4)"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "ls:n5:012": {
+  "ok": true,
+  "note": "Advisory: the key おねがいします (registry お願いします, untaught) is a set phrase the vocab registry does not carry as taught N5 vocab (same blind spot as すみません / ありがとう); advisory only, not a level break. If the owner wants every option parallel and registry-clean, 駅まで行ってください。 is an equally natural key."
+ },
+ "ls:n5:013": {
+  "ok": true
+ },
+ "ls:n5:014": {
+  "ok": true
+ },
+ "lt:n5:001": {
+  "ok": false,
+  "problem": "Level (word dimension): kana-written untaught words slipped past the prep's lemma lookup: おきゃくさん (客, n4), もうすぐ (すぐ = 直ぐ untaught; すぐに is the taught record) and やっぱり (n4) on the decisive line. Replaced with taught equivalents; key and distractors unchanged.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "うちで女の人と男の人が話しています。"
+    },
+    {
+     "speaker": "F1",
+     "text": "これから友だちが来ますから、だいどころからちゃわんとコップをもって来てください。"
+    },
+    {
+     "speaker": "M1",
+     "text": "はい。スプーンとはいざらもいりますか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "スプーンはいいです。はいざらはここにありますから、いりません。あ、コップもいりません。ちゃわんだけおねがいします。"
+    },
+    {
+     "speaker": "M1",
+     "text": "わかりました。ちゃわんだけですね。"
+    }
+   ],
+   "question": "男の人はだいどころから何をもって来ますか。",
+   "options": [
+    "ちゃわん",
+    "コップ",
+    "スプーン",
+    "はいざら"
+   ],
+   "key": "ちゃわん",
+   "changed_tokens": [
+    "家→うち",
+    "お客さん→おきゃくさん",
+    "台所→だいどころ",
+    "お皿→ちゃわん (皿 untaught word)",
+    "持っ→もっ",
+    "灰皿→はいざら",
+    "お願い→おねがい",
+    "もうすぐおきゃくさん→これから友だち (客 n4, 直ぐ untaught words)",
+    "やっぱり→(dropped) (やっぱり untaught word, n4)"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "lt:n5:002": {
+  "ok": true,
+  "note": "Advisory: ただいま / おねがいします are set phrase the vocab registry does not carry as taught N5 vocab (same blind spot as すみません / ありがとう); advisory only, not a level break. エアコン (the key) is not a corpus word, so the TaughtSets word check does not count it; the learner can still match the heard word to the printed option."
+ },
+ "lt:n5:003": {
+  "ok": false,
+  "problem": "Level (word dimension): すぐ is the untaught record 直ぐ; すぐに is the taught N5 record and reads just as naturally here.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "お店で女の人と店の人が話しています。"
+    },
+    {
+     "speaker": "F1",
+     "text": "すみません、このあかいかばん、もっと大きいのはありますか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "あかの大きいのは、今ないです。大きいのは、くろと白とあおがありますよ。あおはあかるくて、きれいないろですよ。"
+    },
+    {
+     "speaker": "F1",
+     "text": "ええ、いいですね。くろはちょっとくらいです。白はすぐにきたなくなりますね。じゃあ、あおいのをください。"
+    },
+    {
+     "speaker": "M1",
+     "text": "ありがとうございます。"
+    }
+   ],
+   "question": "女の人はどのかばんを買いますか。",
+   "options": [
+    "あおいかばん",
+    "あかいかばん",
+    "くろいかばん",
+    "白いかばん"
+   ],
+   "key": "あおいかばん",
+   "changed_tokens": [
+    "赤→あか",
+    "青→あお",
+    "黒→くろ",
+    "同じ形で→大きいのは (形 untaught word)",
+    "明るく→あかるく",
+    "色→いろ",
+    "暗い→くらい",
+    "汚く→きたなく",
+    "すぐ→すぐに (直ぐ untaught word; 直ぐに taught)"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "lt:n5:004": {
+  "ok": true
+ },
+ "lt:n5:005": {
+  "ok": true
+ },
+ "lt:n5:006": {
+  "ok": false,
+  "problem": "Level (word dimension): だめ (駄目, taught in N4) carries both rejections. Rewritten with the taught N5 pattern てはいけません; the stiff written connector しかし in a police officer's speech is dropped for natural spoken Japanese.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "こうえんで男の人とおまわりさんが話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "すみません。ここでたばこをすってもいいですか。"
+    },
+    {
+     "speaker": "M2",
+     "text": "いいえ、こうえんの中ではすってはいけませんよ。"
+    },
+    {
+     "speaker": "M1",
+     "text": "そうですか。じゃあ、あそこのきっさてんの前はどうですか。"
+    },
+    {
+     "speaker": "M2",
+     "text": "きっさてんの前もすってはいけません。あそこのコンビニのよこはだいじょうぶですよ。駅の前でもだいじょうぶですが、とおいです。コンビニのよこですってください。"
+    }
+   ],
+   "question": "男の人はどこでたばこをすいますか。",
+   "options": [
+    "コンビニのよこ",
+    "こうえんの中",
+    "きっさてんの前",
+    "駅の前"
+   ],
+   "key": "コンビニのよこ",
+   "changed_tokens": [
+    "公園→こうえん",
+    "吸っ→すっ",
+    "喫茶店→きっさてん",
+    "横→よこ",
+    "大丈夫→だいじょうぶ",
+    "遠い→とおい",
+    "吸い→すい",
+    "こうえんの中はだめです→こうえんの中ではすってはいけません (駄目 untaught word, n4)",
+    "きっさてんの前もだめです。しかし、→きっさてんの前もすってはいけません。 (駄目 untaught word; しかし unnatural in speech)"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "lt:n5:007": {
+  "ok": false,
+  "problem": "Level (word dimension): おひる (お昼, n3 record) and やっぱり (n4) are untaught at N5. ひるごはん (昼ご飯) is the taught record; やっぱり is not needed for the change of mind (でも、高いですから already rejects カレー).",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "お店で男の人と女の人が話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "今日のひるごはん、こうえんで食べませんか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "今日はかぜがつよくふいていますよ。会社の中で食べましょう。"
+    },
+    {
+     "speaker": "M1",
+     "text": "そうですね。わたしはこのおべんとうを買います。"
+    },
+    {
+     "speaker": "F1",
+     "text": "わたしはパンがすきですが、きのうもパンでしたから、今日はおにぎりにします。あ、このカレーもいいですね。でも、高いですから、おにぎりを買います。"
+    }
+   ],
+   "question": "女の人は何を買いますか。",
+   "options": [
+    "おにぎり",
+    "おべんとう",
+    "パン",
+    "カレー"
+   ],
+   "key": "おにぎり",
+   "changed_tokens": [
+    "昼→ひる",
+    "公園→こうえん",
+    "風→かぜ",
+    "強く→つよく",
+    "吹い→ふい",
+    "私→わたし",
+    "お弁当→おべんとう",
+    "好き→すき",
+    "昨日→きのう",
+    "サンドイッチ→カレー (サンドイッチ untaught word)",
+    "おひる→ひるごはん (お昼 untaught word)",
+    "やっぱり→(dropped) (やっぱり untaught word, n4)"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "lt:n5:008": {
+  "ok": true
+ },
+ "lt:n5:009": {
+  "ok": false,
+  "problem": "Level (word dimension): ぼく (僕) is taught only in N4. Dropped the pronoun (natural in a child's reply). いただきます is a set phrase the registry does not carry (advisory, kept).",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "うちでお母さんと男の子が話しています。"
+    },
+    {
+     "speaker": "F1",
+     "text": "ごはんですよ。今日のばんごはんはカレーですよ。"
+    },
+    {
+     "speaker": "M1",
+     "text": "わあ、カレー、だいすきです。あ、お母さん、このカレー、とてもあついですよ。"
+    },
+    {
+     "speaker": "F1",
+     "text": "じゃあ、先につめたいやさいを食べてください。おちゃとパンもありますよ。"
+    },
+    {
+     "speaker": "M1",
+     "text": "おちゃもあついですから、あとで飲みます。パンはカレーといっしょに食べます。じゃあ、やさいから食べます。いただきます。"
+    }
+   ],
+   "question": "男の子ははじめに何を食べますか。",
+   "options": [
+    "やさい",
+    "カレー",
+    "おちゃ",
+    "パン"
+   ],
+   "key": "やさい",
+   "changed_tokens": [
+    "家→うち",
+    "ご飯→ごはん",
+    "今日は→今日のばんごはんは (tokenized as the greeting)",
+    "大好き→だいすき",
+    "熱い→あつい",
+    "冷たい→つめたい",
+    "サラダ→やさい (サラダ untaught word)",
+    "スープ→おちゃ (スープ untaught word)",
+    "一緒→いっしょ",
+    "初め→はじめ",
+    "ぼく、カレーが→カレー、 (僕 untaught word, n4)"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "lt:n5:010": {
+  "ok": true
+ },
+ "lt:n5:011": {
+  "ok": true,
+  "note": "Printed options mix kana (おにいさん, おばあさん) and kanji (お母さん, お父さん); cosmetic only, no cue to the key."
+ },
+ "lt:n5:012": {
+  "ok": false,
+  "problem": "Naturalness: the edit メニュー→かみ makes the grandfather call the café menu 'this paper' (このかみはカタカナが多い), which a native speaker would not say. Rewritten around the drink names with taught words (飲み物 is taught; 物 stays kana).",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "きっさてんで女の人とおじいさんが話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "ここの飲みものの名前は、カタカナが多いですから、よくわかりませんよ。"
+    },
+    {
+     "speaker": "F1",
+     "text": "じゃあ、わたしが読みますね。コーヒー、ぎゅうにゅう、ココア、ミルクティーがありますよ。"
+    },
+    {
+     "speaker": "M1",
+     "text": "コーヒーはけさ、飲みました。今日はさむいですから、つめたいぎゅうにゅうもいりません。ミルクティーはきのう、飲みましたね。"
+    },
+    {
+     "speaker": "F1",
+     "text": "じゃあ、あたたかいココアですね。すみません、ココアを一つおねがいします。"
+    }
+   ],
+   "question": "おじいさんは何を飲みますか。",
+   "options": [
+    "ココア",
+    "コーヒー",
+    "ぎゅうにゅう",
+    "ミルクティー"
+   ],
+   "key": "ココア",
+   "changed_tokens": [
+    "喫茶店→きっさてん",
+    "メニュー→かみ (メニュー untaught word)",
+    "私→わたし",
+    "ジュース→ぎゅうにゅう (ジュース untaught word)",
+    "今朝→けさ",
+    "寒い→さむい",
+    "冷たい→つめたい",
+    "昨日→きのう",
+    "温かい→あたたかい",
+    "お願い→おねがい",
+    "このかみは→ここの飲みものの名前は (naturalness: a menu is not 'this paper')"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "lt:n5:013": {
+  "ok": false,
+  "problem": "Level (word dimension): だめ (駄目, taught in N4) opens the decisive line. でも + よ keeps the mother's rejection natural and in level.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "うちでお母さんと男の子が話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "ああ、お母さん、おなかがいたいです。"
+    },
+    {
+     "speaker": "F1",
+     "text": "だいじょうぶですか。ぎゅうにゅうを飲みますか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "ぎゅうにゅうはあまりすきじゃありません。つめたいこうちゃか水がいいです。"
+    },
+    {
+     "speaker": "F1",
+     "text": "でも、つめたいものはおなかによくないですよ。あたたかいおちゃを飲んでください。"
+    }
+   ],
+   "question": "男の子は何を飲みますか。",
+   "options": [
+    "おちゃ",
+    "ぎゅうにゅう",
+    "こうちゃ",
+    "水"
+   ],
+   "key": "おちゃ",
+   "changed_tokens": [
+    "家→うち",
+    "痛い→いたい",
+    "大丈夫→だいじょうぶ",
+    "牛乳→ぎゅうにゅう",
+    "好き→すき",
+    "冷たい→つめたい",
+    "ジュース→こうちゃ (ジュース untaught word)",
+    "物→もの",
+    "温かい→あたたかい",
+    "お茶→おちゃ",
+    "だめですよ→でも、…よくないですよ (駄目 untaught word, n4)"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "lt:n5:014": {
+  "ok": false,
+  "problem": "Level (word dimension): やっぱり (n4) on the decisive line; the correction じゃなくて、とりにくにしてください already carries the change of mind without it.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "うちで女の人と男の人が話しています。"
+    },
+    {
+     "speaker": "F1",
+     "text": "すみませんが、デパートでぎゅうにくを買ってください。"
+    },
+    {
+     "speaker": "M1",
+     "text": "はい。ぶたにくじゃなくて、ぎゅうにくですね。おちゃも買いましょうか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "おちゃはまだたくさんありますから、いいです。あ、すみません、ぎゅうにくじゃなくて、とりにくにしてください。今日のばんごはんはとりにくのりょうりですから。"
+    },
+    {
+     "speaker": "M1",
+     "text": "わかりました。じゃあ、行ってきます。"
+    }
+   ],
+   "question": "男の人は何を買いますか。",
+   "options": [
+    "とりにく",
+    "ぎゅうにく",
+    "ぶたにく",
+    "おちゃ"
+   ],
+   "key": "とりにく",
+   "changed_tokens": [
+    "家→うち",
+    "スーパー→デパート (スーパー untaught word)",
+    "牛肉→ぎゅうにく",
+    "豚肉→ぶたにく",
+    "お茶→おちゃ",
+    "鶏肉→とりにく",
+    "今晩は→今日のばんごはんは (晩 kanji; tokenized as the greeting)",
+    "料理→りょうり",
+    "やっぱり→(dropped) (やっぱり untaught word, n4)"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "lt:n5:015": {
+  "ok": true,
+  "note": "Advisory: おねがいします / ありがとうございます are set phrase the vocab registry does not carry as taught N5 vocab (same blind spot as すみません / ありがとう); advisory only, not a level break."
+ },
+ "lt:n5:016": {
+  "ok": true
+ }
+}

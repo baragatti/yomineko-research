@@ -1,0 +1,141 @@
+{
+ "lr:n3:tatoeba-2850263": {"ok": true},
+ "lr:n3:tatoeba-148071": {"ok": true},
+ "ls:n3:001": {"ok": true},
+ "ls:n3:002": {"ok": true},
+ "ls:n3:004": {"ok": true},
+ "ls:n3:007": {"ok": true},
+ "ls:n3:009": {"ok": true},
+ "ls:n3:010": {"ok": true},
+ "ls:n3:011": {"ok": true},
+ "ls:n3:012": {"ok": true},
+ "lt:n3:001": {
+  "ok": false,
+  "problem": "The kanji gate passes at N3 and the key is sound: the roses sold out, she already gave carnations on Mother's Day, and the sunflowers will not open until the day after tomorrow while the birthday is today. That leaves only ユリ. The problem is the word dimension. つぼみ (蕾, vocab:1571800) is a corpus word that is NOT taught by the end of N3, and it sits in the line that rules out the ひまわり distractor. The build_work token check misses it because SudachiPy keeps the kana lemma つぼみ, which is not a headword; the normalized form 蕾 resolves it. Fix: まだ開いていない, using 開く (vocab:1202440, taught N4, kanji 開 taught), the same verb the next sentence already uses. The line keeps the same logic. 咲く is a taught word too, but its kanji 咲 is not.",
+  "corrected": {
+   "script": [
+    {"speaker": "N", "text": "花屋で女の人と店の男の人が話しています。"},
+    {"speaker": "M1", "text": "いらっしゃいませ。何かお探しですか。"},
+    {"speaker": "F1", "text": "母のたんじょうびに花を買いたいんですが、バラはありますか。"},
+    {"speaker": "M1", "text": "もうしわけありません、バラは今朝全部売れてしまったんです。カーネーションはいかがですか。"},
+    {"speaker": "F1", "text": "カーネーションは母の日にあげたばかりだから、ちょっと。あ、あのひまわり、きれいですね。"},
+    {"speaker": "M1", "text": "ひまわりはまだ開いていないんですよ。開くのは、あさってごろですね。おたんじょうびはいつですか。"},
+    {"speaker": "F1", "text": "今日なんです。うーん、じゃあ、そのきいろいユリをください。明るくて、母に似合いそうだから。"},
+    {"speaker": "M1", "text": "ありがとうございます。すぐ用意しますね。"}
+   ],
+   "question": "女の人はどの花を買いますか。",
+   "options": ["ユリ", "バラ", "カーネーション", "ひまわり"],
+   "key": "ユリ",
+   "changed_tokens": [
+    {"from": "誕生日", "to": "たんじょうび", "why": "kanji 誕 untaught; kana spelling"},
+    {"from": "申し訳", "to": "もうしわけ", "why": "kanji 訳 untaught; kana spelling"},
+    {"from": "黄色い", "to": "きいろい", "why": "kanji 黄 untaught; kana spelling"},
+    {"from": "包みます", "to": "用意します", "why": "kanji 包 untaught; 用意 taught, same closing act"},
+    {"from": "まだつぼみなんです", "to": "まだ開いていないんです", "why": "つぼみ (蕾) untaught word; 開く taught, same reason the sunflower is ruled out"}
+   ],
+   "source": "edited",
+   "needs_review": true,
+   "layer": "C"
+  }
+ },
+ "lt:n3:002": {"ok": true},
+ "lt:n3:004": {
+  "ok": false,
+  "problem": "The kanji gate passes at N3, but the KEY is an untaught word. そば as a food is 蕎麦 (vocab:1238460, N2), NOT taught by the end of N3. The only taught そば is 側 ('beside', vocab:1403830), so the printed key reads to an N3 learner as the wrong word. The token check misses it because the kana lemma そば is not a headword. Fix: the man picks the basement sandwich shop instead (サンドイッチ vocab:1058580, taught N4). The convenience-store distractor goes back to the original おべんとう in kana (弁当 vocab:1513060, taught; only kanji 弁 is untaught). With a sandwich key, パン would overlap it. The elimination logic is unchanged: the ramen line is too long, the curry shop is closed, and he had the convenience-store lunch yesterday.",
+  "corrected": {
+   "script": [
+    {"speaker": "N", "text": "会社で女の人と男の人が話しています。"},
+    {"speaker": "F1", "text": "もうすぐお昼ですね。今日はどうしますか。"},
+    {"speaker": "M1", "text": "駅前に新しいラーメン屋ができたから、行ってみようと思ってるんだ。"},
+    {"speaker": "F1", "text": "あそこ、お昼はすごくならびますよ。３０分は待つと思います。"},
+    {"speaker": "M1", "text": "３０分か。１時から会議があるから、それは無理だな。じゃあ、いつものカレーの店は？"},
+    {"speaker": "F1", "text": "カレーの店は、今週はお休みですよ。入り口に紙がはってありました。"},
+    {"speaker": "M1", "text": "そうなんだ。コンビニのおべんとうは昨日も食べたしなあ。じゃ、地下のサンドイッチ屋にするよ。あそこなら早いから。"},
+    {"speaker": "F1", "text": "いいですね。私も一緒に行ってもいいですか。"}
+   ],
+   "question": "男の人はお昼に何を食べますか。",
+   "options": ["サンドイッチ", "ラーメン", "カレー", "おべんとう"],
+   "key": "サンドイッチ",
+   "changed_tokens": [
+    {"from": "並び", "to": "ならび", "why": "kanji 並 untaught; kana spelling"},
+    {"from": "貼って", "to": "はって", "why": "kanji 貼 untaught; kana spelling"},
+    {"from": "お弁当", "to": "おべんとう", "why": "kanji 弁 untaught; 弁当 is a taught word, kana spelling (script, distractor)"},
+    {"from": "そば屋 / そば", "to": "サンドイッチ屋 / サンドイッチ", "why": "そば (蕎麦) untaught word, and the only taught そば is 側; サンドイッチ taught (script, key)"}
+   ],
+   "source": "edited",
+   "needs_review": true,
+   "layer": "C"
+  }
+ },
+ "lt:n3:005": {"ok": true},
+ "lt:n3:006": {"ok": true},
+ "lt:n3:007": {"ok": true},
+ "lt:n3:008": {"ok": true},
+ "lt:n3:009": {"ok": true},
+ "lt:n3:010": {"ok": true},
+ "lt:n3:011": {"ok": true},
+ "lt:n3:012": {
+  "ok": false,
+  "problem": "The kanji gate passes at N3, and the logic is sound, but three of the four printed options and the key are untaught corpus words. うどん (饂飩 vocab:1574470, N2) is in the key, and 冷やし (冷やす vocab:1556770, N2) is in the key too. そば (蕎麦 vocab:1238460, N2) is in a distractor, and the only taught そば is 側. おかゆ (粥 vocab:1209350, N1) is in a distractor. SudachiPy keeps 冷やしうどん as one unknown token and reads そば/おかゆ by kana lemma, so the token check sees none of them. Fix: the same four-step elimination with taught dishes. She orders tempura. He wants something light but ate cold soup last night (スープ vocab:1067040, taught). Salad alone won't last through the long meeting (サラダ vocab:1057850, taught). So he takes the vegetable sandwich (サンドイッチ vocab:1058580, taught). The setting becomes 店, since sandwiches and cold soup are not 食堂 fare.",
+  "corrected": {
+   "script": [
+    {"speaker": "N", "text": "会社の近くの店で、女の人と男の人が話しています。"},
+    {"speaker": "F1", "text": "私はてんぷらにするけど、木村さんは？"},
+    {"speaker": "M1", "text": "暑くて食欲がないから、あぶらが多いものは今日はちょっと。何か、さっぱりしたものがいいな。"},
+    {"speaker": "F1", "text": "じゃあ、冷たいスープは？"},
+    {"speaker": "M1", "text": "スープは、昨日の夜も飲んだんだよね。このサラダも、さっぱりしてそうだなあ。"},
+    {"speaker": "F1", "text": "サラダだけだと、午後、おなかがすくよ。今日は長い会議があるんだから。"},
+    {"speaker": "M1", "text": "それもそうだね。じゃあ、この野菜のサンドイッチにするよ。これなら、おなかもすかないし。"}
+   ],
+   "question": "男の人は何を注文しますか。",
+   "options": ["野菜のサンドイッチ", "てんぷら", "冷たいスープ", "サラダ"],
+   "key": "野菜のサンドイッチ",
+   "changed_tokens": [
+    {"from": "てんぷら定食", "to": "てんぷら", "why": "定食 untaught word (script, distractor)"},
+    {"from": "揚げ物", "to": "あぶらが多いもの", "why": "kanji 揚 untaught"},
+    {"from": "食堂", "to": "店", "why": "setting fits the taught dishes below"},
+    {"from": "冷たいそば / そばは、昨日の夜も食べた", "to": "冷たいスープ / スープは、昨日の夜も飲んだ", "why": "そば (蕎麦) untaught word; スープ taught (script, distractor)"},
+    {"from": "梅のおかゆ / おかゆ", "to": "サラダ", "why": "kanji 梅 untaught and おかゆ (粥) untaught word; サラダ taught, same light-but-not-filling role (script, distractor)"},
+    {"from": "冷やしうどん / 野菜ものってるし", "to": "野菜のサンドイッチ / これなら、おなかもすかないし", "why": "うどん (饂飩) and 冷やす untaught words; サンドイッチ taught (script, key)"}
+   ],
+   "source": "edited",
+   "needs_review": true,
+   "layer": "C"
+  }
+ },
+ "lt:n3:013": {"ok": true},
+ "lt:n3:014": {
+  "ok": false,
+  "problem": "Level-clean at N3, and the key is sound. The station-front flat is too noisy, the one by the park only has flats without sun, the riverside flat is over budget, and the one near the university meets every condition. The problem is naturalness. お金は一か月７万円まで is not how a customer states a rent limit at an estate agent, and 近くも静かそう is off for 'the surroundings seem quiet too'. Fix: fold the budget into the room he is looking for (静かで、一か月７万円までの部屋), which is how the limit is naturally stated. For the surroundings, use まわり: 周り (vocab:1604290) is a TAUGHT word and only its kanji 周 is untaught, so the kana spelling is level-clean. 家賃 is taught too, but kana やちん is avoided because SudachiPy splits it into や + ちん.",
+  "corrected": {
+   "script": [
+    {"speaker": "N", "text": "不動産屋で、男の人と店の女の人が話しています。"},
+    {"speaker": "F1", "text": "いらっしゃいませ。どんなお部屋をお探しですか。"},
+    {"speaker": "M1", "text": "駅から近くて、静かで、一か月７万円までの部屋を探しています。それから、前にずっと日が当たらない部屋に住んでいて、いやだったので、日がよく当たる部屋がいいです。"},
+    {"speaker": "F1", "text": "では、この駅前の部屋はいかがですか。駅から歩いて２分ですよ。"},
+    {"speaker": "M1", "text": "うーん、大きい道路の前だから、夜はうるさそうですね。こっちの、公園のとなりのアパートはどうですか。"},
+    {"speaker": "F1", "text": "そちらは人気で、あいにく今は日が当たらない部屋しか空いていないんです。この川の近くの部屋なら、日もよく当たりますよ。ただ、一か月７万５千円なんですが。"},
+    {"speaker": "M1", "text": "７万円より高いなあ。あ、この大学の近くの部屋は、６万８千円で、日もよく当たるんですね。駅からも歩いて５分だし、まわりも静かそうだし、ここがいいな。今日、見られますか。"},
+    {"speaker": "F1", "text": "はい、ご案内します。"}
+   ],
+   "question": "男の人はどの部屋を見に行きますか。",
+   "options": ["大学の近くの部屋", "駅前の部屋", "公園のとなりのアパート", "川の近くの部屋"],
+   "key": "大学の近くの部屋",
+   "changed_tokens": [
+    {"from": "ご希望は、どんなお部屋", "to": "どんなお部屋をお探し", "why": "kanji 希 untaught"},
+    {"from": "家賃は７万円まで / 家賃が７万５千円", "to": "静かで、一か月７万円までの部屋 / 一か月７万５千円", "why": "kanji 賃 untaught; the budget folds into the room description (kana やちん would be taught but SudachiPy splits it into や + ちん)"},
+    {"from": "一階 / 何階 / 三階 / 二階", "to": "日が当たる/当たらない部屋", "why": "kanji 階 untaught; the floor criterion was a stand-in for sunlight, now stated directly, each candidate still fails one condition"},
+    {"from": "嫌", "to": "いや", "why": "kanji 嫌 untaught; kana spelling"},
+    {"from": "マンション", "to": "部屋", "why": "マンション untaught word (script, distractor)"},
+    {"from": "日当たり", "to": "日もよく当たります", "why": "日当たり untaught word"},
+    {"from": "予算", "to": "７万円", "why": "kanji 算 untaught"},
+    {"from": "周り", "to": "まわり", "why": "kanji 周 untaught; 周り is a taught word, kana spelling"}
+   ],
+   "source": "edited",
+   "needs_review": true,
+   "layer": "C"
+  }
+ },
+ "lt:n3:015": {"ok": true},
+ "lt:n3:016": {"ok": true}
+}

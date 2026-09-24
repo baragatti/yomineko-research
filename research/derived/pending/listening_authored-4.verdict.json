@@ -1,0 +1,249 @@
+{
+ "lr:n4:tatoeba-8687007": {
+  "ok": true
+ },
+ "lr:n4:tatoeba-8719362": {
+  "ok": true
+ },
+ "lr:n4:tatoeba-10049455": {
+  "ok": false,
+  "problem": "Passes the TaughtSets gate only because sent:tatoeba-10049455 is dissected with grammar ['yo'] and the token とい carries no tag. The script やっといたよ and distractor うん、やっとくね both use the ~とく contraction of ~ておく, which the course registry teaches only at N3 (gram:n3-toku; gram:te-oku lists ておく only), so an N4 learner has not met the form. The level-clean pool has no real ~ておいた utterance to select instead. Corrected by expanding both to the taught ~ておく form. That edits the Tatoeba sentence, so the item becomes source edited, ai_generated, and must drop its sentence ref. Key and family unchanged: done favor, happy reply; the other two options stay wrong (asks for something already done / promises to do it).",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "F1",
+     "text": "やっておいたよ。"
+    }
+   ],
+   "question": "",
+   "options": [
+    "ほんと？うれしいな。",
+    "じゃ、早くやってね。",
+    "うん、やっておくね。"
+   ],
+   "key": "ほんと？うれしいな。",
+   "changed_tokens": [
+    {
+     "field": "correct",
+     "from": "ありがとう、助かるよ。",
+     "to": "ほんと？うれしいな。"
+    },
+    {
+     "field": "script[0]",
+     "from": "やっといたよ。",
+     "to": "やっておいたよ。"
+    },
+    {
+     "field": "distractors[1]",
+     "from": "うん、やっとくね。",
+     "to": "うん、やっておくね。"
+    }
+   ],
+   "source": "edited",
+   "needs_review": true,
+   "ai_generated": true,
+   "sentence": null
+  }
+ },
+ "lr:n4:tatoeba-10628551": {
+  "ok": true
+ },
+ "lr:n4:tatoeba-11270411": {
+  "ok": false,
+  "problem": "Content is fine: 薬、もう飲んだ？ is kanji-clean and natural, and さっき飲んだよ is the only coherent reply (the うん + まだ飲んでない option contradicts itself, お大事に is not an answer). But the authored entry does not say to drop sentence: sent:tatoeba-11270411. If that ref is kept, the gate still reads that sentence's grammar tag gram:n3-kke and fails the item, and the provenance would claim a Tatoeba sentence the script no longer is. Corrected sets sentence to null explicitly; nothing else changes. Spec 1.2 note for the reviewer: the only real level-clean 薬 utterance in the pool is sent:tatoeba-226387 (かぜをひいたらこの薬を飲むんだよ。), which would mean a new item rather than this repair.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "F1",
+     "text": "薬、もう飲んだ？"
+    }
+   ],
+   "question": "",
+   "options": [
+    "うん、さっき飲んだよ。",
+    "うん、まだ飲んでないよ。",
+    "お大事に。"
+   ],
+   "key": "うん、さっき飲んだよ。",
+   "changed_tokens": [
+    {
+     "field": "script[0]",
+     "from": "薬飲んだっけ？",
+     "to": "薬、もう飲んだ？"
+    }
+   ],
+   "source": "edited",
+   "ai_generated": true,
+   "needs_review": true,
+   "sentence": null
+  }
+ },
+ "lr:n4:tatoeba-173469": {
+  "ok": true
+ },
+ "ls:n4:001": {
+  "ok": true
+ },
+ "ls:n4:002": {
+  "ok": true
+ },
+ "ls:n4:004": {
+  "ok": true
+ },
+ "ls:n4:005": {
+  "ok": true
+ },
+ "ls:n4:006": {
+  "ok": true
+ },
+ "ls:n4:007": {
+  "ok": true
+ },
+ "ls:n4:009": {
+  "ok": true
+ },
+ "ls:n4:010": {
+  "ok": true
+ },
+ "ls:n4:011": {
+  "ok": true
+ },
+ "ls:n4:012": {
+  "ok": true
+ },
+ "ls:n4:013": {
+  "ok": true
+ },
+ "ls:n4:014": {
+  "ok": true
+ },
+ "ls:n4:015": {
+  "ok": false,
+  "problem": "Two defensible keys. ~てもらって、ありがとうございました is common in natural spoken Japanese (it is the plain form of ~ていただいて、ありがとうございました, which is fully correct). Said to a teacher it is only a missing honorific, not a wrong thanks, so a test-taker can defend it next to the くださって key. Corrected replaces it with a request for something already received (教えてくださいませんか). That is wrong for the situation and is still a listening trap on くださって / ください. All grammar is taught at N4 (te-kudasai, masen-ka) and the kanji are clean.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "先生にいいじしょを教えてもらいました。使ってみると、とてもやくに立ちました。先生に何と言いますか。"
+    }
+   ],
+   "question": "",
+   "options": [
+    "いいじしょを教えてくださって、ありがとうございました。",
+    "いいじしょを教えてあげて、ありがとうございました。",
+    "いいじしょを教えてくださいませんか。"
+   ],
+   "key": "いいじしょを教えてくださって、ありがとうございました。",
+   "changed_tokens": [
+    {
+     "field": "script[0]+options",
+     "from": "辞書",
+     "to": "じしょ"
+    },
+    {
+     "field": "script[0]",
+     "from": "役に立ちました",
+     "to": "やくに立ちました"
+    },
+    {
+     "field": "distractors[1]",
+     "from": "いいじしょを教えてもらって、ありがとうございました。",
+     "to": "いいじしょを教えてくださいませんか。"
+    }
+   ],
+   "source": "edited",
+   "ai_generated": true,
+   "needs_review": true
+  }
+ },
+ "lt:n4:001": {
+  "ok": true
+ },
+ "lt:n4:002": {
+  "ok": true
+ },
+ "lt:n4:003": {
+  "ok": true
+ },
+ "lt:n4:004": {
+  "ok": true
+ },
+ "lt:n4:005": {
+  "ok": true
+ },
+ "lt:n4:006": {
+  "ok": false,
+  "problem": "Kana spelling fixed the kanji gate, but the key word is still outside the level. 絵本/えほん has no vocab record in the corpus, so no level teaches it, and the learner can only match the sound to the printed option without knowing what was chosen. Corrected uses 本 (vocab:1522150, N5, kanji taught), which is natural for a child's birthday present. The rest of the story still rules out おかし, おもちゃ and 服, so there is one key.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "デパートで女の人と男の人が話しています。女の人はプレゼントに何を買いますか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "山田さんの子どものたんじょうびプレゼント、何がいいかな。"
+    },
+    {
+     "speaker": "M1",
+     "text": "おかしはどう？子どもはみんなチョコレートが好きだよ。"
+    },
+    {
+     "speaker": "F1",
+     "text": "あまいものをたくさん食べると太っちゃうから、お母さんがしんぱいするよ。おもちゃはどうかな。"
+    },
+    {
+     "speaker": "M1",
+     "text": "おもちゃはもうたくさん持っているって聞いたよ。本か、服は？"
+    },
+    {
+     "speaker": "F1",
+     "text": "服は何がいいかわからないから、本にする。"
+    }
+   ],
+   "question": "女の人はプレゼントに何を買いますか。",
+   "options": [
+    "本",
+    "おかし",
+    "おもちゃ",
+    "服"
+   ],
+   "key": "本",
+   "changed_tokens": [
+    {
+     "field": "script[1]",
+     "from": "誕生日",
+     "to": "たんじょうび"
+    },
+    {
+     "field": "script[2]+options",
+     "from": "お菓子",
+     "to": "おかし"
+    },
+    {
+     "field": "script[3]",
+     "from": "甘い",
+     "to": "あまい"
+    },
+    {
+     "field": "script[3]",
+     "from": "心配",
+     "to": "しんぱい"
+    },
+    {
+     "field": "script[5]",
+     "from": "サイズがわからない",
+     "to": "何がいいかわからない"
+    },
+    {
+     "field": "script[4]+script[5]+options",
+     "from": "絵本",
+     "to": "本"
+    }
+   ],
+   "source": "edited",
+   "ai_generated": true,
+   "needs_review": true
+  }
+ }
+}

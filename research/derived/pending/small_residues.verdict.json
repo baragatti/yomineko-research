@@ -1,0 +1,370 @@
+{
+ "what_this_is": "Adversarial verification of research/derived/pending/small_residues.json: 19 drills, 21 item_refs rows (20 target, 1 exempt), 1 rc question.",
+ "verified": "2026-09-23",
+ "verified_against": "git HEAD 87310bda (course/ and corpus/ extracted read-only) and a backup of db/corpus.sqlite. Known sets: scripts/ingest/known_set.py PassageGate + load_known_sets over the HEAD tree, plus a grammar check the gate does not make (every grammar point a drill leans on must be in cumulative_known_set.grammar). item_refs: derive_item_refs._known / _own over the HEAD tree. Exercise ids checked unique across all HEAD lessons and absent from every research/derived table.",
+ "key_format": "drills and item_refs: the exercise id. rc: '<passage>|<question_index>' (reading_comp/_README.md: never an array index). 'corrected' on a drill replaces the row's exercise and the row fields named in it; on the rc row it replaces the fields named in it.",
+ "layer": "C",
+ "needs_review": true,
+ "summary": {
+  "checked": 41,
+  "ok": 33,
+  "corrected": 8,
+  "rejected": 0,
+  "note": "All 21 item_refs rows hold: every ref resolves, sits inside its lesson's cumulative_known_set (the ソ glyph through kana:katakana-sa), the own-unlock flags match, no exercise carries refs at HEAD, and the one exemption is the exact exercise design/assessment.md §2.4 classes as course metalanguage. Of the 19 drills, 3 left the known set (〜やすい in an N5 lesson, かもしれない before topic 31, 違/直/間違い), 3 had a second correct answer a free-text key would mark wrong (てはいけません, のあとに, 以下) and 1 explanation contradicted its own lesson (方). The rc question was scannable through かもしれない."
+ },
+ "verdicts": {
+  "ex:n5-perguntas-04-16": {
+   "ok": true
+  },
+  "ex:n5-particulas-lugar-07-9": {
+   "ok": true
+  },
+  "ex:n5-adjetivos-01-20": {
+   "ok": true
+  },
+  "ex:n5-adjetivos-07-6": {
+   "ok": true
+  },
+  "ex:n5-comparacoes-02-15": {
+   "ok": true,
+   "note": "Kana いちばん / すき are right (kanji:番 and kanji:好 are outside the known set). のみものでは would also be grammatical, but the prompt asks for the superlative frame the lesson teaches, so の中で is the key a learner of this lesson produces."
+  },
+  "ex:n5-te-form-04-13": {
+   "ok": true
+  },
+  "ex:n5-te-form-04-14": {
+   "ok": false,
+   "problem": "Outside the known set. The stem carries 〜やすい in 分かりやすい: gram:yasui is unlocked in les:n4-aspecto-07 (n4 topic 30) and vocab:1156990 易い in les:n4-obrigacao-03, neither inside les:n5-te-form-04's cumulative_known_set. The passage gate passes it only because the kana-only surface やすい resolves to the known homograph 安い 'barato' (the row's own evidence lists やすい->易い out-of-set and vocab:1156990 as later-introduced). The other bank sentences tagged gp-37 fail here on kanji (父/買/赤, 作/友, 彼), so the predicate is swapped for a known one and the item becomes authored-inline; this also stops it citing a bank sentence whose が it silently rewrote to の. Gate on the new sentence: clean, no carve-out; the answer の still credits gram:gp-37 by itself.",
+   "corrected": {
+    "exercise": {
+     "id": "ex:n5-te-form-04-14",
+     "type": "particle_choice",
+     "prompt": {
+      "pt-BR": "Complete com a outra partícula que também marca o sujeito dentro da oração que descreve 日本語: 先生＿話す日本語はきれいです (O japonês que o professor fala é bonito.)"
+     },
+     "answer": {
+      "choices": [
+       "の",
+       "を",
+       "で"
+      ],
+      "correct": "の"
+     },
+     "explanation": {
+      "pt-BR": "Dentro de uma oração que descreve um substantivo, o sujeito pode vir com の em vez de が, sem mudar o sentido: 先生の話す日本語 = 先生が話す日本語. を marcaria o objeto e で, o lugar ou o meio, e nenhum dos dois cabe aqui."
+     },
+     "sentence_refs": [],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:gp-37",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    "basis": "authored-inline",
+    "ai_generated": true,
+    "jp_authored_here": true,
+    "gate_credit_without_item_refs": true,
+    "known_set_evidence": [
+     "authored 先生の話す日本語はきれいです at les:n5-te-form-04: unknown kanji []; unknown vocab []; carve-out []; unlinked ['日本語'] (as in the original)"
+    ]
+   }
+  },
+  "ex:n5-te-form-05-13": {
+   "ok": false,
+   "problem": "Two correct answers. gram:gp-139 (〜てはいけません) is unlocked in this same lesson and the body teaches both ('〜てはいけない / 〜てはいけません: é proibido'); with 'Complete a proibição' and 'Não pode sair.', 出てはいけません is equally right and a free-text cloze would mark it wrong. No cloze in the course carries answer.accept (0 of 906), so the prompt names the register instead.",
+   "corrected": {
+    "exercise": {
+     "id": "ex:n5-te-form-05-13",
+     "type": "cloze",
+     "prompt": {
+      "pt-BR": "Complete a proibição na forma simples, sem ます: 外へ出＿＿。 (Não pode sair.)"
+     },
+     "answer": {
+      "text": "てはいけない",
+      "full": "外へ出てはいけない。"
+     },
+     "explanation": {
+      "pt-BR": "〜てはいけない é a proibição: forma て do verbo + はいけない. 出る vira 出て, e 出てはいけない = 'não pode sair'. É a versão simples de 〜てはいけません."
+     },
+     "sentence_refs": [
+      "sent:tatoeba-184859"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:te-wa-ikenai",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    }
+   }
+  },
+  "ex:n5-te-form-07-13": {
+   "ok": true,
+   "note": "'Registro mais formal' is licensed by the lesson body, which ranks 〜なくてはならない as 'a mais formal e impessoal' of its three forms; なければならない is not known until les:n4-obrigacao-03."
+  },
+  "ex:n5-conectando-02-8": {
+   "ok": true
+  },
+  "ex:n5-conectando-07-13": {
+   "ok": true
+  },
+  "ex:n5-conectando-07-14": {
+   "ok": false,
+   "problem": "The explanation says the kanji 方 'só aparece mais adiante no curso', but ex:n5-conectando-07-3 and -4 of this same lesson print 読み方 with 方, so the learner has just seen it. kanji:方 is outside the lesson's known set, so keeping かた in kana is right; only the claim is rewritten.",
+   "corrected": {
+    "exercise": {
+     "id": "ex:n5-conectando-07-14",
+     "type": "cloze",
+     "prompt": {
+      "pt-BR": "Complete para dizer 'a maneira de escrever': ひらがなの書き＿＿をならいました (Aprendi como se escreve o hiragana.)"
+     },
+     "answer": {
+      "text": "かた",
+      "full": "ひらがなの書きかたをならいました"
+     },
+     "explanation": {
+      "pt-BR": "かた colado no radical do verbo cria o substantivo 'o modo de': 書く vira 書き, e 書き + かた = 書きかた, 'a maneira de escrever'. É a mesma かた de 読み方; o kanji 方 ainda não entrou na sua lista de kanji, por isso aqui ela vem em kana."
+     },
+     "sentence_refs": [],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:kata",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    }
+   }
+  },
+  "ex:n4-condicionais-08-9": {
+   "ok": false,
+   "problem": "Two correct answers. 春＿＿夏が来ます with 'Depois da primavera, vem o verão.' is also completed by のあとに / のあとで: gram:ato-de and vocab:1269320 後 (あと) are inside les:n4-condicionais-08's known set, and a free-text cloze would mark them wrong. As recognition, with のまえに (gram:mae-ni, known) and のうえに as distractors, the key is unique and the item still asks what の次に means; recognition is a type the lesson already uses. All three filled sentences pass the gate with no carve-out (kanji:次 stays out, vocab:1316380 つぎ is known).",
+   "corrected": {
+    "exercise": {
+     "id": "ex:n4-condicionais-08-9",
+     "type": "recognition",
+     "prompt": {
+      "pt-BR": "Complete a frase com a expressão certa: 春＿＿夏が来ます (Depois da primavera, vem o verão.)"
+     },
+     "answer": {
+      "choices": [
+       "のつぎに",
+       "のまえに",
+       "のうえに"
+      ],
+      "correct": "のつぎに"
+     },
+     "explanation": {
+      "pt-BR": "〜の次に (aqui em kana, のつぎに) põe uma coisa logo depois de outra numa ordem ou sequência: 春のつぎに夏が来ます = 'depois da primavera, vem o verão'. のまえに diria o contrário, 'antes da primavera', e のうえに quer dizer 'em cima de', o que não cabe numa sequência de estações. O kanji 次 ainda não foi visto nesta altura do curso, por isso つぎ vem em kana."
+     },
+     "sentence_refs": [],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:gp-91",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    }
+   }
+  },
+  "ex:n4-condicionais-08-10": {
+   "ok": false,
+   "problem": "The key's spelling conflicts inside the lesson: ex:n4-condicionais-08-4 keys the same point (gp-93) as 以下, with kanji:以 this lesson's own unlock, so a learner who just typed 以下 there types it here and is marked wrong against いか. The kana key itself is right: gp-93's form is いか, and vocab:1155060 以下 is only unlocked in les:n4-volitivo-04, which is why the bank sentence and the gate keep it in kana. With no answer.accept on any cloze (0 of 906), the prompt names the script, as ex:pre-n5-saudacoes-03-4 does.",
+   "corrected": {
+    "exercise": {
+     "id": "ex:n4-condicionais-08-10",
+     "type": "cloze",
+     "prompt": {
+      "pt-BR": "Complete para dizer 'mil ienes ou menos', escrevendo em kana: 千円＿＿の本を買いました (Comprei um livro de mil ienes ou menos.)"
+     },
+     "answer": {
+      "text": "いか",
+      "full": "千円いかの本を買いました"
+     },
+     "explanation": {
+      "pt-BR": "いか (以下) vem logo depois do número e quer dizer 'X ou menos', com o próprio X incluído: um livro de exatamente mil ienes também vale. O contrário é いじょう (以上)."
+     },
+     "sentence_refs": [
+      "sent:gen-b249a5f48dc6"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:gp-93",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    }
+   }
+  },
+  "ex:n4-volitivo-01-23": {
+   "ok": true
+  },
+  "ex:n4-volitivo-04-18": {
+   "ok": false,
+   "problem": "Outside the known set: かもしれない (gram:kamo-shirenai) is unlocked in les:n4-suposicao-08 (n4 topic 31), after this lesson (topic 25). The gate misses it because it measures no grammar and しれ is an unlinked kana token; the bank row carries no grammar tag at all. The gate-clean bank alternatives for ことになる here are こんなことになる (a different sense), 人をだますことになる (だます is an out-of-set carve-out) and ということになる, none of which drill 'acabar acontecendo'. So sent:tatoeba-125982 is trimmed to 長い間ここにいることになる and the item becomes authored-inline (sentence_refs emptied, ai_generated true, no trailing 。). Gate: clean, no carve-out; the answer ことになる still credits gram:koto-ni-naru by its probe.",
+   "corrected": {
+    "exercise": {
+     "id": "ex:n4-volitivo-04-18",
+     "type": "cloze",
+     "prompt": {
+      "pt-BR": "Complete com a forma de 'acabar acontecendo', sem decisão de quem fala: 長い間ここにいる＿＿ (Você vai acabar ficando aqui por muito tempo.)"
+     },
+     "answer": {
+      "text": "ことになる",
+      "full": "長い間ここにいることになる"
+     },
+     "explanation": {
+      "pt-BR": "〜ことになる mostra que algo acaba acontecendo pelas circunstâncias, e não por escolha de quem fala: いることになる = 'acabar ficando'. Com する (ことにする) seria uma decisão própria."
+     },
+     "sentence_refs": [],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:koto-ni-naru",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    "basis": "authored-inline",
+    "ai_generated": true,
+    "jp_authored_here": true,
+    "gate_credit_without_item_refs": true,
+    "known_set_evidence": [
+     "authored 長い間ここにいることになる at les:n4-volitivo-04 (adapted from sent:tatoeba-125982, かもしれない cut): unknown kanji []; unknown vocab []; carve-out []; unlinked []"
+    ]
+   }
+  },
+  "ex:n4-transitividade-01-19": {
+   "ok": true
+  },
+  "ex:n4-experiencia-03-18": {
+   "ok": false,
+   "problem": "Outside the known set, as the row's own known_set_evidence already says: 違 and 直 are not in les:n4-experiencia-03's kanji, and vocab:1215320 間違い (n3) is only unlocked in les:n3-enfase-07; the gate fails the full sentence. That ex:n4-experiencia-03-2 already prints 間違い is a pre-existing defect, not a licence. No bank sentence tagged ni-ki-ga-tsuku is clean here except 気がついてよかった。, which has no に and so does not drill the point. Authored-inline replacement, gate-clean with no carve-out (へん, におい, まど, 開ける and 気 all known).",
+   "corrected": {
+    "exercise": {
+     "id": "ex:n4-experiencia-03-18",
+     "type": "cloze",
+     "prompt": {
+      "pt-BR": "Complete a expressão de 'perceber', na forma て: へんなにおいに＿＿、まどを開けた (Percebi um cheiro estranho e abri a janela.)"
+     },
+     "answer": {
+      "text": "気がついて",
+      "full": "へんなにおいに気がついて、まどを開けた"
+     },
+     "explanation": {
+      "pt-BR": "気がつく ('perceber, notar') pede に no que foi percebido: へんなにおいに気がつく. Na forma て, 気がついて liga a descoberta à ação seguinte: percebi o cheiro e então abri a janela."
+     },
+     "sentence_refs": [],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:ni-ki-ga-tsuku",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    "basis": "authored-inline",
+    "ai_generated": true,
+    "jp_authored_here": true,
+    "gate_credit_without_item_refs": false,
+    "known_set_evidence": [
+     "authored へんなにおいに気がついて、まどを開けた at les:n4-experiencia-03: unknown kanji []; unknown vocab []; carve-out []; unlinked []"
+    ]
+   }
+  },
+  "ex:n3-estado-02-24": {
+   "ok": true
+  },
+  "ex:n3-causa-07-3": {
+   "ok": true
+  },
+  "ex:n3-conectores-08-3": {
+   "ok": true
+  },
+  "ex:n3-deveres-06-3": {
+   "ok": true
+  },
+  "ex:n3-estado-02-1": {
+   "ok": true
+  },
+  "ex:n3-estado-04-3": {
+   "ok": true
+  },
+  "ex:n3-intencao-01-2": {
+   "ok": true
+  },
+  "ex:n3-perspectiva-05-3": {
+   "ok": true
+  },
+  "ex:n3-revisao-01-3": {
+   "ok": true
+  },
+  "ex:n4-dar-receber-02-1": {
+   "ok": true
+  },
+  "ex:n4-keigo-05-1": {
+   "ok": true,
+   "note": "Judgement call accepted: the question names kenjōgo in general, and gp-111 is the record whose explanation defines 謙譲語; gp-112 / itashimasu would also be defensible additions."
+  },
+  "ex:n4-revisao-01-2": {
+   "ok": true
+  },
+  "ex:n4-revisao-02-2": {
+   "ok": true
+  },
+  "ex:n5-adjetivos-06-6": {
+   "ok": true
+  },
+  "ex:n5-desu-wa-04-1": {
+   "ok": true
+  },
+  "ex:n5-desu-wa-05-1": {
+   "ok": true
+  },
+  "ex:n5-revisao-01-1": {
+   "ok": true
+  },
+  "ex:n5-revisao-03-1": {
+   "ok": true
+  },
+  "ex:n5-te-form-04-1": {
+   "ok": true
+  },
+  "ex:pre-n5-katakana-01-2": {
+   "ok": true
+  },
+  "ex:pre-n5-katakana-11-2": {
+   "ok": true
+  },
+  "ex:pre-n5-saudacoes-03-4": {
+   "ok": true
+  },
+  "read:n4-oracoes-relativas-03-01|0": {
+   "ok": false,
+   "problem": "Scannable by surface. かもしれない is the passage's most distinctive string and the key is the only option that carries it, so a learner matching text picks option 0 without reading: the W17 rule 'the key must not be the only option whose surface shape matches the passage', and W18b's reason for rejecting this passage's previous question. The note's claim that the distractor reusing 今 prevents string search does not hold (今 is in one distractor, かもしれない only in the key). Fix: two distractors keep their wrong time reference and gain かもしれない, so three options share the passage's phrase and the option sharing the most text (今 + 雨 + かもしれない) is wrong; 雨はふらない stays without it, since 雨はふらないかもしれない would be compatible with the text. P1 (なる), P2, P3 and P4 still hold, and all four options pass the gate at les:n4-oracoes-relativas-03 with no carve-out. Residual, not fixable in the question: かもしれない (gram:kamo-shirenai, n4 topic 31) is outside this lesson's grammar known set, and it is the passage's own sentence 1, so the item inherits the passage's level problem; replacing the passage (W18b) is still the real fix.",
+   "corrected": {
+    "options": [
+     "あとで雨がふるかもしれない",
+     "今、雨がふっているかもしれない",
+     "雨はもうやんだかもしれない",
+     "雨はふらない"
+    ],
+    "key": 0,
+    "explanation": "A segunda frase diz やがて雨になるかもしれない: mais adiante pode ser que chova, e é isso que a opção certa diz com outras palavras (やがて vira あとで, 雨になる vira 雨がふる). 今、雨がふっているかもしれない erra o tempo: a chuva é algo que talvez venha, não algo que talvez já esteja caindo (o 今 do texto está na frase sobre fazer 'aquilo'). 雨はもうやんだかもしれない supõe uma chuva que já passou, e o texto não fala de chuva nenhuma no passado. 雨はふらない contradiz かもしれない, que deixa a chuva como possibilidade.",
+    "note": "The passage is still four unrelated bank sentences (W18b verifier: replace it). This question uses only sentence 1, the one self-contained fact, so it needs no antecedent for それ. Three options share the passage's かもしれない and the one that shares the most text is wrong, so string matching does not find the key; its time words (あとで for やがて) have to be read. Replacing the passage remains the better fix; this closes the open item until then."
+   }
+  }
+ }
+}

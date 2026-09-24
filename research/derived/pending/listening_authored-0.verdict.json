@@ -1,0 +1,248 @@
+{
+ "lp:n5:001": {
+  "ok": false,
+  "problem": "The kanji are clean, but two untaught words are still heard. かかる (時間がかかります, お金がかかります) is 掛かる (vocab n3, not taught by the end of N5; the kana match to 罹る is a different word), and すぐ (すぐそこ) is 直ぐ (not taught). Key and distractors are fine otherwise.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "学校で男の人と女の人が話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "大学まで何で行きますか。バスですか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "バスはおそいですよ。タクシーは高いです。"
+    },
+    {
+     "speaker": "M1",
+     "text": "じゃあ、電車はどうですか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "電車の駅はここからとおいですよ。ちかてつで行きましょう。ちかてつの駅はちかいですから。"
+    }
+   ],
+   "question": "二人は何で大学へ行きますか。",
+   "options": [
+    "ちかてつ",
+    "バス",
+    "タクシー",
+    "電車"
+   ],
+   "key": "ちかてつ",
+   "changed_tokens": [
+    "図書館→大学",
+    "遠い→とおい",
+    "地下鉄→ちかてつ",
+    "時間がかかります→おそいです (掛かる untaught)",
+    "お金がかかります→高いです (掛かる untaught)",
+    "すぐそこです→ちかいです (直ぐ untaught)"
+   ],
+   "source": "edited"
+  }
+ },
+ "lp:n5:002": {
+  "ok": true
+ },
+ "lp:n5:003": {
+  "ok": true
+ },
+ "lp:n5:004": {
+  "ok": true
+ },
+ "lp:n5:005": {
+  "ok": true
+ },
+ "lp:n5:006": {
+  "ok": true
+ },
+ "lp:n5:007": {
+  "ok": false,
+  "problem": "もうすぐですか uses すぐ (直ぐ), which is not taught by the end of N5. The line adds nothing to the task, so it is dropped. Everything else holds: あき is the only defensible key.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "学校で男の人と女の人が話しています。"
+    },
+    {
+     "speaker": "F1",
+     "text": "リーさんは、いつ国へかえりますか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "なつにかえりたかったですが、ひこうきのきっぷが高いですから、あきにかえります。"
+    },
+    {
+     "speaker": "F1",
+     "text": "そうですか。ふゆはかえりませんか。ふゆのきっぷは安いですよ。"
+    },
+    {
+     "speaker": "M1",
+     "text": "ふゆとはるはしごとがいそがしいですから、かえりません。"
+    }
+   ],
+   "question": "男の人はいつ国へかえりますか。",
+   "options": [
+    "あき",
+    "はる",
+    "なつ",
+    "ふゆ"
+   ],
+   "key": "あき",
+   "changed_tokens": [
+    "帰る→かえる",
+    "夏→なつ",
+    "秋→あき",
+    "冬→ふゆ",
+    "春→はる",
+    "飛行機→ひこうき",
+    "仕事→しごと",
+    "もうすぐですか→(removed; 直ぐ untaught)"
+   ],
+   "source": "edited"
+  }
+ },
+ "lp:n5:008": {
+  "ok": false,
+  "problem": "お金がたくさんかかります (script) and the distractor お金がかかりますから both use かかる = 掛かる (vocab n3, not taught by the end of N5). Changed to いる 'to need' (要る, taught), keeping the same money reason, so the distractor still works as the trap from the 'abroad' turn.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "会社で男の人と女の人が話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "なつやすみにどこへ行きますか。外国ですか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "いいえ、外国はお金がたくさんいりますから、行きません。うみか山へ行きたかったですが。"
+    },
+    {
+     "speaker": "M1",
+     "text": "うみも山もいいですよ。どうして行きませんか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "なつは人が多いですから。おばあさんのまちへ行きます。小さくて、しずかなまちですよ。"
+    }
+   ],
+   "question": "女の人はどうしてうみや山へ行きませんか。",
+   "options": [
+    "人が多いですから",
+    "お金がいりますから",
+    "とおいですから",
+    "時間がありませんから"
+   ],
+   "key": "人が多いですから",
+   "changed_tokens": [
+    "夏休み→なつやすみ",
+    "海→うみ",
+    "夏→なつ",
+    "町→まち",
+    "静か→しずか",
+    "遠い→とおい",
+    "お金がかかります→お金がいります (掛かる untaught)"
+   ],
+   "source": "edited"
+  }
+ },
+ "lp:n5:009": {
+  "ok": true
+ },
+ "lp:n5:010": {
+  "ok": true
+ },
+ "lp:n5:011": {
+  "ok": true
+ },
+ "lp:n5:012": {
+  "ok": true
+ },
+ "lp:n5:013": {
+  "ok": true
+ },
+ "lp:n5:014": {
+  "ok": true
+ },
+ "lp:n5:015": {
+  "ok": true
+ },
+ "lp:n5:016": {
+  "ok": true
+ },
+ "lp:n5:017": {
+  "ok": true
+ },
+ "lr:n5:tatoeba-1596597": {
+  "ok": true
+ },
+ "lr:n5:tatoeba-5059": {
+  "ok": true
+ },
+ "lr:n5:tatoeba-11831595": {
+  "ok": true
+ },
+ "lr:n5:tatoeba-2063347": {
+  "ok": false,
+  "problem": "The prompt やってみたい？ is built on ～てみる (gram:te-miru, N4), which is not taught by the end of N5. The gate misses it because the sentence's dissection links み to 見る and carries no grammar tag. Re-selected a real, level-clean sentence from the pool (polite, as the N5 bank prefers) that still asks a want-to question answered with たい.",
+  "corrected": {
+   "sentence": "sent:tatoeba-182711",
+   "script": [
+    {
+     "speaker": "F1",
+     "text": "休みたいですか。"
+    }
+   ],
+   "question": "",
+   "options": [
+    "はい、休みたいです。",
+    "はい、休みました。",
+    "はい、休みです。"
+   ],
+   "key": "はい、休みたいです。",
+   "changed_tokens": [
+    "re-selected: やってみたい？ (gram:te-miru N4, untagged in its dissection) → sent:tatoeba-182711; still a want-to question answered with たい; distractors: past tense, and the sound-alike 休みです"
+   ],
+   "source": "real"
+  }
+ },
+ "lr:n5:tatoeba-4789": {
+  "ok": false,
+  "problem": "The re-selection does not remove the word it meant to remove. In でもなんで？ the learner still hears なんで 'why' (vocab:1611020 何で, n3, not taught by the end of N5). It passes the gate only because sent:tatoeba-1057336's dissection links なん to 何 'what' (vocab:2846738) and treats で as a particle. It also repeats sent:tatoeba-216249 しかし、なぜ？ ('Mas por quê?'), which is already in the reply set. The pool has no unused real why-question, so a real wh-question from the level-clean pool is used instead.",
+  "corrected": {
+   "sentence": "sent:tatoeba-201153",
+   "script": [
+    {
+     "speaker": "F1",
+     "text": "どうやって学校に来たの？"
+    }
+   ],
+   "question": "",
+   "options": [
+    "バスで来たよ。",
+    "学校に来たよ。",
+    "あした来るよ。"
+   ],
+   "key": "バスで来たよ。",
+   "changed_tokens": [
+    "re-selected: なんで聞くの？ / でもなんで？ (何で n3 heard in both; 1057336 hides it behind a なん→何 link and duplicates 216249) → sent:tatoeba-201153; a how-question answered with the means; distractors answer where / when"
+   ],
+   "source": "real"
+  }
+ },
+ "lr:n5:tatoeba-5332": {
+  "ok": true
+ },
+ "lr:n5:tatoeba-672326": {
+  "ok": true
+ },
+ "ls:n5:001": {
+  "ok": true
+ }
+}

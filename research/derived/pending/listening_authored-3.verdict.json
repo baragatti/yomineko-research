@@ -1,0 +1,74 @@
+{
+ "_what": "Adversarial verify of research/derived/pending/listening_authored-work-04.json (the named listening_authored-3.json does not exist; work-04's authored twin is the input). 25 N4 items (21 point, 4 reply). Checked against a git-archive HEAD snapshot (87310bda): TaughtSets kanji of script + question + options, reply sentence dissection (token vocab + grammar tags), SudachiPy word pass (advisory, like the prep's), family shape, one key heard, natural spoken Japanese, reply-prompt reuse across every listening bank at HEAD and every pending listening_authored file.",
+ "lp:n4:001": {"ok": true},
+ "lp:n4:002": {"ok": true},
+ "lp:n4:003": {"ok": true},
+ "lp:n4:004": {"ok": true},
+ "lp:n4:005": {
+  "ok": false,
+  "problem": "Coherence: 'テレビの仕事が好きになって、新聞社の試験をうけた' is a non-sequitur (she came to like TV work, so she took the NEWSPAPER exam). The edit kept the original's slip. Level and key are fine; the fix only rewrites the motive so it points to news work, which also ties in with her reading the news on TV now.",
+  "corrected": {
+   "script": [
+    {"speaker": "N", "text": "道で男の人と女の人が話しています。"},
+    {"speaker": "M1", "text": "田中さん、ひさしぶり。大学のせんもんは英語だったよね。銀行で働いてるって聞いたけど。"},
+    {"speaker": "F1", "text": "銀行にいるのは姉だよ。私はさいしょ、英語の先生になろうと思ってたの。でも、大学のときにニュースの仕事がしたくなって、新聞社の試験をうけたんだ。"},
+    {"speaker": "M1", "text": "へえ。じゃあ、今は新聞社で働いてるの？"},
+    {"speaker": "F1", "text": "それが、新聞社の試験はおちちゃって。でも、つぎの年にアナウンサーの試験に通って、今は毎朝テレビでニュースを読んでるの。読み方が悪いところは、会社の人がなおしてくれるよ。"},
+    {"speaker": "M1", "text": "すごいね。今度、朝のニュースを見てみるよ。"}
+   ],
+   "question": "女の人は今、何の仕事をしていますか。",
+   "options": ["アナウンサー", "銀行員", "英語の先生", "新聞社の仕事"],
+   "key": "アナウンサー",
+   "changed_tokens": ["久しぶり→ひさしぶり", "専門→せんもん", "最初→さいしょ", "新聞記者→新聞社", "受け→うけ", "記者の試験→新聞社の試験", "落ち→おち", "次の年→つぎの年", "合格して→通って", "直し→なおし", "新聞記者(option)→新聞社の仕事", "verifier: テレビの仕事が好きになって→ニュースの仕事がしたくなって"],
+   "source": "edited"
+  }
+ },
+ "lp:n4:006": {"ok": true},
+ "lp:n4:007": {"ok": true},
+ "lp:n4:008": {"ok": true},
+ "lp:n4:009": {"ok": true},
+ "lp:n4:010": {"ok": true},
+ "lp:n4:011": {"ok": true},
+ "lp:n4:012": {"ok": true},
+ "lp:n4:013": {"ok": true},
+ "lp:n4:014": {"ok": true},
+ "lp:n4:015": {"ok": true},
+ "lp:n4:016": {"ok": true},
+ "lp:n4:017": {"ok": true},
+ "lp:n4:018": {"ok": true},
+ "lp:n4:019": {"ok": true},
+ "lp:n4:020": {"ok": true},
+ "lp:n4:021": {"ok": true},
+ "lr:n4:tatoeba-10059669": {"ok": true},
+ "lr:n4:tatoeba-173462": {
+  "ok": false,
+  "problem": "The re-selected prompt sent:tatoeba-173469 (考えておくよ。) is ALREADY the prompt of lr:n4:tatoeba-173469 in corpus/exam_banks/n4_listening_reply.json at HEAD. Applying this would put the same utterance in the N4 reply bank twice, and the builder derives reply ids from the sentence slug (lr:{lvl}:{slug}), so a rebuild would make the two ids collide. Re-selected an unused, real, N4-clean prompt with the same meaning: sent:tatoeba-3957479 考えさせてください。 (grammar sasete-kudasai, taught N4; ends in ください。; not used by any listening bank at HEAD or any pending authored file). The responses were rewritten in polite register to match the prompt.",
+  "corrected": {
+   "script": [
+    {"speaker": "M1", "text": "考えさせてください。"}
+   ],
+   "question": "",
+   "options": ["わかりました。じゃあ、へんじを待っていますね。", "はい、よく考えましたね。", "いいえ、何も考えていません。"],
+   "key": "わかりました。じゃあ、へんじを待っていますね。",
+   "changed_tokens": ["script re-selected: 考えとくよ (sent:tatoeba-173462, gram:n3-toku) → 考えさせてください。 (sent:tatoeba-3957479); verifier: 考えておくよ。 (sent:tatoeba-173469) is already lr:n4:tatoeba-173469 at HEAD", "返事→へんじ", "responses re-authored in polite register"],
+   "sentence": "sent:tatoeba-3957479",
+   "source": "real"
+  }
+ },
+ "lr:n4:tatoeba-191216": {"ok": true},
+ "lr:n4:tatoeba-2552450": {
+  "ok": false,
+  "problem": "The re-selected prompt sent:tatoeba-9979575 (何か聞こえる？) is ALREADY the prompt of lr:n3:tatoeba-9979575 in corpus/exam_banks/n3_listening_reply.json at HEAD. The reply prep dedupes prompts across levels (lower level wins), so taking it for N4 would duplicate a live N3 item or force that item to be dropped. Level itself was fine (何か/何も are taught via gram:gp-48 at N5). Re-selected an unused, real, N4-clean prompt of the same kind: sent:tatoeba-10914902 さっき何かあった？ (grammar sakki, taught N4; not used by any listening bank at HEAD or any pending authored file).",
+  "corrected": {
+   "script": [
+    {"speaker": "M1", "text": "さっき何かあった？"}
+   ],
+   "question": "",
+   "options": ["ううん、何もなかったよ。", "うん、さっき食べたよ。", "うん、何か買ってくるね。"],
+   "key": "ううん、何もなかったよ。",
+   "changed_tokens": ["script re-selected: 何か見える？ (sent:tatoeba-2552450, vocab 何か untaught in its dissection) → さっき何かあった？ (sent:tatoeba-10914902); verifier: 何か聞こえる？ (sent:tatoeba-9979575) is already lr:n3:tatoeba-9979575 at HEAD", "responses re-authored for the new prompt"],
+   "sentence": "sent:tatoeba-10914902",
+   "source": "real"
+  }
+ }
+}

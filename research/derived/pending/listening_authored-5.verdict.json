@@ -1,0 +1,159 @@
+{
+ "lt:n4:007": {
+  "ok": true
+ },
+ "lt:n4:008": {
+  "ok": true
+ },
+ "lt:n4:009": {
+  "ok": true
+ },
+ "lt:n4:010": {
+  "ok": true
+ },
+ "lt:n4:011": {
+  "ok": true
+ },
+ "lt:n4:012": {
+  "ok": true
+ },
+ "lt:n4:013": {
+  "ok": true
+ },
+ "lt:n4:014": {
+  "ok": true
+ },
+ "lt:n4:015": {
+  "ok": false,
+  "problem": "The kanji gate passes at N4. Every replacement word is taught: the untaught ロッカー, 人気 and ご覧 became へや, 有名 and 見る. The key is sound: 'まずにもつをおいてきます' is the only first action. The problem is the options. The re-authored key 'にもつを入り口のとなりのへやにおく' is 17 characters long, and the three distractors are 8 each, so a learner can guess the longest option without understanding the audio. Fix: shorten the key to 'にもつをへやにおく' so it matches the distractors in length. The script and question stay the same.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "びじゅつかんのうけつけで男の人と女の人が話しています。男の人はこのあとまず何をしますか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "すみません、このびじゅつかんははじめてなんですが、どこから見たらいいですか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "二かいのえが有名ですから、先に見たらいかがですか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "わかりました。あ、その前に、この大きいにもつ、どこかにおけますか。それから、きっさてんにも行きたいんですが。"
+    },
+    {
+     "speaker": "F1",
+     "text": "きっさてんは一かいですが、今はそうじ中で、３０分後に開きます。三がいの写真のへやは、今日は見られません。おにもつは、入り口のとなりのへやにおいてください。"
+    },
+    {
+     "speaker": "M1",
+     "text": "わかりました。じゃあ、まずにもつをおいてきます。"
+    }
+   ],
+   "question": "男の人はこのあとまず何をしますか。",
+   "options": [
+    "にもつをへやにおく",
+    "二かいでえを見る",
+    "きっさてんに行く",
+    "写真のへやを見る"
+   ],
+   "key": "にもつをへやにおく",
+   "changed_tokens": [
+    "美術館→びじゅつかん",
+    "受付→うけつけ",
+    "初めて→はじめて",
+    "階→かい/がい",
+    "絵→え",
+    "人気→有名",
+    "ご覧になったら→見たら",
+    "ご覧になれません→見られません",
+    "荷物→にもつ",
+    "置け/置い→おけ/おい",
+    "喫茶店→きっさてん",
+    "掃除→そうじ",
+    "部屋→へや",
+    "隣のロッカーをお使いください→となりのへやにおいてください",
+    "荷物をロッカーに入れる→にもつをへやにおく"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "lt:n4:016": {
+  "ok": true
+ },
+ "lt:n4:017": {
+  "ok": true
+ },
+ "lt:n4:018": {
+  "ok": true
+ },
+ "lt:n4:019": {
+  "ok": true
+ },
+ "lt:n4:020": {
+  "ok": true
+ },
+ "lt:n4:021": {
+  "ok": false,
+  "problem": "The kanji gate passes at N4, and the key is sound: 天ぷら is sold out, カレー takes 30 minutes she does not have, and she picks ラーメン over 魚料理. The problem is the server's opening line. The re-authoring replaced いらっしゃいませ (flagged: いらっしゃい, vocab:1000920, untaught) with 'こんにちは。'. A restaurant server in Japan greets a customer with いらっしゃいませ, not こんにちは, so the line sounds off. It also does not fix the word problem: こんにちは is 今日は (vocab:1289400), which the N4 set does not list either. The builder only missed it because SudachiPy's lemma is kana and the registry headword is 今日は. Fix: drop the greeting. The line becomes '何になさいますか。', which is a natural way to take an order, and なさる (vocab:1157090) is taught at N4. Everything else stays the same.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "レストランで店の男の人と女の人が話しています。女の人は何を食べますか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "何になさいますか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "はい。天ぷらをおねがいします。"
+    },
+    {
+     "speaker": "M1",
+     "text": "ざんねんですが、天ぷらは、今日はもう終わってしまったんです。カレーはいかがですか。今からですと、３０分ほどかかりますが。"
+    },
+    {
+     "speaker": "F1",
+     "text": "３０分？そろそろ午後の仕事にもどらなければならないので、待てないなあ。じゃあ、魚料理か、ラーメンか…。今日は寒いから、あたたかいラーメンにします。"
+    }
+   ],
+   "question": "女の人は何を食べますか。",
+   "options": [
+    "ラーメン",
+    "天ぷら",
+    "カレー",
+    "魚料理"
+   ],
+   "key": "ラーメン",
+   "changed_tokens": [
+    "注文しますか→食べますか",
+    "いらっしゃいませ→(dropped)",
+    "ご注文はよろしいですか→何になさいますか",
+    "天ぷら定食→天ぷら",
+    "お願い→おねがい",
+    "申し訳ございません→ざんねんですが",
+    "戻ら→もどら",
+    "魚定食→魚料理",
+    "うどん→ラーメン",
+    "温かい→あたたかい"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "lt:n4:022": {
+  "ok": true
+ },
+ "lt:n4:023": {
+  "ok": true
+ },
+ "lt:n4:024": {
+  "ok": true
+ }
+}

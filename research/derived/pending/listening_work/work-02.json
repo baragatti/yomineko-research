@@ -1,0 +1,4285 @@
+{
+ "_what": "Listening items over the level line (validate_exam_level_gate.py rule, exam_rules.TaughtSets), prepared for W18b re-authoring. No authoring here. gate_breaks = what the gate counts; breaking_tokens = SudachiPy tokens carrying an untaught kanji or an untaught corpus word (the word dimension is advisory for script items without a sentence ref). level_clean_pool = bank sentences whose every kanji, token vocab and grammar tag is taught by the end of the level; real (Tatoeba) first, spec 1.2: select before generating.",
+ "_source": "git HEAD snapshot; taught set = cumulative_known_set of the last lesson of course/n5",
+ "level": "n5",
+ "item_count": 25,
+ "taught_set_size": {
+  "kanji": 103,
+  "vocab": 712,
+  "grammar": 147
+ },
+ "items": [
+  {
+   "id": "ls:n5:005",
+   "bank": "n5_listening_say.json",
+   "level": "n5",
+   "family": "say",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "友だちの家にいます。シャワーを浴びたいです。友だちに何と言いますか。"
+    }
+   ],
+   "question": "",
+   "options": [
+    "シャワーを浴びてもいいですか。",
+    "シャワーを浴びてください。",
+    "シャワーを浴びましょうか。"
+   ],
+   "key": "シャワーを浴びてもいいですか。",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 家",
+    "kanji 浴"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "家",
+      "lemma": "家",
+      "reading": "イエ",
+      "untaught_kanji": [
+       "家"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "浴び",
+      "lemma": "浴びる",
+      "reading": "アビ",
+      "untaught_kanji": [
+       "浴"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "correct": [
+     {
+      "surface": "浴び",
+      "lemma": "浴びる",
+      "reading": "アビ",
+      "untaught_kanji": [
+       "浴"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[0]": [
+     {
+      "surface": "浴び",
+      "lemma": "浴びる",
+      "reading": "アビ",
+      "untaught_kanji": [
+       "浴"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[1]": [
+     {
+      "surface": "浴び",
+      "lemma": "浴びる",
+      "reading": "アビ",
+      "untaught_kanji": [
+       "浴"
+      ],
+      "untaught_word": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "ls:n5:006",
+   "bank": "n5_listening_say.json",
+   "level": "n5",
+   "family": "say",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "道で男の人が、駅はどこですかと聞きました。男の人に何と言いますか。"
+    }
+   ],
+   "question": "",
+   "options": [
+    "この道を真っ直ぐ行ってください。",
+    "この道を真っ直ぐ行ってもいいですか。",
+    "この道を真っ直ぐ行きましょうか。"
+   ],
+   "key": "この道を真っ直ぐ行ってください。",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 直",
+    "kanji 真"
+   ],
+   "breaking_tokens": {
+    "correct": [
+     {
+      "surface": "真っ直ぐ",
+      "lemma": "真っ直ぐ",
+      "reading": "マッスグ",
+      "untaught_kanji": [
+       "直",
+       "真"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[0]": [
+     {
+      "surface": "真っ直ぐ",
+      "lemma": "真っ直ぐ",
+      "reading": "マッスグ",
+      "untaught_kanji": [
+       "直",
+       "真"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[1]": [
+     {
+      "surface": "真っ直ぐ",
+      "lemma": "真っ直ぐ",
+      "reading": "マッスグ",
+      "untaught_kanji": [
+       "直",
+       "真"
+      ],
+      "untaught_word": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "ls:n5:007",
+   "bank": "n5_listening_say.json",
+   "level": "n5",
+   "family": "say",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "友だちがうちに来て、寒いと言っています。部屋にストーブがあります。友だちに何と言いますか。"
+    }
+   ],
+   "question": "",
+   "options": [
+    "ストーブをつけましょうか。",
+    "ストーブを消しましょうか。",
+    "ストーブをつけてください。"
+   ],
+   "key": "ストーブをつけましょうか。",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 寒",
+    "kanji 屋",
+    "kanji 消",
+    "kanji 部"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "寒い",
+      "lemma": "寒い",
+      "reading": "サムイ",
+      "untaught_kanji": [
+       "寒"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "部屋",
+      "lemma": "部屋",
+      "reading": "ヘヤ",
+      "untaught_kanji": [
+       "屋",
+       "部"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[0]": [
+     {
+      "surface": "消し",
+      "lemma": "消す",
+      "reading": "ケシ",
+      "untaught_kanji": [
+       "消"
+      ],
+      "untaught_word": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "ls:n5:009",
+   "bank": "n5_listening_say.json",
+   "level": "n5",
+   "family": "say",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "朝、学校で先生に会いました。今日はとてもいい天気です。先生に何と言いますか。"
+    }
+   ],
+   "question": "",
+   "options": [
+    "おはようございます。いい天気ですね。",
+    "おはようございます。いい天気ですか。",
+    "おはようございます。いい天気でしたね。"
+   ],
+   "key": "おはようございます。いい天気ですね。",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 朝"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "朝",
+      "lemma": "朝",
+      "reading": "アサ",
+      "untaught_kanji": [
+       "朝"
+      ],
+      "untaught_word": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "ls:n5:010",
+   "bank": "n5_listening_say.json",
+   "level": "n5",
+   "family": "say",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "友だちがうちに来ました。スリッパを出します。友だちに何と言いますか。"
+    }
+   ],
+   "question": "",
+   "options": [
+    "このスリッパを使ってください。",
+    "このスリッパを使ってもいいですか。",
+    "このスリッパを使いましょうか。"
+   ],
+   "key": "このスリッパを使ってください。",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 使"
+   ],
+   "breaking_tokens": {
+    "correct": [
+     {
+      "surface": "使っ",
+      "lemma": "使う",
+      "reading": "ツカッ",
+      "untaught_kanji": [
+       "使"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[0]": [
+     {
+      "surface": "使っ",
+      "lemma": "使う",
+      "reading": "ツカッ",
+      "untaught_kanji": [
+       "使"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[1]": [
+     {
+      "surface": "使い",
+      "lemma": "使う",
+      "reading": "ツカイ",
+      "untaught_kanji": [
+       "使"
+      ],
+      "untaught_word": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "ls:n5:011",
+   "bank": "n5_listening_say.json",
+   "level": "n5",
+   "family": "say",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "今日は友だちの誕生日です。セーターのプレゼントを買いました。友だちに何と言いますか。"
+    }
+   ],
+   "question": "",
+   "options": [
+    "このセーターをあげます。",
+    "このセーターをくれます。",
+    "このセーターをもらいます。"
+   ],
+   "key": "このセーターをあげます。",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 誕"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "誕生日",
+      "lemma": "誕生日",
+      "reading": "タンジョウビ",
+      "untaught_kanji": [
+       "誕"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "プレゼント",
+      "lemma": "プレゼント",
+      "reading": "プレゼント",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1116840"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "ls:n5:012",
+   "bank": "n5_listening_say.json",
+   "level": "n5",
+   "family": "say",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "タクシーに乗りました。駅へ行きたいです。何と言いますか。"
+    }
+   ],
+   "question": "",
+   "options": [
+    "駅までお願いします。",
+    "駅まで行きましょうか。",
+    "駅まで行ってもいいですか。"
+   ],
+   "key": "駅までお願いします。",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 乗",
+    "kanji 願"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "乗り",
+      "lemma": "乗る",
+      "reading": "ノリ",
+      "untaught_kanji": [
+       "乗"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "correct": [
+     {
+      "surface": "願い",
+      "lemma": "願う",
+      "reading": "ネガイ",
+      "untaught_kanji": [
+       "願"
+      ],
+      "untaught_word": [
+       "vocab:1217900",
+       "vocab:1217950"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "ls:n5:013",
+   "bank": "n5_listening_say.json",
+   "level": "n5",
+   "family": "say",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "喫茶店で友だちとコーヒーを飲みます。砂糖は友だちの前にあります。友だちに何と言いますか。"
+    }
+   ],
+   "question": "",
+   "options": [
+    "その砂糖を取ってください。",
+    "その砂糖を取りましょうか。",
+    "その砂糖を取りましたか。"
+   ],
+   "key": "その砂糖を取ってください。",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 取",
+    "kanji 喫",
+    "kanji 砂",
+    "kanji 糖",
+    "kanji 茶"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "喫茶店",
+      "lemma": "喫茶店",
+      "reading": "キッサテン",
+      "untaught_kanji": [
+       "喫",
+       "茶"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "砂糖",
+      "lemma": "砂糖",
+      "reading": "サトウ",
+      "untaught_kanji": [
+       "砂",
+       "糖"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "correct": [
+     {
+      "surface": "砂糖",
+      "lemma": "砂糖",
+      "reading": "サトウ",
+      "untaught_kanji": [
+       "砂",
+       "糖"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "取っ",
+      "lemma": "取る",
+      "reading": "トッ",
+      "untaught_kanji": [
+       "取"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[0]": [
+     {
+      "surface": "砂糖",
+      "lemma": "砂糖",
+      "reading": "サトウ",
+      "untaught_kanji": [
+       "砂",
+       "糖"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "取り",
+      "lemma": "取る",
+      "reading": "トリ",
+      "untaught_kanji": [
+       "取"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[1]": [
+     {
+      "surface": "砂糖",
+      "lemma": "砂糖",
+      "reading": "サトウ",
+      "untaught_kanji": [
+       "砂",
+       "糖"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "取り",
+      "lemma": "取る",
+      "reading": "トリ",
+      "untaught_kanji": [
+       "取"
+      ],
+      "untaught_word": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "ls:n5:014",
+   "bank": "n5_listening_say.json",
+   "level": "n5",
+   "family": "say",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "うちで勉強しています。でも、弟のテレビの音がとても大きいです。弟に何と言いますか。"
+    }
+   ],
+   "question": "",
+   "options": [
+    "テレビを消してください。",
+    "テレビをつけてください。",
+    "テレビを見てください。"
+   ],
+   "key": "テレビを消してください。",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 勉",
+    "kanji 弟",
+    "kanji 強",
+    "kanji 消",
+    "kanji 音"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "勉強",
+      "lemma": "勉強",
+      "reading": "ベンキョウ",
+      "untaught_kanji": [
+       "勉",
+       "強"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "弟",
+      "lemma": "弟",
+      "reading": "オトウト",
+      "untaught_kanji": [
+       "弟"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "音",
+      "lemma": "音",
+      "reading": "オト",
+      "untaught_kanji": [
+       "音"
+      ],
+      "untaught_word": [
+       "vocab:1576900",
+       "vocab:2859161",
+       "vocab:2859162"
+      ]
+     },
+     {
+      "surface": "弟",
+      "lemma": "弟",
+      "reading": "オトウト",
+      "untaught_kanji": [
+       "弟"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "correct": [
+     {
+      "surface": "消し",
+      "lemma": "消す",
+      "reading": "ケシ",
+      "untaught_kanji": [
+       "消"
+      ],
+      "untaught_word": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:001",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "家で女の人と男の人が話しています。"
+    },
+    {
+     "speaker": "F1",
+     "text": "もうすぐお客さんが来ますから、台所からお皿とコップを持って来てください。"
+    },
+    {
+     "speaker": "M1",
+     "text": "はい。スプーンと灰皿もいりますか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "スプーンはいいです。灰皿はここにありますから、いりません。あ、コップもやっぱりいりません。お皿だけお願いします。"
+    },
+    {
+     "speaker": "M1",
+     "text": "わかりました。お皿だけですね。"
+    }
+   ],
+   "question": "男の人は台所から何を持って来ますか。",
+   "options": [
+    "お皿",
+    "コップ",
+    "スプーン",
+    "灰皿"
+   ],
+   "key": "お皿",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 台",
+    "kanji 客",
+    "kanji 家",
+    "kanji 所",
+    "kanji 持",
+    "kanji 灰",
+    "kanji 皿",
+    "kanji 願"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "家",
+      "lemma": "家",
+      "reading": "イエ",
+      "untaught_kanji": [
+       "家"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[1]": [
+     {
+      "surface": "お客さん",
+      "lemma": "お客さん",
+      "reading": "オキャクサン",
+      "untaught_kanji": [
+       "客"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "台所",
+      "lemma": "台所",
+      "reading": "ダイドコロ",
+      "untaught_kanji": [
+       "台",
+       "所"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "皿",
+      "lemma": "皿",
+      "reading": "サラ",
+      "untaught_kanji": [
+       "皿"
+      ],
+      "untaught_word": [
+       "vocab:1299680"
+      ]
+     },
+     {
+      "surface": "持っ",
+      "lemma": "持つ",
+      "reading": "モッ",
+      "untaught_kanji": [
+       "持"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[2]": [
+     {
+      "surface": "灰皿",
+      "lemma": "灰皿",
+      "reading": "ハイザラ",
+      "untaught_kanji": [
+       "灰",
+       "皿"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[3]": [
+     {
+      "surface": "灰皿",
+      "lemma": "灰皿",
+      "reading": "ハイザラ",
+      "untaught_kanji": [
+       "灰",
+       "皿"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "皿",
+      "lemma": "皿",
+      "reading": "サラ",
+      "untaught_kanji": [
+       "皿"
+      ],
+      "untaught_word": [
+       "vocab:1299680"
+      ]
+     },
+     {
+      "surface": "願い",
+      "lemma": "願う",
+      "reading": "ネガイ",
+      "untaught_kanji": [
+       "願"
+      ],
+      "untaught_word": [
+       "vocab:1217900",
+       "vocab:1217950"
+      ]
+     }
+    ],
+    "script[4]": [
+     {
+      "surface": "皿",
+      "lemma": "皿",
+      "reading": "サラ",
+      "untaught_kanji": [
+       "皿"
+      ],
+      "untaught_word": [
+       "vocab:1299680"
+      ]
+     }
+    ],
+    "question": [
+     {
+      "surface": "台所",
+      "lemma": "台所",
+      "reading": "ダイドコロ",
+      "untaught_kanji": [
+       "台",
+       "所"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "持っ",
+      "lemma": "持つ",
+      "reading": "モッ",
+      "untaught_kanji": [
+       "持"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "correct": [
+     {
+      "surface": "皿",
+      "lemma": "皿",
+      "reading": "サラ",
+      "untaught_kanji": [
+       "皿"
+      ],
+      "untaught_word": [
+       "vocab:1299680"
+      ]
+     }
+    ],
+    "distractors[2]": [
+     {
+      "surface": "灰皿",
+      "lemma": "灰皿",
+      "reading": "ハイザラ",
+      "untaught_kanji": [
+       "灰",
+       "皿"
+      ],
+      "untaught_word": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:002",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "家で男の人と女の人が話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "ただいま。ああ、この部屋は寒いですね。ストーブをつけましょうか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "いいえ、そのストーブは古いですから、つけないでください。エアコンをお願いします。スイッチはドアの右にありますよ。"
+    },
+    {
+     "speaker": "M1",
+     "text": "はい、わかりました。電気とテレビもつけましょうか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "電気はいいです。テレビもあとで私がつけますから、大丈夫です。"
+    }
+   ],
+   "question": "男の人は何をつけますか。",
+   "options": [
+    "エアコン",
+    "ストーブ",
+    "電気",
+    "テレビ"
+   ],
+   "key": "エアコン",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 丈",
+    "kanji 夫",
+    "kanji 家",
+    "kanji 寒",
+    "kanji 屋",
+    "kanji 私",
+    "kanji 部",
+    "kanji 願"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "家",
+      "lemma": "家",
+      "reading": "イエ",
+      "untaught_kanji": [
+       "家"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[1]": [
+     {
+      "surface": "部屋",
+      "lemma": "部屋",
+      "reading": "ヘヤ",
+      "untaught_kanji": [
+       "屋",
+       "部"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "寒い",
+      "lemma": "寒い",
+      "reading": "サムイ",
+      "untaught_kanji": [
+       "寒"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[2]": [
+     {
+      "surface": "願い",
+      "lemma": "願う",
+      "reading": "ネガイ",
+      "untaught_kanji": [
+       "願"
+      ],
+      "untaught_word": [
+       "vocab:1217900",
+       "vocab:1217950"
+      ]
+     },
+     {
+      "surface": "スイッチ",
+      "lemma": "スイッチ",
+      "reading": "スイッチ",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1067210"
+      ]
+     }
+    ],
+    "script[4]": [
+     {
+      "surface": "私",
+      "lemma": "私",
+      "reading": "ワタクシ",
+      "untaught_kanji": [
+       "私"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "大丈夫",
+      "lemma": "大丈夫",
+      "reading": "ダイジョウブ",
+      "untaught_kanji": [
+       "丈",
+       "夫"
+      ],
+      "untaught_word": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:003",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "お店で女の人と店の人が話しています。"
+    },
+    {
+     "speaker": "F1",
+     "text": "すみません、この赤いかばん、もっと大きいのはありますか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "赤の大きいのは、今ないです。同じ形で、黒と白と青がありますよ。青は明るくて、きれいな色ですよ。"
+    },
+    {
+     "speaker": "F1",
+     "text": "ええ、いいですね。黒はちょっと暗いです。白はすぐ汚くなりますね。じゃあ、青いのをください。"
+    },
+    {
+     "speaker": "M1",
+     "text": "ありがとうございます。"
+    }
+   ],
+   "question": "女の人はどのかばんを買いますか。",
+   "options": [
+    "青いかばん",
+    "赤いかばん",
+    "黒いかばん",
+    "白いかばん"
+   ],
+   "key": "青いかばん",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 同",
+    "kanji 形",
+    "kanji 明",
+    "kanji 暗",
+    "kanji 汚",
+    "kanji 色",
+    "kanji 赤",
+    "kanji 青",
+    "kanji 黒"
+   ],
+   "breaking_tokens": {
+    "script[1]": [
+     {
+      "surface": "赤い",
+      "lemma": "赤い",
+      "reading": "アカイ",
+      "untaught_kanji": [
+       "赤"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[2]": [
+     {
+      "surface": "赤",
+      "lemma": "赤",
+      "reading": "アカ",
+      "untaught_kanji": [
+       "赤"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "同じ",
+      "lemma": "同じ",
+      "reading": "オナジ",
+      "untaught_kanji": [
+       "同"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "形",
+      "lemma": "形",
+      "reading": "カタチ",
+      "untaught_kanji": [
+       "形"
+      ],
+      "untaught_word": [
+       "vocab:1250220"
+      ]
+     },
+     {
+      "surface": "黒",
+      "lemma": "黒",
+      "reading": "クロ",
+      "untaught_kanji": [
+       "黒"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "青",
+      "lemma": "青",
+      "reading": "アオ",
+      "untaught_kanji": [
+       "青"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "青",
+      "lemma": "青",
+      "reading": "アオ",
+      "untaught_kanji": [
+       "青"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "明るく",
+      "lemma": "明るい",
+      "reading": "アカルク",
+      "untaught_kanji": [
+       "明"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "色",
+      "lemma": "色",
+      "reading": "イロ",
+      "untaught_kanji": [
+       "色"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[3]": [
+     {
+      "surface": "黒",
+      "lemma": "黒",
+      "reading": "クロ",
+      "untaught_kanji": [
+       "黒"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "暗い",
+      "lemma": "暗い",
+      "reading": "クライ",
+      "untaught_kanji": [
+       "暗"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "汚く",
+      "lemma": "汚い",
+      "reading": "キタナク",
+      "untaught_kanji": [
+       "汚"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "青い",
+      "lemma": "青い",
+      "reading": "アオイ",
+      "untaught_kanji": [
+       "青"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "correct": [
+     {
+      "surface": "青い",
+      "lemma": "青い",
+      "reading": "アオイ",
+      "untaught_kanji": [
+       "青"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[0]": [
+     {
+      "surface": "赤い",
+      "lemma": "赤い",
+      "reading": "アカイ",
+      "untaught_kanji": [
+       "赤"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[1]": [
+     {
+      "surface": "黒い",
+      "lemma": "黒い",
+      "reading": "クロイ",
+      "untaught_kanji": [
+       "黒"
+      ],
+      "untaught_word": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:004",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "学校で先生と男の学生が話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "先生、兄の辞書をなくしました。"
+    },
+    {
+     "speaker": "F1",
+     "text": "そうですか。辞書に名前を書きましたか。教室は見ましたか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "名前は書きませんでした。教室はもう見ましたが、ありませんでした。兄に電話しましょうか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "電話はあとでいいですよ。初めに、学校の事務所へ行ってください。そして、事務所の人に聞いてください。"
+    }
+   ],
+   "question": "男の学生はこのあと何をしますか。",
+   "options": [
+    "事務所へ行く",
+    "兄に電話する",
+    "辞書に名前を書く",
+    "教室を見る"
+   ],
+   "key": "事務所へ行く",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 事",
+    "kanji 兄",
+    "kanji 初",
+    "kanji 務",
+    "kanji 室",
+    "kanji 所",
+    "kanji 教",
+    "kanji 辞"
+   ],
+   "breaking_tokens": {
+    "script[1]": [
+     {
+      "surface": "兄",
+      "lemma": "兄",
+      "reading": "アニ",
+      "untaught_kanji": [
+       "兄"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "辞書",
+      "lemma": "辞書",
+      "reading": "ジショ",
+      "untaught_kanji": [
+       "辞"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[2]": [
+     {
+      "surface": "辞書",
+      "lemma": "辞書",
+      "reading": "ジショ",
+      "untaught_kanji": [
+       "辞"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "教室",
+      "lemma": "教室",
+      "reading": "キョウシツ",
+      "untaught_kanji": [
+       "室",
+       "教"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[3]": [
+     {
+      "surface": "教室",
+      "lemma": "教室",
+      "reading": "キョウシツ",
+      "untaught_kanji": [
+       "室",
+       "教"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "兄",
+      "lemma": "兄",
+      "reading": "アニ",
+      "untaught_kanji": [
+       "兄"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[4]": [
+     {
+      "surface": "初め",
+      "lemma": "初め",
+      "reading": "ハジメ",
+      "untaught_kanji": [
+       "初"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "事務所",
+      "lemma": "事務所",
+      "reading": "ジムショ",
+      "untaught_kanji": [
+       "事",
+       "務",
+       "所"
+      ],
+      "untaught_word": [
+       "vocab:1314400"
+      ]
+     },
+     {
+      "surface": "事務所",
+      "lemma": "事務所",
+      "reading": "ジムショ",
+      "untaught_kanji": [
+       "事",
+       "務",
+       "所"
+      ],
+      "untaught_word": [
+       "vocab:1314400"
+      ]
+     }
+    ],
+    "correct": [
+     {
+      "surface": "事務所",
+      "lemma": "事務所",
+      "reading": "ジムショ",
+      "untaught_kanji": [
+       "事",
+       "務",
+       "所"
+      ],
+      "untaught_word": [
+       "vocab:1314400"
+      ]
+     }
+    ],
+    "distractors[0]": [
+     {
+      "surface": "兄",
+      "lemma": "兄",
+      "reading": "アニ",
+      "untaught_kanji": [
+       "兄"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[1]": [
+     {
+      "surface": "辞書",
+      "lemma": "辞書",
+      "reading": "ジショ",
+      "untaught_kanji": [
+       "辞"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[2]": [
+     {
+      "surface": "教室",
+      "lemma": "教室",
+      "reading": "キョウシツ",
+      "untaught_kanji": [
+       "室",
+       "教"
+      ],
+      "untaught_word": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:005",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "駅で女の人と駅の人が話しています。"
+    },
+    {
+     "speaker": "F1",
+     "text": "すみません。姉が車で来ます。東口で待ってもいいですか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "東口は今、閉まっていますよ。"
+    },
+    {
+     "speaker": "F1",
+     "text": "そうですか。じゃあ、西口はどうですか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "西口はバスがたくさん来ますから、危ないですよ。お姉さんは車ですね。じゃあ、向こうの南口で待ってください。北口は狭いですから。"
+    }
+   ],
+   "question": "女の人はどこで待ちますか。",
+   "options": [
+    "南口",
+    "東口",
+    "西口",
+    "北口"
+   ],
+   "key": "南口",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 危",
+    "kanji 向",
+    "kanji 姉",
+    "kanji 待",
+    "kanji 狭",
+    "kanji 閉"
+   ],
+   "breaking_tokens": {
+    "script[1]": [
+     {
+      "surface": "姉",
+      "lemma": "姉",
+      "reading": "アネ",
+      "untaught_kanji": [
+       "姉"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "待っ",
+      "lemma": "待つ",
+      "reading": "マッ",
+      "untaught_kanji": [
+       "待"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[2]": [
+     {
+      "surface": "閉まっ",
+      "lemma": "閉まる",
+      "reading": "シマッ",
+      "untaught_kanji": [
+       "閉"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[4]": [
+     {
+      "surface": "危ない",
+      "lemma": "危ない",
+      "reading": "アブナイ",
+      "untaught_kanji": [
+       "危"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "お姉さん",
+      "lemma": "お姉さん",
+      "reading": "オネエサン",
+      "untaught_kanji": [
+       "姉"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "向こう",
+      "lemma": "向こう",
+      "reading": "ムコウ",
+      "untaught_kanji": [
+       "向"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "待っ",
+      "lemma": "待つ",
+      "reading": "マッ",
+      "untaught_kanji": [
+       "待"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "狭い",
+      "lemma": "狭い",
+      "reading": "セマイ",
+      "untaught_kanji": [
+       "狭"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "question": [
+     {
+      "surface": "待ち",
+      "lemma": "待つ",
+      "reading": "マチ",
+      "untaught_kanji": [
+       "待"
+      ],
+      "untaught_word": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:006",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "公園で男の人とおまわりさんが話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "すみません。ここでたばこを吸ってもいいですか。"
+    },
+    {
+     "speaker": "M2",
+     "text": "いいえ、公園の中はだめですよ。"
+    },
+    {
+     "speaker": "M1",
+     "text": "そうですか。じゃあ、あそこの喫茶店の前はどうですか。"
+    },
+    {
+     "speaker": "M2",
+     "text": "喫茶店の前もだめです。しかし、あそこのコンビニの横は大丈夫ですよ。駅の前でも大丈夫ですが、遠いです。コンビニの横で吸ってください。"
+    }
+   ],
+   "question": "男の人はどこでたばこを吸いますか。",
+   "options": [
+    "コンビニの横",
+    "公園の中",
+    "喫茶店の前",
+    "駅の前"
+   ],
+   "key": "コンビニの横",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 丈",
+    "kanji 公",
+    "kanji 吸",
+    "kanji 喫",
+    "kanji 園",
+    "kanji 夫",
+    "kanji 横",
+    "kanji 茶",
+    "kanji 遠"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "公園",
+      "lemma": "公園",
+      "reading": "コウエン",
+      "untaught_kanji": [
+       "公",
+       "園"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[1]": [
+     {
+      "surface": "吸っ",
+      "lemma": "吸う",
+      "reading": "スッ",
+      "untaught_kanji": [
+       "吸"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[2]": [
+     {
+      "surface": "公園",
+      "lemma": "公園",
+      "reading": "コウエン",
+      "untaught_kanji": [
+       "公",
+       "園"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[3]": [
+     {
+      "surface": "喫茶店",
+      "lemma": "喫茶店",
+      "reading": "キッサテン",
+      "untaught_kanji": [
+       "喫",
+       "茶"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[4]": [
+     {
+      "surface": "喫茶店",
+      "lemma": "喫茶店",
+      "reading": "キッサテン",
+      "untaught_kanji": [
+       "喫",
+       "茶"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "横",
+      "lemma": "横",
+      "reading": "ヨコ",
+      "untaught_kanji": [
+       "横"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "大丈夫",
+      "lemma": "大丈夫",
+      "reading": "ダイジョウブ",
+      "untaught_kanji": [
+       "丈",
+       "夫"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "大丈夫",
+      "lemma": "大丈夫",
+      "reading": "ダイジョウブ",
+      "untaught_kanji": [
+       "丈",
+       "夫"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "遠い",
+      "lemma": "遠い",
+      "reading": "トオイ",
+      "untaught_kanji": [
+       "遠"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "横",
+      "lemma": "横",
+      "reading": "ヨコ",
+      "untaught_kanji": [
+       "横"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "吸っ",
+      "lemma": "吸う",
+      "reading": "スッ",
+      "untaught_kanji": [
+       "吸"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "question": [
+     {
+      "surface": "吸い",
+      "lemma": "吸う",
+      "reading": "スイ",
+      "untaught_kanji": [
+       "吸"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "correct": [
+     {
+      "surface": "横",
+      "lemma": "横",
+      "reading": "ヨコ",
+      "untaught_kanji": [
+       "横"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[0]": [
+     {
+      "surface": "公園",
+      "lemma": "公園",
+      "reading": "コウエン",
+      "untaught_kanji": [
+       "公",
+       "園"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[1]": [
+     {
+      "surface": "喫茶店",
+      "lemma": "喫茶店",
+      "reading": "キッサテン",
+      "untaught_kanji": [
+       "喫",
+       "茶"
+      ],
+      "untaught_word": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:007",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "お店で男の人と女の人が話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "今日のお昼、公園で食べませんか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "今日は風が強く吹いていますよ。会社の中で食べましょう。"
+    },
+    {
+     "speaker": "M1",
+     "text": "そうですね。私はこのお弁当を買います。"
+    },
+    {
+     "speaker": "F1",
+     "text": "私はパンが好きですが、昨日もパンでしたから、今日はおにぎりにします。あ、このサンドイッチもいいですね。でも、高いですから、やっぱりおにぎりを買います。"
+    }
+   ],
+   "question": "女の人は何を買いますか。",
+   "options": [
+    "おにぎり",
+    "お弁当",
+    "パン",
+    "サンドイッチ"
+   ],
+   "key": "おにぎり",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 公",
+    "kanji 吹",
+    "kanji 園",
+    "kanji 好",
+    "kanji 弁",
+    "kanji 強",
+    "kanji 当",
+    "kanji 昨",
+    "kanji 昼",
+    "kanji 私",
+    "kanji 風"
+   ],
+   "breaking_tokens": {
+    "script[1]": [
+     {
+      "surface": "昼",
+      "lemma": "昼",
+      "reading": "ヒル",
+      "untaught_kanji": [
+       "昼"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "公園",
+      "lemma": "公園",
+      "reading": "コウエン",
+      "untaught_kanji": [
+       "公",
+       "園"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[2]": [
+     {
+      "surface": "風",
+      "lemma": "風",
+      "reading": "カゼ",
+      "untaught_kanji": [
+       "風"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "強く",
+      "lemma": "強い",
+      "reading": "ツヨク",
+      "untaught_kanji": [
+       "強"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "吹い",
+      "lemma": "吹く",
+      "reading": "フイ",
+      "untaught_kanji": [
+       "吹"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[3]": [
+     {
+      "surface": "私",
+      "lemma": "私",
+      "reading": "ワタクシ",
+      "untaught_kanji": [
+       "私"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "弁当",
+      "lemma": "弁当",
+      "reading": "ベントウ",
+      "untaught_kanji": [
+       "弁",
+       "当"
+      ],
+      "untaught_word": [
+       "vocab:1513060"
+      ]
+     }
+    ],
+    "script[4]": [
+     {
+      "surface": "私",
+      "lemma": "私",
+      "reading": "ワタクシ",
+      "untaught_kanji": [
+       "私"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "好き",
+      "lemma": "好き",
+      "reading": "スキ",
+      "untaught_kanji": [
+       "好"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "昨日",
+      "lemma": "昨日",
+      "reading": "キノウ",
+      "untaught_kanji": [
+       "昨"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "サンドイッチ",
+      "lemma": "サンドイッチ",
+      "reading": "サンドイッチ",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1058580"
+      ]
+     }
+    ],
+    "distractors[0]": [
+     {
+      "surface": "弁当",
+      "lemma": "弁当",
+      "reading": "ベントウ",
+      "untaught_kanji": [
+       "弁",
+       "当"
+      ],
+      "untaught_word": [
+       "vocab:1513060"
+      ]
+     }
+    ],
+    "distractors[2]": [
+     {
+      "surface": "サンドイッチ",
+      "lemma": "サンドイッチ",
+      "reading": "サンドイッチ",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1058580"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:008",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "レストランで男の人と女の人が話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "何を食べますか。店の人を呼びましょうか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "ちょっと待ってください。初めにお手洗いへ行きたいです。それから、お水も飲みたいです。"
+    },
+    {
+     "speaker": "M1",
+     "text": "お水はあとで店の人に言いましょう。ここは少しうるさいですから、席も変えましょうか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "いいえ、席はここでいいです。じゃあ、行ってきます。"
+    }
+   ],
+   "question": "女の人はこのあと何をしますか。",
+   "options": [
+    "お手洗いへ行く",
+    "店の人を呼ぶ",
+    "お水を飲む",
+    "席を変える"
+   ],
+   "key": "お手洗いへ行く",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 初",
+    "kanji 呼",
+    "kanji 変",
+    "kanji 席",
+    "kanji 待",
+    "kanji 洗"
+   ],
+   "breaking_tokens": {
+    "script[1]": [
+     {
+      "surface": "呼び",
+      "lemma": "呼ぶ",
+      "reading": "ヨビ",
+      "untaught_kanji": [
+       "呼"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[2]": [
+     {
+      "surface": "待っ",
+      "lemma": "待つ",
+      "reading": "マッ",
+      "untaught_kanji": [
+       "待"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "初め",
+      "lemma": "初め",
+      "reading": "ハジメ",
+      "untaught_kanji": [
+       "初"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "お手洗い",
+      "lemma": "お手洗い",
+      "reading": "オテアライ",
+      "untaught_kanji": [
+       "洗"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[3]": [
+     {
+      "surface": "席",
+      "lemma": "席",
+      "reading": "セキ",
+      "untaught_kanji": [
+       "席"
+      ],
+      "untaught_word": [
+       "vocab:1382250"
+      ]
+     },
+     {
+      "surface": "変え",
+      "lemma": "変える",
+      "reading": "カエ",
+      "untaught_kanji": [
+       "変"
+      ],
+      "untaught_word": [
+       "vocab:1510650"
+      ]
+     }
+    ],
+    "script[4]": [
+     {
+      "surface": "席",
+      "lemma": "席",
+      "reading": "セキ",
+      "untaught_kanji": [
+       "席"
+      ],
+      "untaught_word": [
+       "vocab:1382250"
+      ]
+     }
+    ],
+    "correct": [
+     {
+      "surface": "お手洗い",
+      "lemma": "お手洗い",
+      "reading": "オテアライ",
+      "untaught_kanji": [
+       "洗"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[0]": [
+     {
+      "surface": "呼ぶ",
+      "lemma": "呼ぶ",
+      "reading": "ヨブ",
+      "untaught_kanji": [
+       "呼"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[2]": [
+     {
+      "surface": "席",
+      "lemma": "席",
+      "reading": "セキ",
+      "untaught_kanji": [
+       "席"
+      ],
+      "untaught_word": [
+       "vocab:1382250"
+      ]
+     },
+     {
+      "surface": "変える",
+      "lemma": "変える",
+      "reading": "カエル",
+      "untaught_kanji": [
+       "変"
+      ],
+      "untaught_word": [
+       "vocab:1510650"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:009",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "家でお母さんと男の子が話しています。"
+    },
+    {
+     "speaker": "F1",
+     "text": "ご飯ですよ。今日はカレーですよ。"
+    },
+    {
+     "speaker": "M1",
+     "text": "わあ、ぼく、カレーが大好きです。あ、お母さん、このカレー、とても熱いですよ。"
+    },
+    {
+     "speaker": "F1",
+     "text": "じゃあ、先に冷たいサラダを食べてください。スープとパンもありますよ。"
+    },
+    {
+     "speaker": "M1",
+     "text": "スープも熱いですから、あとで飲みます。パンはカレーと一緒に食べます。じゃあ、サラダから食べます。いただきます。"
+    }
+   ],
+   "question": "男の子は初めに何を食べますか。",
+   "options": [
+    "サラダ",
+    "カレー",
+    "スープ",
+    "パン"
+   ],
+   "key": "サラダ",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 冷",
+    "kanji 初",
+    "kanji 好",
+    "kanji 家",
+    "kanji 熱",
+    "kanji 緒",
+    "kanji 飯"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "家",
+      "lemma": "家",
+      "reading": "イエ",
+      "untaught_kanji": [
+       "家"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[1]": [
+     {
+      "surface": "ご飯",
+      "lemma": "ご飯",
+      "reading": "ゴハン",
+      "untaught_kanji": [
+       "飯"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "今日は",
+      "lemma": "今日は",
+      "reading": "コンニチハ",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1289400"
+      ]
+     }
+    ],
+    "script[2]": [
+     {
+      "surface": "大好き",
+      "lemma": "大好き",
+      "reading": "ダイスキ",
+      "untaught_kanji": [
+       "好"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "熱い",
+      "lemma": "熱い",
+      "reading": "アツイ",
+      "untaught_kanji": [
+       "熱"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[3]": [
+     {
+      "surface": "冷たい",
+      "lemma": "冷たい",
+      "reading": "ツメタイ",
+      "untaught_kanji": [
+       "冷"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "サラダ",
+      "lemma": "サラダ",
+      "reading": "サラダ",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1057850"
+      ]
+     },
+     {
+      "surface": "スープ",
+      "lemma": "スープ",
+      "reading": "スープ",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1067040"
+      ]
+     }
+    ],
+    "script[4]": [
+     {
+      "surface": "スープ",
+      "lemma": "スープ",
+      "reading": "スープ",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1067040"
+      ]
+     },
+     {
+      "surface": "熱い",
+      "lemma": "熱い",
+      "reading": "アツイ",
+      "untaught_kanji": [
+       "熱"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "一緒",
+      "lemma": "一緒",
+      "reading": "イッショ",
+      "untaught_kanji": [
+       "緒"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "サラダ",
+      "lemma": "サラダ",
+      "reading": "サラダ",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1057850"
+      ]
+     }
+    ],
+    "question": [
+     {
+      "surface": "初め",
+      "lemma": "初め",
+      "reading": "ハジメ",
+      "untaught_kanji": [
+       "初"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "correct": [
+     {
+      "surface": "サラダ",
+      "lemma": "サラダ",
+      "reading": "サラダ",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1057850"
+      ]
+     }
+    ],
+    "distractors[1]": [
+     {
+      "surface": "スープ",
+      "lemma": "スープ",
+      "reading": "スープ",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1067040"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:010",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "家でお父さんと女の子が話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "公園の桜が咲きましたよ。明日、みんなで見に行きましょう。"
+    },
+    {
+     "speaker": "F1",
+     "text": "いいですね。私、カメラを持って行きましょうか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "カメラはお父さんが持ちますよ。お弁当とお茶はお母さんが持ちます。"
+    },
+    {
+     "speaker": "F1",
+     "text": "じゃあ、私はお菓子を持って行きますね。"
+    }
+   ],
+   "question": "女の子は何を持って行きますか。",
+   "options": [
+    "お菓子",
+    "カメラ",
+    "お弁当",
+    "お茶"
+   ],
+   "key": "お菓子",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 公",
+    "kanji 咲",
+    "kanji 園",
+    "kanji 家",
+    "kanji 弁",
+    "kanji 当",
+    "kanji 持",
+    "kanji 明",
+    "kanji 桜",
+    "kanji 私",
+    "kanji 茶",
+    "kanji 菓"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "家",
+      "lemma": "家",
+      "reading": "イエ",
+      "untaught_kanji": [
+       "家"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[1]": [
+     {
+      "surface": "公園",
+      "lemma": "公園",
+      "reading": "コウエン",
+      "untaught_kanji": [
+       "公",
+       "園"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "桜",
+      "lemma": "桜",
+      "reading": "サクラ",
+      "untaught_kanji": [
+       "桜"
+      ],
+      "untaught_word": [
+       "vocab:1593710"
+      ]
+     },
+     {
+      "surface": "咲き",
+      "lemma": "咲く",
+      "reading": "サキ",
+      "untaught_kanji": [
+       "咲"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "明日",
+      "lemma": "明日",
+      "reading": "アス",
+      "untaught_kanji": [
+       "明"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[2]": [
+     {
+      "surface": "私",
+      "lemma": "私",
+      "reading": "ワタクシ",
+      "untaught_kanji": [
+       "私"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "持っ",
+      "lemma": "持つ",
+      "reading": "モッ",
+      "untaught_kanji": [
+       "持"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[3]": [
+     {
+      "surface": "持ち",
+      "lemma": "持つ",
+      "reading": "モチ",
+      "untaught_kanji": [
+       "持"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "弁当",
+      "lemma": "弁当",
+      "reading": "ベントウ",
+      "untaught_kanji": [
+       "弁",
+       "当"
+      ],
+      "untaught_word": [
+       "vocab:1513060"
+      ]
+     },
+     {
+      "surface": "茶",
+      "lemma": "茶",
+      "reading": "チャ",
+      "untaught_kanji": [
+       "茶"
+      ],
+      "untaught_word": [
+       "vocab:1422570"
+      ]
+     },
+     {
+      "surface": "持ち",
+      "lemma": "持つ",
+      "reading": "モチ",
+      "untaught_kanji": [
+       "持"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[4]": [
+     {
+      "surface": "私",
+      "lemma": "私",
+      "reading": "ワタクシ",
+      "untaught_kanji": [
+       "私"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "菓子",
+      "lemma": "菓子",
+      "reading": "カシ",
+      "untaught_kanji": [
+       "菓"
+      ],
+      "untaught_word": [
+       "vocab:1195670"
+      ]
+     },
+     {
+      "surface": "持っ",
+      "lemma": "持つ",
+      "reading": "モッ",
+      "untaught_kanji": [
+       "持"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "question": [
+     {
+      "surface": "持っ",
+      "lemma": "持つ",
+      "reading": "モッ",
+      "untaught_kanji": [
+       "持"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "correct": [
+     {
+      "surface": "菓子",
+      "lemma": "菓子",
+      "reading": "カシ",
+      "untaught_kanji": [
+       "菓"
+      ],
+      "untaught_word": [
+       "vocab:1195670"
+      ]
+     }
+    ],
+    "distractors[1]": [
+     {
+      "surface": "弁当",
+      "lemma": "弁当",
+      "reading": "ベントウ",
+      "untaught_kanji": [
+       "弁",
+       "当"
+      ],
+      "untaught_word": [
+       "vocab:1513060"
+      ]
+     }
+    ],
+    "distractors[2]": [
+     {
+      "surface": "茶",
+      "lemma": "茶",
+      "reading": "チャ",
+      "untaught_kanji": [
+       "茶"
+      ],
+      "untaught_word": [
+       "vocab:1422570"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:011",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "家でお母さんと女の子が話しています。"
+    },
+    {
+     "speaker": "F2",
+     "text": "お母さん、この宿題の問題、難しいです。教えてください。"
+    },
+    {
+     "speaker": "F1",
+     "text": "お母さんは今、料理をしていますから、あとでね。お父さんに聞いてください。"
+    },
+    {
+     "speaker": "F2",
+     "text": "お父さんは今、お風呂に入っています。おばあさんは。"
+    },
+    {
+     "speaker": "F1",
+     "text": "おばあさんはもう寝ていますよ。じゃあ、お兄さんに聞いてください。今、隣の部屋にいますよ。"
+    }
+   ],
+   "question": "女の子はこのあとだれに聞きますか。",
+   "options": [
+    "お兄さん",
+    "お母さん",
+    "お父さん",
+    "おばあさん"
+   ],
+   "key": "お兄さん",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 兄",
+    "kanji 呂",
+    "kanji 問",
+    "kanji 家",
+    "kanji 宿",
+    "kanji 寝",
+    "kanji 屋",
+    "kanji 教",
+    "kanji 料",
+    "kanji 理",
+    "kanji 部",
+    "kanji 隣",
+    "kanji 難",
+    "kanji 題",
+    "kanji 風"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "家",
+      "lemma": "家",
+      "reading": "イエ",
+      "untaught_kanji": [
+       "家"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[1]": [
+     {
+      "surface": "宿題",
+      "lemma": "宿題",
+      "reading": "シュクダイ",
+      "untaught_kanji": [
+       "宿",
+       "題"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "問題",
+      "lemma": "問題",
+      "reading": "モンダイ",
+      "untaught_kanji": [
+       "問",
+       "題"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "難しい",
+      "lemma": "難しい",
+      "reading": "ムズカシイ",
+      "untaught_kanji": [
+       "難"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "教え",
+      "lemma": "教える",
+      "reading": "オシエ",
+      "untaught_kanji": [
+       "教"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[2]": [
+     {
+      "surface": "料理",
+      "lemma": "料理",
+      "reading": "リョウリ",
+      "untaught_kanji": [
+       "料",
+       "理"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[3]": [
+     {
+      "surface": "風呂",
+      "lemma": "風呂",
+      "reading": "フロ",
+      "untaught_kanji": [
+       "呂",
+       "風"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[4]": [
+     {
+      "surface": "寝",
+      "lemma": "寝る",
+      "reading": "ネ",
+      "untaught_kanji": [
+       "寝"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "お兄さん",
+      "lemma": "お兄さん",
+      "reading": "オニイサン",
+      "untaught_kanji": [
+       "兄"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "隣の部屋",
+      "lemma": "隣の部屋",
+      "reading": "トナリノヘヤ",
+      "untaught_kanji": [
+       "屋",
+       "部",
+       "隣"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "correct": [
+     {
+      "surface": "お兄さん",
+      "lemma": "お兄さん",
+      "reading": "オニイサン",
+      "untaught_kanji": [
+       "兄"
+      ],
+      "untaught_word": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:012",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "喫茶店で女の人とおじいさんが話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "このメニューはカタカナが多いですから、よくわかりませんよ。"
+    },
+    {
+     "speaker": "F1",
+     "text": "じゃあ、私が読みますね。コーヒー、ジュース、ココア、ミルクティーがありますよ。"
+    },
+    {
+     "speaker": "M1",
+     "text": "コーヒーは今朝、飲みました。今日は寒いですから、冷たいジュースもいりません。ミルクティーは昨日、飲みましたね。"
+    },
+    {
+     "speaker": "F1",
+     "text": "じゃあ、温かいココアですね。すみません、ココアを一つお願いします。"
+    }
+   ],
+   "question": "おじいさんは何を飲みますか。",
+   "options": [
+    "ココア",
+    "コーヒー",
+    "ジュース",
+    "ミルクティー"
+   ],
+   "key": "ココア",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 冷",
+    "kanji 喫",
+    "kanji 寒",
+    "kanji 昨",
+    "kanji 朝",
+    "kanji 温",
+    "kanji 私",
+    "kanji 茶",
+    "kanji 願"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "喫茶店",
+      "lemma": "喫茶店",
+      "reading": "キッサテン",
+      "untaught_kanji": [
+       "喫",
+       "茶"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[1]": [
+     {
+      "surface": "メニュー",
+      "lemma": "メニュー",
+      "reading": "メニュー",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1133790"
+      ]
+     }
+    ],
+    "script[2]": [
+     {
+      "surface": "私",
+      "lemma": "私",
+      "reading": "ワタクシ",
+      "untaught_kanji": [
+       "私"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "ジュース",
+      "lemma": "ジュース",
+      "reading": "ジュース",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1065950"
+      ]
+     }
+    ],
+    "script[3]": [
+     {
+      "surface": "今朝",
+      "lemma": "今朝",
+      "reading": "ケサ",
+      "untaught_kanji": [
+       "朝"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "寒い",
+      "lemma": "寒い",
+      "reading": "サムイ",
+      "untaught_kanji": [
+       "寒"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "冷たい",
+      "lemma": "冷たい",
+      "reading": "ツメタイ",
+      "untaught_kanji": [
+       "冷"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "ジュース",
+      "lemma": "ジュース",
+      "reading": "ジュース",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1065950"
+      ]
+     },
+     {
+      "surface": "昨日",
+      "lemma": "昨日",
+      "reading": "キノウ",
+      "untaught_kanji": [
+       "昨"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[4]": [
+     {
+      "surface": "温かい",
+      "lemma": "温かい",
+      "reading": "アタタカイ",
+      "untaught_kanji": [
+       "温"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "願い",
+      "lemma": "願う",
+      "reading": "ネガイ",
+      "untaught_kanji": [
+       "願"
+      ],
+      "untaught_word": [
+       "vocab:1217900",
+       "vocab:1217950"
+      ]
+     }
+    ],
+    "distractors[1]": [
+     {
+      "surface": "ジュース",
+      "lemma": "ジュース",
+      "reading": "ジュース",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1065950"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:013",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "家でお母さんと男の子が話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "ああ、お母さん、おなかが痛いです。"
+    },
+    {
+     "speaker": "F1",
+     "text": "大丈夫ですか。牛乳を飲みますか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "牛乳はあまり好きじゃありません。冷たいジュースか水がいいです。"
+    },
+    {
+     "speaker": "F1",
+     "text": "だめですよ。冷たい物はおなかによくないです。温かいお茶を飲んでください。"
+    }
+   ],
+   "question": "男の子は何を飲みますか。",
+   "options": [
+    "お茶",
+    "牛乳",
+    "ジュース",
+    "水"
+   ],
+   "key": "お茶",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 丈",
+    "kanji 乳",
+    "kanji 冷",
+    "kanji 夫",
+    "kanji 好",
+    "kanji 家",
+    "kanji 温",
+    "kanji 牛",
+    "kanji 物",
+    "kanji 痛",
+    "kanji 茶"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "家",
+      "lemma": "家",
+      "reading": "イエ",
+      "untaught_kanji": [
+       "家"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[1]": [
+     {
+      "surface": "痛い",
+      "lemma": "痛い",
+      "reading": "イタイ",
+      "untaught_kanji": [
+       "痛"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[2]": [
+     {
+      "surface": "大丈夫",
+      "lemma": "大丈夫",
+      "reading": "ダイジョウブ",
+      "untaught_kanji": [
+       "丈",
+       "夫"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "牛乳",
+      "lemma": "牛乳",
+      "reading": "ギュウニュウ",
+      "untaught_kanji": [
+       "乳",
+       "牛"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[3]": [
+     {
+      "surface": "牛乳",
+      "lemma": "牛乳",
+      "reading": "ギュウニュウ",
+      "untaught_kanji": [
+       "乳",
+       "牛"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "好き",
+      "lemma": "好き",
+      "reading": "スキ",
+      "untaught_kanji": [
+       "好"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "冷たい",
+      "lemma": "冷たい",
+      "reading": "ツメタイ",
+      "untaught_kanji": [
+       "冷"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "ジュース",
+      "lemma": "ジュース",
+      "reading": "ジュース",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1065950"
+      ]
+     }
+    ],
+    "script[4]": [
+     {
+      "surface": "冷たい",
+      "lemma": "冷たい",
+      "reading": "ツメタイ",
+      "untaught_kanji": [
+       "冷"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "物",
+      "lemma": "物",
+      "reading": "モノ",
+      "untaught_kanji": [
+       "物"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "温かい",
+      "lemma": "温かい",
+      "reading": "アタタカイ",
+      "untaught_kanji": [
+       "温"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "茶",
+      "lemma": "茶",
+      "reading": "チャ",
+      "untaught_kanji": [
+       "茶"
+      ],
+      "untaught_word": [
+       "vocab:1422570"
+      ]
+     }
+    ],
+    "correct": [
+     {
+      "surface": "茶",
+      "lemma": "茶",
+      "reading": "チャ",
+      "untaught_kanji": [
+       "茶"
+      ],
+      "untaught_word": [
+       "vocab:1422570"
+      ]
+     }
+    ],
+    "distractors[0]": [
+     {
+      "surface": "牛乳",
+      "lemma": "牛乳",
+      "reading": "ギュウニュウ",
+      "untaught_kanji": [
+       "乳",
+       "牛"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[1]": [
+     {
+      "surface": "ジュース",
+      "lemma": "ジュース",
+      "reading": "ジュース",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1065950"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:014",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "家で女の人と男の人が話しています。"
+    },
+    {
+     "speaker": "F1",
+     "text": "すみませんが、スーパーで牛肉を買ってください。"
+    },
+    {
+     "speaker": "M1",
+     "text": "はい。豚肉じゃなくて、牛肉ですね。お茶も買いましょうか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "お茶はまだたくさんありますから、いいです。あ、すみません、やっぱり牛肉じゃなくて、鶏肉にしてください。今晩は鶏肉の料理ですから。"
+    },
+    {
+     "speaker": "M1",
+     "text": "わかりました。じゃあ、行ってきます。"
+    }
+   ],
+   "question": "男の人は何を買いますか。",
+   "options": [
+    "鶏肉",
+    "牛肉",
+    "豚肉",
+    "お茶"
+   ],
+   "key": "鶏肉",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 家",
+    "kanji 料",
+    "kanji 晩",
+    "kanji 牛",
+    "kanji 理",
+    "kanji 肉",
+    "kanji 茶",
+    "kanji 豚",
+    "kanji 鶏"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "家",
+      "lemma": "家",
+      "reading": "イエ",
+      "untaught_kanji": [
+       "家"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[1]": [
+     {
+      "surface": "スーパー",
+      "lemma": "スーパー",
+      "reading": "スーパー",
+      "untaught_kanji": [],
+      "untaught_word": [
+       "vocab:1066710"
+      ]
+     },
+     {
+      "surface": "牛肉",
+      "lemma": "牛肉",
+      "reading": "ギュウニク",
+      "untaught_kanji": [
+       "牛",
+       "肉"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[2]": [
+     {
+      "surface": "豚肉",
+      "lemma": "豚肉",
+      "reading": "ブタニク",
+      "untaught_kanji": [
+       "肉",
+       "豚"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "牛肉",
+      "lemma": "牛肉",
+      "reading": "ギュウニク",
+      "untaught_kanji": [
+       "牛",
+       "肉"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "茶",
+      "lemma": "茶",
+      "reading": "チャ",
+      "untaught_kanji": [
+       "茶"
+      ],
+      "untaught_word": [
+       "vocab:1422570"
+      ]
+     }
+    ],
+    "script[3]": [
+     {
+      "surface": "茶",
+      "lemma": "茶",
+      "reading": "チャ",
+      "untaught_kanji": [
+       "茶"
+      ],
+      "untaught_word": [
+       "vocab:1422570"
+      ]
+     },
+     {
+      "surface": "牛肉",
+      "lemma": "牛肉",
+      "reading": "ギュウニク",
+      "untaught_kanji": [
+       "牛",
+       "肉"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "鶏肉",
+      "lemma": "鶏肉",
+      "reading": "ケイニク",
+      "untaught_kanji": [
+       "肉",
+       "鶏"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "今晩は",
+      "lemma": "今晩は",
+      "reading": "コンバンハ",
+      "untaught_kanji": [
+       "晩"
+      ],
+      "untaught_word": [
+       "vocab:1289480"
+      ]
+     },
+     {
+      "surface": "鶏肉",
+      "lemma": "鶏肉",
+      "reading": "ケイニク",
+      "untaught_kanji": [
+       "肉",
+       "鶏"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "料理",
+      "lemma": "料理",
+      "reading": "リョウリ",
+      "untaught_kanji": [
+       "料",
+       "理"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "correct": [
+     {
+      "surface": "鶏肉",
+      "lemma": "鶏肉",
+      "reading": "ケイニク",
+      "untaught_kanji": [
+       "肉",
+       "鶏"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[0]": [
+     {
+      "surface": "牛肉",
+      "lemma": "牛肉",
+      "reading": "ギュウニク",
+      "untaught_kanji": [
+       "牛",
+       "肉"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[1]": [
+     {
+      "surface": "豚肉",
+      "lemma": "豚肉",
+      "reading": "ブタニク",
+      "untaught_kanji": [
+       "肉",
+       "豚"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[2]": [
+     {
+      "surface": "茶",
+      "lemma": "茶",
+      "reading": "チャ",
+      "untaught_kanji": [
+       "茶"
+      ],
+      "untaught_word": [
+       "vocab:1422570"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:015",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "お店で女の人と店の人が話しています。"
+    },
+    {
+     "speaker": "F1",
+     "text": "すみません、このお菓子を三つください。"
+    },
+    {
+     "speaker": "M2",
+     "text": "はい、三つですね。今日は五つで５００円ですよ。五つはどうですか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "うーん、五つは多いですね。あ、でも、明日は友達が来ますから、四つお願いします。二つは私と姉の物で、二つは友達の物です。"
+    },
+    {
+     "speaker": "M2",
+     "text": "はい、四つですね。ありがとうございます。"
+    }
+   ],
+   "question": "女の人はお菓子をいくつ買いますか。",
+   "options": [
+    "四つ",
+    "二つ",
+    "三つ",
+    "五つ"
+   ],
+   "key": "四つ",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 姉",
+    "kanji 明",
+    "kanji 物",
+    "kanji 私",
+    "kanji 菓",
+    "kanji 達",
+    "kanji 願"
+   ],
+   "breaking_tokens": {
+    "script[1]": [
+     {
+      "surface": "菓子",
+      "lemma": "菓子",
+      "reading": "カシ",
+      "untaught_kanji": [
+       "菓"
+      ],
+      "untaught_word": [
+       "vocab:1195670"
+      ]
+     }
+    ],
+    "script[3]": [
+     {
+      "surface": "明日",
+      "lemma": "明日",
+      "reading": "アス",
+      "untaught_kanji": [
+       "明"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "友達",
+      "lemma": "友達",
+      "reading": "トモダチ",
+      "untaught_kanji": [
+       "達"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "願い",
+      "lemma": "願う",
+      "reading": "ネガイ",
+      "untaught_kanji": [
+       "願"
+      ],
+      "untaught_word": [
+       "vocab:1217900",
+       "vocab:1217950"
+      ]
+     },
+     {
+      "surface": "私",
+      "lemma": "私",
+      "reading": "ワタクシ",
+      "untaught_kanji": [
+       "私"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "姉",
+      "lemma": "姉",
+      "reading": "アネ",
+      "untaught_kanji": [
+       "姉"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "物",
+      "lemma": "物",
+      "reading": "モノ",
+      "untaught_kanji": [
+       "物"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "友達",
+      "lemma": "友達",
+      "reading": "トモダチ",
+      "untaught_kanji": [
+       "達"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "物",
+      "lemma": "物",
+      "reading": "モノ",
+      "untaught_kanji": [
+       "物"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "question": [
+     {
+      "surface": "菓子",
+      "lemma": "菓子",
+      "reading": "カシ",
+      "untaught_kanji": [
+       "菓"
+      ],
+      "untaught_word": [
+       "vocab:1195670"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "lt:n5:016",
+   "bank": "n5_listening_task.json",
+   "level": "n5",
+   "family": "task",
+   "script": [
+    {
+     "speaker": "N",
+     "text": "家でお母さんと男の子が話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "お母さん、これから犬と公園へ行ってもいいですか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "宿題はもう終わりましたか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "宿題はもう終わりました。あ、犬のご飯も買いたいですから、お金をください。"
+    },
+    {
+     "speaker": "F1",
+     "text": "犬のご飯は昨日買いましたから、いいですよ。それから、公園へ行く前に、部屋を掃除してくださいね。"
+    }
+   ],
+   "question": "男の子はこのあと初めに何をしますか。",
+   "options": [
+    "部屋を掃除する",
+    "宿題をする",
+    "犬のご飯を買う",
+    "公園へ行く"
+   ],
+   "key": "部屋を掃除する",
+   "sentence": null,
+   "source_sentence_jp": null,
+   "gate_breaks": [
+    "kanji 公",
+    "kanji 初",
+    "kanji 園",
+    "kanji 家",
+    "kanji 宿",
+    "kanji 屋",
+    "kanji 掃",
+    "kanji 昨",
+    "kanji 犬",
+    "kanji 終",
+    "kanji 部",
+    "kanji 除",
+    "kanji 題",
+    "kanji 飯"
+   ],
+   "breaking_tokens": {
+    "script[0]": [
+     {
+      "surface": "家",
+      "lemma": "家",
+      "reading": "イエ",
+      "untaught_kanji": [
+       "家"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[1]": [
+     {
+      "surface": "犬",
+      "lemma": "犬",
+      "reading": "イヌ",
+      "untaught_kanji": [
+       "犬"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "公園",
+      "lemma": "公園",
+      "reading": "コウエン",
+      "untaught_kanji": [
+       "公",
+       "園"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[2]": [
+     {
+      "surface": "宿題",
+      "lemma": "宿題",
+      "reading": "シュクダイ",
+      "untaught_kanji": [
+       "宿",
+       "題"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "終わり",
+      "lemma": "終わる",
+      "reading": "オワリ",
+      "untaught_kanji": [
+       "終"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[3]": [
+     {
+      "surface": "宿題",
+      "lemma": "宿題",
+      "reading": "シュクダイ",
+      "untaught_kanji": [
+       "宿",
+       "題"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "終わり",
+      "lemma": "終わる",
+      "reading": "オワリ",
+      "untaught_kanji": [
+       "終"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "犬",
+      "lemma": "犬",
+      "reading": "イヌ",
+      "untaught_kanji": [
+       "犬"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "ご飯",
+      "lemma": "ご飯",
+      "reading": "ゴハン",
+      "untaught_kanji": [
+       "飯"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "script[4]": [
+     {
+      "surface": "犬",
+      "lemma": "犬",
+      "reading": "イヌ",
+      "untaught_kanji": [
+       "犬"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "ご飯",
+      "lemma": "ご飯",
+      "reading": "ゴハン",
+      "untaught_kanji": [
+       "飯"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "昨日",
+      "lemma": "昨日",
+      "reading": "キノウ",
+      "untaught_kanji": [
+       "昨"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "公園",
+      "lemma": "公園",
+      "reading": "コウエン",
+      "untaught_kanji": [
+       "公",
+       "園"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "部屋",
+      "lemma": "部屋",
+      "reading": "ヘヤ",
+      "untaught_kanji": [
+       "屋",
+       "部"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "掃除",
+      "lemma": "掃除",
+      "reading": "ソウジ",
+      "untaught_kanji": [
+       "掃",
+       "除"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "question": [
+     {
+      "surface": "初め",
+      "lemma": "初め",
+      "reading": "ハジメ",
+      "untaught_kanji": [
+       "初"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "correct": [
+     {
+      "surface": "部屋",
+      "lemma": "部屋",
+      "reading": "ヘヤ",
+      "untaught_kanji": [
+       "屋",
+       "部"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "掃除",
+      "lemma": "掃除",
+      "reading": "ソウジ",
+      "untaught_kanji": [
+       "掃",
+       "除"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[0]": [
+     {
+      "surface": "宿題",
+      "lemma": "宿題",
+      "reading": "シュクダイ",
+      "untaught_kanji": [
+       "宿",
+       "題"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[1]": [
+     {
+      "surface": "犬",
+      "lemma": "犬",
+      "reading": "イヌ",
+      "untaught_kanji": [
+       "犬"
+      ],
+      "untaught_word": []
+     },
+     {
+      "surface": "ご飯",
+      "lemma": "ご飯",
+      "reading": "ゴハン",
+      "untaught_kanji": [
+       "飯"
+      ],
+      "untaught_word": []
+     }
+    ],
+    "distractors[2]": [
+     {
+      "surface": "公園",
+      "lemma": "公園",
+      "reading": "コウエン",
+      "untaught_kanji": [
+       "公",
+       "園"
+      ],
+      "untaught_word": []
+     }
+    ]
+   }
+  }
+ ],
+ "level_clean_pool_count": 544,
+ "level_clean_pool_real_count": 400,
+ "level_clean_pool": [
+  {"slug": "sent:tatoeba-10049455", "jp": "やっといたよ。", "pt-BR": "Já deixei isso feito pra você.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:10049455"},
+  {"slug": "sent:tatoeba-10107417", "jp": "車のキーはどこかしら？", "pt-BR": "Onde será que estão as chaves do carro?", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:10107417"},
+  {"slug": "sent:tatoeba-10286281", "jp": "その本には何が書いてあるの？", "pt-BR": "O que está escrito nesse livro?", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:10286281"},
+  {"slug": "sent:tatoeba-10510923", "jp": "行かないといけないの？", "pt-BR": "Eu preciso ir?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:10510923"},
+  {"slug": "sent:tatoeba-10515932", "jp": "聞くんじゃなかった。", "pt-BR": "Eu não devia ter perguntado.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:10515932"},
+  {"slug": "sent:tatoeba-10550165", "jp": "クリップってある？", "pt-BR": "Tem clipe (de papel)?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:10550165"},
+  {"slug": "sent:tatoeba-10557655", "jp": "二つともタダだよ。", "pt-BR": "Os dois são de graça.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:10557655"},
+  {"slug": "sent:tatoeba-10557770", "jp": "１日に水を少なくとも３リットルは飲みます。", "pt-BR": "Bebo pelo menos três litros de água por dia.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:10557770"},
+  {"slug": "sent:tatoeba-10572105", "jp": "タダでやってあげるよ。", "pt-BR": "Eu faço isso de graça pra você.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:10572105"},
+  {"slug": "sent:tatoeba-1057336", "jp": "でもなんで？", "pt-BR": "Mas por quê?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:1057336"},
+  {"slug": "sent:tatoeba-10587984", "jp": "先にトイレ行ってから行くから。", "pt-BR": "Vou primeiro no banheiro e depois eu vou, tá?", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:10587984"},
+  {"slug": "sent:tatoeba-10588050", "jp": "しかしなんでまたこんなところに来たんだ？", "pt-BR": "Mas por que você veio de novo a um lugar destes?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:10588050"},
+  {"slug": "sent:tatoeba-10589883", "jp": "一人で行かなくちゃ。", "pt-BR": "Tenho que ir sozinho.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:10589883"},
+  {"slug": "sent:tatoeba-10651815", "jp": "ケチャップってある？", "pt-BR": "Tem ketchup?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:10651815"},
+  {"slug": "sent:tatoeba-10673618", "jp": "スペアキーってある？", "pt-BR": "Você tem uma chave reserva?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:10673618"},
+  {"slug": "sent:tatoeba-10792679", "jp": "このビザはまずい。", "pt-BR": "Esta pizza está horrível.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:10792679"},
+  {"slug": "sent:tatoeba-10880137", "jp": "二つだけだったよ。", "pt-BR": "Eram só dois.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:10880137"},
+  {"slug": "sent:tatoeba-10899741", "jp": "デパートで来年のカレンダーを買いました。", "pt-BR": "Comprei um calendário do ano que vem na loja de departamentos.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:10899741"},
+  {"slug": "sent:tatoeba-10901730", "jp": "はい、そうです。", "pt-BR": "Sim, é isso.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:10901730"},
+  {"slug": "sent:tatoeba-10901881", "jp": "りっぱな大人になりたいです。", "pt-BR": "Quero me tornar um adulto admirável.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:10901881"},
+  {"slug": "sent:tatoeba-10901919", "jp": "ありがとう。これでけっこうです。", "pt-BR": "Obrigado. Assim está bom.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:10901919"},
+  {"slug": "sent:tatoeba-10906687", "jp": "そうですね。", "pt-BR": "Pois é, né.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:10906687"},
+  {"slug": "sent:tatoeba-10954021", "jp": "あそこに先生がいます。", "pt-BR": "O professor está ali.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:10954021"},
+  {"slug": "sent:tatoeba-10962356", "jp": "外に出てもいいですか？", "pt-BR": "Posso sair (lá para fora)?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:10962356"},
+  {"slug": "sent:tatoeba-11045064", "jp": "もっと本気さがほしい。", "pt-BR": "Quero mais seriedade.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:11045064"},
+  {"slug": "sent:tatoeba-11048054", "jp": "そして、先生なんですよね？", "pt-BR": "E você é professor, né?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:11048054"},
+  {"slug": "sent:tatoeba-11052427", "jp": "先生はあそこよ。", "pt-BR": "O professor está ali.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:11052427"},
+  {"slug": "sent:tatoeba-11117435", "jp": "とにかく行きたくなかったの。", "pt-BR": "De qualquer forma, eu não queria ir lá.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:11117435"},
+  {"slug": "sent:tatoeba-11465084", "jp": "この本は読まないほうがいいですよ。", "pt-BR": "É melhor não ler este livro, viu.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:11465084"},
+  {"slug": "sent:tatoeba-11500016", "jp": "見てみたいな。", "pt-BR": "Queria ver isso.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:11500016"},
+  {"slug": "sent:tatoeba-11532911", "jp": "わがままね。", "pt-BR": "Você é egoísta, né.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:11532911"},
+  {"slug": "sent:tatoeba-11540257", "jp": "これはあっちのより安いよ。", "pt-BR": "Este aqui é mais barato do que aquele ali, viu.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:11540257"},
+  {"slug": "sent:tatoeba-11561754", "jp": "ポーチにスカンクがいます。", "pt-BR": "Tem um cangambá na varanda.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:11561754"},
+  {"slug": "sent:tatoeba-11571559", "jp": "コーヒー、おごってあげるよ。", "pt-BR": "Eu te pago um café, viu.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:11571559"},
+  {"slug": "sent:tatoeba-1202184", "jp": "車があればなあ。", "pt-BR": "Ah, se eu tivesse um carro...", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:1202184"},
+  {"slug": "sent:tatoeba-12049582", "jp": "今日は休みじゃなかったの？", "pt-BR": "Você não estava de folga hoje?", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:12049582"},
+  {"slug": "sent:tatoeba-12056085", "jp": "大空を見上げる。", "pt-BR": "Olho para o vasto céu.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:12056085"},
+  {"slug": "sent:tatoeba-1213043", "jp": "ワインがほしいですか。", "pt-BR": "Você quer vinho?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:1213043"},
+  {"slug": "sent:tatoeba-122103", "jp": "入ってはいけません。", "pt-BR": "Não pode entrar.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:122103"},
+  {"slug": "sent:tatoeba-122326", "jp": "日本語を話せるアメリカ人がたくさんいる。", "pt-BR": "Há muitos americanos que sabem falar japonês.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:122326"},
+  {"slug": "sent:tatoeba-122342", "jp": "日本語の話せるスタッフがいますか。", "pt-BR": "Vocês têm algum funcionário que fale japonês?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:122342"},
+  {"slug": "sent:tatoeba-122353", "jp": "日本語のガイドがありますか。", "pt-BR": "Tem guia em japonês?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:122353"},
+  {"slug": "sent:tatoeba-122926", "jp": "日にちはどのくらいかかりますか。", "pt-BR": "Quantos dias leva?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:122926"},
+  {"slug": "sent:tatoeba-123182", "jp": "二、三デメリットがありますね。", "pt-BR": "Há duas ou três desvantagens, né.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:123182"},
+  {"slug": "sent:tatoeba-123204", "jp": "南ターミナルはどこですか。", "pt-BR": "Onde fica o terminal sul?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:123204"},
+  {"slug": "sent:tatoeba-123591", "jp": "道はずっとのぼりだ。", "pt-BR": "A estrada é só subida o caminho todo.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:123591"},
+  {"slug": "sent:tatoeba-123628", "jp": "道が２つの小道に分かれるところへ来た。", "pt-BR": "Chegamos a um ponto onde a estrada se dividia em duas trilhas.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:123628"},
+  {"slug": "sent:tatoeba-124633", "jp": "電話中なんですよ。", "pt-BR": "É que estou ao telefone, sabe.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:124633"},
+  {"slug": "sent:tatoeba-124754", "jp": "電話がかかってるよ。", "pt-BR": "Estão te chamando no telefone.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:124754"},
+  {"slug": "sent:tatoeba-125116", "jp": "天気はどうですか。", "pt-BR": "Como está o tempo?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:125116"},
+  {"slug": "sent:tatoeba-125175", "jp": "天気がよければハイキングに行くのだが。", "pt-BR": "Se o tempo estivesse bom, a gente iria fazer uma trilha...", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:125175"},
+  {"slug": "sent:tatoeba-125911", "jp": "長くかかるんでしょうか。", "pt-BR": "Será que vai demorar muito?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:125911"},
+  {"slug": "sent:tatoeba-12698514", "jp": "それはがっかりだよ。", "pt-BR": "Isso é decepcionante.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:12698514"},
+  {"slug": "sent:tatoeba-12957270", "jp": "かわいそうに。", "pt-BR": "Coitado dele.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:12957270"},
+  {"slug": "sent:tatoeba-12976232", "jp": "お前ら、わがままだな。", "pt-BR": "Vocês são egoístas, hein.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:12976232"},
+  {"slug": "sent:tatoeba-13063899", "jp": "大きいね。", "pt-BR": "É grande, né?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:13063899"},
+  {"slug": "sent:tatoeba-13126478", "jp": "りんごがほしい?", "pt-BR": "Você quer uma maçã?", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:13126478"},
+  {"slug": "sent:tatoeba-13126479", "jp": "りんごがほしいですか？", "pt-BR": "Você quer maçã?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:13126479"},
+  {"slug": "sent:tatoeba-13158601", "jp": "出てもいいですか。", "pt-BR": "Posso sair?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:13158601"},
+  {"slug": "sent:tatoeba-13174949", "jp": "すみません！", "pt-BR": "Com licença!", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:13174949"},
+  {"slug": "sent:tatoeba-13513556", "jp": "どこから来たのか。", "pt-BR": "De onde você veio?", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:13513556"},
+  {"slug": "sent:tatoeba-13542276", "jp": "バナナはおいしい。", "pt-BR": "A banana é gostosa.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:13542276"},
+  {"slug": "sent:tatoeba-135763", "jp": "ちくしょう！わるくないなあ！", "pt-BR": "Droga! Não é nada mau!", "register": "vulgar", "level": "n5", "real": true, "jp_source": "tatoeba:135763"},
+  {"slug": "sent:tatoeba-137678", "jp": "大雨になるらしいよ。", "pt-BR": "Dizem que vai cair uma chuva forte, viu.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:137678"},
+  {"slug": "sent:tatoeba-137685", "jp": "大雨で外出できなかったんです。", "pt-BR": "É que não pude sair por causa da chuva forte.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:137685"},
+  {"slug": "sent:tatoeba-13804129", "jp": "かっけー！", "pt-BR": "Que maneiro!", "register": null, "level": "n3", "real": true, "jp_source": "tatoeba:13804129"},
+  {"slug": "sent:tatoeba-138119", "jp": "日の出はまだです。", "pt-BR": "O nascer do sol ainda não aconteceu.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:138119"},
+  {"slug": "sent:tatoeba-138736", "jp": "あなたはどこにいたのですか。", "pt-BR": "Onde você estava?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:138736"},
+  {"slug": "sent:tatoeba-139208", "jp": "行きましょう。", "pt-BR": "Vamos!", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:139208"},
+  {"slug": "sent:tatoeba-141432", "jp": "千人もの人がそこにいた。", "pt-BR": "Havia nada menos que mil pessoas ali.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:141432"},
+  {"slug": "sent:tatoeba-141433", "jp": "千人くらいの人がいた。", "pt-BR": "Havia cerca de mil pessoas.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:141433"},
+  {"slug": "sent:tatoeba-141890", "jp": "先月インフルエンザにかかった。", "pt-BR": "Mês passado peguei gripe.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:141890"},
+  {"slug": "sent:tatoeba-143825", "jp": "水が飲みたい。", "pt-BR": "Quero beber água.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:143825"},
+  {"slug": "sent:tatoeba-144227", "jp": "人気があるんですか？", "pt-BR": "É popular?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:144227"},
+  {"slug": "sent:tatoeba-144418", "jp": "人をからかわないで。", "pt-BR": "Não zoa as pessoas.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:144418"},
+  {"slug": "sent:tatoeba-144422", "jp": "人をあざわらうのはよくない。", "pt-BR": "Não é bom zombar das pessoas.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:144422"},
+  {"slug": "sent:tatoeba-144648", "jp": "人に足下を見られるなよ。", "pt-BR": "Não deixe ninguém se aproveitar de você.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:144648"},
+  {"slug": "sent:tatoeba-144679", "jp": "人ごとじゃないだろ。", "pt-BR": "Não é problema dos outros, né.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:144679"},
+  {"slug": "sent:tatoeba-145125", "jp": "新聞をお先にどうぞ。", "pt-BR": "Pode pegar o jornal primeiro, por favor.", "register": null, "level": "n4", "real": true, "jp_source": "tatoeba:145125"},
+  {"slug": "sent:tatoeba-145422", "jp": "新しい月もでてきました。", "pt-BR": "Uma lua nova também apareceu.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:145422"},
+  {"slug": "sent:tatoeba-145497", "jp": "新しいクラスはいかがですか。", "pt-BR": "Como está a sua turma nova?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:145497"},
+  {"slug": "sent:tatoeba-145933", "jp": "食べないでいいよ。", "pt-BR": "Não precisa comer isso, viu.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:145933"},
+  {"slug": "sent:tatoeba-1474639", "jp": "おやすみ。", "pt-BR": "Boa noite (ao se despedir para dormir).", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:1474639"},
+  {"slug": "sent:tatoeba-147790", "jp": "出かける前に食べなくてはならない。", "pt-BR": "Preciso comer antes de sair.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:147790"},
+  {"slug": "sent:tatoeba-147804", "jp": "出かける時間になった。", "pt-BR": "Chegou a hora de sair.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:147804"},
+  {"slug": "sent:tatoeba-1483683", "jp": "その話はどうですか。", "pt-BR": "Que tal essa ideia?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:1483683"},
+  {"slug": "sent:tatoeba-1484928", "jp": "それより、本を読んだほうがいい。", "pt-BR": "Em vez disso, é melhor você ler livros.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:1484928"},
+  {"slug": "sent:tatoeba-1484951", "jp": "いくらほしい？", "pt-BR": "Quanto você quer?", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:1484951"},
+  {"slug": "sent:tatoeba-149013", "jp": "車はコースをはずれた。", "pt-BR": "O carro saiu da pista.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:149013"},
+  {"slug": "sent:tatoeba-149030", "jp": "車の中に何本かのペンがありますか。", "pt-BR": "Tem algumas canetas dentro do carro?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:149030"},
+  {"slug": "sent:tatoeba-149104", "jp": "車でどれくらいかかりますか。", "pt-BR": "Quanto tempo leva de carro?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:149104"},
+  {"slug": "sent:tatoeba-149106", "jp": "車でそこへ行くのに一時間半かかった。", "pt-BR": "Levou uma hora e meia para chegar lá de carro.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:149106"},
+  {"slug": "sent:tatoeba-149136", "jp": "車がほしいですか。", "pt-BR": "Você quer um carro?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:149136"},
+  {"slug": "sent:tatoeba-149149", "jp": "車があればそこへ行ける。", "pt-BR": "Se eu tiver um carro, dá para ir até lá.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:149149"},
+  {"slug": "sent:tatoeba-150582", "jp": "時間はどのくらいかかりますか。", "pt-BR": "Quanto tempo leva?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:150582"},
+  {"slug": "sent:tatoeba-150639", "jp": "時間がありますか。", "pt-BR": "Você tem um tempo?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:150639"},
+  {"slug": "sent:tatoeba-1510008", "jp": "パンを買いにいく。", "pt-BR": "Vou comprar pão.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:1510008"},
+  {"slug": "sent:tatoeba-1522678", "jp": "なんか言った？", "pt-BR": "Você disse alguma coisa?", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:1522678"},
+  {"slug": "sent:tatoeba-1531875", "jp": "ありがとう！", "pt-BR": "Obrigado!", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:1531875"},
+  {"slug": "sent:tatoeba-1532832", "jp": "ありがとう。", "pt-BR": "Obrigado.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:1532832"},
+  {"slug": "sent:tatoeba-157464", "jp": "すぐ来てほしい。", "pt-BR": "Quero que você venha agora mesmo.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:157464"},
+  {"slug": "sent:tatoeba-158892", "jp": "まだその話は聞いてない。", "pt-BR": "Ainda não ouvi essa história.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:158892"},
+  {"slug": "sent:tatoeba-1596597", "jp": "なぜ聞くの？", "pt-BR": "Por que você (me) pergunta?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:1596597"},
+  {"slug": "sent:tatoeba-1598216", "jp": "おはよう。", "pt-BR": "Bom dia.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:1598216"},
+  {"slug": "sent:tatoeba-1656249", "jp": "ちょっと休んだほうがいいよ。", "pt-BR": "É melhor você descansar um pouco.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:1656249"},
+  {"slug": "sent:tatoeba-167591", "jp": "大学を出てから10年になります。", "pt-BR": "Já faz dez anos desde que me formei na faculdade.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:167591"},
+  {"slug": "sent:tatoeba-171732", "jp": "今日はどんな天気ですか。", "pt-BR": "Como está o tempo hoje?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:171732"},
+  {"slug": "sent:tatoeba-171766", "jp": "今日はそれをやりたくない。", "pt-BR": "Hoje não quero fazer isso.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:171766"},
+  {"slug": "sent:tatoeba-171784", "jp": "今日はこれまでです。", "pt-BR": "Por hoje é só.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:171784"},
+  {"slug": "sent:tatoeba-171785", "jp": "今日はこれまで。", "pt-BR": "Por hoje é só.", "register": null, "level": "n4", "real": true, "jp_source": "tatoeba:171785"},
+  {"slug": "sent:tatoeba-172639", "jp": "今は食べたくないんです。", "pt-BR": "É que agora não estou a fim de comer.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:172639"},
+  {"slug": "sent:tatoeba-172836", "jp": "今すぐいかなければなりませんか。", "pt-BR": "Preciso ir agora mesmo?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:172836"},
+  {"slug": "sent:tatoeba-172871", "jp": "今からドライブに行きませんか。", "pt-BR": "Que tal a gente dar uma volta de carro agora?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:172871"},
+  {"slug": "sent:tatoeba-173392", "jp": "行きましょうか。", "pt-BR": "Vamos?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:173392"},
+  {"slug": "sent:tatoeba-173403", "jp": "行きたくないのなら、行くな。", "pt-BR": "Se você não quer ir, não vá.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:173403"},
+  {"slug": "sent:tatoeba-173414", "jp": "行かなければなりませんか。", "pt-BR": "Eu preciso ir?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:173414"},
+  {"slug": "sent:tatoeba-173416", "jp": "行かなくてはいけません。", "pt-BR": "Tenho que ir.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:173416"},
+  {"slug": "sent:tatoeba-173420", "jp": "行かないと言ったら行かないんだよ。", "pt-BR": "Eu disse que não vou, então não vou e ponto final.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:173420"},
+  {"slug": "sent:tatoeba-173912", "jp": "口を出すな。", "pt-BR": "Não se meta.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:173912"},
+  {"slug": "sent:tatoeba-174391", "jp": "午後は外へ出たくない。", "pt-BR": "À tarde não quero sair de casa.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:174391"},
+  {"slug": "sent:tatoeba-175628", "jp": "月は東から上る。", "pt-BR": "A lua nasce no leste.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:175628"},
+  {"slug": "sent:tatoeba-178709", "jp": "このカメラあげるよ。", "pt-BR": "Eu te dou esta câmera.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:178709"},
+  {"slug": "sent:tatoeba-182711", "jp": "休みたいですか。", "pt-BR": "Você quer descansar?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:182711"},
+  {"slug": "sent:tatoeba-184376", "jp": "学校へ行くところでした。", "pt-BR": "Eu estava prestes a ir para a escola.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:184376"},
+  {"slug": "sent:tatoeba-184467", "jp": "学校に行く時間よ。", "pt-BR": "É hora de ir para a escola.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:184467"},
+  {"slug": "sent:tatoeba-187375", "jp": "何人の子どもがいますか。", "pt-BR": "Quantos filhos você tem?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:187375"},
+  {"slug": "sent:tatoeba-187456", "jp": "何時にきましょうか。", "pt-BR": "A que horas eu devo vir?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:187456"},
+  {"slug": "sent:tatoeba-187461", "jp": "何時ごろ？", "pt-BR": "Por volta de que horas?", "register": null, "level": "n5", "real": true, "jp_source": "tatoeba:187461"},
+  {"slug": "sent:tatoeba-187532", "jp": "何駅に行くのですか。", "pt-BR": "Para qual estação você vai?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:187532"},
+  {"slug": "sent:tatoeba-188857", "jp": "駅までタクシーで２０分かかるでしょう。", "pt-BR": "De táxi, deve levar uns 20 minutos até a estação.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:188857"},
+  {"slug": "sent:tatoeba-188881", "jp": "駅へはタクシーで何分くらいかかりますか。", "pt-BR": "Até a estação, mais ou menos quantos minutos leva de táxi?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:188881"},
+  {"slug": "sent:tatoeba-189637", "jp": "雨になっちゃうんじゃないかなあ。", "pt-BR": "Acho que vai acabar virando chuva, né...", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:189637"},
+  {"slug": "sent:tatoeba-190227", "jp": "一年前くらい前に来ました。", "pt-BR": "Vim por volta de um ano atrás.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:190227"},
+  {"slug": "sent:tatoeba-190376", "jp": "一千万円くらいかな？", "pt-BR": "Será que é uns dez milhões de ienes?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:190376"},
+  {"slug": "sent:tatoeba-192324", "jp": "レモンはすっぱいくだものだ。", "pt-BR": "O limão é uma fruta azeda.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:192324"},
+  {"slug": "sent:tatoeba-192503", "jp": "リムジンはどこですか。", "pt-BR": "Onde fica o ônibus do aeroporto?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:192503"},
+  {"slug": "sent:tatoeba-192553", "jp": "ランドリーはどこですか。", "pt-BR": "Onde fica a lavanderia?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:192553"},
+  {"slug": "sent:tatoeba-193032", "jp": "やられる前にやれ。", "pt-BR": "Ataque antes de ser atacado.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:193032"},
+  {"slug": "sent:tatoeba-193048", "jp": "やぶへびを出すな。", "pt-BR": "Não cutuque a onça com vara curta.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:193048"},
+  {"slug": "sent:tatoeba-193154", "jp": "モンブランはどのくらいの高さがありますか。", "pt-BR": "Que altura tem o Mont Blanc?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:193154"},
+  {"slug": "sent:tatoeba-193803", "jp": "もしもし、来ていますか。", "pt-BR": "Alô, você está aí?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:193803"},
+  {"slug": "sent:tatoeba-193955", "jp": "モールに行きましょうか。", "pt-BR": "Vamos ao shopping?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:193955"},
+  {"slug": "sent:tatoeba-194209", "jp": "もう行かなくてはならない。", "pt-BR": "Já preciso ir.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:194209"},
+  {"slug": "sent:tatoeba-194210", "jp": "もう行かなくちゃ。じゃ、またね。", "pt-BR": "Já tenho que ir. Bom, até mais!", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:194210"},
+  {"slug": "sent:tatoeba-194211", "jp": "もう行かなくちゃ。", "pt-BR": "Já tenho que ir.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:194211"},
+  {"slug": "sent:tatoeba-195383", "jp": "また来週！", "pt-BR": "Até semana que vem!", "register": null, "level": "n5", "real": true, "jp_source": "tatoeba:195383"},
+  {"slug": "sent:tatoeba-195467", "jp": "また雨だ。", "pt-BR": "De novo está chovendo.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:195467"},
+  {"slug": "sent:tatoeba-195847", "jp": "まあ、いいけど。", "pt-BR": "Bem, por mim tudo bem...", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:195847"},
+  {"slug": "sent:tatoeba-197681", "jp": "ビーチに行きましょう。", "pt-BR": "Vamos à praia.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:197681"},
+  {"slug": "sent:tatoeba-1979859", "jp": "もうすぐ七時だ。学校に行かなくちゃ。", "pt-BR": "Já são quase sete horas. Tenho que ir para a escola.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:1979859"},
+  {"slug": "sent:tatoeba-198073", "jp": "バスルームは今ふさがっている。", "pt-BR": "O banheiro está ocupado agora.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:198073"},
+  {"slug": "sent:tatoeba-198119", "jp": "バスはもうやってくる時間だ。", "pt-BR": "Já está na hora de o ônibus chegar.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:198119"},
+  {"slug": "sent:tatoeba-198125", "jp": "バスはどのくらい前に出ましたか。", "pt-BR": "Há quanto tempo o ônibus saiu?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:198125"},
+  {"slug": "sent:tatoeba-198204", "jp": "バスでどのくらいかかりますか。", "pt-BR": "Quanto tempo leva de ônibus?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:198204"},
+  {"slug": "sent:tatoeba-198311", "jp": "ハウスダストにアレルギーがあります。", "pt-BR": "Ele tem alergia a poeira doméstica.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:198311"},
+  {"slug": "sent:tatoeba-198378", "jp": "はい、行きましょう。", "pt-BR": "Sim, vamos.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:198378"},
+  {"slug": "sent:tatoeba-198603", "jp": "ネズミでした。", "pt-BR": "Era um rato.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:198603"},
+  {"slug": "sent:tatoeba-198627", "jp": "ネコがいる。", "pt-BR": "Há um gato.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:198627"},
+  {"slug": "sent:tatoeba-199021", "jp": "なんかいい車じゃない。", "pt-BR": "Nossa, que carro legal, hein!", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:199021"},
+  {"slug": "sent:tatoeba-199022", "jp": "なれすぎはあなどりを生む。", "pt-BR": "O excesso de intimidade gera desprezo.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:199022"},
+  {"slug": "sent:tatoeba-199219", "jp": "なぜなんだろう。", "pt-BR": "Por que será?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:199219"},
+  {"slug": "sent:tatoeba-199382", "jp": "どんな天気ですか。", "pt-BR": "Como está o tempo?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:199382"},
+  {"slug": "sent:tatoeba-199395", "jp": "どんな人でもいないよりはましだ。", "pt-BR": "Qualquer pessoa é melhor do que ninguém.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:199395"},
+  {"slug": "sent:tatoeba-199477", "jp": "どんなワインがありますか。", "pt-BR": "Que tipos de vinho vocês têm?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:199477"},
+  {"slug": "sent:tatoeba-199480", "jp": "どんなベッドでもないよりはよい。", "pt-BR": "Qualquer cama é melhor do que cama nenhuma.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:199480"},
+  {"slug": "sent:tatoeba-199569", "jp": "どんなテストですか。", "pt-BR": "Que tipo de prova é essa?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:199569"},
+  {"slug": "sent:tatoeba-200413", "jp": "どのくらい高い？", "pt-BR": "Qual é a altura?", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:200413"},
+  {"slug": "sent:tatoeba-200577", "jp": "とても大きいね。", "pt-BR": "É bem grande, né?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:200577"},
+  {"slug": "sent:tatoeba-200661", "jp": "とてもおいしいよ。", "pt-BR": "Está muito gostoso!", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:200661"},
+  {"slug": "sent:tatoeba-200796", "jp": "どちらが先に行くのですか。", "pt-BR": "Qual de vocês vai primeiro?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:200796"},
+  {"slug": "sent:tatoeba-200823", "jp": "どちらがあなたのギターですか。", "pt-BR": "Qual é o seu violão?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:200823"},
+  {"slug": "sent:tatoeba-200932", "jp": "どこに行くところですか。", "pt-BR": "Aonde você está indo?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:200932"},
+  {"slug": "sent:tatoeba-200934", "jp": "どこに行きましょう？", "pt-BR": "Para onde vamos?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:200934"},
+  {"slug": "sent:tatoeba-201017", "jp": "どこから出るんですか。", "pt-BR": "De onde (ele/isso) parte?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:201017"},
+  {"slug": "sent:tatoeba-201147", "jp": "どうやって時間をつぶそう？", "pt-BR": "Como a gente vai matar o tempo?", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:201147"},
+  {"slug": "sent:tatoeba-201153", "jp": "どうやって学校に来たの？", "pt-BR": "Como você veio para a escola?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:201153"},
+  {"slug": "sent:tatoeba-201917", "jp": "テントの中ではなくて外で食べよう。", "pt-BR": "Vamos comer lá fora em vez de dentro da barraca.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:201917"},
+  {"slug": "sent:tatoeba-202088", "jp": "でも休みはとったほうがいいわよ。", "pt-BR": "Mas é melhor você tirar uma folga, viu.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:202088"},
+  {"slug": "sent:tatoeba-202782", "jp": "ちょっと見ているだけです。", "pt-BR": "Só estou dando uma olhada.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:202782"},
+  {"slug": "sent:tatoeba-202824", "jp": "ちょっとその店によって行きませんか。", "pt-BR": "Que tal a gente dar uma passadinha naquela loja?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:202824"},
+  {"slug": "sent:tatoeba-202862", "jp": "ちょっといいですか。", "pt-BR": "Você tem um minuto?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:202862"},
+  {"slug": "sent:tatoeba-203366", "jp": "タフだなあ。", "pt-BR": "Nossa, que durão...", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:203366"},
+  {"slug": "sent:tatoeba-203622", "jp": "ただ見ているだけです。", "pt-BR": "Estou só olhando.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:203622"},
+  {"slug": "sent:tatoeba-205208", "jp": "それは高くなかった。", "pt-BR": "Aquilo não era caro.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:205208"},
+  {"slug": "sent:tatoeba-205916", "jp": "それから先の話を聞きたい。", "pt-BR": "Quero ouvir o que aconteceu depois disso.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:205916"},
+  {"slug": "sent:tatoeba-2063347", "jp": "やってみたい？", "pt-BR": "Quer experimentar?", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:2063347"},
+  {"slug": "sent:tatoeba-2080528", "jp": "それできる？", "pt-BR": "Você consegue fazer isso?", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:2080528"},
+  {"slug": "sent:tatoeba-2095014", "jp": "行かなくちゃ。", "pt-BR": "Tenho que ir.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:2095014"},
+  {"slug": "sent:tatoeba-213512", "jp": "そして何時間もいっしょに話したからです。", "pt-BR": "E porque conversamos juntos por horas a fio.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:213512"},
+  {"slug": "sent:tatoeba-213531", "jp": "そして、木はたびたび一人ぼっちになりました。", "pt-BR": "E a árvore ficava sozinha com frequência.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:213531"},
+  {"slug": "sent:tatoeba-213855", "jp": "そうだといいけど。", "pt-BR": "Tomara que seja assim...", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:213855"},
+  {"slug": "sent:tatoeba-214357", "jp": "スペルはどうですか。", "pt-BR": "Como se escreve?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:214357"},
+  {"slug": "sent:tatoeba-2154943", "jp": "これなんです。", "pt-BR": "É isto.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:2154943"},
+  {"slug": "sent:tatoeba-216249", "jp": "しかし、なぜ？", "pt-BR": "Mas por quê?", "register": null, "level": "n5", "real": true, "jp_source": "tatoeba:216249"},
+  {"slug": "sent:tatoeba-216307", "jp": "しかし、人間はちがっている。", "pt-BR": "Mas os seres humanos são diferentes.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:216307"},
+  {"slug": "sent:tatoeba-216328", "jp": "しかし、わたしにはお金はありません。", "pt-BR": "Porém, eu não tenho dinheiro.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:216328"},
+  {"slug": "sent:tatoeba-216787", "jp": "さっさと行ったほうがいい。", "pt-BR": "É melhor a gente ir logo.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:216787"},
+  {"slug": "sent:tatoeba-216857", "jp": "サイズはこれだけですか。", "pt-BR": "Os tamanhos são só estes?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:216857"},
+  {"slug": "sent:tatoeba-216863", "jp": "さあ話したまえ。", "pt-BR": "Vamos, fale logo.", "register": "archaic", "level": "n5", "real": true, "jp_source": "tatoeba:216863"},
+  {"slug": "sent:tatoeba-216872", "jp": "さあ出かけましょう。", "pt-BR": "Bom, vamos sair então.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:216872"},
+  {"slug": "sent:tatoeba-2171510", "jp": "そうです。", "pt-BR": "É isso mesmo.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:2171510"},
+  {"slug": "sent:tatoeba-218647", "jp": "これはあれよりも小さい。", "pt-BR": "Este é menor do que aquele.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:218647"},
+  {"slug": "sent:tatoeba-219720", "jp": "この本はあの本よりも小さい。", "pt-BR": "Este livro é menor do que aquele livro.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:219720"},
+  {"slug": "sent:tatoeba-221959", "jp": "この国では、ラクダはなくてはならない。", "pt-BR": "Neste país, os camelos são indispensáveis.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:221959"},
+  {"slug": "sent:tatoeba-2242416", "jp": "食べてもいいですか？", "pt-BR": "Posso comer?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:2242416"},
+  {"slug": "sent:tatoeba-224260", "jp": "ここへ来てはいけません。", "pt-BR": "Não pode vir aqui.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:224260"},
+  {"slug": "sent:tatoeba-224505", "jp": "ここにいくつかのバッグがあります。", "pt-BR": "Aqui há algumas bolsas.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:224505"},
+  {"slug": "sent:tatoeba-224677", "jp": "ここだけの話なんだけど。", "pt-BR": "Olha, isso é só entre nós, viu...", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:224677"},
+  {"slug": "sent:tatoeba-225282", "jp": "ゲームはどれもおもしろくなかった。", "pt-BR": "Nenhum dos jogos era interessante.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:225282"},
+  {"slug": "sent:tatoeba-225517", "jp": "グリーンまでどれくらい？", "pt-BR": "Quanto falta até o green?", "register": null, "level": "n5", "real": true, "jp_source": "tatoeba:225517"},
+  {"slug": "sent:tatoeba-226045", "jp": "キツイなあ。", "pt-BR": "Nossa, que duro...", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:226045"},
+  {"slug": "sent:tatoeba-227007", "jp": "お水だけでけっこうです。", "pt-BR": "Só água está bom, por favor.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:227007"},
+  {"slug": "sent:tatoeba-227543", "jp": "おまえなんかに話すんじゃなかったよ。", "pt-BR": "Eu não devia ter contado nada para alguém como você.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:227543"},
+  {"slug": "sent:tatoeba-227555", "jp": "オフィスに時間ぴったりについた。", "pt-BR": "Chegamos ao escritório exatamente na hora.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:227555"},
+  {"slug": "sent:tatoeba-227715", "jp": "おじは気前よく金を出す。", "pt-BR": "Meu tio é generoso com o dinheiro.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:227715"},
+  {"slug": "sent:tatoeba-227750", "jp": "おくびにも出すな。", "pt-BR": "Não conte isso a ninguém.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:227750"},
+  {"slug": "sent:tatoeba-227828", "jp": "おいそれと金はできるものじゃない。", "pt-BR": "Dinheiro não é algo que se consegue assim, de uma hora para outra.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:227828"},
+  {"slug": "sent:tatoeba-228011", "jp": "ええ、どうぞ来てね。", "pt-BR": "Sim, pode vir, viu?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:228011"},
+  {"slug": "sent:tatoeba-228243", "jp": "うちに来ないか。", "pt-BR": "Não quer vir lá em casa?", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:228243"},
+  {"slug": "sent:tatoeba-228269", "jp": "ウスターソースがいいんじゃない？", "pt-BR": "Que tal molho inglês? Acho que fica bom.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:228269"},
+  {"slug": "sent:tatoeba-228406", "jp": "インクで書かなくてはならないか？", "pt-BR": "Preciso escrever com tinta?", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:228406"},
+  {"slug": "sent:tatoeba-229125", "jp": "いすの上にねこがいます。", "pt-BR": "Tem um gato em cima da cadeira.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:229125"},
+  {"slug": "sent:tatoeba-229334", "jp": "いい天気だなあ。", "pt-BR": "Que tempo bom, hein!", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:229334"},
+  {"slug": "sent:tatoeba-229343", "jp": "いい人みたいじゃないか。", "pt-BR": "Ele parece ser uma boa pessoa, não acha?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:229343"},
+  {"slug": "sent:tatoeba-229345", "jp": "いい人だけどイマイチね。", "pt-BR": "Ele é uma boa pessoa, mas falta alguma coisa.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:229345"},
+  {"slug": "sent:tatoeba-229458", "jp": "いいえ、けっこうです。見ているだけですから。", "pt-BR": "Não, obrigado. É que estou só olhando.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:229458"},
+  {"slug": "sent:tatoeba-229628", "jp": "あれ何？", "pt-BR": "O que é aquilo?", "register": null, "level": "n5", "real": true, "jp_source": "tatoeba:229628"},
+  {"slug": "sent:tatoeba-229723", "jp": "あれは何ですか。", "pt-BR": "O que é aquilo?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:229723"},
+  {"slug": "sent:tatoeba-229731", "jp": "あれはネコですか。", "pt-BR": "Aquilo é um gato?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:229731"},
+  {"slug": "sent:tatoeba-229736", "jp": "あれはテーブルです。", "pt-BR": "Aquilo é uma mesa.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:229736"},
+  {"slug": "sent:tatoeba-229742", "jp": "あれはキジです。", "pt-BR": "Aquilo é um faisão.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:229742"},
+  {"slug": "sent:tatoeba-230319", "jp": "あまり出かけたくなかった。", "pt-BR": "Eu não estava muito a fim de sair.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:230319"},
+  {"slug": "sent:tatoeba-230591", "jp": "あの男ももう上がったりだ。", "pt-BR": "Aquele cara também já era.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:230591"},
+  {"slug": "sent:tatoeba-232073", "jp": "あなたは行ったほうがいい。", "pt-BR": "É melhor você ir.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:232073"},
+  {"slug": "sent:tatoeba-234396", "jp": "あそこのカウンターです。", "pt-BR": "É naquele balcão ali.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:234396"},
+  {"slug": "sent:tatoeba-2347908", "jp": "かわいそうに！", "pt-BR": "Que pena!", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:2347908"},
+  {"slug": "sent:tatoeba-235143", "jp": "５月は４月のあとにくる。", "pt-BR": "Maio vem depois de abril.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:235143"},
+  {"slug": "sent:tatoeba-236934", "jp": "このあたりにはそんな名前の人は一人もいない。", "pt-BR": "Por aqui não há nem uma única pessoa com esse nome.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:236934"},
+  {"slug": "sent:tatoeba-2390157", "jp": "かわいい花のワッペンをつけた女の子を見た。", "pt-BR": "Vi uma menina que usava um emblema bordado com uma florzinha fofa.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:2390157"},
+  {"slug": "sent:tatoeba-2431512", "jp": "何で学校に行かないといけないの？", "pt-BR": "Por que eu preciso ir à escola?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:2431512"},
+  {"slug": "sent:tatoeba-2436329", "jp": "六時はどうですか。", "pt-BR": "Que tal às seis horas?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:2436329"},
+  {"slug": "sent:tatoeba-2633467", "jp": "何飲みたい？", "pt-BR": "O que você quer beber?", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:2633467"},
+  {"slug": "sent:tatoeba-2744751", "jp": "そうなんですか？", "pt-BR": "Ah, é mesmo?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:2744751"},
+  {"slug": "sent:tatoeba-2759304", "jp": "来たくなかったら来なくていいからね。", "pt-BR": "Se você não quiser vir, não precisa vir, viu?", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:2759304"},
+  {"slug": "sent:tatoeba-2977082", "jp": "前はよくピザを食べてたんだけど。", "pt-BR": "É que antes eu comia pizza com frequência...", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:2977082"},
+  {"slug": "sent:tatoeba-2992350", "jp": "ちょっと話があるんだけど。", "pt-BR": "Preciso falar uma coisa com você...", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:2992350"},
+  {"slug": "sent:tatoeba-3246983", "jp": "しゃべるべきじゃなかった。", "pt-BR": "Eu não devia ter falado.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:3246983"},
+  {"slug": "sent:tatoeba-3366998", "jp": "もっと休みをとったほうがいい。", "pt-BR": "É melhor você descansar mais.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:3366998"},
+  {"slug": "sent:tatoeba-3480287", "jp": "こんにちは！", "pt-BR": "Olá!", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:3480287"},
+  {"slug": "sent:tatoeba-348098", "jp": "ようこそ！", "pt-BR": "Bem-vindo!", "register": null, "level": "n3", "real": true, "jp_source": "tatoeba:348098"},
+  {"slug": "sent:tatoeba-3488338", "jp": "いいなあ。", "pt-BR": "Que inveja!", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:3488338"},
+  {"slug": "sent:tatoeba-3488662", "jp": "どれどれ。", "pt-BR": "Deixa eu ver.", "register": null, "level": "n5", "real": true, "jp_source": "tatoeba:3488662"},
+  {"slug": "sent:tatoeba-3495506", "jp": "少し休んだほうがいい。", "pt-BR": "É melhor você descansar um pouco.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:3495506"},
+  {"slug": "sent:tatoeba-3496943", "jp": "クッキーをお一つどうぞ。", "pt-BR": "Pegue um biscoito, por favor.", "register": null, "level": "n5", "real": true, "jp_source": "tatoeba:3496943"},
+  {"slug": "sent:tatoeba-349881", "jp": "一、二、三、四、五、六、七、八、九、十。", "pt-BR": "Um, dois, três, quatro, cinco, seis, sete, oito, nove, dez.", "register": null, "level": "n5", "real": true, "jp_source": "tatoeba:349881"},
+  {"slug": "sent:tatoeba-3506610", "jp": "ちょっといいですか？", "pt-BR": "Posso falar um instante?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:3506610"},
+  {"slug": "sent:tatoeba-3552065", "jp": "休みたい。", "pt-BR": "Quero descansar.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:3552065"},
+  {"slug": "sent:tatoeba-3553332", "jp": "おはよう！", "pt-BR": "Bom dia!", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:3553332"},
+  {"slug": "sent:tatoeba-3555506", "jp": "口をゆすがなくちゃ。", "pt-BR": "Preciso enxaguar a boca.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:3555506"},
+  {"slug": "sent:tatoeba-3576174", "jp": "さあ、ピザがいる人ー！", "pt-BR": "Bem, quem quer pizza?", "register": null, "level": "n5", "real": true, "jp_source": "tatoeba:3576174"},
+  {"slug": "sent:tatoeba-373351", "jp": "こんにちは。", "pt-BR": "Boa tarde.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:373351"},
+  {"slug": "sent:tatoeba-385517", "jp": "もしもし。", "pt-BR": "Alô.", "register": null, "level": "n5", "real": true, "jp_source": "tatoeba:385517"},
+  {"slug": "sent:tatoeba-404045", "jp": "うちにいます。", "pt-BR": "Estou em casa.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:404045"},
+  {"slug": "sent:tatoeba-408301", "jp": "すみません。", "pt-BR": "Desculpe.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:408301"},
+  {"slug": "sent:tatoeba-4147428", "jp": "入ってもいいですか？", "pt-BR": "Posso entrar?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:4147428"},
+  {"slug": "sent:tatoeba-4212023", "jp": "もっと読みやすく書いたほうがいいよ。", "pt-BR": "É melhor você escrever de um jeito mais fácil de ler.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:4212023"},
+  {"slug": "sent:tatoeba-426889", "jp": "さようなら！", "pt-BR": "Tchau!", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:426889"},
+  {"slug": "sent:tatoeba-426899", "jp": "おやすみなさい。", "pt-BR": "Boa noite (ao se despedir para dormir).", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:426899"},
+  {"slug": "sent:tatoeba-433715", "jp": "それだけです。", "pt-BR": "É só isso.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:433715"},
+  {"slug": "sent:tatoeba-4561431", "jp": "どうやってできましたか。", "pt-BR": "Como isso foi feito?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:4561431"},
+  {"slug": "sent:tatoeba-4562257", "jp": "ホテルには外国人が多い。", "pt-BR": "No hotel há muitos estrangeiros.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:4562257"},
+  {"slug": "sent:tatoeba-4708", "jp": "パスワードは「Muiriel」です。", "pt-BR": "A senha é \"Muiriel\".", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:4708"},
+  {"slug": "sent:tatoeba-4717", "jp": "時間があるか分かりません。", "pt-BR": "Não sei se vou ter tempo.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:4717"},
+  {"slug": "sent:tatoeba-4728", "jp": "それはあなたが一人になりたくないからです。", "pt-BR": "Isso é porque você não quer ficar sozinho.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:4728"},
+  {"slug": "sent:tatoeba-4751207", "jp": "学校はどうですか？", "pt-BR": "Como vai a escola?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:4751207"},
+  {"slug": "sent:tatoeba-4765", "jp": "だから何？", "pt-BR": "E daí?", "register": null, "level": "n4", "real": true, "jp_source": "tatoeba:4765"},
+  {"slug": "sent:tatoeba-4767", "jp": "言ってみただけだよ！", "pt-BR": "Eu só falei por falar!", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:4767"},
+  {"slug": "sent:tatoeba-4772", "jp": "あなたが女の子だからよ。", "pt-BR": "É porque você é uma menina.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:4772"},
+  {"slug": "sent:tatoeba-4794", "jp": "どのくらいいたの？", "pt-BR": "Quanto tempo você ficou?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:4794"},
+  {"slug": "sent:tatoeba-4802", "jp": "それがどこから来たのか分からなかった。", "pt-BR": "Eu não sabia de onde aquilo tinha vindo.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:4802"},
+  {"slug": "sent:tatoeba-4806864", "jp": "どのくらい大きい？", "pt-BR": "Quão grande?", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:4806864"},
+  {"slug": "sent:tatoeba-4811495", "jp": "小さい！", "pt-BR": "Que pequeno!", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:4811495"},
+  {"slug": "sent:tatoeba-4811496", "jp": "小さいです！", "pt-BR": "É pequeno!", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:4811496"},
+  {"slug": "sent:tatoeba-4816", "jp": "今日はもう聞かないよ。", "pt-BR": "Hoje eu não pergunto mais nada.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:4816"},
+  {"slug": "sent:tatoeba-4854", "jp": "おめでとうございます。", "pt-BR": "Parabéns!", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:4854"},
+  {"slug": "sent:tatoeba-4971", "jp": "ありがとうございます！", "pt-BR": "Muito obrigado(a)!", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:4971"},
+  {"slug": "sent:tatoeba-5010", "jp": "どれくらいかかるのかしら。", "pt-BR": "Quanto tempo será que vai levar?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:5010"},
+  {"slug": "sent:tatoeba-5024", "jp": "１１時になっているよ。", "pt-BR": "Já são onze horas.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:5024"},
+  {"slug": "sent:tatoeba-5057", "jp": "ありがとう、それだけだよ。", "pt-BR": "Obrigado, é só isso.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:5057"},
+  {"slug": "sent:tatoeba-5059", "jp": "何時ですか。", "pt-BR": "Que horas são?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:5059"},
+  {"slug": "sent:tatoeba-5066", "jp": "シャワーはどこですか。", "pt-BR": "Onde fica o chuveiro?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:5066"},
+  {"slug": "sent:tatoeba-5078", "jp": "おいくつですか？", "pt-BR": "Quantos anos você tem?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:5078"},
+  {"slug": "sent:tatoeba-5115", "jp": "電話はどこでできる？", "pt-BR": "Onde dá para telefonar?", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:5115"},
+  {"slug": "sent:tatoeba-5210", "jp": "学校へ行きたくない。", "pt-BR": "Não quero ir para a escola.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:5210"},
+  {"slug": "sent:tatoeba-5219", "jp": "あれ？あなたまだここにいたのね！", "pt-BR": "Ué? Você ainda estava aqui, hein!", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:5219"},
+  {"slug": "sent:tatoeba-522246", "jp": "あなたはもう行ったほうがいい。", "pt-BR": "É melhor você já ir.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:522246"},
+  {"slug": "sent:tatoeba-5257", "jp": "時間はたっぷりあった。", "pt-BR": "Havia tempo de sobra.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:5257"},
+  {"slug": "sent:tatoeba-5271", "jp": "何を話しているの？", "pt-BR": "Do que você está falando?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:5271"},
+  {"slug": "sent:tatoeba-528350", "jp": "もう行かなきゃ！", "pt-BR": "Já tenho que ir!", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:528350"},
+  {"slug": "sent:tatoeba-5319", "jp": "どこにいますか？", "pt-BR": "Onde você está?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:5319"},
+  {"slug": "sent:tatoeba-5320", "jp": "どこに行きますか？", "pt-BR": "Aonde você vai?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:5320"},
+  {"slug": "sent:tatoeba-5323", "jp": "どこから来ましたか？", "pt-BR": "De onde você veio?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:5323"},
+  {"slug": "sent:tatoeba-5332", "jp": "いくらですか？", "pt-BR": "Quanto custa?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:5332"},
+  {"slug": "sent:tatoeba-5347", "jp": "あなたって、なんてきれいなんでしょう！", "pt-BR": "Como você é linda!", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:5347"},
+  {"slug": "sent:tatoeba-536769", "jp": "大したものじゃない。", "pt-BR": "Não é grande coisa.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:536769"},
+  {"slug": "sent:tatoeba-5675047", "jp": "どれくらい？", "pt-BR": "Quanto tempo?", "register": null, "level": "n5", "real": true, "jp_source": "tatoeba:5675047"},
+  {"slug": "sent:tatoeba-5804556", "jp": "何時ですか？", "pt-BR": "Que horas são?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:5804556"},
+  {"slug": "sent:tatoeba-5933519", "jp": "あそこを見て。", "pt-BR": "Olhe ali.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:5933519"},
+  {"slug": "sent:tatoeba-5955917", "jp": "そうですか。", "pt-BR": "Ah, é?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:5955917"},
+  {"slug": "sent:tatoeba-5996", "jp": "あしたは、来なくていいよ。", "pt-BR": "Amanhã você não precisa vir.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:5996"},
+  {"slug": "sent:tatoeba-640569", "jp": "さようなら。", "pt-BR": "Até logo.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:640569"},
+  {"slug": "sent:tatoeba-6704199", "jp": "ほら、ウサギがいるよ！", "pt-BR": "Olha, tem um coelho ali!", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:6704199"},
+  {"slug": "sent:tatoeba-672326", "jp": "何が飲みたい？", "pt-BR": "O que você quer beber?", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:672326"},
+  {"slug": "sent:tatoeba-6828196", "jp": "学校に人がいる。", "pt-BR": "Há pessoas na escola.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:6828196"},
+  {"slug": "sent:tatoeba-6828199", "jp": "人がいる。", "pt-BR": "Há pessoas.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:6828199"},
+  {"slug": "sent:tatoeba-74036", "jp": "この新聞はロハだ。", "pt-BR": "Este jornal é de graça.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:74036"},
+  {"slug": "sent:tatoeba-741581", "jp": "食べてはいけません。", "pt-BR": "Não pode comer.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:741581"},
+  {"slug": "sent:tatoeba-743825", "jp": "何時に行きましょうか。", "pt-BR": "A que horas devo ir?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:743825"},
+  {"slug": "sent:tatoeba-74498", "jp": "このゲームはフィクションです。", "pt-BR": "Este jogo é uma ficção.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:74498"},
+  {"slug": "sent:tatoeba-74870", "jp": "ねえ、そうでしょう。", "pt-BR": "Ei, é isso mesmo, não é?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:74870"},
+  {"slug": "sent:tatoeba-74886", "jp": "え、そうですとも。", "pt-BR": "Ah, claro que sim.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:74886"},
+  {"slug": "sent:tatoeba-74893", "jp": "クソっ。かかれ！", "pt-BR": "Droga! Começa logo!", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:74893"},
+  {"slug": "sent:tatoeba-74894", "jp": "コンタクトを入れるというのはいかがでしょう？", "pt-BR": "Que tal usar lentes de contato?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:74894"},
+  {"slug": "sent:tatoeba-74910", "jp": "もう～、なにやってんだよ。", "pt-BR": "Aff, o que você tá fazendo?", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:74910"},
+  {"slug": "sent:tatoeba-74924", "jp": "よし、かかってこい！", "pt-BR": "Beleza, pode vir!", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:74924"},
+  {"slug": "sent:tatoeba-75140", "jp": "ミスタイプです。すみません。", "pt-BR": "É um erro de digitação. Desculpe.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:75140"},
+  {"slug": "sent:tatoeba-75192", "jp": "トピずれです。すみません。", "pt-BR": "Isso é fora do assunto. Desculpe.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:75192"},
+  {"slug": "sent:tatoeba-7577121", "jp": "ようこそ。", "pt-BR": "Bem-vindo.", "register": null, "level": "n3", "real": true, "jp_source": "tatoeba:7577121"},
+  {"slug": "sent:tatoeba-75882", "jp": "男の子はたらいの中でジャブジャブ水をはねかしていた。", "pt-BR": "O menino ficava espalhando água pra todo lado dentro da bacia.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:75882"},
+  {"slug": "sent:tatoeba-76156", "jp": "今のはノーカンだからね。", "pt-BR": "É porque o que aconteceu agora não conta, viu.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:76156"},
+  {"slug": "sent:tatoeba-76427", "jp": "ほらマンゴーがたくさんなっているよ。", "pt-BR": "Olha, a árvore está cheia de manga!", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:76427"},
+  {"slug": "sent:tatoeba-76498", "jp": "なんだってずらからねえんだ！", "pt-BR": "Por que diabos você não dá no pé?!", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:76498"},
+  {"slug": "sent:tatoeba-76515", "jp": "どっこい。そうはいかないよ。", "pt-BR": "Opa! Assim não dá, não.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:76515"},
+  {"slug": "sent:tatoeba-76536", "jp": "でももヘチマもないわ。", "pt-BR": "Nada de 'mas'!", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:76536"},
+  {"slug": "sent:tatoeba-76604", "jp": "それはこっちのセリフですよ。", "pt-BR": "Essa é a minha fala.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:76604"},
+  {"slug": "sent:tatoeba-76735", "jp": "この車はもうすぐスクラップだ。", "pt-BR": "Este carro logo vai virar sucata.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:76735"},
+  {"slug": "sent:tatoeba-76749", "jp": "このページはリンクフリーです。", "pt-BR": "Fique à vontade para colocar links para esta página.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:76749"},
+  {"slug": "sent:tatoeba-76792", "jp": "カレーはまあまあでした。", "pt-BR": "O curry estava mais ou menos.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:76792"},
+  {"slug": "sent:tatoeba-76884", "jp": "あれ？何だろ？パフォーマンスでもやってるのか？", "pt-BR": "Hã? O que é isso? Será que estão fazendo uma apresentação de rua ou algo assim?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:76884"},
+  {"slug": "sent:tatoeba-76902", "jp": "あのチームはつわものぞろいだ。", "pt-BR": "Aquele time é só de gente forte.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:76902"},
+  {"slug": "sent:tatoeba-76963", "jp": "１３人？たったそんだけかよ。", "pt-BR": "Treze pessoas? Só isso, é?", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:76963"},
+  {"slug": "sent:tatoeba-77149", "jp": "話をつけようじゃないか。", "pt-BR": "Vamos acertar esse assunto de uma vez, que tal?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:77149"},
+  {"slug": "sent:tatoeba-77189", "jp": "話してもいいですか。", "pt-BR": "Posso falar (com você)?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:77189"},
+  {"slug": "sent:tatoeba-77191", "jp": "話しかけるな。", "pt-BR": "Não fale comigo.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:77191"},
+  {"slug": "sent:tatoeba-77200", "jp": "話がそれた。", "pt-BR": "A conversa saiu do assunto.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:77200"},
+  {"slug": "sent:tatoeba-77203", "jp": "話があるんだけど。", "pt-BR": "É que eu queria falar uma coisa com você...", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:77203"},
+  {"slug": "sent:tatoeba-778974", "jp": "なんで？", "pt-BR": "Por quê?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:778974"},
+  {"slug": "sent:tatoeba-778976", "jp": "なぜ？", "pt-BR": "Por quê?", "register": null, "level": "n5", "real": true, "jp_source": "tatoeba:778976"},
+  {"slug": "sent:tatoeba-778977", "jp": "なぜか？", "pt-BR": "Por quê?", "register": null, "level": "n5", "real": true, "jp_source": "tatoeba:778977"},
+  {"slug": "sent:tatoeba-780927", "jp": "行くんじゃない。", "pt-BR": "Não vá.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:780927"},
+  {"slug": "sent:tatoeba-78277", "jp": "立っているのは、みんな男だった。", "pt-BR": "Os que estavam de pé eram todos homens.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:78277"},
+  {"slug": "sent:tatoeba-78581", "jp": "来年は会えるでしょう。", "pt-BR": "Ano que vem a gente deve conseguir se ver.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba"},
+  {"slug": "sent:tatoeba-78634", "jp": "来週までごきげんよう。", "pt-BR": "Até a semana que vem, passe bem!", "register": null, "level": "n5", "real": true, "jp_source": "tatoeba:78634"},
+  {"slug": "sent:tatoeba-78700", "jp": "来る日も来る日も雨だった。", "pt-BR": "Chovia dia após dia.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:78700"},
+  {"slug": "sent:tatoeba-78728", "jp": "来たのはメアリーだけだった。", "pt-BR": "Só a Mary veio.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba"},
+  {"slug": "sent:tatoeba-79379", "jp": "友人たちと話す時間がたくさんあった。", "pt-BR": "Tive bastante tempo para conversar com os amigos.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:79379"},
+  {"slug": "sent:tatoeba-79387", "jp": "友人がいなくなるよ。", "pt-BR": "Você vai ficar sem amigos.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:79387"},
+  {"slug": "sent:tatoeba-80128", "jp": "木の下にベンチがあります。", "pt-BR": "Tem um banco embaixo da árvore.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:80128"},
+  {"slug": "sent:tatoeba-80132", "jp": "木にぶつかったんです。", "pt-BR": "É que bati numa árvore.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:80132"},
+  {"slug": "sent:tatoeba-80134", "jp": "木の下でちょっと休もうよ。", "pt-BR": "Vamos descansar um pouquinho debaixo da árvore.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:80134"},
+  {"slug": "sent:tatoeba-80780", "jp": "名前はちょっとわからないんですけど。", "pt-BR": "É que o nome eu não sei bem...", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:80780"},
+  {"slug": "sent:tatoeba-81248", "jp": "毎年ここに来なきゃ。", "pt-BR": "Tenho que vir aqui todos os anos.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:81248"},
+  {"slug": "sent:tatoeba-81610", "jp": "本を読んでいるんです。", "pt-BR": "É que estou lendo um livro.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:81610"},
+  {"slug": "sent:tatoeba-81613", "jp": "本を読むのはとてもおもしろい。", "pt-BR": "Ler livros é muito interessante.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:81613"},
+  {"slug": "sent:tatoeba-81631", "jp": "本をたくさん買ったんだ。", "pt-BR": "É que eu comprei muitos livros.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:81631"},
+  {"slug": "sent:tatoeba-81637", "jp": "本は友人みたいなものである。", "pt-BR": "Um livro é como um amigo.", "register": "formal", "level": "n4", "real": true, "jp_source": "tatoeba:81637"},
+  {"slug": "sent:tatoeba-81661", "jp": "本のページをめくる。", "pt-BR": "Eu viro a página do livro.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:81661"},
+  {"slug": "sent:tatoeba-82855", "jp": "母は毎日うちにいます。", "pt-BR": "Minha mãe fica em casa todos os dias.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:82855"},
+  {"slug": "sent:tatoeba-82900", "jp": "母は先週インフルエンザにかかりました。", "pt-BR": "Minha mãe pegou gripe semana passada.", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba"},
+  {"slug": "sent:tatoeba-83147", "jp": "母さんはロックはぴんとこないという。", "pt-BR": "Minha mãe diz que rock não faz a cabeça dela.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:83147"},
+  {"slug": "sent:tatoeba-83633", "jp": "聞きたい？", "pt-BR": "Quer ouvir?", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:83633"},
+  {"slug": "sent:tatoeba-83717", "jp": "分かりますか。", "pt-BR": "Está entendendo?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:83717"},
+  {"slug": "sent:tatoeba-83722", "jp": "分からないよ。", "pt-BR": "Sei lá.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:83722"},
+  {"slug": "sent:tatoeba-83724", "jp": "分かってるんだけど、どうしようもないのよ。", "pt-BR": "Eu sei, mas não tem o que fazer mesmo.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:83724"},
+  {"slug": "sent:tatoeba-83729", "jp": "分かったでしょう？", "pt-BR": "Entendeu, né?", "register": "polite", "level": "n5", "real": true, "jp_source": "tatoeba:83729"},
+  {"slug": "sent:tatoeba-84662", "jp": "父はまだ休んでいる。", "pt-BR": "Meu pai ainda está descansando.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:84662"},
+  {"slug": "sent:tatoeba-84690", "jp": "父はついさきほど出かけた。", "pt-BR": "Meu pai saiu agorinha mesmo.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:84690"},
+  {"slug": "sent:tatoeba-84740", "jp": "父はお金にきちょうめんです。", "pt-BR": "Meu pai é meticuloso com dinheiro.", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:84740"},
+  {"slug": "sent:tatoeba-84837", "jp": "父さんはどこへ行ったんだろう。", "pt-BR": "Para onde será que o papai foi?", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:84837"},
+  {"slug": "sent:tatoeba-8553735", "jp": "フランス語を話すのが上手になってきた。", "pt-BR": "Fui ficando bom em falar francês.", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:8553735"},
+  {"slug": "sent:tatoeba-8575496", "jp": "フランス語を話したくないんだけど。", "pt-BR": "É que eu não quero falar francês...", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:8575496"},
+  {"slug": "sent:tatoeba-8575514", "jp": "今はそれをやりたくないんだけど。", "pt-BR": "É que agora eu não quero fazer isso...", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:8575514"},
+  {"slug": "sent:tatoeba-8582177", "jp": "高さはどれくらい？", "pt-BR": "Qual é a altura?", "register": null, "level": "n4", "real": true, "jp_source": "tatoeba:8582177"},
+  {"slug": "sent:tatoeba-8635533", "jp": "やってみたいな。", "pt-BR": "Eu queria experimentar fazer isso.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:8635533"},
+  {"slug": "sent:tatoeba-8703703", "jp": "車にいくらかけたの？", "pt-BR": "Quanto você pagou pelo carro?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:8703703"},
+  {"slug": "sent:tatoeba-8732421", "jp": "行かなくてもいいよ。", "pt-BR": "Você não precisa ir.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:8732421"},
+  {"slug": "sent:tatoeba-8736593", "jp": "出かけなきゃ。", "pt-BR": "Tenho que sair.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:8736593"},
+  {"slug": "sent:tatoeba-8748248", "jp": "これ、食べなくてもいい？", "pt-BR": "Tudo bem se eu não comer isto?", "register": "neutral", "level": "n4", "real": true, "jp_source": "tatoeba:8748248"},
+  {"slug": "sent:tatoeba-8753239", "jp": "食べなきゃ。", "pt-BR": "Preciso comer.", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:8753239"},
+  {"slug": "sent:tatoeba-886079", "jp": "先は長いなあ。", "pt-BR": "Ainda falta muito, hein...", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:886079"},
+  {"slug": "sent:tatoeba-8861912", "jp": "いつきてもいいですか？", "pt-BR": "Posso vir a qualquer hora?", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:8861912"},
+  {"slug": "sent:tatoeba-8969396", "jp": "食べなくてもいいよ。", "pt-BR": "Você não precisa comer.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:8969396"},
+  {"slug": "sent:tatoeba-8988166", "jp": "来月には子どもが生まれるんだよ。", "pt-BR": "No mês que vem vai nascer um bebê, sabia?", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:8988166"},
+  {"slug": "sent:tatoeba-8993544", "jp": "１人で行かないほうがいいよ。", "pt-BR": "É melhor não ir sozinho, viu.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:8993544"},
+  {"slug": "sent:tatoeba-9119614", "jp": "今やらなくてもいいんだよ。", "pt-BR": "Você não precisa fazer isso agora.", "register": "casual", "level": "n4", "real": true, "jp_source": "tatoeba:9119614"},
+  {"slug": "sent:tatoeba-9125161", "jp": "ここにボールってあるの？", "pt-BR": "Tem bola aqui?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:9125161"},
+  {"slug": "sent:tatoeba-9462381", "jp": "おおきに！", "pt-BR": "Muito obrigado!", "register": "dialect", "level": "n5", "real": true, "jp_source": "tatoeba:9462381"},
+  {"slug": "sent:tatoeba-9611533", "jp": "どうやってやるの？", "pt-BR": "Como é que se faz isso?", "register": "casual", "level": "n5", "real": true, "jp_source": "tatoeba:9611533"},
+  {"slug": "sent:tatoeba-9842777", "jp": "そうです！", "pt-BR": "É isso mesmo!", "register": "polite", "level": "n4", "real": true, "jp_source": "tatoeba:9842777"},
+  {"slug": "sent:tatoeba-9865429", "jp": "バナナおいしい。", "pt-BR": "Banana é gostosa.", "register": "neutral", "level": "n5", "real": true, "jp_source": "tatoeba:9865429"},
+  {"slug": "sent:gen-000fc485400b", "jp": "あの店は安いって聞いた", "pt-BR": "Ouvi dizer que aquela loja é barata.", "register": "casual", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-03113232386b", "jp": "水だけ飲みたい", "pt-BR": "Quero beber só água.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-03cb7d78a3dc", "jp": "ポストは駅の前にある", "pt-BR": "A caixa de correio fica em frente à estação.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-061ed9aa1785", "jp": "あたまが いたいから かえります", "pt-BR": "Vou voltar pra casa porque estou com dor de cabeça.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-063c2aa13494", "jp": "この店は高いけれども おいしい", "pt-BR": "Esse restaurante é caro, mas a comida é gostosa.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-072d9927b41d", "jp": "ちちは じを かくのが へたです", "pt-BR": "Meu pai é ruim em escrever à mão.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-099cd0de9ac8", "jp": "今日は１月５日だ", "pt-BR": "Hoje é dia 5 de janeiro.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-09bf934b5384", "jp": "おととし大学を出た", "pt-BR": "Eu me formei na faculdade ano retrasado.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-0ba1c8db394e", "jp": "テーブルにいすが五つある", "pt-BR": "Tem cinco cadeiras em volta da mesa.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-0fd66f70d270", "jp": "どの店が安いですか", "pt-BR": "Qual loja é barata?", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-100750b3cf00", "jp": "いもうとは およぐのが へたです", "pt-BR": "Minha irmã mais nova é ruim em nadar.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-10932a1910b5", "jp": "一人だけ来た", "pt-BR": "Só uma pessoa veio.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-111096b06663", "jp": "この道はまっすぐです", "pt-BR": "Essa rua é reta.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-145d7fcd0d32", "jp": "今から駅へ行く", "pt-BR": "Vou para a estação agora.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-188b541dfd66", "jp": "りんごを五つ買った", "pt-BR": "Comprei cinco maçãs.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-189e00550476", "jp": "だって、お金がないんだ", "pt-BR": "É que eu não tenho dinheiro.", "register": "casual", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-1e8b1afa9695", "jp": "６日に友だちと会います", "pt-BR": "No dia 6 vou me encontrar com um amigo.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-1ea65c87d885", "jp": "あねは うたを うたうのが じょうずです", "pt-BR": "Minha irmã mais velha canta muito bem.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-1eb81b8f65b9", "jp": "６日まで学校は休みです", "pt-BR": "Até o dia 6 a escola está de férias.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-22eeab7f65c3", "jp": "今日は四月６日です", "pt-BR": "Hoje é dia 6 de abril.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-24bb23e4256e", "jp": "ちょっと休みませんか", "pt-BR": "Vamos descansar um pouco?", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-2552cfefd77a", "jp": "中サイズのコーヒーを一つ", "pt-BR": "Um café tamanho médio, por favor.", "register": null, "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-25de59f9c3cb", "jp": "あなたのかさはどれですか", "pt-BR": "Qual é o seu guarda-chuva?", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-288ed13a45d3", "jp": "ざっと百人ぐらい来た", "pt-BR": "Veio mais ou menos umas cem pessoas.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-28953cd9e263", "jp": "７日に友だちと会う", "pt-BR": "Vou encontrar com um amigo no dia 7.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-2b5d3c022a66", "jp": "せんせいは えいごを はなすのが じょうずです", "pt-BR": "O professor fala inglês muito bem.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-2c31b3bdaeb6", "jp": "本を買いに本やにいきました", "pt-BR": "Fui à livraria comprar um livro.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-2e89ebd0b9b2", "jp": "あの男の人は先生です", "pt-BR": "Aquele homem é professor.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-2f1479d86cbf", "jp": "入り口がわからない", "pt-BR": "Não sei onde fica a entrada.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-2f1c4475a858", "jp": "どの人があなたの先生ですか", "pt-BR": "Qual pessoa é a sua professora?", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-309d9d1e8ae7", "jp": "この店はいつもうるさい", "pt-BR": "Essa loja vive barulhenta.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-353c01dbf76e", "jp": "その店はとても安い", "pt-BR": "Essa loja é muito barata.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-39592d4169cc", "jp": "りんごやみかんなどを買いました", "pt-BR": "Comprei maçã, tangerina e outras coisas.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-39d7656f49cd", "jp": "りんごが九つある", "pt-BR": "Tem nove maçãs.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-3ab33f97e1b6", "jp": "今にも電車が来る", "pt-BR": "O trem está para chegar a qualquer momento.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-3b2fee497b46", "jp": "なんで来なかったの？", "pt-BR": "Por que você não veio?", "register": "casual", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-3c5ba89233cd", "jp": "わたしは まいあさ パンを 食べる", "pt-BR": "Eu como pão toda manhã.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-4334054e97c0", "jp": "コップが二つあります", "pt-BR": "Tem dois copos.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-45f549d1ad63", "jp": "駅まで二キロメートルあります", "pt-BR": "Daqui até a estação são dois quilômetros.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-48a579e56f54", "jp": "ところが、だれもいなかった", "pt-BR": "Só que não tinha ninguém.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-491d299186aa", "jp": "この花はきれいですね", "pt-BR": "Essa flor é bonita, né?", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-4a22c783f8ef", "jp": "どうもありがとうございました", "pt-BR": "Muito obrigado mesmo.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-4d675784d0ce", "jp": "この車はおととし買った", "pt-BR": "Comprei este carro ano retrasado.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-4f5316c138ae", "jp": "りんごが九つあります", "pt-BR": "Tem nove maçãs.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-4fe8a1c769e4", "jp": "わたしは えを かくのが へたです", "pt-BR": "Eu sou ruim em desenhar.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-50ec2f620020", "jp": "先日はどうも", "pt-BR": "Obrigado por aquele dia.", "register": null, "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-52e853b5eb16", "jp": "つまらない話はもう聞きたくない", "pt-BR": "Não quero mais ouvir conversa chata.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-5305790adb73", "jp": "千円くらいかかりました", "pt-BR": "Custou uns mil ienes.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-5412a2ccf468", "jp": "すしって何ですか", "pt-BR": "O que é sushi?", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-574c05ffa342", "jp": "よる おそく ねる", "pt-BR": "Dormir tarde da noite.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-59bccb81087b", "jp": "ひるごはんを食べにいきます", "pt-BR": "Vou almoçar.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-5a3c5f71eeac", "jp": "おはようございます", "pt-BR": "Bom dia.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-5a506102ded6", "jp": "トイレはあちらにございます", "pt-BR": "O banheiro fica logo ali.", "register": "formal", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-5b66433f415b", "jp": "きのう買った本はおもしろい", "pt-BR": "O livro que comprei ontem é interessante.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-5bc815a39722", "jp": "この店でパンを買います", "pt-BR": "Compro pão nesta loja.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-5c864f44379e", "jp": "学校の入り口で会おう", "pt-BR": "Vamos nos encontrar na entrada da escola.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-5d57a7d41a33", "jp": "このズボンはポケットが大きい", "pt-BR": "Esta calça tem bolsos grandes.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-5f3cbe689545", "jp": "おととい友だちに会った", "pt-BR": "Anteontem encontrei um amigo.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-617ebc589017", "jp": "今に分かるよ", "pt-BR": "Logo você vai entender.", "register": "casual", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-6238f7249749", "jp": "なぜなら、時間がないからだ", "pt-BR": "Isso porque não tem tempo.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-636969a80ad3", "jp": "わたしは うたを うたうのが へたです", "pt-BR": "Eu canto mal.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-6425cd1dd284", "jp": "テーブルの上にコップが四つあります", "pt-BR": "Tem quatro copos em cima da mesa.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-644517351d57", "jp": "りんごが七つあります", "pt-BR": "Tem sete maçãs.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-66857872d764", "jp": "ともだちと コーヒーを のむ", "pt-BR": "Eu tomo café com um amigo.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-671b7aebf53d", "jp": "あしたから なつやすみです", "pt-BR": "A partir de amanhã começam as férias de verão.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-691d5e85faa9", "jp": "出口はどこですか", "pt-BR": "Onde fica a saída?", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-6ac9a6d182cc", "jp": "あの店は安くておいしい", "pt-BR": "Aquele restaurante é barato e gostoso.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-6d412e5af5e1", "jp": "ノートに名前が書いてある", "pt-BR": "Tem um nome escrito no caderno.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-6da9d528f71b", "jp": "電車よりバスのほうが安いです", "pt-BR": "O ônibus é mais barato que o trem.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-6dbee63346e8", "jp": "一人だけ来なかった", "pt-BR": "Só uma pessoa não veio.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-6e1aea12831b", "jp": "おとといは雨だった", "pt-BR": "Anteontem choveu.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-6e958a665367", "jp": "うさぎの耳は長いです", "pt-BR": "As orelhas do coelho são compridas.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-717264b0f0fe", "jp": "この店のほうがあの店より安い", "pt-BR": "Esta loja é mais barata que aquela.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-71f6de6cf2be", "jp": "みかんを五つ買った", "pt-BR": "Comprei cinco mexericas.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-74bce4b40079", "jp": "ははは りょうりを つくるのが じょうずです", "pt-BR": "Minha mãe é boa em cozinhar.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-769512251f0a", "jp": "みかんを九つ買った", "pt-BR": "Comprei nove tangerinas.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-7ac2a488ddab", "jp": "かばんの中は空だった", "pt-BR": "A bolsa estava vazia por dentro.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-7c6ba9d25885", "jp": "一年は十二か月ある", "pt-BR": "Um ano tem doze meses.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-7cb8f309ac6a", "jp": "母はくだものを買いにいった", "pt-BR": "Minha mãe foi comprar frutas.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-7ea63d9fd0ad", "jp": "コップに水を入れる", "pt-BR": "Ponho água no copo.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-81fa8a6122f7", "jp": "来月の１０日は休みだ", "pt-BR": "Dia 10 do mês que vem é folga.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-852890258644", "jp": "りんごを二キログラム買いました", "pt-BR": "Comprei dois quilos de maçã.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-85971f5e6f20", "jp": "行く？それとも行かない？", "pt-BR": "Você vai? Ou não vai?", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-87e87174af0a", "jp": "これからどこへ行きますか", "pt-BR": "Para onde você vai agora?", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-893434d8d3b8", "jp": "かばんの中にペンが五つある", "pt-BR": "Tem cinco canetas dentro da bolsa.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-8adf6d2b2a1f", "jp": "新しいテープを買ってきた", "pt-BR": "Fui comprar uma fita nova.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-8c461632b0fd", "jp": "新しいボールペンを買いました", "pt-BR": "Comprei uma caneta esferográfica nova.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-8ec84f3b26eb", "jp": "わたしは まいにち 学校へ 行く", "pt-BR": "Eu vou para a escola todos os dias.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-8ee16ccc288c", "jp": "これはわたしのかばんじゃない", "pt-BR": "Esta não é a minha bolsa.", "register": "casual", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-8f8222b1d58a", "jp": "りんごを三つ買った", "pt-BR": "Comprei três maçãs.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-901f8e0445e9", "jp": "この本はおととい買いました", "pt-BR": "Comprei este livro anteontem.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-90c50b9be63d", "jp": "ここから学校まで三キロくらいだ", "pt-BR": "Daqui até a escola são uns três quilômetros.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-93e74d38add6", "jp": "ともだちは えを かくのが じょうずです", "pt-BR": "Meu amigo desenha muito bem.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-9533537d6e4e", "jp": "来月の１日に会いましょう", "pt-BR": "Vamos nos encontrar no dia primeiro do mês que vem.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-97a9a63e32d1", "jp": "まいにち テレビを 見る", "pt-BR": "Eu assisto TV todos os dias.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-9851c92d49e0", "jp": "じゅぎょうは 九時から はじまります", "pt-BR": "A aula começa às nove horas.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-99d83f741718", "jp": "そちらの天気はどうですか", "pt-BR": "Como está o tempo aí?", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-9e1f6fa2353f", "jp": "すぐに行きます", "pt-BR": "Já vou agora mesmo.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-a2e6c06eccd6", "jp": "いつでも来ていいよ", "pt-BR": "Pode vir quando quiser.", "register": "casual", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-a6201c731653", "jp": "あした 本を かう", "pt-BR": "Amanhã vou comprar um livro.", "register": null, "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-a9bef96bf2dd", "jp": "駅まで十分くらいかかる", "pt-BR": "Até a estação leva uns dez minutos.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-ac706d716c7e", "jp": "そのうち分かるよ", "pt-BR": "Uma hora você descobre.", "register": "casual", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-ac8c3eeccea9", "jp": "フィルムがもうありません", "pt-BR": "Não tem mais filme.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-adff42166044", "jp": "新しいＹシャツを買った", "pt-BR": "Comprei uma camisa social nova.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-b5c5f20e6a99", "jp": "チーズを三百グラム買いました", "pt-BR": "Comprei trezentos gramas de queijo.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-b61f5e94a2f1", "jp": "大人になりたい", "pt-BR": "Quero ser adulto.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-bc4a14e386aa", "jp": "新しいフィルムを買いました", "pt-BR": "Comprei um rolo de filme novo.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-bcf6ad6deb78", "jp": "めったに来ない人だ", "pt-BR": "É uma pessoa que quase nunca aparece.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-be2ed6b9392c", "jp": "５日に友だちと会う", "pt-BR": "Vou encontrar um amigo no dia 5.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-c3c28b60e4e7", "jp": "あの出口から出ましょう", "pt-BR": "Vamos sair por aquela saída.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-c45651cd754a", "jp": "テーブルにコップが六つあります", "pt-BR": "Tem seis copos na mesa.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-c60fa93c2555", "jp": "高いですね でも買います", "pt-BR": "Caro, né? Mas vou levar mesmo assim.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-c737b9f8b9da", "jp": "コーヒーか おちゃか どちらが いいですか", "pt-BR": "Café ou chá, qual você prefere?", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-c8b0183139d0", "jp": "もう一月たちました", "pt-BR": "Já passou um mês.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-c8e36c94f4e2", "jp": "あの人は先生じゃない", "pt-BR": "Aquela pessoa não é professor.", "register": "casual", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-c934c20ec2ee", "jp": "きのうは休みじゃなかった", "pt-BR": "Ontem não foi folga.", "register": "casual", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-cc2358448d74", "jp": "毎週おばあさんに会いに行く", "pt-BR": "Toda semana vou visitar a vovó.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-cd8faba1e3ea", "jp": "このシャツのサイズは中です", "pt-BR": "O tamanho desta camisa é médio.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-cffe9283dc7b", "jp": "あには りょうりを つくるのが へたです", "pt-BR": "Meu irmão mais velho cozinha mal.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-d14168381a87", "jp": "母は店へ出かけました", "pt-BR": "Minha mãe saiu para a loja.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-d1ac20717ee2", "jp": "この店は安いですね", "pt-BR": "Essa loja é barata, né?", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-d338f63d2a25", "jp": "あした 行くか 行かないか まだ わかりません", "pt-BR": "Ainda não sei se vou amanhã ou não.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-d3b1807100a5", "jp": "どうしても行きたいんです", "pt-BR": "Eu quero ir de qualquer jeito.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-d82f2dd80e15", "jp": "友だちに会いに行く", "pt-BR": "Vou encontrar um amigo.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-d92f805128a1", "jp": "もしもし、今話せますか", "pt-BR": "Alô, você pode falar agora?", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-d9692c208f4d", "jp": "このカバンは中ぐらいの大きさだ", "pt-BR": "Esta bolsa é de tamanho médio.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-e097de770a2e", "jp": "すぐに行きますね", "pt-BR": "Já já eu vou, viu?", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-e429a7a204c9", "jp": "行きたいけれど、時間がない", "pt-BR": "Eu queria ir, mas não tenho tempo.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-e7e5464992a3", "jp": "どこかで会いましたか", "pt-BR": "A gente já se viu em algum lugar?", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-e8f19f968193", "jp": "あさ 六時に おきる", "pt-BR": "De manhã, acordo às seis horas.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-e9500630efbe", "jp": "マッチがもうない", "pt-BR": "Já não tem mais fósforo.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-e97b8aeb1456", "jp": "この本はあの本より高いです", "pt-BR": "Este livro é mais caro que aquele livro.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-eccc53cfd2e0", "jp": "テストは来月の５日だ", "pt-BR": "A prova é no dia 5 do mês que vem.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-ecd0b0d917b3", "jp": "１日は休みです", "pt-BR": "Dia primeiro é folga.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-ed8ddca7e25c", "jp": "わたしは本を読むのがすきです", "pt-BR": "Eu gosto de ler livros.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-ef6d808ec9da", "jp": "新しい本をまだ読んでいません", "pt-BR": "Ainda não li o livro novo.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-f18e1457c421", "jp": "りんごを二つずつ買った", "pt-BR": "Comprei duas maçãs de cada vez.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-f2aa06143ce7", "jp": "今日は何もしたくない", "pt-BR": "Hoje eu não quero fazer nada.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-f59f9d5195cc", "jp": "どなたですか", "pt-BR": "Quem é o senhor (a senhora)?", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-f71dc5a16d32", "jp": "大人は二人います", "pt-BR": "Há dois adultos.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-fce29984f7fe", "jp": "このＹシャツは少し大きい", "pt-BR": "Esta camisa está um pouco grande.", "register": "neutral", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-feaa39d1331f", "jp": "スプーンでスープを飲む", "pt-BR": "Tomo a sopa com a colher.", "register": "neutral", "level": "n5", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-ff4a0587b94f", "jp": "入り口はあちらです", "pt-BR": "A entrada é por ali.", "register": "polite", "level": "n4", "real": false, "jp_source": "ai-generated"},
+  {"slug": "sent:gen-ffc42666e4f4", "jp": "もうお金がありません", "pt-BR": "Já não tenho mais dinheiro.", "register": "polite", "level": "n5", "real": false, "jp_source": "ai-generated"}
+ ]
+}

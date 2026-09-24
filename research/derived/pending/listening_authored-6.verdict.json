@@ -1,0 +1,353 @@
+{
+ "_meta": {
+  "input": [
+   "research/derived/pending/listening_work/work-07.json",
+   "research/derived/pending/listening_authored-work-07.json"
+  ],
+  "note": "listening_authored-6.json does not exist; the authored file for work-07 (0-based batch 6) is listening_authored-work-07.json.",
+  "rule": "TaughtSets(n3) from a git HEAD tree: every kanji of script/question/options taught (hard); SudachiPy content tokens checked against the n3 taught vocab (advisory). Plus: family intent kept, exactly one key heard, natural spoken Japanese, analyzer reading hazards.",
+  "layer": "C",
+  "needs_review": true
+ },
+ "lg:n3:001": {
+  "ok": true,
+  "note": "Kanji clean (比/接/募 gone); ツアー is not a corpus word. Gist question kept, one key, distractors each echo a script detail without being the topic."
+ },
+ "lg:n3:002": {
+  "ok": true,
+  "note": "Kanji clean; ふせぐ/へる/おんど/せつやく are all taught n3 words spelled in kana. One key."
+ },
+ "lg:n3:003": {
+  "ok": true,
+  "note": "Kanji clean; じゅんび/こまかい taught. 新しい商品/その日/使い方 natural. One key (発表会の予定)."
+ },
+ "lg:n3:004": {
+  "ok": true,
+  "note": "Kanji clean; なかま taught, 通勤/アイデア/増やす (untaught) replaced. One key."
+ },
+ "lg:n3:005": {
+  "ok": false,
+  "problem": "Reading hazard: 大変人が多い tokenizes as 大(ダイ)+変人(ヘンジン) in SudachiPy, so any analyzer-driven reading, furigana or TTS voices it as だいへんじん. Reordered to 人が大変多くなっておりますので (announcement register kept). Kanji clean, gist family and single key (電車が遅れていること) unchanged.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "駅で男の人が放送で話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "お客様にお知らせいたします。ただいま、大雪のため、電車の発車の時刻が遅れております。次の電車は、予定より３０分ほど遅れて発車いたします。ホームは人が大変多くなっておりますので、お待ちのお客様は、どうぞ駅の中の、待つための部屋をお使いください。新しい情報が入りましたら、すぐに放送でお知らせいたします。"
+    }
+   ],
+   "question": "男の人は何について話していますか。",
+   "options": [
+    "電車が遅れていること",
+    "駅のそうじ",
+    "待つための部屋の場所",
+    "忘れ物の案内"
+   ],
+   "key": "電車が遅れていること",
+   "changed_tokens": [
+    "遅れが出て→遅れて",
+    "待合室→待つための部屋",
+    "電車の遅れ→電車が遅れていること",
+    "工事→そうじ",
+    "混んでいます→人が大変多くなっております"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "lg:n3:006": {
+  "ok": true,
+  "note": "Kanji clean; うちゅう/ほし/まい/ならぶ taught. 写真を見る会 is plain but idiomatic (cf. 〜を見る会). One key."
+ },
+ "lg:n3:007": {
+  "ok": true,
+  "note": "Kanji clean; じこ/とる/にもつ taught; ガイド/勝手 (untaught) replaced. つながる predates the edit. One key."
+ },
+ "lg:n3:008": {
+  "ok": true,
+  "note": "Kanji clean; きせつ/むし/あたたかい/じゅんび taught; あついセーター replaces 毛布 (kanji). One key."
+ },
+ "lg:n3:009": {
+  "ok": true,
+  "note": "Kanji clean; さら/かい/ちゅうしゃじょう taught; セール/メニュー (untaught) replaced. One key."
+ },
+ "lp:n3:001": {
+  "ok": false,
+  "problem": "Level: 申し訳 was only respelled もうしわけ, but 申し訳ない is itself an untaught word (corpus n2, not in the n3 taught set), so the edit breaks the item's own rule (kana only for a taught word whose kanji is untaught). SudachiPy also misreads the kana as もう+しわけ(仕分ける)+ない. Swapped for 悪いんだけど (taught, natural teacher-to-student softener). Rest verified: kanji clean, one key (日曜日), point family intact.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "学校で男の学生と女の先生が話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "先生、女子バレーボール部の試合って、今週の土曜日ですよね。見に行こうと思って。"
+    },
+    {
+     "speaker": "F1",
+     "text": "ああ、それがね、悪いんだけど、土曜日じゃなくなったのよ。体育館が急に使えなくなっちゃって。"
+    },
+    {
+     "speaker": "M1",
+     "text": "え、じゃあ、金曜日ですか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "金曜日はじゅぎょうのあと、ふつうのれんしゅうがあるだけ。試合は日曜日になったの。"
+    },
+    {
+     "speaker": "M1",
+     "text": "日曜日ですか。月曜日は休みの日だから、月曜日ならぼくも行きやすかったのになあ。"
+    },
+    {
+     "speaker": "F1",
+     "text": "月曜日は相手の学校が来られないんだって。だから日曜日。見に来てね。"
+    },
+    {
+     "speaker": "M1",
+     "text": "はい、行きます。"
+    }
+   ],
+   "question": "女子バレーボール部の試合はいつありますか。",
+   "options": [
+    "日曜日",
+    "金曜日",
+    "土曜日",
+    "月曜日"
+   ],
+   "key": "日曜日",
+   "changed_tokens": [
+    "応援に行こう→見に行こう",
+    "授業→じゅぎょう",
+    "普通→ふつう",
+    "練習→れんしゅう",
+    "祝日→休みの日",
+    "僕→ぼく",
+    "応援、よろしくね→見に来てね",
+    "申し訳ない→悪い"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "lp:n3:002": {
+  "ok": false,
+  "problem": "Level: もうしわけありません keeps the untaught word 申し訳ない (corpus n2) in kana; also 申し込める日が早く終わって is an unnatural paraphrase of 締め切りが早くて. Fixed to 失礼しました (taught n4) and 受付が早く終わって (受付 taught n4, kanji taught). Key ２０日 still the only date that fits the night class.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "公民館で男の人と受付の女の人が話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "すみません、料理教室に申し込みたいんですが、いつまで申し込めますか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "教室によって違いますが、ほとんどの教室は２５日までです。"
+    },
+    {
+     "speaker": "M1",
+     "text": "夜の初心者クラスに入りたいんだけど、それも２５日まででいいんですか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "夜の初心者クラスですね。少々お待ちください。ええと、初心者クラスは人気があるので、受付が早く終わって、１５日までになっています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "え、１５日ですか。今日がもう１０日だから、あと５日しかないなあ。"
+    },
+    {
+     "speaker": "F1",
+     "text": "あ、失礼しました。１５日は昼のクラスでした。夜のクラスは２０日までです。"
+    },
+    {
+     "speaker": "M1",
+     "text": "２０日ですね。よかった。じゃあ、家でよく考えてから、また来て申し込みます。"
+    }
+   ],
+   "question": "男の人はいつまでに申し込まなければなりませんか。",
+   "options": [
+    "２０日",
+    "１０日",
+    "１５日",
+    "２５日"
+   ],
+   "key": "２０日",
+   "changed_tokens": [
+    "受け付けていますか→申し込めますか",
+    "申し込みに来ます→また来て申し込みます",
+    "申し訳ありません→失礼しました",
+    "締め切りが早くて→受付が早く終わって"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "lp:n3:003": {
+  "ok": true,
+  "note": "Kanji clean; マフラー/サイズ (untaught) -> ハンカチ/大きさ keeps the size-irrelevant logic. One key."
+ },
+ "lp:n3:004": {
+  "ok": true,
+  "note": "Kanji clean; 佐藤->木村 (taught kanji), 助かる (untaught) -> よかった. Name revealed only at the end; one key."
+ },
+ "lp:n3:005": {
+  "ok": true,
+  "note": "Kanji clean; ホール (untaught) -> センター (taught); てんらんかい/うつる taught. One key."
+ },
+ "lp:n3:006": {
+  "ok": false,
+  "problem": "Reading hazard: 一ふくろ (kanji numeral + kana counter) is read いちふくろ by analyzers/TTS (SudachiPy: 一=イチ); the counted form is ひとふくろ. Spelled ひとふくろ in all four places. While here: 今日はトマトだけ tokenizes as 今日は(コンニチハ), so a comma after 今日は keeps the きょうは reading. Kanji clean, key ４００円 unchanged.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "道で、野菜を売っている女の人と男の人が話しています。"
+    },
+    {
+     "speaker": "M1",
+     "text": "こんにちは。このトマト、おいしそうですね。ひとふくろいくらですか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "いつもはひとふくろ５００円なんですけど、今日はたくさんとれたので、４００円にしますよ。うちのはたけで今朝とれたばかりですから、しんせんですよ。"
+    },
+    {
+     "speaker": "M1",
+     "text": "じゃあ、トマトをひとふくろください。そっちのきゅうりはいくらですか。"
+    },
+    {
+     "speaker": "F1",
+     "text": "きゅうりはひとふくろ２００円、なすは３００円です。"
+    },
+    {
+     "speaker": "M1",
+     "text": "うーん、きゅうりもなすも、まだ家にあるからいいや。今日は、トマトだけお願いします。"
+    },
+    {
+     "speaker": "F1",
+     "text": "はい、ありがとうございます。"
+    }
+   ],
+   "question": "男の人はいくら払いますか。",
+   "options": [
+    "４００円",
+    "２００円",
+    "３００円",
+    "５００円"
+   ],
+   "key": "４００円",
+   "changed_tokens": [
+    "袋→ふくろ",
+    "採れ→とれ",
+    "畑→はたけ",
+    "新鮮→しんせん",
+    "一ふくろ→ひとふくろ",
+    "今日は→今日は、"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "lp:n3:008": {
+  "ok": true,
+  "note": "Kanji clean; 窓口 (untaught) -> 受付. Time logic unchanged, one key (７時)."
+ },
+ "lp:n3:009": {
+  "ok": true,
+  "note": "Kanji clean; いいん/じゅんび/れんしゅう/ぬる/けっきょく taught. One key."
+ },
+ "lp:n3:010": {
+  "ok": true,
+  "note": "Kanji clean; 連休/遊園地/温泉 all untaught words, so 休み/動物園/旅館 swaps are justified. One key."
+ },
+ "lp:n3:011": {
+  "ok": true,
+  "note": "Kanji clean; おいわい/かびん/つつむ taught; ペア (untaught) -> 二つセットの. One key."
+ },
+ "lp:n3:012": {
+  "ok": true,
+  "note": "Kanji clean; かぜ/となり taught. One key."
+ },
+ "lp:n3:013": {
+  "ok": true,
+  "note": "Kanji clean; おかし/たまご/やける/よめ taught. One key."
+ },
+ "lp:n3:014": {
+  "ok": true,
+  "note": "Kanji clean; まい/だいじょうぶ taught. One key."
+ },
+ "lp:n3:016": {
+  "ok": false,
+  "problem": "Naturalness: 電気の商品 is not how anyone names appliances. 製品 is a TAUGHT n3 word whose kanji 製 is untaught, so by the item's own rule it is spelled in kana: 電気せいひん. Kanji clean, key ５かい unchanged.",
+  "corrected": {
+   "script": [
+    {
+     "speaker": "N",
+     "text": "デパートの入り口で女の人と店の男の人が話しています。"
+    },
+    {
+     "speaker": "F1",
+     "text": "すみません、アイロンを買いたいんですが、売り場はなんがいでしょうか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "アイロンなどの電気せいひんは、いつもは３かいなんですが、３かいは今週、使えないんです。"
+    },
+    {
+     "speaker": "F1",
+     "text": "え、じゃあ、今日は買えないんですか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "いえ、電気せいひんの売り場は今、５かいにうつっています。エレベーターで５かいまでどうぞ。"
+    },
+    {
+     "speaker": "F1",
+     "text": "５かいですね。エレベーターはどこですか。"
+    },
+    {
+     "speaker": "M1",
+     "text": "あちらです。２かいはかばん、４かいは家具の売り場ですので、間違えずに５かいでお降りください。"
+    },
+    {
+     "speaker": "F1",
+     "text": "わかりました。ありがとうございます。"
+    }
+   ],
+   "question": "女の人はなんがいへ行きますか。",
+   "options": [
+    "５かい",
+    "２かい",
+    "３かい",
+    "４かい"
+   ],
+   "key": "５かい",
+   "changed_tokens": [
+    "何階→なんがい",
+    "階→かい",
+    "工事中なんです→使えないんです",
+    "あら→え",
+    "移っ→うつっ",
+    "電気製品→電気せいひん"
+   ],
+   "source": "edited",
+   "needs_review": true
+  }
+ },
+ "lp:n3:017": {
+  "ok": true,
+  "note": "Kanji clean; 正解 (untaught) -> 答え; ほそい/くせ taught. One key."
+ },
+ "lp:n3:018": {
+  "ok": true,
+  "note": "Kanji clean; 資料 (untaught) -> 書類, 届く -> 着く, 文房具 (untaught) -> 本屋; かちょう/いんさつ/となり taught. One key."
+ }
+}

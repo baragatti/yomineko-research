@@ -1,0 +1,417 @@
+{
+ "lr:n3:tatoeba-2850263": {
+  "script": [{"speaker": "M1", "text": "今日の予定は？"}],
+  "question": "",
+  "options": ["午後から会議だよ。", "昨日はひまだったよ。", "うん、いい予定だね。"],
+  "key": "午後から会議だよ。",
+  "changed_tokens": [{"from": "暇", "to": "ひま", "why": "kanji 暇 untaught; same word, kana spelling (distractor)"}],
+  "source": "real", "needs_review": true, "layer": "C"
+ },
+ "lr:n3:tatoeba-148071": {
+  "script": [{"speaker": "F1", "text": "十時ごろですか。"}],
+  "question": "",
+  "options": ["ええ、そのくらいです。", "十人ぐらいです。", "いいえ、時計です。"],
+  "key": "ええ、そのくらいです。",
+  "changed_tokens": [{"from": "十個", "to": "十人", "why": "kanji 個 untaught; another counter keeps the time-vs-counter trap (distractor)"}],
+  "source": "real", "needs_review": true, "layer": "C"
+ },
+ "ls:n3:001": {
+  "script": [{"speaker": "N", "text": "うちでクリスマスパーティーをするので、友達を呼びたいです。何と言いますか。"}],
+  "question": "",
+  "options": ["よかったら、うちのパーティーに来ない？", "よかったら、うちのパーティーに来てあげようか。", "よかったら、うちのパーティーに来させてくれない？"],
+  "key": "よかったら、うちのパーティーに来ない？",
+  "changed_tokens": [{"from": "誘いたい", "to": "呼びたい", "why": "kanji 誘 untaught; 呼ぶ taught, same intent (invite)"}],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "ls:n3:002": {
+  "script": [{"speaker": "N", "text": "店でコーヒーを頼みます。クリームも付けてほしいです。何と言いますか。"}],
+  "question": "",
+  "options": ["すみません、クリームを付けてもらえますか。", "すみません、クリームを付けてあげましょうか。", "すみません、クリームを付けさせてもらえますか。"],
+  "key": "すみません、クリームを付けてもらえますか。",
+  "changed_tokens": [{"from": "喫茶店", "to": "店", "why": "kanji 喫 untaught; setting only, request form under test unchanged"}],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "ls:n3:004": {
+  "script": [{"speaker": "N", "text": "駅で、きっぷをなくしてしまいました。駅の人に何と言いますか。"}],
+  "question": "",
+  "options": ["すみません、きっぷをなくしてしまったんですが。", "すみません、きっぷをなくされたんですが。", "すみません、きっぷをなくしておいたんですが。"],
+  "key": "すみません、きっぷをなくしてしまったんですが。",
+  "changed_tokens": [{"from": "定期券", "to": "きっぷ", "why": "kanji 券 and word 定期券 untaught; ticket is the same station object (切符 has untaught 符, so kana) (script, key, distractors)"}],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "ls:n3:007": {
+  "script": [{"speaker": "N", "text": "電車の中で、となりの人のゲームの音がうるさいです。何と言いますか。"}],
+  "question": "",
+  "options": ["すみません、音を少し小さくしてもらえませんか。", "すみません、音を少し小さくしなさい。", "すみません、音を少し小さくさせてもらえませんか。"],
+  "key": "すみません、音を少し小さくしてもらえませんか。",
+  "changed_tokens": [{"from": "隣", "to": "となり", "why": "kanji 隣 untaught; same word, kana spelling"}],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "ls:n3:009": {
+  "script": [{"speaker": "N", "text": "会社にパソコンのコードを持って来るのを忘れました。同じ会社の人に借りたいです。何と言いますか。"}],
+  "question": "",
+  "options": ["悪いんだけど、パソコンのコード、貸してもらえない？", "悪いんだけど、パソコンのコード、借りてもらえない？", "悪いんだけど、パソコンのコード、貸してあげようか。"],
+  "key": "悪いんだけど、パソコンのコード、貸してもらえない？",
+  "changed_tokens": [{"from": "同僚", "to": "同じ会社の人", "why": "kanji 僚 untaught; paraphrase keeps the peer (casual) relationship"}],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "ls:n3:010": {
+  "script": [{"speaker": "N", "text": "子どもが熱を出したので、今日は早く帰りたいです。部長に何と言いますか。"}],
+  "question": "",
+  "options": ["部長、実は子どもが熱を出したので、早く帰らせていただけませんか。", "部長、実は子どもが熱を出したので、早く帰ってくださいませんか。", "部長、実は子どもが熱を出したので、早くお帰りになりたいんですが。"],
+  "key": "部長、実は子どもが熱を出したので、早く帰らせていただけませんか。",
+  "changed_tokens": [{"from": "課長", "to": "部長", "why": "kanji 課 untaught; 部長 is the same superior role (script, key, distractors)"}],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "ls:n3:011": {
+  "script": [{"speaker": "N", "text": "にもつをとどけに来ました。受け取る人にサインをしてほしいです。何と言いますか。"}],
+  "question": "",
+  "options": ["こちらにサインをお願いできますか。", "こちらにサインをして差し上げましょうか。", "こちらにサインをさせていただけますか。"],
+  "key": "こちらにサインをお願いできますか。",
+  "changed_tokens": [{"from": "荷物", "to": "にもつ", "why": "kanji 荷 untaught; kana spelling"}, {"from": "届け", "to": "とどけ", "why": "kanji 届 untaught; kana spelling"}],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "ls:n3:012": {
+  "script": [{"speaker": "N", "text": "店で働いています。お客様にサービスのお茶を出したいです。何と言いますか。"}],
+  "question": "",
+  "options": ["よろしければ、サービスのお茶はいかがですか。", "よろしければ、サービスのお茶をいただけますか。", "よろしければ、サービスのお茶をお飲みしますか。"],
+  "key": "よろしければ、サービスのお茶はいかがですか。",
+  "changed_tokens": [{"from": "喫茶店", "to": "店", "why": "kanji 喫 untaught; setting only, offer form under test unchanged"}],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "lt:n3:001": {
+  "script": [
+   {"speaker": "N", "text": "花屋で女の人と店の男の人が話しています。"},
+   {"speaker": "M1", "text": "いらっしゃいませ。何かお探しですか。"},
+   {"speaker": "F1", "text": "母のたんじょうびに花を買いたいんですが、バラはありますか。"},
+   {"speaker": "M1", "text": "もうしわけありません、バラは今朝全部売れてしまったんです。カーネーションはいかがですか。"},
+   {"speaker": "F1", "text": "カーネーションは母の日にあげたばかりだから、ちょっと。あ、あのひまわり、きれいですね。"},
+   {"speaker": "M1", "text": "ひまわりはまだつぼみなんですよ。開くのは、あさってごろですね。おたんじょうびはいつですか。"},
+   {"speaker": "F1", "text": "今日なんです。うーん、じゃあ、そのきいろいユリをください。明るくて、母に似合いそうだから。"},
+   {"speaker": "M1", "text": "ありがとうございます。すぐ用意しますね。"}
+  ],
+  "question": "女の人はどの花を買いますか。",
+  "options": ["ユリ", "バラ", "カーネーション", "ひまわり"],
+  "key": "ユリ",
+  "changed_tokens": [
+   {"from": "誕生日", "to": "たんじょうび", "why": "kanji 誕 untaught; kana spelling"},
+   {"from": "申し訳", "to": "もうしわけ", "why": "kanji 訳 untaught; kana spelling"},
+   {"from": "黄色い", "to": "きいろい", "why": "kanji 黄 untaught; kana spelling"},
+   {"from": "包みます", "to": "用意します", "why": "kanji 包 untaught; 用意 taught, same closing act"}
+  ],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "lt:n3:002": {
+  "script": [
+   {"speaker": "N", "text": "店で男の人と店の女の人が話しています。"},
+   {"speaker": "F1", "text": "お会計は、３，５００円です。お支払いは、現金ですか、カードですか。"},
+   {"speaker": "M1", "text": "カードでお願いします。"},
+   {"speaker": "F1", "text": "もうしわけありません。今、カードのきかいがこわれていて、使えないんです。"},
+   {"speaker": "M1", "text": "そうですか。じゃあ、スマホの電子マネーは使えますか。"},
+   {"speaker": "F1", "text": "電子マネーも同じきかいを使うので、だめなんです。現金か、クーポンならだいじょうぶなんですが。"},
+   {"speaker": "M1", "text": "クーポンは、今日は持ってないなあ。現金、足りるかな。ああ、ありました。じゃあ、現金で払います。"},
+   {"speaker": "F1", "text": "ありがとうございます。"}
+  ],
+  "question": "男の人は何で払いますか。",
+  "options": ["現金", "カード", "電子マネー", "クーポン"],
+  "key": "現金",
+  "changed_tokens": [
+   {"from": "申し訳", "to": "もうしわけ", "why": "kanji 訳 untaught; kana spelling"},
+   {"from": "機械", "to": "きかい", "why": "kanji 械 untaught; kana spelling"},
+   {"from": "故障していて", "to": "こわれていて", "why": "kanji 故 障 untaught; plain verb, same meaning"},
+   {"from": "商品券", "to": "クーポン", "why": "kanji 券 untaught; another non-cash way to pay keeps the four-way choice (script, distractor)"},
+   {"from": "大丈夫", "to": "だいじょうぶ", "why": "kanji 丈 untaught; kana spelling"}
+  ],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "lt:n3:004": {
+  "script": [
+   {"speaker": "N", "text": "会社で女の人と男の人が話しています。"},
+   {"speaker": "F1", "text": "もうすぐお昼ですね。今日はどうしますか。"},
+   {"speaker": "M1", "text": "駅前に新しいラーメン屋ができたから、行ってみようと思ってるんだ。"},
+   {"speaker": "F1", "text": "あそこ、お昼はすごくならびますよ。３０分は待つと思います。"},
+   {"speaker": "M1", "text": "３０分か。１時から会議があるから、それは無理だな。じゃあ、いつものカレーの店は？"},
+   {"speaker": "F1", "text": "カレーの店は、今週はお休みですよ。入り口に紙がはってありました。"},
+   {"speaker": "M1", "text": "そうなんだ。コンビニのパンは昨日も食べたしなあ。じゃ、地下のそば屋にするよ。あそこなら早いから。"},
+   {"speaker": "F1", "text": "いいですね。私も一緒に行ってもいいですか。"}
+  ],
+  "question": "男の人はお昼に何を食べますか。",
+  "options": ["そば", "ラーメン", "カレー", "パン"],
+  "key": "そば",
+  "changed_tokens": [
+   {"from": "並び", "to": "ならび", "why": "kanji 並 untaught; kana spelling"},
+   {"from": "貼って", "to": "はって", "why": "kanji 貼 untaught; kana spelling"},
+   {"from": "お弁当", "to": "パン", "why": "kanji 弁 untaught; another convenience-store lunch (script, distractor)"}
+  ],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "lt:n3:005": {
+  "script": [
+   {"speaker": "N", "text": "会社で女の人と男の人が、週末のバーベキューについて話しています。"},
+   {"speaker": "F1", "text": "土曜日のバーベキュー、楽しみですね。私は肉を持って行くんですけど、田中さんはどうしますか。"},
+   {"speaker": "M1", "text": "じゃあ、ぼくは飲み物を持って行こうかな。"},
+   {"speaker": "F1", "text": "飲み物は、山田さんが車で運んでくれることになっていますよ。重いですから。"},
+   {"speaker": "M1", "text": "そうか。じゃあ、野菜は？"},
+   {"speaker": "F1", "text": "野菜は、私が肉と一緒に買います。それより、天気予報では、土曜日は午後から雨が降るかもしれないそうですよ。"},
+   {"speaker": "M1", "text": "本当？じゃあ、うちに大きいテントがあるから、ぼくはそれを持って行くよ。"},
+   {"speaker": "F1", "text": "ありがとうございます。お願いします。"}
+  ],
+  "question": "男の人はバーベキューに何を持って行きますか。",
+  "options": ["テント", "飲み物", "肉", "野菜"],
+  "key": "テント",
+  "changed_tokens": [
+   {"from": "僕", "to": "ぼく", "why": "kanji 僕 untaught; same word, kana spelling"},
+   {"from": "助かります", "to": "ありがとうございます", "why": "助かる untaught word; taught thanks formula, same function"}
+  ],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "lt:n3:006": {
+  "script": [
+   {"speaker": "N", "text": "大学で女の学生と男の学生が話しています。"},
+   {"speaker": "F1", "text": "発表の用意、進んでる？"},
+   {"speaker": "M1", "text": "「町の自然を守る活動」について発表することにしたんだけど、使える情報が少なくて、ちょっとがっかりしてるんだ。図書館のいい本は、全部借りられてたし。"},
+   {"speaker": "F1", "text": "インターネットは？市のホームページに、活動のことがのってるよ。"},
+   {"speaker": "M1", "text": "それは昨日見た。でも、やっぱり、実際に活動してる人の話が聞きたいんだよね。"},
+   {"speaker": "F1", "text": "じゃあ、活動してる人にメールで質問してみたら？あ、でも、その前に先生に相談したほうがいいよ。"},
+   {"speaker": "M1", "text": "そうだね。じゃあ、今から先生の研究室に行ってくるよ。"}
+  ],
+  "question": "男の学生はこのあとまず何をしますか。",
+  "options": ["先生に相談しに行く", "図書館で本を借りる", "インターネットで調べる", "活動している人にメールで質問する"],
+  "key": "先生に相談しに行く",
+  "changed_tokens": [
+   {"from": "準備", "to": "用意", "why": "kanji 準 untaught; 用意 taught, same meaning"},
+   {"from": "テーマは「町の環境を守る活動」にした", "to": "「町の自然を守る活動」について発表することにした", "why": "kanji 境 環 and word テーマ untaught; 自然 taught"},
+   {"from": "資料が足りなくて", "to": "使える情報が少なくて", "why": "資料 untaught word; 情報 taught"},
+   {"from": "活動の記録", "to": "活動のこと", "why": "kanji 録 untaught"},
+   {"from": "アンケートを作って聞いてみたら", "to": "活動してる人にメールで質問してみたら", "why": "アンケート untaught word; the distractor action stays a concrete alternative (script, distractor)"}
+  ],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "lt:n3:007": {
+  "script": [
+   {"speaker": "N", "text": "アパートのごみ置き場で、女の人とアパートの大家さんが話しています。"},
+   {"speaker": "M1", "text": "あ、すみません、びんは今日じゃないんですよ。びんとかんは金曜日です。"},
+   {"speaker": "F1", "text": "え、そうだったんですか。じゃあ、金曜日の朝に出します。"},
+   {"speaker": "M1", "text": "それが、今週の金曜日は休日で、ごみの日はお休みなんです。次に出せるのは、来週の金曜日ですね。"},
+   {"speaker": "F1", "text": "来週ですか。それまでうちに置いておくのは、ちょっと。"},
+   {"speaker": "M1", "text": "それなら、駅前のスーパーの入り口に、びんを入れる箱がありますよ。きちんと洗ってあれば、いつでも入れられます。"},
+   {"speaker": "F1", "text": "もう洗ってあります。じゃあ、今からそこへ持って行きます。"}
+  ],
+  "question": "女の人はびんをどうしますか。",
+  "options": ["今日、スーパーの箱に出す", "今日、ごみ置き場に出す", "今週の金曜日に出す", "来週の金曜日に出す"],
+  "key": "今日、スーパーの箱に出す",
+  "changed_tokens": [
+   {"from": "管理人の男の人", "to": "アパートの大家さん", "why": "kanji 管 untaught; 大家 taught, same role in the scene"},
+   {"from": "瓶", "to": "びん", "why": "kanji 瓶 untaught; kana spelling (script, question)"},
+   {"from": "缶", "to": "かん", "why": "kanji 缶 untaught; kana spelling"},
+   {"from": "祝日", "to": "休日", "why": "kanji 祝 and word 祝日 untaught; 休日 taught, same role in the plot"}
+  ],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "lt:n3:008": {
+  "script": [
+   {"speaker": "N", "text": "洋服の店で、女の人と店の男の人が話しています。"},
+   {"speaker": "M1", "text": "いかがですか。"},
+   {"speaker": "F1", "text": "形は好きなんですけど、少しきついですね。同じ白で、もう一つ大きいのはありますか。"},
+   {"speaker": "M1", "text": "もうしわけありません、白の大きいのは、ただ今もうないんです。同じ形の黒でしたら、大きいのがございますよ。"},
+   {"speaker": "F1", "text": "うーん、黒のジャケットは、もう持っているんですよね。"},
+   {"speaker": "M1", "text": "では、こちらの別の形の白はいかがですか。よく似ていますよ。それか、最初の白の大きいのを、ほかの店から送ってもらうこともできます。１週間で着きますよ。"},
+   {"speaker": "F1", "text": "この形は、ポケットがないからちょっと。じゃあ、最初のジャケットの大きいのを、ほかの店から送ってもらってください。それでお願いします。"},
+   {"speaker": "M1", "text": "かしこまりました。着きましたら、お電話しますね。"}
+  ],
+  "question": "女の人はどのジャケットを買いますか。",
+  "options": ["ほかの店から送ってもらう白いジャケット", "今着ている白いジャケット", "同じ形の黒いジャケット", "別の形の白いジャケット"],
+  "key": "ほかの店から送ってもらう白いジャケット",
+  "changed_tokens": [
+   {"from": "申し訳", "to": "もうしわけ", "why": "kanji 訳 untaught; kana spelling"},
+   {"from": "デザイン", "to": "形", "why": "デザイン untaught word; 形 taught (script, distractors)"},
+   {"from": "サイズ", "to": "大きいの", "why": "サイズ untaught word"},
+   {"from": "売り切れ", "to": "もうない", "why": "売り切れ untaught word"},
+   {"from": "取り寄せる", "to": "ほかの店から送ってもらう", "why": "取り寄せる untaught word; paraphrase with taught words (script, key)"},
+   {"from": "届き", "to": "着き", "why": "kanji 届 untaught; 着く taught, same meaning"}
+  ],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "lt:n3:009": {
+  "script": [
+   {"speaker": "N", "text": "ペットの店で、女の人と店の男の人が話しています。"},
+   {"speaker": "F1", "text": "すみません、初めてペットをかうんですが、世話が楽な生き物はいますか。犬はかわいいけど、毎日の散歩が大変そうで。"},
+   {"speaker": "M1", "text": "それでしたら、犬より猫のほうが楽ですよ。散歩はいりませんし。"},
+   {"speaker": "F1", "text": "それが、私、猫アレルギーなんです。"},
+   {"speaker": "M1", "text": "では、この魚はいかがですか。えさと水の世話だけでいいですよ。"},
+   {"speaker": "F1", "text": "きれいだけど、さわれないのは、ちょっとさびしいなあ。"},
+   {"speaker": "M1", "text": "じゃあ、このハムスターはどうですか。昼はぐっすり寝ているので静かですし、世話も楽ですよ。"},
+   {"speaker": "F1", "text": "かわいい。じゃあ、その子にします。"}
+  ],
+  "question": "女の人はどの生き物を買いますか。",
+  "options": ["ハムスター", "犬", "猫", "魚"],
+  "key": "ハムスター",
+  "changed_tokens": [
+   {"from": "ペットショップ", "to": "ペットの店", "why": "ショップ untaught word"},
+   {"from": "飼う", "to": "かう", "why": "kanji 飼 untaught; kana spelling"},
+   {"from": "簡単", "to": "楽", "why": "kanji 簡 untaught; 楽 taught, same meaning here"},
+   {"from": "熱帯魚", "to": "魚", "why": "kanji 帯 untaught (金魚 is an untaught word); 魚 keeps the pet option (script, distractor)"}
+  ],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "lt:n3:010": {
+  "script": [
+   {"speaker": "N", "text": "会社で女の人と男の人が、会議の用意について話しています。"},
+   {"speaker": "F1", "text": "中村さん、午後の会議の用意は進んでる？"},
+   {"speaker": "M1", "text": "はい、会議で使う紙のコピーはもう終わりました。これを会議室のテーブルに置いておきましょうか。"},
+   {"speaker": "F1", "text": "置くのは、そうじが終わってからにして。今、そうじの人が会議室に入ってるから。"},
+   {"speaker": "M1", "text": "わかりました。じゃあ、先にお茶を用意しておきます。"},
+   {"speaker": "F1", "text": "お茶は、会議が始まる前でいいわ。冷たくなっちゃうから。それより、スクリーンとパソコンを見てほしいの。ちゃんと動くか、確認しておいて。"},
+   {"speaker": "M1", "text": "はい、すぐやります。"}
+  ],
+  "question": "男の人はこのあとまず何をしますか。",
+  "options": ["スクリーンとパソコンを確認する", "会議で使う紙をコピーする", "コピーを会議室のテーブルに置く", "お茶を用意する"],
+  "key": "スクリーンとパソコンを確認する",
+  "changed_tokens": [
+   {"from": "準備", "to": "用意 / 確認", "why": "kanji 準 untaught; 用意 and 確認 taught (script, key)"},
+   {"from": "資料", "to": "会議で使う紙", "why": "資料 untaught word (script, distractors)"},
+   {"from": "机に並べる", "to": "テーブルに置く", "why": "kanji 机 並 untaught (script, distractor)"},
+   {"from": "直前", "to": "前", "why": "直前 untaught word"},
+   {"from": "冷め", "to": "冷たくなっ", "why": "冷める untaught word; 冷たい taught"}
+  ],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "lt:n3:011": {
+  "script": [
+   {"speaker": "N", "text": "家で男の人と女の人が話しています。"},
+   {"speaker": "M1", "text": "ただいま。わあ、何、この大きい箱。"},
+   {"speaker": "F1", "text": "おばあちゃんが、庭のトマトを送ってくれたの。でも、こんなにたくさん、二人じゃ食べきれないよ。"},
+   {"speaker": "M1", "text": "本当だ。今夜、全部サラダにして食べちゃう？"},
+   {"speaker": "F1", "text": "全部は無理よ。じゃあ、となりの田中さんに半分あげようかな。"},
+   {"speaker": "M1", "text": "田中さん、今週は旅行でいないって言ってたよ。スープにして、少しずつ食べたら？"},
+   {"speaker": "F1", "text": "毎日スープは、ちょっとね。そうだ、明日、会社に持って行って、みんなにあげるわ。それが一番いい。"}
+  ],
+  "question": "女の人はトマトをどうしますか。",
+  "options": ["会社に持って行ってみんなにあげる", "全部サラダにして食べる", "となりの人にあげる", "スープにして少しずつ食べる"],
+  "key": "会社に持って行ってみんなにあげる",
+  "changed_tokens": [
+   {"from": "畑", "to": "庭", "why": "kanji 畑 untaught; 庭 taught"},
+   {"from": "隣", "to": "となり", "why": "kanji 隣 untaught; kana spelling (script, distractor)"},
+   {"from": "佐藤", "to": "田中", "why": "kanji 佐 藤 untaught; a taught surname"},
+   {"from": "ソースにして冷凍しておいたら / 冷凍庫、今いっぱい", "to": "スープにして、少しずつ食べたら / 毎日スープは、ちょっとね", "why": "kanji 凍 庫 and words ソース 冷凍 untaught; the rejected keep-it option survives (script, distractor)"},
+   {"from": "配る", "to": "あげる", "why": "配る untaught word (script, key)"}
+  ],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "lt:n3:012": {
+  "script": [
+   {"speaker": "N", "text": "会社の近くの食堂で、女の人と男の人が話しています。"},
+   {"speaker": "F1", "text": "私はてんぷらにするけど、木村さんは？"},
+   {"speaker": "M1", "text": "暑くて食欲がないから、あぶらが多いものは今日はちょっと。何か、さっぱりしたものがいいな。"},
+   {"speaker": "F1", "text": "じゃあ、冷たいそばは？"},
+   {"speaker": "M1", "text": "そばは、昨日の夜も食べたんだよね。このおかゆも、さっぱりしてそうだなあ。"},
+   {"speaker": "F1", "text": "おかゆだけだと、午後、おなかがすくよ。今日は長い会議があるんだから。"},
+   {"speaker": "M1", "text": "それもそうだね。じゃあ、この冷やしうどんにするよ。野菜ものってるし。"}
+  ],
+  "question": "男の人は何を注文しますか。",
+  "options": ["冷やしうどん", "てんぷら", "冷たいそば", "おかゆ"],
+  "key": "冷やしうどん",
+  "changed_tokens": [
+   {"from": "てんぷら定食", "to": "てんぷら", "why": "定食 untaught word (script, distractor)"},
+   {"from": "揚げ物", "to": "あぶらが多いもの", "why": "kanji 揚 untaught"},
+   {"from": "梅のおかゆ", "to": "おかゆ", "why": "kanji 梅 untaught; flavor detail only"}
+  ],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "lt:n3:013": {
+  "script": [
+   {"speaker": "N", "text": "料理教室で、女の先生と男の人が話しています。"},
+   {"speaker": "F1", "text": "はい、パンの生地ができましたね。"},
+   {"speaker": "M1", "text": "できました。すぐオーブンに入れますか。"},
+   {"speaker": "F1", "text": "いえ、オーブンに入れる前に、生地を３０分休ませます。その間に、上にのせる野菜を切りましょう。"},
+   {"speaker": "M1", "text": "わかりました。オーブンは、もうつけておきますか。"},
+   {"speaker": "F1", "text": "オーブンは、野菜を切り終わってからでだいじょうぶです。それから、時間があったら、次の作り方の紙をざっと読んでおいてください。"},
+   {"speaker": "M1", "text": "はい。じゃあ、まず野菜からですね。"}
+  ],
+  "question": "男の人はこのあとまず何をしますか。",
+  "options": ["野菜を切る", "生地をオーブンに入れる", "オーブンをつける", "作り方の紙を読む"],
+  "key": "野菜を切る",
+  "changed_tokens": [
+   {"from": "オーブンで焼く", "to": "オーブンに入れる", "why": "kanji 焼 untaught (script, distractor)"},
+   {"from": "温める", "to": "つける", "why": "kanji 温 and word 温める untaught (script, distractor)"},
+   {"from": "大丈夫", "to": "だいじょうぶ", "why": "kanji 丈 untaught; kana spelling"}
+  ],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "lt:n3:014": {
+  "script": [
+   {"speaker": "N", "text": "不動産屋で、男の人と店の女の人が話しています。"},
+   {"speaker": "F1", "text": "いらっしゃいませ。どんなお部屋をお探しですか。"},
+   {"speaker": "M1", "text": "駅から近くて、静かな部屋を探しています。お金は一か月７万円まで。それから、前にずっと日が当たらない部屋に住んでいて、いやだったので、日がよく当たる部屋がいいです。"},
+   {"speaker": "F1", "text": "では、この駅前の部屋はいかがですか。駅から歩いて２分ですよ。"},
+   {"speaker": "M1", "text": "うーん、大きい道路の前だから、夜はうるさそうですね。こっちの、公園のとなりのアパートはどうですか。"},
+   {"speaker": "F1", "text": "そちらは人気で、あいにく今は日が当たらない部屋しか空いていないんです。この川の近くの部屋なら、日もよく当たりますよ。ただ、一か月７万５千円なんですが。"},
+   {"speaker": "M1", "text": "７万円より高いなあ。あ、この大学の近くの部屋は、６万８千円で、日もよく当たるんですね。駅からも歩いて５分だし、近くも静かそうだし、ここがいいな。今日、見られますか。"},
+   {"speaker": "F1", "text": "はい、ご案内します。"}
+  ],
+  "question": "男の人はどの部屋を見に行きますか。",
+  "options": ["大学の近くの部屋", "駅前の部屋", "公園のとなりのアパート", "川の近くの部屋"],
+  "key": "大学の近くの部屋",
+  "changed_tokens": [
+   {"from": "ご希望は、どんなお部屋", "to": "どんなお部屋をお探し", "why": "kanji 希 untaught"},
+   {"from": "家賃", "to": "お金は一か月 / 一か月", "why": "kanji 賃 untaught"},
+   {"from": "一階 / 何階 / 三階 / 二階", "to": "日が当たる/当たらない部屋", "why": "kanji 階 untaught; the floor criterion was a stand-in for sunlight, now stated directly, each candidate still fails one condition"},
+   {"from": "嫌", "to": "いや", "why": "kanji 嫌 untaught; kana spelling"},
+   {"from": "マンション", "to": "部屋", "why": "マンション untaught word (script, distractor)"},
+   {"from": "日当たり", "to": "日もよく当たります", "why": "日当たり untaught word"},
+   {"from": "予算", "to": "７万円", "why": "kanji 算 untaught"},
+   {"from": "周り", "to": "近く", "why": "kanji 周 untaught"}
+  ],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "lt:n3:015": {
+  "script": [
+   {"speaker": "N", "text": "図書館で、男の学生と係の女の人が話しています。"},
+   {"speaker": "M1", "text": "すみません、この「海の生物」という本を探しているんですが、見つからなくて。"},
+   {"speaker": "F1", "text": "調べますね。ああ、この本は今、貸し出し中です。もどってくるのは、来週の水曜日ですね。"},
+   {"speaker": "M1", "text": "レポートが金曜日までなので、水曜日まで待っていたら、間に合わないなあ。じゃあ、予約だけしようかな。それとも、インターネットで調べたことだけで書こうかなあ。"},
+   {"speaker": "F1", "text": "レポートでしたら、本も読んだほうがいいですよ。それに、この本と内容がそっくりな新しい本が、窓の近くにありますよ。同じ先生が書いた本で、写真も多いです。"},
+   {"speaker": "M1", "text": "え、本当ですか。じゃあ、予約はしなくていいです。"},
+   {"speaker": "F1", "text": "窓の近くの、一番下の段です。見つからなかったら、また声をかけてください。"},
+   {"speaker": "M1", "text": "ありがとうございます。今から見てみます。"}
+  ],
+  "question": "男の学生はこのあとまず何をしますか。",
+  "options": ["窓の近くに本を探しに行く", "「海の生物」を予約する", "水曜日まで待って本を借りる", "インターネットで調べたことだけでレポートを書く"],
+  "key": "窓の近くに本を探しに行く",
+  "changed_tokens": [
+   {"from": "棚に見つからなくて", "to": "見つからなくて", "why": "kanji 棚 untaught"},
+   {"from": "奥の棚", "to": "窓の近く", "why": "kanji 奥 棚 untaught; 窓 taught (script, key)"},
+   {"from": "お調べします", "to": "調べます", "why": "調べ (noun) untaught word; verb 調べる taught"},
+   {"from": "返って", "to": "もどって", "why": "返る untaught word"},
+   {"from": "インターネットの資料", "to": "インターネットで調べたこと", "why": "資料 untaught word (script, distractor)"}
+  ],
+  "source": "edited", "needs_review": true, "layer": "C"
+ },
+ "lt:n3:016": {
+  "script": [
+   {"speaker": "N", "text": "大学の事務所で、男の学生と係の女の人が話しています。"},
+   {"speaker": "M1", "text": "すみません、留学に申し込みたいんですが。"},
+   {"speaker": "F1", "text": "はい。それには、この申込書と、先生の手紙、学生カードのコピー、それから写真が必要です。"},
+   {"speaker": "M1", "text": "先生の手紙は、もう先生にいただきました。コピーは、あそこのコピー機でできますよね。"},
+   {"speaker": "F1", "text": "それが、今日はあいにくコピー機がこわれていまして。使えるのは、明日からなんです。"},
+   {"speaker": "M1", "text": "そうですか。じゃあ、先に写真をとってこようかな。駅前で写真がとれるので。"},
+   {"speaker": "F1", "text": "写真は、書類を出すときまでにあればだいじょうぶですよ。それより、申込書は書くところが多いので、今ここで書いてしまったらどうですか。"},
+   {"speaker": "M1", "text": "わかりました。じゃあ、ここで書きます。ペンを借りてもいいですか。"}
+  ],
+  "question": "男の学生はこのあとまず何をしますか。",
+  "options": ["申込書を書く", "学生カードのコピーをする", "写真をとりに行く", "先生に手紙をもらう"],
+  "key": "申込書を書く",
+  "changed_tokens": [
+   {"from": "奨学金の申し込み", "to": "留学に申し込み", "why": "kanji 奨 and noun 申し込み untaught; 留学 and verb 申し込む taught"},
+   {"from": "推薦状", "to": "先生の手紙", "why": "kanji 推 薦 untaught (script, distractor)"},
+   {"from": "成績の証明書", "to": "学生カードのコピー", "why": "kanji 績 証 untaught; another document the machine produces (script, distractor)"},
+   {"from": "写真が１枚", "to": "写真", "why": "kanji 枚 untaught"},
+   {"from": "廊下の機械", "to": "あそこのコピー機", "why": "kanji 廊 械 untaught"},
+   {"from": "故障していまして", "to": "こわれていまして", "why": "kanji 故 障 untaught"},
+   {"from": "撮って / 撮り", "to": "とって / とり", "why": "kanji 撮 untaught; kana spelling (script, distractor)"},
+   {"from": "写真の機械がある", "to": "写真がとれる", "why": "kanji 械 untaught"},
+   {"from": "大丈夫", "to": "だいじょうぶ", "why": "kanji 丈 untaught; kana spelling"}
+  ],
+  "source": "edited", "needs_review": true, "layer": "C"
+ }
+}

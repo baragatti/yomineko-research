@@ -1,0 +1,371 @@
+{
+ "lr:n4:tatoeba-8687007": {
+  "script": [{"speaker": "F1", "text": "それでいい？"}],
+  "question": "",
+  "options": ["うん、だいじょうぶだよ。", "それはよかったね。", "うん、もう行ったよ。"],
+  "key": "うん、だいじょうぶだよ。",
+  "changed_tokens": [{"field": "correct", "from": "大丈夫", "to": "だいじょうぶ"}],
+  "source": "real",
+  "needs_review": true
+ },
+ "lr:n4:tatoeba-8719362": {
+  "script": [{"speaker": "M1", "text": "それで十分？"}],
+  "question": "",
+  "options": ["うん、足りるよ。", "１０分ぐらいかかるよ。", "うん、ぜんぜん足りないよ。"],
+  "key": "うん、足りるよ。",
+  "changed_tokens": [{"field": "distractors[1]", "from": "全然", "to": "ぜんぜん"}],
+  "source": "real",
+  "needs_review": true
+ },
+ "lr:n4:tatoeba-10049455": {
+  "script": [{"speaker": "F1", "text": "やっといたよ。"}],
+  "question": "",
+  "options": ["ほんと？うれしいな。", "じゃ、早くやってね。", "うん、やっとくね。"],
+  "key": "ほんと？うれしいな。",
+  "changed_tokens": [{"field": "correct", "from": "ありがとう、助かるよ。", "to": "ほんと？うれしいな。"}],
+  "source": "real",
+  "needs_review": true
+ },
+ "lr:n4:tatoeba-10628551": {
+  "script": [{"speaker": "M1", "text": "上にあがるね。"}],
+  "question": "",
+  "options": ["うん、あとから行くね。", "え、下におりるの？", "ねだんがあがったね。"],
+  "key": "うん、あとから行くね。",
+  "changed_tokens": [{"field": "distractors[1]", "from": "値段", "to": "ねだん"}],
+  "source": "real",
+  "needs_review": true
+ },
+ "lr:n4:tatoeba-11270411": {
+  "script": [{"speaker": "F1", "text": "薬、もう飲んだ？"}],
+  "question": "",
+  "options": ["うん、さっき飲んだよ。", "うん、まだ飲んでないよ。", "お大事に。"],
+  "key": "うん、さっき飲んだよ。",
+  "changed_tokens": [{"field": "script[0]", "from": "薬飲んだっけ？", "to": "薬、もう飲んだ？"}],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "lr:n4:tatoeba-173469": {
+  "script": [{"speaker": "M1", "text": "考えておくよ。"}],
+  "question": "",
+  "options": ["うん、待ってるね。", "もうきめたの？", "よく考えたね。"],
+  "key": "うん、待ってるね。",
+  "changed_tokens": [
+   {"field": "correct", "from": "うん、お願いね。", "to": "うん、待ってるね。"},
+   {"field": "distractors[0]", "from": "で、どう決めたの？", "to": "もうきめたの？"}
+  ],
+  "source": "real",
+  "needs_review": true
+ },
+ "ls:n4:001": {
+  "script": [{"speaker": "N", "text": "新しいステレオを買いました。古いステレオを先生にあげたいです。先生に何と言いますか。"}],
+  "question": "",
+  "options": ["先生、よかったらこのステレオ、さしあげます。", "先生、よかったらこのステレオ、いただきます。", "先生、よかったらこのステレオ、くださいませんか。"],
+  "key": "先生、よかったらこのステレオ、さしあげます。",
+  "changed_tokens": [{"field": "correct", "from": "差し上げます", "to": "さしあげます"}],
+  "source": "generated",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "ls:n4:002": {
+  "script": [{"speaker": "N", "text": "レストランに来ました。ステーキが食べたいです。店の人に何と言いますか。"}],
+  "question": "",
+  "options": ["すみません、ステーキをください。", "すみません、ステーキはいかがですか。", "すみません、ステーキをめしあがります。"],
+  "key": "すみません、ステーキをください。",
+  "changed_tokens": [
+   {"field": "correct", "from": "お願いします", "to": "ください"},
+   {"field": "distractors[1]", "from": "召し上がります", "to": "めしあがります"}
+  ],
+  "source": "generated",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "ls:n4:004": {
+  "script": [{"speaker": "N", "text": "駅で、おばあさんが重いスーツケースを持って、こまっています。てつだいたいです。何と言いますか。"}],
+  "question": "",
+  "options": ["そのスーツケース、お持ちしましょうか。", "そのスーツケース、持ってくれませんか。", "そのスーツケース、お持ちください。"],
+  "key": "そのスーツケース、お持ちしましょうか。",
+  "changed_tokens": [
+   {"field": "script[0]", "from": "困って", "to": "こまって"},
+   {"field": "script[0]", "from": "手伝いたい", "to": "てつだいたい"}
+  ],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "ls:n4:005": {
+  "script": [{"speaker": "N", "text": "社長がへやに入って来ました。すわってほしいです。社長に何と言いますか。"}],
+  "question": "",
+  "options": ["社長、こちらのせきにおすわりください。", "社長、こちらのせきにおすわりしてください。", "社長、こちらのせきにすわらせてください。"],
+  "key": "社長、こちらのせきにおすわりください。",
+  "changed_tokens": [
+   {"field": "script[0]", "from": "部屋", "to": "へや"},
+   {"field": "script[0]", "from": "座って", "to": "すわって"},
+   {"field": "options", "from": "席", "to": "せき"},
+   {"field": "options", "from": "座り/座ら", "to": "すわり/すわら"}
+  ],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "ls:n4:006": {
+  "script": [{"speaker": "N", "text": "会社の仕事が終わりました。ほかの人より先に帰ります。会社の人に何と言いますか。"}],
+  "question": "",
+  "options": ["お先にしつれいします。", "お先にどうぞ。", "お帰りなさい。"],
+  "key": "お先にしつれいします。",
+  "changed_tokens": [{"field": "correct", "from": "失礼", "to": "しつれい"}],
+  "source": "generated",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "ls:n4:007": {
+  "script": [{"speaker": "N", "text": "とこやでかみを切ってもらっています。まだ少し長いと思います。店の人に何と言いますか。"}],
+  "question": "",
+  "options": ["すみません、もう少し短くしてください。", "すみません、もう少し短くなってください。", "すみません、もう少し短くしましょうか。"],
+  "key": "すみません、もう少し短くしてください。",
+  "changed_tokens": [
+   {"field": "script[0]", "from": "床屋", "to": "とこや"},
+   {"field": "script[0]", "from": "髪", "to": "かみ"}
+  ],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "ls:n4:009": {
+  "script": [{"speaker": "N", "text": "学校でじゅぎょうが始まります。テキストを家にわすれてしまいました。となりのともだちに何と言いますか。"}],
+  "question": "",
+  "options": ["テキストわすれちゃった。いっしょに見せてくれない？", "テキストわすれちゃった。いっしょに見せてあげない？", "テキストわすれちゃった。いっしょに見せてもらわない？"],
+  "key": "テキストわすれちゃった。いっしょに見せてくれない？",
+  "changed_tokens": [
+   {"field": "script[0]", "from": "授業", "to": "じゅぎょう"},
+   {"field": "script[0]+options", "from": "忘れ", "to": "わすれ"},
+   {"field": "script[0]", "from": "隣", "to": "となり"},
+   {"field": "script[0]", "from": "友達", "to": "ともだち"}
+  ],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "ls:n4:010": {
+  "script": [{"speaker": "N", "text": "日曜日、ともだちといっしょにテニスがしたいです。ともだちに何と言いますか。"}],
+  "question": "",
+  "options": ["日曜日、いっしょにテニスしない？", "日曜日、いっしょにテニスしてもいい？", "日曜日、いっしょにテニスさせない？"],
+  "key": "日曜日、いっしょにテニスしない？",
+  "changed_tokens": [{"field": "script[0]", "from": "友達", "to": "ともだち"}],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "ls:n4:011": {
+  "script": [{"speaker": "N", "text": "電車をおりてから、ハンドバッグがないことに気がつきました。駅の人に何と言いますか。"}],
+  "question": "",
+  "options": ["すみません、電車にハンドバッグをわすれてしまったんですが。", "すみません、電車にハンドバッグをわすれておいたんですが。", "すみません、電車にハンドバッグをわすれてみたんですが。"],
+  "key": "すみません、電車にハンドバッグをわすれてしまったんですが。",
+  "changed_tokens": [
+   {"field": "script[0]", "from": "降りて", "to": "おりて"},
+   {"field": "options", "from": "忘れ", "to": "わすれ"}
+  ],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "ls:n4:012": {
+  "script": [{"speaker": "N", "text": "ともだちがうちに来たので、ハンバーグを作りました。食べてほしいです。何と言いますか。"}],
+  "question": "",
+  "options": ["ハンバーグを作ったから、どうぞ食べて。", "ハンバーグを作ったから、どうぞ食べさせて。", "ハンバーグを作ったから、どうぞいただいて。"],
+  "key": "ハンバーグを作ったから、どうぞ食べて。",
+  "changed_tokens": [{"field": "script[0]", "from": "友達", "to": "ともだち"}],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "ls:n4:013": {
+  "script": [{"speaker": "N", "text": "来週、新しいうちにひっこします。一人ではたいへんなので、ともだちにてつだってほしいです。何と言いますか。"}],
+  "question": "",
+  "options": ["来週ひっこすんだけど、てつだってもらえない？", "来週ひっこすんだけど、てつだってあげようか。", "来週ひっこすんだけど、てつだわせてもらえない？"],
+  "key": "来週ひっこすんだけど、てつだってもらえない？",
+  "changed_tokens": [
+   {"field": "script[0]+options", "from": "引っ越", "to": "ひっこ"},
+   {"field": "script[0]", "from": "大変", "to": "たいへん"},
+   {"field": "script[0]", "from": "友達", "to": "ともだち"},
+   {"field": "script[0]+options", "from": "手伝", "to": "てつだ"}
+  ],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "ls:n4:014": {
+  "script": [{"speaker": "N", "text": "きっさてんに入りましたが、店はいっぱいです。一つだけ、だれもすわっていないせきがあります。となりの人に何と言いますか。"}],
+  "question": "",
+  "options": ["すみません、このせき、空いてますか。", "すみません、このせき、空けてますか。", "すみません、このせき、空いてましたか。"],
+  "key": "すみません、このせき、空いてますか。",
+  "changed_tokens": [
+   {"field": "script[0]", "from": "喫茶店", "to": "きっさてん"},
+   {"field": "script[0]", "from": "誰", "to": "だれ"},
+   {"field": "script[0]", "from": "座って", "to": "すわって"},
+   {"field": "script[0]+options", "from": "席", "to": "せき"},
+   {"field": "script[0]", "from": "隣", "to": "となり"}
+  ],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "ls:n4:015": {
+  "script": [{"speaker": "N", "text": "先生にいいじしょを教えてもらいました。使ってみると、とてもやくに立ちました。先生に何と言いますか。"}],
+  "question": "",
+  "options": ["いいじしょを教えてくださって、ありがとうございました。", "いいじしょを教えてあげて、ありがとうございました。", "いいじしょを教えてもらって、ありがとうございました。"],
+  "key": "いいじしょを教えてくださって、ありがとうございました。",
+  "changed_tokens": [
+   {"field": "script[0]+options", "from": "辞書", "to": "じしょ"},
+   {"field": "script[0]", "from": "役に立ちました", "to": "やくに立ちました"}
+  ],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "lt:n4:001": {
+  "script": [
+   {"speaker": "N", "text": "会社で女の人と男の人が話しています。男の人はこのあとまず何をしますか。"},
+   {"speaker": "F1", "text": "田中さん、午後のかいぎのじゅんびをしてください。まず、かいぎしつのつくえの上をかたづけてもらえますか。"},
+   {"speaker": "M1", "text": "わかりました。あっ、かいぎで使う紙のコピーもしましょうか。"},
+   {"speaker": "F1", "text": "コピーはもう終わっていますよ。いすをならべるのは私がやりますから、つくえが終わったら、飲み物を買ってきてください。"},
+   {"speaker": "M1", "text": "はい、わかりました。"}
+  ],
+  "question": "男の人はこのあとまず何をしますか。",
+  "options": ["つくえの上をかたづける", "紙をコピーする", "いすをならべる", "飲み物を買いに行く"],
+  "key": "つくえの上をかたづける",
+  "changed_tokens": [
+   {"field": "script[1]", "from": "会議", "to": "かいぎ"},
+   {"field": "script[1]", "from": "準備をお願いします", "to": "じゅんびをしてください"},
+   {"field": "script[1]", "from": "会議室", "to": "かいぎしつ"},
+   {"field": "script[1]+script[3]+options", "from": "机", "to": "つくえ"},
+   {"field": "script[1]+options", "from": "片付け", "to": "かたづけ"},
+   {"field": "script[2]+options", "from": "資料", "to": "かいぎで使う紙 / 紙"},
+   {"field": "script[3]+options", "from": "椅子", "to": "いす"},
+   {"field": "script[3]+options", "from": "並べる", "to": "ならべる"}
+  ],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "lt:n4:002": {
+  "script": [
+   {"speaker": "N", "text": "会社で女の人と男の人が話しています。女の人はこのあとまず何をしますか。"},
+   {"speaker": "F1", "text": "社長、かいぎのレポート、だいぶできました。あと少しで終わるので、終わったらコピーしましょうか。"},
+   {"speaker": "M1", "text": "ありがとう。でも、コピーより先に、この手紙をゆうびんきょくで出してきてもらえますか。急ぎなので。"},
+   {"speaker": "F1", "text": "わかりました。あのう、メールのへんじも書かなければならないんですが。"},
+   {"speaker": "M1", "text": "メールは午後でいいですよ。ああ、それから、昼ご飯はみんなで食べに行きましょう。"},
+   {"speaker": "F1", "text": "いいですね。じゃあ、先にゆうびんきょくへ行ってきます。"}
+  ],
+  "question": "女の人はこのあとまず何をしますか。",
+  "options": ["ゆうびんきょくで手紙を出す", "レポートをコピーする", "メールのへんじを書く", "昼ご飯を食べに行く"],
+  "key": "ゆうびんきょくで手紙を出す",
+  "changed_tokens": [
+   {"field": "script[1]", "from": "部長", "to": "社長"},
+   {"field": "script[1]", "from": "会議", "to": "かいぎ"},
+   {"field": "script[1]+options", "from": "資料", "to": "レポート"},
+   {"field": "script[1]", "from": "大分", "to": "だいぶ"},
+   {"field": "script[1]", "from": "すぐ印刷", "to": "コピー"},
+   {"field": "script[2]+options", "from": "印刷", "to": "コピー"},
+   {"field": "script[2]+script[5]+options", "from": "郵便局", "to": "ゆうびんきょく"},
+   {"field": "script[3]+options", "from": "返事", "to": "へんじ"}
+  ],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "lt:n4:003": {
+  "script": [
+   {"speaker": "N", "text": "店で男の人と女の人が話しています。女の人はおみやげに何を買いますか。"},
+   {"speaker": "M1", "text": "おみやげ、もう買った？このおかし、おいしそうだよ。"},
+   {"speaker": "F1", "text": "おかしはみんな買うから、ほかのものがいいな。この店だけの特別なおちゃはどう？"},
+   {"speaker": "M1", "text": "おちゃは重いから、やめたほうがいいよ。このにんぎょうはどう？かわいいよ。"},
+   {"speaker": "F1", "text": "にんぎょうは、妹のへやにもうたくさんあるの。あ、このハンカチ、かわいい。妹は大学生だから、こういうのが好きだと思う。これにする。"}
+  ],
+  "question": "女の人はおみやげに何を買いますか。",
+  "options": ["ハンカチ", "おかし", "おちゃ", "にんぎょう"],
+  "key": "ハンカチ",
+  "changed_tokens": [
+   {"field": "script+question", "from": "お土産", "to": "おみやげ"},
+   {"field": "script+options", "from": "お菓子", "to": "おかし"},
+   {"field": "script+options", "from": "お茶", "to": "おちゃ"},
+   {"field": "script+options", "from": "人形", "to": "にんぎょう"},
+   {"field": "script[4]", "from": "部屋", "to": "へや"}
+  ],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "lt:n4:004": {
+  "script": [
+   {"speaker": "N", "text": "駅で男の人と駅の女の人が話しています。男の人は何に乗りますか。"},
+   {"speaker": "M1", "text": "すみません、北山へ行きたいんですが、つぎの特急は何時ですか。"},
+   {"speaker": "F1", "text": "特急は３時までありませんよ。急行なら、あと１０分で出ます。"},
+   {"speaker": "M1", "text": "そうですか。バスもありますよね。"},
+   {"speaker": "F1", "text": "ええ。でも、バスはたいてい、電車より時間がかかりますよ。ふつう電車も、止まる駅が多いのでおそいです。急行がいちばん早く着きますよ。"},
+   {"speaker": "M1", "text": "わかりました。じゃあ、急行に乗ります。"}
+  ],
+  "question": "男の人は何に乗りますか。",
+  "options": ["急行", "特急", "ふつう電車", "バス"],
+  "key": "急行",
+  "changed_tokens": [
+   {"field": "script[1]", "from": "桜山", "to": "北山"},
+   {"field": "script[1]", "from": "次", "to": "つぎ"},
+   {"field": "script[4]", "from": "大抵", "to": "たいてい"},
+   {"field": "script[4]+options", "from": "普通電車", "to": "ふつう電車"},
+   {"field": "script[4]", "from": "遅い", "to": "おそい"},
+   {"field": "script[4]", "from": "一番", "to": "いちばん"}
+  ],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "lt:n4:005": {
+  "script": [
+   {"speaker": "N", "text": "会社で男の人と女の人が話しています。男の人は先生のおたくに何を持って行きますか。"},
+   {"speaker": "M1", "text": "明日、はじめて先生のおたくにうかがうんですが、何を持って行ったらいいと思いますか。"},
+   {"speaker": "F1", "text": "そうですね。コーヒーはどうですか。"},
+   {"speaker": "M1", "text": "先生はコーヒーが飲めないんです。ケーキはどうでしょうか。"},
+   {"speaker": "F1", "text": "てんきよほうで、明日はとても暑くなると言っていましたから、ケーキは悪くなってしまうかもしれませんよ。くだものか、お花はどうですか。"},
+   {"speaker": "M1", "text": "花は、先生のおたくにたくさんあるそうです。じゃあ、くだものにします。"}
+  ],
+  "question": "男の人は先生のおたくに何を持って行きますか。",
+  "options": ["くだもの", "コーヒー", "ケーキ", "花"],
+  "key": "くだもの",
+  "changed_tokens": [
+   {"field": "script+question", "from": "お宅", "to": "おたく"},
+   {"field": "script[1]", "from": "初めて", "to": "はじめて"},
+   {"field": "script[1]", "from": "伺う", "to": "うかがう"},
+   {"field": "script[2]+script[3]+options", "from": "お酒", "to": "コーヒー"},
+   {"field": "script[4]", "from": "天気予報", "to": "てんきよほう"},
+   {"field": "script[4]+script[5]+options", "from": "果物", "to": "くだもの"}
+  ],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ },
+ "lt:n4:006": {
+  "script": [
+   {"speaker": "N", "text": "デパートで女の人と男の人が話しています。女の人はプレゼントに何を買いますか。"},
+   {"speaker": "F1", "text": "山田さんの子どものたんじょうびプレゼント、何がいいかな。"},
+   {"speaker": "M1", "text": "おかしはどう？子どもはみんなチョコレートが好きだよ。"},
+   {"speaker": "F1", "text": "あまいものをたくさん食べると太っちゃうから、お母さんがしんぱいするよ。おもちゃはどうかな。"},
+   {"speaker": "M1", "text": "おもちゃはもうたくさん持っているって聞いたよ。えほんか、服は？"},
+   {"speaker": "F1", "text": "服は何がいいかわからないから、えほんにする。"}
+  ],
+  "question": "女の人はプレゼントに何を買いますか。",
+  "options": ["えほん", "おかし", "おもちゃ", "服"],
+  "key": "えほん",
+  "changed_tokens": [
+   {"field": "script[1]", "from": "誕生日", "to": "たんじょうび"},
+   {"field": "script[2]+options", "from": "お菓子", "to": "おかし"},
+   {"field": "script[3]", "from": "甘い", "to": "あまい"},
+   {"field": "script[3]", "from": "心配", "to": "しんぱい"},
+   {"field": "script[4]+script[5]+options", "from": "絵本", "to": "えほん"},
+   {"field": "script[5]", "from": "サイズがわからない", "to": "何がいいかわからない"}
+  ],
+  "source": "edited",
+  "ai_generated": true,
+  "needs_review": true
+ }
+}

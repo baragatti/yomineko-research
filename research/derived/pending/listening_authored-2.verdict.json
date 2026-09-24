@@ -1,0 +1,51 @@
+{
+ "lt:n5:017": {
+  "ok": false,
+  "problem": "Two defensible keys. The question asks what the girl does 'このあと' (after this), and the script has her say 'テレビはあとで見ます' (she will watch TV later), so テレビを見る is also something she does after the conversation. The task family's sequencing trap only works if the question asks for the FIRST action. Level: clean (no untaught kanji; よる/うち/はやい/おふろ/おそい/こまる/しゅくだい/おわる/ばんごはん are all taught N5 words written in kana; だめ is N4, so the swap to いいですか/いいえ is correct). Fix: ask for the first action with 'いちばん先に' (先 taught, same phrasing as lt:n5:020), keeping the あとで distractor.",
+  "corrected": {
+   "script": [
+    {"speaker": "N", "text": "よる、うちでお母さんと女の子が話しています。"},
+    {"speaker": "F1", "text": "もう９時ですよ。はやくおふろに入ってください。"},
+    {"speaker": "F2", "text": "このテレビ、あと少し見たいです。いいですか。"},
+    {"speaker": "F1", "text": "いいえ。もうおそいですから、こまりますよ。しゅくだいはおわりましたか。"},
+    {"speaker": "F2", "text": "しゅくだいはもうおわりました。ばんごはんも食べました。わかりました。テレビはあとで見ます。今からおふろに入ります。"}
+   ],
+   "question": "女の子はこのあといちばん先に何をしますか。",
+   "options": ["おふろに入る", "テレビを見る", "しゅくだいをする", "ばんごはんを食べる"],
+   "key": "おふろに入る",
+   "edit": "question: このあと何をしますか -> このあといちばん先に何をしますか",
+   "source": "edited",
+   "ai_generated": true,
+   "needs_review": true
+  }
+ },
+ "lt:n5:018": {
+  "ok": true
+ },
+ "lt:n5:019": {
+  "ok": true
+ },
+ "lt:n5:020": {
+  "ok": true
+ },
+ "lt:n5:021": {
+  "ok": false,
+  "problem": "Untaught grammar in an N5 script: the clause-linking が in '山へ行きますが、いっしょに行きませんか' is the ですが/だが 'but' point (gram:gp-61), which the course teaches at N4, not N5; the rewrite kept it from the original. Also 'じゃあ、日よう日のかいものは。いっしょにどうですか。' prints a dangling は-fragment as a full sentence. Kanji are clean (曜 avoided as 土よう日/日よう日; the intended words 土曜日/日曜日 are taught N5, the Sudachi split 土よう+日 is a tokenizer artifact), key is unique (morning = cleaning, movie moved to 来週, shopping is Sunday and undecided). Fix: split the invitation into two sentences and join the は-fragment to its predicate.",
+  "corrected": {
+   "script": [
+    {"speaker": "N", "text": "会社で男の人と女の人が話しています。"},
+    {"speaker": "F1", "text": "土よう日の午後、みんなで山へ行きます。いっしょに行きませんか。"},
+    {"speaker": "M1", "text": "土よう日ですか。午前はへやのそうじをします。それから、午後はえいがを見たいです。"},
+    {"speaker": "F1", "text": "そうですか。じゃあ、日よう日のかいものは、いっしょにどうですか。"},
+    {"speaker": "M1", "text": "さあ、日よう日はまだわかりません。ああ、でも、山へも行きたいです。えいがは来週にします。土よう日の午後、いっしょに山へ行きます。"}
+   ],
+   "question": "男の人は土よう日の午後、何をしますか。",
+   "options": ["山へ行く", "へやのそうじをする", "えいがを見る", "かいものをする"],
+   "key": "山へ行く",
+   "edit": "script[1]: 行きますが、 -> 行きます。 ; script[3]: かいものは。いっしょに -> かいものは、いっしょに",
+   "source": "edited",
+   "ai_generated": true,
+   "needs_review": true
+  }
+ }
+}
