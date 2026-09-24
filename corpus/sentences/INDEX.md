@@ -270,6 +270,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:gen-1c231edea2d6 | 次の部屋に移りましょう | Vamos para a próxima sala. | n2 |
 | sent:gen-1c497d909b1e | 旅行先で葉書を書く | Escrevo um cartão-postal no destino da viagem. | n3 |
 | sent:gen-1c4bdeb3c472 | 子供たちがうるさいね | As crianças estão barulhentas, né? | n3 |
+| sent:gen-1c83f478ab11 | 薬をください | Um remédio, por favor. | n4 |
 | sent:gen-1c8c24a8c1ee | 薬を飲んで具合がよくなりました | Tomei o remédio e melhorei. | n3 |
 | sent:gen-1cd3eb2cb7ec | 彼は若い しかしとても強い | Ele é jovem, mas muito forte. | n3 |
 | sent:gen-1cd4d15bab49 | 犬を苛めないでください | Por favor, não maltrate o cachorro. | n1 |
@@ -2436,6 +2437,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-10006818 | 言いにくいな。 | É difícil de dizer, né. | n4 |
 | sent:tatoeba-10006824 | 二度と言うな。 | Não diga isso de novo. | n4 |
 | sent:tatoeba-100069 | 彼は母親に似ている。 | Ele é parecido com a mãe. | n3 |
+| sent:tatoeba-10008425 | お腹が痛いです。 | Está doendo a barriga. | n3 |
 | sent:tatoeba-10008430 | 本当の目標は何？ | Qual é o objetivo de verdade? | n1 |
 | sent:tatoeba-10008433 | 緊張しています。 | Estou nervoso. | n1 |
 | sent:tatoeba-10013076 | 早く良くなりますように。 | Espero que você melhore logo. | n3 |
@@ -2863,6 +2865,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-105918 | 彼は私のほおに触った。 | Ele tocou na minha bochecha. | n2 |
 | sent:tatoeba-105937 | 彼は私にこの辞書を推薦してくれた。 | Ele me recomendou este dicionário. | n1 |
 | sent:tatoeba-105958 | 彼は私に門を閉じよと命令した。 | Ele me mandou fechar o portão. | n2 |
+| sent:tatoeba-1059956 | 忙しそうですね。 | Você parece ocupado. | n3 |
 | sent:tatoeba-10603327 | 猫は賢いよ。 | Gato é esperto, viu. | n2 |
 | sent:tatoeba-106048 | 彼は私に週末には一緒にいてくれと頼んだ。 | Ele me pediu pra fazer companhia a ele nos fins de semana. | n3 |
 | sent:tatoeba-106052 | 彼は私の手を掴んだ。 | Ele me pegou pela mão. | n3 |
@@ -2899,7 +2902,9 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-10643571 | サインはどこにするの？ | Onde é que eu assino? | n3 |
 | sent:tatoeba-106462 | 彼は死んだと言われている。 | Dizem que ele morreu. | n3 |
 | sent:tatoeba-106469 | 彼は死ぬまでユーモアの感覚を持ち続けた。 | Ele manteve o senso de humor até morrer. | n3 |
+| sent:tatoeba-10647148 | パスポートをなくしました。 | Eu perdi meu passaporte. | n3 |
 | sent:tatoeba-10647266 | この博物館は何時に閉まるの？ | Que horas esse museu fecha? | n1 |
+| sent:tatoeba-10647294 | 一番近い病院はどこですか？ | Onde fica o hospital mais perto? | n3 |
 | sent:tatoeba-106479 | 彼は支出を計算した。 | Ele calculou as despesas. | n2 |
 | sent:tatoeba-106487 | 彼は指導されなくても学ぶことができた。 | Ele conseguiu aprender mesmo sem orientação. | n2 |
 | sent:tatoeba-10650597 | 基本から始めなさい。 | Comece pelo básico. | n1 |
@@ -3291,6 +3296,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-11038989 | このお菓子は甘いです。 | Essa guloseima é doce. | n2 |
 | sent:tatoeba-11041688 | お前みたいになりたいよ。 | Quero ser igual a você. | n4 |
 | sent:tatoeba-11041763 | そんなに急かすなよ。 | Não me apressa tanto assim! | n4 |
+| sent:tatoeba-11041808 | これをいただきます。 | Vou levar este. | n4 |
 | sent:tatoeba-11041835 | 歯が欠けました。 | Lasquei um dente. | n3 |
 | sent:tatoeba-110449 | 彼はヨーロッパ経由で帰国した。 | Ele voltou para o país dele passando pela Europa. | n3 |
 | sent:tatoeba-11044901 | やってることがストーカーみたいになってきた。 | O que eu ando fazendo começou a parecer coisa de stalker. | n4 |
@@ -3681,6 +3687,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-1171169 | 私はボートで川を渡った。 | Eu atravessei o rio de barco. | n3 |
 | sent:tatoeba-1171178 | 父は来週海外に行く予定だ。 | Meu pai tem planos de ir para o exterior na semana que vem. | n3 |
 | sent:tatoeba-1171675 | テーブルの上にはまだたくさんの料理がある。 | Ainda há muita comida em cima da mesa. | n4 |
+| sent:tatoeba-1171888 | 何時まで開いてますか。 | Fica aberto até que horas? | n4 |
 | sent:tatoeba-1171894 | 妻へのプレゼントを探しているんです。 | É que estou procurando um presente para a minha esposa. | n3 |
 | sent:tatoeba-117228 | 彼の仕事は販売の促進です。 | O trabalho dele é promover as vendas. | n1 |
 | sent:tatoeba-117229 | 彼の仕事は水準に達した。 | O trabalho dele atingiu o nível esperado. | n2 |
@@ -3728,6 +3735,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-117944 | 彼の家族には何の不自由もない。 | A família dele não passa necessidade nenhuma. | n3 |
 | sent:tatoeba-11795454 | 新聞どこ置いたっけ？ | Onde foi que eu deixei o jornal? | n3 |
 | sent:tatoeba-11795596 | 8人孫がいます。 | Nós temos oito netos. | n2 |
+| sent:tatoeba-11795598 | 部屋を見てみたいです。 | Eu queria ver o quarto. | n3 |
 | sent:tatoeba-11795658 | 普段は６時に起きてます。 | Normalmente eu acordo às seis. | n2 |
 | sent:tatoeba-117992 | 彼の家はこの辺りだよ。 | A casa dele é por aqui perto. | n2 |
 | sent:tatoeba-118000 | 彼の家の前には松の木が立っている。 | Na frente da casa dele tem um pinheiro. | n1 |
@@ -3778,6 +3786,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-11870716 | ヨーロッパから来たの？ | Você veio da Europa? | n3 |
 | sent:tatoeba-11870752 | 今日は、公園に雪がたくさん積もっている。 | Hoje tem bastante neve acumulada no parque. | n3 |
 | sent:tatoeba-11870765 | 答え聞いたら、驚くかも。 | Se você ouvir a resposta, talvez se surpreenda. | n1 |
+| sent:tatoeba-11870768 | その方がいいと思う。 | Acho melhor assim. | n4 |
 | sent:tatoeba-118735 | 彼には勇気が欠けている。 | Falta coragem a ele. | n2 |
 | sent:tatoeba-118746 | 彼には本当にいらいらさせられる。 | Ele realmente me deixa irritado. | n3 |
 | sent:tatoeba-11875837 | 真似しないでよ。 | Não fica me imitando. | n3 |
@@ -3966,6 +3975,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-12207082 | ここが私の故郷です。 | Aqui é a minha cidade natal. | n1 |
 | sent:tatoeba-122084 | 入院する必要がありますか。 | Preciso ficar internado? | n3 |
 | sent:tatoeba-122086 | 入院しなくてもいいです。 | Você não precisa ser internado. | n4 |
+| sent:tatoeba-122101 | 入ってもよろしいですか。 | Posso entrar? | n4 |
 | sent:tatoeba-122103 | 入ってはいけません。 | Não pode entrar. | n4 |
 | sent:tatoeba-122118 | 日用品売り場は何階でしょうか。 | Em que andar fica a seção de produtos de uso diário? | n2 |
 | sent:tatoeba-122124 | 日曜日までそれを仕上げる必要がある。 | Você precisa terminar isso até domingo. | n3 |
@@ -3983,6 +3993,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-122326 | 日本語を話せるアメリカ人がたくさんいる。 | Há muitos americanos que sabem falar japonês. | n5 |
 | sent:tatoeba-122342 | 日本語の話せるスタッフがいますか。 | Vocês têm algum funcionário que fale japonês? | n5 |
 | sent:tatoeba-122353 | 日本語のガイドがありますか。 | Tem guia em japonês? | n5 |
+| sent:tatoeba-122452 | 日本は初めてですか。 | É a sua primeira vez no Japão? | n3 |
 | sent:tatoeba-122465 | 日本は材料のほとんどを輸入しなければならない。 | O Japão precisa importar quase toda a matéria-prima. | n2 |
 | sent:tatoeba-122506 | 日本はその国の新しい政府を承認した。 | O Japão reconheceu o novo governo daquele país. | n2 |
 | sent:tatoeba-12251135 | 私は芸術が好きだ。 | Eu gosto de arte. | n2 |
@@ -3993,6 +4004,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-12275994 | 去年の夏の出来事は忘れられないよ。 | Não consigo esquecer o que aconteceu no verão passado. | n3 |
 | sent:tatoeba-12281023 | 説明しづらい。 | É difícil de explicar. | n4 |
 | sent:tatoeba-122858 | 日常の運動は体に良い。 | Exercício diário faz bem para o corpo. | n3 |
+| sent:tatoeba-122877 | 日光へ行ったことがありますか。 | Você já foi a Nikko? | n3 |
 | sent:tatoeba-12288646 | どこでダンスを覚えたの？ | Onde você aprendeu a dançar? | n3 |
 | sent:tatoeba-12288647 | 問題は期間だな。 | O problema é o prazo. | n3 |
 | sent:tatoeba-122892 | 日記をつけるのはよい習慣です。 | Manter um diário é um bom hábito. | n3 |
@@ -4127,6 +4139,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-124844 | 電気をつけていただけませんか。 | Você poderia acender a luz, por favor? | n5 |
 | sent:tatoeba-12486212 | もうすぐ終わるよ。 | Já vai acabar, viu! | n4 |
 | sent:tatoeba-124894 | 田舎の風景は変わってしまった。 | A paisagem do interior mudou completamente. | n1 |
+| sent:tatoeba-124907 | 田舎に住んでいます。 | Eu moro no interior. | n1 |
 | sent:tatoeba-124912 | 田舎で生まれて育てられた。 | Nasci e fui criado no interior. | n1 |
 | sent:tatoeba-124972 | 店員は贈り物を包んでくれた。 | O vendedor embrulhou o presente para mim. | n2 |
 | sent:tatoeba-1249725 | 工場内での火事のニュースは世間を騒がせた。 | A notícia do incêndio dentro da fábrica abalou a opinião pública. | n1 |
@@ -4235,6 +4248,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-126620 | 茶色がいいんですが。 | É que eu queria um marrom... | n4 |
 | sent:tatoeba-12662603 | 3列目に座ってます。 | Estou sentado na terceira fileira. | n3 |
 | sent:tatoeba-126706 | 遅れて申し訳ない。 | Desculpa o atraso. | n1 |
+| sent:tatoeba-126707 | 遅れて申し訳ありません。 | Desculpe pelo atraso. | n1 |
 | sent:tatoeba-126710 | 遅れてすみません。 | Desculpe pelo atraso. | n3 |
 | sent:tatoeba-126809 | 恥ずかしさで彼女の頬が赤くなりはじめた。 | De vergonha, as bochechas dela começaram a ficar vermelhas. | n3 |
 | sent:tatoeba-126842 | 地平線の上に月が見えた。 | Dava para ver a lua acima do horizonte. | n2 |
@@ -4269,6 +4283,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-127120 | 値段は大きさによります。 | O preço depende do tamanho. | n3 |
 | sent:tatoeba-127122 | 値段は決して高くない。 | O preço não é nada caro. | n3 |
 | sent:tatoeba-127148 | 男性は男らしく見せたがる。 | Os homens querem parecer masculinos. | n3 |
+| sent:tatoeba-1271480 | どう思いますか。 | O que você acha? | n4 |
 | sent:tatoeba-127211 | 男はライターでたばこに火をつけた。 | O homem acendeu o cigarro com o isqueiro. | n3 |
 | sent:tatoeba-127212 | 男はぴたりと止まった。 | O homem parou de repente, totalmente imóvel. | n4 |
 | sent:tatoeba-1272425 | 紙が必要だ。 | Preciso de papel. | n3 |
@@ -4290,6 +4305,8 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-12829733 | 籠の中には何もない。 | Não tem nada dentro do cesto. | n1 |
 | sent:tatoeba-12829766 | 鍵はもう戻したよ。 | A chave eu já devolvi. | n1 |
 | sent:tatoeba-12829815 | この子は行儀がいい。 | Essa criança tem bons modos. | n1 |
+| sent:tatoeba-12889995 | お名前は何ですか？ | Como você se chama? | n5 |
+| sent:tatoeba-12890046 | メニューをください。 | O cardápio, por favor. | n2 |
 | sent:tatoeba-12915624 | もっと早く始めるべきだった。 | Eu deveria ter começado mais cedo. | n4 |
 | sent:tatoeba-12934034 | 目覚ましはセットした？ | Você botou o despertador? | n2 |
 | sent:tatoeba-12957085 | 村で祭りがあるんだ。 | Vai ter festival na vila. | n2 |
@@ -4313,6 +4330,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-13066281 | 多ければ多いほど良い。 | Quanto mais, melhor. | n3 |
 | sent:tatoeba-13082963 | 匂いがいいね。 | Que cheiro bom, né? | n1 |
 | sent:tatoeba-13083005 | 道路は車でいっぱいです。 | As ruas estão lotadas de carros. | n3 |
+| sent:tatoeba-13117666 | 申し訳ありません。 | Sinto muito mesmo. | n1 |
 | sent:tatoeba-13126478 | りんごがほしい? | Você quer uma maçã? | n5 |
 | sent:tatoeba-13126479 | りんごがほしいですか？ | Você quer maçã? | n5 |
 | sent:tatoeba-13139614 | 鉄道駅へどう行ったらいいですか。 | Como eu faço para chegar à estação de trem? | n2 |
@@ -4375,6 +4393,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-137217 | 第３課を読もう。 | Vamos ler a lição 3. | n1 |
 | sent:tatoeba-137257 | 大変申し訳ありません。 | Sinto muitíssimo. | n1 |
 | sent:tatoeba-137259 | 大変苦労なさったと思います。 | Imagino que o senhor passou por muita coisa. | n3 |
+| sent:tatoeba-137275 | 大変おいしいですよ。 | Está muito bom mesmo. | n3 |
 | sent:tatoeba-137328 | 大統領は新計画を提案した。 | O presidente propôs um plano novo. | n1 |
 | sent:tatoeba-137399 | 大地が揺れるのが感じられた。 | Dava para sentir a terra tremendo. | n1 |
 | sent:tatoeba-137437 | 大切なのは量でなく質だ。 | O que importa é a qualidade, não a quantidade. | n2 |
@@ -4543,6 +4562,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-141990 | 雪の為に競技の開始が遅れた。 | A competição começou atrasada por causa da neve. | n1 |
 | sent:tatoeba-141991 | 雪のように白い。 | Branco como neve. | n3 |
 | sent:tatoeba-142020 | 雪が青いというのは誤りだ。 | Dizer que a neve é azul é um erro. | n3 |
+| sent:tatoeba-142095 | 切符はどこで買うのですか。 | Onde eu compro a passagem? | n2 |
 | sent:tatoeba-142115 | 切らないでよ！ | Não desliga! | n4 |
 | sent:tatoeba-142116 | 切らずにそのままお待ち下さい。 | Não desligue, por favor aguarde assim mesmo. | n4 |
 | sent:tatoeba-142177 | 赤ん坊は十分世話されなければならない。 | O bebê precisa receber cuidados suficientes. | n2 |
@@ -5093,6 +5113,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-154336 | 私は彼と協力した。 | Eu trabalhei junto com ele. | n2 |
 | sent:tatoeba-154338 | 私は彼と共同して仕事をやるつもりだ。 | Pretendo tocar o trabalho em parceria com ele. | n3 |
 | sent:tatoeba-154645 | 私は能に興味を持つアメリカ人に会いました。 | Conheci um americano que se interessa por nô. | n1 |
+| sent:tatoeba-154700 | 私は日本の料理が好きです。 | Eu gosto de comida japonesa. | n3 |
 | sent:tatoeba-154767 | 私は二時間以上も待った。 | Esperei mais de duas horas. | n4 |
 | sent:tatoeba-154789 | 読書の暇がない。 | Não tenho tempo para ler. | n1 |
 | sent:tatoeba-154790 | 私は読書に集中していた。 | Eu estava concentrado na leitura. | n3 |
@@ -5303,6 +5324,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-160406 | 私はそのグループとは関係なかった。 | Eu não tinha nada a ver com aquele grupo. | n3 |
 | sent:tatoeba-160436 | 私はそこのプールのパスを持っている。 | Eu tenho o passe daquela piscina. | n3 |
 | sent:tatoeba-160444 | 私はそこで３ヶ月間働いています。 | Eu trabalho lá há três meses. | n4 |
+| sent:tatoeba-160449 | 私はそう思います。 | Eu acho que sim. | n4 |
 | sent:tatoeba-160492 | すべてを考慮に入れました。 | Levei tudo em conta. | n1 |
 | sent:tatoeba-160545 | 私はすぐに帰ってくる。 | Eu já volto. | n4 |
 | sent:tatoeba-160571 | 私はスキーが好き。 | Eu gosto de esquiar. | n3 |
@@ -5550,6 +5572,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-1698805 | 彼は稲を育てている。 | Ele cultiva arroz. | n1 |
 | sent:tatoeba-1698962 | 両親が離婚した。 | Meus pais se divorciaram. | n1 |
 | sent:tatoeba-169956 | 昨日は天候が悪かった。 | Ontem o tempo estava ruim. | n3 |
+| sent:tatoeba-169967 | 昨日は暑かった。 | Ontem estava quente. | n3 |
 | sent:tatoeba-1699768 | 午後には上がるだろうか？ | Será que vai melhorar à tarde? | n4 |
 | sent:tatoeba-170021 | 昨日の嵐で建物は被害を受けた。 | Os prédios foram danificados pela tempestade de ontem. | n1 |
 | sent:tatoeba-170027 | 昨日の夢は今日の希望。 | O sonho de ontem é a esperança de hoje. | n2 |
@@ -5611,6 +5634,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-171345 | 今年はずいぶん収穫があった。 | Este ano a colheita foi bem grande. | n1 |
 | sent:tatoeba-171398 | 今年のファッションは去年とはまったく違う。 | A moda deste ano é completamente diferente da do ano passado. | n3 |
 | sent:tatoeba-171467 | 今日一日は仕事を休んだら？ | Que tal tirar o dia de folga hoje? | n4 |
+| sent:tatoeba-171474 | 今日もよい天気らしいですね。 | Dizem que hoje também vai fazer tempo bom. | n5 |
 | sent:tatoeba-171489 | 今日は夕立があるかもしれない。 | Pode ser que haja uma pancada de chuva hoje. | n4 |
 | sent:tatoeba-1715053 | 医師は赤ん坊を診察した。 | O médico examinou o bebê. | n1 |
 | sent:tatoeba-171507 | 今日は風があまりない。 | Hoje não tem muito vento. | n4 |
@@ -5663,6 +5687,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-172487 | 今学期、２つの試験がある。 | Neste semestre tem duas provas. | n3 |
 | sent:tatoeba-172493 | 今回は出席できません。 | Desta vez não vou poder comparecer. | n3 |
 | sent:tatoeba-172519 | 今回が最後の試合だ。 | Esta é a última partida. | n3 |
+| sent:tatoeba-172526 | 今何時か分かりますか。 | Você sabe que horas são? | n5 |
 | sent:tatoeba-172554 | 今やっと始めたところです。 | Acabei de começar agora mesmo. | n4 |
 | sent:tatoeba-172639 | 今は食べたくないんです。 | É que agora não estou a fim de comer. | n4 |
 | sent:tatoeba-172646 | 今は事情が違っている。 | Agora a situação é outra. | n3 |
@@ -5824,6 +5849,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-175984 | 劇場の裏に駐車場がある。 | Tem um estacionamento atrás do teatro. | n2 |
 | sent:tatoeba-176000 | 劇はいつ始まりますか。 | Quando a peça começa? | n2 |
 | sent:tatoeba-176018 | 迎えの車を待っています。 | Estou esperando o carro que vem me buscar. | n3 |
+| sent:tatoeba-176088 | 警察を呼んで下さい。 | Chame a polícia, por favor. | n3 |
 | sent:tatoeba-176132 | 警察は犯人を見つけ出す事ができた。 | A polícia conseguiu encontrar o criminoso. | n3 |
 | sent:tatoeba-176153 | 警察は調査を続けた。 | A polícia continuou a investigação. | n2 |
 | sent:tatoeba-176199 | 警察は強盗を逮捕した。 | A polícia prendeu o assaltante. | n1 |
@@ -6103,6 +6129,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-186486 | 過去は過去。 | O passado é passado. | n3 |
 | sent:tatoeba-186493 | 過去のことは忘れよう。 | Vamos esquecer o passado. | n3 |
 | sent:tatoeba-186533 | 荷物を預けることができますか。 | Posso despachar a bagagem? | n2 |
+| sent:tatoeba-186534 | 荷物を預かって欲しいのですが。 | Vocês podem guardar minha bagagem? | n2 |
 | sent:tatoeba-186537 | 荷物を整理したいのですが。 | Eu queria organizar minha bagagem. | n1 |
 | sent:tatoeba-186565 | 花瓶の中の花はバラです。 | As flores no vaso são rosas. | n2 |
 | sent:tatoeba-186566 | 花瓶のなかには何本の花がはいっていますか。 | Quantas flores tem dentro do vaso? | n2 |
@@ -6128,6 +6155,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-186900 | 家内のパートの仕事で少々余分な金が入る。 | Com o trabalho de meio período da minha esposa, entra um pouco de dinheiro extra. | n3 |
 | sent:tatoeba-186913 | 家賃は月いくらですか。 | Quanto é o aluguel por mês? | n1 |
 | sent:tatoeba-186939 | 家族はみな穀物の収穫にでていた。 | A família toda estava na colheita dos grãos. | n1 |
+| sent:tatoeba-186941 | 家族は４人です。 | Minha família tem quatro pessoas. | n4 |
 | sent:tatoeba-186964 | 家事をするより勤めに出たほうが楽だ。 | É mais fácil trabalhar fora do que cuidar da casa. | n3 |
 | sent:tatoeba-186986 | 家を出たとたんに大雨が降り出した。 | Assim que saí de casa, começou a chover forte. | n3 |
 | sent:tatoeba-187008 | 家は互いに近くにある。 | As casas ficam perto umas das outras. | n3 |
@@ -6181,6 +6209,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-188091 | 何がそんなに不満ですか。 | O que te deixou tão insatisfeito? | n3 |
 | sent:tatoeba-188096 | 何かすることはないの？ | Você não tem nada para fazer? | n4 |
 | sent:tatoeba-188098 | 何かすぐ食べられるものある？ | Tem alguma coisa que dê pra comer já? | n5 |
+| sent:tatoeba-188145 | 何がおいしいですか。 | O que é gostoso aqui? | n5 |
 | sent:tatoeba-188146 | 何かいい知恵がないものかね。 | Será que não tem alguma boa ideia? | n1 |
 | sent:tatoeba-188156 | 何があなたにそう考えさせるのですか。 | O que faz você pensar assim? | n4 |
 | sent:tatoeba-188171 | 何かあったかい。 | Aconteceu alguma coisa? | n5 |
@@ -6221,6 +6250,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-188877 | 駅へはどのように行けばよいですか。 | Como faço para chegar à estação? | n4 |
 | sent:tatoeba-188881 | 駅へはタクシーで何分くらいかかりますか。 | Até a estação, mais ou menos quantos minutos leva de táxi? | n4 |
 | sent:tatoeba-188892 | 駅は市の中央にある。 | A estação fica no centro da cidade. | n2 |
+| sent:tatoeba-188894 | 駅はどこですか。 | Onde fica a estação? | n5 |
 | sent:tatoeba-188944 | 駅で弁当を買った。 | Comprei uma marmita na estação. | n1 |
 | sent:tatoeba-188947 | 駅で降ろしてください。 | Pode me deixar na estação, por favor? | n3 |
 | sent:tatoeba-188968 | 衛星は今軌道に乗っている。 | O satélite já está em órbita. | n1 |
@@ -6244,6 +6274,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-189285 | 映画作りは人をわくわくさせる仕事だ。 | Fazer filme é um trabalho que deixa as pessoas empolgadas. | n4 |
 | sent:tatoeba-189288 | 映画館にいたんだ。 | É que eu estava no cinema. | n4 |
 | sent:tatoeba-189302 | 映画を見て感動した。 | Assisti ao filme e me emocionei. | n3 |
+| sent:tatoeba-189309 | 映画は何時からですか。 | O filme começa a que horas? | n4 |
 | sent:tatoeba-189318 | 映画は、私が予期したように面白かった。 | O filme foi interessante, como eu esperava. | n3 |
 | sent:tatoeba-189320 | 映画の中にはわくわくさせるものもある。 | Entre os filmes, há alguns que deixam a gente animado. | n4 |
 | sent:tatoeba-189329 | 映画に行ったらどうですか。 | Que tal ir ao cinema? | n4 |
@@ -6305,6 +6336,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-190636 | 一行おきに書きなさい。 | Escreva pulando uma linha. | n4 |
 | sent:tatoeba-190645 | 一言言いたい。 | Quero dizer uma coisa. | n3 |
 | sent:tatoeba-190682 | 一家そろって散歩に出かけている。 | A família toda saiu para passear junta. | n2 |
+| sent:tatoeba-190738 | 医者を呼んで下さい。 | Chame um médico, por favor. | n3 |
 | sent:tatoeba-190768 | 医者は彼の苦痛を除いてやった。 | O médico tirou a dor dele. | n3 |
 | sent:tatoeba-190894 | 医者に見てもらうべきだと思う。 | Acho que você deveria ser examinado por um médico. | n4 |
 | sent:tatoeba-190902 | 医者に診てもらうべきですよ。 | Você deveria se consultar com um médico, viu? | n1 |
@@ -6377,6 +6409,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-193223 | もっと注意していればどんなによかったか！ | Como teria sido bom se eu tivesse tomado mais cuidado! | n4 |
 | sent:tatoeba-193242 | もっと早く返事を出さないでいてすみません。 | Desculpe por não ter respondido mais cedo. | n3 |
 | sent:tatoeba-193273 | もっと若ければいいのに。 | Queria ser mais novo. | n3 |
+| sent:tatoeba-193308 | もっと安い部屋はありますか。 | Tem um quarto mais barato? | n3 |
 | sent:tatoeba-193310 | もっと安い価格になりませんか。 | Não dá para fazer um preço melhor? | n1 |
 | sent:tatoeba-193327 | もっとゆっくり運転しないと違反切符をもらうことになるよ。 | Dirige mais devagar, senão você vai levar multa. | n2 |
 | sent:tatoeba-193338 | もっとのちにそのことを説明します。 | Explico isso mais adiante. | n3 |
@@ -6607,6 +6640,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-200428 | どのくらいで治りますか。 | Em quanto tempo isso vai sarar? | n3 |
 | sent:tatoeba-200437 | とにかく有難う。 | De qualquer forma, obrigado. | n3 |
 | sent:tatoeba-200449 | とにかく始めよう。 | Enfim, vamos começar. | n3 |
+| sent:tatoeba-200568 | とても熱があります。 | Estou com muita febre. | n3 |
 | sent:tatoeba-200577 | とても大きいね。 | É bem grande, né? | n5 |
 | sent:tatoeba-200581 | とても素晴らしい光景だった。 | Foi uma vista maravilhosa. | n1 |
 | sent:tatoeba-200606 | とても感動しました。 | Fiquei muito emocionado. | n3 |
@@ -6628,6 +6662,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-200932 | どこに行くところですか。 | Aonde você está indo? | n5 |
 | sent:tatoeba-200934 | どこに行きましょう？ | Para onde vamos? | n5 |
 | sent:tatoeba-200948 | どこで髪の毛を切ったの。 | Onde você cortou o cabelo? | n2 |
+| sent:tatoeba-200960 | どこで乗り換えるのでしょうか。 | Onde eu troco de trem? | n2 |
 | sent:tatoeba-201017 | どこから出るんですか。 | De onde (ele/isso) parte? | n5 |
 | sent:tatoeba-201024 | どこかは今五時だろう。 | Em algum lugar agora devem ser cinco horas. | n4 |
 | sent:tatoeba-201028 | どこかに出かけるの？ | Você vai sair pra algum lugar? | n5 |
@@ -6652,6 +6687,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-201605 | どうか立ったままでいて下さい。 | Por favor, permaneça de pé. | n4 |
 | sent:tatoeba-201616 | どうか道を教えておくれ。 | Por favor, me mostre o caminho. | n4 |
 | sent:tatoeba-201716 | どう？近ごろ。 | E aí? Como vão as coisas ultimamente? | n4 |
+| sent:tatoeba-201726 | トイレはどこですか。 | Onde fica o banheiro? | n5 |
 | sent:tatoeba-201804 | ドアを開けっぱなしにするな。 | Não deixe a porta aberta. | n4 |
 | sent:tatoeba-201805 | ドアを開けたままにしておくな。 | Não deixe a porta aberta. | n4 |
 | sent:tatoeba-201846 | ドアはジムによって開けられます。 | A porta é aberta pelo Jim. | n4 |
@@ -6718,6 +6754,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-203585 | たった今帰ったところだよ。 | Acabei de chegar em casa agora mesmo, viu. | n4 |
 | sent:tatoeba-203622 | ただ見ているだけです。 | Estou só olhando. | n5 |
 | sent:tatoeba-203638 | ただの主婦にはなりたくありません。 | Não quero ser só dona de casa. | n3 |
+| sent:tatoeba-203703 | タクシーを呼んで下さい。 | Chame um táxi, por favor. | n3 |
 | sent:tatoeba-203709 | タクシーよりも歩くほうがはやいだろう。 | Andar a pé deve ser mais rápido do que pegar um táxi. | n3 |
 | sent:tatoeba-203721 | タクシーに乗るのは私には贅沢だ。 | Andar de táxi é luxo para mim. | n1 |
 | sent:tatoeba-203734 | タクシーが到着した。 | O táxi chegou. | n3 |
@@ -7095,6 +7132,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-214112 | スリにご用心。 | Cuidado com os batedores de carteira. | n3 |
 | sent:tatoeba-214119 | スリッパをはいてください。 | Por favor, calce os chinelos. | n4 |
 | sent:tatoeba-214120 | スリッパでロビーに降りたらだめだよ。 | Não pode descer ao saguão de chinelos, viu. | n3 |
+| sent:tatoeba-214165 | もう一度お願いします。 | Mais uma vez, por favor. | n3 |
 | sent:tatoeba-214326 | スポーツをするのが好き。 | Gosto de praticar esportes. | n4 |
 | sent:tatoeba-214342 | スポーツに関心がありますか。 | Você tem interesse por esportes? | n3 |
 | sent:tatoeba-214357 | スペルはどうですか。 | Como se escreve? | n4 |
@@ -7344,6 +7382,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-221228 | この宿泊カードに記入して下さい。 | Preencha esta ficha de hospedagem, por favor. | n2 |
 | sent:tatoeba-221262 | この州には鉱物資源が豊富です。 | Esse estado é rico em recursos minerais. | n1 |
 | sent:tatoeba-221299 | この手袋は両方がそろっていない。 | Estas luvas não formam um par. | n2 |
+| sent:tatoeba-2213120 | 予約してあります。 | Eu tenho uma reserva. | n3 |
 | sent:tatoeba-221344 | この手紙には署名がない。 | Esta carta não está assinada. | n2 |
 | sent:tatoeba-221428 | この車の価格はとても高い。 | O preço deste carro é muito alto. | n1 |
 | sent:tatoeba-221429 | この車の維持は高くつく。 | Manter este carro sai caro. | n1 |
@@ -7445,6 +7484,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-2233178 | 彼はいつも陽気だ。 | Ele é sempre alegre. | n3 |
 | sent:tatoeba-2233240 | 彼は金を要求した。 | Ele exigiu dinheiro. | n3 |
 | sent:tatoeba-2233241 | 彼は金を貸してくれと頼んだ。 | Ele pediu dinheiro emprestado. | n3 |
+| sent:tatoeba-223341 | このバスは美術館まで行きますか。 | Este ônibus vai até o museu? | n3 |
 | sent:tatoeba-2233640 | それに関しては同意しかねます。 | Quanto a isso, não posso concordar. | n3 |
 | sent:tatoeba-223375 | このはさみは良く切れない。 | Esta tesoura não corta bem. | n3 |
 | sent:tatoeba-223377 | このはこの外は緑だが中は赤である。 | Por fora esta caixa é verde, mas por dentro é vermelha. | n2 |
@@ -7571,12 +7611,15 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-226740 | お父さんに宜しく。 | Manda um abraço para o seu pai. | n1 |
 | sent:tatoeba-226765 | お父さん、お母さんはいつ帰るのですか。 | Pai, quando a mamãe vai voltar? | n4 |
 | sent:tatoeba-226776 | お年寄りはとてもはやく起きる。 | Os idosos acordam bem cedo. | n3 |
+| sent:tatoeba-226787 | お肉は食べられません。 | Eu não como carne. | n4 |
 | sent:tatoeba-226794 | お湯を少し沸かしてください。 | Por favor, ferva um pouco de água. | n2 |
+| sent:tatoeba-226801 | お湯が出ません。 | Não está saindo água quente. | n2 |
 | sent:tatoeba-226834 | お茶を入れますよ。 | Vou fazer um chá. | n3 |
 | sent:tatoeba-226844 | お茶を飲みながら話しませんか。 | Que tal conversarmos enquanto tomamos um chá? | n4 |
 | sent:tatoeba-226845 | お茶を飲みながら話しましょう。 | Vamos conversar enquanto tomamos um chá. | n4 |
 | sent:tatoeba-226870 | お茶の質は下がりつつある。 | A qualidade do chá está em declínio. | n4 |
 | sent:tatoeba-226981 | お前が悪いよ。 | A culpa é sua. | n3 |
+| sent:tatoeba-226989 | お先に失礼します。 | Com licença, vou indo. | n3 |
 | sent:tatoeba-226991 | お席の上の棚の中に入っております。 | Está guardado na prateleira acima do seu assento. | n1 |
 | sent:tatoeba-227004 | お水をください。 | Me dê água, por favor. | n4 |
 | sent:tatoeba-227007 | お水だけでけっこうです。 | Só água está bom, por favor. | n5 |
@@ -7588,6 +7631,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-2270822 | お皿を洗います。 | Eu vou lavar a louça. | n2 |
 | sent:tatoeba-227092 | お芝居は好きですか。 | Você gosta de teatro? | n1 |
 | sent:tatoeba-227108 | お支払いが２ヶ月遅れています。 | O seu pagamento está dois meses atrasado. | n3 |
+| sent:tatoeba-227125 | お仕事は何ですか。 | Você trabalha com o quê? | n4 |
 | sent:tatoeba-227144 | お行儀はどうしたの？ | Cadê os seus modos? | n1 |
 | sent:tatoeba-227220 | お金を重視するのは良くない。 | Dar tanta importância ao dinheiro não é bom. | n1 |
 | sent:tatoeba-227229 | お金をむだ使いしないほうがいい。 | É melhor não desperdiçar dinheiro. | n4 |
@@ -7823,6 +7867,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-235374 | ３０分おきに出ます。 | Sai a cada 30 minutos. | n4 |
 | sent:tatoeba-2354089 | 馬は草を食べる。 | Cavalo come capim. | n3 |
 | sent:tatoeba-235429 | ２台のオートバイを比較するべきだ。 | Você deveria comparar as duas motos. | n1 |
+| sent:tatoeba-235430 | ２人部屋はありますか。 | Vocês têm quarto para duas pessoas? | n3 |
 | sent:tatoeba-235434 | ２人は婚約を発表した。 | Os dois anunciaram o noivado. | n3 |
 | sent:tatoeba-235545 | ２つの意見に大した差はない。 | Não há grande diferença entre as duas opiniões. | n3 |
 | sent:tatoeba-235574 | ２０年とは長い年月だ。 | Vinte anos é muito tempo. | n3 |
@@ -7832,6 +7877,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-235706 | １日おきに買い物に行く。 | Vou fazer compras dia sim, dia não. | n4 |
 | sent:tatoeba-235716 | １度に２つの事をしようと思うな。 | Não tente fazer duas coisas ao mesmo tempo. | n4 |
 | sent:tatoeba-235725 | １世紀は１００年です。 | Um século são cem anos. | n1 |
+| sent:tatoeba-235793 | １時に会いましょう。 | Vamos nos encontrar à uma hora. | n5 |
 | sent:tatoeba-235811 | １学期は４月から始まる。 | O primeiro período letivo começa em abril. | n3 |
 | sent:tatoeba-236084 | １０ドル札でお願いします。 | Em notas de dez dólares, por favor. | n2 |
 | sent:tatoeba-236104 | １００万円持っているとしたらどうしますか。 | Se você tivesse um milhão de ienes, o que faria? | n4 |
@@ -7852,6 +7898,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-237381 | 彼らは川まで前進した。 | Eles avançaram até o rio. | n3 |
 | sent:tatoeba-237406 | 神の目には人はすべて平等である。 | Aos olhos de Deus, todas as pessoas são iguais. | n3 |
 | sent:tatoeba-237445 | 彼は古い手紙を束にした。 | Ele juntou as cartas antigas num maço. | n3 |
+| sent:tatoeba-237476 | ご家族はいますか。 | Você tem família? | n4 |
 | sent:tatoeba-237494 | 検査の結果が出たら電話します。 | Eu ligo quando sair o resultado do exame. | n1 |
 | sent:tatoeba-237500 | あなたがタバコを吸うのは感心しない。 | Não acho legal você fumar. | n3 |
 | sent:tatoeba-2390157 | かわいい花のワッペンをつけた女の子を見た。 | Vi uma menina que usava um emblema bordado com uma florzinha fofa. | n5 |
@@ -7969,6 +8016,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-3367112 | 辛いんじゃない？違う？ | Está doendo, né? Não está? | n2 |
 | sent:tatoeba-3367124 | なんかおかしくない？ | Tem alguma coisa estranha, não tem? | n4 |
 | sent:tatoeba-3367992 | 30ドル貸してもらえない？ | Você consegue me emprestar 30 dólares? | n4 |
+| sent:tatoeba-3385029 | 警官みたいですね。 | Você parece um policial. | n2 |
 | sent:tatoeba-3388468 | 研究室に戻りなさい。 | Volte para o laboratório. | n3 |
 | sent:tatoeba-3399587 | 両親が来る前に、家を掃除しようと思う。 | Pretendo limpar a casa antes de meus pais chegarem. | n2 |
 | sent:tatoeba-3402131 | 協力できたら嬉しいです。 | Fico feliz se eu puder ajudar. | n2 |
@@ -7985,6 +8033,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-3449190 | 願いは一つだけ。 | Tenho só um desejo. | n3 |
 | sent:tatoeba-3450071 | あなたがご無事で嬉しいです。 | Fico feliz de saber que você está bem. | n3 |
 | sent:tatoeba-3451118 | 本ありがとう。 | Valeu pelo livro. | n3 |
+| sent:tatoeba-3452051 | お勘定お願いします。 | A conta, por favor. | n1 |
 | sent:tatoeba-3452231 | 君の好きな音楽グループは何？ | Qual é a sua banda favorita? | n3 |
 | sent:tatoeba-3452301 | 新しい教授のことどう思う？ | O que você acha do professor novo? | n1 |
 | sent:tatoeba-3454872 | 風邪って人にうつすと治るってほんと？ | É verdade que, quando você passa o resfriado pra outra pessoa, você sara? | n1 |
@@ -8009,6 +8058,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-3488546 | そのまま続けて。 | Continua assim. | n3 |
 | sent:tatoeba-3488662 | どれどれ。 | Deixa eu ver. | n5 |
 | sent:tatoeba-3488682 | さあ歌おう。 | Vamos lá, vamos cantar. | n4 |
+| sent:tatoeba-349070 | 分かりません。 | Não entendi. | n5 |
 | sent:tatoeba-3491489 | これは効くわ。 | Esse aqui funciona mesmo. | n2 |
 | sent:tatoeba-3491589 | 言うとおりにして。 | Faça do jeito que eu falo. | n4 |
 | sent:tatoeba-3491591 | 釣りはしますか？ | Você pesca? | n1 |
@@ -8039,6 +8089,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-351848 | 急に心臓が痛くなった。 | De repente meu coração começou a doer. | n2 |
 | sent:tatoeba-354160 | 君は人間だ。 | Você é um ser humano. | n3 |
 | sent:tatoeba-354488 | 私はバイオリンを弾く。 | Eu toco violino. | n1 |
+| sent:tatoeba-3549484 | 英語のメニューはありますか？ | Vocês têm cardápio em inglês? | n2 |
 | sent:tatoeba-3551547 | ユーザー名またはパスワードが間違っています。 | O nome de usuário ou a senha estão incorretos. | n3 |
 | sent:tatoeba-3552030 | 失せろと言ったはずだ。 | Eu mandei você cair fora. | n3 |
 | sent:tatoeba-3552032 | 家に帰りなさいと言ったはずです。 | Eu tenho certeza de que disse para você ir para casa. | n4 |
@@ -8060,6 +8111,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-3576174 | さあ、ピザがいる人ー！ | Bem, quem quer pizza? | n5 |
 | sent:tatoeba-3579410 | 学校辞めたいな。 | Queria largar a escola. | n3 |
 | sent:tatoeba-3583355 | もう一度やってみる。 | Vou tentar mais uma vez. | n4 |
+| sent:tatoeba-3583428 | 私は反対です。 | Eu sou contra. | n3 |
 | sent:tatoeba-3588637 | それに近づかないで。 | Não chegue perto disso. | n4 |
 | sent:tatoeba-3588659 | 口出ししないで。 | Não se meta nisso. | n4 |
 | sent:tatoeba-3595182 | そのドレスどこで買ったの？ | Onde você comprou esse vestido? | n3 |
@@ -8162,6 +8214,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-4732 | みんなもそうなのかな、と思うことくらいしかできない。 | A única coisa que consigo fazer é ficar me perguntando se é assim para todo mundo. | n4 |
 | sent:tatoeba-4733 | 長い目で見れば違ってくると思います。 | Acho que a longo prazo isso muda. | n3 |
 | sent:tatoeba-4738 | 眠った方がいいよ。 | É melhor você dormir. | n3 |
+| sent:tatoeba-4751193 | 旅行どうでしたか？ | Como foi a viagem? | n4 |
 | sent:tatoeba-4751207 | 学校はどうですか？ | Como vai a escola? | n4 |
 | sent:tatoeba-4752 | そうしたらひとつ問題があって・・・。 | Aí então tem um problema... | n4 |
 | sent:tatoeba-4760435 | あなたのおかげです。 | É tudo graças a você. | n5 |
@@ -8286,6 +8339,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-518854 | かれは土に水をやった。 | Ele regou a terra. | n3 |
 | sent:tatoeba-519050 | これで十分なはずです。 | Isso deve ser suficiente. | n4 |
 | sent:tatoeba-5191500 | 君の英語は上達したね。 | Seu inglês melhorou bastante, hein. | n3 |
+| sent:tatoeba-5207944 | 楽しかった。 | Foi muito bom. | n4 |
 | sent:tatoeba-5210 | 学校へ行きたくない。 | Não quero ir para a escola. | n5 |
 | sent:tatoeba-5212 | 雨が降っている。 | Está chovendo. | n3 |
 | sent:tatoeba-5217 | 昨日動物園に行った。 | Ontem eu fui ao zoológico. | n3 |
@@ -8460,6 +8514,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-75188 | どいつもこいつもばかばっかりだ。 | Não tem um que preste, é tudo idiota. | n4 |
 | sent:tatoeba-75192 | トピずれです。すみません。 | Isso é fora do assunto. Desculpe. | n4 |
 | sent:tatoeba-75200 | 徒歩５分以内に着くはずです。 | Você deve chegar lá em menos de cinco minutos a pé. | n1 |
+| sent:tatoeba-752231 | 気分が悪いです。 | Estou passando mal. | n4 |
 | sent:tatoeba-75261 | もうだめだ。 | Já era. | n4 |
 | sent:tatoeba-75267 | それは抜け目のないやり方だった。 | Foi um jeito bem esperto de fazer isso. | n3 |
 | sent:tatoeba-75342 | 先週の雪はほんの局地的なものであった。 | A neve da semana passada ficou restrita a uma área bem pequena. | n2 |
@@ -8583,6 +8638,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-774837 | 人口が益々増える一方です。 | A população só faz crescer cada vez mais. | n1 |
 | sent:tatoeba-77485 | 列車は乗客でいっぱいだった。 | O trem estava lotado de passageiros. | n3 |
 | sent:tatoeba-77489 | 列車は時刻通りに出ますか。 | O trem sai no horário? | n3 |
+| sent:tatoeba-77494 | 列車は今着いたばかりです。 | O trem acabou de chegar. | n3 |
 | sent:tatoeba-77498 | 列車は五時ちょうどに発車した。 | O trem partiu às cinco em ponto. | n3 |
 | sent:tatoeba-77505 | 列車は駅を離れた。 | O trem saiu da estação. | n1 |
 | sent:tatoeba-77521 | 列車はすぐに来ると思います。 | Acho que o trem chega logo. | n1 |
@@ -8923,6 +8979,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-80308 | 明日行くからそのつもりで。 | Vou amanhã, então já fique sabendo. | n4 |
 | sent:tatoeba-80309 | 明日君は彼女に会えるでしょう。 | Amanhã você vai conseguir encontrar com ela. | n3 |
 | sent:tatoeba-80323 | 明日家まで迎えに行きます。 | Amanhã vou buscar ele em casa. | n3 |
+| sent:tatoeba-80332 | 明日駅で会いましょう。 | Amanhã a gente se encontra na estação. | n4 |
 | sent:tatoeba-80335 | 明日雨になるかもしれないがともかく私たちは出かけるつもりだ。 | Pode ser que chova amanhã, mas a gente vai sair de qualquer jeito. | n2 |
 | sent:tatoeba-80336 | 明日雨なら私は家にいます。 | Se chover amanhã, eu fico em casa. | n4 |
 | sent:tatoeba-80337 | 明日雨ならば行きません。 | Se chover amanhã, eu não vou. | n4 |
@@ -8986,6 +9043,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-80616 | 明日から５連休だから、みんなルンルン気分だね。 | Amanhã começa um feriadão de cinco dias, então todo mundo tá animado, né? | n1 |
 | sent:tatoeba-80618 | 明日お宅に伺います。 | Amanhã vou visitá-lo na sua casa. | n2 |
 | sent:tatoeba-80625 | 明日おじを訪問する。 | Amanhã eu vou visitar meu tio. | n3 |
+| sent:tatoeba-806267 | よろしくお願いします。 | Desde já, obrigado. | n3 |
 | sent:tatoeba-80630 | 明日あるいは晴れるかもしれない。 | Pode ser que amanhã faça sol. | n3 |
 | sent:tatoeba-80646 | 明日、彼はあなたを訪問しないでしょう。 | Amanhã ele não vai te visitar. | n3 |
 | sent:tatoeba-80654 | 明日、食事でもどう？ | Amanhã, que tal a gente comer alguma coisa juntos? | n4 |
@@ -9573,6 +9631,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-8720692 | 膝が痛いな。 | Meu joelho tá doendo. | n2 |
 | sent:tatoeba-8720702 | チェスセットが欲しいな。 | Queria um jogo de xadrez. | n3 |
 | sent:tatoeba-8722964 | ２人は仲が良かったの？ | Vocês dois eram próximos? | n2 |
+| sent:tatoeba-8724557 | たぶん遅れる。 | Talvez eu me atrase. | n3 |
 | sent:tatoeba-8725526 | これは本物の金ですか？ | Isso é ouro de verdade? | n3 |
 | sent:tatoeba-8725904 | 誰もけがをしてないって、確かなの？ | Tem certeza de que ninguém se machucou? | n3 |
 | sent:tatoeba-8727067 | もうすぐ終わる？ | Já vai acabar? | n4 |
@@ -9628,6 +9687,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-8787906 | ドアは全部鍵が掛かってる？ | As portas estão todas trancadas? | n1 |
 | sent:tatoeba-87935 | 彼女は知能の程度が高い。 | O nível de inteligência dela é alto. | n3 |
 | sent:tatoeba-8795030 | 今度は、いつ会うことができる？ | Da próxima vez, quando a gente consegue se encontrar? | n4 |
+| sent:tatoeba-8795518 | ゆっくり話してください。 | Fale devagar, por favor. | n3 |
 | sent:tatoeba-8797651 | 君が応じる必要はない。 | Você não precisa responder. | n1 |
 | sent:tatoeba-8799000 | 化学の勉強をしているの？ | Você está estudando química? | n3 |
 | sent:tatoeba-88015 | 彼女は大丈夫だと言った。ところが実際はひどいけがをしていた。 | Ela disse que estava bem. Só que, na verdade, tinha se machucado feio. | n2 |
@@ -9836,6 +9896,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-92065 | 彼女はテニスは上手いが、水泳は下手だ。 | Ela é boa em tênis, mas é ruim em natação. | n3 |
 | sent:tatoeba-92068 | 彼女はテニスが好きで、テニスのコーチになった。 | Ela gostava de tênis e virou treinadora de tênis. | n3 |
 | sent:tatoeba-9208382 | もうやっちゃったよ。 | Já fiz isso. | n5 |
+| sent:tatoeba-921333 | 外国に行ったことがあります。 | Eu já viajei para fora. | n4 |
 | sent:tatoeba-921365 | 咳とちょっと熱がある。 | Estou com tosse e um pouco de febre. | n3 |
 | sent:tatoeba-92152 | 彼女はたとえ何を着てもかわいらしい。 | Ela fica bonitinha com qualquer roupa que vista. | n3 |
 | sent:tatoeba-9226991 | 事前にお知らせいたします。 | Avisarei com antecedência. | n4 |
@@ -10010,6 +10071,7 @@ _Generated 2026-09-23. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-96978 | 彼らは私を博士という肩書きで呼んだ。 | Eles me chamaram pelo título de doutor. | n1 |
 | sent:tatoeba-9698616 | 彼女は同僚だよ。 | Ela é minha colega de trabalho. | n1 |
 | sent:tatoeba-9699140 | 幼い頃はよく病気をしたものです。 | Quando eu era pequeno, vivia doente. | n2 |
+| sent:tatoeba-9699149 | はじめまして。 | Muito prazer. | n4 |
 | sent:tatoeba-96996 | 彼らは私の友人だ。 | Eles são meus amigos. | n3 |
 | sent:tatoeba-97005 | 彼らは私の自由を奪った。 | Eles tiraram a minha liberdade. | n1 |
 | sent:tatoeba-9700747 | ここで会えてよかった。 | Que bom poder te encontrar aqui. | n5 |

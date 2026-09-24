@@ -7,51 +7,82 @@
     "pt-BR": "Falar de você, parte 2"
   },
   "say_now": [
+    "sent:jec-0320",
+    "sent:tatoeba-164979",
+    "sent:tatoeba-1046077",
     "sent:tatoeba-84568",
-    "sent:tatoeba-9553773",
-    "sent:tatoeba-11386733",
-    "sent:tatoeba-99645",
-    "sent:tatoeba-80771",
-    "sent:tatoeba-141544"
+    "sent:tatoeba-79312",
+    "sent:tatoeba-9553773"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1318610",
+    "vocab:1487660",
     "vocab:1579260",
+    "vocab:1001820",
     "vocab:1221270",
-    "vocab:1419990",
-    "vocab:1531710",
-    "vocab:1266440",
+    "vocab:1156530",
     "vocab:1227560",
-    "vocab:1185200"
+    "vocab:1010150",
+    "vocab:1329000",
+    "vocab:1612530"
   ],
   "patterns": [
     "gram:ta-bakari",
-    "gram:no-ga-suki",
     "gram:n3-bakari",
-    "gram:dake"
+    "gram:gp-8",
+    "gram:kara"
   ],
   "kanji_recognition": [
-    "休",
-    "昨",
-    "仕",
-    "事",
-    "日",
-    "父"
+    "意",
+    "見",
+    "言",
+    "自",
+    "生",
+    "先"
   ],
   "shadowing": [
+    "sent:jec-0320",
+    "sent:tatoeba-164979",
+    "sent:tatoeba-1046077",
     "sent:tatoeba-84568",
-    "sent:tatoeba-9553773",
-    "sent:tatoeba-11386733",
-    "sent:tatoeba-99645",
-    "sent:tatoeba-80771",
-    "sent:tatoeba-141544"
+    "sent:tatoeba-79312",
+    "sent:tatoeba-9553773"
   ],
   "srs": {
     "introduces_cards": [
       {
         "deck": "deck:phrases",
+        "item": "sent:jec-0320",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-164979",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-1046077",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
         "item": "sent:tatoeba-84568",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-79312",
         "card_types": [
           "production"
         ]
@@ -62,76 +93,43 @@
         "card_types": [
           "production"
         ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-11386733",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-99645",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-80771",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-141544",
-        "card_types": [
-          "production"
-        ]
       }
     ]
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 330,
+  "cumulative_known_vocab": 301,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:677",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:120:574",
+      "id": "cf:n3:132:706",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "聞く",
-        "一緒",
-        "暗い"
+        "休む",
+        "自分",
+        "会計"
       ]
     },
     {
-      "id": "cf:n3:14:115",
+      "id": "cf:n3:292:195",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "生",
-        "話",
-        "豆"
+        "遣る",
+        "帰る",
+        "此れ"
       ]
     },
     {
-      "id": "kr:n3:115",
+      "id": "kr:n3:102",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "しまう",
-        "きんし",
-        "おえる"
+        "すべて",
+        "かぞく",
+        "できる"
       ]
     },
     {
@@ -146,8 +144,8 @@
     }
   ],
   "patterns_chunked": [
-    "gram:no-ga-heta",
-    "gram:te-ita"
+    "gram:ga-hitsuyou",
+    "gram:n3-kiri"
   ],
   "drills": [
     {
@@ -156,15 +154,6 @@
         "sent:tatoeba-11009581",
         "sent:tatoeba-9722237",
         "sent:tatoeba-159565"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:no-ga-suki",
-      "examples": [
-        "sent:tatoeba-10883885",
-        "sent:tatoeba-1128926",
-        "sent:tatoeba-219036"
       ],
       "strand": "language-focused"
     },
@@ -178,11 +167,20 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:dake",
+      "pattern": "gram:gp-8",
       "examples": [
-        "sent:gen-fec0529a3037",
-        "sent:tatoeba-4767",
-        "sent:tatoeba-5057"
+        "sent:tatoeba-5320",
+        "sent:tatoeba-176635",
+        "sent:tatoeba-150175"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kara",
+      "examples": [
+        "sent:tatoeba-76156",
+        "sent:tatoeba-4772",
+        "sent:gen-671b7aebf53d"
       ],
       "strand": "language-focused"
     }
@@ -190,48 +188,50 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Você gosta mais de inglês ou de japonês?"
+        "pt-BR": "Eu gosto de comida japonesa."
       },
-      "answer_key": "あなたは英語と国語どちらが好きですか。",
+      "answer_key": "私は日本の料理が好きです。",
       "accepted_variants": [
-        "あなたはえいごとこくごどちらがすきですか",
-        "あなたはえいごとこくごどちらがすきですか。",
-        "あなたは英語と国語どちらが好きですか",
-        "あなたは英語と国語どちらが好きですか。",
-        "あなたわえいごとこくごどちらがすきですか",
-        "あなたわえいごとこくごどちらがすきですか。"
+        "わたしはにっぽんのりょうりがすきです",
+        "わたしはにっぽんのりょうりがすきです。",
+        "わたしわにっぽんのりょうりがすきです",
+        "わたしわにっぽんのりょうりがすきです。",
+        "私は日本の料理が好きです",
+        "私は日本の料理が好きです。"
       ],
-      "sentence": "sent:tatoeba-232281",
+      "sentence": "sent:tatoeba-154700",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Preciso de um emprego."
+        "pt-BR": "De onde você é?"
       },
-      "answer_key": "仕事が必要だ。",
+      "answer_key": "ご出身はどちらですか。",
       "accepted_variants": [
-        "しごとがひつようだ",
-        "しごとがひつようだ。",
-        "仕事が必要だ",
-        "仕事が必要だ。"
+        "ごしゅっしんはどちらですか",
+        "ごしゅっしんはどちらですか。",
+        "ごしゅっしんわどちらですか",
+        "ごしゅっしんわどちらですか。",
+        "ご出身はどちらですか",
+        "ご出身はどちらですか。"
       ],
-      "sentence": "sent:tatoeba-1046077",
+      "sentence": "sent:tatoeba-5060",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Cada um de nós tem o seu próprio hobby."
+        "pt-BR": "Eu moro no interior."
       },
-      "answer_key": "私たち一人一人が自分の趣味を持っています。",
+      "answer_key": "田舎に住んでいます。",
       "accepted_variants": [
-        "わたしたちひとりひとりがじぶんのしゅみをもっています",
-        "わたしたちひとりひとりがじぶんのしゅみをもっています。",
-        "私たち一人一人が自分の趣味を持っています",
-        "私たち一人一人が自分の趣味を持っています。"
+        "いなかにすんでいます",
+        "いなかにすんでいます。",
+        "田舎に住んでいます",
+        "田舎に住んでいます。"
       ],
-      "sentence": "sent:tatoeba-164979",
+      "sentence": "sent:tatoeba-124907",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -241,12 +241,12 @@
       "pt-BR": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta."
     },
     "items": [
-      "sent:jec-0320",
-      "sent:tatoeba-210316",
-      "sent:tatoeba-5060",
-      "sent:tatoeba-8787906",
-      "sent:tatoeba-3313203",
-      "sent:tatoeba-77964"
+      "sent:tatoeba-227125",
+      "sent:tatoeba-101820",
+      "sent:tatoeba-77964",
+      "sent:tatoeba-121988",
+      "sent:tatoeba-4562257",
+      "sent:tatoeba-126245"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -254,15 +254,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 28,
     "fluency": 6
   }
 }

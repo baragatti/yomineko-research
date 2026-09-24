@@ -7,93 +7,88 @@
     "pt-BR": "Chegar aonde você quer, parte 6"
   },
   "say_now": [
-    "sent:tatoeba-109862",
-    "sent:tatoeba-203721",
-    "sent:tatoeba-11075598",
-    "sent:tatoeba-184538",
-    "sent:tatoeba-1806283",
-    "sent:tatoeba-200910"
+    "sent:tatoeba-7967876",
+    "sent:tatoeba-203709",
+    "sent:tatoeba-198114",
+    "sent:tatoeba-230210",
+    "sent:tatoeba-75827",
+    "sent:tatoeba-198075"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1160790",
-    "vocab:1355120",
-    "vocab:1412890",
-    "vocab:1316380",
-    "vocab:1198550",
-    "vocab:1245570",
-    "vocab:1239730",
-    "vocab:1206110",
-    "vocab:1291070",
-    "vocab:1121740",
-    "vocab:1527110",
-    "vocab:1573150",
-    "vocab:1240810"
+    "vocab:1352170",
+    "vocab:1404975",
+    "vocab:2147630",
+    "vocab:1149830",
+    "vocab:1461140",
+    "vocab:1514320",
+    "vocab:1502840",
+    "vocab:1604870",
+    "vocab:1329340",
+    "vocab:1477500"
   ],
   "patterns": [
-    "gram:n3-da-mono-da",
-    "gram:da-desu",
-    "gram:gp-39",
-    "gram:gp-8",
-    "gram:kara"
+    "gram:darou",
+    "gram:yori",
+    "gram:da-desu"
   ],
   "kanji_recognition": [
-    "一",
-    "差",
-    "車",
-    "乗",
-    "遅",
-    "電"
+    "上",
+    "図",
+    "地",
+    "僕",
+    "歩",
+    "五"
   ],
   "shadowing": [
-    "sent:tatoeba-109862",
-    "sent:tatoeba-203721",
-    "sent:tatoeba-11075598",
-    "sent:tatoeba-184538",
-    "sent:tatoeba-1806283",
-    "sent:tatoeba-200910"
+    "sent:tatoeba-7967876",
+    "sent:tatoeba-203709",
+    "sent:tatoeba-198114",
+    "sent:tatoeba-230210",
+    "sent:tatoeba-75827",
+    "sent:tatoeba-198075"
   ],
   "srs": {
     "introduces_cards": [
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-109862",
+        "item": "sent:tatoeba-7967876",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-203721",
+        "item": "sent:tatoeba-203709",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-11075598",
+        "item": "sent:tatoeba-198114",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-184538",
+        "item": "sent:tatoeba-230210",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-1806283",
+        "item": "sent:tatoeba-75827",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-200910",
+        "item": "sent:tatoeba-198075",
         "card_types": [
           "production"
         ]
@@ -102,61 +97,77 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 241,
+  "cumulative_known_vocab": 220,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n3:260:1007",
+      "id": "so:n3:755",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:755:40",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "珈琲",
+        "空気",
+        "週間"
+      ]
+    },
+    {
+      "id": "cf:n3:235:526",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "偶然",
-        "移動",
-        "一度"
+        "勘定",
+        "無い",
+        "此れ"
       ]
     },
     {
-      "id": "cf:n3:270:404",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "五",
-        "彼",
-        "駅"
-      ]
-    },
-    {
-      "id": "kr:n3:141",
+      "id": "kr:n3:40",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "いきおい",
-        "おいしい",
-        "コーヒー"
+        "いいえ",
+        "ていど",
+        "いちど"
       ]
     },
     {
-      "id": "kr:n3:55",
+      "id": "kr:n4:40",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "まだ",
-        "かた",
-        "くる"
+        "どんな",
+        "ちかく",
+        "はらう"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-14"
+    "gram:gp-36",
+    "gram:gp-121",
+    "gram:gp-10"
   ],
   "drills": [
     {
-      "pattern": "gram:n3-da-mono-da",
+      "pattern": "gram:darou",
       "examples": [
-        "sent:tatoeba-203576",
-        "sent:tatoeba-10107238",
-        "sent:tatoeba-143461"
+        "sent:tatoeba-84837",
+        "sent:tatoeba-80452",
+        "sent:tatoeba-85312"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:yori",
+      "examples": [
+        "sent:tatoeba-105626",
+        "sent:tatoeba-76098",
+        "sent:tatoeba-173719"
       ],
       "strand": "language-focused"
     },
@@ -168,82 +179,53 @@
         "sent:tatoeba-5057"
       ],
       "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-39",
-      "examples": [
-        "sent:tatoeba-5115",
-        "sent:tatoeba-192503",
-        "sent:tatoeba-192553"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-8",
-      "examples": [
-        "sent:tatoeba-5320",
-        "sent:tatoeba-150175",
-        "sent:tatoeba-11795596"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:kara",
-      "examples": [
-        "sent:tatoeba-76156",
-        "sent:tatoeba-4772",
-        "sent:gen-671b7aebf53d"
-      ],
-      "strand": "language-focused"
     }
   ],
   "production": [
     {
       "prompt": {
-        "pt-BR": "Prefiro ir a pé a pegar ônibus."
+        "pt-BR": "Ontem esqueci o guarda-chuva no trem."
       },
-      "answer_key": "バスよりむしろ歩きたい。",
+      "answer_key": "きのう電車に傘を忘れました。",
       "accepted_variants": [
-        "ばすよりむしろあるきたい",
-        "ばすよりむしろあるきたい。",
-        "バスよりむしろ歩きたい",
-        "バスよりむしろ歩きたい。"
+        "きのうでんしゃにかさをわすれました",
+        "きのうでんしゃにかさをわすれました。",
+        "きのう電車に傘を忘れました",
+        "きのう電車に傘を忘れました。"
       ],
-      "sentence": "sent:tatoeba-198075",
+      "sentence": "sent:tatoeba-10899657",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "As duas estradas se cruzam ali."
+        "pt-BR": "Esqueci o guarda-chuva no trem."
       },
-      "answer_key": "二本の道はそこでクロスしている。",
+      "answer_key": "電車のなかに傘を忘れてきた。",
       "accepted_variants": [
-        "にほんのみちはそこでくろすしている",
-        "にほんのみちはそこでくろすしている。",
-        "にほんのみちわそこでくろすしている",
-        "にほんのみちわそこでくろすしている。",
-        "二本の道はそこでクロスしている",
-        "二本の道はそこでクロスしている。"
+        "でんしゃのなかにかさをわすれてきた",
+        "でんしゃのなかにかさをわすれてきた。",
+        "電車のなかに傘を忘れてきた",
+        "電車のなかに傘を忘れてきた。"
       ],
-      "sentence": "sent:tatoeba-75827",
+      "sentence": "sent:tatoeba-4786026",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Qual é a capital dos Estados Unidos?"
+        "pt-BR": "Você pretende ir de trem? Ou de carro?"
       },
-      "answer_key": "アメリカの首都はどこですか。",
+      "answer_key": "電車で行くつもりなの？それとも車？",
       "accepted_variants": [
-        "あめりかのしゅとはどこですか",
-        "あめりかのしゅとはどこですか。",
-        "あめりかのしゅとわどこですか",
-        "あめりかのしゅとわどこですか。",
-        "アメリカの首都はどこですか",
-        "アメリカの首都はどこですか。"
+        "でんしゃでいくつもりなの?それともくるま",
+        "でんしゃでいくつもりなの?それともくるま?",
+        "電車で行くつもりなの?それとも車",
+        "電車で行くつもりなの?それとも車?",
+        "電車で行くつもりなの？それとも車",
+        "電車で行くつもりなの？それとも車？"
       ],
-      "sentence": "sent:tatoeba-230210",
+      "sentence": "sent:tatoeba-10725053",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -254,11 +236,11 @@
     },
     "items": [
       "sent:tatoeba-182700",
-      "sent:tatoeba-189917",
-      "sent:tatoeba-3595182",
-      "sent:tatoeba-188944",
-      "sent:tatoeba-179391",
-      "sent:tatoeba-9936514"
+      "sent:tatoeba-5115",
+      "sent:tatoeba-162318",
+      "sent:tatoeba-79841",
+      "sent:tatoeba-203703",
+      "sent:tatoeba-201726"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -266,15 +248,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
+    "meaning-input": 25,
     "meaning-output": 6,
-    "language-focused": 61,
-    "fluency": 11
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 33,
+    "language-focused": 27,
     "fluency": 6
   }
 }

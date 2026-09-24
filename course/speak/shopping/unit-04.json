@@ -7,79 +7,87 @@
     "pt-BR": "Isto, aquilo, quanto custa, parte 4"
   },
   "say_now": [
-    "sent:tatoeba-10094172",
-    "sent:tatoeba-8938683",
-    "sent:tatoeba-79848",
-    "sent:tatoeba-2941029",
-    "sent:tatoeba-229178",
-    "sent:tatoeba-205771"
+    "sent:tatoeba-112261",
+    "sent:tatoeba-121802",
+    "sent:tatoeba-199394",
+    "sent:tatoeba-76098",
+    "sent:tatoeba-204523",
+    "sent:tatoeba-159773"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1587040",
-    "vocab:1536010",
-    "vocab:1001820",
-    "vocab:1223615",
-    "vocab:1270810"
+    "vocab:1580640",
+    "vocab:1589350",
+    "vocab:1009330",
+    "vocab:1153670",
+    "vocab:1352290",
+    "vocab:1246270",
+    "vocab:1538920",
+    "vocab:1221770",
+    "vocab:1417020",
+    "vocab:1250720"
   ],
-  "patterns": [],
+  "patterns": [
+    "gram:n3-beki-da",
+    "gram:to-omou"
+  ],
   "kanji_recognition": [
-    "言",
-    "金",
-    "題",
-    "問",
-    "何",
-    "私"
+    "一",
+    "人",
+    "彼",
+    "唯",
+    "意",
+    "敬"
   ],
   "shadowing": [
-    "sent:tatoeba-10094172",
-    "sent:tatoeba-8938683",
-    "sent:tatoeba-79848",
-    "sent:tatoeba-2941029",
-    "sent:tatoeba-229178",
-    "sent:tatoeba-205771"
+    "sent:tatoeba-112261",
+    "sent:tatoeba-121802",
+    "sent:tatoeba-199394",
+    "sent:tatoeba-76098",
+    "sent:tatoeba-204523",
+    "sent:tatoeba-159773"
   ],
   "srs": {
     "introduces_cards": [
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-10094172",
+        "item": "sent:tatoeba-112261",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-8938683",
+        "item": "sent:tatoeba-121802",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-79848",
+        "item": "sent:tatoeba-199394",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-2941029",
+        "item": "sent:tatoeba-76098",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-229178",
+        "item": "sent:tatoeba-204523",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-205771",
+        "item": "sent:tatoeba-159773",
         "card_types": [
           "production"
         ]
@@ -88,92 +96,109 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 86,
+  "cumulative_known_vocab": 84,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n3:199:897",
+      "id": "cf:n3:162:317",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "一番",
-        "最中",
-        "受付"
+        "車",
+        "話",
+        "毒"
       ]
     },
     {
-      "id": "cf:n3:405:897",
+      "id": "cf:n3:35:317",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "時間",
-        "期待",
-        "其れ"
+        "車",
+        "暇",
+        "事"
       ]
     },
     {
-      "id": "kr:n3:102",
+      "id": "kr:n3:1300",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "できる",
-        "はじめ",
+        "もっと",
+        "はらう",
+        "はなし"
+      ]
+    },
+    {
+      "id": "kr:n3:805",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "やめる",
+        "メガネ",
         "ながい"
-      ]
-    },
-    {
-      "id": "kr:n3:44",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "どく",
-        "いく",
-        "なに"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:to-iu-koto",
-    "gram:n3-kirenai",
-    "gram:n3-sore-tomo",
-    "gram:n3-uto-shita",
-    "gram:n3-nai-to",
-    "gram:n3-sore-to"
+    "gram:koto-ga-dekiru",
+    "gram:gp-89",
+    "gram:donna",
+    "gram:n3-koto"
   ],
-  "drills": [],
+  "drills": [
+    {
+      "pattern": "gram:n3-beki-da",
+      "examples": [
+        "sent:tatoeba-144981",
+        "sent:tatoeba-149720",
+        "sent:tatoeba-169806"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-omou",
+      "examples": [
+        "sent:tatoeba-199355",
+        "sent:tatoeba-187786",
+        "sent:tatoeba-160737"
+      ],
+      "strand": "language-focused"
+    }
+  ],
   "production": [
     {
       "prompt": {
-        "pt-BR": "O que isso representa?"
+        "pt-BR": "Você disse 13? Ou foi 30?"
       },
-      "answer_key": "これは何を表しますか。",
+      "answer_key": "１３って言った？それとも３０？",
       "accepted_variants": [
-        "これはなんをあらわしますか",
-        "これはなんをあらわしますか。",
-        "これは何を表しますか",
-        "これは何を表しますか。",
-        "これわなんをあらわしますか",
-        "これわなんをあらわしますか。"
+        "13って言った?それとも30",
+        "13って言った?それとも30?",
+        "じゅうさんっていった?それともさんじゅう",
+        "じゅうさんっていった?それともさんじゅう?",
+        "１３って言った？それとも３０",
+        "１３って言った？それとも３０？"
       ],
-      "sentence": "sent:tatoeba-218479",
+      "sentence": "sent:tatoeba-8938683",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "O que é aquilo?"
+        "pt-BR": "Isso é difícil de dizer, né."
       },
-      "answer_key": "あれは何ですか。",
+      "answer_key": "それは言いにくいな。",
       "accepted_variants": [
-        "あれはなんですか",
-        "あれはなんですか。",
-        "あれは何ですか",
-        "あれは何ですか。",
-        "あれわなんですか",
-        "あれわなんですか。"
+        "それはいいにくいな",
+        "それはいいにくいな。",
+        "それは言いにくいな",
+        "それは言いにくいな。",
+        "それわいいにくいな",
+        "それわいいにくいな。"
       ],
-      "sentence": "sent:tatoeba-229723",
+      "sentence": "sent:tatoeba-10094172",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
@@ -202,8 +227,8 @@
       "sent:tatoeba-204910",
       "sent:tatoeba-87935",
       "sent:tatoeba-119330",
-      "sent:tatoeba-127122",
-      "sent:tatoeba-9930561"
+      "sent:tatoeba-9930561",
+      "sent:tatoeba-5332"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -211,15 +236,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 33,
-    "meaning-output": 8,
-    "language-focused": 42,
-    "fluency": 17
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 15,
+    "language-focused": 24,
     "fluency": 6
   }
 }

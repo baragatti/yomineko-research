@@ -11,28 +11,26 @@
     "sent:tatoeba-204910",
     "sent:tatoeba-13713986",
     "sent:tatoeba-205962",
-    "sent:tatoeba-229723",
-    "sent:tatoeba-218479"
+    "sent:tatoeba-10094172",
+    "sent:tatoeba-8938683"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1483150",
-    "vocab:1577100",
+    "vocab:1587040",
     "vocab:1220570",
     "vocab:1436540",
-    "vocab:1263490",
     "vocab:1375290",
     "vocab:1155210",
     "vocab:1420680",
-    "vocab:1610550",
-    "vocab:1628530"
+    "vocab:1610550"
   ],
   "patterns": [
     "gram:gp-149",
+    "gram:nikui",
     "gram:da-desu",
-    "gram:gp-4",
-    "gram:gp-8"
+    "gram:gp-3"
   ],
   "kanji_recognition": [
     "高",
@@ -47,8 +45,8 @@
     "sent:tatoeba-204910",
     "sent:tatoeba-13713986",
     "sent:tatoeba-205962",
-    "sent:tatoeba-229723",
-    "sent:tatoeba-218479"
+    "sent:tatoeba-10094172",
+    "sent:tatoeba-8938683"
   ],
   "srs": {
     "introduces_cards": [
@@ -82,14 +80,14 @@
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-229723",
+        "item": "sent:tatoeba-10094172",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-218479",
+        "item": "sent:tatoeba-8938683",
         "card_types": [
           "production"
         ]
@@ -98,7 +96,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 81,
+  "cumulative_known_vocab": 74,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -127,25 +125,25 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "うけつけ",
         "くださる",
-        "はじめる"
+        "はじめる",
+        "ゆっくり"
       ]
     },
     {
-      "id": "kr:n3:1393",
+      "id": "kr:n3:1394",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "おくれる",
-        "せいかく",
-        "おぼえる"
+        "ゆっくり",
+        "しつもん",
+        "おくれる"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-2",
-    "gram:gp-3"
+    "gram:n3-sore-tomo",
+    "gram:n3-sore-to"
   ],
   "drills": [
     {
@@ -158,29 +156,29 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:nikui",
+      "examples": [
+        "sent:tatoeba-9458223",
+        "sent:tatoeba-10006818",
+        "sent:tatoeba-11995722"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:da-desu",
       "examples": [
         "sent:tatoeba-5332",
-        "sent:tatoeba-5057",
-        "sent:tatoeba-4708"
+        "sent:tatoeba-4708",
+        "sent:tatoeba-4973"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-4",
+      "pattern": "gram:gp-3",
       "examples": [
-        "sent:tatoeba-229742",
-        "sent:tatoeba-229731",
-        "sent:tatoeba-229736"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-8",
-      "examples": [
-        "sent:tatoeba-150175",
-        "sent:tatoeba-11795596",
-        "sent:tatoeba-5320"
+        "sent:tatoeba-76604",
+        "sent:tatoeba-4799",
+        "sent:tatoeba-4802"
       ],
       "strand": "language-focused"
     }
@@ -244,9 +242,9 @@
       "sent:tatoeba-109210",
       "sent:jec-0436",
       "sent:tatoeba-3598838",
-      "sent:tatoeba-9408530",
-      "sent:tatoeba-13885289",
-      "sent:tatoeba-13259054"
+      "sent:tatoeba-127122",
+      "sent:tatoeba-229460",
+      "sent:tatoeba-5109"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -254,15 +252,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 26,
     "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 26,
     "fluency": 6
   }
 }

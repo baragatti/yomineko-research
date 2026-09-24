@@ -247,18 +247,19 @@ Approximate JLPT bands are shown for orientation only — **the path never gates
 | 12 | Conversa de verdade | `real_talk` | らしい そうです ば たら のに ながら わけ | N3 |
 
 Full seed lexicons live in the builder, not here, so they stay executable rather than drifting from the
-prose. **The survival cores of R87 are live in 9 of 12 stages (W32 apply, 2026-09-23).** W32 authored
+prose. **The survival cores of R87 are live in all 12 stages (P4-w32-ingest, 2026-09-23).** W32 authored
 a core for all eleven stages that had none (`research/derived/pending/speak_survival_cores.json`, 71
-rows, one term per speech act), but a term goes live in `SURVIVAL_SEEDS` only once its OWN sentence is
-banked: 9 of the 71 are, and the other 62 wait on an ingest their Layer-B residue blocks
-(`research/derived/pending/w32_layerb_derived.json`: structure paragraph and literal translation on all
-62, 25 particle explanations, 9 ambiguous glosses). A term without its row promotes whatever else
-carries it, which is measurably worse (all 71 live at once: near-duplicate pairs 24 -> 35). So today
-`shopping` keeps its 8 terms, eight more stages have 1 or 2 each, and `arrival`, `lodging` and
-`past_stories` have none. Each term teaches its act ONCE per stage: after the first phrase carrying a
-term is placed, later sentences with the same term rank like anything else. It is a hard gate
-(`validate_speaking_path.py`): every stage declares a core unless it is listed as pending its ingest
-(a list that may only shrink), and every declared core reaches the stage's opening unit (9/9).
+rows, one term per speech act). A term goes live in `SURVIVAL_SEEDS` only once its OWN sentence is
+banked, because a term without its row promotes whatever else carries it (all 71 live on a bank holding
+9 of them: near-duplicate pairs 24 -> 35). C9 banked 9; P4-w32-ingest banked the other 62 with their
+verified Layer-B (`research/derived/repairs/w32_layerb.json`), so all 71 terms are live next to
+`shopping`'s 8. Each term teaches its act ONCE per stage: after the first phrase carrying a term is
+placed, later sentences with the same term rank like anything else, and inside the survival bucket a
+term's own W32 row ranks ahead of look-alikes (without it 勘定を頼むよ beat お勘定お願いします). The one
+generated core (薬をください) may lead its stage under D10's default. Result: 71 / 71 rows on the path in
+their own stage, 60 in unit 01. It is a hard gate (`validate_speaking_path.py`): every stage declares a
+core unless it is listed as pending its ingest (a shrink-only list, now empty), and every declared core
+reaches the stage's opening unit (12/12).
 
 **SRS (W30, decision D10).** Every unit enrols its say_now phrases in `deck:phrases` through
 `srs.introduces_cards`, the same shape a lesson uses (`{deck, item: sent:…, card_types}`): 432 cards,

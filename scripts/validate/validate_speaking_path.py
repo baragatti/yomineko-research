@@ -205,11 +205,12 @@ def survival_hit(sent: dict | None, terms: list[str]) -> bool:
     return any(t in lems or (len(t) >= 4 and t in jp) for t in terms)
 
 
-# R87 hard gate, second half: every stage declares a survival core. These stages have none live yet
-# because their W32 rows are not banked (research/derived/pending/w32_layerb_derived.json holds the
-# Layer-B residue that blocks the ingest). The list may only shrink: a listed stage that now declares a
-# core is a FAIL, so the entry is removed the day its core goes live.
-SURVIVAL_CORE_PENDING = {"arrival", "lodging", "past_stories"}
+# R87 hard gate, second half: every stage declares a survival core. A stage listed here had none live
+# because its W32 rows were not banked. The list may only shrink: a listed stage that now declares a
+# core is a FAIL, so the entry is removed the day its core goes live. P4-w32-ingest banked the last 62
+# rows (research/derived/repairs/w32_layerb.json) and emptied it: arrival, lodging and past_stories
+# declare their cores, so all 12 stages are held to the gate.
+SURVIVAL_CORE_PENDING: set[str] = set()
 
 
 def embed_paths(node: object, path: str, found: dict[str, int]) -> None:

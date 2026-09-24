@@ -7,79 +7,83 @@
     "pt-BR": "Isto, aquilo, quanto custa, parte 6"
   },
   "say_now": [
-    "sent:tatoeba-219445",
-    "sent:tatoeba-8687007",
-    "sent:tatoeba-3488181",
-    "sent:tatoeba-8748248",
-    "sent:tatoeba-4562312",
-    "sent:tatoeba-199061"
+    "sent:tatoeba-178954",
+    "sent:tatoeba-160740",
+    "sent:tatoeba-196349",
+    "sent:tatoeba-225975",
+    "sent:tatoeba-193835",
+    "sent:tatoeba-205802"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1000420",
-    "vocab:2820690",
-    "vocab:1358280",
-    "vocab:1534520",
-    "vocab:1375620",
-    "vocab:1279310"
+    "vocab:1247250",
+    "vocab:1420470",
+    "vocab:1277450",
+    "vocab:1521400",
+    "vocab:1344410",
+    "vocab:1356510",
+    "vocab:1164340",
+    "vocab:1012500",
+    "vocab:1007340"
   ],
   "patterns": [],
   "kanji_recognition": [
-    "更",
-    "高",
-    "木",
-    "食",
-    "安"
+    "君",
+    "件",
+    "助",
+    "条",
+    "私",
+    "知"
   ],
   "shadowing": [
-    "sent:tatoeba-219445",
-    "sent:tatoeba-8687007",
-    "sent:tatoeba-3488181",
-    "sent:tatoeba-8748248",
-    "sent:tatoeba-4562312",
-    "sent:tatoeba-199061"
+    "sent:tatoeba-178954",
+    "sent:tatoeba-160740",
+    "sent:tatoeba-196349",
+    "sent:tatoeba-225975",
+    "sent:tatoeba-193835",
+    "sent:tatoeba-205802"
   ],
   "srs": {
     "introduces_cards": [
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-219445",
+        "item": "sent:tatoeba-178954",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-8687007",
+        "item": "sent:tatoeba-160740",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-3488181",
+        "item": "sent:tatoeba-196349",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-8748248",
+        "item": "sent:tatoeba-225975",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-4562312",
+        "item": "sent:tatoeba-193835",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-199061",
+        "item": "sent:tatoeba-205802",
         "card_types": [
           "production"
         ]
@@ -88,115 +92,103 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 102,
+  "cumulative_known_vocab": 99,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:56",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:3603",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3603:648",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "元気",
-        "いい",
-        "受付"
-      ]
-    },
-    {
-      "id": "cf:n3:709:184",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "何",
-        "番",
-        "左"
-      ]
-    },
-    {
-      "id": "kr:n3:184",
+      "id": "kr:n4:314",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "きく",
-        "ひま",
-        "それ"
+        "よる",
+        "レジ",
+        "ぼく"
       ]
     },
     {
-      "id": "kr:n3:31",
+      "id": "kr:n4:322",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "こと",
-        "いく",
-        "あれ"
+        "もし",
+        "まつ",
+        "だけ"
+      ]
+    },
+    {
+      "id": "cf:n3:125:1131",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "値段",
+        "言う",
+        "一番"
+      ]
+    },
+    {
+      "id": "cf:n3:15:286",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "今晩",
+        "一番",
+        "言う"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-51",
-    "gram:naku-temo-ii",
-    "gram:hou-ga-ii",
-    "gram:gp-71",
-    "gram:gp-134",
-    "gram:gp-62"
+    "gram:n3-moshi-tanara",
+    "gram:n3-te-hajimete",
+    "gram:n3-dake-shika",
+    "gram:n3-ni-tsuite",
+    "gram:te-kureru",
+    "gram:n3-to-iu"
   ],
   "drills": [],
   "production": [
     {
       "prompt": {
-        "pt-BR": "Acho que foi só coincidência."
+        "pt-BR": "De preferência, o mais barato possível."
       },
-      "answer_key": "それは単なる偶然だと思う。",
+      "answer_key": "なるべく安いほうがいいです。",
       "accepted_variants": [
-        "それはたんなるぐうぜんだとおもう",
-        "それはたんなるぐうぜんだとおもう。",
-        "それは単なる偶然だと思う",
-        "それは単なる偶然だと思う。",
-        "それわたんなるぐうぜんだとおもう",
-        "それわたんなるぐうぜんだとおもう。"
+        "なるべくやすいほうがいいです",
+        "なるべくやすいほうがいいです。",
+        "なるべく安いほうがいいです",
+        "なるべく安いほうがいいです。"
       ],
-      "sentence": "sent:tatoeba-159773",
+      "sentence": "sent:tatoeba-199061",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Sinto muito por saber disso."
+        "pt-BR": "É melhor não fazer isso!"
       },
-      "answer_key": "それを聞いて気の毒に思う。",
+      "answer_key": "それをしないほうがいいよ！",
       "accepted_variants": [
-        "それをきいてきのどくにおもう",
-        "それをきいてきのどくにおもう。",
-        "それを聞いて気の毒に思う",
-        "それを聞いて気の毒に思う。"
+        "それをしないほうがいいよ",
+        "それをしないほうがいいよ!",
+        "それをしないほうがいいよ！"
       ],
-      "sentence": "sent:tatoeba-204523",
+      "sentence": "sent:tatoeba-4562312",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Saiu mais barato do que eu pensava."
+        "pt-BR": "Tudo bem se eu não comer isto?"
       },
-      "answer_key": "思ったより安くあがった。",
+      "answer_key": "これ、食べなくてもいい？",
       "accepted_variants": [
-        "おもったよりやすくあがった",
-        "おもったよりやすくあがった。",
-        "思ったより安くあがった",
-        "思ったより安くあがった。"
+        "これ、たべなくてもいい",
+        "これ、たべなくてもいい?",
+        "これ、食べなくてもいい",
+        "これ、食べなくてもいい?",
+        "これ、食べなくてもいい？"
       ],
-      "sentence": "sent:tatoeba-76098",
+      "sentence": "sent:tatoeba-8748248",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -206,9 +198,9 @@
       "pt-BR": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra."
     },
     "items": [
-      "sent:tatoeba-121802",
-      "sent:tatoeba-112261",
-      "sent:tatoeba-229178",
+      "sent:tatoeba-159773",
+      "sent:tatoeba-204523",
+      "sent:tatoeba-76098",
       "sent:tatoeba-13713986",
       "sent:tatoeba-204910",
       "sent:tatoeba-87935"
@@ -219,15 +211,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 32,
+    "meaning-input": 30,
     "meaning-output": 8,
-    "language-focused": 45,
-    "fluency": 16
+    "language-focused": 48,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 17,
+    "language-focused": 19,
     "fluency": 6
   }
 }

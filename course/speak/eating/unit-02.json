@@ -7,53 +7,64 @@
     "pt-BR": "Comer e beber fora, parte 2"
   },
   "say_now": [
-    "sent:tatoeba-10899775",
+    "sent:tatoeba-3549484",
+    "sent:tatoeba-79093",
+    "sent:tatoeba-9819543",
     "sent:tatoeba-200661",
     "sent:tatoeba-182254",
-    "sent:tatoeba-171644",
-    "sent:tatoeba-172639",
-    "sent:tatoeba-11009755"
+    "sent:tatoeba-171644"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1012480",
+    "vocab:1315840",
+    "vocab:1416830",
     "vocab:1008630",
     "vocab:1579110",
-    "vocab:1288850",
-    "vocab:1562350",
+    "vocab:1174420",
     "vocab:1151260",
+    "vocab:1597890",
     "vocab:1578010",
-    "vocab:1486650",
+    "vocab:1188760",
     "vocab:1231690",
-    "vocab:1426250",
-    "vocab:1358550"
+    "vocab:1546220"
   ],
-  "patterns": [
-    "gram:gp-17",
-    "gram:n3-temo"
-  ],
+  "patterns": [],
   "kanji_recognition": [
+    "英",
+    "語",
+    "意",
     "食",
-    "昼",
-    "堂",
-    "去",
-    "作",
-    "年"
+    "夕",
+    "用"
   ],
   "shadowing": [
-    "sent:tatoeba-10899775",
+    "sent:tatoeba-3549484",
+    "sent:tatoeba-79093",
+    "sent:tatoeba-9819543",
     "sent:tatoeba-200661",
     "sent:tatoeba-182254",
-    "sent:tatoeba-171644",
-    "sent:tatoeba-172639",
-    "sent:tatoeba-11009755"
+    "sent:tatoeba-171644"
   ],
   "srs": {
     "introduces_cards": [
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-10899775",
+        "item": "sent:tatoeba-3549484",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-79093",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-9819543",
         "card_types": [
           "production"
         ]
@@ -78,48 +89,24 @@
         "card_types": [
           "production"
         ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-172639",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-11009755",
-        "card_types": [
-          "production"
-        ]
       }
     ]
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 125,
+  "cumulative_known_vocab": 116,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:818",
+      "id": "so:n4:930",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "so:n4:818",
+      "id": "so:n4:956",
       "type": "sentence_order",
       "via": "phrase"
-    },
-    {
-      "id": "cf:n4:818:313",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "知る",
-        "会計",
-        "何時"
-      ]
     },
     {
       "id": "cf:n4:930:202",
@@ -132,129 +119,121 @@
       ]
     },
     {
-      "id": "kr:n3:64",
-      "type": "kanji_reading",
-      "via": "new-word",
+      "id": "cf:n4:956:199",
+      "type": "context_fill",
+      "via": "phrase",
       "distractors": [
-        "のむ",
-        "かれ",
-        "みず"
+        "行く",
+        "話す",
+        "先生"
       ]
     },
     {
-      "id": "kr:n3:95",
+      "id": "kr:n3:58",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "あらわす",
-        "おくれる",
-        "せんせい"
+        "レジ",
+        "ぼく",
+        "はい"
+      ]
+    },
+    {
+      "id": "kr:n3:88",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たかい",
+        "きょう",
+        "おもう"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:nagara",
-    "gram:ndesu",
-    "gram:totemo",
-    "gram:gp-121"
+    "gram:n3-you-to-shinai",
+    "gram:doushite",
+    "gram:gp-36",
+    "gram:gp-115",
+    "gram:rareru",
+    "gram:totemo"
   ],
-  "drills": [
-    {
-      "pattern": "gram:gp-17",
-      "examples": [
-        "sent:tatoeba-80132",
-        "sent:tatoeba-124633",
-        "sent:tatoeba-144227"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-temo",
-      "examples": [
-        "sent:tatoeba-173357",
-        "sent:tatoeba-85028",
-        "sent:tatoeba-6015"
-      ],
-      "strand": "language-focused"
-    }
-  ],
+  "drills": [],
   "production": [
     {
       "prompt": {
-        "pt-BR": "Por que ninguém quer comer o que eu fiz?"
+        "pt-BR": "Eu não como carne."
       },
-      "answer_key": "どうして誰も私が作ったものを食べようとしないの？",
+      "answer_key": "お肉は食べられません。",
       "accepted_variants": [
-        "どうしてだれもわたしがつくったものをたべようとしないの",
-        "どうしてだれもわたしがつくったものをたべようとしないの?",
-        "どうして誰も私が作ったものを食べようとしないの",
-        "どうして誰も私が作ったものを食べようとしないの?",
-        "どうして誰も私が作ったものを食べようとしないの？"
+        "おにくはたべられません",
+        "おにくはたべられません。",
+        "おにくわたべられません",
+        "おにくわたべられません。",
+        "お肉は食べられません",
+        "お肉は食べられません。"
       ],
-      "sentence": "sent:tatoeba-9819543",
+      "sentence": "sent:tatoeba-226787",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "O jantar já está pronto, então a gente pode comer na hora que quiser."
+        "pt-BR": "O cardápio, por favor."
       },
-      "answer_key": "夕食の用意はできているから、いつでも食べたいときに食べられるよ。",
+      "answer_key": "メニューをください。",
       "accepted_variants": [
-        "ゆうしょくのよういはできているから、いつでもたべたいときにたべられるよ",
-        "ゆうしょくのよういはできているから、いつでもたべたいときにたべられるよ。",
-        "ゆうしょくのよういわできているから、いつでもたべたいときにたべられるよ",
-        "ゆうしょくのよういわできているから、いつでもたべたいときにたべられるよ。",
-        "夕食の用意はできているから、いつでも食べたいときに食べられるよ",
-        "夕食の用意はできているから、いつでも食べたいときに食べられるよ。"
+        "めにゅーをください",
+        "めにゅーをください。",
+        "メニューをください",
+        "メニューをください。"
       ],
-      "sentence": "sent:tatoeba-79093",
+      "sentence": "sent:tatoeba-12890046",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Eu gosto de beber água mineral natural."
+        "pt-BR": "A conta, por favor."
       },
-      "answer_key": "天然のミネラルウォーターを飲むのが好きです。",
+      "answer_key": "お勘定お願いします。",
       "accepted_variants": [
-        "てんねんのみねらるうぉーたーをのむのがすきです",
-        "てんねんのみねらるうぉーたーをのむのがすきです。",
-        "天然のミネラルウォーターを飲むのが好きです",
-        "天然のミネラルウォーターを飲むのが好きです。"
+        "おかんじょうおねがいします",
+        "おかんじょうおねがいします。",
+        "お勘定お願いします",
+        "お勘定お願いします。"
       ],
-      "sentence": "sent:tatoeba-13795168",
+      "sentence": "sent:tatoeba-3452051",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt": {
-      "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
+      "pt-BR": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom."
     },
     "items": [
+      "sent:tatoeba-188145",
+      "sent:tatoeba-137275",
+      "sent:tatoeba-205802",
       "sent:tatoeba-8748248",
-      "sent:tatoeba-121802",
-      "sent:tatoeba-112261",
-      "sent:tatoeba-229178",
-      "sent:tatoeba-218479",
-      "sent:tatoeba-229723"
+      "sent:tatoeba-159773",
+      "sent:tatoeba-204523"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
-    "kind": "recap",
+    "kind": "situation",
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 23,
     "fluency": 6
   }
 }

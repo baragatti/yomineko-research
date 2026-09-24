@@ -7,92 +7,88 @@
     "pt-BR": "Conversa de verdade, parte 5"
   },
   "say_now": [
-    "sent:tatoeba-12776411",
-    "sent:tatoeba-8988161",
-    "sent:tatoeba-175375",
-    "sent:tatoeba-11264636",
-    "sent:tatoeba-118031",
-    "sent:tatoeba-5287"
+    "sent:tatoeba-143985",
+    "sent:tatoeba-172198",
+    "sent:tatoeba-169225",
+    "sent:tatoeba-10901570",
+    "sent:tatoeba-89607",
+    "sent:tatoeba-214502"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1376760",
-    "vocab:1332650",
-    "vocab:1325910",
-    "vocab:1512070",
-    "vocab:1179330",
-    "vocab:1604300",
-    "vocab:1203650",
-    "vocab:1258200",
-    "vocab:1424550",
-    "vocab:1499830",
-    "vocab:1390780"
+    "vocab:1207250",
+    "vocab:1289370",
+    "vocab:1304680",
+    "vocab:1313830",
+    "vocab:1006110",
+    "vocab:1526960",
+    "vocab:1589590",
+    "vocab:1542070"
   ],
   "patterns": [
     "gram:n3-wake-dewa-nai",
-    "gram:n3-wake-ga-nai",
+    "gram:n3-to-iu-no-wa",
+    "gram:n3-to-iu-yori",
     "gram:n3-mitai-da",
-    "gram:janai-dewa-nai",
-    "gram:n3-bakari",
-    "gram:n3-hazu-da"
+    "gram:janai-dewa-nai"
   ],
   "kanji_recognition": [
-    "絵",
-    "確",
-    "景",
-    "写",
-    "心",
-    "正"
+    "楽",
+    "人",
+    "生",
+    "遊",
+    "今",
+    "先"
   ],
   "shadowing": [
-    "sent:tatoeba-12776411",
-    "sent:tatoeba-8988161",
-    "sent:tatoeba-175375",
-    "sent:tatoeba-11264636",
-    "sent:tatoeba-118031",
-    "sent:tatoeba-5287"
+    "sent:tatoeba-143985",
+    "sent:tatoeba-172198",
+    "sent:tatoeba-169225",
+    "sent:tatoeba-10901570",
+    "sent:tatoeba-89607",
+    "sent:tatoeba-214502"
   ],
   "srs": {
     "introduces_cards": [
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-12776411",
+        "item": "sent:tatoeba-143985",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-8988161",
+        "item": "sent:tatoeba-172198",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-175375",
+        "item": "sent:tatoeba-169225",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-11264636",
+        "item": "sent:tatoeba-10901570",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-118031",
+        "item": "sent:tatoeba-89607",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-5287",
+        "item": "sent:tatoeba-214502",
         "card_types": [
           "production"
         ]
@@ -101,68 +97,89 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 694,
+  "cumulative_known_vocab": 632,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n3:745:8",
+      "id": "so:n3:357",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:502",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:357:199",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "phrase",
       "distractors": [
-        "傘",
-        "風",
-        "川"
+        "今年",
+        "無し",
+        "更に"
       ]
     },
     {
-      "id": "cf:n4:852:8",
+      "id": "cf:n3:502:1096",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "phrase",
       "distractors": [
-        "歳",
-        "私",
-        "親"
+        "来る",
+        "辛い",
+        "首都"
       ]
     },
     {
-      "id": "kr:n3:140",
+      "id": "kr:n3:1006",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "きょうかしょ",
-        "じょうきょう",
-        "ひとりひとり"
+        "ねこ",
+        "ぎん",
+        "ぜひ"
       ]
     },
     {
-      "id": "kr:n3:8",
+      "id": "kr:n3:1096",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "もし",
-        "やる",
-        "いつ"
+        "そんな",
+        "もどる",
+        "こころ"
       ]
     }
   ],
-  "patterns_chunked": [],
+  "patterns_chunked": [
+    "gram:n3-to-iu-no"
+  ],
   "drills": [
     {
       "pattern": "gram:n3-wake-dewa-nai",
       "examples": [
-        "sent:tatoeba-10901570",
         "sent:tatoeba-156748",
-        "sent:tatoeba-77972"
+        "sent:tatoeba-77972",
+        "sent:tatoeba-77973"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:n3-wake-ga-nai",
+      "pattern": "gram:n3-to-iu-no-wa",
       "examples": [
-        "sent:tatoeba-10181528",
-        "sent:tatoeba-10050266",
-        "sent:tatoeba-4900568"
+        "sent:tatoeba-423387",
+        "sent:tatoeba-168168",
+        "sent:tatoeba-119734"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-to-iu-yori",
+      "examples": [
+        "sent:tatoeba-87097",
+        "sent:tatoeba-101234",
+        "sent:tatoeba-11001542"
       ],
       "strand": "language-focused"
     },
@@ -183,75 +200,55 @@
         "sent:tatoeba-536769"
       ],
       "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-bakari",
-      "examples": [
-        "sent:tatoeba-96219",
-        "sent:tatoeba-113980",
-        "sent:tatoeba-147558"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-hazu-da",
-      "examples": [
-        "sent:tatoeba-8579878",
-        "sent:tatoeba-10631706",
-        "sent:tatoeba-3552030"
-      ],
-      "strand": "language-focused"
     }
   ],
   "production": [
     {
       "prompt": {
-        "pt-BR": "Dizer que a neve é azul é um erro."
+        "pt-BR": "Sendo assim, eu não pude comparecer."
       },
-      "answer_key": "雪が青いというのは誤りだ。",
+      "answer_key": "そういうわけだから私は出席できなかったのです。",
       "accepted_variants": [
-        "ゆきがあおいというのはあやまりだ",
-        "ゆきがあおいというのはあやまりだ。",
-        "ゆきがあおいというのわあやまりだ",
-        "ゆきがあおいというのわあやまりだ。",
-        "雪が青いというのは誤りだ",
-        "雪が青いというのは誤りだ。"
+        "そういうわけだからわたしはしゅっせきできなかったのです",
+        "そういうわけだからわたしはしゅっせきできなかったのです。",
+        "そういうわけだからわたしわしゅっせきできなかったのです",
+        "そういうわけだからわたしわしゅっせきできなかったのです。",
+        "そういうわけだから私は出席できなかったのです",
+        "そういうわけだから私は出席できなかったのです。"
       ],
-      "sentence": "sent:tatoeba-142020",
+      "sentence": "sent:tatoeba-213957",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Como é o sabor do especial?"
+        "pt-BR": "A reunião não teve uma presença especialmente boa."
       },
-      "answer_key": "スペシャルというのはどんな味ですか。",
+      "answer_key": "その会は特に出席がよいわけではなかった。",
       "accepted_variants": [
-        "すぺしゃるというのはどんなあじですか",
-        "すぺしゃるというのはどんなあじですか。",
-        "すぺしゃるというのわどんなあじですか",
-        "すぺしゃるというのわどんなあじですか。",
-        "スペシャルというのはどんな味ですか",
-        "スペシャルというのはどんな味ですか。"
+        "そのかいはとくにしゅっせきがよいわけではなかった",
+        "そのかいはとくにしゅっせきがよいわけではなかった。",
+        "そのかいわとくにしゅっせきがよいわけでわなかった",
+        "そのかいわとくにしゅっせきがよいわけでわなかった。",
+        "その会は特に出席がよいわけではなかった",
+        "その会は特に出席がよいわけではなかった。"
       ],
-      "sentence": "sent:tatoeba-214502",
+      "sentence": "sent:tatoeba-211899",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Não é que o caso tenha acabado."
+        "pt-BR": "No entanto, é caro demais."
       },
-      "answer_key": "事件は終わったわけではない。",
+      "answer_key": "しかしながら、高すぎる。",
       "accepted_variants": [
-        "じけんはおわったわけではない",
-        "じけんはおわったわけではない。",
-        "じけんわおわったわけでわない",
-        "じけんわおわったわけでわない。",
-        "事件は終わったわけではない",
-        "事件は終わったわけではない。"
+        "しかしながら、たかすぎる",
+        "しかしながら、たかすぎる。",
+        "しかしながら、高すぎる",
+        "しかしながら、高すぎる。"
       ],
-      "sentence": "sent:tatoeba-10901570",
+      "sentence": "sent:tatoeba-216263",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -261,12 +258,12 @@
       "pt-BR": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa."
     },
     "items": [
-      "sent:tatoeba-172198",
-      "sent:tatoeba-143985",
-      "sent:tatoeba-211899",
-      "sent:tatoeba-216263",
-      "sent:tatoeba-90133",
-      "sent:tatoeba-9938017"
+      "sent:tatoeba-120314",
+      "sent:tatoeba-123542",
+      "sent:tatoeba-1227292",
+      "sent:tatoeba-10050266",
+      "sent:tatoeba-80952",
+      "sent:tatoeba-230514"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -274,15 +271,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 61,
-    "fluency": 11
+    "language-focused": 59,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 33,
+    "language-focused": 30,
     "fluency": 6
   }
 }

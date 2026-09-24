@@ -7,12 +7,12 @@
     "pt-BR": "Emergência e saúde, parte 2"
   },
   "say_now": [
+    "sent:tatoeba-10647294",
     "sent:tatoeba-10266474",
     "sent:tatoeba-83934",
     "sent:jec-0673",
     "sent:tatoeba-90106",
-    "sent:tatoeba-223742",
-    "sent:tatoeba-137996"
+    "sent:tatoeba-223742"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -22,39 +22,42 @@
     "vocab:1445160",
     "vocab:1229840",
     "vocab:1579080",
-    "vocab:1330290",
-    "vocab:1222590",
     "vocab:1583720",
     "vocab:1490220",
     "vocab:1169250",
+    "vocab:1242130",
     "vocab:2394370",
-    "vocab:1467710",
     "vocab:1539080",
-    "vocab:1200220",
-    "vocab:1156640",
-    "vocab:1409200"
+    "vocab:1156640"
   ],
   "patterns": [
     "gram:n3-to-iu"
   ],
   "kanji_recognition": [
-    "意",
+    "一",
     "院",
-    "私",
-    "識",
+    "近",
+    "番",
     "病",
-    "戻"
+    "意"
   ],
   "shadowing": [
+    "sent:tatoeba-10647294",
     "sent:tatoeba-10266474",
     "sent:tatoeba-83934",
     "sent:jec-0673",
     "sent:tatoeba-90106",
-    "sent:tatoeba-223742",
-    "sent:tatoeba-137996"
+    "sent:tatoeba-223742"
   ],
   "srs": {
     "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10647294",
+        "card_types": [
+          "production"
+        ]
+      },
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-10266474",
@@ -89,40 +92,33 @@
         "card_types": [
           "production"
         ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-137996",
-        "card_types": [
-          "production"
-        ]
       }
     ]
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 453,
+  "cumulative_known_vocab": 414,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n3:183:848",
+      "id": "cf:n3:278:431",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "本当",
-        "子供",
-        "もう"
+        "奥",
+        "一",
+        "宿"
       ]
     },
     {
-      "id": "cf:n3:184:848",
+      "id": "cf:n3:279:431",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "戻る",
-        "受付",
-        "贅沢"
+        "何",
+        "分",
+        "歳"
       ]
     },
     {
@@ -136,13 +132,13 @@
       ]
     },
     {
-      "id": "kr:n4:431",
+      "id": "kr:n4:391",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "さ",
-        "き",
-        "え"
+        "メガネ",
+        "やすい",
+        "おなか"
       ]
     }
   ],
@@ -167,52 +163,46 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Ele cresceu e virou médico."
+        "pt-BR": "Estou com muita febre."
       },
-      "answer_key": "彼は成長して医者になった。",
+      "answer_key": "とても熱があります。",
       "accepted_variants": [
-        "かれはせいちょうしていしゃになった",
-        "かれはせいちょうしていしゃになった。",
-        "かれわせいちょうしていしゃになった",
-        "かれわせいちょうしていしゃになった。",
-        "彼は成長して医者になった",
-        "彼は成長して医者になった。"
+        "とてもねつがあります",
+        "とてもねつがあります。",
+        "とても熱があります",
+        "とても熱があります。"
       ],
-      "sentence": "sent:tatoeba-103362",
+      "sentence": "sent:tatoeba-200568",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Aquele médico é gentil com os pacientes."
+        "pt-BR": "Chame um médico, por favor."
       },
-      "answer_key": "あの医者は患者に優しい。",
+      "answer_key": "医者を呼んで下さい。",
       "accepted_variants": [
-        "あのいしゃはかんじゃにやさしい",
-        "あのいしゃはかんじゃにやさしい。",
-        "あのいしゃわかんじゃにやさしい",
-        "あのいしゃわかんじゃにやさしい。",
-        "あの医者は患者に優しい",
-        "あの医者は患者に優しい。"
+        "いしゃをよんでください",
+        "いしゃをよんでください。",
+        "医者を呼んで下さい",
+        "医者を呼んで下さい。"
       ],
-      "sentence": "sent:tatoeba-231218",
+      "sentence": "sent:tatoeba-190738",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Ele é incompetente como médico."
+        "pt-BR": "Me ajuda, por favor."
       },
-      "answer_key": "彼は医者として無能だ。",
+      "answer_key": "助けてください。",
       "accepted_variants": [
-        "かれはいしゃとしてむのうだ",
-        "かれはいしゃとしてむのうだ。",
-        "かれわいしゃとしてむのうだ",
-        "かれわいしゃとしてむのうだ。",
-        "彼は医者として無能だ",
-        "彼は医者として無能だ。"
+        "たすけてください",
+        "たすけてください。",
+        "助けてください",
+        "助けてください。"
       ],
-      "sentence": "sent:tatoeba-110066",
+      "sentence": "sent:tatoeba-1039551",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -222,12 +212,12 @@
       "pt-BR": "Você não está bem. Explique o que está sentindo e peça ajuda."
     },
     "items": [
-      "sent:tatoeba-1039551",
-      "sent:tatoeba-80364",
-      "sent:tatoeba-2298758",
-      "sent:tatoeba-11169134",
-      "sent:tatoeba-171539",
-      "sent:tatoeba-154767"
+      "sent:tatoeba-10008425",
+      "sent:tatoeba-752231",
+      "sent:gen-1c83f478ab11",
+      "sent:tatoeba-174391",
+      "sent:tatoeba-154767",
+      "sent:tatoeba-9777117"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -235,15 +225,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 24,
     "fluency": 6
   }
 }

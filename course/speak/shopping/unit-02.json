@@ -18,6 +18,7 @@
   "untranslated": [],
   "words": [
     "vocab:1483070",
+    "vocab:1259290",
     "vocab:1323080",
     "vocab:1165970",
     "vocab:1342550",
@@ -28,7 +29,8 @@
     "vocab:1012980"
   ],
   "patterns": [
-    "gram:da-desu"
+    "gram:da-desu",
+    "gram:gp-3"
   ],
   "kanji_recognition": [
     "一",
@@ -94,7 +96,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 71,
+  "cumulative_known_vocab": 66,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -105,7 +107,7 @@
       "distractors": [
         "夜",
         "事",
-        "皆"
+        "話"
       ]
     },
     {
@@ -113,9 +115,9 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "右",
         "車",
-        "番"
+        "夜",
+        "暇"
       ]
     },
     {
@@ -125,7 +127,7 @@
       "distractors": [
         "くださる",
         "せんせい",
-        "おぼえる"
+        "すいどう"
       ]
     },
     {
@@ -133,8 +135,8 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ひだり",
         "こちら",
+        "もっと",
         "たかい"
       ]
     },
@@ -153,7 +155,6 @@
     "gram:sore-kara",
     "gram:n3-rareta",
     "gram:gp-121",
-    "gram:gp-3",
     "gram:ichiban"
   ],
   "drills": [
@@ -161,8 +162,17 @@
       "pattern": "gram:da-desu",
       "examples": [
         "sent:tatoeba-5332",
-        "sent:tatoeba-5057",
-        "sent:tatoeba-4708"
+        "sent:tatoeba-4708",
+        "sent:tatoeba-4973"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-3",
+      "examples": [
+        "sent:tatoeba-76604",
+        "sent:tatoeba-4799",
+        "sent:tatoeba-4802"
       ],
       "strand": "language-focused"
     }
@@ -187,21 +197,6 @@
     },
     {
       "prompt": {
-        "pt-BR": "À esquerda fica a recepção e à direita, o caixa."
-      },
-      "answer_key": "左が受付で、右が会計です。",
-      "accepted_variants": [
-        "ひだりがうけつけで、みぎがかいけいです",
-        "ひだりがうけつけで、みぎがかいけいです。",
-        "左が受付で、右が会計です",
-        "左が受付で、右が会計です。"
-      ],
-      "sentence": "sent:tatoeba-9408530",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt": {
         "pt-BR": "O pagamento deve ser feito no caixa, por favor."
       },
       "answer_key": "代金はレジでお払い下さい。",
@@ -216,6 +211,23 @@
       "sentence": "sent:tatoeba-137848",
       "kind": "same-stage",
       "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "O preço não é nada caro."
+      },
+      "answer_key": "値段は決して高くない。",
+      "accepted_variants": [
+        "ねだんはけっしてたかくない",
+        "ねだんはけっしてたかくない。",
+        "ねだんわけっしてたかくない",
+        "ねだんわけっしてたかくない。",
+        "値段は決して高くない",
+        "値段は決して高くない。"
+      ],
+      "sentence": "sent:tatoeba-127122",
+      "kind": "same-stage",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -223,12 +235,12 @@
       "pt-BR": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra."
     },
     "items": [
-      "sent:tatoeba-127122",
       "sent:tatoeba-9930561",
       "sent:tatoeba-5332",
-      "sent:tatoeba-229425",
+      "sent:tatoeba-13259054",
       "sent:tatoeba-11021618",
-      "sent:tatoeba-229460"
+      "sent:tatoeba-8795518",
+      "sent:tatoeba-12889995"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -236,15 +248,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
+    "meaning-input": 26,
     "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 25,
     "fluency": 6
   }
 }

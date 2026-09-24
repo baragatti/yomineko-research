@@ -7,16 +7,17 @@
     "pt-BR": "Falar de você, parte 4"
   },
   "say_now": [
+    "sent:tatoeba-104573",
     "sent:tatoeba-189285",
     "sent:tatoeba-102734",
     "sent:tatoeba-179712",
     "sent:tatoeba-13172379",
-    "sent:tatoeba-78188",
-    "sent:tatoeba-109051"
+    "sent:tatoeba-78188"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1324300",
     "vocab:1173720",
     "vocab:1404390",
     "vocab:1242590",
@@ -24,34 +25,40 @@
     "vocab:1553170",
     "vocab:1206900",
     "vocab:1254180",
-    "vocab:1484620",
     "vocab:1310050",
     "vocab:1357030",
     "vocab:1595090"
   ],
   "patterns": [
     "gram:gp-105",
-    "gram:yori",
-    "gram:da-desu"
+    "gram:totemo",
+    "gram:n3-temo"
   ],
   "kanji_recognition": [
-    "映",
-    "画",
-    "作",
     "仕",
     "事",
-    "人"
+    "若",
+    "彼",
+    "映",
+    "画"
   ],
   "shadowing": [
+    "sent:tatoeba-104573",
     "sent:tatoeba-189285",
     "sent:tatoeba-102734",
     "sent:tatoeba-179712",
     "sent:tatoeba-13172379",
-    "sent:tatoeba-78188",
-    "sent:tatoeba-109051"
+    "sent:tatoeba-78188"
   ],
   "srs": {
     "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-104573",
+        "card_types": [
+          "production"
+        ]
+      },
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-189285",
@@ -86,19 +93,12 @@
         "card_types": [
           "production"
         ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-109051",
-        "card_types": [
-          "production"
-        ]
       }
     ]
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 352,
+  "cumulative_known_vocab": 323,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -112,9 +112,9 @@
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "贅沢",
         "余り",
-        "此れ"
+        "此れ",
+        "毛布"
       ]
     },
     {
@@ -122,9 +122,9 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "始め",
         "過ぎ",
-        "持つ"
+        "持つ",
+        "去年"
       ]
     },
     {
@@ -142,9 +142,9 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "きょうぎ",
-        "かいてき",
-        "ほうそう"
+        "ゆっくり",
+        "きのどく",
+        "いじょう"
       ]
     },
     {
@@ -152,16 +152,16 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "あんな",
         "くうき",
-        "たがい"
+        "たがい",
+        "いくら"
       ]
     }
   ],
   "patterns_chunked": [
+    "gram:n3-wari-ni-wa",
     "gram:saseru",
-    "gram:n3-koto",
-    "gram:gp-121"
+    "gram:n3-koto"
   ],
   "drills": [
     {
@@ -174,56 +174,25 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:yori",
+      "pattern": "gram:totemo",
       "examples": [
-        "sent:tatoeba-105626",
-        "sent:tatoeba-76098",
-        "sent:tatoeba-173719"
+        "sent:tatoeba-5074",
+        "sent:gen-b2855c4e58c0",
+        "sent:tatoeba-4947"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:da-desu",
+      "pattern": "gram:n3-temo",
       "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
+        "sent:tatoeba-173357",
+        "sent:tatoeba-6015",
+        "sent:tatoeba-85028"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt": {
-        "pt-BR": "Para alguém tão jovem, ele fez um trabalho muito bom."
-      },
-      "answer_key": "彼は若いわりにはとてもいい仕事をした。",
-      "accepted_variants": [
-        "かれはわかいわりにはとてもいいしごとをした",
-        "かれはわかいわりにはとてもいいしごとをした。",
-        "かれわわかいわりにわとてもいいしごとをした",
-        "かれわわかいわりにわとてもいいしごとをした。",
-        "彼は若いわりにはとてもいい仕事をした",
-        "彼は若いわりにはとてもいい仕事をした。"
-      ],
-      "sentence": "sent:tatoeba-104573",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "Hoje passou na TV uma reportagem sobre o trabalho dos seguranças."
-      },
-      "answer_key": "ＳＰの仕事の様子が今日テレビで放送されました",
-      "accepted_variants": [
-        "SPの仕事の様子が今日テレビで放送されました",
-        "えすぴーのしごとのようすがきょうてれびでほうそうされました",
-        "ＳＰの仕事の様子が今日テレビで放送されました"
-      ],
-      "sentence": "sent:jec-4753",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
     {
       "prompt": {
         "pt-BR": "Esta empresa fabrica televisores."
@@ -240,6 +209,40 @@
       "sentence": "sent:tatoeba-222670",
       "kind": "same-stage",
       "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "Neste país é difícil arrumar emprego."
+      },
+      "answer_key": "この国で仕事に就くのは難しいよ。",
+      "accepted_variants": [
+        "このくにでしごとにつくのはむずかしいよ",
+        "このくにでしごとにつくのはむずかしいよ。",
+        "このくにでしごとにつくのわむずかしいよ",
+        "このくにでしごとにつくのわむずかしいよ。",
+        "この国で仕事に就くのは難しいよ",
+        "この国で仕事に就くのは難しいよ。"
+      ],
+      "sentence": "sent:tatoeba-12476202",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "O trabalho está praticamente terminado."
+      },
+      "answer_key": "仕事はだいたい終わった。",
+      "accepted_variants": [
+        "しごとはだいたいおわった",
+        "しごとはだいたいおわった。",
+        "しごとわだいたいおわった",
+        "しごとわだいたいおわった。",
+        "仕事はだいたい終わった",
+        "仕事はだいたい終わった。"
+      ],
+      "sentence": "sent:tatoeba-169114",
+      "kind": "same-stage",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -247,12 +250,12 @@
       "pt-BR": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta."
     },
     "items": [
-      "sent:tatoeba-141544",
-      "sent:tatoeba-80771",
-      "sent:tatoeba-99645",
-      "sent:jec-0320",
-      "sent:tatoeba-210316",
-      "sent:tatoeba-5060"
+      "sent:tatoeba-169112",
+      "sent:tatoeba-11386733",
+      "sent:tatoeba-9553773",
+      "sent:tatoeba-79312",
+      "sent:tatoeba-84568",
+      "sent:tatoeba-227125"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

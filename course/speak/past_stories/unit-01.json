@@ -7,89 +7,82 @@
     "pt-BR": "Contar o que aconteceu, parte 1"
   },
   "say_now": [
-    "sent:tatoeba-199229",
-    "sent:tatoeba-106778",
-    "sent:tatoeba-170021",
-    "sent:tatoeba-142423",
-    "sent:tatoeba-78156",
-    "sent:tatoeba-143986"
+    "sent:tatoeba-5207944",
+    "sent:tatoeba-169967",
+    "sent:tatoeba-4751193",
+    "sent:tatoeba-122452",
+    "sent:tatoeba-921333",
+    "sent:tatoeba-122877"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1512670",
-    "vocab:1329590",
-    "vocab:1360480",
-    "vocab:1432920",
     "vocab:1207240",
-    "vocab:1382370",
-    "vocab:1228560",
-    "vocab:1549340",
-    "vocab:1327790",
-    "vocab:1484350",
-    "vocab:1577120"
+    "vocab:1203620",
+    "vocab:1464030"
   ],
   "patterns": [
+    "gram:ga-arimasu",
     "gram:gp-32",
-    "gram:nara",
-    "gram:da-desu"
+    "gram:da-desu",
+    "gram:gp-8"
   ],
   "kanji_recognition": [
-    "間",
-    "強",
+    "楽",
     "昨",
-    "私",
-    "長",
-    "日"
+    "暑",
+    "日",
+    "行",
+    "旅"
   ],
   "shadowing": [
-    "sent:tatoeba-199229",
-    "sent:tatoeba-106778",
-    "sent:tatoeba-170021",
-    "sent:tatoeba-142423",
-    "sent:tatoeba-78156",
-    "sent:tatoeba-143986"
+    "sent:tatoeba-5207944",
+    "sent:tatoeba-169967",
+    "sent:tatoeba-4751193",
+    "sent:tatoeba-122452",
+    "sent:tatoeba-921333",
+    "sent:tatoeba-122877"
   ],
   "srs": {
     "introduces_cards": [
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-199229",
+        "item": "sent:tatoeba-5207944",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-106778",
+        "item": "sent:tatoeba-169967",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-170021",
+        "item": "sent:tatoeba-4751193",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-142423",
+        "item": "sent:tatoeba-122452",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-78156",
+        "item": "sent:tatoeba-921333",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-143986",
+        "item": "sent:tatoeba-122877",
         "card_types": [
           "production"
         ]
@@ -98,24 +91,14 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 498,
+  "cumulative_known_vocab": 456,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n3:192:883",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "嵐",
-        "誰",
-        "箱"
-      ]
-    },
-    {
       "id": "cf:n3:33:378",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
         "手ごろ",
         "手伝う",
@@ -123,57 +106,56 @@
       ]
     },
     {
-      "id": "kr:n3:847",
-      "type": "kanji_reading",
+      "id": "cf:n3:34:378",
+      "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "おまえ",
-        "おとこ",
-        "くらい"
+        "危ない",
+        "続ける",
+        "切れる"
       ]
     },
     {
-      "id": "kr:n4:1083",
+      "id": "kr:n3:139",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "たかい",
-        "ちかく",
-        "よやく"
+        "すいどう",
+        "われわれ",
+        "せつめい"
       ]
     },
     {
-      "id": "pp:n3:1422",
-      "type": "paraphrase",
-      "via": "review",
+      "id": "kr:n4:139",
+      "type": "kanji_reading",
+      "via": "new-word",
       "distractors": [
-        "昼",
-        "丈",
-        "肉"
+        "シャワー",
+        "つたえる",
+        "ひじょう"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:n3-nazenara",
-    "gram:gp-121",
-    "gram:kyuu-ni"
+    "gram:n3-koto",
+    "gram:gp-121"
   ],
   "drills": [
+    {
+      "pattern": "gram:ga-arimasu",
+      "examples": [
+        "sent:tatoeba-150175",
+        "sent:tatoeba-150639",
+        "sent:tatoeba-122353"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:gp-32",
       "examples": [
         "sent:tatoeba-85319",
         "sent:tatoeba-78700",
         "sent:tatoeba-4714"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nara",
-      "examples": [
-        "sent:tatoeba-80337",
-        "sent:tatoeba-80586",
-        "sent:tatoeba-80338"
       ],
       "strand": "language-focused"
     },
@@ -185,26 +167,18 @@
         "sent:tatoeba-5057"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-8",
+      "examples": [
+        "sent:tatoeba-5320",
+        "sent:tatoeba-176635",
+        "sent:tatoeba-11795596"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt": {
-        "pt-BR": "Ele viajou com as despesas pagas pela empresa."
-      },
-      "answer_key": "彼は会社の費用で旅行した。",
-      "accepted_variants": [
-        "かれはかいしゃのひようでりょこうした",
-        "かれはかいしゃのひようでりょこうした。",
-        "かれわかいしゃのひようでりょこうした",
-        "かれわかいしゃのひようでりょこうした。",
-        "彼は会社の費用で旅行した",
-        "彼は会社の費用で旅行した。"
-      ],
-      "sentence": "sent:tatoeba-109051",
-      "kind": "on-topic",
-      "strand": "meaning-output"
-    },
     {
       "prompt": {
         "pt-BR": "Você gosta de viajar?"
@@ -236,6 +210,21 @@
       "sentence": "sent:tatoeba-84568",
       "kind": "on-topic",
       "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "No ano passado eu plantei tomates, e ficaram muito gostosos."
+      },
+      "answer_key": "去年トマトを作ったがとてもおいしかった。",
+      "accepted_variants": [
+        "きょねんとまとをつくったがとてもおいしかった",
+        "きょねんとまとをつくったがとてもおいしかった。",
+        "去年トマトを作ったがとてもおいしかった",
+        "去年トマトを作ったがとてもおいしかった。"
+      ],
+      "sentence": "sent:tatoeba-182254",
+      "kind": "on-topic",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -245,10 +234,10 @@
     "items": [
       "sent:tatoeba-186727",
       "sent:tatoeba-8743355",
-      "sent:tatoeba-11270411",
-      "sent:tatoeba-79499",
       "sent:tatoeba-179256",
-      "sent:tatoeba-90106"
+      "sent:tatoeba-137964",
+      "sent:jec-0673",
+      "sent:tatoeba-10647294"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -256,15 +245,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 21,
     "fluency": 6
   }
 }

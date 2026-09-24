@@ -215,6 +215,14 @@ def main() -> int:
             k = str(s2.get("key") or s2["tatoeba_id"])
             layerb[k] = s2
             batch_of[k] = f.name
+    # P4-w32-ingest: a source row may carry its Layer-B INLINE (tokens / particles / structure
+    # paragraph), so one tracked table (research/derived/repairs/w32_layerb.json) is both the source
+    # and the batch; its batch, the unit of atomicity, is that file. Inline wins over a --layerb batch.
+    for src in sources:
+        for r in json.loads(src.read_text(encoding="utf-8"))["rows"]:
+            if "structure_explanation_pt" in r and not r.get("reject"):
+                layerb[sentence_key(r)] = r
+                batch_of[sentence_key(r)] = src.name
     print(f"{len(layerb)} sentences carry authored Layer-B dissection content in "
           f"{len(set(batch_of.values()))} batch file(s)")
 

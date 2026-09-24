@@ -7,46 +7,69 @@
     "pt-BR": "Emergência e saúde, parte 1"
   },
   "say_now": [
+    "sent:gen-1c83f478ab11",
+    "sent:tatoeba-752231",
+    "sent:tatoeba-10008425",
     "sent:tatoeba-1039551",
-    "sent:tatoeba-190906",
-    "sent:tatoeba-110065",
-    "sent:tatoeba-110066",
-    "sent:tatoeba-231218",
-    "sent:tatoeba-103362"
+    "sent:tatoeba-190738",
+    "sent:tatoeba-200568"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1159980",
-    "vocab:1344410",
-    "vocab:1541620",
-    "vocab:1539040",
-    "vocab:1212210",
-    "vocab:1375790"
+    "vocab:1222590",
+    "vocab:1538160",
+    "vocab:1002610",
+    "vocab:1467710"
   ],
   "patterns": [
+    "gram:o-kudasai-2",
+    "gram:ga-arimasu",
+    "gram:o-kudasai",
     "gram:te-kudasai",
-    "gram:n3-beki-da",
-    "gram:gp-87"
+    "gram:totemo",
+    "gram:n3-temo"
   ],
   "kanji_recognition": [
-    "助",
-    "医",
-    "者",
-    "彼",
-    "名",
-    "有"
+    "薬",
+    "悪",
+    "気",
+    "分",
+    "痛",
+    "腹"
   ],
   "shadowing": [
+    "sent:gen-1c83f478ab11",
+    "sent:tatoeba-752231",
+    "sent:tatoeba-10008425",
     "sent:tatoeba-1039551",
-    "sent:tatoeba-190906",
-    "sent:tatoeba-110065",
-    "sent:tatoeba-110066",
-    "sent:tatoeba-231218",
-    "sent:tatoeba-103362"
+    "sent:tatoeba-190738",
+    "sent:tatoeba-200568"
   ],
   "srs": {
     "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:gen-1c83f478ab11",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-752231",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10008425",
+        "card_types": [
+          "production"
+        ]
+      },
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-1039551",
@@ -56,35 +79,14 @@
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-190906",
+        "item": "sent:tatoeba-190738",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-110065",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-110066",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-231218",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-103362",
+        "item": "sent:tatoeba-200568",
         "card_types": [
           "production"
         ]
@@ -92,29 +94,39 @@
     ]
   },
   "audio": "pending",
-  "real_phrases": 6,
-  "cumulative_known_vocab": 437,
+  "real_phrases": 5,
+  "cumulative_known_vocab": 402,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n4:3662:51",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "病気",
-        "来る",
-        "先生"
-      ]
-    },
-    {
-      "id": "cf:n4:3402:51",
+      "id": "cf:n3:130:211",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "今晩",
-        "意見",
-        "新聞"
+        "月",
+        "町",
+        "木"
+      ]
+    },
+    {
+      "id": "cf:n3:183:848",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "本当",
+        "子供",
+        "もう"
+      ]
+    },
+    {
+      "id": "kr:n3:120",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ゆびわ",
+        "ふるい",
+        "こまる"
       ]
     },
     {
@@ -123,51 +135,64 @@
       "via": "new-word",
       "distractors": [
         "してん",
-        "みやげ",
-        "かりる"
-      ]
-    },
-    {
-      "id": "kr:n4:51",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "きんし",
-        "もっと",
-        "ぜんぶ"
+        "かりる",
+        "てんき"
       ]
     }
   ],
-  "patterns_chunked": [
-    "gram:n3-to-shite",
-    "gram:gp-121",
-    "gram:gp-16"
-  ],
+  "patterns_chunked": [],
   "drills": [
+    {
+      "pattern": "gram:o-kudasai-2",
+      "examples": [
+        "sent:gen-0e95f64b542d",
+        "sent:gen-96ce440b58e0",
+        "sent:gen-0114d50c684c"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:ga-arimasu",
+      "examples": [
+        "sent:tatoeba-150175",
+        "sent:tatoeba-150639",
+        "sent:tatoeba-122353"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:o-kudasai",
+      "examples": [
+        "sent:tatoeba-143718",
+        "sent:tatoeba-150556",
+        "sent:tatoeba-9930561"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:te-kudasai",
       "examples": [
-        "sent:tatoeba-146189",
         "sent:tatoeba-124708",
-        "sent:tatoeba-5109"
+        "sent:tatoeba-5109",
+        "sent:tatoeba-146189"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:n3-beki-da",
+      "pattern": "gram:totemo",
       "examples": [
-        "sent:tatoeba-144981",
-        "sent:tatoeba-149720",
-        "sent:tatoeba-169806"
+        "sent:tatoeba-5092",
+        "sent:tatoeba-5074",
+        "sent:gen-b2855c4e58c0"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-87",
+      "pattern": "gram:n3-temo",
       "examples": [
-        "sent:tatoeba-11390339",
-        "sent:tatoeba-11390341",
-        "sent:tatoeba-198201"
+        "sent:tatoeba-173357",
+        "sent:tatoeba-6015",
+        "sent:tatoeba-85028"
       ],
       "strand": "language-focused"
     }
@@ -192,37 +217,33 @@
     },
     {
       "prompt": {
-        "pt-BR": "Este cupom vale por duas semanas."
+        "pt-BR": "Eu faço isso, com a condição de que você me ajude."
       },
-      "answer_key": "この券は２週間有効です。",
+      "answer_key": "君が助けてくれるという条件で、それをやります。",
       "accepted_variants": [
-        "このけんはにしゅうかんゆうこうです",
-        "このけんはにしゅうかんゆうこうです。",
-        "このけんわにしゅうかんゆうこうです",
-        "このけんわにしゅうかんゆうこうです。",
-        "この券は2週間有効です",
-        "この券は2週間有効です。",
-        "この券は２週間有効です",
-        "この券は２週間有効です。"
+        "きみがたすけてくれるというじょうけんで、それをやります",
+        "きみがたすけてくれるというじょうけんで、それをやります。",
+        "君が助けてくれるという条件で、それをやります",
+        "君が助けてくれるという条件で、それをやります。"
       ],
-      "sentence": "sent:tatoeba-222131",
-      "kind": "review",
+      "sentence": "sent:tatoeba-178954",
+      "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "A gente se encontra a cada três semanas."
+        "pt-BR": "À tarde não quero sair de casa."
       },
-      "answer_key": "３週間ごとに会ってます。",
+      "answer_key": "午後は外へ出たくない。",
       "accepted_variants": [
-        "3週間ごとに会ってます",
-        "3週間ごとに会ってます。",
-        "さんしゅうかんごとにあってます",
-        "さんしゅうかんごとにあってます。",
-        "３週間ごとに会ってます",
-        "３週間ごとに会ってます。"
+        "ごごはそとへでたくない",
+        "ごごはそとへでたくない。",
+        "ごごわそとえでたくない",
+        "ごごわそとえでたくない。",
+        "午後は外へ出たくない",
+        "午後は外へ出たくない。"
       ],
-      "sentence": "sent:tatoeba-10303648",
+      "sentence": "sent:tatoeba-174391",
       "kind": "review",
       "strand": "meaning-output"
     }
@@ -232,12 +253,12 @@
       "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
-      "sent:tatoeba-1144222",
-      "sent:tatoeba-171813",
-      "sent:tatoeba-171800",
-      "sent:tatoeba-536767",
       "sent:tatoeba-143418",
-      "sent:tatoeba-171514"
+      "sent:tatoeba-80364",
+      "sent:tatoeba-2298758",
+      "sent:tatoeba-171514",
+      "sent:tatoeba-80068",
+      "sent:tatoeba-150277"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -245,15 +266,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
-    "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 27,
     "fluency": 6
   }
 }

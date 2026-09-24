@@ -7,46 +7,71 @@
     "pt-BR": "Dizer o que você acha, parte 2"
   },
   "say_now": [
+    "sent:tatoeba-211242",
+    "sent:tatoeba-152088",
+    "sent:tatoeba-81566",
     "sent:tatoeba-78959",
-    "sent:tatoeba-11692639",
-    "sent:tatoeba-118153",
-    "sent:tatoeba-119734",
-    "sent:tatoeba-5348453",
-    "sent:tatoeba-151044"
+    "sent:tatoeba-209394",
+    "sent:tatoeba-77523"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1252090",
+    "vocab:1359070",
     "vocab:1281000",
-    "vocab:1376600",
-    "vocab:1312420",
-    "vocab:1497980",
-    "vocab:1414470"
+    "vocab:1344970",
+    "vocab:1558370",
+    "vocab:1449870",
+    "vocab:1264770",
+    "vocab:1334210",
+    "vocab:1476430"
   ],
   "patterns": [
-    "gram:n3-to-iu-no-wa",
-    "gram:hazu-ga-nai",
-    "gram:n3-to-iu-no",
-    "gram:hazu-da"
+    "gram:janai-dewa-nai",
+    "gram:n3-hazu-da",
+    "gram:n3-to-shite",
+    "gram:gp-89"
   ],
   "kanji_recognition": [
-    "考",
-    "思",
-    "余",
-    "正",
-    "意",
-    "見"
+    "画",
+    "計",
+    "住",
+    "対",
+    "反",
+    "民"
   ],
   "shadowing": [
+    "sent:tatoeba-211242",
+    "sent:tatoeba-152088",
+    "sent:tatoeba-81566",
     "sent:tatoeba-78959",
-    "sent:tatoeba-11692639",
-    "sent:tatoeba-118153",
-    "sent:tatoeba-119734",
-    "sent:tatoeba-5348453",
-    "sent:tatoeba-151044"
+    "sent:tatoeba-209394",
+    "sent:tatoeba-77523"
   ],
   "srs": {
     "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-211242",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-152088",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-81566",
+        "card_types": [
+          "production"
+        ]
+      },
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-78959",
@@ -56,35 +81,14 @@
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-11692639",
+        "item": "sent:tatoeba-209394",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-118153",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-119734",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-5348453",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-151044",
+        "item": "sent:tatoeba-77523",
         "card_types": [
           "production"
         ]
@@ -93,38 +97,38 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 621,
+  "cumulative_known_vocab": 568,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:132",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:196",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:196:889",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "到着",
-        "値段",
-        "立つ"
-      ]
-    },
-    {
-      "id": "cf:n3:195:889",
+      "id": "cf:n3:251:1082",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "問題",
-        "煙草",
-        "合う"
+        "中央",
+        "乗る",
+        "近く"
+      ]
+    },
+    {
+      "id": "cf:n3:704:136",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "買い物",
+        "決して",
+        "尋ねる"
+      ]
+    },
+    {
+      "id": "kr:n3:136",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かんがえる",
+        "りょうしん",
+        "じゅうぶん"
       ]
     },
     {
@@ -136,56 +140,46 @@
         "だんせい",
         "いただく"
       ]
-    },
-    {
-      "id": "kr:n4:1104",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かいてき",
-        "きんゆう",
-        "はくしゅ"
-      ]
     }
   ],
   "patterns_chunked": [
-    "gram:n3-ni-oite",
-    "gram:n3-ni-tsuite"
+    "gram:hazu-ga-nai",
+    "gram:n3-nai-to"
   ],
   "drills": [
     {
-      "pattern": "gram:n3-to-iu-no-wa",
+      "pattern": "gram:janai-dewa-nai",
       "examples": [
-        "sent:tatoeba-423387",
-        "sent:tatoeba-168168",
-        "sent:tatoeba-120314"
+        "sent:gen-c8e36c94f4e2",
+        "sent:tatoeba-144679",
+        "sent:tatoeba-536769"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:hazu-ga-nai",
+      "pattern": "gram:n3-hazu-da",
       "examples": [
-        "sent:tatoeba-81586",
-        "sent:tatoeba-141784",
-        "sent:tatoeba-209394"
+        "sent:tatoeba-8579878",
+        "sent:tatoeba-10631706",
+        "sent:tatoeba-3552030"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:n3-to-iu-no",
+      "pattern": "gram:n3-to-shite",
       "examples": [
-        "sent:tatoeba-220804",
-        "sent:tatoeba-138773",
-        "sent:tatoeba-214502"
+        "sent:tatoeba-11977679",
+        "sent:tatoeba-110065",
+        "sent:tatoeba-110066"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:hazu-da",
+      "pattern": "gram:gp-89",
       "examples": [
-        "sent:tatoeba-519050",
-        "sent:tatoeba-198131",
-        "sent:tatoeba-235244"
+        "sent:tatoeba-144038",
+        "sent:tatoeba-123036",
+        "sent:tatoeba-4855"
       ],
       "strand": "language-focused"
     }
@@ -193,50 +187,50 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "O trem era pra chegar às seis."
+        "pt-BR": "Acho que ele não vem."
       },
-      "answer_key": "列車は６時到着のはずだった。",
+      "answer_key": "彼は来ないと思います。",
       "accepted_variants": [
-        "れっしゃはろくじとうちゃくのはずだった",
-        "れっしゃはろくじとうちゃくのはずだった。",
-        "れっしゃわろくじとうちゃくのはずだった",
-        "れっしゃわろくじとうちゃくのはずだった。",
-        "列車は6時到着のはずだった",
-        "列車は6時到着のはずだった。",
-        "列車は６時到着のはずだった",
-        "列車は６時到着のはずだった。"
+        "かれはこないとおもいます",
+        "かれはこないとおもいます。",
+        "かれわこないとおもいます",
+        "かれわこないとおもいます。",
+        "彼は来ないと思います",
+        "彼は来ないと思います。"
       ],
-      "sentence": "sent:tatoeba-77523",
+      "sentence": "sent:tatoeba-78713",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "É impossível que aquela menina tenha feito uma coisa dessas."
+        "pt-BR": "Acho melhor assim."
       },
-      "answer_key": "その女の子がそんなことをしたはずがない。",
+      "answer_key": "その方がいいと思う。",
       "accepted_variants": [
-        "そのおんなのこがそんなことをしたはずがない",
-        "そのおんなのこがそんなことをしたはずがない。",
-        "その女の子がそんなことをしたはずがない",
-        "その女の子がそんなことをしたはずがない。"
+        "そのほうがいいとおもう",
+        "そのほうがいいとおもう。",
+        "その方がいいと思う",
+        "その方がいいと思う。"
       ],
-      "sentence": "sent:tatoeba-209394",
+      "sentence": "sent:tatoeba-11870768",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "É sério. Pode acreditar."
+        "pt-BR": "Eu acho que sim."
       },
-      "answer_key": "本当さ。信じた方がいいぜ。",
+      "answer_key": "私はそう思います。",
       "accepted_variants": [
-        "ほんとうさ。しんじたほうがいいぜ",
-        "ほんとうさ。しんじたほうがいいぜ。",
-        "本当さ。信じた方がいいぜ",
-        "本当さ。信じた方がいいぜ。"
+        "わたしはそうおもいます",
+        "わたしはそうおもいます。",
+        "わたしわそうおもいます",
+        "わたしわそうおもいます。",
+        "私はそう思います",
+        "私はそう思います。"
       ],
-      "sentence": "sent:tatoeba-81566",
+      "sentence": "sent:tatoeba-160449",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -246,12 +240,12 @@
       "pt-BR": "Perguntaram sua opinião. Diga o que você acha e por quê."
     },
     "items": [
-      "sent:tatoeba-78713",
-      "sent:tatoeba-9966137",
-      "sent:tatoeba-74723",
+      "sent:tatoeba-8724557",
+      "sent:tatoeba-3583428",
       "sent:tatoeba-201255",
       "sent:tatoeba-9614704",
-      "sent:tatoeba-83404"
+      "sent:tatoeba-226013",
+      "sent:tatoeba-149694"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -259,15 +253,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 27,
     "fluency": 6
   }
 }

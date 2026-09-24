@@ -7,8 +7,8 @@
     "pt-BR": "Comer e beber fora, parte 3"
   },
   "say_now": [
+    "sent:tatoeba-172639",
     "sent:tatoeba-10557770",
-    "sent:tatoeba-97583",
     "sent:tatoeba-10657609",
     "sent:tatoeba-204265",
     "sent:tatoeba-145930",
@@ -17,31 +17,29 @@
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1288850",
     "vocab:1463770",
-    "vocab:1516925",
     "vocab:1007130",
     "vocab:1456360",
-    "vocab:1291800",
+    "vocab:1169870",
     "vocab:1348910",
     "vocab:1157760",
-    "vocab:1327410",
-    "vocab:1179320"
+    "vocab:1327410"
   ],
   "patterns": [
-    "gram:gp-149",
-    "gram:nagara"
+    "gram:gp-149"
   ],
   "kanji_recognition": [
+    "今",
+    "食",
     "飲",
     "少",
     "水",
-    "日",
-    "奥",
-    "座"
+    "日"
   ],
   "shadowing": [
+    "sent:tatoeba-172639",
     "sent:tatoeba-10557770",
-    "sent:tatoeba-97583",
     "sent:tatoeba-10657609",
     "sent:tatoeba-204265",
     "sent:tatoeba-145930",
@@ -51,14 +49,14 @@
     "introduces_cards": [
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-10557770",
+        "item": "sent:tatoeba-172639",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-97583",
+        "item": "sent:tatoeba-10557770",
         "card_types": [
           "production"
         ]
@@ -95,38 +93,38 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 134,
+  "cumulative_known_vocab": 124,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
-    {
-      "id": "cf:n3:693:617",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "皆",
-        "私",
-        "夜"
-      ]
-    },
     {
       "id": "cf:n4:693:617",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
         "話",
-        "方",
-        "何"
+        "何",
+        "人"
       ]
     },
     {
-      "id": "kr:n4:159",
+      "id": "cf:n3:123:64",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "私",
+        "時",
+        "日"
+      ]
+    },
+    {
+      "id": "kr:n3:64",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "あう",
-        "みず",
-        "くる"
+        "のむ",
+        "かれ",
+        "みず"
       ]
     },
     {
@@ -135,8 +133,8 @@
       "via": "new-word",
       "distractors": [
         "はじめて",
-        "うけつけ",
-        "おしえる"
+        "おしえる",
+        "ぐうぜん"
       ]
     }
   ],
@@ -144,7 +142,8 @@
     "gram:sonna-ni",
     "gram:doushite",
     "gram:gp-87",
-    "gram:gp-89"
+    "gram:gp-89",
+    "gram:nagara"
   ],
   "drills": [
     {
@@ -155,50 +154,9 @@
         "sent:tatoeba-79091"
       ],
       "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nagara",
-      "examples": [
-        "sent:tatoeba-83210",
-        "sent:tatoeba-11009755",
-        "sent:tatoeba-226844"
-      ],
-      "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt": {
-        "pt-BR": "Não pode falar enquanto come!"
-      },
-      "answer_key": "食べながら話しちゃダメだよ。",
-      "accepted_variants": [
-        "たべながらはなしちゃだめだよ",
-        "たべながらはなしちゃだめだよ。",
-        "食べながら話しちゃダメだよ",
-        "食べながら話しちゃダメだよ。"
-      ],
-      "sentence": "sent:tatoeba-11009755",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "É que agora não estou a fim de comer."
-      },
-      "answer_key": "今は食べたくないんです。",
-      "accepted_variants": [
-        "いまはたべたくないんです",
-        "いまはたべたくないんです。",
-        "いまわたべたくないんです",
-        "いまわたべたくないんです。",
-        "今は食べたくないんです",
-        "今は食べたくないんです。"
-      ],
-      "sentence": "sent:tatoeba-172639",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
     {
       "prompt": {
         "pt-BR": "Hoje os peixes não estão mordendo a isca."
@@ -215,6 +173,34 @@
       "sentence": "sent:tatoeba-171644",
       "kind": "same-stage",
       "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "No ano passado eu plantei tomates, e ficaram muito gostosos."
+      },
+      "answer_key": "去年トマトを作ったがとてもおいしかった。",
+      "accepted_variants": [
+        "きょねんとまとをつくったがとてもおいしかった",
+        "きょねんとまとをつくったがとてもおいしかった。",
+        "去年トマトを作ったがとてもおいしかった",
+        "去年トマトを作ったがとてもおいしかった。"
+      ],
+      "sentence": "sent:tatoeba-182254",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "Está muito gostoso!"
+      },
+      "answer_key": "とてもおいしいよ。",
+      "accepted_variants": [
+        "とてもおいしいよ",
+        "とてもおいしいよ。"
+      ],
+      "sentence": "sent:tatoeba-200661",
+      "kind": "same-stage",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -222,12 +208,12 @@
       "pt-BR": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom."
     },
     "items": [
-      "sent:tatoeba-182254",
-      "sent:tatoeba-200661",
-      "sent:tatoeba-10899775",
-      "sent:tatoeba-13795168",
-      "sent:tatoeba-159773",
-      "sent:tatoeba-204523"
+      "sent:tatoeba-226787",
+      "sent:tatoeba-12890046",
+      "sent:tatoeba-196349",
+      "sent:tatoeba-160740",
+      "sent:tatoeba-76098",
+      "sent:tatoeba-121802"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -235,15 +221,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
+    "meaning-input": 29,
     "meaning-output": 7,
-    "language-focused": 52,
-    "fluency": 14
+    "language-focused": 49,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 20,
     "fluency": 6
   }
 }

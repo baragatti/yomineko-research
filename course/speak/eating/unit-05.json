@@ -7,54 +7,69 @@
     "pt-BR": "Comer e beber fora, parte 5"
   },
   "say_now": [
+    "sent:tatoeba-5329",
     "sent:tatoeba-197249",
+    "sent:tatoeba-190536",
     "sent:tatoeba-236798",
     "sent:tatoeba-9936514",
-    "sent:tatoeba-179391",
-    "sent:tatoeba-10092041",
-    "sent:tatoeba-83083"
+    "sent:tatoeba-179391"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1540170",
     "vocab:1348870",
     "vocab:1163400",
     "vocab:1451150",
     "vocab:1451750",
-    "vocab:1338180",
-    "vocab:1514990",
     "vocab:1215810",
     "vocab:1576250",
     "vocab:1304510",
+    "vocab:2796520",
+    "vocab:1145310",
     "vocab:1245470",
+    "vocab:1223615",
     "vocab:1436050"
   ],
   "patterns": [
-    "gram:n3-naide",
     "gram:gp-149",
     "gram:issho-ni"
   ],
   "kanji_recognition": [
-    "残",
-    "少",
-    "水",
-    "底",
-    "一",
-    "今"
+    "飲",
+    "行",
+    "私",
+    "達",
+    "友",
+    "残"
   ],
   "shadowing": [
+    "sent:tatoeba-5329",
     "sent:tatoeba-197249",
+    "sent:tatoeba-190536",
     "sent:tatoeba-236798",
     "sent:tatoeba-9936514",
-    "sent:tatoeba-179391",
-    "sent:tatoeba-10092041",
-    "sent:tatoeba-83083"
+    "sent:tatoeba-179391"
   ],
   "srs": {
     "introduces_cards": [
       {
         "deck": "deck:phrases",
+        "item": "sent:tatoeba-5329",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
         "item": "sent:tatoeba-197249",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-190536",
         "card_types": [
           "production"
         ]
@@ -79,26 +94,12 @@
         "card_types": [
           "production"
         ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-10092041",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-83083",
-        "card_types": [
-          "production"
-        ]
       }
     ]
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 157,
+  "cumulative_known_vocab": 148,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -109,7 +110,7 @@
       "distractors": [
         "一番",
         "払う",
-        "結構"
+        "いい"
       ]
     },
     {
@@ -117,9 +118,9 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "問題",
-        "座る",
-        "来る"
+        "来る",
+        "行く",
+        "水道"
       ]
     },
     {
@@ -139,25 +140,17 @@
       "distractors": [
         "ともだち",
         "すいどう",
-        "いっしょ"
+        "ゆっくり"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:n3-ppanashi",
     "gram:te-ita",
-    "gram:n3-koto"
+    "gram:n3-koto",
+    "gram:n3-nado",
+    "gram:gp-121"
   ],
   "drills": [
-    {
-      "pattern": "gram:n3-naide",
-      "examples": [
-        "sent:tatoeba-152171",
-        "sent:tatoeba-123792",
-        "sent:tatoeba-80886"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:gp-149",
       "examples": [
@@ -180,23 +173,6 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Fui tomar uma cerveja com uns amigos."
-      },
-      "answer_key": "私は友達とビールを飲みに行った。",
-      "accepted_variants": [
-        "わたしはともだちとびーるをのみにいった",
-        "わたしはともだちとびーるをのみにいった。",
-        "わたしわともだちとびーるをのみにいった",
-        "わたしわともだちとびーるをのみにいった。",
-        "私は友達とビールを飲みに行った",
-        "私は友達とビールを飲みに行った。"
-      ],
-      "sentence": "sent:tatoeba-5329",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt": {
         "pt-BR": "Será que existe mesmo cachorro que come peixe cru?"
       },
       "answer_key": "生の魚を食べる犬なんているのだろうか？",
@@ -208,6 +184,25 @@
         "生の魚を食べる犬なんているのだろうか？"
       ],
       "sentence": "sent:tatoeba-412068",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "Dei dois pedaços de carne para aquele cachorro."
+      },
+      "answer_key": "私はその犬に肉を２切れやった。",
+      "accepted_variants": [
+        "わたしはそのいぬににくをにきれやった",
+        "わたしはそのいぬににくをにきれやった。",
+        "わたしわそのいぬににくをにきれやった",
+        "わたしわそのいぬににくをにきれやった。",
+        "私はその犬に肉を2切れやった",
+        "私はその犬に肉を2切れやった。",
+        "私はその犬に肉を２切れやった",
+        "私はその犬に肉を２切れやった。"
+      ],
+      "sentence": "sent:tatoeba-160196",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
@@ -236,10 +231,10 @@
     "items": [
       "sent:tatoeba-185915",
       "sent:tatoeba-204265",
-      "sent:tatoeba-182254",
-      "sent:tatoeba-200661",
-      "sent:tatoeba-10899775",
-      "sent:tatoeba-13795168"
+      "sent:tatoeba-226787",
+      "sent:tatoeba-12890046",
+      "sent:tatoeba-205802",
+      "sent:tatoeba-196349"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

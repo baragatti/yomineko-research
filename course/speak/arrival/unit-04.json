@@ -7,86 +7,85 @@
     "pt-BR": "Chegar e cumprimentar, parte 4"
   },
   "say_now": [
-    "sent:tatoeba-11831400",
-    "sent:tatoeba-231454",
-    "sent:tatoeba-125967",
-    "sent:tatoeba-8579832",
-    "sent:tatoeba-229460",
-    "sent:tatoeba-11021618"
+    "sent:tatoeba-78721",
+    "sent:tatoeba-4717",
+    "sent:tatoeba-1874351",
+    "sent:tatoeba-10355885",
+    "sent:tatoeba-171272",
+    "sent:tatoeba-125944"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1281020",
-    "vocab:1215230",
-    "vocab:1236900",
-    "vocab:1282790",
-    "vocab:1307550",
-    "vocab:1004880",
-    "vocab:1583250",
-    "vocab:1004500"
+    "vocab:1547720",
+    "vocab:1315920",
+    "vocab:1591110",
+    "vocab:1198180",
+    "vocab:1313580",
+    "vocab:1410590",
+    "vocab:1429750",
+    "vocab:1340450",
+    "vocab:1529520",
+    "vocab:1289470",
+    "vocab:1584930"
   ],
-  "patterns": [
-    "gram:gp-108",
-    "gram:gp-149",
-    "gram:gp-32"
-  ],
+  "patterns": [],
   "kanji_recognition": [
-    "考",
+    "来",
     "間",
-    "待",
-    "長",
-    "教",
-    "降"
+    "時",
+    "分",
+    "聞",
+    "会"
   ],
   "shadowing": [
-    "sent:tatoeba-11831400",
-    "sent:tatoeba-231454",
-    "sent:tatoeba-125967",
-    "sent:tatoeba-8579832",
-    "sent:tatoeba-229460",
-    "sent:tatoeba-11021618"
+    "sent:tatoeba-78721",
+    "sent:tatoeba-4717",
+    "sent:tatoeba-1874351",
+    "sent:tatoeba-10355885",
+    "sent:tatoeba-171272",
+    "sent:tatoeba-125944"
   ],
   "srs": {
     "introduces_cards": [
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-11831400",
+        "item": "sent:tatoeba-78721",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-231454",
+        "item": "sent:tatoeba-4717",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-125967",
+        "item": "sent:tatoeba-1874351",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-8579832",
+        "item": "sent:tatoeba-10355885",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-229460",
+        "item": "sent:tatoeba-171272",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-11021618",
+        "item": "sent:tatoeba-125944",
         "card_types": [
           "production"
         ]
@@ -100,123 +99,105 @@
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "kr:n3:108",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はじめる",
-        "こんばん",
-        "せんせい"
-      ]
+      "id": "so:n4:3348",
+      "type": "sentence_order",
+      "via": "phrase"
     },
     {
-      "id": "kr:n3:1240",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こんにちは",
-        "ありがとう",
-        "さいちゅう"
-      ]
-    },
-    {
-      "id": "cf:n3:15:286",
+      "id": "cf:n4:3348:286",
       "type": "context_fill",
-      "via": "review",
+      "via": "phrase",
       "distractors": [
-        "今晩",
+        "待つ",
+        "此れ",
+        "無い"
+      ]
+    },
+    {
+      "id": "cf:n5:4757:286",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "願う",
         "此方",
-        "降る"
+        "行く"
       ]
     },
     {
-      "id": "cf:n3:179:690",
-      "type": "context_fill",
-      "via": "review",
+      "id": "kr:n3:188",
+      "type": "kanji_reading",
+      "via": "new-word",
       "distractors": [
-        "話",
-        "間",
-        "事"
+        "ない",
+        "あう",
+        "なに"
+      ]
+    },
+    {
+      "id": "kr:n3:2",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "まつ",
+        "いく",
+        "これ"
       ]
     }
   ],
   "patterns_chunked": [
+    "gram:gp-108",
     "gram:gp-148",
-    "gram:gp-89",
-    "gram:n3-koso"
+    "gram:amari-nai",
+    "gram:gp-149",
+    "gram:gp-62",
+    "gram:nasai"
   ],
-  "drills": [
-    {
-      "pattern": "gram:gp-108",
-      "examples": [
-        "sent:tatoeba-78721",
-        "sent:tatoeba-10355885",
-        "sent:tatoeba-11858059"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-149",
-      "examples": [
-        "sent:tatoeba-4856",
-        "sent:tatoeba-83623",
-        "sent:tatoeba-79091"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-32",
-      "examples": [
-        "sent:tatoeba-85319",
-        "sent:tatoeba-83696",
-        "sent:tatoeba-4714"
-      ],
-      "strand": "language-focused"
-    }
-  ],
+  "drills": [],
   "production": [
     {
       "prompt": {
-        "pt-BR": "Desculpe por tê-lo feito esperar tanto tempo."
+        "pt-BR": "Sim, vamos."
       },
-      "answer_key": "長くお待たせしてすみませんでした。",
+      "answer_key": "はい、行きましょう。",
       "accepted_variants": [
-        "ながくおまたせしてすみませんでした",
-        "ながくおまたせしてすみませんでした。",
-        "長くお待たせしてすみませんでした",
-        "長くお待たせしてすみませんでした。"
+        "はい、いきましょう",
+        "はい、いきましょう。",
+        "はい、行きましょう",
+        "はい、行きましょう。"
       ],
-      "sentence": "sent:tatoeba-125913",
+      "sentence": "sent:tatoeba-198378",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Olá, professor!"
+        "pt-BR": "Eu não sei como isto é feito."
       },
-      "answer_key": "先生、こんにちは。",
+      "answer_key": "私はこれがどのようにされるか分かりません。",
       "accepted_variants": [
-        "せんせい、こんにちは",
-        "せんせい、こんにちは。",
-        "先生、こんにちは",
-        "先生、こんにちは。"
+        "わたしはこれがどのようにされるかわかりません",
+        "わたしはこれがどのようにされるかわかりません。",
+        "わたしわこれがどのようにされるかわかりません",
+        "わたしわこれがどのようにされるかわかりません。",
+        "私はこれがどのようにされるか分かりません",
+        "私はこれがどのようにされるか分かりません。"
       ],
-      "sentence": "sent:tatoeba-13259054",
+      "sentence": "sent:tatoeba-160743",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Desculpe interromper a conversa de vocês."
+        "pt-BR": "Obrigado por me contratar."
       },
-      "answer_key": "お話の最中にすみません。",
+      "answer_key": "私を雇ってくれてありがとう。",
       "accepted_variants": [
-        "おはなしのさいちゅうにすみません",
-        "おはなしのさいちゅうにすみません。",
-        "お話の最中にすみません",
-        "お話の最中にすみません。"
+        "わたしをやとってくれてありがとう",
+        "わたしをやとってくれてありがとう。",
+        "私を雇ってくれてありがとう",
+        "私を雇ってくれてありがとう。"
       ],
-      "sentence": "sent:tatoeba-226507",
+      "sentence": "sent:tatoeba-9840102",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -226,12 +207,12 @@
       "pt-BR": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença. Em voz alta, sem ler."
     },
     "items": [
-      "sent:tatoeba-1874351",
-      "sent:tatoeba-198378",
-      "sent:tatoeba-4971",
-      "sent:tatoeba-335372",
-      "sent:tatoeba-426889",
-      "sent:tatoeba-1532832"
+      "sent:tatoeba-11021618",
+      "sent:tatoeba-8795518",
+      "sent:tatoeba-12889995",
+      "sent:tatoeba-9699149",
+      "sent:tatoeba-1598216",
+      "sent:tatoeba-349070"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -239,15 +220,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
+    "meaning-input": 28,
     "meaning-output": 7,
-    "language-focused": 53,
-    "fluency": 13
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 24,
+    "language-focused": 22,
     "fluency": 6
   }
 }

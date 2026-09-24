@@ -88,7 +88,9 @@ SRC_RE = re.compile(r"^sent:([a-z]+)-(\d+)$")
 STAGES: list[tuple[str, str, str, tuple[str, ...]]] = [
     ("arrival", "Chegar e cumprimentar", "pre-n5",
      ("こんにちは", "ありがとう", "すみません", "はい", "いいえ", "お願いします", "はじめまして",
-      "さようなら", "ごめんなさい", "おはよう", "こんばんは", "どうも", "失礼します")),
+      "さようなら", "ごめんなさい", "おはよう", "こんばんは", "どうも", "失礼します",
+      # W32 seed extensions (live survival terms no seed above selects), here and below
+      "お名前は", "分かりません", "ゆっくり話し")),
     # NB: seeds must be SPECIFIC to the scenario. ください was a shopping seed and filled the whole
     # stage with 〜てください grammar drills; 行く was a getting_around seed and filled that one with
     # obligation forms. A seed that appears in every other sentence selects for the seed, not the theme.
@@ -101,12 +103,13 @@ STAGES: list[tuple[str, str, str, tuple[str, ...]]] = [
       "財布", "払う", "値段", "売る", "をください", "会計", "レジ", "袋", "カード", "現金")),
     ("eating", "Comer e beber fora", "n5",
      ("食べる", "飲む", "おいしい", "レストラン", "注文", "水", "お茶", "ご飯", "肉", "魚",
-      "野菜", "メニュー", "コーヒー", "ビール", "朝ご飯", "昼ご飯")),
+      "野菜", "メニュー", "コーヒー", "ビール", "朝ご飯", "昼ご飯", "勘定")),
     ("getting_around", "Chegar aonde você quer", "n5",
      ("どこ", "駅", "左", "右", "近く", "道", "電車", "バス", "タクシー",
       "地図", "切符", "空港", "曲がる", "着く", "橋", "交差点")),
     ("lodging", "Dormir e resolver problemas", "n5",
-     ("ホテル", "部屋", "泊まる", "鍵", "予約", "トイレ", "風呂", "シャワー", "荷物", "寝る")),
+     ("ホテル", "部屋", "泊まる", "鍵", "予約", "トイレ", "風呂", "シャワー", "荷物", "寝る",
+      "お湯が出ません", "をなくしました", "警察を呼ん")),
     ("about_you", "Falar de você", "n5",
      ("名前", "出身", "仕事", "住む", "好き", "趣味", "家族", "日本人", "学生",
       "会社", "友達", "兄弟")),
@@ -114,20 +117,21 @@ STAGES: list[tuple[str, str, str, tuple[str, ...]]] = [
      ("明日", "今日", "時間", "曜日", "約束", "会う", "いつ", "週間", "来年", "予定", "午後",
       "午前", "毎日",
       # W32: a live survival term no seed above selects (R87 re-ranks candidates, never creates them)
-      "は火曜日です")),
+      "は火曜日です", "今何時か", "何時からですか", "何時まで開い")),
     ("health", "Emergência e saúde", "n4",
      ("痛い", "病院", "薬", "医者", "熱", "大丈夫", "助ける", "危ない", "怪我", "気分", "風邪")),
     ("past_stories", "Contar o que aconteceu", "n4",
-     ("昨日", "初めて", "経験", "旅行", "楽しい", "去年", "ことがある", "思い出")),
+     ("昨日", "初めて", "経験", "旅行", "楽しい", "去年", "ことがある", "思い出",
+      "外国に行った", "行ったことがありますか")),
     ("politeness", "Pedir, oferecer, agradecer com jeito", "n4",
      ("いただく", "くださる", "よろしい", "申し訳", "恐れ入る", "お世話", "ございます", "伺う",
-      "お願いできますか")),
+      "お願いできますか", "お先に失礼")),
     ("opinions", "Dizer o que você acha", "n4/n3",
      ("と思う", "だから", "たぶん", "かもしれない", "方がいい", "はず", "理由", "意見",
-      "賛成", "反対", "ないと思います")),
+      "賛成", "反対", "ないと思います", "どう思いますか", "そう思います")),
     ("real_talk", "Conversa de verdade", "n3",
      ("らしい", "のに", "ながら", "わけ", "みたい", "そうだ", "というのは", "ばかり", "はず",
-      "ばよかったのに")),
+      "ばよかったのに", "忙しそうですね")),
 ]
 
 # R87 (§3.7) SURVIVAL CORE. Frequency is the SECONDARY axis and §2 already says scenario wins when they
@@ -148,27 +152,47 @@ STAGES: list[tuple[str, str, str, tuple[str, ...]]] = [
 # as one; the plain words stay in `seeds` above, where frequency ranks them like anything else.
 #
 # W32 authored a core for the other eleven stages (research/derived/pending/speak_survival_cores.json,
-# one `survival_term` per row, each checked to select its own row). Only the terms whose OWN sentence is
-# banked are live here: 9 of the 71 rows. The other 62 wait for their sentences to be ingested
-# (research/derived/pending/w32_layerb_derived.json lists the Layer-B residue that blocks it), because
-# a term without its row promotes whatever else in the bank happens to carry it. Measured when all 71
-# terms were switched on at once: near-duplicate pairs 24 -> 35 (real_talk 1 -> 8 on
-# `みたいですね` / `らしいですね` look-alikes), the R83 spiral shrank in 9 places, and 24 R78 strand
-# ratchets moved the wrong way. Two terms also need re-spelling before they go live, because this
-# matcher cannot reach them: `今何時` and `お勘定` are 3 characters (lemma only) and Sudachi splits
-# them (今|何時, お|勘定); `今何時か` and the lemma `勘定` do reach their rows.
+# one `survival_term` per row, each checked to select its own row). A term goes live only when its OWN
+# sentence is banked, because a term without its row promotes whatever else in the bank happens to
+# carry it (C9 measured all 71 live on a bank holding 9 of them: near-duplicates 24 -> 35). C9 banked
+# 9; P4-w32-ingest banked the other 62 (research/derived/repairs/w32_layerb.json), so all 71 are live,
+# in the table's order. Two are re-spelled because this matcher cannot reach the authored spelling:
+# `今何時` and `お勘定` are 3 characters (lemma only) and Sudachi splits them (今|何時, お|勘定), so
+# they are `今何時か` (4-character substring) and the lemma `勘定`.
 SURVIVAL_SEEDS: dict[str, tuple[str, ...]] = {
+    "arrival": ("はじめまして", "よろしくお願い", "お名前は", "分かりません", "もう一度お願い",
+                "ゆっくり話し"),
     "shopping": ("いくらですか", "いくらぐらい", "これをください", "それをください", "あれをください",
                  "値段", "会計", "レジ"),
-    "eating": ("お水をください",),
-    "getting_around": ("どのくらいかかり",),
-    "about_you": ("ご出身は",),
-    "time_plans": ("は火曜日です",),
-    "health": ("助けてください",),
-    "politeness": ("お願いできますか",),
-    "opinions": ("ないと思います",),
-    "real_talk": ("ながら話し", "ばよかったのに"),
+    "eating": ("お水をください", "メニューをください", "何がおいしい", "勘定", "食べられません",
+               "おいしいですよ", "英語のメニュー"),
+    "getting_around": ("はどこですか", "トイレはどこ", "切符はどこで", "どこで乗り換え", "まで行きますか",
+                       "どのくらいかかり", "タクシーを呼ん"),
+    "lodging": ("予約してあり", "部屋はありますか", "部屋を見て", "安い部屋", "お湯が出ません",
+                "をなくしました", "荷物を預か", "警察を呼ん"),
+    "about_you": ("ご出身は", "お仕事は", "家族は４人", "料理が好き", "に住んでいます", "ご家族は"),
+    "time_plans": ("今何時か", "何時からですか", "何時まで開い", "明日駅で会い", "時に会いましょう",
+                   "は火曜日です"),
+    "health": ("助けてください", "医者を呼ん", "気分が悪い", "お腹が痛い", "病院はどこ", "熱があります",
+               "薬をください"),
+    "past_stories": ("どうでしたか", "は初めてですか", "楽しかった", "外国に行った", "行ったことがありますか",
+                     "昨日は暑かった"),
+    "politeness": ("申し訳ありません", "お先に失礼", "お願いできますか", "をいただきます", "てもよろしいですか",
+                   "遅れて申し訳"),
+    "opinions": ("どう思いますか", "私は反対です", "そう思います", "ないと思います", "方がいいと思う",
+                 "たぶん遅れる"),
+    "real_talk": ("らしいですね", "忙しそうですね", "みたいですね", "ながら話し", "ばよかったのに",
+                  "着いたばかり"),
 }
+# The W32 rows themselves. Inside the survival bucket a term's OWN row ranks ahead of look-alikes that
+# carry the same term: shortest-first alone put 勘定を頼むよ ahead of お勘定お願いします and
+# 遅れて申し訳ない ahead of 遅れて申し訳ありません, so 4 authored cores never reached the path. An own
+# row also sets aside real-over-generated, which is owner decision D10's default (an authored sentence
+# may lead a stage, ai_generated + needs_review): the one generated core, 薬をください, is the only one.
+CORE_ROWS: frozenset[str] = frozenset(
+    r["sentence_slug"] for r in json.loads(
+        (ROOT / "research" / "derived" / "pending" / "speak_survival_cores.json")
+        .read_text(encoding="utf-8"))["rows"])
 
 # Set expressions the analyzer mis-lemmatises, because they are frozen forms rather than live grammar:
 # すみません comes back as 住む+ます+ぬ (so the "vocabulary" of an apology is "to live"), ありがとう as
@@ -359,7 +383,9 @@ def main() -> int:
                 # canonical act (いくらですか？) is what the stage owes the learner in its first unit,
                 # and ranking survival phrases by frequency again just reintroduces the bug — it put
                 # the price question in unit 6, behind 私はこのワープロを手ごろな値段で買った.
-                scored.append(((s["ai"], bucket, len(s["jp"]) if bucket == 1 else 0,
+                own = bucket == 1 and s["slug"] in CORE_ROWS
+                scored.append(((0 if own else s["ai"], bucket,
+                                (not own, len(s["jp"])) if bucket == 1 else (False, 0),
                                 min((vocab[v]["freq"] for v in new), default=10 ** 9),
                                 len(s["jp"])), s, new))
             if not scored:

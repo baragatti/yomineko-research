@@ -8,29 +8,24 @@
   },
   "say_now": [
     "sent:tatoeba-11171012",
-    "sent:tatoeba-185449",
-    "sent:tatoeba-91869",
-    "sent:tatoeba-78588",
-    "sent:tatoeba-80608",
-    "sent:tatoeba-80460"
+    "sent:tatoeba-235793",
+    "sent:tatoeba-1171888",
+    "sent:tatoeba-80332",
+    "sent:tatoeba-172526",
+    "sent:tatoeba-189309"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1523060",
-    "vocab:1343950",
-    "vocab:1604890",
-    "vocab:1171900",
-    "vocab:1519290",
-    "vocab:1202270",
-    "vocab:1548220",
+    "vocab:1586270",
     "vocab:1194290",
     "vocab:1584640"
   ],
   "patterns": [
-    "gram:deshou",
-    "gram:gp-62",
-    "gram:gp-89"
+    "gram:mashou",
+    "gram:da-desu",
+    "gram:gp-8",
+    "gram:kara"
   ],
   "kanji_recognition": [
     "火",
@@ -42,11 +37,11 @@
   ],
   "shadowing": [
     "sent:tatoeba-11171012",
-    "sent:tatoeba-185449",
-    "sent:tatoeba-91869",
-    "sent:tatoeba-78588",
-    "sent:tatoeba-80608",
-    "sent:tatoeba-80460"
+    "sent:tatoeba-235793",
+    "sent:tatoeba-1171888",
+    "sent:tatoeba-80332",
+    "sent:tatoeba-172526",
+    "sent:tatoeba-189309"
   ],
   "srs": {
     "introduces_cards": [
@@ -59,35 +54,35 @@
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-185449",
+        "item": "sent:tatoeba-235793",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-91869",
+        "item": "sent:tatoeba-1171888",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-78588",
+        "item": "sent:tatoeba-80332",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-80608",
+        "item": "sent:tatoeba-172526",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-80460",
+        "item": "sent:tatoeba-189309",
         "card_types": [
           "production"
         ]
@@ -96,7 +91,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 385,
+  "cumulative_known_vocab": 352,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -107,17 +102,17 @@
       "distractors": [
         "入れる",
         "こんな",
-        "トイレ"
+        "大好き"
       ]
     },
     {
-      "id": "cf:n3:517:150",
+      "id": "cf:n4:791:172",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "困る",
-        "時間",
-        "今夜"
+        "続ける",
+        "手ごろ",
+        "新しい"
       ]
     },
     {
@@ -127,69 +122,63 @@
       "distractors": [
         "けっして",
         "せいかく",
-        "でんとう"
+        "わすれる"
       ]
     },
     {
-      "id": "kr:n3:150",
+      "id": "kr:n3:172",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ぎむ",
-        "よい",
-        "きく"
+        "ゆいいつ",
+        "タクシー",
+        "けいやく"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:n3-donna-ni-temo",
-    "gram:n3-te-hajimete",
-    "gram:n3-ni-tsuite"
+    "gram:n3-made",
+    "gram:gp-121"
   ],
   "drills": [
     {
-      "pattern": "gram:deshou",
+      "pattern": "gram:mashou",
       "examples": [
-        "sent:tatoeba-98793",
-        "sent:tatoeba-79089",
-        "sent:tatoeba-78454"
+        "sent:tatoeba-139208",
+        "sent:tatoeba-173392",
+        "sent:tatoeba-198378"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-62",
+      "pattern": "gram:da-desu",
       "examples": [
-        "sent:tatoeba-174749",
-        "sent:tatoeba-174748",
-        "sent:tatoeba-182548"
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-89",
+      "pattern": "gram:gp-8",
       "examples": [
-        "sent:tatoeba-144038",
-        "sent:tatoeba-4855",
-        "sent:tatoeba-164675"
+        "sent:tatoeba-5320",
+        "sent:tatoeba-176635",
+        "sent:tatoeba-150175"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kara",
+      "examples": [
+        "sent:tatoeba-76156",
+        "sent:tatoeba-4772",
+        "sent:gen-671b7aebf53d"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt": {
-        "pt-BR": "Hoje passou na TV uma reportagem sobre o trabalho dos seguranças."
-      },
-      "answer_key": "ＳＰの仕事の様子が今日テレビで放送されました",
-      "accepted_variants": [
-        "SPの仕事の様子が今日テレビで放送されました",
-        "えすぴーのしごとのようすがきょうてれびでほうそうされました",
-        "ＳＰの仕事の様子が今日テレビで放送されました"
-      ],
-      "sentence": "sent:jec-4753",
-      "kind": "on-topic",
-      "strand": "meaning-output"
-    },
     {
       "prompt": {
         "pt-BR": "Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo."
@@ -223,6 +212,23 @@
       "sentence": "sent:tatoeba-10723441",
       "kind": "on-topic",
       "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "Essa passagem vale por uma semana."
+      },
+      "answer_key": "その切符は一週間有効です。",
+      "accepted_variants": [
+        "そのきっぷはいちしゅうかんゆうこうです",
+        "そのきっぷはいちしゅうかんゆうこうです。",
+        "そのきっぷわいちしゅうかんゆうこうです",
+        "そのきっぷわいちしゅうかんゆうこうです。",
+        "その切符は一週間有効です",
+        "その切符は一週間有効です。"
+      ],
+      "sentence": "sent:tatoeba-208558",
+      "kind": "on-topic",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -230,11 +236,11 @@
       "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
-      "sent:tatoeba-117935",
-      "sent:tatoeba-10983265",
-      "sent:tatoeba-8868835",
+      "sent:tatoeba-117939",
+      "sent:tatoeba-11727272",
       "sent:tatoeba-173057",
       "sent:tatoeba-184200",
+      "sent:tatoeba-99645",
       "sent:tatoeba-157990"
     ],
     "seconds_target": 48,
@@ -243,15 +249,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 29,
     "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "language-focused": 50,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 21,
     "fluency": 6
   }
 }

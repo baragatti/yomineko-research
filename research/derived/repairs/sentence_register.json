@@ -4,7 +4,7 @@
  "table": "sentence register — the value and the rule that decided it, per sentence",
  "what_this_is": "The exact-match table behind sentence.register / sentence.register_rule. `rows` with set == 'bank' address corpus/sentences/bank.json by slug and are APPLIED by scripts/apply_sentence_register.py; `rows` with set == 'w13' address sentences that are not in the bank yet (research/derived/n3_mined) and are DEFERRED to the W13 ingest, which reads this table for the value rather than re-deriving one. SINCE THE W13 APPLY (2026-09-10) there are no deferrals left: all 10,112 sentences are banked, so the table is regenerated with `--skip-w13` and every row is `set: bank`, keyed by slug. Running the derivation WITHOUT --skip-w13 now emits each mined sentence twice (once as its bank slug and once as its pre-ingest w13 key) and the two rows can disagree, because the bank row carries the sentence's real grammar tags and vocab links while the w13 row only had its authoring targets. scripts/validate/validate_sentence_register.py re-derives on every gate run and fails on any stored value this table would no longer produce.",
  "applied_by": "scripts/apply_sentence_register.py",
- "generated_at": "2026-09-23T01:24:21",
+ "generated_at": "2026-09-23T21:32:41",
  "generator": "scripts-equivalent derivation, SudachiPy dict=full split mode C",
  "sources": {
   "bank": "corpus/sentences/bank.json",
@@ -36,11 +36,11 @@
   "neutral"
  ],
  "counts": {
-  "rows": 10209,
-  "bank": 10209,
+  "rows": 10271,
+  "bank": 10271,
   "w13": 0,
   "residue": 132,
-  "conflicts": 800
+  "conflicts": 796
  },
  "first_attempt_comparison": {
   "table": "research/derived/pending/sentence_register.json",
@@ -1980,7 +1980,7 @@
     "rule": "plain-predicate",
     "signals": [
      "plain predicate しまう on the final bunsetsu (さましてしまう)",
-     "grammar register gp-151=plain; te-shimau-chau=plain/casual/colloquial"
+     "grammar register te-shimau-chau=plain/casual/colloquial"
     ]
    },
    {
@@ -2023,7 +2023,7 @@
     "rule": "casual-marker",
     "signals": [
      "explanatory んだ",
-     "grammar register gp-118=plain"
+     "grammar register gp-118=plain/polite"
     ]
    },
    {
@@ -2325,7 +2325,7 @@
     "rule": "plain-predicate",
     "signals": [
      "plain predicate ない on the final bunsetsu (ない)",
-     "grammar register gp-100=plain/polite"
+     "grammar register gp-118=plain/polite"
     ]
    },
    {
@@ -2711,7 +2711,7 @@
     "rule": "plain-predicate",
     "signals": [
      "plain predicate しまう on the final bunsetsu (たってしまう)",
-     "grammar register gp-151=plain; te-shimau-chau=plain/casual/colloquial"
+     "grammar register te-shimau-chau=plain/casual/colloquial"
     ]
    },
    {
@@ -3171,7 +3171,7 @@
     "derived": null,
     "rule": "no-signal",
     "signals": [
-     "grammar register gp-153=plain"
+     "grammar register gp-77=formal/written/plain"
     ]
    },
    {
@@ -3318,7 +3318,7 @@
     "rule": "plain-predicate",
     "signals": [
      "plain predicate しまう on the final bunsetsu (はげてしまう)",
-     "grammar register gp-151=plain; te-shimau-chau=plain/casual/colloquial"
+     "grammar register te-shimau-chau=plain/casual/colloquial"
     ]
    },
    {
@@ -4033,7 +4033,7 @@
     "rule": "plain-predicate",
     "signals": [
      "plain predicate しまう on the final bunsetsu (行ってしまう)",
-     "grammar register gp-151=plain; te-shimau-chau=plain/casual/colloquial"
+     "grammar register te-shimau-chau=plain/casual/colloquial"
     ]
    },
    {
@@ -6428,7 +6428,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate 一日 on the final bunsetsu (一日だった)",
-    "grammar register gp-77=formal/written"
+    "grammar register gp-77=formal/written/plain"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -9309,7 +9309,7 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary です on the final bunsetsu (好きです)",
-    "grammar register gp-47=plain"
+    "grammar register yori-hou-ga=plain"
    ],
    "confidence": 0.95,
    "conflicts": [
@@ -9317,7 +9317,7 @@
      "kind": "grammar-vs-predicate",
      "grammar": "neutral",
      "points": [
-      "gp-47=plain"
+      "yori-hou-ga=plain"
      ]
     }
    ],
@@ -10341,6 +10341,22 @@
    "needs_review": true
   },
   {
+   "key": "sent:gen-1c83f478ab11",
+   "set": "bank",
+   "level": "n4",
+   "jp": "薬をください",
+   "register": "polite",
+   "rule": "polite-request",
+   "signals": [
+    "polite request ~ください"
+   ],
+   "confidence": 0.85,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:gen-1c8c24a8c1ee",
    "set": "bank",
    "level": "n3",
@@ -10673,13 +10689,21 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary です on the final bunsetsu (じょうずです)",
-    "grammar register gp-54=polite"
+    "grammar register no-ga-jouzu=neutral"
    ],
    "confidence": 0.95,
-   "conflicts": [],
+   "conflicts": [
+    {
+     "kind": "grammar-vs-predicate",
+     "grammar": "neutral",
+     "points": [
+      "no-ga-jouzu=neutral"
+     ]
+    }
+   ],
    "authored_w13": null,
    "authored_normalized": null,
-   "needs_review": false
+   "needs_review": true
   },
   {
    "key": "sent:gen-1ea9a68aa21a",
@@ -12765,13 +12789,21 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary です on the final bunsetsu (じょうずです)",
-    "grammar register gp-54=polite"
+    "grammar register no-ga-jouzu=neutral"
    ],
    "confidence": 0.95,
-   "conflicts": [],
+   "conflicts": [
+    {
+     "kind": "grammar-vs-predicate",
+     "grammar": "neutral",
+     "points": [
+      "no-ga-jouzu=neutral"
+     ]
+    }
+   ],
    "authored_w13": null,
    "authored_normalized": null,
-   "needs_review": false
+   "needs_review": true
   },
   {
    "key": "sent:gen-2b749b7ed6ea",
@@ -13041,7 +13073,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate いる on the final bunsetsu (いる)",
-    "grammar register gp-77=formal/written"
+    "grammar register gp-77=formal/written/plain"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -18318,13 +18350,21 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary です on the final bunsetsu (じょうずです)",
-    "grammar register gp-54=polite"
+    "grammar register no-ga-jouzu=neutral"
    ],
    "confidence": 0.95,
-   "conflicts": [],
+   "conflicts": [
+    {
+     "kind": "grammar-vs-predicate",
+     "grammar": "neutral",
+     "points": [
+      "no-ga-jouzu=neutral"
+     ]
+    }
+   ],
    "authored_w13": null,
    "authored_normalized": null,
-   "needs_review": false
+   "needs_review": true
   },
   {
    "key": "sent:gen-4ed4012c5dd1",
@@ -18489,7 +18529,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate し on the final bunsetsu (して)",
-    "grammar register gp-60=plain"
+    "grammar register tara=plain/colloquial"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -19209,7 +19249,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate 遊べる on the final bunsetsu (遊べる)",
-    "grammar register gp-60=plain"
+    "grammar register tara=plain/colloquial"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -20580,7 +20620,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate 出かけ on the final bunsetsu (出かけない)",
-    "grammar register gp-60=plain"
+    "grammar register tara=plain/colloquial"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -22505,7 +22545,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate する on the final bunsetsu (する)",
-    "grammar register gp-60=plain"
+    "grammar register tara=plain/colloquial"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -23126,7 +23166,7 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary です on the final bunsetsu (安いです)",
-    "grammar register gp-47=plain"
+    "grammar register yori-hou-ga=plain"
    ],
    "confidence": 0.95,
    "conflicts": [
@@ -23134,7 +23174,7 @@
      "kind": "grammar-vs-predicate",
      "grammar": "neutral",
      "points": [
-      "gp-47=plain"
+      "yori-hou-ga=plain"
      ]
     }
    ],
@@ -24186,13 +24226,21 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary です on the final bunsetsu (じょうずです)",
-    "grammar register gp-54=polite"
+    "grammar register no-ga-jouzu=neutral"
    ],
    "confidence": 0.95,
-   "conflicts": [],
+   "conflicts": [
+    {
+     "kind": "grammar-vs-predicate",
+     "grammar": "neutral",
+     "points": [
+      "no-ga-jouzu=neutral"
+     ]
+    }
+   ],
    "authored_w13": null,
    "authored_normalized": null,
-   "needs_review": false
+   "needs_review": true
   },
   {
    "key": "sent:gen-74ea68439313",
@@ -27524,7 +27572,7 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary です on the final bunsetsu (好きです)",
-    "grammar register gp-47=plain"
+    "grammar register yori-hou-ga=plain"
    ],
    "confidence": 0.95,
    "conflicts": [
@@ -27532,7 +27580,7 @@
      "kind": "grammar-vs-predicate",
      "grammar": "neutral",
      "points": [
-      "gp-47=plain"
+      "yori-hou-ga=plain"
      ]
     }
    ],
@@ -27736,7 +27784,7 @@
    "rule": "casual-marker",
    "signals": [
     "contracted copula じゃ",
-    "grammar register gp-33=casual"
+    "grammar register janai-dewa-nai=plain/casual"
    ],
    "confidence": 0.85,
    "conflicts": [],
@@ -28479,13 +28527,21 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary です on the final bunsetsu (じょうずです)",
-    "grammar register gp-54=polite"
+    "grammar register no-ga-jouzu=neutral"
    ],
    "confidence": 0.95,
-   "conflicts": [],
+   "conflicts": [
+    {
+     "kind": "grammar-vs-predicate",
+     "grammar": "neutral",
+     "points": [
+      "no-ga-jouzu=neutral"
+     ]
+    }
+   ],
    "authored_w13": null,
    "authored_normalized": null,
-   "needs_review": false
+   "needs_review": true
   },
   {
    "key": "sent:gen-9403f234e3a8",
@@ -34931,7 +34987,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate やさしい on the final bunsetsu (やさしい)",
-    "grammar register gp-47=plain"
+    "grammar register yori-hou-ga=plain"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -36430,7 +36486,7 @@
    "rule": "casual-marker",
    "signals": [
     "contracted copula じゃ",
-    "grammar register gp-33=casual"
+    "grammar register janai-dewa-nai=plain/casual"
    ],
    "confidence": 0.85,
    "conflicts": [],
@@ -37327,7 +37383,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate し on the final bunsetsu (したい)",
-    "grammar register gp-60=plain"
+    "grammar register tara=plain/colloquial"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -38499,7 +38555,7 @@
    "rule": "casual-marker",
    "signals": [
     "contracted copula じゃ",
-    "grammar register gp-33=casual"
+    "grammar register janai-dewa-nai=plain/casual"
    ],
    "confidence": 0.85,
    "conflicts": [],
@@ -46910,6 +46966,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-10008425",
+   "set": "bank",
+   "level": "n3",
+   "jp": "お腹が痛いです。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (痛いです)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-10008430",
    "set": "bank",
    "level": "n1",
@@ -48110,7 +48182,7 @@
     "sentence-final もん",
     "casual second person あんた",
     "JMdict col/fam on あんた",
-    "grammar register n3-nda-mon=casual/colloquial"
+    "grammar register n3-da-mono-da=casual/colloquial"
    ],
    "confidence": 0.85,
    "conflicts": [],
@@ -52397,18 +52469,10 @@
    "rule": "soft-final",
    "signals": [
     "soft sentence-final よ",
-    "grammar register gp-118=plain"
+    "grammar register gp-118=plain/polite"
    ],
    "confidence": 0.7,
-   "conflicts": [
-    {
-     "kind": "grammar-vs-predicate",
-     "grammar": "neutral",
-     "points": [
-      "gp-118=plain"
-     ]
-    }
-   ],
+   "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
    "needs_review": true
@@ -53071,18 +53135,10 @@
    "rule": "soft-final",
    "signals": [
     "soft sentence-final よ",
-    "grammar register gp-118=plain"
+    "grammar register gp-118=plain/polite"
    ],
    "confidence": 0.7,
-   "conflicts": [
-    {
-     "kind": "grammar-vs-predicate",
-     "grammar": "neutral",
-     "points": [
-      "gp-118=plain"
-     ]
-    }
-   ],
+   "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
    "needs_review": true
@@ -54052,6 +54108,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-1059956",
+   "set": "bank",
+   "level": "n3",
+   "jp": "忙しそうですね。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (そうですね)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-10603327",
    "set": "bank",
    "level": "n2",
@@ -54679,6 +54751,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-10647148",
+   "set": "bank",
+   "level": "n3",
+   "jp": "パスポートをなくしました。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary まし on the final bunsetsu (なくしました)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-10647266",
    "set": "bank",
    "level": "n1",
@@ -54693,6 +54781,22 @@
    "authored_w13": null,
    "authored_normalized": null,
    "needs_review": true
+  },
+  {
+   "key": "sent:tatoeba-10647294",
+   "set": "bank",
+   "level": "n3",
+   "jp": "一番近い病院はどこですか？",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (どこですか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
   },
   {
    "key": "sent:tatoeba-106479",
@@ -59154,7 +59258,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate しまう on the final bunsetsu (さましてしまう)",
-    "grammar register gp-151=plain; te-shimau-chau=plain/casual/colloquial"
+    "grammar register te-shimau-chau=plain/casual/colloquial"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -61267,6 +61371,22 @@
    "needs_review": true
   },
   {
+   "key": "sent:tatoeba-11041808",
+   "set": "bank",
+   "level": "n4",
+   "jp": "これをいただきます。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (いただきます)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-11041835",
    "set": "bank",
    "level": "n3",
@@ -61584,21 +61704,13 @@
    "rule": "casual-marker",
    "signals": [
     "explanatory んだ",
-    "grammar register gp-118=plain"
+    "grammar register gp-118=plain/polite"
    ],
    "confidence": 0.85,
-   "conflicts": [
-    {
-     "kind": "grammar-vs-predicate",
-     "grammar": "neutral",
-     "points": [
-      "gp-118=plain"
-     ]
-    }
-   ],
+   "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
-   "needs_review": true
+   "needs_review": false
   },
   {
    "key": "sent:tatoeba-11052200",
@@ -62170,7 +62282,7 @@
     "sentence-final もん",
     "contraction ~てる",
     "explanatory んだ",
-    "grammar register n3-nda-mon=casual/colloquial"
+    "grammar register n3-da-mono-da=casual/colloquial"
    ],
    "confidence": 0.85,
    "conflicts": [],
@@ -62569,7 +62681,7 @@
    "signals": [
     "sentence-final もん",
     "explanatory んだ",
-    "grammar register n3-nda-mon=casual/colloquial"
+    "grammar register n3-da-mono-da=casual/colloquial"
    ],
    "confidence": 0.85,
    "conflicts": [],
@@ -67841,6 +67953,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-1171888",
+   "set": "bank",
+   "level": "n4",
+   "jp": "何時まで開いてますか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (開いてますか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-1171894",
    "set": "bank",
    "level": "n3",
@@ -68127,18 +68255,10 @@
    "rule": "soft-final",
    "signals": [
     "soft sentence-final よ",
-    "grammar register gp-118=plain"
+    "grammar register gp-118=plain/polite"
    ],
    "confidence": 0.7,
-   "conflicts": [
-    {
-     "kind": "grammar-vs-predicate",
-     "grammar": "neutral",
-     "points": [
-      "gp-118=plain"
-     ]
-    }
-   ],
+   "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
    "needs_review": true
@@ -68619,6 +68739,22 @@
    "signals": [
     "polite auxiliary ます on the final bunsetsu (います)",
     "grammar register ga=plain/polite; ga-imasu=polite; gp-8=polite"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-11795598",
+   "set": "bank",
+   "level": "n3",
+   "jp": "部屋を見てみたいです。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (見てみたいです)"
    ],
    "confidence": 0.95,
    "conflicts": [],
@@ -69427,6 +69563,22 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate 驚く on the final bunsetsu (驚くかも)"
+   ],
+   "confidence": 0.8,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-11870768",
+   "set": "bank",
+   "level": "n4",
+   "jp": "その方がいいと思う。",
+   "register": "neutral",
+   "rule": "plain-predicate",
+   "signals": [
+    "plain predicate 思う on the final bunsetsu (思う)"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -72574,6 +72726,22 @@
    "needs_review": true
   },
   {
+   "key": "sent:tatoeba-122101",
+   "set": "bank",
+   "level": "n4",
+   "jp": "入ってもよろしいですか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (よろしいですか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-122103",
    "set": "bank",
    "level": "n4",
@@ -72864,6 +73032,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-122452",
+   "set": "bank",
+   "level": "n3",
+   "jp": "日本は初めてですか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (初めてですか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-122465",
    "set": "bank",
    "level": "n2",
@@ -73029,6 +73213,22 @@
     "plain predicate 良い on the final bunsetsu (良い)"
    ],
    "confidence": 0.8,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-122877",
+   "set": "bank",
+   "level": "n3",
+   "jp": "日光へ行ったことがありますか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (ありますか)"
+   ],
+   "confidence": 0.95,
    "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
@@ -74147,7 +74347,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate いる on the final bunsetsu (いる)",
-    "grammar register gp-77=formal/written"
+    "grammar register gp-77=formal/written/plain"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -75354,6 +75554,22 @@
     "plain predicate しまっ on the final bunsetsu (変わってしまった)"
    ],
    "confidence": 0.8,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-124907",
+   "set": "bank",
+   "level": "n1",
+   "jp": "田舎に住んでいます。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (住んでいます)"
+   ],
+   "confidence": 0.95,
    "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
@@ -77164,6 +77380,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-126707",
+   "set": "bank",
+   "level": "n1",
+   "jp": "遅れて申し訳ありません。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ませ on the final bunsetsu (ありません)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-126710",
    "set": "bank",
    "level": "n3",
@@ -77735,6 +77967,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-1271480",
+   "set": "bank",
+   "level": "n4",
+   "jp": "どう思いますか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (思いますか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-127211",
    "set": "bank",
    "level": "n3",
@@ -78076,6 +78324,38 @@
     "plain predicate いい on the final bunsetsu (いい)"
    ],
    "confidence": 0.8,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-12889995",
+   "set": "bank",
+   "level": "n5",
+   "jp": "お名前は何ですか？",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (何ですか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-12890046",
+   "set": "bank",
+   "level": "n2",
+   "jp": "メニューをください。",
+   "register": "polite",
+   "rule": "polite-request",
+   "signals": [
+    "polite request ~ください"
+   ],
+   "confidence": 0.85,
    "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
@@ -78474,6 +78754,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-13117666",
+   "set": "bank",
+   "level": "n1",
+   "jp": "申し訳ありません。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ませ on the final bunsetsu (ありません)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-13126478",
    "set": "bank",
    "level": "n5",
@@ -78598,7 +78894,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate ない on the final bunsetsu (ない)",
-    "grammar register gp-100=plain/polite"
+    "grammar register gp-118=plain/polite"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -79493,6 +79789,22 @@
     "honorific"
    ],
    "confidence": 0.9,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-137275",
+   "set": "bank",
+   "level": "n3",
+   "jp": "大変おいしいですよ。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (おいしいですよ)"
+   ],
+   "confidence": 0.95,
    "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
@@ -82040,18 +82352,10 @@
    "rule": "soft-final",
    "signals": [
     "soft sentence-final なぁ",
-    "grammar register gp-154=plain"
+    "grammar register gp-77=formal/written/plain"
    ],
    "confidence": 0.7,
-   "conflicts": [
-    {
-     "kind": "grammar-vs-predicate",
-     "grammar": "neutral",
-     "points": [
-      "gp-154=plain"
-     ]
-    }
-   ],
+   "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
    "needs_review": true
@@ -82269,7 +82573,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate 白い on the final bunsetsu (白い)",
-    "grammar register gp-77=formal/written"
+    "grammar register gp-77=formal/written/plain"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -82289,6 +82593,22 @@
     "grammar register n3-to-iu-no-wa=neutral"
    ],
    "confidence": 0.8,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-142095",
+   "set": "bank",
+   "level": "n2",
+   "jp": "切符はどこで買うのですか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (買うのですか)"
+   ],
+   "confidence": 0.95,
    "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
@@ -84506,7 +84826,7 @@
    "rule": "casual-marker",
    "signals": [
     "contracted copula じゃ",
-    "grammar register gp-33=casual"
+    "grammar register janai-dewa-nai=plain/casual"
    ],
    "confidence": 0.85,
    "conflicts": [],
@@ -89713,7 +90033,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate しまう on the final bunsetsu (たってしまう)",
-    "grammar register gp-151=plain; te-shimau-chau=plain/casual/colloquial"
+    "grammar register te-shimau-chau=plain/casual/colloquial"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -90906,18 +91226,10 @@
    "rule": "soft-final",
    "signals": [
     "soft sentence-final よ",
-    "grammar register gp-151=plain"
+    "grammar register te-shimau-chau=plain/casual/colloquial"
    ],
    "confidence": 0.7,
-   "conflicts": [
-    {
-     "kind": "grammar-vs-predicate",
-     "grammar": "neutral",
-     "points": [
-      "gp-151=plain"
-     ]
-    }
-   ],
+   "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
    "needs_review": true
@@ -91493,6 +91805,22 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary まし on the final bunsetsu (会いました)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-154700",
+   "set": "bank",
+   "level": "n3",
+   "jp": "私は日本の料理が好きです。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (好きです)"
    ],
    "confidence": 0.95,
    "conflicts": [],
@@ -94072,7 +94400,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate 話す on the final bunsetsu (話す)",
-    "grammar register gp-77=formal/written"
+    "grammar register gp-77=formal/written/plain"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -94926,7 +95254,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate 考え on the final bunsetsu (考えた)",
-    "grammar register gp-154=plain"
+    "grammar register gp-77=formal/written/plain"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -94975,6 +95303,22 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary ます on the final bunsetsu (働いています)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-160449",
+   "set": "bank",
+   "level": "n4",
+   "jp": "私はそう思います。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (思います)"
    ],
    "confidence": 0.95,
    "conflicts": [],
@@ -95406,7 +95750,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate 起き on the final bunsetsu (起きた)",
-    "grammar register gp-154=plain"
+    "grammar register gp-77=formal/written/plain"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -98368,7 +98712,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate ふるまい on the final bunsetsu (ふるまいたがる)",
-    "grammar register gp-154=plain"
+    "grammar register gp-77=formal/written/plain"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -99109,6 +99453,22 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate 悪かっ on the final bunsetsu (悪かった)"
+   ],
+   "confidence": 0.8,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-169967",
+   "set": "bank",
+   "level": "n3",
+   "jp": "昨日は暑かった。",
+   "register": "neutral",
+   "rule": "plain-predicate",
+   "signals": [
+    "plain predicate 暑かっ on the final bunsetsu (暑かった)"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -100096,6 +100456,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-171474",
+   "set": "bank",
+   "level": "n5",
+   "jp": "今日もよい天気らしいですね。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (天気らしいですね)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-171489",
    "set": "bank",
    "level": "n4",
@@ -100988,6 +101364,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-172526",
+   "set": "bank",
+   "level": "n5",
+   "jp": "今何時か分かりますか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (分かりますか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-172554",
    "set": "bank",
    "level": "n4",
@@ -101174,7 +101566,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate ない on the final bunsetsu (ない)",
-    "grammar register gp-100=plain/polite"
+    "grammar register gp-118=plain/polite"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -103700,6 +104092,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-176088",
+   "set": "bank",
+   "level": "n3",
+   "jp": "警察を呼んで下さい。",
+   "register": "polite",
+   "rule": "polite-request",
+   "signals": [
+    "polite request ~ください"
+   ],
+   "confidence": 0.85,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-176132",
    "set": "bank",
    "level": "n3",
@@ -105464,7 +105872,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate ない on the final bunsetsu (ない)",
-    "grammar register gp-100=plain/polite"
+    "grammar register gp-118=plain/polite"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -108346,6 +108754,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-186534",
+   "set": "bank",
+   "level": "n2",
+   "jp": "荷物を預かって欲しいのですが。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (預かって欲しいのですが)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-186537",
    "set": "bank",
    "level": "n1",
@@ -108747,6 +109171,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-186941",
+   "set": "bank",
+   "level": "n4",
+   "jp": "家族は４人です。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (４人です)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-186964",
    "set": "bank",
    "level": "n3",
@@ -108901,21 +109341,13 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary です on the final bunsetsu (終わってしまうんです)",
-    "grammar register gp-151=plain"
+    "grammar register te-shimau-chau=plain/casual/colloquial"
    ],
    "confidence": 0.95,
-   "conflicts": [
-    {
-     "kind": "grammar-vs-predicate",
-     "grammar": "neutral",
-     "points": [
-      "gp-151=plain"
-     ]
-    }
-   ],
+   "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
-   "needs_review": true
+   "needs_review": false
   },
   {
    "key": "sent:tatoeba-187216",
@@ -109690,6 +110122,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-188145",
+   "set": "bank",
+   "level": "n5",
+   "jp": "何がおいしいですか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (おいしいですか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-188146",
    "set": "bank",
    "level": "n1",
@@ -110359,6 +110807,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-188894",
+   "set": "bank",
+   "level": "n5",
+   "jp": "駅はどこですか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (どこですか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-188944",
    "set": "bank",
    "level": "n1",
@@ -110750,6 +111214,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-189309",
+   "set": "bank",
+   "level": "n4",
+   "jp": "映画は何時からですか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (何時からですか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-189318",
    "set": "bank",
    "level": "n3",
@@ -111025,7 +111505,7 @@
    "register": null,
    "rule": "no-signal",
    "signals": [
-    "grammar register gp-153=plain"
+    "grammar register gp-77=formal/written/plain"
    ],
    "confidence": 0.0,
    "conflicts": [],
@@ -111840,6 +112320,22 @@
     "plain predicate いる on the final bunsetsu (出かけている)"
    ],
    "confidence": 0.8,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-190738",
+   "set": "bank",
+   "level": "n3",
+   "jp": "医者を呼んで下さい。",
+   "register": "polite",
+   "rule": "polite-request",
+   "signals": [
+    "polite request ~ください"
+   ],
+   "confidence": 0.85,
    "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
@@ -113086,6 +113582,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-193308",
+   "set": "bank",
+   "level": "n3",
+   "jp": "もっと安い部屋はありますか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (ありますか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-193310",
    "set": "bank",
    "level": "n1",
@@ -114018,7 +114530,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate する on the final bunsetsu (する)",
-    "grammar register gp-153=plain"
+    "grammar register gp-77=formal/written/plain"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -114700,7 +115212,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate しまう on the final bunsetsu (はげてしまう)",
-    "grammar register gp-151=plain; te-shimau-chau=plain/casual/colloquial"
+    "grammar register te-shimau-chau=plain/casual/colloquial"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -115978,7 +116490,7 @@
    "rule": "casual-marker",
    "signals": [
     "contracted copula じゃ",
-    "grammar register gp-33=casual"
+    "grammar register janai-dewa-nai=plain/casual"
    ],
    "confidence": 0.85,
    "conflicts": [],
@@ -116868,21 +117380,13 @@
    "signals": [
     "keigo predicate 為さる",
     "honorific",
-    "grammar register gp-153=plain"
+    "grammar register gp-77=formal/written/plain"
    ],
    "confidence": 0.9,
-   "conflicts": [
-    {
-     "kind": "grammar-vs-predicate",
-     "grammar": "neutral",
-     "points": [
-      "gp-153=plain"
-     ]
-    }
-   ],
+   "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
-   "needs_review": true
+   "needs_review": false
   },
   {
    "key": "sent:tatoeba-200379",
@@ -117042,6 +117546,22 @@
     "plain predicate 始めよう on the final bunsetsu (始めよう)"
    ],
    "confidence": 0.8,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-200568",
+   "set": "bank",
+   "level": "n3",
+   "jp": "とても熱があります。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (あります)"
+   ],
+   "confidence": 0.95,
    "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
@@ -117414,6 +117934,22 @@
    "authored_w13": null,
    "authored_normalized": null,
    "needs_review": true
+  },
+  {
+   "key": "sent:tatoeba-200960",
+   "set": "bank",
+   "level": "n2",
+   "jp": "どこで乗り換えるのでしょうか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary でしょう on the final bunsetsu (乗り換えるのでしょうか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
   },
   {
    "key": "sent:tatoeba-201017",
@@ -117836,6 +118372,22 @@
    "authored_w13": null,
    "authored_normalized": null,
    "needs_review": true
+  },
+  {
+   "key": "sent:tatoeba-201726",
+   "set": "bank",
+   "level": "n5",
+   "jp": "トイレはどこですか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (どこですか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
   },
   {
    "key": "sent:tatoeba-201804",
@@ -119002,6 +119554,22 @@
     "polite auxiliary ませ on the final bunsetsu (ありません)"
    ],
    "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-203703",
+   "set": "bank",
+   "level": "n3",
+   "jp": "タクシーを呼んで下さい。",
+   "register": "polite",
+   "rule": "polite-request",
+   "signals": [
+    "polite request ~ください"
+   ],
+   "confidence": 0.85,
    "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
@@ -123514,7 +124082,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate 味 on the final bunsetsu (味だった)",
-    "grammar register gp-153=plain"
+    "grammar register gp-77=formal/written/plain"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -125294,6 +125862,22 @@
    "authored_w13": null,
    "authored_normalized": null,
    "needs_review": true
+  },
+  {
+   "key": "sent:tatoeba-214165",
+   "set": "bank",
+   "level": "n3",
+   "jp": "もう一度お願いします。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (します)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
   },
   {
    "key": "sent:tatoeba-214326",
@@ -127299,7 +127883,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate 味 on the final bunsetsu (味だ)",
-    "grammar register gp-153=plain"
+    "grammar register gp-77=formal/written/plain"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -129442,6 +130026,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-2213120",
+   "set": "bank",
+   "level": "n3",
+   "jp": "予約してあります。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (してあります)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-221344",
    "set": "bank",
    "level": "n2",
@@ -131071,6 +131671,22 @@
     "grammar register n3-te-kureto=neutral"
    ],
    "confidence": 0.8,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-223341",
+   "set": "bank",
+   "level": "n3",
+   "jp": "このバスは美術館まで行きますか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (行きますか)"
+   ],
+   "confidence": 0.95,
    "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
@@ -133179,6 +133795,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-226787",
+   "set": "bank",
+   "level": "n4",
+   "jp": "お肉は食べられません。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ませ on the final bunsetsu (食べられません)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-226794",
    "set": "bank",
    "level": "n2",
@@ -133189,6 +133821,22 @@
     "polite request ~ください"
    ],
    "confidence": 0.85,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-226801",
+   "set": "bank",
+   "level": "n2",
+   "jp": "お湯が出ません。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ませ on the final bunsetsu (出ません)"
+   ],
+   "confidence": 0.95,
    "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
@@ -133287,6 +133935,22 @@
     "casual second person お前"
    ],
    "confidence": 0.85,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-226989",
+   "set": "bank",
+   "level": "n3",
+   "jp": "お先に失礼します。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (します)"
+   ],
+   "confidence": 0.95,
    "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
@@ -133472,6 +134136,22 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary ます on the final bunsetsu (遅れています)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-227125",
+   "set": "bank",
+   "level": "n4",
+   "jp": "お仕事は何ですか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (何ですか)"
    ],
    "confidence": 0.95,
    "conflicts": [],
@@ -135624,21 +136304,13 @@
    "rule": "casual-marker",
    "signals": [
     "sentence-final かしら",
-    "grammar register gp-151=plain"
+    "grammar register te-shimau-chau=plain/casual/colloquial"
    ],
    "confidence": 0.85,
-   "conflicts": [
-    {
-     "kind": "grammar-vs-predicate",
-     "grammar": "neutral",
-     "points": [
-      "gp-151=plain"
-     ]
-    }
-   ],
+   "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
-   "needs_review": true
+   "needs_review": false
   },
   {
    "key": "sent:tatoeba-230968",
@@ -136254,13 +136926,21 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary です on the final bunsetsu (じょうずですね)",
-    "grammar register gp-54=polite"
+    "grammar register no-ga-jouzu=neutral"
    ],
    "confidence": 0.95,
-   "conflicts": [],
+   "conflicts": [
+    {
+     "kind": "grammar-vs-predicate",
+     "grammar": "neutral",
+     "points": [
+      "no-ga-jouzu=neutral"
+     ]
+    }
+   ],
    "authored_w13": null,
    "authored_normalized": null,
-   "needs_review": false
+   "needs_review": true
   },
   {
    "key": "sent:tatoeba-232235",
@@ -136685,7 +137365,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate しまう on the final bunsetsu (行ってしまう)",
-    "grammar register gp-151=plain; te-shimau-chau=plain/casual/colloquial"
+    "grammar register te-shimau-chau=plain/casual/colloquial"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -137490,6 +138170,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-235430",
+   "set": "bank",
+   "level": "n3",
+   "jp": "２人部屋はありますか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (ありますか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-235434",
    "set": "bank",
    "level": "n3",
@@ -137629,6 +138325,22 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary です on the final bunsetsu (年です)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-235793",
+   "set": "bank",
+   "level": "n5",
+   "jp": "１時に会いましょう。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ましょう on the final bunsetsu (会いましょう)"
    ],
    "confidence": 0.95,
    "conflicts": [],
@@ -137996,6 +138708,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-237476",
+   "set": "bank",
+   "level": "n4",
+   "jp": "ご家族はいますか。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (いますか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-237494",
    "set": "bank",
    "level": "n1",
@@ -138198,7 +138926,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate ない on the final bunsetsu (ない)",
-    "grammar register gp-100=plain/polite"
+    "grammar register gp-118=plain/polite"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -138264,7 +138992,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate ない on the final bunsetsu (ない)",
-    "grammar register gp-118=plain"
+    "grammar register gp-118=plain/polite"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -139969,6 +140697,22 @@
    "needs_review": true
   },
   {
+   "key": "sent:tatoeba-3385029",
+   "set": "bank",
+   "level": "n2",
+   "jp": "警官みたいですね。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (みたいですね)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-3388468",
    "set": "bank",
    "level": "n3",
@@ -140217,6 +140961,22 @@
     "casual set phrase ありがとう"
    ],
    "confidence": 0.85,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-3452051",
+   "set": "bank",
+   "level": "n1",
+   "jp": "お勘定お願いします。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (します)"
+   ],
+   "confidence": 0.95,
    "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
@@ -140608,6 +141368,22 @@
    "authored_w13": null,
    "authored_normalized": null,
    "needs_review": true
+  },
+  {
+   "key": "sent:tatoeba-349070",
+   "set": "bank",
+   "level": "n5",
+   "jp": "分かりません。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ませ on the final bunsetsu (分かりません)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
   },
   {
    "key": "sent:tatoeba-3491489",
@@ -141093,6 +141869,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-3549484",
+   "set": "bank",
+   "level": "n2",
+   "jp": "英語のメニューはありますか？",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (ありますか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-3551547",
    "set": "bank",
    "level": "n3",
@@ -141457,6 +142249,22 @@
     "grammar register te-miru=plain"
    ],
    "confidence": 0.8,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-3583428",
+   "set": "bank",
+   "level": "n3",
+   "jp": "私は反対です。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (反対です)"
+   ],
+   "confidence": 0.95,
    "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
@@ -143214,6 +144022,22 @@
    "needs_review": true
   },
   {
+   "key": "sent:tatoeba-4751193",
+   "set": "bank",
+   "level": "n4",
+   "jp": "旅行どうでしたか？",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary でし on the final bunsetsu (どうでしたか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-4751207",
    "set": "bank",
    "level": "n4",
@@ -143808,7 +144632,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate ない on the final bunsetsu (ない)",
-    "grammar register gp-118=plain"
+    "grammar register gp-118=plain/polite"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -145452,6 +146276,22 @@
    "needs_review": true
   },
   {
+   "key": "sent:tatoeba-5207944",
+   "set": "bank",
+   "level": "n4",
+   "jp": "楽しかった。",
+   "register": "neutral",
+   "rule": "plain-predicate",
+   "signals": [
+    "plain predicate 楽しかっ on the final bunsetsu (楽しかった)"
+   ],
+   "confidence": 0.8,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-5210",
    "set": "bank",
    "level": "n5",
@@ -146230,7 +147070,7 @@
    "rule": "casual-marker",
    "signals": [
     "contracted copula じゃ",
-    "grammar register gp-33=casual"
+    "grammar register janai-dewa-nai=plain/casual"
    ],
    "confidence": 0.85,
    "conflicts": [],
@@ -148455,6 +149295,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-752231",
+   "set": "bank",
+   "level": "n4",
+   "jp": "気分が悪いです。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (悪いです)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-75261",
    "set": "bank",
    "level": "n4",
@@ -148660,7 +149516,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate ない on the final bunsetsu (ない)",
-    "grammar register gp-100=plain/polite"
+    "grammar register gp-118=plain/polite"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -149990,7 +150846,7 @@
    "rule": "casual-marker",
    "signals": [
     "contracted copula じゃ",
-    "grammar register gp-33=casual"
+    "grammar register janai-dewa-nai=plain/casual"
    ],
    "confidence": 0.85,
    "conflicts": [],
@@ -150547,6 +151403,22 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary ます on the final bunsetsu (出ますか)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-77494",
+   "set": "bank",
+   "level": "n3",
+   "jp": "列車は今着いたばかりです。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary です on the final bunsetsu (着いたばかりです)"
    ],
    "confidence": 0.95,
    "conflicts": [],
@@ -154565,7 +155437,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate い on the final bunsetsu (いない)",
-    "grammar register gp-118=plain"
+    "grammar register gp-118=plain/polite"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -156310,6 +157182,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-80332",
+   "set": "bank",
+   "level": "n4",
+   "jp": "明日駅で会いましょう。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ましょう on the final bunsetsu (会いましょう)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-80335",
    "set": "bank",
    "level": "n2",
@@ -157453,6 +158341,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-806267",
+   "set": "bank",
+   "level": "n3",
+   "jp": "よろしくお願いします。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (します)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-80630",
    "set": "bank",
    "level": "n3",
@@ -158453,22 +159357,13 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary です on the final bunsetsu (行くのですか)",
-    "grammar register gp-154=plain; you-ni-you-na=plain"
+    "grammar register gp-77=formal/written/plain; you-ni-you-na=plain"
    ],
    "confidence": 0.95,
-   "conflicts": [
-    {
-     "kind": "grammar-vs-predicate",
-     "grammar": "neutral",
-     "points": [
-      "gp-154=plain",
-      "you-ni-you-na=plain"
-     ]
-    }
-   ],
+   "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
-   "needs_review": true
+   "needs_review": false
   },
   {
    "key": "sent:tatoeba-81325",
@@ -167051,7 +167946,7 @@
    "rule": "plain-predicate",
    "signals": [
     "plain predicate 思える on the final bunsetsu (思える)",
-    "grammar register gp-77=formal/written"
+    "grammar register gp-77=formal/written/plain"
    ],
    "confidence": 0.8,
    "conflicts": [],
@@ -167342,6 +168237,22 @@
    "authored_w13": null,
    "authored_normalized": null,
    "needs_review": true
+  },
+  {
+   "key": "sent:tatoeba-8724557",
+   "set": "bank",
+   "level": "n3",
+   "jp": "たぶん遅れる。",
+   "register": "neutral",
+   "rule": "plain-predicate",
+   "signals": [
+    "plain predicate 遅れる on the final bunsetsu (遅れる)"
+   ],
+   "confidence": 0.8,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
   },
   {
    "key": "sent:tatoeba-8725526",
@@ -168253,6 +169164,22 @@
     "grammar register koto-ga-dekiru=plain"
    ],
    "confidence": 0.8,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-8795518",
+   "set": "bank",
+   "level": "n3",
+   "jp": "ゆっくり話してください。",
+   "register": "polite",
+   "rule": "polite-request",
+   "signals": [
+    "polite request ~ください"
+   ],
+   "confidence": 0.85,
    "conflicts": [],
    "authored_w13": null,
    "authored_normalized": null,
@@ -171794,6 +172721,22 @@
    "needs_review": false
   },
   {
+   "key": "sent:tatoeba-921333",
+   "set": "bank",
+   "level": "n4",
+   "jp": "外国に行ったことがあります。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary ます on the final bunsetsu (あります)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
    "key": "sent:tatoeba-921365",
    "set": "bank",
    "level": "n3",
@@ -174649,6 +175592,22 @@
    "rule": "polite-predicate",
    "signals": [
     "polite auxiliary です on the final bunsetsu (ものです)"
+   ],
+   "confidence": 0.95,
+   "conflicts": [],
+   "authored_w13": null,
+   "authored_normalized": null,
+   "needs_review": false
+  },
+  {
+   "key": "sent:tatoeba-9699149",
+   "set": "bank",
+   "level": "n4",
+   "jp": "はじめまして。",
+   "register": "polite",
+   "rule": "polite-predicate",
+   "signals": [
+    "polite auxiliary まし on the final bunsetsu (はじめまして)"
    ],
    "confidence": 0.95,
    "conflicts": [],
@@ -179241,7 +180200,7 @@
    "kind": "grammar-vs-predicate",
    "grammar": "neutral",
    "points": [
-    "gp-47=plain"
+    "yori-hou-ga=plain"
    ],
    "key": "sent:gen-15f024acc430",
    "jp": "肉より魚のほうが好きです",
@@ -179280,6 +180239,17 @@
    "jp": "金曜日まで待ってください",
    "derived": "polite",
    "rule": "polite-request"
+  },
+  {
+   "kind": "grammar-vs-predicate",
+   "grammar": "neutral",
+   "points": [
+    "no-ga-jouzu=neutral"
+   ],
+   "key": "sent:gen-1ea65c87d885",
+   "jp": "あねは うたを うたうのが じょうずです",
+   "derived": "polite",
+   "rule": "polite-predicate"
   },
   {
    "kind": "grammar-vs-predicate",
@@ -179344,6 +180314,17 @@
    ],
    "key": "sent:gen-2b1fccae756f",
    "jp": "今日はとても寒いですね",
+   "derived": "polite",
+   "rule": "polite-predicate"
+  },
+  {
+   "kind": "grammar-vs-predicate",
+   "grammar": "neutral",
+   "points": [
+    "no-ga-jouzu=neutral"
+   ],
+   "key": "sent:gen-2b5d3c022a66",
+   "jp": "せんせいは えいごを はなすのが じょうずです",
    "derived": "polite",
    "rule": "polite-predicate"
   },
@@ -179649,6 +180630,17 @@
    "kind": "grammar-vs-predicate",
    "grammar": "neutral",
    "points": [
+    "no-ga-jouzu=neutral"
+   ],
+   "key": "sent:gen-4ec770164246",
+   "jp": "かれは サッカーを するのが じょうずです",
+   "derived": "polite",
+   "rule": "polite-predicate"
+  },
+  {
+   "kind": "grammar-vs-predicate",
+   "grammar": "neutral",
+   "points": [
     "ba=plain/written"
    ],
    "key": "sent:gen-4f5ce8074635",
@@ -179903,7 +180895,7 @@
    "kind": "grammar-vs-predicate",
    "grammar": "neutral",
    "points": [
-    "gp-47=plain"
+    "yori-hou-ga=plain"
    ],
    "key": "sent:gen-6da9d528f71b",
    "jp": "電車よりバスのほうが安いです",
@@ -179962,6 +180954,17 @@
    ],
    "key": "sent:gen-740480d95016",
    "jp": "本やノートなどが必要です",
+   "derived": "polite",
+   "rule": "polite-predicate"
+  },
+  {
+   "kind": "grammar-vs-predicate",
+   "grammar": "neutral",
+   "points": [
+    "no-ga-jouzu=neutral"
+   ],
+   "key": "sent:gen-74bce4b40079",
+   "jp": "ははは りょうりを つくるのが じょうずです",
    "derived": "polite",
    "rule": "polite-predicate"
   },
@@ -180112,7 +181115,7 @@
    "kind": "grammar-vs-predicate",
    "grammar": "neutral",
    "points": [
-    "gp-47=plain"
+    "yori-hou-ga=plain"
    ],
    "key": "sent:gen-8d5973124521",
    "jp": "夏より冬のほうが好きです",
@@ -180160,6 +181163,17 @@
    ],
    "key": "sent:gen-914ee085a870",
    "jp": "部屋の中は真っ暗でした",
+   "derived": "polite",
+   "rule": "polite-predicate"
+  },
+  {
+   "kind": "grammar-vs-predicate",
+   "grammar": "neutral",
+   "points": [
+    "no-ga-jouzu=neutral"
+   ],
+   "key": "sent:gen-93e74d38add6",
+   "jp": "ともだちは えを かくのが じょうずです",
    "derived": "polite",
    "rule": "polite-predicate"
   },
@@ -181268,17 +182282,6 @@
    "kind": "grammar-vs-predicate",
    "grammar": "neutral",
    "points": [
-    "gp-118=plain"
-   ],
-   "key": "sent:tatoeba-10481824",
-   "jp": "ベッドは１つしかないよ。",
-   "derived": "casual",
-   "rule": "soft-final"
-  },
-  {
-   "kind": "grammar-vs-predicate",
-   "grammar": "neutral",
-   "points": [
     "n3-kuse-ni=neutral"
    ],
    "key": "sent:tatoeba-10492294",
@@ -181318,17 +182321,6 @@
    "jp": "買い物に行っているところです。",
    "derived": "polite",
    "rule": "polite-predicate"
-  },
-  {
-   "kind": "grammar-vs-predicate",
-   "grammar": "neutral",
-   "points": [
-    "gp-118=plain"
-   ],
-   "key": "sent:tatoeba-10538049",
-   "jp": "１００円しかないよ。",
-   "derived": "casual",
-   "rule": "soft-final"
   },
   {
    "kind": "grammar-vs-predicate",
@@ -181775,17 +182767,6 @@
    "kind": "grammar-vs-predicate",
    "grammar": "neutral",
    "points": [
-    "gp-118=plain"
-   ],
-   "key": "sent:tatoeba-11052188",
-   "jp": "2時間しかないんだ。",
-   "derived": "casual",
-   "rule": "casual-marker"
-  },
-  {
-   "kind": "grammar-vs-predicate",
-   "grammar": "neutral",
-   "points": [
     "gp-135=plain"
    ],
    "key": "sent:tatoeba-11056202",
@@ -182120,17 +183101,6 @@
    ],
    "key": "sent:tatoeba-11726883",
    "jp": "ここに来たことがあるの？",
-   "derived": "casual",
-   "rule": "soft-final"
-  },
-  {
-   "kind": "grammar-vs-predicate",
-   "grammar": "neutral",
-   "points": [
-    "gp-118=plain"
-   ],
-   "key": "sent:tatoeba-11752934",
-   "jp": "自分でやるしかないよ。",
    "derived": "casual",
    "rule": "soft-final"
   },
@@ -182724,17 +183694,6 @@
    "kind": "grammar-vs-predicate",
    "grammar": "neutral",
    "points": [
-    "gp-154=plain"
-   ],
-   "key": "sent:tatoeba-141734",
-   "jp": "先生のように英語が話せたらなぁ。",
-   "derived": "casual",
-   "rule": "soft-final"
-  },
-  {
-   "kind": "grammar-vs-predicate",
-   "grammar": "neutral",
-   "points": [
     "n3-nai-to=neutral"
    ],
    "key": "sent:tatoeba-141917",
@@ -183121,17 +184080,6 @@
    "jp": "私もそうです。",
    "derived": "polite",
    "rule": "polite-predicate"
-  },
-  {
-   "kind": "grammar-vs-predicate",
-   "grammar": "neutral",
-   "points": [
-    "gp-151=plain"
-   ],
-   "key": "sent:tatoeba-1529762",
-   "jp": "あなたが来る前に私たちは行ってしまうよ。",
-   "derived": "casual",
-   "rule": "soft-final"
   },
   {
    "kind": "grammar-vs-predicate",
@@ -183791,17 +184739,6 @@
    "kind": "grammar-vs-predicate",
    "grammar": "neutral",
    "points": [
-    "gp-151=plain"
-   ],
-   "key": "sent:tatoeba-187193",
-   "jp": "夏休みってすぐに終わってしまうんです。",
-   "derived": "polite",
-   "rule": "polite-predicate"
-  },
-  {
-   "kind": "grammar-vs-predicate",
-   "grammar": "neutral",
-   "points": [
     "n3-kurai=neutral"
    ],
    "key": "sent:tatoeba-187339",
@@ -184394,17 +185331,6 @@
    "jp": "とりあえず、あたりさわりのない話をしておいたよ。",
    "derived": "casual",
    "rule": "soft-final"
-  },
-  {
-   "kind": "grammar-vs-predicate",
-   "grammar": "neutral",
-   "points": [
-    "gp-153=plain"
-   ],
-   "key": "sent:tatoeba-200376",
-   "jp": "どのようなスポーツをなさいますか。",
-   "derived": "formal",
-   "rule": "keigo"
   },
   {
    "kind": "grammar-vs-predicate",
@@ -185332,17 +186258,6 @@
    "kind": "grammar-vs-predicate",
    "grammar": "neutral",
    "points": [
-    "gp-151=plain"
-   ],
-   "key": "sent:tatoeba-230963",
-   "jp": "あの子は一体どうなってしまうのかしら。",
-   "derived": "casual",
-   "rule": "casual-marker"
-  },
-  {
-   "kind": "grammar-vs-predicate",
-   "grammar": "neutral",
-   "points": [
     "saserareru=plain"
    ],
    "key": "sent:tatoeba-230979",
@@ -185368,6 +186283,17 @@
    "jp": "あのシャツを着てみなさい。上質の綿でできています。",
    "derived": "formal",
    "rule": "keigo"
+  },
+  {
+   "kind": "grammar-vs-predicate",
+   "grammar": "neutral",
+   "points": [
+    "no-ga-jouzu=neutral"
+   ],
+   "key": "sent:tatoeba-232165",
+   "jp": "あなたは絵を書くのがじょうずですね。",
+   "derived": "polite",
+   "rule": "polite-predicate"
   },
   {
    "kind": "grammar-vs-predicate",
@@ -186885,18 +187811,6 @@
    "jp": "毎年ここに来なきゃ。",
    "derived": "casual",
    "rule": "casual-marker"
-  },
-  {
-   "kind": "grammar-vs-predicate",
-   "grammar": "neutral",
-   "points": [
-    "gp-154=plain",
-    "you-ni-you-na=plain"
-   ],
-   "key": "sent:tatoeba-81309",
-   "jp": "毎日どのようにして学校へ行くのですか。",
-   "derived": "polite",
-   "rule": "polite-predicate"
   },
   {
    "kind": "grammar-vs-predicate",

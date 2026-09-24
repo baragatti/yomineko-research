@@ -9,9 +9,9 @@
   "say_now": [
     "sent:tatoeba-5332",
     "sent:tatoeba-9930561",
+    "sent:tatoeba-1014812",
     "sent:tatoeba-127122",
     "sent:tatoeba-137848",
-    "sent:tatoeba-9408530",
     "sent:tatoeba-3598838"
   ],
   "chunk_phrases": [],
@@ -22,12 +22,10 @@
     "vocab:1254130",
     "vocab:1501620",
     "vocab:1600160",
-    "vocab:1171010",
-    "vocab:1290800",
     "vocab:1455500",
+    "vocab:1198430",
     "vocab:1219980",
     "vocab:1145130",
-    "vocab:1588060",
     "vocab:1006970"
   ],
   "patterns": [
@@ -35,19 +33,19 @@
     "gram:da-desu"
   ],
   "kanji_recognition": [
+    "会",
+    "願",
+    "計",
     "決",
     "高",
-    "段",
-    "値",
-    "下",
-    "金"
+    "段"
   ],
   "shadowing": [
     "sent:tatoeba-5332",
     "sent:tatoeba-9930561",
+    "sent:tatoeba-1014812",
     "sent:tatoeba-127122",
     "sent:tatoeba-137848",
-    "sent:tatoeba-9408530",
     "sent:tatoeba-3598838"
   ],
   "srs": {
@@ -68,6 +66,13 @@
       },
       {
         "deck": "deck:phrases",
+        "item": "sent:tatoeba-1014812",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
         "item": "sent:tatoeba-127122",
         "card_types": [
           "production"
@@ -76,13 +81,6 @@
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-137848",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-9408530",
         "card_types": [
           "production"
         ]
@@ -98,7 +96,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 62,
+  "cumulative_known_vocab": 56,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -114,17 +112,27 @@
       "distractors": [
         "来る",
         "幾ら",
-        "元気"
+        "質問"
       ]
     },
     {
-      "id": "cf:n3:724:545",
+      "id": "cf:n5:3046:369",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "毒",
-        "話",
-        "夜"
+        "話す",
+        "願う",
+        "質問"
+      ]
+    },
+    {
+      "id": "kr:n3:1565",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "けっして",
+        "ゆっくり",
+        "しつもん"
       ]
     },
     {
@@ -133,26 +141,16 @@
       "via": "new-word",
       "distractors": [
         "はい",
-        "みな",
-        "だけ"
-      ]
-    },
-    {
-      "id": "kr:n3:49",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はじめ",
-        "できる",
-        "あいだ"
+        "これ",
+        "よる"
       ]
     }
   ],
   "patterns_chunked": [
     "gram:n3-kesshite-nai",
+    "gram:gp-121",
     "gram:gp-3",
-    "gram:gp-4",
-    "gram:wa-yori-desu"
+    "gram:gp-4"
   ],
   "drills": [
     {
@@ -177,46 +175,48 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "A conta, por favor."
+        "pt-BR": "Eu não sei como isto é feito."
       },
-      "answer_key": "お会計お願いします。",
+      "answer_key": "私はこれがどのようにされるか分かりません。",
       "accepted_variants": [
-        "おかいけいおねがいします",
-        "おかいけいおねがいします。",
-        "お会計お願いします",
-        "お会計お願いします。"
+        "わたしはこれがどのようにされるかわかりません",
+        "わたしはこれがどのようにされるかわかりません。",
+        "わたしわこれがどのようにされるかわかりません",
+        "わたしわこれがどのようにされるかわかりません。",
+        "私はこれがどのようにされるか分かりません",
+        "私はこれがどのようにされるか分かりません。"
       ],
-      "sentence": "sent:tatoeba-1014812",
+      "sentence": "sent:tatoeba-160743",
       "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Desculpe por lhe pedir um favor tão grande e trabalhoso."
+        "pt-BR": "Muito obrigado por me lembrar da promessa."
       },
-      "answer_key": "たいそうご無理をお願いしてすみません。",
+      "answer_key": "約束を思い出させてくれてどうもありがとう。",
       "accepted_variants": [
-        "たいそうごむりをおねがいしてすみません",
-        "たいそうごむりをおねがいしてすみません。",
-        "たいそうご無理をお願いしてすみません",
-        "たいそうご無理をお願いしてすみません。"
+        "やくそくをおもいださせてくれてどうもありがとう",
+        "やくそくをおもいださせてくれてどうもありがとう。",
+        "約束を思い出させてくれてどうもありがとう",
+        "約束を思い出させてくれてどうもありがとう。"
       ],
-      "sentence": "sent:tatoeba-203979",
+      "sentence": "sent:tatoeba-79526",
       "kind": "review",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Olá, tudo bem com você?"
+        "pt-BR": "Desculpe por tê-lo bombardeado com tantas perguntas."
       },
-      "answer_key": "こんにちは、お元気ですか。",
+      "answer_key": "質問攻めにしてすみませんでした。",
       "accepted_variants": [
-        "こんにちは、おげんきですか",
-        "こんにちは、おげんきですか。",
-        "こんにちは、お元気ですか",
-        "こんにちは、お元気ですか。"
+        "しつもんぜめにしてすみませんでした",
+        "しつもんぜめにしてすみませんでした。",
+        "質問攻めにしてすみませんでした",
+        "質問攻めにしてすみませんでした。"
       ],
-      "sentence": "sent:tatoeba-400865",
+      "sentence": "sent:tatoeba-11267683",
       "kind": "review",
       "strand": "meaning-output"
     }
@@ -226,12 +226,12 @@
       "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
-      "sent:tatoeba-13885289",
-      "sent:tatoeba-13259054",
+      "sent:tatoeba-229460",
+      "sent:tatoeba-5109",
       "sent:tatoeba-1874351",
       "sent:tatoeba-198378",
       "sent:tatoeba-4971",
-      "sent:tatoeba-373351"
+      "sent:tatoeba-335372"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -239,15 +239,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 25,
     "fluency": 6
   }
 }

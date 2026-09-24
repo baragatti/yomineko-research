@@ -100,7 +100,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 364,
+  "cumulative_known_vocab": 335,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -110,8 +110,8 @@
       "via": "phrase",
       "distractors": [
         "水",
-        "先",
-        "日"
+        "日",
+        "箱"
       ]
     },
     {
@@ -120,8 +120,8 @@
       "via": "new-word",
       "distractors": [
         "水",
-        "先",
-        "差"
+        "木",
+        "銀"
       ]
     },
     {
@@ -129,9 +129,9 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "はこぶ",
-        "つとめ",
-        "てごろ"
+        "てごろ",
+        "ねだん",
+        "こども"
       ]
     },
     {
@@ -139,9 +139,9 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
+        "いなか",
         "にほん",
-        "できる",
-        "ひだり"
+        "できる"
       ]
     },
     {
@@ -200,23 +200,6 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Ele viajou com as despesas pagas pela empresa."
-      },
-      "answer_key": "彼は会社の費用で旅行した。",
-      "accepted_variants": [
-        "かれはかいしゃのひようでりょこうした",
-        "かれはかいしゃのひようでりょこうした。",
-        "かれわかいしゃのひようでりょこうした",
-        "かれわかいしゃのひようでりょこうした。",
-        "彼は会社の費用で旅行した",
-        "彼は会社の費用で旅行した。"
-      ],
-      "sentence": "sent:tatoeba-109051",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt": {
         "pt-BR": "Você gosta de viajar?"
       },
       "answer_key": "旅行することが好きですか。",
@@ -247,6 +230,21 @@
       "sentence": "sent:tatoeba-13172379",
       "kind": "same-stage",
       "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "Eu gosto mais de anel de prata do que de ouro."
+      },
+      "answer_key": "金より銀の指輪の方が好きです。",
+      "accepted_variants": [
+        "きんよりぎんのゆびわのほうがすきです",
+        "きんよりぎんのゆびわのほうがすきです。",
+        "金より銀の指輪の方が好きです",
+        "金より銀の指輪の方が好きです。"
+      ],
+      "sentence": "sent:tatoeba-179712",
+      "kind": "same-stage",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -254,12 +252,12 @@
       "pt-BR": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta."
     },
     "items": [
-      "sent:tatoeba-179712",
       "sent:tatoeba-102734",
-      "sent:tatoeba-11386733",
-      "sent:tatoeba-9553773",
-      "sent:tatoeba-84568",
-      "sent:tatoeba-232281"
+      "sent:tatoeba-169114",
+      "sent:tatoeba-1046077",
+      "sent:jec-0320",
+      "sent:tatoeba-154700",
+      "sent:tatoeba-5060"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

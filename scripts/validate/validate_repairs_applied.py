@@ -2088,7 +2088,53 @@ def handle_item_refs(rows, sents, gram, table):
     return out
 
 
+def handle_w32_layerb(rows, sents, gram, table):
+    """P4-w32-ingest. Each W32 survival-core row IS a banked sentence carrying the row's Layer-B.
+
+    One row per sentence, ingested by `ingest_mined_stages.py` with its Layer-B inline. Asserted: the
+    slug is in the export with the row's jp; `translation`, `translation_literal` and
+    `structure_explanation` [pt-BR] equal the row's; every C token at a row position has the row's
+    surface and gloss; `particles[]` (particle-id order = the row's position order) has the row's
+    particle, function and explanation at each index, and no more or fewer particles than the row.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['slug']} / layer-b"
+        s = sents.get(r["slug"])
+        if s is None or s.get("jp") != r["jp"]:
+            out.append(("fail", C_NO_RECORD, addr, "the export carries no such sentence (or its jp moved)"))
+            continue
+        bad = []
+        for field, want in (("translation", r["pt"]), ("translation_literal", r["pt_literal"]),
+                            ("structure_explanation", r["structure_explanation_pt"])):
+            if (s.get(field) or {}).get("pt-BR") != want:
+                bad.append(f"{field} is {(s.get(field) or {}).get('pt-BR')!r:.80}")
+        ctok = {t.get("position"): t for t in s.get("tokens") or [] if t.get("split_mode") == "C"}
+        for t in r["tokens"]:
+            got = ctok.get(t["position"])
+            if got is None or got.get("surface") != t["surface"]:
+                bad.append(f"C token {t['position']} is not {t['surface']!r}")
+            elif (got.get("gloss") or {}).get("pt-BR") != t["gloss_pt"]:
+                bad.append(f"token {t['position']} gloss {(got.get('gloss') or {}).get('pt-BR')!r}")
+        ps = s.get("particles") or []
+        if len(ps) != len(r["particles"]):
+            bad.append(f"{len(ps)} particles exported, the row has {len(r['particles'])}")
+        else:
+            for p, want in zip(ps, r["particles"]):
+                if (p.get("particle"), (p.get("function") or {}).get("pt-BR"),
+                        (p.get("explanation") or {}).get("pt-BR")) != (
+                        want["particle"], want["function_pt"], want["explanation_pt"]):
+                    bad.append(f"particle @{want['position']} {want['particle']} differs")
+        if bad:
+            out.append(("fail", C_VALUE_MISMATCH, addr, "; ".join(bad[:3])))
+        else:
+            out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
+    # P4-w32-ingest: the 62 W32 survival-core sentences, source row + inline Layer-B (verified).
+    "w32_layerb.json": handle_w32_layerb,
     # C13: verified lesson-body span tables (W08b one-point bodies, W21b rewrites, furigana residue).
     "w08b_lesson_bodies.json": handle_lesson_body_spans,
     "w21b_rewrites.json": handle_lesson_body_spans,

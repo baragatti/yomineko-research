@@ -7,53 +7,64 @@
     "pt-BR": "Pedir, oferecer, agradecer com jeito, parte 5"
   },
   "say_now": [
+    "sent:tatoeba-201255",
+    "sent:tatoeba-201345",
     "sent:tatoeba-222508",
     "sent:tatoeba-74723",
     "sent:tatoeba-9966137",
-    "sent:tatoeba-123791",
-    "sent:tatoeba-10079908",
-    "sent:tatoeba-121505"
+    "sent:tatoeba-123791"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1189130",
     "vocab:1549660",
     "vocab:1007660",
     "vocab:1302090",
     "vocab:1451210",
-    "vocab:1255890",
-    "vocab:1589730",
     "vocab:1220800",
-    "vocab:1219680",
-    "vocab:1189980",
-    "vocab:1587290",
+    "vocab:1432900",
     "vocab:1374530"
   ],
   "patterns": [
     "gram:naide-kudasai",
     "gram:o-kudasai-2",
     "gram:te-kudasai",
-    "gram:n3-tsuide-ni",
-    "gram:n3-naide"
+    "gram:n3-naide",
+    "gram:gari"
   ],
   "kanji_recognition": [
+    "通",
+    "上",
     "会",
     "機",
     "私",
-    "用",
-    "利",
-    "加"
+    "用"
   ],
   "shadowing": [
+    "sent:tatoeba-201255",
+    "sent:tatoeba-201345",
     "sent:tatoeba-222508",
     "sent:tatoeba-74723",
     "sent:tatoeba-9966137",
-    "sent:tatoeba-123791",
-    "sent:tatoeba-10079908",
-    "sent:tatoeba-121505"
+    "sent:tatoeba-123791"
   ],
   "srs": {
     "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-201255",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-201345",
+        "card_types": [
+          "production"
+        ]
+      },
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-222508",
@@ -81,26 +92,12 @@
         "card_types": [
           "production"
         ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-10079908",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-121505",
-        "card_types": [
-          "production"
-        ]
       }
     ]
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 599,
+  "cumulative_known_vocab": 549,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -124,9 +121,9 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
+        "昼食",
         "思う",
-        "着る",
-        "必要"
+        "着る"
       ]
     },
     {
@@ -140,13 +137,13 @@
       ]
     },
     {
-      "id": "kr:n3:143",
+      "id": "kr:n3:755",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "うんてん",
-        "うまれる",
-        "きょうぎ"
+        "あつい",
+        "なかま",
+        "ようい"
       ]
     }
   ],
@@ -166,9 +163,9 @@
     {
       "pattern": "gram:o-kudasai-2",
       "examples": [
-        "sent:gen-0114d50c684c",
         "sent:gen-0e95f64b542d",
-        "sent:gen-96ce440b58e0"
+        "sent:gen-96ce440b58e0",
+        "sent:gen-0114d50c684c"
       ],
       "strand": "language-focused"
     },
@@ -182,40 +179,25 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:n3-tsuide-ni",
-      "examples": [
-        "sent:tatoeba-10914932",
-        "sent:tatoeba-202687",
-        "sent:tatoeba-202686"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:n3-naide",
       "examples": [
         "sent:tatoeba-152171",
         "sent:tatoeba-123792",
-        "sent:tatoeba-80886"
+        "sent:tatoeba-148614"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gari",
+      "examples": [
+        "sent:gen-c0edda71dfee",
+        "sent:gen-31fd2d161606",
+        "sent:gen-dea39ec960fb"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt": {
-        "pt-BR": "Com licença, deixa eu passar."
-      },
-      "answer_key": "どうぞ通してください。",
-      "accepted_variants": [
-        "どうぞとおしてください",
-        "どうぞとおしてください。",
-        "どうぞ通してください",
-        "どうぞ通してください。"
-      ],
-      "sentence": "sent:tatoeba-201255",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
     {
       "prompt": {
         "pt-BR": "Por favor, não puxe a minha orelha."
@@ -247,6 +229,21 @@
       "sentence": "sent:tatoeba-211561",
       "kind": "same-stage",
       "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "Não deixe de me escrever, viu?"
+      },
+      "answer_key": "きっと手紙くださいね。",
+      "accepted_variants": [
+        "きっとてがみくださいね",
+        "きっとてがみくださいね。",
+        "きっと手紙くださいね",
+        "きっと手紙くださいね。"
+      ],
+      "sentence": "sent:tatoeba-226013",
+      "kind": "same-stage",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -254,12 +251,12 @@
       "pt-BR": "Você precisa pedir um favor a alguém mais velho. Peça com jeito."
     },
     "items": [
-      "sent:tatoeba-226013",
       "sent:tatoeba-83404",
       "sent:tatoeba-149694",
+      "sent:tatoeba-184096",
       "sent:tatoeba-124654",
       "sent:tatoeba-10125641",
-      "sent:tatoeba-9851514"
+      "sent:tatoeba-146189"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -267,15 +264,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 11
+    "language-focused": 58,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 32,
+    "language-focused": 29,
     "fluency": 6
   }
 }

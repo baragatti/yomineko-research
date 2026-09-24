@@ -7,27 +7,29 @@
     "pt-BR": "Pedir, oferecer, agradecer com jeito, parte 4"
   },
   "say_now": [
+    "sent:tatoeba-184096",
     "sent:tatoeba-149694",
     "sent:tatoeba-83404",
     "sent:tatoeba-226013",
     "sent:tatoeba-211561",
-    "sent:tatoeba-9614704",
-    "sent:tatoeba-201255"
+    "sent:tatoeba-9614704"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1421850",
     "vocab:1318720",
     "vocab:1509430",
     "vocab:1003430",
     "vocab:1220210",
     "vocab:1317170",
-    "vocab:1189130",
     "vocab:1352320",
-    "vocab:1432900",
     "vocab:1340820",
     "vocab:1585230",
-    "vocab:1601900"
+    "vocab:1208910",
+    "vocab:1601900",
+    "vocab:1158400",
+    "vocab:1291880"
   ],
   "patterns": [
     "gram:naide-kudasai",
@@ -37,23 +39,30 @@
     "gram:gp-15"
   ],
   "kanji_recognition": [
+    "下",
+    "座",
+    "席",
+    "置",
     "意",
-    "見",
-    "自",
-    "述",
-    "由",
-    "別"
+    "見"
   ],
   "shadowing": [
+    "sent:tatoeba-184096",
     "sent:tatoeba-149694",
     "sent:tatoeba-83404",
     "sent:tatoeba-226013",
     "sent:tatoeba-211561",
-    "sent:tatoeba-9614704",
-    "sent:tatoeba-201255"
+    "sent:tatoeba-9614704"
   ],
   "srs": {
     "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-184096",
+        "card_types": [
+          "production"
+        ]
+      },
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-149694",
@@ -88,19 +97,12 @@
         "card_types": [
           "production"
         ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-201255",
-        "card_types": [
-          "production"
-        ]
       }
     ]
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 588,
+  "cumulative_known_vocab": 541,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -125,6 +127,16 @@
       ]
     },
     {
+      "id": "kr:n3:104",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "きみ",
+        "いち",
+        "あし"
+      ]
+    },
+    {
       "id": "kr:n3:11",
       "type": "kanji_reading",
       "via": "new-word",
@@ -133,21 +145,9 @@
         "やめる",
         "つれる"
       ]
-    },
-    {
-      "id": "kr:n4:11",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "えいご",
-        "あそぶ",
-        "さかな"
-      ]
     }
   ],
-  "patterns_chunked": [
-    "gram:gp-121"
-  ],
+  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:naide-kudasai",
@@ -172,7 +172,7 @@
       "examples": [
         "sent:tatoeba-152171",
         "sent:tatoeba-123792",
-        "sent:tatoeba-80886"
+        "sent:tatoeba-148614"
       ],
       "strand": "language-focused"
     },
@@ -248,11 +248,11 @@
     },
     "items": [
       "sent:tatoeba-2397851",
-      "sent:tatoeba-184096",
       "sent:tatoeba-8991113",
-      "sent:tatoeba-223665",
-      "sent:tatoeba-206210",
-      "sent:tatoeba-78628"
+      "sent:tatoeba-141924",
+      "sent:tatoeba-4854",
+      "sent:tatoeba-5118",
+      "sent:tatoeba-1590863"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -260,15 +260,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
+    "meaning-input": 22,
     "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 12
+    "language-focused": 61,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 33,
     "fluency": 6
   }
 }

@@ -8,32 +8,32 @@
   },
   "say_now": [
     "sent:tatoeba-212601",
-    "sent:tatoeba-77964",
-    "sent:tatoeba-218592",
-    "sent:tatoeba-74415",
-    "sent:tatoeba-74765",
-    "sent:tatoeba-3313203"
+    "sent:tatoeba-10723441",
+    "sent:tatoeba-86878",
+    "sent:tatoeba-121988",
+    "sent:jec-4320",
+    "sent:tatoeba-13059182"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1264540",
-    "vocab:1604570",
-    "vocab:1202450",
-    "vocab:1502390",
-    "vocab:1595730",
-    "vocab:1289520",
-    "vocab:1260490",
-    "vocab:1585650",
+    "vocab:1524720",
+    "vocab:1486360",
+    "vocab:1467640",
+    "vocab:1340000",
+    "vocab:1293780",
+    "vocab:1249900",
     "vocab:1489510",
-    "vocab:1425790",
-    "vocab:1554280",
-    "vocab:1285520",
-    "vocab:1327660"
+    "vocab:1244960",
+    "vocab:1191870",
+    "vocab:1547450",
+    "vocab:1195960",
+    "vocab:1485350",
+    "vocab:1285520"
   ],
   "patterns": [
     "gram:gp-78",
-    "gram:gp-149",
     "gram:to-omou",
     "gram:gp-32"
   ],
@@ -47,11 +47,11 @@
   ],
   "shadowing": [
     "sent:tatoeba-212601",
-    "sent:tatoeba-77964",
-    "sent:tatoeba-218592",
-    "sent:tatoeba-74415",
-    "sent:tatoeba-74765",
-    "sent:tatoeba-3313203"
+    "sent:tatoeba-10723441",
+    "sent:tatoeba-86878",
+    "sent:tatoeba-121988",
+    "sent:jec-4320",
+    "sent:tatoeba-13059182"
   ],
   "srs": {
     "introduces_cards": [
@@ -64,35 +64,35 @@
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-77964",
+        "item": "sent:tatoeba-10723441",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-218592",
+        "item": "sent:tatoeba-86878",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-74415",
+        "item": "sent:tatoeba-121988",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-74765",
+        "item": "sent:jec-4320",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-3313203",
+        "item": "sent:tatoeba-13059182",
         "card_types": [
           "production"
         ]
@@ -101,54 +101,55 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 286,
+  "cumulative_known_vocab": 261,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n3:185:642",
+      "id": "cf:n3:116:884",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "毒",
-        "道",
-        "丈"
+        "単なる",
+        "美術館",
+        "忘れる"
       ]
     },
     {
-      "id": "cf:n3:323:255",
+      "id": "cf:n3:193:884",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "見る",
-        "唯一",
-        "贅沢"
+        "分かる",
+        "そんな",
+        "上がる"
       ]
     },
     {
-      "id": "kr:n3:10",
+      "id": "kr:n3:1586",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "もっと",
-        "けいい",
-        "ごはん"
+        "たつ",
+        "いま",
+        "バス"
       ]
     },
     {
-      "id": "kr:n4:10",
+      "id": "kr:n3:28",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "つかう",
-        "ベッド",
-        "たべる"
+        "ぼく",
+        "だれ",
+        "てま"
       ]
     }
   ],
   "patterns_chunked": [
     "gram:n3-you-to-omou",
-    "gram:te-ita"
+    "gram:n3-hodo",
+    "gram:gp-121"
   ],
   "drills": [
     {
@@ -156,16 +157,7 @@
       "examples": [
         "sent:tatoeba-5049",
         "sent:tatoeba-11045111",
-        "sent:tatoeba-193348"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-149",
-      "examples": [
-        "sent:tatoeba-4856",
-        "sent:tatoeba-83623",
-        "sent:tatoeba-79091"
+        "sent:tatoeba-166326"
       ],
       "strand": "language-focused"
     },
@@ -191,52 +183,50 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Ele saiu do quarto furioso."
+        "pt-BR": "Ela estava em pé no meio da sala."
       },
-      "answer_key": "彼は怒って部屋を飛び出した。",
+      "answer_key": "彼女はその部屋の中央に立っていた。",
       "accepted_variants": [
-        "かれはおこってへやをとびだした",
-        "かれはおこってへやをとびだした。",
-        "かれわおこってへやをとびだした",
-        "かれわおこってへやをとびだした。",
-        "彼は怒って部屋を飛び出した",
-        "彼は怒って部屋を飛び出した。"
+        "かのじょはそのへやのちゅうおうにたっていた",
+        "かのじょはそのへやのちゅうおうにたっていた。",
+        "かのじょわそのへやのちゅうおうにたっていた",
+        "かのじょわそのへやのちゅうおうにたっていた。",
+        "彼女はその部屋の中央に立っていた",
+        "彼女はその部屋の中央に立っていた。"
       ],
-      "sentence": "sent:tatoeba-101820",
+      "sentence": "sent:tatoeba-92305",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Ele ficou só dormindo na cama o dia inteiro."
+        "pt-BR": "No hotel há muitos estrangeiros."
       },
-      "answer_key": "彼は一日中ベッドで寝てばかりいた。",
+      "answer_key": "ホテルには外国人が多い。",
       "accepted_variants": [
-        "かれはいちにちじゅうべっどでねてばかりいた",
-        "かれはいちにちじゅうべっどでねてばかりいた。",
-        "かれわいちにちじゅうべっどでねてばかりいた",
-        "かれわいちにちじゅうべっどでねてばかりいた。",
-        "彼は一日中ベッドで寝てばかりいた",
-        "彼は一日中ベッドで寝てばかりいた。"
+        "ほてるにはがいこくじんがおおい",
+        "ほてるにはがいこくじんがおおい。",
+        "ほてるにわがいこくじんがおおい",
+        "ほてるにわがいこくじんがおおい。",
+        "ホテルには外国人が多い",
+        "ホテルには外国人が多い。"
       ],
-      "sentence": "sent:tatoeba-109884",
+      "sentence": "sent:tatoeba-4562257",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo."
+        "pt-BR": "Depois que minha esposa foi dormir, trabalhei no escritório."
       },
-      "answer_key": "最近あまり寝ていないので今日は早く寝ようと思う。",
+      "answer_key": "妻が寝た後、書斎で仕事をした。",
       "accepted_variants": [
-        "さいきんあまりねていないのできょうははやくねようとおもう",
-        "さいきんあまりねていないのできょうははやくねようとおもう。",
-        "さいきんあまりねていないのできょうわはやくねようとおもう",
-        "さいきんあまりねていないのできょうわはやくねようとおもう。",
-        "最近あまり寝ていないので今日は早く寝ようと思う",
-        "最近あまり寝ていないので今日は早く寝ようと思う。"
+        "つまがねたあと、しょさいでしごとをした",
+        "つまがねたあと、しょさいでしごとをした。",
+        "妻が寝た後、書斎で仕事をした",
+        "妻が寝た後、書斎で仕事をした。"
       ],
-      "sentence": "sent:tatoeba-13059182",
+      "sentence": "sent:tatoeba-170376",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -246,12 +236,12 @@
       "pt-BR": "Você chegou no hotel. Faça o check-in e resolva um problema no quarto."
     },
     "items": [
-      "sent:tatoeba-121988",
-      "sent:tatoeba-10723441",
-      "sent:tatoeba-86878",
-      "sent:tatoeba-84142",
-      "sent:tatoeba-140621",
-      "sent:tatoeba-109862"
+      "sent:tatoeba-126245",
+      "sent:tatoeba-84229",
+      "sent:tatoeba-176088",
+      "sent:tatoeba-226801",
+      "sent:tatoeba-182700",
+      "sent:tatoeba-5115"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -259,15 +249,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 60,
+    "language-focused": 59,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 30,
     "fluency": 6
   }
 }

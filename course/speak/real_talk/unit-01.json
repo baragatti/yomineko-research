@@ -7,48 +7,58 @@
     "pt-BR": "Conversa de verdade, parte 1"
   },
   "say_now": [
+    "sent:tatoeba-1059956",
+    "sent:tatoeba-3385029",
     "sent:tatoeba-2718657",
     "sent:tatoeba-83210",
-    "sent:tatoeba-230514",
-    "sent:tatoeba-213958",
-    "sent:tatoeba-80952",
-    "sent:tatoeba-1331104"
+    "sent:tatoeba-77494",
+    "sent:tatoeba-171474"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1013190",
-    "vocab:1000730",
-    "vocab:1529410",
-    "vocab:1365250",
-    "vocab:1373850"
+    "vocab:2016410",
+    "vocab:1252330"
   ],
   "patterns": [
     "gram:n3-ba-yokatta",
-    "gram:n3-mitai-da",
-    "gram:gp-73",
-    "gram:janai-dewa-nai",
+    "gram:ta-bakari",
     "gram:mashou",
-    "gram:n3-ba-noni"
+    "gram:n3-ba-noni",
+    "gram:n3-bakari"
   ],
   "kanji_recognition": [
+    "忙",
+    "官",
+    "警",
     "電",
     "話",
-    "歩",
-    "人",
-    "二",
-    "戻"
+    "歩"
   ],
   "shadowing": [
+    "sent:tatoeba-1059956",
+    "sent:tatoeba-3385029",
     "sent:tatoeba-2718657",
     "sent:tatoeba-83210",
-    "sent:tatoeba-230514",
-    "sent:tatoeba-213958",
-    "sent:tatoeba-80952",
-    "sent:tatoeba-1331104"
+    "sent:tatoeba-77494",
+    "sent:tatoeba-171474"
   ],
   "srs": {
     "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-1059956",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-3385029",
+        "card_types": [
+          "production"
+        ]
+      },
       {
         "deck": "deck:phrases",
         "item": "sent:tatoeba-2718657",
@@ -65,28 +75,14 @@
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-230514",
+        "item": "sent:tatoeba-77494",
         "card_types": [
           "production"
         ]
       },
       {
         "deck": "deck:phrases",
-        "item": "sent:tatoeba-213958",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-80952",
-        "card_types": [
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:phrases",
-        "item": "sent:tatoeba-1331104",
+        "item": "sent:tatoeba-171474",
         "card_types": [
           "production"
         ]
@@ -95,7 +91,7 @@
   },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 657,
+  "cumulative_known_vocab": 600,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -110,37 +106,39 @@
       ]
     },
     {
-      "id": "cf:n3:492:1055",
+      "id": "cf:n3:16:475",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "review",
       "distractors": [
-        "熱",
-        "五",
-        "夏"
+        "死ぬ",
+        "契約",
+        "毎朝"
       ]
     },
     {
-      "id": "kr:n3:1413",
+      "id": "kr:n3:1479",
       "type": "kanji_reading",
-      "via": "new-word",
+      "via": "review",
       "distractors": [
-        "けいかく",
-        "アメリカ",
-        "すいどう"
+        "おこなう",
+        "すずしい",
+        "われわれ"
       ]
     },
     {
-      "id": "kr:n4:898",
+      "id": "kr:n3:1663",
       "type": "kanji_reading",
-      "via": "new-word",
+      "via": "review",
       "distractors": [
-        "ゆうじん",
-        "みつける",
-        "べんとう"
+        "まいあさ",
+        "けいけん",
+        "りょうり"
       ]
     }
   ],
-  "patterns_chunked": [],
+  "patterns_chunked": [
+    "gram:sou-da-1"
+  ],
   "drills": [
     {
       "pattern": "gram:n3-ba-yokatta",
@@ -152,29 +150,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:n3-mitai-da",
+      "pattern": "gram:ta-bakari",
       "examples": [
-        "sent:tatoeba-11281222",
-        "sent:tatoeba-184879",
-        "sent:tatoeba-10153751"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-73",
-      "examples": [
-        "sent:tatoeba-2171509",
-        "sent:tatoeba-127272",
-        "sent:tatoeba-11980988"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:janai-dewa-nai",
-      "examples": [
-        "sent:gen-c8e36c94f4e2",
-        "sent:tatoeba-144679",
-        "sent:tatoeba-536769"
+        "sent:tatoeba-9553773",
+        "sent:tatoeba-159565",
+        "sent:tatoeba-11009581"
       ],
       "strand": "language-focused"
     },
@@ -195,55 +175,64 @@
         "sent:tatoeba-80668"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-bakari",
+      "examples": [
+        "sent:tatoeba-96219",
+        "sent:tatoeba-113980",
+        "sent:tatoeba-147558"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
     {
       "prompt": {
-        "pt-BR": "Não é possível que o Mike tenha feito uma coisa dessas."
+        "pt-BR": "A luz está acesa, então não tem como eles terem saído."
       },
-      "answer_key": "マイクがそんなことをしたはずがない。",
+      "answer_key": "明かりがついているのだから、彼らが外出したはずがない。",
       "accepted_variants": [
-        "まいくがそんなことをしたはずがない",
-        "まいくがそんなことをしたはずがない。",
-        "マイクがそんなことをしたはずがない",
-        "マイクがそんなことをしたはずがない。"
+        "あかりがついているのだから、かれらががいしゅつしたはずがない",
+        "あかりがついているのだから、かれらががいしゅつしたはずがない。",
+        "明かりがついているのだから、彼らが外出したはずがない",
+        "明かりがついているのだから、彼らが外出したはずがない。"
       ],
-      "sentence": "sent:tatoeba-195794",
+      "sentence": "sent:tatoeba-80745",
       "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Ele deve ter quase 40 anos."
+        "pt-BR": "Meu computador tem que servir para alguma coisa."
       },
-      "answer_key": "４０近いはずだ。",
+      "answer_key": "私のパソコンは何かの役に立つはずだ。",
       "accepted_variants": [
-        "40近いはずだ",
-        "40近いはずだ。",
-        "よんじゅうちかいはずだ",
-        "よんじゅうちかいはずだ。",
-        "４０近いはずだ",
-        "４０近いはずだ。"
+        "わたしのぱそこんはなんかのやくにたつはずだ",
+        "わたしのぱそこんはなんかのやくにたつはずだ。",
+        "わたしのぱそこんわなんかのやくにたつはずだ",
+        "わたしのぱそこんわなんかのやくにたつはずだ。",
+        "私のパソコンは何かの役に立つはずだ",
+        "私のパソコンは何かの役に立つはずだ。"
       ],
-      "sentence": "sent:tatoeba-235244",
+      "sentence": "sent:tatoeba-4827",
       "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "A reunião deve acontecer na quinta que vem."
+        "pt-BR": "Até quinta o resultado deve sair."
       },
-      "answer_key": "会合は来週木曜に開かれるはずです。",
+      "answer_key": "木曜までには結果が分かるはずだ。",
       "accepted_variants": [
-        "かいごうはらいしゅうもくようにひらかれるはずです",
-        "かいごうはらいしゅうもくようにひらかれるはずです。",
-        "かいごうわらいしゅうもくようにひらかれるはずです",
-        "かいごうわらいしゅうもくようにひらかれるはずです。",
-        "会合は来週木曜に開かれるはずです",
-        "会合は来週木曜に開かれるはずです。"
+        "もくようまでにはけっかがわかるはずだ",
+        "もくようまでにはけっかがわかるはずだ。",
+        "もくようまでにわけっかがわかるはずだ",
+        "もくようまでにわけっかがわかるはずだ。",
+        "木曜までには結果が分かるはずだ",
+        "木曜までには結果が分かるはずだ。"
       ],
-      "sentence": "sent:tatoeba-185295",
+      "sentence": "sent:tatoeba-80053",
       "kind": "on-topic",
       "strand": "meaning-output"
     }
@@ -253,12 +242,12 @@
       "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
-      "sent:jec-0517",
-      "sent:tatoeba-89607",
       "sent:tatoeba-74941",
       "sent:tatoeba-105908",
-      "sent:tatoeba-79537",
-      "sent:tatoeba-78366"
+      "sent:tatoeba-80432",
+      "sent:tatoeba-185718",
+      "sent:tatoeba-207696",
+      "sent:tatoeba-179684"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -266,15 +255,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 22,
     "fluency": 6
   }
 }

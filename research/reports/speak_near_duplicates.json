@@ -1,58 +1,41 @@
 {
   "note": "W34 / readiness G4 work list: say_now phrases inside one stage that are the same utterance to a listener. Rule and threshold in scripts/validate/validate_speak_duplicates.py.",
   "threshold": 0.72,
-  "total": 21,
+  "total": 18,
   "stages": {
     "arrival": [
-      {
-        "mean": 0.955,
-        "jp_ratio": 0.909,
-        "pt_ratio": 1.0,
-        "a": {
-          "unit": "speak:arrival-03",
-          "sentence": "sent:tatoeba-125913",
-          "jp": "長くお待たせしてすみませんでした。",
-          "pt": "Desculpe por tê-lo feito esperar tanto tempo."
-        },
-        "b": {
-          "unit": "speak:arrival-04",
-          "sentence": "sent:tatoeba-125967",
-          "jp": "長い間、お待たせしてすみませんでした。",
-          "pt": "Desculpe por tê-lo feito esperar tanto tempo."
-        }
-      },
       {
         "mean": 0.919,
         "jp_ratio": 0.839,
         "pt_ratio": 1.0,
         "a": {
-          "unit": "speak:arrival-03",
+          "unit": "speak:arrival-04",
           "sentence": "sent:tatoeba-125944",
           "jp": "長い事お待たせしてすみません。",
           "pt": "Desculpe por tê-lo feito esperar tanto tempo."
         },
         "b": {
-          "unit": "speak:arrival-04",
+          "unit": "speak:arrival-05",
           "sentence": "sent:tatoeba-125967",
           "jp": "長い間、お待たせしてすみませんでした。",
           "pt": "Desculpe por tê-lo feito esperar tanto tempo."
         }
       },
       {
-        "mean": 0.9,
-        "jp_ratio": 0.8,
-        "pt_ratio": 1.0,
+        "mean": 0.892,
+        "jp_ratio": 0.88,
+        "pt_ratio": 0.905,
         "a": {
           "unit": "speak:arrival-03",
-          "sentence": "sent:tatoeba-125944",
-          "jp": "長い事お待たせしてすみません。",
-          "pt": "Desculpe por tê-lo feito esperar tanto tempo."
+          "sentence": "sent:tatoeba-8795518",
+          "jp": "ゆっくり話してください。",
+          "pt": "Fale devagar, por favor."
         },
         "b": {
-          "unit": "speak:arrival-03",
-          "sentence": "sent:tatoeba-125913",
-          "jp": "長くお待たせしてすみませんでした。",
-          "pt": "Desculpe por tê-lo feito esperar tanto tempo."
+          "unit": "speak:arrival-06",
+          "sentence": "sent:tatoeba-5109",
+          "jp": "もっとゆっくり話してください！",
+          "pt": "Fale mais devagar, por favor!"
         }
       },
       {
@@ -60,13 +43,13 @@
         "jp_ratio": 0.733,
         "pt_ratio": 0.961,
         "a": {
-          "unit": "speak:arrival-03",
+          "unit": "speak:arrival-04",
           "sentence": "sent:tatoeba-125944",
           "jp": "長い事お待たせしてすみません。",
           "pt": "Desculpe por tê-lo feito esperar tanto tempo."
         },
         "b": {
-          "unit": "speak:arrival-04",
+          "unit": "speak:arrival-05",
           "sentence": "sent:tatoeba-231454",
           "jp": "こんなに長い間待たせてすみません。",
           "pt": "Desculpe por tê-lo feito esperar por tanto tempo."
@@ -77,13 +60,13 @@
         "jp_ratio": 0.727,
         "pt_ratio": 0.961,
         "a": {
-          "unit": "speak:arrival-04",
+          "unit": "speak:arrival-05",
           "sentence": "sent:tatoeba-231454",
           "jp": "こんなに長い間待たせてすみません。",
           "pt": "Desculpe por tê-lo feito esperar por tanto tempo."
         },
         "b": {
-          "unit": "speak:arrival-04",
+          "unit": "speak:arrival-05",
           "sentence": "sent:tatoeba-125967",
           "jp": "長い間、お待たせしてすみませんでした。",
           "pt": "Desculpe por tê-lo feito esperar tanto tempo."
@@ -94,13 +77,13 @@
         "jp_ratio": 0.909,
         "pt_ratio": 0.732,
         "a": {
-          "unit": "speak:arrival-04",
+          "unit": "speak:arrival-05",
           "sentence": "sent:tatoeba-11831400",
           "jp": "考えてくれてありがとう。",
           "pt": "Obrigado por pensar nisso."
         },
         "b": {
-          "unit": "speak:arrival-04",
+          "unit": "speak:arrival-06",
           "sentence": "sent:tatoeba-8579832",
           "jp": "教えてくれてありがとう。",
           "pt": "Obrigado por me avisar."
@@ -111,13 +94,13 @@
         "jp_ratio": 0.818,
         "pt_ratio": 0.821,
         "a": {
-          "unit": "speak:arrival-03",
+          "unit": "speak:arrival-04",
           "sentence": "sent:tatoeba-10355885",
           "jp": "聞いてくれてありがとう。",
           "pt": "Obrigado por me escutar."
         },
         "b": {
-          "unit": "speak:arrival-04",
+          "unit": "speak:arrival-06",
           "sentence": "sent:tatoeba-8579832",
           "jp": "教えてくれてありがとう。",
           "pt": "Obrigado por me avisar."
@@ -134,7 +117,7 @@
           "pt": "Bom dia."
         },
         "b": {
-          "unit": "speak:arrival-01",
+          "unit": "speak:arrival-02",
           "sentence": "sent:tatoeba-335372",
           "jp": "おはようございます。",
           "pt": "Bom dia!"
@@ -145,13 +128,13 @@
         "jp_ratio": 0.857,
         "pt_ratio": 0.737,
         "a": {
-          "unit": "speak:arrival-02",
+          "unit": "speak:arrival-04",
           "sentence": "sent:tatoeba-78721",
           "jp": "来てくれてありがとう。",
           "pt": "Obrigado por ter vindo."
         },
         "b": {
-          "unit": "speak:arrival-04",
+          "unit": "speak:arrival-06",
           "sentence": "sent:tatoeba-8579832",
           "jp": "教えてくれてありがとう。",
           "pt": "Obrigado por me avisar."
@@ -162,33 +145,16 @@
         "jp_ratio": 0.857,
         "pt_ratio": 0.732,
         "a": {
-          "unit": "speak:arrival-02",
+          "unit": "speak:arrival-04",
           "sentence": "sent:tatoeba-78721",
           "jp": "来てくれてありがとう。",
           "pt": "Obrigado por ter vindo."
         },
         "b": {
-          "unit": "speak:arrival-04",
+          "unit": "speak:arrival-05",
           "sentence": "sent:tatoeba-11831400",
           "jp": "考えてくれてありがとう。",
           "pt": "Obrigado por pensar nisso."
-        }
-      },
-      {
-        "mean": 0.793,
-        "jp_ratio": 0.625,
-        "pt_ratio": 0.961,
-        "a": {
-          "unit": "speak:arrival-03",
-          "sentence": "sent:tatoeba-125913",
-          "jp": "長くお待たせしてすみませんでした。",
-          "pt": "Desculpe por tê-lo feito esperar tanto tempo."
-        },
-        "b": {
-          "unit": "speak:arrival-04",
-          "sentence": "sent:tatoeba-231454",
-          "jp": "こんなに長い間待たせてすみません。",
-          "pt": "Desculpe por tê-lo feito esperar por tanto tempo."
         }
       },
       {
@@ -196,13 +162,13 @@
         "jp_ratio": 0.75,
         "pt_ratio": 0.81,
         "a": {
-          "unit": "speak:arrival-02",
+          "unit": "speak:arrival-03",
           "sentence": "sent:tatoeba-9840102",
           "jp": "私を雇ってくれてありがとう。",
           "pt": "Obrigado por me contratar."
         },
         "b": {
-          "unit": "speak:arrival-03",
+          "unit": "speak:arrival-04",
           "sentence": "sent:tatoeba-10355885",
           "jp": "聞いてくれてありがとう。",
           "pt": "Obrigado por me escutar."
@@ -213,13 +179,13 @@
         "jp_ratio": 0.818,
         "pt_ratio": 0.714,
         "a": {
-          "unit": "speak:arrival-03",
+          "unit": "speak:arrival-04",
           "sentence": "sent:tatoeba-10355885",
           "jp": "聞いてくれてありがとう。",
           "pt": "Obrigado por me escutar."
         },
         "b": {
-          "unit": "speak:arrival-04",
+          "unit": "speak:arrival-05",
           "sentence": "sent:tatoeba-11831400",
           "jp": "考えてくれてありがとう。",
           "pt": "Obrigado por pensar nisso."
@@ -230,13 +196,13 @@
         "jp_ratio": 0.75,
         "pt_ratio": 0.78,
         "a": {
-          "unit": "speak:arrival-02",
+          "unit": "speak:arrival-03",
           "sentence": "sent:tatoeba-9840102",
           "jp": "私を雇ってくれてありがとう。",
           "pt": "Obrigado por me contratar."
         },
         "b": {
-          "unit": "speak:arrival-04",
+          "unit": "speak:arrival-06",
           "sentence": "sent:tatoeba-8579832",
           "jp": "教えてくれてありがとう。",
           "pt": "Obrigado por me avisar."
@@ -247,109 +213,54 @@
         "jp_ratio": 0.857,
         "pt_ratio": 0.667,
         "a": {
-          "unit": "speak:arrival-02",
+          "unit": "speak:arrival-04",
           "sentence": "sent:tatoeba-78721",
           "jp": "来てくれてありがとう。",
           "pt": "Obrigado por ter vindo."
         },
         "b": {
-          "unit": "speak:arrival-03",
+          "unit": "speak:arrival-04",
           "sentence": "sent:tatoeba-10355885",
           "jp": "聞いてくれてありがとう。",
           "pt": "Obrigado por me escutar."
         }
-      },
+      }
+    ],
+    "getting_around": [
       {
-        "mean": 0.748,
-        "jp_ratio": 0.769,
-        "pt_ratio": 0.727,
+        "mean": 0.762,
+        "jp_ratio": 0.615,
+        "pt_ratio": 0.909,
         "a": {
-          "unit": "speak:arrival-01",
-          "sentence": "sent:tatoeba-373351",
-          "jp": "こんにちは。",
-          "pt": "Boa tarde."
+          "unit": "speak:getting_around-05",
+          "sentence": "sent:tatoeba-4786026",
+          "jp": "電車のなかに傘を忘れてきた。",
+          "pt": "Esqueci o guarda-chuva no trem."
         },
         "b": {
-          "unit": "speak:arrival-06",
-          "sentence": "sent:tatoeba-13885289",
-          "jp": "皆さん、こんにちは。",
-          "pt": "Boa tarde a todos."
+          "unit": "speak:getting_around-05",
+          "sentence": "sent:tatoeba-10899657",
+          "jp": "きのう電車に傘を忘れました。",
+          "pt": "Ontem esqueci o guarda-chuva no trem."
         }
       }
     ],
-    "health": [
+    "lodging": [
       {
-        "mean": 0.726,
-        "jp_ratio": 0.8,
-        "pt_ratio": 0.652,
-        "a": {
-          "unit": "speak:health-01",
-          "sentence": "sent:tatoeba-110065",
-          "jp": "彼は医者として有名だ。",
-          "pt": "Ele é famoso como médico."
-        },
-        "b": {
-          "unit": "speak:health-01",
-          "sentence": "sent:tatoeba-110066",
-          "jp": "彼は医者として無能だ。",
-          "pt": "Ele é incompetente como médico."
-        }
-      }
-    ],
-    "opinions": [
-      {
-        "mean": 0.783,
-        "jp_ratio": 0.778,
-        "pt_ratio": 0.787,
-        "a": {
-          "unit": "speak:opinions-01",
-          "sentence": "sent:tatoeba-209394",
-          "jp": "その女の子がそんなことをしたはずがない。",
-          "pt": "É impossível que aquela menina tenha feito uma coisa dessas."
-        },
-        "b": {
-          "unit": "speak:opinions-06",
-          "sentence": "sent:tatoeba-195794",
-          "jp": "マイクがそんなことをしたはずがない。",
-          "pt": "Não é possível que o Mike tenha feito uma coisa dessas."
-        }
-      }
-    ],
-    "politeness": [
-      {
-        "mean": 0.785,
-        "jp_ratio": 0.889,
-        "pt_ratio": 0.681,
-        "a": {
-          "unit": "speak:politeness-02",
-          "sentence": "sent:tatoeba-141924",
-          "jp": "舌を見せてください。",
-          "pt": "Mostre a língua, por favor."
-        },
-        "b": {
-          "unit": "speak:politeness-02",
-          "sentence": "sent:tatoeba-9851514",
-          "jp": "傷を見せてください。",
-          "pt": "Me mostra o machucado, por favor."
-        }
-      }
-    ],
-    "real_talk": [
-      {
-        "mean": 0.929,
+        "mean": 0.817,
         "jp_ratio": 0.857,
-        "pt_ratio": 1.0,
+        "pt_ratio": 0.778,
         "a": {
-          "unit": "speak:real_talk-06",
-          "sentence": "sent:tatoeba-77972",
-          "jp": "両方とも好きなわけではない。",
-          "pt": "Não é que eu goste dos dois."
+          "unit": "speak:lodging-02",
+          "sentence": "sent:tatoeba-84171",
+          "jp": "部屋の中に入ってください。",
+          "pt": "Entre no quarto, por favor."
         },
         "b": {
-          "unit": "speak:real_talk-06",
-          "sentence": "sent:tatoeba-77973",
-          "jp": "両方とも好きというわけではない。",
-          "pt": "Não é que eu goste dos dois."
+          "unit": "speak:lodging-02",
+          "sentence": "sent:tatoeba-84169",
+          "jp": "部屋の中に一人づつ入ってください。",
+          "pt": "Entrem no quarto um de cada vez, por favor."
         }
       }
     ],
@@ -359,16 +270,52 @@
         "jp_ratio": 0.909,
         "pt_ratio": 1.0,
         "a": {
-          "unit": "speak:shopping-06",
+          "unit": "speak:shopping-05",
           "sentence": "sent:tatoeba-8687007",
           "jp": "それでいい？",
           "pt": "Assim está bom?"
         },
         "b": {
-          "unit": "speak:shopping-06",
+          "unit": "speak:shopping-05",
           "sentence": "sent:tatoeba-3488181",
           "jp": "それでいいよ。",
           "pt": "Assim está bom."
+        }
+      },
+      {
+        "mean": 0.808,
+        "jp_ratio": 0.615,
+        "pt_ratio": 1.0,
+        "a": {
+          "unit": "speak:shopping-06",
+          "sentence": "sent:tatoeba-160740",
+          "jp": "私はこれだけしか知りません。",
+          "pt": "Eu só sei isto."
+        },
+        "b": {
+          "unit": "speak:shopping-06",
+          "sentence": "sent:tatoeba-196349",
+          "jp": "ぼくはこれだけしか知らない。",
+          "pt": "Eu só sei isto."
+        }
+      }
+    ],
+    "time_plans": [
+      {
+        "mean": 0.833,
+        "jp_ratio": 0.667,
+        "pt_ratio": 1.0,
+        "a": {
+          "unit": "speak:time_plans-02",
+          "sentence": "sent:tatoeba-80460",
+          "jp": "明日は雨かしら。",
+          "pt": "Será que amanhã vai chover?"
+        },
+        "b": {
+          "unit": "speak:time_plans-02",
+          "sentence": "sent:tatoeba-80452",
+          "jp": "明日は雨だろうか。",
+          "pt": "Será que amanhã vai chover?"
         }
       }
     ]

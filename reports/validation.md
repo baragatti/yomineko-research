@@ -88,7 +88,7 @@ _Mostly affixes/counters/grammar-like/multiword; route to grammar or handle in P
 ---
 ## Sentence validation (§7)
 
-Validated 10209 sentences — **0 errors, 1643 warnings**, 8759 clean.
+Validated 10271 sentences — **0 errors, 1646 warnings**, 8818 clean.
 - sentence 6 `母は外出しています。`:
   - **warn**: sentence level n4 below max component level
 - sentence 10 `日曜日はのんびりしています。`:
