@@ -199,6 +199,23 @@ that proves it. **needs** = dependencies and decisions. Status column is the liv
 
 ---
 
+### Lane E — owner decisions of 2026-09-27 (product notes: `design/product_notes.md`)
+
+| id | unit | runner | done | needs | status |
+|---|---|---|---|---|---|
+| W45 | **Token-list integrity.** The word-by-word list must reproduce the sentence exactly: `おいくつですか？` rendered いく / つ / お / いくつ / です / か because split-mode-A sub-tokens are stored in the same `tokens[]` as the C tokens. Root cause, sweep of every sentence, the structural fix (C tokens only, ordered, contiguous, concat == jp; sub-tokens nested as parts), consumers updated, hard validator. Research: `research/reports/token_list_integrity.md`. | research → DB writer | hard validator: concat/offsets == jp on every sentence | — | ☐ research running |
+| W46 | **Particle and explanation taxonomy.** A closed, enumerable usage id per particle occurrence by Japanese grammar (class + usage), JSON schema + Markdown (`design/particle_functions.json/.md`), token roles (`design/token_roles.json/.md`), explanations generated from templates keyed by the enum; every particle in the bank classified (mechanical first, residue authored + verified); exercises per usage become queryable. | research → campaign → DB writer | every particle carries a valid usage id; validator | W45 | ☐ research running |
+| W47 | **Audio pipeline (D3).** Chatterbox Multilingual locally on the RX 9070 XT; content-addressed clips (hash of normalized text + lang + voice + model + params), incremental, pruned, zero duplicates, URL-safe names, files outside git, tracked manifest; W33's `audio_ref` fields; then generation for all Japanese and pt-BR lesson text. Supersedes W35 for the asset part. | research → setup → generation | manifest complete, every consumer resolves its `audio_ref` | D3 | ☐ research running |
+| W48 | **Strokes for every character (D9).** Kanji stroke geometry (KanjiVG, CC BY-SA 3.0 obligations recorded) for 100% of course kanji and as far as possible for the registry, in the kana stroke record shape; validator. | research → DB writer | stroke coverage gate | — | ☐ research running |
+| W49 | **Third level source for N3+ (D12).** Independent list ingested as level evidence if the effort is reasonable. | research → DB writer | level-consensus gate | — | ☐ research running |
+| W50 | **Quick calls applied.** B-W28 option A (card examples one level above), B-W40 (b) (English for pedagogy optional; residue tracked), B-W21b (move the 4 unlocks back), B-W11 (demote grp:suru-irregular; practice ratchet as a rate), B-W37 (the 250 kanji meanings back to needs_review), translation style ruling on "(a)". A9b stays for the reviewer. | DB writer | gates | — | ☐ |
+
+**Decided 2026-09-27:** D1 → no N1/N2 now, never blocked (W44 closed). D2 → (c). D3 → Chatterbox
+Multilingual locally, hashed audio (W47). D4 → MVP without review; W39 after the MVP. D8 → no API
+here; exports are the contract (W43 closed). D9 → complete strokes for all characters (W48).
+D11 → the most digestible option that loses no data, expected B after a small research (W25).
+D12 → do it if not giant (W49). Quick calls → accepted (W50).
+
 ## 4. Decisions
 
 **Defaults I proceed with unless overruled** (each named by the unit that consumes it):
