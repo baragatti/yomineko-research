@@ -107,11 +107,19 @@ REGISTER_MAP = {
 LEDGER: Ledger | None = None
 
 
-def jw(path: Path, obj) -> None:
+def jw(path: Path, obj, one_per_line: bool = False) -> None:
     if LEDGER is not None:
         LEDGER.apply_all(obj)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if one_per_line:
+        # ponytail: the sentence bank passed GitHub's 100 MB file limit pretty-printed (W46); one record per
+        # line keeps it valid JSON at ~76 MB with per-sentence diffs. Shard by level before it nears the limit.
+        text = "[\n" + ",\n".join(json.dumps(r, ensure_ascii=False) for r in obj) + "\n]\n"
+    else:
+        text = json.dumps(obj, ensure_ascii=False, indent=2) + "\n"
+    path.write_text(text, encoding="utf-8")
+    size = path.stat().st_size
+    assert size < 95_000_000, f"{path} is {size / 1e6:.1f} MB, near GitHub's 100 MB limit: shard it"
 
 
 def jloads(s):
@@ -791,7 +799,7 @@ def export_sentences(con: sqlite3.Connection) -> int:
         records.append(rec)
         tr = SL.get((sid, "translation"))
         index_rows.append((s["slug"], s["jp"], tr, s["level"]))
-    jw(CORPUS / "sentences" / "bank.json", records)
+    jw(CORPUS / "sentences" / "bank.json", records, one_per_line=True)
     lines = ["# Corpus — Dissected sentence bank", "",
              f"_Generated {build_date()}. Full §6 dissection. `translation` = "
              f"{{\"{LOC}\":…,\"en\":…}}; tokens carry mechanical `pos`/`inflection`; particles carry "
