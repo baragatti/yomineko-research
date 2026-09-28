@@ -132,3 +132,8 @@ Já que vimos 以下, repare no mesmo kanji 下 ("abaixo") em 県下 (けんか)
 - けんか significa na província, dentro da província. As outras opções são りよう (uso, utilização), こと (coisa (abstrata), assunto) e せい (altura (de uma pessoa), estatura).
 
 
+### 11. (recognition) Complete a frase com a expressão certa: 春＿＿夏が来ます (Depois da primavera, vem o verão.)
+- **Resposta:** `{"choices": ["のつぎに", "のまえに", "のうえに"], "correct": "のつぎに"}`
+- 〜の次に (aqui em kana, のつぎに) põe uma coisa logo depois de outra numa ordem ou sequência: 春のつぎに夏が来ます = 'depois da primavera, vem o verão'. のまえに diria o contrário, 'antes da primavera', e のうえに quer dizer 'em cima de', o que não cabe numa sequência de estações. O kanji 次 ainda não foi visto nesta altura do curso, por isso つぎ vem em kana.
+
+

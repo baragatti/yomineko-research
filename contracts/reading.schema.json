@@ -42,6 +42,13 @@
           "description": "The 内容一致 question, copied from the exam bank item named by `item`."
         }
       },
+      "required": [
+        "about_current_text",
+        "correct",
+        "item",
+        "options",
+        "question"
+      ],
       "additionalProperties": false
     },
     "gated_to_lesson": {
@@ -228,6 +235,7 @@
   "additionalProperties": false,
   "required": [
     "ai_generated",
+    "comprehension",
     "gated_to_lesson",
     "jp",
     "layer",

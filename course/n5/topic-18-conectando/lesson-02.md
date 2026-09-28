@@ -111,3 +111,8 @@ E o vocabulário 留学生(estudante estrangeiro, de intercâmbio) rende ótimos
 - A palavra que falta é りっぱ: esplêndido, admirável.
 - frases: `sent:tatoeba-10901881`
 
+### 8. (cloze) Complete com a forma completa e mais formal de けど: この本は高い＿＿、おもしろいです (Este livro é caro, mas é interessante.)
+- **Resposta:** `{"text": "けれども", "full": "この本は高いけれども、おもしろいです"}`
+- けれども liga duas ideias em contraste, como けど, só que num tom mais cuidadoso. Depois de adjetivo-い (高い) ele entra direto, sem だ.
+
+

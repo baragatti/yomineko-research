@@ -121,3 +121,8 @@ O número 千 (せん) significa "mil". É o passo seguinte depois de 百 ("cem"
 - ひこうき significa avião. As outras opções são にちようび (domingo), きいろ (amarelo (a cor)) e ネクタイ (gravata).
 
 
+### 12. (cloze) Complete a obrigação no registro mais formal: もう行か＿＿。 (Já preciso ir.)
+- **Resposta:** `{"text": "なくてはならない", "full": "もう行かなくてはならない。"}`
+- A negativa 行かない perde o い e vira 行かなく; somando てはならない, fica 'não pode deixar de ir', ou seja, 'preciso ir'. なくてはならない é a versão mais formal de 〜ないといけない.
+- frases: `sent:tatoeba-194209`
+

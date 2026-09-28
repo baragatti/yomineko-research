@@ -2348,7 +2348,41 @@ def handle_w32_layerb(rows, sents, gram, table):
     return out
 
 
+def handle_listening_reauthor(rows, sents, gram, table):
+    """Q4 (W18b listening half). Each re-authored item ships in its listening bank EXACTLY as the row's
+    journal item builds it (script, question, key, distractors; a reply's cited sentence, none for an
+    edited one), under the row's `new_id`; a reply re-selected onto another sentence no longer ships
+    under its old id. The banks are built from the journal by build_listening_bank.py, so a journal
+    that reverted, or a rebuild that did not run, fails here."""
+    banks: dict[str, dict] = {}
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['new_id']}"
+        f = f"{r['level']}_listening_{r['sub']}.json"
+        if f not in banks:
+            p = EXPORT_ROOT["root"] / "corpus" / "exam_banks" / f
+            banks[f] = {x["id"]: x for x in json.loads(p.read_text(encoding="utf-8"))} if p.exists() else {}
+        got = banks[f].get(r["new_id"])
+        new = r["new"]
+        if got is None:
+            out.append(("fail", C_NOT_APPLIED, addr, f"no item {r['new_id']} in {f}"))
+            continue
+        want = (new["script"], new.get("question", ""), new["correct"], new["distractors"], new.get("slug"))
+        have = (got["script"], got.get("question", ""), got["correct"], got["distractors"], got.get("sentence"))
+        if want != have:
+            out.append(("fail", C_VALUE_MISMATCH, addr, "the shipped item differs from the row's journal item"))
+        elif r["new_id"] != r["id"] and r["id"] in banks[f]:
+            out.append(("fail", C_VALUE_MISMATCH, addr, f"the old id {r['id']} still ships"))
+        else:
+            out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
+    # Q4-listening-residues: the W18b listening re-authoring (175 items into the journal the listening
+    # builder reads) and the 19 grammar residue drills (the W20 row shape, same handler).
+    "listening_reauthor.json": handle_listening_reauthor,
+    "practice_grammar_residue.json": handle_practice_exercises,
     # Q3-readings: the mechanical rows of the token reading audit (review rows held, asserted unmoved)
     # and the three lesson-body furigana attributes that had copied the old sentence kana.
     "token_reading_audit.json": handle_token_reading_repairs,

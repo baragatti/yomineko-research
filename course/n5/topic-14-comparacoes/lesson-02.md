@@ -142,3 +142,8 @@ Dois kanji de traçado simples e muito usados aparecem aqui.
 - ちかく significa proximidades, redondezas. As outras opções são あに (irmão mais velho), くろ (preto, cor preta) e せっけん (sabonete, sabão).
 
 
+### 14. (cloze) Complete a moldura do superlativo: のみもの＿＿コーヒーがいちばんすきです (Dentre as bebidas, a de que mais gosto é café.)
+- **Resposta:** `{"text": "の中で", "full": "のみものの中でコーヒーがいちばんすきです"}`
+- 〜の中で abre o grupo que está sendo comparado: のみものの中で = 'dentre as bebidas'. Depois vem o vencedor com が e, por fim, いちばん. Sem の中で, a frase perde o grupo da comparação.
+
+

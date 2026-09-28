@@ -89,3 +89,8 @@ Você aprende três expressões pelo preço de uma: o esqueleto [verbo] の が 
 - 料理を作る ('cozinhar') + の (nominaliza) + が (marca o ato) + 下手です ('sou ruim'). Falar mal da própria habilidade com 下手 é natural e até modesto em japonês.
 
 
+### 6. (cloze) Complete para dizer que gosta de fazer algo: えいがを見る＿＿ (Gosto de ver filmes.)
+- **Resposta:** `{"text": "のがすきです", "full": "えいがを見るのがすきです"}`
+- Para gostar de uma ação, o verbo na forma de dicionário vira 'coisa' com の, e só então entra がすきです: 見るのがすきです = 'gosto de ver'. Sem o の, o が não teria um substantivo para marcar.
+
+

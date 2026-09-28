@@ -34,7 +34,13 @@ DEFAULT_ROOT = HERE.parents[1]
 # sentences out of their bank's taught set or level, so the rebuilt banks hold 4871 -> 4867 items
 # (n5 context_fill 93 -> 91, n5 sentence_order 58 -> 55, n4 context_fill 317 -> 318); unplaced
 # unchanged at 171. research/reports/q2_token_links_report.md.
-EXAM_FLOOR = 4696
+# Q4-listening-residues (2026-09-27), re-recorded with cause: 4696 -> 4695. The W18b listening
+# re-authoring re-selected six reply items onto new real sentences (placed under their new ids) and
+# the rc bank gained the question for read:n4-oracoes-relativas-03-01 (+1), but two N4 reply items
+# had to be EDITED off their Tatoeba sentence (~とく and ~っけ are above N4), so they cite no sentence
+# and the sentence rule cannot place them (lr:n4:tatoeba-10049455, lr:n4:tatoeba-11270411). Items
+# 4867 -> 4868, unplaced 171 -> 173. research/reports/q4_listening_residues_report.md.
+EXAM_FLOOR = 4695
 MIN_EXERCISES = 2000
 
 

@@ -129,3 +129,13 @@ Cuidado: ４日 (dia 4) e ８日 (dia 8) têm leituras parecidas, mas diferentes
 - 八日（ようか） significa dia 8 (do mês). As outras opções são 半 (metade), 六つ (seis (coisas)) e 二人 (duas pessoas).
 
 
+### 13. (cloze) Complete a lista de ações: 日本語を書い＿＿読んだりする (Eu escrevo e leio em japonês, entre outras coisas.)
+- **Resposta:** `{"text": "たり", "full": "日本語を書いたり読んだりする"}`
+- Na estrutura 〜たり〜たりする, cada ação da lista ganha たり: 書いたり e 読んだり. A frase fecha com する, e a lista fica aberta ('entre outras coisas').
+- frases: `sent:gen-43c67852fb1a`
+
+### 14. (cloze) Complete para dizer 'a maneira de escrever': ひらがなの書き＿＿をならいました (Aprendi como se escreve o hiragana.)
+- **Resposta:** `{"text": "かた", "full": "ひらがなの書きかたをならいました"}`
+- かた colado no radical do verbo cria o substantivo 'o modo de': 書く vira 書き, e 書き + かた = 書きかた, 'a maneira de escrever'. É a mesma かた de 読み方; o kanji 方 ainda não entrou na sua lista de kanji, por isso aqui ela vem em kana.
+
+

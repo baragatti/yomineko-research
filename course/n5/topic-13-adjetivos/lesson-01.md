@@ -179,3 +179,8 @@ Aqui おいしい ("gostoso") é outro adjetivo-い, e a frase nem usa です ne
 - くろい significa preto. As outras opções são きいろい (amarelo), さむい (frio) e ない (não haver, não ter).
 
 
+### 20. (cloze) Complete para ligar o adjetivo ao substantivo: ここはしずか＿こうえんです (Aqui é um parque tranquilo.)
+- **Resposta:** `{"text": "な", "full": "ここはしずかなこうえんです"}`
+- しずか é adjetivo-な: antes de um substantivo, ele precisa de な para se ligar a ele (しずかなこうえん = 'parque tranquilo'). Um adjetivo-い como 大きい iria direto, sem な.
+
+

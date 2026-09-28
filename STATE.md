@@ -57,6 +57,12 @@ numbered ordering slots and the two-path course structure are all settled and ve
 appearance and reuse only.
 
 ## ▶ RESUME HERE
+> **2026-09-27 (az) — chain v4 Q4 done: listening re-authoring + small residues applied.** 175 listening items
+> into the journal, 13 banks rebuilt, every listening ceiling -> 0 (level gate 0 on all 40 banks); 6 reply ids follow
+> their new sentence, 2 edited replies keep theirs. 15 of 19 grammar drills (step 155; 4 held on C5 forward refs),
+> item_refs residue 20 -> 0, the last rc passage has its question (286/286). Next: Q5
+> (`research/reports/q4_listening_residues_report.md`).
+>
 > **2026-09-27 (ay) — chain v4 Q3 done: 295 stored token readings fixed** (何 なに, counters, verified links),
 > 272 sentence kana/romaji rebuilt (I2/I3 0 violations), 3 lesson furigana attributes + 18 speak variants follow,
 > manifest steps 153-154. 15 review rows held, 16 links for the v5 link unit

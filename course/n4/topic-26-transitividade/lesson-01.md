@@ -157,3 +157,8 @@ Por fim, 無 significa "nada / nenhum / inexistência" (leituras な.い, on ム
 - すすむ significa avançar, seguir em frente. As outras opções são つける (mergulhar, deixar de molho), おどる (dançar) e つとめる (trabalhar (em emprego), ser empregado em).
 
 
+### 18. (cloze) Complete com o verbo TRANSITIVO (alguém abre a porta): 私はドアを＿＿ました (Eu abri a porta.)
+- **Resposta:** `{"text": "開け", "full": "私はドアを開けました"}`
+- Há alguém (私) agindo sobre a porta, marcada com を, então o verbo é o transitivo 開ける: 開けました. O intransitivo 開く pediria が: ドアが開きました ('a porta abriu').
+- frases: `sent:gen-596fab7713a5`
+

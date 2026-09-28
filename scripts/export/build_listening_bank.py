@@ -50,7 +50,10 @@ def check(it, sub, prompt_jp):
     if sub == "reply":
         if script[0]["speaker"] not in ("M1", "F1"):
             return "reply speaker invalid"
-        if prompt_jp is None or script[0]["text"] != prompt_jp:
+        # Q4: an EDITED reply (the real sentence used a form above the level) cites no sentence and
+        # names its own id + the sentence it was adapted from; there is nothing to be verbatim to.
+        edited = it.get("slug") is None and it.get("id") and it.get("adapted_from")
+        if not edited and (prompt_jp is None or script[0]["text"] != prompt_jp):
             return "reply prompt not verbatim"
     if not corr or corr in dis or len(set(dis)) != N_DIS[sub] or len(dis) != N_DIS[sub]:
         return "option set invalid"
@@ -90,19 +93,19 @@ def main() -> int:
             if sub == "reply" else {})
         items = []
         for it in json.loads(fp.read_text(encoding="utf-8"))["items"]:
-            ref = str(it.get("slug") if sub == "reply" else it.get("n"))
+            ref = str((it.get("slug") or it.get("id")) if sub == "reply" else it.get("n"))
             if ref in flagged.get(key, set()) or "*" in flagged.get(key, set()):
                 skipped.append((f"{key}:{ref}", "flagged")); continue
             prob = check(it, sub, prompts.get(it.get("slug")) if sub == "reply" else None)
             if prob:
                 skipped.append((f"{key}:{ref}", prob)); continue
-            iid = (f"lr:{lvl}:{it['slug'].split(':', 1)[1]}" if sub == "reply"
-                   else f"{PREFIX[sub]}:{lvl}:{int(it['n']):03d}")
+            iid = ((it["id"] if it.get("slug") is None else f"lr:{lvl}:{it['slug'].split(':', 1)[1]}")
+                   if sub == "reply" else f"{PREFIX[sub]}:{lvl}:{int(it['n']):03d}")
             rec = {"id": iid, "level": lvl, "script": it["script"], "question": (it.get("question") or ""),
                    "correct": it["correct"].strip(), "distractors": [x.strip() for x in it["distractors"]],
                    "audio": "pending", "layer": "C", "needs_review": True, "ai_generated": True,
                    "source": "listening-script"}
-            if sub == "reply":
+            if sub == "reply" and it.get("slug"):
                 rec["sentence"] = it["slug"]
             items.append(rec)
         if items:

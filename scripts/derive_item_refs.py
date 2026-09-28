@@ -284,11 +284,20 @@ def main() -> int:
     ctx, derived = derive_all(root)
 
     rows, exempt, residue = [], [], []
+    # Q4: an exemption an author ruled on (`derived_by: authored`, e.g. course metalanguage in a lesson
+    # that does unlock items) is data, not a derivation; it survives a re-derivation while the
+    # exercise still has no target.
+    ex_file = root / "course" / "item_ref_exemptions.json"
+    authored_exempt = {e["id"]: e for e in (json.loads(ex_file.read_text(encoding="utf-8"))["exercises"]
+                                            if ex_file.exists() else [])
+                       if e.get("derived_by") == "authored"}
     by_rule: collections.Counter = collections.Counter()
     for ex_id, d in sorted(derived.items()):
         if d["item_refs"]:
             rows.append({"exercise": ex_id, "lesson": d["lesson"], "item_refs": d["item_refs"]})
             by_rule[" + ".join(sorted({e["derived_by"] for e in d["item_refs"]}))] += 1
+        elif ex_id in authored_exempt:
+            exempt.append(authored_exempt[ex_id])
         elif not d["teaches"]:
             exempt.append({"id": ex_id, "lesson": d["lesson"], "reason": EXEMPT_REASON})
         else:

@@ -153,3 +153,8 @@ E estas palavras dão o tom ou o tema à experiência:
 - ぶちょう significa chefe de departamento, gerente. As outras opções são パソコン (computador (pessoal), PC), れきし (história) e かいぎしつ (sala de reunião, sala de conferência).
 
 
+### 17. (cloze) Complete a expressão de 'perceber', na forma て: へんなにおいに＿＿、まどを開けた (Percebi um cheiro estranho e abri a janela.)
+- **Resposta:** `{"text": "気がついて", "full": "へんなにおいに気がついて、まどを開けた"}`
+- 気がつく ('perceber, notar') pede に no que foi percebido: へんなにおいに気がつく. Na forma て, 気がついて liga a descoberta à ação seguinte: percebi o cheiro e então abri a janela.
+
+

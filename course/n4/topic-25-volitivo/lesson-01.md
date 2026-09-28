@@ -207,3 +207,8 @@ E alguns substantivos úteis do tópico:
 - えらぶ significa escolher, selecionar. As outras opções são しらべる (investigar, examinar), とどける (entregar, enviar) e よる (passar (em um lugar), dar uma passada).
 
 
+### 24. (cloze) Complete a impressão de quem fala: 明日雨の＿＿ががんばろう。 (Parece que amanhã vai chover, mas vou dar o meu melhor.)
+- **Resposta:** `{"text": "ようだ", "full": "明日雨のようだががんばろう。"}`
+- 〜ようだ indica uma impressão tirada do que se vê ou se ouve: 'parece que'. Depois de substantivo, liga-se com の: 雨のようだ = 'parece que vai chover'. O が seguinte é o 'mas' que leva a がんばろう.
+- frases: `sent:tatoeba-74772`
+

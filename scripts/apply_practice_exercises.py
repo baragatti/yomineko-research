@@ -283,6 +283,21 @@ def main() -> int:
                     con.execute("INSERT OR IGNORE INTO exercise_sentence (exercise_id, sentence_id) "
                                 "VALUES (?,?)", (eid_row[0], sid[0]))
 
+        # ---- Q4: a row whose exercise carries AUTHORED item_refs (the grammar residue drills) writes
+        # them to exercise_item_ref too. apply_item_refs.py (step 145) runs before this table on a
+        # replay, when the exercise does not exist yet, so the refs must land with the exercise.
+        want_items = {(e["type"], e["ref"], e["role"], e["derived_by"]) for e in ex.get("item_refs") or []}
+        if want_items:
+            got_items = {tuple(x) for x in con.execute(
+                "SELECT item_type, ref, role, derived_by FROM exercise_item_ref WHERE exercise=?", (exslug,))}
+            if got_items != want_items:
+                print(f"  {lslug}: {exslug} item_refs {sorted(e[1] for e in want_items)} (db)")
+                changed += 1
+                if not args.check:
+                    con.execute("DELETE FROM exercise_item_ref WHERE exercise=?", (exslug,))
+                    con.executemany("INSERT INTO exercise_item_ref (exercise,item_type,ref,role,derived_by) "
+                                    "VALUES (?,?,?,?,?)", [(exslug, *x) for x in sorted(want_items)])
+
         # ---- the body node, in both layers -------------------------------------------------
         node = f'<exercise ref="{exslug}"/>'
         body = _lesson_body(con, lid)
@@ -313,12 +328,14 @@ def main() -> int:
             d.setdefault("exercises", []).append({
                 "slug": exslug, "type": ex["type"], "prompt": prompt, "answer": ex.get("answer"),
                 "explanation": explanation, "sentence_refs": list(ex.get("sentence_refs") or []),
-                "item_refs": []})
+                "item_refs": list(ex.get("item_refs") or [])})
         else:
             fields = [("type", ex["type"]), ("prompt", prompt), ("answer", ex.get("answer")),
                       ("explanation", explanation)]
             if exslug in exact_refs:
                 fields.append(("sentence_refs", list(ex.get("sentence_refs") or [])))
+            if ex.get("item_refs"):
+                fields.append(("item_refs", list(ex["item_refs"])))
             for field, want in fields:
                 if src_ex.get(field) != want:
                     print(f"  {lslug}: {exslug} {field} rewritten from the table (source)")

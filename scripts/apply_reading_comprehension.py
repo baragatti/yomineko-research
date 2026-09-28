@@ -99,7 +99,9 @@ def main() -> int:
         if cur == r["new"]:
             done += 1
             continue
-        if cur != r["old"]:
+        # Q4: a row whose `new` was amended by a later unit still accepts the value it wrote before
+        # (`amended.was_new`) as a legitimate pre-state on the live index.
+        if cur != r["old"] and cur != (r.get("amended") or {}).get("was_new"):
             if LIVE_INDEX:
                 drift += 1
                 print(f"DRIFT {r['slug']}: comprehension is {cur!r}, neither the row's old nor its new")

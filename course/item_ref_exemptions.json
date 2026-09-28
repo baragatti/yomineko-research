@@ -2,6 +2,12 @@
   "why": "Lesson exercises that legitimately target no corpus item, each with its reason. Read by scripts/validate/validate_item_refs.py checks C and D: an exercise here with a target, or an entry naming no exercise, FAILS, so the list cannot rot. Written by scripts/derive_item_refs.py. (Not course/gating_exemptions.json#item_refs, which is about lesson-body refs.)",
   "exercises": [
     {
+      "id": "ex:pre-n5-katakana-01-2",
+      "lesson": "les:pre-n5-katakana-01",
+      "reason": "The question asks what katakana is used for (loanwords, foreign names, onomatopoeia, emphasis): course metalanguage about the script as a whole, not any glyph or family record. design/assessment.md §2.4 already classes this exact exercise as 'method, phonology and course metalanguage', exempt by rule.",
+      "derived_by": "authored"
+    },
+    {
       "id": "ex:pre-n5-orientacao-01-1",
       "lesson": "les:pre-n5-orientacao-01",
       "reason": "The lesson unlocks no corpus item: the question is about course method, pronunciation or orientation, so there is no vocab, kanji, grammar or kana record to target (design/assessment.md §2.4, class 'method, phonology and course metalanguage')."

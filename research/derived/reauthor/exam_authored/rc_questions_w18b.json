@@ -3,10 +3,11 @@
  "source": "workflow wf_c927b9e4-78e (author + verifier per batch)",
  "counts": {
   "authored": 286,
-  "final": 285,
+  "final": 286,
   "corrected": 44,
   "rejected": 1,
-  "unverified": 0
+  "unverified": 0,
+  "q4_authored": 1
  },
  "rows": [
   {
@@ -5485,6 +5486,26 @@
    ],
    "ai_generated": false,
    "needs_review": true
+  },
+  {
+   "passage": "read:n4-oracoes-relativas-03-01",
+   "question_index": 0,
+   "stem": "天気は、これからどうなると言っていますか。",
+   "options": [
+    "あとで雨がふるかもしれない",
+    "今、雨がふっているかもしれない",
+    "雨はもうやんだかもしれない",
+    "雨はふらない"
+   ],
+   "key": 0,
+   "explanation": "A segunda frase diz やがて雨になるかもしれない: mais adiante pode ser que chova, e é isso que a opção certa diz com outras palavras (やがて vira あとで, 雨になる vira 雨がふる). 今、雨がふっているかもしれない erra o tempo: a chuva é algo que talvez venha, não algo que talvez já esteja caindo (o 今 do texto está na frase sobre fazer 'aquilo'). 雨はもうやんだかもしれない supõe uma chuva que já passou, e o texto não fala de chuva nenhuma no passado. 雨はふらない contradiz かもしれない, que deixa a chuva como possibilidade.",
+   "about": [
+    1
+   ],
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "C",
+   "note": "The passage is still four unrelated bank sentences (W18b verifier: replace it). This question uses only sentence 1, the one self-contained fact, so it needs no antecedent for それ. Three options share the passage's かもしれない and the one that shares the most text is wrong, so string matching does not find the key; its time words (あとで for やがて) have to be read. Replacing the passage remains the better fix; this closes the open item until then."
   }
  ],
  "rejected": [
@@ -5495,5 +5516,6 @@
    ],
    "problem": "Rejeitado: a questao se resolve por varredura, sem leitura. A chave 「それをやってみる」 e a frase [0] 「自分でもそれをやってみます」 menos a flexao polida, e o proprio enunciado entrega o gancho (自分で + 何をする), de modo que bas"
   }
- ]
+ ],
+ "q4": "Q4-listening-residues: the one passage W18b left without a question (read:n4-oracoes-relativas-03-01) gets its question from research/derived/repairs/small_residues/small_residues.json, verifier-corrected (research/derived/pending/small_residues.verdict.json)."
 }

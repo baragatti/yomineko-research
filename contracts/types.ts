@@ -489,12 +489,12 @@ export interface Lesson {
 /** A short reading passage gated to a lesson, with its tokens and translation. */
 export interface Reading {
   ai_generated: boolean;
-  comprehension?: {
-    about_current_text?: boolean;
-    correct?: string;
-    item?: string;
-    options?: string[];
-    question?: string;
+  comprehension: {
+    about_current_text: boolean;
+    correct: string;
+    item: string;
+    options: string[];
+    question: string;
   };
   gated_to_lesson: string;
   jp: string;

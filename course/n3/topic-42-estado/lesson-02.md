@@ -195,3 +195,8 @@ O kanji 供 significa "oferecer, servir, acompanhar". À esquerda a pessoa (亻)
 - かくれる significa esconder-se, ocultar-se. As outras opções são うったえる (apelar, recorrer), すすめる (recomendar, aconselhar) e おうじる (responder (a), atender).
 
 
+### 24. (cloze) Complete com o auxiliar de 'terminar por completo': 私はあしたまでにこの作文を書き＿＿なければならない。 (Tenho que terminar de escrever essa redação até amanhã.)
+- **Resposta:** `{"text": "上げ", "full": "私はあしたまでにこの作文を書き上げなければならない。"}`
+- 書く vira o radical 書き, e ～上げる acrescenta a ideia de levar o trabalho até o fim: 書き上げる = 'terminar de escrever'. Antes de なければ, o る cai: 書き上げなければならない.
+- frases: `sent:tatoeba-161857`
+

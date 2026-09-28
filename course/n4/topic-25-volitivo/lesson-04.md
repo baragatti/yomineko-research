@@ -159,3 +159,8 @@ Os três lado a lado, mesmo verbo やめる: 仕事をやめることにした =
 - 水道（すいどう） significa água encanada, abastecimento de água. As outras opções são 社長 (presidente da empresa, diretor-presidente), 用事 (afazer, compromisso) e 今度 (desta vez, agora).
 
 
+### 18. (cloze) Complete com a forma de 'acabar acontecendo', sem decisão de quem fala: 長い間ここにいる＿＿ (Você vai acabar ficando aqui por muito tempo.)
+- **Resposta:** `{"text": "ことになる", "full": "長い間ここにいることになる"}`
+- 〜ことになる mostra que algo acaba acontecendo pelas circunstâncias, e não por escolha de quem fala: いることになる = 'acabar ficando'. Com する (ことにする) seria uma decisão própria.
+
+

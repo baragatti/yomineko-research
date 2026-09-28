@@ -120,3 +120,13 @@ O primeiro aparece em 書いた("que escreveu") e em 葉書:
 - はし significa hashi, pauzinhos. As outras opções são となり (vizinho, ao lado), パン (pão) e にく (carne).
 
 
+### 12. (recognition) Complete com a forma que descreve o livro: きのう＿＿本はおもしろかったです (O livro que eu li ontem era interessante.)
+- **Resposta:** `{"choices": ["読んだ", "読んで", "読みます"], "correct": "読んだ"}`
+- Para descrever um substantivo, o verbo vem logo antes dele na forma simples. Como a leitura já aconteceu, é a forma た: 読んだ本 = 'o livro que li'. 読んで deixa a oração em aberto, e a forma polida 読みます não costuma ficar antes de um substantivo.
+
+
+### 13. (particle_choice) Complete com a outra partícula que também marca o sujeito dentro da oração que descreve 日本語: 先生＿話す日本語はきれいです (O japonês que o professor fala é bonito.)
+- **Resposta:** `{"choices": ["の", "を", "で"], "correct": "の"}`
+- Dentro de uma oração que descreve um substantivo, o sujeito pode vir com の em vez de が, sem mudar o sentido: 先生の話す日本語 = 先生が話す日本語. を marcaria o objeto e で, o lugar ou o meio, e nenhum dos dois cabe aqui.
+
+

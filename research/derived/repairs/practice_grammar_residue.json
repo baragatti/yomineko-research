@@ -1,0 +1,628 @@
+{
+ "why": "The 19 (lesson, grammar) pairs the W20 generator left without a drill (research/derived/pending/practice_vocab_residue.json), one authored exercise each (15 applied, 4 held below), verified by an independent verifier (research/derived/pending/small_residues.verdict.json); the verifier's corrected exercise where the verdict is not ok.",
+ "definition": "One row per exercise: {lesson, targets, exercise, why, ...}, the W20 row shape. `exercise` is a lesson.schema.json exercise that ALSO carries its authored item_refs (apply_practice_exercises.py writes them with the exercise). Ids continue each lesson's numbering on the tree of 2026-09-27 (checked free).",
+ "generated_by": "scripts/assemble_small_residues.py from research/derived/repairs/small_residues/small_residues.json",
+ "applied_by": "scripts/apply_practice_exercises.py --table research/derived/repairs/practice_grammar_residue.json",
+ "provenance": {
+  "layer": "C",
+  "source": "authored:q4-small-residues",
+  "needs_review": true,
+  "note": "Per-row ai_generated: false where the Japanese is a real bank sentence."
+ },
+ "held_why": "Verified, not applied: each would grow validate_lesson_gating C5 (forward references, shrink-only) through the token links of the sentence it cites.",
+ "held": [
+  {
+   "exercise": "ex:n5-perguntas-04-16",
+   "lesson": "les:n5-perguntas-04",
+   "targets": [
+    "gram:doushite"
+   ],
+   "why": "cites sent:tatoeba-201561, whose し (inside どうして) is linked to 為る vocab:1157170, unlocked later in les:n5-verbos-02 (same-level forward use)"
+  },
+  {
+   "exercise": "ex:n5-particulas-lugar-07-9",
+   "lesson": "les:n5-particulas-lugar-07",
+   "targets": [
+    "gram:gp-57"
+   ],
+   "why": "cites sent:gen-382544683343, whose もらい is linked to 貰う vocab:1535910, unlocked in les:n4-volitivo-05 (cross-level forward use)"
+  },
+  {
+   "exercise": "ex:n5-te-form-05-13",
+   "lesson": "les:n5-te-form-05",
+   "targets": [
+    "gram:te-wa-ikenai"
+   ],
+   "why": "cites sent:tatoeba-184859, whose いけない is linked to 行けない vocab:1000730, unlocked in les:n3-conectores-04 (cross-level forward use)"
+  },
+  {
+   "exercise": "ex:n4-condicionais-08-10",
+   "lesson": "les:n4-condicionais-08",
+   "targets": [
+    "gram:gp-93"
+   ],
+   "why": "cites sent:gen-b249a5f48dc6, whose いか is linked to 以下 vocab:1155060, unlocked later in les:n4-volitivo-04 (same-level forward use)"
+  }
+ ],
+ "row_count": 15,
+ "rows": [
+  {
+   "lesson": "les:n5-adjetivos-01",
+   "targets": [
+    "gram:na-adjectives"
+   ],
+   "exercise": {
+    "id": "ex:n5-adjetivos-01-20",
+    "type": "cloze",
+    "prompt": {
+     "pt-BR": "Complete para ligar o adjetivo ao substantivo: ここはしずか＿こうえんです (Aqui é um parque tranquilo.)"
+    },
+    "answer": {
+     "text": "な",
+     "full": "ここはしずかなこうえんです"
+    },
+    "explanation": {
+     "pt-BR": "しずか é adjetivo-な: antes de um substantivo, ele precisa de な para se ligar a ele (しずかなこうえん = 'parque tranquilo'). Um adjetivo-い como 大きい iria direto, sem な."
+    },
+    "sentence_refs": [],
+    "item_refs": [
+     {
+      "type": "grammar",
+      "ref": "gram:na-adjectives",
+      "role": "target",
+      "derived_by": "authored"
+     }
+    ]
+   },
+   "basis": "authored-inline",
+   "ai_generated": true,
+   "jp_authored_here": true,
+   "known_set_evidence": [],
+   "residue_reason": "no_probe_segment",
+   "verdict": "ok",
+   "why": "Q4 small residue (no_probe_segment): authored-inline, authored + verified (ok)"
+  },
+  {
+   "lesson": "les:n5-adjetivos-07",
+   "targets": [
+    "gram:gp-23"
+   ],
+   "exercise": {
+    "id": "ex:n5-adjetivos-07-6",
+    "type": "cloze",
+    "prompt": {
+     "pt-BR": "Complete para dizer que gosta de fazer algo: えいがを見る＿＿ (Gosto de ver filmes.)"
+    },
+    "answer": {
+     "text": "のがすきです",
+     "full": "えいがを見るのがすきです"
+    },
+    "explanation": {
+     "pt-BR": "Para gostar de uma ação, o verbo na forma de dicionário vira 'coisa' com の, e só então entra がすきです: 見るのがすきです = 'gosto de ver'. Sem o の, o が não teria um substantivo para marcar."
+    },
+    "sentence_refs": [],
+    "item_refs": [
+     {
+      "type": "grammar",
+      "ref": "gram:gp-23",
+      "role": "target",
+      "derived_by": "authored"
+     }
+    ]
+   },
+   "basis": "authored-inline",
+   "ai_generated": true,
+   "jp_authored_here": true,
+   "known_set_evidence": [],
+   "residue_reason": "no_cks_clean_sentence",
+   "verdict": "ok",
+   "why": "Q4 small residue (no_cks_clean_sentence): authored-inline, authored + verified (ok)"
+  },
+  {
+   "lesson": "les:n5-comparacoes-02",
+   "targets": [
+    "gram:no-naka-de-a-ga-ichiban"
+   ],
+   "exercise": {
+    "id": "ex:n5-comparacoes-02-15",
+    "type": "cloze",
+    "prompt": {
+     "pt-BR": "Complete a moldura do superlativo: のみもの＿＿コーヒーがいちばんすきです (Dentre as bebidas, a de que mais gosto é café.)"
+    },
+    "answer": {
+     "text": "の中で",
+     "full": "のみものの中でコーヒーがいちばんすきです"
+    },
+    "explanation": {
+     "pt-BR": "〜の中で abre o grupo que está sendo comparado: のみものの中で = 'dentre as bebidas'. Depois vem o vencedor com が e, por fim, いちばん. Sem の中で, a frase perde o grupo da comparação."
+    },
+    "sentence_refs": [],
+    "item_refs": [
+     {
+      "type": "grammar",
+      "ref": "gram:no-naka-de-a-ga-ichiban",
+      "role": "target",
+      "derived_by": "authored"
+     }
+    ]
+   },
+   "basis": "authored-inline",
+   "ai_generated": true,
+   "jp_authored_here": true,
+   "known_set_evidence": [],
+   "residue_reason": "no_probe_segment",
+   "verdict": "ok",
+   "why": "Q4 small residue (no_probe_segment): authored-inline, authored + verified (ok)"
+  },
+  {
+   "lesson": "les:n5-te-form-04",
+   "targets": [
+    "gram:gp-36"
+   ],
+   "exercise": {
+    "id": "ex:n5-te-form-04-13",
+    "type": "recognition",
+    "prompt": {
+     "pt-BR": "Complete com a forma que descreve o livro: きのう＿＿本はおもしろかったです (O livro que eu li ontem era interessante.)"
+    },
+    "answer": {
+     "choices": [
+      "読んだ",
+      "読んで",
+      "読みます"
+     ],
+     "correct": "読んだ"
+    },
+    "explanation": {
+     "pt-BR": "Para descrever um substantivo, o verbo vem logo antes dele na forma simples. Como a leitura já aconteceu, é a forma た: 読んだ本 = 'o livro que li'. 読んで deixa a oração em aberto, e a forma polida 読みます não costuma ficar antes de um substantivo."
+    },
+    "sentence_refs": [],
+    "item_refs": [
+     {
+      "type": "grammar",
+      "ref": "gram:gp-36",
+      "role": "target",
+      "derived_by": "authored"
+     }
+    ]
+   },
+   "basis": "authored-inline",
+   "ai_generated": true,
+   "jp_authored_here": true,
+   "known_set_evidence": [],
+   "residue_reason": "no_probe_segment",
+   "verdict": "ok",
+   "why": "Q4 small residue (no_probe_segment): authored-inline, authored + verified (ok)"
+  },
+  {
+   "lesson": "les:n5-te-form-04",
+   "targets": [
+    "gram:gp-37"
+   ],
+   "exercise": {
+    "id": "ex:n5-te-form-04-14",
+    "type": "particle_choice",
+    "prompt": {
+     "pt-BR": "Complete com a outra partícula que também marca o sujeito dentro da oração que descreve 日本語: 先生＿話す日本語はきれいです (O japonês que o professor fala é bonito.)"
+    },
+    "answer": {
+     "choices": [
+      "の",
+      "を",
+      "で"
+     ],
+     "correct": "の"
+    },
+    "explanation": {
+     "pt-BR": "Dentro de uma oração que descreve um substantivo, o sujeito pode vir com の em vez de が, sem mudar o sentido: 先生の話す日本語 = 先生が話す日本語. を marcaria o objeto e で, o lugar ou o meio, e nenhum dos dois cabe aqui."
+    },
+    "sentence_refs": [],
+    "item_refs": [
+     {
+      "type": "grammar",
+      "ref": "gram:gp-37",
+      "role": "target",
+      "derived_by": "authored"
+     }
+    ]
+   },
+   "basis": "authored-inline",
+   "ai_generated": true,
+   "jp_authored_here": true,
+   "known_set_evidence": [
+    "authored 先生の話す日本語はきれいです at les:n5-te-form-04: unknown kanji []; unknown vocab []; carve-out []; unlinked ['日本語'] (as in the original)"
+   ],
+   "residue_reason": "no_cks_clean_sentence",
+   "verdict": "corrected",
+   "why": "Q4 small residue (no_cks_clean_sentence): authored-inline, authored + verified (corrected)"
+  },
+  {
+   "lesson": "les:n5-te-form-07",
+   "targets": [
+    "gram:nakute-wa-naranai"
+   ],
+   "exercise": {
+    "id": "ex:n5-te-form-07-13",
+    "type": "cloze",
+    "prompt": {
+     "pt-BR": "Complete a obrigação no registro mais formal: もう行か＿＿。 (Já preciso ir.)"
+    },
+    "answer": {
+     "text": "なくてはならない",
+     "full": "もう行かなくてはならない。"
+    },
+    "explanation": {
+     "pt-BR": "A negativa 行かない perde o い e vira 行かなく; somando てはならない, fica 'não pode deixar de ir', ou seja, 'preciso ir'. なくてはならない é a versão mais formal de 〜ないといけない."
+    },
+    "sentence_refs": [
+     "sent:tatoeba-194209"
+    ],
+    "item_refs": [
+     {
+      "type": "grammar",
+      "ref": "gram:nakute-wa-naranai",
+      "role": "target",
+      "derived_by": "authored"
+     }
+    ]
+   },
+   "basis": "bank-sentence",
+   "ai_generated": false,
+   "jp_authored_here": false,
+   "known_set_evidence": [
+    "bank sent:tatoeba-194209 (tatoeba:194209, tags ['nakute-wa-naranai']): unknown kanji []; out-of-set vocab links ['None->泣く', 'None->葉']; unlinked content tokens []; later-introduced refs []; rendered by lesson: False"
+   ],
+   "residue_reason": "no_cks_clean_sentence",
+   "verdict": "ok",
+   "why": "Q4 small residue (no_cks_clean_sentence): bank-sentence, authored + verified (ok)"
+  },
+  {
+   "lesson": "les:n5-conectando-02",
+   "targets": [
+    "gram:keredo-mo"
+   ],
+   "exercise": {
+    "id": "ex:n5-conectando-02-8",
+    "type": "cloze",
+    "prompt": {
+     "pt-BR": "Complete com a forma completa e mais formal de けど: この本は高い＿＿、おもしろいです (Este livro é caro, mas é interessante.)"
+    },
+    "answer": {
+     "text": "けれども",
+     "full": "この本は高いけれども、おもしろいです"
+    },
+    "explanation": {
+     "pt-BR": "けれども liga duas ideias em contraste, como けど, só que num tom mais cuidadoso. Depois de adjetivo-い (高い) ele entra direto, sem だ."
+    },
+    "sentence_refs": [],
+    "item_refs": [
+     {
+      "type": "grammar",
+      "ref": "gram:keredo-mo",
+      "role": "target",
+      "derived_by": "authored"
+     }
+    ]
+   },
+   "basis": "authored-inline",
+   "ai_generated": true,
+   "jp_authored_here": true,
+   "known_set_evidence": [],
+   "residue_reason": "no_cks_clean_sentence",
+   "verdict": "ok",
+   "why": "Q4 small residue (no_cks_clean_sentence): authored-inline, authored + verified (ok)"
+  },
+  {
+   "lesson": "les:n5-conectando-07",
+   "targets": [
+    "gram:gp-41"
+   ],
+   "exercise": {
+    "id": "ex:n5-conectando-07-13",
+    "type": "cloze",
+    "prompt": {
+     "pt-BR": "Complete a lista de ações: 日本語を書い＿＿読んだりする (Eu escrevo e leio em japonês, entre outras coisas.)"
+    },
+    "answer": {
+     "text": "たり",
+     "full": "日本語を書いたり読んだりする"
+    },
+    "explanation": {
+     "pt-BR": "Na estrutura 〜たり〜たりする, cada ação da lista ganha たり: 書いたり e 読んだり. A frase fecha com する, e a lista fica aberta ('entre outras coisas')."
+    },
+    "sentence_refs": [
+     "sent:gen-43c67852fb1a"
+    ],
+    "item_refs": [
+     {
+      "type": "grammar",
+      "ref": "gram:gp-41",
+      "role": "target",
+      "derived_by": "authored"
+     }
+    ]
+   },
+   "basis": "bank-sentence",
+   "ai_generated": true,
+   "jp_authored_here": false,
+   "known_set_evidence": [
+    "bank sent:gen-43c67852fb1a (ai-generated, tags ['gp-143']): unknown kanji []; out-of-set vocab links ['する->為る']; unlinked content tokens ['日本語']; later-introduced refs ['vocab:1157170']; rendered by lesson: False"
+   ],
+   "residue_reason": "no_cks_clean_sentence",
+   "verdict": "ok",
+   "why": "Q4 small residue (no_cks_clean_sentence): bank-sentence, authored + verified (ok)"
+  },
+  {
+   "lesson": "les:n5-conectando-07",
+   "targets": [
+    "gram:kata"
+   ],
+   "exercise": {
+    "id": "ex:n5-conectando-07-14",
+    "type": "cloze",
+    "prompt": {
+     "pt-BR": "Complete para dizer 'a maneira de escrever': ひらがなの書き＿＿をならいました (Aprendi como se escreve o hiragana.)"
+    },
+    "answer": {
+     "text": "かた",
+     "full": "ひらがなの書きかたをならいました"
+    },
+    "explanation": {
+     "pt-BR": "かた colado no radical do verbo cria o substantivo 'o modo de': 書く vira 書き, e 書き + かた = 書きかた, 'a maneira de escrever'. É a mesma かた de 読み方; o kanji 方 ainda não entrou na sua lista de kanji, por isso aqui ela vem em kana."
+    },
+    "sentence_refs": [],
+    "item_refs": [
+     {
+      "type": "grammar",
+      "ref": "gram:kata",
+      "role": "target",
+      "derived_by": "authored"
+     }
+    ]
+   },
+   "basis": "authored-inline",
+   "ai_generated": true,
+   "jp_authored_here": true,
+   "known_set_evidence": [],
+   "residue_reason": "no_cks_clean_sentence",
+   "verdict": "corrected",
+   "why": "Q4 small residue (no_cks_clean_sentence): authored-inline, authored + verified (corrected)"
+  },
+  {
+   "lesson": "les:n4-condicionais-08",
+   "targets": [
+    "gram:gp-91"
+   ],
+   "exercise": {
+    "id": "ex:n4-condicionais-08-9",
+    "type": "recognition",
+    "prompt": {
+     "pt-BR": "Complete a frase com a expressão certa: 春＿＿夏が来ます (Depois da primavera, vem o verão.)"
+    },
+    "answer": {
+     "choices": [
+      "のつぎに",
+      "のまえに",
+      "のうえに"
+     ],
+     "correct": "のつぎに"
+    },
+    "explanation": {
+     "pt-BR": "〜の次に (aqui em kana, のつぎに) põe uma coisa logo depois de outra numa ordem ou sequência: 春のつぎに夏が来ます = 'depois da primavera, vem o verão'. のまえに diria o contrário, 'antes da primavera', e のうえに quer dizer 'em cima de', o que não cabe numa sequência de estações. O kanji 次 ainda não foi visto nesta altura do curso, por isso つぎ vem em kana."
+    },
+    "sentence_refs": [],
+    "item_refs": [
+     {
+      "type": "grammar",
+      "ref": "gram:gp-91",
+      "role": "target",
+      "derived_by": "authored"
+     }
+    ]
+   },
+   "basis": "authored-inline",
+   "ai_generated": true,
+   "jp_authored_here": true,
+   "known_set_evidence": [],
+   "residue_reason": "no_cks_clean_sentence",
+   "verdict": "corrected",
+   "why": "Q4 small residue (no_cks_clean_sentence): authored-inline, authored + verified (corrected)"
+  },
+  {
+   "lesson": "les:n4-volitivo-01",
+   "targets": [
+    "gram:you-da"
+   ],
+   "exercise": {
+    "id": "ex:n4-volitivo-01-23",
+    "type": "cloze",
+    "prompt": {
+     "pt-BR": "Complete a impressão de quem fala: 明日雨の＿＿ががんばろう。 (Parece que amanhã vai chover, mas vou dar o meu melhor.)"
+    },
+    "answer": {
+     "text": "ようだ",
+     "full": "明日雨のようだががんばろう。"
+    },
+    "explanation": {
+     "pt-BR": "〜ようだ indica uma impressão tirada do que se vê ou se ouve: 'parece que'. Depois de substantivo, liga-se com の: 雨のようだ = 'parece que vai chover'. O が seguinte é o 'mas' que leva a がんばろう."
+    },
+    "sentence_refs": [
+     "sent:tatoeba-74772"
+    ],
+    "item_refs": [
+     {
+      "type": "grammar",
+      "ref": "gram:you-da",
+      "role": "target",
+      "derived_by": "authored"
+     }
+    ]
+   },
+   "basis": "bank-sentence",
+   "ai_generated": false,
+   "jp_authored_here": false,
+   "known_set_evidence": [
+    "bank sent:tatoeba-74772 (tatoeba:74772, tags ['you-da']): unknown kanji []; out-of-set vocab links ['None->様']; unlinked content tokens []; later-introduced refs []; rendered by lesson: False"
+   ],
+   "residue_reason": "no_cks_clean_sentence",
+   "verdict": "ok",
+   "why": "Q4 small residue (no_cks_clean_sentence): bank-sentence, authored + verified (ok)"
+  },
+  {
+   "lesson": "les:n4-volitivo-04",
+   "targets": [
+    "gram:koto-ni-naru"
+   ],
+   "exercise": {
+    "id": "ex:n4-volitivo-04-18",
+    "type": "cloze",
+    "prompt": {
+     "pt-BR": "Complete com a forma de 'acabar acontecendo', sem decisão de quem fala: 長い間ここにいる＿＿ (Você vai acabar ficando aqui por muito tempo.)"
+    },
+    "answer": {
+     "text": "ことになる",
+     "full": "長い間ここにいることになる"
+    },
+    "explanation": {
+     "pt-BR": "〜ことになる mostra que algo acaba acontecendo pelas circunstâncias, e não por escolha de quem fala: いることになる = 'acabar ficando'. Com する (ことにする) seria uma decisão própria."
+    },
+    "sentence_refs": [],
+    "item_refs": [
+     {
+      "type": "grammar",
+      "ref": "gram:koto-ni-naru",
+      "role": "target",
+      "derived_by": "authored"
+     }
+    ]
+   },
+   "basis": "authored-inline",
+   "ai_generated": true,
+   "jp_authored_here": true,
+   "known_set_evidence": [
+    "authored 長い間ここにいることになる at les:n4-volitivo-04 (adapted from sent:tatoeba-125982, かもしれない cut): unknown kanji []; unknown vocab []; carve-out []; unlinked []"
+   ],
+   "residue_reason": "no_cks_clean_sentence",
+   "verdict": "corrected",
+   "why": "Q4 small residue (no_cks_clean_sentence): authored-inline, authored + verified (corrected)"
+  },
+  {
+   "lesson": "les:n4-transitividade-01",
+   "targets": [
+    "gram:tadoushi-jidoushi"
+   ],
+   "exercise": {
+    "id": "ex:n4-transitividade-01-19",
+    "type": "cloze",
+    "prompt": {
+     "pt-BR": "Complete com o verbo TRANSITIVO (alguém abre a porta): 私はドアを＿＿ました (Eu abri a porta.)"
+    },
+    "answer": {
+     "text": "開け",
+     "full": "私はドアを開けました"
+    },
+    "explanation": {
+     "pt-BR": "Há alguém (私) agindo sobre a porta, marcada com を, então o verbo é o transitivo 開ける: 開けました. O intransitivo 開く pediria が: ドアが開きました ('a porta abriu')."
+    },
+    "sentence_refs": [
+     "sent:gen-596fab7713a5"
+    ],
+    "item_refs": [
+     {
+      "type": "grammar",
+      "ref": "gram:tadoushi-jidoushi",
+      "role": "target",
+      "derived_by": "authored"
+     }
+    ]
+   },
+   "basis": "bank-sentence",
+   "ai_generated": true,
+   "jp_authored_here": false,
+   "known_set_evidence": [
+    "bank sent:gen-596fab7713a5 (ai-generated, tags ['tadoushi-jidoushi']): unknown kanji []; out-of-set vocab links []; unlinked content tokens []; later-introduced refs []; rendered by lesson: False"
+   ],
+   "residue_reason": "no_alignable_form_span",
+   "verdict": "ok",
+   "why": "Q4 small residue (no_alignable_form_span): bank-sentence, authored + verified (ok)"
+  },
+  {
+   "lesson": "les:n4-experiencia-03",
+   "targets": [
+    "gram:ni-ki-ga-tsuku"
+   ],
+   "exercise": {
+    "id": "ex:n4-experiencia-03-18",
+    "type": "cloze",
+    "prompt": {
+     "pt-BR": "Complete a expressão de 'perceber', na forma て: へんなにおいに＿＿、まどを開けた (Percebi um cheiro estranho e abri a janela.)"
+    },
+    "answer": {
+     "text": "気がついて",
+     "full": "へんなにおいに気がついて、まどを開けた"
+    },
+    "explanation": {
+     "pt-BR": "気がつく ('perceber, notar') pede に no que foi percebido: へんなにおいに気がつく. Na forma て, 気がついて liga a descoberta à ação seguinte: percebi o cheiro e então abri a janela."
+    },
+    "sentence_refs": [],
+    "item_refs": [
+     {
+      "type": "grammar",
+      "ref": "gram:ni-ki-ga-tsuku",
+      "role": "target",
+      "derived_by": "authored"
+     }
+    ]
+   },
+   "basis": "authored-inline",
+   "ai_generated": true,
+   "jp_authored_here": true,
+   "known_set_evidence": [
+    "authored へんなにおいに気がついて、まどを開けた at les:n4-experiencia-03: unknown kanji []; unknown vocab []; carve-out []; unlinked []"
+   ],
+   "residue_reason": "no_alignable_form_span",
+   "verdict": "corrected",
+   "why": "Q4 small residue (no_alignable_form_span): authored-inline, authored + verified (corrected)"
+  },
+  {
+   "lesson": "les:n3-estado-02",
+   "targets": [
+    "gram:n3-ageru"
+   ],
+   "exercise": {
+    "id": "ex:n3-estado-02-24",
+    "type": "cloze",
+    "prompt": {
+     "pt-BR": "Complete com o auxiliar de 'terminar por completo': 私はあしたまでにこの作文を書き＿＿なければならない。 (Tenho que terminar de escrever essa redação até amanhã.)"
+    },
+    "answer": {
+     "text": "上げ",
+     "full": "私はあしたまでにこの作文を書き上げなければならない。"
+    },
+    "explanation": {
+     "pt-BR": "書く vira o radical 書き, e ～上げる acrescenta a ideia de levar o trabalho até o fim: 書き上げる = 'terminar de escrever'. Antes de なければ, o る cai: 書き上げなければならない."
+    },
+    "sentence_refs": [
+     "sent:tatoeba-161857"
+    ],
+    "item_refs": [
+     {
+      "type": "grammar",
+      "ref": "gram:n3-ageru",
+      "role": "target",
+      "derived_by": "authored"
+     }
+    ]
+   },
+   "basis": "bank-sentence",
+   "ai_generated": false,
+   "jp_authored_here": false,
+   "known_set_evidence": [
+    "bank sent:tatoeba-161857 (tatoeba, tags ['n3-ageru']): unknown kanji []; out-of-set vocab links []; unlinked content tokens ['書き上げ']; later-introduced refs []; rendered by lesson: False"
+   ],
+   "residue_reason": "no_alignable_form_span",
+   "verdict": "ok",
+   "why": "Q4 small residue (no_alignable_form_span): bank-sentence, authored + verified (ok)"
+  }
+ ]
+}
