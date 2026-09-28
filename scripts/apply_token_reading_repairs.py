@@ -34,6 +34,7 @@ import argparse
 import json
 import sqlite3
 import sys
+import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
@@ -68,6 +69,21 @@ def main() -> int:
     sid_of = dict(con.execute("SELECT slug, id FROM sentence"))
     errors: list[str] = []
     wrote_tok = wrote_a = wrote_sent = 0
+
+    def concat(sid: int) -> tuple[str, str]:
+        toks = con.execute("SELECT reading, romaji FROM token WHERE sentence_id=? AND split_mode='C' "
+                           "ORDER BY position", (sid,)).fetchall()
+        return "".join(t[0] or "" for t in toks), "".join(t[1] or "" for t in toks)
+
+    # Q6 checkpoint (full replay). Two replay-only differences the live index does not show: (a) the
+    # romaji of a punctuation token is '.'/',' on a replay and '。'/'、' on 4,361 live tokens (the live
+    # index is mixed), so romaji is compared modulo punctuation; (b) a live sentence row could already
+    # carry the repaired kana while its token did not (sent:gen-9f80f08cc644: I2 false before Q3), and
+    # a replay's sentence row agrees with its pre-repair tokens instead. Both old states are accepted.
+    def pn(romaji: str) -> str:
+        return unicodedata.normalize("NFKC", romaji or "").replace("。", ".").replace("、", ",")
+
+    pre = {slug: concat(sid_of[slug]) for slug in {r["sentence"] for r in mech} if slug in sid_of}
 
     for r in mech:
         addr = f"{r['sentence']} @{r['position']} {r['surface']}"
@@ -105,17 +121,14 @@ def main() -> int:
     for slug in sorted({r["sentence"] for r in mech}):
         s = doc["sentences"][slug]
         sid = sid_of[slug]
-        toks = con.execute("SELECT reading, romaji FROM token WHERE sentence_id=? AND split_mode='C' "
-                           "ORDER BY position", (sid,)).fetchall()
-        kana = "".join(t[0] or "" for t in toks)
-        romaji = "".join(t[1] or "" for t in toks)
-        if classes_of[slug] == {"mechanical"} and (kana, romaji) != (s["kana_new"], s["romaji_new"]):
+        kana, romaji = concat(sid)
+        if classes_of[slug] == {"mechanical"} and (kana, pn(romaji)) != (s["kana_new"], pn(s["romaji_new"])):
             errors.append(f"{slug}: rebuilt {kana!r}/{romaji!r} != table {s['kana_new']!r}/{s['romaji_new']!r}")
             continue
         cur = con.execute("SELECT kana, romaji FROM sentence WHERE id=?", (sid,)).fetchone()
         if cur == (kana, romaji):
             continue
-        if cur != (s["kana_old"], s["romaji_old"]):
+        if (cur[0], pn(cur[1])) not in {(s["kana_old"], pn(s["romaji_old"])), (pre[slug][0], pn(pre[slug][1]))}:
             errors.append(f"{slug}: sentence holds {cur!r}, expected the table's kana_old/romaji_old")
             continue
         con.execute("UPDATE sentence SET kana=?, romaji=? WHERE id=?", (kana, romaji, sid))

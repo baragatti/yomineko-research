@@ -74,8 +74,15 @@ DRILLS_PER_PATTERN = 3        # R80/R81 minimum for a pattern to count as produc
 # ~500-word known set rather than a test of whether the pattern generalises: it kept only 31% of
 # patterns, against 70% at one new word and 89% at two. One is the honest setting.
 DRILL_MAX_NEW = 1
-PRODUCTION_PER_UNIT = 3       # R44: all drawn from prior units
-FLUENCY_PER_UNIT = 6          # R79 (d)
+PRODUCTION_PER_UNIT = 3       # R44: all drawn from prior units (the pre-W34 cap; now the floor)
+FLUENCY_PER_UNIT = 6          # R79 (d) (the pre-W34 cap)
+# W34 (R78 strand rebalance). Per-stage caps live in the tracked table, not here, so the builder and
+# the exact-match check in validate_repairs_applied.py read ONE copy. Selection order is unchanged, so
+# the pre-W34 items stay a prefix. Floor rule: production grows toward its stage cap only while the
+# fluency block keeps the item count it has at 3/6; without it arrival-02's pool is eaten whole and
+# the unit loses its fluency block (R79). Plan: research/reports/w34_rebalance_plan.md.
+W34_TABLE = ROOT / "research" / "derived" / "repairs" / "w34_rebalance.json"
+STAGE_CAPS: dict[str, dict[str, int]] = json.loads(W34_TABLE.read_text(encoding="utf-8"))["caps"]
 SECONDS_PER_ITEM = 8          # R79 (c) speed target; a design choice, labelled as such in the ruleset
 # Prompt for a fluency block whose items all predate this stage. It happens at a stage's opening
 # unit, where nothing from the new situation is known-material yet; naming it a recap is honest,
@@ -259,16 +266,14 @@ def main() -> int:
             topical = [s for s in pool if s not in stage_phrases and stage_relevant(s, key)]
             rest = [s for s in pool if s not in stage_phrases and s not in set(topical)]
             topical_set = set(topical)
-            production = []
+            prod_pool = []
             for slug in same + topical + rest:
-                if len(production) >= PRODUCTION_PER_UNIT:
-                    break
                 s = by_slug.get(slug)
                 if not s or not pt.get(s["id"]):
                     continue
                 if not speak_filter.allows(slug):
                     continue
-                production.append({
+                prod_pool.append({
                     "prompt": {"pt-BR": pt[s["id"]]},
                     "answer_key": s["jp"],
                     "accepted_variants": variants(s["jp"], s.get("kana"), s.get("kana_written")),
@@ -284,9 +289,7 @@ def main() -> int:
             # Zero new tokens: every item's vocabulary must already be inside the known set as it stood
             # BEFORE this unit, and items already used for production are excluded so the block is not
             # the same six sentences twice.
-            taken = {x["sentence"] for x in production}
-
-            def eligible(slug: str) -> bool:
+            def eligible(slug: str, taken: set[str]) -> bool:
                 s = by_slug.get(slug)
                 # R79 (a): zero new tokens, measured against the known set as it stood BEFORE this unit
                 return bool(s) and slug not in taken and svocab.get(s["id"], set()) <= known_before
@@ -294,8 +297,13 @@ def main() -> int:
             # Same-stage phrases first. The prompt is a SITUATION, so rehearsing it with sentences from
             # another scenario defeats it: an early version filled the "you are lost near the station"
             # block with 久しぶりに食べたらスープの味が変わってた, because it ranked by recency alone.
-            same_stage = [s for s in reversed(prior) if s in stage_phrases and eligible(s)]
-            other = [s for s in reversed(prior) if s not in stage_phrases and eligible(s)]
+            def fluency_for(taken: set[str], cap: int) -> list[str]:
+                same_stage = [s for s in reversed(prior) if s in stage_phrases and eligible(s, taken)]
+                other = [s for s in reversed(prior) if s not in stage_phrases and eligible(s, taken)]
+                ranked = same_stage + other
+                fresh = [s for s in ranked if s not in prev_fluency]
+                repeat = [s for s in ranked if s in prev_fluency]
+                return (fresh + repeat)[:cap]
 
             # R79 wants repetition, but not the SAME six sentences in the same order twice running —
             # that is one rehearsal presented as two. Three units (arrival-06, about_you-04,
@@ -303,10 +311,18 @@ def main() -> int:
             # recency and nothing had changed between them. The previous unit's items go to the back of
             # the queue rather than out of it: they are still legal fluency material, and starving a
             # block below six items to avoid a repeat would break R79(d) to fix a smaller problem.
-            ranked = same_stage + other
-            fresh = [s for s in ranked if s not in prev_fluency]
-            repeat = [s for s in ranked if s in prev_fluency]
-            fluency_items = (fresh + repeat)[:FLUENCY_PER_UNIT]
+            #
+            # W34 floor: the fluency count at the pre-W34 caps (3/6) is the floor; the largest
+            # production count up to the stage cap that keeps it wins (fluency only shrinks as
+            # production grows, so scanning down stops at the first fit, at worst at 3).
+            caps = STAGE_CAPS[key]
+            floor = len(fluency_for({x["sentence"] for x in prod_pool[:PRODUCTION_PER_UNIT]},
+                                    FLUENCY_PER_UNIT))
+            for n_prod in range(max(caps["production"], PRODUCTION_PER_UNIT), PRODUCTION_PER_UNIT - 1, -1):
+                production = prod_pool[:n_prod]
+                fluency_items = fluency_for({x["sentence"] for x in production}, caps["fluency"])
+                if len(fluency_items) >= floor:
+                    break
 
             # COLD START, and why the PROMPT moves rather than the items. At a stage's opening unit
             # `prior` holds nothing from this stage, so the block fills from earlier scenarios — and

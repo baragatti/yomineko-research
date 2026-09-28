@@ -2,7 +2,7 @@
 
 _Gerado por `scripts/export/build_review_views.py` a partir do export (`corpus/` + `course/`), entidade `speak_unit`. **Não edite este arquivo** — ele é regerado e conferido byte a byte. Para registrar um parecer, preencha uma ficha: `research/review/README.md`._
 
-_Build `b6837ad362d0` de 2026-09-27 (`contracts/manifest.json`)._
+_Build `b895ef055bbd` de 2026-09-27 (`contracts/manifest.json`)._
 
 **72 registro(s) · 144 endereço(s) de parecer · 72 marcado(s) `needs_review` no export.**
 
@@ -97,6 +97,7 @@ _Ledger:_ —
 - produção: Desde já, obrigado. → よろしくお願いします。
 - produção: Mais uma vez, por favor. → もう一度お願いします。
 - produção: Como você se chama? → お名前は何ですか？
+- produção: Não entendi. → 分かりません。
 
 </details>
 
@@ -106,7 +107,7 @@ _Ledger:_ —
 
 > Chegar e cumprimentar, parte 3
 
-### `*` · camada C · hash `3432ef2ff5b72859`
+### `*` · camada C · hash `eef46a576e13da03`
 
 _Ledger:_ —
 
@@ -131,6 +132,14 @@ _Ledger:_ —
 - produção: Sim, vamos. → はい、行きましょう。
 - produção: Eu não sei como isto é feito. → 私はこれがどのようにされるか分かりません。
 - produção: Obrigado por me contratar. → 私を雇ってくれてありがとう。
+- produção: Desculpe. A culpa é minha. → ごめんなさい。私のせいです。
+- produção: O prazer é meu. Muito prazer. → こちらこそ、はじめまして。
+- produção: Fale devagar, por favor. → ゆっくり話してください。
+- produção: Desde já, obrigado. → よろしくお願いします。
+- produção: Mais uma vez, por favor. → もう一度お願いします。
+- produção: Como você se chama? → お名前は何ですか？
+- produção: Não entendi. → 分かりません。
+- produção: Muito obrigado(a)! → ありがとうございます！
 
 </details>
 
@@ -140,7 +149,7 @@ _Ledger:_ —
 
 > Chegar e cumprimentar, parte 4
 
-### `*` · camada C · hash `413951dbd32edcde`
+### `*` · camada C · hash `484ec96c52926697`
 
 _Ledger:_ —
 
@@ -165,6 +174,18 @@ _Ledger:_ —
 - produção: Desculpe por tê-lo feito esperar tanto tempo. → 長い事お待たせしてすみません。
 - produção: Desculpe por não poder me encontrar com você hoje à noite. → 今晩お会いできなくてすみません。
 - produção: Obrigado por me escutar. → 聞いてくれてありがとう。
+- produção: Desculpe. É que não tenho muito tempo. → ごめんなさい。時間があまりないんです。
+- produção: Não sei se vou ter tempo. → 時間があるか分かりません。
+- produção: Obrigado por ter vindo. → 来てくれてありがとう。
+- produção: Sim, vamos. → はい、行きましょう。
+- produção: Eu não sei como isto é feito. → 私はこれがどのようにされるか分かりません。
+- produção: Obrigado por me contratar. → 私を雇ってくれてありがとう。
+- produção: Desculpe. A culpa é minha. → ごめんなさい。私のせいです。
+- produção: O prazer é meu. Muito prazer. → こちらこそ、はじめまして。
+- produção: Fale devagar, por favor. → ゆっくり話してください。
+- produção: Desde já, obrigado. → よろしくお願いします。
+- produção: Mais uma vez, por favor. → もう一度お願いします。
+- produção: Como você se chama? → お名前は何ですか？
 
 </details>
 
@@ -174,7 +195,7 @@ _Ledger:_ —
 
 > Chegar e cumprimentar, parte 5
 
-### `*` · camada C · hash `0a730c62130c31ae`
+### `*` · camada C · hash `8a70972ccff74713`
 
 _Ledger:_ —
 
@@ -199,6 +220,18 @@ _Ledger:_ —
 - produção: Desculpe por tê-lo feito esperar tanto tempo. → 長い間、お待たせしてすみませんでした。
 - produção: Desculpe por tê-lo feito esperar por tanto tempo. → こんなに長い間待たせてすみません。
 - produção: Obrigado por pensar nisso. → 考えてくれてありがとう。
+- produção: Olá, professor! → 先生、こんにちは。
+- produção: Desculpe interromper a conversa de vocês. → お話の最中にすみません。
+- produção: Eu gostaria de fazer uma reserva para o jantar de amanhã à noite. → 明日の夜のディナーの予約をお願いします。
+- produção: Desculpe por tê-lo feito esperar tanto tempo. → 長い事お待たせしてすみません。
+- produção: Desculpe por não poder me encontrar com você hoje à noite. → 今晩お会いできなくてすみません。
+- produção: Obrigado por me escutar. → 聞いてくれてありがとう。
+- produção: Desculpe. É que não tenho muito tempo. → ごめんなさい。時間があまりないんです。
+- produção: Não sei se vou ter tempo. → 時間があるか分かりません。
+- produção: Obrigado por ter vindo. → 来てくれてありがとう。
+- produção: Sim, vamos. → はい、行きましょう。
+- produção: Eu não sei como isto é feito. → 私はこれがどのようにされるか分かりません。
+- produção: Obrigado por me contratar. → 私を雇ってくれてありがとう。
 
 </details>
 
@@ -208,7 +241,7 @@ _Ledger:_ —
 
 > Chegar e cumprimentar, parte 6
 
-### `*` · camada C · hash `09f3a8d593778d68`
+### `*` · camada C · hash `a72bfd389b682297`
 
 _Ledger:_ —
 
@@ -233,6 +266,19 @@ _Ledger:_ —
 - produção: Eu não sei como isto é feito. → 私はこれがどのようにされるか分かりません。
 - produção: Muito obrigado por me lembrar da promessa. → 約束を思い出させてくれてどうもありがとう。
 - produção: Desculpe por tê-lo bombardeado com tantas perguntas. → 質問攻めにしてすみませんでした。
+- produção: Desculpe pelo atraso. → 遅れてすみません。
+- produção: Não, não chove muito. → いいえ、あまり降りません。
+- produção: Fale mais devagar, por favor! → もっとゆっくり話してください！
+- produção: Obrigado por me avisar. → 教えてくれてありがとう。
+- produção: Desculpe por tê-lo feito esperar tanto tempo. → 長い間、お待たせしてすみませんでした。
+- produção: Desculpe por tê-lo feito esperar por tanto tempo. → こんなに長い間待たせてすみません。
+- produção: Obrigado por pensar nisso. → 考えてくれてありがとう。
+- produção: Olá, professor! → 先生、こんにちは。
+- produção: Desculpe interromper a conversa de vocês. → お話の最中にすみません。
+- produção: Eu gostaria de fazer uma reserva para o jantar de amanhã à noite. → 明日の夜のディナーの予約をお願いします。
+- produção: Desculpe por tê-lo feito esperar tanto tempo. → 長い事お待たせしてすみません。
+- produção: Desculpe por não poder me encontrar com você hoje à noite. → 今晩お会いできなくてすみません。
+- produção: Obrigado por me escutar. → 聞いてくれてありがとう。
 
 </details>
 
@@ -242,7 +288,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 1
 
-### `*` · camada C · hash `3ee2a864a8465bdb`
+### `*` · camada C · hash `180f194096bf3a97`
 
 _Ledger:_ —
 
@@ -267,6 +313,19 @@ _Ledger:_ —
 - produção: Aquilo é veneno. → あれは毒だ。
 - produção: O pagamento deve ser feito no caixa, por favor. → 代金はレジでお払い下さい。
 - produção: O preço não é nada caro. → 値段は決して高くない。
+- produção: A conta, por favor. → お会計お願いします。
+- produção: Me dê isso, por favor. → それをください。
+- produção: Quanto custa? → いくらですか？
+- produção: Eu não sei como isto é feito. → 私はこれがどのようにされるか分かりません。
+- produção: Muito obrigado por me lembrar da promessa. → 約束を思い出させてくれてどうもありがとう。
+- produção: Desculpe por tê-lo bombardeado com tantas perguntas. → 質問攻めにしてすみませんでした。
+- produção: Desculpe pelo atraso. → 遅れてすみません。
+- produção: Não, não chove muito. → いいえ、あまり降りません。
+- produção: Fale mais devagar, por favor! → もっとゆっくり話してください！
+- produção: Obrigado por me avisar. → 教えてくれてありがとう。
+- produção: Desculpe por tê-lo feito esperar tanto tempo. → 長い間、お待たせしてすみませんでした。
+- produção: Desculpe por tê-lo feito esperar por tanto tempo. → こんなに長い間待たせてすみません。
+- produção: Obrigado por pensar nisso. → 考えてくれてありがとう。
 
 </details>
 
@@ -276,7 +335,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 2
 
-### `*` · camada C · hash `30dcd187886c372e`
+### `*` · camada C · hash `fb72ceb694b7c98b`
 
 _Ledger:_ —
 
@@ -301,6 +360,19 @@ _Ledger:_ —
 - produção: As críticas dele foram muito bem avaliadas. → 彼の批評は高く評価された。
 - produção: Isso é vantajoso para ele. → それは彼の利益になる。
 - produção: Confiei meu dinheiro a ele. → 私はお金を彼に預けた。
+- produção: Ele viu aquilo pela primeira vez. → 彼が初めてそれを見た
+- produção: Ele pediu dinheiro. → 彼はお金を求めた。
+- produção: Quanto custa, mais ou menos, o carro mais caro? → 一番高い車はいくらぐらいですか。
+- produção: Aquilo é veneno. → あれは毒だ。
+- produção: O pagamento deve ser feito no caixa, por favor. → 代金はレジでお払い下さい。
+- produção: O preço não é nada caro. → 値段は決して高くない。
+- produção: A conta, por favor. → お会計お願いします。
+- produção: Me dê isso, por favor. → それをください。
+- produção: Quanto custa? → いくらですか？
+- produção: Eu não sei como isto é feito. → 私はこれがどのようにされるか分かりません。
+- produção: Muito obrigado por me lembrar da promessa. → 約束を思い出させてくれてどうもありがとう。
+- produção: Desculpe por tê-lo bombardeado com tantas perguntas. → 質問攻めにしてすみませんでした。
+- produção: Desculpe pelo atraso. → 遅れてすみません。
 
 </details>
 
@@ -310,7 +382,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 3
 
-### `*` · camada C · hash `b1c81e46e4ee2a11`
+### `*` · camada C · hash `cb00b433c9bf1bab`
 
 _Ledger:_ —
 
@@ -335,6 +407,19 @@ _Ledger:_ —
 - produção: Mas o que é isso? → 一体全体これは何だ。
 - produção: O que é aquilo? → あれは何ですか。
 - produção: Não a vejo desde então. → それ以来彼女に会っていません。
+- produção: Isso é uma demonstração das expectativas dela. → それは彼女の期待の現れです。
+- produção: Isso é um reflexo da personalidade dela. → それは彼女の性格の表れだ。
+- produção: O nível de inteligência dela é alto. → 彼女は知能の程度が高い。
+- produção: As críticas dele foram muito bem avaliadas. → 彼の批評は高く評価された。
+- produção: Isso é vantajoso para ele. → それは彼の利益になる。
+- produção: Confiei meu dinheiro a ele. → 私はお金を彼に預けた。
+- produção: Ele viu aquilo pela primeira vez. → 彼が初めてそれを見た
+- produção: Ele pediu dinheiro. → 彼はお金を求めた。
+- produção: Quanto custa, mais ou menos, o carro mais caro? → 一番高い車はいくらぐらいですか。
+- produção: Aquilo é veneno. → あれは毒だ。
+- produção: O pagamento deve ser feito no caixa, por favor. → 代金はレジでお払い下さい。
+- produção: O preço não é nada caro. → 値段は決して高くない。
+- produção: A conta, por favor. → お会計お願いします。
 
 </details>
 
@@ -344,7 +429,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 4
 
-### `*` · camada C · hash `9e9f96543f590df0`
+### `*` · camada C · hash `8dea24550c9970ba`
 
 _Ledger:_ —
 
@@ -369,6 +454,19 @@ _Ledger:_ —
 - produção: Então isso quer dizer que você não vem? → それでは、あなたは来ないということですか。
 - produção: Por mais que eu agradeça, nunca será o bastante. → いくらお礼を言っても言い切れない。
 - produção: Ué, o que mesmo que eu ia dizer? → あれ、私何言おうとしたんだっけ？
+- produção: O problema é que não temos dinheiro. → 問題はお金がないということです。
+- produção: Você disse 13? Ou foi 30? → １３って言った？それとも３０？
+- produção: Isso é difícil de dizer, né. → それは言いにくいな。
+- produção: Mas o que é isso? → 一体全体これは何だ。
+- produção: O que é aquilo? → あれは何ですか。
+- produção: Não a vejo desde então. → それ以来彼女に会っていません。
+- produção: Isso é uma demonstração das expectativas dela. → それは彼女の期待の現れです。
+- produção: Isso é um reflexo da personalidade dela. → それは彼女の性格の表れだ。
+- produção: O nível de inteligência dela é alto. → 彼女は知能の程度が高い。
+- produção: As críticas dele foram muito bem avaliadas. → 彼の批評は高く評価された。
+- produção: Isso é vantajoso para ele. → それは彼の利益になる。
+- produção: Confiei meu dinheiro a ele. → 私はお金を彼に預けた。
+- produção: Ele viu aquilo pela primeira vez. → 彼が初めてそれを見た
 
 </details>
 
@@ -378,7 +476,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 5
 
-### `*` · camada C · hash `211706fac8128934`
+### `*` · camada C · hash `b9018ce2ff8d798f`
 
 _Ledger:_ —
 
@@ -403,6 +501,19 @@ _Ledger:_ —
 - produção: Acho que foi só coincidência. → それは単なる偶然だと思う。
 - produção: Sinto muito por saber disso. → それを聞いて気の毒に思う。
 - produção: Saiu mais barato do que eu pensava. → 思ったより安くあがった。
+- produção: Qualquer pessoa consegue fazer isso. → どんな人でもそれをすることができる。
+- produção: A gente deve respeitar quem é mais velho. → 年上の人には敬意を払うべきだ。
+- produção: Ele é a única pessoa que consegue fazer isso. → 彼はそれができる唯一の人です。
+- produção: Então isso quer dizer que você não vem? → それでは、あなたは来ないということですか。
+- produção: Por mais que eu agradeça, nunca será o bastante. → いくらお礼を言っても言い切れない。
+- produção: Ué, o que mesmo que eu ia dizer? → あれ、私何言おうとしたんだっけ？
+- produção: O problema é que não temos dinheiro. → 問題はお金がないということです。
+- produção: Você disse 13? Ou foi 30? → １３って言った？それとも３０？
+- produção: Isso é difícil de dizer, né. → それは言いにくいな。
+- produção: Mas o que é isso? → 一体全体これは何だ。
+- produção: O que é aquilo? → あれは何ですか。
+- produção: Não a vejo desde então. → それ以来彼女に会っていません。
+- produção: Isso é uma demonstração das expectativas dela. → それは彼女の期待の現れです。
 
 </details>
 
@@ -412,7 +523,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 6
 
-### `*` · camada C · hash `e7f565510b1db023`
+### `*` · camada C · hash `c89341bde04cb515`
 
 _Ledger:_ —
 
@@ -437,6 +548,19 @@ _Ledger:_ —
 - produção: Tudo bem se eu não comer isto? → これ、食べなくてもいい？
 - produção: Qualquer valor serve. → 金額はいくらでもいいんです。
 - produção: De preferência, o mais barato possível. → なるべく安いほうがいいです。
+- produção: É melhor não fazer isso! → それをしないほうがいいよ！
+- produção: Assim está bom. → それでいいよ。
+- produção: Assim está bom? → それでいい？
+- produção: Acho que foi só coincidência. → それは単なる偶然だと思う。
+- produção: Sinto muito por saber disso. → それを聞いて気の毒に思う。
+- produção: Saiu mais barato do que eu pensava. → 思ったより安くあがった。
+- produção: Qualquer pessoa consegue fazer isso. → どんな人でもそれをすることができる。
+- produção: A gente deve respeitar quem é mais velho. → 年上の人には敬意を払うべきだ。
+- produção: Ele é a única pessoa que consegue fazer isso. → 彼はそれができる唯一の人です。
+- produção: Então isso quer dizer que você não vem? → それでは、あなたは来ないということですか。
+- produção: Por mais que eu agradeça, nunca será o bastante. → いくらお礼を言っても言い切れない。
+- produção: Ué, o que mesmo que eu ia dizer? → あれ、私何言おうとしたんだっけ？
+- produção: O problema é que não temos dinheiro. → 問題はお金がないということです。
 
 </details>
 
@@ -446,7 +570,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 1
 
-### `*` · camada C · hash `c19858ca5b031175`
+### `*` · camada C · hash `7ba6c1588cb6957a`
 
 _Ledger:_ —
 
@@ -471,6 +595,19 @@ _Ledger:_ —
 - produção: Eu não como carne. → お肉は食べられません。
 - produção: O cardápio, por favor. → メニューをください。
 - produção: A conta, por favor. → お勘定お願いします。
+- produção: O que é gostoso aqui? → 何がおいしいですか。
+- produção: Está muito bom mesmo. → 大変おいしいですよ。
+- produção: Me dê água, por favor. → お水をください。
+- produção: Tudo bem se eu não comer isto? → これ、食べなくてもいい？
+- produção: Qualquer valor serve. → 金額はいくらでもいいんです。
+- produção: De preferência, o mais barato possível. → なるべく安いほうがいいです。
+- produção: É melhor não fazer isso! → それをしないほうがいいよ！
+- produção: Assim está bom. → それでいいよ。
+- produção: Assim está bom? → それでいい？
+- produção: Acho que foi só coincidência. → それは単なる偶然だと思う。
+- produção: Sinto muito por saber disso. → それを聞いて気の毒に思う。
+- produção: Saiu mais barato do que eu pensava. → 思ったより安くあがった。
+- produção: Qualquer pessoa consegue fazer isso. → どんな人でもそれをすることができる。
 
 </details>
 
@@ -480,7 +617,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 2
 
-### `*` · camada C · hash `7910e4129cb3190b`
+### `*` · camada C · hash `ac65f1fa95746f4f`
 
 _Ledger:_ —
 
@@ -505,6 +642,19 @@ _Ledger:_ —
 - produção: Vamos comer lá fora em vez de dentro da barraca. → テントの中ではなくて外で食べよう。
 - produção: Por que ninguém quer comer o que eu fiz? → どうして誰も私が作ったものを食べようとしないの？
 - produção: O jantar já está pronto, então a gente pode comer na hora que quiser. → 夕食の用意はできているから、いつでも食べたいときに食べられるよ。
+- produção: Eu gosto de beber água mineral natural. → 天然のミネラルウォーターを飲むのが好きです。
+- produção: Arroz ou pão, de qual você gosta mais? → ご飯とパン、どっちが好き？
+- produção: Vocês têm cardápio em inglês? → 英語のメニューはありますか？
+- produção: Eu não como carne. → お肉は食べられません。
+- produção: O cardápio, por favor. → メニューをください。
+- produção: A conta, por favor. → お勘定お願いします。
+- produção: O que é gostoso aqui? → 何がおいしいですか。
+- produção: Está muito bom mesmo. → 大変おいしいですよ。
+- produção: Me dê água, por favor. → お水をください。
+- produção: Tudo bem se eu não comer isto? → これ、食べなくてもいい？
+- produção: Qualquer valor serve. → 金額はいくらでもいいんです。
+- produção: De preferência, o mais barato possível. → なるべく安いほうがいいです。
+- produção: É melhor não fazer isso! → それをしないほうがいいよ！
 
 </details>
 
@@ -514,7 +664,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 3
 
-### `*` · camada C · hash `7775f00bc2693461`
+### `*` · camada C · hash `92f254bb3c007186`
 
 _Ledger:_ —
 
@@ -539,6 +689,19 @@ _Ledger:_ —
 - produção: É que agora não estou a fim de comer. → 今は食べたくないんです。
 - produção: Hoje os peixes não estão mordendo a isca. → 今日は魚の食いが悪い。
 - produção: No ano passado eu plantei tomates, e ficaram muito gostosos. → 去年トマトを作ったがとてもおいしかった。
+- produção: Está muito gostoso! → とてもおいしいよ。
+- produção: Eu já almocei no refeitório. → わたしはもう食堂で昼ごはんを食べました。
+- produção: A que horas aquele restaurante fecha? → あのレストランは何時に閉まるの？
+- produção: Vamos comer lá fora em vez de dentro da barraca. → テントの中ではなくて外で食べよう。
+- produção: Por que ninguém quer comer o que eu fiz? → どうして誰も私が作ったものを食べようとしないの？
+- produção: O jantar já está pronto, então a gente pode comer na hora que quiser. → 夕食の用意はできているから、いつでも食べたいときに食べられるよ。
+- produção: Eu gosto de beber água mineral natural. → 天然のミネラルウォーターを飲むのが好きです。
+- produção: Arroz ou pão, de qual você gosta mais? → ご飯とパン、どっちが好き？
+- produção: Vocês têm cardápio em inglês? → 英語のメニューはありますか？
+- produção: Eu não como carne. → お肉は食べられません。
+- produção: O cardápio, por favor. → メニューをください。
+- produção: A conta, por favor. → お勘定お願いします。
+- produção: O que é gostoso aqui? → 何がおいしいですか。
 
 </details>
 
@@ -548,7 +711,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 4
 
-### `*` · camada C · hash `759eaf97536422da`
+### `*` · camada C · hash `428735f9399b709e`
 
 _Ledger:_ —
 
@@ -573,6 +736,19 @@ _Ledger:_ —
 - produção: Comer tanto assim é anormal. → そんなに食べるのは異常だ。
 - produção: Não come tanto assim! → そんなに食べないの！
 - produção: Eles sentaram no fundo do restaurante. → 彼らはレストランの奥の方に座った。
+- produção: Bebo pelo menos três litros de água por dia. → １日に水を少なくとも３リットルは飲みます。
+- produção: Preciso comer antes de sair. → 出かける前に食べなくてはならない。
+- produção: É que antes eu comia pizza com frequência... → 前はよくピザを食べてたんだけど。
+- produção: É que agora não estou a fim de comer. → 今は食べたくないんです。
+- produção: Hoje os peixes não estão mordendo a isca. → 今日は魚の食いが悪い。
+- produção: No ano passado eu plantei tomates, e ficaram muito gostosos. → 去年トマトを作ったがとてもおいしかった。
+- produção: Está muito gostoso! → とてもおいしいよ。
+- produção: Eu já almocei no refeitório. → わたしはもう食堂で昼ごはんを食べました。
+- produção: A que horas aquele restaurante fecha? → あのレストランは何時に閉まるの？
+- produção: Vamos comer lá fora em vez de dentro da barraca. → テントの中ではなくて外で食べよう。
+- produção: Por que ninguém quer comer o que eu fiz? → どうして誰も私が作ったものを食べようとしないの？
+- produção: O jantar já está pronto, então a gente pode comer na hora que quiser. → 夕食の用意はできているから、いつでも食べたいときに食べられるよ。
+- produção: Eu gosto de beber água mineral natural. → 天然のミネラルウォーターを飲むのが好きです。
 
 </details>
 
@@ -582,7 +758,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 5
 
-### `*` · camada C · hash `906126b7c548242f`
+### `*` · camada C · hash `553d8a26b495a662`
 
 _Ledger:_ —
 
@@ -607,6 +783,19 @@ _Ledger:_ —
 - produção: Fui tomar uma cerveja com uns amigos. → 私は友達とビールを飲みに行った。
 - produção: Será que existe mesmo cachorro que come peixe cru? → 生の魚を食べる犬なんているのだろうか？
 - produção: Eu dei carne para o meu cachorro. → 私は犬に肉を与えた。
+- produção: Aqui a comida é gostosa e o atendimento também é bom. → ここは食べ物もおいしいし、サービスもよい。
+- produção: Nós comemos peixe cru. → 我々は魚を生で食べる。
+- produção: Não se deve ler enquanto come. → 食べながら読んではいけません。
+- produção: Comer tanto assim é anormal. → そんなに食べるのは異常だ。
+- produção: Não come tanto assim! → そんなに食べないの！
+- produção: Eles sentaram no fundo do restaurante. → 彼らはレストランの奥の方に座った。
+- produção: Bebo pelo menos três litros de água por dia. → １日に水を少なくとも３リットルは飲みます。
+- produção: Preciso comer antes de sair. → 出かける前に食べなくてはならない。
+- produção: É que antes eu comia pizza com frequência... → 前はよくピザを食べてたんだけど。
+- produção: É que agora não estou a fim de comer. → 今は食べたくないんです。
+- produção: Hoje os peixes não estão mordendo a isca. → 今日は魚の食いが悪い。
+- produção: No ano passado eu plantei tomates, e ficaram muito gostosos. → 去年トマトを作ったがとてもおいしかった。
+- produção: Está muito gostoso! → とてもおいしいよ。
 
 </details>
 
@@ -616,7 +805,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 6
 
-### `*` · camada C · hash `87e1840490384323`
+### `*` · camada C · hash `df783f793d5ab024`
 
 _Ledger:_ —
 
@@ -641,6 +830,20 @@ _Ledger:_ —
 - produção: A relação entre o ar e o ser humano é igual à relação entre a água e o peixe. → 空気と人間との関係は水と魚との関係と同じだ。
 - produção: Nunca na vida trabalhei em restaurante. → レストランで働いたことなど一度もない。
 - produção: Hoje à noite não posso ir ao restaurante com você. → 今晩あなたと一緒にレストランにいけません。
+- produção: Pode juntar tudo numa conta só, por favor. → 一緒に勘定して下さい。
+- produção: Tinha um pouco de água no fundo da garrafa. → ビンの底には水が少し残っていた。
+- produção: A água da torneira está saindo com força. → 水道の水が勢いよく出ている。
+- produção: Fui tomar uma cerveja com uns amigos. → 私は友達とビールを飲みに行った。
+- produção: Será que existe mesmo cachorro que come peixe cru? → 生の魚を食べる犬なんているのだろうか？
+- produção: Eu dei carne para o meu cachorro. → 私は犬に肉を与えた。
+- produção: Aqui a comida é gostosa e o atendimento também é bom. → ここは食べ物もおいしいし、サービスもよい。
+- produção: Nós comemos peixe cru. → 我々は魚を生で食べる。
+- produção: Não se deve ler enquanto come. → 食べながら読んではいけません。
+- produção: Comer tanto assim é anormal. → そんなに食べるのは異常だ。
+- produção: Não come tanto assim! → そんなに食べないの！
+- produção: Eles sentaram no fundo do restaurante. → 彼らはレストランの奥の方に座った。
+- produção: Bebo pelo menos três litros de água por dia. → １日に水を少なくとも３リットルは飲みます。
+- produção: Preciso comer antes de sair. → 出かける前に食べなくてはならない。
 
 </details>
 
@@ -650,7 +853,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 1
 
-### `*` · camada C · hash `14bd1079af173b3d`
+### `*` · camada C · hash `c8d101d2f83ae6d2`
 
 _Ledger:_ —
 
@@ -675,6 +878,20 @@ _Ledger:_ —
 - produção: Onde eu troco de trem? → どこで乗り換えるのでしょうか。
 - produção: Quanto tempo leva de ônibus? → バスでどのくらいかかりますか。
 - produção: Onde eu compro a passagem? → 切符はどこで買うのですか。
+- produção: Chame um táxi, por favor. → タクシーを呼んで下さい。
+- produção: Onde fica o banheiro? → トイレはどこですか。
+- produção: Onde fica a estação? → 駅はどこですか。
+- produção: A relação entre o ar e o ser humano é igual à relação entre a água e o peixe. → 空気と人間との関係は水と魚との関係と同じだ。
+- produção: Nunca na vida trabalhei em restaurante. → レストランで働いたことなど一度もない。
+- produção: Hoje à noite não posso ir ao restaurante com você. → 今晩あなたと一緒にレストランにいけません。
+- produção: Pode juntar tudo numa conta só, por favor. → 一緒に勘定して下さい。
+- produção: Tinha um pouco de água no fundo da garrafa. → ビンの底には水が少し残っていた。
+- produção: A água da torneira está saindo com força. → 水道の水が勢いよく出ている。
+- produção: Fui tomar uma cerveja com uns amigos. → 私は友達とビールを飲みに行った。
+- produção: Será que existe mesmo cachorro que come peixe cru? → 生の魚を食べる犬なんているのだろうか？
+- produção: Eu dei carne para o meu cachorro. → 私は犬に肉を与えた。
+- produção: Aqui a comida é gostosa e o atendimento também é bom. → ここは食べ物もおいしいし、サービスもよい。
+- produção: Nós comemos peixe cru. → 我々は魚を生で食べる。
 
 </details>
 
@@ -684,7 +901,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 2
 
-### `*` · camada C · hash `e70765d95821ed36`
+### `*` · camada C · hash `77730fd7ad8fe6ce`
 
 _Ledger:_ —
 
@@ -709,6 +926,20 @@ _Ledger:_ —
 - produção: As casas ficam perto umas das outras. → 家は互いに近くにある。
 - produção: Eu tenho que ir até a estação às três horas. → ３時に駅に行かなくちゃいけないんだよ。
 - produção: Está combinado que vou encontrá-lo às cinco na estação. → ５時に駅で会うことになっている。
+- produção: É que eu queria chegar até as 7 horas... → ７時までに着きたいんだけど。
+- produção: Em algum lugar agora devem ser cinco horas. → どこかは今五時だろう。
+- produção: Este ônibus vai até o museu? → このバスは美術館まで行きますか。
+- produção: Onde eu troco de trem? → どこで乗り換えるのでしょうか。
+- produção: Quanto tempo leva de ônibus? → バスでどのくらいかかりますか。
+- produção: Onde eu compro a passagem? → 切符はどこで買うのですか。
+- produção: Chame um táxi, por favor. → タクシーを呼んで下さい。
+- produção: Onde fica o banheiro? → トイレはどこですか。
+- produção: Onde fica a estação? → 駅はどこですか。
+- produção: A relação entre o ar e o ser humano é igual à relação entre a água e o peixe. → 空気と人間との関係は水と魚との関係と同じだ。
+- produção: Nunca na vida trabalhei em restaurante. → レストランで働いたことなど一度もない。
+- produção: Hoje à noite não posso ir ao restaurante com você. → 今晩あなたと一緒にレストランにいけません。
+- produção: Pode juntar tudo numa conta só, por favor. → 一緒に勘定して下さい。
+- produção: Tinha um pouco de água no fundo da garrafa. → ビンの底には水が少し残っていた。
 
 </details>
 
@@ -718,7 +949,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 3
 
-### `*` · camada C · hash `394834af656766f8`
+### `*` · camada C · hash `3bf6b5f23a107c82`
 
 _Ledger:_ —
 
@@ -743,6 +974,20 @@ _Ledger:_ —
 - produção: Onde dá para telefonar? → 電話はどこでできる？
 - produção: Meu tio mora perto da escola. → おじは学校の近くに住んでいる。
 - produção: Eu vou para a escola de ônibus. → 私は、バスで学校に行く。
+- produção: De onde você tirou essa citação? → この引用はどこから持ってきたの？
+- produção: Meu pai costumava ir de ônibus para o trabalho. → 父は以前はバスで仕事に行ったものだ。
+- produção: Eu quero um livro para ler no trem. → 私は電車の中で読む本がほしい。
+- produção: As casas ficam perto umas das outras. → 家は互いに近くにある。
+- produção: Eu tenho que ir até a estação às três horas. → ３時に駅に行かなくちゃいけないんだよ。
+- produção: Está combinado que vou encontrá-lo às cinco na estação. → ５時に駅で会うことになっている。
+- produção: É que eu queria chegar até as 7 horas... → ７時までに着きたいんだけど。
+- produção: Em algum lugar agora devem ser cinco horas. → どこかは今五時だろう。
+- produção: Este ônibus vai até o museu? → このバスは美術館まで行きますか。
+- produção: Onde eu troco de trem? → どこで乗り換えるのでしょうか。
+- produção: Quanto tempo leva de ônibus? → バスでどのくらいかかりますか。
+- produção: Onde eu compro a passagem? → 切符はどこで買うのですか。
+- produção: Chame um táxi, por favor. → タクシーを呼んで下さい。
+- produção: Onde fica o banheiro? → トイレはどこですか。
 
 </details>
 
@@ -752,7 +997,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 4
 
-### `*` · camada C · hash `844a5513659427b6`
+### `*` · camada C · hash `7dd4a3519484ff9e`
 
 _Ledger:_ —
 
@@ -777,6 +1022,20 @@ _Ledger:_ —
 - produção: Esqueci o guarda-chuva no trem. → 電車のなかに傘を忘れてきた。
 - produção: Você pretende ir de trem? Ou de carro? → 電車で行くつもりなの？それとも車？
 - produção: Aonde você pretende ir durante as férias? → 休み中にどこへいくつもりですか。
+- produção: Tem alguma agência de banco japonês aqui perto? → この近くに日本の銀行の支店はありますか。
+- produção: Esta ponte foi construída há dois anos. → この橋は2年前に建設された。
+- produção: Onde eu estou neste mapa? → この地図上では僕はどこにいますか？
+- produção: Onde dá para telefonar? → 電話はどこでできる？
+- produção: Meu tio mora perto da escola. → おじは学校の近くに住んでいる。
+- produção: Eu vou para a escola de ônibus. → 私は、バスで学校に行く。
+- produção: De onde você tirou essa citação? → この引用はどこから持ってきたの？
+- produção: Meu pai costumava ir de ônibus para o trabalho. → 父は以前はバスで仕事に行ったものだ。
+- produção: Eu quero um livro para ler no trem. → 私は電車の中で読む本がほしい。
+- produção: As casas ficam perto umas das outras. → 家は互いに近くにある。
+- produção: Eu tenho que ir até a estação às três horas. → ３時に駅に行かなくちゃいけないんだよ。
+- produção: Está combinado que vou encontrá-lo às cinco na estação. → ５時に駅で会うことになっている。
+- produção: É que eu queria chegar até as 7 horas... → ７時までに着きたいんだけど。
+- produção: Em algum lugar agora devem ser cinco horas. → どこかは今五時だろう。
 
 </details>
 
@@ -786,7 +1045,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 5
 
-### `*` · camada C · hash `6973f3b392556204`
+### `*` · camada C · hash `9ca67d5b849582da`
 
 _Ledger:_ —
 
@@ -811,6 +1070,20 @@ _Ledger:_ —
 - produção: Prefiro ir a pé a pegar ônibus. → バスよりむしろ歩きたい。
 - produção: As duas estradas se cruzam ali. → 二本の道はそこでクロスしている。
 - produção: Qual é a capital dos Estados Unidos? → アメリカの首都はどこですか。
+- produção: O ônibus sai em cinco minutos. → バスは五分後に発車します。
+- produção: Andar a pé deve ser mais rápido do que pegar um táxi. → タクシーよりも歩くほうがはやいだろう。
+- produção: Está sendo construída uma ponte nova sobre o rio. → 川には新しい橋が建設されています。
+- produção: Esqueci o guarda-chuva no trem. → 電車のなかに傘を忘れてきた。
+- produção: Você pretende ir de trem? Ou de carro? → 電車で行くつもりなの？それとも車？
+- produção: Aonde você pretende ir durante as férias? → 休み中にどこへいくつもりですか。
+- produção: Tem alguma agência de banco japonês aqui perto? → この近くに日本の銀行の支店はありますか。
+- produção: Esta ponte foi construída há dois anos. → この橋は2年前に建設された。
+- produção: Onde eu estou neste mapa? → この地図上では僕はどこにいますか？
+- produção: Onde dá para telefonar? → 電話はどこでできる？
+- produção: Meu tio mora perto da escola. → おじは学校の近くに住んでいる。
+- produção: Eu vou para a escola de ônibus. → 私は、バスで学校に行く。
+- produção: De onde você tirou essa citação? → この引用はどこから持ってきたの？
+- produção: Meu pai costumava ir de ônibus para o trabalho. → 父は以前はバスで仕事に行ったものだ。
 
 </details>
 
@@ -820,7 +1093,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 6
 
-### `*` · camada C · hash `df4d30a6002c1a9d`
+### `*` · camada C · hash `3fbe8970da4850bd`
 
 _Ledger:_ —
 
@@ -845,6 +1118,22 @@ _Ledger:_ —
 - produção: Onde fica o banheiro? → トイレはどこですか。
 - produção: Eu gostaria de fazer uma reserva para o jantar de amanhã à noite. → 明日の夜のディナーの予約をお願いします。
 - produção: Achei a cidade no mapa. → 地図で町の位置を見つけた。
+- produção: O gato correu na frente do ônibus e foi atropelado. → 猫がバスの前に走ってきて轢かれた。
+- produção: Em que empresa você trabalha? → どこの会社にお勤めですか。
+- produção: O Tom deve ter perdido o trem. É que ele ainda não chegou. → トムは電車に乗り遅れたのかも。まだ来てないんだもん。
+- produção: Andar de táxi é luxo para mim. → タクシーに乗るのは私には贅沢だ。
+- produção: Ele perdeu o trem por um minuto. → 彼は一分の差で電車に乗り遅れた。
+- produção: Prefiro ir a pé a pegar ônibus. → バスよりむしろ歩きたい。
+- produção: As duas estradas se cruzam ali. → 二本の道はそこでクロスしている。
+- produção: Qual é a capital dos Estados Unidos? → アメリカの首都はどこですか。
+- produção: O ônibus sai em cinco minutos. → バスは五分後に発車します。
+- produção: Andar a pé deve ser mais rápido do que pegar um táxi. → タクシーよりも歩くほうがはやいだろう。
+- produção: Está sendo construída uma ponte nova sobre o rio. → 川には新しい橋が建設されています。
+- produção: Esqueci o guarda-chuva no trem. → 電車のなかに傘を忘れてきた。
+- produção: Você pretende ir de trem? Ou de carro? → 電車で行くつもりなの？それとも車？
+- produção: Aonde você pretende ir durante as férias? → 休み中にどこへいくつもりですか。
+- produção: Tem alguma agência de banco japonês aqui perto? → この近くに日本の銀行の支店はありますか。
+- produção: Esta ponte foi construída há dois anos. → この橋は2年前に建設された。
 
 </details>
 
@@ -854,7 +1143,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 1
 
-### `*` · camada C · hash `2ae5fc82ee9fbb12`
+### `*` · camada C · hash `40a44981ddccf743`
 
 _Ledger:_ —
 
@@ -879,6 +1168,22 @@ _Ledger:_ —
 - produção: Eu perdi meu passaporte. → パスポートをなくしました。
 - produção: Eu queria ver o quarto. → 部屋を見てみたいです。
 - produção: Vocês têm quarto para duas pessoas? → ２人部屋はありますか。
+- produção: Chame a polícia, por favor. → 警察を呼んで下さい。
+- produção: Eu tenho uma reserva. → 予約してあります。
+- produção: Não está saindo água quente. → お湯が出ません。
+- produção: Onde fica o banheiro? → トイレはどこですか。
+- produção: Eu gostaria de fazer uma reserva para o jantar de amanhã à noite. → 明日の夜のディナーの予約をお願いします。
+- produção: Achei a cidade no mapa. → 地図で町の位置を見つけた。
+- produção: O gato correu na frente do ônibus e foi atropelado. → 猫がバスの前に走ってきて轢かれた。
+- produção: Em que empresa você trabalha? → どこの会社にお勤めですか。
+- produção: O Tom deve ter perdido o trem. É que ele ainda não chegou. → トムは電車に乗り遅れたのかも。まだ来てないんだもん。
+- produção: Andar de táxi é luxo para mim. → タクシーに乗るのは私には贅沢だ。
+- produção: Ele perdeu o trem por um minuto. → 彼は一分の差で電車に乗り遅れた。
+- produção: Prefiro ir a pé a pegar ônibus. → バスよりむしろ歩きたい。
+- produção: As duas estradas se cruzam ali. → 二本の道はそこでクロスしている。
+- produção: Qual é a capital dos Estados Unidos? → アメリカの首都はどこですか。
+- produção: O ônibus sai em cinco minutos. → バスは五分後に発車します。
+- produção: Andar a pé deve ser mais rápido do que pegar um táxi. → タクシーよりも歩くほうがはやいだろう。
 
 </details>
 
@@ -888,7 +1193,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 2
 
-### `*` · camada C · hash `d22b84b9c28d3f8f`
+### `*` · camada C · hash `151c90cf9a1765fa`
 
 _Ledger:_ —
 
@@ -913,6 +1218,22 @@ _Ledger:_ —
 - produção: Entrem no quarto um de cada vez, por favor. → 部屋の中に一人づつ入ってください。
 - produção: Não cabem 50 pessoas nesta sala. → この部屋に５０人は入り切れない。
 - produção: Entre no quarto, por favor. → 部屋の中に入ってください。
+- produção: Este quarto pega bastante sol. → この部屋は良く日が当たる。
+- produção: Vocês podem guardar minha bagagem? → 荷物を預かって欲しいのですが。
+- produção: Tem um quarto mais barato? → もっと安い部屋はありますか。
+- produção: Eu perdi meu passaporte. → パスポートをなくしました。
+- produção: Eu queria ver o quarto. → 部屋を見てみたいです。
+- produção: Vocês têm quarto para duas pessoas? → ２人部屋はありますか。
+- produção: Chame a polícia, por favor. → 警察を呼んで下さい。
+- produção: Eu tenho uma reserva. → 予約してあります。
+- produção: Não está saindo água quente. → お湯が出ません。
+- produção: Onde fica o banheiro? → トイレはどこですか。
+- produção: Eu gostaria de fazer uma reserva para o jantar de amanhã à noite. → 明日の夜のディナーの予約をお願いします。
+- produção: Achei a cidade no mapa. → 地図で町の位置を見つけた。
+- produção: O gato correu na frente do ônibus e foi atropelado. → 猫がバスの前に走ってきて轢かれた。
+- produção: Em que empresa você trabalha? → どこの会社にお勤めですか。
+- produção: O Tom deve ter perdido o trem. É que ele ainda não chegou. → トムは電車に乗り遅れたのかも。まだ来てないんだもん。
+- produção: Andar de táxi é luxo para mim. → タクシーに乗るのは私には贅沢だ。
 
 </details>
 
@@ -922,7 +1243,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 3
 
-### `*` · camada C · hash `4894b93a50ff9de4`
+### `*` · camada C · hash `7bdb6f872d2a9b23`
 
 _Ledger:_ —
 
@@ -947,6 +1268,22 @@ _Ledger:_ —
 - produção: Acho que vou dormir. → 寝ようと思う。
 - produção: Durmo sem roupa. → 裸で寝ます。
 - produção: Tenho que ir dormir. → 寝なくちゃ。
+- produção: De manhã, posso tomar banho de chuveiro? → 朝、シャワーを使ってもいいですか。
+- produção: Divido o quarto com a minha irmã mais nova. → 私は妹と共同で部屋を使っている。
+- produção: Quase não havia crianças no quarto. → 部屋にはほとんど子供がいなかった。
+- produção: Entrem no quarto um de cada vez, por favor. → 部屋の中に一人づつ入ってください。
+- produção: Não cabem 50 pessoas nesta sala. → この部屋に５０人は入り切れない。
+- produção: Entre no quarto, por favor. → 部屋の中に入ってください。
+- produção: Este quarto pega bastante sol. → この部屋は良く日が当たる。
+- produção: Vocês podem guardar minha bagagem? → 荷物を預かって欲しいのですが。
+- produção: Tem um quarto mais barato? → もっと安い部屋はありますか。
+- produção: Eu perdi meu passaporte. → パスポートをなくしました。
+- produção: Eu queria ver o quarto. → 部屋を見てみたいです。
+- produção: Vocês têm quarto para duas pessoas? → ２人部屋はありますか。
+- produção: Chame a polícia, por favor. → 警察を呼んで下さい。
+- produção: Eu tenho uma reserva. → 予約してあります。
+- produção: Não está saindo água quente. → お湯が出ません。
+- produção: Onde fica o banheiro? → トイレはどこですか。
 
 </details>
 
@@ -956,7 +1293,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 4
 
-### `*` · camada C · hash `318678426b4c3edd`
+### `*` · camada C · hash `64a4042780139eca`
 
 _Ledger:_ —
 
@@ -981,6 +1318,22 @@ _Ledger:_ —
 - produção: Meu irmão mais velho toma banho de chuveiro todos os dias. → 兄は毎日シャワーを浴びます。
 - produção: Ela estava em pé no meio da sala. → 彼女はその部屋の中央に立っていた。
 - produção: No hotel há muitos estrangeiros. → ホテルには外国人が多い。
+- produção: Minha mãe trouxe ele para o meu quarto. → 母は彼を私の部屋につれてきた。
+- produção: Você poderia reservar um quarto para mim? → 部屋を取ってくれませんか。
+- produção: Depois que minha esposa foi dormir, trabalhei no escritório. → 妻が寝た後、書斎で仕事をした。
+- produção: Acho que vou dormir. → 寝ようと思う。
+- produção: Durmo sem roupa. → 裸で寝ます。
+- produção: Tenho que ir dormir. → 寝なくちゃ。
+- produção: De manhã, posso tomar banho de chuveiro? → 朝、シャワーを使ってもいいですか。
+- produção: Divido o quarto com a minha irmã mais nova. → 私は妹と共同で部屋を使っている。
+- produção: Quase não havia crianças no quarto. → 部屋にはほとんど子供がいなかった。
+- produção: Entrem no quarto um de cada vez, por favor. → 部屋の中に一人づつ入ってください。
+- produção: Não cabem 50 pessoas nesta sala. → この部屋に５０人は入り切れない。
+- produção: Entre no quarto, por favor. → 部屋の中に入ってください。
+- produção: Este quarto pega bastante sol. → この部屋は良く日が当たる。
+- produção: Vocês podem guardar minha bagagem? → 荷物を預かって欲しいのですが。
+- produção: Tem um quarto mais barato? → もっと安い部屋はありますか。
+- produção: Eu perdi meu passaporte. → パスポートをなくしました。
 
 </details>
 
@@ -990,7 +1343,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 5
 
-### `*` · camada C · hash `9358dc023094c2f9`
+### `*` · camada C · hash `ca0d44922372472a`
 
 _Ledger:_ —
 
@@ -1015,6 +1368,22 @@ _Ledger:_ —
 - produção: Ele saiu do quarto furioso. → 彼は怒って部屋を飛び出した。
 - produção: Ele ficou só dormindo na cama o dia inteiro. → 彼は一日中ベッドで寝てばかりいた。
 - produção: Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo. → 最近あまり寝ていないので今日は早く寝ようと思う。
+- produção: Ele sai do hotel de manhã, depois das quatro. → 彼がホテルを朝、４時過ぎに出発する
+- produção: Ela mobiliou o quarto com móveis bonitos. → 彼女は部屋に美しい家具を備えた。
+- produção: Aquele hotel era luxuoso além do que dá para descrever. → そのホテルは言葉で表現できないほど豪華だった。
+- produção: Meu irmão mais velho toma banho de chuveiro todos os dias. → 兄は毎日シャワーを浴びます。
+- produção: Ela estava em pé no meio da sala. → 彼女はその部屋の中央に立っていた。
+- produção: No hotel há muitos estrangeiros. → ホテルには外国人が多い。
+- produção: Minha mãe trouxe ele para o meu quarto. → 母は彼を私の部屋につれてきた。
+- produção: Você poderia reservar um quarto para mim? → 部屋を取ってくれませんか。
+- produção: Depois que minha esposa foi dormir, trabalhei no escritório. → 妻が寝た後、書斎で仕事をした。
+- produção: Acho que vou dormir. → 寝ようと思う。
+- produção: Durmo sem roupa. → 裸で寝ます。
+- produção: Tenho que ir dormir. → 寝なくちゃ。
+- produção: De manhã, posso tomar banho de chuveiro? → 朝、シャワーを使ってもいいですか。
+- produção: Divido o quarto com a minha irmã mais nova. → 私は妹と共同で部屋を使っている。
+- produção: Quase não havia crianças no quarto. → 部屋にはほとんど子供がいなかった。
+- produção: Entrem no quarto um de cada vez, por favor. → 部屋の中に一人づつ入ってください。
 
 </details>
 
@@ -1024,7 +1393,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 6
 
-### `*` · camada C · hash `1fe9966b0856ea8e`
+### `*` · camada C · hash `152f6f534736999e`
 
 _Ledger:_ —
 
@@ -1049,6 +1418,20 @@ _Ledger:_ —
 - produção: Depois que minha esposa foi dormir, trabalhei no escritório. → 妻が寝た後、書斎で仕事をした。
 - produção: Em que empresa você trabalha? → どこの会社にお勤めですか。
 - produção: Meu tio mora perto da escola. → おじは学校の近くに住んでいる。
+- produção: Meu pai costumava ir de ônibus para o trabalho. → 父は以前はバスで仕事に行ったものだ。
+- produção: Fui tomar uma cerveja com uns amigos. → 私は友達とビールを飲みに行った。
+- produção: Eu gosto de beber água mineral natural. → 天然のミネラルウォーターを飲むのが好きです。
+- produção: Arroz ou pão, de qual você gosta mais? → ご飯とパン、どっちが好き？
+- produção: Como você se chama? → お名前は何ですか？
+- produção: A chave eu já devolvi. → 鍵はもう戻したよ。
+- produção: Estou pensando em dormir mais cedo hoje à noite. → 今夜は早めに寝ようと思う。
+- produção: Meus companheiros estavam todos dormindo. → 仲間がすべて寝ていた。
+- produção: Os livros deste quarto não são meus. → この部屋の本は私の物ではありません。
+- produção: Esta é a chave que abre essa caixa. → これはその箱をあける鍵です。
+- produção: Este banheiro é proibido para alunos. → このトイレは生徒使用禁止です。
+- produção: Ele saiu do quarto furioso. → 彼は怒って部屋を飛び出した。
+- produção: Ele ficou só dormindo na cama o dia inteiro. → 彼は一日中ベッドで寝てばかりいた。
+- produção: Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo. → 最近あまり寝ていないので今日は早く寝ようと思う。
 
 </details>
 
@@ -1058,7 +1441,7 @@ _Ledger:_ —
 
 > Falar de você, parte 1
 
-### `*` · camada C · hash `036fceff5b8f4671`
+### `*` · camada C · hash `c3f0e03c47ccafb7`
 
 _Ledger:_ —
 
@@ -1083,6 +1466,20 @@ _Ledger:_ —
 - produção: Eu gosto de comida japonesa. → 私は日本の料理が好きです。
 - produção: De onde você é? → ご出身はどちらですか。
 - produção: Eu moro no interior. → 田舎に住んでいます。
+- produção: Você trabalha com o quê? → お仕事は何ですか。
+- produção: Você tem família? → ご家族はいますか。
+- produção: Minha família tem quatro pessoas. → 家族は４人です。
+- produção: Depois que minha esposa foi dormir, trabalhei no escritório. → 妻が寝た後、書斎で仕事をした。
+- produção: Em que empresa você trabalha? → どこの会社にお勤めですか。
+- produção: Meu tio mora perto da escola. → おじは学校の近くに住んでいる。
+- produção: Meu pai costumava ir de ônibus para o trabalho. → 父は以前はバスで仕事に行ったものだ。
+- produção: Fui tomar uma cerveja com uns amigos. → 私は友達とビールを飲みに行った。
+- produção: Eu gosto de beber água mineral natural. → 天然のミネラルウォーターを飲むのが好きです。
+- produção: Arroz ou pão, de qual você gosta mais? → ご飯とパン、どっちが好き？
+- produção: Como você se chama? → お名前は何ですか？
+- produção: A chave eu já devolvi. → 鍵はもう戻したよ。
+- produção: Estou pensando em dormir mais cedo hoje à noite. → 今夜は早めに寝ようと思う。
+- produção: Meus companheiros estavam todos dormindo. → 仲間がすべて寝ていた。
 
 </details>
 
@@ -1092,7 +1489,7 @@ _Ledger:_ —
 
 > Falar de você, parte 2
 
-### `*` · camada C · hash `78d55781b7b35308`
+### `*` · camada C · hash `78efe91da0f55a4d`
 
 _Ledger:_ —
 
@@ -1117,6 +1514,20 @@ _Ledger:_ —
 - produção: Cada um de nós tem o seu próprio hobby. → 私たち一人一人が自分の趣味を持っています。
 - produção: Ele diz com clareza a sua própria opinião para os professores e os amigos. → 彼が先生や友達にはっきり自分の意見を言う
 - produção: Essa empresa é conhecida na área de telecomunicações. → この会社は通信部門でよく知られている。
+- produção: Até uma criancinha sabe esse nome. → 小さな子どもでもその名前を知っている。
+- produção: Eu conheço o nome desse autor. → 私はその著者の名前を知っています。
+- produção: Terminar esse trabalho é dever seu. → その仕事を終えるのは君の義務だ。
+- produção: Eu gosto de comida japonesa. → 私は日本の料理が好きです。
+- produção: De onde você é? → ご出身はどちらですか。
+- produção: Eu moro no interior. → 田舎に住んでいます。
+- produção: Você trabalha com o quê? → お仕事は何ですか。
+- produção: Você tem família? → ご家族はいますか。
+- produção: Minha família tem quatro pessoas. → 家族は４人です。
+- produção: Depois que minha esposa foi dormir, trabalhei no escritório. → 妻が寝た後、書斎で仕事をした。
+- produção: Em que empresa você trabalha? → どこの会社にお勤めですか。
+- produção: Meu tio mora perto da escola. → おじは学校の近くに住んでいる。
+- produção: Meu pai costumava ir de ônibus para o trabalho. → 父は以前はバスで仕事に行ったものだ。
+- produção: Fui tomar uma cerveja com uns amigos. → 私は友達とビールを飲みに行った。
 
 </details>
 
@@ -1126,7 +1537,7 @@ _Ledger:_ —
 
 > Falar de você, parte 3
 
-### `*` · camada C · hash `ca53ddb1e84274b8`
+### `*` · camada C · hash `0e7eda29f2510491`
 
 _Ledger:_ —
 
@@ -1151,6 +1562,20 @@ _Ledger:_ —
 - produção: O trabalho já está quase terminado. → 仕事はほとんど終わった。
 - produção: A maioria dos meus amigos já casou. → 友達の大半はもう結婚してるよ。
 - produção: Homem gosta de conversar. → 男はしゃべるのが好き。
+- produção: Acabei de chegar do trabalho. → 仕事から帰ったばかりよ。
+- produção: Meu pai faltou no trabalho ontem. → 父は昨日仕事を休んだ。
+- produção: Preciso de um emprego. → 仕事が必要だ。
+- produção: Cada um de nós tem o seu próprio hobby. → 私たち一人一人が自分の趣味を持っています。
+- produção: Ele diz com clareza a sua própria opinião para os professores e os amigos. → 彼が先生や友達にはっきり自分の意見を言う
+- produção: Essa empresa é conhecida na área de telecomunicações. → この会社は通信部門でよく知られている。
+- produção: Até uma criancinha sabe esse nome. → 小さな子どもでもその名前を知っている。
+- produção: Eu conheço o nome desse autor. → 私はその著者の名前を知っています。
+- produção: Terminar esse trabalho é dever seu. → その仕事を終えるのは君の義務だ。
+- produção: Eu gosto de comida japonesa. → 私は日本の料理が好きです。
+- produção: De onde você é? → ご出身はどちらですか。
+- produção: Eu moro no interior. → 田舎に住んでいます。
+- produção: Você trabalha com o quê? → お仕事は何ですか。
+- produção: Você tem família? → ご家族はいますか。
 
 </details>
 
@@ -1160,7 +1585,7 @@ _Ledger:_ —
 
 > Falar de você, parte 4
 
-### `*` · camada C · hash `794c55a54e251c15`
+### `*` · camada C · hash `670fdbfde8ab3b25`
 
 _Ledger:_ —
 
@@ -1185,6 +1610,20 @@ _Ledger:_ —
 - produção: Ele decidiu passar os negócios para o filho. → 彼は息子に仕事を譲ることに決めました。
 - produção: Fazer filme é um trabalho que deixa as pessoas empolgadas. → 映画作りは人をわくわくさせる仕事だ。
 - produção: Para alguém tão jovem, ele fez um trabalho muito bom. → 彼は若いわりにはとてもいい仕事をした。
+- produção: Hoje passou na TV uma reportagem sobre o trabalho dos seguranças. → ＳＰの仕事の様子が今日テレビで放送されました
+- produção: Esta empresa fabrica televisores. → この会社はテレビを製造しています。
+- produção: Neste país é difícil arrumar emprego. → この国で仕事に就くのは難しいよ。
+- produção: O trabalho já está quase terminado. → 仕事はほとんど終わった。
+- produção: A maioria dos meus amigos já casou. → 友達の大半はもう結婚してるよ。
+- produção: Homem gosta de conversar. → 男はしゃべるのが好き。
+- produção: Acabei de chegar do trabalho. → 仕事から帰ったばかりよ。
+- produção: Meu pai faltou no trabalho ontem. → 父は昨日仕事を休んだ。
+- produção: Preciso de um emprego. → 仕事が必要だ。
+- produção: Cada um de nós tem o seu próprio hobby. → 私たち一人一人が自分の趣味を持っています。
+- produção: Ele diz com clareza a sua própria opinião para os professores e os amigos. → 彼が先生や友達にはっきり自分の意見を言う
+- produção: Essa empresa é conhecida na área de telecomunicações. → この会社は通信部門でよく知られている。
+- produção: Até uma criancinha sabe esse nome. → 小さな子どもでもその名前を知っている。
+- produção: Eu conheço o nome desse autor. → 私はその著者の名前を知っています。
 
 </details>
 
@@ -1194,7 +1633,7 @@ _Ledger:_ —
 
 > Falar de você, parte 5
 
-### `*` · camada C · hash `d3993f9a7bf9a818`
+### `*` · camada C · hash `578d1c2315228c0a`
 
 _Ledger:_ —
 
@@ -1219,6 +1658,20 @@ _Ledger:_ —
 - produção: De agora em diante, vou procurar ajudar você no trabalho. → 今後、あなたの仕事を手伝うようにしましょう。
 - produção: Os japoneses gostam de viajar em grupo. → 日本人は集団で旅行するのが好きだ。
 - produção: Ele viajou com as despesas pagas pela empresa. → 彼は会社の費用で旅行した。
+- produção: Você gosta de viajar? → 旅行することが好きですか。
+- produção: Cê é estudante? → お前は学生か？
+- produção: Eu gosto mais de anel de prata do que de ouro. → 金より銀の指輪の方が好きです。
+- produção: Ele decidiu passar os negócios para o filho. → 彼は息子に仕事を譲ることに決めました。
+- produção: Fazer filme é um trabalho que deixa as pessoas empolgadas. → 映画作りは人をわくわくさせる仕事だ。
+- produção: Para alguém tão jovem, ele fez um trabalho muito bom. → 彼は若いわりにはとてもいい仕事をした。
+- produção: Hoje passou na TV uma reportagem sobre o trabalho dos seguranças. → ＳＰの仕事の様子が今日テレビで放送されました
+- produção: Esta empresa fabrica televisores. → この会社はテレビを製造しています。
+- produção: Neste país é difícil arrumar emprego. → この国で仕事に就くのは難しいよ。
+- produção: O trabalho já está quase terminado. → 仕事はほとんど終わった。
+- produção: A maioria dos meus amigos já casou. → 友達の大半はもう結婚してるよ。
+- produção: Homem gosta de conversar. → 男はしゃべるのが好き。
+- produção: Acabei de chegar do trabalho. → 仕事から帰ったばかりよ。
+- produção: Meu pai faltou no trabalho ontem. → 父は昨日仕事を休んだ。
 
 </details>
 
@@ -1228,7 +1681,7 @@ _Ledger:_ —
 
 > Falar de você, parte 6
 
-### `*` · camada C · hash `a3f35e56b7c3a197`
+### `*` · camada C · hash `fd62cc985a7f6880`
 
 _Ledger:_ —
 
@@ -1253,6 +1706,20 @@ _Ledger:_ —
 - produção: Hoje passou na TV uma reportagem sobre o trabalho dos seguranças. → ＳＰの仕事の様子が今日テレビで放送されました
 - produção: Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo. → 最近あまり寝ていないので今日は早く寝ようと思う。
 - produção: Meu irmão mais velho toma banho de chuveiro todos os dias. → 兄は毎日シャワーを浴びます。
+- produção: Está combinado que vou encontrá-lo às cinco na estação. → ５時に駅で会うことになっている。
+- produção: Hoje os peixes não estão mordendo a isca. → 今日は魚の食いが悪い。
+- produção: O jantar já está pronto, então a gente pode comer na hora que quiser. → 夕食の用意はできているから、いつでも食べたいときに食べられるよ。
+- produção: Não a vejo desde então. → それ以来彼女に会っていません。
+- produção: Muito obrigado por me lembrar da promessa. → 約束を思い出させてくれてどうもありがとう。
+- produção: Eu gostaria de fazer uma reserva para o jantar de amanhã à noite. → 明日の夜のディナーの予約をお願いします。
+- produção: Desculpe por não poder me encontrar com você hoje à noite. → 今晩お会いできなくてすみません。
+- produção: Desculpe. É que não tenho muito tempo. → ごめんなさい。時間があまりないんです。
+- produção: Não sei se vou ter tempo. → 時間があるか分かりません。
+- produção: Ele é ruim de gravar nomes. → 彼は名前を覚えるのが下手だ。
+- produção: Eu gosto de flores; por exemplo, gosto de rosas. → 私は花が好きで、たとえばばらが好きだ。
+- produção: De que tipo de flor você gosta? → どんな種類の花が好きですか。
+- produção: Esse grupo é formado por cinquenta alunos no total. → その団体は全部で５０名の学生から成っている。
+- produção: Essa empresa tem filial em todas as cidades grandes. → その会社は大都市全部に支店がある。
 
 </details>
 
@@ -1262,7 +1729,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 1
 
-### `*` · camada C · hash `1811e6dc4904b865`
+### `*` · camada C · hash `062ca12ced6d0e6e`
 
 _Ledger:_ —
 
@@ -1287,6 +1754,20 @@ _Ledger:_ —
 - produção: O filme começa a que horas? → 映画は何時からですか。
 - produção: Você sabe que horas são? → 今何時か分かりますか。
 - produção: Amanhã a gente se encontra na estação. → 明日駅で会いましょう。
+- produção: Fica aberto até que horas? → 何時まで開いてますか。
+- produção: Vamos nos encontrar à uma hora. → １時に会いましょう。
+- produção: Depois de amanhã é terça-feira. → 明後日は火曜日です。
+- produção: Hoje passou na TV uma reportagem sobre o trabalho dos seguranças. → ＳＰの仕事の様子が今日テレビで放送されました
+- produção: Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo. → 最近あまり寝ていないので今日は早く寝ようと思う。
+- produção: Meu irmão mais velho toma banho de chuveiro todos os dias. → 兄は毎日シャワーを浴びます。
+- produção: Está combinado que vou encontrá-lo às cinco na estação. → ５時に駅で会うことになっている。
+- produção: Hoje os peixes não estão mordendo a isca. → 今日は魚の食いが悪い。
+- produção: O jantar já está pronto, então a gente pode comer na hora que quiser. → 夕食の用意はできているから、いつでも食べたいときに食べられるよ。
+- produção: Não a vejo desde então. → それ以来彼女に会っていません。
+- produção: Muito obrigado por me lembrar da promessa. → 約束を思い出させてくれてどうもありがとう。
+- produção: Eu gostaria de fazer uma reserva para o jantar de amanhã à noite. → 明日の夜のディナーの予約をお願いします。
+- produção: Desculpe por não poder me encontrar com você hoje à noite. → 今晩お会いできなくてすみません。
+- produção: Desculpe. É que não tenho muito tempo. → ごめんなさい。時間があまりないんです。
 
 </details>
 
@@ -1296,7 +1777,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 2
 
-### `*` · camada C · hash `eccc7fb79f194a18`
+### `*` · camada C · hash `7996370b4a196993`
 
 _Ledger:_ —
 
@@ -1321,6 +1802,20 @@ _Ledger:_ —
 - produção: Será que amanhã vai chover? → 明日は雨だろうか。
 - produção: Será que amanhã vai chover? → 明日は雨かしら。
 - produção: Amanhã preciso me encontrar com você sobre isso. → 明日このことについてお目にかからなくてはと思います。
+- produção: Ano que vem eu devo ter a oportunidade de encontrá-lo. → 来年はお目にかかれるでしょう。
+- produção: Por mais ocupada que ela esteja, pinta todo dia. → 彼女はどんなに忙しくても毎日絵を書く。
+- produção: É só depois de conhecer alguém que você entende de verdade como a pessoa é. → 会ってはじめて本当に人柄がわかるものだ。
+- produção: O filme começa a que horas? → 映画は何時からですか。
+- produção: Você sabe que horas são? → 今何時か分かりますか。
+- produção: Amanhã a gente se encontra na estação. → 明日駅で会いましょう。
+- produção: Fica aberto até que horas? → 何時まで開いてますか。
+- produção: Vamos nos encontrar à uma hora. → １時に会いましょう。
+- produção: Depois de amanhã é terça-feira. → 明後日は火曜日です。
+- produção: Hoje passou na TV uma reportagem sobre o trabalho dos seguranças. → ＳＰの仕事の様子が今日テレビで放送されました
+- produção: Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo. → 最近あまり寝ていないので今日は早く寝ようと思う。
+- produção: Meu irmão mais velho toma banho de chuveiro todos os dias. → 兄は毎日シャワーを浴びます。
+- produção: Está combinado que vou encontrá-lo às cinco na estação. → ５時に駅で会うことになっている。
+- produção: Hoje os peixes não estão mordendo a isca. → 今日は魚の食いが悪い。
 
 </details>
 
@@ -1330,7 +1825,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 3
 
-### `*` · camada C · hash `66bf1304a926de36`
+### `*` · camada C · hash `cbc30e0fba0e8c2a`
 
 _Ledger:_ —
 
@@ -1355,6 +1850,20 @@ _Ledger:_ —
 - produção: Na loja de departamentos dá para ver uma grande exposição a qualquer hora. → デパートではいつでも大きな展覧会を見られる。
 - produção: Ano que vem eu faço 17 anos. → 来年で１７歳になるんだ。
 - produção: Eu talvez morra amanhã. → 私は明日死ぬかもしれない。
+- produção: Ele vem visitar o amigo doente todo dia. → 彼は病気の友を毎日見舞いに来る。
+- produção: Quero que você me dê a resposta ainda hoje. → 今日中に答えを出してほしい。
+- produção: Qual é a data dessa carta? → その手紙の日付はいつですか。
+- produção: Será que amanhã vai chover? → 明日は雨だろうか。
+- produção: Será que amanhã vai chover? → 明日は雨かしら。
+- produção: Amanhã preciso me encontrar com você sobre isso. → 明日このことについてお目にかからなくてはと思います。
+- produção: Ano que vem eu devo ter a oportunidade de encontrá-lo. → 来年はお目にかかれるでしょう。
+- produção: Por mais ocupada que ela esteja, pinta todo dia. → 彼女はどんなに忙しくても毎日絵を書く。
+- produção: É só depois de conhecer alguém que você entende de verdade como a pessoa é. → 会ってはじめて本当に人柄がわかるものだ。
+- produção: O filme começa a que horas? → 映画は何時からですか。
+- produção: Você sabe que horas são? → 今何時か分かりますか。
+- produção: Amanhã a gente se encontra na estação. → 明日駅で会いましょう。
+- produção: Fica aberto até que horas? → 何時まで開いてますか。
+- produção: Vamos nos encontrar à uma hora. → １時に会いましょう。
 
 </details>
 
@@ -1364,7 +1873,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 4
 
-### `*` · camada C · hash `2f80d83d1225b11f`
+### `*` · camada C · hash `8c3a9d8b5fcd40c0`
 
 _Ledger:_ —
 
@@ -1389,6 +1898,20 @@ _Ledger:_ —
 - produção: Hoje estou com um pouco de dor de cabeça. → 今日はちょっと頭が痛いの。
 - produção: Hoje minha cabeça não está funcionando bem. → 今日は頭がさえません。
 - produção: "Quando você acorda?" "Às oito da manhã." → 「いつ起きるの？」「朝八時だよ」
+- produção: Conheci uma pessoa chamada Kimura na festa. → 木村さんという人にパーティーで会ったよ。
+- produção: Encontrar com ele a gente deixa para a próxima vez. → 彼に会うのはこの次にしましょう。
+- produção: Qual é mesmo a próxima aula? → 次の時間は何だっけ？
+- produção: Na loja de departamentos dá para ver uma grande exposição a qualquer hora. → デパートではいつでも大きな展覧会を見られる。
+- produção: Ano que vem eu faço 17 anos. → 来年で１７歳になるんだ。
+- produção: Eu talvez morra amanhã. → 私は明日死ぬかもしれない。
+- produção: Ele vem visitar o amigo doente todo dia. → 彼は病気の友を毎日見舞いに来る。
+- produção: Quero que você me dê a resposta ainda hoje. → 今日中に答えを出してほしい。
+- produção: Qual é a data dessa carta? → その手紙の日付はいつですか。
+- produção: Será que amanhã vai chover? → 明日は雨だろうか。
+- produção: Será que amanhã vai chover? → 明日は雨かしら。
+- produção: Amanhã preciso me encontrar com você sobre isso. → 明日このことについてお目にかからなくてはと思います。
+- produção: Ano que vem eu devo ter a oportunidade de encontrá-lo. → 来年はお目にかかれるでしょう。
+- produção: Por mais ocupada que ela esteja, pinta todo dia. → 彼女はどんなに忙しくても毎日絵を書く。
 
 </details>
 
@@ -1398,7 +1921,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 5
 
-### `*` · camada C · hash `cb485f1f8d4c0947`
+### `*` · camada C · hash `8b2f5f3975d1f605`
 
 _Ledger:_ —
 
@@ -1423,6 +1946,20 @@ _Ledger:_ —
 - produção: Hoje está muito quente. → 今日は非常に暑い。
 - produção: Explicar para você por que não vai dar certo ia levar um tempão. → 何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ。
 - produção: Se você continua todos os dias, isso vira força. → 毎日続けると力になる。
+- produção: Como caminhamos por muito tempo, ficamos exaustos. → 長い時間歩いたので疲れきった。
+- produção: Tive bastante tempo para conversar com os amigos. → 友人たちと話す時間がたくさんあった。
+- produção: Esperei mais de duas horas. → 私は二時間以上も待った。
+- produção: Hoje estou com um pouco de dor de cabeça. → 今日はちょっと頭が痛いの。
+- produção: Hoje minha cabeça não está funcionando bem. → 今日は頭がさえません。
+- produção: "Quando você acorda?" "Às oito da manhã." → 「いつ起きるの？」「朝八時だよ」
+- produção: Conheci uma pessoa chamada Kimura na festa. → 木村さんという人にパーティーで会ったよ。
+- produção: Encontrar com ele a gente deixa para a próxima vez. → 彼に会うのはこの次にしましょう。
+- produção: Qual é mesmo a próxima aula? → 次の時間は何だっけ？
+- produção: Na loja de departamentos dá para ver uma grande exposição a qualquer hora. → デパートではいつでも大きな展覧会を見られる。
+- produção: Ano que vem eu faço 17 anos. → 来年で１７歳になるんだ。
+- produção: Eu talvez morra amanhã. → 私は明日死ぬかもしれない。
+- produção: Ele vem visitar o amigo doente todo dia. → 彼は病気の友を毎日見舞いに来る。
+- produção: Quero que você me dê a resposta ainda hoje. → 今日中に答えを出してほしい。
 
 </details>
 
@@ -1432,7 +1969,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 6
 
-### `*` · camada C · hash `ee0fbdc5f4eebb88`
+### `*` · camada C · hash `457367c8baf7be4f`
 
 _Ledger:_ —
 
@@ -1457,6 +1994,19 @@ _Ledger:_ —
 - produção: Hoje estou com um pouco de dor de cabeça. → 今日はちょっと頭が痛いの。
 - produção: Amanhã também pretendo ir à universidade. → 明日も大学へ行くつもりだよ。
 - produção: Encontrei um velho amigo esses dias. → 最近古い友人に会った。
+- produção: Como hoje o tempo estava bom, brincamos todos juntos lá fora. → 今日は天気がよかったのでみんなで外で遊んだ。
+- produção: Hoje tem bastante neve acumulada no parque. → 今日は、公園に雪がたくさん積もっている。
+- produção: Segundo o jornal, amanhã vai nevar. → 新聞によれば明日は雪だそうです。
+- produção: Ouvi dizer que amanhã vai nevar. → 明日は雪になるんだって。
+- produção: Hoje está muito quente. → 今日は非常に暑い。
+- produção: Explicar para você por que não vai dar certo ia levar um tempão. → 何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ。
+- produção: Se você continua todos os dias, isso vira força. → 毎日続けると力になる。
+- produção: Como caminhamos por muito tempo, ficamos exaustos. → 長い時間歩いたので疲れきった。
+- produção: Tive bastante tempo para conversar com os amigos. → 友人たちと話す時間がたくさんあった。
+- produção: Esperei mais de duas horas. → 私は二時間以上も待った。
+- produção: Hoje minha cabeça não está funcionando bem. → 今日は頭がさえません。
+- produção: "Quando você acorda?" "Às oito da manhã." → 「いつ起きるの？」「朝八時だよ」
+- produção: Conheci uma pessoa chamada Kimura na festa. → 木村さんという人にパーティーで会ったよ。
 
 </details>
 
@@ -1466,7 +2016,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 1
 
-### `*` · camada C · hash `dd9ee18579fa8204`
+### `*` · camada C · hash `bf6b39e601746782`
 
 _Ledger:_ —
 
@@ -1491,6 +2041,19 @@ _Ledger:_ —
 - produção: Estou com muita febre. → とても熱があります。
 - produção: Chame um médico, por favor. → 医者を呼んで下さい。
 - produção: Está doendo a barriga. → お腹が痛いです。
+- produção: Estou passando mal. → 気分が悪いです。
+- produção: Me ajuda, por favor. → 助けてください。
+- produção: Um remédio, por favor. → 薬をください
+- produção: Hoje estou com um pouco de dor de cabeça. → 今日はちょっと頭が痛いの。
+- produção: Amanhã também pretendo ir à universidade. → 明日も大学へ行くつもりだよ。
+- produção: Encontrei um velho amigo esses dias. → 最近古い友人に会った。
+- produção: Como hoje o tempo estava bom, brincamos todos juntos lá fora. → 今日は天気がよかったのでみんなで外で遊んだ。
+- produção: Hoje tem bastante neve acumulada no parque. → 今日は、公園に雪がたくさん積もっている。
+- produção: Segundo o jornal, amanhã vai nevar. → 新聞によれば明日は雪だそうです。
+- produção: Ouvi dizer que amanhã vai nevar. → 明日は雪になるんだって。
+- produção: Hoje está muito quente. → 今日は非常に暑い。
+- produção: Explicar para você por que não vai dar certo ia levar um tempão. → 何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ。
+- produção: Se você continua todos os dias, isso vira força. → 毎日続けると力になる。
 
 </details>
 
@@ -1500,7 +2063,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 2
 
-### `*` · camada C · hash `940c47769a9fc13e`
+### `*` · camada C · hash `bb042d86e33bf76b`
 
 _Ledger:_ —
 
@@ -1525,6 +2088,19 @@ _Ledger:_ —
 - produção: Ultimamente não tenho me sentido bem. → この頃、気分が優れないんだ。
 - produção: Ela foi embora. Estou com vontade de chorar. → 彼女は行ってしまった。ぼくは泣きたい気分だ。
 - produção: Num piscar de olhos, a febre subiu para quase 40 graus. → あっという間に４０度近くまで熱が出た
+- produção: Vamos tomar cuidado para não pegar resfriado. → 風邪を引かないように注意しよう。
+- produção: Quando voltei a mim, eu estava no hospital. → 意識が戻ると、私は病院にいた。
+- produção: Onde fica o hospital mais perto? → 一番近い病院はどこですか？
+- produção: Estou com muita febre. → とても熱があります。
+- produção: Chame um médico, por favor. → 医者を呼んで下さい。
+- produção: Está doendo a barriga. → お腹が痛いです。
+- produção: Estou passando mal. → 気分が悪いです。
+- produção: Me ajuda, por favor. → 助けてください。
+- produção: Um remédio, por favor. → 薬をください
+- produção: Hoje estou com um pouco de dor de cabeça. → 今日はちょっと頭が痛いの。
+- produção: Amanhã também pretendo ir à universidade. → 明日も大学へ行くつもりだよ。
+- produção: Encontrei um velho amigo esses dias. → 最近古い友人に会った。
+- produção: Como hoje o tempo estava bom, brincamos todos juntos lá fora. → 今日は天気がよかったのでみんなで外で遊んだ。
 
 </details>
 
@@ -1534,7 +2110,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 3
 
-### `*` · camada C · hash `9bcfe3ab6a6b4e56`
+### `*` · camada C · hash `6d0914192dc92bcc`
 
 _Ledger:_ —
 
@@ -1559,6 +2135,19 @@ _Ledger:_ —
 - produção: Dói bastante? → かなり痛いのですか？
 - produção: O sapato está me machucando, tá bem sofrido. → 靴が痛くてとてもつらい。
 - produção: Estou com dor muscular no corpo inteiro. → 体中の筋肉が痛いです。
+- produção: Meu pé esquerdo está doendo. → 左の足が痛いです。
+- produção: Me machuquei na aula de educação física. → 僕は体育の授業中に怪我をした。
+- produção: Vesti um casaco para não pegar resfriado. → 風邪引かないようにコートを着た。
+- produção: Ultimamente não tenho me sentido bem. → この頃、気分が優れないんだ。
+- produção: Ela foi embora. Estou com vontade de chorar. → 彼女は行ってしまった。ぼくは泣きたい気分だ。
+- produção: Num piscar de olhos, a febre subiu para quase 40 graus. → あっという間に４０度近くまで熱が出た
+- produção: Vamos tomar cuidado para não pegar resfriado. → 風邪を引かないように注意しよう。
+- produção: Quando voltei a mim, eu estava no hospital. → 意識が戻ると、私は病院にいた。
+- produção: Onde fica o hospital mais perto? → 一番近い病院はどこですか？
+- produção: Estou com muita febre. → とても熱があります。
+- produção: Chame um médico, por favor. → 医者を呼んで下さい。
+- produção: Está doendo a barriga. → お腹が痛いです。
+- produção: Estou passando mal. → 気分が悪いです。
 
 </details>
 
@@ -1568,7 +2157,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 4
 
-### `*` · camada C · hash `e802961fd728a0a0`
+### `*` · camada C · hash `6417da8678916123`
 
 _Ledger:_ —
 
@@ -1593,6 +2182,19 @@ _Ledger:_ —
 - produção: Por pouco não fui atropelado por um carro. → 危なく車にひかれるところだった。
 - produção: O ferro conduz bem o calor. → 鉄は熱をよく伝える。
 - produção: Depois que dormi bem, me senti bem melhor. → よく眠ったらだいぶ気分がよくなった。
+- produção: De vez em quando, vamos mudar de ares e comer fora. → たまには気分を変えて外食をしよう。
+- produção: Estou com vontade de cantar na chuva. → 雨の中で歌いたい気分だ。
+- produção: Ele é famoso como médico. → 彼は医者として有名だ。
+- produção: Dói bastante? → かなり痛いのですか？
+- produção: O sapato está me machucando, tá bem sofrido. → 靴が痛くてとてもつらい。
+- produção: Estou com dor muscular no corpo inteiro. → 体中の筋肉が痛いです。
+- produção: Meu pé esquerdo está doendo. → 左の足が痛いです。
+- produção: Me machuquei na aula de educação física. → 僕は体育の授業中に怪我をした。
+- produção: Vesti um casaco para não pegar resfriado. → 風邪引かないようにコートを着た。
+- produção: Ultimamente não tenho me sentido bem. → この頃、気分が優れないんだ。
+- produção: Ela foi embora. Estou com vontade de chorar. → 彼女は行ってしまった。ぼくは泣きたい気分だ。
+- produção: Num piscar de olhos, a febre subiu para quase 40 graus. → あっという間に４０度近くまで熱が出た
+- produção: Vamos tomar cuidado para não pegar resfriado. → 風邪を引かないように注意しよう。
 
 </details>
 
@@ -1602,7 +2204,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 5
 
-### `*` · camada C · hash `aea3c871f2ea2d01`
+### `*` · camada C · hash `a6789a7f20af0ba4`
 
 _Ledger:_ —
 
@@ -1627,6 +2229,19 @@ _Ledger:_ —
 - produção: Direita, liberado~; esquerda, liberado~...; pronto. Tudo certo. → 右よ～し、左よ～し・・・、よし。大丈夫。
 - produção: Dá pra comer isso cru? → これ、生で食べても大丈夫？
 - produção: De qualquer jeito está tudo bem. → どちらにしても大丈夫だよ。
+- produção: Pode ser em dinheiro? → 現金でも大丈夫ですか？
+- produção: Provavelmente está tudo bem. → たぶん大丈夫だ。
+- produção: Naquela época não havia muitas médicas. → 当時は女の医者は多くなかった。
+- produção: Por pouco não fui atropelado por um carro. → 危なく車にひかれるところだった。
+- produção: O ferro conduz bem o calor. → 鉄は熱をよく伝える。
+- produção: Depois que dormi bem, me senti bem melhor. → よく眠ったらだいぶ気分がよくなった。
+- produção: De vez em quando, vamos mudar de ares e comer fora. → たまには気分を変えて外食をしよう。
+- produção: Estou com vontade de cantar na chuva. → 雨の中で歌いたい気分だ。
+- produção: Ele é famoso como médico. → 彼は医者として有名だ。
+- produção: Dói bastante? → かなり痛いのですか？
+- produção: O sapato está me machucando, tá bem sofrido. → 靴が痛くてとてもつらい。
+- produção: Estou com dor muscular no corpo inteiro. → 体中の筋肉が痛いです。
+- produção: Meu pé esquerdo está doendo. → 左の足が痛いです。
 
 </details>
 
@@ -1636,7 +2251,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 6
 
-### `*` · camada C · hash `d69543a64e42cd71`
+### `*` · camada C · hash `7fc673d7e8976681`
 
 _Ledger:_ —
 
@@ -1661,6 +2276,20 @@ _Ledger:_ —
 - produção: Os japoneses gostam de viajar em grupo. → 日本人は集団で旅行するのが好きだ。
 - produção: Ele viajou com as despesas pagas pela empresa. → 彼は会社の費用で旅行した。
 - produção: Você gosta de viajar? → 旅行することが好きですか。
+- produção: Meu pai faltou no trabalho ontem. → 父は昨日仕事を休んだ。
+- produção: No ano passado eu plantei tomates, e ficaram muito gostosos. → 去年トマトを作ったがとてもおいしかった。
+- produção: Ele viu aquilo pela primeira vez. → 彼が初めてそれを見た
+- produção: O que é aquele prédio que fica atrás do hospital? → 病院の後ろにあるあの建物はなんですか。
+- produção: "Como você está se sentindo?", ele perguntou. → 「気分はどうですか」と彼は尋ねた。
+- produção: Este remédio só faz efeito em homens. → この薬は男性にのみ効果があります。
+- produção: O fogo é muito perigoso. → 火は非常に危ない。
+- produção: Os pais levam os filhos ao hospital logo de cara. → 親はすぐにこどもを病院に連れてくる
+- produção: Ela disse que estava bem. Só que, na verdade, tinha se machucado feio. → 彼女は大丈夫だと言った。ところが実際はひどいけがをしていた。
+- produção: Direita, liberado~; esquerda, liberado~...; pronto. Tudo certo. → 右よ～し、左よ～し・・・、よし。大丈夫。
+- produção: Dá pra comer isso cru? → これ、生で食べても大丈夫？
+- produção: De qualquer jeito está tudo bem. → どちらにしても大丈夫だよ。
+- produção: Pode ser em dinheiro? → 現金でも大丈夫ですか？
+- produção: Provavelmente está tudo bem. → たぶん大丈夫だ。
 
 </details>
 
@@ -1670,7 +2299,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 1
 
-### `*` · camada C · hash `b6dc12f6a0688676`
+### `*` · camada C · hash `1a56742c3ad70390`
 
 _Ledger:_ —
 
@@ -1695,6 +2324,20 @@ _Ledger:_ —
 - produção: Você já foi a Nikko? → 日光へ行ったことがありますか。
 - produção: Eu já viajei para fora. → 外国に行ったことがあります。
 - produção: É a sua primeira vez no Japão? → 日本は初めてですか。
+- produção: Como foi a viagem? → 旅行どうでしたか？
+- produção: Ontem estava quente. → 昨日は暑かった。
+- produção: Foi muito bom. → 楽しかった。
+- produção: Os japoneses gostam de viajar em grupo. → 日本人は集団で旅行するのが好きだ。
+- produção: Ele viajou com as despesas pagas pela empresa. → 彼は会社の費用で旅行した。
+- produção: Você gosta de viajar? → 旅行することが好きですか。
+- produção: Meu pai faltou no trabalho ontem. → 父は昨日仕事を休んだ。
+- produção: No ano passado eu plantei tomates, e ficaram muito gostosos. → 去年トマトを作ったがとてもおいしかった。
+- produção: Ele viu aquilo pela primeira vez. → 彼が初めてそれを見た
+- produção: O que é aquele prédio que fica atrás do hospital? → 病院の後ろにあるあの建物はなんですか。
+- produção: "Como você está se sentindo?", ele perguntou. → 「気分はどうですか」と彼は尋ねた。
+- produção: Este remédio só faz efeito em homens. → この薬は男性にのみ効果があります。
+- produção: O fogo é muito perigoso. → 火は非常に危ない。
+- produção: Os pais levam os filhos ao hospital logo de cara. → 親はすぐにこどもを病院に連れてくる
 
 </details>
 
@@ -1704,7 +2347,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 2
 
-### `*` · camada C · hash `c4dd128a8fbefc8b`
+### `*` · camada C · hash `b03dfe054e219296`
 
 _Ledger:_ —
 
@@ -1729,6 +2372,20 @@ _Ledger:_ —
 - produção: Converse com os seus pais sobre a viagem, por favor. → 旅行についてはご両親と相談してください。
 - produção: A viagem foi como você esperava? → 旅行は期待通りでしたか。
 - produção: As lembranças de antigamente me vieram de repente à mente. → 昔の思い出が急に心に浮かんだ。
+- produção: Os prédios foram danificados pela tempestade de ontem. → 昨日の嵐で建物は被害を受けた。
+- produção: Ele fez a cirurgia ontem. → 彼は昨日手術を受けた。
+- produção: Isso porque ontem eu estudei por muito tempo. → なぜなら私は昨日長い間勉強したからです。
+- produção: Você já foi a Nikko? → 日光へ行ったことがありますか。
+- produção: Eu já viajei para fora. → 外国に行ったことがあります。
+- produção: É a sua primeira vez no Japão? → 日本は初めてですか。
+- produção: Como foi a viagem? → 旅行どうでしたか？
+- produção: Ontem estava quente. → 昨日は暑かった。
+- produção: Foi muito bom. → 楽しかった。
+- produção: Os japoneses gostam de viajar em grupo. → 日本人は集団で旅行するのが好きだ。
+- produção: Ele viajou com as despesas pagas pela empresa. → 彼は会社の費用で旅行した。
+- produção: Você gosta de viajar? → 旅行することが好きですか。
+- produção: Meu pai faltou no trabalho ontem. → 父は昨日仕事を休んだ。
+- produção: No ano passado eu plantei tomates, e ficaram muito gostosos. → 去年トマトを作ったがとてもおいしかった。
 
 </details>
 
@@ -1738,7 +2395,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 3
 
-### `*` · camada C · hash `07284aa0e0000c4f`
+### `*` · camada C · hash `e604ecb870260d3c`
 
 _Ledger:_ —
 
@@ -1763,6 +2420,20 @@ _Ledger:_ —
 - produção: A gente aprende com a experiência. → 人は経験から学ぶ。
 - produção: Meu pai já foi duas vezes para a Austrália. → 父はオーストラリアへ２度行ったことがある。
 - produção: Já fui lá duas ou três vezes. → ２、３度行ったことがある。
+- produção: "É a primeira vez que você vem a esta loja?" "Sim, é a primeira vez." → 「この店は初めて？」「ええ、初めてです」
+- produção: A moda deste ano é completamente diferente da do ano passado. → 今年のファッションは去年とはまったく違う。
+- produção: Ontem eu tive 200 mil ienes de lucro. → 私は昨日２０万円の利益を得た。
+- produção: Converse com os seus pais sobre a viagem, por favor. → 旅行についてはご両親と相談してください。
+- produção: A viagem foi como você esperava? → 旅行は期待通りでしたか。
+- produção: As lembranças de antigamente me vieram de repente à mente. → 昔の思い出が急に心に浮かんだ。
+- produção: Os prédios foram danificados pela tempestade de ontem. → 昨日の嵐で建物は被害を受けた。
+- produção: Ele fez a cirurgia ontem. → 彼は昨日手術を受けた。
+- produção: Isso porque ontem eu estudei por muito tempo. → なぜなら私は昨日長い間勉強したからです。
+- produção: Você já foi a Nikko? → 日光へ行ったことがありますか。
+- produção: Eu já viajei para fora. → 外国に行ったことがあります。
+- produção: É a sua primeira vez no Japão? → 日本は初めてですか。
+- produção: Como foi a viagem? → 旅行どうでしたか？
+- produção: Ontem estava quente. → 昨日は暑かった。
 
 </details>
 
@@ -1772,7 +2443,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 4
 
-### `*` · camada C · hash `48a8da87670d6682`
+### `*` · camada C · hash `61f7e4329755c6ad`
 
 _Ledger:_ —
 
@@ -1797,6 +2468,20 @@ _Ledger:_ —
 - produção: Por favor, tenha uma refeição maravilhosa. → すばらしい食事を経験下さい。
 - produção: Eu não nasci ontem. → 私は昨日生まれたわけではない。
 - produção: Você tem dinheiro suficiente para a viagem? → 旅行に十分なお金がありますか。
+- produção: Não consigo esquecer o que aconteceu no verão passado. → 去年の夏の出来事は忘れられないよ。
+- produção: Vamos guardar este dinheiro para a viagem de verão. → このお金は夏の旅行にとっておこう。
+- produção: Eu lembro da aventura do verão passado. → 私は去年の夏の冒険を覚えている。
+- produção: A gente aprende com a experiência. → 人は経験から学ぶ。
+- produção: Meu pai já foi duas vezes para a Austrália. → 父はオーストラリアへ２度行ったことがある。
+- produção: Já fui lá duas ou três vezes. → ２、３度行ったことがある。
+- produção: "É a primeira vez que você vem a esta loja?" "Sim, é a primeira vez." → 「この店は初めて？」「ええ、初めてです」
+- produção: A moda deste ano é completamente diferente da do ano passado. → 今年のファッションは去年とはまったく違う。
+- produção: Ontem eu tive 200 mil ienes de lucro. → 私は昨日２０万円の利益を得た。
+- produção: Converse com os seus pais sobre a viagem, por favor. → 旅行についてはご両親と相談してください。
+- produção: A viagem foi como você esperava? → 旅行は期待通りでしたか。
+- produção: As lembranças de antigamente me vieram de repente à mente. → 昔の思い出が急に心に浮かんだ。
+- produção: Os prédios foram danificados pela tempestade de ontem. → 昨日の嵐で建物は被害を受けた。
+- produção: Ele fez a cirurgia ontem. → 彼は昨日手術を受けた。
 
 </details>
 
@@ -1806,7 +2491,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 5
 
-### `*` · camada C · hash `3ff7abc6c4334ed0`
+### `*` · camada C · hash `803d4d8697ed7a3a`
 
 _Ledger:_ —
 
@@ -1831,6 +2516,20 @@ _Ledger:_ —
 - produção: Perguntei pro Bill como tinha sido o clima durante a viagem. → 旅行中の天気はどうだったかとビルにたずねた。
 - produção: Em casos assim, é a experiência que fala mais alto. → こういう場合には経験が物を言う。
 - produção: Tudo bem? A viagem foi boa? → 元気？旅行は良かった？
+- produção: Este ano há menos alunos na turma do que no ano passado. → 去年より今年のクラスには学生が少ない。
+- produção: Entre o vento e a chuva, a viagem foi por água abaixo. → 風やら雨やらで旅行は台無しだった。
+- produção: Está se divertindo? → 楽しく過ごしてる？
+- produção: Por favor, tenha uma refeição maravilhosa. → すばらしい食事を経験下さい。
+- produção: Eu não nasci ontem. → 私は昨日生まれたわけではない。
+- produção: Você tem dinheiro suficiente para a viagem? → 旅行に十分なお金がありますか。
+- produção: Não consigo esquecer o que aconteceu no verão passado. → 去年の夏の出来事は忘れられないよ。
+- produção: Vamos guardar este dinheiro para a viagem de verão. → このお金は夏の旅行にとっておこう。
+- produção: Eu lembro da aventura do verão passado. → 私は去年の夏の冒険を覚えている。
+- produção: A gente aprende com a experiência. → 人は経験から学ぶ。
+- produção: Meu pai já foi duas vezes para a Austrália. → 父はオーストラリアへ２度行ったことがある。
+- produção: Já fui lá duas ou três vezes. → ２、３度行ったことがある。
+- produção: "É a primeira vez que você vem a esta loja?" "Sim, é a primeira vez." → 「この店は初めて？」「ええ、初めてです」
+- produção: A moda deste ano é completamente diferente da do ano passado. → 今年のファッションは去年とはまったく違う。
 
 </details>
 
@@ -1840,7 +2539,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 6
 
-### `*` · camada C · hash `a5ce3f5aa8817fa8`
+### `*` · camada C · hash `6fac3e4036143cf0`
 
 _Ledger:_ —
 
@@ -1865,6 +2564,21 @@ _Ledger:_ —
 - produção: Converse com os seus pais sobre a viagem, por favor. → 旅行についてはご両親と相談してください。
 - produção: Me ajuda, por favor. → 助けてください。
 - produção: Um remédio, por favor. → 薬をください
+- produção: Entrem no quarto um de cada vez, por favor. → 部屋の中に一人づつ入ってください。
+- produção: Entre no quarto, por favor. → 部屋の中に入ってください。
+- produção: O cardápio, por favor. → メニューをください。
+- produção: Me dê água, por favor. → お水をください。
+- produção: Me dê isso, por favor. → それをください。
+- produção: Fale mais devagar, por favor! → もっとゆっくり話してください！
+- produção: Fale devagar, por favor. → ゆっくり話してください。
+- produção: Muito obrigado(a)! → ありがとうございます！
+- produção: Bom dia! → おはようございます。
+- produção: Ele viajou para a Europa. → 彼はヨーロッパへ旅行した。
+- produção: Mas você parece tão feliz toda manhã... → 毎朝とても楽しそうだけど。
+- produção: Às vezes felicidade e dinheiro são tratados como a mesma coisa. → 幸福とお金とが同一視されることがある。
+- produção: A primavera é uma estação agradável. → 春は楽しい季節だ。
+- produção: É a primeira vez que eu fumo. → タバコを吸うのって、これが初めて。
+- produção: Este é o jardim que eu projetei ano passado. → これが去年私が設計した庭です。
 
 </details>
 
@@ -1874,7 +2588,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 1
 
-### `*` · camada C · hash `c243b95a53d84b1b`
+### `*` · camada C · hash `b93b51742d45fc7f`
 
 _Ledger:_ —
 
@@ -1899,6 +2613,21 @@ _Ledger:_ —
 - produção: Posso entrar? → 入ってもよろしいですか。
 - produção: Desculpe pelo atraso. → 遅れて申し訳ありません。
 - produção: Vou levar este. → これをいただきます。
+- produção: Sinto muito mesmo. → 申し訳ありません。
+- produção: Com licença, vou indo. → お先に失礼します。
+- produção: Parabéns! → おめでとうございます。
+- produção: Converse com os seus pais sobre a viagem, por favor. → 旅行についてはご両親と相談してください。
+- produção: Me ajuda, por favor. → 助けてください。
+- produção: Um remédio, por favor. → 薬をください
+- produção: Entrem no quarto um de cada vez, por favor. → 部屋の中に一人づつ入ってください。
+- produção: Entre no quarto, por favor. → 部屋の中に入ってください。
+- produção: O cardápio, por favor. → メニューをください。
+- produção: Me dê água, por favor. → お水をください。
+- produção: Me dê isso, por favor. → それをください。
+- produção: Fale mais devagar, por favor! → もっとゆっくり話してください！
+- produção: Fale devagar, por favor. → ゆっくり話してください。
+- produção: Muito obrigado(a)! → ありがとうございます！
+- produção: Bom dia! → おはようございます。
 
 </details>
 
@@ -1908,7 +2637,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 2
 
-### `*` · camada C · hash `e2504eb500e50892`
+### `*` · camada C · hash `b14f559ad2d8f062`
 
 _Ledger:_ —
 
@@ -1933,6 +2662,21 @@ _Ledger:_ —
 - produção: Por favor, tranque a porta antes de sair. → 出かける前に、ドアにかぎをかけてください。
 - produção: Cole este aviso na porta, por favor. → この掲示をドアにはってください。
 - produção: Põe um pouco de açúcar e creme, por favor. → 砂糖とクリームを少し入れてください。
+- produção: Insira o cartão, por favor. → カードを入れてください。
+- produção: Formem uma roda e deem as mãos. → 輪になって手をつないでください。
+- produção: Posso fazer uma reserva? → 予約をお願いできますか。
+- produção: Posso entrar? → 入ってもよろしいですか。
+- produção: Desculpe pelo atraso. → 遅れて申し訳ありません。
+- produção: Vou levar este. → これをいただきます。
+- produção: Sinto muito mesmo. → 申し訳ありません。
+- produção: Com licença, vou indo. → お先に失礼します。
+- produção: Parabéns! → おめでとうございます。
+- produção: Converse com os seus pais sobre a viagem, por favor. → 旅行についてはご両親と相談してください。
+- produção: Me ajuda, por favor. → 助けてください。
+- produção: Um remédio, por favor. → 薬をください
+- produção: Entrem no quarto um de cada vez, por favor. → 部屋の中に一人づつ入ってください。
+- produção: Entre no quarto, por favor. → 部屋の中に入ってください。
+- produção: O cardápio, por favor. → メニューをください。
 
 </details>
 
@@ -1942,7 +2686,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 3
 
-### `*` · camada C · hash `2dcf7c229e624384`
+### `*` · camada C · hash `1ab93dc9e948a028`
 
 _Ledger:_ —
 
@@ -1967,6 +2711,21 @@ _Ledger:_ —
 - produção: Por favor, me mostre aquela camisa verde. → その緑のシャツを見せてください。
 - produção: Me mostra o machucado, por favor. → 傷を見せてください。
 - produção: Mostre a língua, por favor. → 舌を見せてください。
+- produção: Abram o livro, por favor. → 教科書を開いてください。
+- produção: Abaixa um pouco o volume do som, por favor. → 少しステレオの音を小さくしてください。
+- produção: Dirija com cuidado, por favor. → 慎重に運転してください。
+- produção: Por favor, tranque a porta antes de sair. → 出かける前に、ドアにかぎをかけてください。
+- produção: Cole este aviso na porta, por favor. → この掲示をドアにはってください。
+- produção: Põe um pouco de açúcar e creme, por favor. → 砂糖とクリームを少し入れてください。
+- produção: Insira o cartão, por favor. → カードを入れてください。
+- produção: Formem uma roda e deem as mãos. → 輪になって手をつないでください。
+- produção: Posso fazer uma reserva? → 予約をお願いできますか。
+- produção: Posso entrar? → 入ってもよろしいですか。
+- produção: Desculpe pelo atraso. → 遅れて申し訳ありません。
+- produção: Vou levar este. → これをいただきます。
+- produção: Sinto muito mesmo. → 申し訳ありません。
+- produção: Com licença, vou indo. → お先に失礼します。
+- produção: Parabéns! → おめでとうございます。
 
 </details>
 
@@ -1976,7 +2735,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 4
 
-### `*` · camada C · hash `f3e3c24b7f017bf7`
+### `*` · camada C · hash `3d9964d01cfdefa3`
 
 _Ledger:_ —
 
@@ -2001,6 +2760,21 @@ _Ledger:_ —
 - produção: Por mais tarde que fique, me acorde, por favor. → どんなに遅くなっても起こしてください。
 - produção: Por favor, não desligue o telefone. → 電話を切らずにおいてください。
 - produção: Me dá uma última chance, por favor. → 最後のチャンスをください。
+- produção: Tenho um pedido a fazer. Será que eu poderia pedir um favor? → 頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか？
+- produção: Fiquem em fila por altura, por favor. → 背の順に並んでください。
+- produção: Escreva seu nome na parte de baixo da folha. → 紙の下の部分に名前を書いてください。
+- produção: Por favor, me mostre aquela camisa verde. → その緑のシャツを見せてください。
+- produção: Me mostra o machucado, por favor. → 傷を見せてください。
+- produção: Mostre a língua, por favor. → 舌を見せてください。
+- produção: Abram o livro, por favor. → 教科書を開いてください。
+- produção: Abaixa um pouco o volume do som, por favor. → 少しステレオの音を小さくしてください。
+- produção: Dirija com cuidado, por favor. → 慎重に運転してください。
+- produção: Por favor, tranque a porta antes de sair. → 出かける前に、ドアにかぎをかけてください。
+- produção: Cole este aviso na porta, por favor. → この掲示をドアにはってください。
+- produção: Põe um pouco de açúcar e creme, por favor. → 砂糖とクリームを少し入れてください。
+- produção: Insira o cartão, por favor. → カードを入れてください。
+- produção: Formem uma roda e deem as mãos. → 輪になって手をつないでください。
+- produção: Posso fazer uma reserva? → 予約をお願いできますか。
 
 </details>
 
@@ -2010,7 +2784,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 5
 
-### `*` · camada C · hash `6d99cdfde6a0188e`
+### `*` · camada C · hash `0366cb47880539e1`
 
 _Ledger:_ —
 
@@ -2035,6 +2809,21 @@ _Ledger:_ —
 - produção: Por favor, não puxe a minha orelha. → 私の耳を引っ張らないでください。
 - produção: Por favor, mova aquela mesa para a esquerda. → その机を左へ移動してください。
 - produção: Não deixe de me escrever, viu? → きっと手紙くださいね。
+- produção: Dê outro exemplo, por favor. → 別の例をあげてください。
+- produção: Fique à vontade para dar a sua opinião. → 自由に意見を述べてください。
+- produção: Coloque a bolsa embaixo do assento, por favor. → 鞄を座席の下に置いてください。
+- produção: Por mais tarde que fique, me acorde, por favor. → どんなに遅くなっても起こしてください。
+- produção: Por favor, não desligue o telefone. → 電話を切らずにおいてください。
+- produção: Me dá uma última chance, por favor. → 最後のチャンスをください。
+- produção: Tenho um pedido a fazer. Será que eu poderia pedir um favor? → 頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか？
+- produção: Fiquem em fila por altura, por favor. → 背の順に並んでください。
+- produção: Escreva seu nome na parte de baixo da folha. → 紙の下の部分に名前を書いてください。
+- produção: Por favor, me mostre aquela camisa verde. → その緑のシャツを見せてください。
+- produção: Me mostra o machucado, por favor. → 傷を見せてください。
+- produção: Mostre a língua, por favor. → 舌を見せてください。
+- produção: Abram o livro, por favor. → 教科書を開いてください。
+- produção: Abaixa um pouco o volume do som, por favor. → 少しステレオの音を小さくしてください。
+- produção: Dirija com cuidado, por favor. → 慎重に運転してください。
 
 </details>
 
@@ -2044,7 +2833,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 6
 
-### `*` · camada C · hash `099c0c43e789cdcf`
+### `*` · camada C · hash `f21cfa17c64cfc91`
 
 _Ledger:_ —
 
@@ -2069,6 +2858,18 @@ _Ledger:_ —
 - produção: Fique à vontade para dar a sua opinião. → 自由に意見を述べてください。
 - produção: Provavelmente está tudo bem. → たぶん大丈夫だ。
 - produção: Eu talvez morra amanhã. → 私は明日死ぬかもしれない。
+- produção: Ele diz com clareza a sua própria opinião para os professores e os amigos. → 彼が先生や友達にはっきり自分の意見を言う
+- produção: "Saia da frente, por favor." "Quer brigar, garotão?" → 「どいてください」「やんのか？あんちゃん」
+- produção: Eu gostaria de aproveitar esta oportunidade. → この機会を私は利用させていただきたい。
+- produção: Por favor, sirva-se à vontade. → どうぞお上がりください。
+- produção: Com licença, deixa eu passar. → どうぞ通してください。
+- produção: Seria possível eu tirar folga na semana que vem? → 来週休みを取ってもよろしいでしょうか。
+- produção: Na próxima semana, por favor, deixe-me oferecer o jantar a você. → 来週、ぜひ夕食をご馳走させてください。
+- produção: Por favor, não puxe a minha orelha. → 私の耳を引っ張らないでください。
+- produção: Por favor, mova aquela mesa para a esquerda. → その机を左へ移動してください。
+- produção: Não deixe de me escrever, viu? → きっと手紙くださいね。
+- produção: Dê outro exemplo, por favor. → 別の例をあげてください。
+- produção: Coloque a bolsa embaixo do assento, por favor. → 鞄を座席の下に置いてください。
 
 </details>
 
@@ -2078,7 +2879,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 1
 
-### `*` · camada C · hash `808ec1f9f2948f22`
+### `*` · camada C · hash `f015ad64a749893d`
 
 _Ledger:_ —
 
@@ -2103,6 +2904,18 @@ _Ledger:_ —
 - produção: Acho que ele não vem. → 彼は来ないと思います。
 - produção: Acho melhor assim. → その方がいいと思う。
 - produção: Eu acho que sim. → 私はそう思います。
+- produção: O que você acha? → どう思いますか。
+- produção: Talvez eu me atrase. → たぶん遅れる。
+- produção: Eu sou contra. → 私は反対です。
+- produção: Fique à vontade para dar a sua opinião. → 自由に意見を述べてください。
+- produção: Provavelmente está tudo bem. → たぶん大丈夫だ。
+- produção: Eu talvez morra amanhã. → 私は明日死ぬかもしれない。
+- produção: Ele diz com clareza a sua própria opinião para os professores e os amigos. → 彼が先生や友達にはっきり自分の意見を言う
+- produção: "Saia da frente, por favor." "Quer brigar, garotão?" → 「どいてください」「やんのか？あんちゃん」
+- produção: Eu gostaria de aproveitar esta oportunidade. → この機会を私は利用させていただきたい。
+- produção: Por favor, sirva-se à vontade. → どうぞお上がりください。
+- produção: Com licença, deixa eu passar. → どうぞ通してください。
+- produção: Seria possível eu tirar folga na semana que vem? → 来週休みを取ってもよろしいでしょうか。
 
 </details>
 
@@ -2112,7 +2925,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 2
 
-### `*` · camada C · hash `1b4bd6062fb62a4d`
+### `*` · camada C · hash `f37a8d175de6c312`
 
 _Ledger:_ —
 
@@ -2137,6 +2950,18 @@ _Ledger:_ —
 - produção: É impossível que aquela menina tenha feito uma coisa dessas. → その女の子がそんなことをしたはずがない。
 - produção: Sou exatamente da mesma opinião. → まったく同意見です。
 - produção: Acho que não é uma ideia lá muito boa, mas... → 余りよい考えではないと思いますが。
+- produção: É sério. Pode acreditar. → 本当さ。信じた方がいいぜ。
+- produção: Na minha opinião pessoal, sou contra esse plano. → 私個人の意見としてはその計画に反対だ。
+- produção: O projeto encontrou a oposição dos moradores. → その計画は住民の反対にあった。
+- produção: Acho que ele não vem. → 彼は来ないと思います。
+- produção: Acho melhor assim. → その方がいいと思う。
+- produção: Eu acho que sim. → 私はそう思います。
+- produção: O que você acha? → どう思いますか。
+- produção: Talvez eu me atrase. → たぶん遅れる。
+- produção: Eu sou contra. → 私は反対です。
+- produção: Fique à vontade para dar a sua opinião. → 自由に意見を述べてください。
+- produção: Provavelmente está tudo bem. → たぶん大丈夫だ。
+- produção: Eu talvez morra amanhã. → 私は明日死ぬかもしれない。
 
 </details>
 
@@ -2146,7 +2971,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 3
 
-### `*` · camada C · hash `4f0c0542e896c03d`
+### `*` · camada C · hash `e77c82c8dc3a33a0`
 
 _Ledger:_ —
 
@@ -2171,6 +2996,18 @@ _Ledger:_ —
 - produção: Não tem como estar certo! → 正しいはずがないよ。
 - produção: Os membros do comitê são todos contra isso. → 委員達は皆それに反対している。
 - produção: O trem deve sair daqui a cinco minutos. → 列車はあと５分で出発するはずです。
+- produção: Ele pode ter perdido o trem. → 列車に乗り遅れたのかもしれない。
+- produção: O trem deve chegar ao meio-dia. → 列車は正午に到着するはずです。
+- produção: O trem era pra chegar às seis. → 列車は６時到着のはずだった。
+- produção: É impossível que aquela menina tenha feito uma coisa dessas. → その女の子がそんなことをしたはずがない。
+- produção: Sou exatamente da mesma opinião. → まったく同意見です。
+- produção: Acho que não é uma ideia lá muito boa, mas... → 余りよい考えではないと思いますが。
+- produção: É sério. Pode acreditar. → 本当さ。信じた方がいいぜ。
+- produção: Na minha opinião pessoal, sou contra esse plano. → 私個人の意見としてはその計画に反対だ。
+- produção: O projeto encontrou a oposição dos moradores. → その計画は住民の反対にあった。
+- produção: Acho que ele não vem. → 彼は来ないと思います。
+- produção: Acho melhor assim. → その方がいいと思う。
+- produção: Eu acho que sim. → 私はそう思います。
 
 </details>
 
@@ -2180,7 +3017,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 4
 
-### `*` · camada C · hash `ef594f511fa64f11`
+### `*` · camada C · hash `1aa4d6faac57dd79`
 
 _Ledger:_ —
 
@@ -2205,6 +3042,18 @@ _Ledger:_ —
 - produção: É melhor você cumprir a promessa. → 約束は守った方がいい。
 - produção: Não há motivo nenhum para reclamar. → 不平を言う理由は何も無い。
 - produção: Não consigo compreender o motivo. → 理由がわかりかねます。
+- produção: Ela expôs os motivos de forma resumida. → 彼女は理由を簡単に述べた。
+- produção: Até quinta o resultado deve sair. → 木曜までには結果が分かるはずだ。
+- produção: Não é possível que eles tenham perdido a partida. → 試合に負けたはずがない。
+- produção: Não tem como estar certo! → 正しいはずがないよ。
+- produção: Os membros do comitê são todos contra isso. → 委員達は皆それに反対している。
+- produção: O trem deve sair daqui a cinco minutos. → 列車はあと５分で出発するはずです。
+- produção: Ele pode ter perdido o trem. → 列車に乗り遅れたのかもしれない。
+- produção: O trem deve chegar ao meio-dia. → 列車は正午に到着するはずです。
+- produção: O trem era pra chegar às seis. → 列車は６時到着のはずだった。
+- produção: É impossível que aquela menina tenha feito uma coisa dessas. → その女の子がそんなことをしたはずがない。
+- produção: Sou exatamente da mesma opinião. → まったく同意見です。
+- produção: Acho que não é uma ideia lá muito boa, mas... → 余りよい考えではないと思いますが。
 
 </details>
 
@@ -2214,7 +3063,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 5
 
-### `*` · camada C · hash `4f1b04093a648eb1`
+### `*` · camada C · hash `752e142f276cec10`
 
 _Ledger:_ —
 
@@ -2239,6 +3088,18 @@ _Ledger:_ —
 - produção: Por causa disso, talvez eu acabe perdendo o emprego. → そのために仕事を失うことになるかもしれない。
 - produção: A proposta enfrentou oposição. → その提案は反対を受けた。
 - produção: Ele pode até ser rico, mas é pão-duro. → 金持ちかもしれないがけちだ。
+- produção: Pode ser que eu ganhe, por sorte. → ひょっとしたら勝つかもしれない。
+- produção: A respeito dessa questão, há três opiniões. → この問題に関しては３つの意見がある。
+- produção: Num caso desses, o melhor é montar um orçamento pra experimentar. → そういう場合は、試しに予算を立てた方がいいでしょう。
+- produção: É melhor você cumprir a promessa. → 約束は守った方がいい。
+- produção: Não há motivo nenhum para reclamar. → 不平を言う理由は何も無い。
+- produção: Não consigo compreender o motivo. → 理由がわかりかねます。
+- produção: Ela expôs os motivos de forma resumida. → 彼女は理由を簡単に述べた。
+- produção: Até quinta o resultado deve sair. → 木曜までには結果が分かるはずだ。
+- produção: Não é possível que eles tenham perdido a partida. → 試合に負けたはずがない。
+- produção: Não tem como estar certo! → 正しいはずがないよ。
+- produção: Os membros do comitê são todos contra isso. → 委員達は皆それに反対している。
+- produção: O trem deve sair daqui a cinco minutos. → 列車はあと５分で出発するはずです。
 
 </details>
 
@@ -2248,7 +3109,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 6
 
-### `*` · camada C · hash `e179215b5649b87d`
+### `*` · camada C · hash `6e104def4a7acfac`
 
 _Ledger:_ —
 
@@ -2273,6 +3134,21 @@ _Ledger:_ —
 - produção: Meu computador tem que servir para alguma coisa. → 私のパソコンは何かの役に立つはずだ。
 - produção: Até quinta o resultado deve sair. → 木曜までには結果が分かるはずだ。
 - produção: Não é possível que eles tenham perdido a partida. → 試合に負けたはずがない。
+- produção: Não tem como estar certo! → 正しいはずがないよ。
+- produção: O trem deve sair daqui a cinco minutos. → 列車はあと５分で出発するはずです。
+- produção: O trem deve chegar ao meio-dia. → 列車は正午に到着するはずです。
+- produção: O trem era pra chegar às seis. → 列車は６時到着のはずだった。
+- produção: É impossível que aquela menina tenha feito uma coisa dessas. → その女の子がそんなことをしたはずがない。
+- produção: Eu não nasci ontem. → 私は昨日生まれたわけではない。
+- produção: Acabei de chegar do trabalho. → 仕事から帰ったばかりよ。
+- produção: Ele ficou só dormindo na cama o dia inteiro. → 彼は一日中ベッドで寝てばかりいた。
+- produção: Não se deve ler enquanto come. → 食べながら読んではいけません。
+- produção: Você concorda com o que ele diz no livro? → 本の中で彼が言っていることにあなたは賛成ですか。
+- produção: Algum dos membros concorda com você? → メンバーの誰かが君に賛成していますか。
+- produção: Pedi a aprovação deles. → 私は彼らの賛成を求めた。
+- produção: Eu concordo com ele. → 私は彼に賛成です。
+- produção: Concordo. → 賛成です。
+- produção: Por causa disso, talvez eu acabe perdendo o emprego. → そのために仕事を失うことになるかもしれない。
 
 </details>
 
@@ -2282,7 +3158,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 1
 
-### `*` · camada C · hash `42418795b38f2b05`
+### `*` · camada C · hash `278910480a96c2f7`
 
 _Ledger:_ —
 
@@ -2307,6 +3183,21 @@ _Ledger:_ —
 - produção: Dizem que hoje também vai fazer tempo bom. → 今日もよい天気らしいですね。
 - produção: O trem acabou de chegar. → 列車は今着いたばかりです。
 - produção: Vamos conversar enquanto caminhamos. → 歩きながら話しましょう。
+- produção: Você devia ter ligado. → 電話すればよかったのに。
+- produção: Você parece um policial. → 警官みたいですね。
+- produção: Você parece ocupado. → 忙しそうですね。
+- produção: Meu computador tem que servir para alguma coisa. → 私のパソコンは何かの役に立つはずだ。
+- produção: Até quinta o resultado deve sair. → 木曜までには結果が分かるはずだ。
+- produção: Não é possível que eles tenham perdido a partida. → 試合に負けたはずがない。
+- produção: Não tem como estar certo! → 正しいはずがないよ。
+- produção: O trem deve sair daqui a cinco minutos. → 列車はあと５分で出発するはずです。
+- produção: O trem deve chegar ao meio-dia. → 列車は正午に到着するはずです。
+- produção: O trem era pra chegar às seis. → 列車は６時到着のはずだった。
+- produção: É impossível que aquela menina tenha feito uma coisa dessas. → その女の子がそんなことをしたはずがない。
+- produção: Eu não nasci ontem. → 私は昨日生まれたわけではない。
+- produção: Acabei de chegar do trabalho. → 仕事から帰ったばかりよ。
+- produção: Ele ficou só dormindo na cama o dia inteiro. → 彼は一日中ベッドで寝てばかりいた。
+- produção: Não se deve ler enquanto come. → 食べながら読んではいけません。
 
 </details>
 
@@ -2316,7 +3207,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 2
 
-### `*` · camada C · hash `c74009d837f8e875`
+### `*` · camada C · hash `617323e3c63b08a9`
 
 _Ledger:_ —
 
@@ -2341,6 +3232,21 @@ _Ledger:_ —
 - produção: Isso não quer dizer que vão necessariamente desenvolver a mesma doença. → 必ず同じ病気を発症するわけではない
 - produção: Ah, se eu fosse forte como você... → 君みたいに強ければなあ。
 - produção: O mundo não gira em torno de você, viu. → 世界は君を中心に回っているわけではないんだよ。
+- produção: Nem todo mundo por aí é gente boa. → 世の中、親切な人ばかりじゃない。
+- produção: Parece um sonho. → 夢みたいだ。
+- produção: Sendo assim, não posso ir com você. → そういうわけだから、私は君と一緒に行けないのだ。
+- produção: Dizem que hoje também vai fazer tempo bom. → 今日もよい天気らしいですね。
+- produção: O trem acabou de chegar. → 列車は今着いたばかりです。
+- produção: Vamos conversar enquanto caminhamos. → 歩きながら話しましょう。
+- produção: Você devia ter ligado. → 電話すればよかったのに。
+- produção: Você parece um policial. → 警官みたいですね。
+- produção: Você parece ocupado. → 忙しそうですね。
+- produção: Meu computador tem que servir para alguma coisa. → 私のパソコンは何かの役に立つはずだ。
+- produção: Até quinta o resultado deve sair. → 木曜までには結果が分かるはずだ。
+- produção: Não é possível que eles tenham perdido a partida. → 試合に負けたはずがない。
+- produção: Não tem como estar certo! → 正しいはずがないよ。
+- produção: O trem deve sair daqui a cinco minutos. → 列車はあと５分で出発するはずです。
+- produção: O trem deve chegar ao meio-dia. → 列車は正午に到着するはずです。
 
 </details>
 
@@ -2350,7 +3256,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 3
 
-### `*` · camada C · hash `931e26fc72276589`
+### `*` · camada C · hash `512bb3f567159278`
 
 _Ledger:_ —
 
@@ -2375,6 +3281,21 @@ _Ledger:_ —
 - produção: Quero virar piloto, igual ao meu pai. → お父さんみたいに、パイロットになりたい。
 - produção: Mãe, desculpa por estar sempre te dando trabalho. → お母さん、いつも迷惑ばかりかけてごめんなさい。
 - produção: Não tem como ela contar uma mentira. → 彼女が嘘をつくわけがない。
+- produção: Parece que ela está feliz. → 彼女は幸せらしい。
+- produção: Eu acabei de começar a jogar tênis. → テニスは始めたばかりなんだよ。
+- produção: Não é que meus dois pais estejam vivos. → 両親とも生きているわけではない。
+- produção: Isso não quer dizer que vão necessariamente desenvolver a mesma doença. → 必ず同じ病気を発症するわけではない
+- produção: Ah, se eu fosse forte como você... → 君みたいに強ければなあ。
+- produção: O mundo não gira em torno de você, viu. → 世界は君を中心に回っているわけではないんだよ。
+- produção: Nem todo mundo por aí é gente boa. → 世の中、親切な人ばかりじゃない。
+- produção: Parece um sonho. → 夢みたいだ。
+- produção: Sendo assim, não posso ir com você. → そういうわけだから、私は君と一緒に行けないのだ。
+- produção: Dizem que hoje também vai fazer tempo bom. → 今日もよい天気らしいですね。
+- produção: O trem acabou de chegar. → 列車は今着いたばかりです。
+- produção: Vamos conversar enquanto caminhamos. → 歩きながら話しましょう。
+- produção: Você devia ter ligado. → 電話すればよかったのに。
+- produção: Você parece um policial. → 警官みたいですね。
+- produção: Você parece ocupado. → 忙しそうですね。
 
 </details>
 
@@ -2384,7 +3305,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 4
 
-### `*` · camada C · hash `90968b7c591fe562`
+### `*` · camada C · hash `6971c5beb08996eb`
 
 _Ledger:_ —
 
@@ -2409,6 +3330,21 @@ _Ledger:_ —
 - produção: Sendo assim, eu não pude comparecer. → そういうわけだから私は出席できなかったのです。
 - produção: A reunião não teve uma presença especialmente boa. → その会は特に出席がよいわけではなかった。
 - produção: No entanto, é caro demais. → しかしながら、高すぎる。
+- produção: Não é verdade que ele seja o gerente. → 彼が支配人だというのは事実でない。
+- produção: Com razão você está tão feliz. → 道理で、君が喜ぶわけだ。
+- produção: Ele parece até o seu irmão mais novo. → 彼はまるで君の弟みたいだよ。
+- produção: Quero virar piloto, igual ao meu pai. → お父さんみたいに、パイロットになりたい。
+- produção: Mãe, desculpa por estar sempre te dando trabalho. → お母さん、いつも迷惑ばかりかけてごめんなさい。
+- produção: Não tem como ela contar uma mentira. → 彼女が嘘をつくわけがない。
+- produção: Parece que ela está feliz. → 彼女は幸せらしい。
+- produção: Eu acabei de começar a jogar tênis. → テニスは始めたばかりなんだよ。
+- produção: Não é que meus dois pais estejam vivos. → 両親とも生きているわけではない。
+- produção: Isso não quer dizer que vão necessariamente desenvolver a mesma doença. → 必ず同じ病気を発症するわけではない
+- produção: Ah, se eu fosse forte como você... → 君みたいに強ければなあ。
+- produção: O mundo não gira em torno de você, viu. → 世界は君を中心に回っているわけではないんだよ。
+- produção: Nem todo mundo por aí é gente boa. → 世の中、親切な人ばかりじゃない。
+- produção: Parece um sonho. → 夢みたいだ。
+- produção: Sendo assim, não posso ir com você. → そういうわけだから、私は君と一緒に行けないのだ。
 
 </details>
 
@@ -2418,7 +3354,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 5
 
-### `*` · camada C · hash `c0a246fa5a34dac1`
+### `*` · camada C · hash `dccbe5489c616dab`
 
 _Ledger:_ —
 
@@ -2443,6 +3379,21 @@ _Ledger:_ —
 - produção: Segundo ele, o trabalho de bombeiro ou é correria total ou é tempo parado. → 彼が言うには、消防の仕事というのは大忙しか全く暇かのいずれかだそうだ。
 - produção: Não é que o caso tenha acabado. → 事件は終わったわけではない。
 - produção: A luz está acesa, então não tem como eles terem saído. → 明かりがついているのだから、彼らが外出したはずがない。
+- produção: Infelizmente, por hoje vamos encerrar por aqui. → 残念ながら今日はこれで終わりにします。
+- produção: O professor novo é mais um amigo do que um professor. → 今度来た先生は、先生というより友達みたいだ。
+- produção: A vida não é só diversão e brincadeira. → 人生は楽しみや遊びばかりでない。
+- produção: Sendo assim, eu não pude comparecer. → そういうわけだから私は出席できなかったのです。
+- produção: A reunião não teve uma presença especialmente boa. → その会は特に出席がよいわけではなかった。
+- produção: No entanto, é caro demais. → しかしながら、高すぎる。
+- produção: Não é verdade que ele seja o gerente. → 彼が支配人だというのは事実でない。
+- produção: Com razão você está tão feliz. → 道理で、君が喜ぶわけだ。
+- produção: Ele parece até o seu irmão mais novo. → 彼はまるで君の弟みたいだよ。
+- produção: Quero virar piloto, igual ao meu pai. → お父さんみたいに、パイロットになりたい。
+- produção: Mãe, desculpa por estar sempre te dando trabalho. → お母さん、いつも迷惑ばかりかけてごめんなさい。
+- produção: Não tem como ela contar uma mentira. → 彼女が嘘をつくわけがない。
+- produção: Parece que ela está feliz. → 彼女は幸せらしい。
+- produção: Eu acabei de começar a jogar tênis. → テニスは始めたばかりなんだよ。
+- produção: Não é que meus dois pais estejam vivos. → 両親とも生きているわけではない。
 
 </details>
 
@@ -2452,7 +3403,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 6
 
-### `*` · camada C · hash `3cbf04bd97815a55`
+### `*` · camada C · hash `6ad535fa16f7862e`
 
 _Ledger:_ —
 

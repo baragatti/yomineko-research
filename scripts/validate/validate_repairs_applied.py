@@ -2029,6 +2029,28 @@ def handle_w24_capabilities(rows, sents, gram, table):
     return out
 
 
+def handle_w34_rebalance(rows, sents, gram, table):
+    """W34. Each speaking unit ships exactly the production sentence list and fluency items the
+    per-stage caps produced (the builder reads the caps from this same table)."""
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['unit']}"
+        n = int(r["unit"].rsplit("-", 1)[1])
+        p = EXPORT_ROOT["root"] / "course" / "speak" / r["stage"] / f"unit-{n:02d}.json"
+        if not p.exists():
+            out.append(("fail", C_NO_RECORD, addr, f"no unit file {p.name} under course/speak/{r['stage']}"))
+            continue
+        u = json.loads(p.read_text(encoding="utf-8"))
+        prod = [x["sentence"] for x in u.get("production") or []]
+        flu = list((u.get("fluency") or {}).get("items") or [])
+        if prod != r["production"] or flu != r["fluency"]:
+            which = "production" if prod != r["production"] else "fluency"
+            out.append(("fail", C_VALUE_MISMATCH, addr, f"shipped {which} differs from the table"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 EXPORT_ROOT: dict[str, Path] = {}
 _PROV_RECORDS: dict[str, dict[str, dict]] = {}
 
@@ -2379,6 +2401,8 @@ def handle_listening_reauthor(rows, sents, gram, table):
 
 
 REGISTRY = {
+    # Q6-W34: the speak strand rebalance (per-stage production/fluency caps the builder reads).
+    "w34_rebalance.json": handle_w34_rebalance,
     # Q4-listening-residues: the W18b listening re-authoring (175 items into the journal the listening
     # builder reads) and the 19 grammar residue drills (the W20 row shape, same handler).
     "listening_reauthor.json": handle_listening_reauthor,

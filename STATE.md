@@ -57,6 +57,22 @@ numbered ordering slots and the two-path course structure are all settled and ve
 appearance and reuse only.
 
 ## ▶ RESUME HERE
+> **2026-09-27 (bb) — chain v4 Q6 done (final checkpoint): W34 speak strand rebalance applied; chain v4 CLOSED.**
+> Per-stage production/fluency caps (`repairs/w34_rebalance.json`, read by `build_speaking_practice.py`, 3/6
+> fluency floor), re-derived on the post-W32 path: stages in band 0/12 -> 11/12 (arrival out, pool-limited),
+> production 213 -> 1,164, fluency 423 -> 1,521; strand ceilings down, spiral floors up, say_now near-dups 17
+> unchanged, in-block look-alikes 6 -> 60. 0 lesson files. Full replay: step 153 (Q3 guards) fixed; 0 new,
+> 0 healed, 53 re-pinned, causes kept (`research/reports/q6_w34_rebalance_report.md`).
+> **Landed by chains v2-v4:** v2 W20 vocab/grammar practice, W18 banks, W14 sentences, W22, W24, W29, W28, W37/W40,
+> W32/W30, W23, review-tooling fix, W08b merges, C13 authored applies; v3 exam patches + taught-word rule (P1),
+> gp-153 merge (P2), yoon strokes (P3), 62 survival sentences (P4); v4 N3 review lessons (F0/P5), Q1 exam fixes 3,
+> Q2 token links, Q3 token readings, Q4 listening + residues, Q5 review-lesson examples, Q6 W34.
+> **Owner items (PENDING.md / OPEN_QUESTIONS.md):** still open: A9b (per pair, with the reviewer), B-W34 (R78 as
+> component count vs time; arrival), V1 (consented voices), V2 (TTS pitch accent), L1 (level-list permissions).
+> Decided 2026-09-27, waiting for their unit: D11/B-W25 option B' (W25), quick calls B-W28 A, B-W40 (b), B-W21b,
+> B-W11, B-W37, "(a)" style (W50), D3 audio (W47), D9 strokes (W48), D12 third level source (W49), D1/D8 closed.
+> Next: Lane E (W45-W50) and the v5 unit (pending/comparacoes_prose_2.json + pending/link_suspects.json).
+>
 > **2026-09-27 (ba) — chain v4 Q5 done: lesson examples, bank half.** 18 verified real sentences in the six N5/N4
 > review lessons (step 156); N5/N4 lessons rendering none 15 -> 9 (n4 0); review lessons keep their chain need.
 > Held with reasons: 23 new sentences (Layer-B derived, paragraph/literal/links to author), 5066, 4 card-bound links,

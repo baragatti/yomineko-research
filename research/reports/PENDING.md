@@ -308,6 +308,19 @@ reviewed weeks after the lesson, the translation is shown, and A's picks stay wi
 budget. Both tables are ready (`research/derived/pending/card_examples_option_a.json`, `_option_b.json`,
 report `research/reports/card_examples_bw28.md`); either applies with the existing script.
 
+### B-W34. Speak strand balance: what R78 counts, and stage 1 (2026-09-27)
+**Finding.** Q6 applied the W34 rebalance: 11 of 12 stages now sit inside R78's 15/30/25/30 +-10
+band, but only by adding retrieval. Units grew from 47 to 75 components on average (max 90), about
+62% of a unit's production list repeats the previous unit's, and look-alike pairs inside one
+production list or fluency block went from 6 to 60 (the say_now gate does not see them). arrival
+stays out (worst strand 17.8 pt): its first units have almost no earlier phrases to recycle.
+**Options.** (a) Keep the component-count rule as applied. (b) Count R78 as time on task (Nation's
+four strands are about time; a fluency item takes seconds, a kanji card minutes), which would allow
+smaller units. (c) Trim language-focused load instead (fewer kanji_recognition per unit).
+For arrival: teach more short, fully known phrases in units 01-03, or exempt stage 1.
+**Recommendation.** (a) for now (it is live and gated), then (b) once audio gives real item timings.
+Report `research/reports/q6_w34_rebalance_report.md`.
+
 ## C. Mechanical items — done by hand today
 
 - bank `言う` stored as ゆう on 5 source tokens (checked against the re-dissection gate first)
