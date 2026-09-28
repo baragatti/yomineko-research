@@ -37,6 +37,18 @@ API/app project) does not have to rediscover them. Dated; newest first. The plan
   content); unreferenced files are **pruned**. File names are URL-safe and short enough to avoid
   path problems. The files live outside git; a tracked manifest maps hash → text and consumers, so
   hosting later is a copy of the store plus the manifest.
+- **Speed first, then run.** Use the most optimized stack for the card (ROCm, precision, attention,
+  compile and batching tuned by benchmark) before any long generation.
+- **Voice.** A pleasant **female** voice for both pt-BR and Japanese, cloned from a native-speaker
+  reference clip whose licence allows it (pt-BR must sound Brazilian, Japanese native).
+- **Pronunciation precision.** Japanese is synthesized from the verified token readings (kana), not
+  from kanji the model would have to guess; every clip is checked by speech-to-text against the
+  expected text and regenerated or flagged on mismatch.
+- **Operations.** A small control app with a desktop icon starts and stops generation; stopping
+  finishes the current clip, restarting resumes with no duplicates. The owner runs it when the GPU
+  is free.
+- **First batch.** N5 only: the pt-BR lesson text and all N5 Japanese; the prototype gets play
+  buttons wherever a clip exists (lesson text and Japanese), silently absent where it does not yet.
 
 ## Content standards
 
