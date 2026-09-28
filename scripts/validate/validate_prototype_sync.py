@@ -230,6 +230,8 @@ def _slim_particle(p: dict) -> dict:
             o[dst] = p[src]
     o["fn"] = _pt(p.get("function"))
     o["ex"] = _pt(p.get("explanation"))
+    o["u"] = _pt(p.get("usage_label"))      # W46: the usage label; `ex` is rendered from it
+    o["n"] = _pt(p.get("note"))             # W46: the authored explanation, kept as a note
     return o
 
 

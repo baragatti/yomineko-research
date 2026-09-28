@@ -151,7 +151,8 @@ export const allGrammar = () => Object.values(grammar);
 /* ---- example-sentence lookup for detail pages (server-only; pages render a handful) ---- */
 /** One unit of the sentence (tokens concat == jp); `p` = its shorter sub-units, nested, never siblings. */
 export interface BdToken { s: string; r?: string; ro?: string; pos?: string; gloss?: string; role?: string; p?: string[] }
-export interface BdParticle { p: string; ft?: string; fn?: string; ex?: string }
+/** `u` = usage label (W46 enum), `ex` = explanation rendered from it, `n` = the authored note. */
+export interface BdParticle { p: string; ft?: string; fn?: string; ex?: string; u?: string; n?: string }
 export interface SentenceView {
   slug: string; jp: string; romaji: string; pt: string; literal: string; explanation: string;
   tokens: BdToken[]; particles: BdParticle[];

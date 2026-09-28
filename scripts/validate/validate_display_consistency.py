@@ -47,7 +47,7 @@ SOFT_BASELINE: dict[str, str] = {
     "expl[pt-BR]|sent:tatoeba-12700844|お願いする": _W13,
     "expl[pt-BR]|sent:tatoeba-217060|お願いします": _W13,
     "expl[pt-BR]|sent:tatoeba-3451118|誕生日おめでとう": _W13,
-    "particle-expl[pt-BR]|sent:tatoeba-12288646|学校で勉強する": _W13,
+    "particle-note[pt-BR]|sent:tatoeba-12288646|学校で勉強する": _W13,
     "expl[en]|sent:gen-74ea68439313|要りません,要る": _TRIAGE,
     "expl[en]|sent:gen-941ec1bd04ae|無くなった": _TRIAGE,
     "expl[en]|sent:gen-e9848d9848e8|小さくする": _TRIAGE,
@@ -82,15 +82,15 @@ SOFT_BASELINE: dict[str, str] = {
     "expl[pt-BR]|sent:tatoeba-80880|気をつけて": _TRIAGE,
     "expl[pt-BR]|sent:tatoeba-83147|ぴんと来ない": _TRIAGE,
     "expl[pt-BR]|sent:tatoeba-8703703|お金をかける,に行く": _TRIAGE,
-    "particle-expl[en]|sent:tatoeba-125814|の準体助詞": _TRIAGE,
-    "particle-expl[en]|sent:tatoeba-137738|の準体助詞": _TRIAGE,
-    "particle-expl[en]|sent:tatoeba-202786|寄っ,寄ってくる": _TRIAGE,
-    "particle-expl[pt-BR]|sent:tatoeba-125814|の準体助詞": _TRIAGE,
-    "particle-expl[pt-BR]|sent:tatoeba-13513556|の準体助詞": _TRIAGE,
-    "particle-expl[pt-BR]|sent:tatoeba-137738|の準体助詞": _TRIAGE,
-    "particle-expl[pt-BR]|sent:tatoeba-202786|寄っ,寄ってくる": _TRIAGE,
-    "particle-expl[pt-BR]|sent:tatoeba-74350|わびを入れる": _TRIAGE,
-    "particle-expl[pt-BR]|sent:tatoeba-82900|病気にかかる": _TRIAGE,
+    "particle-note[en]|sent:tatoeba-125814|の準体助詞": _TRIAGE,
+    "particle-note[en]|sent:tatoeba-137738|の準体助詞": _TRIAGE,
+    "particle-note[en]|sent:tatoeba-202786|寄っ,寄ってくる": _TRIAGE,
+    "particle-note[pt-BR]|sent:tatoeba-125814|の準体助詞": _TRIAGE,
+    "particle-note[pt-BR]|sent:tatoeba-13513556|の準体助詞": _TRIAGE,
+    "particle-note[pt-BR]|sent:tatoeba-137738|の準体助詞": _TRIAGE,
+    "particle-note[pt-BR]|sent:tatoeba-202786|寄っ,寄ってくる": _TRIAGE,
+    "particle-note[pt-BR]|sent:tatoeba-74350|わびを入れる": _TRIAGE,
+    "particle-note[pt-BR]|sent:tatoeba-82900|病気にかかる": _TRIAGE,
     "token-gloss|sent:gen-67098aef1bd0|そうして": _TRIAGE,
     "token-gloss|sent:tatoeba-121924|猫も杓子も": _TRIAGE,
     "token-gloss|sent:tatoeba-13804129|かっこいい": _TRIAGE,
@@ -185,8 +185,11 @@ def collect(db: Path) -> tuple[int, list[tuple[str, str, str, str]]]:
     psent = dict(c.execute("SELECT id,sentence_id FROM particle"))
     pchar = dict(c.execute("SELECT id,particle FROM particle"))
     seen_pchar = set()
-    for eid, loc, val in c.execute(
-            "SELECT entity_id,locale,value FROM localized_text WHERE entity_type='particle' AND field='explanation'"):
+    # W46: `explanation` is rendered from the usage template; the authored text it replaced is the
+    # `note`, which the word panel still shows, so both are checked (class particle-expl / particle-note).
+    for eid, field, loc, val in c.execute(
+            "SELECT entity_id,field,locale,value FROM localized_text WHERE entity_type='particle' "
+            "AND field IN ('explanation','note')"):
         sid = psent.get(eid)
         if sid is None:
             continue
@@ -196,7 +199,8 @@ def collect(db: Path) -> tuple[int, list[tuple[str, str, str, str]]]:
             soft.append(("particle", slug, pchar[eid], jp[:24]))
         bad = contaminated(val, jp)
         if bad:
-            soft.append((f"particle-expl[{loc}]", slug, ",".join(bad), jp[:24]))
+            soft.append((f"particle-{'expl' if field == 'explanation' else 'note'}[{loc}]", slug,
+                         ",".join(bad), jp[:24]))
 
     tsent = dict(c.execute("SELECT id,sentence_id FROM token"))
     PARTE = re.compile(r"\((?:parte d[eo]|part of)[^)]*?([ぁ-んァ-ヶー一-鿿々〆]{2,})")

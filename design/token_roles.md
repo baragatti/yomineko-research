@@ -1,6 +1,7 @@
 # Token roles: enumerable word-by-word explanation items
 
-**Status:** proposal, 2026-09-27. **Data + schema:** [`token_roles.json`](token_roles.json)
+**Status:** 2026-09-27, W46: `function` / `aux_function` / `chunk_role` applied to the bank's tokens
+(chunk_role from the verified usage of the closing particle); the rendered `role` text (§6) is not applied yet. **Data + schema:** [`token_roles.json`](token_roles.json)
 (JSON Schema 2020-12; the file validates against itself). **Companion:**
 [`particle_functions.md`](particle_functions.md). The measurements are in
 [`research/reports/particle_taxonomy_research.md`](../research/reports/particle_taxonomy_research.md) §6.

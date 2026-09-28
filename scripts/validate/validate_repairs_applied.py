@@ -157,6 +157,7 @@ Usage: validate_repairs_applied.py [--root PATH] [--all] [--table NAME]
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 from collections import Counter, defaultdict
@@ -589,6 +590,14 @@ def course_scalar_values(root: Path) -> set[str]:
 # ---------------------------------------------------------------------------------------------
 # Field readers
 # ---------------------------------------------------------------------------------------------
+def authored_explanation(p: dict) -> dict | None:
+    """W46. A particle with a usage id ships the explanation RENDERED from its template; the text a
+    campaign authored moved, verbatim, to `note` (scripts/apply_particle_usage.py). Every table that
+    asserts an authored particle explanation reads it here, so the older campaigns stay proved
+    against the text they wrote and the move itself is proved lossless."""
+    return p.get("note") if p.get("usage") else p.get("explanation")
+
+
 def locale_value(rec: dict, field: str, locale: str):
     v = rec.get(field)
     if isinstance(v, dict):
@@ -1636,8 +1645,8 @@ def handle_particle_template_fixes(rows, sents, gram, table):
                         f"C token {r['position']} is {tok and tok.get('surface')!r}, not "
                         f"{r['surface']!r} - the dissection moved under the row"))
             continue
-        texts = [(p.get("explanation") or {}).get("pt-BR") for p in s.get("particles") or []]
-        same = [(p.get("explanation") or {}).get("pt-BR") for p in s.get("particles") or []
+        texts = [(authored_explanation(p) or {}).get("pt-BR") for p in s.get("particles") or []]
+        same = [(authored_explanation(p) or {}).get("pt-BR") for p in s.get("particles") or []
                 if p.get("particle") == r["surface"]]
         if r["old_explanation"] in texts:
             out.append(("fail", C_NOT_APPLIED, addr, "a particle still carries `old_explanation`"))
@@ -1648,6 +1657,67 @@ def handle_particle_template_fixes(rows, sents, gram, table):
                         f"{same!r:.200}"))
             continue
         out.append(("ok", "", addr, "exact"))
+    return out
+
+
+def _sha16(text):
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()[:16] if text is not None else None
+
+
+def handle_particle_usage(rows, sents, gram, table):
+    """W46. Each row's usage id is on the SHIPPED particle, with its slots, and nothing was lost.
+
+    Addressed by (slug, C position): the exported particle whose `token_position` is the row's
+    position must carry the row's surface, `usage`, `usage_status`, compound `positions` and template
+    slots; and the authored explanation it replaced must be its `note`, verbatim (sha256[:16] per
+    locale equals the row's `legacy`; absent == null). That the explanation IS the rendered template
+    is validate_particle_usage.py's job (U6), which re-renders with the same code.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['slug']} @{r['position']} {r['particle']} / {r['usage']}"
+        s = sents.get(r["slug"])
+        ps = [p for p in (s or {}).get("particles") or [] if p.get("token_position") == r["position"]]
+        if s is None or len(ps) != 1 or ps[0].get("particle") != r["particle"]:
+            out.append(("fail", C_NO_RECORD, addr, "no single exported particle at that position with that surface"))
+            continue
+        p = ps[0]
+        if p.get("usage") is None:
+            out.append(("fail", C_NOT_APPLIED, addr, "the exported particle carries no usage"))
+            continue
+        want = {k: r[k] for k in ("usage", "usage_status", "positions", "chunk", "left", "expression") if k in r}
+        got = {k: p.get(k) for k in want}
+        if got != want or any(k in p for k in ("positions", "chunk", "left", "expression") if k not in r):
+            out.append(("fail", C_VALUE_MISMATCH, addr, f"export has {got!r:.200}"))
+            continue
+        note = p.get("note") or {}
+        lost = [lc for lc in LOCALES if _sha16(note.get(lc)) != r["legacy"][lc]]
+        if lost:
+            out.append(("fail", C_VALUE_MISMATCH, addr, f"`note` is not the legacy explanation in {lost}"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
+def handle_token_roles(rows, sents, gram, table):
+    """W46. The token-role enums (design/token_roles.json) each row gives a sentence's C tokens are on
+    the shipped tokens: same position, same surface, same function / aux_function / chunk_role."""
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['slug']} / token roles"
+        s = sents.get(r["slug"])
+        if s is None:
+            out.append(("fail", C_NO_RECORD, addr, "the export carries no such sentence"))
+            continue
+        toks = s.get("tokens") or []
+        bad = []
+        for pos, surface, fn, ax, cr in r["tokens"]:
+            t = toks[pos] if 0 <= pos < len(toks) else {}
+            if t.get("surface") != surface:
+                bad.append(f"token {pos} is {t.get('surface')!r}, not {surface!r}")
+            elif (t.get("function"), t.get("aux_function"), t.get("chunk_role")) != (fn, ax, cr):
+                bad.append(f"token {pos} {surface} has {(t.get('function'), t.get('aux_function'), t.get('chunk_role'))}")
+        out.append(("fail", C_VALUE_MISMATCH, addr, "; ".join(bad[:3])) if bad else ("ok", "", addr, "exact"))
     return out
 
 
@@ -1678,7 +1748,7 @@ def handle_particle_template_fixes_second(rows, sents, gram, table):
                         f"{r['surface']!r} - the dissection moved under the row"))
             continue
         fn = (p.get("function") or {}).get("pt-BR")
-        ex = (p.get("explanation") or {}).get("pt-BR")
+        ex = (authored_explanation(p) or {}).get("pt-BR")
         if fn == r["old_function_pt"] or (r["explanation_change"] == "replace"
                                           and ex == r["old_explanation"]):
             out.append(("fail", C_NOT_APPLIED, addr, "the particle still carries an `old` value"))
@@ -2130,7 +2200,9 @@ def handle_en_backfill(rows, sents, gram, table):
                 if coll == "tokens":
                     j -= sum(len(t.get("parts") or []) for t in items)
                 sub = items[j] if 0 <= j < len(items) else None
-            obj = (sub or {}).get(r["field"].split("].")[-1]) if sub is not None else None
+            leaf = r["field"].split("].")[-1]
+            obj = (None if sub is None else authored_explanation(sub) if coll == "particles" and leaf == "explanation"
+                   else sub.get(leaf))
         else:
             rec = prov_records(r["entity"]).get(r["id"])
             obj = (rec or {}).get(r["field"])
@@ -2366,7 +2438,7 @@ def handle_w32_layerb(rows, sents, gram, table):
         else:
             for p, want in zip(ps, r["particles"]):
                 if (p.get("particle"), (p.get("function") or {}).get("pt-BR"),
-                        (p.get("explanation") or {}).get("pt-BR")) != (
+                        (authored_explanation(p) or {}).get("pt-BR")) != (
                         want["particle"], want["function_pt"], want["explanation_pt"]):
                     bad.append(f"particle @{want['position']} {want['particle']} differs")
         if bad:
@@ -2498,6 +2570,10 @@ REGISTRY = {
     # U1: the second table of the same audit - the 50 re-authored て-locution connectors and
     # the 24 signed-off label corrections. Its own handler: it changes labels, which repeat.
     "particle_template_fixes_second.json": handle_particle_template_fixes_second,
+    # W46: the verified usage id of every particle occurrence, its template slots and the legacy
+    # explanation moved to `note` (held rows stay out of `rows`); and the derived token-role enums.
+    "particle_usage.json": handle_particle_usage,
+    "token_roles.json": handle_token_roles,
 }
 
 

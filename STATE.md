@@ -57,6 +57,13 @@ numbered ordering slots and the two-path course structure are all settled and ve
 appearance and reuse only.
 
 ## ▶ RESUME HERE
+> **2026-09-27 (bd) — chain v5 V2 done: W46 particle usage ids applied.** 24,741 of 24,771 particles carry a
+> verified usage id (5,406 auto, 19,026 verified, 309 verifier corrections; verdicts joined by slug#position);
+> 30 held (13 verifier-rejected, 17 surface mismatch) for an enum decision. Explanations rendered from the
+> templates (pt-BR + en), authored text moved verbatim to `note` (sha-guarded); token function/aux_function/
+> chunk_role applied (chunk_role from the verified closer). Migration 020, manifest step 157 (families 158-160),
+> new hard `validate_particle_usage.py` (13/13 plants); panel shows the usage label; 0 course files. Not a
+> checkpoint: the next full replay re-pins bank.json (`research/reports/w46_particle_usage_report.md`). Next: W47+.
 > **2026-09-27 (bc) — chain v5 V1 done (checkpoint): W45 token list = the sentence.** Export-only (no DB write):
 > `tokens[]` mode-C only with `begin`/`end`, 1,938 sub-units nested as `parts[]`, particles `token_position` +
 > `ORDER BY id`, `split_mode:"C"` kept; contract narrowed; new hard `validate_token_list.py` (T0-T6, 13/13 plants);

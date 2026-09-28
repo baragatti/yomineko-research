@@ -722,6 +722,41 @@ EXAM_BRANCHES: list[dict] = [
 ]
 
 
+# ---- W46: particle usage ids and token role enums (design/particle_functions.json, token_roles.json)
+_PF = json.loads((ROOT / "design" / "particle_functions.json").read_text(encoding="utf-8"))
+_TR = json.loads((ROOT / "design" / "token_roles.json").read_text(encoding="utf-8"))
+_PF_SRC = "design/particle_functions.json (design/particle_functions.md)"
+_TR_SRC = "design/token_roles.json (design/token_roles.md)"
+_register({
+    "sentence.particles[].usage": vocabulary(
+        [u["id"] for u in _PF["usages"]], "design", _PF_SRC,
+        "The meaning of this particle occurrence, one id of the closed usage enum (class + usage by "
+        "Japanese grammar). Null only on a held row (usage_status `held`)."),
+    "sentence.particles[].class": vocabulary(
+        [c["id"] for c in _PF["classes"]], "design", _PF_SRC,
+        "The particle class of the usage (usages[usage].class); `function_type` keeps the tokenizer's."),
+    "sentence.particles[].usage_status": vocabulary(
+        ["auto", "verified", "ruled", "held"], "design", _PF_SRC + " $defs.particle_annotation",
+        "How the usage was assigned: auto = derived mechanically, verified = ruled and confirmed by an "
+        "independent verifier, ruled = the verifier's correction, held = no verified id yet."),
+    "sentence.particles[].chunk": plain(
+        "Template slot: the chunk the particle closes (scripts/particle_usage_render.py). Null renders "
+        "as a neutral phrase."),
+    "sentence.particles[].left": plain("Template slot: the predicate a conjunctive particle or nominalizer closes."),
+    "sentence.particles[].expression": plain(
+        "Template slot: the compound (までに) or the fixed expression (lex.fixed) the particle belongs to."),
+    "sentence.tokens[].function": vocabulary(
+        [x["id"] for x in _TR["token_functions"]], "design", _TR_SRC,
+        "What the token does inside its chunk. Null where the derivation did not decide."),
+    "sentence.tokens[].aux_function": vocabulary(
+        [x["id"] for x in _TR["aux_functions"]], "design", _TR_SRC,
+        "The function of an auxiliary, by lemma. Null on non-auxiliaries and unlisted lemmas."),
+    "sentence.tokens[].chunk_role": vocabulary(
+        [x["id"] for x in _TR["chunk_roles"]], "design", _TR_SRC,
+        "What the token's chunk does in the clause, from the usage of the particle closing it."),
+})
+
+
 # ---- W45: the sentence token list (research/reports/token_list_integrity.md §4) -----------------
 # tokens[] is the sentence: C units, position == index, half-open code-point offsets tiling `jp`.
 # A sub-unit split nests as parts[] (>= 2, Layer-A keys only). Each particle points at its token.
@@ -735,7 +770,7 @@ DECLARED_ITEM_SHAPE: dict[str, dict] = {
                        "Present only when the token splits. Layer A only: a part never carries a "
                        "vocab link, gloss, role or romaji."},
     "sentence.tokens[].parts[]": {"required": _PART_KEYS, "additionalProperties": False},
-    "sentence.particles[]": {"required": ["particle", "token_position"]},
+    "sentence.particles[]": {"required": ["particle", "token_position", "usage", "usage_status"]},
 }
 
 

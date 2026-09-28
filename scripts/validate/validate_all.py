@@ -55,6 +55,10 @@ SUITE = [
     # W45: the PUBLISHED tokens[] is the sentence (C units only, ordered, offsets tile jp, sub-units
     # nested as parts, particles anchored). Plant-proved on a copied tree: 13 plants, 13 caught.
     ("validate_token_list.py", "code"),
+    # W46: every particle carries a usage id of design/particle_functions.json (or is a named held
+    # row), spelled by its surface, and its explanation IS the rendered template. Plant-proved on a
+    # copied tree: 13 plants, 13 caught, control green.
+    ("validate_particle_usage.py", "code"),
     ("validate_groundtruth.py", "code"),
     ("validate_strokes.py", "code"),
     ("integrity_audit.py", "code"),

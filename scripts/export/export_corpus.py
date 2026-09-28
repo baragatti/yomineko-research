@@ -35,6 +35,9 @@ LEVELS = ["n5", "n4", "n3"]
 BANK_LEVELS = ["n2", "n1"]
 KV_LEVELS = LEVELS + BANK_LEVELS
 LOC = DEFAULT_LOCALE  # "pt-BR"
+# W46: the particle usage enum (class + label per id), read from the design registry it is defined in.
+PARTICLE_USAGES = {u["id"]: u for u in json.loads(
+    (ROOT / "design" / "particle_functions.json").read_text(encoding="utf-8"))["usages"]}
 
 # Rank order for "is this word at or below that record's own level?". Level is DATA, not structure
 # (CLAUDE.md §1.6): a new level is a new row here, never a schema change. Unleveled rows sort last.
@@ -684,8 +687,8 @@ def export_sentences(con: sqlite3.Connection) -> int:
         at = 0
         for t in con.execute(
                 "SELECT id,position,split_mode,surface,lemma,reading,romaji,pos_coarse,pos_fine,"
-                "pos,inflection,inflection_type,vocab_id FROM token WHERE sentence_id=? "
-                "AND split_mode='C' ORDER BY position", (sid,)):
+                "pos,inflection,inflection_type,vocab_id,function,aux_function,chunk_role FROM token "
+                "WHERE sentence_id=? AND split_mode='C' ORDER BY position", (sid,)):
             tid = t[0]
             pos_of_tid[tid] = t[1]
             begin, at = at, at + len(t[3])
@@ -704,6 +707,8 @@ def export_sentences(con: sqlite3.Connection) -> int:
                 # mechanical Layer-A grammar (neutral enums + raw Sudachi)
                 "pos": t[9], "pos_coarse": t[7], "pos_fine": t[8],
                 "inflection": t[10], "inflection_type": t[11],
+                # W46: the token-role enums of design/token_roles.json (null = not derived)
+                "function": t[13], "aux_function": t[14], "chunk_role": t[15],
                 # authored Layer-B (locale-objects)
                 "role": loc(pt=TL.get((tid, "role")), en=TLen.get((tid, "role"))),
                 "gloss": loc(pt=TL.get((tid, "gloss")), en=TLen.get((tid, "gloss"))),
@@ -712,15 +717,23 @@ def export_sentences(con: sqlite3.Connection) -> int:
                 # only a real split (>= 2 pieces); validate_token_list.py T5 checks they tile the parent
                 **({"parts": parts} if len(parts) >= 2 else {})})
         particles = []
-        for p in con.execute("SELECT id,particle,function_type,token_id FROM particle WHERE sentence_id=? "
-                             "ORDER BY id", (sid,)):
+        for p in con.execute("SELECT id,particle,function_type,token_id,usage,usage_status,usage_slots "
+                             "FROM particle WHERE sentence_id=? ORDER BY id", (sid,)):
             pid = p[0]
+            u = PARTICLE_USAGES.get(p[4]) if p[4] else None
             particles.append({
                 "particle": p[1], "function_type": p[2],  # neutral enum (case/binding/conjunctive/...)
                 # W45: the occurrence's anchor, an index into tokens[] (validate_token_list.py T6)
                 "token_position": pos_of_tid.get(p[3]),
+                # W46: the usage id (design/particle_functions.json), its class and label; the
+                # explanation below is RENDERED from the usage's template + these slots
+                # (scripts/particle_usage_render.py); `note` is the authored text it replaced.
+                "usage": p[4], "class": u["class"] if u else None, "usage_status": p[5],
+                "usage_label": dict(u["label"]) if u else None,
+                **(jloads(p[6]) or {}),
                 "function": loc(pt=PL.get((pid, "function")), en=PLen.get((pid, "function"))),
-                "explanation": loc(pt=PL.get((pid, "explanation")), en=PLen.get((pid, "explanation")))})
+                "explanation": loc(pt=PL.get((pid, "explanation")), en=PLen.get((pid, "explanation"))),
+                "note": loc(pt=PL.get((pid, "note")), en=PLen.get((pid, "note")))})
         grammar = [r[0] for r in con.execute(
             "SELECT g.key FROM sentence_grammar sg JOIN grammar_point g ON g.id=sg.grammar_id "
             "WHERE sg.sentence_id=? ORDER BY g.key", (sid,))]
@@ -772,7 +785,8 @@ def export_sentences(con: sqlite3.Connection) -> int:
     lines = ["# Corpus — Dissected sentence bank", "",
              f"_Generated {build_date()}. Full §6 dissection. `translation` = "
              f"{{\"{LOC}\":…,\"en\":…}}; tokens carry mechanical `pos`/`inflection`; particles carry "
-             f"`function_type`. Lessons reference these BY `slug` (the stable id)._", "",
+             f"`function_type` and a `usage` id (design/particle_functions.json) whose template renders "
+             f"`explanation`. Lessons reference these BY `slug` (the stable id)._", "",
              "| slug | jp | translation | level |", "|------|----|----|-------|"]
     for slug, jp, tr, lvl in index_rows:
         lines.append(f"| {slug} | {jp} | {tr} | {lvl} |")

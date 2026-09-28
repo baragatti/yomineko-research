@@ -1,6 +1,7 @@
 /** One unit of the sentence (tokens concat == jp); `p` = its shorter sub-units, nested, never siblings. */
 interface BdToken { s: string; r?: string; ro?: string; pos?: string; gloss?: string; role?: string; p?: string[] }
-interface BdParticle { p: string; ft?: string; fn?: string; ex?: string }
+/** `u` = usage label (W46 enum), `ex` = explanation rendered from it, `n` = the authored note. */
+interface BdParticle { p: string; ft?: string; fn?: string; ex?: string; u?: string; n?: string }
 interface SentenceView {
   slug: string;
   jp: string;
@@ -41,8 +42,9 @@ function Breakdown({ tokens, particles }: { tokens: BdToken[]; particles: BdPart
           {particles.map((p, i) => (
             <div key={i} className="ym-bd-part">
               <span className="ym-chip ym-chip-grammar" lang="ja">{p.p}</span>
-              {p.ft && <span className="ym-tag">{p.ft}</span>}
+              {(p.u || p.ft) && <span className="ym-tag">{p.u || p.ft}</span>}
               <span className="ym-bd-pexpl">{p.ex || p.fn || ""}</span>
+              {p.n && p.n !== p.ex && <span className="ym-bd-pnote">{p.n}</span>}
             </div>
           ))}
         </div>

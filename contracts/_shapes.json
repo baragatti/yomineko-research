@@ -1857,6 +1857,35 @@
       "array"
      ]
     },
+    "particles[].chunk": {
+     "present": 18103,
+     "pct": 176.3,
+     "required": false,
+     "types": [
+      "null",
+      "string"
+     ]
+    },
+    "particles[].class": {
+     "present": 24771,
+     "pct": 241.2,
+     "required": false,
+     "types": [
+      "null",
+      "string"
+     ],
+     "values": [
+      "adverbial",
+      "binding",
+      "case",
+      "conjunctive",
+      "copula-form",
+      "lexicalized",
+      "nominalizer",
+      "parallel",
+      "sentence-final"
+     ]
+    },
     "particles[].explanation": {
      "present": 24771,
      "pct": 241.2,
@@ -1866,8 +1895,8 @@
      ]
     },
     "particles[].explanation.en": {
-     "present": 13451,
-     "pct": 131.0,
+     "present": 24763,
+     "pct": 241.1,
      "required": false,
      "types": [
       "string"
@@ -1876,6 +1905,14 @@
     "particles[].explanation.pt-BR": {
      "present": 24771,
      "pct": 241.2,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
+    "particles[].expression": {
+     "present": 1589,
+     "pct": 15.5,
      "required": false,
      "types": [
       "string"
@@ -1922,6 +1959,39 @@
       "sentence-final"
      ]
     },
+    "particles[].left": {
+     "present": 3261,
+     "pct": 31.7,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
+    "particles[].note": {
+     "present": 24771,
+     "pct": 241.2,
+     "required": false,
+     "types": [
+      "null",
+      "object"
+     ]
+    },
+    "particles[].note.en": {
+     "present": 13429,
+     "pct": 130.7,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
+    "particles[].note.pt-BR": {
+     "present": 24741,
+     "pct": 240.9,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
     "particles[].particle": {
      "present": 24771,
      "pct": 241.2,
@@ -1929,6 +1999,24 @@
      "types": [
       "string"
      ]
+    },
+    "particles[].positions": {
+     "present": 357,
+     "pct": 3.5,
+     "required": false,
+     "types": [
+      "array"
+     ]
+    },
+    "particles[].positions[]": {
+     "present": 772,
+     "pct": 7.5,
+     "required": false,
+     "types": [
+      "integer"
+     ],
+     "min": 1,
+     "max": 15
     },
     "particles[].token_position": {
      "present": 24771,
@@ -1939,6 +2027,54 @@
      ],
      "min": 0,
      "max": 23
+    },
+    "particles[].usage": {
+     "present": 24771,
+     "pct": 241.2,
+     "required": false,
+     "types": [
+      "null",
+      "string"
+     ]
+    },
+    "particles[].usage_label": {
+     "present": 24771,
+     "pct": 241.2,
+     "required": false,
+     "types": [
+      "null",
+      "object"
+     ]
+    },
+    "particles[].usage_label.en": {
+     "present": 24741,
+     "pct": 240.9,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
+    "particles[].usage_label.pt-BR": {
+     "present": 24741,
+     "pct": 240.9,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
+    "particles[].usage_status": {
+     "present": 24771,
+     "pct": 241.2,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "auto",
+      "held",
+      "ruled",
+      "verified"
+     ]
     },
     "pattern": {
      "present": 10271,
@@ -2194,6 +2330,29 @@
       "array"
      ]
     },
+    "tokens[].aux_function": {
+     "present": 85694,
+     "pct": 834.3,
+     "required": false,
+     "types": [
+      "null",
+      "string"
+     ],
+     "values": [
+      "causative",
+      "copula",
+      "copula-polite",
+      "desire",
+      "evidential",
+      "negation",
+      "negative-volitional",
+      "obligation",
+      "passive-potential",
+      "past",
+      "perfective",
+      "politeness"
+     ]
+    },
     "tokens[].begin": {
      "present": 85694,
      "pct": 834.3,
@@ -2203,6 +2362,15 @@
      ],
      "min": 0,
      "max": 37
+    },
+    "tokens[].chunk_role": {
+     "present": 85694,
+     "pct": 834.3,
+     "required": false,
+     "types": [
+      "null",
+      "string"
+     ]
     },
     "tokens[].conjugation_note": {
      "present": 85694,
@@ -2238,6 +2406,32 @@
      ],
      "min": 1,
      "max": 38
+    },
+    "tokens[].function": {
+     "present": 85694,
+     "pct": 834.3,
+     "required": false,
+     "types": [
+      "null",
+      "string"
+     ],
+     "values": [
+      "adnominal-predicate",
+      "adverb",
+      "auxiliary",
+      "conjunction",
+      "determiner",
+      "head",
+      "interjection",
+      "noun-modifier",
+      "numeral",
+      "particle",
+      "predicate-head",
+      "prefix",
+      "punctuation",
+      "subsidiary-verb",
+      "suffix"
+     ]
     },
     "tokens[].gloss": {
      "present": 85694,

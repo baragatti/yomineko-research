@@ -554,11 +554,20 @@ export interface Sentence {
   level: Level;
   new_items: unknown[];
   particles: {
+      chunk?: string | null;
+      class?: "adverbial" | "binding" | "case" | "conjunctive" | "copula-form" | "lexicalized" | "nominalizer" | "parallel" | "sentence-final" | null;
       explanation?: LocaleText;
+      expression?: string;
       function?: LocaleText | null;
       function_type?: "adverbial" | "binding" | "case" | "conjunctive" | "nominalizer" | "parallel" | "sentence-final";
+      left?: string;
+      note?: LocaleText | null;
       particle: string;
+      positions?: number[];
       token_position: number;
+      usage: "ba.conditional" | "bakari.just-done" | "bakari.only" | "dake.only" | "de.cause" | "de.copula" | "de.limit" | "de.location-action" | "de.manner" | "de.material" | "de.means" | "de.scope" | "demo.even" | "demo.example" | "ga.contrast" | "ga.preface" | "ga.stative-object" | "ga.subject" | "ha.contrast" | "ha.topic" | "he.direction" | "hodo.degree" | "jan.confirmation" | "ka.acknowledgment" | "ka.alternative" | "ka.embedded-question" | "ka.indefinite" | "ka.invitation" | "ka.question" | "kai.question" | "kana.wondering" | "kara.after" | "kara.material" | "kara.reason" | "kara.source" | "kara.starting-point" | "kashira.wondering" | "kedo.contrast" | "kedo.softening" | "kke.recall" | "koso.emphasis" | "kurai.approximation" | "lex.fixed" | "made.as-far-as" | "made.even" | "made.until" | "madeni.deadline" | "mo.also" | "mo.both" | "mo.concessive" | "mo.emphasis-quantity" | "mo.total-negation" | "mono.justification" | "na.emotive" | "na.prohibition" | "na.soft-command" | "nado.examples" | "nagara.simultaneous" | "ne.confirmation" | "ni.adverbial" | "ni.agent" | "ni.cause" | "ni.causee" | "ni.frequency" | "ni.goal" | "ni.location-existence" | "ni.parallel" | "ni.purpose" | "ni.recipient" | "ni.result" | "ni.source" | "ni.standard" | "ni.target" | "ni.time-point" | "nitsuite.about" | "no.explanatory" | "no.final-explanation" | "no.final-question" | "no.nominalizer" | "no.noun-modifier" | "no.pronoun" | "no.subject-in-modifier" | "node.reason" | "nomi.only" | "noni.concessive" | "noni.purpose" | "sa.assertion" | "sae.even" | "shi.listing-reasons" | "shika.only-negative" | "tari.representative" | "tatte.concessive" | "te.cause" | "te.manner" | "te.parallel" | "te.request" | "te.sequence" | "te.subsidiary" | "teha.condition" | "to.adverbial" | "to.comitative" | "to.comparison" | "to.conditional" | "to.parallel" | "to.quotative" | "to.result" | "toiu.naming" | "tsutsu.simultaneous" | "tte.quotative" | "tte.topic" | "wa.emphasis" | "wo.causee" | "wo.departure" | "wo.object" | "wo.path" | "ya.partial-list" | "yara.listing" | "yo.assertion" | "yo.urging" | "yori.comparison" | "yori.starting-point" | "zo.emphasis" | "zutsu.distributive" | null;
+      usage_label?: LocaleText | null;
+      usage_status: "auto" | "held" | "ruled" | "verified";
     }[];
   pattern: {
       chunk?: string;
@@ -590,9 +599,12 @@ export interface Sentence {
   structure_explanation: LocaleText;
   tags: string[];
   tokens: {
+      aux_function?: "causative" | "comparison" | "copula" | "copula-polite" | "desire" | "evidential" | "negation" | "negative-volitional" | "obligation" | "passive-potential" | "past" | "perfective" | "politeness" | "volitional" | null;
       begin: number;
+      chunk_role?: "adverbial" | "agent" | "cause" | "causee" | "clause-link" | "comitative" | "connective" | "end-point" | "focus" | "goal" | "interjection" | "location" | "location-action" | "manner" | "material" | "means" | "modifier" | "nominalized-clause" | "none" | "object" | "parallel-item" | "path" | "predicate" | "purpose" | "quantity" | "quote" | "recipient" | "result" | "scope" | "sentence-final" | "source" | "standard" | "stative-object" | "subject" | "target" | "time" | "topic" | null;
       conjugation_note?: LocaleText | null;
       end: number;
+      function?: "adnominal-predicate" | "adverb" | "auxiliary" | "conjunction" | "determiner" | "head" | "interjection" | "noun-modifier" | "numeral" | "particle" | "predicate-head" | "prefix" | "punctuation" | "subsidiary-verb" | "suffix" | null;
       gloss?: LocaleText | null;
       inflection?: "attributive" | "conditional" | "continuative" | "imperative" | "irrealis" | "ku-form" | "stem" | "terminal" | "volitional" | null;
       inflection_type?: string | null;

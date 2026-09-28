@@ -1,6 +1,8 @@
 # Particle functions: classes, usages, explanation templates
 
-**Status:** proposal, 2026-09-27. Nothing in `corpus/` uses these ids yet. The measurement behind the
+**Status:** applied 2026-09-27 (W46): every particle of `corpus/sentences/bank.json` carries a `usage`
+id (30 held rows excepted) and its `explanation` is rendered from §7; report
+[`research/reports/w46_particle_usage_report.md`](../research/reports/w46_particle_usage_report.md). The measurement behind the
 design and the migration plan are in
 [`research/reports/particle_taxonomy_research.md`](../research/reports/particle_taxonomy_research.md).
 **Data + schema:** [`particle_functions.json`](particle_functions.json) (JSON Schema 2020-12; the file
@@ -203,7 +205,7 @@ report §4. `—` marks a compound the measurement did not count as a unit.
 | `te.parallel` | て / で | conjunctive | 並列 | and (joining adjectives or clauses) | e (juntando adjetivos ou orações) | clause-link | N5 | 35 | 安くておいしい |
 | `te.subsidiary` | て / で | conjunctive | 補助動詞への接続 | link to a subsidiary verb (〜ている, 〜てください, 〜てみる) | ligação a um verbo auxiliar (〜ている, 〜てください, 〜てみる) | predicate | N5 | 1597 | 本を読んでいる |
 | `te.request` | て / で | conjunctive | 依頼（文末） | casual request (sentence-final 〜て) | pedido informal (〜て no fim) | predicate | N4 | 88 | ちょっと待って |
-| `teha.condition` | ては / ちゃ / じゃ | conjunctive | 条件（否定的評価） | if (with a negative judgment: 〜てはいけない) | se (com avaliação negativa: 〜てはいけない) | clause-link | N4 | 76 | ここで写真を撮ってはいけない |
+| `teha.condition` | ては / では / ちゃ / じゃ | conjunctive | 条件（否定的評価） | if (with a negative judgment: 〜てはいけない) | se (com avaliação negativa: 〜てはいけない) | clause-link | N4 | 76 | ここで写真を撮ってはいけない |
 | `ba.conditional` | ば | conjunctive | 仮定条件 | if (conditional) | se (condição) | clause-link | N4 | 141 | 安ければ買う |
 | `kedo.contrast` | けど / けれど / けれども | conjunctive | 逆接 | but, although | mas, embora | clause-link | N4 | 24 | 高いけど、買う |
 | `kedo.softening` | けど / けれど / けれども | conjunctive | 言いさし・前置き | trailing but (softens the sentence) | mas… (suaviza a frase, deixando-a em aberto) | clause-link | N4 | 28 | ちょっと聞きたいんですけど |
@@ -388,3 +390,9 @@ Times, 1986) for the learner-facing split of meanings.
 ## Changelog
 
 - 1.0 (2026-09-27): first proposal. 9 classes, 123 usages, 9 templates, 59 cues.
+- 1.0, W46 apply (2026-09-27): applied to the bank (research/reports/w46_particle_usage_report.md).
+  `teha.condition` gains the voiced allomorph では (読んではいけない; じゃ is its contraction), which
+  the list had omitted. `usage_status` gains `held` (no verified id; usage null, legacy explanation
+  kept). A multi-token spelling (ては = て + は) matches when a contiguous token span containing the
+  particle spells it. `function_type` still carries the tokenizer class; the usage's class ships
+  beside it as `class` until the pattern consumers move to usages (migration step M9).

@@ -48,8 +48,49 @@
       "items": {
         "type": "object",
         "properties": {
+          "chunk": {
+            "anyOf": [
+              {
+                "type": "string",
+                "description": "Template slot: the chunk the particle closes (scripts/particle_usage_render.py). Null renders as a neutral phrase."
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "class": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "adverbial",
+                  "binding",
+                  "case",
+                  "conjunctive",
+                  "copula-form",
+                  "lexicalized",
+                  "nominalizer",
+                  "parallel",
+                  "sentence-final"
+                ],
+                "description": "The particle class of the usage (usages[usage].class); `function_type` keeps the tokenizer's. Vocabulary owner: design — design/particle_functions.json (design/particle_functions.md). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+                "x-vocabulary": {
+                  "owner": "design",
+                  "source": "design/particle_functions.json (design/particle_functions.md)"
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
           "explanation": {
             "$ref": "common.schema.json#/$defs/LocaleText"
+          },
+          "expression": {
+            "type": "string",
+            "description": "Template slot: the compound (までに) or the fixed expression (lex.fixed) the particle belongs to."
           },
           "function": {
             "anyOf": [
@@ -78,18 +119,205 @@
               "source": "scripts/ingest/dissect.py PARTICLE_FUNCTION_MAP (Sudachi 助詞 subtype)"
             }
           },
+          "left": {
+            "type": "string",
+            "description": "Template slot: the predicate a conjunctive particle or nominalizer closes."
+          },
+          "note": {
+            "anyOf": [
+              {
+                "$ref": "common.schema.json#/$defs/LocaleText"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
           "particle": {
             "type": "string"
+          },
+          "positions": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            }
           },
           "token_position": {
             "type": "integer",
             "minimum": 0
+          },
+          "usage": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "ba.conditional",
+                  "bakari.just-done",
+                  "bakari.only",
+                  "dake.only",
+                  "de.cause",
+                  "de.copula",
+                  "de.limit",
+                  "de.location-action",
+                  "de.manner",
+                  "de.material",
+                  "de.means",
+                  "de.scope",
+                  "demo.even",
+                  "demo.example",
+                  "ga.contrast",
+                  "ga.preface",
+                  "ga.stative-object",
+                  "ga.subject",
+                  "ha.contrast",
+                  "ha.topic",
+                  "he.direction",
+                  "hodo.degree",
+                  "jan.confirmation",
+                  "ka.acknowledgment",
+                  "ka.alternative",
+                  "ka.embedded-question",
+                  "ka.indefinite",
+                  "ka.invitation",
+                  "ka.question",
+                  "kai.question",
+                  "kana.wondering",
+                  "kara.after",
+                  "kara.material",
+                  "kara.reason",
+                  "kara.source",
+                  "kara.starting-point",
+                  "kashira.wondering",
+                  "kedo.contrast",
+                  "kedo.softening",
+                  "kke.recall",
+                  "koso.emphasis",
+                  "kurai.approximation",
+                  "lex.fixed",
+                  "made.as-far-as",
+                  "made.even",
+                  "made.until",
+                  "madeni.deadline",
+                  "mo.also",
+                  "mo.both",
+                  "mo.concessive",
+                  "mo.emphasis-quantity",
+                  "mo.total-negation",
+                  "mono.justification",
+                  "na.emotive",
+                  "na.prohibition",
+                  "na.soft-command",
+                  "nado.examples",
+                  "nagara.simultaneous",
+                  "ne.confirmation",
+                  "ni.adverbial",
+                  "ni.agent",
+                  "ni.cause",
+                  "ni.causee",
+                  "ni.frequency",
+                  "ni.goal",
+                  "ni.location-existence",
+                  "ni.parallel",
+                  "ni.purpose",
+                  "ni.recipient",
+                  "ni.result",
+                  "ni.source",
+                  "ni.standard",
+                  "ni.target",
+                  "ni.time-point",
+                  "nitsuite.about",
+                  "no.explanatory",
+                  "no.final-explanation",
+                  "no.final-question",
+                  "no.nominalizer",
+                  "no.noun-modifier",
+                  "no.pronoun",
+                  "no.subject-in-modifier",
+                  "node.reason",
+                  "nomi.only",
+                  "noni.concessive",
+                  "noni.purpose",
+                  "sa.assertion",
+                  "sae.even",
+                  "shi.listing-reasons",
+                  "shika.only-negative",
+                  "tari.representative",
+                  "tatte.concessive",
+                  "te.cause",
+                  "te.manner",
+                  "te.parallel",
+                  "te.request",
+                  "te.sequence",
+                  "te.subsidiary",
+                  "teha.condition",
+                  "to.adverbial",
+                  "to.comitative",
+                  "to.comparison",
+                  "to.conditional",
+                  "to.parallel",
+                  "to.quotative",
+                  "to.result",
+                  "toiu.naming",
+                  "tsutsu.simultaneous",
+                  "tte.quotative",
+                  "tte.topic",
+                  "wa.emphasis",
+                  "wo.causee",
+                  "wo.departure",
+                  "wo.object",
+                  "wo.path",
+                  "ya.partial-list",
+                  "yara.listing",
+                  "yo.assertion",
+                  "yo.urging",
+                  "yori.comparison",
+                  "yori.starting-point",
+                  "zo.emphasis",
+                  "zutsu.distributive"
+                ],
+                "description": "The meaning of this particle occurrence, one id of the closed usage enum (class + usage by Japanese grammar). Null only on a held row (usage_status `held`). Vocabulary owner: design — design/particle_functions.json (design/particle_functions.md). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+                "x-vocabulary": {
+                  "owner": "design",
+                  "source": "design/particle_functions.json (design/particle_functions.md)"
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "usage_label": {
+            "anyOf": [
+              {
+                "$ref": "common.schema.json#/$defs/LocaleText"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "usage_status": {
+            "type": "string",
+            "enum": [
+              "auto",
+              "held",
+              "ruled",
+              "verified"
+            ],
+            "description": "How the usage was assigned: auto = derived mechanically, verified = ruled and confirmed by an independent verifier, ruled = the verifier's correction, held = no verified id yet. Vocabulary owner: design — design/particle_functions.json (design/particle_functions.md) $defs.particle_annotation. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "design",
+              "source": "design/particle_functions.json (design/particle_functions.md) $defs.particle_annotation"
+            }
           }
         },
         "additionalProperties": false,
         "required": [
           "particle",
-          "token_position"
+          "token_position",
+          "usage",
+          "usage_status"
         ]
       }
     },
@@ -317,9 +545,94 @@
       "items": {
         "type": "object",
         "properties": {
+          "aux_function": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "causative",
+                  "comparison",
+                  "copula",
+                  "copula-polite",
+                  "desire",
+                  "evidential",
+                  "negation",
+                  "negative-volitional",
+                  "obligation",
+                  "passive-potential",
+                  "past",
+                  "perfective",
+                  "politeness",
+                  "volitional"
+                ],
+                "description": "The function of an auxiliary, by lemma. Null on non-auxiliaries and unlisted lemmas. Vocabulary owner: design — design/token_roles.json (design/token_roles.md). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+                "x-vocabulary": {
+                  "owner": "design",
+                  "source": "design/token_roles.json (design/token_roles.md)"
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
           "begin": {
             "type": "integer",
             "minimum": 0
+          },
+          "chunk_role": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "adverbial",
+                  "agent",
+                  "cause",
+                  "causee",
+                  "clause-link",
+                  "comitative",
+                  "connective",
+                  "end-point",
+                  "focus",
+                  "goal",
+                  "interjection",
+                  "location",
+                  "location-action",
+                  "manner",
+                  "material",
+                  "means",
+                  "modifier",
+                  "nominalized-clause",
+                  "none",
+                  "object",
+                  "parallel-item",
+                  "path",
+                  "predicate",
+                  "purpose",
+                  "quantity",
+                  "quote",
+                  "recipient",
+                  "result",
+                  "scope",
+                  "sentence-final",
+                  "source",
+                  "standard",
+                  "stative-object",
+                  "subject",
+                  "target",
+                  "time",
+                  "topic"
+                ],
+                "description": "What the token's chunk does in the clause, from the usage of the particle closing it. Vocabulary owner: design — design/token_roles.json (design/token_roles.md). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+                "x-vocabulary": {
+                  "owner": "design",
+                  "source": "design/token_roles.json (design/token_roles.md)"
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
           },
           "conjugation_note": {
             "anyOf": [
@@ -334,6 +647,38 @@
           "end": {
             "type": "integer",
             "minimum": 0
+          },
+          "function": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "adnominal-predicate",
+                  "adverb",
+                  "auxiliary",
+                  "conjunction",
+                  "determiner",
+                  "head",
+                  "interjection",
+                  "noun-modifier",
+                  "numeral",
+                  "particle",
+                  "predicate-head",
+                  "prefix",
+                  "punctuation",
+                  "subsidiary-verb",
+                  "suffix"
+                ],
+                "description": "What the token does inside its chunk. Null where the derivation did not decide. Vocabulary owner: design — design/token_roles.json (design/token_roles.md). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+                "x-vocabulary": {
+                  "owner": "design",
+                  "source": "design/token_roles.json (design/token_roles.md)"
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
           },
           "gloss": {
             "anyOf": [

@@ -5,7 +5,7 @@
  * (tag -> renderer) but emitting an opaque HTML string instead of a hydrated React tree.
  */
 import { getSentence, getReading, getKanji, getVocab, getGrammar, loc, locArr, kanaToRomaji } from "./corpus.server";
-import type { BdToken } from "./corpus.server";
+import type { BdParticle, BdToken } from "./corpus.server";
 
 const esc = (s: string) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -161,16 +161,18 @@ function renderBreakdown(s: any): string {
         .join("") +
       `</div></div>`;
   }
-  const parts = (s.particles || []).filter((p: any) => p.p);
+  const parts = ((s.particles || []) as BdParticle[]).filter((p) => p.p);
   if (parts.length) {
     out +=
       `<div class="ym-bd-parts"><div class="ym-bd-label">Partículas</div>` +
       parts
         .map(
-          (p: any) =>
+          (p) =>
             `<div class="ym-bd-part"><span class="ym-chip ym-chip-grammar" lang="ja">${esc(p.p)}</span>` +
-            (p.ft ? `<span class="ym-tag">${esc(p.ft)}</span>` : "") +
-            `<span class="ym-bd-pexpl">${escJa(p.ex || p.fn || "")}</span></div>`
+            (p.u || p.ft ? `<span class="ym-tag">${esc(p.u || p.ft || "")}</span>` : "") +
+            `<span class="ym-bd-pexpl">${escJa(p.ex || p.fn || "")}</span>` +
+            (p.n && p.n !== p.ex ? `<span class="ym-bd-pnote">${escJa(p.n)}</span>` : "") +
+            `</div>`
         )
         .join("") +
       `</div>`;
