@@ -3,6 +3,23 @@
 _Written 2026-09-27. Status measured from `APP_PLAN.md` §3 and `PENDING.md` at commit `eb11721f`.
 Each question gives what it blocks, the options, and a recommendation. Answer by id, e.g. "D11: B"._
 
+## Answered 2026-09-27
+
+D1 no N1/N2 now, never blocked · D2 (c) · D3 Chatterbox Multilingual locally, content-addressed
+audio · D4 MVP without review · D8 no API here, exports are the contract · D9 complete strokes for
+every character · D11 the most digestible option that loses no data — research says **B′** (B with
+each word taught just before its first use, and vocabulary lessons grouped by theme, never by
+near-synonyms: `n3_pacing_check.md`) · D12 do it if reasonable · all quick calls as recommended.
+Product decisions are kept in `design/product_notes.md`.
+
+## New asks raised by the 2026-09-27 research
+
+| id | question | why | what happens meanwhile |
+|---|---|---|---|
+| **V1** | Who records the reference voices? Shipping a cloned voice needs a native speaker's **signed consent** for synthetic reuse in a paid app: one Japanese female (plus optional male/extra voices for listening dialogues) and one pt-BR narrator. | Voice rights (`audio_pipeline_research.md` §4) | The pilot and the N5 batch use the model's own bundled voices, marked `pilot`; switching voices later only regenerates, no data lost. |
+| **V2** | Accept the TTS pitch accent for general audio? Chatterbox cannot follow accent data. | Pitch accent can be wrong on some words even with correct kana | Everything is checked by speech-to-text for readings; accent is not checked. |
+| **L1** | Ask the authors of JEV (日本語教育語彙表) and Hagoromo for written permission to use their level lists commercially. | All our N3 lists descend from one source (Tanos/Waller); these two are the only independent graded lists, and their licences are research-only. | Agreement is re-counted per lineage and N3 confidence is capped honestly; KANJIDIC2 adds a bound check. |
+
 ## Where the project stands
 
 | measure | value |
