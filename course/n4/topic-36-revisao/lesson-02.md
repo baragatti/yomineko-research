@@ -11,7 +11,7 @@
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-11801342`, `sent:tatoeba-78721`, `sent:tatoeba-10774565`
 
 ---
 
@@ -47,6 +47,11 @@ O aspecto marca em que ponto a ação está. Use a base ます sem o ます mais
 
 > **[tip]**
 Não confunda 〜終わる(terminar de fazer) com o passado simples. "食べた" só diz que comi; "食べ終わった" enfatiza que cheguei ao fim da refeição. E 〜ておく guarda a ideia de preparar algo com antecedência, não de "colocar".
+
+#### Mais exemplos
+> 🗣 ここにいようと思う。 — Acho que vou ficar aqui.
+> 🗣 来てくれてありがとう。 — Obrigado por ter vindo.
+> 🗣 今、勉強してるところだよ。 — Estou estudando agora mesmo.
 
 #### Hora de praticar
 

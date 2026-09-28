@@ -11,7 +11,7 @@
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-13126479`, `sent:tatoeba-216787`, `sent:tatoeba-528350`
 
 ---
 
@@ -50,6 +50,11 @@ O brasileiro já tem o instinto certo aqui:ね é quase o nosso "né?" (espera u
 
 > **[tip]**
 Antes do simulado, faça um teste rápido com você: consegue dar um pedido, descrever uma ação em curso, pedir permissão, fazer um convite e montar uma comparação, tudo de cabeça? Se travar em algum, volte ao tópico antes de avançar. O N4 vai pegar a forma て e levá-la muito mais longe.
+
+#### Mais exemplos
+> 🗣 りんごがほしいですか？ — Você quer maçã?
+> 🗣 さっさと行ったほうがいい。 — É melhor a gente ir logo.
+> 🗣 もう行かなきゃ！ — Já tenho que ir!
 
 #### Hora de praticar
 - Reconheço os quatro usos da forma て: pedido, ação em curso, permissão e proibição.

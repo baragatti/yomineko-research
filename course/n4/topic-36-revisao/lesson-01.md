@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-194168`, `sent:tatoeba-4860`, `sent:tatoeba-80337`
 
 ---
 
@@ -54,6 +54,11 @@ Com と você não pode pôr pedido, ordem ou convite no resultado.駅に着く�
 
 > **[example]**
 As três peças juntas numa frase só:昨日買った本を読んだら面白かった("quando li o livro que comprei ontem, achei interessante"). Tem oração relativa (昨日買った本), condicional たら(読んだら) e forma simples no passado (面白かった).
+
+#### Mais exemplos
+> 🗣 もう終わったかい？ — Já terminou?
+> 🗣 もう何をしたらいいか分からない。 — Já não sei mais o que fazer.
+> 🗣 明日雨ならば行きません。 — Se chover amanhã, eu não vou.
 
 #### Hora de praticar
 

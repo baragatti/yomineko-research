@@ -3,10 +3,10 @@
  "what_this_is": "Every `needs[]` entry the courseware carries, as {lesson, ref, origin, note}. `origin` derived = copied from scripts/derive_needs.py on the current tree; kana-chain / review-chain = added by the two rules stated in this script's docstring, because those lessons reference nothing a derivation could see. `note` is learner-facing pt-BR produced by a fixed template per reason class, never free prose.",
  "applied_by": "scripts/apply_lesson_needs.py",
  "counts": {
-  "rows": 743,
-  "derived": 700,
+  "rows": 754,
+  "derived": 705,
   "kana_chain": 40,
-  "review_chain": 3,
+  "review_chain": 9,
   "lessons_with_needs": 320,
   "roots": 4
  },
@@ -16,7 +16,7 @@
   "les:n5-numeros-tempo-09",
   "les:pre-n5-orientacao-01"
  ],
- "row_count": 743,
+ "row_count": 754,
  "rows": [
   {
    "lesson": "les:pre-n5-orientacao-02",
@@ -1866,6 +1866,16 @@
   },
   {
    "lesson": "les:n5-revisao-01",
+   "ref": "les:n5-perguntas-01",
+   "origin": "derived",
+   "note": "Apresenta o ponto de gramática あそこ, que aparece nesta lição.",
+   "driving_refs": [
+    "gram:gp-11"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n5-revisao-01",
    "ref": "les:n5-conectando-07",
    "origin": "review-chain",
    "note": "É a última lição do bloco que esta revisão cobre.",
@@ -1874,11 +1884,33 @@
   },
   {
    "lesson": "les:n5-revisao-02",
+   "ref": "les:n5-adjetivos-04",
+   "origin": "derived",
+   "note": "Apresenta a palavra 余り (あまり) e o ponto de gramática い-Adjective くなかった, que aparecem nesta lição.",
+   "driving_refs": [
+    "gram:gp-35",
+    "vocab:1584930"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n5-revisao-02",
    "ref": "les:n5-revisao-01",
    "origin": "review-chain",
    "note": "Vem logo antes nesta mesma sequência de revisão; esta lição continua de onde ela parou.",
    "driving_refs": [],
    "channels": ""
+  },
+  {
+   "lesson": "les:n5-revisao-03",
+   "ref": "les:n5-convites-04",
+   "origin": "derived",
+   "note": "Apresenta os pontos de gramática たほうがいい e ～ほうがいい, que aparecem nesta lição.",
+   "driving_refs": [
+    "gram:gp-50",
+    "gram:hou-ga-ii"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n5-revisao-03",
@@ -4297,6 +4329,24 @@
    "channels": "body-reading"
   },
   {
+   "lesson": "les:n4-revisao-01",
+   "ref": "les:n4-conectores-07",
+   "origin": "review-chain",
+   "note": "É a última lição do bloco que esta revisão cobre.",
+   "driving_refs": [],
+   "channels": ""
+  },
+  {
+   "lesson": "les:n4-revisao-02",
+   "ref": "les:n4-aspecto-05",
+   "origin": "derived",
+   "note": "Apresenta o ponto de gramática ているところ, que aparece nesta lição.",
+   "driving_refs": [
+    "gram:teiru-tokoro"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
    "lesson": "les:n4-revisao-02",
    "ref": "les:n4-causativa-01",
    "origin": "derived",
@@ -4307,6 +4357,24 @@
    "channels": "body-reading"
   },
   {
+   "lesson": "les:n4-revisao-02",
+   "ref": "les:n4-revisao-01",
+   "origin": "review-chain",
+   "note": "Vem logo antes nesta mesma sequência de revisão; esta lição continua de onde ela parou.",
+   "driving_refs": [],
+   "channels": ""
+  },
+  {
+   "lesson": "les:n4-revisao-03",
+   "ref": "les:n4-causativa-02",
+   "origin": "derived",
+   "note": "Apresenta o ponto de gramática させてください, que aparece nesta lição.",
+   "driving_refs": [
+    "gram:sasete-kudasai"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
    "lesson": "les:n4-revisao-03",
    "ref": "les:n4-conectores-01",
    "origin": "derived",
@@ -4315,6 +4383,14 @@
     "vocab:1241450"
    ],
    "channels": "body-reading"
+  },
+  {
+   "lesson": "les:n4-revisao-03",
+   "ref": "les:n4-revisao-02",
+   "origin": "review-chain",
+   "note": "Vem logo antes nesta mesma sequência de revisão; esta lição continua de onde ela parou.",
+   "driving_refs": [],
+   "channels": ""
   },
   {
    "lesson": "les:n4-kanji-exame-01",
@@ -7410,6 +7486,14 @@
    "channels": "body-reading"
   },
   {
+   "lesson": "les:n3-revisao-01",
+   "ref": "les:n3-estrutura-06",
+   "origin": "review-chain",
+   "note": "É a última lição do bloco que esta revisão cobre.",
+   "driving_refs": [],
+   "channels": ""
+  },
+  {
    "lesson": "les:n3-revisao-02",
    "ref": "les:n3-desejos-01",
    "origin": "derived",
@@ -7428,6 +7512,14 @@
     "gram:n3-kurai"
    ],
    "channels": "exercise-sentence"
+  },
+  {
+   "lesson": "les:n3-revisao-02",
+   "ref": "les:n3-revisao-01",
+   "origin": "review-chain",
+   "note": "Vem logo antes nesta mesma sequência de revisão; esta lição continua de onde ela parou.",
+   "driving_refs": [],
+   "channels": ""
   },
   {
    "lesson": "les:n3-revisao-03",
@@ -7468,6 +7560,14 @@
     "kanji:忙"
    ],
    "channels": "exercise-sentence"
+  },
+  {
+   "lesson": "les:n3-revisao-03",
+   "ref": "les:n3-revisao-02",
+   "origin": "review-chain",
+   "note": "Vem logo antes nesta mesma sequência de revisão; esta lição continua de onde ela parou.",
+   "driving_refs": [],
+   "channels": ""
   }
  ]
 }

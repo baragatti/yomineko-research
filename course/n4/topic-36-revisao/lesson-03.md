@@ -11,7 +11,7 @@
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-2684823`, `sent:tatoeba-143650`, `sent:tatoeba-3957479`
 
 ---
 
@@ -52,6 +52,11 @@ Para o texto fluir, os conectores do N4 ligam ideia com ideia.それで mostra c
 -  Passiva:〜られる, agente em に, mais a passiva de incômodo.
 -  Causativa:〜せる／させる(eu mando) contra させられる(me obrigam).
 -  Keigo:尊敬語 sobe o outro,謙譲語 abaixa você,丁寧語 é a base educada.
+
+#### Mais exemplos
+> 🗣 明日は雨かもしれない。 — Amanhã talvez chova.
+> 🗣 水道の水が止められた。 — A água do encanamento foi cortada.
+> 🗣 考えさせてください。 — Deixe-me pensar, por favor.
 
 #### Hora de praticar
 

@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-10954021`, `sent:tatoeba-230319`, `sent:tatoeba-150639`
 
 ---
 
@@ -64,6 +64,11 @@ Lembre-se de que números quase nunca andam sozinhos: eles vêm com um contador.
 
 > **[example]**
 Juntando tudo numa frase:明日七時に学校へ行きます(amanhã às sete vou para a escola). Repare como に marca a hora,へ marca a direção e o verbo fica em 〜ます.
+
+#### Mais exemplos
+> 🗣 あそこに先生がいます。 — O professor está ali.
+> 🗣 あまり出かけたくなかった。 — Eu não estava muito a fim de sair.
+> 🗣 時間がありますか。 — Você tem um tempo?
 
 #### Hora de praticar
 - Conjugo um verbo polido nas quatro formas: 〜ます, 〜ません, 〜ました, 〜ませんでした.

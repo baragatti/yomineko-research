@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-5332`, `sent:tatoeba-1596597`, `sent:tatoeba-234396`
 
 ---
 
@@ -59,6 +59,11 @@ Para sentir a diferença entre は e が, pense assim: は escolhe o assunto ("q
 
 > **[l1-advantage]**
 Com só essas peças você já monta muita coisa: これは私の鍵です (isto é a minha chave) junta o demonstrativo, a partícula の e a cópula です. Os blocos se encaixam sempre na mesma ordem.
+
+#### Mais exemplos
+> 🗣 いくらですか？ — Quanto custa?
+> 🗣 なぜ聞くの？ — Por que você (me) pergunta?
+> 🗣 あそこのカウンターです。 — É naquele balcão ali.
 
 #### Hora de praticar
 - Leio hiragana e katakana sem soletrar e lembro que は・へ・を como partículas mudam de som.

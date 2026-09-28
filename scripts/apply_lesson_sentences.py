@@ -27,7 +27,9 @@ kanji-exame lessons), and there this step writes it again.
 
 Idempotent. Run `scripts/export/export_course.py` afterwards, then re-derive `needs` (check C4):
 `build_needs_table.py` -> `apply_lesson_needs.py --replace`.
-Usage: apply_lesson_sentences.py [--check]
+Q5-lesson-examples reuses it for `research/derived/repairs/lesson_examples.json` (same row shape,
+assembled by scripts/assemble_lesson_examples.py from a verified table) through `--table`.
+Usage: apply_lesson_sentences.py [--check] [--table PATH]
 """
 from __future__ import annotations
 
@@ -50,10 +52,10 @@ TABLE = ROOT / "research" / "derived" / "repairs" / "lesson_sentences.json"
 SENT_REF = re.compile(r'<sentence\s+ref="([^"]+)"')
 
 
-def load_table() -> dict:
-    doc = json.loads(TABLE.read_text(encoding="utf-8"))
+def load_table(table: Path = TABLE) -> dict:
+    doc = json.loads(table.read_text(encoding="utf-8"))
     if doc.get("row_count") != len(doc["rows"]):
-        raise SystemExit(f"{TABLE.name}: row_count {doc.get('row_count')} != {len(doc['rows'])}")
+        raise SystemExit(f"{table.name}: row_count {doc.get('row_count')} != {len(doc['rows'])}")
     return doc
 
 
@@ -157,8 +159,10 @@ def apply_db(con, groups, check, problems) -> int:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true", help="report what would change; write nothing")
+    ap.add_argument("--table", type=Path, default=TABLE,
+                    help="a table in the same row shape (Q5: repairs/lesson_examples.json)")
     args = ap.parse_args()
-    doc = load_table()
+    doc = load_table(args.table)
     groups = by_lesson(doc["rows"])
     problems: list[str] = []
     con = sqlite3.connect(DB)

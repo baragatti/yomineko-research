@@ -2425,6 +2425,8 @@ REGISTRY = {
     "w22_n3_dead_end.json": handle_w22_unlocks,
     # W14: lesson sentence re-selection (adds, in-place swaps, removals, pre-N5 chips).
     "lesson_sentences.json": handle_lesson_sentences,
+    # Q5: the verified W14-residue rows a lesson edit can carry (review-lesson examples, 1 removal).
+    "lesson_examples.json": handle_lesson_sentences,
     # W21b: the 280 forward-reference moves (unlock + card + travelling exercises).
     "w21b_forward_refs.json": handle_forward_refs,
     "orthographic_relinks.json": handle_orthographic_relinks,

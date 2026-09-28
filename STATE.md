@@ -57,6 +57,11 @@ numbered ordering slots and the two-path course structure are all settled and ve
 appearance and reuse only.
 
 ## ▶ RESUME HERE
+> **2026-09-27 (ba) — chain v4 Q5 done: lesson examples, bank half.** 18 verified real sentences in the six N5/N4
+> review lessons (step 156); N5/N4 lessons rendering none 15 -> 9 (n4 0); review lessons keep their chain need.
+> Held with reasons: 23 new sentences (Layer-B derived, paragraph/literal/links to author), 5066, 4 card-bound links,
+> 11 link fixes, 63 glosses (no card markup). Next: Q6 W34, final checkpoint (`research/reports/q5_lesson_examples_report.md`).
+>
 > **2026-09-27 (az) — chain v4 Q4 done: listening re-authoring + small residues applied.** 175 listening items
 > into the journal, 13 banks rebuilt, every listening ceiling -> 0 (level gate 0 on all 40 banks); 6 reply ids follow
 > their new sentence, 2 edited replies keep theirs. 15 of 19 grammar drills (step 155; 4 held on C5 forward refs),

@@ -1,0 +1,1725 @@
+{
+ "unit": "Q5-lesson-examples",
+ "kind": "derived (mechanical) Layer-B for the verified lesson-example sentences the bank lacks; nothing authored",
+ "generated_by": "scripts/derive_lesson_examples_layerb.py",
+ "inputs": [
+  "research/derived/repairs/lesson_examples.json (residue kind needs-ingest)",
+  "research/derived/mined_layerb_n3/batch-*.json (verified rulings, reused)"
+ ],
+ "status": "NOT ingestable: the structure paragraph and translation_literal are never derived; an authoring pass fills `residue` (plus the link corrections listed there), then the W32 path ingests (assemble -> derive_sentence_register_v2 --w13-source -> ingest_mined_stages.py) and assemble_lesson_examples.py re-runs",
+ "counts": {
+  "link:differs-from-proof": 5,
+  "particle:author": 9,
+  "particle:template": 37,
+  "sentences": 23,
+  "token:ambiguous-verify": 3,
+  "token:author": 2,
+  "token:unique-accept": 20,
+  "token:verified": 48
+ },
+ "residue_counts": {
+  "link": 5,
+  "particle:explanation": 9,
+  "structure_explanation_pt": 23,
+  "token:ambiguous-verify": 3,
+  "token:author": 2,
+  "translation_literal": 23
+ },
+ "ingest_ready": 0,
+ "sentences": [
+  {
+   "lesson": "les:n5-numeros-tempo-01",
+   "slug": "sent:gen-471f8a1f1149",
+   "jp": "このあめは十円です",
+   "pt": "Esta bala custa dez ienes.",
+   "source_kind": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "needs a dissection pass before the link can be applied",
+   "clause_structure_predicted": "topic-comment",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "この",
+     "lemma": "この",
+     "pos": "adnominal",
+     "vocab": "vocab:1578150",
+     "proof_vocab": "vocab:1582920",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "este, esse"
+    },
+    {
+     "position": 1,
+     "surface": "あめ",
+     "lemma": "あめ",
+     "pos": "noun",
+     "vocab": "vocab:1171900",
+     "proof_vocab": "vocab:1153520",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "registry",
+     "gloss_pt": "chuva"
+    },
+    {
+     "position": 3,
+     "surface": "十",
+     "lemma": "十",
+     "pos": "noun",
+     "vocab": "vocab:1579840",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "dez"
+    },
+    {
+     "position": 4,
+     "surface": "円",
+     "lemma": "円",
+     "pos": "noun",
+     "vocab": "vocab:1175570",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "iene (moeda)"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta このあめ como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "link#0:vocab:1578150->vocab:1582920",
+    "link#1:vocab:1171900->vocab:1153520"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-01",
+   "slug": "sent:tatoeba-3024513",
+   "jp": "一人いくらですか？",
+   "pt": "Quanto é por pessoa?",
+   "source_kind": "tatoeba-raw",
+   "ai_generated": false,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": null,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "一人",
+     "lemma": "一人",
+     "pos": "noun",
+     "vocab": "vocab:1576150",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "uma pessoa, sozinho"
+    },
+    {
+     "position": 1,
+     "surface": "いくら",
+     "lemma": "いくら",
+     "pos": "noun",
+     "vocab": "vocab:1219980",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "quanto"
+    }
+   ],
+   "particles": [
+    {
+     "position": 3,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-04",
+   "slug": "sent:gen-b12efce38196",
+   "jp": "こどもは十さいです",
+   "pt": "A criança tem dez anos.",
+   "source_kind": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "needs a dissection pass before the link can be applied",
+   "clause_structure_predicted": "topic-comment",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "こども",
+     "lemma": "こども",
+     "pos": "noun",
+     "vocab": "vocab:1307850",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "criança, filho"
+    },
+    {
+     "position": 2,
+     "surface": "十",
+     "lemma": "十",
+     "pos": "noun",
+     "vocab": "vocab:1579840",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "dez"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta こども como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-04",
+   "slug": "sent:gen-9b5915e843b7",
+   "jp": "大きなかばんです",
+   "pt": "É uma bolsa grande.",
+   "source_kind": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "needs a dissection pass before the link can be applied",
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "大きな",
+     "lemma": "大きな",
+     "pos": "adnominal",
+     "vocab": "vocab:1412890",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "grande"
+    },
+    {
+     "position": 1,
+     "surface": "かばん",
+     "lemma": "かばん",
+     "pos": "noun",
+     "vocab": "vocab:1208910",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "bolsa, mala"
+    }
+   ],
+   "particles": [],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-04",
+   "slug": "sent:tatoeba-203991",
+   "jp": "ダイエット中です。",
+   "pt": "Estou de dieta.",
+   "source_kind": "tatoeba-raw",
+   "ai_generated": false,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": null,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "ダイエット",
+     "lemma": "ダイエット",
+     "pos": "noun",
+     "vocab": null,
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "dieta"
+    }
+   ],
+   "particles": [],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-06",
+   "slug": "sent:tatoeba-10901831",
+   "jp": "そのコップはあなたのです。",
+   "pt": "Esse copo é seu.",
+   "source_kind": "tatoeba-raw",
+   "ai_generated": false,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "not in the bank: needs a dissection pass (tokens, grammar tags, level) before the link can be applied",
+   "clause_structure_predicted": "topic-comment",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "その",
+     "lemma": "その",
+     "pos": "adnominal",
+     "vocab": "vocab:1006830",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "esse, aquele"
+    },
+    {
+     "position": 1,
+     "surface": "コップ",
+     "lemma": "コップ",
+     "pos": "noun",
+     "vocab": "vocab:1050390",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "copo"
+    },
+    {
+     "position": 3,
+     "surface": "あなた",
+     "lemma": "あなた",
+     "pos": "pronoun",
+     "vocab": "vocab:1223615",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "você"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta そのコップ como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 4,
+     "particle": "の",
+     "function_type": "case",
+     "function_pt": "partícula de ligação/posse",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#4:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-06",
+   "slug": "sent:gen-4425f10db1d8",
+   "jp": "それはさとうですか、しおですか",
+   "pt": "Isso é açúcar ou sal?",
+   "source_kind": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "needs a dissection pass before the link can be applied",
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "それ",
+     "lemma": "それ",
+     "pos": "pronoun",
+     "vocab": "vocab:1006970",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "isso"
+    },
+    {
+     "position": 2,
+     "surface": "さとう",
+     "lemma": "さとう",
+     "pos": "noun",
+     "vocab": "vocab:1291600",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "registry",
+     "gloss_pt": "açúcar"
+    },
+    {
+     "position": 6,
+     "surface": "しお",
+     "lemma": "しお",
+     "pos": "noun",
+     "vocab": "vocab:1576630",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "registry",
+     "gloss_pt": "sal"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta それ como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 4,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 8,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-06",
+   "slug": "sent:gen-bace6a9dbb78",
+   "jp": "しょうゆはどれですか",
+   "pt": "Qual é o shoyu?",
+   "source_kind": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "needs a dissection pass before the link can be applied",
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "しょうゆ",
+     "lemma": "しょうゆ",
+     "pos": "noun",
+     "vocab": "vocab:1595020",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "registry",
+     "gloss_pt": "molho de soja; shoyu"
+    },
+    {
+     "position": 2,
+     "surface": "どれ",
+     "lemma": "どれ",
+     "pos": "pronoun",
+     "vocab": "vocab:1009290",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "qual (entre vários)"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta しょうゆ como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 4,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-07",
+   "slug": "sent:tatoeba-8631611",
+   "jp": "ブラジルは大きな国だ。",
+   "pt": "O Brasil é um país grande.",
+   "source_kind": "tatoeba-raw",
+   "ai_generated": false,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "not in the bank: needs a dissection pass before the link can be applied",
+   "clause_structure_predicted": "topic-comment",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "ブラジル",
+     "lemma": "ブラジル",
+     "pos": "noun",
+     "vocab": null,
+     "gloss_status": "author",
+     "gloss_origin": null
+    },
+    {
+     "position": 2,
+     "surface": "大きな",
+     "lemma": "大きな",
+     "pos": "adnominal",
+     "vocab": "vocab:1412890",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "grande"
+    },
+    {
+     "position": 3,
+     "surface": "国",
+     "lemma": "国",
+     "pos": "noun",
+     "vocab": "vocab:1592250",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "país"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta ブラジル como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "token#0:author"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-07",
+   "slug": "sent:gen-f93acdb4cc60",
+   "jp": "あのしゃしんの人はだれですか",
+   "pt": "Quem é a pessoa daquela foto?",
+   "source_kind": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "needs a dissection pass before the link can be applied",
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "あの",
+     "lemma": "あの",
+     "pos": "adnominal",
+     "vocab": "vocab:1000420",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "aquele"
+    },
+    {
+     "position": 1,
+     "surface": "しゃしん",
+     "lemma": "しゃしん",
+     "pos": "noun",
+     "vocab": "vocab:1321900",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "registry",
+     "gloss_pt": "foto; fotografia; retrato"
+    },
+    {
+     "position": 3,
+     "surface": "人",
+     "lemma": "人",
+     "pos": "noun",
+     "vocab": "vocab:1580640",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "pessoa"
+    },
+    {
+     "position": 5,
+     "surface": "だれ",
+     "lemma": "だれ",
+     "pos": "pronoun",
+     "vocab": "vocab:1416830",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "quem"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "の",
+     "function_type": "case",
+     "function_pt": "partícula de ligação/posse",
+     "function_status": "bank-modal",
+     "explanation_pt": "の liga あのしゃしん a 人 e junta os dois num bloco só, em que 人 é o núcleo e あのしゃしん o modificador.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 4,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 人 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 7,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-07",
+   "slug": "sent:gen-2105b55af049",
+   "jp": "それはだれのざっしですか",
+   "pt": "De quem é essa revista?",
+   "source_kind": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "needs a dissection pass before the link can be applied",
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "それ",
+     "lemma": "それ",
+     "pos": "pronoun",
+     "vocab": "vocab:1006970",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "isso"
+    },
+    {
+     "position": 2,
+     "surface": "だれ",
+     "lemma": "だれ",
+     "pos": "pronoun",
+     "vocab": "vocab:1416830",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "quem"
+    },
+    {
+     "position": 4,
+     "surface": "ざっし",
+     "lemma": "ざっし",
+     "pos": "noun",
+     "vocab": "vocab:1299400",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "registry",
+     "gloss_pt": "revista; periódico"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta それ como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 3,
+     "particle": "の",
+     "function_type": "case",
+     "function_pt": "partícula de ligação/posse",
+     "function_status": "bank-modal",
+     "explanation_pt": "の liga だれ a ざっし e junta os dois num bloco só, em que ざっし é o núcleo e だれ o modificador.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 6,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-08",
+   "slug": "sent:tatoeba-223699",
+   "jp": "このシャツはだれのですか。",
+   "pt": "De quem é esta camisa?",
+   "source_kind": "tatoeba-raw",
+   "ai_generated": false,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "not in the bank: needs a dissection pass (tokens, grammar tags, level) before the link can be applied",
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "この",
+     "lemma": "この",
+     "pos": "adnominal",
+     "vocab": "vocab:1578150",
+     "proof_vocab": "vocab:1582920",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "este, esse"
+    },
+    {
+     "position": 1,
+     "surface": "シャツ",
+     "lemma": "シャツ",
+     "pos": "noun",
+     "vocab": "vocab:1061520",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "camisa"
+    },
+    {
+     "position": 3,
+     "surface": "だれ",
+     "lemma": "だれ",
+     "pos": "pronoun",
+     "vocab": "vocab:1416830",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "quem"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta このシャツ como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 4,
+     "particle": "の",
+     "function_type": "case",
+     "function_pt": "partícula de ligação/posse",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 6,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#4:explanation",
+    "link#0:vocab:1578150->vocab:1582920"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-08",
+   "slug": "sent:tatoeba-879005",
+   "jp": "このズボンいくら？",
+   "pt": "Quanto é essa calça?",
+   "source_kind": "tatoeba-raw",
+   "ai_generated": false,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "not in the bank: needs a dissection pass (tokens, grammar tags, level) before the link can be applied",
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "この",
+     "lemma": "この",
+     "pos": "adnominal",
+     "vocab": "vocab:1578150",
+     "proof_vocab": "vocab:1582920",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "este, esse"
+    },
+    {
+     "position": 1,
+     "surface": "ズボン",
+     "lemma": "ズボン",
+     "pos": "noun",
+     "vocab": "vocab:1074260",
+     "gloss_status": "ambiguous-verify",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "calça"
+    },
+    {
+     "position": 2,
+     "surface": "いくら",
+     "lemma": "いくら",
+     "pos": "noun",
+     "vocab": "vocab:1219980",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "quanto"
+    }
+   ],
+   "particles": [],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "token#1:ambiguous-verify",
+    "link#0:vocab:1578150->vocab:1582920"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-09",
+   "slug": "sent:tatoeba-218088",
+   "jp": "これは本です。",
+   "pt": "Isto é um livro.",
+   "source_kind": "tatoeba-raw",
+   "ai_generated": false,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "not in the bank: needs a dissection pass (tokens, grammar tags, level) before the link can be applied",
+   "clause_structure_predicted": "topic-comment",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "これ",
+     "lemma": "これ",
+     "pos": "pronoun",
+     "vocab": "vocab:1628530",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "isto"
+    },
+    {
+     "position": 2,
+     "surface": "本",
+     "lemma": "本",
+     "pos": "noun",
+     "vocab": "vocab:1522150",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "livro"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta これ como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-09",
+   "slug": "sent:tatoeba-188894",
+   "jp": "駅はどこですか。",
+   "pt": "Onde fica a estação?",
+   "source_kind": "tatoeba-raw",
+   "ai_generated": false,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": null,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "駅",
+     "lemma": "駅",
+     "pos": "noun",
+     "vocab": "vocab:1175140",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "estação"
+    },
+    {
+     "position": 2,
+     "surface": "どこ",
+     "lemma": "どこ",
+     "pos": "pronoun",
+     "vocab": "vocab:1577140",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "onde"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 駅 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 4,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-09",
+   "slug": "sent:tatoeba-224200",
+   "jp": "こちらカーティスさんです。",
+   "pt": "Esta é a senhora Curtis.",
+   "source_kind": "tatoeba-raw",
+   "ai_generated": false,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": null,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "こちら",
+     "lemma": "こちら",
+     "pos": "pronoun",
+     "vocab": "vocab:1004500",
+     "gloss_status": "ambiguous-verify",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "este lado / nós (alvo do olhar)"
+    },
+    {
+     "position": 1,
+     "surface": "カーティス",
+     "lemma": "カーティス",
+     "pos": "noun",
+     "vocab": null,
+     "gloss_status": "author",
+     "gloss_origin": null
+    }
+   ],
+   "particles": [],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "token#0:ambiguous-verify",
+    "token#1:author"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-convites-06",
+   "slug": "sent:gen-556db7c50a8b",
+   "jp": "外はかぜがふいています",
+   "pt": "Lá fora está ventando.",
+   "source_kind": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "needs a dissection pass before the link can be applied",
+   "clause_structure_predicted": "coordinate",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "外",
+     "lemma": "外",
+     "pos": "noun",
+     "vocab": "vocab:1203250",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "fora; lado de fora"
+    },
+    {
+     "position": 2,
+     "surface": "かぜ",
+     "lemma": "かぜ",
+     "pos": "noun",
+     "vocab": "vocab:1499720",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "resfriado / gripe"
+    },
+    {
+     "position": 4,
+     "surface": "ふい",
+     "lemma": "ふく",
+     "pos": "verb",
+     "vocab": "vocab:1370760",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "enxugar, limpar"
+    },
+    {
+     "position": 6,
+     "surface": "い",
+     "lemma": "いる",
+     "pos": "verb",
+     "vocab": "vocab:1577980",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "estar"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 外 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 3,
+     "particle": "が",
+     "function_type": "case",
+     "function_pt": "partícula de sujeito",
+     "function_status": "bank-modal",
+     "explanation_pt": "が marca かぜ como o sujeito de ふく, isto é, quem faz ou de quem se diz o que o predicado exprime.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 5,
+     "particle": "て",
+     "function_type": "conjunctive",
+     "function_pt": "partícula conectiva (forma て)",
+     "function_status": "bank-modal",
+     "explanation_pt": "て liga ふく ao que vem depois (いる) e encadeia os dois dentro da mesma frase.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-convites-06",
+   "slug": "sent:gen-74dd8aa290f5",
+   "jp": "あしたは雨がふるでしょう",
+   "pt": "Amanhã deve chover.",
+   "source_kind": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "needs a dissection pass before the link can be applied",
+   "clause_structure_predicted": "topic-comment",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "あした",
+     "lemma": "あした",
+     "pos": "noun",
+     "vocab": "vocab:1584660",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "amanhã"
+    },
+    {
+     "position": 2,
+     "surface": "雨",
+     "lemma": "雨",
+     "pos": "noun",
+     "vocab": "vocab:1171900",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "chuva"
+    },
+    {
+     "position": 4,
+     "surface": "ふる",
+     "lemma": "ふる",
+     "pos": "verb",
+     "vocab": "vocab:1282790",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "cair (falando de neve ou chuva)"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta あした como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 3,
+     "particle": "が",
+     "function_type": "case",
+     "function_pt": "partícula de sujeito",
+     "function_status": "bank-modal",
+     "explanation_pt": "が marca 雨 como o sujeito de ふる, isto é, quem faz ou de quem se diz o que o predicado exprime.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-convites-06",
+   "slug": "sent:gen-5cf5d333bb64",
+   "jp": "このへんにえきはありますか",
+   "pt": "Tem alguma estação por aqui?",
+   "source_kind": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "the dissection must link へん to vocab:1512070 (辺), not 変",
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "この",
+     "lemma": "この",
+     "pos": "adnominal",
+     "vocab": "vocab:1578150",
+     "proof_vocab": "vocab:1582920",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "este, esse"
+    },
+    {
+     "position": 1,
+     "surface": "へん",
+     "lemma": "へん",
+     "pos": "noun",
+     "vocab": "vocab:1512070",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "registry",
+     "gloss_pt": "redondeza; por aqui (área); arredores"
+    },
+    {
+     "position": 3,
+     "surface": "えき",
+     "lemma": "えき",
+     "pos": "noun",
+     "vocab": "vocab:1175140",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "estação (de trem)"
+    },
+    {
+     "position": 5,
+     "surface": "あり",
+     "lemma": "ある",
+     "pos": "verb",
+     "vocab": "vocab:1296400",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "existir, haver"
+    }
+   ],
+   "particles": [
+    {
+     "position": 4,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta えき como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 7,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "link#0:vocab:1578150->vocab:1582920"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-conectando-07",
+   "slug": "sent:tatoeba-184425",
+   "jp": "学校は２キロ先にある。",
+   "pt": "A escola fica dois quilômetros mais à frente.",
+   "source_kind": "tatoeba-raw",
+   "ai_generated": false,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "link the ２ token to vocab:1461140 (二); left unlinked it fails sentence_ok",
+   "clause_structure_predicted": "topic-comment",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "学校",
+     "lemma": "学校",
+     "pos": "noun",
+     "vocab": "vocab:1206730",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "escola"
+    },
+    {
+     "position": 2,
+     "surface": "２",
+     "lemma": "2",
+     "pos": "noun",
+     "vocab": "vocab:1461140",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "dois"
+    },
+    {
+     "position": 3,
+     "surface": "キロ",
+     "lemma": "キロ",
+     "pos": "noun",
+     "vocab": "vocab:1042610",
+     "gloss_status": "ambiguous-verify",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "quilômetro(s)"
+    },
+    {
+     "position": 4,
+     "surface": "先",
+     "lemma": "先",
+     "pos": "noun",
+     "vocab": "vocab:1387210",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "adiante, à frente"
+    },
+    {
+     "position": 6,
+     "surface": "ある",
+     "lemma": "ある",
+     "pos": "verb",
+     "vocab": "vocab:1296400",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "existir, haver"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 学校 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 5,
+     "particle": "に",
+     "function_type": "case",
+     "function_pt": "partícula de destino/direção",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "token#3:ambiguous-verify",
+    "particle#5:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-conectando-07",
+   "slug": "sent:gen-aed10738045e",
+   "jp": "休みの日はテレビを見たり、おんがくを聞いたりします",
+   "pt": "Nos dias de folga, eu vejo TV, ouço música, essas coisas.",
+   "source_kind": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": [
+    "unlock vocab:1157170 in les:n5-verbos-04",
+    "regrade vocab:1157170 to n5 (する is N5 in the standard lists; one source says n4)"
+   ],
+   "clause_structure_predicted": "topic-comment",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "休み",
+     "lemma": "休み",
+     "pos": "noun",
+     "vocab": "vocab:1227500",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "folga, descanso"
+    },
+    {
+     "position": 2,
+     "surface": "日",
+     "lemma": "日",
+     "pos": "noun",
+     "vocab": "vocab:1463770",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "dia"
+    },
+    {
+     "position": 4,
+     "surface": "テレビ",
+     "lemma": "テレビ",
+     "pos": "noun",
+     "vocab": "vocab:1080510",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "televisão, TV"
+    },
+    {
+     "position": 6,
+     "surface": "見",
+     "lemma": "見る",
+     "pos": "verb",
+     "vocab": "vocab:1259290",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "ver, olhar"
+    },
+    {
+     "position": 9,
+     "surface": "おんがく",
+     "lemma": "おんがく",
+     "pos": "noun",
+     "vocab": "vocab:1183720",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "registry",
+     "gloss_pt": "música"
+    },
+    {
+     "position": 11,
+     "surface": "聞い",
+     "lemma": "聞く",
+     "pos": "verb",
+     "vocab": "vocab:1591110",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "ouvir, escutar"
+    },
+    {
+     "position": 13,
+     "surface": "し",
+     "lemma": "する",
+     "pos": "verb",
+     "vocab": "vocab:1298670",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "fazer"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "の",
+     "function_type": "case",
+     "function_pt": "partícula de ligação/posse",
+     "function_status": "bank-modal",
+     "explanation_pt": "の liga 休み a 日 e junta os dois num bloco só, em que 日 é o núcleo e 休み o modificador.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 3,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 日 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 5,
+     "particle": "を",
+     "function_type": "case",
+     "function_pt": "marcador de objeto direto",
+     "function_status": "bank-modal",
+     "explanation_pt": "を marca テレビ como o objeto direto de 見る, ou seja, aquilo sobre o que a ação recai.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 7,
+     "particle": "たり",
+     "function_type": "adverbial",
+     "function_pt": "partícula que lista ações (たり)",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 10,
+     "particle": "を",
+     "function_type": "case",
+     "function_pt": "marcador de objeto direto",
+     "function_status": "bank-modal",
+     "explanation_pt": "を marca おんがく como o objeto direto de 聞く, ou seja, aquilo sobre o que a ação recai.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 12,
+     "particle": "たり",
+     "function_type": "adverbial",
+     "function_pt": "partícula que lista ações (たり)",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#7:explanation",
+    "particle#12:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-conectando-07",
+   "slug": "sent:tatoeba-224779",
+   "jp": "ここからレストランまでのいきかたを書いてください。",
+   "pt": "Por favor, escreva como se chega daqui até o restaurante.",
+   "source_kind": "tatoeba-raw",
+   "ai_generated": false,
+   "needs_review": true,
+   "held_link": null,
+   "ingest_note": "link ください to vocab:1184270 (下さい), not vocab:1184280 (下さる)",
+   "clause_structure_predicted": "imperative",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "ここ",
+     "lemma": "ここ",
+     "pos": "pronoun",
+     "vocab": "vocab:1578150",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "aqui"
+    },
+    {
+     "position": 2,
+     "surface": "レストラン",
+     "lemma": "レストラン",
+     "pos": "noun",
+     "vocab": "vocab:1145310",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "restaurante"
+    },
+    {
+     "position": 5,
+     "surface": "いき",
+     "lemma": "いく",
+     "pos": "verb",
+     "vocab": "vocab:1578850",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "ir"
+    },
+    {
+     "position": 8,
+     "surface": "書い",
+     "lemma": "書く",
+     "pos": "verb",
+     "vocab": "vocab:1343950",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "escrever"
+    },
+    {
+     "position": 10,
+     "surface": "ください",
+     "lemma": "くださる",
+     "pos": "verb",
+     "vocab": "vocab:1184280",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "por favor (faça)"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "から",
+     "function_type": "case",
+     "function_pt": "partícula de origem/ponto de partida",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 3,
+     "particle": "まで",
+     "function_type": "adverbial",
+     "function_pt": "limite temporal ('até')",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 4,
+     "particle": "の",
+     "function_type": "case",
+     "function_pt": "partícula de ligação/posse",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 7,
+     "particle": "を",
+     "function_type": "case",
+     "function_pt": "marcador de objeto direto",
+     "function_status": "bank-modal",
+     "explanation_pt": "を marca いきかた como o objeto direto de 書く, ou seja, aquilo sobre o que a ação recai.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 9,
+     "particle": "て",
+     "function_type": "conjunctive",
+     "function_pt": "partícula conectiva (forma て)",
+     "function_status": "bank-modal",
+     "explanation_pt": "て liga 書く ao que vem depois (くださる) e encadeia os dois dentro da mesma frase.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#1:explanation",
+    "particle#3:explanation",
+    "particle#4:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "lesson": "les:n5-te-form-04",
+   "slug": "(new replacement, key to assign)",
+   "jp": "あそこにいる人はだれですか",
+   "pt": "Quem é aquela pessoa ali?",
+   "source_kind": "generated-replacement",
+   "ai_generated": true,
+   "needs_review": true,
+   "held_link": "sent:tatoeba-5107",
+   "ingest_note": null,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "あそこ",
+     "lemma": "あそこ",
+     "pos": "pronoun",
+     "vocab": "vocab:1000320",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "ali, lá (longe dos dois)"
+    },
+    {
+     "position": 2,
+     "surface": "いる",
+     "lemma": "いる",
+     "pos": "verb",
+     "vocab": "vocab:1577980",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "estar"
+    },
+    {
+     "position": 3,
+     "surface": "人",
+     "lemma": "人",
+     "pos": "noun",
+     "vocab": "vocab:1580640",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "pessoa"
+    },
+    {
+     "position": 5,
+     "surface": "だれ",
+     "lemma": "だれ",
+     "pos": "pronoun",
+     "vocab": "vocab:1416830",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "quem"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "に",
+     "function_type": "case",
+     "function_pt": "partícula de destino/direção",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 4,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta いる人 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 7,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#1:explanation"
+   ],
+   "ingest_ready": false
+  }
+ ]
+}

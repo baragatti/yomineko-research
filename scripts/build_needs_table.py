@@ -27,6 +27,7 @@ THE TWO RULES, stated so they can be checked rather than trusted
   review-chain  each of the 11 deep roots needs the lesson immediately before it in course order,
                 which is the last lesson of the block it reviews (n5-revisao-01 -> n5-conectando-07)
                 or the previous lesson of its own review sequence (n5-revisao-02 -> n5-revisao-01).
+                Since Q5 every review lesson (`-revisao-`) keeps that edge beside its derived needs.
 
 THE NOTE IS LEARNER-FACING. The derivation's own note is bookkeeping — "introduces vocab:1241450;
 seen via body-reading" — and this table is rendered in a "antes desta lição" box. Each note is
@@ -164,11 +165,17 @@ def build(root: Path) -> dict:
         rows.append({"lesson": lid, "ref": prev, "origin": "kana-chain", "note": note,
                      "driving_refs": [], "channels": ""})
 
-    # --- rule 2: the 11 deep review / kanji-exame roots -------------------------------------
+    # --- rule 2: the deep review / kanji-exame roots, and every review lesson -----------------
+    # Q5: a review lesson keeps its chain edge even once its own example sentences derive needs of
+    # their own; otherwise showing sentences in a review would drop "after the block it reviews".
     deep = [x["id"] for x in lessons
-            if not x["needs"] and x["position"] > 100 and x["level"] != "pre-n5"]
+            if (not x["needs"] or "-revisao-" in x["id"]) and x["position"] > 100
+            and x["level"] != "pre-n5"]
+    have = {(r["lesson"], r["ref"]) for r in rows}
     for lid in deep:
         prev = order[pos[lid] - 1]
+        if (lid, prev) in have:
+            continue                                       # already a derived edge
         note = REVIEW_SAME if topic.get(lid) == topic.get(prev) else REVIEW_BLOCK
         rows.append({"lesson": lid, "ref": prev, "origin": "review-chain", "note": note,
                      "driving_refs": [], "channels": ""})
