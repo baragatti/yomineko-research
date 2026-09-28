@@ -385,11 +385,22 @@ def pick_pilot(units: list[Unit], n: int) -> list[Unit]:
 
 
 # --- main ------------------------------------------------------------------------------------------
+def lesson_refs(lesson: str) -> set[str]:
+    """Every stable id the lesson's exported JSON mentions (sentences, words, kana, grammar)."""
+    import glob, re
+    for f in glob.glob(str(REPO / "course" / "**" / "lesson-*.json"), recursive=True):
+        text = open(f, encoding="utf-8").read()
+        if f'"id": "{lesson}"' in text or f'"slug": "{lesson}"' in text:
+            return set(re.findall(r'(?:sent|vocab|kanji|kana|gram):[^"\s<>]+', text))
+    raise SystemExit(f"lesson not found in course/: {lesson}")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--tier", default="n5", choices=TIERS)
     ap.add_argument("--pilot", type=int, default=0)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--lesson", default="", help="only units a lesson uses, e.g. les:n5-desu-wa-01")
     ap.add_argument("--prune", action="store_true")
     ap.add_argument("--status", action="store_true")
     ap.add_argument("--retry-failed", action="store_true")
@@ -447,6 +458,10 @@ def main() -> int:
         todo_units = pick_pilot(todo_units, a.pilot)
         status["total"] = len(todo_units)
         status["done"] = status["failed"] = 0
+    elif a.lesson:
+        refs = lesson_refs(a.lesson)
+        todo_units = [u for u in todo_units if any(c.startswith(a.lesson) or c in refs for c in u.consumers)]
+        status["total"] = len(todo_units)
     elif a.limit:
         todo_units = todo_units[: a.limit]
     jobs = []
