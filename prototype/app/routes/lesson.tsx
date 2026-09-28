@@ -23,7 +23,8 @@ export async function loader({ params }: { params: { lessonId: string } }) {
 
   // RENDER SERVER-SIDE. Only this display HTML is sent — the tagged source + corpus stay on the server.
   // dedupeTitle drops the body's leading heading when it just repeats the page title.
-  const bodyHtml = renderBody(lesson.body, lesson.exercises || [], title);
+  // W47: blocks whose narration clips all exist get a play button (checked per request, no rebuild).
+  const bodyHtml = renderBody(lesson.body, lesson.exercises || [], title, lesson.narration || []);
 
   return {
     id: lesson.id,

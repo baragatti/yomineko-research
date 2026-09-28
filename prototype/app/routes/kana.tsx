@@ -3,12 +3,15 @@ import { useLoaderData } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { KanaStrokes } from "~/ui/KanaStrokes";
 import { kanaFamilies, getKanaStrokes } from "~/lib/corpus.server";
+import { playable } from "~/lib/audio.server";
+import { PlayButton } from "~/ui/PlayButton";
 
 export function meta() {
   return [{ title: "Yomineko — Kana (ordem dos traços)" }];
 }
 
-interface Cell { char: string; romaji: string; has: boolean }
+/** `audioKey`: W47, only when the glyph's clip exists in the audio store. */
+interface Cell { char: string; romaji: string; has: boolean; audioKey?: string }
 interface Row { row: string; order: number; label: string; type: string; members: Cell[] }
 
 export async function loader() {
@@ -26,7 +29,7 @@ export async function loader() {
           if (s) strokes[ch] = { viewbox: s.viewbox, strokes: s.strokes, shadows: (s as any).shadows ?? undefined };
           else has = false;
         }
-        return { char: m.char, romaji: m.romaji, has };
+        return { char: m.char, romaji: m.romaji, has, audioKey: playable(m.audio_key) };
       }),
     }));
   return { hiragana: build(fam.hiragana), katakana: build(fam.katakana), strokes };
@@ -68,7 +71,8 @@ export default function Kana() {
         shadows: selComps.flatMap((c) => c.data.shadows ?? c.data.strokes.map(() => "")),
         offsets: selComps.flatMap((c, i) => c.data.strokes.map(() => i * 1024)),
       };
-  const selRomaji = rows.flatMap((r) => r.members).find((m) => m.char === sel)?.romaji ?? "";
+  const selCell = rows.flatMap((r) => r.members).find((m) => m.char === sel);
+  const selRomaji = selCell?.romaji ?? "";
 
   return (
     <AppShell active="kana" title="Kana" back="/cursos/jlpt">
@@ -88,7 +92,7 @@ export default function Kana() {
                 <div className="ym-kana-combo">
                   <KanaStrokes char={sel} data={selData} size={selComps.length > 1 ? 300 : 200} />
                 </div>
-                <div className="ym-kana-stage-meta"><span lang="ja" className="ym-kana-stage-char">{sel}</span><span className="ym-kana-stage-romaji">{selRomaji}</span></div>
+                <div className="ym-kana-stage-meta"><span lang="ja" className="ym-kana-stage-char">{sel}</span><span className="ym-kana-stage-romaji">{selRomaji}</span>{selCell?.audioKey && <PlayButton audioKey={selCell.audioKey} lang="ja" />}</div>
                 <div className="ym-strokes-cred">traços: strokesvg · Klee One (OFL) · MIT</div>
               </>
             ) : (

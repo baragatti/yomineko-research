@@ -183,6 +183,10 @@ from dbtarget import db_target, out_root, build_date  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 DB = db_target(ROOT / "db" / "corpus.sqlite")
 COURSE = out_root(ROOT) / "course"
+# W47: per lesson, the ordered voice units of its body ({span, audio_lang, audio_key}), from the tracked
+# table scripts/audio/build_audio_keys.py writes. Only lessons in the voiced tier carry `narration`.
+NARRATION = json.loads((ROOT / "research" / "derived" / "audio" / "audio_keys.json")
+                       .read_text(encoding="utf-8"))["narration"]
 _dt_today = build_date()
 
 
@@ -452,6 +456,7 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
             "srs": {"introduces_cards": _srs_cards(con, L["id"], unlocks, L["level"])},
             "cumulative_known_set": cks, "sentence_refs": srefs, "exercises": exercises,
             "body": body, "needs_review": bool(L["needs_review"]),
+            **({"narration": NARRATION[L["slug"]]} if L["slug"] in NARRATION else {}),
         }
         (d / f"lesson-{L['ord']:02d}.json").write_text(
             json.dumps(rec, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

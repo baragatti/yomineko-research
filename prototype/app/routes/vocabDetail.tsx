@@ -4,6 +4,8 @@ import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
 import { getVocab, getKanji, locArr, lessonsUsing, sentencesForVocab } from "~/lib/corpus.server";
 import { SentenceCards } from "~/ui/SentenceCards";
+import { PlayButton } from "~/ui/PlayButton";
+import { playable } from "~/lib/audio.server";
 
 export function meta({ data: d }: { data: any }) {
   return [{ title: `Yomineko — ${d?.headword ?? "Vocabulário"}` }];
@@ -36,6 +38,8 @@ export async function loader({ params }: { params: { id: string } }) {
     kana: v.kana,
     romaji: v.romaji,
     level: v.level,
+    audioKey: playable(v.audio_key), // W47: only when the clip exists
+
     uniformPos,
     senses,
     kanjiLinks,
@@ -75,7 +79,7 @@ export default function VocabDetail() {
 
         <div className="ym-vocab-hero ym-card-soft">
           <h1><ruby className="ym-vocab-hero-hw" lang="ja">{v.headword}<rt>{v.kana}</rt></ruby></h1>
-          <div className="ym-vocab-hero-romaji">{v.romaji}</div>
+          <div className="ym-vocab-hero-romaji">{v.romaji}{v.audioKey && <PlayButton audioKey={v.audioKey} lang="ja" />}</div>
           <div className="ym-pill-row">
             <span className="ym-pill ym-pill-level">{v.level.toUpperCase()}</span>
             {v.uniformPos && v.uniformPos.map((p) => <span key={p} className="ym-pill">{p}</span>)}

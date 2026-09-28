@@ -6,6 +6,11 @@
  */
 import { getSentence, getReading, getKanji, getVocab, getGrammar, loc, locArr, kanaToRomaji } from "./corpus.server";
 import type { BdParticle, BdToken } from "./corpus.server";
+import { playable } from "./audio.server";
+import { playButtonHtml } from "../ui/PlayButton";
+
+/** One voice unit of a lesson body (W47 `narration[]`): the block it voices, its language and clip key. */
+export interface NarrationUnit { span: string; audio_lang: string; audio_key: string }
 
 const esc = (s: string) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -143,8 +148,10 @@ function renderBreakdown(s: any): string {
   let out = "";
   const toks = ((s.tokens || []) as BdToken[]).filter((t) => t.s);
   if (toks.length) {
+    const key = playable(s.audio_key);
     out +=
-      `<div class="ym-bd"><div class="ym-bd-label">Palavra por palavra</div><div class="ym-bd-list">` +
+      `<div class="ym-bd"><div class="ym-bd-label">Palavra por palavra${key ? playButtonHtml([key], "ja") : ""}</div>` +
+      `<div class="ym-bd-list">` +
       toks
         .map((t) => {
           const read = PUNCT.test(t.s) ? "" : [t.r, t.ro].filter(Boolean).join(" · ");
@@ -189,6 +196,7 @@ function renderSentence(slug: string, mode: string): string {
   const lit = loc(s.translation_literal);
   const expl = loc(s.structure_explanation);
   const breakdown = renderBreakdown(s);
+  const key = playable(s.audio_key);
   const more =
     lit || expl || breakdown
       ? `<details class="ym-sent-more"><summary>Análise</summary>` +
@@ -199,7 +207,7 @@ function renderSentence(slug: string, mode: string): string {
       : "";
   return (
     `<div class="ym-sent ym-sent-${esc(mode || "featured")}">` +
-    `<div class="ym-sent-jp" lang="ja">${jp}</div>` +
+    `<div class="ym-sent-jp" lang="ja">${jp}${key ? playButtonHtml([key], "ja") : ""}</div>` +
     romaji +
     (pt ? `<div class="ym-sent-pt">${esc(pt)}</div>` : "") +
     more +
@@ -416,9 +424,13 @@ function renderExercise(ref: string, exById: Record<string, any>): string {
 const nodeName = (n: Node | string | undefined) => (n && typeof n !== "string" ? n.name : "");
 const nodeStr = (n: Node | string | undefined) => (n == null ? "" : typeof n === "string" ? n : nodeText(n));
 
-function emit(nodes: (Node | string)[], exById: Record<string, any>): string {
+// `blocks` maps a block's element path (W47 narration `span`: child indices over ELEMENTS only, "3",
+// "5.1", exactly as scripts/audio/plan.py numbers them) to the clip keys of its narration.
+function emit(nodes: (Node | string)[], exById: Record<string, any>,
+              blocks: ReadonlyMap<string, readonly string[]> = new Map(), path = ""): string {
   let out = "";
   let lastChar = "";
+  let el = -1; // index of the current node among the ELEMENT siblings (text nodes do not count)
   // append a piece, inserting a space first if the JP<->pt-BR boundary calls for it (HTML collapses doubles).
   const push = (piece: string) => {
     if (!piece) return;
@@ -430,6 +442,8 @@ function emit(nodes: (Node | string)[], exById: Record<string, any>): string {
   for (let idx = 0; idx < nodes.length; idx++) {
     const n = nodes[idx];
     if (typeof n === "string") { push(escJa(n)); continue; }
+    el++;
+    const here = path ? `${path}.${el}` : String(el);
     // enrich the "kana(lê-se romaji)" pattern into a ruby (kana with the reading on top).
     if (n.name === "jp" && !n.attrs.reading) {
       const n1 = nodes[idx + 1], n2 = nodes[idx + 2], n3 = nodes[idx + 3];
@@ -439,11 +453,13 @@ function emit(nodes: (Node | string)[], exById: Record<string, any>): string {
       if (/^\s*\(lê-se\s*$/.test(nodeStr(n1)) && nodeName(n2) === "romaji" && n3Plain && /^\s*\)/.test(t3)) {
         push(ruby(n.children.map((c) => (typeof c === "string" ? c : "")).join(""), nodeStr(n2).trim()));
         push(escJa(t3.replace(/^\s*\)/, ""))); // keep whatever follows the ")"
+        for (const skipped of [n1, n2, n3]) if (skipped && typeof skipped !== "string") el++;
         idx += 3;
         continue;
       }
     }
-    const kids = () => emit(n.children, exById);
+    const btn = blocks.get(here);
+    const kids = () => emit(n.children, exById, blocks, here) + (btn ? playButtonHtml(btn, "pt-BR") : "");
     switch (n.name) {
       case "heading": push(`<h${n.attrs.level === "3" ? 3 : 2} class="ym-h${n.attrs.level === "3" ? 3 : 2}">${kids()}</h${n.attrs.level === "3" ? 3 : 2}>`); break;
       case "p": push(`<p class="ym-p">${kids()}</p>`); break;
@@ -473,6 +489,7 @@ function emit(nodes: (Node | string)[], exById: Record<string, any>): string {
       case "vocab": push(chip("vocab", n.attrs.ref)); break;
       case "kanji": push(chip("kanji", n.attrs.ref)); break;
       case "break": push("<br/>"); break;
+      case "#dropped": break; // the deduplicated title heading: still an element, so the numbering holds
       default: push(kids());
     }
   }
@@ -486,10 +503,35 @@ function nodeText(n: Node | string): string {
 }
 
 /**
+ * W47: the blocks that get a narration play button, span -> keys in play order. A block qualifies when
+ * it has pt-BR narration and EVERY unit of it (pt-BR text and inline Japanese) has a generated clip.
+ * ponytail: all-or-nothing per block, so one needs_human unit hides its paragraph's button until a
+ * retake passes; per-unit skipping would play half-paragraphs.
+ */
+function narrationBlocks(units: readonly NarrationUnit[]): Map<string, string[]> {
+  const bySpan = new Map<string, NarrationUnit[]>();
+  for (const u of units) {
+    if (!u.span) continue; // the body root: top-level sentences and readings carry their own buttons
+    const list = bySpan.get(u.span) ?? [];
+    list.push(u);
+    bySpan.set(u.span, list);
+  }
+  const out = new Map<string, string[]>();
+  for (const [span, list] of bySpan) {
+    if (list.some((u) => u.audio_lang === "pt-BR") && list.every((u) => playable(u.audio_key))) {
+      out.set(span, list.map((u) => u.audio_key));
+    }
+  }
+  return out;
+}
+
+/**
  * Render a lesson body (tagged source) to a display-HTML string. Server-only.
  * `dedupeTitle`: drop a leading <heading> that just repeats the page title (true for ~73% of lessons).
+ * `narration`: the lesson's W47 voice units; blocks whose clips all exist get a play button.
  */
-export function renderBody(body: string, exercises: any[] = [], dedupeTitle?: string): string {
+export function renderBody(body: string, exercises: any[] = [], dedupeTitle?: string,
+                           narration: readonly NarrationUnit[] = []): string {
   const exById: Record<string, any> = {};
   for (const ex of exercises) if (ex?.id) exById[ex.id] = ex;
   let nodes = parse(body || "");
@@ -497,8 +539,8 @@ export function renderBody(body: string, exercises: any[] = [], dedupeTitle?: st
     const firstIdx = nodes.findIndex((n) => typeof n !== "string" || n.trim() !== "");
     const first = nodes[firstIdx];
     if (first && typeof first !== "string" && first.name === "heading" && norm(nodeText(first)) === norm(dedupeTitle)) {
-      nodes = nodes.slice(firstIdx + 1);
+      nodes = [{ name: "#dropped", attrs: {}, children: [] }, ...nodes.slice(firstIdx + 1)];
     }
   }
-  return `<div class="ym-body">${emit(nodes, exById)}</div>`;
+  return `<div class="ym-body">${emit(nodes, exById, narrationBlocks(narration))}</div>`;
 }

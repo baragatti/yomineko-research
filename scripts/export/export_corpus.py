@@ -38,6 +38,14 @@ LOC = DEFAULT_LOCALE  # "pt-BR"
 # W46: the particle usage enum (class + label per id), read from the design registry it is defined in.
 PARTICLE_USAGES = {u["id"]: u for u in json.loads(
     (ROOT / "design" / "particle_functions.json").read_text(encoding="utf-8"))["usages"]}
+# W47: the audio key of every voiceable N5 item, from the tracked table scripts/audio/build_audio_keys.py
+# writes (plan.py's content hash of the synthesis request). Absent = not in the voiced tier yet.
+AUDIO_KEYS = json.loads((ROOT / "research" / "derived" / "audio" / "audio_keys.json").read_text(encoding="utf-8"))
+
+
+def audio_fields(kind: str, rid: str) -> dict:
+    k = AUDIO_KEYS[kind].get(rid)
+    return {"audio_key": k, "audio_lang": "ja"} if k else {}
 
 # Rank order for "is this word at or below that record's own level?". Level is DATA, not structure
 # (CLAUDE.md §1.6): a new level is a new row here, never a schema change. Unleveled rows sort last.
@@ -366,6 +374,7 @@ def export_vocab(con: sqlite3.Connection) -> dict:
                     (sense_gloss_layer(con, vid), "senses[].gloss"),
                     (lt_layer(con, "vocab", vid, "notes"), "notes"),
                     root=vlayer),
+                **audio_fields("vocab", slug),
             }
             records.append(rec)
             g0 = senses[0]["gloss"] if senses else None
@@ -777,6 +786,7 @@ def export_sentences(con: sqlite3.Connection) -> int:
             "tokens": tokens, "particles": particles, "grammar": grammar,
             # W12: the sentence-level vocabulary edge (see the comment above export_sentences' loop).
             "vocab": sent_vocab.get(sid, []),
+            **audio_fields("sentence", s["slug"]),
         }
         records.append(rec)
         tr = SL.get((sid, "translation"))

@@ -200,6 +200,17 @@ today). The exported fields:
 | listening item / speak unit `audio` | pattern widened to `^(pending|aud:[a-z2-7]{26})$` | stitched item key; speak units stay `pending` until every `say_now` sentence has audio, then drop the field (its sentences carry the refs) |
 | lesson | `narration[]` = ordered `{block, lang, audio_ref}` | pt runs + inline jp runs, played in order (lesson_format.md §6) |
 
+**As built (W47 wiring, 2026-09-28; owner directive).** The export publishes the key itself, not a
+QA-gated `audio_ref`: `audio_key` (the 26-char key) + `audio_lang` on every voiceable N5 item the plan
+covers, whether or not the clip exists yet. Fields: sentence, vocab and kana records; listening
+`script[]` turns; lesson `narration[]` = ordered `{span, audio_lang, audio_key}`, where `span` is the
+element path of the body block the unit voices ("3", "5.1"; "" = the body root). The keys come from a
+tracked table (`research/derived/audio/audio_keys.json`, `scripts/audio/build_audio_keys.py`), and
+`validate_audio_keys.py` proves every exported key equals `plan.py`'s. The app decides playability at
+request time: a key is shown only when its file is in the store (`<store>/opus/<k[:2]>/<k>.opus`, or the
+passing retake via `aliases.json`), so buttons appear as clips land and a failed unit simply never
+shows. `audio_ref`/`audio_source` below remain the target once human or Tatoeba recordings exist.
+
 - `aud:` matches the `ref="aud:…"` prefix that lesson_format.md already reserves.
 - Voice, model, duration and QA live **only in the manifest**. Records never copy them, so there is
   nothing to drift.

@@ -2468,7 +2468,10 @@ def handle_listening_reauthor(rows, sents, gram, table):
             out.append(("fail", C_NOT_APPLIED, addr, f"no item {r['new_id']} in {f}"))
             continue
         want = (new["script"], new.get("question", ""), new["correct"], new["distractors"], new.get("slug"))
-        have = (got["script"], got.get("question", ""), got["correct"], got["distractors"], got.get("sentence"))
+        # W47: a turn also carries its clip key (audio_key/audio_lang), which the journal item never had;
+        # validate_audio_keys.py proves those. The authored turn is everything else.
+        script = [{k: v for k, v in t.items() if k not in ("audio_key", "audio_lang")} for t in got["script"]]
+        have = (script, got.get("question", ""), got["correct"], got["distractors"], got.get("sentence"))
         if want != have:
             out.append(("fail", C_VALUE_MISMATCH, addr, "the shipped item differs from the row's journal item"))
         elif r["new_id"] != r["id"] and r["id"] in banks[f]:

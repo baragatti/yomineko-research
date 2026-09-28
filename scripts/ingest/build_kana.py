@@ -23,6 +23,9 @@ from dbtarget import db_target  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 DB = db_target(ROOT / "db" / "corpus.sqlite")
 OUT = ROOT / "corpus" / "kana"
+# W47: kana id -> audio key, from the tracked table scripts/audio/build_audio_keys.py writes.
+KANA_KEYS = json.loads((ROOT / "research" / "derived" / "audio" / "audio_keys.json")
+                       .read_text(encoding="utf-8"))["kana"]
 
 # row -> (PT family label suffix, [(hiragana, romaji)]). Katakana derived by +0x60.
 BASE = [
@@ -123,7 +126,9 @@ def main() -> int:
                         "VALUES (?,?,?,?,?,?,?)", (kid, char, script, rom, fid, ktype, order * 10 + i))
             fam_members.append({"id": kid, "char": char, "romaji": rom})
             kana_json[script].append({"id": kid, "char": char, "romaji": rom, "family": fid,
-                                      "family_label": label_obj, "type": ktype, **PROVENANCE})
+                                      "family_label": label_obj, "type": ktype, **PROVENANCE,
+                                      **({"audio_key": KANA_KEYS[kid], "audio_lang": "ja"}
+                                         if kid in KANA_KEYS else {})})
             nk += 1
         fam_json[script].append({"id": fid, "label": label_obj, "row": row, "type": ktype,
                                  "order": order, "members": fam_members,

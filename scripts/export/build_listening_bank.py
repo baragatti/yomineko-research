@@ -20,6 +20,9 @@ sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 ROOT = Path(__file__).resolve().parents[2]
 SRC = ROOT / "research" / "derived" / "reauthor" / "exam_authored"
 OUT = ROOT / "corpus" / "exam_banks"
+# W47: '<item>#script[i]' -> audio key, from the tracked table scripts/audio/build_audio_keys.py writes.
+TURN_KEYS = json.loads((ROOT / "research" / "derived" / "audio" / "audio_keys.json")
+                       .read_text(encoding="utf-8"))["listening"]
 # … = trailing-off speech (言いさし, a real listening cue); ，= thousands separator (３，５００円)
 JP_OK = re.compile(r"^[ぁ-んァ-ヶー一-鿿々〆0-9０-９Ａ-Ｚａ-ｚ、。！？!?（）()・「」…，\s]+$")
 SPEAKERS = {"M1", "M2", "F1", "F2", "N"}
@@ -101,7 +104,9 @@ def main() -> int:
                 skipped.append((f"{key}:{ref}", prob)); continue
             iid = ((it["id"] if it.get("slug") is None else f"lr:{lvl}:{it['slug'].split(':', 1)[1]}")
                    if sub == "reply" else f"{PREFIX[sub]}:{lvl}:{int(it['n']):03d}")
-            rec = {"id": iid, "level": lvl, "script": it["script"], "question": (it.get("question") or ""),
+            script = [{**turn, "audio_key": TURN_KEYS[f"{iid}#script[{i}]"], "audio_lang": "ja"}
+                      if f"{iid}#script[{i}]" in TURN_KEYS else turn for i, turn in enumerate(it["script"])]
+            rec = {"id": iid, "level": lvl, "script": script, "question": (it.get("question") or ""),
                    "correct": it["correct"].strip(), "distractors": [x.strip() for x in it["distractors"]],
                    "audio": "pending", "layer": "C", "needs_review": True, "ai_generated": True,
                    "source": "listening-script"}

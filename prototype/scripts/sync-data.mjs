@@ -222,6 +222,8 @@ const slimSentence = (s) => ({
   structure_explanation: s.structure_explanation, level: s.level, grammar: s.grammar || [],
   tokens: (s.tokens || []).map(slimToken),
   particles: (s.particles || []).map(slimParticle),
+  // W47: the clip's content key (plan.py); the server shows a play button only when the file exists.
+  audio_key: s.audio_key,
 });
 
 /** Reading-practice boxes, same contract as sentences: display fields only, server-only. */
@@ -307,8 +309,14 @@ function buildReadModel(loaded) {
   for (const [char, rec] of Object.entries(get("stroke_lines").byId)) strokeLines[char] = { strokes: rec.strokes };
   out["strokeLines.json"] = strokeLines;
 
-  // ---- the kana syllabary chart: a keyed collection, copied through as the manifest packs it.
-  out["kana.json"] = get("kana_family").map;
+  // ---- the kana syllabary chart: a keyed collection, copied through as the manifest packs it, each
+  // member joined BY ID to its glyph record's W47 audio_key (the chart itself carries no audio).
+  const kanaById = get("kana").byId;
+  const kanaChart = {};
+  for (const [script, rows] of Object.entries(get("kana_family").map)) {
+    kanaChart[script] = rows.map((r) => ({ ...r, members: r.members.map((m) => ({ ...m, audio_key: kanaById[m.id]?.audio_key })) }));
+  }
+  out["kana.json"] = kanaChart;
 
   // ---- sentences + readings, slimmed.
   const sentences = {};
@@ -400,7 +408,7 @@ async function main() {
     `${skippedRuntime.length} runtime skipped by class (${skippedRuntime.join(", ")})` +
     (skippedOutOfTree.length ? `, ${skippedOutOfTree.length} outside corpus//course/ (${skippedOutOfTree.join(", ")})` : ""));
   const unused = [...loaded.keys()].filter((e) => !["course_manifest", "course", "topic", "lesson", "kanji", "vocab", "grammar",
-    "sentence", "reading", "stroke_order", "stroke_lines", "stroke_kana", "kana_family", "exam_item",
+    "sentence", "reading", "stroke_order", "stroke_lines", "stroke_kana", "kana_family", "kana", "exam_item",
     "exercise_conjugation", "exercise_role", "speak_path", "speak_unit"].includes(e));
   if (unused.length) console.log(`  loaded but not yet consumed by the app: ${unused.join(", ")}`);
   console.log(`  ${counts}`);

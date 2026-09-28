@@ -53,7 +53,7 @@ DATA_ROOTS = ("corpus/", "course/")
 # The entities the read model consumes. Anything else the manifest lists is loaded and checked, but
 # does not reach app/data yet.
 CONSUMED = ("course_manifest", "course", "topic", "lesson", "kanji", "vocab", "grammar", "sentence",
-            "reading", "stroke_order", "stroke_lines", "stroke_kana", "kana_family", "exam_item",
+            "reading", "stroke_order", "stroke_lines", "stroke_kana", "kana_family", "kana", "exam_item",
             "exercise_conjugation", "exercise_role", "speak_path", "speak_unit")
 
 BUILD_FILE = "_build.json"
@@ -243,6 +243,7 @@ def _slim_sentence(s: dict) -> dict:
     o["grammar"] = s.get("grammar") or []
     o["tokens"] = [_slim_token(t) for t in (s.get("tokens") or [])]
     o["particles"] = [_slim_particle(p) for p in (s.get("particles") or [])]
+    o.update(_pick(s, ("audio_key",)))  # W47
     return o
 
 
@@ -324,8 +325,12 @@ def build_read_model(ent: dict[str, Entity]) -> dict[str, Any]:
     out["strokeLines.json"] = {ch: _pick(rec, ("strokes",))
                                for ch, rec in get("stroke_lines").by_id.items()}
 
-    # ---- the kana syllabary chart: a keyed collection, copied through verbatim.
-    out["kana.json"] = get("kana_family").map
+    # ---- the kana syllabary chart: a keyed collection, copied through, each member joined by id to
+    # its glyph record's W47 audio_key.
+    kana_by_id = get("kana").by_id
+    out["kana.json"] = {script: [{**r, "members": [{**m, **_pick(kana_by_id.get(m["id"], {}), ("audio_key",))}
+                                                   for m in r["members"]]} for r in rows]
+                        for script, rows in get("kana_family").map.items()}
 
     # ---- sentences + readings, slimmed.
     out["sentences.json"] = {k: _slim_sentence(s) for k, s in get("sentence").by_id.items()}

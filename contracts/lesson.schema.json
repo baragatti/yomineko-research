@@ -235,6 +235,35 @@
     "level": {
       "$ref": "common.schema.json#/$defs/Level"
     },
+    "narration": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "audio_key": {
+            "type": "string",
+            "pattern": "^[a-z2-7]{26}$",
+            "description": "The clip's content address: base32(sha256(canonical synthesis spec)), lower case, 26 chars, as scripts/audio/plan.py computes it. Present whether or not the clip exists yet; the file is <store>/opus/<key[:2]>/<key>.opus. validate_audio_keys.py proves it equals the plan's key."
+          },
+          "audio_lang": {
+            "type": "string",
+            "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$",
+            "description": "BCP-47-shaped language of the clip (`ja`, `pt-BR`). A new narration locale is data."
+          },
+          "span": {
+            "type": "string",
+            "pattern": "^(\\d+(\\.\\d+)*)?$",
+            "description": "The lesson body block a narration unit voices: element child indices from the body root, joined by '.' ('3', '5.1'); '' is the root (a top-level sentence or reading)."
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "audio_key",
+          "audio_lang",
+          "span"
+        ]
+      }
+    },
     "needs": {
       "type": "array",
       "items": {

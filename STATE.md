@@ -76,6 +76,20 @@ appearance and reuse only.
 > scripts/audio/; report research/reports/audio_setup_report.md. Not done: finish the benchmark, pick the pilot voices, run the
 > 200-unit pilot, desktop shortcut, then the N5 run. **Run GPU work only when the owner says the GPU is free** (or from the
 > control app, which he starts and stops).
+> **2026-09-28 (be) — W47 audio wiring (no GPU work; real store still empty).** Config pinned in
+> `scripts/audio/plan.py` from the benchmark rows (bf16 T3, fp16 flow/HiFiGAN, MIOpen off, static KV, batch 8;
+> no torch.compile), pilot voices = the vendor's own female ja / pt-BR prompts; plan.py computes the 11,942 N5
+> keys torch-free and `generate.py --tier n5` / the desktop app run from them (`aliases.json` maps retakes).
+> Export: `audio_key`+`audio_lang` on 704 sentences, 709 vocab, 208 kana, 227 listening turns; lesson
+> `narration[]` {span, audio_lang, audio_key} on 125 lessons, from the tracked `research/derived/audio/
+> audio_keys.json`; contracts regenerated; new hard `validate_audio_keys.py` (13/13 plants) + `test_audio_key.py`.
+> Prototype: `/audio/:key`, `<PlayButton>`, buttons only where the clip exists (checked per request, no
+> rebuild); verified with a temp test clip, then removed (`research/reports/audio_wiring_report.md`).
+> **Next for audio: the owner starts the N5 run from the desktop icon.** Chain v5 resumes at V3 as above;
+> its V7 (audio fields + play buttons) is done by this unit, so drop it from the chain. **Found:** the full
+> replay stops at step 157 (`apply_particle_usage.py`, 13,167 guard failures, W46; not caused here); the next
+> checkpoint must fix it.
+>
 > **2026-09-27 (bd) — chain v5 V2 done: W46 particle usage ids applied.** 24,741 of 24,771 particles carry a
 > verified usage id (5,406 auto, 19,026 verified, 309 verifier corrections; verdicts joined by slug#position);
 > 30 held (13 verifier-rejected, 17 surface mismatch) for an enum decision. Explanations rendered from the

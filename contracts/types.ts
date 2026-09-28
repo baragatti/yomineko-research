@@ -171,6 +171,8 @@ export interface ExamItem {
       content_hash: string;
     }[];
   script?: {
+      audio_key?: string;
+      audio_lang?: string;
       speaker?: "F1" | "F2" | "M1" | "M2" | "N";
       text?: string;
     }[];
@@ -322,6 +324,8 @@ export interface Grammar {
 
 /** One hiragana or katakana character and the family it belongs to. */
 export interface Kana {
+  audio_key?: string;
+  audio_lang?: string;
   char: string;
   created_by: "dataset" | "ai" | "script";
   family: string;
@@ -438,6 +442,11 @@ export interface Lesson {
   feature_unlocks: "feat:conjugation-drill" | "feat:find-correct-kanji" | "feat:find-correct-particle" | "feat:furigana-toggle" | "feat:handwriting-input" | "feat:jlpt-sim-n3" | "feat:jlpt-sim-n4" | "feat:jlpt-sim-n5" | "feat:kana-input" | "feat:kanji-lookup" | "feat:listening" | "feat:particle-drill" | "feat:phrase-builder" | "feat:romaji-toggle" | "feat:srs-reviews" | "feat:visual-novel" | "feat:voice-mode"[];
   id: StableId;
   level: Level;
+  narration?: {
+      audio_key: string;
+      audio_lang: string;
+      span: string;
+    }[];
   needs: {
       note?: string;
       ref?: string;
@@ -547,6 +556,8 @@ export interface ReviewLedger {
 
 /** One fully dissected example sentence — the unit the whole corpus is built on. A sentence lives here ONCE and everything else references it by id. */
 export interface Sentence {
+  audio_key?: string;
+  audio_lang?: string;
   clause_structure: string | null;
   grammar: string[];
   jp: string;
@@ -1091,6 +1102,8 @@ export interface User {
 /** One dictionary word, keyed by its JMdict entry. Carries senses, pitch, inflection class and the consensus level. */
 export interface Vocab {
   adj_class: "i_adj" | "na_adj" | null;
+  audio_key?: string;
+  audio_lang?: string;
   common: boolean;
   created_by: "dataset" | "ai" | "script";
   families: string[];

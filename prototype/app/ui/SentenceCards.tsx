@@ -1,3 +1,5 @@
+import { PlayButton } from "./PlayButton";
+
 /** One unit of the sentence (tokens concat == jp); `p` = its shorter sub-units, nested, never siblings. */
 interface BdToken { s: string; r?: string; ro?: string; pos?: string; gloss?: string; role?: string; p?: string[] }
 /** `u` = usage label (W46 enum), `ex` = explanation rendered from it, `n` = the authored note. */
@@ -11,20 +13,22 @@ interface SentenceView {
   explanation: string;
   tokens?: BdToken[];
   particles?: BdParticle[];
+  /** W47: present only when the clip exists (the loader checked the store). */
+  audioKey?: string;
 }
 
 const PUNCT = /^[、。・，．？！「」『』（）\s]+$/;
 
 // W45: the list is the whole sentence, in order (punctuation included, shown without a reading line);
 // a word's sub-units sit nested under it, never as separate words.
-function Breakdown({ tokens, particles }: { tokens: BdToken[]; particles: BdParticle[] }) {
+function Breakdown({ tokens, particles, audioKey }: { tokens: BdToken[]; particles: BdParticle[]; audioKey?: string }) {
   const toks = tokens.filter((t) => t.s);
   if (!toks.length && !particles.length) return null;
   return (
     <>
       {toks.length > 0 && (
         <div className="ym-bd">
-          <div className="ym-bd-label">Palavra por palavra</div>
+          <div className="ym-bd-label">Palavra por palavra{audioKey && <PlayButton audioKey={audioKey} lang="ja" />}</div>
           {toks.map((t, i) => (
             <div key={i} className="ym-bd-tok">
               <span className="ym-bd-jp" lang="ja">{t.s}</span>
@@ -62,13 +66,13 @@ export function SentenceCards({ items }: { items: SentenceView[] }) {
         const hasBreakdown = (s.tokens?.length || 0) + (s.particles?.length || 0) > 0;
         return (
           <div key={s.slug} className="ym-sent ym-sent-card">
-            <div className="ym-sent-jp" lang="ja">{s.jp}</div>
+            <div className="ym-sent-jp" lang="ja">{s.jp}{s.audioKey && <PlayButton audioKey={s.audioKey} lang="ja" />}</div>
             {s.romaji && <div className="ym-sent-romaji">{s.romaji}</div>}
             {s.pt && <div className="ym-sent-pt">{s.pt}</div>}
             {(s.literal || s.explanation || hasBreakdown) && (
               <details className="ym-sent-more">
                 <summary>Análise</summary>
-                {hasBreakdown && <Breakdown tokens={s.tokens || []} particles={s.particles || []} />}
+                {hasBreakdown && <Breakdown tokens={s.tokens || []} particles={s.particles || []} audioKey={s.audioKey} />}
                 {s.literal && <p className="ym-sent-literal"><span>Literal:</span> {s.literal}</p>}
                 {s.explanation && <p className="ym-sent-expl">{s.explanation}</p>}
               </details>

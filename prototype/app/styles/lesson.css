@@ -971,3 +971,12 @@ a.ym-chip[data-gloss]:focus-visible, a.ym-chip[data-reading]:focus-visible {
   padding: 8px 12px; background: var(--surface-container);
 }
 .ym-body .ym-list .ym-bad { border-left-color: var(--error); }
+
+/* W47 play button: rendered only when the clip exists in the audio store (app/lib/audio.server.ts). */
+.ym-play { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px;
+  margin-left: 6px; padding: 0; border: 0; border-radius: 50%; background: transparent; color: var(--primary);
+  cursor: pointer; vertical-align: middle; flex: none; }
+.ym-play:hover { background: var(--primary-container); color: var(--on-primary-container); }
+.ym-play:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.ym-play .material-symbols-rounded { font-size: 20px; line-height: 1; }
+.ym-play.is-playing { background: var(--primary); color: var(--on-primary, #fff); }

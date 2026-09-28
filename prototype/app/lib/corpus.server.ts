@@ -16,6 +16,7 @@ import kanaStrokesData from "../data/kanaStrokes.json";
 import strokeLinesData from "../data/strokeLines.json";
 import readingsData from "../data/readings.json";
 import buildData from "../data/_build.json";
+import { playable } from "./audio.server";
 
 export const PT = "pt-BR";
 
@@ -156,6 +157,8 @@ export interface BdParticle { p: string; ft?: string; fn?: string; ex?: string; 
 export interface SentenceView {
   slug: string; jp: string; romaji: string; pt: string; literal: string; explanation: string;
   tokens: BdToken[]; particles: BdParticle[];
+  /** W47: the clip key, only when the clip exists in the audio store. */
+  audioKey?: string;
 }
 /** flat display view of a sentence (callers pass an already-resolved sentence), incl. the breakdown. */
 export function sentenceView(s: any): SentenceView {
@@ -164,6 +167,7 @@ export function sentenceView(s: any): SentenceView {
     pt: loc(s.translation), literal: loc(s.translation_literal), explanation: loc(s.structure_explanation),
     tokens: (s.tokens || []) as BdToken[],
     particles: (s.particles || []) as BdParticle[],
+    audioKey: playable(s.audio_key),
   };
 }
 // clinical/crude register kept in the bank but not auto-surfaced as detail-page examples (mirrors

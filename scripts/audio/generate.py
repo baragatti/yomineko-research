@@ -11,12 +11,12 @@ the manifest with their files present are skipped, so nothing is generated twice
 
 Store layout: masters/<k[:2]>/<k>.flac, opus/<k[:2]>/<k>.opus, manifest.json (key -> entry),
 results.jsonl (append-only log, replayed on start), failures.json (needs_human), status.json (for the
-app), config.json + voices.json (pins), review/ (last take of each needs_human unit).
+app), config.json + voices.json (a record of plan.py's pins), aliases.json (take-1 key -> passing
+retake key, for the web app), review/ (last take of each needs_human unit).
 """
 from __future__ import annotations
 
 import argparse
-import base64
 import collections
 import datetime as dt
 import hashlib
@@ -39,56 +39,10 @@ os.environ.setdefault("MIOPEN_LOG_LEVEL", "1")
 FFMPEG = os.environ.get("FFMPEG", r"C:\Binaries\ffmpeg.exe")
 sys.path.insert(0, str(HERE))
 
-from plan import TIERS, Unit, plan_units  # noqa: E402
-
-BASE_REPO, BASE_REV = "ResembleAI/chatterbox", "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18"
-CONFIG_DEFAULTS = {
-    "models": {
-        "ja": {"name": "chatterbox-mtl-v3", "language_id": "ja", "t3_repo": BASE_REPO, "t3_revision": BASE_REV,
-               "t3_file": "t3_mtl23ls_v3.safetensors",
-               "t3_sha256": "5abca8321ede76f8e61f1cc0d19aea6c946b28871017ce8726f8a69203f05953",
-               "s3gen_file": "s3gen.pt",
-               "s3gen_sha256": "9b9ff07e60b20c136e2b1b3d7563a24604e8d2c4c267888d1ee929dd0151d2a3"},
-        "pt-BR": {"name": "chatterbox-mtl-v3-pt-br", "language_id": "pt",
-                  "t3_repo": "ResembleAI/Chatterbox-Multilingual-pt-br",
-                  "t3_revision": "b3952f18bc2eaa72b9bd7c17d2c4653bcad4770d", "t3_file": "t3_pt_br.safetensors",
-                  "t3_sha256": "074aaf65255eb9cb960288f7cc72e09d3b5008f6e0b14868c0d4e5b0bd7cbb6c",
-                  "s3gen_file": "s3gen_v3.pt",
-                  "s3gen_sha256": "f7abce4b196dae2d08d9296cbebc6521b046079577643b42a19a03499d08721e"},
-    },
-    "params": {"exaggeration": 0.5, "cfg_weight": 0.5, "temperature": 0.8, "repetition_penalty": 1.2,
-               "min_p": 0.05, "top_p": 1.0},
-    "precision": {"t3": "bf16", "flow": "fp16", "hift": "fp16", "miopen": False, "static_kv": True},
-    "batch": 30,
-    "batch_kv_budget": 25000,
-    "norm": {"ja": "ja-1", "pt-BR": "pt-1"},
-    "post": "p1",
-    "voices": {"ja-word": "ja-pilot-f1@1", "ja-sentence": ["ja-pilot-f1@1"], "ja-M1": "ja-pilot-f1@1",
-               "ja-M2": "ja-pilot-f1@1", "ja-F1": "ja-pilot-f1@1", "ja-F2": "ja-pilot-f1@1",
-               "ja-N": "ja-pilot-f1@1", "pt-narrator": "pt-pilot-f1@1"},
-    "asr_model": "openai/whisper-large-v3",
-    "max_takes": 3,
-    "opus_bitrate": "32k",
-}
-VOICES_DEFAULTS = {
-    "ja-pilot-f1@1": {
-        "lang": "ja", "role": "pilot (all ja classes until consented voices exist)", "gender": "female",
-        "file": "voices/res_ja_f.flac",
-        "reference_clip_sha256": "62b1b53f8b185a1df9e0086a3eee7f6447f3bbcba5154466e993458270f66e8a",
-        "source": "Resemble AI's default ja prompt of the official Chatterbox Multilingual demo "
-                  "(HF Space ResembleAI/Chatterbox-Multilingual-TTS@c612a942 -> "
-                  "storage.googleapis.com/chatterbox-demo-samples/mtl_prompts/ja/ja_prompts1.flac, identical to ja_f.flac)",
-        "consent_ref": None, "licence": "model-bundled demo voice; no consent record; PILOT ONLY, replace before shipping",
-        "created": "2026-09-27", "status": "pilot"},
-    "pt-pilot-f1@1": {
-        "lang": "pt-BR", "role": "pilot pt-narrator", "gender": "female", "file": "voices/res_pt_br_f2.wav",
-        "reference_clip_sha256": "b74124fa87356241316d2d55b8f9dfea1da57f08325f63e9198e33f755659482",
-        "source": "Resemble AI's default prompt of the official pt-BR Language Pack demo "
-                  "(HF Space ResembleAI/Chatterbox-Multilingual-TTS-pt-br@9e515821 -> "
-                  "storage.googleapis.com/chatterbox-demo-samples/mtl-v3-single-language-prompts/pt-br/pt_br_f2.wav)",
-        "consent_ref": None, "licence": "model-bundled demo voice; no consent record; PILOT ONLY, replace before shipping",
-        "created": "2026-09-27", "status": "pilot"},
-}
+# The config, the voices and the key functions live in plan.py (tracked, torch-free), so the export
+# side computes the very keys this generator writes.
+from plan import (TIERS, Unit, plan_units, BASE_REPO, BASE_REV, CONFIG_DEFAULTS, VOICES_DEFAULTS,  # noqa: E402
+                  canonical, key_of, seed_of, base_of, build_spec)
 
 
 # --- config / paths --------------------------------------------------------------------------------
@@ -99,13 +53,12 @@ def _write_json(path: Path, obj, indent=1) -> None:
 
 
 def load_config() -> tuple[dict, dict]:
+    """The tracked pins from plan.py, always. The store keeps a copy as a record of what the keys hash;
+    it is rewritten every run and never read back, so an edited store copy cannot fork the keys."""
     STORE.mkdir(parents=True, exist_ok=True)
-    cp, vp = STORE / "config.json", STORE / "voices.json"
-    if not cp.exists():
-        _write_json(cp, CONFIG_DEFAULTS)
-    if not vp.exists():
-        _write_json(vp, VOICES_DEFAULTS)
-    return json.loads(cp.read_text(encoding="utf-8")), json.loads(vp.read_text(encoding="utf-8"))
+    _write_json(STORE / "config.json", CONFIG_DEFAULTS)
+    _write_json(STORE / "voices.json", VOICES_DEFAULTS)
+    return CONFIG_DEFAULTS, VOICES_DEFAULTS
 
 
 def hf_file(repo: str, rev: str, name: str) -> Path:
@@ -164,45 +117,6 @@ def stock_engines() -> dict:
     import chatterbox.models.t3.t3 as t3mod
     t3mod.tqdm = lambda x, **k: x
     return out
-
-
-# --- keys ------------------------------------------------------------------------------------------
-def canonical(spec: dict) -> bytes:
-    return json.dumps(spec, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
-
-
-def key_of(spec: dict) -> str:
-    return base64.b32encode(hashlib.sha256(canonical(spec)).digest()).decode("ascii").lower().rstrip("=")[:26]
-
-
-def seed_of(spec: dict) -> int:
-    return int.from_bytes(hashlib.sha256(canonical(spec)).digest()[:8], "big")
-
-
-def base_of(spec: dict) -> str:
-    """Identity of the utterance across takes: the key of the spec without `take`."""
-    s = json.loads(json.dumps(spec))
-    s["params"].pop("take", None)
-    return key_of(s)
-
-
-def model_id(m: dict) -> str:
-    return f"{m['name']}@{m['t3_sha256'][:12]}.{m['s3gen_sha256'][:12]}"
-
-
-def voice_for(u: Unit, cfg: dict) -> str:
-    v = cfg["voices"][u.vclass]
-    if isinstance(v, list):  # sentence pool: the choice depends on the text only (design §5)
-        v = v[int.from_bytes(hashlib.sha256(u.text.encode("utf-8")).digest()[:8], "big") % len(v)]
-    return v
-
-
-def build_spec(u: Unit, cfg: dict, take: int = 1) -> dict:
-    p = cfg["precision"]
-    params = {**cfg["params"], "precision": f"t3{p['t3']}.flow{p['flow']}.hift{p['hift']}", "take": take}
-    return {"v": 1, "kind": "tts", "lang": u.lang, "norm": cfg["norm"][u.lang], "text": u.text,
-            "voice": voice_for(u, cfg), "model": model_id(cfg["models"][u.lang]), "params": params,
-            "post": cfg["post"]}
 
 
 def token_cap(u: Unit) -> int:
@@ -283,6 +197,15 @@ class Store:
     def save(self) -> None:
         _write_json(STORE / "manifest.json", dict(sorted(self.manifest.items())))
         _write_json(STORE / "failures.json", dict(sorted(self.failures.items())))
+        # The export carries the take-1 key; a retake passes under a new one. aliases.json maps the
+        # first to the second so the app finds the clip without a re-export.
+        aliases = {}
+        for k, e in self.manifest.items():
+            if e["spec"]["params"].get("take", 1) > 1:
+                s = json.loads(json.dumps(e["spec"]))
+                s["params"]["take"] = 1
+                aliases[key_of(s)] = k
+        _write_json(STORE / "aliases.json", dict(sorted(aliases.items())))
 
 
 # --- logging / status / stop -----------------------------------------------------------------------

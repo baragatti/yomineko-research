@@ -260,6 +260,23 @@ SHAPE_BY_NAME: dict[str, dict] = {
                        "(design/listening.md) has not produced it yet. The first real filename must not "
                        "fail the build.",
     },
+    # W47 (design/audio_pipeline.md §3). The clip is named by what is spoken, so these are never enums.
+    "audio_key": {
+        "type": "string", "pattern": r"^[a-z2-7]{26}$",
+        "description": "The clip's content address: base32(sha256(canonical synthesis spec)), lower case, 26 "
+                       "chars, as scripts/audio/plan.py computes it. Present whether or not the clip exists "
+                       "yet; the file is <store>/opus/<key[:2]>/<key>.opus. validate_audio_keys.py proves it "
+                       "equals the plan's key.",
+    },
+    "audio_lang": {
+        "type": "string", "pattern": r"^[a-z]{2,3}(-[A-Z]{2})?$",
+        "description": "BCP-47-shaped language of the clip (`ja`, `pt-BR`). A new narration locale is data.",
+    },
+    "span": {
+        "type": "string", "pattern": r"^(\d+(\.\d+)*)?$",
+        "description": "The lesson body block a narration unit voices: element child indices from the body "
+                       "root, joined by '.' ('3', '5.1'); '' is the root (a top-level sentence or reading).",
+    },
     "path": {
         "type": "string", "minLength": 1, "pattern": r"^[A-Za-z0-9._-]+(/[A-Za-z0-9._-]+)*$",
         "description": "A repository-relative path to the referenced file.",
@@ -771,6 +788,8 @@ DECLARED_ITEM_SHAPE: dict[str, dict] = {
                        "vocab link, gloss, role or romaji."},
     "sentence.tokens[].parts[]": {"required": _PART_KEYS, "additionalProperties": False},
     "sentence.particles[]": {"required": ["particle", "token_position", "usage", "usage_status"]},
+    # W47: a narration unit is meaningless without all three (validate_audio_keys.py checks the values).
+    "lesson.narration[]": {"required": ["audio_key", "audio_lang", "span"]},
 }
 
 

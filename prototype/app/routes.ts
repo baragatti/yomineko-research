@@ -3,6 +3,8 @@ import { type RouteConfig, index, route } from "@react-router/dev/routes";
 export default [
   index("routes/home.tsx"),
   route("health", "routes/health.ts"),
+  // W47: generated clips from the audio store, by content key.
+  route("audio/:key", "routes/audio.ts"),
   route("entrar", "routes/login.tsx"),
   // Two paths through one corpus. /cursos is the chooser; each path keeps its own index below it.
   route("cursos", "routes/courses.tsx"),

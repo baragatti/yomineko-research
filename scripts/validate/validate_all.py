@@ -59,6 +59,12 @@ SUITE = [
     # row), spelled by its surface, and its explanation IS the rendered template. Plant-proved on a
     # copied tree: 13 plants, 13 caught, control green.
     ("validate_particle_usage.py", "code"),
+    # W47: the audio key (content hash of the synthesis request) is deterministic, field-sensitive,
+    # URL-safe and collision-checked; and every exported audio_key / lesson narration[] IS
+    # scripts/audio/plan.py's key for that item, so the export can never name a file the generator
+    # will not write. Plant-proved on a copied tree: 13 plants, 13 caught, control green.
+    ("test_audio_key.py", "code"),
+    ("validate_audio_keys.py", "code"),
     ("validate_groundtruth.py", "code"),
     ("validate_strokes.py", "code"),
     ("integrity_audit.py", "code"),
