@@ -1788,6 +1788,43 @@ def handle_token_link_repairs(rows, sents, gram, table):
     return out
 
 
+def handle_token_reading_repairs(rows, sents, gram, table):
+    """Q3. A `mechanical` row: the SHIPPED C token at (sentence, position) still spells `surface` and
+    carries `new_reading` / `new_romaji`, and its sentence holds I2/I3 (kana and romaji are the concat
+    of the C tokens), so the sentence line was rebuilt with the token. A `review` row is not applied:
+    checked skip, and the token must still carry `old_reading` (a change needs a ruling and a table)."""
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['sentence']} @{r['position']} {r['surface']} -> {r['new_reading']}"
+        s = sents.get(r["sentence"])
+        if s is None:
+            out.append(("fail", C_NO_RECORD, addr, "the export carries no such sentence"))
+            continue
+        c = sorted((t for t in s.get("tokens") or [] if t.get("split_mode") == "C"), key=lambda t: t["position"])
+        tok = next((t for t in c if t.get("position") == r["position"]), None)
+        if tok is None or tok.get("surface") != r["surface"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"the C token there reads {None if tok is None else tok.get('surface')!r}"))
+            continue
+        got = (tok.get("reading"), tok.get("romaji"))
+        if r["class"] != "mechanical":
+            if got[0] != r["old_reading"]:
+                out.append(("fail", C_VALUE_MISMATCH, addr, f"review row, yet the token reads {got[0]!r}"))
+            else:
+                out.append(("skip", "", addr, "review row, held unapplied"))
+            continue
+        if got != (r["new_reading"], r["new_romaji"]):
+            out.append(("fail", C_NOT_APPLIED if got[0] == r["old_reading"] else C_VALUE_MISMATCH, addr,
+                        f"the token carries {got!r}"))
+            continue
+        if (s.get("kana"), s.get("romaji")) != ("".join(t.get("reading") or "" for t in c),
+                                                "".join(t.get("romaji") or "" for t in c)):
+            out.append(("fail", C_NOT_APPLIED, addr, "the sentence kana/romaji is not the concat of its tokens"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 def handle_sibling_unlock_repoint(rows, sents, gram, table):
     """Q2 (c). The course follows the relink: in the SHIPPED lesson the sibling is not unlocked and
     has no card, the record the lesson teaches is unlocked with exactly one card, a later unlock of it
@@ -2312,6 +2349,10 @@ def handle_w32_layerb(rows, sents, gram, table):
 
 
 REGISTRY = {
+    # Q3-readings: the mechanical rows of the token reading audit (review rows held, asserted unmoved)
+    # and the three lesson-body furigana attributes that had copied the old sentence kana.
+    "token_reading_audit.json": handle_token_reading_repairs,
+    "q3_reading_furigana.json": handle_lesson_body_spans,
     # Q2-token-links: the verified token-link audit (tokens + reading-box uses), the level transfer of
     # the four records whose list evidence sat on a same-reading sibling, and the course repoint.
     "token_link_repairs.json": handle_token_link_repairs,

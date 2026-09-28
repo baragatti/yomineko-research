@@ -57,6 +57,11 @@ numbered ordering slots and the two-path course structure are all settled and ve
 appearance and reuse only.
 
 ## ▶ RESUME HERE
+> **2026-09-27 (ay) — chain v4 Q3 done: 295 stored token readings fixed** (何 なに, counters, verified links),
+> 272 sentence kana/romaji rebuilt (I2/I3 0 violations), 3 lesson furigana attributes + 18 speak variants follow,
+> manifest steps 153-154. 15 review rows held, 16 links for the v5 link unit
+> (`research/reports/q3_token_readings_report.md`). Next: Q4.
+>
 > **2026-09-24 (ax) — PAUSED by the owner after chain v4 unit Q2. Tree clean; not pushed (origin is behind).**
 >
 > Landed since (aw): chain v2 (W20 vocab practice 99.5%, W18 40 banks regenerated, W14, W22, W24, W28, W29, W37/W40

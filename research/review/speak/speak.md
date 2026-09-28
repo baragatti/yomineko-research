@@ -2,7 +2,7 @@
 
 _Gerado por `scripts/export/build_review_views.py` a partir do export (`corpus/` + `course/`), entidade `speak_unit`. **Não edite este arquivo** — ele é regerado e conferido byte a byte. Para registrar um parecer, preencha uma ficha: `research/review/README.md`._
 
-_Build `5852aa009188` de 2026-09-24 (`contracts/manifest.json`)._
+_Build `f97abb752d9e` de 2026-09-27 (`contracts/manifest.json`)._
 
 **72 registro(s) · 144 endereço(s) de parecer · 72 marcado(s) `needs_review` no export.**
 
@@ -922,7 +922,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 3
 
-### `*` · camada C · hash `b580fd7bfe619100`
+### `*` · camada C · hash `4894b93a50ff9de4`
 
 _Ledger:_ —
 
@@ -1568,7 +1568,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 4
 
-### `*` · camada C · hash `72cf4c546762c30d`
+### `*` · camada C · hash `e802961fd728a0a0`
 
 _Ledger:_ —
 
@@ -2214,7 +2214,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 5
 
-### `*` · camada C · hash `af3b08f33687d2e5`
+### `*` · camada C · hash `4f1b04093a648eb1`
 
 _Ledger:_ —
 
@@ -2282,7 +2282,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 1
 
-### `*` · camada C · hash `0119cad2c129c59b`
+### `*` · camada C · hash `42418795b38f2b05`
 
 _Ledger:_ —
 

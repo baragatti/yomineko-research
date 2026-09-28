@@ -1,0 +1,36 @@
+{
+ "unit": "Q3-readings",
+ "what_this_is": "Lesson-body <jp reading> spans whose reading was copied from a bank sentence's stored kana before token_reading_audit.json re-read that sentence. Reading attribute only: the rendered text does not move. The applied tables that first wrote them (n3_review_furigana.json, furigana_residue.json) carry the corrected reading too (`amended`), so on a replay they write it directly and this table finds every span already applied; on the live index it moves the old attribute to the new one.",
+ "applied_by": "scripts/apply_lesson_body_spans.py --table q3_reading_furigana.json",
+ "layer": "C",
+ "row_count": 2,
+ "rows": [
+  {
+   "lesson": "les:n3-revisao-01",
+   "spans": [
+    {
+     "from": "<jp reading=\"きゅうじになってはじめてかれはかえってきた。\">９時になってはじめて彼は帰ってきた。</jp>",
+     "to": "<jp reading=\"くじになってはじめてかれはかえってきた。\">９時になってはじめて彼は帰ってきた。</jp>",
+     "count": 1
+    }
+   ],
+   "why": "n3_review_furigana.json derived this reading from sent:tatoeba-234911's bank kana, which Q3 re-read"
+  },
+  {
+   "lesson": "les:n4-suposicao-05",
+   "spans": [
+    {
+     "from": "<jp reading=\"ひらきそうにない\">開きそうにない</jp>",
+     "to": "<jp reading=\"あきそうにない\">開きそうにない</jp>",
+     "count": 1
+    },
+    {
+     "from": "<jp reading=\"ひらく\">開く</jp>",
+     "to": "<jp reading=\"あく\">開く</jp>",
+     "count": 1
+    }
+   ],
+   "why": "furigana_residue.json derived this reading from sent:tatoeba-3496750's bank kana, which Q3 re-read; furigana_residue.json derived this reading from sent:tatoeba-3496750's bank kana, which Q3 re-read"
+  }
+ ]
+}

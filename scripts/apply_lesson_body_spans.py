@@ -14,6 +14,8 @@ in: ok rows keep the authored text, corrected rows carry the verifier's text, re
                            (W21 residue). An attribute only: the rendered text does not move.
   comparacoes_fixes.json   P2-gp153: n4-suposicao-04 after the D5b merge (one のよう point, one checklist
                            row) and the two false claims in n5-comparacoes-01.
+  q3_reading_furigana.json Q3: three `reading` attributes copied from a bank sentence's kana before
+                           token_reading_audit.json re-read it (９時 くじ, 開きそう/開く あ). Attribute only.
 
 A row carrying `superseded_by: {table, row}` is skipped: the named later row consumed its `to`
 (validate_repairs_applied.py proves the chain against the export).
@@ -54,7 +56,7 @@ DB = db_target(LIVE)
 SRC = out_root(ROOT) / "research" / "derived" / "lessons"
 REPAIRS = ROOT / "research" / "derived" / "repairs"
 TABLES = ("w08b_lesson_bodies.json", "w21b_rewrites.json", "furigana_residue.json", "comparacoes_fixes.json",
-          "n3_review_furigana.json")
+          "n3_review_furigana.json", "q3_reading_furigana.json")
 SENT_REF = re.compile(r'<sentence\s+ref="([^"]+)"')
 BODY_WHERE = ("WHERE entity_type='lesson' AND entity_id=? AND field='body' AND locale='pt-BR'")
 
