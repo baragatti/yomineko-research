@@ -58,6 +58,21 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-28 (az) — pushed; audio plays in the prototype.** `main` == `origin/main` at the commit after f2c60b2b.
+>
+> - **Push fix:** bank.json hit GitHub's 100 MB limit at W46 (108 MB pretty-printed). The exporter now writes it one
+>   record per line (79 MB, valid JSON, no reader changes) and every export fails above 95 MB. The five unpushed commits
+>   from W46 on were rewritten locally for that file's formatting only (data asserted equal) before the push.
+> - **Audio:** W47 wiring landed (4b94ef9d → rewritten ba0d6ba8). One-lesson GPU run for les:n5-desu-wa-01
+>   (`generate.py --tier n5 --lesson …`): 141 units, 117 pass, 24 held by ASR QA, 455 s of audio in 126 s. The lesson page
+>   shows 17 play buttons; `/audio/<key>` serves `audio/ogg; codecs=opus`, 404 for missing keys.
+> - **QA false negatives to fix before the full N5 run** (scripts/audio/qa.py): pt-BR narration with embedded Japanese
+>   ("kana", "desu") scored against Portuguese; single-kana clips too short for ASR ("Hein?"); ASR kanji converted to a
+>   different reading (私 → わたくし). Held clips are in the store's failures.json.
+> - **Full replay fails at step 157** (apply_particle_usage.py, 13,167 guard failures): the next checkpoint must fix it.
+>
+> **Resume = chain v5 from V3**, as in (ay) below; V7 is superseded by the W47 wiring.
+
 > **2026-09-27 (ay) — PAUSED by the owner (token budget; GPU needed for his own use). Not pushed.**
 >
 > Landed this run: chain v4 closed (Q3 readings, Q4 listening level-clean → level gate 0 on all 40 banks, Q5 review
