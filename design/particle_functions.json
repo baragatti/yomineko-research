@@ -1,0 +1,5604 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://yomineko.dev/design/particle_functions.json",
+ "title": "particle_functions",
+ "description": "Closed, versioned registry of particle CLASSES (学校文法 / 日本語教育) and particle USAGES (one meaning of one particle), plus the templates every particle explanation is rendered from. This file is both the JSON Schema (keywords at the root and in $defs) and the data (schema_version, classes, usages, templates, cues, cue_lexicons); it validates against itself. Documentation: design/particle_functions.md. Adding a usage is inserting a row, never a schema change.",
+ "x-yomineko": {
+  "status": "proposal",
+  "schema_version": "1.0",
+  "date": "2026-09-27",
+  "doc": "design/particle_functions.md",
+  "research": "research/reports/particle_taxonomy_research.md",
+  "companion": "design/token_roles.json"
+ },
+ "type": "object",
+ "required": [
+  "schema_version",
+  "classes",
+  "usages",
+  "templates",
+  "cues",
+  "cue_lexicons"
+ ],
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "classes": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/class_record"
+   }
+  },
+  "usages": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/usage_record"
+   }
+  },
+  "templates": {
+   "type": "object",
+   "propertyNames": {
+    "$ref": "#/$defs/template_id"
+   },
+   "additionalProperties": {
+    "$ref": "#/$defs/template_record"
+   }
+  },
+  "cues": {
+   "type": "object",
+   "propertyNames": {
+    "$ref": "#/$defs/cue_id"
+   },
+   "additionalProperties": {
+    "type": "string"
+   }
+  },
+  "cue_lexicons": {
+   "type": "object",
+   "additionalProperties": {
+    "type": "array",
+    "items": {
+     "type": "string"
+    }
+   }
+  }
+ },
+ "$defs": {
+  "locale_text": {
+   "type": "object",
+   "required": [
+    "pt-BR",
+    "en"
+   ],
+   "properties": {
+    "pt-BR": {
+     "type": "string"
+    },
+    "en": {
+     "type": "string"
+    }
+   },
+   "additionalProperties": {
+    "type": "string"
+   },
+   "description": "Locale-object (design/i18n.md): pt-BR is the learner locale, en the source locale; more locales add keys."
+  },
+  "level": {
+   "type": "string",
+   "pattern": "^n[1-9]$",
+   "description": "JLPT-style level as DATA (N5..N1 today, open-ended)."
+  },
+  "particle_class": {
+   "enum": [
+    "case",
+    "binding",
+    "adverbial",
+    "conjunctive",
+    "sentence-final",
+    "nominalizer",
+    "parallel",
+    "copula-form",
+    "lexicalized"
+   ],
+   "description": "Grammatical class of the particle IN THIS USAGE (と is case, parallel or conjunctive depending on use)."
+  },
+  "usage_id": {
+   "enum": [
+    "ga.subject",
+    "ga.stative-object",
+    "ga.contrast",
+    "ga.preface",
+    "wo.object",
+    "wo.path",
+    "wo.departure",
+    "wo.causee",
+    "ni.location-existence",
+    "ni.time-point",
+    "ni.goal",
+    "ni.purpose",
+    "ni.recipient",
+    "ni.source",
+    "ni.agent",
+    "ni.causee",
+    "ni.result",
+    "ni.frequency",
+    "ni.standard",
+    "ni.target",
+    "ni.cause",
+    "ni.parallel",
+    "ni.adverbial",
+    "he.direction",
+    "to.comitative",
+    "to.parallel",
+    "to.quotative",
+    "to.comparison",
+    "to.result",
+    "to.conditional",
+    "de.location-action",
+    "de.means",
+    "de.material",
+    "de.cause",
+    "de.scope",
+    "de.limit",
+    "de.manner",
+    "de.copula",
+    "kara.starting-point",
+    "kara.source",
+    "kara.material",
+    "kara.after",
+    "kara.reason",
+    "made.until",
+    "made.as-far-as",
+    "made.even",
+    "madeni.deadline",
+    "yori.comparison",
+    "yori.starting-point",
+    "no.noun-modifier",
+    "no.subject-in-modifier",
+    "no.nominalizer",
+    "no.pronoun",
+    "no.explanatory",
+    "no.final-question",
+    "no.final-explanation",
+    "ha.topic",
+    "ha.contrast",
+    "mo.also",
+    "mo.both",
+    "mo.total-negation",
+    "mo.emphasis-quantity",
+    "mo.concessive",
+    "koso.emphasis",
+    "dake.only",
+    "shika.only-negative",
+    "bakari.only",
+    "bakari.just-done",
+    "hodo.degree",
+    "kurai.approximation",
+    "nado.examples",
+    "zutsu.distributive",
+    "sae.even",
+    "tte.quotative",
+    "tte.topic",
+    "ya.partial-list",
+    "ka.alternative",
+    "ka.indefinite",
+    "ka.embedded-question",
+    "tari.representative",
+    "demo.example",
+    "demo.even",
+    "te.sequence",
+    "te.manner",
+    "te.cause",
+    "te.parallel",
+    "te.subsidiary",
+    "te.request",
+    "teha.condition",
+    "ba.conditional",
+    "kedo.contrast",
+    "kedo.softening",
+    "node.reason",
+    "noni.concessive",
+    "noni.purpose",
+    "nagara.simultaneous",
+    "shi.listing-reasons",
+    "tatte.concessive",
+    "tsutsu.simultaneous",
+    "ka.question",
+    "ka.invitation",
+    "ka.acknowledgment",
+    "kana.wondering",
+    "kashira.wondering",
+    "yo.assertion",
+    "yo.urging",
+    "ne.confirmation",
+    "na.prohibition",
+    "na.emotive",
+    "na.soft-command",
+    "wa.emphasis",
+    "zo.emphasis",
+    "sa.assertion",
+    "kke.recall",
+    "mono.justification",
+    "jan.confirmation",
+    "nitsuite.about",
+    "toiu.naming",
+    "to.adverbial",
+    "kai.question",
+    "nomi.only",
+    "yara.listing",
+    "lex.fixed"
+   ],
+   "description": "'<key>.<usage>'; key = Hepburn romaji of the particle's kana SPELLING (は=ha, を=wo, へ=he), so the key is injective over surfaces."
+  },
+  "template_id": {
+   "enum": [
+    "tpl.compound",
+    "tpl.copula-form",
+    "tpl.focus",
+    "tpl.lexicalized",
+    "tpl.links-clauses",
+    "tpl.lists",
+    "tpl.marks-chunk",
+    "tpl.nominalizes",
+    "tpl.sentence-final"
+   ]
+  },
+  "cue_id": {
+   "enum": [
+    "aux.causative",
+    "aux.passive",
+    "clause-final",
+    "clause.ichiban",
+    "clause.negative",
+    "next.case-particle",
+    "next.comparison",
+    "next.copula",
+    "next.emotion",
+    "next.issho",
+    "next.motion-verb",
+    "next.nai-aru",
+    "next.naru-suru",
+    "next.not-saying-verb",
+    "next.noun",
+    "next.predicate",
+    "next.question-mark",
+    "next.standard-predicate",
+    "next.start-verb",
+    "next.stative-predicate",
+    "next.subsidiary",
+    "next.temorau",
+    "next.use-evaluate",
+    "not.clause-final",
+    "prev.adjective",
+    "prev.adjective-or-noun",
+    "prev.adverb",
+    "prev.cause-noun",
+    "prev.continuative",
+    "prev.interrogative",
+    "prev.manner-noun",
+    "prev.masen",
+    "prev.means-noun",
+    "prev.na-stem",
+    "prev.noun-next.noun",
+    "prev.number",
+    "prev.particle",
+    "prev.period-next.number",
+    "prev.predicate",
+    "prev.preface-lemma",
+    "prev.sou-desu",
+    "prev.ta",
+    "prev.te",
+    "prev.time-noun",
+    "prev.verb-terminal",
+    "prev.volitional-or-te",
+    "sentence.two-ha",
+    "sentence.two-mo",
+    "verb.departure",
+    "verb.emotion-cause",
+    "verb.existence",
+    "verb.giving-telling",
+    "verb.make",
+    "verb.motion",
+    "verb.path",
+    "verb.receiving",
+    "verb.reciprocal",
+    "verb.saying",
+    "verb.target"
+   ]
+  },
+  "token_role": {
+   "$ref": "token_roles.json#/$defs/chunk_role"
+  },
+  "class_record": {
+   "type": "object",
+   "required": [
+    "id",
+    "ja_term",
+    "unidic_pos_fine",
+    "is_particle",
+    "label"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/particle_class"
+    },
+    "ja_term": {
+     "type": "string"
+    },
+    "unidic_pos_fine": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "description": "Sudachi/UniDic 助詞 subclasses that realise this class; the validator's cross-check."
+    },
+    "is_particle": {
+     "type": "boolean"
+    },
+    "label": {
+     "$ref": "#/$defs/locale_text"
+    }
+   },
+   "additionalProperties": false
+  },
+  "usage_record": {
+   "type": "object",
+   "required": [
+    "id",
+    "key",
+    "particle",
+    "allomorphs",
+    "compound",
+    "class",
+    "usage",
+    "ja_term",
+    "label",
+    "desc",
+    "role",
+    "level",
+    "pattern",
+    "cues",
+    "contrasts",
+    "interchangeable",
+    "template",
+    "examples"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/usage_id"
+    },
+    "key": {
+     "type": "string",
+     "pattern": "^[a-z]+$"
+    },
+    "particle": {
+     "type": "string",
+     "description": "Canonical surface; '*' only for lex.fixed."
+    },
+    "allomorphs": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "description": "Other surfaces of the SAME usage (ん for の, で for て, ぐらい for くらい). For a compound, the remaining tokens in order."
+    },
+    "compound": {
+     "type": "boolean",
+     "description": "true = the usage spans several tokens (までに, ので, について); annotations then carry `positions`."
+    },
+    "class": {
+     "$ref": "#/$defs/particle_class"
+    },
+    "usage": {
+     "type": "string"
+    },
+    "ja_term": {
+     "type": "string",
+     "description": "The term Japanese grammar references use (時, 到達点, 相手 ...)."
+    },
+    "label": {
+     "$ref": "#/$defs/locale_text"
+    },
+    "desc": {
+     "$ref": "#/$defs/locale_text",
+     "description": "Slot text the template inserts as {desc}."
+    },
+    "role": {
+     "$ref": "#/$defs/token_role",
+     "description": "Role the particle assigns to the chunk it closes."
+    },
+    "level": {
+     "$ref": "#/$defs/level",
+     "description": "Level at which this usage is first taught (consensus, not official)."
+    },
+    "pattern": {
+     "type": "string",
+     "description": "Pattern hint: N = noun, V = verb, A = i-adjective, Na = na-adjective, S = clause, Num = number."
+    },
+    "cues": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/cue_id"
+     },
+     "description": "Mechanical context cues that select this usage (see `cues`)."
+    },
+    "contrasts": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/usage_id"
+     },
+     "description": "Usages a learner confuses this one with; the distractor source for choice exercises."
+    },
+    "interchangeable": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/usage_id"
+     },
+     "description": "Usages that are ALSO correct in the same slot (に/へ with a motion verb). A choice exercise must never offer one of these as a wrong answer."
+    },
+    "template": {
+     "$ref": "#/$defs/template_id"
+    },
+    "examples": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "object",
+      "required": [
+       "jp",
+       "pt-BR",
+       "en"
+      ],
+      "properties": {
+       "jp": {
+        "type": "string"
+       },
+       "pt-BR": {
+        "type": "string"
+       },
+       "en": {
+        "type": "string"
+       },
+       "sent": {
+        "type": "string",
+        "pattern": "^sent:"
+       }
+      },
+      "additionalProperties": false
+     }
+    }
+   },
+   "additionalProperties": false
+  },
+  "template_record": {
+   "type": "object",
+   "required": [
+    "slots",
+    "pt-BR",
+    "en"
+   ],
+   "properties": {
+    "slots": {
+     "type": "array",
+     "items": {
+      "enum": [
+       "particle",
+       "chunk",
+       "left",
+       "desc",
+       "expression"
+      ]
+     }
+    },
+    "pt-BR": {
+     "type": "string"
+    },
+    "en": {
+     "type": "string"
+    }
+   },
+   "additionalProperties": false
+  },
+  "particle_annotation": {
+   "description": "Target shape of ONE entry of a sentence's particles[] after migration. `usage` is the mechanical claim; `explanation` is RENDERED from usages[usage].template + slots; `note` is the only free text and is optional.",
+   "type": "object",
+   "required": [
+    "position",
+    "particle",
+    "function_type",
+    "usage",
+    "usage_status"
+   ],
+   "properties": {
+    "position": {
+     "type": "integer",
+     "minimum": 0,
+     "description": "C-mode token position of the particle (binds the row to its token; today's export omits it)."
+    },
+    "positions": {
+     "type": "array",
+     "items": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "minItems": 2,
+     "description": "Compound usages only: every token the usage spans, in order."
+    },
+    "particle": {
+     "type": "string"
+    },
+    "function_type": {
+     "$ref": "#/$defs/particle_class",
+     "description": "Kept for compatibility; must equal usages[usage].class."
+    },
+    "usage": {
+     "$ref": "#/$defs/usage_id"
+    },
+    "usage_status": {
+     "enum": [
+      "auto",
+      "cue-only",
+      "label-only",
+      "default",
+      "ruled",
+      "verified",
+      "tokenization-error"
+     ],
+     "description": "How the usage was assigned (research/reports/particle_taxonomy_research.md §4)."
+    },
+    "chunk": {
+     "type": "string",
+     "description": "Slot value: the chunk the particle closes (chunk_head() of derive_layerb_templates_v2)."
+    },
+    "left": {
+     "type": "string",
+     "description": "Slot value: the clause the particle closes (conjunctive/nominalizer)."
+    },
+    "expression": {
+     "type": "string",
+     "description": "Slot value: the compound or fixed expression."
+    },
+    "grammar": {
+     "type": "string",
+     "pattern": "^gram:",
+     "description": "Optional grammar-point ref when the usage is taught as a grammar point."
+    },
+    "explanation": {
+     "$ref": "#/$defs/locale_text"
+    },
+    "note": {
+     "$ref": "#/$defs/locale_text"
+    }
+   },
+   "additionalProperties": false
+  }
+ },
+ "schema_version": "1.0",
+ "classes": [
+  {
+   "id": "case",
+   "ja_term": "格助詞",
+   "unidic_pos_fine": [
+    "格助詞"
+   ],
+   "is_particle": true,
+   "label": {
+    "pt-BR": "partícula de caso: indica a relação de um sintagma nominal com o predicado",
+    "en": "case particle: marks the relation of a noun phrase to the predicate"
+   }
+  },
+  {
+   "id": "binding",
+   "ja_term": "係助詞・とりたて助詞",
+   "unidic_pos_fine": [
+    "係助詞"
+   ],
+   "is_particle": true,
+   "label": {
+    "pt-BR": "partícula de destaque (toritate): tópico, contraste, inclusão, limite",
+    "en": "focus (toritate) particle: topic, contrast, addition, limit"
+   }
+  },
+  {
+   "id": "adverbial",
+   "ja_term": "副助詞",
+   "unidic_pos_fine": [
+    "副助詞"
+   ],
+   "is_particle": true,
+   "label": {
+    "pt-BR": "partícula adverbial: grau, extensão, aproximação, exemplo",
+    "en": "adverbial particle: degree, extent, approximation, example"
+   }
+  },
+  {
+   "id": "conjunctive",
+   "ja_term": "接続助詞",
+   "unidic_pos_fine": [
+    "接続助詞"
+   ],
+   "is_particle": true,
+   "label": {
+    "pt-BR": "partícula conjuntiva: liga uma oração à seguinte",
+    "en": "conjunctive particle: links a clause to the next"
+   }
+  },
+  {
+   "id": "sentence-final",
+   "ja_term": "終助詞",
+   "unidic_pos_fine": [
+    "終助詞"
+   ],
+   "is_particle": true,
+   "label": {
+    "pt-BR": "partícula final: atitude de quem fala diante do ouvinte ou do conteúdo",
+    "en": "sentence-final particle: speaker attitude toward the listener or the content"
+   }
+  },
+  {
+   "id": "nominalizer",
+   "ja_term": "準体助詞",
+   "unidic_pos_fine": [
+    "準体助詞"
+   ],
+   "is_particle": true,
+   "label": {
+    "pt-BR": "nominalizador: transforma uma oração ou modificador em substantivo",
+    "en": "nominalizer: turns a clause or modifier into a noun phrase"
+   }
+  },
+  {
+   "id": "parallel",
+   "ja_term": "並立助詞",
+   "unidic_pos_fine": [
+    "格助詞",
+    "副助詞"
+   ],
+   "is_particle": true,
+   "label": {
+    "pt-BR": "partícula de enumeração: junta itens de uma lista",
+    "en": "parallel particle: joins items of a list (UniDic has no such class; it files と as 格助詞 and や/か as 副助詞)"
+   }
+  },
+  {
+   "id": "copula-form",
+   "ja_term": "助動詞「だ」の連用形",
+   "unidic_pos_fine": [
+    "格助詞",
+    "接続助詞"
+   ],
+   "is_particle": false,
+   "label": {
+    "pt-BR": "NÃO é partícula: forma contínua da cópula だ (静かに, 学生で)",
+    "en": "NOT a particle: continuative form of the copula だ that tokenizers or authors filed as a particle (静かに, 学生で)"
+   }
+  },
+  {
+   "id": "lexicalized",
+   "ja_term": "語の構成要素",
+   "unidic_pos_fine": [
+    "格助詞",
+    "係助詞",
+    "副助詞",
+    "接続助詞",
+    "終助詞",
+    "準体助詞"
+   ],
+   "is_particle": true,
+   "label": {
+    "pt-BR": "parte fixa de uma palavra ou expressão (それから, かもしれない); sem uso próprio",
+    "en": "frozen part of a word or fixed expression (それから, かもしれない); no usage of its own"
+   }
+  }
+ ],
+ "usages": [
+  {
+   "id": "ga.subject",
+   "key": "ga",
+   "particle": "が",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "subject",
+   "ja_term": "主格（主体）",
+   "label": {
+    "pt-BR": "sujeito",
+    "en": "subject"
+   },
+   "desc": {
+    "pt-BR": "o sujeito",
+    "en": "the subject"
+   },
+   "role": "subject",
+   "level": "n5",
+   "pattern": "N が V/A",
+   "cues": [],
+   "contrasts": [
+    "ha.topic"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "雨が降っている",
+     "pt-BR": "Está chovendo.",
+     "en": "It is raining."
+    }
+   ]
+  },
+  {
+   "id": "ga.stative-object",
+   "key": "ga",
+   "particle": "が",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "stative-object",
+   "ja_term": "対象（状態述語）",
+   "label": {
+    "pt-BR": "objeto de predicado de estado (gostar, saber, querer, entender)",
+    "en": "object of a state predicate (like, can, want, understand)"
+   },
+   "desc": {
+    "pt-BR": "aquilo de que se gosta, que se sabe ou que se quer",
+    "en": "what is liked, known, or wanted"
+   },
+   "role": "stative-object",
+   "level": "n5",
+   "pattern": "N が 好き/分かる/できる/欲しい/V-たい",
+   "cues": [
+    "next.stative-predicate"
+   ],
+   "contrasts": [
+    "wo.object"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "猫が好きです",
+     "pt-BR": "Eu gosto de gatos.",
+     "en": "I like cats."
+    }
+   ]
+  },
+  {
+   "id": "ga.contrast",
+   "key": "ga",
+   "particle": "が",
+   "allomorphs": [],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "contrast",
+   "ja_term": "逆接",
+   "label": {
+    "pt-BR": "mas (contraste entre orações)",
+    "en": "but (contrast between clauses)"
+   },
+   "desc": {
+    "pt-BR": "contraste ('mas')",
+    "en": "contrast ('but')"
+   },
+   "role": "clause-link",
+   "level": "n5",
+   "pattern": "S1 が、S2",
+   "cues": [
+    "prev.predicate"
+   ],
+   "contrasts": [
+    "kedo.contrast"
+   ],
+   "interchangeable": [
+    "kedo.contrast"
+   ],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "高いですが、買います",
+     "pt-BR": "É caro, mas vou comprar.",
+     "en": "It's expensive, but I'll buy it."
+    }
+   ]
+  },
+  {
+   "id": "ga.preface",
+   "key": "ga",
+   "particle": "が",
+   "allomorphs": [],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "preface",
+   "ja_term": "前置き",
+   "label": {
+    "pt-BR": "introdução que suaviza um pedido ou pergunta",
+    "en": "softening preface before a request or question"
+   },
+   "desc": {
+    "pt-BR": "introdução educada ('com licença, …')",
+    "en": "a polite preface ('excuse me, …')"
+   },
+   "role": "clause-link",
+   "level": "n4",
+   "pattern": "すみませんが、…",
+   "cues": [
+    "prev.preface-lemma",
+    "clause-final"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "すみませんが、駅はどこですか",
+     "pt-BR": "Com licença, onde fica a estação?",
+     "en": "Excuse me, where is the station?"
+    }
+   ]
+  },
+  {
+   "id": "wo.object",
+   "key": "wo",
+   "particle": "を",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "object",
+   "ja_term": "対象（目的語）",
+   "label": {
+    "pt-BR": "objeto direto",
+    "en": "direct object"
+   },
+   "desc": {
+    "pt-BR": "o objeto direto",
+    "en": "the direct object"
+   },
+   "role": "object",
+   "level": "n5",
+   "pattern": "N を V(transitive)",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "パンを食べる",
+     "pt-BR": "Como pão.",
+     "en": "I eat bread."
+    }
+   ]
+  },
+  {
+   "id": "wo.path",
+   "key": "wo",
+   "particle": "を",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "path",
+   "ja_term": "経過域",
+   "label": {
+    "pt-BR": "percurso (por onde se passa)",
+    "en": "route or space moved through"
+   },
+   "desc": {
+    "pt-BR": "o espaço por onde se passa",
+    "en": "the space moved through"
+   },
+   "role": "path",
+   "level": "n4",
+   "pattern": "N[place] を 通る/渡る/歩く/散歩する",
+   "cues": [
+    "verb.path"
+   ],
+   "contrasts": [
+    "de.location-action"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "公園を散歩する",
+     "pt-BR": "Passeio pelo parque.",
+     "en": "I take a walk through the park."
+    }
+   ]
+  },
+  {
+   "id": "wo.departure",
+   "key": "wo",
+   "particle": "を",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "departure",
+   "ja_term": "起点",
+   "label": {
+    "pt-BR": "ponto de onde se sai",
+    "en": "point left behind (leave, get off, graduate)"
+   },
+   "desc": {
+    "pt-BR": "o lugar de onde se sai",
+    "en": "the place being left"
+   },
+   "role": "source",
+   "level": "n4",
+   "pattern": "N[place] を 出る/降りる/卒業する",
+   "cues": [
+    "verb.departure"
+   ],
+   "contrasts": [
+    "kara.starting-point"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "七時に家を出る",
+     "pt-BR": "Saio de casa às sete.",
+     "en": "I leave home at seven."
+    }
+   ]
+  },
+  {
+   "id": "wo.causee",
+   "key": "wo",
+   "particle": "を",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "causee",
+   "ja_term": "使役の相手",
+   "label": {
+    "pt-BR": "pessoa levada a agir (causativo de verbo intransitivo)",
+    "en": "person made or let to act (causative of an intransitive verb)"
+   },
+   "desc": {
+    "pt-BR": "quem é levado ou autorizado a agir",
+    "en": "the one made or allowed to act"
+   },
+   "role": "causee",
+   "level": "n4",
+   "pattern": "N を V-(さ)せる",
+   "cues": [
+    "aux.causative"
+   ],
+   "contrasts": [
+    "ni.causee"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "子どもを遊ばせる",
+     "pt-BR": "Deixo a criança brincar.",
+     "en": "I let the child play."
+    }
+   ]
+  },
+  {
+   "id": "ni.location-existence",
+   "key": "ni",
+   "particle": "に",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "location-existence",
+   "ja_term": "存在の場所",
+   "label": {
+    "pt-BR": "lugar onde algo está",
+    "en": "place where something is"
+   },
+   "desc": {
+    "pt-BR": "o lugar onde algo está",
+    "en": "the place where something is"
+   },
+   "role": "location",
+   "level": "n5",
+   "pattern": "N[place] に ある/いる/住む",
+   "cues": [
+    "verb.existence"
+   ],
+   "contrasts": [
+    "de.location-action"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "机の上に本がある",
+     "pt-BR": "Há um livro em cima da mesa.",
+     "en": "There is a book on the desk."
+    }
+   ]
+  },
+  {
+   "id": "ni.time-point",
+   "key": "ni",
+   "particle": "に",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "time-point",
+   "ja_term": "時",
+   "label": {
+    "pt-BR": "momento (quando)",
+    "en": "point in time"
+   },
+   "desc": {
+    "pt-BR": "o momento em que a ação acontece",
+    "en": "the point in time of the action"
+   },
+   "role": "time",
+   "level": "n5",
+   "pattern": "N[time] に V",
+   "cues": [
+    "prev.time-noun"
+   ],
+   "contrasts": [
+    "de.limit"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "七時に起きる",
+     "pt-BR": "Acordo às sete.",
+     "en": "I get up at seven."
+    }
+   ]
+  },
+  {
+   "id": "ni.goal",
+   "key": "ni",
+   "particle": "に",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "goal",
+   "ja_term": "到達点・帰着点",
+   "label": {
+    "pt-BR": "destino (aonde se vai ou chega)",
+    "en": "destination or arrival point"
+   },
+   "desc": {
+    "pt-BR": "o destino do movimento",
+    "en": "the destination of the movement"
+   },
+   "role": "goal",
+   "level": "n5",
+   "pattern": "N[place] に 行く/来る/着く/入る/置く",
+   "cues": [
+    "verb.motion"
+   ],
+   "contrasts": [
+    "he.direction"
+   ],
+   "interchangeable": [
+    "he.direction"
+   ],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "駅に着いた",
+     "pt-BR": "Cheguei à estação.",
+     "en": "I arrived at the station."
+    }
+   ]
+  },
+  {
+   "id": "ni.purpose",
+   "key": "ni",
+   "particle": "に",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "purpose",
+   "ja_term": "移動の目的",
+   "label": {
+    "pt-BR": "finalidade de ir ou vir",
+    "en": "purpose of going or coming"
+   },
+   "desc": {
+    "pt-BR": "a finalidade do deslocamento",
+    "en": "the purpose of the movement"
+   },
+   "role": "purpose",
+   "level": "n5",
+   "pattern": "V-stem/Nする に 行く/来る",
+   "cues": [
+    "prev.continuative",
+    "next.motion-verb"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "映画を見に行く",
+     "pt-BR": "Vou ver um filme.",
+     "en": "I'm going to see a movie."
+    }
+   ]
+  },
+  {
+   "id": "ni.recipient",
+   "key": "ni",
+   "particle": "に",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "recipient",
+   "ja_term": "相手（授与・伝達）",
+   "label": {
+    "pt-BR": "destinatário (quem recebe, ouve ou é encontrado)",
+    "en": "recipient or addressee (give, tell, meet)"
+   },
+   "desc": {
+    "pt-BR": "a pessoa que recebe, ouve ou é encontrada",
+    "en": "the person who receives, hears, or is met"
+   },
+   "role": "recipient",
+   "level": "n5",
+   "pattern": "N[person] に あげる/言う/会う",
+   "cues": [
+    "verb.giving-telling"
+   ],
+   "contrasts": [
+    "ni.source"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "友達にプレゼントをあげる",
+     "pt-BR": "Dou um presente ao meu amigo.",
+     "en": "I give my friend a present."
+    }
+   ]
+  },
+  {
+   "id": "ni.source",
+   "key": "ni",
+   "particle": "に",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "source",
+   "ja_term": "相手（受け取りの起点）",
+   "label": {
+    "pt-BR": "pessoa de quem se recebe (もらう, 借りる, 習う)",
+    "en": "person something is received from (もらう, 借りる, 習う)"
+   },
+   "desc": {
+    "pt-BR": "a pessoa de quem se recebe algo",
+    "en": "the person something is received from"
+   },
+   "role": "source",
+   "level": "n4",
+   "pattern": "N[person] に もらう/借りる/習う",
+   "cues": [
+    "verb.receiving"
+   ],
+   "contrasts": [
+    "kara.source",
+    "ni.recipient"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "先生に辞書を借りた",
+     "pt-BR": "Peguei um dicionário emprestado com o professor.",
+     "en": "I borrowed a dictionary from the teacher."
+    }
+   ]
+  },
+  {
+   "id": "ni.agent",
+   "key": "ni",
+   "particle": "に",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "agent",
+   "ja_term": "受身・「〜てもらう」の動作主",
+   "label": {
+    "pt-BR": "quem pratica a ação na voz passiva ou em 〜てもらう",
+    "en": "agent of a passive or of 〜てもらう"
+   },
+   "desc": {
+    "pt-BR": "quem pratica a ação",
+    "en": "the one who does the action"
+   },
+   "role": "agent",
+   "level": "n4",
+   "pattern": "N に V-(ら)れる / V-てもらう",
+   "cues": [
+    "aux.passive",
+    "next.temorau"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "先生に褒められた",
+     "pt-BR": "Fui elogiado pelo professor.",
+     "en": "I was praised by the teacher."
+    }
+   ]
+  },
+  {
+   "id": "ni.causee",
+   "key": "ni",
+   "particle": "に",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "causee",
+   "ja_term": "使役の相手",
+   "label": {
+    "pt-BR": "pessoa levada ou autorizada a fazer algo (causativo)",
+    "en": "person made or let to do something (causative)"
+   },
+   "desc": {
+    "pt-BR": "quem é levado ou autorizado a agir",
+    "en": "the one made or allowed to act"
+   },
+   "role": "causee",
+   "level": "n4",
+   "pattern": "N に N を V-(さ)せる",
+   "cues": [
+    "aux.causative"
+   ],
+   "contrasts": [
+    "wo.causee"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "子どもに野菜を食べさせる",
+     "pt-BR": "Faço a criança comer verduras.",
+     "en": "I make the child eat vegetables."
+    }
+   ]
+  },
+  {
+   "id": "ni.result",
+   "key": "ni",
+   "particle": "に",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "result",
+   "ja_term": "変化の結果",
+   "label": {
+    "pt-BR": "resultado de uma mudança (なる, する)",
+    "en": "result of a change (なる, する)"
+   },
+   "desc": {
+    "pt-BR": "o resultado da mudança",
+    "en": "the result of the change"
+   },
+   "role": "result",
+   "level": "n5",
+   "pattern": "N/Na に なる/する",
+   "cues": [
+    "next.naru-suru"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "医者になりたい",
+     "pt-BR": "Quero ser médico.",
+     "en": "I want to become a doctor."
+    }
+   ]
+  },
+  {
+   "id": "ni.frequency",
+   "key": "ni",
+   "particle": "に",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "frequency",
+   "ja_term": "割合",
+   "label": {
+    "pt-BR": "proporção (por)",
+    "en": "rate (per)"
+   },
+   "desc": {
+    "pt-BR": "o período da proporção ('por')",
+    "en": "the period of the rate ('per')"
+   },
+   "role": "quantity",
+   "level": "n4",
+   "pattern": "N[period] に Num",
+   "cues": [
+    "prev.period-next.number"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "一週間に二回泳ぐ",
+     "pt-BR": "Nado duas vezes por semana.",
+     "en": "I swim twice a week."
+    }
+   ]
+  },
+  {
+   "id": "ni.standard",
+   "key": "ni",
+   "particle": "に",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "standard",
+   "ja_term": "状態・評価の基準",
+   "label": {
+    "pt-BR": "ponto de referência de um estado ou avaliação (近い, いい, 似る)",
+    "en": "reference point of a state or judgment (近い, いい, 似る)"
+   },
+   "desc": {
+    "pt-BR": "a referência do estado ou da avaliação",
+    "en": "the reference point of the state or judgment"
+   },
+   "role": "standard",
+   "level": "n4",
+   "pattern": "N に 近い/いい/似ている",
+   "cues": [
+    "next.standard-predicate"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "駅に近い",
+     "pt-BR": "Fica perto da estação.",
+     "en": "It's close to the station."
+    }
+   ]
+  },
+  {
+   "id": "ni.target",
+   "key": "ni",
+   "particle": "に",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "target",
+   "ja_term": "心的態度・働きかけの対象",
+   "label": {
+    "pt-BR": "alvo de uma atitude ou ação (慣れる, 気をつける, 反対する)",
+    "en": "target of an attitude or action (慣れる, 気をつける, 反対する)"
+   },
+   "desc": {
+    "pt-BR": "o alvo da atitude ou da ação",
+    "en": "the target of the attitude or action"
+   },
+   "role": "target",
+   "level": "n4",
+   "pattern": "N に 慣れる/気をつける/参加する",
+   "cues": [
+    "verb.target"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "車に気をつけて",
+     "pt-BR": "Cuidado com os carros.",
+     "en": "Watch out for cars."
+    }
+   ]
+  },
+  {
+   "id": "ni.cause",
+   "key": "ni",
+   "particle": "に",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "cause",
+   "ja_term": "原因・理由",
+   "label": {
+    "pt-BR": "causa de um sentimento ou estado",
+    "en": "cause of a feeling or state"
+   },
+   "desc": {
+    "pt-BR": "a causa do sentimento ou estado",
+    "en": "the cause of the feeling or state"
+   },
+   "role": "cause",
+   "level": "n3",
+   "pattern": "N に 驚く/困る/疲れる",
+   "cues": [
+    "verb.emotion-cause"
+   ],
+   "contrasts": [
+    "de.cause"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "その知らせに驚いた",
+     "pt-BR": "Fiquei surpreso com a notícia.",
+     "en": "I was surprised by the news."
+    }
+   ]
+  },
+  {
+   "id": "ni.parallel",
+   "key": "ni",
+   "particle": "に",
+   "allomorphs": [],
+   "compound": false,
+   "class": "parallel",
+   "usage": "parallel",
+   "ja_term": "並列・添加",
+   "label": {
+    "pt-BR": "enumeração por acréscimo",
+    "en": "listing by addition (A に B)"
+   },
+   "desc": {
+    "pt-BR": "um item somado ao seguinte",
+    "en": "an item added to the next"
+   },
+   "role": "parallel-item",
+   "level": "n2",
+   "pattern": "N に N",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.lists",
+   "examples": [
+    {
+     "jp": "パンに牛乳を買った",
+     "pt-BR": "Comprei pão e leite.",
+     "en": "I bought bread and milk."
+    }
+   ]
+  },
+  {
+   "id": "ni.adverbial",
+   "key": "ni",
+   "particle": "に",
+   "allomorphs": [],
+   "compound": false,
+   "class": "copula-form",
+   "usage": "adverbial",
+   "ja_term": "連用形（副詞的）",
+   "label": {
+    "pt-BR": "に que forma advérbio depois de adjetivo-na",
+    "en": "adverb-forming に after a na-adjective"
+   },
+   "desc": {
+    "pt-BR": "formando um advérbio",
+    "en": "forming an adverb"
+   },
+   "role": "adverbial",
+   "level": "n5",
+   "pattern": "Na に V",
+   "cues": [
+    "prev.na-stem"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.copula-form",
+   "examples": [
+    {
+     "jp": "静かに話す",
+     "pt-BR": "Falo baixinho.",
+     "en": "I speak quietly."
+    }
+   ]
+  },
+  {
+   "id": "he.direction",
+   "key": "he",
+   "particle": "へ",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "direction",
+   "ja_term": "方向",
+   "label": {
+    "pt-BR": "direção (rumo a)",
+    "en": "direction (toward)"
+   },
+   "desc": {
+    "pt-BR": "a direção do movimento",
+    "en": "the direction of the movement"
+   },
+   "role": "goal",
+   "level": "n5",
+   "pattern": "N[place] へ 行く",
+   "cues": [],
+   "contrasts": [
+    "ni.goal"
+   ],
+   "interchangeable": [
+    "ni.goal"
+   ],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "日本へ行く",
+     "pt-BR": "Vou para o Japão.",
+     "en": "I'm going to Japan."
+    }
+   ]
+  },
+  {
+   "id": "to.comitative",
+   "key": "to",
+   "particle": "と",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "comitative",
+   "ja_term": "共同者・相互動作の相手",
+   "label": {
+    "pt-BR": "companhia ou parceiro de uma ação mútua",
+    "en": "companion or partner in a mutual action"
+   },
+   "desc": {
+    "pt-BR": "quem faz a ação junto",
+    "en": "the one doing the action together"
+   },
+   "role": "comitative",
+   "level": "n5",
+   "pattern": "N と V / N と一緒に",
+   "cues": [
+    "next.issho",
+    "verb.reciprocal"
+   ],
+   "contrasts": [
+    "to.parallel"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "友達と映画を見た",
+     "pt-BR": "Vi um filme com um amigo.",
+     "en": "I watched a movie with a friend."
+    }
+   ]
+  },
+  {
+   "id": "to.parallel",
+   "key": "to",
+   "particle": "と",
+   "allomorphs": [],
+   "compound": false,
+   "class": "parallel",
+   "usage": "parallel",
+   "ja_term": "並立（全部列挙）",
+   "label": {
+    "pt-BR": "e (lista completa)",
+    "en": "and (complete list of nouns)"
+   },
+   "desc": {
+    "pt-BR": "um item de uma lista completa",
+    "en": "an item of a complete list"
+   },
+   "role": "parallel-item",
+   "level": "n5",
+   "pattern": "N と N",
+   "cues": [
+    "prev.noun-next.noun"
+   ],
+   "contrasts": [
+    "ya.partial-list"
+   ],
+   "interchangeable": [],
+   "template": "tpl.lists",
+   "examples": [
+    {
+     "jp": "パンと牛乳を買った",
+     "pt-BR": "Comprei pão e leite.",
+     "en": "I bought bread and milk."
+    }
+   ]
+  },
+  {
+   "id": "to.quotative",
+   "key": "to",
+   "particle": "と",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "quotative",
+   "ja_term": "引用",
+   "label": {
+    "pt-BR": "citação: o que se diz ou pensa",
+    "en": "quotation: content of saying or thinking"
+   },
+   "desc": {
+    "pt-BR": "o conteúdo do que se diz ou pensa",
+    "en": "the content of what is said or thought"
+   },
+   "role": "quote",
+   "level": "n4",
+   "pattern": "S と 言う/思う",
+   "cues": [
+    "verb.saying"
+   ],
+   "contrasts": [
+    "tte.quotative"
+   ],
+   "interchangeable": [
+    "tte.quotative"
+   ],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "明日は雨だと思う",
+     "pt-BR": "Acho que amanhã vai chover.",
+     "en": "I think it will rain tomorrow."
+    }
+   ]
+  },
+  {
+   "id": "to.comparison",
+   "key": "to",
+   "particle": "と",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "comparison",
+   "ja_term": "比較の基準",
+   "label": {
+    "pt-BR": "referência de comparação (同じ, 違う, 比べる)",
+    "en": "standard of comparison (同じ, 違う, 比べる)"
+   },
+   "desc": {
+    "pt-BR": "a referência da comparação",
+    "en": "the standard of the comparison"
+   },
+   "role": "standard",
+   "level": "n4",
+   "pattern": "N と 同じ/違う/比べる",
+   "cues": [
+    "next.comparison"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "これはそれと同じだ",
+     "pt-BR": "Isto é igual àquilo.",
+     "en": "This is the same as that."
+    }
+   ]
+  },
+  {
+   "id": "to.result",
+   "key": "to",
+   "particle": "と",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "result",
+   "ja_term": "変化の結果（書き言葉）",
+   "label": {
+    "pt-BR": "resultado de mudança (escrito, となる)",
+    "en": "result of a change (written, となる)"
+   },
+   "desc": {
+    "pt-BR": "o resultado da mudança",
+    "en": "the result of the change"
+   },
+   "role": "result",
+   "level": "n3",
+   "pattern": "N と なる",
+   "cues": [
+    "next.naru-suru"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "会議は中止となった",
+     "pt-BR": "A reunião foi cancelada.",
+     "en": "The meeting was called off."
+    }
+   ]
+  },
+  {
+   "id": "to.conditional",
+   "key": "to",
+   "particle": "と",
+   "allomorphs": [],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "conditional",
+   "ja_term": "条件（自然の帰結）",
+   "label": {
+    "pt-BR": "quando / sempre que (consequência natural)",
+    "en": "when / whenever (natural consequence)"
+   },
+   "desc": {
+    "pt-BR": "condição com consequência natural ('quando', 'sempre que')",
+    "en": "a condition with a natural consequence ('when')"
+   },
+   "role": "clause-link",
+   "level": "n4",
+   "pattern": "V-dict と S",
+   "cues": [],
+   "contrasts": [
+    "ba.conditional"
+   ],
+   "interchangeable": [],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "春になると暖かくなる",
+     "pt-BR": "Quando chega a primavera, esquenta.",
+     "en": "When spring comes, it gets warm."
+    }
+   ]
+  },
+  {
+   "id": "de.location-action",
+   "key": "de",
+   "particle": "で",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "location-action",
+   "ja_term": "動作の場所",
+   "label": {
+    "pt-BR": "lugar onde a ação acontece",
+    "en": "place where an action happens"
+   },
+   "desc": {
+    "pt-BR": "o lugar onde a ação acontece",
+    "en": "the place where the action happens"
+   },
+   "role": "location-action",
+   "level": "n5",
+   "pattern": "N[place] で V(action)",
+   "cues": [],
+   "contrasts": [
+    "ni.location-existence"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "図書館で勉強する",
+     "pt-BR": "Estudo na biblioteca.",
+     "en": "I study at the library."
+    }
+   ]
+  },
+  {
+   "id": "de.means",
+   "key": "de",
+   "particle": "で",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "means",
+   "ja_term": "手段・道具・方法",
+   "label": {
+    "pt-BR": "meio, instrumento ou língua",
+    "en": "means, tool, or language"
+   },
+   "desc": {
+    "pt-BR": "o meio ou instrumento usado",
+    "en": "the means or tool used"
+   },
+   "role": "means",
+   "level": "n5",
+   "pattern": "N[tool] で V",
+   "cues": [
+    "prev.means-noun"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "バスで行く",
+     "pt-BR": "Vou de ônibus.",
+     "en": "I go by bus."
+    }
+   ]
+  },
+  {
+   "id": "de.material",
+   "key": "de",
+   "particle": "で",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "material",
+   "ja_term": "材料",
+   "label": {
+    "pt-BR": "material de que algo é feito",
+    "en": "material something is made of"
+   },
+   "desc": {
+    "pt-BR": "o material usado",
+    "en": "the material used"
+   },
+   "role": "material",
+   "level": "n4",
+   "pattern": "N で 作る",
+   "cues": [
+    "verb.make"
+   ],
+   "contrasts": [
+    "kara.material"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "木で机を作る",
+     "pt-BR": "Faço uma mesa de madeira.",
+     "en": "I make a desk out of wood."
+    }
+   ]
+  },
+  {
+   "id": "de.cause",
+   "key": "de",
+   "particle": "で",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "cause",
+   "ja_term": "原因・理由",
+   "label": {
+    "pt-BR": "causa ou motivo",
+    "en": "cause or reason"
+   },
+   "desc": {
+    "pt-BR": "a causa ou motivo",
+    "en": "the cause or reason"
+   },
+   "role": "cause",
+   "level": "n4",
+   "pattern": "N で V",
+   "cues": [
+    "prev.cause-noun"
+   ],
+   "contrasts": [
+    "ni.cause",
+    "kara.reason"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "風邪で休んだ",
+     "pt-BR": "Faltei por causa de um resfriado.",
+     "en": "I stayed home with a cold."
+    }
+   ]
+  },
+  {
+   "id": "de.scope",
+   "key": "de",
+   "particle": "で",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "scope",
+   "ja_term": "範囲・領域",
+   "label": {
+    "pt-BR": "âmbito (em, entre)",
+    "en": "scope (in, among)"
+   },
+   "desc": {
+    "pt-BR": "o âmbito da comparação",
+    "en": "the scope of the comparison"
+   },
+   "role": "scope",
+   "level": "n4",
+   "pattern": "N で 一番…",
+   "cues": [
+    "clause.ichiban"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "クラスで一番背が高い",
+     "pt-BR": "É o mais alto da turma.",
+     "en": "He is the tallest in the class."
+    }
+   ]
+  },
+  {
+   "id": "de.limit",
+   "key": "de",
+   "particle": "で",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "limit",
+   "ja_term": "限度（時間・数量）",
+   "label": {
+    "pt-BR": "limite de tempo ou quantidade (em, por)",
+    "en": "limit of time or amount (in, for)"
+   },
+   "desc": {
+    "pt-BR": "o limite de tempo ou quantidade",
+    "en": "the limit of time or amount"
+   },
+   "role": "quantity",
+   "level": "n4",
+   "pattern": "Num/N[period] で",
+   "cues": [
+    "prev.number"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "三つで百円です",
+     "pt-BR": "São cem ienes por três.",
+     "en": "It's 100 yen for three."
+    }
+   ]
+  },
+  {
+   "id": "de.manner",
+   "key": "de",
+   "particle": "で",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "manner",
+   "ja_term": "様態・主体の状態",
+   "label": {
+    "pt-BR": "modo ou estado de quem age (sozinho, todos juntos)",
+    "en": "manner or state of the doer (alone, all together)"
+   },
+   "desc": {
+    "pt-BR": "o modo como se age",
+    "en": "the manner of the action"
+   },
+   "role": "manner",
+   "level": "n5",
+   "pattern": "一人で/みんなで V",
+   "cues": [
+    "prev.manner-noun"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "一人で行く",
+     "pt-BR": "Vou sozinho.",
+     "en": "I'm going alone."
+    }
+   ]
+  },
+  {
+   "id": "de.copula",
+   "key": "de",
+   "particle": "で",
+   "allomorphs": [],
+   "compound": false,
+   "class": "copula-form",
+   "usage": "copula",
+   "ja_term": "「だ」の連用形",
+   "label": {
+    "pt-BR": "forma contínua da cópula (ではない, 学生で、…)",
+    "en": "continuative of the copula (ではない, 学生で、…)"
+   },
+   "desc": {
+    "pt-BR": "como parte do predicado nominal",
+    "en": "as part of the noun predicate"
+   },
+   "role": "predicate",
+   "level": "n5",
+   "pattern": "N で(は)ない / N で、S",
+   "cues": [
+    "next.nai-aru"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.copula-form",
+   "examples": [
+    {
+     "jp": "学生ではない",
+     "pt-BR": "Não sou estudante.",
+     "en": "I'm not a student."
+    }
+   ]
+  },
+  {
+   "id": "kara.starting-point",
+   "key": "kara",
+   "particle": "から",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "starting-point",
+   "ja_term": "起点（空間・時間）",
+   "label": {
+    "pt-BR": "ponto de partida no espaço ou no tempo (de, a partir de)",
+    "en": "starting point in space or time (from)"
+   },
+   "desc": {
+    "pt-BR": "o ponto de partida",
+    "en": "the starting point"
+   },
+   "role": "source",
+   "level": "n5",
+   "pattern": "N から",
+   "cues": [],
+   "contrasts": [
+    "wo.departure",
+    "made.until"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "九時から働く",
+     "pt-BR": "Trabalho a partir das nove.",
+     "en": "I work from nine."
+    }
+   ]
+  },
+  {
+   "id": "kara.source",
+   "key": "kara",
+   "particle": "から",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "source",
+   "ja_term": "出どころ・相手",
+   "label": {
+    "pt-BR": "de quem ou de onde algo vem",
+    "en": "person or place something comes from"
+   },
+   "desc": {
+    "pt-BR": "a origem daquilo que se recebe",
+    "en": "the origin of what is received"
+   },
+   "role": "source",
+   "level": "n4",
+   "pattern": "N[person] から もらう/聞く",
+   "cues": [
+    "verb.receiving"
+   ],
+   "contrasts": [
+    "ni.source"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "母から手紙が来た",
+     "pt-BR": "Chegou uma carta da minha mãe.",
+     "en": "A letter came from my mother."
+    }
+   ]
+  },
+  {
+   "id": "kara.material",
+   "key": "kara",
+   "particle": "から",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "material",
+   "ja_term": "原料",
+   "label": {
+    "pt-BR": "matéria-prima (feito de)",
+    "en": "raw material (made from)"
+   },
+   "desc": {
+    "pt-BR": "a matéria-prima transformada",
+    "en": "the raw material transformed"
+   },
+   "role": "material",
+   "level": "n4",
+   "pattern": "N から 作る/できる",
+   "cues": [
+    "verb.make"
+   ],
+   "contrasts": [
+    "de.material"
+   ],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "ワインはぶどうから作る",
+     "pt-BR": "O vinho é feito de uva.",
+     "en": "Wine is made from grapes."
+    }
+   ]
+  },
+  {
+   "id": "kara.after",
+   "key": "kara",
+   "particle": "から",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "after",
+   "ja_term": "継起（〜てから）",
+   "label": {
+    "pt-BR": "depois de fazer (〜てから)",
+    "en": "after doing (〜てから)"
+   },
+   "desc": {
+    "pt-BR": "sequência ('depois de')",
+    "en": "sequence ('after')"
+   },
+   "role": "clause-link",
+   "level": "n5",
+   "pattern": "V-て から",
+   "cues": [
+    "prev.te"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "食べてから出かける",
+     "pt-BR": "Saio depois de comer.",
+     "en": "I'll go out after eating."
+    }
+   ]
+  },
+  {
+   "id": "kara.reason",
+   "key": "kara",
+   "particle": "から",
+   "allomorphs": [],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "reason",
+   "ja_term": "理由",
+   "label": {
+    "pt-BR": "porque (motivo)",
+    "en": "because (reason)"
+   },
+   "desc": {
+    "pt-BR": "motivo ('porque')",
+    "en": "reason ('because')"
+   },
+   "role": "clause-link",
+   "level": "n5",
+   "pattern": "S から、S",
+   "cues": [],
+   "contrasts": [
+    "node.reason"
+   ],
+   "interchangeable": [
+    "node.reason"
+   ],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "暑いから窓を開けた",
+     "pt-BR": "Abri a janela porque estava calor.",
+     "en": "I opened the window because it was hot."
+    }
+   ]
+  },
+  {
+   "id": "made.until",
+   "key": "made",
+   "particle": "まで",
+   "allomorphs": [],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "until",
+   "ja_term": "終点（時間）",
+   "label": {
+    "pt-BR": "até (limite no tempo)",
+    "en": "until (end point in time)"
+   },
+   "desc": {
+    "pt-BR": "o limite no tempo",
+    "en": "the end point in time"
+   },
+   "role": "end-point",
+   "level": "n5",
+   "pattern": "N[time] まで",
+   "cues": [
+    "prev.time-noun"
+   ],
+   "contrasts": [
+    "madeni.deadline"
+   ],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "五時まで働く",
+     "pt-BR": "Trabalho até as cinco.",
+     "en": "I work until five."
+    }
+   ]
+  },
+  {
+   "id": "made.as-far-as",
+   "key": "made",
+   "particle": "まで",
+   "allomorphs": [],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "as-far-as",
+   "ja_term": "終点（空間・範囲）",
+   "label": {
+    "pt-BR": "até (limite no espaço ou num intervalo)",
+    "en": "as far as (end point in space or range)"
+   },
+   "desc": {
+    "pt-BR": "o limite no espaço",
+    "en": "the end point in space"
+   },
+   "role": "end-point",
+   "level": "n5",
+   "pattern": "N[place] まで",
+   "cues": [
+    "verb.motion"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "駅まで歩く",
+     "pt-BR": "Ando até a estação.",
+     "en": "I walk as far as the station."
+    }
+   ]
+  },
+  {
+   "id": "made.even",
+   "key": "made",
+   "particle": "まで",
+   "allomorphs": [],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "even",
+   "ja_term": "極端な例（意外）",
+   "label": {
+    "pt-BR": "até (mesmo) (exemplo extremo)",
+    "en": "even (extreme example)"
+   },
+   "desc": {
+    "pt-BR": "um exemplo extremo ('até mesmo')",
+    "en": "an extreme example ('even')"
+   },
+   "role": "focus",
+   "level": "n3",
+   "pattern": "N まで",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "子どもまで知っている",
+     "pt-BR": "Até as crianças sabem.",
+     "en": "Even children know it."
+    }
+   ]
+  },
+  {
+   "id": "madeni.deadline",
+   "key": "madeni",
+   "particle": "まで",
+   "allomorphs": [
+    "に"
+   ],
+   "compound": true,
+   "class": "adverbial",
+   "usage": "deadline",
+   "ja_term": "期限",
+   "label": {
+    "pt-BR": "até (prazo)",
+    "en": "by (deadline)"
+   },
+   "desc": {
+    "pt-BR": "o prazo máximo ('até', 'no máximo')",
+    "en": "a deadline ('by')"
+   },
+   "role": "time",
+   "level": "n4",
+   "pattern": "N[time] までに",
+   "cues": [],
+   "contrasts": [
+    "made.until"
+   ],
+   "interchangeable": [],
+   "template": "tpl.compound",
+   "examples": [
+    {
+     "jp": "五時までに帰る",
+     "pt-BR": "Volto até as cinco (no máximo).",
+     "en": "I'll be back by five."
+    }
+   ]
+  },
+  {
+   "id": "yori.comparison",
+   "key": "yori",
+   "particle": "より",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "comparison",
+   "ja_term": "比較の基準",
+   "label": {
+    "pt-BR": "(do) que (termo de comparação)",
+    "en": "than (standard of comparison)"
+   },
+   "desc": {
+    "pt-BR": "o termo da comparação",
+    "en": "the standard of comparison"
+   },
+   "role": "standard",
+   "level": "n5",
+   "pattern": "N より A",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "今日は昨日より暑い",
+     "pt-BR": "Hoje está mais quente que ontem.",
+     "en": "Today is hotter than yesterday."
+    }
+   ]
+  },
+  {
+   "id": "yori.starting-point",
+   "key": "yori",
+   "particle": "より",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "starting-point",
+   "ja_term": "起点（書き言葉）",
+   "label": {
+    "pt-BR": "a partir de (formal)",
+    "en": "from (formal starting point)"
+   },
+   "desc": {
+    "pt-BR": "o ponto de partida (formal)",
+    "en": "the starting point (formal)"
+   },
+   "role": "source",
+   "level": "n3",
+   "pattern": "N より",
+   "cues": [
+    "next.start-verb"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "十時より開始します",
+     "pt-BR": "Começa a partir das dez.",
+     "en": "It starts from ten."
+    }
+   ]
+  },
+  {
+   "id": "no.noun-modifier",
+   "key": "no",
+   "particle": "の",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "noun-modifier",
+   "ja_term": "連体修飾（所有・所属・属性）",
+   "label": {
+    "pt-BR": "liga substantivos (posse, pertença, atributo)",
+    "en": "noun-to-noun link (possession, affiliation, attribute)"
+   },
+   "desc": {
+    "pt-BR": "o modificador do substantivo seguinte",
+    "en": "the modifier of the next noun"
+   },
+   "role": "modifier",
+   "level": "n5",
+   "pattern": "N の N",
+   "cues": [
+    "next.noun"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "私の本",
+     "pt-BR": "Meu livro.",
+     "en": "My book."
+    }
+   ]
+  },
+  {
+   "id": "no.subject-in-modifier",
+   "key": "no",
+   "particle": "の",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "subject-in-modifier",
+   "ja_term": "主格（連体修飾節内）",
+   "label": {
+    "pt-BR": "sujeito dentro de oração que modifica um substantivo (が → の)",
+    "en": "subject inside a noun-modifying clause (が → の)"
+   },
+   "desc": {
+    "pt-BR": "o sujeito da oração que modifica o substantivo",
+    "en": "the subject of the noun-modifying clause"
+   },
+   "role": "subject",
+   "level": "n4",
+   "pattern": "N の V N",
+   "cues": [
+    "next.predicate"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "私の好きな本",
+     "pt-BR": "O livro de que eu gosto.",
+     "en": "The book I like."
+    }
+   ]
+  },
+  {
+   "id": "no.nominalizer",
+   "key": "no",
+   "particle": "の",
+   "allomorphs": [
+    "ん"
+   ],
+   "compound": false,
+   "class": "nominalizer",
+   "usage": "nominalizer",
+   "ja_term": "準体（名詞化）",
+   "label": {
+    "pt-BR": "transforma a oração em substantivo (〜のが好き)",
+    "en": "turns a clause into a noun (〜のが好き)"
+   },
+   "desc": {
+    "pt-BR": "a ação vira o assunto da frase",
+    "en": "the action becomes a noun"
+   },
+   "role": "nominalized-clause",
+   "level": "n5",
+   "pattern": "V の が/を/は",
+   "cues": [
+    "prev.predicate",
+    "next.case-particle"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.nominalizes",
+   "examples": [
+    {
+     "jp": "泳ぐのが好きだ",
+     "pt-BR": "Gosto de nadar.",
+     "en": "I like swimming."
+    }
+   ]
+  },
+  {
+   "id": "no.pronoun",
+   "key": "no",
+   "particle": "の",
+   "allomorphs": [],
+   "compound": false,
+   "class": "nominalizer",
+   "usage": "pronoun",
+   "ja_term": "準体（代名詞的）",
+   "label": {
+    "pt-BR": "o/a (substitui um substantivo)",
+    "en": "the one (stands for a noun)"
+   },
+   "desc": {
+    "pt-BR": "o substantivo omitido ('o que é …')",
+    "en": "an omitted noun ('the one')"
+   },
+   "role": "nominalized-clause",
+   "level": "n4",
+   "pattern": "A/N の",
+   "cues": [
+    "prev.adjective-or-noun"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.nominalizes",
+   "examples": [
+    {
+     "jp": "赤いのがいい",
+     "pt-BR": "Prefiro o vermelho.",
+     "en": "I want the red one."
+    }
+   ]
+  },
+  {
+   "id": "no.explanatory",
+   "key": "no",
+   "particle": "の",
+   "allomorphs": [
+    "ん"
+   ],
+   "compound": false,
+   "class": "nominalizer",
+   "usage": "explanatory",
+   "ja_term": "説明（のだ・んです）",
+   "label": {
+    "pt-BR": "explicativo (のだ / んです)",
+    "en": "explanatory (のだ / んです)"
+   },
+   "desc": {
+    "pt-BR": "uma explicação ('é que …')",
+    "en": "an explanation ('it's that …')"
+   },
+   "role": "predicate",
+   "level": "n5",
+   "pattern": "S の/ん です/だ",
+   "cues": [
+    "next.copula"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.nominalizes",
+   "examples": [
+    {
+     "jp": "頭が痛いんです",
+     "pt-BR": "É que estou com dor de cabeça.",
+     "en": "It's that I have a headache."
+    }
+   ]
+  },
+  {
+   "id": "no.final-question",
+   "key": "no",
+   "particle": "の",
+   "allomorphs": [],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "final-question",
+   "ja_term": "質問（くだけた）",
+   "label": {
+    "pt-BR": "pergunta informal",
+    "en": "casual question"
+   },
+   "desc": {
+    "pt-BR": "faz uma pergunta informal",
+    "en": "makes a casual question"
+   },
+   "role": "sentence-final",
+   "level": "n4",
+   "pattern": "S の？",
+   "cues": [
+    "next.question-mark"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "どこに行くの？",
+     "pt-BR": "Aonde você vai?",
+     "en": "Where are you going?"
+    }
+   ]
+  },
+  {
+   "id": "no.final-explanation",
+   "key": "no",
+   "particle": "の",
+   "allomorphs": [],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "final-explanation",
+   "ja_term": "説明（くだけた）",
+   "label": {
+    "pt-BR": "explicação ou ênfase informal",
+    "en": "casual explanation or emphasis"
+   },
+   "desc": {
+    "pt-BR": "dá uma explicação informal",
+    "en": "gives a casual explanation"
+   },
+   "role": "sentence-final",
+   "level": "n4",
+   "pattern": "S の。",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "今日は行かないの",
+     "pt-BR": "É que hoje não vou.",
+     "en": "I'm not going today, you see."
+    }
+   ]
+  },
+  {
+   "id": "ha.topic",
+   "key": "ha",
+   "particle": "は",
+   "allomorphs": [],
+   "compound": false,
+   "class": "binding",
+   "usage": "topic",
+   "ja_term": "主題",
+   "label": {
+    "pt-BR": "tópico",
+    "en": "topic"
+   },
+   "desc": {
+    "pt-BR": "o tópico da frase (o assunto do qual se fala)",
+    "en": "the topic of the sentence"
+   },
+   "role": "topic",
+   "level": "n5",
+   "pattern": "N は …",
+   "cues": [],
+   "contrasts": [
+    "ga.subject"
+   ],
+   "interchangeable": [
+    "tte.topic"
+   ],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "私は学生です",
+     "pt-BR": "Sou estudante.",
+     "en": "I am a student."
+    }
+   ]
+  },
+  {
+   "id": "ha.contrast",
+   "key": "ha",
+   "particle": "は",
+   "allomorphs": [],
+   "compound": false,
+   "class": "binding",
+   "usage": "contrast",
+   "ja_term": "対比",
+   "label": {
+    "pt-BR": "contraste",
+    "en": "contrast"
+   },
+   "desc": {
+    "pt-BR": "um elemento em contraste com outro",
+    "en": "an element in contrast with another"
+   },
+   "role": "topic",
+   "level": "n5",
+   "pattern": "N は …、N は … / N は V-ない",
+   "cues": [
+    "prev.particle",
+    "clause.negative",
+    "sentence.two-ha"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "肉は食べるが、魚は食べない",
+     "pt-BR": "Carne eu como, mas peixe não.",
+     "en": "Meat I eat, but fish I don't."
+    }
+   ]
+  },
+  {
+   "id": "mo.also",
+   "key": "mo",
+   "particle": "も",
+   "allomorphs": [],
+   "compound": false,
+   "class": "binding",
+   "usage": "also",
+   "ja_term": "累加・同類",
+   "label": {
+    "pt-BR": "também",
+    "en": "also, too"
+   },
+   "desc": {
+    "pt-BR": "mais um item igual ao anterior ('também')",
+    "en": "one more of the same kind ('also')"
+   },
+   "role": "focus",
+   "level": "n5",
+   "pattern": "N も",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "私も行く",
+     "pt-BR": "Eu também vou.",
+     "en": "I'm going too."
+    }
+   ]
+  },
+  {
+   "id": "mo.both",
+   "key": "mo",
+   "particle": "も",
+   "allomorphs": [],
+   "compound": false,
+   "class": "binding",
+   "usage": "both",
+   "ja_term": "並列（AもBも）",
+   "label": {
+    "pt-BR": "tanto … quanto / nem … nem",
+    "en": "both … and / neither … nor"
+   },
+   "desc": {
+    "pt-BR": "itens somados ('tanto … quanto')",
+    "en": "items taken together ('both … and')"
+   },
+   "role": "focus",
+   "level": "n5",
+   "pattern": "N も N も",
+   "cues": [
+    "sentence.two-mo"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "肉も魚も食べる",
+     "pt-BR": "Como tanto carne quanto peixe.",
+     "en": "I eat both meat and fish."
+    }
+   ]
+  },
+  {
+   "id": "mo.total-negation",
+   "key": "mo",
+   "particle": "も",
+   "allomorphs": [],
+   "compound": false,
+   "class": "binding",
+   "usage": "total-negation",
+   "ja_term": "全否定",
+   "label": {
+    "pt-BR": "negação total (nada, ninguém)",
+    "en": "total negation (nothing, nobody)"
+   },
+   "desc": {
+    "pt-BR": "negação total ('nada', 'ninguém')",
+    "en": "total negation ('nothing', 'nobody')"
+   },
+   "role": "focus",
+   "level": "n5",
+   "pattern": "疑問詞 も V-ない",
+   "cues": [
+    "prev.interrogative",
+    "clause.negative"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "何も食べない",
+     "pt-BR": "Não como nada.",
+     "en": "I don't eat anything."
+    }
+   ]
+  },
+  {
+   "id": "mo.emphasis-quantity",
+   "key": "mo",
+   "particle": "も",
+   "allomorphs": [],
+   "compound": false,
+   "class": "binding",
+   "usage": "emphasis-quantity",
+   "ja_term": "数量の強調",
+   "label": {
+    "pt-BR": "nada menos que (quantidade vista como grande)",
+    "en": "as many/much as (quantity felt as large)"
+   },
+   "desc": {
+    "pt-BR": "uma quantidade vista como grande",
+    "en": "a quantity felt as large"
+   },
+   "role": "focus",
+   "level": "n4",
+   "pattern": "Num も",
+   "cues": [
+    "prev.number"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "三時間も待った",
+     "pt-BR": "Esperei três horas inteiras.",
+     "en": "I waited as long as three hours."
+    }
+   ]
+  },
+  {
+   "id": "mo.concessive",
+   "key": "mo",
+   "particle": "も",
+   "allomorphs": [],
+   "compound": false,
+   "class": "binding",
+   "usage": "concessive",
+   "ja_term": "逆接仮定（〜ても）",
+   "label": {
+    "pt-BR": "mesmo que (〜ても)",
+    "en": "even if (〜ても)"
+   },
+   "desc": {
+    "pt-BR": "concessão ('mesmo que')",
+    "en": "concession ('even if')"
+   },
+   "role": "clause-link",
+   "level": "n4",
+   "pattern": "V-て も",
+   "cues": [
+    "prev.te"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "雨が降っても行く",
+     "pt-BR": "Vou mesmo que chova.",
+     "en": "I'll go even if it rains."
+    }
+   ]
+  },
+  {
+   "id": "koso.emphasis",
+   "key": "koso",
+   "particle": "こそ",
+   "allomorphs": [],
+   "compound": false,
+   "class": "binding",
+   "usage": "emphasis",
+   "ja_term": "際立ち",
+   "label": {
+    "pt-BR": "justamente, é que (ênfase)",
+    "en": "precisely, the very (emphasis)"
+   },
+   "desc": {
+    "pt-BR": "justamente esse elemento",
+    "en": "exactly that element"
+   },
+   "role": "focus",
+   "level": "n3",
+   "pattern": "N こそ",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "今年こそ合格したい",
+     "pt-BR": "Este ano, sim, quero passar.",
+     "en": "This year for sure I want to pass."
+    }
+   ]
+  },
+  {
+   "id": "dake.only",
+   "key": "dake",
+   "particle": "だけ",
+   "allomorphs": [],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "only",
+   "ja_term": "限定",
+   "label": {
+    "pt-BR": "só, apenas",
+    "en": "only, just"
+   },
+   "desc": {
+    "pt-BR": "o único elemento ('só')",
+    "en": "the only element ('only')"
+   },
+   "role": "focus",
+   "level": "n5",
+   "pattern": "N だけ",
+   "cues": [],
+   "contrasts": [
+    "shika.only-negative"
+   ],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "水だけ飲む",
+     "pt-BR": "Bebo só água.",
+     "en": "I only drink water."
+    }
+   ]
+  },
+  {
+   "id": "shika.only-negative",
+   "key": "shika",
+   "particle": "しか",
+   "allomorphs": [],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "only-negative",
+   "ja_term": "限定（否定と呼応）",
+   "label": {
+    "pt-BR": "só (com verbo negativo)",
+    "en": "nothing but (with a negative)"
+   },
+   "desc": {
+    "pt-BR": "o único elemento, com verbo negativo ('só')",
+    "en": "the only element, with a negative ('nothing but')"
+   },
+   "role": "focus",
+   "level": "n4",
+   "pattern": "N しか V-ない",
+   "cues": [
+    "clause.negative"
+   ],
+   "contrasts": [
+    "dake.only"
+   ],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "百円しかない",
+     "pt-BR": "Só tenho cem ienes.",
+     "en": "I have only 100 yen."
+    }
+   ]
+  },
+  {
+   "id": "bakari.only",
+   "key": "bakari",
+   "particle": "ばかり",
+   "allomorphs": [
+    "ばっかり"
+   ],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "only",
+   "ja_term": "限定（〜ばかり）",
+   "label": {
+    "pt-BR": "só, sempre (em excesso)",
+    "en": "nothing but, always"
+   },
+   "desc": {
+    "pt-BR": "algo que se repete demais ('só')",
+    "en": "something repeated too much ('nothing but')"
+   },
+   "role": "focus",
+   "level": "n4",
+   "pattern": "N ばかり",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "甘いものばかり食べる",
+     "pt-BR": "Só como doces.",
+     "en": "I eat nothing but sweets."
+    }
+   ]
+  },
+  {
+   "id": "bakari.just-done",
+   "key": "bakari",
+   "particle": "ばかり",
+   "allomorphs": [
+    "ばっかり"
+   ],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "just-done",
+   "ja_term": "直後（〜たばかり）",
+   "label": {
+    "pt-BR": "acabar de fazer",
+    "en": "have just done"
+   },
+   "desc": {
+    "pt-BR": "uma ação que acabou de acontecer",
+    "en": "an action that just happened"
+   },
+   "role": "predicate",
+   "level": "n4",
+   "pattern": "V-た ばかり",
+   "cues": [
+    "prev.ta"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "今着いたばかりだ",
+     "pt-BR": "Acabei de chegar.",
+     "en": "I just arrived."
+    }
+   ]
+  },
+  {
+   "id": "hodo.degree",
+   "key": "hodo",
+   "particle": "ほど",
+   "allomorphs": [
+    "程"
+   ],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "degree",
+   "ja_term": "程度・比較",
+   "label": {
+    "pt-BR": "tanto quanto; (não) tão … quanto",
+    "en": "to the extent of; (not) as … as"
+   },
+   "desc": {
+    "pt-BR": "o grau de referência",
+    "en": "the reference degree"
+   },
+   "role": "standard",
+   "level": "n4",
+   "pattern": "N ほど A-ない",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "今年は去年ほど寒くない",
+     "pt-BR": "Este ano não está tão frio quanto o ano passado.",
+     "en": "This year isn't as cold as last year."
+    }
+   ]
+  },
+  {
+   "id": "kurai.approximation",
+   "key": "kurai",
+   "particle": "くらい",
+   "allomorphs": [
+    "ぐらい"
+   ],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "approximation",
+   "ja_term": "概数・程度",
+   "label": {
+    "pt-BR": "cerca de, mais ou menos; a ponto de",
+    "en": "about, approximately; to the degree that"
+   },
+   "desc": {
+    "pt-BR": "uma quantidade aproximada",
+    "en": "an approximate amount"
+   },
+   "role": "quantity",
+   "level": "n5",
+   "pattern": "Num くらい",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "一時間くらいかかる",
+     "pt-BR": "Leva cerca de uma hora.",
+     "en": "It takes about an hour."
+    }
+   ]
+  },
+  {
+   "id": "nado.examples",
+   "key": "nado",
+   "particle": "など",
+   "allomorphs": [
+    "なんか",
+    "なんて"
+   ],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "examples",
+   "ja_term": "例示・評価",
+   "label": {
+    "pt-BR": "coisas como, entre outros",
+    "en": "things like, and so on"
+   },
+   "desc": {
+    "pt-BR": "exemplos de uma lista aberta",
+    "en": "examples from an open list"
+   },
+   "role": "focus",
+   "level": "n4",
+   "pattern": "N など",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "りんごやみかんなどを買った",
+     "pt-BR": "Comprei maçãs, tangerinas e outras coisas.",
+     "en": "I bought apples, mandarins, and so on."
+    }
+   ]
+  },
+  {
+   "id": "zutsu.distributive",
+   "key": "zutsu",
+   "particle": "ずつ",
+   "allomorphs": [
+    "づつ"
+   ],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "distributive",
+   "ja_term": "配分",
+   "label": {
+    "pt-BR": "cada, de … em …",
+    "en": "each, at a time"
+   },
+   "desc": {
+    "pt-BR": "a quantidade para cada um",
+    "en": "the amount for each"
+   },
+   "role": "quantity",
+   "level": "n4",
+   "pattern": "Num ずつ",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "一人二つずつ取る",
+     "pt-BR": "Cada um pega dois.",
+     "en": "Each person takes two."
+    }
+   ]
+  },
+  {
+   "id": "sae.even",
+   "key": "sae",
+   "particle": "さえ",
+   "allomorphs": [
+    "すら"
+   ],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "even",
+   "ja_term": "極端な例",
+   "label": {
+    "pt-BR": "até (mesmo)",
+    "en": "even"
+   },
+   "desc": {
+    "pt-BR": "um exemplo extremo ('até', 'nem')",
+    "en": "an extreme example ('even')"
+   },
+   "role": "focus",
+   "level": "n3",
+   "pattern": "N さえ",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "名前さえ書けない",
+     "pt-BR": "Não consegue escrever nem o nome.",
+     "en": "He can't even write his name."
+    }
+   ]
+  },
+  {
+   "id": "tte.quotative",
+   "key": "tte",
+   "particle": "って",
+   "allomorphs": [],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "quotative",
+   "ja_term": "引用（くだけた）",
+   "label": {
+    "pt-BR": "citação ou boato informal (= と / そうだ)",
+    "en": "casual quotation or hearsay (= と / そうだ)"
+   },
+   "desc": {
+    "pt-BR": "o conteúdo citado",
+    "en": "the quoted content"
+   },
+   "role": "quote",
+   "level": "n4",
+   "pattern": "S って 言う/聞く",
+   "cues": [],
+   "contrasts": [
+    "to.quotative"
+   ],
+   "interchangeable": [
+    "to.quotative"
+   ],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "明日休みだって",
+     "pt-BR": "Dizem que amanhã é folga.",
+     "en": "I heard tomorrow is a day off."
+    }
+   ]
+  },
+  {
+   "id": "tte.topic",
+   "key": "tte",
+   "particle": "って",
+   "allomorphs": [],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "topic",
+   "ja_term": "主題（くだけた）",
+   "label": {
+    "pt-BR": "tópico informal (= は / というのは)",
+    "en": "casual topic (= は / というのは)"
+   },
+   "desc": {
+    "pt-BR": "o tópico, de forma informal",
+    "en": "the topic, casually"
+   },
+   "role": "topic",
+   "level": "n4",
+   "pattern": "N って …",
+   "cues": [
+    "next.not-saying-verb"
+   ],
+   "contrasts": [],
+   "interchangeable": [
+    "ha.topic"
+   ],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "日本語って難しいね",
+     "pt-BR": "Japonês é difícil, né?",
+     "en": "Japanese is hard, isn't it?"
+    }
+   ]
+  },
+  {
+   "id": "ya.partial-list",
+   "key": "ya",
+   "particle": "や",
+   "allomorphs": [],
+   "compound": false,
+   "class": "parallel",
+   "usage": "partial-list",
+   "ja_term": "並立（例示）",
+   "label": {
+    "pt-BR": "e (lista parcial, entre outros)",
+    "en": "and (partial list, among others)"
+   },
+   "desc": {
+    "pt-BR": "um item de uma lista parcial",
+    "en": "an item of a partial list"
+   },
+   "role": "parallel-item",
+   "level": "n5",
+   "pattern": "N や N",
+   "cues": [],
+   "contrasts": [
+    "to.parallel"
+   ],
+   "interchangeable": [],
+   "template": "tpl.lists",
+   "examples": [
+    {
+     "jp": "りんごやバナナを買った",
+     "pt-BR": "Comprei maçãs, bananas e outras coisas.",
+     "en": "I bought apples, bananas, and such."
+    }
+   ]
+  },
+  {
+   "id": "ka.alternative",
+   "key": "ka",
+   "particle": "か",
+   "allomorphs": [],
+   "compound": false,
+   "class": "parallel",
+   "usage": "alternative",
+   "ja_term": "並立（選択）",
+   "label": {
+    "pt-BR": "ou (escolha entre itens)",
+    "en": "or (choice between items)"
+   },
+   "desc": {
+    "pt-BR": "uma das opções ('ou')",
+    "en": "one of the options ('or')"
+   },
+   "role": "parallel-item",
+   "level": "n4",
+   "pattern": "N か N",
+   "cues": [
+    "prev.noun-next.noun"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.lists",
+   "examples": [
+    {
+     "jp": "コーヒーか紅茶を飲む",
+     "pt-BR": "Bebo café ou chá.",
+     "en": "I drink coffee or tea."
+    }
+   ]
+  },
+  {
+   "id": "ka.indefinite",
+   "key": "ka",
+   "particle": "か",
+   "allomorphs": [],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "indefinite",
+   "ja_term": "不定",
+   "label": {
+    "pt-BR": "algum (何か, 誰か, どこか)",
+    "en": "some- (何か, 誰か, どこか)"
+   },
+   "desc": {
+    "pt-BR": "uma palavra indefinida ('algum', 'alguém')",
+    "en": "an indefinite word ('some-')"
+   },
+   "role": "modifier",
+   "level": "n5",
+   "pattern": "疑問詞 か",
+   "cues": [
+    "prev.interrogative"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "何か食べたい",
+     "pt-BR": "Quero comer alguma coisa.",
+     "en": "I want to eat something."
+    }
+   ]
+  },
+  {
+   "id": "ka.embedded-question",
+   "key": "ka",
+   "particle": "か",
+   "allomorphs": [],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "embedded-question",
+   "ja_term": "間接疑問",
+   "label": {
+    "pt-BR": "pergunta indireta (se, o que)",
+    "en": "embedded question (whether, what)"
+   },
+   "desc": {
+    "pt-BR": "uma pergunta dentro da frase",
+    "en": "a question inside the sentence"
+   },
+   "role": "quote",
+   "level": "n4",
+   "pattern": "S か 分からない / S かどうか",
+   "cues": [
+    "prev.predicate",
+    "not.clause-final"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "彼が来るか分からない",
+     "pt-BR": "Não sei se ele vem.",
+     "en": "I don't know whether he'll come."
+    }
+   ]
+  },
+  {
+   "id": "tari.representative",
+   "key": "tari",
+   "particle": "たり",
+   "allomorphs": [
+    "だり"
+   ],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "representative",
+   "ja_term": "例示列挙（〜たり〜たり）",
+   "label": {
+    "pt-BR": "fazer coisas como … e …",
+    "en": "doing things like … and …"
+   },
+   "desc": {
+    "pt-BR": "exemplos de ações ('coisas como')",
+    "en": "sample actions ('things like')"
+   },
+   "role": "clause-link",
+   "level": "n4",
+   "pattern": "V-たり V-たり する",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "本を読んだり音楽を聞いたりする",
+     "pt-BR": "Leio livros, ouço música, essas coisas.",
+     "en": "I do things like read and listen to music."
+    }
+   ]
+  },
+  {
+   "id": "demo.example",
+   "key": "demo",
+   "particle": "で",
+   "allomorphs": [
+    "も"
+   ],
+   "compound": true,
+   "class": "adverbial",
+   "usage": "example",
+   "ja_term": "例示（〜でも）",
+   "label": {
+    "pt-BR": "… ou algo assim (sugestão suave)",
+    "en": "… or something (soft suggestion)"
+   },
+   "desc": {
+    "pt-BR": "um exemplo sugerido de forma suave",
+    "en": "a softly suggested example"
+   },
+   "role": "focus",
+   "level": "n4",
+   "pattern": "N でも",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.compound",
+   "examples": [
+    {
+     "jp": "お茶でも飲みませんか",
+     "pt-BR": "Que tal um chá ou algo assim?",
+     "en": "How about some tea or something?"
+    }
+   ]
+  },
+  {
+   "id": "demo.even",
+   "key": "demo",
+   "particle": "で",
+   "allomorphs": [
+    "も"
+   ],
+   "compound": true,
+   "class": "adverbial",
+   "usage": "even",
+   "ja_term": "極端な例（〜でも）",
+   "label": {
+    "pt-BR": "até (mesmo)",
+    "en": "even (N でも)"
+   },
+   "desc": {
+    "pt-BR": "um exemplo extremo ('até')",
+    "en": "an extreme example ('even')"
+   },
+   "role": "focus",
+   "level": "n4",
+   "pattern": "N でも",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.compound",
+   "examples": [
+    {
+     "jp": "子どもでも分かる",
+     "pt-BR": "Até uma criança entende.",
+     "en": "Even a child understands."
+    }
+   ]
+  },
+  {
+   "id": "te.sequence",
+   "key": "te",
+   "particle": "て",
+   "allomorphs": [
+    "で"
+   ],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "sequence",
+   "ja_term": "継起",
+   "label": {
+    "pt-BR": "e depois (sequência)",
+    "en": "and then (sequence)"
+   },
+   "desc": {
+    "pt-BR": "sequência de ações ('e depois')",
+    "en": "a sequence of actions ('and then')"
+   },
+   "role": "clause-link",
+   "level": "n5",
+   "pattern": "V-て V",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "朝起きて、顔を洗う",
+     "pt-BR": "Acordo e lavo o rosto.",
+     "en": "I get up and wash my face."
+    }
+   ]
+  },
+  {
+   "id": "te.manner",
+   "key": "te",
+   "particle": "て",
+   "allomorphs": [
+    "で"
+   ],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "manner",
+   "ja_term": "付帯状況・手段",
+   "label": {
+    "pt-BR": "modo ou meio (fazendo, no estado de)",
+    "en": "manner or means (by doing, while in a state)"
+   },
+   "desc": {
+    "pt-BR": "o modo como a ação principal é feita",
+    "en": "the manner of the main action"
+   },
+   "role": "clause-link",
+   "level": "n4",
+   "pattern": "V-て 行く/来る",
+   "cues": [
+    "next.motion-verb"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "歩いて学校に行く",
+     "pt-BR": "Vou a pé para a escola.",
+     "en": "I walk to school."
+    }
+   ]
+  },
+  {
+   "id": "te.cause",
+   "key": "te",
+   "particle": "て",
+   "allomorphs": [
+    "で"
+   ],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "cause",
+   "ja_term": "原因・理由",
+   "label": {
+    "pt-BR": "porque (causa de sentimento ou estado)",
+    "en": "because (cause of a feeling or state)"
+   },
+   "desc": {
+    "pt-BR": "causa ('porque')",
+    "en": "cause ('because')"
+   },
+   "role": "clause-link",
+   "level": "n4",
+   "pattern": "V/A-て 困る/すみません",
+   "cues": [
+    "next.emotion"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "遅れてすみません",
+     "pt-BR": "Desculpe o atraso.",
+     "en": "Sorry for being late."
+    }
+   ]
+  },
+  {
+   "id": "te.parallel",
+   "key": "te",
+   "particle": "て",
+   "allomorphs": [
+    "で"
+   ],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "parallel",
+   "ja_term": "並列",
+   "label": {
+    "pt-BR": "e (juntando adjetivos ou orações)",
+    "en": "and (joining adjectives or clauses)"
+   },
+   "desc": {
+    "pt-BR": "soma de características ('e')",
+    "en": "adding qualities ('and')"
+   },
+   "role": "clause-link",
+   "level": "n5",
+   "pattern": "A-くて A",
+   "cues": [
+    "prev.adjective"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "安くておいしい",
+     "pt-BR": "É barato e gostoso.",
+     "en": "It's cheap and tasty."
+    }
+   ]
+  },
+  {
+   "id": "te.subsidiary",
+   "key": "te",
+   "particle": "て",
+   "allomorphs": [
+    "で"
+   ],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "subsidiary",
+   "ja_term": "補助動詞への接続",
+   "label": {
+    "pt-BR": "ligação a um verbo auxiliar (〜ている, 〜てください, 〜てみる)",
+    "en": "link to a subsidiary verb (〜ている, 〜てください, 〜てみる)"
+   },
+   "desc": {
+    "pt-BR": "a ligação com o verbo auxiliar que vem depois",
+    "en": "the link to the subsidiary verb that follows"
+   },
+   "role": "predicate",
+   "level": "n5",
+   "pattern": "V-て いる/ください/みる/しまう",
+   "cues": [
+    "next.subsidiary"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "本を読んでいる",
+     "pt-BR": "Estou lendo um livro.",
+     "en": "I am reading a book."
+    }
+   ]
+  },
+  {
+   "id": "te.request",
+   "key": "te",
+   "particle": "て",
+   "allomorphs": [
+    "で"
+   ],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "request",
+   "ja_term": "依頼（文末）",
+   "label": {
+    "pt-BR": "pedido informal (〜て no fim)",
+    "en": "casual request (sentence-final 〜て)"
+   },
+   "desc": {
+    "pt-BR": "um pedido informal",
+    "en": "a casual request"
+   },
+   "role": "predicate",
+   "level": "n4",
+   "pattern": "V-て。",
+   "cues": [
+    "clause-final"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "ちょっと待って",
+     "pt-BR": "Espera um pouco.",
+     "en": "Wait a moment."
+    }
+   ]
+  },
+  {
+   "id": "teha.condition",
+   "key": "teha",
+   "particle": "ては",
+   "allomorphs": [
+    "ちゃ",
+    "じゃ"
+   ],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "condition",
+   "ja_term": "条件（否定的評価）",
+   "label": {
+    "pt-BR": "se (com avaliação negativa: 〜てはいけない)",
+    "en": "if (with a negative judgment: 〜てはいけない)"
+   },
+   "desc": {
+    "pt-BR": "condição julgada negativamente ('não pode')",
+    "en": "a condition judged negatively ('must not')"
+   },
+   "role": "clause-link",
+   "level": "n4",
+   "pattern": "V-ては いけない",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "ここで写真を撮ってはいけない",
+     "pt-BR": "Não pode tirar foto aqui.",
+     "en": "You must not take photos here."
+    }
+   ]
+  },
+  {
+   "id": "ba.conditional",
+   "key": "ba",
+   "particle": "ば",
+   "allomorphs": [],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "conditional",
+   "ja_term": "仮定条件",
+   "label": {
+    "pt-BR": "se (condição)",
+    "en": "if (conditional)"
+   },
+   "desc": {
+    "pt-BR": "condição ('se')",
+    "en": "a condition ('if')"
+   },
+   "role": "clause-link",
+   "level": "n4",
+   "pattern": "V-ば S",
+   "cues": [],
+   "contrasts": [
+    "to.conditional"
+   ],
+   "interchangeable": [],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "安ければ買う",
+     "pt-BR": "Se for barato, compro.",
+     "en": "If it's cheap, I'll buy it."
+    }
+   ]
+  },
+  {
+   "id": "kedo.contrast",
+   "key": "kedo",
+   "particle": "けど",
+   "allomorphs": [
+    "けれど",
+    "けれども"
+   ],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "contrast",
+   "ja_term": "逆接",
+   "label": {
+    "pt-BR": "mas, embora",
+    "en": "but, although"
+   },
+   "desc": {
+    "pt-BR": "contraste ('mas')",
+    "en": "contrast ('but')"
+   },
+   "role": "clause-link",
+   "level": "n4",
+   "pattern": "S けど、S",
+   "cues": [],
+   "contrasts": [
+    "ga.contrast"
+   ],
+   "interchangeable": [
+    "ga.contrast"
+   ],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "高いけど、買う",
+     "pt-BR": "É caro, mas vou comprar.",
+     "en": "It's expensive, but I'll buy it."
+    }
+   ]
+  },
+  {
+   "id": "kedo.softening",
+   "key": "kedo",
+   "particle": "けど",
+   "allomorphs": [
+    "けれど",
+    "けれども"
+   ],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "softening",
+   "ja_term": "言いさし・前置き",
+   "label": {
+    "pt-BR": "mas… (suaviza a frase, deixando-a em aberto)",
+    "en": "trailing but (softens the sentence)"
+   },
+   "desc": {
+    "pt-BR": "uma frase deixada em aberto para suavizar",
+    "en": "a sentence left open to soften it"
+   },
+   "role": "clause-link",
+   "level": "n4",
+   "pattern": "S けど。",
+   "cues": [
+    "clause-final"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "ちょっと聞きたいんですけど",
+     "pt-BR": "Queria perguntar uma coisa…",
+     "en": "I'd like to ask something, but…"
+    }
+   ]
+  },
+  {
+   "id": "node.reason",
+   "key": "node",
+   "particle": "の",
+   "allomorphs": [
+    "で"
+   ],
+   "compound": true,
+   "class": "conjunctive",
+   "usage": "reason",
+   "ja_term": "理由（〜ので）",
+   "label": {
+    "pt-BR": "porque (mais suave, explicativo)",
+    "en": "because (softer, explanatory)"
+   },
+   "desc": {
+    "pt-BR": "motivo ('como', 'porque')",
+    "en": "reason ('since')"
+   },
+   "role": "clause-link",
+   "level": "n4",
+   "pattern": "S ので、S",
+   "cues": [],
+   "contrasts": [
+    "kara.reason"
+   ],
+   "interchangeable": [
+    "kara.reason"
+   ],
+   "template": "tpl.compound",
+   "examples": [
+    {
+     "jp": "雨なので、行かない",
+     "pt-BR": "Como está chovendo, não vou.",
+     "en": "Since it's raining, I won't go."
+    }
+   ]
+  },
+  {
+   "id": "noni.concessive",
+   "key": "noni",
+   "particle": "の",
+   "allomorphs": [
+    "に"
+   ],
+   "compound": true,
+   "class": "conjunctive",
+   "usage": "concessive",
+   "ja_term": "逆接（〜のに）",
+   "label": {
+    "pt-BR": "apesar de (com surpresa ou frustração)",
+    "en": "even though (with surprise or regret)"
+   },
+   "desc": {
+    "pt-BR": "contraste inesperado ('apesar de')",
+    "en": "an unexpected contrast ('even though')"
+   },
+   "role": "clause-link",
+   "level": "n4",
+   "pattern": "S のに、S",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.compound",
+   "examples": [
+    {
+     "jp": "勉強したのに、落ちた",
+     "pt-BR": "Mesmo tendo estudado, reprovei.",
+     "en": "Even though I studied, I failed."
+    }
+   ]
+  },
+  {
+   "id": "noni.purpose",
+   "key": "noni",
+   "particle": "の",
+   "allomorphs": [
+    "に"
+   ],
+   "compound": true,
+   "class": "case",
+   "usage": "purpose",
+   "ja_term": "用途・目的（〜のに）",
+   "label": {
+    "pt-BR": "para (finalidade: 〜のに使う/いい)",
+    "en": "for (purpose: 〜のに使う/いい)"
+   },
+   "desc": {
+    "pt-BR": "a finalidade ('para')",
+    "en": "the purpose ('for')"
+   },
+   "role": "purpose",
+   "level": "n4",
+   "pattern": "V の に 使う/便利",
+   "cues": [
+    "next.use-evaluate"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.compound",
+   "examples": [
+    {
+     "jp": "これは野菜を切るのに使う",
+     "pt-BR": "Isto serve para cortar legumes.",
+     "en": "This is used for cutting vegetables."
+    }
+   ]
+  },
+  {
+   "id": "nagara.simultaneous",
+   "key": "nagara",
+   "particle": "ながら",
+   "allomorphs": [],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "simultaneous",
+   "ja_term": "同時動作",
+   "label": {
+    "pt-BR": "enquanto (duas ações ao mesmo tempo)",
+    "en": "while (two actions at once)"
+   },
+   "desc": {
+    "pt-BR": "ações simultâneas ('enquanto')",
+    "en": "simultaneous actions ('while')"
+   },
+   "role": "clause-link",
+   "level": "n4",
+   "pattern": "V-stem ながら V",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "音楽を聞きながら勉強する",
+     "pt-BR": "Estudo ouvindo música.",
+     "en": "I study while listening to music."
+    }
+   ]
+  },
+  {
+   "id": "shi.listing-reasons",
+   "key": "shi",
+   "particle": "し",
+   "allomorphs": [],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "listing-reasons",
+   "ja_term": "並列・理由の列挙",
+   "label": {
+    "pt-BR": "e além disso (lista de motivos)",
+    "en": "and also (listing reasons)"
+   },
+   "desc": {
+    "pt-BR": "motivos somados ('e além disso')",
+    "en": "reasons added up ('and also')"
+   },
+   "role": "clause-link",
+   "level": "n4",
+   "pattern": "S し、S し",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "安いし、おいしいし、この店が好きだ",
+     "pt-BR": "É barato, é gostoso… gosto deste restaurante.",
+     "en": "It's cheap, it's tasty; I like this place."
+    }
+   ]
+  },
+  {
+   "id": "tatte.concessive",
+   "key": "tatte",
+   "particle": "たって",
+   "allomorphs": [
+    "だって"
+   ],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "concessive",
+   "ja_term": "逆接仮定（くだけた）",
+   "label": {
+    "pt-BR": "mesmo que (informal)",
+    "en": "even if (casual)"
+   },
+   "desc": {
+    "pt-BR": "concessão informal ('mesmo que')",
+    "en": "casual concession ('even if')"
+   },
+   "role": "clause-link",
+   "level": "n3",
+   "pattern": "V-たって",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "今から行ったって間に合わない",
+     "pt-BR": "Mesmo que vá agora, não chega a tempo.",
+     "en": "Even if you go now, you won't make it."
+    }
+   ]
+  },
+  {
+   "id": "tsutsu.simultaneous",
+   "key": "tsutsu",
+   "particle": "つつ",
+   "allomorphs": [],
+   "compound": false,
+   "class": "conjunctive",
+   "usage": "simultaneous",
+   "ja_term": "同時・逆接（書き言葉）",
+   "label": {
+    "pt-BR": "enquanto (escrito); embora",
+    "en": "while (written); even while"
+   },
+   "desc": {
+    "pt-BR": "simultaneidade ou contraste (escrito)",
+    "en": "simultaneity or contrast (written)"
+   },
+   "role": "clause-link",
+   "level": "n2",
+   "pattern": "V-stem つつ",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.links-clauses",
+   "examples": [
+    {
+     "jp": "悪いと知りつつ、やってしまった",
+     "pt-BR": "Mesmo sabendo que era errado, fiz.",
+     "en": "I did it even knowing it was wrong."
+    }
+   ]
+  },
+  {
+   "id": "ka.question",
+   "key": "ka",
+   "particle": "か",
+   "allomorphs": [],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "question",
+   "ja_term": "疑問",
+   "label": {
+    "pt-BR": "pergunta",
+    "en": "question"
+   },
+   "desc": {
+    "pt-BR": "transforma a frase em pergunta",
+    "en": "turns the sentence into a question"
+   },
+   "role": "sentence-final",
+   "level": "n5",
+   "pattern": "S か",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "学生ですか",
+     "pt-BR": "Você é estudante?",
+     "en": "Are you a student?"
+    }
+   ]
+  },
+  {
+   "id": "ka.invitation",
+   "key": "ka",
+   "particle": "か",
+   "allomorphs": [],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "invitation",
+   "ja_term": "勧誘（〜ませんか）",
+   "label": {
+    "pt-BR": "convite (〜ませんか)",
+    "en": "invitation (〜ませんか)"
+   },
+   "desc": {
+    "pt-BR": "faz um convite",
+    "en": "makes an invitation"
+   },
+   "role": "sentence-final",
+   "level": "n5",
+   "pattern": "V-ません か",
+   "cues": [
+    "prev.masen"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "一緒に行きませんか",
+     "pt-BR": "Vamos juntos?",
+     "en": "Won't you come with me?"
+    }
+   ]
+  },
+  {
+   "id": "ka.acknowledgment",
+   "key": "ka",
+   "particle": "か",
+   "allomorphs": [],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "acknowledgment",
+   "ja_term": "納得・確認（そうですか）",
+   "label": {
+    "pt-BR": "recebe uma informação nova (そうですか)",
+    "en": "acknowledging new information (そうですか)"
+   },
+   "desc": {
+    "pt-BR": "mostra que a informação foi recebida",
+    "en": "acknowledges the information"
+   },
+   "role": "sentence-final",
+   "level": "n5",
+   "pattern": "そう ですか",
+   "cues": [
+    "prev.sou-desu"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "そうですか",
+     "pt-BR": "Ah, é mesmo?",
+     "en": "Oh, I see."
+    }
+   ]
+  },
+  {
+   "id": "kana.wondering",
+   "key": "kana",
+   "particle": "か",
+   "allomorphs": [
+    "な"
+   ],
+   "compound": true,
+   "class": "sentence-final",
+   "usage": "wondering",
+   "ja_term": "疑い・自問（〜かな）",
+   "label": {
+    "pt-BR": "será que",
+    "en": "I wonder"
+   },
+   "desc": {
+    "pt-BR": "expressa dúvida para si mesmo ('será que')",
+    "en": "wonders aloud ('I wonder')"
+   },
+   "role": "sentence-final",
+   "level": "n4",
+   "pattern": "S かな",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.compound",
+   "examples": [
+    {
+     "jp": "明日晴れるかな",
+     "pt-BR": "Será que amanhã faz sol?",
+     "en": "I wonder if it'll be sunny tomorrow."
+    }
+   ]
+  },
+  {
+   "id": "kashira.wondering",
+   "key": "kashira",
+   "particle": "かしら",
+   "allomorphs": [],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "wondering",
+   "ja_term": "疑い・自問",
+   "label": {
+    "pt-BR": "será que (suave)",
+    "en": "I wonder (soft)"
+   },
+   "desc": {
+    "pt-BR": "expressa dúvida suave",
+    "en": "wonders softly"
+   },
+   "role": "sentence-final",
+   "level": "n3",
+   "pattern": "S かしら",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "雨が降るかしら",
+     "pt-BR": "Será que vai chover?",
+     "en": "I wonder if it'll rain."
+    }
+   ]
+  },
+  {
+   "id": "yo.assertion",
+   "key": "yo",
+   "particle": "よ",
+   "allomorphs": [],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "assertion",
+   "ja_term": "告知・主張",
+   "label": {
+    "pt-BR": "informa ou afirma ao ouvinte",
+    "en": "informs or asserts to the listener"
+   },
+   "desc": {
+    "pt-BR": "passa uma informação nova ao ouvinte ('viu', 'sabia?')",
+    "en": "tells the listener something new ('you know')"
+   },
+   "role": "sentence-final",
+   "level": "n5",
+   "pattern": "S よ",
+   "cues": [],
+   "contrasts": [
+    "ne.confirmation"
+   ],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "この店、おいしいよ",
+     "pt-BR": "Este restaurante é gostoso, viu?",
+     "en": "This place is good, you know."
+    }
+   ]
+  },
+  {
+   "id": "yo.urging",
+   "key": "yo",
+   "particle": "よ",
+   "allomorphs": [],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "urging",
+   "ja_term": "勧め・促し",
+   "label": {
+    "pt-BR": "insistência (vamos!, faça!)",
+    "en": "urging (〜ましょうよ, 〜てよ)"
+   },
+   "desc": {
+    "pt-BR": "reforça um convite ou pedido",
+    "en": "urges an invitation or request"
+   },
+   "role": "sentence-final",
+   "level": "n4",
+   "pattern": "V-よう よ / V-て よ",
+   "cues": [
+    "prev.volitional-or-te"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "早く行こうよ",
+     "pt-BR": "Vamos logo!",
+     "en": "Come on, let's go!"
+    }
+   ]
+  },
+  {
+   "id": "ne.confirmation",
+   "key": "ne",
+   "particle": "ね",
+   "allomorphs": [
+    "ねえ",
+    "ねぇ"
+   ],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "confirmation",
+   "ja_term": "確認・同意要求",
+   "label": {
+    "pt-BR": "busca concordância ou confirmação",
+    "en": "seeks agreement or confirmation"
+   },
+   "desc": {
+    "pt-BR": "busca a concordância do ouvinte ('né?')",
+    "en": "seeks the listener's agreement ('isn't it?')"
+   },
+   "role": "sentence-final",
+   "level": "n5",
+   "pattern": "S ね",
+   "cues": [],
+   "contrasts": [
+    "yo.assertion"
+   ],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "いい天気ですね",
+     "pt-BR": "Que tempo bom, né?",
+     "en": "Nice weather, isn't it?"
+    }
+   ]
+  },
+  {
+   "id": "na.prohibition",
+   "key": "na",
+   "particle": "な",
+   "allomorphs": [],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "prohibition",
+   "ja_term": "禁止",
+   "label": {
+    "pt-BR": "não (proibição direta)",
+    "en": "don't (blunt prohibition)"
+   },
+   "desc": {
+    "pt-BR": "proíbe a ação de forma direta",
+    "en": "bluntly forbids the action"
+   },
+   "role": "sentence-final",
+   "level": "n4",
+   "pattern": "V-dict な",
+   "cues": [
+    "prev.verb-terminal"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "ここで泳ぐな",
+     "pt-BR": "Não nade aqui!",
+     "en": "Don't swim here!"
+    }
+   ]
+  },
+  {
+   "id": "na.emotive",
+   "key": "na",
+   "particle": "な",
+   "allomorphs": [
+    "なあ",
+    "なぁ"
+   ],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "emotive",
+   "ja_term": "詠嘆・感嘆",
+   "label": {
+    "pt-BR": "exclamação ou reflexão",
+    "en": "exclamation or musing"
+   },
+   "desc": {
+    "pt-BR": "expressa um sentimento ou reflexão",
+    "en": "expresses a feeling or musing"
+   },
+   "role": "sentence-final",
+   "level": "n4",
+   "pattern": "S なあ",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "いいなあ",
+     "pt-BR": "Que legal!",
+     "en": "Lucky you!"
+    }
+   ]
+  },
+  {
+   "id": "na.soft-command",
+   "key": "na",
+   "particle": "な",
+   "allomorphs": [],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "soft-command",
+   "ja_term": "命令（〜な = なさい）",
+   "label": {
+    "pt-BR": "ordem suave (= なさい)",
+    "en": "soft order (V-stem な = なさい)"
+   },
+   "desc": {
+    "pt-BR": "dá uma ordem suave",
+    "en": "gives a soft order"
+   },
+   "role": "sentence-final",
+   "level": "n3",
+   "pattern": "V-stem な",
+   "cues": [
+    "prev.continuative"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "早く寝な",
+     "pt-BR": "Vai dormir logo.",
+     "en": "Go to bed now."
+    }
+   ]
+  },
+  {
+   "id": "wa.emphasis",
+   "key": "wa",
+   "particle": "わ",
+   "allomorphs": [],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "emphasis",
+   "ja_term": "詠嘆・軽い主張",
+   "label": {
+    "pt-BR": "ênfase suave (feminina ou de Kansai)",
+    "en": "soft emphasis (feminine or Kansai)"
+   },
+   "desc": {
+    "pt-BR": "dá uma ênfase suave",
+    "en": "adds soft emphasis"
+   },
+   "role": "sentence-final",
+   "level": "n3",
+   "pattern": "S わ",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "もう帰るわ",
+     "pt-BR": "Já vou embora.",
+     "en": "I'm heading home now."
+    }
+   ]
+  },
+  {
+   "id": "zo.emphasis",
+   "key": "zo",
+   "particle": "ぞ",
+   "allomorphs": [
+    "ぜ"
+   ],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "emphasis",
+   "ja_term": "強い主張",
+   "label": {
+    "pt-BR": "afirmação forte (masculina, informal)",
+    "en": "strong assertion (masculine, casual)"
+   },
+   "desc": {
+    "pt-BR": "afirma com força",
+    "en": "asserts forcefully"
+   },
+   "role": "sentence-final",
+   "level": "n3",
+   "pattern": "S ぞ",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "行くぞ",
+     "pt-BR": "Vamos lá!",
+     "en": "Let's go!"
+    }
+   ]
+  },
+  {
+   "id": "sa.assertion",
+   "key": "sa",
+   "particle": "さ",
+   "allomorphs": [],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "assertion",
+   "ja_term": "軽い主張",
+   "label": {
+    "pt-BR": "afirmação leve (informal)",
+    "en": "light assertion (casual)"
+   },
+   "desc": {
+    "pt-BR": "afirma de forma leve",
+    "en": "asserts lightly"
+   },
+   "role": "sentence-final",
+   "level": "n3",
+   "pattern": "S さ",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "大丈夫さ",
+     "pt-BR": "Vai dar tudo certo.",
+     "en": "It'll be fine."
+    }
+   ]
+  },
+  {
+   "id": "kke.recall",
+   "key": "kke",
+   "particle": "っけ",
+   "allomorphs": [],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "recall",
+   "ja_term": "想起・確認",
+   "label": {
+    "pt-BR": "tentando lembrar (como era mesmo?)",
+    "en": "trying to recall (what was it again?)"
+   },
+   "desc": {
+    "pt-BR": "tenta lembrar algo ('mesmo?')",
+    "en": "tries to recall something ('again?')"
+   },
+   "role": "sentence-final",
+   "level": "n3",
+   "pattern": "S っけ",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "名前、何だっけ",
+     "pt-BR": "Qual era o nome mesmo?",
+     "en": "What was the name again?"
+    }
+   ]
+  },
+  {
+   "id": "mono.justification",
+   "key": "mono",
+   "particle": "もの",
+   "allomorphs": [
+    "もん"
+   ],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "justification",
+   "ja_term": "理由・言い訳",
+   "label": {
+    "pt-BR": "é que… (justificativa)",
+    "en": "because, you see (justifying)"
+   },
+   "desc": {
+    "pt-BR": "dá uma justificativa ('é que')",
+    "en": "gives a justification ('because')"
+   },
+   "role": "sentence-final",
+   "level": "n3",
+   "pattern": "S もの",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "だって、眠いもん",
+     "pt-BR": "É que estou com sono.",
+     "en": "Because I'm sleepy, that's why."
+    }
+   ]
+  },
+  {
+   "id": "jan.confirmation",
+   "key": "jan",
+   "particle": "じゃん",
+   "allomorphs": [],
+   "compound": false,
+   "class": "sentence-final",
+   "usage": "confirmation",
+   "ja_term": "確認（くだけた）",
+   "label": {
+    "pt-BR": "não é? (confirmação informal)",
+    "en": "isn't it (casual confirmation)"
+   },
+   "desc": {
+    "pt-BR": "pede confirmação de forma informal",
+    "en": "asks for casual confirmation"
+   },
+   "role": "sentence-final",
+   "level": "n3",
+   "pattern": "S じゃん",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.sentence-final",
+   "examples": [
+    {
+     "jp": "いいじゃん",
+     "pt-BR": "Legal, não é?",
+     "en": "That's nice, isn't it?"
+    }
+   ]
+  },
+  {
+   "id": "nitsuite.about",
+   "key": "nitsuite",
+   "particle": "に",
+   "allomorphs": [
+    "つい",
+    "て"
+   ],
+   "compound": true,
+   "class": "case",
+   "usage": "about",
+   "ja_term": "複合格助詞（〜について）",
+   "label": {
+    "pt-BR": "sobre, a respeito de",
+    "en": "about, concerning"
+   },
+   "desc": {
+    "pt-BR": "o assunto tratado ('sobre')",
+    "en": "the subject matter ('about')"
+   },
+   "role": "topic",
+   "level": "n4",
+   "pattern": "N について",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.compound",
+   "examples": [
+    {
+     "jp": "日本の文化について話す",
+     "pt-BR": "Falo sobre a cultura japonesa.",
+     "en": "I talk about Japanese culture."
+    }
+   ]
+  },
+  {
+   "id": "toiu.naming",
+   "key": "toiu",
+   "particle": "と",
+   "allomorphs": [
+    "いう"
+   ],
+   "compound": true,
+   "class": "case",
+   "usage": "naming",
+   "ja_term": "引用・命名（〜という）",
+   "label": {
+    "pt-BR": "chamado (N という N)",
+    "en": "called, named (N という N)"
+   },
+   "desc": {
+    "pt-BR": "o nome ou conteúdo que define o substantivo ('chamado')",
+    "en": "the name or content defining the noun ('called')"
+   },
+   "role": "modifier",
+   "level": "n4",
+   "pattern": "N という N",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.compound",
+   "examples": [
+    {
+     "jp": "田中という人",
+     "pt-BR": "Uma pessoa chamada Tanaka.",
+     "en": "A person called Tanaka."
+    }
+   ]
+  },
+  {
+   "id": "to.adverbial",
+   "key": "to",
+   "particle": "と",
+   "allomorphs": [],
+   "compound": false,
+   "class": "case",
+   "usage": "adverbial",
+   "ja_term": "副詞の一部（様態の「と」）",
+   "label": {
+    "pt-BR": "marca de advérbio (ゆっくりと, 高々と)",
+    "en": "adverb marker (ゆっくりと, 高々と)"
+   },
+   "desc": {
+    "pt-BR": "o modo da ação, formando um advérbio",
+    "en": "the manner of the action, forming an adverb"
+   },
+   "role": "adverbial",
+   "level": "n4",
+   "pattern": "Adv と V",
+   "cues": [
+    "prev.adverb"
+   ],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.marks-chunk",
+   "examples": [
+    {
+     "jp": "ゆっくりと歩く",
+     "pt-BR": "Ando devagar.",
+     "en": "I walk slowly."
+    }
+   ]
+  },
+  {
+   "id": "kai.question",
+   "key": "kai",
+   "particle": "か",
+   "allomorphs": [
+    "い"
+   ],
+   "compound": true,
+   "class": "sentence-final",
+   "usage": "question",
+   "ja_term": "疑問（くだけた・男性的）",
+   "label": {
+    "pt-BR": "pergunta informal (かい)",
+    "en": "casual question (かい)"
+   },
+   "desc": {
+    "pt-BR": "faz uma pergunta informal",
+    "en": "makes a casual question"
+   },
+   "role": "sentence-final",
+   "level": "n3",
+   "pattern": "S かい",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.compound",
+   "examples": [
+    {
+     "jp": "用意はいいかい",
+     "pt-BR": "Está pronto?",
+     "en": "Are you ready?"
+    }
+   ]
+  },
+  {
+   "id": "nomi.only",
+   "key": "nomi",
+   "particle": "のみ",
+   "allomorphs": [],
+   "compound": false,
+   "class": "adverbial",
+   "usage": "only",
+   "ja_term": "限定（書き言葉）",
+   "label": {
+    "pt-BR": "somente (formal)",
+    "en": "only (formal)"
+   },
+   "desc": {
+    "pt-BR": "o único elemento (formal)",
+    "en": "the only element (formal)"
+   },
+   "role": "focus",
+   "level": "n2",
+   "pattern": "N のみ",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.focus",
+   "examples": [
+    {
+     "jp": "会員のみ入れる",
+     "pt-BR": "Somente sócios podem entrar.",
+     "en": "Only members may enter."
+    }
+   ]
+  },
+  {
+   "id": "yara.listing",
+   "key": "yara",
+   "particle": "やら",
+   "allomorphs": [],
+   "compound": false,
+   "class": "parallel",
+   "usage": "listing",
+   "ja_term": "並立（例示・不確か）",
+   "label": {
+    "pt-BR": "e … e tal (lista incerta)",
+    "en": "and … and such (uncertain listing)"
+   },
+   "desc": {
+    "pt-BR": "um item de uma lista incerta",
+    "en": "an item of an uncertain list"
+   },
+   "role": "parallel-item",
+   "level": "n2",
+   "pattern": "N やら N やら",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.lists",
+   "examples": [
+    {
+     "jp": "風やら雨やらで大変だった",
+     "pt-BR": "Com vento, chuva e tal, foi difícil.",
+     "en": "What with the wind and rain, it was rough."
+    }
+   ]
+  },
+  {
+   "id": "lex.fixed",
+   "key": "lex",
+   "particle": "*",
+   "allomorphs": [],
+   "compound": false,
+   "class": "lexicalized",
+   "usage": "fixed",
+   "ja_term": "語の構成要素",
+   "label": {
+    "pt-BR": "parte de uma palavra ou expressão fixa",
+    "en": "part of a fixed word or expression"
+   },
+   "desc": {
+    "pt-BR": "",
+    "en": ""
+   },
+   "role": "none",
+   "level": "n5",
+   "pattern": "それから / かもしれない / でも(接続詞)",
+   "cues": [],
+   "contrasts": [],
+   "interchangeable": [],
+   "template": "tpl.lexicalized",
+   "examples": [
+    {
+     "jp": "それから、家に帰った",
+     "pt-BR": "Depois disso, voltei para casa.",
+     "en": "After that, I went home."
+    }
+   ]
+  }
+ ],
+ "templates": {
+  "tpl.compound": {
+   "slots": [
+    "expression",
+    "desc"
+   ],
+   "pt-BR": "{expression} funciona como uma unidade só: {desc}.",
+   "en": "{expression} works as a single unit: {desc}."
+  },
+  "tpl.copula-form": {
+   "slots": [
+    "particle",
+    "chunk",
+    "desc"
+   ],
+   "pt-BR": "Aqui {particle} não é partícula: é a cópula だ na forma contínua depois de {chunk}, {desc}.",
+   "en": "Here {particle} is not a particle: it is the copula だ in its continuative form after {chunk}, {desc}."
+  },
+  "tpl.focus": {
+   "slots": [
+    "particle",
+    "chunk",
+    "desc"
+   ],
+   "pt-BR": "{particle} destaca {chunk}: {desc}.",
+   "en": "{particle} highlights {chunk}: {desc}."
+  },
+  "tpl.lexicalized": {
+   "slots": [
+    "particle",
+    "expression"
+   ],
+   "pt-BR": "{particle} faz parte da expressão fixa {expression} e não tem função própria aqui.",
+   "en": "{particle} is part of the fixed expression {expression} and has no function of its own here."
+  },
+  "tpl.links-clauses": {
+   "slots": [
+    "particle",
+    "left",
+    "desc"
+   ],
+   "pt-BR": "{particle} liga {left} ao que vem depois, com sentido de {desc}.",
+   "en": "{particle} links {left} to what follows, meaning {desc}."
+  },
+  "tpl.lists": {
+   "slots": [
+    "particle",
+    "chunk",
+    "desc"
+   ],
+   "pt-BR": "{particle} junta {chunk} ao próximo item da lista: {desc}.",
+   "en": "{particle} joins {chunk} to the next item of the list: {desc}."
+  },
+  "tpl.marks-chunk": {
+   "slots": [
+    "particle",
+    "chunk",
+    "desc"
+   ],
+   "pt-BR": "{particle} marca {chunk} como {desc}.",
+   "en": "{particle} marks {chunk} as {desc}."
+  },
+  "tpl.nominalizes": {
+   "slots": [
+    "particle",
+    "left",
+    "desc"
+   ],
+   "pt-BR": "{particle} transforma {left} em substantivo: {desc}.",
+   "en": "{particle} turns {left} into a noun: {desc}."
+  },
+  "tpl.sentence-final": {
+   "slots": [
+    "particle",
+    "desc"
+   ],
+   "pt-BR": "{particle} no fim da frase {desc}.",
+   "en": "{particle} at the end of the sentence {desc}."
+  }
+ },
+ "cues": {
+  "aux.causative": "the first predicate of the clause is followed by the auxiliary せる/させる",
+  "aux.passive": "the first predicate of the clause is followed by the auxiliary れる/られる",
+  "clause-final": "the particle is followed by nothing, a period, or a sentence-final particle",
+  "clause.ichiban": "the clause contains 一番 / 最も",
+  "clause.negative": "a negation (ない, ぬ, ず, ん, ません) occurs before the next comma or period",
+  "next.case-particle": "next token is a particle (が, を, は, に, で ...)",
+  "next.comparison": "first predicate of the clause has a lemma in lexicon COMPAR (同じ, 違う, 比べる ...)",
+  "next.copula": "next token is だ / です / でしょう / じゃ / な (のだ, んです)",
+  "next.emotion": "next token lemma is in lexicon EMO or is すみません / ありがとう / 嬉しい / 残念",
+  "next.issho": "next token lemma is 一緒 or 共",
+  "next.motion-verb": "next token lemma is 行く / 来る / 帰る / 出かける / 戻る",
+  "next.nai-aru": "next token (skipping は/も) is ない / ある as adjective, verb or auxiliary",
+  "next.naru-suru": "next token lemma is なる / する / 変わる / 変える",
+  "next.not-saying-verb": "next predicate is NOT a verb of saying (tells topic って from quotative って)",
+  "next.noun": "next token is nominal (名詞, 代名詞, 数詞, 接尾辞, 接頭辞)",
+  "next.predicate": "next token is a verb, adjective or na-adjective (the の sits inside a noun-modifying clause)",
+  "next.question-mark": "next token is ？ or ?",
+  "next.standard-predicate": "first predicate of the clause has a lemma in lexicon STANDARD (近い, いい, 似る ...)",
+  "next.start-verb": "first predicate of the clause is 始まる / 開始 / 始める (formal より)",
+  "next.stative-predicate": "first predicate of the clause is a stative predicate (好き, 分かる, できる, 欲しい ...) or is followed by たい",
+  "next.subsidiary": "next token is a verb/adjective/auxiliary whose lemma is in lexicon SUBSID (いる, おく, しまう, みる, ください ...)",
+  "next.temorau": "the first predicate of the clause is followed by て + もらう/いただく",
+  "next.use-evaluate": "first predicate of the clause is 使う / 便利 / いい / 必要 / 役立つ",
+  "not.clause-final": "the particle is followed by more of the sentence",
+  "prev.adjective": "previous token is an i-adjective (形容詞)",
+  "prev.adjective-or-noun": "previous token is an i-adjective or a nominal",
+  "prev.adverb": "previous token is an adverb (副詞) or a タリ-type 形状詞",
+  "prev.cause-noun": "previous token lemma is in lexicon CAUSE_N (病気, 風邪, 事故 ...)",
+  "prev.continuative": "previous token is a verb in the continuative (連用形) inflection",
+  "prev.interrogative": "previous token lemma is in lexicon INTERROG (何, 誰, どこ, いつ, and minimizers 一つ, 少し ...)",
+  "prev.manner-noun": "previous token lemma is in lexicon MANNER (一人, みんな, 自分 ...)",
+  "prev.masen": "the two previous tokens are ませ + ん",
+  "prev.means-noun": "previous token lemma is in lexicon MEANS, or is a noun ending in 語 (a language)",
+  "prev.na-stem": "previous token is 形状詞 (na-adjective stem), or a noun whose third POS field is 形状詞可能",
+  "prev.noun-next.noun": "previous and next tokens are both nominal",
+  "prev.number": "previous token is a numeral (数詞), or a counter suffix right after a numeral",
+  "prev.particle": "previous token is itself a particle (には, では, とは, からは ...)",
+  "prev.period-next.number": "previous token is a period noun (日, 週, 週間, 月, 年, 時間) and the next token is a numeral",
+  "prev.predicate": "previous token is a verb, adjective, na-adjective or auxiliary (the particle closes a clause)",
+  "prev.preface-lemma": "one of the two previous tokens has a lemma in lexicon PREFACE (すみません, 失礼, 悪い ...)",
+  "prev.sou-desu": "the two previous tokens are そう + です",
+  "prev.ta": "previous token is the auxiliary た",
+  "prev.te": "previous token is the conjunctive particle て/で",
+  "prev.time-noun": "previous token lemma is in lexicon TIME, or is a time counter (時, 分, 日, 月, 年, 曜日)",
+  "prev.verb-terminal": "previous token is a verb in terminal/attributive form (the two are homophonous before a 終助詞)",
+  "prev.volitional-or-te": "previous token is the volitional う/よう, an imperative, or て/で",
+  "sentence.two-ha": "the sentence contains two or more は",
+  "sentence.two-mo": "the sentence contains two or more も",
+  "verb.departure": "first predicate of the clause has a lemma in lexicon DEPART",
+  "verb.emotion-cause": "first predicate of the clause has a lemma in lexicon EMO",
+  "verb.existence": "first predicate of the clause has a lemma in lexicon EXIST",
+  "verb.giving-telling": "first predicate of the clause has a lemma in lexicon GIVE",
+  "verb.make": "first predicate of the clause has a lemma in lexicon MAKE",
+  "verb.motion": "first predicate of the clause has a lemma in lexicon MOTION",
+  "verb.path": "first predicate of the clause has a lemma in lexicon PATH",
+  "verb.receiving": "first predicate of the clause has a lemma in lexicon RECEIVE",
+  "verb.reciprocal": "first predicate of the clause has a lemma in lexicon RECIP",
+  "verb.saying": "first predicate of the clause has a lemma in lexicon SAYING",
+  "verb.target": "first predicate of the clause has a lemma in lexicon TARGET"
+ },
+ "cue_lexicons": {
+  "TIME": [
+   "いつ",
+   "うち",
+   "ごろ",
+   "一昨日",
+   "今",
+   "今年",
+   "今度",
+   "今日",
+   "今晩",
+   "今朝",
+   "今週",
+   "何時",
+   "先週",
+   "冬",
+   "分",
+   "前",
+   "午前",
+   "午後",
+   "半",
+   "去年",
+   "土曜日",
+   "夏",
+   "夕べ",
+   "夕方",
+   "夜",
+   "夜中",
+   "年",
+   "後",
+   "日",
+   "日曜日",
+   "明後日",
+   "明日",
+   "春",
+   "昨日",
+   "昼",
+   "時",
+   "時代",
+   "晩",
+   "暮れ",
+   "曜日",
+   "最初",
+   "最後",
+   "月",
+   "月曜日",
+   "朝",
+   "木曜日",
+   "来年",
+   "来週",
+   "正午",
+   "毎晩",
+   "毎朝",
+   "水曜日",
+   "深夜",
+   "火曜日",
+   "秋",
+   "秒",
+   "終わり",
+   "誕生日",
+   "週",
+   "週末",
+   "金曜日",
+   "間",
+   "頃"
+  ],
+  "EXIST": [
+   "ある",
+   "いらっしゃる",
+   "いる",
+   "おる",
+   "並ぶ",
+   "住む",
+   "勤める",
+   "在る",
+   "存在",
+   "居る",
+   "暮らす",
+   "有る",
+   "止まる",
+   "残る",
+   "泊まる",
+   "生まれる"
+  ],
+  "MOTION": [
+   "上がる",
+   "乗る",
+   "付ける",
+   "入る",
+   "入れる",
+   "出かける",
+   "出す",
+   "到着",
+   "向かう",
+   "届く",
+   "帰る",
+   "座る",
+   "引っ越す",
+   "急ぐ",
+   "戻る",
+   "掛ける",
+   "書く",
+   "来る",
+   "来日",
+   "歩く",
+   "泳ぐ",
+   "登る",
+   "着く",
+   "着る",
+   "移る",
+   "置く",
+   "落ちる",
+   "行く",
+   "貼る",
+   "走る",
+   "近づく",
+   "送る",
+   "通う",
+   "連れる",
+   "進む",
+   "運ぶ",
+   "集まる",
+   "飛ぶ"
+  ],
+  "GIVE": [
+   "あげる",
+   "くださる",
+   "くれる",
+   "やる",
+   "下さる",
+   "任せる",
+   "会う",
+   "伝える",
+   "尋ねる",
+   "差し上げる",
+   "手紙",
+   "払う",
+   "挨拶",
+   "教える",
+   "渡す",
+   "相談",
+   "知らせる",
+   "答える",
+   "紹介",
+   "聞く",
+   "見せる",
+   "言う",
+   "話す",
+   "説明",
+   "謝る",
+   "貸す",
+   "質問",
+   "返す",
+   "連絡",
+   "電話",
+   "頼む"
+  ],
+  "RECEIVE": [
+   "いただく",
+   "もらう",
+   "借りる",
+   "教わる",
+   "習う",
+   "貰う",
+   "頂く"
+  ],
+  "TARGET": [
+   "勝つ",
+   "参加",
+   "反する",
+   "反対",
+   "合格",
+   "向ける",
+   "夢中",
+   "失敗",
+   "対する",
+   "影響",
+   "従う",
+   "応える",
+   "慣れる",
+   "気",
+   "注意",
+   "答える",
+   "興味",
+   "触る",
+   "負ける",
+   "賛成",
+   "間に合う",
+   "関係",
+   "関心"
+  ],
+  "EMO": [
+   "あきれる",
+   "がっかり",
+   "喜ぶ",
+   "困る",
+   "悩む",
+   "感動",
+   "感心",
+   "感謝",
+   "濡れる",
+   "疲れる",
+   "苦しむ",
+   "酔う",
+   "飽きる",
+   "驚く"
+  ],
+  "STANDARD": [
+   "いい",
+   "ぴったり",
+   "不便",
+   "似る",
+   "便利",
+   "優しい",
+   "十分",
+   "厳しい",
+   "合う",
+   "向く",
+   "大切",
+   "大変",
+   "弱い",
+   "強い",
+   "必要",
+   "悪い",
+   "易しい",
+   "有名",
+   "無理",
+   "簡単",
+   "良い",
+   "親切",
+   "詳しい",
+   "近い",
+   "遠い",
+   "重要",
+   "難しい"
+  ],
+  "SUBSID": [
+   "あげる",
+   "ある",
+   "いく",
+   "いただく",
+   "いる",
+   "おく",
+   "ください",
+   "くださる",
+   "くる",
+   "くれる",
+   "しまう",
+   "ほしい",
+   "みる",
+   "もらう",
+   "やる",
+   "下さる",
+   "居る",
+   "差し上げる",
+   "来る",
+   "欲しい",
+   "置く",
+   "行く",
+   "見る",
+   "頂く"
+  ],
+  "PATH": [
+   "下る",
+   "回る",
+   "散歩",
+   "曲がる",
+   "歩く",
+   "泳ぐ",
+   "渡る",
+   "登る",
+   "走る",
+   "越える",
+   "通す",
+   "通る",
+   "進む",
+   "過ぎる",
+   "飛び回る",
+   "飛ぶ"
+  ],
+  "DEPART": [
+   "出かける",
+   "出る",
+   "出発",
+   "卒業",
+   "発つ",
+   "辞める",
+   "退院",
+   "降りる",
+   "離れる"
+  ],
+  "SAYING": [
+   "いう",
+   "おっしゃる",
+   "主張",
+   "伝える",
+   "信じる",
+   "分かる",
+   "叫ぶ",
+   "呼ぶ",
+   "報告",
+   "心配",
+   "思う",
+   "感じる",
+   "断る",
+   "書く",
+   "期待",
+   "決める",
+   "申す",
+   "疑う",
+   "祈る",
+   "答える",
+   "約束",
+   "考える",
+   "聞く",
+   "聞こえる",
+   "見える",
+   "言う",
+   "言える",
+   "記す",
+   "話す",
+   "説明",
+   "読む",
+   "頼む",
+   "願う",
+   "驚く"
+  ],
+  "RECIP": [
+   "けんか",
+   "一緒",
+   "付き合う",
+   "仲良く",
+   "会う",
+   "働く",
+   "別れる",
+   "協力",
+   "喧嘩",
+   "戦う",
+   "握手",
+   "旅行",
+   "暮らす",
+   "相談",
+   "競争",
+   "結婚",
+   "話し合う",
+   "話す",
+   "踊る",
+   "遊ぶ",
+   "食事"
+  ],
+  "COMPAR": [
+   "似る",
+   "反対",
+   "同じ",
+   "比べる",
+   "異なる",
+   "等しい",
+   "違う"
+  ],
+  "MEANS": [
+   "はさみ",
+   "はし",
+   "インターネット",
+   "カード",
+   "コンピューター",
+   "スプーン",
+   "スペイン語",
+   "タクシー",
+   "テレビ",
+   "ドイツ語",
+   "ナイフ",
+   "バス",
+   "パソコン",
+   "フォーク",
+   "フランス語",
+   "ペン",
+   "ボールペン",
+   "ポルトガル語",
+   "メール",
+   "ラジオ",
+   "中国語",
+   "写真",
+   "包丁",
+   "口",
+   "地下鉄",
+   "声",
+   "徒歩",
+   "手",
+   "新幹線",
+   "日本語",
+   "機械",
+   "水",
+   "火",
+   "現金",
+   "箸",
+   "自転車",
+   "船",
+   "英語",
+   "言葉",
+   "足",
+   "車",
+   "辞書",
+   "鉄道",
+   "鉛筆",
+   "電話",
+   "電車",
+   "飛行機"
+  ],
+  "MANNER": [
+   "みな",
+   "みんな",
+   "一人",
+   "一人きり",
+   "三人",
+   "二人",
+   "二人きり",
+   "全員",
+   "全部",
+   "大勢",
+   "家族",
+   "独り",
+   "皆",
+   "自分",
+   "自分たち",
+   "裸足"
+  ],
+  "CAUSE_N": [
+   "けが",
+   "不注意",
+   "事故",
+   "仕事",
+   "台風",
+   "地震",
+   "大雨",
+   "大雪",
+   "寝坊",
+   "怪我",
+   "戦争",
+   "渋滞",
+   "火事",
+   "熱",
+   "用事",
+   "病気",
+   "雨",
+   "雪",
+   "霧",
+   "風邪"
+  ],
+  "MAKE": [
+   "できる",
+   "作る",
+   "出来る",
+   "建てる",
+   "編む",
+   "造る"
+  ],
+  "INTERROG": [
+   "いくつ",
+   "いくら",
+   "いつ",
+   "だれ",
+   "ちっとも",
+   "どう",
+   "どこ",
+   "どちら",
+   "どっち",
+   "どなた",
+   "どの",
+   "どれ",
+   "どんな",
+   "なぜ",
+   "なに",
+   "なん",
+   "一つ",
+   "一人",
+   "一冊",
+   "一匹",
+   "一口",
+   "一回",
+   "一度",
+   "一日",
+   "一枚",
+   "一歩",
+   "一言",
+   "一語",
+   "一銭",
+   "何",
+   "何処",
+   "何故",
+   "少し",
+   "幾つ",
+   "誰"
+  ],
+  "NEG": [
+   "ず",
+   "ない",
+   "ぬ",
+   "ません",
+   "ん",
+   "無い"
+  ],
+  "PREFACE": [
+   "すみません",
+   "もしもし",
+   "失礼",
+   "恐れ入る",
+   "恐縮",
+   "悪い",
+   "済みません",
+   "申し訳",
+   "突然"
+  ]
+ }
+}

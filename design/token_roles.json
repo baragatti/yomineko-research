@@ -1,0 +1,1146 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://yomineko.dev/design/token_roles.json",
+ "title": "token_roles",
+ "description": "Closed, versioned enums for the word-by-word explanation items: the CHUNK ROLE (what a chunk does in its clause, assigned by the particle usage that closes it or by position), the TOKEN FUNCTION (what a token does inside its chunk, derived from pos / lemma), the auxiliary sub-functions, and the templates that render the role text. Inflection is NOT redefined here: tokens keep `inflection` (UniDic 活用形, neutral) and predicates reuse the conjugation_form enum of design/unlock_enums.json. Schema + data in one self-validating file; docs in design/token_roles.md.",
+ "x-yomineko": {
+  "status": "proposal",
+  "schema_version": "1.0",
+  "date": "2026-09-27",
+  "doc": "design/token_roles.md",
+  "companion": "design/particle_functions.json",
+  "reuses": [
+   "design/unlock_enums.json#conjugation_form"
+  ]
+ },
+ "type": "object",
+ "required": [
+  "schema_version",
+  "chunk_roles",
+  "token_functions",
+  "aux_functions",
+  "templates",
+  "legacy_pattern_role"
+ ],
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "chunk_roles": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/chunk_role_record"
+   }
+  },
+  "token_functions": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/token_function_record"
+   }
+  },
+  "aux_functions": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/aux_function_record"
+   }
+  },
+  "templates": {
+   "type": "object",
+   "additionalProperties": {
+    "$ref": "#/$defs/template_record"
+   }
+  },
+  "legacy_pattern_role": {
+   "type": "object",
+   "additionalProperties": {
+    "anyOf": [
+     {
+      "$ref": "#/$defs/chunk_role"
+     },
+     {
+      "type": "null"
+     }
+    ]
+   },
+   "description": "Today's pattern[].role values -> chunk_role; null = non-committal, resolved by the particle usage."
+  }
+ },
+ "$defs": {
+  "locale_text": {
+   "type": "object",
+   "required": [
+    "pt-BR",
+    "en"
+   ],
+   "properties": {
+    "pt-BR": {
+     "type": "string"
+    },
+    "en": {
+     "type": "string"
+    }
+   },
+   "additionalProperties": {
+    "type": "string"
+   },
+   "description": "Locale-object (design/i18n.md): pt-BR is the learner locale, en the source locale; more locales add keys."
+  },
+  "level": {
+   "type": "string",
+   "pattern": "^n[1-9]$",
+   "description": "JLPT-style level as DATA (N5..N1 today, open-ended)."
+  },
+  "chunk_role": {
+   "enum": [
+    "topic",
+    "subject",
+    "stative-object",
+    "object",
+    "recipient",
+    "source",
+    "goal",
+    "path",
+    "location",
+    "location-action",
+    "time",
+    "end-point",
+    "purpose",
+    "result",
+    "agent",
+    "causee",
+    "comitative",
+    "means",
+    "material",
+    "cause",
+    "scope",
+    "manner",
+    "quantity",
+    "standard",
+    "target",
+    "quote",
+    "focus",
+    "parallel-item",
+    "modifier",
+    "nominalized-clause",
+    "adverbial",
+    "predicate",
+    "clause-link",
+    "connective",
+    "interjection",
+    "sentence-final",
+    "none"
+   ]
+  },
+  "token_function": {
+   "enum": [
+    "head",
+    "noun-modifier",
+    "determiner",
+    "adnominal-predicate",
+    "adverb",
+    "predicate-head",
+    "subsidiary-verb",
+    "auxiliary",
+    "particle",
+    "prefix",
+    "suffix",
+    "numeral",
+    "conjunction",
+    "interjection",
+    "punctuation"
+   ]
+  },
+  "aux_function": {
+   "enum": [
+    "politeness",
+    "copula",
+    "copula-polite",
+    "negation",
+    "past",
+    "desire",
+    "passive-potential",
+    "causative",
+    "volitional",
+    "evidential",
+    "obligation",
+    "negative-volitional",
+    "perfective",
+    "comparison"
+   ]
+  },
+  "chunk_role_record": {
+   "type": "object",
+   "required": [
+    "id",
+    "ja_term",
+    "label",
+    "of"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/chunk_role"
+    },
+    "ja_term": {
+     "type": "string"
+    },
+    "label": {
+     "$ref": "#/$defs/locale_text"
+    },
+    "of": {
+     "$ref": "#/$defs/locale_text",
+     "description": "Genitive form the role template inserts ('do sujeito')."
+    }
+   },
+   "additionalProperties": false
+  },
+  "token_function_record": {
+   "type": "object",
+   "required": [
+    "id",
+    "rule",
+    "label",
+    "template"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/token_function"
+    },
+    "rule": {
+     "type": "string"
+    },
+    "label": {
+     "$ref": "#/$defs/locale_text"
+    },
+    "template": {
+     "enum": [
+      "tpl.role.of",
+      "tpl.role.self",
+      "tpl.role.aux",
+      "none",
+      "particle"
+     ]
+    }
+   },
+   "additionalProperties": false
+  },
+  "aux_function_record": {
+   "type": "object",
+   "required": [
+    "id",
+    "lemmas",
+    "label",
+    "level"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/aux_function"
+    },
+    "lemmas": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "label": {
+     "$ref": "#/$defs/locale_text"
+    },
+    "level": {
+     "$ref": "#/$defs/level"
+    }
+   },
+   "additionalProperties": false
+  },
+  "template_record": {
+   "type": "object",
+   "required": [
+    "slots",
+    "pt-BR",
+    "en"
+   ],
+   "properties": {
+    "slots": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "pt-BR": {
+     "type": "string"
+    },
+    "en": {
+     "type": "string"
+    },
+    "doc": {
+     "type": "string"
+    }
+   },
+   "additionalProperties": false
+  },
+  "token_item": {
+   "description": "Target shape of the explanation fields of ONE C-mode token after migration. `role` text is RENDERED from function + chunk_role (+ aux_function); `gloss` stays Layer-B text (a meaning cannot be an enum); `note` is the only free prose.",
+   "type": "object",
+   "required": [
+    "position",
+    "function",
+    "chunk"
+   ],
+   "properties": {
+    "position": {
+     "type": "integer",
+     "minimum": 0
+    },
+    "function": {
+     "$ref": "#/$defs/token_function"
+    },
+    "aux_function": {
+     "$ref": "#/$defs/aux_function"
+    },
+    "chunk": {
+     "type": "integer",
+     "minimum": 0,
+     "description": "Index into the sentence's pattern[] chunk list."
+    },
+    "chunk_role": {
+     "$ref": "#/$defs/chunk_role"
+    },
+    "form": {
+     "type": "string",
+     "description": "conjugation_form id (design/unlock_enums.json) of the predicate run the token heads, when it heads one."
+    },
+    "role": {
+     "$ref": "#/$defs/locale_text",
+     "description": "Rendered, never authored."
+    },
+    "gloss": {
+     "$ref": "#/$defs/locale_text"
+    },
+    "note": {
+     "$ref": "#/$defs/locale_text"
+    }
+   },
+   "additionalProperties": false
+  }
+ },
+ "schema_version": "1.0",
+ "chunk_roles": [
+  {
+   "id": "topic",
+   "ja_term": "主題",
+   "label": {
+    "pt-BR": "tópico",
+    "en": "topic"
+   },
+   "of": {
+    "pt-BR": "do tópico",
+    "en": "of the topic"
+   }
+  },
+  {
+   "id": "subject",
+   "ja_term": "主語（ガ格）",
+   "label": {
+    "pt-BR": "sujeito",
+    "en": "subject"
+   },
+   "of": {
+    "pt-BR": "do sujeito",
+    "en": "of the subject"
+   }
+  },
+  {
+   "id": "stative-object",
+   "ja_term": "対象（状態述語）",
+   "label": {
+    "pt-BR": "objeto de predicado de estado",
+    "en": "object of a state predicate"
+   },
+   "of": {
+    "pt-BR": "do objeto do estado",
+    "en": "of the state object"
+   }
+  },
+  {
+   "id": "object",
+   "ja_term": "目的語（ヲ格）",
+   "label": {
+    "pt-BR": "objeto direto",
+    "en": "direct object"
+   },
+   "of": {
+    "pt-BR": "do objeto direto",
+    "en": "of the direct object"
+   }
+  },
+  {
+   "id": "recipient",
+   "ja_term": "相手",
+   "label": {
+    "pt-BR": "destinatário",
+    "en": "recipient"
+   },
+   "of": {
+    "pt-BR": "do destinatário",
+    "en": "of the recipient"
+   }
+  },
+  {
+   "id": "source",
+   "ja_term": "起点・出どころ",
+   "label": {
+    "pt-BR": "origem / ponto de partida",
+    "en": "source / starting point"
+   },
+   "of": {
+    "pt-BR": "da origem",
+    "en": "of the source"
+   }
+  },
+  {
+   "id": "goal",
+   "ja_term": "到達点・方向",
+   "label": {
+    "pt-BR": "destino / direção",
+    "en": "destination / direction"
+   },
+   "of": {
+    "pt-BR": "do destino",
+    "en": "of the destination"
+   }
+  },
+  {
+   "id": "path",
+   "ja_term": "経過域",
+   "label": {
+    "pt-BR": "percurso",
+    "en": "route"
+   },
+   "of": {
+    "pt-BR": "do percurso",
+    "en": "of the route"
+   }
+  },
+  {
+   "id": "location",
+   "ja_term": "存在の場所",
+   "label": {
+    "pt-BR": "lugar onde algo está",
+    "en": "location of existence"
+   },
+   "of": {
+    "pt-BR": "do lugar",
+    "en": "of the location"
+   }
+  },
+  {
+   "id": "location-action",
+   "ja_term": "動作の場所",
+   "label": {
+    "pt-BR": "lugar da ação",
+    "en": "place of the action"
+   },
+   "of": {
+    "pt-BR": "do lugar da ação",
+    "en": "of the place of the action"
+   }
+  },
+  {
+   "id": "time",
+   "ja_term": "時",
+   "label": {
+    "pt-BR": "tempo",
+    "en": "time"
+   },
+   "of": {
+    "pt-BR": "da expressão de tempo",
+    "en": "of the time expression"
+   }
+  },
+  {
+   "id": "end-point",
+   "ja_term": "終点・限界",
+   "label": {
+    "pt-BR": "limite (até)",
+    "en": "end point (until / as far as)"
+   },
+   "of": {
+    "pt-BR": "do limite",
+    "en": "of the end point"
+   }
+  },
+  {
+   "id": "purpose",
+   "ja_term": "目的",
+   "label": {
+    "pt-BR": "finalidade",
+    "en": "purpose"
+   },
+   "of": {
+    "pt-BR": "da finalidade",
+    "en": "of the purpose"
+   }
+  },
+  {
+   "id": "result",
+   "ja_term": "変化の結果",
+   "label": {
+    "pt-BR": "resultado da mudança",
+    "en": "result of a change"
+   },
+   "of": {
+    "pt-BR": "do resultado",
+    "en": "of the result"
+   }
+  },
+  {
+   "id": "agent",
+   "ja_term": "動作主",
+   "label": {
+    "pt-BR": "agente (passiva, 〜てもらう)",
+    "en": "agent (passive, 〜てもらう)"
+   },
+   "of": {
+    "pt-BR": "do agente",
+    "en": "of the agent"
+   }
+  },
+  {
+   "id": "causee",
+   "ja_term": "使役の相手",
+   "label": {
+    "pt-BR": "quem é levado a agir",
+    "en": "causee"
+   },
+   "of": {
+    "pt-BR": "de quem é levado a agir",
+    "en": "of the causee"
+   }
+  },
+  {
+   "id": "comitative",
+   "ja_term": "共同者",
+   "label": {
+    "pt-BR": "companhia",
+    "en": "companion"
+   },
+   "of": {
+    "pt-BR": "da companhia",
+    "en": "of the companion"
+   }
+  },
+  {
+   "id": "means",
+   "ja_term": "手段・道具",
+   "label": {
+    "pt-BR": "meio / instrumento",
+    "en": "means / instrument"
+   },
+   "of": {
+    "pt-BR": "do meio",
+    "en": "of the means"
+   }
+  },
+  {
+   "id": "material",
+   "ja_term": "材料・原料",
+   "label": {
+    "pt-BR": "material",
+    "en": "material"
+   },
+   "of": {
+    "pt-BR": "do material",
+    "en": "of the material"
+   }
+  },
+  {
+   "id": "cause",
+   "ja_term": "原因・理由",
+   "label": {
+    "pt-BR": "causa",
+    "en": "cause"
+   },
+   "of": {
+    "pt-BR": "da causa",
+    "en": "of the cause"
+   }
+  },
+  {
+   "id": "scope",
+   "ja_term": "範囲",
+   "label": {
+    "pt-BR": "âmbito",
+    "en": "scope"
+   },
+   "of": {
+    "pt-BR": "do âmbito",
+    "en": "of the scope"
+   }
+  },
+  {
+   "id": "manner",
+   "ja_term": "様態",
+   "label": {
+    "pt-BR": "modo",
+    "en": "manner"
+   },
+   "of": {
+    "pt-BR": "do modo",
+    "en": "of the manner"
+   }
+  },
+  {
+   "id": "quantity",
+   "ja_term": "数量・割合・限度",
+   "label": {
+    "pt-BR": "quantidade / proporção / limite",
+    "en": "quantity / rate / limit"
+   },
+   "of": {
+    "pt-BR": "da quantidade",
+    "en": "of the quantity"
+   }
+  },
+  {
+   "id": "standard",
+   "ja_term": "基準",
+   "label": {
+    "pt-BR": "referência (comparação ou avaliação)",
+    "en": "standard of comparison or judgment"
+   },
+   "of": {
+    "pt-BR": "da referência",
+    "en": "of the standard"
+   }
+  },
+  {
+   "id": "target",
+   "ja_term": "対象（心的態度・働きかけ）",
+   "label": {
+    "pt-BR": "alvo",
+    "en": "target of an attitude or action"
+   },
+   "of": {
+    "pt-BR": "do alvo",
+    "en": "of the target"
+   }
+  },
+  {
+   "id": "quote",
+   "ja_term": "引用・内容",
+   "label": {
+    "pt-BR": "conteúdo citado",
+    "en": "quoted content"
+   },
+   "of": {
+    "pt-BR": "da citação",
+    "en": "of the quote"
+   }
+  },
+  {
+   "id": "focus",
+   "ja_term": "とりたて",
+   "label": {
+    "pt-BR": "elemento destacado (também, só, até)",
+    "en": "focused element (also, only, even)"
+   },
+   "of": {
+    "pt-BR": "do elemento destacado",
+    "en": "of the focused element"
+   }
+  },
+  {
+   "id": "parallel-item",
+   "ja_term": "並立項",
+   "label": {
+    "pt-BR": "item de lista",
+    "en": "list item"
+   },
+   "of": {
+    "pt-BR": "do item da lista",
+    "en": "of the list item"
+   }
+  },
+  {
+   "id": "modifier",
+   "ja_term": "連体修飾",
+   "label": {
+    "pt-BR": "modificador do substantivo",
+    "en": "noun modifier"
+   },
+   "of": {
+    "pt-BR": "do modificador",
+    "en": "of the modifier"
+   }
+  },
+  {
+   "id": "nominalized-clause",
+   "ja_term": "名詞節",
+   "label": {
+    "pt-BR": "oração substantivada",
+    "en": "nominalized clause"
+   },
+   "of": {
+    "pt-BR": "da oração substantivada",
+    "en": "of the nominalized clause"
+   }
+  },
+  {
+   "id": "adverbial",
+   "ja_term": "連用修飾（副詞的成分）",
+   "label": {
+    "pt-BR": "adjunto adverbial",
+    "en": "adverbial (modifies the predicate)"
+   },
+   "of": {
+    "pt-BR": "do adjunto adverbial",
+    "en": "of the adverbial"
+   }
+  },
+  {
+   "id": "predicate",
+   "ja_term": "述語",
+   "label": {
+    "pt-BR": "predicado",
+    "en": "predicate"
+   },
+   "of": {
+    "pt-BR": "do predicado",
+    "en": "of the predicate"
+   }
+  },
+  {
+   "id": "clause-link",
+   "ja_term": "接続",
+   "label": {
+    "pt-BR": "ligação entre orações",
+    "en": "clause link (and, but, because, if)"
+   },
+   "of": {
+    "pt-BR": "da oração ligada",
+    "en": "of the linked clause"
+   }
+  },
+  {
+   "id": "connective",
+   "ja_term": "接続詞",
+   "label": {
+    "pt-BR": "conectivo de frase",
+    "en": "sentence connective (それで, でも)"
+   },
+   "of": {
+    "pt-BR": "do conectivo",
+    "en": "of the connective"
+   }
+  },
+  {
+   "id": "interjection",
+   "ja_term": "感動詞・応答",
+   "label": {
+    "pt-BR": "interjeição / resposta",
+    "en": "interjection / response"
+   },
+   "of": {
+    "pt-BR": "da interjeição",
+    "en": "of the interjection"
+   }
+  },
+  {
+   "id": "sentence-final",
+   "ja_term": "文末",
+   "label": {
+    "pt-BR": "final da frase",
+    "en": "sentence-final element"
+   },
+   "of": {
+    "pt-BR": "do final da frase",
+    "en": "of the sentence ending"
+   }
+  },
+  {
+   "id": "none",
+   "ja_term": "—",
+   "label": {
+    "pt-BR": "sem papel próprio (parte de expressão fixa)",
+    "en": "no role of its own (part of a fixed expression)"
+   },
+   "of": {
+    "pt-BR": "",
+    "en": ""
+   }
+  }
+ ],
+ "token_functions": [
+  {
+   "id": "head",
+   "rule": "last nominal token of a chunk, before the particle that closes it",
+   "label": {
+    "pt-BR": "núcleo",
+    "en": "head"
+   },
+   "template": "tpl.role.of"
+  },
+  {
+   "id": "noun-modifier",
+   "rule": "nominal token before the head inside the same chunk (compound or の-less modifier)",
+   "label": {
+    "pt-BR": "modificador",
+    "en": "modifier"
+   },
+   "template": "tpl.role.of"
+  },
+  {
+   "id": "determiner",
+   "rule": "pos = adnominal (連体詞: この, その, あの, 大きな)",
+   "label": {
+    "pt-BR": "determinante",
+    "en": "determiner"
+   },
+   "template": "tpl.role.of"
+  },
+  {
+   "id": "adnominal-predicate",
+   "rule": "verb/adjective/auxiliary run directly before a nominal (高い山, 読んだ本)",
+   "label": {
+    "pt-BR": "predicado que modifica o substantivo",
+    "en": "noun-modifying predicate"
+   },
+   "template": "tpl.role.of"
+  },
+  {
+   "id": "adverb",
+   "rule": "pos = adverb",
+   "label": {
+    "pt-BR": "advérbio",
+    "en": "adverb"
+   },
+   "template": "tpl.role.self"
+  },
+  {
+   "id": "predicate-head",
+   "rule": "first verb/adjective/na-adjective/noun of the sentence-final predicate run",
+   "label": {
+    "pt-BR": "predicado principal",
+    "en": "main predicate"
+   },
+   "template": "tpl.role.self"
+  },
+  {
+   "id": "subsidiary-verb",
+   "rule": "verb after the conjunctive て/で whose lemma is in lexicon SUBSID (〜ている, 〜てください)",
+   "label": {
+    "pt-BR": "verbo auxiliar (depois de 〜て)",
+    "en": "subsidiary verb"
+   },
+   "template": "tpl.role.self"
+  },
+  {
+   "id": "auxiliary",
+   "rule": "pos = auxiliary; sub-function from AUX_FUNCTION by lemma",
+   "label": {
+    "pt-BR": "auxiliar",
+    "en": "auxiliary"
+   },
+   "template": "tpl.role.aux"
+  },
+  {
+   "id": "particle",
+   "rule": "pos = particle; described by design/particle_functions.json, never by this file",
+   "label": {
+    "pt-BR": "partícula",
+    "en": "particle"
+   },
+   "template": "particle"
+  },
+  {
+   "id": "prefix",
+   "rule": "pos = prefix (お, ご: politeness)",
+   "label": {
+    "pt-BR": "prefixo",
+    "en": "prefix"
+   },
+   "template": "tpl.role.self"
+  },
+  {
+   "id": "suffix",
+   "rule": "pos = suffix (さん, たち, counters)",
+   "label": {
+    "pt-BR": "sufixo",
+    "en": "suffix"
+   },
+   "template": "tpl.role.self"
+  },
+  {
+   "id": "numeral",
+   "rule": "pos_fine = 数詞",
+   "label": {
+    "pt-BR": "numeral",
+    "en": "numeral"
+   },
+   "template": "tpl.role.of"
+  },
+  {
+   "id": "conjunction",
+   "rule": "pos = conjunction",
+   "label": {
+    "pt-BR": "conjunção",
+    "en": "conjunction"
+   },
+   "template": "tpl.role.self"
+  },
+  {
+   "id": "interjection",
+   "rule": "pos = interjection",
+   "label": {
+    "pt-BR": "interjeição",
+    "en": "interjection"
+   },
+   "template": "tpl.role.self"
+  },
+  {
+   "id": "punctuation",
+   "rule": "pos = punctuation / whitespace (never explained)",
+   "label": {
+    "pt-BR": "pontuação",
+    "en": "punctuation"
+   },
+   "template": "none"
+  }
+ ],
+ "aux_functions": [
+  {
+   "id": "politeness",
+   "lemmas": [
+    "ます"
+   ],
+   "label": {
+    "pt-BR": "cortesia (〜ます)",
+    "en": "politeness"
+   },
+   "level": "n5"
+  },
+  {
+   "id": "copula",
+   "lemmas": [
+    "だ",
+    "や",
+    "じゃ",
+    "なり"
+   ],
+   "label": {
+    "pt-BR": "cópula (だ)",
+    "en": "copula"
+   },
+   "level": "n5"
+  },
+  {
+   "id": "copula-polite",
+   "lemmas": [
+    "です"
+   ],
+   "label": {
+    "pt-BR": "cópula educada (です)",
+    "en": "polite copula"
+   },
+   "level": "n5"
+  },
+  {
+   "id": "negation",
+   "lemmas": [
+    "ない",
+    "ぬ",
+    "ん",
+    "ず"
+   ],
+   "label": {
+    "pt-BR": "negação",
+    "en": "negation"
+   },
+   "level": "n5"
+  },
+  {
+   "id": "past",
+   "lemmas": [
+    "た",
+    "き",
+    "けり"
+   ],
+   "label": {
+    "pt-BR": "passado / conclusão",
+    "en": "past / completion"
+   },
+   "level": "n5"
+  },
+  {
+   "id": "desire",
+   "lemmas": [
+    "たい",
+    "たがる"
+   ],
+   "label": {
+    "pt-BR": "desejo (〜たい)",
+    "en": "desire"
+   },
+   "level": "n5"
+  },
+  {
+   "id": "passive-potential",
+   "lemmas": [
+    "れる",
+    "られる",
+    "る",
+    "らる"
+   ],
+   "label": {
+    "pt-BR": "passiva / potencial / honorífico",
+    "en": "passive / potential / honorific"
+   },
+   "level": "n4"
+  },
+  {
+   "id": "causative",
+   "lemmas": [
+    "せる",
+    "させる",
+    "しめる"
+   ],
+   "label": {
+    "pt-BR": "causativo",
+    "en": "causative"
+   },
+   "level": "n4"
+  },
+  {
+   "id": "volitional",
+   "lemmas": [
+    "う",
+    "よう",
+    "む"
+   ],
+   "label": {
+    "pt-BR": "volitivo (vamos …)",
+    "en": "volitional"
+   },
+   "level": "n4"
+  },
+  {
+   "id": "evidential",
+   "lemmas": [
+    "そう",
+    "らしい",
+    "ようだ",
+    "みたい"
+   ],
+   "label": {
+    "pt-BR": "evidência / boato / aparência",
+    "en": "evidential / hearsay / resemblance"
+   },
+   "level": "n4"
+  },
+  {
+   "id": "obligation",
+   "lemmas": [
+    "べし"
+   ],
+   "label": {
+    "pt-BR": "obrigação (べき)",
+    "en": "obligation (べき)"
+   },
+   "level": "n3"
+  },
+  {
+   "id": "negative-volitional",
+   "lemmas": [
+    "まい"
+   ],
+   "label": {
+    "pt-BR": "volitivo negativo (まい)",
+    "en": "negative volitional"
+   },
+   "level": "n2"
+  },
+  {
+   "id": "perfective",
+   "lemmas": [
+    "り"
+   ],
+   "label": {
+    "pt-BR": "perfectivo clássico",
+    "en": "classical perfective"
+   },
+   "level": "n1"
+  },
+  {
+   "id": "comparison",
+   "lemmas": [
+    "ごとし"
+   ],
+   "label": {
+    "pt-BR": "semelhança (ごとし)",
+    "en": "likeness (ごとし)"
+   },
+   "level": "n1"
+  }
+ ],
+ "templates": {
+  "tpl.role.of": {
+   "slots": [
+    "function",
+    "role_of"
+   ],
+   "pt-BR": "{function} {role_of}",
+   "en": "{function} {role_of}",
+   "doc": "chunk member: 'núcleo do sujeito', 'modificador do objeto direto'"
+  },
+  "tpl.role.self": {
+   "slots": [
+    "function"
+   ],
+   "pt-BR": "{function}",
+   "en": "{function}",
+   "doc": "a token whose function is its role: 'advérbio', 'predicado principal'"
+  },
+  "tpl.role.aux": {
+   "slots": [
+    "aux_function"
+   ],
+   "pt-BR": "auxiliar de {aux_function}",
+   "en": "{aux_function} auxiliary",
+   "doc": "auxiliary: 'auxiliar de negação'"
+  },
+  "tpl.role.predicate-in": {
+   "slots": [
+    "function",
+    "role_of"
+   ],
+   "pt-BR": "{function} {role_of}",
+   "en": "{function} {role_of}",
+   "doc": "predicate of an embedded clause: 'predicado da oração substantivada'"
+  }
+ },
+ "legacy_pattern_role": {
+  "topic": "topic",
+  "subject": "subject",
+  "object": "object",
+  "also": "focus",
+  "modifier": "modifier",
+  "nominalizer": "nominalized-clause",
+  "from": "source",
+  "until": "end-point",
+  "direction": "goal",
+  "than": "standard",
+  "predicate": "predicate",
+  "sentence-final": "sentence-final",
+  "ga-clause": "clause-link",
+  "kara-clause": "clause-link",
+  "de-clause": "clause-link",
+  "to-clause": "clause-link",
+  "ni-clause": "clause-link",
+  "te-kara": "clause-link",
+  "ni-phrase": null,
+  "de-phrase": null,
+  "to-phrase": null,
+  "phrase": null,
+  "ga-phrase": null,
+  "no-phrase": null,
+  "kara-phrase": null
+ }
+}

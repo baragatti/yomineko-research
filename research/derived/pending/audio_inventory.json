@@ -1,0 +1,409 @@
+{
+ "meta": {
+  "generated": "2026-09-27",
+  "source": "git HEAD f97abb752d9e76c76df1b28a4d7c020f054fafa3 (exports) + db snapshot (raw_tatoeba_sentence.has_audio only)",
+  "script": "research scratch inventory.py (read-only; not a repo script)",
+  "dedup_rule": "design/audio_pipeline.md section 3: unit key = (lang, voice, normalised synthesis text); counts below are per kind before cross-kind dedup unless stated",
+  "scope_note": "N5/N4 (+pre-N5) is the course; N3 exists in the export and is counted separately; N2/N1 are counted for information only and are NOT in the voicing plan (owner D1, 2026-09-27)",
+  "counting_rules": [
+   "sentence synthesis text = verified tokens joined; a token whose surface holds kanji/digits is replaced by its hiragana reading, every other token keeps its surface (particle は stays は)",
+   "vocab synthesis text = the record's kana (dictionary reading), never the headword",
+   "kanji example word = its kana; it is the same unit as the vocab record when the text matches",
+   "listening: every script turn + the question (task/point/gist) + spoken options (gist/say/reply); printed options (task/point) are not voiced",
+   "kana: one unit per glyph (hiragana 105 + katakana 106)",
+   "pt-BR: characters inside <text> runs of lesson bodies (narration); objectives and exercise prompts are listed separately and not in the tier totals",
+   "tiers follow the CONSUMER: a sentence is t1 if any pre-N5/N5/N4 lesson, speak unit, N5/N4 kanji example list or N5/N4 listening item uses it, t2 if only N3 consumers do, t3 if nothing does (sentence.level is max(component level), so N3 lessons use 892 sentences labelled n1/n2)",
+   "dedup: within a tier by (voice class, normalised text); ja_texts_new_vs_lower_tiers removes texts already counted in a lower tier"
+  ]
+ },
+ "sentences": {
+  "by_level": {
+   "n1": {
+    "records": 1830,
+    "jp_chars": 22755,
+    "morae": 28537,
+    "has_kanji": 1829,
+    "unresolved_kanji_tokens": 0,
+    "tatoeba_native_audio": 23,
+    "referenced_by_course": 449
+   },
+   "n2": {
+    "records": 1625,
+    "jp_chars": 20032,
+    "morae": 24999,
+    "has_kanji": 1623,
+    "unresolved_kanji_tokens": 0,
+    "tatoeba_native_audio": 26,
+    "referenced_by_course": 443
+   },
+   "n3": {
+    "records": 4085,
+    "jp_chars": 50954,
+    "morae": 61713,
+    "has_kanji": 4036,
+    "unresolved_kanji_tokens": 0,
+    "tatoeba_native_audio": 64,
+    "referenced_by_course": 2316
+   },
+   "n4": {
+    "records": 2254,
+    "jp_chars": 28014,
+    "morae": 31403,
+    "has_kanji": 2068,
+    "unresolved_kanji_tokens": 0,
+    "tatoeba_native_audio": 68,
+    "referenced_by_course": 990
+   },
+   "n5": {
+    "records": 477,
+    "jp_chars": 4874,
+    "morae": 5096,
+    "has_kanji": 365,
+    "unresolved_kanji_tokens": 0,
+    "tatoeba_native_audio": 16,
+    "referenced_by_course": 299
+   }
+  },
+  "total_records": 10271,
+  "distinct_synthesis_texts": 10256,
+  "texts_shared_by_more_than_one_record": 15,
+  "referenced_by_any_consumer": 4497,
+  "consumer_kinds": {
+   "lesson": 2106,
+   "kanji_example_sentences": 2446,
+   "speak_unit": 736,
+   "exam_listening_reply": 68
+  },
+  "db_sentence_audio_ref_audio_source": {
+   "audio_ref_set=False,audio_source=None": 10271
+  },
+  "particle_ha_token_readings": {
+   "わ": 5345,
+   "は": 1
+  }
+ },
+ "vocab": {
+  "by_level": {
+   "n1": {
+    "records": 2678,
+    "headword_chars": 6379,
+    "reading_chars": 10045,
+    "morae": 9489,
+    "pitch_known": 1
+   },
+   "n2": {
+    "records": 1768,
+    "headword_chars": 4474,
+    "reading_chars": 6764,
+    "morae": 6435,
+    "pitch_known": 0
+   },
+   "n3": {
+    "records": 1593,
+    "headword_chars": 3368,
+    "reading_chars": 5435,
+    "morae": 5141,
+    "pitch_known": 0
+   },
+   "n4": {
+    "records": 653,
+    "headword_chars": 1548,
+    "reading_chars": 2269,
+    "morae": 2178,
+    "pitch_known": 582
+   },
+   "n5": {
+    "records": 709,
+    "headword_chars": 1479,
+    "reading_chars": 2177,
+    "morae": 2119,
+    "pitch_known": 637
+   }
+  },
+  "distinct_readings_by_level": {
+   "n5": 685,
+   "n4": 640,
+   "n3": 1532,
+   "n2": 1729,
+   "n1": 2568
+  },
+  "reading_groups_with_more_than_one_record": {
+   "n5": 23,
+   "n4": 13,
+   "n3": 56,
+   "n2": 33,
+   "n1": 95
+  }
+ },
+ "kanji_example_words": {
+  "n3": {
+   "example_words": 2547,
+   "resolves_to_registered_vocab": 2547,
+   "reading_chars": 9385
+  },
+  "n4": {
+   "example_words": 1367,
+   "resolves_to_registered_vocab": 1367,
+   "reading_chars": 5044
+  },
+  "n5": {
+   "example_words": 827,
+   "resolves_to_registered_vocab": 827,
+   "reading_chars": 3009
+  }
+ },
+ "listening": {
+  "by_level_type": {
+   "n3:lg": {
+    "items": 9,
+    "audio_pending": 9,
+    "turns": 18,
+    "chars": 1957,
+    "question_lines": 9,
+    "spoken_options": 36
+   },
+   "n3:lp": {
+    "items": 18,
+    "audio_pending": 18,
+    "turns": 137,
+    "chars": 4509,
+    "question_lines": 18
+   },
+   "n3:lr": {
+    "items": 27,
+    "audio_pending": 27,
+    "turns": 27,
+    "chars": 775,
+    "spoken_options": 81
+   },
+   "n3:ls": {
+    "items": 12,
+    "audio_pending": 12,
+    "turns": 12,
+    "chars": 1244,
+    "spoken_options": 36
+   },
+   "n3:lt": {
+    "items": 18,
+    "audio_pending": 18,
+    "turns": 136,
+    "chars": 4790,
+    "question_lines": 18
+   },
+   "n4:lp": {
+    "items": 21,
+    "audio_pending": 21,
+    "turns": 123,
+    "chars": 4445,
+    "question_lines": 21
+   },
+   "n4:lr": {
+    "items": 24,
+    "audio_pending": 24,
+    "turns": 24,
+    "chars": 777,
+    "spoken_options": 72
+   },
+   "n4:ls": {
+    "items": 15,
+    "audio_pending": 15,
+    "turns": 15,
+    "chars": 1471,
+    "spoken_options": 45
+   },
+   "n4:lt": {
+    "items": 24,
+    "audio_pending": 24,
+    "turns": 136,
+    "chars": 5374,
+    "question_lines": 24
+   },
+   "n5:lp": {
+    "items": 18,
+    "audio_pending": 18,
+    "turns": 90,
+    "chars": 2572,
+    "question_lines": 18
+   },
+   "n5:lr": {
+    "items": 17,
+    "audio_pending": 17,
+    "turns": 17,
+    "chars": 442,
+    "spoken_options": 51
+   },
+   "n5:ls": {
+    "items": 15,
+    "audio_pending": 15,
+    "turns": 15,
+    "chars": 1133,
+    "spoken_options": 45
+   },
+   "n5:lt": {
+    "items": 21,
+    "audio_pending": 21,
+    "turns": 105,
+    "chars": 3369,
+    "question_lines": 21
+   }
+  },
+  "distinct_units_voice_text": 1280,
+  "totals": {
+   "items": 239,
+   "audio_pending": 239,
+   "turns": 855,
+   "chars": 32858,
+   "question_lines": 129,
+   "spoken_options": 366
+  }
+ },
+ "speak_units": {
+  "say_now": 432,
+  "chunk_phrases": 9,
+  "shadowing": 432,
+  "units": 72,
+  "audio=pending": 72
+ },
+ "reading_passages": {
+  "n5:passages": 43,
+  "n5:sentences": 228,
+  "n5:chars": 3864,
+  "n4:passages": 91,
+  "n4:sentences": 475,
+  "n4:chars": 9223,
+  "n3:passages": 152,
+  "n3:sentences": 850,
+  "n3:chars": 18937
+ },
+ "kana_glyphs": {
+  "hiragana": 105,
+  "katakana": 106
+ },
+ "lesson_pt_narration": {
+  "by_level": {
+   "n3": {
+    "lessons": 103,
+    "pt_text_runs": 7892,
+    "pt_chars": 310975,
+    "jp_inline_runs": 3116,
+    "objective_chars": 22421,
+    "exercise_prompt_chars": 132002
+   },
+   "n4": {
+    "lessons": 96,
+    "pt_text_runs": 8323,
+    "pt_chars": 315981,
+    "jp_inline_runs": 3512,
+    "objective_chars": 24256,
+    "exercise_prompt_chars": 89578
+   },
+   "n5": {
+    "lessons": 84,
+    "pt_text_runs": 7574,
+    "pt_chars": 257089,
+    "jp_inline_runs": 3139,
+    "objective_chars": 19096,
+    "exercise_prompt_chars": 67026
+   },
+   "pre-n5": {
+    "lessons": 41,
+    "pt_text_runs": 3058,
+    "pt_chars": 82010,
+    "jp_inline_runs": 1037,
+    "objective_chars": 8208,
+    "exercise_prompt_chars": 6069
+   }
+  },
+  "distinct_narration_blocks": 9226,
+  "distinct_narration_block_chars": 904358
+ },
+ "sentence_pt_translations": {
+  "n4": 2254,
+  "n4:chars": 75381,
+  "n3": 4085,
+  "n3:chars": 138927,
+  "n1": 1830,
+  "n1:chars": 64039,
+  "n2": 1625,
+  "n2:chars": 56825,
+  "n5": 477,
+  "n5:chars": 12382
+ },
+ "totals_in_scope": {
+  "ja_sentence_texts_n3_and_below": 6802,
+  "ja_plus_vocab_readings_n5_n4_n3": 9545,
+  "ja_listening_texts": 1279,
+  "ja_listening_texts_already_in_sentence_or_vocab_set": 21,
+  "ja_chars_sentences_n3_and_below": 83842,
+  "ja_morae_sentences_n3_and_below": 98212,
+  "ja_morae_vocab_n5_n4_n3": 9438,
+  "ja_chars_listening": 32858,
+  "pt_chars_lesson_body_runs": 966055
+ },
+ "tiers": {
+  "t1_n5_n4": {
+   "ja_units_distinct": 5807,
+   "ja_texts_new_vs_lower_tiers": 5759,
+   "ja_units_by_kind": {
+    "sentence": 2387,
+    "word": 2423,
+    "listen": 786,
+    "kana": 211
+   },
+   "ja_chars": 65665,
+   "ja_morae_or_chars_proxy": 63413,
+   "sentences_in_tier": 2387,
+   "pt_lesson_body_chars": 655080
+  },
+  "t2_n3": {
+   "ja_units_distinct": 5601,
+   "ja_texts_new_vs_lower_tiers": 4504,
+   "ja_units_by_kind": {
+    "sentence": 2110,
+    "word": 2979,
+    "listen": 512
+   },
+   "ja_chars": 56470,
+   "ja_morae_or_chars_proxy": 54530,
+   "sentences_in_tier": 2110,
+   "pt_lesson_body_chars": 310975
+  },
+  "t3_rest_of_bank": {
+   "ja_units_distinct": 5770,
+   "ja_texts_new_vs_lower_tiers": 5754,
+   "ja_units_by_kind": {
+    "sentence": 5770
+   },
+   "ja_chars": 90713,
+   "ja_morae_or_chars_proxy": 85405,
+   "sentences_in_tier": 5774,
+   "pt_lesson_body_chars": 0
+  }
+ },
+ "inline_jp_in_pt_narration": {
+  "t1_n5_n4": {
+   "distinct_runs": 3092,
+   "already_a_ja_unit_text": 974
+  },
+  "t2_n3": {
+   "distinct_runs": 2086,
+   "already_a_ja_unit_text": 1007
+  },
+  "t3_rest_of_bank": {
+   "distinct_runs": 0,
+   "already_a_ja_unit_text": 0
+  }
+ },
+ "tatoeba_native_audio_candidates": {
+  "note": "raw_tatoeba_sentence.has_audio=1 for the bank row's Tatoeba id; per-clip licence NOT in the DB (must be fetched before use)",
+  "by_sentence_level": {
+   "n1": 23,
+   "n2": 26,
+   "n3": 64,
+   "n4": 68,
+   "n5": 16,
+   "pre-n5": 0
+  },
+  "in_tier_t1_n5_n4": 107
+ }
+}

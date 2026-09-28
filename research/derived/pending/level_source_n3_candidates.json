@@ -1,0 +1,128 @@
+{
+  "unit": "level_source_n3",
+  "owner_item": "D12",
+  "date": "2026-09-27",
+  "report": "research/reports/level_source_n3.md",
+  "status": "research-only; nothing applied",
+  "level_mapping_note": "A mapped band is a vote for exactly one level; a vote one band away is dissent, never agreement.",
+  "lineages_in_use": {
+    "tanos": {
+      "upstream": "https://www.tanos.co.uk/jlpt/",
+      "licence": "CC BY (commercial allowed with credit) per https://www.tanos.co.uk/jlpt/sharing/ (read 2026-09-27)",
+      "repos": ["bluskyo", "elzup", "openanki", "jlptvocabapi", "davidluzgouveia", "kanjiapi", "anchori", "jisho"],
+      "evidence": {
+        "davidluzgouveia": "README credits Jonathan Waller's JLPT Resources page (https://github.com/davidluzgouveia/kanji-data)",
+        "jisho": "https://jisho.org/about states levels come from Jonathan Waller's JLPT Resources page",
+        "kanjiapi": "inferred: N3 set identical to davidluzgouveia (Jaccard 1.0); no documented source",
+        "anchori": "inferred: superset of the same 367 N3 kanji (+3); no documented source",
+        "elzup_openanki": "identical files (Jaccard 0.9995); old-test split tags JLPT_2/JLPT_3"
+      }
+    },
+    "hanabira": {
+      "repos": ["hanabira"],
+      "dims": ["grammar"],
+      "evidence": "README cites Nihongo So-matome series as literature (https://github.com/tristcoil/hanabira.org); probable textbook lineage"
+    }
+  },
+  "measured": {
+    "snapshot": "db/corpus.sqlite copied 2026-09-27",
+    "kanji_n3_pairwise_jaccard": {
+      "davidluzgouveia~kanjiapi": 1.0,
+      "davidluzgouveia~bluskyo": 1.0,
+      "kanjiapi~bluskyo": 1.0,
+      "any~anchori": 0.9919
+    },
+    "vocab_n3_pairwise_jaccard": {
+      "bluskyo~jlptvocabapi": 0.758,
+      "bluskyo~elzup": 0.6932,
+      "bluskyo~openanki": 0.6929,
+      "jlptvocabapi~elzup": 0.5607,
+      "elzup~openanki": 0.9995
+    },
+    "vocab_n3_list_rows": {"bluskyo": 1835, "jlptvocabapi": 1797, "elzup": 2139, "openanki": 2140},
+    "corpus_n3": {"kanji": 350, "kanji_3of3": 340, "vocab": 1593, "grammar": 132},
+    "corpus_n3_vocab_also_in_jlptvocabapi_n3": 1592,
+    "corpus_n3_vocab_also_in_old_split_n3": 1575,
+    "kanjidic2_old_jlpt_by_corpus_level": {
+      "n5": {"4": 103},
+      "n4": {"3": 177},
+      "n3": {"2": 344, "3": 4, "1": 2},
+      "n2": {"2": 350, "1": 9, "none": 9},
+      "n1": {"1": 945, "2": 45, "none": 143}
+    },
+    "kanjidic2_bound_flags_n3": [
+      {"kanji": "回", "old": 3, "agreement": "3/3"},
+      {"kanji": "掛", "old": 1, "agreement": "3/3"},
+      {"kanji": "幾", "old": 1, "agreement": "3/3"},
+      {"kanji": "正", "old": 3, "agreement": "anchor"},
+      {"kanji": "通", "old": 3, "agreement": "anchor"},
+      {"kanji": "歩", "old": 3, "agreement": "anchor"}
+    ],
+    "not_measured": "JEV / Hagoromo agreement split: the files were not downloaded (unit forbids downloads)."
+  },
+  "candidates": [
+    {
+      "id": "jev",
+      "name": "日本語教育語彙表 (Japanese Language Education Vocabulary List) Ver 1.1",
+      "dims": ["vocab"],
+      "url": "https://jhlee.sakura.ne.jp/JEV/",
+      "alt_url": "https://jreadability.net/jev/",
+      "authors": "日本語学習辞書支援グループ (PI Yuriko Sunakawa), KAKENHI 2011-2014",
+      "size": 17908,
+      "levels": ["初級前半", "初級後半", "中級前半", "中級後半", "上級前半", "上級後半"],
+      "proposed_map": {"初級前半": "n5", "初級後半": "n4", "中級前半": "n3", "中級後半": "n2", "上級前半": "n1", "上級後半": "n1"},
+      "method": "experienced teachers' judgement over BCCWJ + 100-textbook corpus surveys",
+      "independent_of_tanos": true,
+      "format": "xlsx",
+      "licence": "research/education use only; no commercial use; no secondary distribution; citation required",
+      "use_as_evidence": "audit-only now (research use); export only after written permission",
+      "ingest": "reuse ingest_n3.py norm_candidates + match_entry (JMdict form + reading); vote 'jev': level",
+      "effort_days": 1.0,
+      "rank": 1
+    },
+    {
+      "id": "hagoromo",
+      "name": "機能語用例文データベース はごろも Ver.4",
+      "dims": ["grammar"],
+      "url": "https://hgrm.jpn.org/",
+      "paper": "https://www.jstage.jst.go.jp/article/mathling/30/5/30_275/_article/-char/ja/",
+      "size": 1848,
+      "levels": ["初級", "初中級", "中級", "中上級", "上級", "超級"],
+      "proposed_map": {"初級": "n5|n4 (ambiguous)", "初中級": "n4", "中級": "n3", "中上級": "n2", "上級": "n1", "超級": "none"},
+      "method": "6-level subjective rating by experienced teachers (mean of 5 raters)",
+      "independent_of_tanos": true,
+      "format": "download via form (Ver.4, 2024-03)",
+      "licence": "research/education use reported; site states no explicit terms; confirm with contact on hgrm.jpn.org",
+      "use_as_evidence": "audit-only until terms confirmed",
+      "ingest": "fuzzy key match of 132 N3 points -> proposal table + Opus verifier; null verdict excludes the row",
+      "effort_days": 1.75,
+      "rank": 1
+    },
+    {
+      "id": "kanjidic2_old",
+      "name": "KANJIDIC2 jlptLevel (pre-2010, 4 levels)",
+      "dims": ["kanji"],
+      "url": "https://www.edrdg.org/wiki/index.php/KANJIDIC_Project",
+      "independent_of_tanos": "partial: ancestor of Tanos new levels, not a sibling",
+      "licence": "CC BY-SA 4.0 (EDRDG); already on disk",
+      "use_as_evidence": "bound check only (old 2 => n3|n2), advisory validator; never a level vote (CLAUDE.md 1.5)",
+      "effort_days": 0.5,
+      "rank": 1
+    },
+    {"id": "marugoto", "dims": ["vocab"], "url": "https://marugoto.jpf.go.jp/en/download/", "independent_of_tanos": true, "licence": "Japan Foundation copyright", "verdict": "skip: CEFR A1-B1 course lists, thin at N3, weak JLPT mapping"},
+    {"id": "jlptsensei", "dims": ["vocab", "kanji", "grammar"], "url": "https://jlptsensei.com/", "independent_of_tanos": "unknown", "licence": "all rights reserved; terms page 404 on 2026-09-27", "verdict": "not usable without licence"},
+    {"id": "bunpro", "dims": ["grammar"], "url": "https://bunpro.jp/terms", "independent_of_tanos": true, "licence": "copyright; general ToS", "verdict": "not usable without licence"},
+    {"id": "nihongo_pro_kanshudo", "dims": ["vocab", "kanji", "grammar"], "independent_of_tanos": "unknown", "licence": "proprietary", "verdict": "not usable without licence"},
+    {"id": "textbooks_skm_somatome_try", "dims": ["vocab", "grammar"], "independent_of_tanos": true, "licence": "copyrighted books", "verdict": "last resort: manual TOC transcription, legal review"},
+    {"id": "jlpt_tango_anki", "dims": ["vocab"], "independent_of_tanos": true, "licence": "decks reproduce a copyrighted book", "verdict": "reject"},
+    {"id": "jisho_tags", "dims": ["vocab", "kanji"], "independent_of_tanos": false, "verdict": "same lineage (https://jisho.org/about)"},
+    {"id": "jees_official_workbooks", "dims": ["vocab", "grammar"], "independent_of_tanos": true, "licence": "copyrighted", "verdict": "too thin to vote; spot-check only"}
+  ],
+  "plan": [
+    {"step": 1, "what": "list->lineage map in design/schema_v2.md; agreement over lineages; cap confidence at 0.5 when <2 lineages", "effort_days": 0.5, "needs_owner": "confidence-cap rule (340 N3 kanji 1.0 -> 0.5)"},
+    {"step": 2, "what": "KANJIDIC2 old-level bound check (advisory)", "effort_days": 0.5, "needs_owner": null},
+    {"step": 3, "what": "JEV vocab vote, audit-only then exported", "effort_days": 1.0, "needs_owner": "approve download; email JEV group for commercial evidence use"},
+    {"step": 4, "what": "Hagoromo grammar vote", "effort_days": 1.75, "needs_owner": "form download; confirm terms"}
+  ],
+  "spec_note": "No open, licensable, non-Tanos N3 JLPT list exists; restate spec 1.5 as '>=2 independent lineages where they exist, lineage recorded'."
+}
