@@ -52,6 +52,9 @@ SUITE = [
     # made them the shipped builders, so the tests join the suite with them.
     ("test_exam_builders_w17.py", "code"),
     ("validate_display_consistency.py", "code"),
+    # W45: the PUBLISHED tokens[] is the sentence (C units only, ordered, offsets tile jp, sub-units
+    # nested as parts, particles anchored). Plant-proved on a copied tree: 13 plants, 13 caught.
+    ("validate_token_list.py", "code"),
     ("validate_groundtruth.py", "code"),
     ("validate_strokes.py", "code"),
     ("integrity_audit.py", "code"),

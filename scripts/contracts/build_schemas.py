@@ -583,9 +583,13 @@ _register({
         PARTICLE_FUNCTION_VALUES, "producer",
         "scripts/ingest/dissect.py PARTICLE_FUNCTION_MAP (Sudachi 助詞 subtype)",
         "Standard joshi classification for this particle."),
+    # W45: tokens[] carries mode-C units only (the sentence itself); mode-A sub-units nest under
+    # `parts`. Kept as a one-value constant because about ten consumers still filter on it.
     "sentence.tokens[].split_mode": vocabulary(
-        ["A", "B", "C"], "producer", "SudachiPy split modes (A short / B middle / C long)",
-        "Which Sudachi split mode produced this token."),
+        ["C"], "producer", "scripts/export/export_corpus.py (W45: tokens[] is the SudachiPy mode-C "
+        "list; mode-A sub-units nest as tokens[].parts, research/reports/token_list_integrity.md)",
+        "Which Sudachi split mode produced this token. Always C: a constant kept for the consumers "
+        "that still filter on it."),
     "conjugation.conjugations[].form": _conj_form,
     "exercise_conjugation.form": _conj_form,
     "conjugation.class": _conj_class,
@@ -671,6 +675,12 @@ _register({
         "makes token analyzer output immutable)."),
     "sentence.tokens[].pos_fine": plain(
         "Raw Sudachi/UniDic 品詞 細分類, kept verbatim. Third-party analyzer output, see pos_coarse."),
+    "sentence.tokens[].parts[].pos_coarse": plain(
+        "Raw Sudachi/UniDic 品詞 大分類 of this mode-A sub-unit, verbatim. Third-party analyzer output, "
+        "see tokens[].pos_coarse."),
+    "sentence.tokens[].parts[].pos_fine": plain(
+        "Raw Sudachi/UniDic 品詞 細分類 of this mode-A sub-unit, verbatim. Third-party analyzer output, "
+        "see tokens[].pos_coarse."),
     "vocab.senses[].misc[]": plain(
         "JMdict misc tags for this sense, verbatim (`uk`, `hum`, `col`, …). JMdict owns roughly eighty "
         "of them and adds more; this corpus carries whichever the entry had."),
@@ -710,6 +720,23 @@ EXAM_BRANCHES: list[dict] = [
      "must": ["audio", "script", "question", "correct", "distractors"],
      "doc": "the five listening sections: a spoken script, its audio, and options."},
 ]
+
+
+# ---- W45: the sentence token list (research/reports/token_list_integrity.md §4) -----------------
+# tokens[] is the sentence: C units, position == index, half-open code-point offsets tiling `jp`.
+# A sub-unit split nests as parts[] (>= 2, Layer-A keys only). Each particle points at its token.
+# validate_token_list.py checks what a schema cannot (order, tiling, jp slices).
+_PART_KEYS = ["begin", "end", "lemma", "pos_coarse", "pos_fine", "reading", "surface"]
+DECLARED_ITEM_SHAPE: dict[str, dict] = {
+    "sentence.tokens[]": {"required": ["begin", "end", "position", "split_mode", "surface"]},
+    "sentence.tokens[].parts": {
+        "minItems": 2,
+        "description": "The SudachiPy mode-A sub-units of this token, in order, tiling it exactly. "
+                       "Present only when the token splits. Layer A only: a part never carries a "
+                       "vocab link, gloss, role or romaji."},
+    "sentence.tokens[].parts[]": {"required": _PART_KEYS, "additionalProperties": False},
+    "sentence.particles[]": {"required": ["particle", "token_position"]},
+}
 
 
 def ref(name: str) -> dict:
@@ -899,6 +926,11 @@ def emit(node: Node, name: str, path: str, entity: str, records: int, depth: int
         if name in OPTION_ARRAYS:
             schema["minItems"] = 2
             schema["uniqueItems"] = True
+
+    # Declared, not measured: `required` inside an array element is never measured (presence is
+    # counted per record), so the elements whose shape IS the contract say so here.
+    for k, v in DECLARED_ITEM_SHAPE.get(f"{entity}.{path}", {}).items():
+        schema[k] = sorted(set(schema.get(k, [])) | set(v)) if k == "required" else v
 
     return schema
 

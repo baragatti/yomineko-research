@@ -451,21 +451,21 @@ def main() -> int:
         if sid in sents:
             svocab.setdefault(sid, []).append(vid)
 
-    # Every token, both split modes, exactly as corpus/sentences/bank.json publishes them — that is
-    # what the level gate reads for the vocab dimension, so the builder must select on the same set.
+    # The mode-C tokens, exactly as corpus/sentences/bank.json publishes `tokens[]` (W45: the mode-A
+    # sub-units nest as `parts[]` there and carry no vocab) — that is what the level gate reads for
+    # the vocab dimension, so the builder must select on the same set.
     slug_of_vid = {v["id"]: v["slug"] for v in vocab}
     tok_vocab: dict[int, set[str]] = {}
     toks_c: dict[int, list[dict]] = {}
-    for sid, sm, surf, lemma, read, pos, vid in con.execute(
-            "SELECT sentence_id,split_mode,surface,lemma,reading,pos,vocab_id FROM token "
-            "ORDER BY sentence_id, split_mode, position, id"):
+    for sid, surf, lemma, read, pos, vid in con.execute(
+            "SELECT sentence_id,surface,lemma,reading,pos,vocab_id FROM token "
+            "WHERE split_mode='C' ORDER BY sentence_id, position, id"):
         if sid not in sents:
             continue
         if vid is not None and vid in slug_of_vid:
             tok_vocab.setdefault(sid, set()).add(slug_of_vid[vid])
-        if sm == "C":
-            toks_c.setdefault(sid, []).append(
-                {"surface": surf, "lemma": lemma, "reading": read, "pos": pos})
+        toks_c.setdefault(sid, []).append(
+            {"surface": surf, "lemma": lemma, "reading": read, "pos": pos})
 
     def form_strs(forms_json):
         """forms_json entries are plain strings (or occasionally dicts) — normalize, then apply the

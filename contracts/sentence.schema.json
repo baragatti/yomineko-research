@@ -80,9 +80,17 @@
           },
           "particle": {
             "type": "string"
+          },
+          "token_position": {
+            "type": "integer",
+            "minimum": 0
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "required": [
+          "particle",
+          "token_position"
+        ]
       }
     },
     "pattern": {
@@ -309,6 +317,10 @@
       "items": {
         "type": "object",
         "properties": {
+          "begin": {
+            "type": "integer",
+            "minimum": 0
+          },
           "conjugation_note": {
             "anyOf": [
               {
@@ -318,6 +330,10 @@
                 "type": "null"
               }
             ]
+          },
+          "end": {
+            "type": "integer",
+            "minimum": 0
           },
           "gloss": {
             "anyOf": [
@@ -364,40 +380,78 @@
           "lemma": {
             "type": "string"
           },
-          "pos": {
-            "anyOf": [
-              {
-                "type": "string",
-                "enum": [
-                  "adnominal",
-                  "adverb",
-                  "auxiliary",
-                  "conjunction",
-                  "filler",
-                  "i-adjective",
-                  "interjection",
-                  "na-adjective",
-                  "noun",
-                  "numeral",
-                  "particle",
-                  "prefix",
-                  "pronoun",
-                  "punctuation",
-                  "suffix",
-                  "symbol",
-                  "verb",
-                  "whitespace"
-                ],
-                "description": "Part of speech, Layer A, mechanical from the analyzer. Vocabulary owner: producer — scripts/ingest/dissect.py POS_MAP (Sudachi/UniDic 品詞 → neutral enum). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
-                "x-vocabulary": {
-                  "owner": "producer",
-                  "source": "scripts/ingest/dissect.py POS_MAP (Sudachi/UniDic 品詞 → neutral enum)"
+          "parts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "begin": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "lemma": {
+                  "type": "string"
+                },
+                "pos_coarse": {
+                  "type": "string",
+                  "description": "Raw Sudachi/UniDic 品詞 大分類 of this mode-A sub-unit, verbatim. Third-party analyzer output, see tokens[].pos_coarse."
+                },
+                "pos_fine": {
+                  "type": "string",
+                  "description": "Raw Sudachi/UniDic 品詞 細分類 of this mode-A sub-unit, verbatim. Third-party analyzer output, see tokens[].pos_coarse."
+                },
+                "reading": {
+                  "type": "string"
+                },
+                "surface": {
+                  "type": "string"
                 }
               },
-              {
-                "type": "null"
-              }
-            ]
+              "required": [
+                "begin",
+                "end",
+                "lemma",
+                "pos_coarse",
+                "pos_fine",
+                "reading",
+                "surface"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 2,
+            "description": "The SudachiPy mode-A sub-units of this token, in order, tiling it exactly. Present only when the token splits. Layer A only: a part never carries a vocab link, gloss, role or romaji."
+          },
+          "pos": {
+            "type": "string",
+            "enum": [
+              "adnominal",
+              "adverb",
+              "auxiliary",
+              "conjunction",
+              "filler",
+              "i-adjective",
+              "interjection",
+              "na-adjective",
+              "noun",
+              "numeral",
+              "particle",
+              "prefix",
+              "pronoun",
+              "punctuation",
+              "suffix",
+              "symbol",
+              "verb",
+              "whitespace"
+            ],
+            "description": "Part of speech, Layer A, mechanical from the analyzer. Vocabulary owner: producer — scripts/ingest/dissect.py POS_MAP (Sudachi/UniDic 品詞 → neutral enum). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "producer",
+              "source": "scripts/ingest/dissect.py POS_MAP (Sudachi/UniDic 品詞 → neutral enum)"
+            }
           },
           "pos_coarse": {
             "type": "string",
@@ -425,22 +479,17 @@
             ]
           },
           "romaji": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": "string"
           },
           "split_mode": {
             "type": "string",
             "enum": [
-              "A",
-              "B",
               "C"
             ],
-            "description": "Which Sudachi split mode produced this token. Vocabulary owner: producer — SudachiPy split modes (A short / B middle / C long). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "description": "Which Sudachi split mode produced this token. Always C: a constant kept for the consumers that still filter on it. Vocabulary owner: producer — scripts/export/export_corpus.py (W45: tokens[] is the SudachiPy mode-C list; mode-A sub-units nest as tokens[].parts, research/reports/token_list_integrity.md). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
             "x-vocabulary": {
               "owner": "producer",
-              "source": "SudachiPy split modes (A short / B middle / C long)"
+              "source": "scripts/export/export_corpus.py (W45: tokens[] is the SudachiPy mode-C list; mode-A sub-units nest as tokens[].parts, research/reports/token_list_integrity.md)"
             }
           },
           "surface": {
@@ -460,7 +509,14 @@
             "minimum": 0
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "required": [
+          "begin",
+          "end",
+          "position",
+          "split_mode",
+          "surface"
+        ]
       }
     },
     "translation": {

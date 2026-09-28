@@ -57,6 +57,13 @@ numbered ordering slots and the two-path course structure are all settled and ve
 appearance and reuse only.
 
 ## ▶ RESUME HERE
+> **2026-09-27 (bc) — chain v5 V1 done (checkpoint): W45 token list = the sentence.** Export-only (no DB write):
+> `tokens[]` mode-C only with `begin`/`end`, 1,938 sub-units nested as `parts[]`, particles `token_position` +
+> `ORDER BY id`, `split_mode:"C"` kept; contract narrowed; new hard `validate_token_list.py` (T0-T6, 13/13 plants);
+> panel renders the full sentence with nested sub-units; word lists ≠ jp 903 -> 0 of 10,271. Speak seed hits -59
+> (the sweep's list, no verdict moved); en_backfill locators shifted to the new frame. 0 course files. Full replay:
+> 0 new, 0 healed, bank.json re-pinned (`research/reports/v1_w45_token_list_report.md`). Next: W46.
+>
 > **2026-09-27 (bb) — chain v4 Q6 done (final checkpoint): W34 speak strand rebalance applied; chain v4 CLOSED.**
 > Per-stage production/fluency caps (`repairs/w34_rebalance.json`, read by `build_speaking_practice.py`, 3/6
 > fluency floor), re-derived on the post-W32 path: stages in band 0/12 -> 11/12 (arrival out, pool-limited),

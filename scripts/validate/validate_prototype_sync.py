@@ -218,6 +218,8 @@ def _slim_token(t: dict) -> dict:
             o[dst] = t[src]
     o["gloss"] = _pt(t.get("gloss"))
     o["role"] = _pt(t.get("role"))
+    if t.get("parts") is not None:          # W45: nested sub-units, surfaces only (slimToken's `p`)
+        o["p"] = [x["surface"] for x in t["parts"]]
     return o
 
 
@@ -492,6 +494,16 @@ def main() -> int:
         _diff(want, got, name.removesuffix(".json"), d, 400)
         rows.append((name, _record_count(name, got), _record_count(name, want), len(d)))
         fails.extend(d)
+        # W45: the word-by-word panel renders the shipped token list in order, so that list must BE
+        # the sentence, and a token's nested sub-units must BE the token. Checked on the app's copy.
+        if name == "sentences.json":
+            for slug, s in (got or {}).items():
+                toks = s.get("tokens") or []
+                if "".join(t.get("s") or "" for t in toks) != s.get("jp"):
+                    fails.append(f"sentences.{slug}: the word list does not reproduce jp {s.get('jp')!r}")
+                bad = [t.get("s") for t in toks if "p" in t and "".join(t["p"]) != t.get("s")]
+                if bad:
+                    fails.append(f"sentences.{slug}: sub-units do not reproduce their token {bad}")
 
     build_fails: list[str] = []
     bf = data / BUILD_FILE

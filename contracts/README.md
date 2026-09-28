@@ -68,6 +68,15 @@ root, `sentence` nests two of them under its own `provenance` object, and `lesso
 `needs_review`. `manifest.json` lists what each entity actually has. The contract enforces the meaning,
 not the presence; backfilling the gaps is a data task, and only then can the fields become `required`.
 
+**A sentence's `tokens[]` is the sentence (W45).** Only the SudachiPy mode-C units, in order, with
+`position` equal to the list index and half-open code-point offsets `begin`/`end` into `jp`, so
+`jp[begin:end] == surface` and the tokens tile `jp` exactly. A word the analyzer also splits into
+shorter mode-A units carries them nested as `parts[]` (two or more, tiling the token, Layer-A fields
+only), never as siblings in the list. `split_mode` is the constant `"C"`, kept because several
+consumers still filter on it. Each `particles[]` entry points at its token with `token_position`. The
+schema declares these shapes; `scripts/validate/validate_token_list.py` checks the order, the tiling
+and the slices, which a schema cannot.
+
 **A level claim carries its evidence.** There is no official JLPT list (spec §1.5), so `level` alone is
 an assertion. `level_confidence` (a number in 0–1), `level_agreement` (`"4/4"`, or the sentinels `"0"`
 for author-added and `"anchor"` for a deliberate course placement) and `level_sources` are what make it

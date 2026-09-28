@@ -1,4 +1,5 @@
-interface BdToken { s: string; r?: string; ro?: string; pos?: string; gloss?: string; role?: string }
+/** One unit of the sentence (tokens concat == jp); `p` = its shorter sub-units, nested, never siblings. */
+interface BdToken { s: string; r?: string; ro?: string; pos?: string; gloss?: string; role?: string; p?: string[] }
 interface BdParticle { p: string; ft?: string; fn?: string; ex?: string }
 interface SentenceView {
   slug: string;
@@ -13,8 +14,10 @@ interface SentenceView {
 
 const PUNCT = /^[、。・，．？！「」『』（）\s]+$/;
 
+// W45: the list is the whole sentence, in order (punctuation included, shown without a reading line);
+// a word's sub-units sit nested under it, never as separate words.
 function Breakdown({ tokens, particles }: { tokens: BdToken[]; particles: BdParticle[] }) {
-  const toks = tokens.filter((t) => t.s && !PUNCT.test(t.s));
+  const toks = tokens.filter((t) => t.s);
   if (!toks.length && !particles.length) return null;
   return (
     <>
@@ -24,8 +27,9 @@ function Breakdown({ tokens, particles }: { tokens: BdToken[]; particles: BdPart
           {toks.map((t, i) => (
             <div key={i} className="ym-bd-tok">
               <span className="ym-bd-jp" lang="ja">{t.s}</span>
-              {(t.r || t.ro) && <span className="ym-bd-read" lang="ja">{[t.r, t.ro].filter(Boolean).join(" · ")}</span>}
+              {(t.r || t.ro) && !PUNCT.test(t.s) && <span className="ym-bd-read" lang="ja">{[t.r, t.ro].filter(Boolean).join(" · ")}</span>}
               {t.gloss && <span className="ym-bd-gloss">{t.gloss}</span>}
+              {t.p && <span className="ym-bd-sub" lang="ja">{t.p.join(" + ")}</span>}
               {t.role && <span className="ym-bd-role">{t.role}</span>}
             </div>
           ))}

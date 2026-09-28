@@ -198,7 +198,12 @@ const spacedRomaji = (s) => {
   return toks.join(" ").replace(/\s+([?!,.;:、。？！])/g, "$1").trim();
 };
 
-const slimToken = (t) => ({ s: t.surface, r: t.reading, ro: t.romaji, pos: t.pos, gloss: pt(t.gloss), role: pt(t.role) });
+// W45: tokens[] is exactly the sentence (mode-C units); a word's shorter sub-units ride along nested
+// as `p` (surfaces only) and are never siblings in the list.
+const slimToken = (t) => ({
+  s: t.surface, r: t.reading, ro: t.romaji, pos: t.pos, gloss: pt(t.gloss), role: pt(t.role),
+  ...(t.parts ? { p: t.parts.map((x) => x.surface) } : {}),
+});
 const slimParticle = (p) => ({ p: p.particle, ft: p.function_type, fn: pt(p.function), ex: pt(p.explanation) });
 
 /**

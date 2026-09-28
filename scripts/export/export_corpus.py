@@ -667,14 +667,36 @@ def export_sentences(con: sqlite3.Connection) -> int:
     for row in con.execute("SELECT * FROM sentence ORDER BY slug"):  # stable identity (numeric id is volatile)
         s = dict(zip(cols, row))
         sid = s["id"]
+        # W45 (research/reports/token_list_integrity.md). `tokens[]` IS the sentence: mode-C units
+        # only, in position order, each with half-open code-point offsets into `jp`. The mode-A
+        # sub-units the dissector also stores (persist_dissection.py, same table, parent_token_id)
+        # used to be flattened into this list ahead of the C tokens, so the word-by-word panel showed
+        # いく / つ / お / いくつ for おいくつ. They now nest as `parts[]` under their parent, Layer-A
+        # fields only. `split_mode: "C"` stays as a constant: about ten consumers still filter on it.
+        parts_of: dict[int, list] = {}
+        for pid_, surf_, lem_, rd_, pc_, pf_ in con.execute(
+                "SELECT parent_token_id,surface,lemma,reading,pos_coarse,pos_fine FROM token "
+                "WHERE sentence_id=? AND split_mode='A' ORDER BY id", (sid,)):
+            parts_of.setdefault(pid_, []).append(
+                {"surface": surf_, "lemma": lem_, "reading": rd_, "pos_coarse": pc_, "pos_fine": pf_})
         tokens = []
+        pos_of_tid: dict[int, int] = {}
+        at = 0
         for t in con.execute(
                 "SELECT id,position,split_mode,surface,lemma,reading,romaji,pos_coarse,pos_fine,"
                 "pos,inflection,inflection_type,vocab_id FROM token WHERE sentence_id=? "
-                "ORDER BY split_mode, position", (sid,)):
+                "AND split_mode='C' ORDER BY position", (sid,)):
             tid = t[0]
+            pos_of_tid[tid] = t[1]
+            begin, at = at, at + len(t[3])
+            parts = parts_of.get(tid) or []
+            p_at = begin
+            for p_ in parts:
+                p_["begin"], p_at = p_at, p_at + len(p_["surface"])
+                p_["end"] = p_at
             tokens.append({
-                "position": t[1], "split_mode": t[2], "surface": t[3], "lemma": t[4],
+                "position": t[1], "split_mode": t[2], "begin": begin, "end": at,
+                "surface": t[3], "lemma": t[4],
                 "reading": t[5], "romaji": t[6],
                 # The vocab SLUG is the published sentence->vocab edge; `vocab_id` (below, kept for
                 # compatibility) is a storage row number no consumer should key on.
@@ -686,12 +708,17 @@ def export_sentences(con: sqlite3.Connection) -> int:
                 "role": loc(pt=TL.get((tid, "role")), en=TLen.get((tid, "role"))),
                 "gloss": loc(pt=TL.get((tid, "gloss")), en=TLen.get((tid, "gloss"))),
                 "conjugation_note": loc(pt=TL.get((tid, "conjugation_note")), en=TLen.get((tid, "conjugation_note"))),
-                "vocab_id": t[12]})
+                "vocab_id": t[12],
+                # only a real split (>= 2 pieces); validate_token_list.py T5 checks they tile the parent
+                **({"parts": parts} if len(parts) >= 2 else {})})
         particles = []
-        for p in con.execute("SELECT id,particle,function_type FROM particle WHERE sentence_id=?", (sid,)):
+        for p in con.execute("SELECT id,particle,function_type,token_id FROM particle WHERE sentence_id=? "
+                             "ORDER BY id", (sid,)):
             pid = p[0]
             particles.append({
                 "particle": p[1], "function_type": p[2],  # neutral enum (case/binding/conjunctive/...)
+                # W45: the occurrence's anchor, an index into tokens[] (validate_token_list.py T6)
+                "token_position": pos_of_tid.get(p[3]),
                 "function": loc(pt=PL.get((pid, "function")), en=PLen.get((pid, "function"))),
                 "explanation": loc(pt=PL.get((pid, "explanation")), en=PLen.get((pid, "explanation")))})
         grammar = [r[0] for r in con.execute(

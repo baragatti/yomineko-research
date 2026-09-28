@@ -1930,6 +1930,16 @@
       "string"
      ]
     },
+    "particles[].token_position": {
+     "present": 24771,
+     "pct": 241.2,
+     "required": false,
+     "types": [
+      "integer"
+     ],
+     "min": 0,
+     "max": 23
+    },
     "pattern": {
      "present": 10271,
      "pct": 100.0,
@@ -2184,9 +2194,19 @@
       "array"
      ]
     },
+    "tokens[].begin": {
+     "present": 85694,
+     "pct": 834.3,
+     "required": false,
+     "types": [
+      "integer"
+     ],
+     "min": 0,
+     "max": 37
+    },
     "tokens[].conjugation_note": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
      "required": false,
      "types": [
       "null",
@@ -2209,9 +2229,19 @@
       "string"
      ]
     },
+    "tokens[].end": {
+     "present": 85694,
+     "pct": 834.3,
+     "required": false,
+     "types": [
+      "integer"
+     ],
+     "min": 1,
+     "max": 38
+    },
     "tokens[].gloss": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
      "required": false,
      "types": [
       "null",
@@ -2235,8 +2265,8 @@
      ]
     },
     "tokens[].inflection": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
      "required": false,
      "types": [
       "null",
@@ -2254,8 +2284,8 @@
      ]
     },
     "tokens[].inflection_type": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
      "required": false,
      "types": [
       "null",
@@ -2263,19 +2293,113 @@
      ]
     },
     "tokens[].lemma": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
+    "tokens[].parts": {
+     "present": 957,
+     "pct": 9.3,
+     "required": false,
+     "types": [
+      "array"
+     ]
+    },
+    "tokens[].parts[].begin": {
+     "present": 1938,
+     "pct": 18.9,
+     "required": false,
+     "types": [
+      "integer"
+     ],
+     "min": 0,
+     "max": 22
+    },
+    "tokens[].parts[].end": {
+     "present": 1938,
+     "pct": 18.9,
+     "required": false,
+     "types": [
+      "integer"
+     ],
+     "min": 1,
+     "max": 25
+    },
+    "tokens[].parts[].lemma": {
+     "present": 1938,
+     "pct": 18.9,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
+    "tokens[].parts[].pos_coarse": {
+     "present": 1938,
+     "pct": 18.9,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "代名詞",
+      "副詞",
+      "助動詞",
+      "助詞",
+      "動詞",
+      "名詞",
+      "形容詞",
+      "形状詞",
+      "感動詞",
+      "接尾辞",
+      "接頭辞",
+      "連体詞"
+     ]
+    },
+    "tokens[].parts[].pos_fine": {
+     "present": 1938,
+     "pct": 18.9,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "*",
+      "一般",
+      "副助詞",
+      "名詞的",
+      "固有名詞",
+      "形状詞的",
+      "接続助詞",
+      "数詞",
+      "普通名詞",
+      "格助詞",
+      "非自立可能"
+     ]
+    },
+    "tokens[].parts[].reading": {
+     "present": 1938,
+     "pct": 18.9,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
+    "tokens[].parts[].surface": {
+     "present": 1938,
+     "pct": 18.9,
      "required": false,
      "types": [
       "string"
      ]
     },
     "tokens[].pos": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
      "required": false,
      "types": [
-      "null",
       "string"
      ],
      "values": [
@@ -2297,8 +2421,8 @@
      ]
     },
     "tokens[].pos_coarse": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
      "required": false,
      "types": [
       "string"
@@ -2322,8 +2446,8 @@
      ]
     },
     "tokens[].pos_fine": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
      "required": false,
      "types": [
       "string"
@@ -2355,8 +2479,8 @@
      ]
     },
     "tokens[].position": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
      "required": false,
      "types": [
       "integer"
@@ -2365,16 +2489,16 @@
      "max": 24
     },
     "tokens[].reading": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
      "required": false,
      "types": [
       "string"
      ]
     },
     "tokens[].role": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
      "required": false,
      "types": [
       "null",
@@ -2398,37 +2522,35 @@
      ]
     },
     "tokens[].romaji": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
      "required": false,
      "types": [
-      "null",
       "string"
      ]
     },
     "tokens[].split_mode": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
      "required": false,
      "types": [
       "string"
      ],
      "values": [
-      "A",
       "C"
      ]
     },
     "tokens[].surface": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
      "required": false,
      "types": [
       "string"
      ]
     },
     "tokens[].vocab": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
      "required": false,
      "types": [
       "null",
@@ -2436,8 +2558,8 @@
      ]
     },
     "tokens[].vocab_id": {
-     "present": 87632,
-     "pct": 853.2,
+     "present": 85694,
+     "pct": 834.3,
      "required": false,
      "types": [
       "integer",

@@ -5,6 +5,7 @@
  * (tag -> renderer) but emitting an opaque HTML string instead of a hydrated React tree.
  */
 import { getSentence, getReading, getKanji, getVocab, getGrammar, loc, locArr, kanaToRomaji } from "./corpus.server";
+import type { BdToken } from "./corpus.server";
 
 const esc = (s: string) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -136,20 +137,23 @@ function ruby(surface: string, reading: string): string {
 
 const PUNCT = /^[、。・，．？！「」『』（）\s]+$/;
 // word-by-word breakdown + particle functions (from the sentence's per-token analysis)
+// W45: the list is the whole sentence, in order (punctuation included, shown without a reading line);
+// a word's sub-units (`p`) sit nested under it, never as separate words.
 function renderBreakdown(s: any): string {
   let out = "";
-  const toks = (s.tokens || []).filter((t: any) => t.s && !PUNCT.test(t.s));
+  const toks = ((s.tokens || []) as BdToken[]).filter((t) => t.s);
   if (toks.length) {
     out +=
       `<div class="ym-bd"><div class="ym-bd-label">Palavra por palavra</div><div class="ym-bd-list">` +
       toks
-        .map((t: any) => {
-          const read = [t.r, t.ro].filter(Boolean).join(" · ");
+        .map((t) => {
+          const read = PUNCT.test(t.s) ? "" : [t.r, t.ro].filter(Boolean).join(" · ");
           return (
             `<div class="ym-bd-tok">` +
             `<span class="ym-bd-jp" lang="ja">${esc(t.s)}</span>` +
             (read ? `<span class="ym-bd-read" lang="ja">${esc(read)}</span>` : "") +
             (t.gloss ? `<span class="ym-bd-gloss">${esc(t.gloss)}</span>` : "") +
+            (t.p ? `<span class="ym-bd-sub" lang="ja">${esc(t.p.join(" + "))}</span>` : "") +
             (t.role ? `<span class="ym-bd-role">${esc(t.role)}</span>` : "") +
             `</div>`
           );

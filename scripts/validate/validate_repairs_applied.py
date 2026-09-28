@@ -2123,7 +2123,13 @@ def handle_en_backfill(rows, sents, gram, table):
             if rec is not None and idx:
                 items = rec.get(coll) or []
                 j = int(idx.rstrip("]"))
-                sub = items[j] if j < len(items) else None
+                # W45: the locators were written when tokens[] led with the sentence's mode-A
+                # sub-units (ORDER BY split_mode, position; apply_en_backfill.py still resolves them
+                # that way in the DB). Those now nest as tokens[].parts, so the historical index
+                # shifts by their count. A locator that pointed at a sub-unit resolves to nothing.
+                if coll == "tokens":
+                    j -= sum(len(t.get("parts") or []) for t in items)
+                sub = items[j] if 0 <= j < len(items) else None
             obj = (sub or {}).get(r["field"].split("].")[-1]) if sub is not None else None
         else:
             rec = prov_records(r["entity"]).get(r["id"])

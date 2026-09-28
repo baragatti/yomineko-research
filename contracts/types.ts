@@ -557,7 +557,8 @@ export interface Sentence {
       explanation?: LocaleText;
       function?: LocaleText | null;
       function_type?: "adverbial" | "binding" | "case" | "conjunctive" | "nominalizer" | "parallel" | "sentence-final";
-      particle?: string;
+      particle: string;
+      token_position: number;
     }[];
   pattern: {
       chunk?: string;
@@ -589,20 +590,31 @@ export interface Sentence {
   structure_explanation: LocaleText;
   tags: string[];
   tokens: {
+      begin: number;
       conjugation_note?: LocaleText | null;
+      end: number;
       gloss?: LocaleText | null;
       inflection?: "attributive" | "conditional" | "continuative" | "imperative" | "irrealis" | "ku-form" | "stem" | "terminal" | "volitional" | null;
       inflection_type?: string | null;
       lemma?: string;
-      pos?: "adnominal" | "adverb" | "auxiliary" | "conjunction" | "filler" | "i-adjective" | "interjection" | "na-adjective" | "noun" | "numeral" | "particle" | "prefix" | "pronoun" | "punctuation" | "suffix" | "symbol" | "verb" | "whitespace" | null;
+      parts?: {
+          begin: number;
+          end: number;
+          lemma: string;
+          pos_coarse: string;
+          pos_fine: string;
+          reading: string;
+          surface: string;
+        }[];
+      pos?: "adnominal" | "adverb" | "auxiliary" | "conjunction" | "filler" | "i-adjective" | "interjection" | "na-adjective" | "noun" | "numeral" | "particle" | "prefix" | "pronoun" | "punctuation" | "suffix" | "symbol" | "verb" | "whitespace";
       pos_coarse?: string;
       pos_fine?: string;
-      position?: number;
+      position: number;
       reading?: string;
       role?: LocaleText | null;
-      romaji?: string | null;
-      split_mode?: "A" | "B" | "C";
-      surface?: string;
+      romaji?: string;
+      split_mode: "C";
+      surface: string;
       vocab?: string | null;
       vocab_id?: number | null;
     }[];
