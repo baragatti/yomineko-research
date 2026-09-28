@@ -57,6 +57,25 @@ numbered ordering slots and the two-path course structure are all settled and ve
 appearance and reuse only.
 
 ## ▶ RESUME HERE
+
+> **2026-09-27 (ay) — PAUSED by the owner (token budget; GPU needed for his own use). Not pushed.**
+>
+> Landed this run: chain v4 closed (Q3 readings, Q4 listening level-clean → level gate 0 on all 40 banks, Q5 review
+> examples, Q6 W34 speak rebalance 11/12 stages in band); research for the 2026-09-27 owner decisions (all six reports);
+> W46 particle usage for all 24,771 occurrences (verified); chain v5 V1 (W45: word lists == sentence, 903 → 0, new hard
+> gate) and V2 (W46 applied: usage ids + template-rendered explanations pt-BR/en). Owner decisions and product standards:
+> design/product_notes.md; open asks V1/V2/L1 in research/reports/OPEN_QUESTIONS.md.
+>
+> **Resume = chain v5 from V3.** Relaunch `…/6e155f88-…/workflows/scripts/writer-chain-v5-wf_5e57a4a5-4e0.js` with
+> `resumeFromRunId: 'wf_5e57a4a5-4e0'` (V1, V2 replay from cache). Remaining: V3 strokes (checkpoint), V4 quick calls, V5
+> level lineage, V6 follow-ups (checkpoint), V7 audio fields + prototype play buttons (only once N5 clips exist). Then W25 B′
+> (N3 restructure, research/reports/n3_pacing_check.md) as its own chain.
+>
+> **Audio (W47) — stopped mid-benchmark at the owner's request (frame drops).** Stack installed and GPU-verified in
+> C:/Users/WiseWolf/yomineko-audio/ (torch 2.9.1+rocm7.2.1, Adrenalin 26.8.1); generator + control app sources in
+> scripts/audio/; report research/reports/audio_setup_report.md. Not done: finish the benchmark, pick the pilot voices, run the
+> 200-unit pilot, desktop shortcut, then the N5 run. **Run GPU work only when the owner says the GPU is free** (or from the
+> control app, which he starts and stops).
 > **2026-09-27 (bd) — chain v5 V2 done: W46 particle usage ids applied.** 24,741 of 24,771 particles carry a
 > verified usage id (5,406 auto, 19,026 verified, 309 verifier corrections; verdicts joined by slug#position);
 > 30 held (13 verifier-rejected, 17 surface mismatch) for an enum decision. Explanations rendered from the
